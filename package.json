@@ -1,0 +1,8 @@
+{
+  "name": "impulse-core",
+  "packageManager": "yarn@3.2.4",
+  "dependencies": {
+    "@google-cloud/firestore": "^6.4.1",
+    "typescript": "^4.8.4"
+  }
+}
