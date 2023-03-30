@@ -18,6 +18,7 @@ interface BaseLogValue {
   locationFormatted?: string;
   tacticsSummary?: Record<string, string>;
   patternsSummary?: Record<string, string>;
+  patternsUsageSummary?: Record<string, string>;
 }
 
 // Tactics logs are recorded when the user tracks tactics, standalone

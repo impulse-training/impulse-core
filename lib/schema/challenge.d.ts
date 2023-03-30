@@ -4,6 +4,8 @@ export interface ChallengeValue {
     uid: string;
     createdAt: Timestamp;
     name: string;
+    prompt: string;
+    type: 'button' | 'tactic' | 'impulse-tactic' | 'setbacks';
     ordinal: number;
     description: string;
     icon: string;
@@ -16,6 +18,7 @@ export interface ChallengeValue {
     logEligibilityRequirements: {
         type?: LogValue['type'];
         outcome?: ImpulseLogValue['outcome'];
+        tacticId?: string;
     };
     eligibleLogDatesById: {
         [key: string]: string;

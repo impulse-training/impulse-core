@@ -14,6 +14,7 @@ interface BaseLogValue {
     locationFormatted?: string;
     tacticsSummary?: Record<string, string>;
     patternsSummary?: Record<string, string>;
+    patternsUsageSummary?: Record<string, string>;
 }
 export type TacticsLogValue = BaseLogValue & {
     type: 'tactic';

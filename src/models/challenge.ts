@@ -30,7 +30,7 @@ export class Challenge {
     const countsByDate = this.countsByDate();
 
     const startDate = createdAt.toDate();
-    let endDate = new Date();
+    let endDate = addDays(new Date(), 1);
     let dayCount = 0;
     const datesCumulativeProgress: Record<string, number> = {};
 
