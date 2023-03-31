@@ -3,7 +3,7 @@ import * as Location from 'expo-location';
 import { WithId } from '../types/types';
 import { TacticValue } from './tactic';
 export type Outcome = 'success' | 'setback' | 'indeterminate';
-interface BaseLogValue {
+export interface BaseLogValue {
     uid: string;
     createdAt: Timestamp;
     isDisplayable: boolean;
@@ -38,4 +38,3 @@ export type ImpulseLogValue = BaseLogValue & {
     debriefedAt?: Timestamp | null;
 };
 export type LogValue = TacticsLogValue | ImpulseLogValue | MotionLogValue | ButtonLogValue;
-export {};

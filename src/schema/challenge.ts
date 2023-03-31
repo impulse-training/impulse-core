@@ -14,8 +14,8 @@ export interface ChallengeValue {
   // For example "wear the impulse button for 5 days" would have a dailyMinimum of 1 and days set to
   // 5.
   days: number; // The target number of days
-  dailyMinimum?: number; // The minimum number of eligible logs per day
-  dailyMaximum?: number; // The maximum number of eligible logs per day
+  dailyMinimum?: number | null; // The minimum number of eligible logs per day
+  dailyMaximum?: number | null; // The maximum number of eligible logs per day
   consecutive: boolean;
 
   // This is actually used more for labelling purposes, as the actual functionality of the challenge

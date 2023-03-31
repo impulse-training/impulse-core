@@ -103,8 +103,8 @@ export class Challenge {
   private isDayLogCountEligible(count: number) {
     const { dailyMaximum, dailyMinimum } = this.data;
 
-    if (dailyMaximum !== undefined && count > dailyMaximum) return false;
-    if (dailyMinimum !== undefined && count < dailyMinimum) return false;
+    if (typeof dailyMaximum === 'number' && count > dailyMaximum) return false;
+    if (typeof dailyMinimum === 'number' && count < dailyMinimum) return false;
     return true;
   }
 

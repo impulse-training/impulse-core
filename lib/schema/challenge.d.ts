@@ -9,8 +9,8 @@ export interface ChallengeValue {
     completedAt?: Timestamp;
     isTemplate: boolean;
     days: number;
-    dailyMinimum?: number;
-    dailyMaximum?: number;
+    dailyMinimum?: number | null;
+    dailyMaximum?: number | null;
     consecutive: boolean;
     type: 'button' | 'tactic' | 'impulse-tactic' | 'setbacks';
     requiredLogType?: LogValue['type'];

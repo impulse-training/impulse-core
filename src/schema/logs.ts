@@ -7,7 +7,7 @@ import { TacticValue } from './tactic';
 // take)
 export type Outcome = 'success' | 'setback' | 'indeterminate';
 
-interface BaseLogValue {
+export interface BaseLogValue {
   uid: string;
   createdAt: Timestamp;
   isDisplayable: boolean;
