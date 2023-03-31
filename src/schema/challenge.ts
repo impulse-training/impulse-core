@@ -4,7 +4,6 @@ import { ImpulseLogValue, LogValue } from './logs';
 export interface ChallengeValue {
   uid: string;
   createdAt: Timestamp;
-  type: 'button' | 'tactic' | 'impulse-tactic' | 'setbacks';
   ordinal: number;
   description: string;
   icon: string;
@@ -19,12 +18,15 @@ export interface ChallengeValue {
   dailyMaximum?: number; // The maximum number of eligible logs per day
   consecutive: boolean;
 
+  // This is actually used more for labelling purposes, as the actual functionality of the challenge
+  // is determined by the fields that begin with 'required'.
+  type: 'button' | 'tactic' | 'impulse-tactic' | 'setbacks';
+
   // What makes an individual log eligible
-  logEligibilityRequirements: {
-    type?: LogValue['type'];
-    outcome?: ImpulseLogValue['outcome'];
-    tacticId?: string;
-  };
+  requiredLogType?: LogValue['type'];
+  requiredLogOutcome?: ImpulseLogValue['outcome'];
+  requiredLogPatternId?: string;
+  requiredLogTacticId?: string;
 
   // Dates of eligible log documents, indexed by id
   eligibleLogDatesById: { [key: string]: string };

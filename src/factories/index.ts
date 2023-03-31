@@ -1,0 +1,1 @@
+export { challengeFactory } from './challenge';

@@ -17,9 +17,7 @@ describe('Challenge', () => {
       description: 'Do it',
       icon: 'test',
       days: 4,
-      logEligibilityRequirements: {
-        type: 'impulse',
-      },
+      requiredLogType: 'impulse',
       eligibleLogDatesById: {},
       datesCumulativeProgress: {},
       currentDayCount: 0,
@@ -87,9 +85,7 @@ describe('Challenge', () => {
         description: 'Do it',
         icon: 'test',
         days: 3,
-        logEligibilityRequirements: {
-          type: 'impulse',
-        },
+        requiredLogType: 'impulse',
         dailyMinimum: 1,
         eligibleLogDatesById: {
           abc123: '2023-03-25',

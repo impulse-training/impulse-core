@@ -67,10 +67,14 @@ export class Challenge {
   }
 
   private isLogEligible(log: LogValue) {
-    const { outcome, type } = this.data.logEligibilityRequirements || {};
+    const { requiredLogOutcome, requiredLogType } = this.data;
 
-    if (type && type !== log.type) return false;
-    if (outcome && outcome !== (log as ImpulseLogValue).outcome) return false;
+    if (requiredLogType && requiredLogType !== log.type) return false;
+    if (
+      requiredLogOutcome &&
+      requiredLogOutcome !== (log as ImpulseLogValue).outcome
+    )
+      return false;
 
     return true;
   }

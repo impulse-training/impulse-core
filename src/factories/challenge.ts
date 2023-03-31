@@ -11,7 +11,6 @@ export const challengeFactory = Factory.makeFactory<ChallengeValue>({
   type: 'button',
   isTemplate: false,
   consecutive: true,
-  logEligibilityRequirements: {},
   icon: 'trophy',
   eligibleLogDatesById: {},
   datesCumulativeProgress: {},
