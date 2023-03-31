@@ -3,8 +3,6 @@ import { ImpulseLogValue, LogValue } from './logs';
 export interface ChallengeValue {
     uid: string;
     createdAt: Timestamp;
-    name: string;
-    prompt: string;
     type: 'button' | 'tactic' | 'impulse-tactic' | 'setbacks';
     ordinal: number;
     description: string;

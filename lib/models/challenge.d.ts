@@ -4,6 +4,7 @@ export declare class Challenge {
     private id;
     private data;
     constructor(id: string, data: ChallengeValue);
+    get name(): string;
     processLog(logId: string, log: LogValue): {
         eligibleLogDatesById: {
             [key: string]: string;

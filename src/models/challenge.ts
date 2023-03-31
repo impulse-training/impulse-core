@@ -10,6 +10,17 @@ import { ImpulseLogValue, LogValue } from '../schema/logs';
 export class Challenge {
   constructor(private id: string, private data: ChallengeValue) {}
 
+  get name() {
+    switch (this.data.type) {
+      case 'button':
+        return `Wear the impulse button for ${this.data.days} days`;
+      case 'setbacks':
+        return `Go without setbacks for ${this.data.days} days`;
+      default:
+        return 'Unknown challenge';
+    }
+  }
+
   // Challenges are updated when log entries are added. With every log entry, we call this method,
   // and have new properties for the challenge returned. If the log was not eligible for the
   // challenge, then the existing eligibleLogDatesById are returned unchanged. Otherwise, we return
