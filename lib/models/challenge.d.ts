@@ -3,7 +3,8 @@ import { LogValue } from '../schema/logs';
 export declare class Challenge {
     private id;
     private data;
-    constructor(id: string, data: ChallengeValue);
+    private tacticName?;
+    constructor(id: string, data: ChallengeValue, tacticName?: string | undefined);
     get name(): string;
     processLog(logId: string, log: LogValue): {
         eligibleLogDatesById: {
@@ -13,6 +14,9 @@ export declare class Challenge {
     recalculateProgress(): {
         datesCumulativeProgress: Record<string, number>;
         currentDayCount: number;
+        countsByDate: {
+            [x: string]: number;
+        };
     };
     private isLogEligible;
     private addlogDate;

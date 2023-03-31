@@ -5,6 +5,7 @@ import { ChallengeValue } from '../schema';
 export const challengeFactory = Factory.makeFactory<ChallengeValue>({
   uid: 'abc123',
   createdAt: Timestamp.now(),
+  startDate: Timestamp.now(),
   ordinal: 0,
   description: 'Test',
   days: 5,

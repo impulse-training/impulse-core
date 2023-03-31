@@ -8,7 +8,11 @@ import { ImpulseLogValue, LogValue } from '../schema/logs';
 // challenge to wear the impulse button for 5 days. Or, they might have a challenge to go 30 days
 // with no setbacks.
 export class Challenge {
-  constructor(private id: string, private data: ChallengeValue) {}
+  constructor(
+    private id: string,
+    private data: ChallengeValue,
+    private tacticName?: string
+  ) {}
 
   get name() {
     switch (this.data.type) {
@@ -16,6 +20,9 @@ export class Challenge {
         return `Wear the impulse button for ${this.data.days} days`;
       case 'setbacks':
         return `Go without setbacks for ${this.data.days} days`;
+      case 'tactic':
+      case 'impulse-tactic':
+        return `Use tactic for ${this.data.days} days`;
       default:
         return 'Unknown challenge';
     }
@@ -37,15 +44,14 @@ export class Challenge {
 
   // This is run after every update to the quest that changes the dates by Id
   recalculateProgress() {
-    const { createdAt, consecutive, days } = this.data;
+    const { startDate, consecutive, days } = this.data;
     const countsByDate = this.countsByDate();
 
-    const startDate = createdAt.toDate();
-    let endDate = addDays(new Date(), 1);
+    let endDate = new Date();
     let dayCount = 0;
     const datesCumulativeProgress: Record<string, number> = {};
 
-    for (let i = startDate; isBefore(i, endDate); i = addDays(i, 1)) {
+    for (let i = startDate.toDate(); isBefore(i, endDate); i = addDays(i, 1)) {
       const dateString = format(i, DATE_FORMAT);
 
       if (typeof countsByDate[dateString] !== 'number')
@@ -63,16 +69,31 @@ export class Challenge {
 
     const currentDayCount = Math.min(days, dayCount);
 
-    return { datesCumulativeProgress, currentDayCount };
+    return { datesCumulativeProgress, currentDayCount, countsByDate };
   }
 
   private isLogEligible(log: LogValue) {
-    const { requiredLogOutcome, requiredLogType } = this.data;
+    const {
+      requiredLogOutcome,
+      requiredLogType,
+      requiredLogPatternId,
+      requiredLogTacticId,
+    } = this.data;
 
     if (requiredLogType && requiredLogType !== log.type) return false;
     if (
       requiredLogOutcome &&
       requiredLogOutcome !== (log as ImpulseLogValue).outcome
+    )
+      return false;
+    if (
+      requiredLogPatternId &&
+      !(log as ImpulseLogValue).patternIds?.includes(requiredLogPatternId)
+    )
+      return false;
+    if (
+      requiredLogTacticId &&
+      !(log as ImpulseLogValue).tacticIds?.includes(requiredLogTacticId)
     )
       return false;
 

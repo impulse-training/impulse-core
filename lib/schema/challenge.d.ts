@@ -3,6 +3,7 @@ import { ImpulseLogValue, LogValue } from './logs';
 export interface ChallengeValue {
     uid: string;
     createdAt: Timestamp;
+    startDate: Timestamp;
     ordinal: number;
     description: string;
     icon: string;
@@ -13,10 +14,10 @@ export interface ChallengeValue {
     dailyMaximum?: number | null;
     consecutive: boolean;
     type: 'button' | 'tactic' | 'impulse-tactic' | 'setbacks';
-    requiredLogType?: LogValue['type'];
-    requiredLogOutcome?: ImpulseLogValue['outcome'];
-    requiredLogPatternId?: string;
-    requiredLogTacticId?: string;
+    requiredLogType?: LogValue['type'] | null;
+    requiredLogOutcome?: ImpulseLogValue['outcome'] | null;
+    requiredLogPatternId?: string | null;
+    requiredLogTacticId?: string | null;
     eligibleLogDatesById: {
         [key: string]: string;
     };

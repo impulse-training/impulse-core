@@ -4,6 +4,7 @@ import { ImpulseLogValue, LogValue } from './logs';
 export interface ChallengeValue {
   uid: string;
   createdAt: Timestamp;
+  startDate: Timestamp;
   ordinal: number;
   description: string;
   icon: string;
@@ -22,11 +23,11 @@ export interface ChallengeValue {
   // is determined by the fields that begin with 'required'.
   type: 'button' | 'tactic' | 'impulse-tactic' | 'setbacks';
 
-  // What makes an individual log eligible
-  requiredLogType?: LogValue['type'];
-  requiredLogOutcome?: ImpulseLogValue['outcome'];
-  requiredLogPatternId?: string;
-  requiredLogTacticId?: string;
+  // What makes an individual log eligible to be counted towards the challenge.
+  requiredLogType?: LogValue['type'] | null;
+  requiredLogOutcome?: ImpulseLogValue['outcome'] | null;
+  requiredLogPatternId?: string | null;
+  requiredLogTacticId?: string | null;
 
   // Dates of eligible log documents, indexed by id
   eligibleLogDatesById: { [key: string]: string };

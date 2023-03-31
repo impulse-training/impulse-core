@@ -12,6 +12,7 @@ export interface BaseLogValue {
     location: Partial<Location.LocationObjectCoords>;
     locationIsFetching: boolean;
     locationFormatted?: string;
+    tacticIds?: Array<string>;
     tacticsSummary?: Record<string, string>;
     patternsSummary?: Record<string, string>;
     patternsUsageSummary?: Record<string, string>;
