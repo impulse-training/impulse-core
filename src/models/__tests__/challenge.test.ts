@@ -103,6 +103,12 @@ describe('Challenge', () => {
       it('writes the datesCumulativeProgress and currentDayCount properties', () => {
         const result = challenge.recalculateProgress();
         expect(result).toEqual({
+          countsByDate: {
+            '2023-03-24': 0,
+            '2023-03-25': 1,
+            '2023-03-26': 1,
+            '2023-03-27': 1,
+          },
           datesCumulativeProgress: {
             '2023-03-24': 0,
             '2023-03-25': 1,
@@ -138,6 +144,52 @@ describe('Challenge', () => {
       it('returns the right name', () => {
         expect(challenge.name).toEqual('Go without setbacks for 5 days');
       });
+    });
+  });
+
+  describe('name', () => {
+    it('returns the right name for a button challenge with multiple days', () => {
+      const date = Timestamp.fromDate(new Date('2023-03-28'));
+      const challenge = new Challenge('id', {
+        uid: 'abc123',
+        type: 'button',
+        createdAt: date,
+        startDate: date,
+        ordinal: 0,
+        description: 'Do it',
+        icon: 'test',
+        days: 4,
+        requiredLogType: 'impulse',
+        eligibleLogDatesById: {},
+        datesCumulativeProgress: {},
+        currentDayCount: 0,
+        isTemplate: false,
+        consecutive: true,
+      });
+
+      expect(challenge.name).toEqual('Wear the impulse button for 4 days');
+    });
+
+    it('returns the right name for a button challenge for a single day', () => {
+      const date = Timestamp.fromDate(new Date('2023-03-28'));
+      const challenge = new Challenge('id', {
+        uid: 'abc123',
+        type: 'button',
+        createdAt: date,
+        startDate: date,
+        ordinal: 0,
+        description: 'Do it',
+        icon: 'test',
+        days: 1,
+        requiredLogType: 'impulse',
+        eligibleLogDatesById: {},
+        datesCumulativeProgress: {},
+        currentDayCount: 0,
+        isTemplate: false,
+        consecutive: true,
+      });
+
+      expect(challenge.name).toEqual('Wear the impulse button for 1 day');
     });
   });
 });

@@ -118,6 +118,7 @@
   "dependencies": {
     "@google-cloud/firestore": "6.4.1",
     "date-fns": "^2.29.3",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "pluralize": "^8.0.0"
   }
 }

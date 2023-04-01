@@ -2,24 +2,29 @@ import { addDays, format, isBefore } from 'date-fns';
 import { groupBy, identity, mapValues, unset, values } from 'lodash';
 import { ChallengeValue, DATE_FORMAT } from '../schema';
 import { ImpulseLogValue, LogValue } from '../schema/logs';
+const pluralize = require('pluralize');
 
 // A challenge is for a user to track a certain number of eligible logs over a certain time period.
 // Logs may be eligible based on the outcome, type, or both. For example, a user might have a
 // challenge to wear the impulse button for 5 days. Or, they might have a challenge to go 30 days
 // with no setbacks.
 export class Challenge {
-  constructor(
-    private id: string,
-    private data: ChallengeValue,
-    private tacticName?: string
-  ) {}
+  constructor(private id: string, private data: ChallengeValue) {}
 
   get name() {
     switch (this.data.type) {
       case 'button':
-        return `Wear the impulse button for ${this.data.days} days`;
+        return `Wear the impulse button for ${pluralize(
+          'day',
+          this.data.days,
+          true
+        )}`;
       case 'setbacks':
-        return `Go without setbacks for ${this.data.days} days`;
+        return `Go without setbacks for ${pluralize(
+          'day',
+          this.data.days,
+          true
+        )}`;
       case 'tactic':
       case 'impulse-tactic':
         return `Use tactic for ${this.data.days} days`;

@@ -3,8 +3,7 @@ import { LogValue } from '../schema/logs';
 export declare class Challenge {
     private id;
     private data;
-    private tacticName?;
-    constructor(id: string, data: ChallengeValue, tacticName?: string | undefined);
+    constructor(id: string, data: ChallengeValue);
     get name(): string;
     processLog(logId: string, log: LogValue): {
         eligibleLogDatesById: {
