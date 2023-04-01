@@ -1,4 +1,3 @@
-import { Timestamp } from '@google-cloud/firestore';
 import * as Factory from 'factory.ts';
 import { TacticValue } from '../schema';
 
@@ -10,7 +9,7 @@ export const tacticFactory = Factory.makeFactory<TacticValue>({
   isSharingEnabled: false,
   subtitle: 'Go for a walk',
   language: 'english',
-  createdAt: Timestamp.now(),
+  createdAt: null as any,
   patternIds: [],
 });
 

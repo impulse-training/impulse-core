@@ -1,4 +1,3 @@
-import { Timestamp } from '@google-cloud/firestore';
 import * as Factory from 'factory.ts';
 import { PatternValue } from '../schema';
 
@@ -9,5 +8,5 @@ export const patternFactory = Factory.makeFactory<PatternValue>({
   unit: 'custom',
   customUnit: 'cigarettes',
   debriefAfterMinutes: 5,
-  createdAt: Timestamp.now(),
+  createdAt: null as any,
 });

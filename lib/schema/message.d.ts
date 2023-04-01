@@ -1,4 +1,4 @@
-import { Timestamp } from "@google-cloud/firestore";
+import { Timestamp } from '../utils/Timestamp';
 export interface MessageValue {
     createdAt: Timestamp;
     fromUid: string;

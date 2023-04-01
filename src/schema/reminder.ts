@@ -1,4 +1,4 @@
-import { Timestamp } from '@google-cloud/firestore';
+import { Timestamp } from '../utils/Timestamp';
 
 interface ReminderValueBase {
   uid: string;

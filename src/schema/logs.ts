@@ -1,6 +1,6 @@
-import { Timestamp } from '@google-cloud/firestore';
 import * as Location from 'expo-location';
 import { WithId } from '../types/types';
+import { Timestamp } from '../utils/Timestamp';
 import { TacticValue } from './tactic';
 
 // Logs are records of either impulses (cravings or urges), or applied tactics (actions that we

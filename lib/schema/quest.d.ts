@@ -1,4 +1,4 @@
-import { Timestamp } from '@google-cloud/firestore';
+import { Timestamp } from '../utils/Timestamp';
 import { ImpulseLogValue } from './logs';
 export interface ChallengeValue {
   uid: string;

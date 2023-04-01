@@ -40,11 +40,9 @@ export class Challenge {
   processLog(logId: string, log: LogValue) {
     const { eligibleLogDatesById } = this.data;
 
-    return {
-      eligibleLogDatesById: this.isLogEligible(log)
-        ? this.addlogDate(eligibleLogDatesById, logId, log)
-        : this.removelogDate(eligibleLogDatesById, logId),
-    };
+    return this.isLogEligible(log)
+      ? this.addlogDate(eligibleLogDatesById, logId, log)
+      : this.removelogDate(eligibleLogDatesById, logId);
   }
 
   // This is run after every update to the quest that changes the dates by Id

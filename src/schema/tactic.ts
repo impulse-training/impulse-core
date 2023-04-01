@@ -1,5 +1,5 @@
-import { Timestamp } from '@google-cloud/firestore';
 import { WithId } from '../types/types';
+import { Timestamp } from '../utils/Timestamp';
 import { TagValue } from './tag';
 
 export type CheckInTagEntry = {

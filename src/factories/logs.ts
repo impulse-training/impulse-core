@@ -1,12 +1,11 @@
-import { Timestamp } from '@google-cloud/firestore';
 import * as Factory from 'factory.ts';
 import { ImpulseLogValue } from '../schema/logs';
 
 export const impulseFactory = Factory.makeFactory<ImpulseLogValue>({
   uid: Factory.each(i => i.toString()),
   type: 'impulse',
-  createdAt: Timestamp.now(),
-  startTime: Timestamp.now(),
+  createdAt: null as any,
+  startTime: null as any,
   timezone: 'America/Botota',
   isDisplayable: true,
   location: {

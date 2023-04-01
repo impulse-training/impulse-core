@@ -6,9 +6,7 @@ export declare class Challenge {
     constructor(id: string, data: ChallengeValue);
     get name(): string;
     processLog(logId: string, log: LogValue): {
-        eligibleLogDatesById: {
-            [key: string]: string;
-        };
+        [key: string]: string;
     };
     recalculateProgress(): {
         datesCumulativeProgress: Record<string, number>;

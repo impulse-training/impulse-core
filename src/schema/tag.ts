@@ -1,4 +1,4 @@
-import { Timestamp } from '@google-cloud/firestore';
+import { Timestamp } from '../utils/Timestamp';
 
 // We don't add a trailing "Value" to the interface name as this isn't stored in a collection, only
 // as JSON for the dimension

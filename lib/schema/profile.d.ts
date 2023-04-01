@@ -1,5 +1,5 @@
-import { Timestamp } from '@google-cloud/firestore';
 import { AppStateStatus } from 'react-native';
+import { Timestamp } from '../utils/Timestamp';
 export interface ProfileValue {
     uid: string;
     createdAt: Timestamp;

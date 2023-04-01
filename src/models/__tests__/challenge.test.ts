@@ -1,7 +1,7 @@
-import { Timestamp } from '@google-cloud/firestore';
 import { challengeFactory } from '../../factories/challenge';
 import { ImpulseLogValue } from '../../schema';
 import { LogValue } from '../../schema/logs';
+import { Timestamp } from '../../utils/Timestamp';
 import { Challenge } from '../challenge';
 
 describe('Challenge', () => {
