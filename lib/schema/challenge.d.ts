@@ -5,7 +5,6 @@ export interface ChallengeValue {
     createdAt: Timestamp;
     startDate: Timestamp;
     ordinal: number;
-    description: string;
     icon: string;
     completedAt?: Timestamp;
     isTemplate: boolean;

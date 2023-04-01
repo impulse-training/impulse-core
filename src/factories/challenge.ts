@@ -7,7 +7,6 @@ export const challengeFactory = Factory.makeFactory<ChallengeValue>({
   createdAt: Timestamp.now(),
   startDate: Timestamp.now(),
   ordinal: 0,
-  description: 'Test',
   days: 5,
   type: 'button',
   isTemplate: false,
