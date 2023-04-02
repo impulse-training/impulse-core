@@ -1,7 +1,5 @@
 import * as Location from 'expo-location';
-import { WithId } from '../types/types';
 import { Timestamp } from '../utils/Timestamp';
-import { TacticValue } from './tactic';
 
 // Logs are records of either impulses (cravings or urges), or applied tactics (actions that we
 // take)
@@ -24,8 +22,7 @@ export interface BaseLogValue {
 
 // Tactics logs are recorded when the user tracks tactics, standalone
 export type TacticsLogValue = BaseLogValue & {
-  type: 'tactic';
-  tactic: WithId<TacticValue>;
+  type: 'tactics';
 };
 
 // Motion logs are recorded when the user wears the impulse button

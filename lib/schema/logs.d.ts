@@ -1,7 +1,5 @@
 import * as Location from 'expo-location';
-import { WithId } from '../types/types';
 import { Timestamp } from '../utils/Timestamp';
-import { TacticValue } from './tactic';
 export type Outcome = 'success' | 'setback' | 'indeterminate';
 export interface BaseLogValue {
     uid: string;
@@ -18,8 +16,7 @@ export interface BaseLogValue {
     patternsUsageSummary?: Record<string, string>;
 }
 export type TacticsLogValue = BaseLogValue & {
-    type: 'tactic';
-    tactic: WithId<TacticValue>;
+    type: 'tactics';
 };
 export type MotionLogValue = BaseLogValue & {
     type: 'motion';

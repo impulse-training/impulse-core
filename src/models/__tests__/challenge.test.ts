@@ -61,8 +61,7 @@ describe('Challenge', () => {
           longitude: 1,
         },
         locationIsFetching: false,
-        type: 'tactic',
-        tactic: {} as any,
+        type: 'tactics',
       };
 
       it('returns the eligibleLogDatesById object, unchanged', () => {
