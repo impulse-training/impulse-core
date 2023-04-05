@@ -1,8 +1,7 @@
-import { WithId } from "../types/types";
-import { TacticValue } from "./tactic";
+import { Timestamp } from '../utils/Timestamp';
 export interface GameplanValue {
     uid: string;
     name: string;
-    featuredCategories: Array<string>;
-    tactics: Array<WithId<TacticValue>>;
+    createdAt: Timestamp;
+    updatedAt: Timestamp;
 }

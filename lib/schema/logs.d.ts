@@ -18,6 +18,7 @@ export interface BaseLogValue {
 }
 export type TacticsLogValue = BaseLogValue & {
     type: 'tactics';
+    reminderId?: string;
 };
 export type MotionLogValue = BaseLogValue & {
     type: 'motion';

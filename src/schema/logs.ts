@@ -24,6 +24,7 @@ export interface BaseLogValue {
 // Tactics logs are recorded when the user tracks tactics, standalone
 export type TacticsLogValue = BaseLogValue & {
   type: 'tactics';
+  reminderId?: string;
 };
 
 // Motion logs are recorded when the user wears the impulse button
