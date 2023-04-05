@@ -7,6 +7,7 @@ export interface BaseLogValue {
     isDisplayable: boolean;
     startTime: Timestamp;
     timezone: string;
+    text?: string;
     location: Partial<Location.LocationObjectCoords>;
     locationIsFetching: boolean;
     locationFormatted?: string;
@@ -18,6 +19,13 @@ export interface BaseLogValue {
 }
 export type TacticsLogValue = BaseLogValue & {
     type: 'tactics';
+};
+export type LocationLogValue = BaseLogValue & {
+    type: 'location';
+    reminderId?: string;
+};
+export type TimeLogValue = BaseLogValue & {
+    type: 'time';
     reminderId?: string;
 };
 export type MotionLogValue = BaseLogValue & {
@@ -37,4 +45,4 @@ export type ImpulseLogValue = BaseLogValue & {
     debriefReminderSentAt?: Timestamp | null;
     debriefedAt?: Timestamp | null;
 };
-export type LogValue = TacticsLogValue | ImpulseLogValue | MotionLogValue | ButtonLogValue;
+export type LogValue = TacticsLogValue | ImpulseLogValue | MotionLogValue | ButtonLogValue | LocationLogValue | TimeLogValue;

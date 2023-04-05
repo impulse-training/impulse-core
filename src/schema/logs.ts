@@ -11,6 +11,7 @@ export interface BaseLogValue {
   isDisplayable: boolean;
   startTime: Timestamp;
   timezone: string;
+  text?: string;
   location: Partial<Location.LocationObjectCoords>;
   locationIsFetching: boolean;
   locationFormatted?: string;
@@ -24,6 +25,17 @@ export interface BaseLogValue {
 // Tactics logs are recorded when the user tracks tactics, standalone
 export type TacticsLogValue = BaseLogValue & {
   type: 'tactics';
+};
+
+// Tactics logs are recorded when the user tracks tactics, standalone
+export type LocationLogValue = BaseLogValue & {
+  type: 'location';
+  reminderId?: string;
+};
+
+// Tactics logs are recorded when the user tracks tactics, standalone
+export type TimeLogValue = BaseLogValue & {
+  type: 'time';
   reminderId?: string;
 };
 
@@ -53,4 +65,6 @@ export type LogValue =
   | TacticsLogValue
   | ImpulseLogValue
   | MotionLogValue
-  | ButtonLogValue;
+  | ButtonLogValue
+  | LocationLogValue
+  | TimeLogValue;
