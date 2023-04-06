@@ -3,7 +3,8 @@ interface ReminderValueBase {
     uid: string;
     createdAt: Timestamp;
     tacticId: string;
-    tacticDigest?: string;
+    updatedAt: Timestamp;
+    tacticUpdatedAt: Timestamp;
 }
 export type TimeReminderValue = ReminderValueBase & {
     type: 'time';
