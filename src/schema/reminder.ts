@@ -4,7 +4,7 @@ interface ReminderValueBase {
   uid: string;
   createdAt: Timestamp;
   tacticId: string;
-  deviceSyncDigest?: string;
+  tacticDigest?: string; // An MD5 hash of the tactic's configuration
 }
 
 export type TimeReminderValue = ReminderValueBase & {
