@@ -7,6 +7,7 @@ import {
 } from '../schema/reminder';
 
 const days = [
+  '',
   'Sundays',
   'Mondays',
   'Tuesdays',

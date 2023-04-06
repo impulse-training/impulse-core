@@ -5,7 +5,6 @@ interface ReminderValueBase {
   createdAt: Timestamp;
   tacticId: string;
   updatedAt: Timestamp;
-  tacticUpdatedAt: Timestamp;
 }
 
 export type TimeReminderValue = ReminderValueBase & {

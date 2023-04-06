@@ -10,6 +10,7 @@ describe('Reminder classes', () => {
         uid,
         tacticId,
         createdAt: new Date() as any,
+        updatedAt: new Date() as any,
         type: 'time',
         weekdays: [],
         hour: 12,
@@ -23,8 +24,9 @@ describe('Reminder classes', () => {
         uid,
         tacticId,
         createdAt: new Date() as any,
+        updatedAt: new Date() as any,
         type: 'time',
-        weekdays: [0, 1, 2, 3, 4, 5, 6],
+        weekdays: [1, 2, 3, 4, 5, 6, 7],
         hour: 12,
         minute: 0,
       });
@@ -36,6 +38,7 @@ describe('Reminder classes', () => {
         uid,
         tacticId,
         createdAt: new Date() as any,
+        updatedAt: new Date() as any,
         type: 'time',
         weekdays: [2, 3, 4, 5, 6],
         hour: 12,
@@ -49,14 +52,29 @@ describe('Reminder classes', () => {
         uid,
         tacticId,
         createdAt: new Date() as any,
+        updatedAt: new Date() as any,
         type: 'time',
         weekdays: [1, 3, 5],
         hour: 12,
         minute: 0,
       });
       expect(reminder.summary).toBe(
-        'Monday, Wednesday, and Friday at 12:00 PM'
+        'On Sundays, Tuesdays, and Thursdays at 12:00 PM'
       );
+    });
+
+    it('should return the correct summary for specific weekdays', () => {
+      const reminder = new TimeReminder('1', {
+        uid,
+        tacticId,
+        createdAt: new Date() as any,
+        updatedAt: new Date() as any,
+        type: 'time',
+        weekdays: [3, 2, 4, 6, 5],
+        hour: 1,
+        minute: 0,
+      });
+      expect(reminder.summary).toBe('Every weekday at 1:00 AM');
     });
   });
 
@@ -68,6 +86,7 @@ describe('Reminder classes', () => {
           uid,
           tacticId,
           createdAt: new Date() as any,
+          updatedAt: new Date() as any,
           type: 'location',
           locationId: 'abc',
           mode: 'enter',
@@ -82,7 +101,7 @@ describe('Reminder classes', () => {
           longitude: 0,
         }
       );
-      expect(reminder.summary).toBe('When I arrive Home');
+      expect(reminder.summary).toBe('When I arrive at Home');
     });
   });
 });
