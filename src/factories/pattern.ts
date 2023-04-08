@@ -7,6 +7,5 @@ export const patternFactory = Factory.makeFactory<PatternValue>({
   ordinal: Factory.each(i => i),
   unit: 'custom',
   customUnit: 'cigarettes',
-  debriefAfterMinutes: 5,
   createdAt: null as any,
 });

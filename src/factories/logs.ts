@@ -1,5 +1,5 @@
 import * as Factory from 'factory.ts';
-import { ImpulseLogValue } from '../schema/logs';
+import { ImpulseLogValue, TacticsLogValue } from '../schema/logs';
 
 export const impulseFactory = Factory.makeFactory<ImpulseLogValue>({
   uid: Factory.each(i => i.toString()),
@@ -7,13 +7,33 @@ export const impulseFactory = Factory.makeFactory<ImpulseLogValue>({
   createdAt: null as any,
   startTime: null as any,
   timezone: 'America/Botota',
-  isDisplayable: true,
-  location: {
-    latitude: 1,
-    longitude: 1,
-  },
   outcome: 'indeterminate',
   debriefNotes: '',
   patternIds: [],
+  tactics: {},
+  location: {},
+  tagsByTacticId: {},
   locationIsFetching: false,
+  tacticIds: [],
+  tacticResponses: {},
+  tagIds: [],
+  tagValues: {},
+  patterns: {},
+  patternUsage: {},
+});
+
+export const tacticsLogFactory = Factory.makeFactory<TacticsLogValue>({
+  uid: Factory.each(i => i.toString()),
+  type: 'tactics',
+  createdAt: null as any,
+  startTime: null as any,
+  timezone: 'America/Botota',
+  tactics: {},
+  location: {},
+  tagsByTacticId: {},
+  locationIsFetching: false,
+  tacticIds: [],
+  tacticResponses: {},
+  tagIds: [],
+  tagValues: {},
 });

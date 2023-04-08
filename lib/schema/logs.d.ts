@@ -1,32 +1,34 @@
 import * as Location from 'expo-location';
 import { Timestamp } from '../utils/Timestamp';
+import { PatternValue } from './pattern';
+import { TacticValue } from './tactic';
+import { TagValue } from './tag';
 export type Outcome = 'success' | 'setback' | 'indeterminate';
 export interface BaseLogValue {
     uid: string;
     createdAt: Timestamp;
-    isDisplayable: boolean;
     startTime: Timestamp;
     timezone: string;
-    text?: string;
+    tactics: Record<string, TacticValue>;
+    tagsByTacticId: Record<string, Record<string, TagValue>>;
     location: Partial<Location.LocationObjectCoords>;
     locationIsFetching: boolean;
     locationFormatted?: string;
-    allTacticIds?: Array<string>;
-    tacticIds?: Array<string>;
-    tacticsSummary?: Record<string, string>;
-    patternsSummary?: Record<string, string>;
-    patternsUsageSummary?: Record<string, string>;
+    tacticIds: Array<string>;
+    tacticResponses: Record<string, string>;
+    tagIds: Array<string>;
+    tagValues: Record<string, number>;
 }
 export type TacticsLogValue = BaseLogValue & {
     type: 'tactics';
 };
 export type LocationLogValue = BaseLogValue & {
     type: 'location';
-    reminderId?: string;
+    locationId: string;
 };
 export type TimeLogValue = BaseLogValue & {
     type: 'time';
-    reminderId?: string;
+    reminderId: string;
 };
 export type MotionLogValue = BaseLogValue & {
     type: 'motion';
@@ -40,9 +42,16 @@ export type ImpulseLogValue = BaseLogValue & {
     pressCount?: number;
     outcome: Outcome;
     buttonPressSecondsSinceEpoch?: number;
+    patterns: Record<string, PatternValue>;
     patternIds: Array<string>;
+    patternUsage: Record<string, PatternUsage>;
     debriefNotes?: string;
     debriefReminderSentAt?: Timestamp | null;
     debriefedAt?: Timestamp | null;
 };
+export interface PatternUsage {
+    value: number;
+    transformedValue: number;
+    formattedValue: string;
+}
 export type LogValue = TacticsLogValue | ImpulseLogValue | MotionLogValue | ButtonLogValue | LocationLogValue | TimeLogValue;

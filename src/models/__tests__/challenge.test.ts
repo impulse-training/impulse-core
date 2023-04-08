@@ -1,4 +1,6 @@
+import { impulseFactory } from '../../factories';
 import { challengeFactory } from '../../factories/challenge';
+import { tacticsLogFactory } from '../../factories/logs';
 import { ImpulseLogValue } from '../../schema';
 import { LogValue } from '../../schema/logs';
 import { Timestamp } from '../../utils/Timestamp';
@@ -24,22 +26,17 @@ describe('Challenge', () => {
       isTemplate: false,
       consecutive: true,
     });
+
     describe('with an eligible log', () => {
-      const log: ImpulseLogValue = {
+      const log: ImpulseLogValue = impulseFactory.build({
         uid,
         createdAt: date,
-        isDisplayable: true,
         startTime: date,
         timezone: 'America/Bogota',
-        location: {
-          latitude: 1,
-          longitude: 1,
-        },
         patternIds: [],
-        locationIsFetching: false,
         type: 'impulse',
         outcome: 'indeterminate',
-      };
+      });
 
       it('returns the log date to the challenge', () => {
         const result = challenge.processLog('def456', log);
@@ -50,19 +47,11 @@ describe('Challenge', () => {
     });
 
     describe('with an ineligible log', () => {
-      const log: LogValue = {
+      const log: LogValue = tacticsLogFactory.build({
         uid,
         createdAt: date,
-        isDisplayable: true,
         startTime: date,
-        timezone: 'America/Bogota',
-        location: {
-          latitude: 1,
-          longitude: 1,
-        },
-        locationIsFetching: false,
-        type: 'tactics',
-      };
+      });
 
       it('returns the eligibleLogDatesById object, unchanged', () => {
         const result = challenge.processLog('def456', log);

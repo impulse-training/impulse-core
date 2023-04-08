@@ -8,7 +8,6 @@ export interface PatternValue {
     customUnit?: string;
     setbackDefinition?: string;
     setbackUnitMaximum?: number;
-    debriefAfterMinutes: number;
     notification?: {
         title: string;
         body: string;
