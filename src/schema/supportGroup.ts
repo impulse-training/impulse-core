@@ -2,6 +2,7 @@ import { Timestamp } from '../utils/Timestamp';
 
 export interface SupportGroupValue {
   createdAt: Timestamp;
+  updatedAt: Timestamp;
   templateId?: string;
   everythingPermissions?: boolean;
   participantUids: Array<string>;
@@ -12,7 +13,6 @@ export interface SupportGroupValue {
   creatorUid: string;
   icon: 'bugs' | 'team' | 'group' | 'tactics';
   thumbnailUrl: string;
-  lastUpdated: Timestamp;
   lastMessagePreview?: string;
   invitationCode?: string;
   invitationUrl?: string;
