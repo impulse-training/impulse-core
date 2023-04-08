@@ -1,5 +1,8 @@
 import { LocationValue } from '../schema';
 import { LocationReminderValue, ReminderValue, TimeReminderValue } from '../schema/reminder';
+export declare const SHORT_DAYS: {
+    [key: number]: string;
+};
 declare abstract class Reminder {
     abstract get summary(): string | null;
 }
@@ -7,6 +10,9 @@ export declare class TimeReminder extends Reminder {
     private id;
     private data;
     constructor(id: string, data: TimeReminderValue);
+    static DAYS: {
+        [key: number]: string;
+    };
     get summary(): string | null;
 }
 export declare class LocationReminder extends Reminder {

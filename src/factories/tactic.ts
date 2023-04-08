@@ -10,6 +10,7 @@ export const tacticFactory = Factory.makeFactory<TacticValue>({
   subtitle: 'Go for a walk',
   language: 'english',
   createdAt: null as any,
+  updatedAt: null as any,
   patternIds: [],
 });
 

@@ -6,7 +6,17 @@ import {
   TimeReminderValue,
 } from '../schema/reminder';
 
-const days = [
+export const SHORT_DAYS: { [key: number]: string } = {
+  1: 'Sun',
+  2: 'Mon',
+  3: 'Tue',
+  4: 'Wed',
+  5: 'Thu',
+  6: 'Fri',
+  7: 'Sat',
+};
+
+const LONG_DAYS = [
   '',
   'Sundays',
   'Mondays',
@@ -26,10 +36,12 @@ export class TimeReminder extends Reminder {
     super();
   }
 
+  static DAYS = SHORT_DAYS;
+
   get summary() {
     if (!this.data.weekdays?.length) return null;
     const weekdays = this.data.weekdays.sort();
-    const weekdayNames = weekdays.map(dayNumber => days[dayNumber]);
+    const weekdayNames = weekdays.map(dayNumber => LONG_DAYS[dayNumber]);
 
     function getDaysDescription() {
       if (weekdays.length === 7) return 'Every day';
