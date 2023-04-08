@@ -26,6 +26,7 @@ interface TacticValueBase<K> {
   uid: string;
   originalId?: string;
   createdAt: Timestamp;
+  updatedAt: Timestamp;
   ordinal: number;
   text: string;
   delaySeconds?: number;
