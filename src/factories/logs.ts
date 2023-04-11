@@ -4,8 +4,9 @@ import { ImpulseLogValue, TacticsLogValue } from '../schema/logs';
 export const impulseFactory = Factory.makeFactory<ImpulseLogValue>({
   uid: Factory.each(i => i.toString()),
   type: 'impulse',
-  createdAt: null as any,
-  startTime: null as any,
+  createdAt: { toDate: () => new Date() } as any,
+  updatedAt: { toDate: () => new Date() } as any,
+  startTime: { toDate: () => new Date() } as any,
   timezone: 'America/Botota',
   outcome: 'indeterminate',
   debriefNotes: '',
@@ -25,8 +26,9 @@ export const impulseFactory = Factory.makeFactory<ImpulseLogValue>({
 export const tacticsLogFactory = Factory.makeFactory<TacticsLogValue>({
   uid: Factory.each(i => i.toString()),
   type: 'tactics',
-  createdAt: null as any,
-  startTime: null as any,
+  createdAt: { toDate: () => new Date() } as any,
+  updatedAt: { toDate: () => new Date() } as any,
+  startTime: { toDate: () => new Date() } as any,
   timezone: 'America/Botota',
   tactics: {},
   location: {},

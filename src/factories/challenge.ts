@@ -3,8 +3,9 @@ import { ChallengeValue } from '../schema';
 
 export const challengeFactory = Factory.makeFactory<ChallengeValue>({
   uid: 'abc123',
-  createdAt: null as any,
-  startDate: null as any,
+  createdAt: { toDate: () => new Date() } as any,
+  updatedAt: { toDate: () => new Date() } as any,
+  startDate: { toDate: () => new Date() } as any,
   ordinal: 0,
   days: 5,
   type: 'button',

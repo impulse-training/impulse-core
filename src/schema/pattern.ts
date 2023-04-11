@@ -3,6 +3,7 @@ import { Timestamp } from '../utils/Timestamp';
 export interface PatternValue {
   uid: string;
   createdAt: Timestamp;
+  updatedAt: Timestamp;
   name: string;
   ordinal: number;
   unit: 'time' | 'custom';

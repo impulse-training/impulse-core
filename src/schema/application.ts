@@ -2,6 +2,7 @@ import { Timestamp } from '../utils/Timestamp';
 
 export interface ApplicationValue {
   createdAt: Timestamp;
+  updatedAt: Timestamp;
   dateOfBirth: string;
   email: string;
   duration: string;

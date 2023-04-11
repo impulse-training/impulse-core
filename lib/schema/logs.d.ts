@@ -7,6 +7,7 @@ export type Outcome = 'success' | 'setback' | 'indeterminate';
 export interface BaseLogValue {
     uid: string;
     createdAt: Timestamp;
+    updatedAt: Timestamp;
     startTime: Timestamp;
     timezone: string;
     tactics: Record<string, TacticValue>;

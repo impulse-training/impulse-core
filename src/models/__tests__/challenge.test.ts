@@ -3,35 +3,33 @@ import { challengeFactory } from '../../factories/challenge';
 import { tacticsLogFactory } from '../../factories/logs';
 import { ImpulseLogValue } from '../../schema';
 import { LogValue } from '../../schema/logs';
-import { Timestamp } from '../../utils/Timestamp';
 import { Challenge } from '../challenge';
 
 describe('Challenge', () => {
   describe('processLog', () => {
     // Given a new log, update the dates of the challenge if applicable.
     const uid = 'abc123';
-    const date = Timestamp.fromDate(new Date('2023-03-28'));
-    const challenge = new Challenge('id', {
-      uid: 'abc123',
-      type: 'setbacks',
-      createdAt: date,
-      startDate: date,
-      ordinal: 0,
-      icon: 'test',
-      days: 4,
-      requiredLogType: 'impulse',
-      eligibleLogDatesById: {},
-      datesCumulativeProgress: {},
-      currentDayCount: 0,
-      isTemplate: false,
-      consecutive: true,
-    });
+    const date = new Date('2023-03-26');
+    const challenge = new Challenge(
+      'id',
+      challengeFactory.build({
+        type: 'setbacks',
+        days: 4,
+        startDate: { toDate: () => date },
+        requiredLogType: 'impulse',
+        eligibleLogDatesById: {},
+        datesCumulativeProgress: {},
+        currentDayCount: 0,
+        isTemplate: false,
+        consecutive: true,
+      })
+    );
 
     describe('with an eligible log', () => {
       const log: ImpulseLogValue = impulseFactory.build({
         uid,
-        createdAt: date,
-        startTime: date,
+        createdAt: { toDate: () => date },
+        startTime: { toDate: () => date },
         timezone: 'America/Bogota',
         patternIds: [],
         type: 'impulse',
@@ -41,7 +39,7 @@ describe('Challenge', () => {
       it('returns the log date to the challenge', () => {
         const result = challenge.processLog('def456', log);
         expect(result).toEqual({
-          eligibleLogDatesById: { def456: '2023-03-27' },
+          def456: '2023-03-25',
         });
       });
     });
@@ -49,42 +47,40 @@ describe('Challenge', () => {
     describe('with an ineligible log', () => {
       const log: LogValue = tacticsLogFactory.build({
         uid,
-        createdAt: date,
-        startTime: date,
+        createdAt: { toDate: () => date },
+        startTime: { toDate: () => date },
       });
 
       it('returns the eligibleLogDatesById object, unchanged', () => {
         const result = challenge.processLog('def456', log);
-        expect(result).toEqual({
-          eligibleLogDatesById: {},
-        });
+        expect(result).toEqual({});
       });
     });
   });
 
   describe('recalculateProgress', () => {
     describe('with a set of dates', () => {
-      const date = Timestamp.fromDate(new Date('2023-03-25'));
-      const challenge = new Challenge('id', {
-        type: 'button',
-        uid: 'abc123',
-        createdAt: date,
-        startDate: date,
-        ordinal: 0,
-        icon: 'test',
-        days: 3,
-        requiredLogType: 'impulse',
-        dailyMinimum: 1,
-        eligibleLogDatesById: {
-          abc123: '2023-03-25',
-          def456: '2023-03-26',
-          ghi789: '2023-03-27',
-        },
-        datesCumulativeProgress: {},
-        currentDayCount: 0,
-        consecutive: true,
-        isTemplate: false,
-      });
+      const date = new Date('2023-03-25');
+      const challenge = new Challenge(
+        'id',
+        challengeFactory.build({
+          type: 'button',
+          startDate: { toDate: () => date },
+          icon: 'test',
+          days: 3,
+          requiredLogType: 'impulse',
+          dailyMinimum: 1,
+          eligibleLogDatesById: {
+            abc123: '2023-03-25',
+            def456: '2023-03-26',
+            ghi789: '2023-03-27',
+          },
+          datesCumulativeProgress: {},
+          currentDayCount: 0,
+          consecutive: true,
+          isTemplate: false,
+        })
+      );
 
       it('writes the datesCumulativeProgress and currentDayCount properties', () => {
         const result = challenge.recalculateProgress();
@@ -135,43 +131,25 @@ describe('Challenge', () => {
 
   describe('name', () => {
     it('returns the right name for a button challenge with multiple days', () => {
-      const date = Timestamp.fromDate(new Date('2023-03-28'));
-      const challenge = new Challenge('id', {
-        uid: 'abc123',
-        type: 'button',
-        createdAt: date,
-        startDate: date,
-        ordinal: 0,
-        icon: 'test',
-        days: 4,
-        requiredLogType: 'impulse',
-        eligibleLogDatesById: {},
-        datesCumulativeProgress: {},
-        currentDayCount: 0,
-        isTemplate: false,
-        consecutive: true,
-      });
+      const challenge = new Challenge(
+        'id',
+        challengeFactory.build({
+          type: 'button',
+          days: 4,
+        })
+      );
 
       expect(challenge.name).toEqual('Wear the impulse button for 4 days');
     });
 
     it('returns the right name for a button challenge for a single day', () => {
-      const date = Timestamp.fromDate(new Date('2023-03-28'));
-      const challenge = new Challenge('id', {
-        uid: 'abc123',
-        type: 'button',
-        createdAt: date,
-        startDate: date,
-        ordinal: 0,
-        icon: 'test',
-        days: 1,
-        requiredLogType: 'impulse',
-        eligibleLogDatesById: {},
-        datesCumulativeProgress: {},
-        currentDayCount: 0,
-        isTemplate: false,
-        consecutive: true,
-      });
+      const challenge = new Challenge(
+        'id',
+        challengeFactory.build({
+          type: 'button',
+          days: 1,
+        })
+      );
 
       expect(challenge.name).toEqual('Wear the impulse button for 1 day');
     });

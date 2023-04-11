@@ -3,8 +3,8 @@ import { Timestamp } from '../utils/Timestamp';
 interface ReminderValueBase {
   uid: string;
   createdAt: Timestamp;
-  tacticId: string;
   updatedAt: Timestamp;
+  tacticId: string;
 }
 
 export type TimeReminderValue = ReminderValueBase & {

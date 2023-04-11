@@ -4,6 +4,7 @@ import { Timestamp } from '../utils/Timestamp';
 export interface ProfileValue {
   uid: string;
   createdAt: Timestamp;
+  updatedAt: Timestamp;
   buttonId?: string;
   isAdmin?: boolean;
   isSuperAdmin?: boolean;

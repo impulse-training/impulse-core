@@ -94,6 +94,7 @@ describe('Reminder classes', () => {
         {
           uid,
           createdAt: new Date() as any,
+          updatedAt: new Date() as any,
           address: '123 fake st',
           reminderIds: [],
           name: 'Home',

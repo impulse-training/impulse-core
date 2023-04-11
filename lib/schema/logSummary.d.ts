@@ -4,6 +4,7 @@ export interface LogSummaryValue {
     uid: string;
     type: LogValue['type'];
     createdAt: Timestamp;
+    updatedAt: Timestamp;
     startTime: Timestamp;
     timezone: string;
     text: string;

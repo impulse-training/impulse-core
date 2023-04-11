@@ -4,6 +4,7 @@ import { ImpulseLogValue, LogValue } from './logs';
 export interface ChallengeValue {
   uid: string;
   createdAt: Timestamp;
+  updatedAt: Timestamp;
   startDate: Timestamp;
   ordinal: number;
   icon: string;
