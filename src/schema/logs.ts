@@ -35,6 +35,8 @@ export type TacticsLogValue = BaseLogValue & {
 export type LocationLogValue = BaseLogValue & {
   type: 'location';
   locationId: string;
+  locationName: string;
+  locationMode: 'enter' | 'exit';
 };
 
 // Tactics logs are created for a user's scheduled reminders are triggered

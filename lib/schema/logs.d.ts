@@ -26,6 +26,8 @@ export type TacticsLogValue = BaseLogValue & {
 export type LocationLogValue = BaseLogValue & {
     type: 'location';
     locationId: string;
+    locationName: string;
+    locationMode: 'enter' | 'exit';
 };
 export type TimeLogValue = BaseLogValue & {
     type: 'time';
