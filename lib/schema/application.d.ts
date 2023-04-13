@@ -3,14 +3,14 @@ export interface ApplicationValue {
     createdAt: Timestamp;
     updatedAt: Timestamp;
     dateOfBirth: string;
+    state: 'pending' | 'approved' | 'shipped' | 'signedUp';
     email: string;
     duration: string;
     gender: string;
     location: string;
     message: string;
     name: string;
-    payment: string;
     phone: string;
-    survey: string;
-    type: string;
+    trackingUrl?: string;
+    estimatedDeliveryDate?: Timestamp;
 }

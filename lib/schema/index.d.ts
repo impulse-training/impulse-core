@@ -14,7 +14,6 @@ export { PatternValue } from './pattern';
 export { PressValue } from './press';
 export { ProfileValue } from './profile';
 export { ReminderValue } from './reminder';
-export { ShipmentValue } from './shipment';
 export { SpotifyCredentials } from './spotifyCredentials';
 export { SupportGroupValue } from './supportGroup';
 export { ImageValue, TacticValue } from './tactic';
