@@ -10,6 +10,7 @@ export type TimeReminderValue = ReminderValueBase & {
     weekdays: Array<number>;
     hour: number;
     minute: number;
+    timezone: string;
     scheduledNotificationIds?: Array<string>;
 };
 export type LocationReminderValue = ReminderValueBase & {
