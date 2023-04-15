@@ -7,7 +7,6 @@ export interface ApplicationValue {
   state: 'pending' | 'approved' | 'shipped' | 'signedUp';
   email: string;
   duration: string;
-  gender: string;
   location: string;
   message: string;
   name: string;

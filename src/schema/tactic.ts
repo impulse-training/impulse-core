@@ -40,7 +40,6 @@ interface TacticValueBase<K> {
   isTemplate?: boolean;
   isBooster?: boolean;
   tagsSummary?: Record<string, string>;
-  timerSeconds?: number;
 
   // In impulse moments, do we want to show a field for collecting a response? This is the case for
   // questions, like "How are you feeling right now?"
@@ -59,6 +58,19 @@ interface TacticValueBase<K> {
   // Reminders
   remindersSummary?: Array<string>;
 }
+
+export type AudioTactic = TacticValueBase<'audio'> & {
+  metadata: {
+    localFilePath: string;
+    remoteFilePath: string;
+  };
+};
+
+export type TimerTactic = TacticValueBase<'timer'> & {
+  metadata: {
+    timerSeconds?: number;
+  };
+};
 
 export type SpotifyEpisodeTactic = TacticValueBase<'spotifyEpisode'> & {
   metadata: {
@@ -84,6 +96,7 @@ type QuestionTactic = TacticValueBase<'question'>;
 type TaskTactic = TacticValueBase<'task'>;
 
 export type TacticValue =
+  | AudioTactic
   | SpotifyEpisodeTactic
   | SpotifyTrackTactic
   | YouTubeTactic

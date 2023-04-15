@@ -40,7 +40,6 @@ interface TacticValueBase<K> {
     isTemplate?: boolean;
     isBooster?: boolean;
     tagsSummary?: Record<string, string>;
-    timerSeconds?: number;
     showResponseBox?: boolean;
     deviceTimeRemindersDigest?: string;
     deviceLocationRemindersDigest?: string;
@@ -50,6 +49,17 @@ interface TacticValueBase<K> {
     checkInEntries?: CheckInTagEntry[];
     remindersSummary?: Array<string>;
 }
+export type AudioTactic = TacticValueBase<'audio'> & {
+    metadata: {
+        localFilePath: string;
+        remoteFilePath: string;
+    };
+};
+export type TimerTactic = TacticValueBase<'timer'> & {
+    metadata: {
+        timerSeconds?: number;
+    };
+};
 export type SpotifyEpisodeTactic = TacticValueBase<'spotifyEpisode'> & {
     metadata: {
         episodeId: string;
@@ -70,5 +80,5 @@ type YouTubeTactic = TacticValueBase<'youtube'>;
 type WebsiteTactic = TacticValueBase<'website'>;
 type QuestionTactic = TacticValueBase<'question'>;
 type TaskTactic = TacticValueBase<'task'>;
-export type TacticValue = SpotifyEpisodeTactic | SpotifyTrackTactic | YouTubeTactic | WebsiteTactic | QuestionTactic | FeelingsTactic | TaskTactic;
+export type TacticValue = AudioTactic | SpotifyEpisodeTactic | SpotifyTrackTactic | YouTubeTactic | WebsiteTactic | QuestionTactic | FeelingsTactic | TaskTactic;
 export {};

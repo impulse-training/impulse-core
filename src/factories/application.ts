@@ -8,7 +8,6 @@ export const applicationFactory = Factory.makeFactory<ApplicationValue>({
   state: 'pending',
   email: 'fake@impulse.training',
   duration: '1 month',
-  gender: 'male',
   location: 'Adelaide',
   message: 'I want to stop smoking.',
   name: 'Moopy',
