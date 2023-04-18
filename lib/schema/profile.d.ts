@@ -1,4 +1,4 @@
-import { AppStateStatus } from 'react-native';
+import { AppStateStatus, Permission } from 'react-native';
 import { Timestamp } from '../utils/Timestamp';
 export interface ProfileValue {
     uid: string;
@@ -15,6 +15,7 @@ export interface ProfileValue {
     expoPushToken?: string;
     releaseChannel?: 'default' | 'canary';
     isCurrentlyTrackingMotion?: boolean;
+    androidPermissions?: Record<Permission, boolean>;
     displayName?: string;
     firstName?: string;
     lastName?: string;

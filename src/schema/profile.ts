@@ -1,4 +1,4 @@
-import { AppStateStatus } from 'react-native';
+import { AppStateStatus, Permission } from 'react-native';
 import { Timestamp } from '../utils/Timestamp';
 
 export interface ProfileValue {
@@ -16,6 +16,8 @@ export interface ProfileValue {
   expoPushToken?: string;
   releaseChannel?: 'default' | 'canary';
   isCurrentlyTrackingMotion?: boolean;
+
+  androidPermissions?: Record<Permission, boolean>;
 
   // While we typically expect these properties to be set, there is a short period where they are
   // unset, as firebase does not allow for creating user records with metadata (it must be set after
