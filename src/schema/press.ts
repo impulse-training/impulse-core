@@ -1,10 +1,10 @@
-import { Timestamp } from '../utils/Timestamp';
+import { FakeTimestamp } from '../utils/FakeTimestamp';
 
 export interface PressValue {
   uid: string;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
+  createdAt: FakeTimestamp;
+  updatedAt: FakeTimestamp;
   impulseId: string;
   buttonId: string;
-  pressedAt: Timestamp;
+  pressedAt: FakeTimestamp;
 }

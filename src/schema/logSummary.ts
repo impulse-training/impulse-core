@@ -1,4 +1,4 @@
-import { Timestamp } from '../utils/Timestamp';
+import { FakeTimestamp } from '../utils/FakeTimestamp';
 import { LogValue, Outcome } from './logs';
 
 // A log summary is a simplified, lightweight summary of a log, that's displayed on the today screen
@@ -7,9 +7,9 @@ import { LogValue, Outcome } from './logs';
 export interface LogSummaryValue {
   uid: string;
   type: LogValue['type'];
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
-  startTime: Timestamp;
+  createdAt: FakeTimestamp;
+  updatedAt: FakeTimestamp;
+  startTime: FakeTimestamp;
   timezone: string;
   text: string;
   locationFormatted?: string;

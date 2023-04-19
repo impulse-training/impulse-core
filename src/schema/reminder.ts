@@ -1,9 +1,9 @@
-import { Timestamp } from '../utils/Timestamp';
+import { FakeTimestamp } from '../utils/FakeTimestamp';
 
 interface ReminderValueBase {
   uid: string;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
+  createdAt: FakeTimestamp;
+  updatedAt: FakeTimestamp;
   tacticId: string;
 }
 

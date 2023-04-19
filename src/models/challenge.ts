@@ -2,6 +2,7 @@ import { addDays, format, isBefore } from 'date-fns';
 import { groupBy, identity, mapValues, unset, values } from 'lodash';
 import { ChallengeValue, DATE_FORMAT } from '../schema';
 import { ImpulseLogValue, LogValue } from '../schema/logs';
+import { FakeTimestamp } from '../utils/FakeTimestamp';
 const pluralize = require('pluralize');
 
 // A challenge is for a user to track a certain number of eligible logs over a certain time period.
@@ -9,7 +10,11 @@ const pluralize = require('pluralize');
 // challenge to wear the impulse button for 5 days. Or, they might have a challenge to go 30 days
 // with no setbacks.
 export class Challenge {
-  constructor(private id: string, private data: ChallengeValue) {}
+  constructor(
+    private id: string,
+    private data: ChallengeValue,
+    private TimestampClass: typeof FakeTimestamp
+  ) {}
 
   get name() {
     switch (this.data.type) {
@@ -52,6 +57,7 @@ export class Challenge {
 
     let endDate = new Date();
     let dayCount = 0;
+    let completedAt: FakeTimestamp | null = null;
     const datesCumulativeProgress: Record<string, number> = {};
 
     for (let i = startDate.toDate(); isBefore(i, endDate); i = addDays(i, 1)) {
@@ -67,12 +73,20 @@ export class Challenge {
       dayCount = eligibile ? dayCount + 1 : consecutive ? 0 : dayCount;
 
       datesCumulativeProgress[dateString] = dayCount;
-      if (dayCount >= days) break;
+      if (dayCount >= days) {
+        completedAt = this.TimestampClass.fromDate(i);
+        break;
+      }
     }
 
     const currentDayCount = Math.min(days, dayCount);
 
-    return { datesCumulativeProgress, currentDayCount, countsByDate };
+    return {
+      datesCumulativeProgress,
+      currentDayCount,
+      completedAt,
+      countsByDate,
+    };
   }
 
   private isLogEligible(log: LogValue) {

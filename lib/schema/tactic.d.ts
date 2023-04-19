@@ -1,5 +1,5 @@
 import { WithId } from '../types/types';
-import { Timestamp } from '../utils/Timestamp';
+import { FakeTimestamp } from '../utils/FakeTimestamp';
 import { TagValue } from './tag';
 export type CheckInTagEntry = {
     from: {
@@ -15,7 +15,7 @@ export type CheckInTagEntry = {
     value: number | null;
 };
 export interface ImageValue {
-    createdAt: Timestamp;
+    createdAt: FakeTimestamp;
     localFilePath: string;
     filePath: string;
 }
@@ -23,8 +23,8 @@ interface TacticValueBase<K> {
     type?: K;
     uid: string;
     originalId?: string;
-    createdAt: Timestamp;
-    updatedAt: Timestamp;
+    createdAt: FakeTimestamp;
+    updatedAt: FakeTimestamp;
     ordinal: number;
     text: string;
     delaySeconds?: number;

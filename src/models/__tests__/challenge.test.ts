@@ -3,6 +3,7 @@ import { challengeFactory } from '../../factories/challenge';
 import { tacticsLogFactory } from '../../factories/logs';
 import { ImpulseLogValue } from '../../schema';
 import { LogValue } from '../../schema/logs';
+import { FakeTimestamp } from '../../utils/FakeTimestamp';
 import { Challenge } from '../challenge';
 
 describe('Challenge', () => {
@@ -10,20 +11,18 @@ describe('Challenge', () => {
     // Given a new log, update the dates of the challenge if applicable.
     const uid = 'abc123';
     const date = new Date('2023-03-26');
-    const challenge = new Challenge(
-      'id',
-      challengeFactory.build({
-        type: 'setbacks',
-        days: 4,
-        startDate: { toDate: () => date },
-        requiredLogType: 'impulse',
-        eligibleLogDatesById: {},
-        datesCumulativeProgress: {},
-        currentDayCount: 0,
-        isTemplate: false,
-        consecutive: true,
-      })
-    );
+    const challengeData = challengeFactory.build({
+      type: 'setbacks',
+      days: 4,
+      startDate: { toDate: () => date },
+      requiredLogType: 'impulse',
+      eligibleLogDatesById: {},
+      datesCumulativeProgress: {},
+      currentDayCount: 0,
+      isTemplate: false,
+      consecutive: true,
+    });
+    const challenge = new Challenge('id', challengeData, FakeTimestamp);
 
     describe('with an eligible log', () => {
       const log: ImpulseLogValue = impulseFactory.build({
@@ -61,26 +60,24 @@ describe('Challenge', () => {
   describe('recalculateProgress', () => {
     describe('with a set of dates', () => {
       const date = new Date('2023-03-25');
-      const challenge = new Challenge(
-        'id',
-        challengeFactory.build({
-          type: 'button',
-          startDate: { toDate: () => date },
-          icon: 'test',
-          days: 3,
-          requiredLogType: 'impulse',
-          dailyMinimum: 1,
-          eligibleLogDatesById: {
-            abc123: '2023-03-25',
-            def456: '2023-03-26',
-            ghi789: '2023-03-27',
-          },
-          datesCumulativeProgress: {},
-          currentDayCount: 0,
-          consecutive: true,
-          isTemplate: false,
-        })
-      );
+      const challengeData = challengeFactory.build({
+        type: 'button',
+        startDate: { toDate: () => date },
+        icon: 'test',
+        days: 3,
+        requiredLogType: 'impulse',
+        dailyMinimum: 1,
+        eligibleLogDatesById: {
+          abc123: '2023-03-25',
+          def456: '2023-03-26',
+          ghi789: '2023-03-27',
+        },
+        datesCumulativeProgress: {},
+        currentDayCount: 0,
+        consecutive: true,
+        isTemplate: false,
+      });
+      const challenge = new Challenge('id', challengeData, FakeTimestamp);
 
       it('writes the datesCumulativeProgress and currentDayCount properties', () => {
         const result = challenge.recalculateProgress();
@@ -109,7 +106,8 @@ describe('Challenge', () => {
         'abc',
         challengeFactory.build({
           type: 'button',
-        })
+        }),
+        FakeTimestamp
       );
       it('returns the right name', () => {
         expect(challenge.name).toEqual('Wear the impulse button for 5 days');
@@ -121,7 +119,8 @@ describe('Challenge', () => {
         'abc',
         challengeFactory.build({
           type: 'setbacks',
-        })
+        }),
+        FakeTimestamp
       );
       it('returns the right name', () => {
         expect(challenge.name).toEqual('Go without setbacks for 5 days');
@@ -136,7 +135,8 @@ describe('Challenge', () => {
         challengeFactory.build({
           type: 'button',
           days: 4,
-        })
+        }),
+        FakeTimestamp
       );
 
       expect(challenge.name).toEqual('Wear the impulse button for 4 days');
@@ -148,7 +148,8 @@ describe('Challenge', () => {
         challengeFactory.build({
           type: 'button',
           days: 1,
-        })
+        }),
+        FakeTimestamp
       );
 
       expect(challenge.name).toEqual('Wear the impulse button for 1 day');

@@ -1,7 +1,7 @@
-import { Timestamp } from '../utils/Timestamp';
+import { FakeTimestamp } from '../utils/FakeTimestamp';
 export interface GameplanValue {
     uid: string;
     name: string;
-    createdAt: Timestamp;
-    updatedAt: Timestamp;
+    createdAt: FakeTimestamp;
+    updatedAt: FakeTimestamp;
 }

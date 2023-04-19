@@ -1,8 +1,8 @@
-import { Timestamp } from '../utils/Timestamp';
+import { FakeTimestamp } from '../utils/FakeTimestamp';
 export interface TagValue {
     uid: string;
-    createdAt: Timestamp;
-    updatedAt: Timestamp;
+    createdAt: FakeTimestamp;
+    updatedAt: FakeTimestamp;
     defaultSelected?: boolean;
     ordinal: number;
     name: string;

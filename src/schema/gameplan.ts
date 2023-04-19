@@ -1,9 +1,9 @@
-import { Timestamp } from '../utils/Timestamp';
+import { FakeTimestamp } from '../utils/FakeTimestamp';
 
 // We serialize the entire tactic collection into the gameplan document for now
 export interface GameplanValue {
   uid: string;
   name: string;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
+  createdAt: FakeTimestamp;
+  updatedAt: FakeTimestamp;
 }

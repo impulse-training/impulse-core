@@ -1,5 +1,5 @@
 import * as Location from 'expo-location';
-import { Timestamp } from '../utils/Timestamp';
+import { FakeTimestamp } from '../utils/FakeTimestamp';
 import { PatternValue } from './pattern';
 import { TacticValue } from './tactic';
 import { TagValue } from './tag';
@@ -10,9 +10,9 @@ export type Outcome = 'success' | 'setback' | 'indeterminate';
 
 export interface BaseLogValue {
   uid: string;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
-  startTime: Timestamp;
+  createdAt: FakeTimestamp;
+  updatedAt: FakeTimestamp;
+  startTime: FakeTimestamp;
   timezone: string;
   tactics: Record<string, TacticValue>;
   tagsByTacticId: Record<string, Record<string, TagValue>>;
@@ -65,8 +65,8 @@ export type ImpulseLogValue = BaseLogValue & {
   patternIds: Array<string>;
   patternUsage: Record<string, PatternUsage>;
   debriefNotes?: string;
-  debriefReminderSentAt?: Timestamp | null;
-  debriefedAt?: Timestamp | null;
+  debriefReminderSentAt?: FakeTimestamp | null;
+  debriefedAt?: FakeTimestamp | null;
 };
 
 export interface PatternUsage {

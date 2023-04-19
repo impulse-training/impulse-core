@@ -1,8 +1,8 @@
-import { Timestamp } from '../utils/Timestamp';
+import { FakeTimestamp } from '../utils/FakeTimestamp';
 export interface LocationValue {
     uid: string;
-    createdAt: Timestamp;
-    updatedAt: Timestamp;
+    createdAt: FakeTimestamp;
+    updatedAt: FakeTimestamp;
     name: string;
     latitude: number;
     longitude: number;

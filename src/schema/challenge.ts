@@ -1,14 +1,14 @@
-import { Timestamp } from '../utils/Timestamp';
+import { FakeTimestamp } from '../utils/FakeTimestamp';
 import { ImpulseLogValue, LogValue } from './logs';
 
 export interface ChallengeValue {
   uid: string;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
-  startDate: Timestamp;
+  createdAt: FakeTimestamp;
+  updatedAt: FakeTimestamp;
+  startDate: FakeTimestamp;
   ordinal: number;
   icon: string;
-  completedAt?: Timestamp;
+  completedAt?: FakeTimestamp;
   isTemplate: boolean;
 
   // The minimum and maximum number of log records for a day. Usually, we'll only set one of these.

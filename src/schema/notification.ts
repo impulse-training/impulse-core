@@ -1,10 +1,10 @@
 import { ExpoPushMessage } from 'expo-server-sdk';
-import { Timestamp } from '../utils/Timestamp';
+import { FakeTimestamp } from '../utils/FakeTimestamp';
 
 export interface NotificationValue {
   uid: string;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
+  createdAt: FakeTimestamp;
+  updatedAt: FakeTimestamp;
   key: string;
   args: Partial<ExpoPushMessage>;
 }

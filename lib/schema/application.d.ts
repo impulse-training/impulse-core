@@ -1,7 +1,7 @@
-import { Timestamp } from '../utils/Timestamp';
+import { FakeTimestamp } from '../utils/FakeTimestamp';
 export interface ApplicationValue {
-    createdAt: Timestamp;
-    updatedAt: Timestamp;
+    createdAt: FakeTimestamp;
+    updatedAt: FakeTimestamp;
     dateOfBirth: string;
     state: 'pending' | 'approved' | 'shipped' | 'signedUp';
     email: string;
@@ -11,5 +11,5 @@ export interface ApplicationValue {
     name: string;
     phone: string;
     trackingUrl?: string;
-    estimatedDeliveryDate?: Timestamp;
+    estimatedDeliveryDate?: FakeTimestamp;
 }

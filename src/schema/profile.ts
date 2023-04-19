@@ -1,10 +1,10 @@
 import { AppStateStatus, Permission } from 'react-native';
-import { Timestamp } from '../utils/Timestamp';
+import { FakeTimestamp } from '../utils/FakeTimestamp';
 
 export interface ProfileValue {
   uid: string;
-  createdAt: Timestamp;
-  updatedAt: Timestamp;
+  createdAt: FakeTimestamp;
+  updatedAt: FakeTimestamp;
   buttonId?: string;
   isAdmin?: boolean;
   isSuperAdmin?: boolean;
@@ -12,7 +12,7 @@ export interface ProfileValue {
   email: string;
   currentAppState?: AppStateStatus;
   showStorybook?: boolean;
-  lastActiveAt?: Timestamp;
+  lastActiveAt?: FakeTimestamp;
   expoPushToken?: string;
   releaseChannel?: 'default' | 'canary';
   isCurrentlyTrackingMotion?: boolean;

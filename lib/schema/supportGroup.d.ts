@@ -1,7 +1,7 @@
-import { Timestamp } from '../utils/Timestamp';
+import { FakeTimestamp } from '../utils/FakeTimestamp';
 export interface SupportGroupValue {
-    createdAt: Timestamp;
-    updatedAt: Timestamp;
+    createdAt: FakeTimestamp;
+    updatedAt: FakeTimestamp;
     templateId?: string;
     everythingPermissions?: boolean;
     participantUids: Array<string>;
