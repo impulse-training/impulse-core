@@ -4,7 +4,7 @@ import { TacticValue } from '../schema';
 export const tacticFactory = Factory.makeFactory<TacticValue>({
   uid: Factory.each(i => i.toString()),
   type: 'task',
-  text: 'Go outside',
+  title: 'Go outside',
   ordinal: Factory.each(i => i),
   isSharingEnabled: false,
   subtitle: 'Go for a walk',

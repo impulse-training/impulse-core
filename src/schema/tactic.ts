@@ -28,15 +28,13 @@ interface TacticValueBase<K> {
   createdAt: FakeTimestamp;
   updatedAt: FakeTimestamp;
   ordinal: number;
-  text: string;
   delaySeconds?: number;
-  title?: string;
+  title: string;
   subtitle?: string;
   image?: { uri: string };
   language?: string;
   href?: string;
   isSharingEnabled: boolean;
-  showTitleField?: boolean;
   isTemplate?: boolean;
   isBooster?: boolean;
   tagsSummary?: Record<string, string>;
@@ -72,7 +70,7 @@ export type TimerTactic = TacticValueBase<'timer'> & {
   };
 };
 
-export type SpotifyEpisodeTactic = TacticValueBase<'spotifyEpisode'> & {
+export type SpotifyEpisodeTactic = TacticValueBase<'link'> & {
   metadata: {
     episodeId: string;
     durationMs: number;
@@ -80,7 +78,7 @@ export type SpotifyEpisodeTactic = TacticValueBase<'spotifyEpisode'> & {
   };
 };
 
-export type SpotifyTrackTactic = TacticValueBase<'spotifyTrack'> & {
+export type SpotifyTrackTactic = TacticValueBase<'link'> & {
   metadata: {
     episodeId: string;
     durationMs: number;
@@ -90,8 +88,7 @@ export type SpotifyTrackTactic = TacticValueBase<'spotifyTrack'> & {
 export type FeelingsTactic = TacticValueBase<'feelings'> & {
   tags: Array<WithId<TagValue>>;
 };
-type YouTubeTactic = TacticValueBase<'youtube'>;
-type WebsiteTactic = TacticValueBase<'website'>;
+type LinkTactic = TacticValueBase<'link'>;
 type QuestionTactic = TacticValueBase<'question'>;
 type TaskTactic = TacticValueBase<'task'>;
 
@@ -99,8 +96,7 @@ export type TacticValue =
   | AudioTactic
   | SpotifyEpisodeTactic
   | SpotifyTrackTactic
-  | YouTubeTactic
-  | WebsiteTactic
+  | LinkTactic
   | QuestionTactic
   | FeelingsTactic
   | TaskTactic;
