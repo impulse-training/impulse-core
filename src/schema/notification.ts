@@ -1,4 +1,8 @@
-import { ExpoPushMessage } from 'expo-server-sdk';
+import {
+  ExpoPushMessage,
+  ExpoPushReceipt,
+  ExpoPushTicket,
+} from 'expo-server-sdk';
 import { FakeTimestamp } from '../utils/FakeTimestamp';
 
 export interface NotificationValue {
@@ -6,5 +10,7 @@ export interface NotificationValue {
   createdAt: FakeTimestamp;
   updatedAt: FakeTimestamp;
   key: string;
+  ticket: ExpoPushTicket;
+  receipt: ExpoPushReceipt;
   args: Partial<ExpoPushMessage>;
 }
