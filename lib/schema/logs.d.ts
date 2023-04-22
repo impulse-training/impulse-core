@@ -21,29 +21,35 @@ export interface BaseLogValue {
     tagValues: Record<string, number>;
 }
 export type TacticsLogValue = BaseLogValue & {
+    isDisplayable: true;
     type: 'tactics';
 };
 export type LocationLogValue = BaseLogValue & {
     type: 'location';
     locationId: string;
+    isDisplayable: true;
     locationName: string;
     locationMode: 'enter' | 'exit';
 };
 export type TimeLogValue = BaseLogValue & {
     type: 'time';
+    isDisplayable: true;
     reminderId: string;
 };
 export type MotionLogValue = BaseLogValue & {
     type: 'motion';
+    isDisplayable: false;
 };
 export type ButtonLogValue = BaseLogValue & {
     type: 'button';
+    isDisplayable: false;
     characteristics: Record<string, unknown>;
 };
 export type ImpulseLogValue = BaseLogValue & {
     type: 'impulse';
     pressCount?: number;
     outcome: Outcome;
+    isDisplayable: true;
     buttonPressSecondsSinceEpoch?: number;
     patterns: Record<string, PatternValue>;
     patternIds: Array<string>;
