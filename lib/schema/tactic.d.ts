@@ -1,5 +1,6 @@
 import { WithId } from '../types/types';
 import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { Recording } from './recording';
 import { TagValue } from './tag';
 export type CheckInTagEntry = {
     from: {
@@ -48,10 +49,7 @@ interface TacticValueBase<K> {
     remindersSummary?: Array<string>;
 }
 export type AudioTactic = TacticValueBase<'audio'> & {
-    metadata: {
-        localFilePath: string;
-        remoteFilePath: string;
-    };
+    metadata: Recording;
 };
 export type TimerTactic = TacticValueBase<'timer'> & {
     metadata: {

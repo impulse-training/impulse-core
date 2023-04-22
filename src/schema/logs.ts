@@ -1,6 +1,7 @@
 import * as Location from 'expo-location';
 import { FakeTimestamp } from '../utils/FakeTimestamp';
 import { PatternValue } from './pattern';
+import { Recording } from './recording';
 import { TacticValue } from './tactic';
 import { TagValue } from './tag';
 
@@ -21,6 +22,7 @@ export interface BaseLogValue {
   locationFormatted?: string;
   tacticIds: Array<string>;
   tacticResponses: Record<string, string>;
+  tacticRecordings?: Record<string, Recording>;
   tagIds: Array<string>;
   tagValues: Record<string, number>;
 }
