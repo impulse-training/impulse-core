@@ -39,6 +39,7 @@ interface TacticValueBase<K> {
     isTemplate?: boolean;
     isBooster?: boolean;
     tagsSummary?: Record<string, string>;
+    featuredCategory?: string;
     showResponseBox?: boolean;
     deviceTimeRemindersDigest?: string;
     deviceLocationRemindersDigest?: string;
