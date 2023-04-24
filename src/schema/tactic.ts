@@ -56,7 +56,7 @@ interface TacticValueBase<K> {
   checkInEntries?: CheckInTagEntry[];
 
   // Reminders
-  remindersSummary?: Array<string>;
+  remindersSummary?: Record<string, string>;
 }
 
 export type AudioTactic = TacticValueBase<'audio'> & {

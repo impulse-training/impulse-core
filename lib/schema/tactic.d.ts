@@ -47,7 +47,7 @@ interface TacticValueBase<K> {
     patternIds: Array<string>;
     allPatterns?: boolean;
     checkInEntries?: CheckInTagEntry[];
-    remindersSummary?: Array<string>;
+    remindersSummary?: Record<string, string>;
 }
 export type AudioTactic = TacticValueBase<'audio'> & {
     metadata: Recording;
