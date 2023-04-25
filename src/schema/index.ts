@@ -2,6 +2,7 @@ export const DATE_FORMAT = 'yyyy-MM-dd';
 
 export { ApplicationValue } from './application';
 export { ButtonValue } from './button';
+export { CategoryValue } from './category';
 export { ChallengeValue } from './challenge';
 export { CommentValue } from './comment';
 export { ContactValue } from './contact';
