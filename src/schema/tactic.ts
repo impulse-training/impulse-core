@@ -53,6 +53,9 @@ interface TacticValueBase<K> {
 
   patternIds: Array<string>;
   allPatterns?: boolean;
+  afterImpulse?: boolean;
+  afterSetback?: boolean;
+  afterSuccess?: boolean;
   checkInEntries?: CheckInTagEntry[];
 
   // Reminders
