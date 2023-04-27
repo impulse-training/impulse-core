@@ -29,7 +29,6 @@ interface TacticValueBase<K> {
   createdAt: FakeTimestamp;
   updatedAt: FakeTimestamp;
   ordinal: number;
-  delaySeconds?: number;
   title: string;
   subtitle?: string;
   image?: { uri: string };
@@ -61,6 +60,11 @@ interface TacticValueBase<K> {
   // Reminders
   remindersSummary?: Record<string, string>;
 }
+
+export type PhoneTacticValue = TacticValueBase<'phone'> & {
+  supportGroupId: string;
+  trigger: 'automatic' | 'manual';
+};
 
 export type AudioTactic = TacticValueBase<'audio'> & {
   metadata: Recording;
@@ -95,6 +99,7 @@ type QuestionTactic = TacticValueBase<'question'>;
 type TaskTactic = TacticValueBase<'task'>;
 
 export type TacticValue =
+  | PhoneTacticValue
   | AudioTactic
   | SpotifyEpisodeTactic
   | SpotifyTrackTactic

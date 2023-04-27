@@ -28,6 +28,7 @@ export interface ProfileValue {
   nickName?: string;
   region?: string | null;
   timezone?: string;
+  phoneNumber?: string;
 
   // We track a few flags that relate to the state of the profile and onboarding
   isReadyForTour?: boolean;

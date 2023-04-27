@@ -22,6 +22,7 @@ export interface ProfileValue {
     nickName?: string;
     region?: string | null;
     timezone?: string;
+    phoneNumber?: string;
     isReadyForTour?: boolean;
     isTourCompleted?: boolean;
     isButtonSetupSkipped?: boolean;

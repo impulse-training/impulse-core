@@ -1,4 +1,3 @@
-import { compact, pickBy, reduce, values } from 'lodash';
 import { ImpulseLogValue, LogValue } from '../schema';
 
 export class Log {
@@ -23,26 +22,26 @@ export class Log {
     return data.patternIds.map(id => data.patterns[id]);
   }
 
-  get getTacticSummary() {
-    return reduce(
-      this.data.tacticIds,
-      (memo, id) => {
-        const tags = pickBy(this.data.tagsByTacticId[id], (_tag, id) =>
-          this.data.tagIds.includes(id)
-        );
-        const tagsSummary = values(tags)
-          .map(tag => tag.emoji)
-          .join(' ');
-        const text = compact([this.data.tactics[id].title, tagsSummary]).join(
-          ' | '
-        );
+  // get getTacticSummary() {
+  //   return reduce(
+  //     this.data.tacticIds,
+  //     (memo, id) => {
+  //       const tags = pickBy(this.data.tagsByTacticId[id], (_tag, id) =>
+  //         this.data.tagIds.includes(id)
+  //       );
+  //       const tagsSummary = values(tags)
+  //         .map(tag => tag.emoji)
+  //         .join(' ');
+  //       const text = compact([this.data.tactics[id].title, tagsSummary]).join(
+  //         ' | '
+  //       );
 
-        memo[id] = { text, applied: true };
-        return memo;
-      },
-      {} as Record<string, { text: string; applied: boolean }>
-    );
-  }
+  //       memo[id] = { text, applied: true };
+  //       return memo;
+  //     },
+  //     {} as Record<string, { text: string; applied: boolean }>
+  //   );
+  // }
 }
 
 export function tagSymbol(tag: { emoji?: string; name: string }) {

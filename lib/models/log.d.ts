@@ -5,10 +5,6 @@ export declare class Log {
     constructor(id: string, data: LogValue);
     get text(): string;
     get selectedPatterns(): import("../schema").PatternValue[];
-    get getTacticSummary(): Record<string, {
-        text: string;
-        applied: boolean;
-    }>;
 }
 export declare function tagSymbol(tag: {
     emoji?: string;
