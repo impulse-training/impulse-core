@@ -6,10 +6,15 @@ export interface ApplicationValue {
     state: 'pending' | 'approved' | 'shipped' | 'signedUp';
     email: string;
     duration: string;
-    location: string;
     message: string;
     name: string;
     phone: string;
     trackingUrl?: string;
     estimatedDeliveryDate?: FakeTimestamp;
+    addressLine1: string;
+    addressLine2?: string;
+    city: string;
+    zipCode: string;
+    country: string;
+    shippingLabelUrl?: string;
 }
