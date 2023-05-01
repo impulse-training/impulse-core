@@ -21,6 +21,7 @@ export interface BaseLogValue {
     tacticRecordings?: Record<string, Recording>;
     tagIds: Array<string>;
     tagValues: Record<string, number>;
+    isShared: boolean;
 }
 export type TacticsLogValue = BaseLogValue & {
     isDisplayable: true;

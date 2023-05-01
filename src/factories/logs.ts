@@ -1,12 +1,15 @@
 import * as Factory from 'factory.ts';
-import { ImpulseLogValue, TacticsLogValue } from '../schema/logs';
+import { ImpulseLogValue, TacticsLogValue, TimeLogValue } from '../schema/logs';
+
+const fakeTimestamp = { toDate: () => new Date() } as any;
 
 export const impulseFactory = Factory.makeFactory<ImpulseLogValue>({
   uid: Factory.each(i => i.toString()),
+  isShared: false,
   type: 'impulse',
-  createdAt: { toDate: () => new Date() } as any,
-  updatedAt: { toDate: () => new Date() } as any,
-  startTime: { toDate: () => new Date() } as any,
+  createdAt: fakeTimestamp,
+  updatedAt: fakeTimestamp,
+  startTime: fakeTimestamp,
   timezone: 'America/Botota',
   outcome: 'indeterminate',
   isDisplayable: true,
@@ -27,9 +30,10 @@ export const impulseFactory = Factory.makeFactory<ImpulseLogValue>({
 export const tacticsLogFactory = Factory.makeFactory<TacticsLogValue>({
   uid: Factory.each(i => i.toString()),
   type: 'tactics',
-  createdAt: { toDate: () => new Date() } as any,
-  updatedAt: { toDate: () => new Date() } as any,
-  startTime: { toDate: () => new Date() } as any,
+  isShared: false,
+  createdAt: fakeTimestamp,
+  updatedAt: fakeTimestamp,
+  startTime: fakeTimestamp,
   isDisplayable: true,
   timezone: 'America/Botota',
   tactics: {},
@@ -39,5 +43,25 @@ export const tacticsLogFactory = Factory.makeFactory<TacticsLogValue>({
   tacticIds: [],
   tacticResponses: {},
   tagIds: [],
+  tagValues: {},
+});
+
+export const timeLogFactory = Factory.makeFactory<TimeLogValue>({
+  uid: Factory.each(i => i.toString()),
+  type: 'time',
+  isShared: false,
+  reminderId: 'reminder1',
+  createdAt: fakeTimestamp,
+  updatedAt: fakeTimestamp,
+  startTime: fakeTimestamp,
+  timezone: 'America/Botota',
+  tagIds: [],
+  isDisplayable: true,
+  tactics: {},
+  tagsByTacticId: {},
+  location: {},
+  locationIsFetching: false,
+  tacticIds: [],
+  tacticResponses: {},
   tagValues: {},
 });
