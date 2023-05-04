@@ -47,6 +47,7 @@ export type MotionLogValue = BaseLogValue & {
 export type ButtonLogValue = BaseLogValue & {
     type: 'button';
     isDisplayable: false;
+    isDeviceConnected: boolean;
     characteristics: Record<string, unknown>;
 };
 export type ImpulseLogValue = BaseLogValue & {
