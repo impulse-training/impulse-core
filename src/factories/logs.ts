@@ -1,5 +1,10 @@
 import * as Factory from 'factory.ts';
-import { ImpulseLogValue, TacticsLogValue, TimeLogValue } from '../schema/logs';
+import {
+  ImpulseLogValue,
+  MotionLogValue,
+  TacticsLogValue,
+  TimeLogValue,
+} from '../schema/logs';
 
 const fakeTimestamp = { toDate: () => new Date() } as any;
 
@@ -57,6 +62,25 @@ export const timeLogFactory = Factory.makeFactory<TimeLogValue>({
   timezone: 'America/Botota',
   tagIds: [],
   isDisplayable: true,
+  tactics: {},
+  tagsByTacticId: {},
+  location: {},
+  locationIsFetching: false,
+  tacticIds: [],
+  tacticResponses: {},
+  tagValues: {},
+});
+
+export const motionLogFactory = Factory.makeFactory<MotionLogValue>({
+  uid: Factory.each(i => i.toString()),
+  type: 'motion',
+  isShared: false,
+  createdAt: fakeTimestamp,
+  updatedAt: fakeTimestamp,
+  startTime: fakeTimestamp,
+  timezone: 'America/Botota',
+  tagIds: [],
+  isDisplayable: false,
   tactics: {},
   tagsByTacticId: {},
   location: {},
