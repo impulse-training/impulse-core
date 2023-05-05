@@ -1,5 +1,6 @@
 import { AppStateStatus, Permission } from 'react-native';
 import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { NOTIFICATION_TYPES } from './notification';
 
 export interface ProfileValue {
   uid: string;
@@ -15,6 +16,9 @@ export interface ProfileValue {
   lastActiveAt?: FakeTimestamp;
   expoPushToken?: string;
   releaseChannel?: 'default' | 'canary';
+  notificationPreferences: Partial<
+    Record<keyof typeof NOTIFICATION_TYPES, boolean>
+  >;
   isCurrentlyTrackingMotion?: boolean;
 
   androidPermissions?: Record<Permission, boolean>;

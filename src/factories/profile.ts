@@ -12,6 +12,7 @@ export const profileFactory = Factory.makeFactory<ProfileValue>({
   region: 'US',
   timezone: 'America/Bogota',
   invitationCode: 'abc123',
+  notificationPreferences: {},
 });
 
 export const adminProfileFactory = profileFactory.extend({
