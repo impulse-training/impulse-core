@@ -20,6 +20,7 @@ export interface ProfileValue {
     Record<keyof typeof NOTIFICATION_TYPES, boolean>
   >;
   isCurrentlyTrackingMotion?: boolean;
+  showTacticsFromSupportGroups?: boolean;
 
   androidPermissions?: Record<Permission, boolean>;
 

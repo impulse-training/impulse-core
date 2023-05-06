@@ -17,6 +17,7 @@ export interface ProfileValue {
     releaseChannel?: 'default' | 'canary';
     notificationPreferences: Partial<Record<keyof typeof NOTIFICATION_TYPES, boolean>>;
     isCurrentlyTrackingMotion?: boolean;
+    showTacticsFromSupportGroups?: boolean;
     androidPermissions?: Record<Permission, boolean>;
     displayName?: string;
     firstName?: string;
