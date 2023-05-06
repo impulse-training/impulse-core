@@ -6,7 +6,6 @@ export const tacticFactory = Factory.makeFactory<TacticValue>({
   type: 'task',
   title: 'Go outside',
   ordinal: Factory.each(i => i),
-  isSharingEnabled: false,
   subtitle: 'Go for a walk',
   language: 'english',
   createdAt: { toDate: () => new Date() } as any,

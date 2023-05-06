@@ -34,7 +34,7 @@ interface TacticValueBase<K> {
     };
     language?: string;
     href?: string;
-    isSharingEnabled: boolean;
+    supportGroupIds?: Array<string>;
     isTemplate?: boolean;
     isBooster?: boolean;
     tagsSummary?: Record<string, string>;
