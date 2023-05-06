@@ -5,6 +5,7 @@ export const supportGroupFactory = Factory.makeFactory<SupportGroupValue>({
   groupName: 'Cold Turkey Warriors',
   participantUids: [],
   thumbnailUrl: '',
+  hasTactics: true,
   permissions: {},
   unreadCounts: {},
   createdAt: { toDate: () => new Date() } as any,
