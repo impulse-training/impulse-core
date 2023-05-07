@@ -9,6 +9,7 @@ export interface PatternValue {
     customUnit?: string;
     setbackDefinition?: string;
     setbackUnitMaximum?: number;
+    supportGroupIds?: Array<string>;
     notification?: {
         title: string;
         body: string;
