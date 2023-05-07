@@ -11,6 +11,7 @@ export const tacticFactory = Factory.makeFactory<TacticValue>({
   createdAt: { toDate: () => new Date() } as any,
   updatedAt: { toDate: () => new Date() } as any,
   patternIds: [],
+  patternAndSupportGroupIds: [],
 });
 
 export const scheduledTacticFactory = tacticFactory.extend({});
