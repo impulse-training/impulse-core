@@ -1,6 +1,8 @@
-import { impulseFactory } from '../../factories';
-import { challengeFactory } from '../../factories/challenge';
-import { tacticsLogFactory } from '../../factories/logs';
+import {
+  challengeFactory,
+  impulseFactory,
+  tacticsLogFactory,
+} from '../../factories';
 import { ImpulseLogValue } from '../../schema';
 import { LogValue } from '../../schema/logs';
 import { FakeTimestamp } from '../../utils/FakeTimestamp';
@@ -82,6 +84,7 @@ describe('Challenge', () => {
       it('writes the datesCumulativeProgress and currentDayCount properties', () => {
         const result = challenge.recalculateProgress();
         expect(result).toEqual({
+          completedAt: expect.anything(),
           countsByDate: {
             '2023-03-24': 0,
             '2023-03-25': 1,

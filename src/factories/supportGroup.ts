@@ -1,16 +1,18 @@
 import * as Factory from 'factory.ts';
 import { SupportGroupValue } from '../schema';
+import { FakeTimestamp } from '../utils/FakeTimestamp';
 
-export const supportGroupFactory = Factory.makeFactory<SupportGroupValue>({
-  groupName: 'Cold Turkey Warriors',
-  participantUids: [],
-  thumbnailUrl: '',
-  hasTactics: true,
-  permissions: {},
-  unreadCounts: {},
-  createdAt: { toDate: () => new Date() } as any,
-  updatedAt: { toDate: () => new Date() } as any,
-  creatorName: 'Mooky',
-  creatorUid: 'abc123',
-  icon: 'group',
-});
+export const makeSupportGroupFactory = (TimestampKlass: typeof FakeTimestamp) =>
+  Factory.makeFactory<SupportGroupValue>({
+    groupName: 'Cold Turkey Warriors',
+    participantUids: [],
+    thumbnailUrl: '',
+    hasTactics: true,
+    permissions: {},
+    unreadCounts: {},
+    createdAt: TimestampKlass.now(),
+    updatedAt: TimestampKlass.now(),
+    creatorName: 'Mooky',
+    creatorUid: 'abc123',
+    icon: 'group',
+  });

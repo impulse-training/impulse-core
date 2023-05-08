@@ -1,3 +1,4 @@
 import * as Factory from 'factory.ts';
 import { ChallengeValue } from '../schema';
-export declare const challengeFactory: Factory.Sync.Factory<ChallengeValue, keyof ChallengeValue>;
+import { FakeTimestamp } from '../utils/FakeTimestamp';
+export declare const makeChallengeFactory: (TimestampKlass: typeof FakeTimestamp) => Factory.Sync.Factory<ChallengeValue, keyof ChallengeValue>;

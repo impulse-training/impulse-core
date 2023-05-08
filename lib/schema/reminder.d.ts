@@ -1,5 +1,5 @@
 import { FakeTimestamp } from '../utils/FakeTimestamp';
-interface ReminderValueBase {
+export interface ReminderValueBase {
     uid: string;
     createdAt: FakeTimestamp;
     updatedAt: FakeTimestamp;
@@ -19,4 +19,3 @@ export type LocationReminderValue = ReminderValueBase & {
     mode: 'enter' | 'exit';
 };
 export type ReminderValue = TimeReminderValue | LocationReminderValue;
-export {};

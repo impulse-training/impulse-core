@@ -21,6 +21,7 @@ export interface ProfileValue {
   >;
   isCurrentlyTrackingMotion?: boolean;
   showTacticsFromSupportGroups?: boolean;
+  excludedTacticIds?: Array<string>;
 
   androidPermissions?: Record<Permission, boolean>;
 

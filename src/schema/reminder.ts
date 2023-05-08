@@ -1,6 +1,6 @@
 import { FakeTimestamp } from '../utils/FakeTimestamp';
 
-interface ReminderValueBase {
+export interface ReminderValueBase {
   uid: string;
   createdAt: FakeTimestamp;
   updatedAt: FakeTimestamp;

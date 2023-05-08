@@ -1,12 +1,14 @@
 import * as Factory from 'factory.ts';
 import { PatternValue } from '../schema';
+import { FakeTimestamp } from '../utils/FakeTimestamp';
 
-export const patternFactory = Factory.makeFactory<PatternValue>({
-  uid: Factory.each(i => i.toString()),
-  name: 'Cigarettes',
-  ordinal: Factory.each(i => i),
-  unit: 'custom',
-  customUnit: 'cigarettes',
-  createdAt: { toDate: () => new Date() } as any,
-  updatedAt: { toDate: () => new Date() } as any,
-});
+export const makePatternFactory = (TimestampKlass: typeof FakeTimestamp) =>
+  Factory.makeFactory<PatternValue>({
+    uid: Factory.each(i => i.toString()),
+    name: 'Cigarettes',
+    ordinal: Factory.each(i => i),
+    unit: 'custom',
+    customUnit: 'cigarettes',
+    createdAt: TimestampKlass.now(),
+    updatedAt: TimestampKlass.now(),
+  });
