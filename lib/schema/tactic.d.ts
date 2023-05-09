@@ -31,6 +31,7 @@ interface TacticValueBase<K> {
     subtitle?: string;
     image?: {
         uri: string;
+        storagePath: string;
     };
     language?: string;
     href?: string;

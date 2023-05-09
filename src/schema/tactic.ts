@@ -31,7 +31,7 @@ interface TacticValueBase<K> {
   ordinal: number;
   title: string;
   subtitle?: string;
-  image?: { uri: string };
+  image?: { uri: string; storagePath: string };
   language?: string;
   href?: string;
   supportGroupIds?: Array<string>;
