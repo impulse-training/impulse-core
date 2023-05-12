@@ -10,7 +10,6 @@ import { FakeTimestamp } from '../utils/FakeTimestamp';
 export const makeImpulseFactory = (TimestampKlass: typeof FakeTimestamp) =>
   Factory.makeFactory<ImpulseLogValue>({
     uid: Factory.each(i => i.toString()),
-    isShared: false,
     type: 'impulse',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
@@ -36,7 +35,6 @@ export const makeTacticsLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
   Factory.makeFactory<TacticsLogValue>({
     uid: Factory.each(i => i.toString()),
     type: 'tactics',
-    isShared: false,
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     startTime: TimestampKlass.now(),
@@ -56,7 +54,6 @@ export const makeTimeLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
   Factory.makeFactory<TimeLogValue>({
     uid: Factory.each(i => i.toString()),
     type: 'time',
-    isShared: false,
     reminderId: 'reminder1',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
@@ -77,7 +74,6 @@ export const makeMotionLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
   Factory.makeFactory<MotionLogValue>({
     uid: Factory.each(i => i.toString()),
     type: 'motion',
-    isShared: false,
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     startTime: TimestampKlass.now(),

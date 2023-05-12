@@ -22,7 +22,7 @@ export interface BaseLogValue {
     tacticRecordings?: Record<string, Recording>;
     tagIds: Array<string>;
     tagValues: Record<string, number>;
-    isShared: boolean;
+    sharedWithSupportGroupIds?: Array<string>;
 }
 export type TacticsLogValue = BaseLogValue & {
     isDisplayable: true;

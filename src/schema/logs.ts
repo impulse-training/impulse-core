@@ -26,7 +26,7 @@ export interface BaseLogValue {
   tacticRecordings?: Record<string, Recording>;
   tagIds: Array<string>;
   tagValues: Record<string, number>;
-  isShared: boolean;
+  sharedWithSupportGroupIds?: Array<string>;
 }
 
 // Tactics logs are recorded when the user tracks tactics, standalone
