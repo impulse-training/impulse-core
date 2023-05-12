@@ -18,6 +18,7 @@ export interface SupportGroupValue {
   invitationCode?: string;
   invitationUrl?: string;
   lastMessageUid?: string;
+  isSharingDisabled?: boolean;
   isTemplate?: boolean;
   unreadCounts: { [uid: string]: number };
   permissions: SupportGroupPermissions;
