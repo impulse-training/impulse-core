@@ -52,7 +52,6 @@ interface TacticValueBase<K> {
 
   patternIds: Array<string>;
 
-  patternAndSupportGroupIds: Array<string>;
   allPatterns?: boolean;
   afterImpulse?: boolean;
   afterSetback?: boolean;

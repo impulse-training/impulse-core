@@ -1,3 +1,3 @@
-export declare type WithId<T> = T & {
+export type WithId<T> = T & {
   id: string;
 };
