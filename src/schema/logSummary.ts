@@ -15,6 +15,7 @@ export interface LogSummaryValue {
   locationFormatted?: string;
   outcome?: Outcome;
   debriefNotes: string;
+  sharedWithSupportGroupIds?: Array<string>;
   tacticsSummary: Record<string, { text: string; applied: boolean }>;
   patternsSummary: Record<
     string,

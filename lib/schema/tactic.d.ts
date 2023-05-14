@@ -22,7 +22,8 @@ export interface ImageValue {
 }
 interface TacticValueBase<K> {
     type?: K;
-    uid: string;
+    uid?: string;
+    suggestedByUid?: string;
     originalId?: string;
     createdAt: FakeTimestamp;
     updatedAt: FakeTimestamp;

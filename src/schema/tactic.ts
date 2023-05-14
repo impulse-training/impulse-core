@@ -24,7 +24,8 @@ export interface ImageValue {
 
 interface TacticValueBase<K> {
   type?: K;
-  uid: string;
+  uid?: string;
+  suggestedByUid?: string;
   originalId?: string;
   createdAt: FakeTimestamp;
   updatedAt: FakeTimestamp;
@@ -58,8 +59,12 @@ interface TacticValueBase<K> {
   afterSuccess?: boolean;
   checkInEntries?: CheckInTagEntry[];
 
-  // Reminders
+  // Reminders - deprecated
   remindersSummary?: Record<string, string>;
+
+  // Transitioning to
+  // timeReminders: Array<TimeReminder>;
+  // locationReminders: Array<TimeReminder>;
 }
 
 export type PhoneTacticValue = TacticValueBase<'phone'> & {
