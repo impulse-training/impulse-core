@@ -5,4 +5,5 @@ export interface MessageValue {
   updatedAt: FakeTimestamp;
   fromUid: string;
   text: string;
+  href?: string;
 }
