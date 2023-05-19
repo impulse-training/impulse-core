@@ -15,4 +15,5 @@ export interface PatternValue {
     title: string;
     body: string;
   };
+  impulseTacticIds?: Array<string>;
 }
