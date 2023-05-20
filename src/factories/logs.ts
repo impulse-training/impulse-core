@@ -18,6 +18,7 @@ export const makeImpulseFactory = (TimestampKlass: typeof FakeTimestamp) =>
     outcome: 'indeterminate',
     isDisplayable: true,
     debriefNotes: '',
+    patternId: 'abc123',
     patternIds: [],
     tactics: {},
     location: {},

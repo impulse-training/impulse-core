@@ -57,6 +57,7 @@ export type ImpulseLogValue = BaseLogValue & {
     isDisplayable: true;
     buttonPressSecondsSinceEpoch?: number;
     patterns: Record<string, PatternValue>;
+    patternId: string;
     patternIds: Array<string>;
     patternUsage: Record<string, PatternUsage>;
     debriefNotes?: string;
