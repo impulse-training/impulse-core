@@ -1,4 +1,5 @@
 import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { TacticValue } from './tactic';
 export interface PatternValue {
     uid: string;
     createdAt: FakeTimestamp;
@@ -14,5 +15,6 @@ export interface PatternValue {
         title: string;
         body: string;
     };
+    allTacticById: Record<string, TacticValue>;
     impulseTacticIds?: Array<string>;
 }
