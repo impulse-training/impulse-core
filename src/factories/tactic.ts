@@ -13,4 +13,6 @@ export const makeTacticFactory = (TimestampKlass: typeof FakeTimestamp) =>
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     patternIds: [],
+    timeReminders: [],
+    locationReminders: [],
   });

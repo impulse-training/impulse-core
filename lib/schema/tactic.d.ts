@@ -1,3 +1,4 @@
+import { LocationReminder, TimeReminder } from '../models';
 import { WithId } from '../types/types';
 import { FakeTimestamp } from '../utils/FakeTimestamp';
 import { Recording } from './recording';
@@ -51,7 +52,8 @@ interface TacticValueBase<K> {
     afterSetback?: boolean;
     afterSuccess?: boolean;
     checkInEntries?: CheckInTagEntry[];
-    remindersSummary?: Record<string, string>;
+    timeReminders: Array<TimeReminder>;
+    locationReminders: Array<LocationReminder>;
 }
 export type PhoneTacticValue = TacticValueBase<'phone'> & {
     supportGroupId: string;
