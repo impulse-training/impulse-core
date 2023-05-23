@@ -78,11 +78,12 @@ export class LocationReminder extends Reminder {
   }
 
   get summary() {
+    if (!this.location?.name) return '';
     return (
       'When I ' +
-      (this.data.mode === 'enter' ? 'arrive at' : 'leave') +
-      ' ' +
-      this.location.name
+        (this.data.mode === 'enter' ? 'arrive at' : 'leave') +
+        ' ' +
+        this.location.name || '...'
     );
   }
 }
