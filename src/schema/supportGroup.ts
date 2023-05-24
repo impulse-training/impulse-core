@@ -22,6 +22,10 @@ export interface SupportGroupValue {
   isTemplate?: boolean;
   unreadCounts: { [uid: string]: number };
   permissions: SupportGroupPermissions;
+
+  impulseTacticIds?: Record<string, Array<string>>;
+  successTacticIds?: Record<string, Array<string>>;
+  setbackTacticIds?: Record<string, Array<string>>;
 }
 
 export type PermissionKey = keyof typeof CONVERSATION_PERMISSIONS;
