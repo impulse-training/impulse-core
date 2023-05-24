@@ -12,4 +12,6 @@ export const makePatternFactory = (TimestampKlass: typeof FakeTimestamp) =>
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     impulseTacticIds: [],
+    setbackTacticIds: [],
+    successTacticIds: [],
   });

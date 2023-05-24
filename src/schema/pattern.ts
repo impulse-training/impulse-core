@@ -16,4 +16,6 @@ export interface PatternValue {
     body: string;
   };
   impulseTacticIds: Array<string>;
+  setbackTacticIds: Array<string>;
+  successTacticIds: Array<string>;
 }
