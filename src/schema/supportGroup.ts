@@ -13,7 +13,6 @@ export interface SupportGroupValue {
   creatorUid: string;
   icon: 'bugs' | 'team' | 'group' | 'tactics';
   thumbnailUrl: string;
-  hasTactics: boolean;
   lastMessagePreview?: string;
   invitationCode?: string;
   invitationUrl?: string;

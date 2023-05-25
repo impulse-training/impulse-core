@@ -12,5 +12,4 @@ export const makeTacticFactory = (TimestampKlass: typeof FakeTimestamp) =>
     language: 'english',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
-    patternIds: [],
   });

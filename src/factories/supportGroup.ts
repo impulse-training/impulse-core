@@ -7,7 +7,6 @@ export const makeSupportGroupFactory = (TimestampKlass: typeof FakeTimestamp) =>
     groupName: 'Cold Turkey Warriors',
     participantUids: [],
     thumbnailUrl: '',
-    hasTactics: true,
     permissions: {},
     unreadCounts: {},
     createdAt: TimestampKlass.now(),

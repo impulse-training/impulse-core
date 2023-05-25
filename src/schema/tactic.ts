@@ -25,7 +25,6 @@ export interface ImageValue {
 interface TacticValueBase<K> {
   type?: K;
   uid?: string;
-  suggestedByUid?: string;
   originalId?: string;
   createdAt: FakeTimestamp;
   updatedAt: FakeTimestamp;
@@ -35,7 +34,6 @@ interface TacticValueBase<K> {
   image?: { uri: string; storagePath: string };
   language?: string;
   href?: string;
-  supportGroupIds?: Array<string>;
   isTemplate?: boolean;
   isBooster?: boolean;
   tagsSummary?: Record<string, string>;
@@ -50,8 +48,6 @@ interface TacticValueBase<K> {
   deviceLocationRemindersDigest?: string;
 
   dataDigest?: string;
-
-  patternIds: Array<string>;
 
   allPatterns?: boolean;
   afterImpulse?: boolean;
