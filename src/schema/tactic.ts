@@ -30,7 +30,7 @@ interface TacticValueBase<K> {
   updatedAt: FakeTimestamp;
   ordinal: number;
   title: string;
-  subtitle?: string;
+  description?: string;
   image?: { uri: string; storagePath: string };
   language?: string;
   href?: string;
