@@ -44,9 +44,6 @@ interface TacticValueBase<K> {
     deviceLocationRemindersDigest?: string;
     dataDigest?: string;
     allPatterns?: boolean;
-    afterImpulse?: boolean;
-    afterSetback?: boolean;
-    afterSuccess?: boolean;
     checkInEntries?: CheckInTagEntry[];
 }
 export type PhoneTacticValue = TacticValueBase<'phone'> & {

@@ -50,9 +50,6 @@ interface TacticValueBase<K> {
   dataDigest?: string;
 
   allPatterns?: boolean;
-  afterImpulse?: boolean;
-  afterSetback?: boolean;
-  afterSuccess?: boolean;
   checkInEntries?: CheckInTagEntry[];
 }
 
