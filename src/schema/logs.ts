@@ -9,6 +9,11 @@ import { TagValue } from './tag';
 // take)
 export type Outcome = 'success' | 'setback' | 'indeterminate';
 
+interface Suggestion {
+  uid: string;
+  tacticId: string;
+}
+
 export interface BaseLogValue {
   uid: string;
   createdAt: FakeTimestamp;
@@ -23,6 +28,12 @@ export interface BaseLogValue {
   locationFormatted?: string;
   tacticIds: Array<string>;
   suggestedTacticIds?: Array<string>;
+  supportGroupSuggestedTacticIds?: {
+    impulseTacticIds: Record<string, string>;
+    successTacticIds: Record<string, string>;
+    setbackTacticIds: Record<string, string>;
+    allTacticIds: Record<string, string>;
+  };
   tacticResponses: Record<string, string>;
   tacticRecordings?: Record<string, Recording>;
   tagIds: Array<string>;
