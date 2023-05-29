@@ -31,7 +31,7 @@ interface TacticValueBase<K> {
   ordinal: number;
   title: string;
   description?: string;
-  image?: { uri: string; storagePath: string };
+  image?: { uri: string; storagePath?: string };
   language?: string;
   href?: string;
   isTemplate?: boolean;
@@ -48,8 +48,6 @@ interface TacticValueBase<K> {
   deviceLocationRemindersDigest?: string;
 
   dataDigest?: string;
-
-  allPatterns?: boolean;
   checkInEntries?: CheckInTagEntry[];
 }
 
@@ -86,7 +84,6 @@ export type SpotifyTrackTactic = TacticValueBase<'link'> & {
 export type FeelingsTactic = TacticValueBase<'feelings'> & {
   tags: Array<WithId<TagValue>>;
 };
-type LinkTactic = TacticValueBase<'link'>;
 type QuestionTactic = TacticValueBase<'question'>;
 type TaskTactic = TacticValueBase<'task'>;
 
@@ -95,7 +92,6 @@ export type TacticValue =
   | AudioTactic
   | SpotifyEpisodeTactic
   | SpotifyTrackTactic
-  | LinkTactic
   | QuestionTactic
   | FeelingsTactic
   | TaskTactic;

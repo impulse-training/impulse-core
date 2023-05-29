@@ -31,7 +31,7 @@ interface TacticValueBase<K> {
     description?: string;
     image?: {
         uri: string;
-        storagePath: string;
+        storagePath?: string;
     };
     language?: string;
     href?: string;
@@ -43,7 +43,6 @@ interface TacticValueBase<K> {
     deviceTimeRemindersDigest?: string;
     deviceLocationRemindersDigest?: string;
     dataDigest?: string;
-    allPatterns?: boolean;
     checkInEntries?: CheckInTagEntry[];
 }
 export type PhoneTacticValue = TacticValueBase<'phone'> & {
@@ -74,8 +73,7 @@ export type SpotifyTrackTactic = TacticValueBase<'link'> & {
 export type FeelingsTactic = TacticValueBase<'feelings'> & {
     tags: Array<WithId<TagValue>>;
 };
-type LinkTactic = TacticValueBase<'link'>;
 type QuestionTactic = TacticValueBase<'question'>;
 type TaskTactic = TacticValueBase<'task'>;
-export type TacticValue = PhoneTacticValue | AudioTactic | SpotifyEpisodeTactic | SpotifyTrackTactic | LinkTactic | QuestionTactic | FeelingsTactic | TaskTactic;
+export type TacticValue = PhoneTacticValue | AudioTactic | SpotifyEpisodeTactic | SpotifyTrackTactic | QuestionTactic | FeelingsTactic | TaskTactic;
 export {};
