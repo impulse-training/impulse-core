@@ -25,6 +25,7 @@ export const makeImpulseFactory = (TimestampKlass: typeof FakeTimestamp) =>
     tagsByTacticId: {},
     locationIsFetching: false,
     tacticIds: [],
+    allTacticIds: [],
     tacticResponses: {},
     tagIds: [],
     tagValues: {},
@@ -46,6 +47,7 @@ export const makeTacticsLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
     tagsByTacticId: {},
     locationIsFetching: false,
     tacticIds: [],
+    allTacticIds: [],
     tacticResponses: {},
     tagIds: [],
     tagValues: {},
@@ -67,6 +69,7 @@ export const makeTimeLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
     location: {},
     locationIsFetching: false,
     tacticIds: [],
+    allTacticIds: [],
     tacticResponses: {},
     tagValues: {},
   });
@@ -86,6 +89,7 @@ export const makeMotionLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
     location: {},
     locationIsFetching: false,
     tacticIds: [],
+    allTacticIds: [],
     tacticResponses: {},
     tagValues: {},
   });

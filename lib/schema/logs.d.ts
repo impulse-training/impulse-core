@@ -17,6 +17,7 @@ export interface BaseLogValue {
     locationId?: string;
     locationIsFetching: boolean;
     locationFormatted?: string;
+    allTacticIds: Array<string>;
     tacticIds: Array<string>;
     suggestedTacticIds?: Array<string>;
     supportGroupSuggestedTacticIds?: {
