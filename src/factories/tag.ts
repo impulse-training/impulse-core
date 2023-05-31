@@ -5,6 +5,7 @@ import { FakeTimestamp } from '../utils/FakeTimestamp';
 export const makeTagFactory = (TimestampKlass: typeof FakeTimestamp) =>
   Factory.makeFactory<TagValue>({
     uid: Factory.each(i => i.toString()),
+    tacticId: '1',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     name: 'Sad',
