@@ -14,4 +14,5 @@ export const makePatternFactory = (TimestampKlass: typeof FakeTimestamp) =>
     impulseTacticIds: [],
     setbackTacticIds: [],
     successTacticIds: [],
+    sendWeeklyReports: false,
   });
