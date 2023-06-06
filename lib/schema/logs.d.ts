@@ -1,5 +1,6 @@
 import * as Location from 'expo-location';
 import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { GameplanByPatternId } from './gameplan';
 import { PatternValue } from './pattern';
 import { Recording } from './recording';
 import { TacticValue } from './tactic';
@@ -19,6 +20,7 @@ export interface BaseLogValue {
     locationFormatted?: string;
     allTacticIds: Array<string>;
     tacticIds: Array<string>;
+    gameplan: GameplanByPatternId;
     suggestedTacticIds?: Array<string>;
     supportGroupSuggestedTacticIds?: {
         impulseTacticIds: Record<string, string>;

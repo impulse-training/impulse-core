@@ -1,5 +1,6 @@
 import * as Location from 'expo-location';
 import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { GameplanByPatternId } from './gameplan';
 import { PatternValue } from './pattern';
 import { Recording } from './recording';
 import { TacticValue } from './tactic';
@@ -8,11 +9,6 @@ import { TagValue } from './tag';
 // Logs are records of either impulses (cravings or urges), or applied tactics (actions that we
 // take)
 export type Outcome = 'success' | 'setback' | 'indeterminate';
-
-interface Suggestion {
-  uid: string;
-  tacticId: string;
-}
 
 export interface BaseLogValue {
   uid: string;
@@ -28,13 +24,22 @@ export interface BaseLogValue {
   locationFormatted?: string;
   allTacticIds: Array<string>;
   tacticIds: Array<string>;
+
+  // This object contains the user's gameplan, serialized as ids of tactics
+  gameplan: GameplanByPatternId;
+
+  // These are the suggestions that were pushed to the log record, i.e. the user clicked the
+  // "suggest" button
   suggestedTacticIds?: Array<string>;
+
+  // This contains a map of suggestions of tactics, and the id of the suggester
   supportGroupSuggestedTacticIds?: {
     impulseTacticIds: Record<string, string>;
     successTacticIds: Record<string, string>;
     setbackTacticIds: Record<string, string>;
     allTacticIds: Record<string, string>;
   };
+
   tacticResponses: Record<string, string>;
   tacticRecordings?: Record<string, Recording>;
   tagIds: Array<string>;

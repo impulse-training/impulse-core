@@ -1,5 +1,6 @@
 import { AppStateStatus, Permission } from 'react-native';
 import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { GameplanByPatternId } from './gameplan';
 import { NOTIFICATION_TYPES } from './notification';
 
 export interface ProfileValue {
@@ -42,4 +43,6 @@ export interface ProfileValue {
   isButtonSetupSkipped?: boolean;
 
   invitationCode: string;
+
+  gameplan: GameplanByPatternId;
 }

@@ -6,3 +6,7 @@ export interface GameplanValue {
     createdAt: FakeTimestamp;
     updatedAt: FakeTimestamp;
 }
+export type GameplanByPatternId = Record<string, Record<'impulse' | 'success' | 'setback', {
+    tacticIds: Array<string>;
+    suggestedTacticIds: Array<string>;
+}>>;

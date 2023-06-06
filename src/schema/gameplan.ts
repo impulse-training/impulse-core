@@ -8,3 +8,15 @@ export interface GameplanValue {
   createdAt: FakeTimestamp;
   updatedAt: FakeTimestamp;
 }
+
+export type GameplanByPatternId = Record<
+  string,
+  Record<
+    'impulse' | 'success' | 'setback',
+    {
+      tacticIds: Array<string>;
+      // Some pre-prepared suggested tactics that can be pushed into the tactics array
+      suggestedTacticIds: Array<string>;
+    }
+  >
+>;
