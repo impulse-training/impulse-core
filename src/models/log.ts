@@ -45,7 +45,7 @@ export class Log {
 }
 
 export function tagSymbol(tag: { emoji?: string; name: string }) {
-  return tag.emoji || initials(tag.name);
+  return tag.emoji || tag.name;
 }
 
 export function initials(str: string) {

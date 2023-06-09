@@ -42,6 +42,7 @@ export interface BaseLogValue {
 
   tacticResponses: Record<string, string>;
   tacticRecordings?: Record<string, Recording>;
+  tags: Record<string, TagValue>;
   tagIds: Array<string>;
   tagValues: Record<string, number>;
   sharedWithSupportGroupIds?: Array<string>;

@@ -32,6 +32,7 @@ export const makeImpulseFactory = (TimestampKlass: typeof FakeTimestamp) =>
     patterns: {},
     patternUsage: {},
     gameplan: {},
+    tags: {},
   });
 
 export const makeTacticsLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
@@ -53,6 +54,7 @@ export const makeTacticsLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
     tagIds: [],
     tagValues: {},
     gameplan: {},
+    tags: {},
   });
 
 export const makeTimeLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
@@ -75,6 +77,7 @@ export const makeTimeLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
     tacticResponses: {},
     tagValues: {},
     gameplan: {},
+    tags: {},
   });
 
 export const makeMotionLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
@@ -96,4 +99,5 @@ export const makeMotionLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
     tacticResponses: {},
     tagValues: {},
     gameplan: {},
+    tags: {},
   });
