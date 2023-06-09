@@ -34,10 +34,10 @@ export interface BaseLogValue {
 
   // This contains a map of suggestions of tactics, and the id of the suggester
   supportGroupSuggestedTacticIds?: {
-    impulseTacticIds: Record<string, string>;
-    successTacticIds: Record<string, string>;
-    setbackTacticIds: Record<string, string>;
-    allTacticIds: Record<string, string>;
+    impulse: Record<string, string>;
+    success: Record<string, string>;
+    setback: Record<string, string>;
+    all: Record<string, string>;
   };
 
   tacticResponses: Record<string, string>;

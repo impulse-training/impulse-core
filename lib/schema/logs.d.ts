@@ -23,10 +23,10 @@ export interface BaseLogValue {
     gameplan: GameplanByPatternId;
     suggestedTacticIds?: Array<string>;
     supportGroupSuggestedTacticIds?: {
-        impulseTacticIds: Record<string, string>;
-        successTacticIds: Record<string, string>;
-        setbackTacticIds: Record<string, string>;
-        allTacticIds: Record<string, string>;
+        impulse: Record<string, string>;
+        success: Record<string, string>;
+        setback: Record<string, string>;
+        all: Record<string, string>;
     };
     tacticResponses: Record<string, string>;
     tacticRecordings?: Record<string, Recording>;
