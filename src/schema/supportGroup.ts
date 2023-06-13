@@ -19,8 +19,13 @@ export interface SupportGroupValue {
   lastMessageUid?: string;
   isSharingDisabled?: boolean;
   isTemplate?: boolean;
+  // A map of
   unreadCounts: { [uid: string]: number };
+  // TODO: deprecated, to remove
   permissions: SupportGroupPermissions;
+  // A map of tactics that have been suggested by different participants. Suggestions can be made
+  // for impulse moments, successes, or setbacks. The key is the uid of the participant who made the
+  // suggestion, and the value is an array of tactic ids.
   tacticIds: {
     impulse?: Record<string, Array<string>>;
     success?: Record<string, Array<string>>;

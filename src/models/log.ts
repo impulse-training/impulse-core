@@ -13,6 +13,10 @@ export class Log {
       }`;
     }
 
+    if (this.data.type === 'time') {
+      return `Scheduled`;
+    }
+
     return '';
   }
 
