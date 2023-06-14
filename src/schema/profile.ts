@@ -22,8 +22,6 @@ export interface ProfileValue {
   >;
   isCurrentlyTrackingMotion?: boolean;
   showTacticsFromSupportGroups?: boolean;
-  excludedTacticIds?: Array<string>;
-
   androidPermissions?: Record<Permission, boolean>;
 
   // While we typically expect these properties to be set, there is a short period where they are
@@ -45,4 +43,5 @@ export interface ProfileValue {
   invitationCode: string;
 
   gameplan: GameplanByPatternId;
+  impulseNotifications?: Record<string, { title: string; body: string }>;
 }

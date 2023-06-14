@@ -19,7 +19,6 @@ export interface ProfileValue {
     notificationPreferences: Partial<Record<keyof typeof NOTIFICATION_TYPES, boolean>>;
     isCurrentlyTrackingMotion?: boolean;
     showTacticsFromSupportGroups?: boolean;
-    excludedTacticIds?: Array<string>;
     androidPermissions?: Record<Permission, boolean>;
     displayName?: string;
     firstName?: string;
@@ -33,4 +32,8 @@ export interface ProfileValue {
     isButtonSetupSkipped?: boolean;
     invitationCode: string;
     gameplan: GameplanByPatternId;
+    impulseNotifications?: Record<string, {
+        title: string;
+        body: string;
+    }>;
 }
