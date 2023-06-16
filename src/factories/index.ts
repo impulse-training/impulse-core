@@ -1,6 +1,10 @@
 import { FakeTimestamp } from '../utils/FakeTimestamp';
 import { makeApplicationFactory } from './application';
 import { makeChallengeFactory } from './challenge';
+import {
+  makeLocationGameplanFactory,
+  makeTimeGameplanFactory,
+} from './gameplan';
 import { makeLocationFactory } from './location';
 import { makeLogSummaryFactory } from './logSummary';
 import {
@@ -11,10 +15,6 @@ import {
 } from './logs';
 import { makePatternFactory } from './pattern';
 import { makeAdminProfileFactory, makeProfileFactory } from './profile';
-import {
-  makeLocationReminderFactory,
-  makeTimeReminderFactory,
-} from './reminder';
 import { makeSupportGroupFactory } from './supportGroup';
 import { makeTacticFactory } from './tactic';
 import { makeTagFactory } from './tag';
@@ -35,9 +35,9 @@ export function makeFactories(TimestampKlass: typeof FakeTimestamp) {
     profileFactory: makeProfileFactory(TimestampKlass),
     adminProfileFactory: makeAdminProfileFactory(TimestampKlass),
     supportGroupFactory: makeSupportGroupFactory(TimestampKlass),
-    timeReminderFactory: makeTimeReminderFactory(TimestampKlass),
+    timeGameplanFactory: makeTimeGameplanFactory(TimestampKlass),
     patternFactory: makePatternFactory(TimestampKlass),
-    locationReminderFactory: makeLocationReminderFactory(TimestampKlass),
+    locationGameplanFactory: makeLocationGameplanFactory(TimestampKlass),
     tacticFactory: makeTacticFactory(TimestampKlass),
     tagFactory: makeTagFactory(TimestampKlass),
   };

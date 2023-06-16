@@ -61,7 +61,7 @@ export const makeTimeLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
   Factory.makeFactory<TimeLogValue>({
     uid: Factory.each(i => i.toString()),
     type: 'time',
-    reminderId: 'reminder1',
+    gameplanId: 'reminder1',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     startTime: TimestampKlass.now(),

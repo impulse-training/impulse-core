@@ -1,6 +1,5 @@
 import { AppStateStatus, Permission } from 'react-native';
 import { FakeTimestamp } from '../utils/FakeTimestamp';
-import { GameplanByPatternId } from './gameplan';
 import { NOTIFICATION_TYPES } from './notification';
 export interface ProfileValue {
     uid: string;
@@ -37,3 +36,7 @@ export interface ProfileValue {
         body: string;
     }>;
 }
+export type GameplanByPatternId = Record<string, Record<'impulse' | 'success' | 'setback', {
+    tacticIds: Array<string>;
+    suggestedTacticIds: Array<string>;
+}>>;

@@ -12,5 +12,5 @@ export const makeLocationFactory = (TimestampKlass: typeof FakeTimestamp) =>
     latitude: Number(faker.address.latitude()),
     longitude: Number(faker.address.longitude()),
     address: faker.address.streetAddress(),
-    reminderIds: [],
+    gameplanIds: [],
   });

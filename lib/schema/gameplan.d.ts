@@ -1,12 +1,28 @@
 import { FakeTimestamp } from '../utils/FakeTimestamp';
-export interface GameplanValue {
+export interface GameplanValueBase {
     uid: string;
-    name: string;
-    isFeatured: boolean;
     createdAt: FakeTimestamp;
     updatedAt: FakeTimestamp;
-}
-export type GameplanByPatternId = Record<string, Record<'impulse' | 'success' | 'setback', {
     tacticIds: Array<string>;
     suggestedTacticIds: Array<string>;
-}>>;
+    title?: string;
+}
+export type PatternGameplanValue = GameplanValueBase & {
+    type: 'pattern';
+    patternId: string;
+    for: 'impulse' | 'success' | 'setback';
+};
+export type TimeGameplanValue = GameplanValueBase & {
+    type: 'time';
+    weekdays: Array<number>;
+    hour: number;
+    minute: number;
+    timezone: string;
+    scheduledNotificationIds?: Array<string>;
+};
+export type LocationGameplanValue = GameplanValueBase & {
+    type: 'location';
+    locationId?: string;
+    mode: 'enter' | 'exit';
+};
+export type GameplanValue = PatternGameplanValue | TimeGameplanValue | LocationGameplanValue;

@@ -15,10 +15,5 @@ export interface PatternValue {
     title: string;
     body: string;
   };
-  tacticIds: {
-    impulse: Array<string>;
-    setback: Array<string>;
-    success: Array<string>;
-  };
   sendWeeklyReports: boolean;
 }

@@ -16,7 +16,6 @@ export * from './notification';
 export * from './pattern';
 export * from './press';
 export * from './profile';
-export * from './reminder';
 export * from './spotifyCredentials';
 export * from './supportGroup';
 export * from './tactic';

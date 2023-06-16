@@ -1,7 +1,7 @@
 import * as Location from 'expo-location';
 import { FakeTimestamp } from '../utils/FakeTimestamp';
-import { GameplanByPatternId } from './gameplan';
 import { PatternValue } from './pattern';
+import { ProfileValue } from './profile';
 import { Recording } from './recording';
 import { TacticValue } from './tactic';
 import { TagValue } from './tag';
@@ -20,7 +20,7 @@ export interface BaseLogValue {
     locationFormatted?: string;
     allTacticIds: Array<string>;
     tacticIds: Array<string>;
-    gameplan: GameplanByPatternId;
+    gameplan: ProfileValue['gameplan'];
     suggestedTacticIds?: Array<string>;
     supportGroupSuggestedTacticIds?: {
         impulse: Record<string, string>;
@@ -49,7 +49,7 @@ export type LocationLogValue = BaseLogValue & {
 export type TimeLogValue = BaseLogValue & {
     type: 'time';
     isDisplayable: true;
-    reminderId: string;
+    gameplanId: string;
 };
 export type MotionLogValue = BaseLogValue & {
     type: 'motion';

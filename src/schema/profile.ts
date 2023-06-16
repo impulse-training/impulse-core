@@ -1,6 +1,5 @@
 import { AppStateStatus, Permission } from 'react-native';
 import { FakeTimestamp } from '../utils/FakeTimestamp';
-import { GameplanByPatternId } from './gameplan';
 import { NOTIFICATION_TYPES } from './notification';
 
 export interface ProfileValue {
@@ -45,3 +44,15 @@ export interface ProfileValue {
   gameplan: GameplanByPatternId;
   impulseNotifications?: Record<string, { title: string; body: string }>;
 }
+
+export type GameplanByPatternId = Record<
+  string,
+  Record<
+    'impulse' | 'success' | 'setback',
+    {
+      tacticIds: Array<string>;
+      // Some pre-prepared suggested tactics that can be pushed into the tactics array
+      suggestedTacticIds: Array<string>;
+    }
+  >
+>;

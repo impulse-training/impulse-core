@@ -1,14 +1,14 @@
-import { LocationReminder, TimeReminder } from '../reminder';
+import { LocationGameplan, TimeGameplan } from '../gameplan';
 
-describe('Reminder classes', () => {
+describe('Gameplan classes', () => {
   const uid = 'abc123';
-  const tacticId = 'def456';
+  const tacticIds = ['def456'];
 
-  describe('TimeReminder', () => {
+  describe('TimeGameplan', () => {
     it('should return null if weekdays array is empty', () => {
-      const reminder = new TimeReminder('1', {
+      const gameplan = new TimeGameplan('1', {
         uid,
-        tacticId,
+        tacticIds,
         createdAt: new Date() as any,
         updatedAt: new Date() as any,
         timezone: 'America/Bogota',
@@ -16,14 +16,15 @@ describe('Reminder classes', () => {
         weekdays: [],
         hour: 12,
         minute: 0,
+        suggestedTacticIds: [],
       });
-      expect(reminder.summary).toBeNull();
+      expect(gameplan.summary).toBeNull();
     });
 
     it('should return the correct summary for every day', () => {
-      const reminder = new TimeReminder('1', {
+      const gameplan = new TimeGameplan('1', {
         uid,
-        tacticId,
+        tacticIds,
         createdAt: new Date() as any,
         updatedAt: new Date() as any,
         timezone: 'America/Bogota',
@@ -31,14 +32,15 @@ describe('Reminder classes', () => {
         weekdays: [1, 2, 3, 4, 5, 6, 7],
         hour: 12,
         minute: 0,
+        suggestedTacticIds: [],
       });
-      expect(reminder.summary).toBe('Every day at 12:00 PM');
+      expect(gameplan.summary).toBe('Every day at 12:00 PM');
     });
 
     it('should return the correct summary for every weekday', () => {
-      const reminder = new TimeReminder('1', {
+      const gameplan = new TimeGameplan('1', {
         uid,
-        tacticId,
+        tacticIds,
         createdAt: new Date() as any,
         updatedAt: new Date() as any,
         timezone: 'America/Bogota',
@@ -46,14 +48,15 @@ describe('Reminder classes', () => {
         weekdays: [2, 3, 4, 5, 6],
         hour: 12,
         minute: 0,
+        suggestedTacticIds: [],
       });
-      expect(reminder.summary).toBe('Every weekday at 12:00 PM');
+      expect(gameplan.summary).toBe('Every weekday at 12:00 PM');
     });
 
     it('should return the correct summary for specific weekdays', () => {
-      const reminder = new TimeReminder('1', {
+      const gameplan = new TimeGameplan('1', {
         uid,
-        tacticId,
+        tacticIds,
         createdAt: new Date() as any,
         updatedAt: new Date() as any,
         timezone: 'America/Bogota',
@@ -61,16 +64,17 @@ describe('Reminder classes', () => {
         weekdays: [1, 3, 5],
         hour: 12,
         minute: 0,
+        suggestedTacticIds: [],
       });
-      expect(reminder.summary).toBe(
+      expect(gameplan.summary).toBe(
         'On Sundays, Tuesdays, and Thursdays at 12:00 PM'
       );
     });
 
     it('should return the correct summary for specific weekdays', () => {
-      const reminder = new TimeReminder('1', {
+      const gameplan = new TimeGameplan('1', {
         uid,
-        tacticId,
+        tacticIds,
         createdAt: new Date() as any,
         updatedAt: new Date() as any,
         timezone: 'America/Bogota',
@@ -78,36 +82,38 @@ describe('Reminder classes', () => {
         weekdays: [3, 2, 4, 6, 5],
         hour: 1,
         minute: 0,
+        suggestedTacticIds: [],
       });
-      expect(reminder.summary).toBe('Every weekday at 1:00 AM');
+      expect(gameplan.summary).toBe('Every weekday at 1:00 AM');
     });
   });
 
-  describe('LocationReminder', () => {
+  describe('LocationGameplan', () => {
     it('should return the correct summary', () => {
-      const reminder = new LocationReminder(
+      const gameplan = new LocationGameplan(
         '1',
         {
           uid,
-          tacticId,
+          tacticIds,
           createdAt: new Date() as any,
           updatedAt: new Date() as any,
           type: 'location',
           locationId: 'abc',
           mode: 'enter',
+          suggestedTacticIds: [],
         },
         {
           uid,
           createdAt: new Date() as any,
           updatedAt: new Date() as any,
           address: '123 fake st',
-          reminderIds: [],
           name: 'Home',
           latitude: 0,
           longitude: 0,
+          gameplanIds: [],
         }
       );
-      expect(reminder.summary).toBe('When I arrive at Home');
+      expect(gameplan.summary).toBe('When I arrive at Home');
     });
   });
 });

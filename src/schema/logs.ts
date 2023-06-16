@@ -1,7 +1,7 @@
 import * as Location from 'expo-location';
 import { FakeTimestamp } from '../utils/FakeTimestamp';
-import { GameplanByPatternId } from './gameplan';
 import { PatternValue } from './pattern';
+import { ProfileValue } from './profile';
 import { Recording } from './recording';
 import { TacticValue } from './tactic';
 import { TagValue } from './tag';
@@ -26,7 +26,7 @@ export interface BaseLogValue {
   tacticIds: Array<string>;
 
   // This object contains the user's gameplan, serialized as ids of tactics
-  gameplan: GameplanByPatternId;
+  gameplan: ProfileValue['gameplan'];
 
   // These are the suggestions that were pushed to the log record, i.e. the user clicked the
   // "suggest" button
@@ -68,7 +68,7 @@ export type LocationLogValue = BaseLogValue & {
 export type TimeLogValue = BaseLogValue & {
   type: 'time';
   isDisplayable: true;
-  reminderId: string;
+  gameplanId: string;
 };
 
 // Motion logs are recorded when the user wears the impulse button

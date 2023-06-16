@@ -11,10 +11,5 @@ export const makePatternFactory = (TimestampKlass: typeof FakeTimestamp) =>
     customUnit: 'cigarettes',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
-    tacticIds: {
-      impulse: [],
-      setback: [],
-      success: [],
-    },
     sendWeeklyReports: false,
   });

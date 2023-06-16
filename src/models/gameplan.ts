@@ -1,10 +1,10 @@
 import { isEqual } from 'lodash';
 import { LocationValue } from '../schema';
 import {
-  LocationReminderValue,
-  ReminderValue,
-  TimeReminderValue,
-} from '../schema/reminder';
+  GameplanValue,
+  LocationGameplanValue,
+  TimeGameplanValue,
+} from '../schema/gameplan';
 
 export const SHORT_DAYS: { [key: number]: string } = {
   1: 'Sun',
@@ -27,12 +27,12 @@ const LONG_DAYS = [
   'Saturdays',
 ];
 
-abstract class Reminder {
+abstract class Gameplan {
   abstract get summary(): string | null;
 }
 
-export class TimeReminder extends Reminder {
-  constructor(private id: string, private data: TimeReminderValue) {
+export class TimeGameplan extends Gameplan {
+  constructor(private id: string, private data: TimeGameplanValue) {
     super();
   }
 
@@ -68,10 +68,10 @@ export class TimeReminder extends Reminder {
   }
 }
 
-export class LocationReminder extends Reminder {
+export class LocationGameplan extends Gameplan {
   constructor(
     private id: string,
-    private data: LocationReminderValue,
+    private data: LocationGameplanValue,
     private location: LocationValue
   ) {
     super();
@@ -88,17 +88,17 @@ export class LocationReminder extends Reminder {
   }
 }
 
-export function reminderToClass(
+export function gameplanToClass(
   id: string,
-  reminder: ReminderValue,
+  reminder: GameplanValue,
   location: LocationValue
 ) {
   if (reminder.type === 'time') {
-    return new TimeReminder(id, reminder as TimeReminderValue);
+    return new TimeGameplan(id, reminder as TimeGameplanValue);
   } else {
-    return new LocationReminder(
+    return new LocationGameplan(
       id,
-      reminder as LocationReminderValue,
+      reminder as LocationGameplanValue,
       location
     );
   }
