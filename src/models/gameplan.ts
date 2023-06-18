@@ -1,4 +1,4 @@
-import { isEqual } from 'lodash';
+import { difference, isEqual } from 'lodash';
 import { LocationValue } from '../schema';
 import {
   GameplanValue,
@@ -46,8 +46,14 @@ export class TimeGameplan extends Gameplan {
     function getDaysDescription() {
       if (weekdays.length === 7) return 'Every day';
 
+      if (weekdays.length === 6) {
+        const missingDay = difference([1, 2, 3, 4, 5, 6, 7], weekdays)[0];
+        console.log({ missingDay, weekdayNames });
+        return `Daily except ${LONG_DAYS[missingDay]}`;
+      }
+
       if (isEqual(weekdays, [2, 3, 4, 5, 6])) return 'Every weekday';
-      return 'On ' + new (Intl as any).ListFormat().format(weekdayNames);
+      return new (Intl as any).ListFormat().format(weekdayNames);
     }
 
     const daysDescription = getDaysDescription();
