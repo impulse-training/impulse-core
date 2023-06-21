@@ -8,8 +8,9 @@
   ],
   "types": "lib/index.d.ts",
   "scripts": {
-    "build": "tsc --project tsconfig.build.json",
+    "tsc:build": "tsc --project tsconfig.build.json",
     "clean": "rm -rf ./lib/",
+    "build": "yarn clean && yarn tsc:build",
     "cm": "cz",
     "prepare": "husky install",
     "semantic-release": "semantic-release",
