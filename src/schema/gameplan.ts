@@ -7,6 +7,7 @@ export interface GameplanValueBase {
   tacticIds: Array<string>;
   suggestedTacticIds: Array<string>;
   title?: string;
+  isTemplate?: boolean;
 }
 
 // A pattern gameplan is the set of tactics that we use in an impulse moment, or after a success or

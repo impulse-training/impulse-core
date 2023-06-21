@@ -6,6 +6,7 @@ export interface GameplanValueBase {
     tacticIds: Array<string>;
     suggestedTacticIds: Array<string>;
     title?: string;
+    isTemplate?: boolean;
 }
 export type PatternGameplanValue = GameplanValueBase & {
     type: 'pattern';
