@@ -1,6 +1,8 @@
 import { AppStateStatus, Permission } from 'react-native';
 import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { TimeGameplanValue } from './gameplan';
 import { NOTIFICATION_TYPES } from './notification';
+import { TacticValue } from './tactic';
 
 export interface ProfileValue {
   uid: string;
@@ -43,6 +45,13 @@ export interface ProfileValue {
 
   gameplan: GameplanByPatternId;
   impulseNotifications?: Record<string, { title: string; body: string }>;
+
+  // We store a cached summary of time gameplans on the profile, which we use to set up
+  // notifications
+  timeGameplans?: Record<
+    string,
+    { gameplan: TimeGameplanValue; tactic: TacticValue }
+  >;
 }
 
 export type GameplanByPatternId = Record<

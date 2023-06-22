@@ -7,6 +7,7 @@ export interface GameplanValueBase {
   tacticIds: Array<string>;
   suggestedTacticIds: Array<string>;
   title?: string;
+  navigationTitle?: string;
   isTemplate?: boolean;
 }
 
