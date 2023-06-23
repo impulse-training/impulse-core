@@ -20,13 +20,20 @@ export type PatternGameplanValue = GameplanValueBase & {
 };
 
 // A time gameplan is a set of tactics that we do at a scheduled time in the week
-export type TimeGameplanValue = GameplanValueBase & {
-  type: 'time';
+type SchedulableGameplanValue = GameplanValueBase & {
   weekdays: Array<number>; // 1 = sun, 2 = mon, 3 = tue, etc
   hour: number;
   minute: number;
   timezone: string;
   scheduledNotificationIds?: Array<string>;
+};
+
+export type TimeGameplanValue = SchedulableGameplanValue & {
+  type: 'time';
+};
+
+export type DebriefGameplanValue = SchedulableGameplanValue & {
+  type: 'debrief';
 };
 
 export type LocationGameplanValue = GameplanValueBase & {
@@ -40,4 +47,5 @@ export type LocationGameplanValue = GameplanValueBase & {
 export type GameplanValue =
   | PatternGameplanValue
   | TimeGameplanValue
-  | LocationGameplanValue;
+  | LocationGameplanValue
+  | DebriefGameplanValue;

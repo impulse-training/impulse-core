@@ -17,6 +17,10 @@ export class Log {
       return `Scheduled`;
     }
 
+    if (this.data.type === 'debrief') {
+      return `Daily debrief`;
+    }
+
     return '';
   }
 

@@ -1,5 +1,6 @@
 import * as Factory from 'factory.ts';
 import {
+  DebriefLogValue,
   ImpulseLogValue,
   MotionLogValue,
   TacticsLogValue,
@@ -78,6 +79,34 @@ export const makeTimeLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
     tagValues: {},
     gameplan: {},
     tags: {},
+  });
+
+export const makeDebriefLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
+  Factory.makeFactory<DebriefLogValue>({
+    uid: Factory.each(i => i.toString()),
+    type: 'debrief',
+    gameplanId: 'reminder1',
+    createdAt: TimestampKlass.now(),
+    updatedAt: TimestampKlass.now(),
+    startTime: TimestampKlass.now(),
+    timezone: 'America/Botota',
+    tagIds: [],
+    isDisplayable: true,
+    tactics: {},
+    tagsByTacticId: {},
+    location: {},
+    locationIsFetching: false,
+    outcome: 'indeterminate',
+    tacticIds: [],
+    allTacticIds: [],
+    tacticResponses: {},
+    tagValues: {},
+    gameplan: {},
+    tags: {},
+    patterns: {},
+    patternIds: [],
+    patternUsage: {},
+    patternUsageEntries: {},
   });
 
 export const makeMotionLogFactory = (TimestampKlass: typeof FakeTimestamp) =>

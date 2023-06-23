@@ -19,7 +19,6 @@ export interface BaseLogValue {
   tactics: Record<string, TacticValue>;
   tagsByTacticId: Record<string, Record<string, TagValue>>;
   location: Partial<Location.LocationObjectCoords>;
-  locationId?: string;
   locationIsFetching: boolean;
   locationFormatted?: string;
   allTacticIds: Array<string>;
@@ -71,6 +70,20 @@ export type TimeLogValue = BaseLogValue & {
   gameplanId: string;
 };
 
+export type DebriefLogValue = BaseLogValue & {
+  type: 'debrief';
+  outcome: Outcome;
+  patterns: Record<string, PatternValue>;
+  isDisplayable: true;
+  gameplanId: string;
+  patternIds: Array<string>;
+  patternUsage: Record<string, PatternUsage>;
+
+  // While a little obscure, here we store a map of the pattern usage of all impulse log entries for
+  // the day. When this is written, we can sum up the pattern usage to write to this record.
+  patternUsageEntries: Record<string, Record<string, PatternUsage>>;
+};
+
 // Motion logs are recorded when the user wears the impulse button
 export type MotionLogValue = BaseLogValue & {
   type: 'motion';
@@ -112,4 +125,5 @@ export type LogValue =
   | MotionLogValue
   | ButtonLogValue
   | LocationLogValue
-  | TimeLogValue;
+  | TimeLogValue
+  | DebriefLogValue;

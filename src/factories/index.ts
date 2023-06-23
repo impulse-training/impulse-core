@@ -2,12 +2,14 @@ import { FakeTimestamp } from '../utils/FakeTimestamp';
 import { makeApplicationFactory } from './application';
 import { makeChallengeFactory } from './challenge';
 import {
+  makeDebriefGameplanFactory,
   makeLocationGameplanFactory,
   makeTimeGameplanFactory,
 } from './gameplan';
 import { makeLocationFactory } from './location';
 import { makeLogSummaryFactory } from './logSummary';
 import {
+  makeDebriefLogFactory,
   makeImpulseFactory,
   makeMotionLogFactory,
   makeTacticsLogFactory,
@@ -30,11 +32,13 @@ export function makeFactories(TimestampKlass: typeof FakeTimestamp) {
     tacticsLogFactory: makeTacticsLogFactory(TimestampKlass),
     timeLogFactory: makeTimeLogFactory(TimestampKlass),
     motionLogFactory: makeMotionLogFactory(TimestampKlass),
+    debriefLogFactory: makeDebriefLogFactory(TimestampKlass),
     locationFactory: makeLocationFactory(TimestampKlass),
     logSummaryFactory: makeLogSummaryFactory(TimestampKlass),
     profileFactory: makeProfileFactory(TimestampKlass),
     adminProfileFactory: makeAdminProfileFactory(TimestampKlass),
     supportGroupFactory: makeSupportGroupFactory(TimestampKlass),
+    debriefGameplanFactory: makeDebriefGameplanFactory(TimestampKlass),
     timeGameplanFactory: makeTimeGameplanFactory(TimestampKlass),
     patternFactory: makePatternFactory(TimestampKlass),
     locationGameplanFactory: makeLocationGameplanFactory(TimestampKlass),
@@ -52,7 +56,9 @@ export const {
   tacticsLogFactory,
   timeLogFactory,
   motionLogFactory,
+  debriefLogFactory,
   logSummaryFactory,
+  debriefGameplanFactory,
   profileFactory,
   supportGroupFactory,
   tacticFactory,

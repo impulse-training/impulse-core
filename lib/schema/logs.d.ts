@@ -15,7 +15,6 @@ export interface BaseLogValue {
     tactics: Record<string, TacticValue>;
     tagsByTacticId: Record<string, Record<string, TagValue>>;
     location: Partial<Location.LocationObjectCoords>;
-    locationId?: string;
     locationIsFetching: boolean;
     locationFormatted?: string;
     allTacticIds: Array<string>;
@@ -51,6 +50,16 @@ export type TimeLogValue = BaseLogValue & {
     isDisplayable: true;
     gameplanId: string;
 };
+export type DebriefLogValue = BaseLogValue & {
+    type: 'debrief';
+    outcome: Outcome;
+    patterns: Record<string, PatternValue>;
+    isDisplayable: true;
+    gameplanId: string;
+    patternIds: Array<string>;
+    patternUsage: Record<string, PatternUsage>;
+    patternUsageEntries: Record<string, Record<string, PatternUsage>>;
+};
 export type MotionLogValue = BaseLogValue & {
     type: 'motion';
     isDisplayable: false;
@@ -80,4 +89,4 @@ export interface PatternUsage {
     transformedValue: number;
     formattedValue: string;
 }
-export type LogValue = TacticsLogValue | ImpulseLogValue | MotionLogValue | ButtonLogValue | LocationLogValue | TimeLogValue;
+export type LogValue = TacticsLogValue | ImpulseLogValue | MotionLogValue | ButtonLogValue | LocationLogValue | TimeLogValue | DebriefLogValue;

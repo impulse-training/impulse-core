@@ -14,17 +14,23 @@ export type PatternGameplanValue = GameplanValueBase & {
     patternId: string;
     for: 'impulse' | 'success' | 'setback';
 };
-export type TimeGameplanValue = GameplanValueBase & {
-    type: 'time';
+type SchedulableGameplanValue = GameplanValueBase & {
     weekdays: Array<number>;
     hour: number;
     minute: number;
     timezone: string;
     scheduledNotificationIds?: Array<string>;
 };
+export type TimeGameplanValue = SchedulableGameplanValue & {
+    type: 'time';
+};
+export type DebriefGameplanValue = SchedulableGameplanValue & {
+    type: 'debrief';
+};
 export type LocationGameplanValue = GameplanValueBase & {
     type: 'location';
     locationId?: string;
     mode: 'enter' | 'exit';
 };
-export type GameplanValue = PatternGameplanValue | TimeGameplanValue | LocationGameplanValue;
+export type GameplanValue = PatternGameplanValue | TimeGameplanValue | LocationGameplanValue | DebriefGameplanValue;
+export {};

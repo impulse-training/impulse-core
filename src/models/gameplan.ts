@@ -99,7 +99,7 @@ export function gameplanToClass(
   reminder: GameplanValue,
   location: LocationValue
 ) {
-  if (reminder.type === 'time') {
+  if (reminder.type === 'time' || reminder.type === 'debrief') {
     return new TimeGameplan(id, reminder as TimeGameplanValue);
   } else {
     return new LocationGameplan(
