@@ -12,6 +12,8 @@ export const NOTIFICATION_TYPES = {
   DEBRIEF_REMINDERS: 'A reminder to debrief my impulse moments',
 };
 
+export type NotificationOption = 'push' | 'email';
+
 export interface NotificationValue {
   uid: string;
   createdAt: FakeTimestamp;

@@ -6,6 +6,7 @@ export declare const NOTIFICATION_TYPES: {
     MORNINGS: string;
     DEBRIEF_REMINDERS: string;
 };
+export type NotificationOption = 'push' | 'email';
 export interface NotificationValue {
     uid: string;
     createdAt: FakeTimestamp;

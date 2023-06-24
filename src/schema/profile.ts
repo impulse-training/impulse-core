@@ -1,7 +1,7 @@
 import { AppStateStatus, Permission } from 'react-native';
 import { FakeTimestamp } from '../utils/FakeTimestamp';
 import { TimeGameplanValue } from './gameplan';
-import { NOTIFICATION_TYPES } from './notification';
+import { NOTIFICATION_TYPES, NotificationOption } from './notification';
 import { TacticValue } from './tactic';
 
 export interface ProfileValue {
@@ -19,7 +19,7 @@ export interface ProfileValue {
   expoPushToken?: string;
   releaseChannel?: 'default' | 'canary';
   notificationPreferences: Partial<
-    Record<keyof typeof NOTIFICATION_TYPES, boolean>
+    Record<keyof typeof NOTIFICATION_TYPES, Array<NotificationOption>>
   >;
   isCurrentlyTrackingMotion?: boolean;
   showTacticsFromSupportGroups?: boolean;
