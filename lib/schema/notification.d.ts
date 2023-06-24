@@ -2,9 +2,6 @@ import { ExpoPushMessage, ExpoPushReceipt, ExpoPushTicket } from 'expo-server-sd
 import { FakeTimestamp } from '../utils/FakeTimestamp';
 export declare const NOTIFICATION_TYPES: {
     NEW_MESSAGE: string;
-    WEARING_BUTTON: string;
-    MORNINGS: string;
-    DEBRIEF_REMINDERS: string;
 };
 export type NotificationOption = 'push' | 'email';
 export interface NotificationValue {
