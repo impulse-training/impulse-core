@@ -1,6 +1,6 @@
 import * as Location from 'expo-location';
 import { FakeTimestamp } from '../utils/FakeTimestamp';
-import { PatternValue } from './pattern';
+import { PatternUsage, PatternValue } from './pattern';
 import { ProfileValue } from './profile';
 import { Recording } from './recording';
 import { TacticValue } from './tactic';
@@ -112,12 +112,6 @@ export type ImpulseLogValue = BaseLogValue & {
   debriefReminderSentAt?: FakeTimestamp | null;
   debriefedAt?: FakeTimestamp | null;
 };
-
-export interface PatternUsage {
-  value: number;
-  transformedValue: number;
-  formattedValue: string;
-}
 
 export type LogValue =
   | TacticsLogValue

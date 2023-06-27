@@ -14,5 +14,11 @@ export interface PatternValue {
         title: string;
         body: string;
     };
+    initialUsage?: PatternUsage;
     sendWeeklyReports: boolean;
+}
+export interface PatternUsage {
+    value: number;
+    transformedValue: number;
+    formattedValue: string;
 }
