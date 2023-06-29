@@ -14,8 +14,8 @@ export class Pattern {
 }
 
 export function exponentialGrowth(baseValue: number) {
-  const val = baseValue ** 1.4 + 1.08 ** baseValue;
-  return Math.round(val / 5) * 5;
+  const val = baseValue ** 1.4 + 1.07 ** baseValue;
+  return Math.round(val);
 }
 
 export function inverseExponentialGrowth(
