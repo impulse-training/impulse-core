@@ -17,6 +17,7 @@ export interface PatternValue {
   };
   // This is an audit of how much time (or similar) they spend engaging in the behaviour
   initialUsage?: PatternUsage;
+  goalUsage?: PatternUsage;
   sendWeeklyReports: boolean;
 }
 

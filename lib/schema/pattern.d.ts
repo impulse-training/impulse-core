@@ -15,6 +15,7 @@ export interface PatternValue {
         body: string;
     };
     initialUsage?: PatternUsage;
+    goalUsage?: PatternUsage;
     sendWeeklyReports: boolean;
 }
 export interface PatternUsage {
