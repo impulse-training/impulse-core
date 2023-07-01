@@ -54,7 +54,7 @@ export type AudioTactic = TacticValueBase<'audio'> & {
 };
 export type TimerTactic = TacticValueBase<'timer'> & {
     metadata: {
-        timerSeconds?: number;
+        timerMinutes: number;
     };
 };
 export type SpotifyEpisodeTactic = TacticValueBase<'link'> & {
@@ -75,5 +75,5 @@ export type FeelingsTactic = TacticValueBase<'feelings'> & {
 };
 type QuestionTactic = TacticValueBase<'question'>;
 type TaskTactic = TacticValueBase<'task'>;
-export type TacticValue = PhoneTacticValue | AudioTactic | SpotifyEpisodeTactic | SpotifyTrackTactic | QuestionTactic | FeelingsTactic | TaskTactic;
+export type TacticValue = PhoneTacticValue | AudioTactic | SpotifyEpisodeTactic | SpotifyTrackTactic | QuestionTactic | FeelingsTactic | TaskTactic | TimerTactic;
 export {};

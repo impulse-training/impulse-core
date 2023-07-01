@@ -62,7 +62,7 @@ export type AudioTactic = TacticValueBase<'audio'> & {
 
 export type TimerTactic = TacticValueBase<'timer'> & {
   metadata: {
-    timerSeconds?: number;
+    timerMinutes: number;
   };
 };
 
@@ -94,4 +94,5 @@ export type TacticValue =
   | SpotifyTrackTactic
   | QuestionTactic
   | FeelingsTactic
-  | TaskTactic;
+  | TaskTactic
+  | TimerTactic;
