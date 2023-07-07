@@ -1,14 +1,19 @@
 import { FakeTimestamp } from '../utils/FakeTimestamp';
-export interface GameplanValueBase {
+import { TacticValue } from './tactic';
+export type Gameplan = {
+    tacticIds: Array<string>;
+    suggestedTacticIds: Array<string>;
+    tacticsById: Record<string, TacticValue>;
+};
+export type GameplanValueBase = Gameplan & {
     uid: string;
     createdAt: FakeTimestamp;
     updatedAt: FakeTimestamp;
-    tacticIds: Array<string>;
-    suggestedTacticIds: Array<string>;
     title?: string;
     navigationTitle?: string;
     isTemplate?: boolean;
-}
+    tacticsUpdatedAt?: FakeTimestamp;
+};
 export type PatternGameplanValue = GameplanValueBase & {
     type: 'pattern';
     patternId: string;

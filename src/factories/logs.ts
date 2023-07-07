@@ -32,7 +32,8 @@ export const makeImpulseFactory = (TimestampKlass: typeof FakeTimestamp) =>
     tagValues: {},
     patterns: {},
     patternUsage: {},
-    gameplan: {},
+    gameplans: {},
+    gameplan: { tacticIds: [], suggestedTacticIds: [], tacticsById: {} },
     tags: {},
   });
 
@@ -54,7 +55,7 @@ export const makeTacticsLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
     tacticResponses: {},
     tagIds: [],
     tagValues: {},
-    gameplan: {},
+    gameplan: { tacticIds: [], suggestedTacticIds: [], tacticsById: {} },
     tags: {},
   });
 
@@ -77,7 +78,7 @@ export const makeTimeLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
     allTacticIds: [],
     tacticResponses: {},
     tagValues: {},
-    gameplan: {},
+    gameplan: { tacticIds: [], suggestedTacticIds: [], tacticsById: {} },
     tags: {},
   });
 
@@ -101,7 +102,7 @@ export const makeDebriefLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
     allTacticIds: [],
     tacticResponses: {},
     tagValues: {},
-    gameplan: {},
+    gameplan: { tacticIds: [], suggestedTacticIds: [], tacticsById: {} },
     tags: {},
     patterns: {},
     patternIds: [],
@@ -127,6 +128,6 @@ export const makeMotionLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
     allTacticIds: [],
     tacticResponses: {},
     tagValues: {},
-    gameplan: {},
+    gameplan: { tacticIds: [], suggestedTacticIds: [], tacticsById: {} },
     tags: {},
   });

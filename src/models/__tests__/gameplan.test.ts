@@ -18,6 +18,7 @@ describe('Gameplan classes', () => {
           hour: 12,
           minute: 0,
           suggestedTacticIds: [],
+          tacticsById: {},
         });
         expect(gameplan.summary).toBeNull();
       });
@@ -34,6 +35,7 @@ describe('Gameplan classes', () => {
           hour: 12,
           minute: 0,
           suggestedTacticIds: [],
+          tacticsById: {},
         });
         expect(gameplan.summary).toBe('Every day at 12:00 PM');
       });
@@ -50,6 +52,7 @@ describe('Gameplan classes', () => {
           hour: 12,
           minute: 0,
           suggestedTacticIds: [],
+          tacticsById: {},
         });
         expect(gameplan.summary).toBe('Every weekday at 12:00 PM');
       });
@@ -66,6 +69,7 @@ describe('Gameplan classes', () => {
           hour: 12,
           minute: 0,
           suggestedTacticIds: [],
+          tacticsById: {},
         });
         expect(gameplan.summary).toBe(
           'On Sundays, Tuesdays, and Thursdays at 12:00 PM'
@@ -84,6 +88,7 @@ describe('Gameplan classes', () => {
           hour: 1,
           minute: 0,
           suggestedTacticIds: [],
+          tacticsById: {},
         });
         expect(gameplan.summary).toBe('Every weekday at 1:00 AM');
       });
@@ -100,6 +105,7 @@ describe('Gameplan classes', () => {
           hour: 1,
           minute: 0,
           suggestedTacticIds: [],
+          tacticsById: {},
         });
         expect(gameplan.summary).toBe('Daily except Saturdays at 1:00 AM');
       });
@@ -119,6 +125,7 @@ describe('Gameplan classes', () => {
           locationId: 'abc',
           mode: 'enter',
           suggestedTacticIds: [],
+          tacticsById: {},
         },
         {
           uid,

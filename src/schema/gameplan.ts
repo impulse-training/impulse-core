@@ -1,15 +1,29 @@
 import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { TacticValue } from './tactic';
 
-export interface GameplanValueBase {
+// We add the suffix "Value" to all of our document types, but here we define the concept of a
+// "Gameplan", which refers to the core kernel of tactic data (things that a user can do in an
+// impulse moment, or ahead of time). // This Gameplan is mixed into the actual gameplan document,
+// but is also added to other documents, including the profile document, and the log document.
+export type Gameplan = {
+  tacticIds: Array<string>;
+  // Some pre-prepared suggested tactics that can be pushed into the tactics array
+  suggestedTacticIds: Array<string>;
+  // Finally, we prefetch the actual tactic data, too, so it's available immediately
+  tacticsById: Record<string, TacticValue>;
+};
+
+// Now, we define a base gameplan type, which is extended for pattern, tactic, location and impulse
+// gameplans, etc.
+export type GameplanValueBase = Gameplan & {
   uid: string;
   createdAt: FakeTimestamp;
   updatedAt: FakeTimestamp;
-  tacticIds: Array<string>;
-  suggestedTacticIds: Array<string>;
   title?: string;
   navigationTitle?: string;
   isTemplate?: boolean;
-}
+  tacticsUpdatedAt?: FakeTimestamp;
+};
 
 // A pattern gameplan is the set of tactics that we use in an impulse moment, or after a success or
 // setback.

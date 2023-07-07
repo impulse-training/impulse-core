@@ -1,5 +1,6 @@
 import * as Location from 'expo-location';
 import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { Gameplan } from './gameplan';
 import { PatternUsage, PatternValue } from './pattern';
 import { ProfileValue } from './profile';
 import { Recording } from './recording';
@@ -16,7 +17,6 @@ export interface BaseLogValue {
   updatedAt: FakeTimestamp;
   startTime: FakeTimestamp;
   timezone: string;
-  tactics: Record<string, TacticValue>;
   tagsByTacticId: Record<string, Record<string, TagValue>>;
   location: Partial<Location.LocationObjectCoords>;
   locationIsFetching: boolean;
@@ -24,12 +24,15 @@ export interface BaseLogValue {
   allTacticIds: Array<string>;
   tacticIds: Array<string>;
 
-  // This object contains the user's gameplan, serialized as ids of tactics
-  gameplan: ProfileValue['gameplan'];
+  // A gameplan is a set of tactics and suggestions that a user can follow to help them through an
+  // impulse moment, or to help them prepare for a moment. Every log that has tactics has a
+  // "gameplan".
+  gameplan: Gameplan;
 
-  // These are the suggestions that were pushed to the log record, i.e. the user clicked the
-  // "suggest" button
+  // Deprecated - we used to store tactic ids directly -------------------------
+  tactics: Record<string, TacticValue>;
   suggestedTacticIds?: Array<string>;
+  // ---------------------------------------------------------------------------
 
   // This contains a map of suggestions of tactics, and the id of the suggester
   supportGroupSuggestedTacticIds?: {
@@ -67,6 +70,8 @@ export type LocationLogValue = BaseLogValue & {
 export type TimeLogValue = BaseLogValue & {
   type: 'time';
   isDisplayable: true;
+
+  // TODO: deprectate / remove?
   gameplanId: string;
 };
 
@@ -104,6 +109,10 @@ export type ImpulseLogValue = BaseLogValue & {
   outcome: Outcome;
   isDisplayable: true;
   buttonPressSecondsSinceEpoch?: number;
+
+  // This object contains the user's full gameplan (tactics and suggestions for all patterns)
+  gameplans: ProfileValue['gameplans'];
+
   patterns: Record<string, PatternValue>;
   patternId: string;
   patternIds: Array<string>;

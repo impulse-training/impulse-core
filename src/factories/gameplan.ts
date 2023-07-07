@@ -18,6 +18,7 @@ export const makeLocationGameplanFactory = (
     type: 'location',
     mode: 'enter',
     suggestedTacticIds: [],
+    tacticsById: {},
   });
 
 export const makeTimeGameplanFactory = (TimestampKlass: typeof FakeTimestamp) =>
@@ -32,6 +33,7 @@ export const makeTimeGameplanFactory = (TimestampKlass: typeof FakeTimestamp) =>
     hour: 12,
     minute: 0,
     suggestedTacticIds: [],
+    tacticsById: {},
   });
 
 export const makeDebriefGameplanFactory = (
@@ -48,4 +50,5 @@ export const makeDebriefGameplanFactory = (
     hour: 12,
     minute: 0,
     suggestedTacticIds: [],
+    tacticsById: {},
   });

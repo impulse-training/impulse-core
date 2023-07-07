@@ -1,6 +1,6 @@
 import { AppStateStatus, Permission } from 'react-native';
 import { FakeTimestamp } from '../utils/FakeTimestamp';
-import { TimeGameplanValue } from './gameplan';
+import { Gameplan, TimeGameplanValue } from './gameplan';
 import { NOTIFICATION_TYPES, NotificationOption } from './notification';
 import { TacticValue } from './tactic';
 export interface ProfileValue {
@@ -32,7 +32,8 @@ export interface ProfileValue {
     isTourCompleted?: boolean;
     isButtonSetupSkipped?: boolean;
     invitationCode: string;
-    gameplan: GameplanByPatternId;
+    gameplans: GameplansByPatternId;
+    gameplansUpdatedAt: FakeTimestamp;
     impulseNotifications?: Record<string, {
         title: string;
         body: string;
@@ -42,7 +43,4 @@ export interface ProfileValue {
         tactic: TacticValue;
     }>;
 }
-export type GameplanByPatternId = Record<string, Record<'impulse' | 'success' | 'setback', {
-    tacticIds: Array<string>;
-    suggestedTacticIds: Array<string>;
-}>>;
+export type GameplansByPatternId = Record<string, Record<'impulse' | 'success' | 'setback', Gameplan>>;
