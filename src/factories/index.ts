@@ -4,6 +4,7 @@ import { makeChallengeFactory } from './challenge';
 import {
   makeDebriefGameplanFactory,
   makeLocationGameplanFactory,
+  makePatternGameplanFactory,
   makeTimeGameplanFactory,
 } from './gameplan';
 import { makeLocationFactory } from './location';
@@ -38,6 +39,7 @@ export function makeFactories(TimestampKlass: typeof FakeTimestamp) {
     profileFactory: makeProfileFactory(TimestampKlass),
     adminProfileFactory: makeAdminProfileFactory(TimestampKlass),
     supportGroupFactory: makeSupportGroupFactory(TimestampKlass),
+    patternGameplanFactory: makePatternGameplanFactory(TimestampKlass),
     debriefGameplanFactory: makeDebriefGameplanFactory(TimestampKlass),
     timeGameplanFactory: makeTimeGameplanFactory(TimestampKlass),
     patternFactory: makePatternFactory(TimestampKlass),

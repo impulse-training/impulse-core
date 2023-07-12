@@ -71,7 +71,7 @@ export type TimeLogValue = BaseLogValue & {
   type: 'time';
   isDisplayable: true;
 
-  // TODO: deprectate / remove?
+  // TODO: deprecate / remove?
   gameplanId: string;
 };
 

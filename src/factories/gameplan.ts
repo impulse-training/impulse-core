@@ -3,9 +3,25 @@ import * as Factory from 'factory.ts';
 import {
   DebriefGameplanValue,
   LocationGameplanValue,
+  PatternGameplanValue,
   TimeGameplanValue,
 } from '../schema/gameplan';
 import { FakeTimestamp } from '../utils/FakeTimestamp';
+
+export const makePatternGameplanFactory = (
+  TimestampKlass: typeof FakeTimestamp
+) =>
+  Factory.makeFactory<PatternGameplanValue>({
+    uid: Factory.each(i => i.toString()),
+    createdAt: TimestampKlass.now(),
+    updatedAt: TimestampKlass.now(),
+    tacticIds: [],
+    patternId: 'abc123',
+    type: 'pattern',
+    for: 'impulse',
+    suggestedTacticIds: [],
+    tacticsById: {},
+  });
 
 export const makeLocationGameplanFactory = (
   TimestampKlass: typeof FakeTimestamp
