@@ -38,7 +38,7 @@ interface TacticValueBase<K> {
     templateFor?: Array<'impulse' | 'success' | 'setback'>;
     isBooster?: boolean;
     tagsSummary?: Record<string, string>;
-    featuredCategory?: string;
+    categoryIds?: Array<string>;
     showResponseBox?: boolean;
     deviceTimeRemindersDigest?: string;
     deviceLocationRemindersDigest?: string;

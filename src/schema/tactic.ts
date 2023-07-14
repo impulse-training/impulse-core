@@ -37,7 +37,7 @@ interface TacticValueBase<K> {
   templateFor?: Array<'impulse' | 'success' | 'setback'>;
   isBooster?: boolean;
   tagsSummary?: Record<string, string>;
-  featuredCategory?: string;
+  categoryIds?: Array<string>;
 
   // In impulse moments, do we want to show a field for collecting a response? This is the case for
   // questions, like "How are you feeling right now?"
