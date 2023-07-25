@@ -8,6 +8,7 @@ export * from './comment';
 export * from './contact';
 export * from './gameplan';
 export * from './invitation';
+export * from './issue';
 export * from './location';
 export * from './logSummary';
 export * from './logs';

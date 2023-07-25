@@ -10,6 +10,7 @@ export declare function makeFactories(TimestampKlass: typeof FakeTimestamp): {
     locationFactory: import("factory.ts").Factory<import("..").LocationValue, keyof import("..").LocationValue>;
     logSummaryFactory: import("factory.ts").Factory<import("..").LogSummaryValue, keyof import("..").LogSummaryValue>;
     profileFactory: import("factory.ts").Factory<import("..").ProfileValue, keyof import("..").ProfileValue>;
+    issueFactory: import("factory.ts").Factory<import("..").IssueValue, keyof import("..").IssueValue>;
     adminProfileFactory: import("factory.ts").Factory<import("..").ProfileValue, keyof import("..").ProfileValue>;
     supportGroupFactory: import("factory.ts").Factory<import("..").SupportGroupValue, keyof import("..").SupportGroupValue>;
     patternGameplanFactory: import("factory.ts").Factory<import("..").PatternGameplanValue, "type" | "createdAt" | "updatedAt" | "uid" | "isTemplate" | keyof import("..").Gameplan | "title" | "navigationTitle" | "tacticsUpdatedAt" | "patternId" | "for">;

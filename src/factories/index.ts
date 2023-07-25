@@ -7,6 +7,7 @@ import {
   makePatternGameplanFactory,
   makeTimeGameplanFactory,
 } from './gameplan';
+import { makeIssueFactory } from './issue';
 import { makeLocationFactory } from './location';
 import { makeLogSummaryFactory } from './logSummary';
 import {
@@ -37,6 +38,7 @@ export function makeFactories(TimestampKlass: typeof FakeTimestamp) {
     locationFactory: makeLocationFactory(TimestampKlass),
     logSummaryFactory: makeLogSummaryFactory(TimestampKlass),
     profileFactory: makeProfileFactory(TimestampKlass),
+    issueFactory: makeIssueFactory(TimestampKlass),
     adminProfileFactory: makeAdminProfileFactory(TimestampKlass),
     supportGroupFactory: makeSupportGroupFactory(TimestampKlass),
     patternGameplanFactory: makePatternGameplanFactory(TimestampKlass),
