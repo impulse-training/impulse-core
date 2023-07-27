@@ -47,7 +47,6 @@
   },
   "homepage": "https://github.com/ryansonshine/typescript-npm-package-template#readme",
   "devDependencies": {
-    "@faker-js/faker": "^7.6.0",
     "@ryansonshine/commitizen": "^4.2.8",
     "@ryansonshine/cz-conventional-changelog": "^3.3.4",
     "@types/jest": "^27.5.2",
@@ -118,6 +117,7 @@
   "dependencies": {
     "date-fns": "^2.29.3",
     "factory.ts": "^1.4.0",
+    "@faker-js/faker": "^7.6.0",
     "lodash": "^4.17.21",
     "pluralize": "^8.0.0"
   }
