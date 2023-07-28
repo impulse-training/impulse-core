@@ -17,6 +17,7 @@ export interface PatternValue {
     initialUsage?: PatternUsage;
     goalUsage?: PatternUsage;
     sendWeeklyReports: boolean;
+    suggestedTacticIds?: Array<string>;
 }
 export interface PatternUsage {
     value: number;
