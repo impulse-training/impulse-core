@@ -40,6 +40,7 @@ interface TacticValueBase<K> {
     isBooster?: boolean;
     tagsSummary?: Record<string, string>;
     categoryIds?: Array<string>;
+    isShared?: boolean;
     showResponseBox?: boolean;
     deviceTimeRemindersDigest?: string;
     deviceLocationRemindersDigest?: string;
