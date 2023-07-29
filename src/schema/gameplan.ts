@@ -6,10 +6,11 @@ import { TacticValue } from './tactic';
 // impulse moment, or ahead of time). // This Gameplan is mixed into the actual gameplan document,
 // but is also added to other documents, including the profile document, and the log document.
 export type Gameplan = {
+  // The user's chosen tactics
   tacticIds: Array<string>;
-  // Some pre-prepared suggested tactics that can be pushed into the tactics array
+  // Some pre-prepared suggested tactics that are shown to the user
   suggestedTacticIds: Array<string>;
-  // Finally, we prefetch the actual tactic data, too, so it's available immediately
+  // Finally, we prefetch the actual tactic data so it's available immediately
   tacticsById: Record<string, TacticValue>;
 };
 
