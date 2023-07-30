@@ -34,6 +34,8 @@ export interface BaseLogValue {
   suggestedTacticIds?: Array<string>;
   // ---------------------------------------------------------------------------
 
+  isUpdatingSuggestions?: boolean;
+
   // This contains a map of suggestions of tactics, and the id of the suggester
   supportGroupSuggestedTacticIds?: {
     impulse: Record<string, string>;

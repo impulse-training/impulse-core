@@ -22,6 +22,7 @@ export interface BaseLogValue {
     gameplan: Gameplan;
     tactics: Record<string, TacticValue>;
     suggestedTacticIds?: Array<string>;
+    isUpdatingSuggestions?: boolean;
     supportGroupSuggestedTacticIds?: {
         impulse: Record<string, string>;
         success: Record<string, string>;
