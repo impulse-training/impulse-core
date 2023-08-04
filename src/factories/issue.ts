@@ -7,4 +7,5 @@ export const makeIssueFactory = (TimestampKlass: typeof FakeTimestamp) =>
     name: 'YouTube',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
+    synonyms: ['Videos'],
   });

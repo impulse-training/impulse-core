@@ -5,4 +5,5 @@ export interface IssueValue {
   updatedAt: FakeTimestamp;
   name: string;
   suggestedTacticIds?: Array<string>;
+  synonyms: Array<string>;
 }
