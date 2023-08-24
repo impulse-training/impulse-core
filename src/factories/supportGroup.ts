@@ -14,5 +14,5 @@ export const makeSupportGroupFactory = (TimestampKlass: typeof FakeTimestamp) =>
     creatorName: 'Mooky',
     creatorUid: 'abc123',
     icon: 'group',
-    tacticIds: {},
+    suggestedTacticIds: {},
   });

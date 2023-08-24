@@ -17,7 +17,6 @@ export type GameplanValueBase = Gameplan & {
 export type PatternGameplanValue = GameplanValueBase & {
     type: 'pattern';
     patternId: string;
-    for: 'impulse' | 'success' | 'setback';
 };
 type SchedulableGameplanValue = GameplanValueBase & {
     weekdays: Array<number>;

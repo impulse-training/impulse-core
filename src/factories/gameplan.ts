@@ -18,7 +18,6 @@ export const makePatternGameplanFactory = (
     tacticIds: [],
     patternId: 'abc123',
     type: 'pattern',
-    for: 'impulse',
     suggestedTacticIds: [],
     tacticsById: {},
   });

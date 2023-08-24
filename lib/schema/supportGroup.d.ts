@@ -22,11 +22,7 @@ export interface SupportGroupValue {
         [uid: string]: number;
     };
     permissions: SupportGroupPermissions;
-    tacticIds: {
-        impulse?: Record<string, Array<string>>;
-        success?: Record<string, Array<string>>;
-        setback?: Record<string, Array<string>>;
-    };
+    suggestedTacticIds: Record<string, Array<string>>;
 }
 export type PermissionKey = keyof typeof CONVERSATION_PERMISSIONS;
 export type SupportGroupPermissions = {

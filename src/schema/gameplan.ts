@@ -26,12 +26,10 @@ export type GameplanValueBase = Gameplan & {
   tacticsUpdatedAt?: FakeTimestamp;
 };
 
-// A pattern gameplan is the set of tactics that we use in an impulse moment, or after a success or
-// setback.
+// A pattern gameplan is the set of tactics that we use in an impulse moment
 export type PatternGameplanValue = GameplanValueBase & {
   type: 'pattern';
   patternId: string;
-  for: 'impulse' | 'success' | 'setback';
 };
 
 // A time gameplan is a set of tactics that we do at a scheduled time in the week
