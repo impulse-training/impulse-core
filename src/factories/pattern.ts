@@ -12,4 +12,5 @@ export const makePatternFactory = (TimestampKlass: typeof FakeTimestamp) =>
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     sendWeeklyReports: false,
+    gameplanId: Factory.each(i => i.toString()),
   });

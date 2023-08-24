@@ -20,6 +20,8 @@ export interface PatternValue {
   goalUsage?: PatternUsage;
   sendWeeklyReports: boolean;
   suggestedTacticIds?: Array<string>;
+  gameplanId: string;
+  pastGameplanIds?: Array<string>;
 }
 
 export interface PatternUsage {
