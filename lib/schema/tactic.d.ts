@@ -37,6 +37,7 @@ interface TacticValueBase<K> {
     href?: string;
     templateFor?: Array<'impulse' | 'success' | 'setback'>;
     suggestedFor?: Array<'impulse' | 'success' | 'setback'>;
+    isTemplate?: boolean;
     isBooster?: boolean;
     tagsSummary?: Record<string, string>;
     categoryIds?: Array<string>;

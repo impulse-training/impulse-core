@@ -34,8 +34,13 @@ interface TacticValueBase<K> {
   image?: { uri: string; storagePath?: string };
   language?: string;
   href?: string;
+
+  // Deprecated: remove
   templateFor?: Array<'impulse' | 'success' | 'setback'>;
   suggestedFor?: Array<'impulse' | 'success' | 'setback'>;
+
+  isTemplate?: boolean;
+
   isBooster?: boolean;
   tagsSummary?: Record<string, string>;
   categoryIds?: Array<string>;
