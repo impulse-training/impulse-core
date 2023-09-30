@@ -17,8 +17,8 @@ export interface PatternValue {
     gameplanId: string;
     pastGameplanIds?: Array<string>;
 }
-export interface PatternUsage {
+export interface Usage {
+    sliderValue: number;
     value: number;
-    transformedValue: number;
     formattedValue: string;
 }

@@ -29,7 +29,6 @@ export type SliderTactic = TacticValueBase<'slider'> & {
     unit: 'time' | 'custom';
     customUnit?: string;
     maximum: number;
-    value: number;
     transformFunction: 'linear' | 'logarithmic';
 };
 export type FolderTactic = TacticValueBase<'folder'> & {

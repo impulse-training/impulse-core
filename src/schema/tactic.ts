@@ -29,8 +29,6 @@ export type SliderTactic = TacticValueBase<'slider'> & {
   unit: 'time' | 'custom';
   customUnit?: string;
   maximum: number;
-  value: number;
-  // There's a slider, this determines the function of the slider
   transformFunction: 'linear' | 'logarithmic';
 };
 

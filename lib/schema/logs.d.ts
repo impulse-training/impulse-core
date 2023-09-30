@@ -1,7 +1,7 @@
 import * as Location from 'expo-location';
 import { FakeTimestamp } from '../utils/FakeTimestamp';
 import { Gameplan } from './gameplan';
-import { PatternUsage, PatternValue } from './pattern';
+import { PatternValue, Usage } from './pattern';
 import { ProfileValue } from './profile';
 import { Recording } from './recording';
 import { TacticValue } from './tactic';
@@ -31,6 +31,7 @@ export interface BaseLogValue {
     };
     tacticResponses: Record<string, string>;
     tacticRecordings?: Record<string, Recording>;
+    tacticUsage?: Record<string, Usage>;
     tags: Record<string, TagValue>;
     tagIds: Array<string>;
     tagValues: Record<string, number>;
@@ -59,8 +60,8 @@ export type DebriefLogValue = BaseLogValue & {
     isDisplayable: true;
     gameplanId: string;
     patternIds: Array<string>;
-    patternUsage: Record<string, PatternUsage>;
-    patternUsageEntries: Record<string, Record<string, PatternUsage>>;
+    patternUsage: Record<string, Usage>;
+    patternUsageEntries: Record<string, Record<string, Usage>>;
 };
 export type MotionLogValue = BaseLogValue & {
     type: 'motion';
@@ -82,7 +83,7 @@ export type ImpulseLogValue = BaseLogValue & {
     patterns: Record<string, PatternValue>;
     patternId: string;
     patternIds: Array<string>;
-    patternUsage: Record<string, PatternUsage>;
+    patternUsage: Record<string, Usage>;
     debriefNotes?: string;
     debriefReminderSentAt?: FakeTimestamp | null;
     debriefedAt?: FakeTimestamp | null;
