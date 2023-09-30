@@ -22,6 +22,8 @@ export interface BaseLogValue {
   locationIsFetching: boolean;
   locationFormatted?: string;
   allTacticIds: Array<string>;
+
+  // TODO: this shouldbe renamed to 'selectedTacticIds'
   tacticIds: Array<string>;
 
   // A gameplan is a set of tactics and suggestions that a user can follow to help them through an

@@ -23,6 +23,17 @@ interface TacticValueBase<K> {
   isShared?: boolean;
 }
 
+export type SliderTactic = TacticValueBase<'slider'> & {
+  lowEmoji?: string;
+  highEmoji?: string;
+  unit: 'time' | 'custom';
+  customUnit?: string;
+  maximum: number;
+  value: number;
+  // There's a slider, this determines the function of the slider
+  transformFunction: 'linear' | 'logarithmic';
+};
+
 export type FolderTactic = TacticValueBase<'folder'> & {
   tacticIds: Array<string>;
   tacticsById?: Record<string, TacticValue>;
@@ -67,4 +78,5 @@ export type TacticValue =
   | SpotifyTrackTactic
   | TaskTactic
   | TimerTactic
-  | FolderTactic;
+  | FolderTactic
+  | SliderTactic;

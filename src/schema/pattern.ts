@@ -6,18 +6,15 @@ export interface PatternValue {
   updatedAt: FakeTimestamp;
   name: string;
   ordinal: number;
+  // DEPRECATED - moving to tactic model
   unit: 'time' | 'custom';
   customUnit?: string;
-  setbackDefinition?: string;
-  setbackUnitMaximum?: number;
+  //
   supportGroupIds?: Array<string>;
   notification?: {
     title: string;
     body: string;
   };
-  // This is an audit of how much time (or similar) they spend engaging in the behaviour
-  initialUsage?: PatternUsage;
-  goalUsage?: PatternUsage;
   sendWeeklyReports: boolean;
   suggestedTacticIds?: Array<string>;
   gameplanId: string;

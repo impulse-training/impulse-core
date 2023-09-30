@@ -23,6 +23,15 @@ interface TacticValueBase<K> {
     categoryIds?: Array<string>;
     isShared?: boolean;
 }
+export type SliderTactic = TacticValueBase<'slider'> & {
+    lowEmoji?: string;
+    highEmoji?: string;
+    unit: 'time' | 'custom';
+    customUnit?: string;
+    maximum: number;
+    value: number;
+    transformFunction: 'linear' | 'logarithmic';
+};
 export type FolderTactic = TacticValueBase<'folder'> & {
     tacticIds: Array<string>;
     tacticsById?: Record<string, TacticValue>;
@@ -53,5 +62,5 @@ export type SpotifyTrackTactic = TacticValueBase<'link'> & {
     };
 };
 type TaskTactic = TacticValueBase<'task'>;
-export type TacticValue = PhoneTacticValue | AudioTactic | SpotifyEpisodeTactic | SpotifyTrackTactic | TaskTactic | TimerTactic | FolderTactic;
+export type TacticValue = PhoneTacticValue | AudioTactic | SpotifyEpisodeTactic | SpotifyTrackTactic | TaskTactic | TimerTactic | FolderTactic | SliderTactic;
 export {};
