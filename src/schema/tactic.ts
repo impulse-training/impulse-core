@@ -7,7 +7,7 @@ export interface ImageValue {
   filePath: string;
 }
 
-interface TacticValueBase<K> {
+export interface TacticValueBase<K> {
   type?: K;
   uid?: string;
   createdAt: FakeTimestamp;
@@ -23,14 +23,29 @@ interface TacticValueBase<K> {
   isShared?: boolean;
 }
 
-export type SliderTactic = TacticValueBase<'slider'> & {
-  lowEmoji?: string;
-  highEmoji?: string;
-  unit: 'time' | 'custom';
-  customUnit?: string;
-  maximum: number;
-  transformFunction: 'linear' | 'logarithmic';
+type TimeSliderTactic = TacticValueBase<'slider'> & {
+  type: 'time';
+  transformFunction: 'logarithmic';
 };
+
+type EmojiSliderTactic = TacticValueBase<'slider'> & {
+  type: 'emojis';
+  transformFunction: 'linear';
+  lowEmoji: string;
+  highEmoji: string;
+};
+
+type CustomSliderTactic = TacticValueBase<'slider'> & {
+  type: 'custom';
+  transformFunction: 'linear';
+  customUnit: string;
+  maximum: number;
+};
+
+export type SliderTactic =
+  | TimeSliderTactic
+  | EmojiSliderTactic
+  | CustomSliderTactic;
 
 export type FolderTactic = TacticValueBase<'folder'> & {
   tacticIds: Array<string>;

@@ -17,7 +17,7 @@ export interface PatternValue {
   };
   sendWeeklyReports: boolean;
   suggestedTacticIds?: Array<string>;
-  gameplanId: string;
+  gameplanId?: string;
   pastGameplanIds?: Array<string>;
 }
 
