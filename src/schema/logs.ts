@@ -121,7 +121,9 @@ export type ImpulseLogValue = BaseLogValue & {
 
   patterns: Record<string, PatternValue>;
   patternId: string;
+  // Deprecated ------------------------------------------------------------------------------------
   patternIds: Array<string>;
+  // -----------------------------------------------------------------------------------------------
   patternUsage: Record<string, Usage>;
   debriefNotes?: string;
   debriefReminderSentAt?: FakeTimestamp | null;

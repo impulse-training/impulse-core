@@ -32,7 +32,7 @@ export interface ProfileValue {
     isTourCompleted?: boolean;
     isButtonSetupSkipped?: boolean;
     invitationCode: string;
-    gameplans: GameplansByPatternId;
+    gameplans: Record<string, Gameplan>;
     gameplansUpdatedAt: FakeTimestamp;
     impulseNotifications?: Record<string, {
         title: string;
@@ -43,4 +43,3 @@ export interface ProfileValue {
         tactic: TacticValue;
     }>;
 }
-export type GameplansByPatternId = Record<string, Record<'impulse' | 'success' | 'setback', Gameplan>>;
