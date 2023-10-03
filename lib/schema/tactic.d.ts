@@ -56,6 +56,10 @@ export type TimerTactic = TacticValueBase<'timer'> & {
         timerMinutes: number;
     };
 };
+export type OptionsTactic = TacticValueBase<'options'> & {
+    tacticIds: Array<string>;
+    tacticsById: Record<string, TacticValue>;
+};
 export type SpotifyEpisodeTactic = TacticValueBase<'link'> & {
     metadata: {
         episodeId: string;
