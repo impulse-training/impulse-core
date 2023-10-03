@@ -20,4 +20,3 @@ export * from './profile';
 export * from './spotifyCredentials';
 export * from './supportGroup';
 export * from './tactic';
-export * from './tag';

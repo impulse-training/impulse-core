@@ -5,7 +5,6 @@ import { PatternValue, Usage } from './pattern';
 import { ProfileValue } from './profile';
 import { Recording } from './recording';
 import { TacticValue } from './tactic';
-import { TagValue } from './tag';
 export type Outcome = 'success' | 'setback' | 'indeterminate';
 export interface BaseLogValue {
     uid: string;
@@ -13,7 +12,6 @@ export interface BaseLogValue {
     updatedAt: FakeTimestamp;
     startTime: FakeTimestamp;
     timezone: string;
-    tagsByTacticId: Record<string, Record<string, TagValue>>;
     location: Partial<Location.LocationObjectCoords>;
     locationIsFetching: boolean;
     locationFormatted?: string;
@@ -32,9 +30,6 @@ export interface BaseLogValue {
     tacticResponses: Record<string, string>;
     tacticRecordings?: Record<string, Recording>;
     tacticUsage?: Record<string, Usage>;
-    tags: Record<string, TagValue>;
-    tagIds: Array<string>;
-    tagValues: Record<string, number>;
     sharedWithSupportGroupIds?: Array<string>;
 }
 export type TacticsLogValue = BaseLogValue & {

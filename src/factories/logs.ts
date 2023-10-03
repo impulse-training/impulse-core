@@ -23,18 +23,16 @@ export const makeImpulseFactory = (TimestampKlass: typeof FakeTimestamp) =>
     patternIds: [],
     tactics: {},
     location: {},
-    tagsByTacticId: {},
+
     locationIsFetching: false,
     tacticIds: [],
     allTacticIds: [],
     tacticResponses: {},
-    tagIds: [],
-    tagValues: {},
+
     patterns: {},
     patternUsage: {},
     gameplans: {},
     gameplan: { tacticIds: [], suggestedTacticIds: [], tacticsById: {} },
-    tags: {},
   });
 
 export const makeTacticsLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
@@ -48,15 +46,13 @@ export const makeTacticsLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
     timezone: 'America/Botota',
     tactics: {},
     location: {},
-    tagsByTacticId: {},
+
     locationIsFetching: false,
     tacticIds: [],
     allTacticIds: [],
     tacticResponses: {},
-    tagIds: [],
-    tagValues: {},
+
     gameplan: { tacticIds: [], suggestedTacticIds: [], tacticsById: {} },
-    tags: {},
   });
 
 export const makeTimeLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
@@ -68,18 +64,17 @@ export const makeTimeLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
     updatedAt: TimestampKlass.now(),
     startTime: TimestampKlass.now(),
     timezone: 'America/Botota',
-    tagIds: [],
+
     isDisplayable: true,
     tactics: {},
-    tagsByTacticId: {},
+
     location: {},
     locationIsFetching: false,
     tacticIds: [],
     allTacticIds: [],
     tacticResponses: {},
-    tagValues: {},
+
     gameplan: { tacticIds: [], suggestedTacticIds: [], tacticsById: {} },
-    tags: {},
   });
 
 export const makeDebriefLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
@@ -91,19 +86,19 @@ export const makeDebriefLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
     updatedAt: TimestampKlass.now(),
     startTime: TimestampKlass.now(),
     timezone: 'America/Botota',
-    tagIds: [],
+
     isDisplayable: true,
     tactics: {},
-    tagsByTacticId: {},
+
     location: {},
     locationIsFetching: false,
     outcome: 'indeterminate',
     tacticIds: [],
     allTacticIds: [],
     tacticResponses: {},
-    tagValues: {},
+
     gameplan: { tacticIds: [], suggestedTacticIds: [], tacticsById: {} },
-    tags: {},
+
     patterns: {},
     patternIds: [],
     patternUsage: {},
@@ -118,16 +113,15 @@ export const makeMotionLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
     updatedAt: TimestampKlass.now(),
     startTime: TimestampKlass.now(),
     timezone: 'America/Botota',
-    tagIds: [],
+
     isDisplayable: false,
     tactics: {},
-    tagsByTacticId: {},
+
     location: {},
     locationIsFetching: false,
     tacticIds: [],
     allTacticIds: [],
     tacticResponses: {},
-    tagValues: {},
+
     gameplan: { tacticIds: [], suggestedTacticIds: [], tacticsById: {} },
-    tags: {},
   });
