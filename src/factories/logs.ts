@@ -11,6 +11,7 @@ export const makeImpulseFactory = (TimestampKlass: typeof FakeTimestamp) =>
   Factory.makeFactory<ImpulseLogValue>({
     uid: Factory.each(i => i.toString()),
     type: 'impulse',
+    setAsActiveImpulse: true,
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     startTime: TimestampKlass.now(),
