@@ -5,7 +5,7 @@ import { FakeTimestamp } from '../utils/FakeTimestamp';
 export const makeLogSummaryFactory = (TimestampKlass: typeof FakeTimestamp) =>
   Factory.makeFactory<LogSummaryValue>({
     uid: Factory.each(i => i.toString()),
-    type: 'tactics',
+    type: 'impulse',
     text: 'YT',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),

@@ -51,10 +51,28 @@ export interface BaseLogValue {
   sharedWithSupportGroupIds?: Array<string>;
 }
 
-// Tactics logs are recorded when the user tracks tactics, standalone
-export type TacticsLogValue = BaseLogValue & {
+// Impulse logs are recorded when the user presses the impulse button
+export type ImpulseLogValue = BaseLogValue & {
+  type: 'impulse';
+  // If set, the activeImpulseId property is set on the user's profile document after create
+  setAsActiveImpulse?: boolean;
+  pressCount?: number;
+  outcome: Outcome;
   isDisplayable: true;
-  type: 'tactics';
+  buttonPressSecondsSinceEpoch?: number;
+
+  // This object contains the user's full gameplan (tactics and suggestions for all patterns)
+  gameplans: ProfileValue['gameplans'];
+
+  patterns: Record<string, PatternValue>;
+  patternId: string;
+  // Deprecated ------------------------------------------------------------------------------------
+  patternIds: Array<string>;
+  // -----------------------------------------------------------------------------------------------
+  patternUsage: Record<string, Usage>;
+  debriefNotes?: string;
+  debriefReminderSentAt?: FakeTimestamp | null;
+  debriefedAt?: FakeTimestamp | null;
 };
 
 // Location logs are recorded when the user enters or leaves a location, and is prompted to run
@@ -103,30 +121,7 @@ export type ButtonLogValue = BaseLogValue & {
   characteristics: Record<string, unknown>;
 };
 
-// Impulse logs are recorded when the user presses the impulse button
-export type ImpulseLogValue = BaseLogValue & {
-  type: 'impulse';
-  pressCount?: number;
-  outcome: Outcome;
-  isDisplayable: true;
-  buttonPressSecondsSinceEpoch?: number;
-
-  // This object contains the user's full gameplan (tactics and suggestions for all patterns)
-  gameplans: ProfileValue['gameplans'];
-
-  patterns: Record<string, PatternValue>;
-  patternId: string;
-  // Deprecated ------------------------------------------------------------------------------------
-  patternIds: Array<string>;
-  // -----------------------------------------------------------------------------------------------
-  patternUsage: Record<string, Usage>;
-  debriefNotes?: string;
-  debriefReminderSentAt?: FakeTimestamp | null;
-  debriefedAt?: FakeTimestamp | null;
-};
-
 export type LogValue =
-  | TacticsLogValue
   | ImpulseLogValue
   | MotionLogValue
   | ButtonLogValue

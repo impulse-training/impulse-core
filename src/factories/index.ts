@@ -14,7 +14,6 @@ import {
   makeDebriefLogFactory,
   makeImpulseFactory,
   makeMotionLogFactory,
-  makeTacticsLogFactory,
   makeTimeLogFactory,
 } from './logs';
 import { makePatternFactory } from './pattern';
@@ -30,7 +29,6 @@ export function makeFactories(TimestampKlass: typeof FakeTimestamp) {
     applicationFactory: makeApplicationFactory(TimestampKlass),
     challengeFactory: makeChallengeFactory(TimestampKlass),
     impulseFactory: makeImpulseFactory(TimestampKlass),
-    tacticsLogFactory: makeTacticsLogFactory(TimestampKlass),
     timeLogFactory: makeTimeLogFactory(TimestampKlass),
     motionLogFactory: makeMotionLogFactory(TimestampKlass),
     debriefLogFactory: makeDebriefLogFactory(TimestampKlass),
@@ -55,7 +53,6 @@ export const {
   applicationFactory,
   challengeFactory,
   impulseFactory,
-  tacticsLogFactory,
   timeLogFactory,
   motionLogFactory,
   debriefLogFactory,

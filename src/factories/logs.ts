@@ -3,7 +3,6 @@ import {
   DebriefLogValue,
   ImpulseLogValue,
   MotionLogValue,
-  TacticsLogValue,
   TimeLogValue,
 } from '../schema/logs';
 import { FakeTimestamp } from '../utils/FakeTimestamp';
@@ -32,26 +31,6 @@ export const makeImpulseFactory = (TimestampKlass: typeof FakeTimestamp) =>
     patterns: {},
     patternUsage: {},
     gameplans: {},
-    gameplan: { tacticIds: [], suggestedTacticIds: [], tacticsById: {} },
-  });
-
-export const makeTacticsLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
-  Factory.makeFactory<TacticsLogValue>({
-    uid: Factory.each(i => i.toString()),
-    type: 'tactics',
-    createdAt: TimestampKlass.now(),
-    updatedAt: TimestampKlass.now(),
-    startTime: TimestampKlass.now(),
-    isDisplayable: true,
-    timezone: 'America/Botota',
-    tactics: {},
-    location: {},
-
-    locationIsFetching: false,
-    tacticIds: [],
-    allTacticIds: [],
-    tacticResponses: {},
-
     gameplan: { tacticIds: [], suggestedTacticIds: [], tacticsById: {} },
   });
 

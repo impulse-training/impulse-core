@@ -32,9 +32,21 @@ export interface BaseLogValue {
     tacticUsage?: Record<string, Usage>;
     sharedWithSupportGroupIds?: Array<string>;
 }
-export type TacticsLogValue = BaseLogValue & {
+export type ImpulseLogValue = BaseLogValue & {
+    type: 'impulse';
+    setAsActiveImpulse?: boolean;
+    pressCount?: number;
+    outcome: Outcome;
     isDisplayable: true;
-    type: 'tactics';
+    buttonPressSecondsSinceEpoch?: number;
+    gameplans: ProfileValue['gameplans'];
+    patterns: Record<string, PatternValue>;
+    patternId: string;
+    patternIds: Array<string>;
+    patternUsage: Record<string, Usage>;
+    debriefNotes?: string;
+    debriefReminderSentAt?: FakeTimestamp | null;
+    debriefedAt?: FakeTimestamp | null;
 };
 export type LocationLogValue = BaseLogValue & {
     type: 'location';
@@ -68,19 +80,4 @@ export type ButtonLogValue = BaseLogValue & {
     isDeviceConnected: boolean;
     characteristics: Record<string, unknown>;
 };
-export type ImpulseLogValue = BaseLogValue & {
-    type: 'impulse';
-    pressCount?: number;
-    outcome: Outcome;
-    isDisplayable: true;
-    buttonPressSecondsSinceEpoch?: number;
-    gameplans: ProfileValue['gameplans'];
-    patterns: Record<string, PatternValue>;
-    patternId: string;
-    patternIds: Array<string>;
-    patternUsage: Record<string, Usage>;
-    debriefNotes?: string;
-    debriefReminderSentAt?: FakeTimestamp | null;
-    debriefedAt?: FakeTimestamp | null;
-};
-export type LogValue = TacticsLogValue | ImpulseLogValue | MotionLogValue | ButtonLogValue | LocationLogValue | TimeLogValue | DebriefLogValue;
+export type LogValue = ImpulseLogValue | MotionLogValue | ButtonLogValue | LocationLogValue | TimeLogValue | DebriefLogValue;

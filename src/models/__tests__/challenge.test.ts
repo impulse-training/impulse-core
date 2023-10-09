@@ -1,7 +1,7 @@
 import {
   challengeFactory,
   impulseFactory,
-  tacticsLogFactory,
+  motionLogFactory,
 } from '../../factories';
 import { ImpulseLogValue } from '../../schema';
 import { LogValue } from '../../schema/logs';
@@ -46,7 +46,7 @@ describe('Challenge', () => {
     });
 
     describe('with an ineligible log', () => {
-      const log: LogValue = tacticsLogFactory.build({
+      const log: LogValue = motionLogFactory.build({
         uid,
         createdAt: { toDate: () => date },
         startTime: { toDate: () => date },
