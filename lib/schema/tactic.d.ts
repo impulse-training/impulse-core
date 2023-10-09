@@ -23,18 +23,18 @@ export interface TacticValueBase<K> {
     categoryIds?: Array<string>;
     isShared?: boolean;
 }
-type TimeSliderTactic = TacticValueBase<'slider'> & {
-    type: 'time';
+export type TimeSliderTactic = TacticValueBase<'slider'> & {
+    unit: 'time';
     transformFunction: 'logarithmic';
 };
-type EmojiSliderTactic = TacticValueBase<'slider'> & {
-    type: 'emojis';
+export type EmojiSliderTactic = TacticValueBase<'slider'> & {
+    unit: 'emojis';
     transformFunction: 'linear';
     lowEmoji: string;
     highEmoji: string;
 };
-type CustomSliderTactic = TacticValueBase<'slider'> & {
-    type: 'custom';
+export type CustomSliderTactic = TacticValueBase<'slider'> & {
+    unit: 'custom';
     transformFunction: 'linear';
     customUnit: string;
     maximum: number;
