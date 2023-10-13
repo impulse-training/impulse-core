@@ -97,4 +97,5 @@ export type TacticValue =
   | TaskTactic
   | TimerTactic
   | FolderTactic
-  | SliderTactic;
+  | SliderTactic
+  | OptionsTactic;
