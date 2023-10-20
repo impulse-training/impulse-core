@@ -58,7 +58,10 @@ export type PhoneTacticValue = TacticValueBase<'phone'> & {
 };
 
 export type AudioTactic = TacticValueBase<'audio'> & {
+  // deprecated:
   metadata: Recording;
+
+  recording?: Recording;
 };
 
 export type TimerTactic = TacticValueBase<'timer'> & {

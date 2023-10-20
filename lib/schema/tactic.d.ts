@@ -50,6 +50,7 @@ export type PhoneTacticValue = TacticValueBase<'phone'> & {
 };
 export type AudioTactic = TacticValueBase<'audio'> & {
     metadata: Recording;
+    recording?: Recording;
 };
 export type TimerTactic = TacticValueBase<'timer'> & {
     metadata: {
