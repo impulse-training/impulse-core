@@ -40,6 +40,14 @@ export type CustomSliderTactic = TacticValueBase<'slider'> & {
     maximum: number;
 };
 export type SliderTactic = TimeSliderTactic | EmojiSliderTactic | CustomSliderTactic;
+export type SlidersTactic = TacticValueBase<'sliders'> & {
+    rows: Array<{
+        key: string;
+        label: string;
+        lowEmoji: string;
+        highEmoji: string;
+    }>;
+};
 export type FolderTactic = TacticValueBase<'folder'> & {
     tacticIds: Array<string>;
     tacticsById?: Record<string, TacticValue>;
@@ -75,5 +83,5 @@ export type SpotifyTrackTactic = TacticValueBase<'link'> & {
     };
 };
 type TaskTactic = TacticValueBase<'task'>;
-export type TacticValue = PhoneTacticValue | AudioTactic | SpotifyEpisodeTactic | SpotifyTrackTactic | TaskTactic | TimerTactic | FolderTactic | SliderTactic | OptionsTactic;
+export type TacticValue = PhoneTacticValue | AudioTactic | SpotifyEpisodeTactic | SpotifyTrackTactic | TaskTactic | TimerTactic | FolderTactic | SliderTactic | SlidersTactic | OptionsTactic;
 export {};

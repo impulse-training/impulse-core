@@ -23,6 +23,7 @@ export interface TacticValueBase<K> {
   isShared?: boolean;
 }
 
+// Deprecated --------------------------------------------------------------------------------------
 export type TimeSliderTactic = TacticValueBase<'slider'> & {
   unit: 'time';
   transformFunction: 'logarithmic';
@@ -46,6 +47,16 @@ export type SliderTactic =
   | TimeSliderTactic
   | EmojiSliderTactic
   | CustomSliderTactic;
+// Deprecated --------------------------------------------------------------------------------------
+
+export type SlidersTactic = TacticValueBase<'sliders'> & {
+  rows: Array<{
+    key: string;
+    label: string;
+    lowEmoji: string;
+    highEmoji: string;
+  }>;
+};
 
 export type FolderTactic = TacticValueBase<'folder'> & {
   tacticIds: Array<string>;
@@ -101,4 +112,5 @@ export type TacticValue =
   | TimerTactic
   | FolderTactic
   | SliderTactic
+  | SlidersTactic
   | OptionsTactic;
