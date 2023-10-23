@@ -16,6 +16,7 @@ export interface BaseLogValue {
     locationIsFetching: boolean;
     locationFormatted?: string;
     allTacticIds: Array<string>;
+    commentCount?: number;
     tacticIds: Array<string>;
     gameplan: Gameplan;
     tactics: Record<string, TacticValue>;

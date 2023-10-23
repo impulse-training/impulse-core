@@ -1,6 +1,7 @@
 import { FakeTimestamp } from '../utils/FakeTimestamp';
 import { makeApplicationFactory } from './application';
 import { makeChallengeFactory } from './challenge';
+import { makeCommentFactory } from './comment';
 import {
   makeDebriefGameplanFactory,
   makeLocationGameplanFactory,
@@ -28,6 +29,7 @@ export function makeFactories(TimestampKlass: typeof FakeTimestamp) {
   return {
     applicationFactory: makeApplicationFactory(TimestampKlass),
     challengeFactory: makeChallengeFactory(TimestampKlass),
+    commentFactory: makeCommentFactory(TimestampKlass),
     impulseFactory: makeImpulseFactory(TimestampKlass),
     timeLogFactory: makeTimeLogFactory(TimestampKlass),
     motionLogFactory: makeMotionLogFactory(TimestampKlass),
@@ -52,6 +54,7 @@ export function makeFactories(TimestampKlass: typeof FakeTimestamp) {
 export const {
   applicationFactory,
   challengeFactory,
+  commentFactory,
   impulseFactory,
   timeLogFactory,
   motionLogFactory,

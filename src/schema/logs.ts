@@ -20,6 +20,7 @@ export interface BaseLogValue {
   locationIsFetching: boolean;
   locationFormatted?: string;
   allTacticIds: Array<string>;
+  commentCount?: number;
 
   // TODO: this shouldbe renamed to 'selectedTacticIds'
   tacticIds: Array<string>;

@@ -3,11 +3,10 @@ import { Recording } from './recording';
 export interface CommentValue {
     createdAt: FakeTimestamp;
     updatedAt: FakeTimestamp;
+    tacticId?: string | null;
     text?: string;
-    author: {
-        uid: string;
-        name: string;
-    };
+    uid: string;
+    authorName: string;
     recording?: Recording;
     isEdited?: boolean;
 }
