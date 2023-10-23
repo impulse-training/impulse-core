@@ -16,6 +16,7 @@ export interface TacticValueBase<K> {
   title: string;
   description?: string;
   image?: { uri: string; storagePath?: string };
+  backgroundColor?: string;
   isTemplate?: boolean;
   language?: string;
   href?: string;
