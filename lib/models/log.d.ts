@@ -4,10 +4,11 @@ export declare class Log {
     private data;
     constructor(id: string, data: LogValue);
     get text(): string;
-    get selectedPatterns(): import("../schema").PatternValue[];
+    get selectedPattern(): import("../schema").PatternValue;
 }
-export declare function tagSymbol(tag: {
+export declare function formatPattern(pattern: {
     emoji?: string;
     name: string;
 }): string;
+export declare const tagSymbol: typeof formatPattern;
 export declare function initials(str: string): string;

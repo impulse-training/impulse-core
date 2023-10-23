@@ -5,7 +5,7 @@ export class Log {
 
   get text() {
     if (this.data.type === 'impulse')
-      return this.selectedPatterns.map(tagSymbol).join(', ');
+      return formatPattern(this.selectedPattern);
 
     if (this.data.type === 'location') {
       return `${this.data.locationMode === 'enter' ? 'Arrived at' : 'Left'} ${
@@ -24,10 +24,9 @@ export class Log {
     return '';
   }
 
-  get selectedPatterns() {
+  get selectedPattern() {
     const data = this.data as ImpulseLogValue;
-    if (!data.patternIds) return [];
-    return data.patternIds.map(id => data.patterns[id]);
+    return data.patterns[data.patternId];
   }
 
   // get getTacticSummary() {
@@ -52,9 +51,11 @@ export class Log {
   // }
 }
 
-export function tagSymbol(tag: { emoji?: string; name: string }) {
-  return tag.emoji || tag.name;
+export function formatPattern(pattern: { emoji?: string; name: string }) {
+  return pattern.emoji || pattern.name;
 }
+// TODO: Remove this export (it's used in the app)
+export const tagSymbol = formatPattern;
 
 export function initials(str: string) {
   if (!str) return '';
