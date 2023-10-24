@@ -1,4 +1,5 @@
 import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { Image } from '../utils/image';
 import { Recording } from './recording';
 
 export interface CommentValue {
@@ -10,4 +11,5 @@ export interface CommentValue {
   authorName: string;
   recording?: Recording;
   isEdited?: boolean;
+  avatar?: Image;
 }

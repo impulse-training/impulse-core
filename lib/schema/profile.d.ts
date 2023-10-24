@@ -1,5 +1,6 @@
 import { AppStateStatus, Permission } from 'react-native';
 import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { Image } from '../utils/image';
 import { Gameplan, TimeGameplanValue } from './gameplan';
 import { NOTIFICATION_TYPES, NotificationOption } from './notification';
 import { TacticValue } from './tactic';
@@ -28,6 +29,7 @@ export interface ProfileValue {
     region?: string | null;
     timezone?: string;
     phoneNumber?: string;
+    avatar?: Image;
     isReadyForTour?: boolean;
     isTourCompleted?: boolean;
     isButtonSetupSkipped?: boolean;

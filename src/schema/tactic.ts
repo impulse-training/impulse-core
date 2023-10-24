@@ -1,4 +1,5 @@
 import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { Image } from '../utils/image';
 import { Recording } from './recording';
 
 export interface ImageValue {
@@ -15,7 +16,7 @@ export interface TacticValueBase<K> {
   ordinal: number;
   title: string;
   description?: string;
-  image?: { uri: string; storagePath?: string };
+  image?: Image;
   backgroundColor?: string;
   isTemplate?: boolean;
   language?: string;

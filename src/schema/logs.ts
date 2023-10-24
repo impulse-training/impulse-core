@@ -3,7 +3,6 @@ import { FakeTimestamp } from '../utils/FakeTimestamp';
 import { Gameplan } from './gameplan';
 import { PatternValue, Usage } from './pattern';
 import { ProfileValue } from './profile';
-import { Recording } from './recording';
 import { TacticValue } from './tactic';
 
 // Logs are records of either impulses (cravings or urges), or applied tactics (actions that we
@@ -45,9 +44,8 @@ export interface BaseLogValue {
     all: Record<string, string>;
   };
 
-  tacticResponses: Record<string, string>;
-  tacticRecordings?: Record<string, Recording>;
   tacticUsage?: Record<string, Usage>;
+  tacticData?: Record<string, unknown>;
 
   sharedWithSupportGroupIds?: Array<string>;
 }

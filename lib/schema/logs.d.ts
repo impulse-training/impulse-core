@@ -3,7 +3,6 @@ import { FakeTimestamp } from '../utils/FakeTimestamp';
 import { Gameplan } from './gameplan';
 import { PatternValue, Usage } from './pattern';
 import { ProfileValue } from './profile';
-import { Recording } from './recording';
 import { TacticValue } from './tactic';
 export type Outcome = 'success' | 'setback' | 'indeterminate';
 export interface BaseLogValue {
@@ -28,9 +27,8 @@ export interface BaseLogValue {
         setback: Record<string, string>;
         all: Record<string, string>;
     };
-    tacticResponses: Record<string, string>;
-    tacticRecordings?: Record<string, Recording>;
     tacticUsage?: Record<string, Usage>;
+    tacticData?: Record<string, unknown>;
     sharedWithSupportGroupIds?: Array<string>;
 }
 export type ImpulseLogValue = BaseLogValue & {
