@@ -79,7 +79,10 @@ export type AudioTactic = TacticValueBase<'audio'> & {
 
 export type TimerTactic = TacticValueBase<'timer'> & {
   metadata: {
-    timerMinutes: number;
+    // Deprecated
+    timerMinutes?: number;
+
+    timerSeconds: number;
   };
 };
 
