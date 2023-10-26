@@ -86,6 +86,15 @@ export type TimerTactic = TacticValueBase<'timer'> & {
   };
 };
 
+export type BreatheTactic = TacticValueBase<'breathe'> & {
+  metadata: {
+    inFor: number;
+    holdFor: number;
+    outFor: number;
+    repeat: number;
+  };
+};
+
 export type OptionsTactic = TacticValueBase<'options'> & {
   tacticIds: Array<string>;
   tacticsById: Record<string, TacticValue>;
@@ -118,4 +127,5 @@ export type TacticValue =
   | FolderTactic
   | SliderTactic
   | SlidersTactic
-  | OptionsTactic;
+  | OptionsTactic
+  | BreatheTactic;

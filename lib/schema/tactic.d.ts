@@ -65,6 +65,14 @@ export type TimerTactic = TacticValueBase<'timer'> & {
         timerSeconds: number;
     };
 };
+export type BreatheTactic = TacticValueBase<'breathe'> & {
+    metadata: {
+        inFor: number;
+        holdFor: number;
+        outFor: number;
+        repeat: number;
+    };
+};
 export type OptionsTactic = TacticValueBase<'options'> & {
     tacticIds: Array<string>;
     tacticsById: Record<string, TacticValue>;
@@ -83,5 +91,5 @@ export type SpotifyTrackTactic = TacticValueBase<'link'> & {
     };
 };
 type TaskTactic = TacticValueBase<'task'>;
-export type TacticValue = PhoneTacticValue | AudioTactic | SpotifyEpisodeTactic | SpotifyTrackTactic | TaskTactic | TimerTactic | FolderTactic | SliderTactic | SlidersTactic | OptionsTactic;
+export type TacticValue = PhoneTacticValue | AudioTactic | SpotifyEpisodeTactic | SpotifyTrackTactic | TaskTactic | TimerTactic | FolderTactic | SliderTactic | SlidersTactic | OptionsTactic | BreatheTactic;
 export {};
