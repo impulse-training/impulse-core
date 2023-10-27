@@ -59,6 +59,16 @@ export type AudioTactic = TacticValueBase<'audio'> & {
     metadata: Recording;
     recording?: Recording;
 };
+export type VideoTactic = TacticValueBase<'video'> & {
+    video: {
+        url?: string;
+        storagePath?: string;
+        title: string;
+        description: string;
+        thumbnailUrl: string;
+        duration: number;
+    };
+};
 export type TimerTactic = TacticValueBase<'timer'> & {
     metadata: {
         timerMinutes?: number;
@@ -91,5 +101,5 @@ export type SpotifyTrackTactic = TacticValueBase<'link'> & {
     };
 };
 type TaskTactic = TacticValueBase<'task'>;
-export type TacticValue = PhoneTacticValue | AudioTactic | SpotifyEpisodeTactic | SpotifyTrackTactic | TaskTactic | TimerTactic | FolderTactic | SliderTactic | SlidersTactic | OptionsTactic | BreatheTactic;
+export type TacticValue = PhoneTacticValue | AudioTactic | VideoTactic | SpotifyEpisodeTactic | SpotifyTrackTactic | TaskTactic | TimerTactic | FolderTactic | SliderTactic | SlidersTactic | OptionsTactic | BreatheTactic;
 export {};

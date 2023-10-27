@@ -77,6 +77,17 @@ export type AudioTactic = TacticValueBase<'audio'> & {
   recording?: Recording;
 };
 
+export type VideoTactic = TacticValueBase<'video'> & {
+  video: {
+    url?: string;
+    storagePath?: string;
+    title: string;
+    description: string;
+    thumbnailUrl: string;
+    duration: number;
+  };
+};
+
 export type TimerTactic = TacticValueBase<'timer'> & {
   metadata: {
     // Deprecated
@@ -120,6 +131,7 @@ type TaskTactic = TacticValueBase<'task'>;
 export type TacticValue =
   | PhoneTacticValue
   | AudioTactic
+  | VideoTactic
   | SpotifyEpisodeTactic
   | SpotifyTrackTactic
   | TaskTactic
