@@ -14,13 +14,8 @@ export type GameplanValueBase = Gameplan & {
     isTemplate?: boolean;
     tacticsUpdatedAt?: FakeTimestamp;
 };
-export type PatternGameplanValue = GameplanValueBase & {
-    type: 'pattern';
-    patternId: string;
-};
-export type DelayGameplanValue = GameplanValueBase & {
-    type: 'delay';
-    delayMinutes: number;
+export type ImpulseGameplanValue = GameplanValueBase & {
+    type: 'impulse' | 'success' | 'setback';
     patternId: string;
 };
 type SchedulableGameplanValue = GameplanValueBase & {
@@ -33,13 +28,10 @@ type SchedulableGameplanValue = GameplanValueBase & {
 export type TimeGameplanValue = SchedulableGameplanValue & {
     type: 'time';
 };
-export type DebriefGameplanValue = SchedulableGameplanValue & {
-    type: 'debrief';
-};
 export type LocationGameplanValue = GameplanValueBase & {
     type: 'location';
     locationId?: string;
     mode: 'enter' | 'exit';
 };
-export type GameplanValue = PatternGameplanValue | TimeGameplanValue | LocationGameplanValue | DebriefGameplanValue | DelayGameplanValue;
+export type GameplanValue = ImpulseGameplanValue | TimeGameplanValue | LocationGameplanValue;
 export {};

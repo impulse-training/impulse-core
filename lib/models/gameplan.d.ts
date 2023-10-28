@@ -22,5 +22,5 @@ export declare class LocationGameplan extends Gameplan {
     constructor(id: string, data: LocationGameplanValue, location: LocationValue);
     get summary(): string;
 }
-export declare function gameplanToClass(id: string, reminder: GameplanValue, location: LocationValue): TimeGameplan | LocationGameplan;
+export declare function gameplanToClass(id: string, gameplan: GameplanValue, location: LocationValue): TimeGameplan | LocationGameplan | undefined;
 export {};

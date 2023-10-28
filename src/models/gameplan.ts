@@ -94,17 +94,18 @@ export class LocationGameplan extends Gameplan {
   }
 }
 
+// TODO: this doesn't support other gameplan types yet
 export function gameplanToClass(
   id: string,
-  reminder: GameplanValue,
+  gameplan: GameplanValue,
   location: LocationValue
 ) {
-  if (reminder.type === 'time' || reminder.type === 'debrief') {
-    return new TimeGameplan(id, reminder as TimeGameplanValue);
-  } else {
+  if (gameplan.type === 'time') {
+    return new TimeGameplan(id, gameplan as TimeGameplanValue);
+  } else if (gameplan.type === 'location') {
     return new LocationGameplan(
       id,
-      reminder as LocationGameplanValue,
+      gameplan as LocationGameplanValue,
       location
     );
   }

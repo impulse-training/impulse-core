@@ -4,8 +4,8 @@ import { makeChallengeFactory } from './challenge';
 import { makeCommentFactory } from './comment';
 import {
   makeDebriefGameplanFactory,
+  makeImpulseGameplanFactory,
   makeLocationGameplanFactory,
-  makePatternGameplanFactory,
   makeTimeGameplanFactory,
 } from './gameplan';
 import { makeIssueFactory } from './issue';
@@ -40,7 +40,7 @@ export function makeFactories(TimestampKlass: typeof FakeTimestamp) {
     issueFactory: makeIssueFactory(TimestampKlass),
     adminProfileFactory: makeAdminProfileFactory(TimestampKlass),
     supportGroupFactory: makeSupportGroupFactory(TimestampKlass),
-    patternGameplanFactory: makePatternGameplanFactory(TimestampKlass),
+    patternGameplanFactory: makeImpulseGameplanFactory(TimestampKlass),
     debriefGameplanFactory: makeDebriefGameplanFactory(TimestampKlass),
     timeGameplanFactory: makeTimeGameplanFactory(TimestampKlass),
     patternFactory: makePatternFactory(TimestampKlass),

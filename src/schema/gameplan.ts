@@ -27,14 +27,9 @@ export type GameplanValueBase = Gameplan & {
 };
 
 // A pattern gameplan is the set of tactics that we use in an impulse moment
-export type PatternGameplanValue = GameplanValueBase & {
-  type: 'pattern';
-  patternId: string;
-};
-
-export type DelayGameplanValue = GameplanValueBase & {
-  type: 'delay';
-  delayMinutes: number;
+export type ImpulseGameplanValue = GameplanValueBase & {
+  // TODO: this would be more appropriate as 'impulse'
+  type: 'impulse' | 'success' | 'setback';
   patternId: string;
 };
 
@@ -51,10 +46,6 @@ export type TimeGameplanValue = SchedulableGameplanValue & {
   type: 'time';
 };
 
-export type DebriefGameplanValue = SchedulableGameplanValue & {
-  type: 'debrief';
-};
-
 export type LocationGameplanValue = GameplanValueBase & {
   type: 'location';
   // A location gameplan without a location id is not "valid", but it still can exist, as this is
@@ -64,8 +55,6 @@ export type LocationGameplanValue = GameplanValueBase & {
 };
 
 export type GameplanValue =
-  | PatternGameplanValue
+  | ImpulseGameplanValue
   | TimeGameplanValue
-  | LocationGameplanValue
-  | DebriefGameplanValue
-  | DelayGameplanValue;
+  | LocationGameplanValue;
