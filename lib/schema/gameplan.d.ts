@@ -18,6 +18,11 @@ export type PatternGameplanValue = GameplanValueBase & {
     type: 'pattern';
     patternId: string;
 };
+export type DelayGameplanValue = GameplanValueBase & {
+    type: 'delay';
+    delayMinutes: number;
+    patternId: string;
+};
 type SchedulableGameplanValue = GameplanValueBase & {
     weekdays: Array<number>;
     hour: number;
@@ -36,5 +41,5 @@ export type LocationGameplanValue = GameplanValueBase & {
     locationId?: string;
     mode: 'enter' | 'exit';
 };
-export type GameplanValue = PatternGameplanValue | TimeGameplanValue | LocationGameplanValue | DebriefGameplanValue;
+export type GameplanValue = PatternGameplanValue | TimeGameplanValue | LocationGameplanValue | DebriefGameplanValue | DelayGameplanValue;
 export {};

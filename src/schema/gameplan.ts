@@ -32,6 +32,12 @@ export type PatternGameplanValue = GameplanValueBase & {
   patternId: string;
 };
 
+export type DelayGameplanValue = GameplanValueBase & {
+  type: 'delay';
+  delayMinutes: number;
+  patternId: string;
+};
+
 // A time gameplan is a set of tactics that we do at a scheduled time in the week
 type SchedulableGameplanValue = GameplanValueBase & {
   weekdays: Array<number>; // 1 = sun, 2 = mon, 3 = tue, etc
@@ -61,4 +67,5 @@ export type GameplanValue =
   | PatternGameplanValue
   | TimeGameplanValue
   | LocationGameplanValue
-  | DebriefGameplanValue;
+  | DebriefGameplanValue
+  | DelayGameplanValue;
