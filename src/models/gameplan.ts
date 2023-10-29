@@ -2,6 +2,7 @@ import { difference, isEqual } from 'lodash';
 import { LocationValue } from '../schema';
 import {
   GameplanValue,
+  ImpulseGameplanValue,
   LocationGameplanValue,
   TimeGameplanValue,
 } from '../schema/gameplan';
@@ -94,6 +95,18 @@ export class LocationGameplan extends Gameplan {
   }
 }
 
+export class ImpulseGameplan extends Gameplan {
+  constructor(private id: string, private data: ImpulseGameplanValue) {
+    super();
+  }
+
+  get summary() {
+    if (this.data.type === 'success') return 'When I have a success';
+    if (this.data.type === 'setback') return 'When I have a setback';
+    return 'When I have an impulse moment';
+  }
+}
+
 // TODO: this doesn't support other gameplan types yet
 export function gameplanToClass(
   id: string,
@@ -108,5 +121,7 @@ export function gameplanToClass(
       gameplan as LocationGameplanValue,
       location
     );
+  } else {
+    return new ImpulseGameplan(id, gameplan as ImpulseGameplanValue);
   }
 }
