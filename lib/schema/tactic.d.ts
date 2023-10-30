@@ -21,6 +21,7 @@ export interface TacticValueBase<K> {
     href?: string;
     categoryIds?: Array<string>;
     isShared?: boolean;
+    isResponseRequired?: boolean;
 }
 export type TimeSliderTactic = TacticValueBase<'slider'> & {
     unit: 'time';

@@ -7,7 +7,11 @@ import {
 } from '../schema/logs';
 import { FakeTimestamp } from '../utils/FakeTimestamp';
 
-const gameplan = { tacticIds: [], suggestedTacticIds: [], tacticsById: {} };
+const gameplan = {
+  impulse: { tacticIds: [], suggestedTacticIds: [], tacticsById: {} },
+  success: { tacticIds: [], suggestedTacticIds: [], tacticsById: {} },
+  setback: { tacticIds: [], suggestedTacticIds: [], tacticsById: {} },
+};
 
 export const makeImpulseFactory = (TimestampKlass: typeof FakeTimestamp) =>
   Factory.makeFactory<ImpulseLogValue>({
@@ -32,8 +36,6 @@ export const makeImpulseFactory = (TimestampKlass: typeof FakeTimestamp) =>
     patternUsage: {},
     gameplans: {},
     gameplan: gameplan,
-    successGameplan: gameplan,
-    setbackGameplan: gameplan,
   });
 
 export const makeTimeLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
@@ -52,8 +54,6 @@ export const makeTimeLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
     tacticIds: [],
     allTacticIds: [],
     gameplan: gameplan,
-    successGameplan: gameplan,
-    setbackGameplan: gameplan,
   });
 
 export const makeDebriefLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
@@ -73,8 +73,6 @@ export const makeDebriefLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
     tacticIds: [],
     allTacticIds: [],
     gameplan: gameplan,
-    successGameplan: gameplan,
-    setbackGameplan: gameplan,
     patterns: {},
     patternIds: [],
     patternUsage: {},
@@ -96,6 +94,4 @@ export const makeMotionLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
     tacticIds: [],
     allTacticIds: [],
     gameplan: gameplan,
-    successGameplan: gameplan,
-    setbackGameplan: gameplan,
   });
