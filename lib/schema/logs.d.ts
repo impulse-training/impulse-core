@@ -17,7 +17,7 @@ export interface BaseLogValue {
     allTacticIds: Array<string>;
     commentCount?: number;
     tacticIds: Array<string>;
-    gameplan: Record<'impulse' | 'success' | 'setback', Gameplan>;
+    gameplan: Record<'main' | 'success' | 'setback', Gameplan>;
     tactics: Record<string, TacticValue>;
     suggestedTacticIds?: Array<string>;
     isUpdatingSuggestions?: boolean;

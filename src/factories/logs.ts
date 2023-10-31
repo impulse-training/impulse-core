@@ -8,7 +8,7 @@ import {
 import { FakeTimestamp } from '../utils/FakeTimestamp';
 
 const gameplan = {
-  impulse: { tacticIds: [], suggestedTacticIds: [], tacticsById: {} },
+  main: { tacticIds: [], suggestedTacticIds: [], tacticsById: {} },
   success: { tacticIds: [], suggestedTacticIds: [], tacticsById: {} },
   setback: { tacticIds: [], suggestedTacticIds: [], tacticsById: {} },
 };
