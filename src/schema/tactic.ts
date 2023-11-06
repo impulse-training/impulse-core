@@ -52,7 +52,7 @@ export type SliderTactic =
   | CustomSliderTactic;
 // Deprecated --------------------------------------------------------------------------------------
 
-export type SlidersTactic = TacticValueBase<'sliders'> & {
+export type MeasureSlidersTactic = TacticValueBase<'measure-sliders'> & {
   rows: Array<{
     key: string;
     label: string;
@@ -60,6 +60,13 @@ export type SlidersTactic = TacticValueBase<'sliders'> & {
     highEmoji: string;
   }>;
 };
+
+export type MeasureTimeTactic = TacticValueBase<'measure-time'>;
+export type MeasureCounterTactic = TacticValueBase<'measure-counter'>;
+export type MeasureTactic =
+  | MeasureSlidersTactic
+  | MeasureTimeTactic
+  | MeasureCounterTactic;
 
 export type FolderTactic = TacticValueBase<'folder'> & {
   tacticIds: Array<string>;
@@ -139,6 +146,6 @@ export type TacticValue =
   | TimerTactic
   | FolderTactic
   | SliderTactic
-  | SlidersTactic
+  | MeasureTactic
   | OptionsTactic
   | BreatheTactic;
