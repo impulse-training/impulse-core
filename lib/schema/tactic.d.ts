@@ -23,23 +23,7 @@ export interface TacticValueBase<K> {
     isShared?: boolean;
     isResponseRequired?: boolean;
 }
-export type TimeSliderTactic = TacticValueBase<'slider'> & {
-    unit: 'time';
-    transformFunction: 'logarithmic';
-};
-export type EmojiSliderTactic = TacticValueBase<'slider'> & {
-    unit: 'emojis';
-    transformFunction: 'linear';
-    lowEmoji: string;
-    highEmoji: string;
-};
-export type CustomSliderTactic = TacticValueBase<'slider'> & {
-    unit: 'custom';
-    transformFunction: 'linear';
-    customUnit: string;
-    maximum: number;
-};
-export type SliderTactic = TimeSliderTactic | EmojiSliderTactic | CustomSliderTactic;
+export type QuestionTactic = TacticValueBase<'question'>;
 export type MeasureSlidersTactic = TacticValueBase<'measure-sliders'> & {
     rows: Array<{
         key: string;
@@ -105,5 +89,22 @@ export type SpotifyTrackTactic = TacticValueBase<'link'> & {
     };
 };
 type TaskTactic = TacticValueBase<'task'>;
-export type TacticValue = PhoneTacticValue | AudioTactic | VideoTactic | SpotifyEpisodeTactic | SpotifyTrackTactic | TaskTactic | TimerTactic | FolderTactic | SliderTactic | MeasureTactic | OptionsTactic | BreatheTactic;
+export type TacticValue = PhoneTacticValue | AudioTactic | VideoTactic | QuestionTactic | SpotifyEpisodeTactic | SpotifyTrackTactic | TaskTactic | TimerTactic | FolderTactic | SliderTactic | MeasureTactic | OptionsTactic | BreatheTactic;
+export type TimeSliderTactic = TacticValueBase<'slider'> & {
+    unit: 'time';
+    transformFunction: 'logarithmic';
+};
+export type EmojiSliderTactic = TacticValueBase<'slider'> & {
+    unit: 'emojis';
+    transformFunction: 'linear';
+    lowEmoji: string;
+    highEmoji: string;
+};
+export type CustomSliderTactic = TacticValueBase<'slider'> & {
+    unit: 'custom';
+    transformFunction: 'linear';
+    customUnit: string;
+    maximum: number;
+};
+export type SliderTactic = TimeSliderTactic | EmojiSliderTactic | CustomSliderTactic;
 export {};

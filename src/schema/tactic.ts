@@ -26,31 +26,7 @@ export interface TacticValueBase<K> {
   isResponseRequired?: boolean;
 }
 
-// Deprecated --------------------------------------------------------------------------------------
-export type TimeSliderTactic = TacticValueBase<'slider'> & {
-  unit: 'time';
-  transformFunction: 'logarithmic';
-};
-
-export type EmojiSliderTactic = TacticValueBase<'slider'> & {
-  unit: 'emojis';
-  transformFunction: 'linear';
-  lowEmoji: string;
-  highEmoji: string;
-};
-
-export type CustomSliderTactic = TacticValueBase<'slider'> & {
-  unit: 'custom';
-  transformFunction: 'linear';
-  customUnit: string;
-  maximum: number;
-};
-
-export type SliderTactic =
-  | TimeSliderTactic
-  | EmojiSliderTactic
-  | CustomSliderTactic;
-// Deprecated --------------------------------------------------------------------------------------
+export type QuestionTactic = TacticValueBase<'question'>;
 
 export type MeasureSlidersTactic = TacticValueBase<'measure-sliders'> & {
   rows: Array<{
@@ -140,6 +116,7 @@ export type TacticValue =
   | PhoneTacticValue
   | AudioTactic
   | VideoTactic
+  | QuestionTactic
   | SpotifyEpisodeTactic
   | SpotifyTrackTactic
   | TaskTactic
@@ -149,3 +126,29 @@ export type TacticValue =
   | MeasureTactic
   | OptionsTactic
   | BreatheTactic;
+
+// Deprecated --------------------------------------------------------------------------------------
+export type TimeSliderTactic = TacticValueBase<'slider'> & {
+  unit: 'time';
+  transformFunction: 'logarithmic';
+};
+
+export type EmojiSliderTactic = TacticValueBase<'slider'> & {
+  unit: 'emojis';
+  transformFunction: 'linear';
+  lowEmoji: string;
+  highEmoji: string;
+};
+
+export type CustomSliderTactic = TacticValueBase<'slider'> & {
+  unit: 'custom';
+  transformFunction: 'linear';
+  customUnit: string;
+  maximum: number;
+};
+
+export type SliderTactic =
+  | TimeSliderTactic
+  | EmojiSliderTactic
+  | CustomSliderTactic;
+// Deprecated --------------------------------------------------------------------------------------
