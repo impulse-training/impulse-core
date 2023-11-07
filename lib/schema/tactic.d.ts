@@ -28,6 +28,7 @@ export type MeasureSlidersTactic = TacticValueBase<'measure-sliders'> & {
     rows: Array<{
         key: string;
         label: string;
+        value?: number;
         lowEmoji: string;
         highEmoji: string;
     }>;
@@ -58,18 +59,13 @@ export type VideoTactic = TacticValueBase<'video'> & {
     };
 };
 export type TimerTactic = TacticValueBase<'timer'> & {
-    metadata: {
-        timerMinutes?: number;
-        timerSeconds: number;
-    };
+    timerSeconds: number;
 };
 export type BreatheTactic = TacticValueBase<'breathe'> & {
-    metadata: {
-        inFor: number;
-        holdFor: number;
-        outFor: number;
-        repeat: number;
-    };
+    inFor: number;
+    holdFor: number;
+    outFor: number;
+    repeat: number;
 };
 export type OptionsTactic = TacticValueBase<'options'> & {
     tacticIds: Array<string>;
