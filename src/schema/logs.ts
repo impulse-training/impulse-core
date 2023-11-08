@@ -27,7 +27,9 @@ export interface BaseLogValue {
   // A gameplan is a set of tactics and suggestions that a user can follow to help them through an
   // impulse moment, or to help them prepare for a moment. Every log that has tactics has a
   // "gameplan".
-  gameplan: Record<'main' | 'success' | 'setback', Gameplan>;
+  gameplan: { main: Gameplan } & Partial<
+    Record<'success' | 'setback', Gameplan>
+  >;
 
   // Deprecated - we used to store tactic ids directly -------------------------
   tactics: Record<string, TacticValue>;
