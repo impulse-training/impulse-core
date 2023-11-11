@@ -2,6 +2,7 @@ import * as Factory from 'factory.ts';
 import {
   DebriefLogValue,
   ImpulseLogValue,
+  LocationLogValue,
   MotionLogValue,
   TimeLogValue,
 } from '../schema/logs';
@@ -88,6 +89,26 @@ export const makeMotionLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
     startTime: TimestampKlass.now(),
     timezone: 'America/Botota',
     isDisplayable: false,
+    tactics: {},
+    location: {},
+    locationIsFetching: false,
+    tacticIds: [],
+    allTacticIds: [],
+    gameplan: gameplan,
+  });
+
+export const makeLocationLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
+  Factory.makeFactory<LocationLogValue>({
+    uid: Factory.each(i => i.toString()),
+    type: 'location',
+    createdAt: TimestampKlass.now(),
+    updatedAt: TimestampKlass.now(),
+    startTime: TimestampKlass.now(),
+    timezone: 'America/Botota',
+    isDisplayable: true,
+    locationId: 'abc123',
+    locationMode: 'enter',
+    locationName: 'Home',
     tactics: {},
     location: {},
     locationIsFetching: false,

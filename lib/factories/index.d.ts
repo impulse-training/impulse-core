@@ -6,6 +6,7 @@ export declare function makeFactories(TimestampKlass: typeof FakeTimestamp): {
     impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "gameplans" | "type" | "outcome" | "patternId" | "debriefNotes" | keyof import("..").BaseLogValue | "setAsActiveImpulse" | "pressCount" | "isDisplayable" | "buttonPressSecondsSinceEpoch" | "patterns" | "patternIds" | "patternUsage" | "debriefReminderSentAt" | "debriefedAt">;
     timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "type" | keyof import("..").BaseLogValue | "isDisplayable" | "gameplanId">;
     motionLogFactory: import("factory.ts").Factory<import("..").MotionLogValue, "type" | keyof import("..").BaseLogValue | "isDisplayable">;
+    locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "type" | "locationMode" | "locationId" | keyof import("..").BaseLogValue | "isDisplayable" | "locationName">;
     debriefLogFactory: import("factory.ts").Factory<import("..").DebriefLogValue, "type" | "outcome" | keyof import("..").BaseLogValue | "isDisplayable" | "patterns" | "patternIds" | "patternUsage" | "gameplanId" | "patternUsageEntries">;
     locationFactory: import("factory.ts").Factory<import("..").LocationValue, keyof import("..").LocationValue>;
     logSummaryFactory: import("factory.ts").Factory<import("..").LogSummaryValue, keyof import("..").LogSummaryValue>;

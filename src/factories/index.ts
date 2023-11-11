@@ -14,6 +14,7 @@ import { makeLogSummaryFactory } from './logSummary';
 import {
   makeDebriefLogFactory,
   makeImpulseFactory,
+  makeLocationLogFactory,
   makeMotionLogFactory,
   makeTimeLogFactory,
 } from './logs';
@@ -33,6 +34,7 @@ export function makeFactories(TimestampKlass: typeof FakeTimestamp) {
     impulseFactory: makeImpulseFactory(TimestampKlass),
     timeLogFactory: makeTimeLogFactory(TimestampKlass),
     motionLogFactory: makeMotionLogFactory(TimestampKlass),
+    locationLogFactory: makeLocationLogFactory(TimestampKlass),
     debriefLogFactory: makeDebriefLogFactory(TimestampKlass),
     locationFactory: makeLocationFactory(TimestampKlass),
     logSummaryFactory: makeLogSummaryFactory(TimestampKlass),
