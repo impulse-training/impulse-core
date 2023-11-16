@@ -42,7 +42,7 @@ export function makeFactories(TimestampKlass: typeof FakeTimestamp) {
     issueFactory: makeIssueFactory(TimestampKlass),
     adminProfileFactory: makeAdminProfileFactory(TimestampKlass),
     supportGroupFactory: makeSupportGroupFactory(TimestampKlass),
-    patternGameplanFactory: makeImpulseGameplanFactory(TimestampKlass),
+    impulseGameplanFactory: makeImpulseGameplanFactory(TimestampKlass),
     debriefGameplanFactory: makeDebriefGameplanFactory(TimestampKlass),
     timeGameplanFactory: makeTimeGameplanFactory(TimestampKlass),
     patternFactory: makePatternFactory(TimestampKlass),

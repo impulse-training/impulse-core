@@ -84,7 +84,7 @@ export type SpotifyTrackTactic = TacticValueBase<'link'> & {
         durationMs: number;
     };
 };
-type TaskTactic = TacticValueBase<'task'>;
+export type TaskTactic = TacticValueBase<'task'>;
 export type TacticValue = PhoneTacticValue | AudioTactic | VideoTactic | QuestionTactic | SpotifyEpisodeTactic | SpotifyTrackTactic | TaskTactic | TimerTactic | FolderTactic | SliderTactic | MeasureTactic | OptionsTactic | BreatheTactic;
 export type TimeSliderTactic = TacticValueBase<'slider'> & {
     unit: 'time';
@@ -103,4 +103,3 @@ export type CustomSliderTactic = TacticValueBase<'slider'> & {
     maximum: number;
 };
 export type SliderTactic = TimeSliderTactic | EmojiSliderTactic | CustomSliderTactic;
-export {};

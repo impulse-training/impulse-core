@@ -14,7 +14,7 @@ export declare function makeFactories(TimestampKlass: typeof FakeTimestamp): {
     issueFactory: import("factory.ts").Factory<import("..").IssueValue, keyof import("..").IssueValue>;
     adminProfileFactory: import("factory.ts").Factory<import("..").ProfileValue, keyof import("..").ProfileValue>;
     supportGroupFactory: import("factory.ts").Factory<import("..").SupportGroupValue, keyof import("..").SupportGroupValue>;
-    patternGameplanFactory: import("factory.ts").Factory<import("..").ImpulseGameplanValue, "type" | "createdAt" | "updatedAt" | "uid" | "isTemplate" | keyof import("..").Gameplan | "title" | "navigationTitle" | "tacticsUpdatedAt" | "patternId">;
+    impulseGameplanFactory: import("factory.ts").Factory<import("..").ImpulseGameplanValue, "type" | "createdAt" | "updatedAt" | "uid" | "isTemplate" | keyof import("..").Gameplan | "title" | "navigationTitle" | "tacticsUpdatedAt" | "patternId">;
     debriefGameplanFactory: import("factory.ts").Factory<import("..").ImpulseGameplanValue, "type" | "createdAt" | "updatedAt" | "uid" | "isTemplate" | keyof import("..").Gameplan | "title" | "navigationTitle" | "tacticsUpdatedAt" | "patternId">;
     timeGameplanFactory: import("factory.ts").Factory<import("..").TimeGameplanValue, "type" | "hour" | "minute" | "createdAt" | "updatedAt" | "uid" | "isTemplate" | keyof import("..").Gameplan | "title" | "navigationTitle" | "tacticsUpdatedAt" | "weekdays" | "timezone" | "scheduledNotificationIds">;
     patternFactory: import("factory.ts").Factory<import("..").PatternValue, keyof import("..").PatternValue>;

@@ -104,7 +104,7 @@ export type SpotifyTrackTactic = TacticValueBase<'link'> & {
   };
 };
 
-type TaskTactic = TacticValueBase<'task'>;
+export type TaskTactic = TacticValueBase<'task'>;
 
 export type TacticValue =
   | PhoneTacticValue
