@@ -51,8 +51,8 @@ export class Log {
   // }
 }
 
-export function formatPattern(pattern: { emoji?: string; name: string }) {
-  return pattern.emoji || pattern.name;
+export function formatPattern(pattern?: { emoji?: string; name: string }) {
+  return pattern?.emoji || pattern?.name;
 }
 // TODO: Remove this export (it's used in the app)
 export const tagSymbol = formatPattern;
