@@ -14,7 +14,6 @@ export interface TacticValueBase<K> {
   isSuggested?: boolean;
   createdAt: FakeTimestamp;
   updatedAt: FakeTimestamp;
-  ordinal: number;
   title: string;
   description?: string;
   image?: Image;
