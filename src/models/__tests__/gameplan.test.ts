@@ -72,7 +72,7 @@ describe('Gameplan classes', () => {
           tacticsById: {},
         });
         expect(gameplan.summary).toBe(
-          'On Sundays, Tuesdays, and Thursdays at 12:00 PM'
+          'Sundays, Tuesdays, and Thursdays at 12:00 PM'
         );
       });
 
