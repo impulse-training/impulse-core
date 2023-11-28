@@ -54,6 +54,7 @@ export interface ProfileValue {
   gameplans: Record<string, Gameplan>;
   gameplansUpdatedAt: FakeTimestamp;
   impulseNotifications?: Record<string, { title: string; body: string }>;
+  viewAccessGrantedTo?: Array<string>;
 
   // We store a cached summary of time gameplans on the profile, which we use to set up
   // notifications

@@ -40,6 +40,7 @@ export interface ProfileValue {
         title: string;
         body: string;
     }>;
+    viewAccessGrantedTo?: Array<string>;
     timeGameplans?: Record<string, {
         gameplan: TimeGameplanValue;
         tactic: TacticValue;
