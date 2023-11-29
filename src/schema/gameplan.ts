@@ -12,6 +12,9 @@ export type Gameplan = {
   suggestedTacticIds: Array<string>;
   // Finally, we prefetch the actual tactic data so it's available immediately
   tacticsById: Record<string, TacticValue>;
+
+  // We use LLMs to make suggestions of tactics for users' gameplans. This string value on a
+  // gameplan includes their name and the name of the issue that they're facing.
   llmPromptBase?: string;
 };
 
@@ -25,6 +28,7 @@ export type GameplanValueBase = Gameplan & {
   navigationTitle?: string;
   isTemplate?: boolean;
   tacticsUpdatedAt?: FakeTimestamp;
+  timezone?: string;
 };
 
 // A pattern gameplan is the set of tactics that we use in an impulse moment
