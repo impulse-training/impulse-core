@@ -12,6 +12,7 @@ export type Gameplan = {
   suggestedTacticIds: Array<string>;
   // Finally, we prefetch the actual tactic data so it's available immediately
   tacticsById: Record<string, TacticValue>;
+  llmPromptBase?: string;
 };
 
 // Now, we define a base gameplan type, which is extended for pattern, tactic, location and impulse

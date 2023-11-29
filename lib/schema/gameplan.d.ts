@@ -4,6 +4,7 @@ export type Gameplan = {
     tacticIds: Array<string>;
     suggestedTacticIds: Array<string>;
     tacticsById: Record<string, TacticValue>;
+    llmPromptBase?: string;
 };
 export type GameplanValueBase = Gameplan & {
     uid: string;
