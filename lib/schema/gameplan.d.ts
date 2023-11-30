@@ -15,6 +15,7 @@ export type GameplanValueBase = Gameplan & {
     isTemplate?: boolean;
     tacticsUpdatedAt?: FakeTimestamp;
     timezone?: string;
+    patternName?: string;
 };
 export type ImpulseGameplanValue = GameplanValueBase & {
     type: 'impulse' | 'success' | 'setback';

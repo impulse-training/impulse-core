@@ -1,4 +1,4 @@
 export * from './models';
 export * from './schema';
-export declare const sampleImages: string[];
+export { sampleImages } from './sampleImages';
 export { FakeTimestamp } from './utils/FakeTimestamp';
