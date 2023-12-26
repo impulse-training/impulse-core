@@ -50,7 +50,7 @@ export const makeTimeGameplanFactory = (TimestampKlass: typeof FakeTimestamp) =>
     tacticsById: {},
   });
 
-export const makeDebriefGameplanFactory = (
+export const makeSetbackGameplanFactory = (
   TimestampKlass: typeof FakeTimestamp
 ) =>
   Factory.makeFactory<ImpulseGameplanValue>({
@@ -60,6 +60,20 @@ export const makeDebriefGameplanFactory = (
     patternId: 'abc123',
     tacticIds: [],
     type: 'setback',
+    suggestedTacticIds: [],
+    tacticsById: {},
+  });
+
+export const makeSuccessGameplanFactory = (
+  TimestampKlass: typeof FakeTimestamp
+) =>
+  Factory.makeFactory<ImpulseGameplanValue>({
+    uid: Factory.each(i => i.toString()),
+    createdAt: TimestampKlass.now(),
+    updatedAt: TimestampKlass.now(),
+    patternId: 'abc123',
+    tacticIds: [],
+    type: 'success',
     suggestedTacticIds: [],
     tacticsById: {},
   });

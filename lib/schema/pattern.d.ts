@@ -13,7 +13,6 @@ export interface PatternValue {
         body: string;
     };
     sendWeeklyReports: boolean;
-    suggestedTacticIds?: Array<string>;
     gameplanId?: string;
     successGameplanId?: string;
     setbackGameplanId?: string;

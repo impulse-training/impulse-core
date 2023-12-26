@@ -3,9 +3,10 @@ import { makeApplicationFactory } from './application';
 import { makeChallengeFactory } from './challenge';
 import { makeCommentFactory } from './comment';
 import {
-  makeDebriefGameplanFactory,
   makeImpulseGameplanFactory,
   makeLocationGameplanFactory,
+  makeSetbackGameplanFactory,
+  makeSuccessGameplanFactory,
   makeTimeGameplanFactory,
 } from './gameplan';
 import { makeIssueFactory } from './issue';
@@ -43,7 +44,8 @@ export function makeFactories(TimestampKlass: typeof FakeTimestamp) {
     adminProfileFactory: makeAdminProfileFactory(TimestampKlass),
     supportGroupFactory: makeSupportGroupFactory(TimestampKlass),
     impulseGameplanFactory: makeImpulseGameplanFactory(TimestampKlass),
-    debriefGameplanFactory: makeDebriefGameplanFactory(TimestampKlass),
+    successGameplanFactory: makeSuccessGameplanFactory(TimestampKlass),
+    setbackGameplanFactory: makeSetbackGameplanFactory(TimestampKlass),
     timeGameplanFactory: makeTimeGameplanFactory(TimestampKlass),
     patternFactory: makePatternFactory(TimestampKlass),
     locationGameplanFactory: makeLocationGameplanFactory(TimestampKlass),
@@ -62,7 +64,8 @@ export const {
   motionLogFactory,
   debriefLogFactory,
   logSummaryFactory,
-  debriefGameplanFactory,
+  successGameplanFactory,
+  setbackGameplanFactory,
   profileFactory,
   supportGroupFactory,
   tacticFactory,

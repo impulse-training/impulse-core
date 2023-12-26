@@ -6,17 +6,12 @@ export interface PatternValue {
   updatedAt: FakeTimestamp;
   name: string;
   ordinal: number;
-  // DEPRECATED - moving to tactic model
-  unit: 'time' | 'custom';
-  customUnit?: string;
-  //
   supportGroupIds?: Array<string>;
   notification?: {
     title: string;
     body: string;
   };
   sendWeeklyReports: boolean;
-  suggestedTacticIds?: Array<string>;
   gameplanId?: string;
   successGameplanId?: string;
   setbackGameplanId?: string;
