@@ -6,6 +6,8 @@ export interface PatternValue {
   updatedAt: FakeTimestamp;
   name: string;
   ordinal: number;
+  unit: 'time' | 'custom';
+  customUnit?: string;
   supportGroupIds?: Array<string>;
   notification?: {
     title: string;

@@ -8,6 +8,7 @@ export const makeIssueFactory = (TimestampKlass: typeof FakeTimestamp) =>
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     synonyms: ['Videos'],
+    unit: 'time',
     impulse: {
       llmPrompt:
         'Please suggest tactics for overcoming an impulse to watch youtube',

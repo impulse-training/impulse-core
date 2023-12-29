@@ -6,6 +6,8 @@ export interface IssueValue {
   updatedAt: FakeTimestamp;
   name: string;
   synonyms: Array<string>;
+  unit: 'time' | 'custom';
+  customUnit?: string;
   impulse: {
     llmPrompt: string;
     suggestedTacticIds: Array<string>;
