@@ -29,6 +29,10 @@ export interface TacticValueBase<K> {
 
 export type QuestionTactic = TacticValueBase<'question'>;
 
+export type StepsTactic = TacticValueBase<'steps'> & {
+  steps: number;
+};
+
 export type MeasureSlidersTactic = TacticValueBase<'measure-sliders'> & {
   rows: Array<{
     key: string;
@@ -120,7 +124,8 @@ export type TacticValue =
   | SliderTactic
   | MeasureTactic
   | OptionsTactic
-  | BreatheTactic;
+  | BreatheTactic
+  | StepsTactic;
 
 // Deprecated --------------------------------------------------------------------------------------
 export type TimeSliderTactic = TacticValueBase<'slider'> & {

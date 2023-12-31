@@ -14,10 +14,15 @@ export interface RecommendationValueBase {
   tacticsById: Record<string, TacticValue>;
 }
 
+// These recommendations are to create a new gameplan that includes tactics. For example, "Reminder
+// to wear your impulse button every morning at 8am". In this case the gameplan property would
+// specify a time gameplan for every day at 8am, and the tactics fields would specify the reminder
+// to wear the impulse button.
 export type NewGameplanRecommendationValue = RecommendationValueBase & {
   gameplan: TimeGameplanValue | LocationGameplanValue;
 };
 
+// These recommendations are for additional tactics to add to an existing gameplan.
 export type ExistingGameplanRecommendationValue = RecommendationValueBase & {
   gameplanId: string;
 };

@@ -25,6 +25,9 @@ export interface TacticValueBase<K> {
     isResponseRequired?: boolean;
 }
 export type QuestionTactic = TacticValueBase<'question'>;
+export type StepsTactic = TacticValueBase<'steps'> & {
+    steps: number;
+};
 export type MeasureSlidersTactic = TacticValueBase<'measure-sliders'> & {
     rows: Array<{
         key: string;
@@ -86,7 +89,7 @@ export type SpotifyTrackTactic = TacticValueBase<'link'> & {
     };
 };
 export type TaskTactic = TacticValueBase<'task'>;
-export type TacticValue = PhoneTacticValue | AudioTactic | VideoTactic | QuestionTactic | SpotifyEpisodeTactic | SpotifyTrackTactic | TaskTactic | TimerTactic | FolderTactic | SliderTactic | MeasureTactic | OptionsTactic | BreatheTactic;
+export type TacticValue = PhoneTacticValue | AudioTactic | VideoTactic | QuestionTactic | SpotifyEpisodeTactic | SpotifyTrackTactic | TaskTactic | TimerTactic | FolderTactic | SliderTactic | MeasureTactic | OptionsTactic | BreatheTactic | StepsTactic;
 export type TimeSliderTactic = TacticValueBase<'slider'> & {
     unit: 'time';
     transformFunction: 'logarithmic';
