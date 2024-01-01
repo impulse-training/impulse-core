@@ -20,6 +20,11 @@ export interface BaseLogValue {
   locationFormatted?: string;
   allTacticIds: Array<string>;
   commentCount?: number;
+  // Some tactics involve tracking steps (e.g. walking, running, etc.). As the bluetooth button
+  // transmits this data to the app, we don't really want to do reconcilliation of the tactic on the
+  // phone. Instead, we simply log the number of steps taken as a first-class property on the log
+  // document, and then we can do reconcilliation on the server.
+  steps?: number;
 
   // TODO: this shouldbe renamed to 'selectedTacticIds'
   tacticIds: Array<string>;

@@ -16,6 +16,7 @@ export interface BaseLogValue {
     locationFormatted?: string;
     allTacticIds: Array<string>;
     commentCount?: number;
+    steps?: number;
     tacticIds: Array<string>;
     gameplan: {
         main: Gameplan;
