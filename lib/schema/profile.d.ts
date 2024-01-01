@@ -22,6 +22,7 @@ export interface ProfileValue {
     isCurrentlyTrackingMotion?: boolean;
     showTacticsFromSupportGroups?: boolean;
     androidPermissions?: Record<Permission, boolean>;
+    recommendationsCount?: number;
     displayName?: string;
     firstName?: string;
     lastName?: string;

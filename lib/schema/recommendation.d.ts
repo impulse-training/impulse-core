@@ -8,7 +8,7 @@ export interface RecommendationValueBase {
     createdAt: FakeTimestamp;
     updatedAt: FakeTimestamp;
     dismissedAt?: FakeTimestamp;
-    explanation: string;
+    explanationMarkdown: string;
     tacticIds: Array<string>;
     tacticsById: Record<string, TacticValue>;
 }

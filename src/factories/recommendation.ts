@@ -13,6 +13,6 @@ export const makeRecommendationFactory = (
     tacticsById: {},
     recommenderName: 'Michael',
     recommenderUid: 'abc123',
-    explanation: 'You should try this!',
+    explanationMarkdown: 'You should try this!',
     gameplanId: 'abc123',
   });
