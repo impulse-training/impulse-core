@@ -1,17 +1,30 @@
 import { FakeTimestamp } from '../utils/FakeTimestamp';
-import { LocationGameplanValue, TimeGameplanValue } from './gameplan';
+import {
+  GameplanValue,
+  LocationGameplanValue,
+  TimeGameplanValue,
+} from './gameplan';
 import { TacticValue } from './tactic';
 
 export interface RecommendationValueBase {
   uid: string;
+  ordinal: number;
+  title: string;
+  explanation: string;
+  gameplanExplanation?: string;
+  templateForGameplansOfType?: GameplanValue['type'];
   recommenderUid: string;
   recommenderName: string;
   createdAt: FakeTimestamp;
   updatedAt: FakeTimestamp;
-  dismissedAt?: FakeTimestamp;
-  explanationMarkdown: string;
+  appliedAt: FakeTimestamp | null;
+  dismissedAt: FakeTimestamp | null;
   tacticIds: Array<string>;
   tacticsById: Record<string, TacticValue>;
+  // This property is actually a hack to work around an issue with factory type protection with the
+  // union type
+  gameplanId?: string;
+  selectAllByDefault?: boolean;
 }
 
 // These recommendations are to create a new gameplan that includes tactics. For example, "Reminder
@@ -24,7 +37,8 @@ export type NewGameplanRecommendationValue = RecommendationValueBase & {
 
 // These recommendations are for additional tactics to add to an existing gameplan.
 export type ExistingGameplanRecommendationValue = RecommendationValueBase & {
-  gameplanId: string;
+  // This field is required, but omitted for template recommendations
+  gameplanId?: string;
 };
 
 export type RecommendationValue =

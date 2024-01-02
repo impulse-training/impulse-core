@@ -1,6 +1,5 @@
 import { FakeTimestamp } from '../utils/FakeTimestamp';
 import { makeApplicationFactory } from './application';
-import { makeChallengeFactory } from './challenge';
 import { makeCommentFactory } from './comment';
 import {
   makeImpulseGameplanFactory,
@@ -21,6 +20,7 @@ import {
 } from './logs';
 import { makePatternFactory } from './pattern';
 import { makeAdminProfileFactory, makeProfileFactory } from './profile';
+import { makeRecommendationFactory } from './recommendation';
 import { makeSupportGroupFactory } from './supportGroup';
 import { makeTacticFactory } from './tactic';
 
@@ -30,7 +30,6 @@ import { makeTacticFactory } from './tactic';
 export function makeFactories(TimestampKlass: typeof FakeTimestamp) {
   return {
     applicationFactory: makeApplicationFactory(TimestampKlass),
-    challengeFactory: makeChallengeFactory(TimestampKlass),
     commentFactory: makeCommentFactory(TimestampKlass),
     impulseFactory: makeImpulseFactory(TimestampKlass),
     timeLogFactory: makeTimeLogFactory(TimestampKlass),
@@ -49,6 +48,7 @@ export function makeFactories(TimestampKlass: typeof FakeTimestamp) {
     timeGameplanFactory: makeTimeGameplanFactory(TimestampKlass),
     patternFactory: makePatternFactory(TimestampKlass),
     locationGameplanFactory: makeLocationGameplanFactory(TimestampKlass),
+    recommendationFactory: makeRecommendationFactory(TimestampKlass),
     tacticFactory: makeTacticFactory(TimestampKlass),
   };
 }
@@ -57,11 +57,11 @@ export function makeFactories(TimestampKlass: typeof FakeTimestamp) {
 // library
 export const {
   applicationFactory,
-  challengeFactory,
   commentFactory,
   impulseFactory,
   timeLogFactory,
   motionLogFactory,
+  recommendationFactory,
   debriefLogFactory,
   logSummaryFactory,
   successGameplanFactory,
