@@ -1,9 +1,5 @@
 import { FakeTimestamp } from '../utils/FakeTimestamp';
-import {
-  GameplanValue,
-  LocationGameplanValue,
-  TimeGameplanValue,
-} from './gameplan';
+import { LocationGameplanValue, TimeGameplanValue } from './gameplan';
 import { TacticValue } from './tactic';
 
 export interface RecommendationValueBase {
@@ -12,7 +8,6 @@ export interface RecommendationValueBase {
   title: string;
   explanation: string;
   gameplanExplanation?: string;
-  templateForGameplansOfType?: GameplanValue['type'];
   recommenderUid: string;
   recommenderName: string;
   createdAt: FakeTimestamp;
@@ -21,6 +16,7 @@ export interface RecommendationValueBase {
   dismissedAt: FakeTimestamp | null;
   tacticIds: Array<string>;
   tacticsById: Record<string, TacticValue>;
+  ruleId?: string;
   // This property is actually a hack to work around an issue with factory type protection with the
   // union type
   gameplanId?: string;

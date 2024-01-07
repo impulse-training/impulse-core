@@ -21,6 +21,7 @@ import {
 import { makePatternFactory } from './pattern';
 import { makeAdminProfileFactory, makeProfileFactory } from './profile';
 import { makeRecommendationFactory } from './recommendation';
+import { makeRecommendationRuleFactory } from './recommendationRuleFactory';
 import { makeSupportGroupFactory } from './supportGroup';
 import { makeTacticFactory } from './tactic';
 
@@ -49,6 +50,7 @@ export function makeFactories(TimestampKlass: typeof FakeTimestamp) {
     patternFactory: makePatternFactory(TimestampKlass),
     locationGameplanFactory: makeLocationGameplanFactory(TimestampKlass),
     recommendationFactory: makeRecommendationFactory(TimestampKlass),
+    recommendationRuleFactory: makeRecommendationRuleFactory(TimestampKlass),
     tacticFactory: makeTacticFactory(TimestampKlass),
   };
 }
@@ -69,4 +71,5 @@ export const {
   profileFactory,
   supportGroupFactory,
   tacticFactory,
+  recommendationRuleFactory,
 } = makeFactories(FakeTimestamp);
