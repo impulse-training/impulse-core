@@ -15,6 +15,7 @@ export type GameplanValueBase = Gameplan & {
     tacticsUpdatedAt?: FakeTimestamp;
     timezone?: string;
     patternName?: string;
+    issueId?: string;
 };
 export type ImpulseGameplanValue = GameplanValueBase & {
     type: 'impulse' | 'success' | 'setback';
