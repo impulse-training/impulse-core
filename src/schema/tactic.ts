@@ -1,154 +1,173 @@
-import { FakeTimestamp } from '../utils/FakeTimestamp';
-import { Image } from '../utils/image';
-import { Recording } from './recording';
+import * as yup from 'yup';
+import { recordingSchema } from './recording';
+import { imageValueSchema } from './utils/image';
+import { timestampSchema } from './utils/timestamp';
 
-export interface ImageValue {
-  createdAt: FakeTimestamp;
-  localFilePath: string;
-  filePath: string;
+// Define a base schema for TacticValueBase with generic type K to accommodate the type field.
+function tacticValueBaseSchema<K extends string>(type: K) {
+  return yup.object({
+    type: yup.mixed<K>().oneOf([type]).defined(),
+    uid: yup.string().nullable(),
+    ordinal: yup.number().nullable(),
+    isSuggested: yup.boolean().nullable(),
+    createdAt: timestampSchema.required(),
+    updatedAt: timestampSchema.required(),
+    title: yup.string().required(),
+    description: yup.string().nullable(),
+    image: imageValueSchema.optional().nullable(),
+    backgroundColor: yup.string().nullable(),
+    isTemplate: yup.boolean().nullable(),
+    language: yup.string().nullable(),
+    href: yup.string().url().nullable(),
+    categoryIds: yup.array().of(yup.string()).nullable(),
+    isShared: yup.boolean().nullable(),
+    isResponseRequired: yup.boolean().nullable(),
+    isAvailableForRecommendation: yup.boolean().nullable(),
+  });
 }
 
-export interface TacticValueBase<K> {
-  type?: K;
-  uid?: string;
-  ordinal?: number;
-  isSuggested?: boolean;
-  createdAt: FakeTimestamp;
-  updatedAt: FakeTimestamp;
-  title: string;
-  description?: string;
-  image?: Image;
-  backgroundColor?: string;
-  isTemplate?: boolean;
-  language?: string;
-  href?: string;
-  categoryIds?: Array<string>;
-  isShared?: boolean;
-  isResponseRequired?: boolean;
-}
+const stepsTacticSchema = tacticValueBaseSchema('steps').shape({
+  steps: yup.number().required(),
+});
+export type StepsTactic = yup.InferType<typeof stepsTacticSchema>;
 
-export type QuestionTactic = TacticValueBase<'question'>;
+const audioTacticSchema = tacticValueBaseSchema('audio').shape({
+  metadata: recordingSchema.required(),
+  recording: recordingSchema.nullable(),
+});
+export type AudioTactic = yup.InferType<typeof audioTacticSchema>;
 
-export type StepsTactic = TacticValueBase<'steps'> & {
-  steps: number;
-};
+const videoTacticSchema = tacticValueBaseSchema('video').shape({
+  video: yup
+    .object({
+      url: yup.string().url().nullable(),
+      storagePath: yup.string().nullable(),
+      title: yup.string().required(),
+      description: yup.string().required(),
+      thumbnailUrl: yup.string().url().required(),
+      duration: yup.number().required(),
+    })
+    .required(),
+});
+export type VideoTactic = yup.InferType<typeof videoTacticSchema>;
 
-export type MeasureSlidersTactic = TacticValueBase<'measure-sliders'> & {
-  rows: Array<{
-    key: string;
-    label: string;
-    value?: number;
-    lowEmoji: string;
-    highEmoji: string;
-  }>;
-};
+const measureSlidersTacticSchema = tacticValueBaseSchema(
+  'measure-sliders'
+).shape({
+  rows: yup
+    .array()
+    .of(
+      yup.object({
+        key: yup.string().required(),
+        label: yup.string().required(),
+        value: yup.number().nullable(),
+        lowEmoji: yup.string().required(),
+        highEmoji: yup.string().required(),
+      })
+    )
+    .required(),
+});
+export type MeasureSlidersTactic = yup.InferType<
+  typeof measureSlidersTacticSchema
+>;
 
-export type MeasureTimeTactic = TacticValueBase<'measure-time'>;
-export type MeasureCounterTactic = TacticValueBase<'measure-counter'>;
+const measureTimeTacticSchema = tacticValueBaseSchema('measure-time');
+export type MeasureTimeTactic = yup.InferType<typeof measureTimeTacticSchema>;
+
+const measureCounterTacticSchema = tacticValueBaseSchema('measure-counter');
+export type MeasureCounterTactic = yup.InferType<
+  typeof measureCounterTacticSchema
+>;
+
 export type MeasureTactic =
   | MeasureSlidersTactic
   | MeasureTimeTactic
   | MeasureCounterTactic;
 
-export type FolderTactic = TacticValueBase<'folder'> & {
-  tacticIds: Array<string>;
-  tacticsById?: Record<string, TacticValue>;
-};
+const folderTacticSchema = tacticValueBaseSchema('folder').shape({
+  tacticIds: yup.array().of(yup.string()).required(),
+  tacticsById: yup.object().nullable(),
+});
+export type FolderTactic = yup.InferType<typeof folderTacticSchema>;
 
-export type PhoneTacticValue = TacticValueBase<'phone'> & {
-  supportGroupId: string;
-  trigger: 'automatic' | 'manual';
-};
+const phoneTacticSchema = tacticValueBaseSchema('phone').shape({
+  supportGroupId: yup.string().required(),
+  trigger: yup.mixed().oneOf(['automatic', 'manual']).required(),
+});
+export type PhoneTacticValue = yup.InferType<typeof phoneTacticSchema>;
 
-export type AudioTactic = TacticValueBase<'audio'> & {
-  // deprecated:
-  metadata: Recording;
+const timerTacticSchema = tacticValueBaseSchema('timer').shape({
+  timerSeconds: yup.number().required(),
+});
+export type TimerTactic = yup.InferType<typeof timerTacticSchema>;
 
-  recording?: Recording;
-};
+const breatheTacticSchema = tacticValueBaseSchema('breathe').shape({
+  inFor: yup.number().positive().required(),
+  holdFor: yup.number().positive().required(),
+  outFor: yup.number().positive().required(),
+  repeat: yup.number().positive().required(),
+});
+export type BreatheTactic = yup.InferType<typeof breatheTacticSchema>;
 
-export type VideoTactic = TacticValueBase<'video'> & {
-  video: {
-    url?: string;
-    storagePath?: string;
-    title: string;
-    description: string;
-    thumbnailUrl: string;
-    duration: number;
-  };
-};
+const optionsTacticSchema = tacticValueBaseSchema('options').shape({
+  tacticIds: yup.array().of(yup.string()).required(),
+  tacticsById: yup.object().required(),
+});
+export type OptionsTactic = yup.InferType<typeof optionsTacticSchema>;
 
-export type TimerTactic = TacticValueBase<'timer'> & {
-  timerSeconds: number;
-};
+const taskTacticSchema = tacticValueBaseSchema('task');
+export type TaskTactic = yup.InferType<typeof taskTacticSchema>;
 
-export type BreatheTactic = TacticValueBase<'breathe'> & {
-  inFor: number;
-  holdFor: number;
-  outFor: number;
-  repeat: number;
-};
-
-export type OptionsTactic = TacticValueBase<'options'> & {
-  tacticIds: Array<string>;
-  tacticsById: Record<string, TacticValue>;
-};
-
-export type SpotifyEpisodeTactic = TacticValueBase<'link'> & {
-  metadata: {
-    episodeId: string;
-    durationMs: number;
-    durationFormatted: string;
-  };
-};
-
-export type SpotifyTrackTactic = TacticValueBase<'link'> & {
-  metadata: {
-    episodeId: string;
-    durationMs: number;
-  };
-};
-
-export type TaskTactic = TacticValueBase<'task'>;
+const questionTacticSchema = tacticValueBaseSchema('question');
+export type QuestionTactic = yup.InferType<typeof questionTacticSchema>;
 
 export type TacticValue =
   | PhoneTacticValue
   | AudioTactic
   | VideoTactic
   | QuestionTactic
-  | SpotifyEpisodeTactic
-  | SpotifyTrackTactic
   | TaskTactic
   | TimerTactic
   | FolderTactic
-  | SliderTactic
   | MeasureTactic
   | OptionsTactic
   | BreatheTactic
   | StepsTactic;
 
-// Deprecated --------------------------------------------------------------------------------------
-export type TimeSliderTactic = TacticValueBase<'slider'> & {
-  unit: 'time';
-  transformFunction: 'logarithmic';
-};
+// Utility to dynamically select the correct schema based on the tactic type
+const tacticSchemas: Record<
+  TacticValue['type'],
+  yup.ObjectSchema<TacticValue>
+> = {
+  phone: phoneTacticSchema,
+  audio: audioTacticSchema,
+  video: videoTacticSchema,
+  question: questionTacticSchema,
+  'measure-sliders': measureSlidersTacticSchema,
+  'measure-time': measureTimeTacticSchema,
+  'measure-counter': measureCounterTacticSchema,
+  timer: timerTacticSchema,
+  folder: folderTacticSchema,
+  options: optionsTacticSchema,
+  breathe: breatheTacticSchema,
+  steps: stepsTacticSchema,
+  task: taskTacticSchema,
+} as any;
 
-export type EmojiSliderTactic = TacticValueBase<'slider'> & {
-  unit: 'emojis';
-  transformFunction: 'linear';
-  lowEmoji: string;
-  highEmoji: string;
+// Export all schema so they can be used elsewhere in the application
+export {
+  audioTacticSchema,
+  breatheTacticSchema,
+  folderTacticSchema,
+  measureCounterTacticSchema,
+  measureSlidersTacticSchema,
+  measureTimeTacticSchema,
+  optionsTacticSchema,
+  phoneTacticSchema,
+  questionTacticSchema,
+  stepsTacticSchema,
+  tacticSchemas,
+  taskTacticSchema,
+  timerTacticSchema,
+  videoTacticSchema,
 };
-
-export type CustomSliderTactic = TacticValueBase<'slider'> & {
-  unit: 'custom';
-  transformFunction: 'linear';
-  customUnit: string;
-  maximum: number;
-};
-
-export type SliderTactic =
-  | TimeSliderTactic
-  | EmojiSliderTactic
-  | CustomSliderTactic;
-// Deprecated --------------------------------------------------------------------------------------
