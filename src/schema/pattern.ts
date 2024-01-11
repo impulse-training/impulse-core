@@ -13,6 +13,7 @@ export interface PatternValue {
     title: string;
     body: string;
   };
+  issueId?: string;
   sendWeeklyReports: boolean;
   gameplanId?: string;
   successGameplanId?: string;
