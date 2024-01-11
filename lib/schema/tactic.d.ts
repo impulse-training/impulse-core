@@ -15,8 +15,8 @@ declare const stepsTacticSchema: yup.ObjectSchema<{
     title: string;
     description: string | null | undefined;
     image: {
-        localFilePath: string;
-        storagePath: string;
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
     } | null | undefined;
     backgroundColor: string | null | undefined;
     isTemplate: boolean | null | undefined;
@@ -73,8 +73,8 @@ declare const audioTacticSchema: yup.ObjectSchema<{
     title: string;
     description: string | null | undefined;
     image: {
-        localFilePath: string;
-        storagePath: string;
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
     } | null | undefined;
     backgroundColor: string | null | undefined;
     isTemplate: boolean | null | undefined;
@@ -149,8 +149,8 @@ declare const videoTacticSchema: yup.ObjectSchema<{
     title: string;
     description: string | null | undefined;
     image: {
-        localFilePath: string;
-        storagePath: string;
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
     } | null | undefined;
     backgroundColor: string | null | undefined;
     isTemplate: boolean | null | undefined;
@@ -221,8 +221,8 @@ declare const measureSlidersTacticSchema: yup.ObjectSchema<{
     title: string;
     description: string | null | undefined;
     image: {
-        localFilePath: string;
-        storagePath: string;
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
     } | null | undefined;
     backgroundColor: string | null | undefined;
     isTemplate: boolean | null | undefined;
@@ -285,8 +285,8 @@ declare const measureTimeTacticSchema: yup.ObjectSchema<{
     title: string;
     description: string | null | undefined;
     image: {
-        localFilePath: string;
-        storagePath: string;
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
     } | null | undefined;
     backgroundColor: string | null | undefined;
     isTemplate: boolean | null | undefined;
@@ -341,8 +341,8 @@ declare const measureCounterTacticSchema: yup.ObjectSchema<{
     title: string;
     description: string | null | undefined;
     image: {
-        localFilePath: string;
-        storagePath: string;
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
     } | null | undefined;
     backgroundColor: string | null | undefined;
     isTemplate: boolean | null | undefined;
@@ -398,8 +398,8 @@ declare const folderTacticSchema: yup.ObjectSchema<{
     title: string;
     description: string | null | undefined;
     image: {
-        localFilePath: string;
-        storagePath: string;
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
     } | null | undefined;
     backgroundColor: string | null | undefined;
     isTemplate: boolean | null | undefined;
@@ -458,8 +458,8 @@ declare const phoneTacticSchema: yup.ObjectSchema<{
     title: string;
     description: string | null | undefined;
     image: {
-        localFilePath: string;
-        storagePath: string;
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
     } | null | undefined;
     backgroundColor: string | null | undefined;
     isTemplate: boolean | null | undefined;
@@ -518,8 +518,8 @@ declare const timerTacticSchema: yup.ObjectSchema<{
     title: string;
     description: string | null | undefined;
     image: {
-        localFilePath: string;
-        storagePath: string;
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
     } | null | undefined;
     backgroundColor: string | null | undefined;
     isTemplate: boolean | null | undefined;
@@ -576,8 +576,8 @@ declare const breatheTacticSchema: yup.ObjectSchema<{
     title: string;
     description: string | null | undefined;
     image: {
-        localFilePath: string;
-        storagePath: string;
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
     } | null | undefined;
     backgroundColor: string | null | undefined;
     isTemplate: boolean | null | undefined;
@@ -640,8 +640,8 @@ declare const optionsTacticSchema: yup.ObjectSchema<{
     title: string;
     description: string | null | undefined;
     image: {
-        localFilePath: string;
-        storagePath: string;
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
     } | null | undefined;
     backgroundColor: string | null | undefined;
     isTemplate: boolean | null | undefined;
@@ -700,8 +700,8 @@ declare const taskTacticSchema: yup.ObjectSchema<{
     title: string;
     description: string | null | undefined;
     image: {
-        localFilePath: string;
-        storagePath: string;
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
     } | null | undefined;
     backgroundColor: string | null | undefined;
     isTemplate: boolean | null | undefined;
@@ -756,8 +756,8 @@ declare const questionTacticSchema: yup.ObjectSchema<{
     title: string;
     description: string | null | undefined;
     image: {
-        localFilePath: string;
-        storagePath: string;
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
     } | null | undefined;
     backgroundColor: string | null | undefined;
     isTemplate: boolean | null | undefined;

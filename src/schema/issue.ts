@@ -4,7 +4,9 @@ import { FakeTimestamp } from '../utils/FakeTimestamp';
 export interface IssueValue {
   createdAt: FakeTimestamp;
   updatedAt: FakeTimestamp;
+  parentId?: string;
   name: string;
+  // synonyms should also include name
   synonyms: Array<string>;
   unit: 'time' | 'custom';
   customUnit?: string;
