@@ -7,15 +7,15 @@ export interface IssueValue {
     synonyms: Array<string>;
     unit: 'time' | 'custom';
     customUnit?: string;
-    impulse: {
+    impulse?: {
         llmPrompt: string;
         suggestedTacticIds: Array<string>;
     };
-    success: {
+    success?: {
         llmPrompt: string;
         suggestedTacticIds: Array<string>;
     };
-    setback: {
+    setback?: {
         llmPrompt: string;
         suggestedTacticIds: Array<string>;
     };
