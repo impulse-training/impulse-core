@@ -20,7 +20,7 @@ export interface RecommendationValueBase {
   // This property is actually a hack to work around an issue with factory type protection with the
   // union type
   gameplanId?: string;
-  selectAllByDefault?: boolean;
+  defaultSelected?: 'all' | 'first' | 'none'; // undefined means 'none'
 }
 
 // These recommendations are to create a new gameplan that includes tactics. For example, "Reminder

@@ -17,7 +17,7 @@ export interface RecommendationValueBase {
     tacticsById: Record<string, TacticValue>;
     ruleId?: string;
     gameplanId?: string;
-    selectAllByDefault?: boolean;
+    defaultSelected?: 'all' | 'first' | 'none';
 }
 export type NewGameplanRecommendationValue = RecommendationValueBase & {
     gameplan: TimeGameplanValue | LocationGameplanValue;
