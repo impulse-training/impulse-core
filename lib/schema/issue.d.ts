@@ -7,9 +7,11 @@ export interface IssueValue {
     synonyms: Array<string>;
     unit: 'time' | 'custom';
     customUnit?: string;
+    path?: string;
     parentIds: Array<string>;
     parentNames: Array<string>;
     recommendationsCount?: number;
+    patternsCount?: number;
     impulse?: {
         llmPrompt: string;
         suggestedTacticIds: Array<string>;

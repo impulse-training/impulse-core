@@ -8,7 +8,6 @@ export interface RecommendationRuleValue {
     'uid' | 'ordinal' | 'createdAt' | 'updatedAt' | 'appliedAt' | 'dismissedAt'
   >;
   forIssueIds: Array<string>;
-  forAllIssues: boolean;
   forType: GameplanValue['type'];
   issueNames?: Record<string, string>;
   issueNamesSummary?: string;

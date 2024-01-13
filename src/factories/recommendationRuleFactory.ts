@@ -27,6 +27,5 @@ export const makeRecommendationRuleFactory = (
     },
     forType: 'impulse',
     forIssueIds: [],
-    forAllIssues: true,
     ordinal: 0,
   });

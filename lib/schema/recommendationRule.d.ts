@@ -4,7 +4,6 @@ import { RecommendationValue } from './recommendation';
 export interface RecommendationRuleValue {
     recommendation: Omit<RecommendationValue, 'uid' | 'ordinal' | 'createdAt' | 'updatedAt' | 'appliedAt' | 'dismissedAt'>;
     forIssueIds: Array<string>;
-    forAllIssues: boolean;
     forType: GameplanValue['type'];
     issueNames?: Record<string, string>;
     issueNamesSummary?: string;
