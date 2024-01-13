@@ -9,6 +9,13 @@ export const makeIssueFactory = (TimestampKlass: typeof FakeTimestamp) =>
     updatedAt: TimestampKlass.now(),
     synonyms: ['Videos'],
     unit: 'time',
+    parentIds: [],
+    parentNames: [
+      'Behavioral pattern',
+      'Addiction',
+      'Process addiction',
+      'YouTube',
+    ],
     impulse: {
       llmPrompt:
         'Please suggest tactics for overcoming an impulse to watch youtube',
