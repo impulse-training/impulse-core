@@ -35,7 +35,11 @@ export interface ProfileValue {
     isTourCompleted?: boolean;
     isButtonSetupSkipped?: boolean;
     invitationCode: string;
-    gameplans: Record<string, Gameplan>;
+    gameplans: Record<string, {
+        main: Gameplan;
+        success: Gameplan;
+        setback: Gameplan;
+    }>;
     gameplansUpdatedAt: FakeTimestamp;
     impulseNotifications?: Record<string, {
         title: string;

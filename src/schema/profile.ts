@@ -52,7 +52,10 @@ export interface ProfileValue {
   // we can quickly copy them to a new impulse log document. We also store the last time the
   // gameplan was updated - this is primarily to prevent an infinite loop of updates when a gameplan
   // is updated.
-  gameplans: Record<string, Gameplan>;
+  gameplans: Record<
+    string,
+    { main: Gameplan; success: Gameplan; setback: Gameplan }
+  >;
   gameplansUpdatedAt: FakeTimestamp;
   impulseNotifications?: Record<string, { title: string; body: string }>;
   viewAccessGrantedTo?: Array<string>;
