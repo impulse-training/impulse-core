@@ -27,6 +27,7 @@ export type GameplanValueBase = Gameplan & {
   timezone?: string;
   patternName?: string;
   issueId?: string;
+  parentIssueIds?: Array<string>;
 };
 
 // A pattern gameplan is the set of tactics that we use in an impulse moment

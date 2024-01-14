@@ -16,6 +16,7 @@ export type GameplanValueBase = Gameplan & {
     timezone?: string;
     patternName?: string;
     issueId?: string;
+    parentIssueIds?: Array<string>;
 };
 export type ImpulseGameplanValue = GameplanValueBase & {
     type: 'impulse' | 'success' | 'setback';
