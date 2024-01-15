@@ -1,7 +1,7 @@
 import * as Location from 'expo-location';
 import { FakeTimestamp } from '../utils/FakeTimestamp';
 import { Gameplan } from './gameplan';
-import { PatternValue, Usage } from './pattern';
+import { PatternUsage, PatternValue } from './pattern';
 import { ProfileValue } from './profile';
 import { TacticValue } from './tactic';
 
@@ -51,7 +51,7 @@ export interface BaseLogValue {
     all: Record<string, string>;
   };
 
-  tacticUsage?: Record<string, Usage>;
+  tacticUsage?: Record<string, PatternUsage>;
   tacticData?: Record<string, unknown>;
 
   sharedWithSupportGroupIds?: Array<string>;
@@ -75,7 +75,7 @@ export type ImpulseLogValue = BaseLogValue & {
   // Deprecated ------------------------------------------------------------------------------------
   patternIds: Array<string>;
   // -----------------------------------------------------------------------------------------------
-  patternUsage: Record<string, Usage>;
+  patternUsage: Record<string, PatternUsage>;
   debriefNotes?: string;
   debriefReminderSentAt?: FakeTimestamp | null;
   debriefedAt?: FakeTimestamp | null;
@@ -107,11 +107,11 @@ export type DebriefLogValue = BaseLogValue & {
   isDisplayable: true;
   gameplanId: string;
   patternIds: Array<string>;
-  patternUsage: Record<string, Usage>;
+  patternUsage: Record<string, PatternUsage>;
 
   // While a little obscure, here we store a map of the pattern usage of all impulse log entries for
   // the day. When this is written, we can sum up the pattern usage to write to this record.
-  patternUsageEntries: Record<string, Record<string, Usage>>;
+  patternUsageEntries: Record<string, Record<string, PatternUsage>>;
 };
 
 // Motion logs are recorded when the user wears the impulse button

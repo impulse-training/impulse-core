@@ -1,7 +1,7 @@
 import * as Location from 'expo-location';
 import { FakeTimestamp } from '../utils/FakeTimestamp';
 import { Gameplan } from './gameplan';
-import { PatternValue, Usage } from './pattern';
+import { PatternUsage, PatternValue } from './pattern';
 import { ProfileValue } from './profile';
 import { TacticValue } from './tactic';
 export type Outcome = 'success' | 'setback' | 'indeterminate';
@@ -30,7 +30,7 @@ export interface BaseLogValue {
         setback: Record<string, string>;
         all: Record<string, string>;
     };
-    tacticUsage?: Record<string, Usage>;
+    tacticUsage?: Record<string, PatternUsage>;
     tacticData?: Record<string, unknown>;
     sharedWithSupportGroupIds?: Array<string>;
 }
@@ -45,7 +45,7 @@ export type ImpulseLogValue = BaseLogValue & {
     patterns: Record<string, PatternValue>;
     patternId: string;
     patternIds: Array<string>;
-    patternUsage: Record<string, Usage>;
+    patternUsage: Record<string, PatternUsage>;
     debriefNotes?: string;
     debriefReminderSentAt?: FakeTimestamp | null;
     debriefedAt?: FakeTimestamp | null;
@@ -69,8 +69,8 @@ export type DebriefLogValue = BaseLogValue & {
     isDisplayable: true;
     gameplanId: string;
     patternIds: Array<string>;
-    patternUsage: Record<string, Usage>;
-    patternUsageEntries: Record<string, Record<string, Usage>>;
+    patternUsage: Record<string, PatternUsage>;
+    patternUsageEntries: Record<string, Record<string, PatternUsage>>;
 };
 export type MotionLogValue = BaseLogValue & {
     type: 'motion';

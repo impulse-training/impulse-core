@@ -19,8 +19,9 @@ export interface PatternValue {
     setbackGameplanId?: string;
     pastGameplanIds?: Array<string>;
 }
-export interface Usage {
-    sliderValue: number;
-    value: number;
+export interface PatternUsage {
+    unit: 'time' | 'custom';
+    customUnit?: string;
     formattedValue: string;
+    value: number;
 }
