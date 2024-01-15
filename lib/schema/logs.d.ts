@@ -1,5 +1,6 @@
 import * as Location from 'expo-location';
 import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { CommentValue } from './comment';
 import { Gameplan } from './gameplan';
 import { PatternUsage, PatternValue } from './pattern';
 import { ProfileValue } from './profile';
@@ -16,6 +17,7 @@ export interface BaseLogValue {
     locationFormatted?: string;
     allTacticIds: Array<string>;
     commentCount?: number;
+    commentsById?: Record<string, CommentValue>;
     steps?: number;
     tacticIds: Array<string>;
     gameplan: {
