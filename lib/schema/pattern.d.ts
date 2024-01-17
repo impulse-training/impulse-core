@@ -17,7 +17,6 @@ export interface PatternValue {
     gameplanId?: string;
     successGameplanId?: string;
     setbackGameplanId?: string;
-    pastGameplanIds?: Array<string>;
 }
 export interface PatternUsage {
     unit: 'time' | 'custom';

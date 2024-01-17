@@ -15,10 +15,11 @@ export interface PatternValue {
   };
   issueId?: string;
   sendWeeklyReports: boolean;
+
+  // TODO: move these into an object structure
   gameplanId?: string;
   successGameplanId?: string;
   setbackGameplanId?: string;
-  pastGameplanIds?: Array<string>;
 }
 
 export interface PatternUsage {

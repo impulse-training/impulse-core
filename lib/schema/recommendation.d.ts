@@ -16,13 +16,13 @@ export interface RecommendationValueBase {
     tacticIds: Array<string>;
     tacticsById: Record<string, TacticValue>;
     ruleId?: string;
-    gameplanId?: string;
+    gameplanIds?: Array<string>;
     defaultSelected?: 'all' | 'first' | 'none';
 }
 export type NewGameplanRecommendationValue = RecommendationValueBase & {
     gameplan: TimeGameplanValue | LocationGameplanValue;
 };
 export type ExistingGameplanRecommendationValue = RecommendationValueBase & {
-    gameplanId?: string;
+    gameplanIds?: Array<string>;
 };
 export type RecommendationValue = NewGameplanRecommendationValue | ExistingGameplanRecommendationValue;

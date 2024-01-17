@@ -32,7 +32,7 @@ export const makeExistingGameplanRecommendationFactory = (
     gameplanExplanation: 'Choose a time of day to review',
     tacticIds: [],
     tacticsById: {},
-    gameplanId: 'abc123',
+    gameplanIds: [],
     recommenderName: 'Michael',
     recommenderUid: 'abc123',
     ordinal: 0,

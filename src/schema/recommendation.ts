@@ -19,7 +19,7 @@ export interface RecommendationValueBase {
   ruleId?: string;
   // This property is actually a hack to work around an issue with factory type protection with the
   // union type
-  gameplanId?: string;
+  gameplanIds?: Array<string>;
   defaultSelected?: 'all' | 'first' | 'none'; // undefined means 'none'
 }
 
@@ -34,7 +34,7 @@ export type NewGameplanRecommendationValue = RecommendationValueBase & {
 // These recommendations are for additional tactics to add to an existing gameplan.
 export type ExistingGameplanRecommendationValue = RecommendationValueBase & {
   // This field is required, but omitted for template recommendations
-  gameplanId?: string;
+  gameplanIds?: Array<string>;
 };
 
 export type RecommendationValue =
