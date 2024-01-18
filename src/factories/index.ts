@@ -59,22 +59,3 @@ export function makeFactories(TimestampKlass: typeof FakeTimestamp) {
     tacticFactory: makeTacticFactory(TimestampKlass),
   };
 }
-
-// We also directly export all factories, using our "FakeTimestamp" class, for unit testing in this
-// library
-export const {
-  applicationFactory,
-  commentFactory,
-  impulseFactory,
-  timeLogFactory,
-  motionLogFactory,
-  recommendationFactory,
-  debriefLogFactory,
-  logSummaryFactory,
-  successGameplanFactory,
-  setbackGameplanFactory,
-  profileFactory,
-  supportGroupFactory,
-  tacticFactory,
-  recommendationRuleFactory,
-} = makeFactories(FakeTimestamp);

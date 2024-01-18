@@ -6,9 +6,6 @@
   "files": [
     "lib/**/*"
   ],
-  "exports": {
-    ".": "./lib/index.js"
-  },
   "types": "lib/index.d.ts",
   "scripts": {
     "tsc:build": "tsc --project tsconfig.build.json",
