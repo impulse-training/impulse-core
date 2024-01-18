@@ -23,6 +23,7 @@ export interface ProfileValue {
     showTacticsFromSupportGroups?: boolean;
     androidPermissions?: Record<Permission, boolean>;
     recommendationsCount?: number;
+    parentIssueIds?: Array<string>;
     displayName?: string;
     firstName?: string;
     lastName?: string;

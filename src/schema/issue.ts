@@ -14,7 +14,7 @@ export interface IssueValue {
   parentIds: Array<string>;
   parentNames: Array<string>;
   recommendationsCount?: number;
-  patternsCount?: number;
+  profileCount?: number;
   impulse?: {
     llmPrompt: string;
     suggestedTacticIds: Array<string>;
