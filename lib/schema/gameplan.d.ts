@@ -19,7 +19,7 @@ export type GameplanValueBase = Gameplan & {
     parentIssueIds?: Array<string>;
 };
 export type ImpulseGameplanValue = GameplanValueBase & {
-    type: 'impulse' | 'success' | 'setback';
+    type: 'impulse' | 'success' | 'setback' | 'debrief';
     patternId: string;
 };
 type SchedulableGameplanValue = GameplanValueBase & {

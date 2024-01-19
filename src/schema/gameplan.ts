@@ -33,7 +33,7 @@ export type GameplanValueBase = Gameplan & {
 // A pattern gameplan is the set of tactics that we use in an impulse moment
 export type ImpulseGameplanValue = GameplanValueBase & {
   // TODO: this would be more appropriate as 'impulse'
-  type: 'impulse' | 'success' | 'setback';
+  type: 'impulse' | 'success' | 'setback' | 'debrief';
   patternId: string;
 };
 
