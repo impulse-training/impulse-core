@@ -5,3 +5,5 @@ export const imageValueSchema = yup.object({
   storagePath: yup.string().notRequired(),
   uri: yup.string().notRequired(),
 });
+
+export type ImageType = yup.InferType<typeof imageValueSchema>;

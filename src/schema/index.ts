@@ -23,3 +23,4 @@ export * from './recording';
 export * from './spotifyCredentials';
 export * from './supportGroup';
 export * from './tactic';
+export * from './utils/image';
