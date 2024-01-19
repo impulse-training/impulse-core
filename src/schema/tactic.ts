@@ -154,6 +154,42 @@ const tacticSchemas: Record<
   task: taskTacticSchema,
 } as any;
 
+export const tacticColors = [
+  '#20303C',
+  '#43515C',
+  '#66737C',
+  '#858F96',
+  '#A3ABB0',
+  '#4196E0',
+  '#459FED',
+  '#57a8ef',
+  '#8fc5f4',
+  '#32BABC',
+  '#3CC7C5',
+  '#64D4D2',
+  '#8BDFDD',
+  '#32B76C',
+  '#65C888',
+  '#84D3A0',
+  '#A3DEB8',
+  '#FAA030',
+  '#FAAD4D',
+  '#FBBD71',
+  '#FCCE94',
+  '#E66A4E',
+  '#F27052',
+  '#F37E63',
+  '#F7A997',
+  '#EE2C38',
+  '#F2564D',
+  '#F57871',
+  '#F79A94',
+  '#A0138E',
+  '#B13DAC',
+  '#C164BD',
+  '#D08BCD',
+];
+
 // Export all schema so they can be used elsewhere in the application
 export {
   audioTacticSchema,

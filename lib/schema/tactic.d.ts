@@ -824,4 +824,5 @@ declare const questionTacticSchema: yup.ObjectSchema<{
 export type QuestionTactic = yup.InferType<typeof questionTacticSchema>;
 export type TacticValue = PhoneTacticValue | AudioTactic | VideoTactic | QuestionTactic | TaskTactic | TimerTactic | FolderTactic | MeasureTactic | OptionsTactic | BreatheTactic | StepsTactic;
 declare const tacticSchemas: Record<TacticValue['type'], yup.ObjectSchema<TacticValue>>;
+export declare const tacticColors: string[];
 export { audioTacticSchema, breatheTacticSchema, folderTacticSchema, measureCounterTacticSchema, measureSlidersTacticSchema, measureTimeTacticSchema, optionsTacticSchema, phoneTacticSchema, questionTacticSchema, stepsTacticSchema, tacticSchemas, taskTacticSchema, timerTacticSchema, videoTacticSchema, };
