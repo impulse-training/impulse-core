@@ -18,6 +18,7 @@ export interface BaseLogValue {
     allTacticIds: Array<string>;
     commentCount?: number;
     commentsById?: Record<string, CommentValue>;
+    commentsByTacticId?: Record<string, Array<CommentValue>>;
     steps?: number;
     tacticIds: Array<string>;
     gameplan: {

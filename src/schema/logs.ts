@@ -22,6 +22,7 @@ export interface BaseLogValue {
   allTacticIds: Array<string>;
   commentCount?: number;
   commentsById?: Record<string, CommentValue>;
+  commentsByTacticId?: Record<string, Array<CommentValue>>;
   // Some tactics involve tracking steps (e.g. walking, running, etc.). As the bluetooth button
   // transmits this data to the app, we don't really want to do reconcilliation of the tactic on the
   // phone. Instead, we simply log the number of steps taken as a first-class property on the log
