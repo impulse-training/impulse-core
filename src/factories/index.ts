@@ -18,6 +18,7 @@ import {
   makeMotionLogFactory,
   makeTimeLogFactory,
 } from './logs';
+import { makeMessageFactory } from './message';
 import { makePatternFactory } from './pattern';
 import { makeAdminProfileFactory, makeProfileFactory } from './profile';
 import { makeRecommendationFactory } from './recommendation';
@@ -49,6 +50,7 @@ export function makeFactories(TimestampKlass: typeof FakeTimestamp) {
     impulseGameplanFactory: makeImpulseGameplanFactory(TimestampKlass),
     successGameplanFactory: makeSuccessGameplanFactory(TimestampKlass),
     setbackGameplanFactory: makeSetbackGameplanFactory(TimestampKlass),
+    messageFactory: makeMessageFactory(TimestampKlass),
     timeGameplanFactory: makeTimeGameplanFactory(TimestampKlass),
     patternFactory: makePatternFactory(TimestampKlass),
     locationGameplanFactory: makeLocationGameplanFactory(TimestampKlass),
