@@ -7,4 +7,5 @@ export interface MessageValue {
     text: string;
     href?: string;
     log?: LogValue;
+    fromName: string;
 }
