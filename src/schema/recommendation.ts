@@ -1,5 +1,9 @@
 import { FakeTimestamp } from '../utils/FakeTimestamp';
-import { LocationGameplanValue, TimeGameplanValue } from './gameplan';
+import {
+  DebriefGameplanValue,
+  LocationGameplanValue,
+  TimeGameplanValue,
+} from './gameplan';
 import { TacticValue } from './tactic';
 
 export interface RecommendationValueBase {
@@ -28,7 +32,7 @@ export interface RecommendationValueBase {
 // specify a time gameplan for every day at 8am, and the tactics fields would specify the reminder
 // to wear the impulse button.
 export type NewGameplanRecommendationValue = RecommendationValueBase & {
-  gameplan: TimeGameplanValue | LocationGameplanValue;
+  gameplan: TimeGameplanValue | LocationGameplanValue | DebriefGameplanValue;
 };
 
 // These recommendations are for additional tactics to add to an existing gameplan.

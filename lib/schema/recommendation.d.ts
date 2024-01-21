@@ -1,5 +1,5 @@
 import { FakeTimestamp } from '../utils/FakeTimestamp';
-import { LocationGameplanValue, TimeGameplanValue } from './gameplan';
+import { DebriefGameplanValue, LocationGameplanValue, TimeGameplanValue } from './gameplan';
 import { TacticValue } from './tactic';
 export interface RecommendationValueBase {
     uid: string;
@@ -20,7 +20,7 @@ export interface RecommendationValueBase {
     defaultSelected?: 'all' | 'first' | 'none';
 }
 export type NewGameplanRecommendationValue = RecommendationValueBase & {
-    gameplan: TimeGameplanValue | LocationGameplanValue;
+    gameplan: TimeGameplanValue | LocationGameplanValue | DebriefGameplanValue;
 };
 export type ExistingGameplanRecommendationValue = RecommendationValueBase & {
     gameplanIds?: Array<string>;

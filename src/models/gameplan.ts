@@ -1,6 +1,7 @@
 import { difference, isEqual } from 'lodash';
 import { LocationValue } from '../schema';
 import {
+  DebriefGameplanValue,
   GameplanValue,
   ImpulseGameplanValue,
   LocationGameplanValue,
@@ -75,6 +76,18 @@ export class TimeGameplan extends Gameplan {
   }
 }
 
+export class DebriefGameplan extends Gameplan {
+  constructor(private id: string, private data: DebriefGameplanValue) {
+    super();
+  }
+
+  static DAYS = SHORT_DAYS;
+
+  get summary() {
+    return 'Daily debrief';
+  }
+}
+
 export class LocationGameplan extends Gameplan {
   constructor(
     private id: string,
@@ -115,6 +128,8 @@ export function gameplanToClass(
 ) {
   if (gameplan.type === 'time') {
     return new TimeGameplan(id, gameplan as TimeGameplanValue);
+  } else if (gameplan.type === 'debrief') {
+    return new DebriefGameplan(id, gameplan as DebriefGameplanValue);
   } else if (gameplan.type === 'location') {
     return new LocationGameplan(
       id,

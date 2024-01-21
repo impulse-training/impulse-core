@@ -19,7 +19,7 @@ export type GameplanValueBase = Gameplan & {
     parentIssueIds?: Array<string>;
 };
 export type ImpulseGameplanValue = GameplanValueBase & {
-    type: 'impulse' | 'success' | 'setback' | 'debrief';
+    type: 'impulse' | 'success' | 'setback';
     patternId: string;
 };
 type SchedulableGameplanValue = GameplanValueBase & {
@@ -32,10 +32,13 @@ type SchedulableGameplanValue = GameplanValueBase & {
 export type TimeGameplanValue = SchedulableGameplanValue & {
     type: 'time';
 };
+export type DebriefGameplanValue = SchedulableGameplanValue & {
+    type: 'debrief';
+};
 export type LocationGameplanValue = GameplanValueBase & {
     type: 'location';
     locationId?: string;
     mode: 'enter' | 'exit';
 };
-export type GameplanValue = ImpulseGameplanValue | TimeGameplanValue | LocationGameplanValue;
+export type GameplanValue = ImpulseGameplanValue | TimeGameplanValue | DebriefGameplanValue | LocationGameplanValue;
 export {};
