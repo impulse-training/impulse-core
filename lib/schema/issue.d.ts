@@ -1,7 +1,7 @@
-import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { TimestampLike } from '../utils/TimestampLike';
 export interface IssueValue {
-    createdAt: FakeTimestamp;
-    updatedAt: FakeTimestamp;
+    createdAt: TimestampLike;
+    updatedAt: TimestampLike;
     parentId?: string;
     name: string;
     synonyms: Array<string>;

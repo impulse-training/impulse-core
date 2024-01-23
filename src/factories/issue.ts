@@ -1,8 +1,8 @@
 import * as Factory from 'factory.ts';
 import { IssueValue } from '../schema';
-import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { TimestampLike } from '../utils/TimestampLike';
 
-export const makeIssueFactory = (TimestampKlass: typeof FakeTimestamp) =>
+export const makeIssueFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<IssueValue>({
     name: 'YouTube',
     createdAt: TimestampKlass.now(),

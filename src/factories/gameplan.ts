@@ -5,10 +5,10 @@ import {
   LocationGameplanValue,
   TimeGameplanValue,
 } from '../schema/gameplan';
-import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { TimestampLike } from '../utils/TimestampLike';
 
 export const makeImpulseGameplanFactory = (
-  TimestampKlass: typeof FakeTimestamp
+  TimestampKlass: typeof TimestampLike
 ) =>
   Factory.makeFactory<ImpulseGameplanValue>({
     uid: Factory.each(i => i.toString()),
@@ -22,7 +22,7 @@ export const makeImpulseGameplanFactory = (
   });
 
 export const makeLocationGameplanFactory = (
-  TimestampKlass: typeof FakeTimestamp
+  TimestampKlass: typeof TimestampLike
 ) =>
   Factory.makeFactory<LocationGameplanValue>({
     uid: Factory.each(i => i.toString()),
@@ -35,7 +35,7 @@ export const makeLocationGameplanFactory = (
     tacticsById: {},
   });
 
-export const makeTimeGameplanFactory = (TimestampKlass: typeof FakeTimestamp) =>
+export const makeTimeGameplanFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<TimeGameplanValue>({
     uid: Factory.each(i => i.toString()),
     createdAt: TimestampKlass.now(),
@@ -51,7 +51,7 @@ export const makeTimeGameplanFactory = (TimestampKlass: typeof FakeTimestamp) =>
   });
 
 export const makeSetbackGameplanFactory = (
-  TimestampKlass: typeof FakeTimestamp
+  TimestampKlass: typeof TimestampLike
 ) =>
   Factory.makeFactory<ImpulseGameplanValue>({
     uid: Factory.each(i => i.toString()),
@@ -65,7 +65,7 @@ export const makeSetbackGameplanFactory = (
   });
 
 export const makeSuccessGameplanFactory = (
-  TimestampKlass: typeof FakeTimestamp
+  TimestampKlass: typeof TimestampLike
 ) =>
   Factory.makeFactory<ImpulseGameplanValue>({
     uid: Factory.each(i => i.toString()),

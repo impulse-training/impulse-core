@@ -5,21 +5,21 @@ export declare class Log {
     constructor(id: string, data: LogValue);
     get text(): string | undefined;
     get selectedPattern(): {
+        issueId?: import("yup").Maybe<string | undefined>;
         customUnit?: string | undefined;
         supportGroupIds?: import("yup").Maybe<(string | undefined)[] | undefined>;
         notification?: {
             title: string;
             body: string;
         } | null | undefined;
-        issueId?: import("yup").Maybe<string | undefined>;
         gameplanId?: import("yup").Maybe<string | undefined>;
         successGameplanId?: import("yup").Maybe<string | undefined>;
         setbackGameplanId?: import("yup").Maybe<string | undefined>;
         uid: string;
+        ordinal: number;
         createdAt: {};
         updatedAt: {};
         name: string;
-        ordinal: number;
         unit: NonNullable<"time" | "custom" | undefined>;
         sendWeeklyReports: NonNullable<boolean | undefined>;
         setbackThreshold: number;

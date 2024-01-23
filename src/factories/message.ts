@@ -1,8 +1,8 @@
 import * as Factory from 'factory.ts';
 import { MessageValue } from '../schema';
-import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { TimestampLike } from '../utils/TimestampLike';
 
-export const makeMessageFactory = (TimestampKlass: typeof FakeTimestamp) =>
+export const makeMessageFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<MessageValue>({
     fromUid: 'abc123',
     fromName: 'John Doe',

@@ -2,4 +2,4 @@ export * from './models';
 export * from './schema';
 
 export { sampleImages } from './sampleImages';
-export { FakeTimestamp } from './utils/FakeTimestamp';
+export { TimestampLike } from './utils/TimestampLike';

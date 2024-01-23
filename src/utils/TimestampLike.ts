@@ -6,19 +6,19 @@
 // use this "fake" timestamp class for unit testing within this package. We may like to come back to
 // this in future.
 
-export class FakeTimestamp {
+export class TimestampLike {
   constructor(public seconds: number, public nanoseconds: number) {}
 
   static now() {
-    return new FakeTimestamp(0, 0);
+    return new TimestampLike(0, 0);
   }
 
   static fromDate(date: Date) {
-    return new FakeTimestamp(0, 0);
+    return new TimestampLike(0, 0);
   }
 
   static fromMillis(milliseconds: number) {
-    return new FakeTimestamp(0, 0);
+    return new TimestampLike(0, 0);
   }
 
   toDate(): Date {
@@ -28,7 +28,7 @@ export class FakeTimestamp {
   toMillis() {
     return 0;
   }
-  isEqual(other: FakeTimestamp) {
+  isEqual(other: TimestampLike) {
     return false;
   }
   /** Returns a textual representation of this `Timestamp`. */

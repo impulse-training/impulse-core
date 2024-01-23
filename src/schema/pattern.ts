@@ -2,8 +2,8 @@ import * as Yup from 'yup';
 
 export const patternValueSchema = Yup.object().shape({
   uid: Yup.string().required(),
-  createdAt: Yup.mixed().required(), // You should define a more specific validation based on what FakeTimestamp is
-  updatedAt: Yup.mixed().required(), // Same as above for FakeTimestamp
+  createdAt: Yup.mixed().required(), // You should define a more specific validation based on what TimestampLike is
+  updatedAt: Yup.mixed().required(), // Same as above for TimestampLike
   name: Yup.string().required(),
   ordinal: Yup.number().required(),
   unit: Yup.mixed<'time' | 'custom'>().oneOf(['time', 'custom']).required(),

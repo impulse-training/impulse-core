@@ -6,7 +6,7 @@ import {
   MotionLogValue,
   TimeLogValue,
 } from '../schema/logs';
-import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { TimestampLike } from '../utils/TimestampLike';
 
 const gameplan = {
   main: { tacticIds: [], suggestedTacticIds: [], tacticsById: {} },
@@ -14,7 +14,7 @@ const gameplan = {
   setback: { tacticIds: [], suggestedTacticIds: [], tacticsById: {} },
 };
 
-export const makeImpulseFactory = (TimestampKlass: typeof FakeTimestamp) =>
+export const makeImpulseFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<ImpulseLogValue>({
     uid: Factory.each(i => i.toString()),
     type: 'impulse',
@@ -39,7 +39,7 @@ export const makeImpulseFactory = (TimestampKlass: typeof FakeTimestamp) =>
     gameplan: gameplan,
   });
 
-export const makeTimeLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
+export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<TimeLogValue>({
     uid: Factory.each(i => i.toString()),
     type: 'time',
@@ -57,7 +57,7 @@ export const makeTimeLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
     gameplan: gameplan,
   });
 
-export const makeDebriefLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
+export const makeDebriefLogFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<DebriefLogValue>({
     uid: Factory.each(i => i.toString()),
     type: 'debrief',
@@ -80,7 +80,7 @@ export const makeDebriefLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
     patternUsageEntries: {},
   });
 
-export const makeMotionLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
+export const makeMotionLogFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<MotionLogValue>({
     uid: Factory.each(i => i.toString()),
     type: 'motion',
@@ -97,7 +97,7 @@ export const makeMotionLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
     gameplan: gameplan,
   });
 
-export const makeLocationLogFactory = (TimestampKlass: typeof FakeTimestamp) =>
+export const makeLocationLogFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<LocationLogValue>({
     uid: Factory.each(i => i.toString()),
     type: 'location',

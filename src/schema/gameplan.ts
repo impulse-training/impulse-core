@@ -1,69 +1,123 @@
-import { FakeTimestamp } from '../utils/FakeTimestamp';
-import { TacticValue } from './tactic';
+import * as yup from 'yup';
+import { TimestampLike } from '../utils/TimestampLike';
+import { WithTacticsById, tacticSchema } from './tactic';
 
-// We add the suffix "Value" to all of our document types, but here we define the concept of a
-// "Gameplan", which refers to the core kernel of tactic data (things that a user can do in an
-// impulse moment, or ahead of time). // This Gameplan is mixed into the actual gameplan document,
-// but is also added to other documents, including the profile document, and the log document.
-export type Gameplan = {
-  // The user's chosen tactics
-  tacticIds: Array<string>;
-  // Some pre-prepared suggested tactics that are shown to the user
-  suggestedTacticIds: Array<string>;
-  // Finally, we prefetch the actual tactic data so it's available immediately
-  tacticsById: Record<string, TacticValue>;
-};
+export const gameplanSchema = yup.object().shape({
+  tacticIds: yup.array().of(yup.string().required()).required(),
+  suggestedTacticIds: yup.array().of(yup.string().required()).required(),
+  tacticsById: yup
+    .object()
+    .shape({
+      [yup.ref('$placeholderKey') as unknown as string]: tacticSchema,
+    })
+    .required(),
+});
 
-// Now, we define a base gameplan type, which is extended for pattern, tactic, location and impulse
-// gameplans, etc.
-export type GameplanValueBase = Gameplan & {
-  uid: string;
-  createdAt: FakeTimestamp;
-  updatedAt: FakeTimestamp;
-  title?: string;
-  navigationTitle?: string;
-  isTemplate?: boolean;
-  tacticsUpdatedAt?: FakeTimestamp;
-  timezone?: string;
-  patternName?: string;
-  issueId?: string;
-  parentIssueIds?: Array<string>;
-};
+type Inferred<T extends yup.ISchema<unknown>> = WithTacticsById<
+  yup.InferType<T>
+>;
+export type Gameplan = Inferred<typeof gameplanSchema>;
 
-// A pattern gameplan is the set of tactics that we use in an impulse moment
-export type ImpulseGameplanValue = GameplanValueBase & {
-  // TODO: this would be more appropriate as 'impulse'
-  type: 'impulse' | 'success' | 'setback';
-  patternId: string;
-};
+// Base schema for GameplanValueBase
+const gameplanValueBaseSchema = gameplanSchema.concat(
+  yup.object().shape({
+    uid: yup.string().required(),
+    createdAt: yup
+      .mixed()
+      .test(
+        'is-fake-timestamp',
+        'Must be a TimestampLike',
+        value => value instanceof TimestampLike
+      )
+      .required(),
+    updatedAt: yup
+      .mixed()
+      .test(
+        'is-fake-timestamp',
+        'Must be a TimestampLike',
+        value => value instanceof TimestampLike
+      )
+      .required(),
+    title: yup.string().nullable(),
+    navigationTitle: yup.string().nullable(),
+    isTemplate: yup.boolean().nullable(),
+    tacticsUpdatedAt: yup
+      .mixed()
+      .test(
+        'is-fake-timestamp',
+        'Must be a TimestampLike',
+        value => value instanceof TimestampLike
+      )
+      .nullable(),
+    timezone: yup.string().nullable(),
+    patternName: yup.string().nullable(),
+    issueId: yup.string().nullable(),
+    parentIssueIds: yup.array().of(yup.string().required()).nullable(),
+  })
+);
 
-// A time gameplan is a set of tactics that we do at a scheduled time in the week
-type SchedulableGameplanValue = GameplanValueBase & {
-  weekdays: Array<number>; // 1 = sun, 2 = mon, 3 = tue, etc
-  hour: number;
-  minute: number;
-  timezone: string;
-  scheduledNotificationIds?: Array<string>;
-};
+const impulseGameplanValueSchema = gameplanValueBaseSchema.concat(
+  yup.object().shape({
+    type: yup
+      .mixed<'impulse' | 'success' | 'setback'>()
+      .oneOf(['impulse', 'success', 'setback'])
+      .required(),
+    patternId: yup.string().required(),
+  })
+);
+export type ImpulseGameplanValue = Inferred<typeof impulseGameplanValueSchema>;
 
-export type TimeGameplanValue = SchedulableGameplanValue & {
-  type: 'time';
-};
+export type SchedulableGameplanValue = Inferred<
+  typeof schedulableGameplanValueSchema
+>;
+const schedulableGameplanValueSchema = gameplanValueBaseSchema.concat(
+  yup.object().shape({
+    weekdays: yup.array().of(yup.number().min(1).max(7).required()).required(),
+    hour: yup.number().min(0).max(23).required(),
+    minute: yup.number().min(0).max(59).required(),
+    timezone: yup.string().required(),
+    scheduledNotificationIds: yup
+      .array()
+      .of(yup.string().required())
+      .nullable(),
+  })
+);
 
-export type DebriefGameplanValue = SchedulableGameplanValue & {
-  type: 'debrief';
-};
+export type TimeGameplanValue = Inferred<typeof timeGameplanValueSchema>;
+const timeGameplanValueSchema = schedulableGameplanValueSchema.concat(
+  yup.object().shape({
+    type: yup.mixed<'time'>().oneOf(['time']).required(),
+  })
+);
 
-export type LocationGameplanValue = GameplanValueBase & {
-  type: 'location';
-  // A location gameplan without a location id is not "valid", but it still can exist, as this is
-  // the state that we have immediately after creating one, but before choosing a location.
-  locationId?: string;
-  mode: 'enter' | 'exit';
-};
+export type DebriefGameplanValue = Inferred<typeof debriefGameplanValueSchema>;
+const debriefGameplanValueSchema = schedulableGameplanValueSchema.concat(
+  yup.object().shape({
+    type: yup.mixed<'debrief'>().oneOf(['debrief']).required(),
+  })
+);
+
+export type LocationGameplanValue = Inferred<
+  typeof locationGameplanValueSchema
+>;
+const locationGameplanValueSchema = gameplanValueBaseSchema.concat(
+  yup.object().shape({
+    type: yup.mixed<'location'>().oneOf(['location']).required(),
+    locationId: yup.string().nullable(),
+    mode: yup.mixed().oneOf(['enter', 'exit']).required(),
+  })
+);
 
 export type GameplanValue =
   | ImpulseGameplanValue
   | TimeGameplanValue
   | DebriefGameplanValue
   | LocationGameplanValue;
+
+// Export the schemas
+export {
+  debriefGameplanValueSchema,
+  impulseGameplanValueSchema,
+  locationGameplanValueSchema,
+  timeGameplanValueSchema,
+};

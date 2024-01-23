@@ -1,8 +1,8 @@
 import * as Factory from 'factory.ts';
 import { TacticValue } from '../schema';
-import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { TimestampLike } from '../utils/TimestampLike';
 
-export const makeTacticFactory = (TimestampKlass: typeof FakeTimestamp) =>
+export const makeTacticFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<TacticValue>({
     uid: Factory.each(i => i.toString()),
     type: 'task',

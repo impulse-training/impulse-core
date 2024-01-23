@@ -1,9 +1,9 @@
-import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { TimestampLike } from '../utils/TimestampLike';
 import { LogValue } from './logs';
 export interface MessageValue {
-    createdAt: FakeTimestamp;
-    updatedAt: FakeTimestamp;
-    deletedAt?: FakeTimestamp;
+    createdAt: TimestampLike;
+    updatedAt: TimestampLike;
+    deletedAt?: TimestampLike;
     fromUid: string;
     text: string;
     href?: string;

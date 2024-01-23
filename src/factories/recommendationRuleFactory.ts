@@ -1,10 +1,10 @@
 import * as Factory from 'factory.ts';
 import { NewGameplanRecommendationValue } from '../schema';
 import { RecommendationRuleValue } from '../schema/recommendationRule';
-import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { TimestampLike } from '../utils/TimestampLike';
 
 export const makeRecommendationRuleFactory = (
-  TimestampKlass: typeof FakeTimestamp
+  TimestampKlass: typeof TimestampLike
 ) =>
   Factory.makeFactory<RecommendationRuleValue>({
     uid: Factory.each(i => i.toString()),
@@ -32,7 +32,7 @@ export const makeRecommendationRuleFactory = (
   });
 
 export const makeNewGameplanRecommendationRuleFactory = (
-  TimestampKlass: typeof FakeTimestamp
+  TimestampKlass: typeof TimestampLike
 ) =>
   Factory.makeFactory<RecommendationRuleValue>({
     uid: Factory.each(i => i.toString()),

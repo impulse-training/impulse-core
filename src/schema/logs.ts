@@ -1,16 +1,24 @@
 // Logs are records of either impulses (cravings or urges), or applied tactics (actions that we
 // take)
+import * as yup from 'yup';
+import { TimestampLike } from '../utils/TimestampLike';
+import { Gameplan, gameplanSchema } from './gameplan';
+import {
+  PatternValue,
+  patternUsageSchema,
+  patternValueSchema,
+} from './pattern';
+import { TacticValue, tacticSchema } from './tactic';
+import { timestampSchema } from './utils/timestamp';
+
 export type Outcome = 'success' | 'setback' | 'indeterminate';
 
-import * as yup from 'yup';
-import { patternUsageSchema, patternValueSchema } from './pattern';
-
-export type BaseLogValue = yup.InferType<typeof BaseLogValueSchema>;
+export type BaseLogValue = WithTypes<typeof BaseLogValueSchema>;
 const BaseLogValueSchema = yup.object().shape({
   uid: yup.string().required(),
-  createdAt: yup.mixed().required(),
-  updatedAt: yup.mixed().required(),
-  startTime: yup.mixed().required(),
+  createdAt: timestampSchema.required(),
+  updatedAt: timestampSchema.required(),
+  startTime: timestampSchema.required(),
   timezone: yup.string().required(),
   location: yup.object().shape({
     latitude: yup.number(),
@@ -30,11 +38,16 @@ const BaseLogValueSchema = yup.object().shape({
   steps: yup.number().notRequired(),
   tacticIds: yup.array().of(yup.string()).required(),
   gameplan: yup.object().shape({
-    main: yup.mixed().required(), // Replace with GameplanSchema if defined
-    success: yup.mixed().notRequired(), // Replace with GameplanSchema if defined
-    setback: yup.mixed().notRequired(), // Replace with GameplanSchema if defined
+    main: gameplanSchema.required(),
+    success: gameplanSchema.notRequired(),
+    setback: gameplanSchema.notRequired(),
   }),
-  tactics: yup.object().shape({}).required(), // Replace with Record<string, TacticValueSchema> if defined
+  tactics: yup
+    .object()
+    .shape({
+      [yup.ref('$placeholderKey') as unknown as string]: tacticSchema,
+    })
+    .required(),
   suggestedTacticIds: yup.array().of(yup.string()).notRequired(),
   isUpdatingSuggestions: yup.boolean().notRequired(),
   supportGroupSuggestedTacticIds: yup
@@ -51,17 +64,38 @@ const BaseLogValueSchema = yup.object().shape({
   sharedWithSupportGroupIds: yup.array().of(yup.string()).notRequired(),
 });
 
-export type ImpulseLogValue = yup.InferType<typeof impulseLogValueSchema>;
+type WithTypes<T extends yup.ISchema<unknown>> = Omit<
+  yup.InferType<T>,
+  'gameplan' | 'tactics'
+> & {
+  createdAt: TimestampLike;
+  updatedAt: TimestampLike;
+  startTime: TimestampLike;
+  gameplan: {
+    main: Gameplan;
+    success?: Gameplan;
+    setback?: Gameplan;
+  };
+  tactics: Record<string, TacticValue>;
+};
+
+type WithPatterns<T> = Omit<T, 'patterns'> & {
+  patterns: Record<string, PatternValue>;
+};
+
+export type ImpulseLogValue = WithPatterns<
+  WithTypes<typeof impulseLogValueSchema>
+>;
 export function logIsImpulseLog(log: LogValue): log is ImpulseLogValue {
   return log.type === 'impulse';
 }
 const impulseLogValueSchema = BaseLogValueSchema.concat(
   yup.object().shape({
-    type: yup.mixed().oneOf(['impulse']).required(),
+    type: yup.mixed<'impulse'>().oneOf(['impulse']).required(),
     setAsActiveImpulse: yup.boolean().notRequired(),
     pressCount: yup.number().notRequired(),
     outcome: yup
-      .mixed()
+      .mixed<'success' | 'setback' | 'indeterminate'>()
       .oneOf(['success', 'setback', 'indeterminate'])
       .required(),
     isDisplayable: yup.boolean().oneOf([true]).required(),
@@ -91,13 +125,13 @@ const impulseLogValueSchema = BaseLogValueSchema.concat(
   })
 );
 
-export type LocationLogValue = yup.InferType<typeof locationLogValueSchema>;
+export type LocationLogValue = WithTypes<typeof locationLogValueSchema>;
 export function logIsLocationLog(log: LogValue): log is LocationLogValue {
   return log.type === 'location';
 }
 const locationLogValueSchema = BaseLogValueSchema.concat(
   yup.object().shape({
-    type: yup.mixed().oneOf(['location']).required(),
+    type: yup.mixed<'location'>().oneOf(['location']).required(),
     locationId: yup.string().required(),
     isDisplayable: yup.boolean().oneOf([true]).required(),
     locationName: yup.string().required(),
@@ -105,25 +139,27 @@ const locationLogValueSchema = BaseLogValueSchema.concat(
   })
 );
 
-export type TimeLogValue = yup.InferType<typeof timeLogValueSchema>;
+export type TimeLogValue = WithTypes<typeof timeLogValueSchema>;
 export function logIsTimeLog(log: LogValue): log is TimeLogValue {
   return log.type === 'time';
 }
 const timeLogValueSchema = BaseLogValueSchema.concat(
   yup.object().shape({
-    type: yup.mixed().oneOf(['time']).required(),
+    type: yup.mixed<'time'>().oneOf(['time']).required(),
     isDisplayable: yup.boolean().oneOf([true]).required(),
     gameplanId: yup.string().required(),
   })
 );
 
-export type DebriefLogValue = yup.InferType<typeof debriefLogValueSchema>;
+export type DebriefLogValue = WithPatterns<
+  WithTypes<typeof debriefLogValueSchema>
+>;
 export function logIsDebriefLog(log: LogValue): log is DebriefLogValue {
   return log.type === 'debrief';
 }
 const debriefLogValueSchema = BaseLogValueSchema.concat(
   yup.object().shape({
-    type: yup.mixed().oneOf(['debrief']).required(),
+    type: yup.mixed<'debrief'>().oneOf(['debrief']).required(),
     outcome: yup
       .mixed()
       .oneOf(['success', 'setback', 'indeterminate'])
@@ -142,31 +178,31 @@ const debriefLogValueSchema = BaseLogValueSchema.concat(
   })
 );
 
-export type MotionLogValue = yup.InferType<typeof motionLogValueSchema>;
+export type MotionLogValue = WithTypes<typeof motionLogValueSchema>;
 export function logIsMotionLog(log: LogValue): log is MotionLogValue {
   return log.type === 'motion';
 }
 const motionLogValueSchema = BaseLogValueSchema.concat(
   yup.object().shape({
-    type: yup.mixed().oneOf(['motion']).required(),
+    type: yup.mixed<'motion'>().oneOf(['motion']).required(),
     isDisplayable: yup.boolean().oneOf([false]).required(),
   })
 );
 
-export type ButtonLogValue = yup.InferType<typeof buttonLogValueSchema>;
+export type ButtonLogValue = WithTypes<typeof buttonLogValueSchema>;
 export function logIsButtonLog(log: LogValue): log is ButtonLogValue {
   return log.type === 'button';
 }
 const buttonLogValueSchema = BaseLogValueSchema.concat(
   yup.object().shape({
-    type: yup.mixed().oneOf(['button']).required(),
+    type: yup.mixed<'button'>().oneOf(['button']).required(),
     isDisplayable: yup.boolean().oneOf([false]).required(),
     isDeviceConnected: yup.boolean().required(),
     characteristics: yup.object().shape({}).required(),
   })
 );
 
-const LogValueSchema = yup.lazy(value => {
+export const logValueSchema = yup.lazy(value => {
   switch (value.type) {
     case 'impulse':
       return impulseLogValueSchema;
@@ -185,4 +221,10 @@ const LogValueSchema = yup.lazy(value => {
   }
 });
 
-export type LogValue = yup.InferType<typeof LogValueSchema>;
+export type LogValue =
+  | ImpulseLogValue
+  | LocationLogValue
+  | TimeLogValue
+  | DebriefLogValue
+  | MotionLogValue
+  | ButtonLogValue;

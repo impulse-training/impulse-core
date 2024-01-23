@@ -1,8 +1,8 @@
-import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { TimestampLike } from '../utils/TimestampLike';
 
 export interface ApplicationValue {
-  createdAt: FakeTimestamp;
-  updatedAt: FakeTimestamp;
+  createdAt: TimestampLike;
+  updatedAt: TimestampLike;
   dateOfBirth: string;
   state: 'pending' | 'approved' | 'shipped' | 'signedUp';
   email: string;
@@ -11,7 +11,7 @@ export interface ApplicationValue {
   name: string;
   phone: string;
   trackingUrl?: string;
-  estimatedDeliveryDate?: FakeTimestamp;
+  estimatedDeliveryDate?: TimestampLike;
   addressLine1: string;
   addressLine2?: string;
   city: string;

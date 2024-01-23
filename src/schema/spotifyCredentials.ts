@@ -1,4 +1,4 @@
-import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { TimestampLike } from '../utils/TimestampLike';
 
 export interface SpotifyAuthData {
   access_token: string;
@@ -7,5 +7,5 @@ export interface SpotifyAuthData {
 }
 
 export type SpotifyCredentials = SpotifyAuthData & {
-  expiresAt: FakeTimestamp;
+  expiresAt: TimestampLike;
 };

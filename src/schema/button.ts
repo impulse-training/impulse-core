@@ -1,9 +1,9 @@
-import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { TimestampLike } from '../utils/TimestampLike';
 
 export interface ButtonValue {
   uid: string;
-  createdAt: FakeTimestamp;
-  updatedAt: FakeTimestamp;
+  createdAt: TimestampLike;
+  updatedAt: TimestampLike;
   buttonId: string;
   source: 'manual'; // The source of the sync, currently only manual
 }

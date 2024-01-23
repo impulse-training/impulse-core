@@ -1,9 +1,9 @@
-import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { TimestampLike } from '../utils/TimestampLike';
 
 // An 'issue' is a shared problem that we can all relate to. It's a way of preparing tactics
 export interface IssueValue {
-  createdAt: FakeTimestamp;
-  updatedAt: FakeTimestamp;
+  createdAt: TimestampLike;
+  updatedAt: TimestampLike;
   parentId?: string;
   name: string;
   // synonyms should also include name

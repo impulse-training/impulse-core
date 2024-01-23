@@ -1,9 +1,9 @@
 import { faker } from '@faker-js/faker';
 import * as Factory from 'factory.ts';
 import { LocationValue } from '../schema';
-import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { TimestampLike } from '../utils/TimestampLike';
 
-export const makeLocationFactory = (TimestampKlass: typeof FakeTimestamp) =>
+export const makeLocationFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<LocationValue>({
     uid: Factory.each(i => i.toString()),
     createdAt: TimestampKlass.now(),

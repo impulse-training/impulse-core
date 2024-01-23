@@ -1,13 +1,13 @@
-import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { TimestampLike } from '../utils/TimestampLike';
 import { ImpulseLogValue, LogValue } from './logs';
 export interface ChallengeValue {
     uid: string;
-    createdAt: FakeTimestamp;
-    updatedAt: FakeTimestamp;
-    startDate: FakeTimestamp;
+    createdAt: TimestampLike;
+    updatedAt: TimestampLike;
+    startDate: TimestampLike;
     ordinal: number;
     icon: string;
-    completedAt?: FakeTimestamp;
+    completedAt?: TimestampLike;
     isTemplate: boolean;
     days: number;
     dailyMinimum?: number | null;

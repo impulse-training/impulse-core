@@ -134,6 +134,39 @@ export type TacticValue =
   | BreatheTactic
   | StepsTactic;
 
+export const tacticSchema = yup.lazy(value => {
+  switch (value.type) {
+    case 'phone':
+      return phoneTacticSchema;
+    case 'audio':
+      return audioTacticSchema;
+    case 'video':
+      return videoTacticSchema;
+    case 'question':
+      return questionTacticSchema;
+    case 'measure-sliders':
+      return measureSlidersTacticSchema;
+    case 'measure-time':
+      return measureTimeTacticSchema;
+    case 'measure-counter':
+      return measureCounterTacticSchema;
+    case 'timer':
+      return timerTacticSchema;
+    case 'folder':
+      return folderTacticSchema;
+    case 'options':
+      return optionsTacticSchema;
+    case 'breathe':
+      return breatheTacticSchema;
+    case 'steps':
+      return stepsTacticSchema;
+    case 'task':
+      return taskTacticSchema;
+    default:
+      throw new yup.ValidationError(`Unknown type: ${value.type}`);
+  }
+});
+
 // Utility to dynamically select the correct schema based on the tactic type
 const tacticSchemas: Record<
   TacticValue['type'],
@@ -206,4 +239,8 @@ export {
   taskTacticSchema,
   timerTacticSchema,
   videoTacticSchema,
+};
+
+export type WithTacticsById<T> = Omit<T, 'tacticsById'> & {
+  tacticsById: Record<string, TacticValue>;
 };

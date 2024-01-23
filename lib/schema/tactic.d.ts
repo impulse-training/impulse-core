@@ -7,10 +7,12 @@ declare const stepsTacticSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
         nanoseconds: number;
+        toDate: {};
     };
     updatedAt: {
         seconds: number;
         nanoseconds: number;
+        toDate: {};
     };
     title: string;
     description: string | null | undefined;
@@ -36,10 +38,12 @@ declare const stepsTacticSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: undefined;
         nanoseconds: undefined;
+        toDate: undefined;
     };
     updatedAt: {
         seconds: undefined;
         nanoseconds: undefined;
+        toDate: undefined;
     };
     title: undefined;
     description: undefined;
@@ -67,10 +71,12 @@ declare const audioTacticSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
         nanoseconds: number;
+        toDate: {};
     };
     updatedAt: {
         seconds: number;
         nanoseconds: number;
+        toDate: {};
     };
     title: string;
     description: string | null | undefined;
@@ -105,10 +111,12 @@ declare const audioTacticSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: undefined;
         nanoseconds: undefined;
+        toDate: undefined;
     };
     updatedAt: {
         seconds: undefined;
         nanoseconds: undefined;
+        toDate: undefined;
     };
     title: undefined;
     description: undefined;
@@ -145,10 +153,12 @@ declare const videoTacticSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
         nanoseconds: number;
+        toDate: {};
     };
     updatedAt: {
         seconds: number;
         nanoseconds: number;
+        toDate: {};
     };
     title: string;
     description: string | null | undefined;
@@ -181,10 +191,12 @@ declare const videoTacticSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: undefined;
         nanoseconds: undefined;
+        toDate: undefined;
     };
     updatedAt: {
         seconds: undefined;
         nanoseconds: undefined;
+        toDate: undefined;
     };
     title: undefined;
     description: undefined;
@@ -219,10 +231,12 @@ declare const measureSlidersTacticSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
         nanoseconds: number;
+        toDate: {};
     };
     updatedAt: {
         seconds: number;
         nanoseconds: number;
+        toDate: {};
     };
     title: string;
     description: string | null | undefined;
@@ -241,8 +255,8 @@ declare const measureSlidersTacticSchema: yup.ObjectSchema<{
     isAvailableForRecommendation: boolean | null | undefined;
     rows: {
         value?: number | null | undefined;
-        label: string;
         key: string;
+        label: string;
         lowEmoji: string;
         highEmoji: string;
     }[];
@@ -254,10 +268,12 @@ declare const measureSlidersTacticSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: undefined;
         nanoseconds: undefined;
+        toDate: undefined;
     };
     updatedAt: {
         seconds: undefined;
         nanoseconds: undefined;
+        toDate: undefined;
     };
     title: undefined;
     description: undefined;
@@ -285,10 +301,12 @@ declare const measureTimeTacticSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
         nanoseconds: number;
+        toDate: {};
     };
     updatedAt: {
         seconds: number;
         nanoseconds: number;
+        toDate: {};
     };
     title: string;
     description: string | null | undefined;
@@ -313,10 +331,12 @@ declare const measureTimeTacticSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: undefined;
         nanoseconds: undefined;
+        toDate: undefined;
     };
     updatedAt: {
         seconds: undefined;
         nanoseconds: undefined;
+        toDate: undefined;
     };
     title: undefined;
     description: undefined;
@@ -343,10 +363,12 @@ declare const measureCounterTacticSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
         nanoseconds: number;
+        toDate: {};
     };
     updatedAt: {
         seconds: number;
         nanoseconds: number;
+        toDate: {};
     };
     title: string;
     description: string | null | undefined;
@@ -371,10 +393,12 @@ declare const measureCounterTacticSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: undefined;
         nanoseconds: undefined;
+        toDate: undefined;
     };
     updatedAt: {
         seconds: undefined;
         nanoseconds: undefined;
+        toDate: undefined;
     };
     title: undefined;
     description: undefined;
@@ -402,10 +426,12 @@ declare const folderTacticSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
         nanoseconds: number;
+        toDate: {};
     };
     updatedAt: {
         seconds: number;
         nanoseconds: number;
+        toDate: {};
     };
     title: string;
     description: string | null | undefined;
@@ -432,10 +458,12 @@ declare const folderTacticSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: undefined;
         nanoseconds: undefined;
+        toDate: undefined;
     };
     updatedAt: {
         seconds: undefined;
         nanoseconds: undefined;
+        toDate: undefined;
     };
     title: undefined;
     description: undefined;
@@ -464,10 +492,12 @@ declare const phoneTacticSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
         nanoseconds: number;
+        toDate: {};
     };
     updatedAt: {
         seconds: number;
         nanoseconds: number;
+        toDate: {};
     };
     title: string;
     description: string | null | undefined;
@@ -494,10 +524,12 @@ declare const phoneTacticSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: undefined;
         nanoseconds: undefined;
+        toDate: undefined;
     };
     updatedAt: {
         seconds: undefined;
         nanoseconds: undefined;
+        toDate: undefined;
     };
     title: undefined;
     description: undefined;
@@ -526,10 +558,12 @@ declare const timerTacticSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
         nanoseconds: number;
+        toDate: {};
     };
     updatedAt: {
         seconds: number;
         nanoseconds: number;
+        toDate: {};
     };
     title: string;
     description: string | null | undefined;
@@ -555,10 +589,12 @@ declare const timerTacticSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: undefined;
         nanoseconds: undefined;
+        toDate: undefined;
     };
     updatedAt: {
         seconds: undefined;
         nanoseconds: undefined;
+        toDate: undefined;
     };
     title: undefined;
     description: undefined;
@@ -586,10 +622,12 @@ declare const breatheTacticSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
         nanoseconds: number;
+        toDate: {};
     };
     updatedAt: {
         seconds: number;
         nanoseconds: number;
+        toDate: {};
     };
     title: string;
     description: string | null | undefined;
@@ -618,10 +656,12 @@ declare const breatheTacticSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: undefined;
         nanoseconds: undefined;
+        toDate: undefined;
     };
     updatedAt: {
         seconds: undefined;
         nanoseconds: undefined;
+        toDate: undefined;
     };
     title: undefined;
     description: undefined;
@@ -652,10 +692,12 @@ declare const optionsTacticSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
         nanoseconds: number;
+        toDate: {};
     };
     updatedAt: {
         seconds: number;
         nanoseconds: number;
+        toDate: {};
     };
     title: string;
     description: string | null | undefined;
@@ -682,10 +724,12 @@ declare const optionsTacticSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: undefined;
         nanoseconds: undefined;
+        toDate: undefined;
     };
     updatedAt: {
         seconds: undefined;
         nanoseconds: undefined;
+        toDate: undefined;
     };
     title: undefined;
     description: undefined;
@@ -714,10 +758,12 @@ declare const taskTacticSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
         nanoseconds: number;
+        toDate: {};
     };
     updatedAt: {
         seconds: number;
         nanoseconds: number;
+        toDate: {};
     };
     title: string;
     description: string | null | undefined;
@@ -742,10 +788,12 @@ declare const taskTacticSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: undefined;
         nanoseconds: undefined;
+        toDate: undefined;
     };
     updatedAt: {
         seconds: undefined;
         nanoseconds: undefined;
+        toDate: undefined;
     };
     title: undefined;
     description: undefined;
@@ -772,10 +820,12 @@ declare const questionTacticSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
         nanoseconds: number;
+        toDate: {};
     };
     updatedAt: {
         seconds: number;
         nanoseconds: number;
+        toDate: {};
     };
     title: string;
     description: string | null | undefined;
@@ -800,10 +850,12 @@ declare const questionTacticSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: undefined;
         nanoseconds: undefined;
+        toDate: undefined;
     };
     updatedAt: {
         seconds: undefined;
         nanoseconds: undefined;
+        toDate: undefined;
     };
     title: undefined;
     description: undefined;
@@ -823,6 +875,437 @@ declare const questionTacticSchema: yup.ObjectSchema<{
 }, "">;
 export type QuestionTactic = yup.InferType<typeof questionTacticSchema>;
 export type TacticValue = PhoneTacticValue | AudioTactic | VideoTactic | QuestionTactic | TaskTactic | TimerTactic | FolderTactic | MeasureTactic | OptionsTactic | BreatheTactic | StepsTactic;
+export declare const tacticSchema: yup.Lazy<{
+    uid?: string | null | undefined;
+    ordinal?: number | null | undefined;
+    isSuggested?: boolean | null | undefined;
+    description?: string | null | undefined;
+    image?: {
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
+        uri?: yup.Maybe<string | undefined>;
+    } | null | undefined;
+    backgroundColor?: string | null | undefined;
+    isTemplate?: boolean | null | undefined;
+    language?: string | null | undefined;
+    href?: string | null | undefined;
+    categoryIds?: (string | undefined)[] | null | undefined;
+    isShared?: boolean | null | undefined;
+    isResponseRequired?: boolean | null | undefined;
+    isAvailableForRecommendation?: boolean | null | undefined;
+    type: "steps";
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    title: string;
+    steps: number;
+} | {
+    uid?: string | null | undefined;
+    ordinal?: number | null | undefined;
+    isSuggested?: boolean | null | undefined;
+    description?: string | null | undefined;
+    image?: {
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
+        uri?: yup.Maybe<string | undefined>;
+    } | null | undefined;
+    backgroundColor?: string | null | undefined;
+    isTemplate?: boolean | null | undefined;
+    language?: string | null | undefined;
+    href?: string | null | undefined;
+    categoryIds?: (string | undefined)[] | null | undefined;
+    isShared?: boolean | null | undefined;
+    isResponseRequired?: boolean | null | undefined;
+    isAvailableForRecommendation?: boolean | null | undefined;
+    type: "audio";
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    title: string;
+    metadata: {
+        waveform?: string | null | undefined;
+        localFilePath: string;
+        remoteFilePath: string;
+    };
+    recording: {
+        waveform?: string | null | undefined;
+        localFilePath: string;
+        remoteFilePath: string;
+    } | null;
+} | {
+    uid?: string | null | undefined;
+    ordinal?: number | null | undefined;
+    isSuggested?: boolean | null | undefined;
+    description?: string | null | undefined;
+    image?: {
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
+        uri?: yup.Maybe<string | undefined>;
+    } | null | undefined;
+    backgroundColor?: string | null | undefined;
+    isTemplate?: boolean | null | undefined;
+    language?: string | null | undefined;
+    href?: string | null | undefined;
+    categoryIds?: (string | undefined)[] | null | undefined;
+    isShared?: boolean | null | undefined;
+    isResponseRequired?: boolean | null | undefined;
+    isAvailableForRecommendation?: boolean | null | undefined;
+    type: "video";
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    title: string;
+    video: {
+        storagePath?: string | null | undefined;
+        url?: string | null | undefined;
+        title: string;
+        description: string;
+        thumbnailUrl: string;
+        duration: number;
+    };
+} | {
+    uid?: string | null | undefined;
+    ordinal?: number | null | undefined;
+    isSuggested?: boolean | null | undefined;
+    description?: string | null | undefined;
+    image?: {
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
+        uri?: yup.Maybe<string | undefined>;
+    } | null | undefined;
+    backgroundColor?: string | null | undefined;
+    isTemplate?: boolean | null | undefined;
+    language?: string | null | undefined;
+    href?: string | null | undefined;
+    categoryIds?: (string | undefined)[] | null | undefined;
+    isShared?: boolean | null | undefined;
+    isResponseRequired?: boolean | null | undefined;
+    isAvailableForRecommendation?: boolean | null | undefined;
+    type: "measure-sliders";
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    title: string;
+    rows: {
+        value?: number | null | undefined;
+        key: string;
+        label: string;
+        lowEmoji: string;
+        highEmoji: string;
+    }[];
+} | {
+    uid?: string | null | undefined;
+    ordinal?: number | null | undefined;
+    isSuggested?: boolean | null | undefined;
+    description?: string | null | undefined;
+    image?: {
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
+        uri?: yup.Maybe<string | undefined>;
+    } | null | undefined;
+    backgroundColor?: string | null | undefined;
+    isTemplate?: boolean | null | undefined;
+    language?: string | null | undefined;
+    href?: string | null | undefined;
+    categoryIds?: (string | undefined)[] | null | undefined;
+    isShared?: boolean | null | undefined;
+    isResponseRequired?: boolean | null | undefined;
+    isAvailableForRecommendation?: boolean | null | undefined;
+    type: "measure-time";
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    title: string;
+} | {
+    uid?: string | null | undefined;
+    ordinal?: number | null | undefined;
+    isSuggested?: boolean | null | undefined;
+    description?: string | null | undefined;
+    image?: {
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
+        uri?: yup.Maybe<string | undefined>;
+    } | null | undefined;
+    backgroundColor?: string | null | undefined;
+    isTemplate?: boolean | null | undefined;
+    language?: string | null | undefined;
+    href?: string | null | undefined;
+    categoryIds?: (string | undefined)[] | null | undefined;
+    isShared?: boolean | null | undefined;
+    isResponseRequired?: boolean | null | undefined;
+    isAvailableForRecommendation?: boolean | null | undefined;
+    type: "measure-counter";
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    title: string;
+} | {
+    uid?: string | null | undefined;
+    ordinal?: number | null | undefined;
+    isSuggested?: boolean | null | undefined;
+    description?: string | null | undefined;
+    image?: {
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
+        uri?: yup.Maybe<string | undefined>;
+    } | null | undefined;
+    backgroundColor?: string | null | undefined;
+    isTemplate?: boolean | null | undefined;
+    language?: string | null | undefined;
+    href?: string | null | undefined;
+    categoryIds?: (string | undefined)[] | null | undefined;
+    isShared?: boolean | null | undefined;
+    isResponseRequired?: boolean | null | undefined;
+    isAvailableForRecommendation?: boolean | null | undefined;
+    type: "folder";
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    title: string;
+    tacticIds: (string | undefined)[];
+    tacticsById: {} | null;
+} | {
+    uid?: string | null | undefined;
+    ordinal?: number | null | undefined;
+    isSuggested?: boolean | null | undefined;
+    description?: string | null | undefined;
+    image?: {
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
+        uri?: yup.Maybe<string | undefined>;
+    } | null | undefined;
+    backgroundColor?: string | null | undefined;
+    isTemplate?: boolean | null | undefined;
+    language?: string | null | undefined;
+    href?: string | null | undefined;
+    categoryIds?: (string | undefined)[] | null | undefined;
+    isShared?: boolean | null | undefined;
+    isResponseRequired?: boolean | null | undefined;
+    isAvailableForRecommendation?: boolean | null | undefined;
+    type: "phone";
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    title: string;
+    supportGroupId: string;
+    trigger: {};
+} | {
+    uid?: string | null | undefined;
+    ordinal?: number | null | undefined;
+    isSuggested?: boolean | null | undefined;
+    description?: string | null | undefined;
+    image?: {
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
+        uri?: yup.Maybe<string | undefined>;
+    } | null | undefined;
+    backgroundColor?: string | null | undefined;
+    isTemplate?: boolean | null | undefined;
+    language?: string | null | undefined;
+    href?: string | null | undefined;
+    categoryIds?: (string | undefined)[] | null | undefined;
+    isShared?: boolean | null | undefined;
+    isResponseRequired?: boolean | null | undefined;
+    isAvailableForRecommendation?: boolean | null | undefined;
+    type: "timer";
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    title: string;
+    timerSeconds: number;
+} | {
+    uid?: string | null | undefined;
+    ordinal?: number | null | undefined;
+    isSuggested?: boolean | null | undefined;
+    description?: string | null | undefined;
+    image?: {
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
+        uri?: yup.Maybe<string | undefined>;
+    } | null | undefined;
+    backgroundColor?: string | null | undefined;
+    isTemplate?: boolean | null | undefined;
+    language?: string | null | undefined;
+    href?: string | null | undefined;
+    categoryIds?: (string | undefined)[] | null | undefined;
+    isShared?: boolean | null | undefined;
+    isResponseRequired?: boolean | null | undefined;
+    isAvailableForRecommendation?: boolean | null | undefined;
+    type: "breathe";
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    title: string;
+    inFor: number;
+    holdFor: number;
+    outFor: number;
+    repeat: number;
+} | {
+    uid?: string | null | undefined;
+    ordinal?: number | null | undefined;
+    isSuggested?: boolean | null | undefined;
+    description?: string | null | undefined;
+    image?: {
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
+        uri?: yup.Maybe<string | undefined>;
+    } | null | undefined;
+    backgroundColor?: string | null | undefined;
+    isTemplate?: boolean | null | undefined;
+    language?: string | null | undefined;
+    href?: string | null | undefined;
+    categoryIds?: (string | undefined)[] | null | undefined;
+    isShared?: boolean | null | undefined;
+    isResponseRequired?: boolean | null | undefined;
+    isAvailableForRecommendation?: boolean | null | undefined;
+    type: "options";
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    title: string;
+    tacticIds: (string | undefined)[];
+    tacticsById: {};
+} | {
+    uid?: string | null | undefined;
+    ordinal?: number | null | undefined;
+    isSuggested?: boolean | null | undefined;
+    description?: string | null | undefined;
+    image?: {
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
+        uri?: yup.Maybe<string | undefined>;
+    } | null | undefined;
+    backgroundColor?: string | null | undefined;
+    isTemplate?: boolean | null | undefined;
+    language?: string | null | undefined;
+    href?: string | null | undefined;
+    categoryIds?: (string | undefined)[] | null | undefined;
+    isShared?: boolean | null | undefined;
+    isResponseRequired?: boolean | null | undefined;
+    isAvailableForRecommendation?: boolean | null | undefined;
+    type: "task";
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    title: string;
+} | {
+    uid?: string | null | undefined;
+    ordinal?: number | null | undefined;
+    isSuggested?: boolean | null | undefined;
+    description?: string | null | undefined;
+    image?: {
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
+        uri?: yup.Maybe<string | undefined>;
+    } | null | undefined;
+    backgroundColor?: string | null | undefined;
+    isTemplate?: boolean | null | undefined;
+    language?: string | null | undefined;
+    href?: string | null | undefined;
+    categoryIds?: (string | undefined)[] | null | undefined;
+    isShared?: boolean | null | undefined;
+    isResponseRequired?: boolean | null | undefined;
+    isAvailableForRecommendation?: boolean | null | undefined;
+    type: "question";
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    title: string;
+}, yup.AnyObject, any>;
 declare const tacticSchemas: Record<TacticValue['type'], yup.ObjectSchema<TacticValue>>;
 export declare const tacticColors: string[];
 export { audioTacticSchema, breatheTacticSchema, folderTacticSchema, measureCounterTacticSchema, measureSlidersTacticSchema, measureTimeTacticSchema, optionsTacticSchema, phoneTacticSchema, questionTacticSchema, stepsTacticSchema, tacticSchemas, taskTacticSchema, timerTacticSchema, videoTacticSchema, };
+export type WithTacticsById<T> = Omit<T, 'tacticsById'> & {
+    tacticsById: Record<string, TacticValue>;
+};

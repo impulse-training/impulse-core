@@ -1,4 +1,4 @@
-import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { TimestampLike } from '../utils/TimestampLike';
 import {
   DebriefGameplanValue,
   LocationGameplanValue,
@@ -14,10 +14,10 @@ export interface RecommendationValueBase {
   gameplanExplanation?: string;
   recommenderUid: string;
   recommenderName: string;
-  createdAt: FakeTimestamp;
-  updatedAt: FakeTimestamp;
-  appliedAt: FakeTimestamp | null;
-  dismissedAt: FakeTimestamp | null;
+  createdAt: TimestampLike;
+  updatedAt: TimestampLike;
+  appliedAt: TimestampLike | null;
+  dismissedAt: TimestampLike | null;
   tacticIds: Array<string>;
   tacticsById: Record<string, TacticValue>;
   ruleId?: string;

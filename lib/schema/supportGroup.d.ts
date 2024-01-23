@@ -3,10 +3,12 @@ export declare const supportGroupValueSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
         nanoseconds: number;
+        toDate: {};
     };
     updatedAt: {
         seconds: number;
         nanoseconds: number;
+        toDate: {};
     };
     templateId: string | undefined;
     everythingPermissions: boolean | undefined;
@@ -33,10 +35,12 @@ export declare const supportGroupValueSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: undefined;
         nanoseconds: undefined;
+        toDate: undefined;
     };
     updatedAt: {
         seconds: undefined;
         nanoseconds: undefined;
+        toDate: undefined;
     };
     templateId: undefined;
     everythingPermissions: undefined;

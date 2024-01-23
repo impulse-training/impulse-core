@@ -2,8 +2,8 @@ import * as yup from 'yup';
 import { timestampSchema } from './utils/timestamp';
 
 // export interface SupportGroupValue {
-//   createdAt: FakeTimestamp;
-//   updatedAt: FakeTimestamp;
+//   createdAt: TimestampLike;
+//   updatedAt: TimestampLike;
 //   templateId?: string;
 //   everythingPermissions?: boolean;
 //   participantUids: Array<string>;

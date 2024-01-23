@@ -1,13 +1,13 @@
-export declare class FakeTimestamp {
+export declare class TimestampLike {
     seconds: number;
     nanoseconds: number;
     constructor(seconds: number, nanoseconds: number);
-    static now(): FakeTimestamp;
-    static fromDate(date: Date): FakeTimestamp;
-    static fromMillis(milliseconds: number): FakeTimestamp;
+    static now(): TimestampLike;
+    static fromDate(date: Date): TimestampLike;
+    static fromMillis(milliseconds: number): TimestampLike;
     toDate(): Date;
     toMillis(): number;
-    isEqual(other: FakeTimestamp): boolean;
+    isEqual(other: TimestampLike): boolean;
     /** Returns a textual representation of this `Timestamp`. */
     toString(): string;
     valueOf(): string;

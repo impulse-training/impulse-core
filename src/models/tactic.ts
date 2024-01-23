@@ -1,13 +1,13 @@
 // import { TacticValue } from '../schema';
 // import { PhoneTacticValue } from '../schema/tactic';
-// import { FakeTimestamp } from '../utils/FakeTimestamp';
+// import { TimestampLike } from '../utils/TimestampLike';
 // import twilioClient, { IMPULSE_NUMBER } from '../utils/twlioClient';
 
 // abstract class Tactic {
 //   static from(
 //     id: string,
 //     value: TacticValue,
-//     TimestampClass: typeof FakeTimestamp
+//     TimestampClass: typeof TimestampLike
 //   ) {
 //     const Klass = value.type === 'phone' ? PhoneTactic : OtherTactic;
 
@@ -23,7 +23,7 @@
 //   constructor(
 //     private id: string,
 //     private data: PhoneTacticValue,
-//     private TimestampClass: typeof FakeTimestamp
+//     private TimestampClass: typeof TimestampLike
 //   ) {
 //     super();
 //   }

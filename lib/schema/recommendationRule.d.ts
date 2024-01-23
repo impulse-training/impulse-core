@@ -1,4 +1,4 @@
-import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { TimestampLike } from '../utils/TimestampLike';
 import { GameplanValue } from './gameplan';
 import { RecommendationValue } from './recommendation';
 export interface RecommendationRuleValue {
@@ -10,6 +10,6 @@ export interface RecommendationRuleValue {
     recommendationSummary?: string;
     uid: string;
     ordinal: number;
-    createdAt: FakeTimestamp;
-    updatedAt: FakeTimestamp;
+    createdAt: TimestampLike;
+    updatedAt: TimestampLike;
 }

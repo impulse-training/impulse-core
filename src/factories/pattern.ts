@@ -1,8 +1,8 @@
 import * as Factory from 'factory.ts';
 import { PatternValue } from '../schema';
-import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { TimestampLike } from '../utils/TimestampLike';
 
-export const makePatternFactory = (TimestampKlass: typeof FakeTimestamp) =>
+export const makePatternFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<PatternValue>({
     uid: Factory.each(i => i.toString()),
     name: 'Cigarettes',

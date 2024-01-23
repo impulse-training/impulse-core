@@ -1,8 +1,8 @@
 import * as Factory from 'factory.ts';
 import { CommentValue } from '../schema';
-import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { TimestampLike } from '../utils/TimestampLike';
 
-export const makeCommentFactory = (TimestampKlass: typeof FakeTimestamp) =>
+export const makeCommentFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<CommentValue>({
     uid: 'abc123',
     authorName: 'Moopy',

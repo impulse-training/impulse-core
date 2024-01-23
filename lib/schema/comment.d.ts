@@ -1,9 +1,9 @@
-import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { TimestampLike } from '../utils/TimestampLike';
 import { Image } from '../utils/image';
 import { Recording } from './recording';
 export interface CommentValue {
-    createdAt: FakeTimestamp;
-    updatedAt: FakeTimestamp;
+    createdAt: TimestampLike;
+    updatedAt: TimestampLike;
     tacticId?: string | null;
     text?: string;
     uid: string;

@@ -1,8 +1,8 @@
 import * as Factory from 'factory.ts';
 import { ApplicationValue } from '../schema';
-import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { TimestampLike } from '../utils/TimestampLike';
 
-export const makeApplicationFactory = (TimestampKlass: typeof FakeTimestamp) =>
+export const makeApplicationFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<ApplicationValue>({
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),

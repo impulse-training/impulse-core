@@ -1,9 +1,9 @@
 import { faker } from '@faker-js/faker';
 import * as Factory from 'factory.ts';
 import { ProfileValue } from '../schema';
-import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { TimestampLike } from '../utils/TimestampLike';
 
-export const makeProfileFactory = (TimestampKlass: typeof FakeTimestamp) =>
+export const makeProfileFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<ProfileValue>({
     uid: Factory.each(i => i.toString()),
     createdAt: TimestampKlass.now(),
@@ -19,7 +19,7 @@ export const makeProfileFactory = (TimestampKlass: typeof FakeTimestamp) =>
     gameplansUpdatedAt: TimestampKlass.now(),
   });
 
-export const makeAdminProfileFactory = (TimestampKlass: typeof FakeTimestamp) =>
+export const makeAdminProfileFactory = (TimestampKlass: typeof TimestampLike) =>
   makeProfileFactory(TimestampKlass).extend({
     isAdmin: true,
   });

@@ -1,7 +1,7 @@
-// We also directly export all factories, using our "FakeTimestamp" class, for unit testing in this
+// We also directly export all factories, using our "TimestampLike" class, for unit testing in this
 
 import { makeFactories } from '.';
-import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { TimestampLike } from '../utils/TimestampLike';
 
 // library
 export const {
@@ -19,4 +19,4 @@ export const {
   supportGroupFactory,
   tacticFactory,
   recommendationRuleFactory,
-} = makeFactories(FakeTimestamp);
+} = makeFactories(TimestampLike);

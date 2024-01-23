@@ -3,7 +3,7 @@ import {
   ExpoPushReceipt,
   ExpoPushTicket,
 } from 'expo-server-sdk';
-import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { TimestampLike } from '../utils/TimestampLike';
 
 export const NOTIFICATION_TYPES = {
   NEW_MESSAGE: 'When I receive a new message',
@@ -16,8 +16,8 @@ export type NotificationOption = 'push' | 'email';
 
 export interface NotificationValue {
   uid: string;
-  createdAt: FakeTimestamp;
-  updatedAt: FakeTimestamp;
+  createdAt: TimestampLike;
+  updatedAt: TimestampLike;
   key: string;
   ticket: ExpoPushTicket;
   receipt: ExpoPushReceipt;

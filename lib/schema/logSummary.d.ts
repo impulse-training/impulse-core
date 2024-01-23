@@ -1,11 +1,11 @@
-import { FakeTimestamp } from '../utils/FakeTimestamp';
+import { TimestampLike } from '../utils/TimestampLike';
 import { LogValue, Outcome } from './logs';
 export interface LogSummaryValue {
     uid: string;
     type: LogValue['type'];
-    createdAt: FakeTimestamp;
-    updatedAt: FakeTimestamp;
-    startTime: FakeTimestamp;
+    createdAt: TimestampLike;
+    updatedAt: TimestampLike;
+    startTime: TimestampLike;
     timezone: string;
     text: string;
     locationFormatted?: string;
