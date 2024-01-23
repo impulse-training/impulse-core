@@ -1,23 +1,29 @@
-import { ImpulseLogValue, LogValue } from '../schema';
+import {
+  ImpulseLogValue,
+  LogValue,
+  logIsDebriefLog,
+  logIsImpulseLog,
+  logIsLocationLog,
+  logIsTimeLog,
+} from '../schema';
 
 export class Log {
   constructor(private id: string, private data: LogValue) {}
 
   get text() {
-    if (this.data.type === 'impulse')
-      return formatPattern(this.selectedPattern);
+    if (logIsImpulseLog(this.data)) return formatPattern(this.selectedPattern);
 
-    if (this.data.type === 'location') {
+    if (logIsLocationLog(this.data)) {
       return `${this.data.locationMode === 'enter' ? 'Arrived at' : 'Left'} ${
         this.data.locationName
       }`;
     }
 
-    if (this.data.type === 'time') {
+    if (logIsTimeLog(this.data)) {
       return `Scheduled`;
     }
 
-    if (this.data.type === 'debrief') {
+    if (logIsDebriefLog(this.data)) {
       return `Daily debrief`;
     }
 

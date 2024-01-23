@@ -241,8 +241,8 @@ declare const measureSlidersTacticSchema: yup.ObjectSchema<{
     isAvailableForRecommendation: boolean | null | undefined;
     rows: {
         value?: number | null | undefined;
-        key: string;
         label: string;
+        key: string;
         lowEmoji: string;
         highEmoji: string;
     }[];

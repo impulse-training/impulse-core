@@ -4,7 +4,26 @@ export declare class Log {
     private data;
     constructor(id: string, data: LogValue);
     get text(): string | undefined;
-    get selectedPattern(): import("../schema").PatternValue;
+    get selectedPattern(): {
+        customUnit?: string | undefined;
+        supportGroupIds?: import("yup").Maybe<(string | undefined)[] | undefined>;
+        notification?: {
+            title: string;
+            body: string;
+        } | null | undefined;
+        issueId?: import("yup").Maybe<string | undefined>;
+        gameplanId?: import("yup").Maybe<string | undefined>;
+        successGameplanId?: import("yup").Maybe<string | undefined>;
+        setbackGameplanId?: import("yup").Maybe<string | undefined>;
+        uid: string;
+        createdAt: {};
+        updatedAt: {};
+        name: string;
+        ordinal: number;
+        unit: NonNullable<"time" | "custom" | undefined>;
+        sendWeeklyReports: NonNullable<boolean | undefined>;
+        setbackThreshold: number;
+    };
 }
 export declare function formatPattern(pattern?: {
     emoji?: string;
