@@ -14,6 +14,7 @@ export interface PatternValue {
     };
     issueId?: string;
     sendWeeklyReports: boolean;
+    setbackThreshold: number;
     gameplanId?: string;
     successGameplanId?: string;
     setbackGameplanId?: string;
