@@ -1,7 +1,6 @@
 import * as yup from 'yup';
 import { TimestampLike } from '../utils/TimestampLike';
 import { Gameplan } from './gameplan';
-import { PatternValue } from './pattern';
 import { TacticValue } from './tactic';
 export type Outcome = 'success' | 'setback' | 'indeterminate';
 export type BaseLogValue = WithTypes<typeof BaseLogValueSchema>;
@@ -3581,10 +3580,7 @@ type WithTypes<T extends yup.ISchema<unknown>> = Omit<yup.InferType<T>, 'gamepla
     };
     tactics: Record<string, TacticValue>;
 };
-type WithPatterns<T> = Omit<T, 'patterns'> & {
-    patterns: Record<string, PatternValue>;
-};
-export type ImpulseLogValue = WithPatterns<WithTypes<typeof impulseLogValueSchema>>;
+export type ImpulseLogValue = WithTypes<typeof impulseLogValueSchema>;
 export declare function logIsImpulseLog(log: LogValue): log is ImpulseLogValue;
 declare const impulseLogValueSchema: yup.ObjectSchema<{
     uid: string;
@@ -7100,8 +7096,16 @@ declare const impulseLogValueSchema: yup.ObjectSchema<{
             setbackGameplanId?: yup.Maybe<string | undefined>;
             uid: string;
             ordinal: number;
-            createdAt: {};
-            updatedAt: {};
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             name: string;
             unit: NonNullable<"time" | "custom" | undefined>;
             sendWeeklyReports: NonNullable<boolean | undefined>;
@@ -7120,8 +7124,16 @@ declare const impulseLogValueSchema: yup.ObjectSchema<{
             setbackGameplanId?: yup.Maybe<string | undefined>;
             uid: string;
             ordinal: number;
-            createdAt: {};
-            updatedAt: {};
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             name: string;
             unit: NonNullable<"time" | "custom" | undefined>;
             sendWeeklyReports: NonNullable<boolean | undefined>;
@@ -7229,8 +7241,16 @@ declare const impulseLogValueSchema: yup.ObjectSchema<{
     patterns: {
         [x: string]: {
             uid: undefined;
-            createdAt: undefined;
-            updatedAt: undefined;
+            createdAt: {
+                seconds: undefined;
+                nanoseconds: undefined;
+                toDate: undefined;
+            };
+            updatedAt: {
+                seconds: undefined;
+                nanoseconds: undefined;
+                toDate: undefined;
+            };
             name: undefined;
             ordinal: undefined;
             unit: undefined;
@@ -14414,7 +14434,7 @@ declare const timeLogValueSchema: yup.ObjectSchema<{
     isDisplayable: undefined;
     gameplanId: undefined;
 }, "">;
-export type DebriefLogValue = WithPatterns<WithTypes<typeof debriefLogValueSchema>>;
+export type DebriefLogValue = WithTypes<typeof debriefLogValueSchema>;
 export declare function logIsDebriefLog(log: LogValue): log is DebriefLogValue;
 declare const debriefLogValueSchema: yup.ObjectSchema<{
     uid: string;
@@ -17925,8 +17945,16 @@ declare const debriefLogValueSchema: yup.ObjectSchema<{
             setbackGameplanId?: yup.Maybe<string | undefined>;
             uid: string;
             ordinal: number;
-            createdAt: {};
-            updatedAt: {};
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             name: string;
             unit: NonNullable<"time" | "custom" | undefined>;
             sendWeeklyReports: NonNullable<boolean | undefined>;
@@ -17945,8 +17973,16 @@ declare const debriefLogValueSchema: yup.ObjectSchema<{
             setbackGameplanId?: yup.Maybe<string | undefined>;
             uid: string;
             ordinal: number;
-            createdAt: {};
-            updatedAt: {};
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             name: string;
             unit: NonNullable<"time" | "custom" | undefined>;
             sendWeeklyReports: NonNullable<boolean | undefined>;
@@ -18035,8 +18071,16 @@ declare const debriefLogValueSchema: yup.ObjectSchema<{
     patterns: {
         [x: string]: {
             uid: undefined;
-            createdAt: undefined;
-            updatedAt: undefined;
+            createdAt: {
+                seconds: undefined;
+                nanoseconds: undefined;
+                toDate: undefined;
+            };
+            updatedAt: {
+                seconds: undefined;
+                nanoseconds: undefined;
+                toDate: undefined;
+            };
             name: undefined;
             ordinal: undefined;
             unit: undefined;
@@ -28708,6 +28752,9 @@ export declare const logValueSchema: yup.Lazy<{
             title: string;
         };
     };
+    outcome: NonNullable<"success" | "setback" | "indeterminate" | undefined>;
+    isDisplayable: NonNullable<boolean | undefined>;
+    gameplans: {};
     patterns: {
         [x: string]: {
             issueId?: yup.Maybe<string | undefined>;
@@ -28722,8 +28769,16 @@ export declare const logValueSchema: yup.Lazy<{
             setbackGameplanId?: yup.Maybe<string | undefined>;
             uid: string;
             ordinal: number;
-            createdAt: {};
-            updatedAt: {};
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             name: string;
             unit: NonNullable<"time" | "custom" | undefined>;
             sendWeeklyReports: NonNullable<boolean | undefined>;
@@ -28742,17 +28797,22 @@ export declare const logValueSchema: yup.Lazy<{
             setbackGameplanId?: yup.Maybe<string | undefined>;
             uid: string;
             ordinal: number;
-            createdAt: {};
-            updatedAt: {};
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             name: string;
             unit: NonNullable<"time" | "custom" | undefined>;
             sendWeeklyReports: NonNullable<boolean | undefined>;
             setbackThreshold: number;
         };
     };
-    outcome: NonNullable<"success" | "setback" | "indeterminate" | undefined>;
-    isDisplayable: NonNullable<boolean | undefined>;
-    gameplans: {};
     patternIds: (string | undefined)[];
     patternUsage: {
         [x: string]: {
@@ -39254,6 +39314,8 @@ export declare const logValueSchema: yup.Lazy<{
             title: string;
         };
     };
+    outcome: {};
+    isDisplayable: NonNullable<boolean | undefined>;
     patterns: {
         [x: string]: {
             issueId?: yup.Maybe<string | undefined>;
@@ -39268,8 +39330,16 @@ export declare const logValueSchema: yup.Lazy<{
             setbackGameplanId?: yup.Maybe<string | undefined>;
             uid: string;
             ordinal: number;
-            createdAt: {};
-            updatedAt: {};
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             name: string;
             unit: NonNullable<"time" | "custom" | undefined>;
             sendWeeklyReports: NonNullable<boolean | undefined>;
@@ -39288,16 +39358,22 @@ export declare const logValueSchema: yup.Lazy<{
             setbackGameplanId?: yup.Maybe<string | undefined>;
             uid: string;
             ordinal: number;
-            createdAt: {};
-            updatedAt: {};
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             name: string;
             unit: NonNullable<"time" | "custom" | undefined>;
             sendWeeklyReports: NonNullable<boolean | undefined>;
             setbackThreshold: number;
         };
     };
-    outcome: {};
-    isDisplayable: NonNullable<boolean | undefined>;
     patternIds: (string | undefined)[];
     patternUsage: {};
     patternUsageEntries: {};

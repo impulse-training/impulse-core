@@ -1,8 +1,16 @@
 import * as Yup from 'yup';
 export declare const patternValueSchema: Yup.ObjectSchema<{
     uid: string;
-    createdAt: {};
-    updatedAt: {};
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
     name: string;
     ordinal: number;
     unit: NonNullable<"time" | "custom" | undefined>;
@@ -20,8 +28,16 @@ export declare const patternValueSchema: Yup.ObjectSchema<{
     setbackGameplanId: Yup.Maybe<string | undefined>;
 }, Yup.AnyObject, {
     uid: undefined;
-    createdAt: undefined;
-    updatedAt: undefined;
+    createdAt: {
+        seconds: undefined;
+        nanoseconds: undefined;
+        toDate: undefined;
+    };
+    updatedAt: {
+        seconds: undefined;
+        nanoseconds: undefined;
+        toDate: undefined;
+    };
     name: undefined;
     ordinal: undefined;
     unit: undefined;

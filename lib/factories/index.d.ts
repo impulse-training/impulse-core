@@ -2,11 +2,11 @@ import { TimestampLike } from '../utils/TimestampLike';
 export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
     applicationFactory: import("factory.ts").Factory<import("..").ApplicationValue, keyof import("..").ApplicationValue>;
     commentFactory: import("factory.ts").Factory<import("..").CommentValue, keyof import("..").CommentValue>;
-    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "type" | "uid" | "createdAt" | "updatedAt" | "tacticIds" | "timezone" | "patternId" | "location" | "startTime" | "locationIsFetching" | "allTacticIds" | "gameplan" | "tactics" | "patterns" | "outcome" | "isDisplayable" | "gameplans" | "patternIds" | "patternUsage" | ("steps" | "suggestedTacticIds" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "isUpdatingSuggestions" | "supportGroupSuggestedTacticIds" | "tacticUsage" | "tacticData" | "sharedWithSupportGroupIds" | "setAsActiveImpulse" | "pressCount" | "buttonPressSecondsSinceEpoch" | "debriefNotes" | "debriefReminderSentAt" | "debriefedAt")>;
+    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "type" | "uid" | "createdAt" | "updatedAt" | "tacticIds" | "timezone" | "patternId" | "location" | "startTime" | "locationIsFetching" | "allTacticIds" | "gameplan" | "tactics" | "outcome" | "isDisplayable" | "gameplans" | "patterns" | "patternIds" | "patternUsage" | ("steps" | "suggestedTacticIds" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "isUpdatingSuggestions" | "supportGroupSuggestedTacticIds" | "tacticUsage" | "tacticData" | "sharedWithSupportGroupIds" | "setAsActiveImpulse" | "pressCount" | "buttonPressSecondsSinceEpoch" | "debriefNotes" | "debriefReminderSentAt" | "debriefedAt")>;
     timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "type" | "uid" | "createdAt" | "updatedAt" | "tacticIds" | "timezone" | "location" | "gameplanId" | "startTime" | "locationIsFetching" | "allTacticIds" | "gameplan" | "tactics" | "isDisplayable" | ("steps" | "suggestedTacticIds" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "isUpdatingSuggestions" | "supportGroupSuggestedTacticIds" | "tacticUsage" | "tacticData" | "sharedWithSupportGroupIds")>;
     motionLogFactory: import("factory.ts").Factory<import("..").MotionLogValue, "type" | "uid" | "createdAt" | "updatedAt" | "tacticIds" | "timezone" | "location" | "startTime" | "locationIsFetching" | "allTacticIds" | "gameplan" | "tactics" | "isDisplayable" | ("steps" | "suggestedTacticIds" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "isUpdatingSuggestions" | "supportGroupSuggestedTacticIds" | "tacticUsage" | "tacticData" | "sharedWithSupportGroupIds")>;
     locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "type" | "uid" | "createdAt" | "updatedAt" | "tacticIds" | "timezone" | "location" | "locationId" | "startTime" | "locationIsFetching" | "allTacticIds" | "gameplan" | "tactics" | "isDisplayable" | "locationName" | "locationMode" | ("steps" | "suggestedTacticIds" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "isUpdatingSuggestions" | "supportGroupSuggestedTacticIds" | "tacticUsage" | "tacticData" | "sharedWithSupportGroupIds")>;
-    debriefLogFactory: import("factory.ts").Factory<import("..").DebriefLogValue, "type" | "uid" | "createdAt" | "updatedAt" | "tacticIds" | "timezone" | "location" | "gameplanId" | "startTime" | "locationIsFetching" | "allTacticIds" | "gameplan" | "tactics" | "patterns" | "outcome" | "isDisplayable" | "patternIds" | "patternUsage" | "patternUsageEntries" | ("steps" | "suggestedTacticIds" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "isUpdatingSuggestions" | "supportGroupSuggestedTacticIds" | "tacticUsage" | "tacticData" | "sharedWithSupportGroupIds")>;
+    debriefLogFactory: import("factory.ts").Factory<import("..").DebriefLogValue, "type" | "uid" | "createdAt" | "updatedAt" | "tacticIds" | "timezone" | "location" | "gameplanId" | "startTime" | "locationIsFetching" | "allTacticIds" | "gameplan" | "tactics" | "outcome" | "isDisplayable" | "patterns" | "patternIds" | "patternUsage" | "patternUsageEntries" | ("steps" | "suggestedTacticIds" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "isUpdatingSuggestions" | "supportGroupSuggestedTacticIds" | "tacticUsage" | "tacticData" | "sharedWithSupportGroupIds")>;
     locationFactory: import("factory.ts").Factory<import("..").LocationValue, keyof import("..").LocationValue>;
     logSummaryFactory: import("factory.ts").Factory<import("..").LogSummaryValue, keyof import("..").LogSummaryValue>;
     profileFactory: import("factory.ts").Factory<import("..").ProfileValue, keyof import("..").ProfileValue>;
@@ -63,8 +63,16 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         setbackGameplanId?: import("yup").Maybe<string | undefined>;
         uid: string;
         ordinal: number;
-        createdAt: {};
-        updatedAt: {};
+        createdAt: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: {};
+        };
+        updatedAt: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: {};
+        };
         name: string;
         unit: NonNullable<"time" | "custom" | undefined>;
         sendWeeklyReports: NonNullable<boolean | undefined>;

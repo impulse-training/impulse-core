@@ -27,6 +27,7 @@ export interface ProfileValue {
   androidPermissions?: Record<Permission, boolean>;
   recommendationsCount?: number;
   parentIssueIds?: Array<string>;
+  stepTrackingEnabled?: boolean;
 
   // While we typically expect these properties to be set, there is a short period where they are
   // unset, as firebase does not allow for creating user records with metadata (it must be set after

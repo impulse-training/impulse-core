@@ -17,8 +17,16 @@ export declare class Log {
         setbackGameplanId?: import("yup").Maybe<string | undefined>;
         uid: string;
         ordinal: number;
-        createdAt: {};
-        updatedAt: {};
+        createdAt: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: {};
+        };
+        updatedAt: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: {};
+        };
         name: string;
         unit: NonNullable<"time" | "custom" | undefined>;
         sendWeeklyReports: NonNullable<boolean | undefined>;

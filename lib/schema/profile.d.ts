@@ -24,6 +24,7 @@ export interface ProfileValue {
     androidPermissions?: Record<Permission, boolean>;
     recommendationsCount?: number;
     parentIssueIds?: Array<string>;
+    stepTrackingEnabled?: boolean;
     displayName?: string;
     firstName?: string;
     lastName?: string;

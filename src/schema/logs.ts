@@ -3,11 +3,7 @@
 import * as yup from 'yup';
 import { TimestampLike } from '../utils/TimestampLike';
 import { Gameplan, gameplanSchema } from './gameplan';
-import {
-  PatternValue,
-  patternUsageSchema,
-  patternValueSchema,
-} from './pattern';
+import { patternUsageSchema, patternValueSchema } from './pattern';
 import { TacticValue, tacticSchema } from './tactic';
 import { timestampSchema } from './utils/timestamp';
 
@@ -79,13 +75,8 @@ type WithTypes<T extends yup.ISchema<unknown>> = Omit<
   tactics: Record<string, TacticValue>;
 };
 
-type WithPatterns<T> = Omit<T, 'patterns'> & {
-  patterns: Record<string, PatternValue>;
-};
+export type ImpulseLogValue = WithTypes<typeof impulseLogValueSchema>;
 
-export type ImpulseLogValue = WithPatterns<
-  WithTypes<typeof impulseLogValueSchema>
->;
 export function logIsImpulseLog(log: LogValue): log is ImpulseLogValue {
   return log.type === 'impulse';
 }
@@ -151,9 +142,9 @@ const timeLogValueSchema = BaseLogValueSchema.concat(
   })
 );
 
-export type DebriefLogValue = WithPatterns<
-  WithTypes<typeof debriefLogValueSchema>
->;
+export type DebriefLogValue = WithTypes<typeof debriefLogValueSchema>;
+
+type T = DebriefLogValue['patterns'];
 export function logIsDebriefLog(log: LogValue): log is DebriefLogValue {
   return log.type === 'debrief';
 }
