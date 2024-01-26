@@ -194,6 +194,9 @@ const buttonLogSchema = BaseLogSchema.concat(
 );
 
 export const logSchema = yup.lazy(value => {
+  console.log('value in logSchema is', value);
+  console.log('type is ', typeof value);
+  console.log('value.type is ', value.type);
   switch (value.type) {
     case 'impulse':
       return impulseLogSchema;
