@@ -10,14 +10,14 @@ import {
 } from './gameplan';
 import { makeIssueFactory } from './issue';
 import { makeLocationFactory } from './location';
-import { makeLogSummaryFactory } from './logSummary';
 import {
   makeDebriefLogFactory,
   makeImpulseFactory,
   makeLocationLogFactory,
   makeMotionLogFactory,
   makeTimeLogFactory,
-} from './logs';
+} from './log';
+import { makeLogSummaryFactory } from './logSummary';
 import { makeMessageFactory } from './message';
 import { makePatternFactory } from './pattern';
 import { makeAdminProfileFactory, makeProfileFactory } from './profile';

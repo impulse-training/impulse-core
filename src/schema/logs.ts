@@ -2,9 +2,10 @@
 // take)
 import * as yup from 'yup';
 import { TimestampLike } from '../utils/TimestampLike';
-import { Gameplan, gameplanBaseSchema } from './gameplan';
+import { Gameplan } from './gameplan';
 import { patternSchema, patternUsageSchema } from './pattern';
 import { TacticValue, tacticSchema } from './tactic';
+import { objectOf } from './utils/objectOf';
 import { timestampSchema } from './utils/timestamp';
 
 export type Outcome = 'success' | 'setback' | 'indeterminate';
@@ -33,26 +34,21 @@ const BaseLogSchema = yup.object().shape({
   commentsByTacticId: yup.object().notRequired(),
   steps: yup.number().notRequired(),
   tacticIds: yup.array().of(yup.string()).required(),
-  gameplan: yup.object().shape({
-    main: gameplanBaseSchema.required(),
-    success: gameplanBaseSchema.notRequired(),
-    setback: gameplanBaseSchema.notRequired(),
-  }),
-  tactics: yup
-    .object()
-    .shape({
-      [yup.ref('$placeholderKey') as unknown as string]: tacticSchema,
-    })
-    .required(),
+  // gameplan: yup.object().shape({
+  //   main: gameplanBaseSchema.required(),
+  //   success: gameplanBaseSchema.notRequired(),
+  //   setback: gameplanBaseSchema.notRequired(),
+  // }),
+  tactics: objectOf(tacticSchema),
   suggestedTacticIds: yup.array().of(yup.string()).notRequired(),
   isUpdatingSuggestions: yup.boolean().notRequired(),
   supportGroupSuggestedTacticIds: yup
     .object()
     .shape({
-      impulse: yup.object().shape({}).required(), // Replace with Record<string, string> if defined
-      success: yup.object().shape({}).required(), // Replace with Record<string, string> if defined
-      setback: yup.object().shape({}).required(), // Replace with Record<string, string> if defined
-      all: yup.object().shape({}).required(), // Replace with Record<string, string> if defined
+      impulse: yup.object().shape({}), // Replace with Record<string, string> if defined
+      success: yup.object().shape({}), // Replace with Record<string, string> if defined
+      setback: yup.object().shape({}), // Replace with Record<string, string> if defined
+      all: yup.object().shape({}), // Replace with Record<string, string> if defined
     })
     .notRequired(),
   tacticUsage: yup.object().shape({}).notRequired(), // Replace with Record<string, PatternUsageSchema> if defined
@@ -92,24 +88,10 @@ const impulseLogSchema = BaseLogSchema.concat(
     isDisplayable: yup.boolean().oneOf([true]).required(),
     buttonPressSecondsSinceEpoch: yup.number().notRequired(),
     gameplans: yup.object().shape({}).required(), // Replace with ProfileValue['gameplans'] schema if defined
-    patterns: yup
-      .object()
-      .shape({
-        [yup.ref('$placeholderKey') as unknown as string]: patternSchema,
-      })
-      .required(),
+    patterns: objectOf(patternSchema),
     patternId: yup.string().required(),
     patternIds: yup.array().of(yup.string()).required(),
-    patternUsage: yup
-      .object()
-      .shape(
-        // Use a placeholder key with yup.lazy to apply the patternSchema to all values
-        {
-          [yup.ref('$placeholderKey') as unknown as string]: patternUsageSchema,
-        }
-      )
-      .required()
-      .noUnknown(),
+    patternUsage: objectOf(patternUsageSchema),
     debriefNotes: yup.string().notRequired(),
     debriefReminderSentAt: yup.mixed().notRequired(),
     debriefedAt: yup.mixed().notRequired(),
@@ -144,7 +126,6 @@ const timeLogSchema = BaseLogSchema.concat(
 
 export type DebriefLogValue = WithTypes<typeof debriefLogSchema>;
 
-type T = DebriefLogValue['patterns'];
 export function logIsDebriefLog(log: LogValue): log is DebriefLogValue {
   return log.type === 'debrief';
 }
@@ -155,12 +136,7 @@ const debriefLogSchema = BaseLogSchema.concat(
       .mixed()
       .oneOf(['success', 'setback', 'indeterminate'])
       .required(),
-    patterns: yup
-      .object()
-      .shape({
-        [yup.ref('$placeholderKey') as unknown as string]: patternSchema,
-      })
-      .required(),
+    patterns: objectOf(patternSchema),
     isDisplayable: yup.boolean().oneOf([true]).required(),
     gameplanId: yup.string().required(),
     patternIds: yup.array().of(yup.string()).required(),

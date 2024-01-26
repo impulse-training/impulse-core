@@ -5,10 +5,8 @@ export const timestampSchema = yup.object({
   nanoseconds: yup.number().required(),
   toDate: yup
     .mixed()
-    .test(
-      'is-timestamp',
-      'Must be a valid Timestamp',
-      value => typeof (value as any)?.toDate === 'function'
-    )
+    .test('is-timestamp', 'Must be a valid Timestamp', value => {
+      return typeof (value as any) === 'function';
+    })
     .required(),
 });

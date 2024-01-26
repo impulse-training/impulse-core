@@ -1,16 +1,12 @@
 import * as yup from 'yup';
-import { TimestampLike } from '../utils/TimestampLike';
 import { WithTacticsById, tacticSchema } from './tactic';
+import { objectOf } from './utils/objectOf';
+import { timestampSchema } from './utils/timestamp';
 
 export const gameplanBaseSchema = yup.object().shape({
   tacticIds: yup.array().of(yup.string().required()).required(),
   suggestedTacticIds: yup.array().of(yup.string().required()).required(),
-  tacticsById: yup
-    .object()
-    .shape({
-      [yup.ref('$placeholderKey') as unknown as string]: tacticSchema,
-    })
-    .required(),
+  tacticsById: objectOf(tacticSchema),
 });
 
 type Inferred<T extends yup.ISchema<unknown>> = WithTacticsById<
@@ -22,33 +18,11 @@ export type Gameplan = Inferred<typeof gameplanBaseSchema>;
 const gameplanValueBaseSchema = gameplanBaseSchema.concat(
   yup.object().shape({
     uid: yup.string().required(),
-    createdAt: yup
-      .mixed()
-      .test(
-        'is-fake-timestamp',
-        'Must be a TimestampLike',
-        value => value instanceof TimestampLike
-      )
-      .required(),
-    updatedAt: yup
-      .mixed()
-      .test(
-        'is-fake-timestamp',
-        'Must be a TimestampLike',
-        value => value instanceof TimestampLike
-      )
-      .required(),
+    createdAt: timestampSchema.required(),
+    updatedAt: timestampSchema.required(),
     title: yup.string().nullable(),
     navigationTitle: yup.string().nullable(),
     isTemplate: yup.boolean().nullable(),
-    tacticsUpdatedAt: yup
-      .mixed()
-      .test(
-        'is-fake-timestamp',
-        'Must be a TimestampLike',
-        value => value instanceof TimestampLike
-      )
-      .nullable(),
     timezone: yup.string().nullable(),
     patternName: yup.string().nullable(),
     issueId: yup.string().nullable(),
@@ -91,9 +65,12 @@ const timeGameplanSchema = schedulableGameplanSchema.concat(
 );
 
 export type DebriefGameplanValue = Inferred<typeof debriefGameplanSchema>;
-const debriefGameplanSchema = schedulableGameplanSchema.concat(
+const debriefGameplanSchema = gameplanValueBaseSchema.concat(
   yup.object().shape({
-    type: yup.mixed<'debrief'>().oneOf(['debrief']).required(),
+    type: yup
+      .mixed<'setback' | 'success'>()
+      .oneOf(['success', 'setback'])
+      .required(),
   })
 );
 
@@ -128,8 +105,10 @@ export const gameplanSchema = yup.lazy(value => {
       return locationGameplanSchema;
     case 'impulse':
       return impulseGameplanSchema;
-    case 'debrief':
+    case 'setback':
+    case 'success':
       return debriefGameplanSchema;
+
     default:
       throw new yup.ValidationError(`Unknown type: ${value.type}`);
   }
