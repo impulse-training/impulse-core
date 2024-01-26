@@ -1,7 +1,7 @@
 import * as Yup from 'yup';
 import { timestampSchema } from './utils/timestamp';
 
-export const patternValueSchema = Yup.object().shape({
+export const patternSchema = Yup.object().shape({
   uid: Yup.string().required(),
   createdAt: timestampSchema.required(), // You should define a more specific validation based on what TimestampLike is
   updatedAt: timestampSchema.required(), // Same as above for TimestampLike
@@ -26,7 +26,7 @@ export const patternValueSchema = Yup.object().shape({
   setbackGameplanId: Yup.string().notRequired(),
 });
 
-export type PatternValue = Yup.InferType<typeof patternValueSchema>;
+export type PatternValue = Yup.InferType<typeof patternSchema>;
 
 export const patternUsageSchema = Yup.object().shape({
   unit: Yup.mixed<'time' | 'custom'>().oneOf(['time', 'custom']).required(),

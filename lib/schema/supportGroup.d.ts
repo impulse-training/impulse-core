@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-export declare const supportGroupValueSchema: yup.ObjectSchema<{
+export declare const supportGroupSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -62,7 +62,7 @@ export declare const supportGroupValueSchema: yup.ObjectSchema<{
     permissions: undefined;
     suggestedTacticIds: {};
 }, "">;
-export type SupportGroupValue = yup.InferType<typeof supportGroupValueSchema>;
+export type SupportGroupValue = yup.InferType<typeof supportGroupSchema>;
 export type PermissionKey = keyof typeof CONVERSATION_PERMISSIONS;
 export type SupportGroupPermissions = {
     [uid: string]: Partial<{

@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-export declare const imageValueSchema: yup.ObjectSchema<{
+export declare const imageSchema: yup.ObjectSchema<{
     localFilePath: yup.Maybe<string | undefined>;
     storagePath: yup.Maybe<string | undefined>;
     uri: yup.Maybe<string | undefined>;
@@ -8,4 +8,4 @@ export declare const imageValueSchema: yup.ObjectSchema<{
     storagePath: undefined;
     uri: undefined;
 }, "">;
-export type ImageType = yup.InferType<typeof imageValueSchema>;
+export type ImageType = yup.InferType<typeof imageSchema>;

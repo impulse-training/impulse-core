@@ -2,15 +2,15 @@
 // take)
 import * as yup from 'yup';
 import { TimestampLike } from '../utils/TimestampLike';
-import { Gameplan, gameplanSchema } from './gameplan';
-import { patternUsageSchema, patternValueSchema } from './pattern';
+import { Gameplan, gameplanBaseSchema } from './gameplan';
+import { patternSchema, patternUsageSchema } from './pattern';
 import { TacticValue, tacticSchema } from './tactic';
 import { timestampSchema } from './utils/timestamp';
 
 export type Outcome = 'success' | 'setback' | 'indeterminate';
 
-export type BaseLogValue = WithTypes<typeof BaseLogValueSchema>;
-const BaseLogValueSchema = yup.object().shape({
+export type BaseLogValue = WithTypes<typeof BaseLogSchema>;
+const BaseLogSchema = yup.object().shape({
   uid: yup.string().required(),
   createdAt: timestampSchema.required(),
   updatedAt: timestampSchema.required(),
@@ -34,9 +34,9 @@ const BaseLogValueSchema = yup.object().shape({
   steps: yup.number().notRequired(),
   tacticIds: yup.array().of(yup.string()).required(),
   gameplan: yup.object().shape({
-    main: gameplanSchema.required(),
-    success: gameplanSchema.notRequired(),
-    setback: gameplanSchema.notRequired(),
+    main: gameplanBaseSchema.required(),
+    success: gameplanBaseSchema.notRequired(),
+    setback: gameplanBaseSchema.notRequired(),
   }),
   tactics: yup
     .object()
@@ -75,12 +75,12 @@ type WithTypes<T extends yup.ISchema<unknown>> = Omit<
   tactics: Record<string, TacticValue>;
 };
 
-export type ImpulseLogValue = WithTypes<typeof impulseLogValueSchema>;
+export type ImpulseLogValue = WithTypes<typeof impulseLogSchema>;
 
 export function logIsImpulseLog(log: LogValue): log is ImpulseLogValue {
   return log.type === 'impulse';
 }
-const impulseLogValueSchema = BaseLogValueSchema.concat(
+const impulseLogSchema = BaseLogSchema.concat(
   yup.object().shape({
     type: yup.mixed<'impulse'>().oneOf(['impulse']).required(),
     setAsActiveImpulse: yup.boolean().notRequired(),
@@ -95,7 +95,7 @@ const impulseLogValueSchema = BaseLogValueSchema.concat(
     patterns: yup
       .object()
       .shape({
-        [yup.ref('$placeholderKey') as unknown as string]: patternValueSchema,
+        [yup.ref('$placeholderKey') as unknown as string]: patternSchema,
       })
       .required(),
     patternId: yup.string().required(),
@@ -103,7 +103,7 @@ const impulseLogValueSchema = BaseLogValueSchema.concat(
     patternUsage: yup
       .object()
       .shape(
-        // Use a placeholder key with yup.lazy to apply the patternValueSchema to all values
+        // Use a placeholder key with yup.lazy to apply the patternSchema to all values
         {
           [yup.ref('$placeholderKey') as unknown as string]: patternUsageSchema,
         }
@@ -116,11 +116,11 @@ const impulseLogValueSchema = BaseLogValueSchema.concat(
   })
 );
 
-export type LocationLogValue = WithTypes<typeof locationLogValueSchema>;
+export type LocationLogValue = WithTypes<typeof locationLogSchema>;
 export function logIsLocationLog(log: LogValue): log is LocationLogValue {
   return log.type === 'location';
 }
-const locationLogValueSchema = BaseLogValueSchema.concat(
+const locationLogSchema = BaseLogSchema.concat(
   yup.object().shape({
     type: yup.mixed<'location'>().oneOf(['location']).required(),
     locationId: yup.string().required(),
@@ -130,11 +130,11 @@ const locationLogValueSchema = BaseLogValueSchema.concat(
   })
 );
 
-export type TimeLogValue = WithTypes<typeof timeLogValueSchema>;
+export type TimeLogValue = WithTypes<typeof timeLogSchema>;
 export function logIsTimeLog(log: LogValue): log is TimeLogValue {
   return log.type === 'time';
 }
-const timeLogValueSchema = BaseLogValueSchema.concat(
+const timeLogSchema = BaseLogSchema.concat(
   yup.object().shape({
     type: yup.mixed<'time'>().oneOf(['time']).required(),
     isDisplayable: yup.boolean().oneOf([true]).required(),
@@ -142,13 +142,13 @@ const timeLogValueSchema = BaseLogValueSchema.concat(
   })
 );
 
-export type DebriefLogValue = WithTypes<typeof debriefLogValueSchema>;
+export type DebriefLogValue = WithTypes<typeof debriefLogSchema>;
 
 type T = DebriefLogValue['patterns'];
 export function logIsDebriefLog(log: LogValue): log is DebriefLogValue {
   return log.type === 'debrief';
 }
-const debriefLogValueSchema = BaseLogValueSchema.concat(
+const debriefLogSchema = BaseLogSchema.concat(
   yup.object().shape({
     type: yup.mixed<'debrief'>().oneOf(['debrief']).required(),
     outcome: yup
@@ -158,7 +158,7 @@ const debriefLogValueSchema = BaseLogValueSchema.concat(
     patterns: yup
       .object()
       .shape({
-        [yup.ref('$placeholderKey') as unknown as string]: patternValueSchema,
+        [yup.ref('$placeholderKey') as unknown as string]: patternSchema,
       })
       .required(),
     isDisplayable: yup.boolean().oneOf([true]).required(),
@@ -169,22 +169,22 @@ const debriefLogValueSchema = BaseLogValueSchema.concat(
   })
 );
 
-export type MotionLogValue = WithTypes<typeof motionLogValueSchema>;
+export type MotionLogValue = WithTypes<typeof motionLogSchema>;
 export function logIsMotionLog(log: LogValue): log is MotionLogValue {
   return log.type === 'motion';
 }
-const motionLogValueSchema = BaseLogValueSchema.concat(
+const motionLogSchema = BaseLogSchema.concat(
   yup.object().shape({
     type: yup.mixed<'motion'>().oneOf(['motion']).required(),
     isDisplayable: yup.boolean().oneOf([false]).required(),
   })
 );
 
-export type ButtonLogValue = WithTypes<typeof buttonLogValueSchema>;
+export type ButtonLogValue = WithTypes<typeof buttonLogSchema>;
 export function logIsButtonLog(log: LogValue): log is ButtonLogValue {
   return log.type === 'button';
 }
-const buttonLogValueSchema = BaseLogValueSchema.concat(
+const buttonLogSchema = BaseLogSchema.concat(
   yup.object().shape({
     type: yup.mixed<'button'>().oneOf(['button']).required(),
     isDisplayable: yup.boolean().oneOf([false]).required(),
@@ -193,20 +193,20 @@ const buttonLogValueSchema = BaseLogValueSchema.concat(
   })
 );
 
-export const logValueSchema = yup.lazy(value => {
+export const logSchema = yup.lazy(value => {
   switch (value.type) {
     case 'impulse':
-      return impulseLogValueSchema;
+      return impulseLogSchema;
     case 'location':
-      return locationLogValueSchema;
+      return locationLogSchema;
     case 'time':
-      return timeLogValueSchema;
+      return timeLogSchema;
     case 'debrief':
-      return debriefLogValueSchema;
+      return debriefLogSchema;
     case 'motion':
-      return motionLogValueSchema;
+      return motionLogSchema;
     case 'button':
-      return buttonLogValueSchema;
+      return buttonLogSchema;
     default:
       throw new yup.ValidationError(`Unknown type: ${value.type}`);
   }

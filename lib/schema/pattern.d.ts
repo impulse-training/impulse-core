@@ -1,5 +1,5 @@
 import * as Yup from 'yup';
-export declare const patternValueSchema: Yup.ObjectSchema<{
+export declare const patternSchema: Yup.ObjectSchema<{
     uid: string;
     createdAt: {
         seconds: number;
@@ -54,7 +54,7 @@ export declare const patternValueSchema: Yup.ObjectSchema<{
     successGameplanId: undefined;
     setbackGameplanId: undefined;
 }, "">;
-export type PatternValue = Yup.InferType<typeof patternValueSchema>;
+export type PatternValue = Yup.InferType<typeof patternSchema>;
 export declare const patternUsageSchema: Yup.ObjectSchema<{
     unit: NonNullable<"time" | "custom" | undefined>;
     customUnit: string | undefined;

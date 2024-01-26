@@ -29,7 +29,7 @@ import { timestampSchema } from './utils/timestamp';
 // }
 
 // yup schema for SupportGroupValue
-export const supportGroupValueSchema = yup.object().shape({
+export const supportGroupSchema = yup.object().shape({
   createdAt: timestampSchema.required(),
   updatedAt: timestampSchema.required(),
   templateId: yup.string().optional(),
@@ -62,7 +62,7 @@ export const supportGroupValueSchema = yup.object().shape({
   suggestedTacticIds: yup.object().required(),
 });
 
-export type SupportGroupValue = yup.InferType<typeof supportGroupValueSchema>;
+export type SupportGroupValue = yup.InferType<typeof supportGroupSchema>;
 
 export type PermissionKey = keyof typeof CONVERSATION_PERMISSIONS;
 export type SupportGroupPermissions = {

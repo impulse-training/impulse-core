@@ -3,8 +3,8 @@ import { TimestampLike } from '../utils/TimestampLike';
 import { Gameplan } from './gameplan';
 import { TacticValue } from './tactic';
 export type Outcome = 'success' | 'setback' | 'indeterminate';
-export type BaseLogValue = WithTypes<typeof BaseLogValueSchema>;
-declare const BaseLogValueSchema: yup.ObjectSchema<{
+export type BaseLogValue = WithTypes<typeof BaseLogSchema>;
+declare const BaseLogSchema: yup.ObjectSchema<{
     uid: string;
     createdAt: {
         seconds: number;
@@ -3580,9 +3580,9 @@ type WithTypes<T extends yup.ISchema<unknown>> = Omit<yup.InferType<T>, 'gamepla
     };
     tactics: Record<string, TacticValue>;
 };
-export type ImpulseLogValue = WithTypes<typeof impulseLogValueSchema>;
+export type ImpulseLogValue = WithTypes<typeof impulseLogSchema>;
 export declare function logIsImpulseLog(log: LogValue): log is ImpulseLogValue;
-declare const impulseLogValueSchema: yup.ObjectSchema<{
+declare const impulseLogSchema: yup.ObjectSchema<{
     uid: string;
     createdAt: {
         seconds: number;
@@ -7282,9 +7282,9 @@ declare const impulseLogValueSchema: yup.ObjectSchema<{
     debriefReminderSentAt: undefined;
     debriefedAt: undefined;
 }, "">;
-export type LocationLogValue = WithTypes<typeof locationLogValueSchema>;
+export type LocationLogValue = WithTypes<typeof locationLogSchema>;
 export declare function logIsLocationLog(log: LogValue): log is LocationLogValue;
-declare const locationLogValueSchema: yup.ObjectSchema<{
+declare const locationLogSchema: yup.ObjectSchema<{
     uid: string;
     createdAt: {
         seconds: number;
@@ -10860,9 +10860,9 @@ declare const locationLogValueSchema: yup.ObjectSchema<{
     locationName: undefined;
     locationMode: undefined;
 }, "">;
-export type TimeLogValue = WithTypes<typeof timeLogValueSchema>;
+export type TimeLogValue = WithTypes<typeof timeLogSchema>;
 export declare function logIsTimeLog(log: LogValue): log is TimeLogValue;
-declare const timeLogValueSchema: yup.ObjectSchema<{
+declare const timeLogSchema: yup.ObjectSchema<{
     uid: string;
     createdAt: {
         seconds: number;
@@ -14434,9 +14434,9 @@ declare const timeLogValueSchema: yup.ObjectSchema<{
     isDisplayable: undefined;
     gameplanId: undefined;
 }, "">;
-export type DebriefLogValue = WithTypes<typeof debriefLogValueSchema>;
+export type DebriefLogValue = WithTypes<typeof debriefLogSchema>;
 export declare function logIsDebriefLog(log: LogValue): log is DebriefLogValue;
-declare const debriefLogValueSchema: yup.ObjectSchema<{
+declare const debriefLogSchema: yup.ObjectSchema<{
     uid: string;
     createdAt: {
         seconds: number;
@@ -18104,9 +18104,9 @@ declare const debriefLogValueSchema: yup.ObjectSchema<{
     patternUsage: {};
     patternUsageEntries: {};
 }, "">;
-export type MotionLogValue = WithTypes<typeof motionLogValueSchema>;
+export type MotionLogValue = WithTypes<typeof motionLogSchema>;
 export declare function logIsMotionLog(log: LogValue): log is MotionLogValue;
-declare const motionLogValueSchema: yup.ObjectSchema<{
+declare const motionLogSchema: yup.ObjectSchema<{
     uid: string;
     createdAt: {
         seconds: number;
@@ -21676,9 +21676,9 @@ declare const motionLogValueSchema: yup.ObjectSchema<{
     type: undefined;
     isDisplayable: undefined;
 }, "">;
-export type ButtonLogValue = WithTypes<typeof buttonLogValueSchema>;
+export type ButtonLogValue = WithTypes<typeof buttonLogSchema>;
 export declare function logIsButtonLog(log: LogValue): log is ButtonLogValue;
-declare const buttonLogValueSchema: yup.ObjectSchema<{
+declare const buttonLogSchema: yup.ObjectSchema<{
     uid: string;
     createdAt: {
         seconds: number;
@@ -25252,7 +25252,7 @@ declare const buttonLogValueSchema: yup.ObjectSchema<{
     isDeviceConnected: undefined;
     characteristics: {};
 }, "">;
-export declare const logValueSchema: yup.Lazy<{
+export declare const logSchema: yup.Lazy<{
     steps?: yup.Maybe<number | undefined>;
     suggestedTacticIds?: yup.Maybe<(string | undefined)[] | undefined>;
     locationFormatted?: yup.Maybe<string | undefined>;

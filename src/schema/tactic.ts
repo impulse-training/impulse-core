@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 import { recordingSchema } from './recording';
-import { imageValueSchema } from './utils/image';
+import { imageSchema } from './utils/image';
 import { timestampSchema } from './utils/timestamp';
 
 // Define a base schema for TacticValueBase with generic type K to accommodate the type field.
@@ -14,7 +14,7 @@ function tacticValueBaseSchema<K extends string>(type: K) {
     updatedAt: timestampSchema.required(),
     title: yup.string().required(),
     description: yup.string().nullable(),
-    image: imageValueSchema.optional().nullable(),
+    image: imageSchema.optional().nullable(),
     backgroundColor: yup.string().nullable(),
     isTemplate: yup.boolean().nullable(),
     language: yup.string().nullable(),
