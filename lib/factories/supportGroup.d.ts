@@ -4,6 +4,7 @@ export declare const makeSupportGroupFactory: (TimestampKlass: typeof TimestampL
     isTemplate?: boolean | undefined;
     templateId?: string | undefined;
     everythingPermissions?: boolean | undefined;
+    memberTargetCount?: number | undefined;
     groupNameAliases?: {
         [x: string]: string | undefined;
     } | undefined;
@@ -32,4 +33,4 @@ export declare const makeSupportGroupFactory: (TimestampKlass: typeof TimestampL
     icon: {};
     unreadCounts: {};
     permissions: {};
-}, "createdAt" | "updatedAt" | "thumbnailUrl" | "suggestedTacticIds" | "participantUids" | "groupName" | "creatorName" | "creatorUid" | "icon" | "unreadCounts" | "permissions" | ("isTemplate" | "templateId" | "everythingPermissions" | "groupNameAliases" | "groupDescription" | "lastMessagePreview" | "invitationCode" | "invitationUrl" | "lastMessageUid" | "isSharingDisabled")>;
+}, "createdAt" | "updatedAt" | "thumbnailUrl" | "suggestedTacticIds" | "participantUids" | "groupName" | "creatorName" | "creatorUid" | "icon" | "unreadCounts" | "permissions" | ("isTemplate" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "lastMessagePreview" | "invitationCode" | "invitationUrl" | "lastMessageUid" | "isSharingDisabled")>;

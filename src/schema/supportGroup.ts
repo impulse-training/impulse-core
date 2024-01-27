@@ -35,6 +35,7 @@ export const supportGroupSchema = yup.object().shape({
   templateId: yup.string().optional(),
   everythingPermissions: yup.boolean().optional(),
   participantUids: yup.array().of(yup.string()).required(),
+  memberTargetCount: yup.number().optional(),
   groupName: yup.string().required(),
   groupNameAliases: yup
     .lazy(obj =>

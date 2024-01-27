@@ -13,6 +13,7 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
     templateId: string | undefined;
     everythingPermissions: boolean | undefined;
     participantUids: (string | undefined)[];
+    memberTargetCount: number | undefined;
     groupName: string;
     groupNameAliases: {
         [x: string]: string | undefined;
@@ -45,6 +46,7 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
     templateId: undefined;
     everythingPermissions: undefined;
     participantUids: "";
+    memberTargetCount: undefined;
     groupName: undefined;
     groupNameAliases: undefined;
     groupDescription: undefined;
