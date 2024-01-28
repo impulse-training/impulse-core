@@ -6624,7 +6624,7 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
     issueId: string | null | undefined;
     parentIssueIds: string[] | null | undefined;
 } & {
-    type: NonNullable<"success" | "setback" | undefined>;
+    type: "debrief";
 }, yup.AnyObject, {
     tacticIds: "";
     suggestedTacticIds: "";
@@ -10618,7 +10618,7 @@ export declare const gameplanSchema: yup.Lazy<{
     patternName?: string | null | undefined;
     issueId?: string | null | undefined;
     parentIssueIds?: string[] | null | undefined;
-    type: NonNullable<"success" | "setback" | undefined>;
+    type: "debrief";
     uid: string;
     createdAt: {
         seconds: number;

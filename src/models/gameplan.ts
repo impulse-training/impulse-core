@@ -128,7 +128,7 @@ export function gameplanToClass(
 ) {
   if (gameplan.type === 'time') {
     return new TimeGameplan(id, gameplan as TimeGameplanValue);
-  } else if (gameplan.type === 'debrief') {
+  } else if (['success', 'setback'].includes(gameplan.type)) {
     return new DebriefGameplan(id, gameplan as DebriefGameplanValue);
   } else if (gameplan.type === 'location') {
     return new LocationGameplan(

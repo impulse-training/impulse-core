@@ -10,6 +10,7 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: {};
     };
+    slug: string | undefined;
     templateId: string | undefined;
     everythingPermissions: boolean | undefined;
     participantUids: (string | undefined)[];
@@ -43,6 +44,7 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
         nanoseconds: undefined;
         toDate: undefined;
     };
+    slug: undefined;
     templateId: undefined;
     everythingPermissions: undefined;
     participantUids: "";

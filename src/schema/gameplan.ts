@@ -67,10 +67,7 @@ const timeGameplanSchema = schedulableGameplanSchema.concat(
 export type DebriefGameplanValue = Inferred<typeof debriefGameplanSchema>;
 const debriefGameplanSchema = gameplanValueBaseSchema.concat(
   yup.object().shape({
-    type: yup
-      .mixed<'setback' | 'success'>()
-      .oneOf(['success', 'setback'])
-      .required(),
+    type: yup.mixed<'debrief'>().oneOf(['debrief']).required(),
   })
 );
 
@@ -104,9 +101,10 @@ export const gameplanSchema = yup.lazy(value => {
     case 'location':
       return locationGameplanSchema;
     case 'impulse':
-      return impulseGameplanSchema;
     case 'setback':
     case 'success':
+      return impulseGameplanSchema;
+    case 'debrief':
       return debriefGameplanSchema;
 
     default:
