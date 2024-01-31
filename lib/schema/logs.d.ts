@@ -89,6 +89,36 @@ declare const BaseLogSchema: yup.ObjectSchema<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -517,6 +547,36 @@ declare const BaseLogSchema: yup.ObjectSchema<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -927,6 +987,36 @@ declare const BaseLogSchema: yup.ObjectSchema<{
             };
             title: string;
             steps: number;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
@@ -1482,6 +1572,36 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -1910,6 +2030,36 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -2320,6 +2470,36 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             };
             title: string;
             steps: number;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
@@ -2997,6 +3177,36 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -3425,6 +3635,36 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -3835,6 +4075,36 @@ declare const locationLogSchema: yup.ObjectSchema<{
             };
             title: string;
             steps: number;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
@@ -4390,6 +4660,36 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -4818,6 +5118,36 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -5228,6 +5558,36 @@ declare const timeLogSchema: yup.ObjectSchema<{
             };
             title: string;
             steps: number;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
@@ -5779,6 +6139,36 @@ declare const debriefLogSchema: yup.ObjectSchema<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -6207,6 +6597,36 @@ declare const debriefLogSchema: yup.ObjectSchema<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -6617,6 +7037,36 @@ declare const debriefLogSchema: yup.ObjectSchema<{
             };
             title: string;
             steps: number;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
@@ -7263,6 +7713,36 @@ declare const motionLogSchema: yup.ObjectSchema<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -7691,6 +8171,36 @@ declare const motionLogSchema: yup.ObjectSchema<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -8101,6 +8611,36 @@ declare const motionLogSchema: yup.ObjectSchema<{
             };
             title: string;
             steps: number;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
@@ -8650,6 +9190,36 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -9078,6 +9648,36 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -9488,6 +10088,36 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             };
             title: string;
             steps: number;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
@@ -10058,6 +10688,36 @@ export declare const logSchema: yup.Lazy<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -10486,6 +11146,36 @@ export declare const logSchema: yup.Lazy<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -10896,6 +11586,36 @@ export declare const logSchema: yup.Lazy<{
             };
             title: string;
             steps: number;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
@@ -11502,6 +12222,36 @@ export declare const logSchema: yup.Lazy<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -11930,6 +12680,36 @@ export declare const logSchema: yup.Lazy<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -12340,6 +13120,36 @@ export declare const logSchema: yup.Lazy<{
             };
             title: string;
             steps: number;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
@@ -12839,6 +13649,36 @@ export declare const logSchema: yup.Lazy<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -13267,6 +14107,36 @@ export declare const logSchema: yup.Lazy<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -13677,6 +14547,36 @@ export declare const logSchema: yup.Lazy<{
             };
             title: string;
             steps: number;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
@@ -14174,6 +15074,36 @@ export declare const logSchema: yup.Lazy<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -14602,6 +15532,36 @@ export declare const logSchema: yup.Lazy<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -15012,6 +15972,36 @@ export declare const logSchema: yup.Lazy<{
             };
             title: string;
             steps: number;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
@@ -15598,6 +16588,36 @@ export declare const logSchema: yup.Lazy<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -16026,6 +17046,36 @@ export declare const logSchema: yup.Lazy<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -16436,6 +17486,36 @@ export declare const logSchema: yup.Lazy<{
             };
             title: string;
             steps: number;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
@@ -16932,6 +18012,36 @@ export declare const logSchema: yup.Lazy<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -17360,6 +18470,36 @@ export declare const logSchema: yup.Lazy<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -17770,6 +18910,36 @@ export declare const logSchema: yup.Lazy<{
             };
             title: string;
             steps: number;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            isSuggested?: boolean | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            type: "emotions";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;

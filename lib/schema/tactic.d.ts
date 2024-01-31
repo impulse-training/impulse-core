@@ -63,6 +63,68 @@ declare const stepsTacticSchema: yup.ObjectSchema<{
     steps: undefined;
 }, "">;
 export type StepsTactic = yup.InferType<typeof stepsTacticSchema>;
+declare const emotionsTacticSchema: yup.ObjectSchema<{
+    type: "emotions";
+    uid: string | null | undefined;
+    ordinal: number | null | undefined;
+    isSuggested: boolean | null | undefined;
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    title: string;
+    description: string | null | undefined;
+    image: {
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
+        uri?: yup.Maybe<string | undefined>;
+    } | null | undefined;
+    backgroundColor: string | null | undefined;
+    isTemplate: boolean | null | undefined;
+    language: string | null | undefined;
+    href: string | null | undefined;
+    categoryIds: (string | undefined)[] | null | undefined;
+    isShared: boolean | null | undefined;
+    isResponseRequired: boolean | null | undefined;
+    isAvailableForRecommendation: boolean | null | undefined;
+}, yup.AnyObject, {
+    type: undefined;
+    uid: undefined;
+    ordinal: undefined;
+    isSuggested: undefined;
+    createdAt: {
+        seconds: undefined;
+        nanoseconds: undefined;
+        toDate: undefined;
+    };
+    updatedAt: {
+        seconds: undefined;
+        nanoseconds: undefined;
+        toDate: undefined;
+    };
+    title: undefined;
+    description: undefined;
+    image: {
+        localFilePath: undefined;
+        storagePath: undefined;
+        uri: undefined;
+    };
+    backgroundColor: undefined;
+    isTemplate: undefined;
+    language: undefined;
+    href: undefined;
+    categoryIds: "";
+    isShared: undefined;
+    isResponseRequired: undefined;
+    isAvailableForRecommendation: undefined;
+}, "">;
+export type EmotionsTactic = yup.InferType<typeof emotionsTacticSchema>;
 declare const audioTacticSchema: yup.ObjectSchema<{
     type: "audio";
     uid: string | null | undefined;
@@ -874,7 +936,7 @@ declare const questionTacticSchema: yup.ObjectSchema<{
     isAvailableForRecommendation: undefined;
 }, "">;
 export type QuestionTactic = yup.InferType<typeof questionTacticSchema>;
-export type TacticValue = PhoneTacticValue | AudioTactic | VideoTactic | QuestionTactic | TaskTactic | TimerTactic | FolderTactic | MeasureTactic | OptionsTactic | BreatheTactic | StepsTactic;
+export type TacticValue = PhoneTacticValue | AudioTactic | VideoTactic | QuestionTactic | TaskTactic | TimerTactic | FolderTactic | MeasureTactic | OptionsTactic | BreatheTactic | StepsTactic | EmotionsTactic;
 export declare const tacticSchema: yup.Lazy<{
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
@@ -906,6 +968,36 @@ export declare const tacticSchema: yup.Lazy<{
     };
     title: string;
     steps: number;
+} | {
+    uid?: string | null | undefined;
+    ordinal?: number | null | undefined;
+    isSuggested?: boolean | null | undefined;
+    description?: string | null | undefined;
+    image?: {
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
+        uri?: yup.Maybe<string | undefined>;
+    } | null | undefined;
+    backgroundColor?: string | null | undefined;
+    isTemplate?: boolean | null | undefined;
+    language?: string | null | undefined;
+    href?: string | null | undefined;
+    categoryIds?: (string | undefined)[] | null | undefined;
+    isShared?: boolean | null | undefined;
+    isResponseRequired?: boolean | null | undefined;
+    isAvailableForRecommendation?: boolean | null | undefined;
+    type: "emotions";
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    title: string;
 } | {
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
@@ -1305,7 +1397,7 @@ export declare const tacticSchema: yup.Lazy<{
 }, yup.AnyObject, any>;
 declare const tacticSchemas: Record<TacticValue['type'], yup.ObjectSchema<TacticValue>>;
 export declare const tacticColors: string[];
-export { audioTacticSchema, breatheTacticSchema, folderTacticSchema, measureCounterTacticSchema, measureSlidersTacticSchema, measureTimeTacticSchema, optionsTacticSchema, phoneTacticSchema, questionTacticSchema, stepsTacticSchema, tacticSchemas, taskTacticSchema, timerTacticSchema, videoTacticSchema, };
+export { audioTacticSchema, breatheTacticSchema, emotionsTacticSchema, folderTacticSchema, measureCounterTacticSchema, measureSlidersTacticSchema, measureTimeTacticSchema, optionsTacticSchema, phoneTacticSchema, questionTacticSchema, stepsTacticSchema, tacticSchemas, taskTacticSchema, timerTacticSchema, videoTacticSchema, };
 export type WithTacticsById<T> = Omit<T, 'tacticsById'> & {
     tacticsById: Record<string, TacticValue>;
 };

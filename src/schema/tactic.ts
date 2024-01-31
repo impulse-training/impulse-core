@@ -31,6 +31,9 @@ const stepsTacticSchema = tacticValueBaseSchema('steps').shape({
 });
 export type StepsTactic = yup.InferType<typeof stepsTacticSchema>;
 
+const emotionsTacticSchema = tacticValueBaseSchema('emotions');
+export type EmotionsTactic = yup.InferType<typeof emotionsTacticSchema>;
+
 const audioTacticSchema = tacticValueBaseSchema('audio').shape({
   metadata: recordingSchema.required(),
   recording: recordingSchema.nullable(),
@@ -132,7 +135,8 @@ export type TacticValue =
   | MeasureTactic
   | OptionsTactic
   | BreatheTactic
-  | StepsTactic;
+  | StepsTactic
+  | EmotionsTactic;
 
 export const tacticSchema = yup.lazy(value => {
   switch (value.type) {
@@ -160,6 +164,8 @@ export const tacticSchema = yup.lazy(value => {
       return breatheTacticSchema;
     case 'steps':
       return stepsTacticSchema;
+    case 'emotions':
+      return emotionsTacticSchema;
     case 'task':
       return taskTacticSchema;
     default:
@@ -185,6 +191,7 @@ const tacticSchemas: Record<
   breathe: breatheTacticSchema,
   steps: stepsTacticSchema,
   task: taskTacticSchema,
+  emotions: emotionsTacticSchema,
 } as any;
 
 export const tacticColors = [
@@ -227,6 +234,7 @@ export const tacticColors = [
 export {
   audioTacticSchema,
   breatheTacticSchema,
+  emotionsTacticSchema,
   folderTacticSchema,
   measureCounterTacticSchema,
   measureSlidersTacticSchema,
