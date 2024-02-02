@@ -48,8 +48,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         permissions: {};
     }, "createdAt" | "updatedAt" | "thumbnailUrl" | "suggestedTacticIds" | "participantUids" | "groupName" | "creatorName" | "creatorUid" | "icon" | "unreadCounts" | "permissions" | ("isTemplate" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "lastMessagePreview" | "invitationCode" | "invitationUrl" | "lastMessageUid" | "isSharingDisabled")>;
     impulseGameplanFactory: import("factory.ts").Factory<import("..").ImpulseGameplanValue, "type" | "uid" | "createdAt" | "updatedAt" | "tacticIds" | "tacticsById" | "suggestedTacticIds" | "patternId" | ("title" | "isTemplate" | "navigationTitle" | "timezone" | "patternName" | "issueId" | "parentIssueIds")>;
-    successGameplanFactory: import("factory.ts").Factory<import("..").ImpulseGameplanValue, "type" | "uid" | "createdAt" | "updatedAt" | "tacticIds" | "tacticsById" | "suggestedTacticIds" | "patternId" | ("title" | "isTemplate" | "navigationTitle" | "timezone" | "patternName" | "issueId" | "parentIssueIds")>;
-    setbackGameplanFactory: import("factory.ts").Factory<import("..").ImpulseGameplanValue, "type" | "uid" | "createdAt" | "updatedAt" | "tacticIds" | "tacticsById" | "suggestedTacticIds" | "patternId" | ("title" | "isTemplate" | "navigationTitle" | "timezone" | "patternName" | "issueId" | "parentIssueIds")>;
+    debriefGameplanFactory: import("factory.ts").Factory<import("..").DayDebriefGameplanValue, "type" | "uid" | "createdAt" | "updatedAt" | "tacticIds" | "tacticsById" | "suggestedTacticIds" | ("title" | "isTemplate" | "navigationTitle" | "timezone" | "patternName" | "issueId" | "parentIssueIds")>;
     messageFactory: import("factory.ts").Factory<import("..").MessageValue, keyof import("..").MessageValue>;
     timeGameplanFactory: import("factory.ts").Factory<import("..").TimeGameplanValue, "type" | "uid" | "createdAt" | "updatedAt" | "tacticIds" | "tacticsById" | "suggestedTacticIds" | "timezone" | "weekdays" | "hour" | "minute" | ("title" | "isTemplate" | "navigationTitle" | "patternName" | "issueId" | "parentIssueIds" | "scheduledNotificationIds")>;
     patternFactory: import("factory.ts").Factory<{
@@ -61,8 +60,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             body: string;
         } | null | undefined;
         gameplanId?: import("yup").Maybe<string | undefined>;
-        successGameplanId?: import("yup").Maybe<string | undefined>;
-        setbackGameplanId?: import("yup").Maybe<string | undefined>;
+        debriefGameplanId?: import("yup").Maybe<string | undefined>;
         uid: string;
         ordinal: number;
         createdAt: {
@@ -79,10 +77,10 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         unit: NonNullable<"time" | "custom" | undefined>;
         sendWeeklyReports: NonNullable<boolean | undefined>;
         setbackThreshold: number;
-    }, "uid" | "ordinal" | "createdAt" | "updatedAt" | "name" | "unit" | "sendWeeklyReports" | "setbackThreshold" | ("issueId" | "customUnit" | "supportGroupIds" | "notification" | "gameplanId" | "successGameplanId" | "setbackGameplanId")>;
+    }, "uid" | "ordinal" | "createdAt" | "updatedAt" | "name" | "unit" | "sendWeeklyReports" | "setbackThreshold" | ("issueId" | "customUnit" | "supportGroupIds" | "notification" | "gameplanId" | "debriefGameplanId")>;
     locationGameplanFactory: import("factory.ts").Factory<import("..").LocationGameplanValue, "type" | "uid" | "createdAt" | "updatedAt" | "tacticIds" | "tacticsById" | "suggestedTacticIds" | "mode" | ("title" | "isTemplate" | "navigationTitle" | "timezone" | "patternName" | "issueId" | "parentIssueIds" | "locationId")>;
     recommendationFactory: import("factory.ts").Factory<import("..").RecommendationValue, "uid" | "ordinal" | "createdAt" | "updatedAt" | "title" | "tacticIds" | "tacticsById" | "appliedAt" | "dismissedAt" | "explanation" | "gameplanExplanation" | "recommenderUid" | "recommenderName" | "ruleId" | "gameplanIds" | "defaultSelected">;
     recommendationRuleFactory: import("factory.ts").Factory<import("..").RecommendationRuleValue, keyof import("..").RecommendationRuleValue>;
     newGameplanRecommendationRuleFactory: import("factory.ts").Factory<import("..").RecommendationRuleValue, keyof import("..").RecommendationRuleValue>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "type" | "uid" | "ordinal" | "isSuggested" | "createdAt" | "updatedAt" | "title" | "description" | "image" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "isAvailableForRecommendation">;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "type" | "uid" | "ordinal" | "createdAt" | "updatedAt" | "title" | "description" | "image" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "isAvailableForRecommendation">;
 };

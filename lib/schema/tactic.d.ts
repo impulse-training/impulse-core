@@ -3,7 +3,6 @@ declare const stepsTacticSchema: yup.ObjectSchema<{
     type: "steps";
     uid: string | null | undefined;
     ordinal: number | null | undefined;
-    isSuggested: boolean | null | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -34,7 +33,6 @@ declare const stepsTacticSchema: yup.ObjectSchema<{
     type: undefined;
     uid: undefined;
     ordinal: undefined;
-    isSuggested: undefined;
     createdAt: {
         seconds: undefined;
         nanoseconds: undefined;
@@ -67,7 +65,6 @@ declare const emotionsTacticSchema: yup.ObjectSchema<{
     type: "emotions";
     uid: string | null | undefined;
     ordinal: number | null | undefined;
-    isSuggested: boolean | null | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -97,7 +94,6 @@ declare const emotionsTacticSchema: yup.ObjectSchema<{
     type: undefined;
     uid: undefined;
     ordinal: undefined;
-    isSuggested: undefined;
     createdAt: {
         seconds: undefined;
         nanoseconds: undefined;
@@ -129,7 +125,6 @@ declare const audioTacticSchema: yup.ObjectSchema<{
     type: "audio";
     uid: string | null | undefined;
     ordinal: number | null | undefined;
-    isSuggested: boolean | null | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -169,7 +164,6 @@ declare const audioTacticSchema: yup.ObjectSchema<{
     type: undefined;
     uid: undefined;
     ordinal: undefined;
-    isSuggested: undefined;
     createdAt: {
         seconds: undefined;
         nanoseconds: undefined;
@@ -211,7 +205,6 @@ declare const videoTacticSchema: yup.ObjectSchema<{
     type: "video";
     uid: string | null | undefined;
     ordinal: number | null | undefined;
-    isSuggested: boolean | null | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -249,7 +242,6 @@ declare const videoTacticSchema: yup.ObjectSchema<{
     type: undefined;
     uid: undefined;
     ordinal: undefined;
-    isSuggested: undefined;
     createdAt: {
         seconds: undefined;
         nanoseconds: undefined;
@@ -289,7 +281,6 @@ declare const measureSlidersTacticSchema: yup.ObjectSchema<{
     type: "measure-sliders";
     uid: string | null | undefined;
     ordinal: number | null | undefined;
-    isSuggested: boolean | null | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -326,7 +317,6 @@ declare const measureSlidersTacticSchema: yup.ObjectSchema<{
     type: undefined;
     uid: undefined;
     ordinal: undefined;
-    isSuggested: undefined;
     createdAt: {
         seconds: undefined;
         nanoseconds: undefined;
@@ -359,7 +349,6 @@ declare const measureTimeTacticSchema: yup.ObjectSchema<{
     type: "measure-time";
     uid: string | null | undefined;
     ordinal: number | null | undefined;
-    isSuggested: boolean | null | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -389,7 +378,6 @@ declare const measureTimeTacticSchema: yup.ObjectSchema<{
     type: undefined;
     uid: undefined;
     ordinal: undefined;
-    isSuggested: undefined;
     createdAt: {
         seconds: undefined;
         nanoseconds: undefined;
@@ -421,7 +409,6 @@ declare const measureCounterTacticSchema: yup.ObjectSchema<{
     type: "measure-counter";
     uid: string | null | undefined;
     ordinal: number | null | undefined;
-    isSuggested: boolean | null | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -451,7 +438,6 @@ declare const measureCounterTacticSchema: yup.ObjectSchema<{
     type: undefined;
     uid: undefined;
     ordinal: undefined;
-    isSuggested: undefined;
     createdAt: {
         seconds: undefined;
         nanoseconds: undefined;
@@ -484,7 +470,6 @@ declare const folderTacticSchema: yup.ObjectSchema<{
     type: "folder";
     uid: string | null | undefined;
     ordinal: number | null | undefined;
-    isSuggested: boolean | null | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -516,7 +501,6 @@ declare const folderTacticSchema: yup.ObjectSchema<{
     type: undefined;
     uid: undefined;
     ordinal: undefined;
-    isSuggested: undefined;
     createdAt: {
         seconds: undefined;
         nanoseconds: undefined;
@@ -550,7 +534,6 @@ declare const phoneTacticSchema: yup.ObjectSchema<{
     type: "phone";
     uid: string | null | undefined;
     ordinal: number | null | undefined;
-    isSuggested: boolean | null | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -582,7 +565,6 @@ declare const phoneTacticSchema: yup.ObjectSchema<{
     type: undefined;
     uid: undefined;
     ordinal: undefined;
-    isSuggested: undefined;
     createdAt: {
         seconds: undefined;
         nanoseconds: undefined;
@@ -616,7 +598,6 @@ declare const timerTacticSchema: yup.ObjectSchema<{
     type: "timer";
     uid: string | null | undefined;
     ordinal: number | null | undefined;
-    isSuggested: boolean | null | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -647,7 +628,6 @@ declare const timerTacticSchema: yup.ObjectSchema<{
     type: undefined;
     uid: undefined;
     ordinal: undefined;
-    isSuggested: undefined;
     createdAt: {
         seconds: undefined;
         nanoseconds: undefined;
@@ -680,7 +660,6 @@ declare const breatheTacticSchema: yup.ObjectSchema<{
     type: "breathe";
     uid: string | null | undefined;
     ordinal: number | null | undefined;
-    isSuggested: boolean | null | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -714,7 +693,6 @@ declare const breatheTacticSchema: yup.ObjectSchema<{
     type: undefined;
     uid: undefined;
     ordinal: undefined;
-    isSuggested: undefined;
     createdAt: {
         seconds: undefined;
         nanoseconds: undefined;
@@ -750,7 +728,6 @@ declare const optionsTacticSchema: yup.ObjectSchema<{
     type: "options";
     uid: string | null | undefined;
     ordinal: number | null | undefined;
-    isSuggested: boolean | null | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -782,7 +759,6 @@ declare const optionsTacticSchema: yup.ObjectSchema<{
     type: undefined;
     uid: undefined;
     ordinal: undefined;
-    isSuggested: undefined;
     createdAt: {
         seconds: undefined;
         nanoseconds: undefined;
@@ -816,7 +792,6 @@ declare const taskTacticSchema: yup.ObjectSchema<{
     type: "task";
     uid: string | null | undefined;
     ordinal: number | null | undefined;
-    isSuggested: boolean | null | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -846,7 +821,6 @@ declare const taskTacticSchema: yup.ObjectSchema<{
     type: undefined;
     uid: undefined;
     ordinal: undefined;
-    isSuggested: undefined;
     createdAt: {
         seconds: undefined;
         nanoseconds: undefined;
@@ -878,7 +852,6 @@ declare const questionTacticSchema: yup.ObjectSchema<{
     type: "question";
     uid: string | null | undefined;
     ordinal: number | null | undefined;
-    isSuggested: boolean | null | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -908,7 +881,6 @@ declare const questionTacticSchema: yup.ObjectSchema<{
     type: undefined;
     uid: undefined;
     ordinal: undefined;
-    isSuggested: undefined;
     createdAt: {
         seconds: undefined;
         nanoseconds: undefined;
@@ -940,7 +912,6 @@ export type TacticValue = PhoneTacticValue | AudioTactic | VideoTactic | Questio
 export declare const tacticSchema: yup.Lazy<{
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
-    isSuggested?: boolean | null | undefined;
     description?: string | null | undefined;
     image?: {
         localFilePath?: yup.Maybe<string | undefined>;
@@ -971,7 +942,6 @@ export declare const tacticSchema: yup.Lazy<{
 } | {
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
-    isSuggested?: boolean | null | undefined;
     description?: string | null | undefined;
     image?: {
         localFilePath?: yup.Maybe<string | undefined>;
@@ -1001,7 +971,6 @@ export declare const tacticSchema: yup.Lazy<{
 } | {
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
-    isSuggested?: boolean | null | undefined;
     description?: string | null | undefined;
     image?: {
         localFilePath?: yup.Maybe<string | undefined>;
@@ -1041,7 +1010,6 @@ export declare const tacticSchema: yup.Lazy<{
 } | {
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
-    isSuggested?: boolean | null | undefined;
     description?: string | null | undefined;
     image?: {
         localFilePath?: yup.Maybe<string | undefined>;
@@ -1079,7 +1047,6 @@ export declare const tacticSchema: yup.Lazy<{
 } | {
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
-    isSuggested?: boolean | null | undefined;
     description?: string | null | undefined;
     image?: {
         localFilePath?: yup.Maybe<string | undefined>;
@@ -1116,7 +1083,6 @@ export declare const tacticSchema: yup.Lazy<{
 } | {
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
-    isSuggested?: boolean | null | undefined;
     description?: string | null | undefined;
     image?: {
         localFilePath?: yup.Maybe<string | undefined>;
@@ -1146,7 +1112,6 @@ export declare const tacticSchema: yup.Lazy<{
 } | {
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
-    isSuggested?: boolean | null | undefined;
     description?: string | null | undefined;
     image?: {
         localFilePath?: yup.Maybe<string | undefined>;
@@ -1176,7 +1141,6 @@ export declare const tacticSchema: yup.Lazy<{
 } | {
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
-    isSuggested?: boolean | null | undefined;
     description?: string | null | undefined;
     image?: {
         localFilePath?: yup.Maybe<string | undefined>;
@@ -1208,7 +1172,6 @@ export declare const tacticSchema: yup.Lazy<{
 } | {
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
-    isSuggested?: boolean | null | undefined;
     description?: string | null | undefined;
     image?: {
         localFilePath?: yup.Maybe<string | undefined>;
@@ -1240,7 +1203,6 @@ export declare const tacticSchema: yup.Lazy<{
 } | {
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
-    isSuggested?: boolean | null | undefined;
     description?: string | null | undefined;
     image?: {
         localFilePath?: yup.Maybe<string | undefined>;
@@ -1271,7 +1233,6 @@ export declare const tacticSchema: yup.Lazy<{
 } | {
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
-    isSuggested?: boolean | null | undefined;
     description?: string | null | undefined;
     image?: {
         localFilePath?: yup.Maybe<string | undefined>;
@@ -1305,7 +1266,6 @@ export declare const tacticSchema: yup.Lazy<{
 } | {
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
-    isSuggested?: boolean | null | undefined;
     description?: string | null | undefined;
     image?: {
         localFilePath?: yup.Maybe<string | undefined>;
@@ -1337,7 +1297,6 @@ export declare const tacticSchema: yup.Lazy<{
 } | {
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
-    isSuggested?: boolean | null | undefined;
     description?: string | null | undefined;
     image?: {
         localFilePath?: yup.Maybe<string | undefined>;
@@ -1367,7 +1326,6 @@ export declare const tacticSchema: yup.Lazy<{
 } | {
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
-    isSuggested?: boolean | null | undefined;
     description?: string | null | undefined;
     image?: {
         localFilePath?: yup.Maybe<string | undefined>;

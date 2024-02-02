@@ -43,7 +43,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         [x: string]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -74,7 +73,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -104,7 +102,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -144,7 +141,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -182,7 +178,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -219,7 +214,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -249,7 +243,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -279,7 +272,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -311,7 +303,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -343,7 +334,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -374,7 +364,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -408,7 +397,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -440,7 +428,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -470,7 +457,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -501,7 +487,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         [x: number]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -532,7 +517,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -562,7 +546,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -602,7 +585,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -640,7 +622,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -677,7 +658,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -707,7 +687,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -737,7 +716,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -769,7 +747,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -801,7 +778,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -832,7 +808,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -866,7 +841,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -898,7 +872,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -928,7 +901,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -959,7 +931,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         [x: symbol]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -990,7 +961,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1020,7 +990,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1060,7 +1029,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1098,7 +1066,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1135,7 +1102,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1165,7 +1131,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1195,7 +1160,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1227,7 +1191,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1259,7 +1222,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1290,7 +1252,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1324,7 +1285,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1356,7 +1316,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1386,7 +1345,6 @@ declare const BaseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1419,8 +1377,7 @@ declare const BaseLogSchema: yup.ObjectSchema<{
     isUpdatingSuggestions: yup.Maybe<boolean | undefined>;
     supportGroupSuggestedTacticIds: {
         impulse: {};
-        success: {};
-        setback: {};
+        impulseDebrief: {};
         all: {};
     } | null | undefined;
     tacticUsage: {} | null | undefined;
@@ -1466,8 +1423,7 @@ declare const BaseLogSchema: yup.ObjectSchema<{
     isUpdatingSuggestions: undefined;
     supportGroupSuggestedTacticIds: {
         impulse: {};
-        success: {};
-        setback: {};
+        impulseDebrief: {};
         all: {};
     };
     tacticUsage: {};
@@ -1480,8 +1436,7 @@ type WithTypes<T extends yup.ISchema<unknown>> = Omit<yup.InferType<T>, 'gamepla
     startTime: TimestampLike;
     gameplan: {
         main: Gameplan;
-        success?: Gameplan;
-        setback?: Gameplan;
+        impulseDebrief: Gameplan;
     };
     tactics: Record<string, TacticValue>;
 };
@@ -1526,7 +1481,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         [x: string]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1557,7 +1511,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1587,7 +1540,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1627,7 +1579,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1665,7 +1616,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1702,7 +1652,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1732,7 +1681,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1762,7 +1710,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1794,7 +1741,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1826,7 +1772,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1857,7 +1802,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1891,7 +1835,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1923,7 +1866,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1953,7 +1895,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1984,7 +1925,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         [x: number]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2015,7 +1955,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2045,7 +1984,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2085,7 +2023,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2123,7 +2060,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2160,7 +2096,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2190,7 +2125,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2220,7 +2154,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2252,7 +2185,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2284,7 +2216,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2315,7 +2246,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2349,7 +2279,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2381,7 +2310,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2411,7 +2339,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2442,7 +2369,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         [x: symbol]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2473,7 +2399,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2503,7 +2428,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2543,7 +2467,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2581,7 +2504,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2618,7 +2540,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2648,7 +2569,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2678,7 +2598,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2710,7 +2629,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2742,7 +2660,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2773,7 +2690,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2807,7 +2723,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2839,7 +2754,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2869,7 +2783,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2902,8 +2815,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     isUpdatingSuggestions: yup.Maybe<boolean | undefined>;
     supportGroupSuggestedTacticIds: {
         impulse: {};
-        success: {};
-        setback: {};
+        impulseDebrief: {};
         all: {};
     } | null | undefined;
     tacticUsage: {} | null | undefined;
@@ -2927,8 +2839,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 body: string;
             } | null | undefined;
             gameplanId?: yup.Maybe<string | undefined>;
-            successGameplanId?: yup.Maybe<string | undefined>;
-            setbackGameplanId?: yup.Maybe<string | undefined>;
+            debriefGameplanId?: yup.Maybe<string | undefined>;
             uid: string;
             ordinal: number;
             createdAt: {
@@ -2955,8 +2866,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 body: string;
             } | null | undefined;
             gameplanId?: yup.Maybe<string | undefined>;
-            successGameplanId?: yup.Maybe<string | undefined>;
-            setbackGameplanId?: yup.Maybe<string | undefined>;
+            debriefGameplanId?: yup.Maybe<string | undefined>;
             uid: string;
             ordinal: number;
             createdAt: {
@@ -2983,8 +2893,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 body: string;
             } | null | undefined;
             gameplanId?: yup.Maybe<string | undefined>;
-            successGameplanId?: yup.Maybe<string | undefined>;
-            setbackGameplanId?: yup.Maybe<string | undefined>;
+            debriefGameplanId?: yup.Maybe<string | undefined>;
             uid: string;
             ordinal: number;
             createdAt: {
@@ -3068,8 +2977,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     isUpdatingSuggestions: undefined;
     supportGroupSuggestedTacticIds: {
         impulse: {};
-        success: {};
-        setback: {};
+        impulseDebrief: {};
         all: {};
     };
     tacticUsage: {};
@@ -3131,7 +3039,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         [x: string]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3162,7 +3069,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3192,7 +3098,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3232,7 +3137,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3270,7 +3174,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3307,7 +3210,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3337,7 +3239,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3367,7 +3268,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3399,7 +3299,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3431,7 +3330,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3462,7 +3360,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3496,7 +3393,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3528,7 +3424,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3558,7 +3453,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3589,7 +3483,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         [x: number]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3620,7 +3513,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3650,7 +3542,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3690,7 +3581,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3728,7 +3618,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3765,7 +3654,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3795,7 +3683,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3825,7 +3712,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3857,7 +3743,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3889,7 +3774,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3920,7 +3804,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3954,7 +3837,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3986,7 +3868,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4016,7 +3897,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4047,7 +3927,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         [x: symbol]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4078,7 +3957,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4108,7 +3986,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4148,7 +4025,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4186,7 +4062,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4223,7 +4098,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4253,7 +4127,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4283,7 +4156,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4315,7 +4187,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4347,7 +4218,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4378,7 +4248,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4412,7 +4281,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4444,7 +4312,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4474,7 +4341,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4507,8 +4373,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
     isUpdatingSuggestions: yup.Maybe<boolean | undefined>;
     supportGroupSuggestedTacticIds: {
         impulse: {};
-        success: {};
-        setback: {};
+        impulseDebrief: {};
         all: {};
     } | null | undefined;
     tacticUsage: {} | null | undefined;
@@ -4560,8 +4425,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
     isUpdatingSuggestions: undefined;
     supportGroupSuggestedTacticIds: {
         impulse: {};
-        success: {};
-        setback: {};
+        impulseDebrief: {};
         all: {};
     };
     tacticUsage: {};
@@ -4614,7 +4478,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         [x: string]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4645,7 +4508,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4675,7 +4537,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4715,7 +4576,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4753,7 +4613,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4790,7 +4649,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4820,7 +4678,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4850,7 +4707,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4882,7 +4738,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4914,7 +4769,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4945,7 +4799,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4979,7 +4832,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5011,7 +4863,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5041,7 +4892,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5072,7 +4922,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         [x: number]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5103,7 +4952,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5133,7 +4981,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5173,7 +5020,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5211,7 +5057,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5248,7 +5093,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5278,7 +5122,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5308,7 +5151,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5340,7 +5182,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5372,7 +5213,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5403,7 +5243,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5437,7 +5276,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5469,7 +5307,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5499,7 +5336,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5530,7 +5366,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         [x: symbol]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5561,7 +5396,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5591,7 +5425,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5631,7 +5464,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5669,7 +5501,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5706,7 +5537,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5736,7 +5566,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5766,7 +5595,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5798,7 +5626,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5830,7 +5657,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5861,7 +5687,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5895,7 +5720,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5927,7 +5751,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5957,7 +5780,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5990,8 +5812,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
     isUpdatingSuggestions: yup.Maybe<boolean | undefined>;
     supportGroupSuggestedTacticIds: {
         impulse: {};
-        success: {};
-        setback: {};
+        impulseDebrief: {};
         all: {};
     } | null | undefined;
     tacticUsage: {} | null | undefined;
@@ -6041,8 +5862,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
     isUpdatingSuggestions: undefined;
     supportGroupSuggestedTacticIds: {
         impulse: {};
-        success: {};
-        setback: {};
+        impulseDebrief: {};
         all: {};
     };
     tacticUsage: {};
@@ -6093,7 +5913,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         [x: string]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6124,7 +5943,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6154,7 +5972,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6194,7 +6011,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6232,7 +6048,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6269,7 +6084,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6299,7 +6113,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6329,7 +6142,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6361,7 +6173,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6393,7 +6204,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6424,7 +6234,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6458,7 +6267,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6490,7 +6298,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6520,7 +6327,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6551,7 +6357,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         [x: number]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6582,7 +6387,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6612,7 +6416,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6652,7 +6455,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6690,7 +6492,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6727,7 +6528,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6757,7 +6557,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6787,7 +6586,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6819,7 +6617,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6851,7 +6648,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6882,7 +6678,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6916,7 +6711,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6948,7 +6742,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6978,7 +6771,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7009,7 +6801,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         [x: symbol]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7040,7 +6831,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7070,7 +6860,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7110,7 +6899,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7148,7 +6936,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7185,7 +6972,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7215,7 +7001,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7245,7 +7030,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7277,7 +7061,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7309,7 +7092,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7340,7 +7122,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7374,7 +7155,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7406,7 +7186,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7436,7 +7215,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7469,8 +7247,7 @@ declare const debriefLogSchema: yup.ObjectSchema<{
     isUpdatingSuggestions: yup.Maybe<boolean | undefined>;
     supportGroupSuggestedTacticIds: {
         impulse: {};
-        success: {};
-        setback: {};
+        impulseDebrief: {};
         all: {};
     } | null | undefined;
     tacticUsage: {} | null | undefined;
@@ -7489,8 +7266,7 @@ declare const debriefLogSchema: yup.ObjectSchema<{
                 body: string;
             } | null | undefined;
             gameplanId?: yup.Maybe<string | undefined>;
-            successGameplanId?: yup.Maybe<string | undefined>;
-            setbackGameplanId?: yup.Maybe<string | undefined>;
+            debriefGameplanId?: yup.Maybe<string | undefined>;
             uid: string;
             ordinal: number;
             createdAt: {
@@ -7517,8 +7293,7 @@ declare const debriefLogSchema: yup.ObjectSchema<{
                 body: string;
             } | null | undefined;
             gameplanId?: yup.Maybe<string | undefined>;
-            successGameplanId?: yup.Maybe<string | undefined>;
-            setbackGameplanId?: yup.Maybe<string | undefined>;
+            debriefGameplanId?: yup.Maybe<string | undefined>;
             uid: string;
             ordinal: number;
             createdAt: {
@@ -7545,8 +7320,7 @@ declare const debriefLogSchema: yup.ObjectSchema<{
                 body: string;
             } | null | undefined;
             gameplanId?: yup.Maybe<string | undefined>;
-            successGameplanId?: yup.Maybe<string | undefined>;
-            setbackGameplanId?: yup.Maybe<string | undefined>;
+            debriefGameplanId?: yup.Maybe<string | undefined>;
             uid: string;
             ordinal: number;
             createdAt: {
@@ -7610,8 +7384,7 @@ declare const debriefLogSchema: yup.ObjectSchema<{
     isUpdatingSuggestions: undefined;
     supportGroupSuggestedTacticIds: {
         impulse: {};
-        success: {};
-        setback: {};
+        impulseDebrief: {};
         all: {};
     };
     tacticUsage: {};
@@ -7667,7 +7440,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         [x: string]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7698,7 +7470,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7728,7 +7499,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7768,7 +7538,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7806,7 +7575,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7843,7 +7611,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7873,7 +7640,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7903,7 +7669,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7935,7 +7700,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7967,7 +7731,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7998,7 +7761,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8032,7 +7794,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8064,7 +7825,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8094,7 +7854,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8125,7 +7884,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         [x: number]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8156,7 +7914,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8186,7 +7943,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8226,7 +7982,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8264,7 +8019,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8301,7 +8055,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8331,7 +8084,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8361,7 +8113,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8393,7 +8144,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8425,7 +8175,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8456,7 +8205,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8490,7 +8238,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8522,7 +8269,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8552,7 +8298,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8583,7 +8328,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         [x: symbol]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8614,7 +8358,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8644,7 +8387,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8684,7 +8426,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8722,7 +8463,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8759,7 +8499,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8789,7 +8528,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8819,7 +8557,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8851,7 +8588,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8883,7 +8619,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8914,7 +8649,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8948,7 +8682,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8980,7 +8713,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9010,7 +8742,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9043,8 +8774,7 @@ declare const motionLogSchema: yup.ObjectSchema<{
     isUpdatingSuggestions: yup.Maybe<boolean | undefined>;
     supportGroupSuggestedTacticIds: {
         impulse: {};
-        success: {};
-        setback: {};
+        impulseDebrief: {};
         all: {};
     } | null | undefined;
     tacticUsage: {} | null | undefined;
@@ -9093,8 +8823,7 @@ declare const motionLogSchema: yup.ObjectSchema<{
     isUpdatingSuggestions: undefined;
     supportGroupSuggestedTacticIds: {
         impulse: {};
-        success: {};
-        setback: {};
+        impulseDebrief: {};
         all: {};
     };
     tacticUsage: {};
@@ -9144,7 +8873,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         [x: string]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9175,7 +8903,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9205,7 +8932,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9245,7 +8971,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9283,7 +9008,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9320,7 +9044,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9350,7 +9073,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9380,7 +9102,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9412,7 +9133,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9444,7 +9164,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9475,7 +9194,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9509,7 +9227,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9541,7 +9258,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9571,7 +9287,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9602,7 +9317,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         [x: number]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9633,7 +9347,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9663,7 +9376,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9703,7 +9415,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9741,7 +9452,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9778,7 +9488,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9808,7 +9517,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9838,7 +9546,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9870,7 +9577,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9902,7 +9608,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9933,7 +9638,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9967,7 +9671,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9999,7 +9702,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10029,7 +9731,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10060,7 +9761,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         [x: symbol]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10091,7 +9791,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10121,7 +9820,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10161,7 +9859,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10199,7 +9896,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10236,7 +9932,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10266,7 +9961,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10296,7 +9990,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10328,7 +10021,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10360,7 +10052,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10391,7 +10082,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10425,7 +10115,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10457,7 +10146,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10487,7 +10175,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10520,8 +10207,7 @@ declare const buttonLogSchema: yup.ObjectSchema<{
     isUpdatingSuggestions: yup.Maybe<boolean | undefined>;
     supportGroupSuggestedTacticIds: {
         impulse: {};
-        success: {};
-        setback: {};
+        impulseDebrief: {};
         all: {};
     } | null | undefined;
     tacticUsage: {} | null | undefined;
@@ -10572,8 +10258,7 @@ declare const buttonLogSchema: yup.ObjectSchema<{
     isUpdatingSuggestions: undefined;
     supportGroupSuggestedTacticIds: {
         impulse: {};
-        success: {};
-        setback: {};
+        impulseDebrief: {};
         all: {};
     };
     tacticUsage: {};
@@ -10594,8 +10279,7 @@ export declare const logSchema: yup.Lazy<{
     isUpdatingSuggestions?: yup.Maybe<boolean | undefined>;
     supportGroupSuggestedTacticIds?: {
         impulse: {};
-        success: {};
-        setback: {};
+        impulseDebrief: {};
         all: {};
     } | null | undefined;
     tacticUsage?: {} | null | undefined;
@@ -10642,7 +10326,6 @@ export declare const logSchema: yup.Lazy<{
         [x: string]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10673,7 +10356,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10703,7 +10385,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10743,7 +10424,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10781,7 +10461,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10818,7 +10497,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10848,7 +10526,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10878,7 +10555,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10910,7 +10586,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10942,7 +10617,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10973,7 +10647,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11007,7 +10680,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11039,7 +10711,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11069,7 +10740,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11100,7 +10770,6 @@ export declare const logSchema: yup.Lazy<{
         [x: number]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11131,7 +10800,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11161,7 +10829,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11201,7 +10868,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11239,7 +10905,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11276,7 +10941,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11306,7 +10970,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11336,7 +10999,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11368,7 +11030,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11400,7 +11061,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11431,7 +11091,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11465,7 +11124,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11497,7 +11155,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11527,7 +11184,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11558,7 +11214,6 @@ export declare const logSchema: yup.Lazy<{
         [x: symbol]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11589,7 +11244,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11619,7 +11273,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11659,7 +11312,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11697,7 +11349,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11734,7 +11385,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11764,7 +11414,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11794,7 +11443,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11826,7 +11474,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11858,7 +11505,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11889,7 +11535,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11923,7 +11568,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11955,7 +11599,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11985,7 +11628,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12027,8 +11669,7 @@ export declare const logSchema: yup.Lazy<{
                 body: string;
             } | null | undefined;
             gameplanId?: yup.Maybe<string | undefined>;
-            successGameplanId?: yup.Maybe<string | undefined>;
-            setbackGameplanId?: yup.Maybe<string | undefined>;
+            debriefGameplanId?: yup.Maybe<string | undefined>;
             uid: string;
             ordinal: number;
             createdAt: {
@@ -12055,8 +11696,7 @@ export declare const logSchema: yup.Lazy<{
                 body: string;
             } | null | undefined;
             gameplanId?: yup.Maybe<string | undefined>;
-            successGameplanId?: yup.Maybe<string | undefined>;
-            setbackGameplanId?: yup.Maybe<string | undefined>;
+            debriefGameplanId?: yup.Maybe<string | undefined>;
             uid: string;
             ordinal: number;
             createdAt: {
@@ -12083,8 +11723,7 @@ export declare const logSchema: yup.Lazy<{
                 body: string;
             } | null | undefined;
             gameplanId?: yup.Maybe<string | undefined>;
-            successGameplanId?: yup.Maybe<string | undefined>;
-            setbackGameplanId?: yup.Maybe<string | undefined>;
+            debriefGameplanId?: yup.Maybe<string | undefined>;
             uid: string;
             ordinal: number;
             createdAt: {
@@ -12134,8 +11773,7 @@ export declare const logSchema: yup.Lazy<{
     isUpdatingSuggestions?: yup.Maybe<boolean | undefined>;
     supportGroupSuggestedTacticIds?: {
         impulse: {};
-        success: {};
-        setback: {};
+        impulseDebrief: {};
         all: {};
     } | null | undefined;
     tacticUsage?: {} | null | undefined;
@@ -12176,7 +11814,6 @@ export declare const logSchema: yup.Lazy<{
         [x: string]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12207,7 +11844,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12237,7 +11873,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12277,7 +11912,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12315,7 +11949,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12352,7 +11985,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12382,7 +12014,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12412,7 +12043,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12444,7 +12074,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12476,7 +12105,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12507,7 +12135,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12541,7 +12168,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12573,7 +12199,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12603,7 +12228,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12634,7 +12258,6 @@ export declare const logSchema: yup.Lazy<{
         [x: number]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12665,7 +12288,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12695,7 +12317,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12735,7 +12356,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12773,7 +12393,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12810,7 +12429,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12840,7 +12458,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12870,7 +12487,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12902,7 +12518,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12934,7 +12549,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12965,7 +12579,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12999,7 +12612,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13031,7 +12643,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13061,7 +12672,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13092,7 +12702,6 @@ export declare const logSchema: yup.Lazy<{
         [x: symbol]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13123,7 +12732,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13153,7 +12761,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13193,7 +12800,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13231,7 +12837,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13268,7 +12873,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13298,7 +12902,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13328,7 +12931,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13360,7 +12962,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13392,7 +12993,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13423,7 +13023,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13457,7 +13056,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13489,7 +13087,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13519,7 +13116,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13561,8 +13157,7 @@ export declare const logSchema: yup.Lazy<{
     isUpdatingSuggestions?: yup.Maybe<boolean | undefined>;
     supportGroupSuggestedTacticIds?: {
         impulse: {};
-        success: {};
-        setback: {};
+        impulseDebrief: {};
         all: {};
     } | null | undefined;
     tacticUsage?: {} | null | undefined;
@@ -13603,7 +13198,6 @@ export declare const logSchema: yup.Lazy<{
         [x: string]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13634,7 +13228,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13664,7 +13257,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13704,7 +13296,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13742,7 +13333,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13779,7 +13369,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13809,7 +13398,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13839,7 +13427,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13871,7 +13458,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13903,7 +13489,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13934,7 +13519,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13968,7 +13552,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14000,7 +13583,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14030,7 +13612,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14061,7 +13642,6 @@ export declare const logSchema: yup.Lazy<{
         [x: number]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14092,7 +13672,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14122,7 +13701,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14162,7 +13740,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14200,7 +13777,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14237,7 +13813,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14267,7 +13842,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14297,7 +13871,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14329,7 +13902,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14361,7 +13933,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14392,7 +13963,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14426,7 +13996,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14458,7 +14027,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14488,7 +14056,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14519,7 +14086,6 @@ export declare const logSchema: yup.Lazy<{
         [x: symbol]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14550,7 +14116,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14580,7 +14145,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14620,7 +14184,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14658,7 +14221,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14695,7 +14257,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14725,7 +14286,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14755,7 +14315,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14787,7 +14346,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14819,7 +14377,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14850,7 +14407,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14884,7 +14440,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14916,7 +14471,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14946,7 +14500,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14986,8 +14539,7 @@ export declare const logSchema: yup.Lazy<{
     isUpdatingSuggestions?: yup.Maybe<boolean | undefined>;
     supportGroupSuggestedTacticIds?: {
         impulse: {};
-        success: {};
-        setback: {};
+        impulseDebrief: {};
         all: {};
     } | null | undefined;
     tacticUsage?: {} | null | undefined;
@@ -15028,7 +14580,6 @@ export declare const logSchema: yup.Lazy<{
         [x: string]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -15059,7 +14610,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -15089,7 +14639,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -15129,7 +14678,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -15167,7 +14715,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -15204,7 +14751,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -15234,7 +14780,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -15264,7 +14809,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -15296,7 +14840,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -15328,7 +14871,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -15359,7 +14901,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -15393,7 +14934,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -15425,7 +14965,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -15455,7 +14994,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -15486,7 +15024,6 @@ export declare const logSchema: yup.Lazy<{
         [x: number]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -15517,7 +15054,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -15547,7 +15083,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -15587,7 +15122,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -15625,7 +15159,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -15662,7 +15195,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -15692,7 +15224,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -15722,7 +15253,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -15754,7 +15284,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -15786,7 +15315,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -15817,7 +15345,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -15851,7 +15378,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -15883,7 +15409,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -15913,7 +15438,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -15944,7 +15468,6 @@ export declare const logSchema: yup.Lazy<{
         [x: symbol]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -15975,7 +15498,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -16005,7 +15527,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -16045,7 +15566,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -16083,7 +15603,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -16120,7 +15639,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -16150,7 +15668,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -16180,7 +15697,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -16212,7 +15728,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -16244,7 +15759,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -16275,7 +15789,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -16309,7 +15822,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -16341,7 +15853,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -16371,7 +15882,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -16412,8 +15922,7 @@ export declare const logSchema: yup.Lazy<{
                 body: string;
             } | null | undefined;
             gameplanId?: yup.Maybe<string | undefined>;
-            successGameplanId?: yup.Maybe<string | undefined>;
-            setbackGameplanId?: yup.Maybe<string | undefined>;
+            debriefGameplanId?: yup.Maybe<string | undefined>;
             uid: string;
             ordinal: number;
             createdAt: {
@@ -16440,8 +15949,7 @@ export declare const logSchema: yup.Lazy<{
                 body: string;
             } | null | undefined;
             gameplanId?: yup.Maybe<string | undefined>;
-            successGameplanId?: yup.Maybe<string | undefined>;
-            setbackGameplanId?: yup.Maybe<string | undefined>;
+            debriefGameplanId?: yup.Maybe<string | undefined>;
             uid: string;
             ordinal: number;
             createdAt: {
@@ -16468,8 +15976,7 @@ export declare const logSchema: yup.Lazy<{
                 body: string;
             } | null | undefined;
             gameplanId?: yup.Maybe<string | undefined>;
-            successGameplanId?: yup.Maybe<string | undefined>;
-            setbackGameplanId?: yup.Maybe<string | undefined>;
+            debriefGameplanId?: yup.Maybe<string | undefined>;
             uid: string;
             ordinal: number;
             createdAt: {
@@ -16501,8 +16008,7 @@ export declare const logSchema: yup.Lazy<{
     isUpdatingSuggestions?: yup.Maybe<boolean | undefined>;
     supportGroupSuggestedTacticIds?: {
         impulse: {};
-        success: {};
-        setback: {};
+        impulseDebrief: {};
         all: {};
     } | null | undefined;
     tacticUsage?: {} | null | undefined;
@@ -16542,7 +16048,6 @@ export declare const logSchema: yup.Lazy<{
         [x: string]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -16573,7 +16078,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -16603,7 +16107,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -16643,7 +16146,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -16681,7 +16183,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -16718,7 +16219,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -16748,7 +16248,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -16778,7 +16277,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -16810,7 +16308,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -16842,7 +16339,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -16873,7 +16369,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -16907,7 +16402,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -16939,7 +16433,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -16969,7 +16462,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -17000,7 +16492,6 @@ export declare const logSchema: yup.Lazy<{
         [x: number]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -17031,7 +16522,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -17061,7 +16551,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -17101,7 +16590,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -17139,7 +16627,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -17176,7 +16663,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -17206,7 +16692,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -17236,7 +16721,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -17268,7 +16752,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -17300,7 +16783,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -17331,7 +16813,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -17365,7 +16846,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -17397,7 +16877,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -17427,7 +16906,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -17458,7 +16936,6 @@ export declare const logSchema: yup.Lazy<{
         [x: symbol]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -17489,7 +16966,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -17519,7 +16995,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -17559,7 +17034,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -17597,7 +17071,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -17634,7 +17107,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -17664,7 +17136,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -17694,7 +17165,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -17726,7 +17196,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -17758,7 +17227,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -17789,7 +17257,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -17823,7 +17290,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -17855,7 +17321,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -17885,7 +17350,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -17925,8 +17389,7 @@ export declare const logSchema: yup.Lazy<{
     isUpdatingSuggestions?: yup.Maybe<boolean | undefined>;
     supportGroupSuggestedTacticIds?: {
         impulse: {};
-        success: {};
-        setback: {};
+        impulseDebrief: {};
         all: {};
     } | null | undefined;
     tacticUsage?: {} | null | undefined;
@@ -17966,7 +17429,6 @@ export declare const logSchema: yup.Lazy<{
         [x: string]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -17997,7 +17459,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -18027,7 +17488,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -18067,7 +17527,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -18105,7 +17564,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -18142,7 +17600,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -18172,7 +17629,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -18202,7 +17658,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -18234,7 +17689,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -18266,7 +17720,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -18297,7 +17750,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -18331,7 +17783,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -18363,7 +17814,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -18393,7 +17843,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -18424,7 +17873,6 @@ export declare const logSchema: yup.Lazy<{
         [x: number]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -18455,7 +17903,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -18485,7 +17932,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -18525,7 +17971,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -18563,7 +18008,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -18600,7 +18044,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -18630,7 +18073,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -18660,7 +18102,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -18692,7 +18133,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -18724,7 +18164,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -18755,7 +18194,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -18789,7 +18227,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -18821,7 +18258,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -18851,7 +18287,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -18882,7 +18317,6 @@ export declare const logSchema: yup.Lazy<{
         [x: symbol]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -18913,7 +18347,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -18943,7 +18376,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -18983,7 +18415,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -19021,7 +18452,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -19058,7 +18488,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -19088,7 +18517,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -19118,7 +18546,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -19150,7 +18577,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -19182,7 +18608,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -19213,7 +18638,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -19247,7 +18671,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -19279,7 +18702,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -19309,7 +18731,6 @@ export declare const logSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;

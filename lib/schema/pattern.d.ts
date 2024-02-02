@@ -24,8 +24,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
     sendWeeklyReports: NonNullable<boolean | undefined>;
     setbackThreshold: number;
     gameplanId: Yup.Maybe<string | undefined>;
-    successGameplanId: Yup.Maybe<string | undefined>;
-    setbackGameplanId: Yup.Maybe<string | undefined>;
+    debriefGameplanId: Yup.Maybe<string | undefined>;
 }, Yup.AnyObject, {
     uid: undefined;
     createdAt: {
@@ -51,8 +50,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
     sendWeeklyReports: undefined;
     setbackThreshold: undefined;
     gameplanId: undefined;
-    successGameplanId: undefined;
-    setbackGameplanId: undefined;
+    debriefGameplanId: undefined;
 }, "">;
 export type PatternValue = Yup.InferType<typeof patternSchema>;
 export declare const patternUsageSchema: Yup.ObjectSchema<{

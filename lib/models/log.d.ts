@@ -13,8 +13,7 @@ export declare class Log {
             body: string;
         } | null | undefined;
         gameplanId?: import("yup").Maybe<string | undefined>;
-        successGameplanId?: import("yup").Maybe<string | undefined>;
-        setbackGameplanId?: import("yup").Maybe<string | undefined>;
+        debriefGameplanId?: import("yup").Maybe<string | undefined>;
         uid: string;
         ordinal: number;
         createdAt: {

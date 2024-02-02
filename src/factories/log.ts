@@ -10,8 +10,7 @@ import { TimestampLike } from '../utils/TimestampLike';
 
 const gameplan = {
   main: { tacticIds: [], suggestedTacticIds: [], tacticsById: {} },
-  success: { tacticIds: [], suggestedTacticIds: [], tacticsById: {} },
-  setback: { tacticIds: [], suggestedTacticIds: [], tacticsById: {} },
+  impulseDebrief: { tacticIds: [], suggestedTacticIds: [], tacticsById: {} },
 };
 
 export const makeImpulseFactory = (TimestampKlass: typeof TimestampLike) =>

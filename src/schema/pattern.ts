@@ -22,8 +22,7 @@ export const patternSchema = Yup.object().shape({
   sendWeeklyReports: Yup.boolean().required(),
   setbackThreshold: Yup.number().required(),
   gameplanId: Yup.string().notRequired(),
-  successGameplanId: Yup.string().notRequired(),
-  setbackGameplanId: Yup.string().notRequired(),
+  debriefGameplanId: Yup.string().notRequired(),
 });
 
 export type PatternValue = Yup.InferType<typeof patternSchema>;

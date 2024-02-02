@@ -2,10 +2,9 @@ import { TimestampLike } from '../utils/TimestampLike';
 import { makeApplicationFactory } from './application';
 import { makeCommentFactory } from './comment';
 import {
+  makeDebriefGameplanFactory,
   makeImpulseGameplanFactory,
   makeLocationGameplanFactory,
-  makeSetbackGameplanFactory,
-  makeSuccessGameplanFactory,
   makeTimeGameplanFactory,
 } from './gameplan';
 import { makeIssueFactory } from './issue';
@@ -48,8 +47,7 @@ export function makeFactories(TimestampKlass: typeof TimestampLike) {
     adminProfileFactory: makeAdminProfileFactory(TimestampKlass),
     supportGroupFactory: makeSupportGroupFactory(TimestampKlass),
     impulseGameplanFactory: makeImpulseGameplanFactory(TimestampKlass),
-    successGameplanFactory: makeSuccessGameplanFactory(TimestampKlass),
-    setbackGameplanFactory: makeSetbackGameplanFactory(TimestampKlass),
+    debriefGameplanFactory: makeDebriefGameplanFactory(TimestampKlass),
     messageFactory: makeMessageFactory(TimestampKlass),
     timeGameplanFactory: makeTimeGameplanFactory(TimestampKlass),
     patternFactory: makePatternFactory(TimestampKlass),

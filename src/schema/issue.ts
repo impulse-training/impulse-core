@@ -19,11 +19,7 @@ export interface IssueValue {
     llmPrompt: string;
     suggestedTacticIds: Array<string>;
   };
-  success?: {
-    llmPrompt: string;
-    suggestedTacticIds: Array<string>;
-  };
-  setback?: {
+  debrief?: {
     llmPrompt: string;
     suggestedTacticIds: Array<string>;
   };

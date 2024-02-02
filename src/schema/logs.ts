@@ -34,11 +34,6 @@ const BaseLogSchema = yup.object().shape({
   commentsByTacticId: yup.object().notRequired(),
   steps: yup.number().notRequired(),
   tacticIds: yup.array().of(yup.string()).required(),
-  // gameplan: yup.object().shape({
-  //   main: gameplanBaseSchema.required(),
-  //   success: gameplanBaseSchema.notRequired(),
-  //   setback: gameplanBaseSchema.notRequired(),
-  // }),
   tactics: objectOf(tacticSchema),
   suggestedTacticIds: yup.array().of(yup.string()).notRequired(),
   isUpdatingSuggestions: yup.boolean().notRequired(),
@@ -46,8 +41,7 @@ const BaseLogSchema = yup.object().shape({
     .object()
     .shape({
       impulse: yup.object().shape({}), // Replace with Record<string, string> if defined
-      success: yup.object().shape({}), // Replace with Record<string, string> if defined
-      setback: yup.object().shape({}), // Replace with Record<string, string> if defined
+      impulseDebrief: yup.object().shape({}), // Replace with Record<string, string> if defined
       all: yup.object().shape({}), // Replace with Record<string, string> if defined
     })
     .notRequired(),
@@ -65,8 +59,7 @@ type WithTypes<T extends yup.ISchema<unknown>> = Omit<
   startTime: TimestampLike;
   gameplan: {
     main: Gameplan;
-    success?: Gameplan;
-    setback?: Gameplan;
+    impulseDebrief: Gameplan;
   };
   tactics: Record<string, TacticValue>;
 };

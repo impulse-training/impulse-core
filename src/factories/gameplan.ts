@@ -1,6 +1,7 @@
 import * as Factory from 'factory.ts';
 
 import {
+  DayDebriefGameplanValue,
   ImpulseGameplanValue,
   LocationGameplanValue,
   TimeGameplanValue,
@@ -50,30 +51,15 @@ export const makeTimeGameplanFactory = (TimestampKlass: typeof TimestampLike) =>
     tacticsById: {},
   });
 
-export const makeSetbackGameplanFactory = (
+export const makeDebriefGameplanFactory = (
   TimestampKlass: typeof TimestampLike
 ) =>
-  Factory.makeFactory<ImpulseGameplanValue>({
+  Factory.makeFactory<DayDebriefGameplanValue>({
     uid: Factory.each(i => i.toString()),
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
-    patternId: 'abc123',
     tacticIds: [],
-    type: 'setback',
-    suggestedTacticIds: [],
-    tacticsById: {},
-  });
-
-export const makeSuccessGameplanFactory = (
-  TimestampKlass: typeof TimestampLike
-) =>
-  Factory.makeFactory<ImpulseGameplanValue>({
-    uid: Factory.each(i => i.toString()),
-    createdAt: TimestampKlass.now(),
-    updatedAt: TimestampKlass.now(),
-    patternId: 'abc123',
-    tacticIds: [],
-    type: 'success',
+    type: 'dayDebrief',
     suggestedTacticIds: [],
     tacticsById: {},
   });

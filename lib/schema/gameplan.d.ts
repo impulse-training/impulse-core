@@ -7,7 +7,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         [x: string]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -38,7 +37,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -68,7 +66,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -108,7 +105,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -146,7 +142,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -183,7 +178,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -213,7 +207,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -243,7 +236,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -275,7 +267,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -307,7 +298,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -338,7 +328,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -372,7 +361,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -404,7 +392,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -434,7 +421,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -465,7 +451,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         [x: number]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -496,7 +481,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -526,7 +510,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -566,7 +549,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -604,7 +586,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -641,7 +622,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -671,7 +651,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -701,7 +680,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -733,7 +711,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -765,7 +742,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -796,7 +772,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -830,7 +805,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -862,7 +836,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -892,7 +865,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -923,7 +895,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         [x: symbol]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -954,7 +925,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -984,7 +954,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1024,7 +993,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1062,7 +1030,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1099,7 +1066,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1129,7 +1095,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1159,7 +1124,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1191,7 +1155,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1223,7 +1186,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1254,7 +1216,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1288,7 +1249,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1320,7 +1280,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1350,7 +1309,6 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1393,7 +1351,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         [x: string]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1424,7 +1381,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1454,7 +1410,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1494,7 +1449,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1532,7 +1486,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1569,7 +1522,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1599,7 +1551,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1629,7 +1580,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1661,7 +1611,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1693,7 +1642,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1724,7 +1672,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1758,7 +1705,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1790,7 +1736,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1820,7 +1765,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1851,7 +1795,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         [x: number]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1882,7 +1825,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1912,7 +1854,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1952,7 +1893,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1990,7 +1930,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2027,7 +1966,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2057,7 +1995,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2087,7 +2024,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2119,7 +2055,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2151,7 +2086,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2182,7 +2116,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2216,7 +2149,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2248,7 +2180,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2278,7 +2209,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2309,7 +2239,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         [x: symbol]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2340,7 +2269,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2370,7 +2298,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2410,7 +2337,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2448,7 +2374,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2485,7 +2410,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2515,7 +2439,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2545,7 +2468,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2577,7 +2499,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2609,7 +2530,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2640,7 +2560,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2674,7 +2593,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2706,7 +2624,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2736,7 +2653,6 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2784,7 +2700,7 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
     issueId: string | null | undefined;
     parentIssueIds: string[] | null | undefined;
 } & {
-    type: NonNullable<"impulse" | "success" | "setback" | undefined>;
+    type: NonNullable<"impulse" | "impulseDebrief" | undefined>;
     patternId: string;
 }, yup.AnyObject, {
     tacticIds: "";
@@ -2820,7 +2736,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         [x: string]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2851,7 +2766,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2881,7 +2795,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2921,7 +2834,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2959,7 +2871,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -2996,7 +2907,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3026,7 +2936,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3056,7 +2965,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3088,7 +2996,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3120,7 +3027,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3151,7 +3057,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3185,7 +3090,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3217,7 +3121,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3247,7 +3150,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3278,7 +3180,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         [x: number]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3309,7 +3210,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3339,7 +3239,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3379,7 +3278,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3417,7 +3315,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3454,7 +3351,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3484,7 +3380,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3514,7 +3409,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3546,7 +3440,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3578,7 +3471,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3609,7 +3501,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3643,7 +3534,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3675,7 +3565,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3705,7 +3594,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3736,7 +3624,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         [x: symbol]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3767,7 +3654,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3797,7 +3683,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3837,7 +3722,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3875,7 +3759,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3912,7 +3795,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3942,7 +3824,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -3972,7 +3853,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4004,7 +3884,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4036,7 +3915,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4067,7 +3945,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4101,7 +3978,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4133,7 +4009,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4163,7 +4038,6 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4251,7 +4125,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         [x: string]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4282,7 +4155,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4312,7 +4184,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4352,7 +4223,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4390,7 +4260,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4427,7 +4296,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4457,7 +4325,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4487,7 +4354,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4519,7 +4385,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4551,7 +4416,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4582,7 +4446,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4616,7 +4479,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4648,7 +4510,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4678,7 +4539,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4709,7 +4569,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         [x: number]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4740,7 +4599,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4770,7 +4628,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4810,7 +4667,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4848,7 +4704,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4885,7 +4740,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4915,7 +4769,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4945,7 +4798,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -4977,7 +4829,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5009,7 +4860,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5040,7 +4890,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5074,7 +4923,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5106,7 +4954,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5136,7 +4983,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5167,7 +5013,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         [x: symbol]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5198,7 +5043,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5228,7 +5072,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5268,7 +5111,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5306,7 +5148,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5343,7 +5184,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5373,7 +5213,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5403,7 +5242,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5435,7 +5273,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5467,7 +5304,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5498,7 +5334,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5532,7 +5367,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5564,7 +5398,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5594,7 +5427,6 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5675,15 +5507,14 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
     scheduledNotificationIds: "";
     type: undefined;
 }, "">;
-export type DebriefGameplanValue = Inferred<typeof debriefGameplanSchema>;
-declare const debriefGameplanSchema: yup.ObjectSchema<{
+export type DayDebriefGameplanValue = Inferred<typeof dayDebriefGameplanSchema>;
+declare const dayDebriefGameplanSchema: yup.ObjectSchema<{
     tacticIds: string[];
     suggestedTacticIds: string[];
     tacticsById: {
         [x: string]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5714,7 +5545,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5744,7 +5574,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5784,7 +5613,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5822,7 +5650,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5859,7 +5686,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5889,7 +5715,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5919,7 +5744,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5951,7 +5775,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -5983,7 +5806,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6014,7 +5836,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6048,7 +5869,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6080,7 +5900,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6110,7 +5929,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6141,7 +5959,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         [x: number]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6172,7 +5989,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6202,7 +6018,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6242,7 +6057,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6280,7 +6094,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6317,7 +6130,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6347,7 +6159,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6377,7 +6188,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6409,7 +6219,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6441,7 +6250,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6472,7 +6280,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6506,7 +6313,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6538,7 +6344,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6568,7 +6373,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6599,7 +6403,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         [x: symbol]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6630,7 +6433,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6660,7 +6462,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6700,7 +6501,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6738,7 +6538,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6775,7 +6574,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6805,7 +6603,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6835,7 +6632,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6867,7 +6663,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6899,7 +6694,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6930,7 +6724,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6964,7 +6757,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -6996,7 +6788,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7026,7 +6817,6 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7074,7 +6864,7 @@ declare const debriefGameplanSchema: yup.ObjectSchema<{
     issueId: string | null | undefined;
     parentIssueIds: string[] | null | undefined;
 } & {
-    type: "debrief";
+    type: "dayDebrief";
 }, yup.AnyObject, {
     tacticIds: "";
     suggestedTacticIds: "";
@@ -7107,7 +6897,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         [x: string]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7138,7 +6927,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7168,7 +6956,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7208,7 +6995,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7246,7 +7032,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7283,7 +7068,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7313,7 +7097,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7343,7 +7126,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7375,7 +7157,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7407,7 +7188,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7438,7 +7218,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7472,7 +7251,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7504,7 +7282,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7534,7 +7311,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7565,7 +7341,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         [x: number]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7596,7 +7371,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7626,7 +7400,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7666,7 +7439,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7704,7 +7476,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7741,7 +7512,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7771,7 +7541,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7801,7 +7570,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7833,7 +7601,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7865,7 +7632,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7896,7 +7662,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7930,7 +7695,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7962,7 +7726,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -7992,7 +7755,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8023,7 +7785,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         [x: symbol]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8054,7 +7815,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8084,7 +7844,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8124,7 +7883,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8162,7 +7920,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8199,7 +7956,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8229,7 +7985,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8259,7 +8014,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8291,7 +8045,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8323,7 +8076,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8354,7 +8106,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8388,7 +8139,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8420,7 +8170,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8450,7 +8199,6 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8527,8 +8275,8 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
     locationId: undefined;
     mode: undefined;
 }, "">;
-export type GameplanValue = ImpulseGameplanValue | TimeGameplanValue | DebriefGameplanValue | LocationGameplanValue;
-export { debriefGameplanSchema, impulseGameplanSchema, locationGameplanSchema, timeGameplanSchema, };
+export type GameplanValue = ImpulseGameplanValue | TimeGameplanValue | DayDebriefGameplanValue | LocationGameplanValue;
+export { dayDebriefGameplanSchema, impulseGameplanSchema, locationGameplanSchema, timeGameplanSchema, };
 export declare const gameplanSchema: yup.Lazy<{
     title?: string | null | undefined;
     isTemplate?: boolean | null | undefined;
@@ -8537,7 +8285,7 @@ export declare const gameplanSchema: yup.Lazy<{
     patternName?: string | null | undefined;
     issueId?: string | null | undefined;
     parentIssueIds?: string[] | null | undefined;
-    type: NonNullable<"impulse" | "success" | "setback" | undefined>;
+    type: NonNullable<"impulse" | "impulseDebrief" | undefined>;
     uid: string;
     createdAt: {
         seconds: number;
@@ -8554,7 +8302,6 @@ export declare const gameplanSchema: yup.Lazy<{
         [x: string]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8585,7 +8332,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8615,7 +8361,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8655,7 +8400,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8693,7 +8437,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8730,7 +8473,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8760,7 +8502,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8790,7 +8531,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8822,7 +8562,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8854,7 +8593,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8885,7 +8623,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8919,7 +8656,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8951,7 +8687,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -8981,7 +8716,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9012,7 +8746,6 @@ export declare const gameplanSchema: yup.Lazy<{
         [x: number]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9043,7 +8776,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9073,7 +8805,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9113,7 +8844,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9151,7 +8881,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9188,7 +8917,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9218,7 +8946,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9248,7 +8975,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9280,7 +9006,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9312,7 +9037,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9343,7 +9067,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9377,7 +9100,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9409,7 +9131,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9439,7 +9160,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9470,7 +9190,6 @@ export declare const gameplanSchema: yup.Lazy<{
         [x: symbol]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9501,7 +9220,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9531,7 +9249,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9571,7 +9288,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9609,7 +9325,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9646,7 +9361,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9676,7 +9390,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9706,7 +9419,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9738,7 +9450,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9770,7 +9481,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9801,7 +9511,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9835,7 +9544,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9867,7 +9575,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9897,7 +9604,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9953,7 +9659,6 @@ export declare const gameplanSchema: yup.Lazy<{
         [x: string]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -9984,7 +9689,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10014,7 +9718,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10054,7 +9757,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10092,7 +9794,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10129,7 +9830,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10159,7 +9859,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10189,7 +9888,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10221,7 +9919,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10253,7 +9950,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10284,7 +9980,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10318,7 +10013,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10350,7 +10044,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10380,7 +10073,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10411,7 +10103,6 @@ export declare const gameplanSchema: yup.Lazy<{
         [x: number]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10442,7 +10133,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10472,7 +10162,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10512,7 +10201,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10550,7 +10238,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10587,7 +10274,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10617,7 +10303,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10647,7 +10332,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10679,7 +10363,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10711,7 +10394,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10742,7 +10424,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10776,7 +10457,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10808,7 +10488,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10838,7 +10517,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10869,7 +10547,6 @@ export declare const gameplanSchema: yup.Lazy<{
         [x: symbol]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10900,7 +10577,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10930,7 +10606,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -10970,7 +10645,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11008,7 +10682,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11045,7 +10718,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11075,7 +10747,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11105,7 +10776,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11137,7 +10807,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11169,7 +10838,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11200,7 +10868,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11234,7 +10901,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11266,7 +10932,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11296,7 +10961,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11338,7 +11002,7 @@ export declare const gameplanSchema: yup.Lazy<{
     patternName?: string | null | undefined;
     issueId?: string | null | undefined;
     parentIssueIds?: string[] | null | undefined;
-    type: "debrief";
+    type: "dayDebrief";
     uid: string;
     createdAt: {
         seconds: number;
@@ -11355,7 +11019,6 @@ export declare const gameplanSchema: yup.Lazy<{
         [x: string]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11386,7 +11049,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11416,7 +11078,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11456,7 +11117,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11494,7 +11154,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11531,7 +11190,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11561,7 +11219,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11591,7 +11248,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11623,7 +11279,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11655,7 +11310,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11686,7 +11340,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11720,7 +11373,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11752,7 +11404,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11782,7 +11433,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11813,7 +11463,6 @@ export declare const gameplanSchema: yup.Lazy<{
         [x: number]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11844,7 +11493,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11874,7 +11522,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11914,7 +11561,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11952,7 +11598,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -11989,7 +11634,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12019,7 +11663,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12049,7 +11692,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12081,7 +11723,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12113,7 +11754,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12144,7 +11784,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12178,7 +11817,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12210,7 +11848,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12240,7 +11877,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12271,7 +11907,6 @@ export declare const gameplanSchema: yup.Lazy<{
         [x: symbol]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12302,7 +11937,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12332,7 +11966,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12372,7 +12005,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12410,7 +12042,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12447,7 +12078,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12477,7 +12107,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12507,7 +12136,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12539,7 +12167,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12571,7 +12198,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12602,7 +12228,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12636,7 +12261,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12668,7 +12292,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12698,7 +12321,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12754,7 +12376,6 @@ export declare const gameplanSchema: yup.Lazy<{
         [x: string]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12785,7 +12406,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12815,7 +12435,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12855,7 +12474,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12893,7 +12511,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12930,7 +12547,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12960,7 +12576,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -12990,7 +12605,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13022,7 +12636,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13054,7 +12667,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13085,7 +12697,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13119,7 +12730,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13151,7 +12761,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13181,7 +12790,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13212,7 +12820,6 @@ export declare const gameplanSchema: yup.Lazy<{
         [x: number]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13243,7 +12850,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13273,7 +12879,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13313,7 +12918,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13351,7 +12955,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13388,7 +12991,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13418,7 +13020,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13448,7 +13049,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13480,7 +13080,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13512,7 +13111,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13543,7 +13141,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13577,7 +13174,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13609,7 +13205,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13639,7 +13234,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13670,7 +13264,6 @@ export declare const gameplanSchema: yup.Lazy<{
         [x: symbol]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13701,7 +13294,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13731,7 +13323,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13771,7 +13362,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13809,7 +13399,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13846,7 +13435,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13876,7 +13464,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13906,7 +13493,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13938,7 +13524,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -13970,7 +13555,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14001,7 +13585,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14035,7 +13618,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14067,7 +13649,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -14097,7 +13678,6 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
-            isSuggested?: boolean | null | undefined;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;

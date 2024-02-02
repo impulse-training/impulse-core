@@ -1,5 +1,5 @@
 import { LocationValue } from '../schema';
-import { DebriefGameplanValue, GameplanValue, ImpulseGameplanValue, LocationGameplanValue, TimeGameplanValue } from '../schema/gameplan';
+import { DayDebriefGameplanValue, GameplanValue, ImpulseGameplanValue, LocationGameplanValue, TimeGameplanValue } from '../schema/gameplan';
 export declare const SHORT_DAYS: {
     [key: number]: string;
 };
@@ -18,7 +18,7 @@ export declare class TimeGameplan extends Gameplan {
 export declare class DebriefGameplan extends Gameplan {
     private id;
     private data;
-    constructor(id: string, data: DebriefGameplanValue);
+    constructor(id: string, data: DayDebriefGameplanValue);
     static DAYS: {
         [key: number]: string;
     };
@@ -35,7 +35,7 @@ export declare class ImpulseGameplan extends Gameplan {
     private id;
     private data;
     constructor(id: string, data: ImpulseGameplanValue);
-    get summary(): "When I have a success" | "When I have a setback" | "When I have an impulse moment";
+    get summary(): "Debriefing" | "When I have an impulse moment";
 }
 export declare function gameplanToClass(id: string, gameplan: GameplanValue, location: LocationValue): TimeGameplan | DebriefGameplan | LocationGameplan | ImpulseGameplan;
 export {};

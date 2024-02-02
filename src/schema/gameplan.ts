@@ -33,8 +33,8 @@ const gameplanValueBaseSchema = gameplanBaseSchema.concat(
 const impulseGameplanSchema = gameplanValueBaseSchema.concat(
   yup.object().shape({
     type: yup
-      .mixed<'impulse' | 'success' | 'setback'>()
-      .oneOf(['impulse', 'success', 'setback'])
+      .mixed<'impulse' | 'impulseDebrief'>()
+      .oneOf(['impulse', 'impulseDebrief'])
       .required(),
     patternId: yup.string().required(),
   })
@@ -64,10 +64,10 @@ const timeGameplanSchema = schedulableGameplanSchema.concat(
   })
 );
 
-export type DebriefGameplanValue = Inferred<typeof debriefGameplanSchema>;
-const debriefGameplanSchema = gameplanValueBaseSchema.concat(
+export type DayDebriefGameplanValue = Inferred<typeof dayDebriefGameplanSchema>;
+const dayDebriefGameplanSchema = gameplanValueBaseSchema.concat(
   yup.object().shape({
-    type: yup.mixed<'debrief'>().oneOf(['debrief']).required(),
+    type: yup.mixed<'dayDebrief'>().oneOf(['dayDebrief']).required(),
   })
 );
 
@@ -83,12 +83,12 @@ const locationGameplanSchema = gameplanValueBaseSchema.concat(
 export type GameplanValue =
   | ImpulseGameplanValue
   | TimeGameplanValue
-  | DebriefGameplanValue
+  | DayDebriefGameplanValue
   | LocationGameplanValue;
 
 // Export the schemas
 export {
-  debriefGameplanSchema,
+  dayDebriefGameplanSchema,
   impulseGameplanSchema,
   locationGameplanSchema,
   timeGameplanSchema,
@@ -101,11 +101,10 @@ export const gameplanSchema = yup.lazy(value => {
     case 'location':
       return locationGameplanSchema;
     case 'impulse':
-    case 'setback':
-    case 'success':
+    case 'impulseDebrief':
       return impulseGameplanSchema;
-    case 'debrief':
-      return debriefGameplanSchema;
+    case 'dayDebrief':
+      return dayDebriefGameplanSchema;
 
     default:
       throw new yup.ValidationError(`Unknown type: ${value.type}`);

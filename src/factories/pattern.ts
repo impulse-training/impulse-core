@@ -14,4 +14,5 @@ export const makePatternFactory = (TimestampKlass: typeof TimestampLike) =>
     updatedAt: TimestampKlass.now(),
     sendWeeklyReports: false,
     gameplanId: Factory.each(i => i.toString()),
+    debriefGameplanId: Factory.each(i => i.toString()),
   });

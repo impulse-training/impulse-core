@@ -1,7 +1,7 @@
 import { difference, isEqual } from 'lodash';
 import { LocationValue } from '../schema';
 import {
-  DebriefGameplanValue,
+  DayDebriefGameplanValue,
   GameplanValue,
   ImpulseGameplanValue,
   LocationGameplanValue,
@@ -77,7 +77,7 @@ export class TimeGameplan extends Gameplan {
 }
 
 export class DebriefGameplan extends Gameplan {
-  constructor(private id: string, private data: DebriefGameplanValue) {
+  constructor(private id: string, private data: DayDebriefGameplanValue) {
     super();
   }
 
@@ -114,8 +114,7 @@ export class ImpulseGameplan extends Gameplan {
   }
 
   get summary() {
-    if (this.data.type === 'success') return 'When I have a success';
-    if (this.data.type === 'setback') return 'When I have a setback';
+    if (this.data.type === 'impulseDebrief') return 'Debriefing';
     return 'When I have an impulse moment';
   }
 }
@@ -129,7 +128,7 @@ export function gameplanToClass(
   if (gameplan.type === 'time') {
     return new TimeGameplan(id, gameplan as TimeGameplanValue);
   } else if (['success', 'setback'].includes(gameplan.type)) {
-    return new DebriefGameplan(id, gameplan as DebriefGameplanValue);
+    return new DebriefGameplan(id, gameplan as DayDebriefGameplanValue);
   } else if (gameplan.type === 'location') {
     return new LocationGameplan(
       id,
