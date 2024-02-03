@@ -6,6 +6,7 @@ export interface CommentValue {
   createdAt: TimestampLike;
   updatedAt: TimestampLike;
   tacticId?: string | null;
+  tacticName?: string | null;
   text?: string;
   uid: string;
   authorName: string;

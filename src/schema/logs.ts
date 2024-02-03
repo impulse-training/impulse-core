@@ -2,10 +2,10 @@
 // take)
 import * as yup from 'yup';
 import { TimestampLike } from '../utils/TimestampLike';
-import { Gameplan } from './gameplan';
+import { Gameplan, gameplanBaseSchema } from './gameplan';
 import { patternSchema, patternUsageSchema } from './pattern';
 import { TacticValue, tacticSchema } from './tactic';
-import { objectOf } from './utils/objectOf';
+import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { timestampSchema } from './utils/timestamp';
 
 export type Outcome = 'success' | 'setback' | 'indeterminate';
@@ -30,10 +30,14 @@ const BaseLogSchema = yup.object().shape({
   locationFormatted: yup.string().notRequired(),
   allTacticIds: yup.array().of(yup.string()).required(),
   commentCount: yup.number().notRequired(),
-  commentsById: yup.object().notRequired(),
-  commentsByTacticId: yup.object().notRequired(),
+  commentsById: yup.object().notRequired(), // TODO: introduce comment schema
+  commentsByTacticId: optionalObjectOf(
+    yup
+      .object()
+      .shape({ tacticTitle: yup.string().required(), comments: yup.object() })
+  ),
   steps: yup.number().notRequired(),
-  tacticIds: yup.array().of(yup.string()).required(),
+  tacticIds: yup.array().of(yup.string().required()).required(),
   tactics: objectOf(tacticSchema),
   suggestedTacticIds: yup.array().of(yup.string()).notRequired(),
   isUpdatingSuggestions: yup.boolean().notRequired(),
@@ -52,7 +56,7 @@ const BaseLogSchema = yup.object().shape({
 
 type WithTypes<T extends yup.ISchema<unknown>> = Omit<
   yup.InferType<T>,
-  'gameplan' | 'tactics'
+  'gameplan' | 'tactics' | 'gameplans'
 > & {
   createdAt: TimestampLike;
   updatedAt: TimestampLike;
@@ -61,6 +65,13 @@ type WithTypes<T extends yup.ISchema<unknown>> = Omit<
     main: Gameplan;
     impulseDebrief: Gameplan;
   };
+  gameplans?: Record<
+    string,
+    {
+      main: Gameplan;
+      impulseDebrief: Gameplan;
+    }
+  >;
   tactics: Record<string, TacticValue>;
 };
 
@@ -80,7 +91,11 @@ const impulseLogSchema = BaseLogSchema.concat(
       .required(),
     isDisplayable: yup.boolean().oneOf([true]).required(),
     buttonPressSecondsSinceEpoch: yup.number().notRequired(),
-    gameplans: yup.object().shape({}).required(), // Replace with ProfileValue['gameplans'] schema if defined
+    gameplans: objectOf(
+      yup
+        .object()
+        .shape({ main: gameplanBaseSchema, impulseDebrief: gameplanBaseSchema })
+    ),
     patterns: objectOf(patternSchema),
     patternId: yup.string().required(),
     patternIds: yup.array().of(yup.string()).required(),
@@ -163,9 +178,6 @@ const buttonLogSchema = BaseLogSchema.concat(
 );
 
 export const logSchema = yup.lazy(value => {
-  console.log('value in logSchema is', value);
-  console.log('type is ', typeof value);
-  console.log('value.type is ', value.type);
   switch (value.type) {
     case 'impulse':
       return impulseLogSchema;
