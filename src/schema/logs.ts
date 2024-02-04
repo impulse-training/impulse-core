@@ -10,8 +10,8 @@ import { timestampSchema } from './utils/timestamp';
 
 export type Outcome = 'success' | 'setback' | 'indeterminate';
 
-export type BaseLogValue = WithTypes<typeof BaseLogSchema>;
-const BaseLogSchema = yup.object().shape({
+export type BaseLogValue = WithTypes<typeof baseLogSchema>;
+const baseLogSchema = yup.object().shape({
   uid: yup.string().required(),
   createdAt: timestampSchema.required(),
   updatedAt: timestampSchema.required(),
@@ -34,7 +34,7 @@ const BaseLogSchema = yup.object().shape({
   commentsByTacticId: optionalObjectOf(
     yup
       .object()
-      .shape({ tacticTitle: yup.string().required(), comments: yup.object() })
+      .shape({ tacticTitle: yup.string().required(), comments: yup.array() })
   ),
   steps: yup.number().notRequired(),
   tacticIds: yup.array().of(yup.string().required()).required(),
@@ -53,6 +53,7 @@ const BaseLogSchema = yup.object().shape({
   tacticData: yup.object().shape({}).notRequired(),
   sharedWithSupportGroupIds: yup.array().of(yup.string()).notRequired(),
 });
+// This is important to prevent typescript generating a 40k line file :/
 
 type WithTypes<T extends yup.ISchema<unknown>> = Omit<
   yup.InferType<T>,
@@ -80,7 +81,7 @@ export type ImpulseLogValue = WithTypes<typeof impulseLogSchema>;
 export function logIsImpulseLog(log: LogValue): log is ImpulseLogValue {
   return log.type === 'impulse';
 }
-const impulseLogSchema = BaseLogSchema.concat(
+const impulseLogSchema = baseLogSchema.concat(
   yup.object().shape({
     type: yup.mixed<'impulse'>().oneOf(['impulse']).required(),
     setAsActiveImpulse: yup.boolean().notRequired(),
@@ -110,7 +111,7 @@ export type LocationLogValue = WithTypes<typeof locationLogSchema>;
 export function logIsLocationLog(log: LogValue): log is LocationLogValue {
   return log.type === 'location';
 }
-const locationLogSchema = BaseLogSchema.concat(
+const locationLogSchema = baseLogSchema.concat(
   yup.object().shape({
     type: yup.mixed<'location'>().oneOf(['location']).required(),
     locationId: yup.string().required(),
@@ -124,7 +125,7 @@ export type TimeLogValue = WithTypes<typeof timeLogSchema>;
 export function logIsTimeLog(log: LogValue): log is TimeLogValue {
   return log.type === 'time';
 }
-const timeLogSchema = BaseLogSchema.concat(
+const timeLogSchema = baseLogSchema.concat(
   yup.object().shape({
     type: yup.mixed<'time'>().oneOf(['time']).required(),
     isDisplayable: yup.boolean().oneOf([true]).required(),
@@ -137,7 +138,7 @@ export type DebriefLogValue = WithTypes<typeof debriefLogSchema>;
 export function logIsDebriefLog(log: LogValue): log is DebriefLogValue {
   return log.type === 'debrief';
 }
-const debriefLogSchema = BaseLogSchema.concat(
+const debriefLogSchema = baseLogSchema.concat(
   yup.object().shape({
     type: yup.mixed<'debrief'>().oneOf(['debrief']).required(),
     outcome: yup
@@ -157,7 +158,7 @@ export type MotionLogValue = WithTypes<typeof motionLogSchema>;
 export function logIsMotionLog(log: LogValue): log is MotionLogValue {
   return log.type === 'motion';
 }
-const motionLogSchema = BaseLogSchema.concat(
+const motionLogSchema = baseLogSchema.concat(
   yup.object().shape({
     type: yup.mixed<'motion'>().oneOf(['motion']).required(),
     isDisplayable: yup.boolean().oneOf([false]).required(),
@@ -168,7 +169,7 @@ export type ButtonLogValue = WithTypes<typeof buttonLogSchema>;
 export function logIsButtonLog(log: LogValue): log is ButtonLogValue {
   return log.type === 'button';
 }
-const buttonLogSchema = BaseLogSchema.concat(
+const buttonLogSchema = baseLogSchema.concat(
   yup.object().shape({
     type: yup.mixed<'button'>().oneOf(['button']).required(),
     isDisplayable: yup.boolean().oneOf([false]).required(),
