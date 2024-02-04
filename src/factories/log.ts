@@ -32,7 +32,6 @@ export const makeImpulseFactory = (TimestampKlass: typeof TimestampLike) =>
     tacticIds: [],
     allTacticIds: [],
     patterns: {},
-    patternUsage: {},
     gameplans: {},
     gameplan: gameplan,
   });
@@ -58,7 +57,7 @@ export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>
 export const makeDebriefLogFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<DebriefLogValue>({
     uid: Factory.each(i => i.toString()),
-    type: 'debrief',
+    type: 'dayDebrief',
     gameplanId: 'reminder1',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
@@ -73,8 +72,7 @@ export const makeDebriefLogFactory = (TimestampKlass: typeof TimestampLike) =>
     gameplan: gameplan,
     patterns: {},
     patternIds: [],
-    patternUsage: {},
-    patternUsageEntries: {},
+    tacticDataEntries: {},
   });
 
 export const makeMotionLogFactory = (TimestampKlass: typeof TimestampLike) =>

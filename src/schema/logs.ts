@@ -3,7 +3,7 @@
 import * as yup from 'yup';
 import { TimestampLike } from '../utils/TimestampLike';
 import { Gameplan, gameplanBaseSchema } from './gameplan';
-import { patternSchema, patternUsageSchema } from './pattern';
+import { patternSchema } from './pattern';
 import { TacticValue, tacticSchema } from './tactic';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { timestampSchema } from './utils/timestamp';
@@ -52,8 +52,14 @@ const baseLogSchema = yup.object().shape({
       impulseDebrief: yup.object().shape({}), // Replace with Record<string, string> if defined
     })
     .notRequired(),
-  tacticUsage: yup.object().shape({}).notRequired(), // Replace with Record<string, PatternUsageSchema> if defined
-  tacticData: yup.object().shape({}).notRequired(),
+  tacticData: optionalObjectOf(
+    yup.object({
+      value: yup.mixed().required(),
+      unit: yup.string().required(),
+      formattedValue: yup.string().required(),
+      isTotal: yup.boolean().notRequired(),
+    })
+  ),
   sharedWithSupportGroupIds: yup.array().of(yup.string()).notRequired(),
 });
 // This is important to prevent typescript generating a 40k line file :/
@@ -91,7 +97,6 @@ const impulseLogSchema = baseLogSchema.concat(
     patterns: objectOf(patternSchema),
     patternId: yup.string().required(),
     patternIds: yup.array().of(yup.string()).required(),
-    patternUsage: objectOf(patternUsageSchema),
     debriefNotes: yup.string().notRequired(),
     debriefReminderSentAt: yup.mixed().notRequired(),
     debriefedAt: yup.mixed().notRequired(),
@@ -124,20 +129,19 @@ const timeLogSchema = baseLogSchema.concat(
   })
 );
 
-export type DebriefLogValue = WithTypes<typeof debriefLogSchema>;
+export type DebriefLogValue = WithTypes<typeof dayDebriefLogSchema>;
 
 export function logIsDebriefLog(log: LogValue): log is DebriefLogValue {
-  return log.type === 'debrief';
+  return log.type === 'dayDebrief';
 }
-const debriefLogSchema = baseLogSchema.concat(
+const dayDebriefLogSchema = baseLogSchema.concat(
   yup.object().shape({
-    type: yup.mixed<'debrief'>().oneOf(['debrief']).required(),
+    type: yup.mixed<'dayDebrief'>().oneOf(['dayDebrief']).required(),
     patterns: objectOf(patternSchema),
     isDisplayable: yup.boolean().oneOf([true]).required(),
     gameplanId: yup.string().required(),
     patternIds: yup.array().of(yup.string()).required(),
-    patternUsage: yup.object().shape({}).required(), // Replace with Record<string, PatternUsageSchema> if defined
-    patternUsageEntries: yup.object().shape({}).required(), // Replace with Record<string, Record<string, PatternUsageSchema>> if defined
+    tacticDataEntries: yup.object().shape({}).required(), // Replace with Record<string, Record<string, PatternUsageSchema>> if defined
   })
 );
 
@@ -173,8 +177,8 @@ export const logSchema = yup.lazy(value => {
       return locationLogSchema;
     case 'time':
       return timeLogSchema;
-    case 'debrief':
-      return debriefLogSchema;
+    case 'dayDebrief':
+      return dayDebriefLogSchema;
     case 'motion':
       return motionLogSchema;
     case 'button':

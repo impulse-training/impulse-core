@@ -13,8 +13,6 @@ export declare const patternSchema: Yup.ObjectSchema<{
     };
     name: string;
     ordinal: number;
-    unit: NonNullable<"time" | "custom" | undefined>;
-    customUnit: string | undefined;
     supportGroupIds: Yup.Maybe<(string | undefined)[] | undefined>;
     notification: {
         title: string;
@@ -39,8 +37,6 @@ export declare const patternSchema: Yup.ObjectSchema<{
     };
     name: undefined;
     ordinal: undefined;
-    unit: undefined;
-    customUnit: undefined;
     supportGroupIds: "";
     notification: {
         title: undefined;
@@ -53,15 +49,3 @@ export declare const patternSchema: Yup.ObjectSchema<{
     debriefGameplanId: undefined;
 }, "">;
 export type PatternValue = Yup.InferType<typeof patternSchema>;
-export declare const patternUsageSchema: Yup.ObjectSchema<{
-    unit: NonNullable<"time" | "custom" | undefined>;
-    customUnit: string | undefined;
-    formattedValue: string;
-    value: number;
-}, Yup.AnyObject, {
-    unit: undefined;
-    customUnit: undefined;
-    formattedValue: undefined;
-    value: undefined;
-}, "">;
-export type PatternUsage = Yup.InferType<typeof patternUsageSchema>;

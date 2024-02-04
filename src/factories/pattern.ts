@@ -7,8 +7,6 @@ export const makePatternFactory = (TimestampKlass: typeof TimestampLike) =>
     uid: Factory.each(i => i.toString()),
     name: 'Cigarettes',
     ordinal: Factory.each(i => i),
-    unit: 'custom',
-    customUnit: 'cigarettes',
     setbackThreshold: 0,
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),

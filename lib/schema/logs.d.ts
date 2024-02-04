@@ -945,8 +945,14 @@ declare const baseLogSchema: yup.ObjectSchema<{
         impulse: {};
         impulseDebrief: {};
     } | null | undefined;
-    tacticUsage: {} | null | undefined;
-    tacticData: {} | null | undefined;
+    tacticData: {
+        [x: string]: {
+            isTotal?: yup.Maybe<boolean | undefined>;
+            value: {};
+            unit: string;
+            formattedValue: string;
+        };
+    } | null | undefined;
     sharedWithSupportGroupIds: yup.Maybe<(string | undefined)[] | undefined>;
 }, yup.AnyObject, {
     uid: undefined;
@@ -991,8 +997,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
         impulse: {};
         impulseDebrief: {};
     };
-    tacticUsage: {};
-    tacticData: {};
+    tacticData: undefined;
     sharedWithSupportGroupIds: "";
 }, "">;
 type WithTypes<T extends yup.ISchema<unknown>> = Omit<yup.InferType<T>, 'gameplan' | 'tactics' | 'gameplans'> & {
@@ -1943,8 +1948,14 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         impulse: {};
         impulseDebrief: {};
     } | null | undefined;
-    tacticUsage: {} | null | undefined;
-    tacticData: {} | null | undefined;
+    tacticData: {
+        [x: string]: {
+            isTotal?: yup.Maybe<boolean | undefined>;
+            value: {};
+            unit: string;
+            formattedValue: string;
+        };
+    } | null | undefined;
     sharedWithSupportGroupIds: yup.Maybe<(string | undefined)[] | undefined>;
 } & {
     type: "impulse";
@@ -2859,7 +2870,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     patterns: {
         [x: string]: {
             issueId?: yup.Maybe<string | undefined>;
-            customUnit?: string | undefined;
             supportGroupIds?: yup.Maybe<(string | undefined)[] | undefined>;
             notification?: {
                 title: string;
@@ -2880,21 +2890,12 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             name: string;
-            unit: NonNullable<"time" | "custom" | undefined>;
             sendWeeklyReports: NonNullable<boolean | undefined>;
             setbackThreshold: number;
         };
     };
     patternId: string;
     patternIds: (string | undefined)[];
-    patternUsage: {
-        [x: string]: {
-            customUnit?: string | undefined;
-            value: number;
-            unit: NonNullable<"time" | "custom" | undefined>;
-            formattedValue: string;
-        };
-    };
     debriefNotes: yup.Maybe<string | undefined>;
     debriefReminderSentAt: yup.Maybe<{} | undefined>;
     debriefedAt: yup.Maybe<{} | undefined>;
@@ -2941,8 +2942,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         impulse: {};
         impulseDebrief: {};
     };
-    tacticUsage: {};
-    tacticData: {};
+    tacticData: undefined;
     sharedWithSupportGroupIds: "";
     type: undefined;
     setAsActiveImpulse: undefined;
@@ -2953,7 +2953,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     patterns: undefined;
     patternId: undefined;
     patternIds: "";
-    patternUsage: undefined;
     debriefNotes: undefined;
     debriefReminderSentAt: undefined;
     debriefedAt: undefined;
@@ -3898,8 +3897,14 @@ declare const locationLogSchema: yup.ObjectSchema<{
         impulse: {};
         impulseDebrief: {};
     } | null | undefined;
-    tacticUsage: {} | null | undefined;
-    tacticData: {} | null | undefined;
+    tacticData: {
+        [x: string]: {
+            isTotal?: yup.Maybe<boolean | undefined>;
+            value: {};
+            unit: string;
+            formattedValue: string;
+        };
+    } | null | undefined;
     sharedWithSupportGroupIds: yup.Maybe<(string | undefined)[] | undefined>;
 } & {
     type: "location";
@@ -3950,8 +3955,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
         impulse: {};
         impulseDebrief: {};
     };
-    tacticUsage: {};
-    tacticData: {};
+    tacticData: undefined;
     sharedWithSupportGroupIds: "";
     type: undefined;
     locationId: undefined;
@@ -4899,8 +4903,14 @@ declare const timeLogSchema: yup.ObjectSchema<{
         impulse: {};
         impulseDebrief: {};
     } | null | undefined;
-    tacticUsage: {} | null | undefined;
-    tacticData: {} | null | undefined;
+    tacticData: {
+        [x: string]: {
+            isTotal?: yup.Maybe<boolean | undefined>;
+            value: {};
+            unit: string;
+            formattedValue: string;
+        };
+    } | null | undefined;
     sharedWithSupportGroupIds: yup.Maybe<(string | undefined)[] | undefined>;
 } & {
     type: "time";
@@ -4949,16 +4959,15 @@ declare const timeLogSchema: yup.ObjectSchema<{
         impulse: {};
         impulseDebrief: {};
     };
-    tacticUsage: {};
-    tacticData: {};
+    tacticData: undefined;
     sharedWithSupportGroupIds: "";
     type: undefined;
     isDisplayable: undefined;
     gameplanId: undefined;
 }, "">;
-export type DebriefLogValue = WithTypes<typeof debriefLogSchema>;
+export type DebriefLogValue = WithTypes<typeof dayDebriefLogSchema>;
 export declare function logIsDebriefLog(log: LogValue): log is DebriefLogValue;
-declare const debriefLogSchema: yup.ObjectSchema<{
+declare const dayDebriefLogSchema: yup.ObjectSchema<{
     uid: string;
     createdAt: {
         seconds: number;
@@ -5896,15 +5905,20 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         impulse: {};
         impulseDebrief: {};
     } | null | undefined;
-    tacticUsage: {} | null | undefined;
-    tacticData: {} | null | undefined;
+    tacticData: {
+        [x: string]: {
+            isTotal?: yup.Maybe<boolean | undefined>;
+            value: {};
+            unit: string;
+            formattedValue: string;
+        };
+    } | null | undefined;
     sharedWithSupportGroupIds: yup.Maybe<(string | undefined)[] | undefined>;
 } & {
-    type: "debrief";
+    type: "dayDebrief";
     patterns: {
         [x: string]: {
             issueId?: yup.Maybe<string | undefined>;
-            customUnit?: string | undefined;
             supportGroupIds?: yup.Maybe<(string | undefined)[] | undefined>;
             notification?: {
                 title: string;
@@ -5925,7 +5939,6 @@ declare const debriefLogSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             name: string;
-            unit: NonNullable<"time" | "custom" | undefined>;
             sendWeeklyReports: NonNullable<boolean | undefined>;
             setbackThreshold: number;
         };
@@ -5933,8 +5946,7 @@ declare const debriefLogSchema: yup.ObjectSchema<{
     isDisplayable: NonNullable<boolean | undefined>;
     gameplanId: string;
     patternIds: (string | undefined)[];
-    patternUsage: {};
-    patternUsageEntries: {};
+    tacticDataEntries: {};
 }, yup.AnyObject, {
     uid: undefined;
     createdAt: {
@@ -5978,16 +5990,14 @@ declare const debriefLogSchema: yup.ObjectSchema<{
         impulse: {};
         impulseDebrief: {};
     };
-    tacticUsage: {};
-    tacticData: {};
+    tacticData: undefined;
     sharedWithSupportGroupIds: "";
     type: undefined;
     patterns: undefined;
     isDisplayable: undefined;
     gameplanId: undefined;
     patternIds: "";
-    patternUsage: {};
-    patternUsageEntries: {};
+    tacticDataEntries: {};
 }, "">;
 export type MotionLogValue = WithTypes<typeof motionLogSchema>;
 export declare function logIsMotionLog(log: LogValue): log is MotionLogValue;
@@ -6929,8 +6939,14 @@ declare const motionLogSchema: yup.ObjectSchema<{
         impulse: {};
         impulseDebrief: {};
     } | null | undefined;
-    tacticUsage: {} | null | undefined;
-    tacticData: {} | null | undefined;
+    tacticData: {
+        [x: string]: {
+            isTotal?: yup.Maybe<boolean | undefined>;
+            value: {};
+            unit: string;
+            formattedValue: string;
+        };
+    } | null | undefined;
     sharedWithSupportGroupIds: yup.Maybe<(string | undefined)[] | undefined>;
 } & {
     type: "motion";
@@ -6978,8 +6994,7 @@ declare const motionLogSchema: yup.ObjectSchema<{
         impulse: {};
         impulseDebrief: {};
     };
-    tacticUsage: {};
-    tacticData: {};
+    tacticData: undefined;
     sharedWithSupportGroupIds: "";
     type: undefined;
     isDisplayable: undefined;
@@ -7924,8 +7939,14 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         impulse: {};
         impulseDebrief: {};
     } | null | undefined;
-    tacticUsage: {} | null | undefined;
-    tacticData: {} | null | undefined;
+    tacticData: {
+        [x: string]: {
+            isTotal?: yup.Maybe<boolean | undefined>;
+            value: {};
+            unit: string;
+            formattedValue: string;
+        };
+    } | null | undefined;
     sharedWithSupportGroupIds: yup.Maybe<(string | undefined)[] | undefined>;
 } & {
     type: "button";
@@ -7975,8 +7996,7 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         impulse: {};
         impulseDebrief: {};
     };
-    tacticUsage: {};
-    tacticData: {};
+    tacticData: undefined;
     sharedWithSupportGroupIds: "";
     type: undefined;
     isDisplayable: undefined;
@@ -8446,8 +8466,14 @@ export declare const logSchema: yup.Lazy<{
         impulse: {};
         impulseDebrief: {};
     } | null | undefined;
-    tacticUsage?: {} | null | undefined;
-    tacticData?: {} | null | undefined;
+    tacticData?: {
+        [x: string]: {
+            isTotal?: yup.Maybe<boolean | undefined>;
+            value: {};
+            unit: string;
+            formattedValue: string;
+        };
+    } | null | undefined;
     sharedWithSupportGroupIds?: yup.Maybe<(string | undefined)[] | undefined>;
     setAsActiveImpulse?: yup.Maybe<boolean | undefined>;
     pressCount?: yup.Maybe<number | undefined>;
@@ -9840,7 +9866,6 @@ export declare const logSchema: yup.Lazy<{
     patterns: {
         [x: string]: {
             issueId?: yup.Maybe<string | undefined>;
-            customUnit?: string | undefined;
             supportGroupIds?: yup.Maybe<(string | undefined)[] | undefined>;
             notification?: {
                 title: string;
@@ -9861,20 +9886,11 @@ export declare const logSchema: yup.Lazy<{
                 toDate: {};
             };
             name: string;
-            unit: NonNullable<"time" | "custom" | undefined>;
             sendWeeklyReports: NonNullable<boolean | undefined>;
             setbackThreshold: number;
         };
     };
     patternIds: (string | undefined)[];
-    patternUsage: {
-        [x: string]: {
-            customUnit?: string | undefined;
-            value: number;
-            unit: NonNullable<"time" | "custom" | undefined>;
-            formattedValue: string;
-        };
-    };
 } | {
     steps?: yup.Maybe<number | undefined>;
     tacticsById?: {
@@ -10338,8 +10354,14 @@ export declare const logSchema: yup.Lazy<{
         impulse: {};
         impulseDebrief: {};
     } | null | undefined;
-    tacticUsage?: {} | null | undefined;
-    tacticData?: {} | null | undefined;
+    tacticData?: {
+        [x: string]: {
+            isTotal?: yup.Maybe<boolean | undefined>;
+            value: {};
+            unit: string;
+            formattedValue: string;
+        };
+    } | null | undefined;
     sharedWithSupportGroupIds?: yup.Maybe<(string | undefined)[] | undefined>;
     type: "location";
     uid: string;
@@ -11284,8 +11306,14 @@ export declare const logSchema: yup.Lazy<{
         impulse: {};
         impulseDebrief: {};
     } | null | undefined;
-    tacticUsage?: {} | null | undefined;
-    tacticData?: {} | null | undefined;
+    tacticData?: {
+        [x: string]: {
+            isTotal?: yup.Maybe<boolean | undefined>;
+            value: {};
+            unit: string;
+            formattedValue: string;
+        };
+    } | null | undefined;
     sharedWithSupportGroupIds?: yup.Maybe<(string | undefined)[] | undefined>;
     type: "time";
     uid: string;
@@ -12228,10 +12256,16 @@ export declare const logSchema: yup.Lazy<{
         impulse: {};
         impulseDebrief: {};
     } | null | undefined;
-    tacticUsage?: {} | null | undefined;
-    tacticData?: {} | null | undefined;
+    tacticData?: {
+        [x: string]: {
+            isTotal?: yup.Maybe<boolean | undefined>;
+            value: {};
+            unit: string;
+            formattedValue: string;
+        };
+    } | null | undefined;
     sharedWithSupportGroupIds?: yup.Maybe<(string | undefined)[] | undefined>;
-    type: "debrief";
+    type: "dayDebrief";
     uid: string;
     createdAt: {
         seconds: number;
@@ -12712,7 +12746,6 @@ export declare const logSchema: yup.Lazy<{
     patterns: {
         [x: string]: {
             issueId?: yup.Maybe<string | undefined>;
-            customUnit?: string | undefined;
             supportGroupIds?: yup.Maybe<(string | undefined)[] | undefined>;
             notification?: {
                 title: string;
@@ -12733,14 +12766,12 @@ export declare const logSchema: yup.Lazy<{
                 toDate: {};
             };
             name: string;
-            unit: NonNullable<"time" | "custom" | undefined>;
             sendWeeklyReports: NonNullable<boolean | undefined>;
             setbackThreshold: number;
         };
     };
     patternIds: (string | undefined)[];
-    patternUsage: {};
-    patternUsageEntries: {};
+    tacticDataEntries: {};
 } | {
     steps?: yup.Maybe<number | undefined>;
     tacticsById?: {
@@ -13204,8 +13235,14 @@ export declare const logSchema: yup.Lazy<{
         impulse: {};
         impulseDebrief: {};
     } | null | undefined;
-    tacticUsage?: {} | null | undefined;
-    tacticData?: {} | null | undefined;
+    tacticData?: {
+        [x: string]: {
+            isTotal?: yup.Maybe<boolean | undefined>;
+            value: {};
+            unit: string;
+            formattedValue: string;
+        };
+    } | null | undefined;
     sharedWithSupportGroupIds?: yup.Maybe<(string | undefined)[] | undefined>;
     type: "motion";
     uid: string;
@@ -14147,8 +14184,14 @@ export declare const logSchema: yup.Lazy<{
         impulse: {};
         impulseDebrief: {};
     } | null | undefined;
-    tacticUsage?: {} | null | undefined;
-    tacticData?: {} | null | undefined;
+    tacticData?: {
+        [x: string]: {
+            isTotal?: yup.Maybe<boolean | undefined>;
+            value: {};
+            unit: string;
+            formattedValue: string;
+        };
+    } | null | undefined;
     sharedWithSupportGroupIds?: yup.Maybe<(string | undefined)[] | undefined>;
     type: "button";
     uid: string;

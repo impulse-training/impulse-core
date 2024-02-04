@@ -6,7 +6,6 @@ export declare class Log {
     get text(): string | undefined;
     get selectedPattern(): {
         issueId?: import("yup").Maybe<string | undefined>;
-        customUnit?: string | undefined;
         supportGroupIds?: import("yup").Maybe<(string | undefined)[] | undefined>;
         notification?: {
             title: string;
@@ -27,7 +26,6 @@ export declare class Log {
             toDate: {};
         };
         name: string;
-        unit: NonNullable<"time" | "custom" | undefined>;
         sendWeeklyReports: NonNullable<boolean | undefined>;
         setbackThreshold: number;
     };
