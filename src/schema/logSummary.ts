@@ -1,5 +1,5 @@
 import { TimestampLike } from '../utils/TimestampLike';
-import { LogValue, Outcome } from './logs';
+import { LogValue } from './logs';
 
 // A log summary is a simplified, lightweight summary of a log, that's displayed on the today screen
 // and logs screens. Note that a log summary always has the same id as its corresponding log.
@@ -13,7 +13,6 @@ export interface LogSummaryValue {
   timezone: string;
   text: string;
   locationFormatted?: string;
-  outcome?: Outcome;
   debriefNotes: string;
   sharedWithSupportGroupIds?: Array<string>;
   tacticsSummary: Record<string, { text: string; applied: boolean }>;

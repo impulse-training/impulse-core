@@ -1,5 +1,5 @@
 import { TimestampLike } from '../utils/TimestampLike';
-import { LogValue, Outcome } from './logs';
+import { LogValue } from './logs';
 export interface LogSummaryValue {
     uid: string;
     type: LogValue['type'];
@@ -9,7 +9,6 @@ export interface LogSummaryValue {
     timezone: string;
     text: string;
     locationFormatted?: string;
-    outcome?: Outcome;
     debriefNotes: string;
     sharedWithSupportGroupIds?: Array<string>;
     tacticsSummary: Record<string, {

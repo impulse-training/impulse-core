@@ -8,7 +8,10 @@ import { TacticValue, tacticSchema } from './tactic';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { timestampSchema } from './utils/timestamp';
 
-export type Outcome = 'success' | 'setback' | 'indeterminate';
+type GameplanObject = {
+  main: Gameplan;
+  impulseDebrief: Gameplan;
+};
 
 export type BaseLogValue = WithTypes<typeof baseLogSchema>;
 const baseLogSchema = yup.object().shape({
@@ -46,7 +49,6 @@ const baseLogSchema = yup.object().shape({
     .shape({
       impulse: yup.object().shape({}), // Replace with Record<string, string> if defined
       impulseDebrief: yup.object().shape({}), // Replace with Record<string, string> if defined
-      all: yup.object().shape({}), // Replace with Record<string, string> if defined
     })
     .notRequired(),
   tacticUsage: yup.object().shape({}).notRequired(), // Replace with Record<string, PatternUsageSchema> if defined
@@ -62,17 +64,8 @@ type WithTypes<T extends yup.ISchema<unknown>> = Omit<
   createdAt: TimestampLike;
   updatedAt: TimestampLike;
   startTime: TimestampLike;
-  gameplan: {
-    main: Gameplan;
-    impulseDebrief: Gameplan;
-  };
-  gameplans?: Record<
-    string,
-    {
-      main: Gameplan;
-      impulseDebrief: Gameplan;
-    }
-  >;
+  gameplan: GameplanObject;
+  gameplans?: Record<string, GameplanObject>;
   tactics: Record<string, TacticValue>;
 };
 
@@ -86,16 +79,13 @@ const impulseLogSchema = baseLogSchema.concat(
     type: yup.mixed<'impulse'>().oneOf(['impulse']).required(),
     setAsActiveImpulse: yup.boolean().notRequired(),
     pressCount: yup.number().notRequired(),
-    outcome: yup
-      .mixed<'success' | 'setback' | 'indeterminate'>()
-      .oneOf(['success', 'setback', 'indeterminate'])
-      .required(),
     isDisplayable: yup.boolean().oneOf([true]).required(),
     buttonPressSecondsSinceEpoch: yup.number().notRequired(),
     gameplans: objectOf(
-      yup
-        .object()
-        .shape({ main: gameplanBaseSchema, impulseDebrief: gameplanBaseSchema })
+      yup.object().shape({
+        main: gameplanBaseSchema,
+        impulseDebrief: gameplanBaseSchema,
+      })
     ),
     patterns: objectOf(patternSchema),
     patternId: yup.string().required(),
@@ -141,10 +131,6 @@ export function logIsDebriefLog(log: LogValue): log is DebriefLogValue {
 const debriefLogSchema = baseLogSchema.concat(
   yup.object().shape({
     type: yup.mixed<'debrief'>().oneOf(['debrief']).required(),
-    outcome: yup
-      .mixed()
-      .oneOf(['success', 'setback', 'indeterminate'])
-      .required(),
     patterns: objectOf(patternSchema),
     isDisplayable: yup.boolean().oneOf([true]).required(),
     gameplanId: yup.string().required(),

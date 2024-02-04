@@ -1,5 +1,5 @@
 import { TimestampLike } from '../utils/TimestampLike';
-import { ImpulseLogValue, LogValue } from './logs';
+import { LogValue } from './logs';
 
 export interface ChallengeValue {
   uid: string;
@@ -25,7 +25,7 @@ export interface ChallengeValue {
 
   // What makes an individual log eligible to be counted towards the challenge.
   requiredLogType?: LogValue['type'] | null;
-  requiredLogOutcome?: ImpulseLogValue['outcome'] | null;
+  // requiredLogOutcome?: ImpulseLogValue['outcome'] | null;
   requiredLogPatternId?: string | null;
   requiredLogTacticId?: string | null;
 

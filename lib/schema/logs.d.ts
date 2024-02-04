@@ -2,7 +2,10 @@ import * as yup from 'yup';
 import { TimestampLike } from '../utils/TimestampLike';
 import { Gameplan } from './gameplan';
 import { TacticValue } from './tactic';
-export type Outcome = 'success' | 'setback' | 'indeterminate';
+type GameplanObject = {
+    main: Gameplan;
+    impulseDebrief: Gameplan;
+};
 export type BaseLogValue = WithTypes<typeof baseLogSchema>;
 declare const baseLogSchema: yup.ObjectSchema<{
     uid: string;
@@ -495,7 +498,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
     supportGroupSuggestedTacticIds: {
         impulse: {};
         impulseDebrief: {};
-        all: {};
     } | null | undefined;
     tacticUsage: {} | null | undefined;
     tacticData: {} | null | undefined;
@@ -541,7 +543,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
     supportGroupSuggestedTacticIds: {
         impulse: {};
         impulseDebrief: {};
-        all: {};
     };
     tacticUsage: {};
     tacticData: {};
@@ -551,14 +552,8 @@ type WithTypes<T extends yup.ISchema<unknown>> = Omit<yup.InferType<T>, 'gamepla
     createdAt: TimestampLike;
     updatedAt: TimestampLike;
     startTime: TimestampLike;
-    gameplan: {
-        main: Gameplan;
-        impulseDebrief: Gameplan;
-    };
-    gameplans?: Record<string, {
-        main: Gameplan;
-        impulseDebrief: Gameplan;
-    }>;
+    gameplan: GameplanObject;
+    gameplans?: Record<string, GameplanObject>;
     tactics: Record<string, TacticValue>;
 };
 export type ImpulseLogValue = WithTypes<typeof impulseLogSchema>;
@@ -1054,7 +1049,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     supportGroupSuggestedTacticIds: {
         impulse: {};
         impulseDebrief: {};
-        all: {};
     } | null | undefined;
     tacticUsage: {} | null | undefined;
     tacticData: {} | null | undefined;
@@ -1063,7 +1057,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     type: "impulse";
     setAsActiveImpulse: yup.Maybe<boolean | undefined>;
     pressCount: yup.Maybe<number | undefined>;
-    outcome: NonNullable<"success" | "setback" | "indeterminate" | undefined>;
     isDisplayable: NonNullable<boolean | undefined>;
     buttonPressSecondsSinceEpoch: yup.Maybe<number | undefined>;
     gameplans: {
@@ -2053,7 +2046,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     supportGroupSuggestedTacticIds: {
         impulse: {};
         impulseDebrief: {};
-        all: {};
     };
     tacticUsage: {};
     tacticData: {};
@@ -2061,7 +2053,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     type: undefined;
     setAsActiveImpulse: undefined;
     pressCount: undefined;
-    outcome: undefined;
     isDisplayable: undefined;
     buttonPressSecondsSinceEpoch: undefined;
     gameplans: undefined;
@@ -2566,7 +2557,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
     supportGroupSuggestedTacticIds: {
         impulse: {};
         impulseDebrief: {};
-        all: {};
     } | null | undefined;
     tacticUsage: {} | null | undefined;
     tacticData: {} | null | undefined;
@@ -2618,7 +2608,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
     supportGroupSuggestedTacticIds: {
         impulse: {};
         impulseDebrief: {};
-        all: {};
     };
     tacticUsage: {};
     tacticData: {};
@@ -3122,7 +3111,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
     supportGroupSuggestedTacticIds: {
         impulse: {};
         impulseDebrief: {};
-        all: {};
     } | null | undefined;
     tacticUsage: {} | null | undefined;
     tacticData: {} | null | undefined;
@@ -3172,7 +3160,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
     supportGroupSuggestedTacticIds: {
         impulse: {};
         impulseDebrief: {};
-        all: {};
     };
     tacticUsage: {};
     tacticData: {};
@@ -3674,14 +3661,12 @@ declare const debriefLogSchema: yup.ObjectSchema<{
     supportGroupSuggestedTacticIds: {
         impulse: {};
         impulseDebrief: {};
-        all: {};
     } | null | undefined;
     tacticUsage: {} | null | undefined;
     tacticData: {} | null | undefined;
     sharedWithSupportGroupIds: yup.Maybe<(string | undefined)[] | undefined>;
 } & {
     type: "debrief";
-    outcome: {};
     patterns: {
         [x: string]: {
             issueId?: yup.Maybe<string | undefined>;
@@ -3757,13 +3742,11 @@ declare const debriefLogSchema: yup.ObjectSchema<{
     supportGroupSuggestedTacticIds: {
         impulse: {};
         impulseDebrief: {};
-        all: {};
     };
     tacticUsage: {};
     tacticData: {};
     sharedWithSupportGroupIds: "";
     type: undefined;
-    outcome: undefined;
     patterns: undefined;
     isDisplayable: undefined;
     gameplanId: undefined;
@@ -4264,7 +4247,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
     supportGroupSuggestedTacticIds: {
         impulse: {};
         impulseDebrief: {};
-        all: {};
     } | null | undefined;
     tacticUsage: {} | null | undefined;
     tacticData: {} | null | undefined;
@@ -4313,7 +4295,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
     supportGroupSuggestedTacticIds: {
         impulse: {};
         impulseDebrief: {};
-        all: {};
     };
     tacticUsage: {};
     tacticData: {};
@@ -4814,7 +4795,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
     supportGroupSuggestedTacticIds: {
         impulse: {};
         impulseDebrief: {};
-        all: {};
     } | null | undefined;
     tacticUsage: {} | null | undefined;
     tacticData: {} | null | undefined;
@@ -4865,7 +4845,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
     supportGroupSuggestedTacticIds: {
         impulse: {};
         impulseDebrief: {};
-        all: {};
     };
     tacticUsage: {};
     tacticData: {};
@@ -4891,7 +4870,6 @@ export declare const logSchema: yup.Lazy<{
     supportGroupSuggestedTacticIds?: {
         impulse: {};
         impulseDebrief: {};
-        all: {};
     } | null | undefined;
     tacticUsage?: {} | null | undefined;
     tacticData?: {} | null | undefined;
@@ -6283,7 +6261,6 @@ export declare const logSchema: yup.Lazy<{
             };
         };
     };
-    outcome: NonNullable<"success" | "setback" | "indeterminate" | undefined>;
     isDisplayable: NonNullable<boolean | undefined>;
     patterns: {
         [x: string]: {
@@ -6339,7 +6316,6 @@ export declare const logSchema: yup.Lazy<{
     supportGroupSuggestedTacticIds?: {
         impulse: {};
         impulseDebrief: {};
-        all: {};
     } | null | undefined;
     tacticUsage?: {} | null | undefined;
     tacticData?: {} | null | undefined;
@@ -6840,7 +6816,6 @@ export declare const logSchema: yup.Lazy<{
     supportGroupSuggestedTacticIds?: {
         impulse: {};
         impulseDebrief: {};
-        all: {};
     } | null | undefined;
     tacticUsage?: {} | null | undefined;
     tacticData?: {} | null | undefined;
@@ -7339,7 +7314,6 @@ export declare const logSchema: yup.Lazy<{
     supportGroupSuggestedTacticIds?: {
         impulse: {};
         impulseDebrief: {};
-        all: {};
     } | null | undefined;
     tacticUsage?: {} | null | undefined;
     tacticData?: {} | null | undefined;
@@ -7821,7 +7795,6 @@ export declare const logSchema: yup.Lazy<{
             title: string;
         };
     };
-    outcome: {};
     isDisplayable: NonNullable<boolean | undefined>;
     patterns: {
         [x: string]: {
@@ -7871,7 +7844,6 @@ export declare const logSchema: yup.Lazy<{
     supportGroupSuggestedTacticIds?: {
         impulse: {};
         impulseDebrief: {};
-        all: {};
     } | null | undefined;
     tacticUsage?: {} | null | undefined;
     tacticData?: {} | null | undefined;
@@ -8369,7 +8341,6 @@ export declare const logSchema: yup.Lazy<{
     supportGroupSuggestedTacticIds?: {
         impulse: {};
         impulseDebrief: {};
-        all: {};
     } | null | undefined;
     tacticUsage?: {} | null | undefined;
     tacticData?: {} | null | undefined;

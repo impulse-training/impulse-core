@@ -1,5 +1,5 @@
 import { TimestampLike } from '../utils/TimestampLike';
-import { ImpulseLogValue, LogValue } from './logs';
+import { LogValue } from './logs';
 export interface ChallengeValue {
     uid: string;
     createdAt: TimestampLike;
@@ -15,7 +15,6 @@ export interface ChallengeValue {
     consecutive: boolean;
     type: 'button' | 'tactic' | 'impulse-tactic' | 'setbacks';
     requiredLogType?: LogValue['type'] | null;
-    requiredLogOutcome?: ImpulseLogValue['outcome'] | null;
     requiredLogPatternId?: string | null;
     requiredLogTacticId?: string | null;
     eligibleLogDatesById: {
