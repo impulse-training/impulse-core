@@ -42,6 +42,7 @@ const baseLogSchema = yup.object().shape({
   steps: yup.number().notRequired(),
   tacticIds: yup.array().of(yup.string().required()).required(),
   tactics: objectOf(tacticSchema),
+  tacticsById: optionalObjectOf(tacticSchema),
   suggestedTacticIds: yup.array().of(yup.string()).notRequired(),
   isUpdatingSuggestions: yup.boolean().notRequired(),
   supportGroupSuggestedTacticIds: yup
