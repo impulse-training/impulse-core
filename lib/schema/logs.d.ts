@@ -36,7 +36,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
     };
     locationIsFetching: NonNullable<boolean | undefined>;
     locationFormatted: yup.Maybe<string | undefined>;
-    allTacticIds: (string | undefined)[];
     commentCount: yup.Maybe<number | undefined>;
     commentsById: {} | null | undefined;
     commentsByTacticId: {
@@ -983,7 +982,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
     };
     locationIsFetching: undefined;
     locationFormatted: undefined;
-    allTacticIds: "";
     commentCount: undefined;
     commentsById: {};
     commentsByTacticId: undefined;
@@ -1039,7 +1037,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     };
     locationIsFetching: NonNullable<boolean | undefined>;
     locationFormatted: yup.Maybe<string | undefined>;
-    allTacticIds: (string | undefined)[];
     commentCount: yup.Maybe<number | undefined>;
     commentsById: {} | null | undefined;
     commentsByTacticId: {
@@ -2928,7 +2925,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     };
     locationIsFetching: undefined;
     locationFormatted: undefined;
-    allTacticIds: "";
     commentCount: undefined;
     commentsById: {};
     commentsByTacticId: undefined;
@@ -2988,7 +2984,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
     };
     locationIsFetching: NonNullable<boolean | undefined>;
     locationFormatted: yup.Maybe<string | undefined>;
-    allTacticIds: (string | undefined)[];
     commentCount: yup.Maybe<number | undefined>;
     commentsById: {} | null | undefined;
     commentsByTacticId: {
@@ -3941,7 +3936,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
     };
     locationIsFetching: undefined;
     locationFormatted: undefined;
-    allTacticIds: "";
     commentCount: undefined;
     commentsById: {};
     commentsByTacticId: undefined;
@@ -3994,7 +3988,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
     };
     locationIsFetching: NonNullable<boolean | undefined>;
     locationFormatted: yup.Maybe<string | undefined>;
-    allTacticIds: (string | undefined)[];
     commentCount: yup.Maybe<number | undefined>;
     commentsById: {} | null | undefined;
     commentsByTacticId: {
@@ -4945,7 +4938,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
     };
     locationIsFetching: undefined;
     locationFormatted: undefined;
-    allTacticIds: "";
     commentCount: undefined;
     commentsById: {};
     commentsByTacticId: undefined;
@@ -4996,7 +4988,6 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
     };
     locationIsFetching: NonNullable<boolean | undefined>;
     locationFormatted: yup.Maybe<string | undefined>;
-    allTacticIds: (string | undefined)[];
     commentCount: yup.Maybe<number | undefined>;
     commentsById: {} | null | undefined;
     commentsByTacticId: {
@@ -5976,7 +5967,6 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
     };
     locationIsFetching: undefined;
     locationFormatted: undefined;
-    allTacticIds: "";
     commentCount: undefined;
     commentsById: {};
     commentsByTacticId: undefined;
@@ -6030,7 +6020,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
     };
     locationIsFetching: NonNullable<boolean | undefined>;
     locationFormatted: yup.Maybe<string | undefined>;
-    allTacticIds: (string | undefined)[];
     commentCount: yup.Maybe<number | undefined>;
     commentsById: {} | null | undefined;
     commentsByTacticId: {
@@ -6980,7 +6969,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
     };
     locationIsFetching: undefined;
     locationFormatted: undefined;
-    allTacticIds: "";
     commentCount: undefined;
     commentsById: {};
     commentsByTacticId: undefined;
@@ -7030,7 +7018,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
     };
     locationIsFetching: NonNullable<boolean | undefined>;
     locationFormatted: yup.Maybe<string | undefined>;
-    allTacticIds: (string | undefined)[];
     commentCount: yup.Maybe<number | undefined>;
     commentsById: {} | null | undefined;
     commentsByTacticId: {
@@ -7982,7 +7969,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
     };
     locationIsFetching: undefined;
     locationFormatted: undefined;
-    allTacticIds: "";
     commentCount: undefined;
     commentsById: {};
     commentsByTacticId: undefined;
@@ -8511,7 +8497,6 @@ export declare const logSchema: yup.Lazy<{
         toDate: {};
     };
     locationIsFetching: NonNullable<boolean | undefined>;
-    allTacticIds: (string | undefined)[];
     tactics: {
         [x: string]: {
             uid?: string | null | undefined;
@@ -10393,7 +10378,6 @@ export declare const logSchema: yup.Lazy<{
         toDate: {};
     };
     locationIsFetching: NonNullable<boolean | undefined>;
-    allTacticIds: (string | undefined)[];
     tactics: {
         [x: string]: {
             uid?: string | null | undefined;
@@ -11345,7 +11329,6 @@ export declare const logSchema: yup.Lazy<{
         toDate: {};
     };
     locationIsFetching: NonNullable<boolean | undefined>;
-    allTacticIds: (string | undefined)[];
     tactics: {
         [x: string]: {
             uid?: string | null | undefined;
@@ -12295,7 +12278,6 @@ export declare const logSchema: yup.Lazy<{
         toDate: {};
     };
     locationIsFetching: NonNullable<boolean | undefined>;
-    allTacticIds: (string | undefined)[];
     tactics: {
         [x: string]: {
             uid?: string | null | undefined;
@@ -13273,7 +13255,6 @@ export declare const logSchema: yup.Lazy<{
         toDate: {};
     };
     locationIsFetching: NonNullable<boolean | undefined>;
-    allTacticIds: (string | undefined)[];
     tactics: {
         [x: string]: {
             uid?: string | null | undefined;
@@ -14222,7 +14203,6 @@ export declare const logSchema: yup.Lazy<{
         toDate: {};
     };
     locationIsFetching: NonNullable<boolean | undefined>;
-    allTacticIds: (string | undefined)[];
     tactics: {
         [x: string]: {
             uid?: string | null | undefined;
