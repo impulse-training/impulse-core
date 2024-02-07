@@ -2,6 +2,7 @@ import { ExpoPushMessage, ExpoPushReceipt, ExpoPushTicket } from 'expo-server-sd
 import { TimestampLike } from '../utils/TimestampLike';
 export declare const NOTIFICATION_TYPES: {
     NEW_MESSAGE: string;
+    WEARING_BUTTON: string;
 };
 export type NotificationOption = 'push' | 'email';
 export interface NotificationValue {
