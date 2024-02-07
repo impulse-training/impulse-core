@@ -501,7 +501,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
     tacticData: {
         [x: string]: {
             isTotal?: yup.Maybe<boolean | undefined>;
-            value: {};
+            value: number;
             unit: string;
             formattedValue: string;
         };
@@ -1055,7 +1055,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     tacticData: {
         [x: string]: {
             isTotal?: yup.Maybe<boolean | undefined>;
-            value: {};
+            value: number;
             unit: string;
             formattedValue: string;
         };
@@ -2555,7 +2555,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
     tacticData: {
         [x: string]: {
             isTotal?: yup.Maybe<boolean | undefined>;
-            value: {};
+            value: number;
             unit: string;
             formattedValue: string;
         };
@@ -3112,7 +3112,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
     tacticData: {
         [x: string]: {
             isTotal?: yup.Maybe<boolean | undefined>;
-            value: {};
+            value: number;
             unit: string;
             formattedValue: string;
         };
@@ -3665,7 +3665,7 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
     tacticData: {
         [x: string]: {
             isTotal?: yup.Maybe<boolean | undefined>;
-            value: {};
+            value: number;
             unit: string;
             formattedValue: string;
         };
@@ -3703,7 +3703,9 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
     isDisplayable: NonNullable<boolean | undefined>;
     gameplanId: string;
     patternIds: (string | undefined)[];
-    tacticDataEntries: {};
+    tacticDataEntries: {
+        [x: string]: {} | undefined;
+    };
 }, yup.AnyObject, {
     uid: undefined;
     createdAt: {
@@ -3752,7 +3754,7 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
     isDisplayable: undefined;
     gameplanId: undefined;
     patternIds: "";
-    tacticDataEntries: {};
+    tacticDataEntries: undefined;
 }, "">;
 export type MotionLogValue = WithTypes<typeof motionLogSchema>;
 export declare function logIsMotionLog(log: LogValue): log is MotionLogValue;
@@ -4250,7 +4252,7 @@ declare const motionLogSchema: yup.ObjectSchema<{
     tacticData: {
         [x: string]: {
             isTotal?: yup.Maybe<boolean | undefined>;
-            value: {};
+            value: number;
             unit: string;
             formattedValue: string;
         };
@@ -4801,7 +4803,7 @@ declare const buttonLogSchema: yup.ObjectSchema<{
     tacticData: {
         [x: string]: {
             isTotal?: yup.Maybe<boolean | undefined>;
-            value: {};
+            value: number;
             unit: string;
             formattedValue: string;
         };
@@ -5326,7 +5328,7 @@ export declare const logSchema: yup.Lazy<{
     tacticData?: {
         [x: string]: {
             isTotal?: yup.Maybe<boolean | undefined>;
-            value: {};
+            value: number;
             unit: string;
             formattedValue: string;
         };
@@ -6767,7 +6769,7 @@ export declare const logSchema: yup.Lazy<{
     tacticData?: {
         [x: string]: {
             isTotal?: yup.Maybe<boolean | undefined>;
-            value: {};
+            value: number;
             unit: string;
             formattedValue: string;
         };
@@ -7272,7 +7274,7 @@ export declare const logSchema: yup.Lazy<{
     tacticData?: {
         [x: string]: {
             isTotal?: yup.Maybe<boolean | undefined>;
-            value: {};
+            value: number;
             unit: string;
             formattedValue: string;
         };
@@ -7775,7 +7777,7 @@ export declare const logSchema: yup.Lazy<{
     tacticData?: {
         [x: string]: {
             isTotal?: yup.Maybe<boolean | undefined>;
-            value: {};
+            value: number;
             unit: string;
             formattedValue: string;
         };
@@ -7840,7 +7842,9 @@ export declare const logSchema: yup.Lazy<{
         };
     };
     patternIds: (string | undefined)[];
-    tacticDataEntries: {};
+    tacticDataEntries: {
+        [x: string]: {} | undefined;
+    };
 } | {
     steps?: yup.Maybe<number | undefined>;
     tacticsById?: {
@@ -8307,7 +8311,7 @@ export declare const logSchema: yup.Lazy<{
     tacticData?: {
         [x: string]: {
             isTotal?: yup.Maybe<boolean | undefined>;
-            value: {};
+            value: number;
             unit: string;
             formattedValue: string;
         };
@@ -8809,7 +8813,7 @@ export declare const logSchema: yup.Lazy<{
     tacticData?: {
         [x: string]: {
             isTotal?: yup.Maybe<boolean | undefined>;
-            value: {};
+            value: number;
             unit: string;
             formattedValue: string;
         };

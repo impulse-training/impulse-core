@@ -1,4 +1,5 @@
 import * as yup from 'yup';
+import { objectOf } from './utils/objectOf';
 import { timestampSchema } from './utils/timestamp';
 
 export const supportGroupSchema = yup.object().shape({
@@ -7,7 +8,7 @@ export const supportGroupSchema = yup.object().shape({
   slug: yup.string(),
   templateId: yup.string().optional(),
   everythingPermissions: yup.boolean().optional(),
-  participantUids: yup.array().of(yup.string()).required(),
+  participantUids: yup.array().of(yup.string().required()).required(),
   memberTargetCount: yup.number().optional(),
   groupName: yup.string().required(),
   groupNameAliases: yup
@@ -31,7 +32,7 @@ export const supportGroupSchema = yup.object().shape({
   lastMessageUid: yup.string().optional(),
   isSharingDisabled: yup.boolean().optional(),
   isTemplate: yup.boolean().optional(),
-  unreadCounts: yup.object().required(),
+  unreadCounts: objectOf(yup.number().required()),
   permissions: yup.mixed().required(), // You would replace this with the actual schema for SupportGroupPermissions
   suggestedTacticIds: yup.object().required(),
 });

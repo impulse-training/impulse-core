@@ -39,12 +39,14 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         };
         thumbnailUrl: string;
         suggestedTacticIds: {};
-        participantUids: (string | undefined)[];
+        participantUids: string[];
         groupName: string;
         creatorName: string;
         creatorUid: string;
         icon: {};
-        unreadCounts: {};
+        unreadCounts: {
+            [x: string]: number;
+        };
         permissions: {};
     }, "createdAt" | "updatedAt" | "thumbnailUrl" | "suggestedTacticIds" | "participantUids" | "groupName" | "creatorName" | "creatorUid" | "icon" | "unreadCounts" | "permissions" | ("isTemplate" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "lastMessagePreview" | "invitationCode" | "invitationUrl" | "lastMessageUid" | "isSharingDisabled")>;
     impulseGameplanFactory: import("factory.ts").Factory<import("..").ImpulseGameplanValue, "type" | "uid" | "createdAt" | "updatedAt" | "tacticIds" | "tacticsById" | "suggestedTacticIds" | "patternId" | ("title" | "isTemplate" | "navigationTitle" | "timezone" | "patternName" | "issueId" | "parentIssueIds")>;

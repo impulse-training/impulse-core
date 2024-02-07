@@ -13,7 +13,7 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
     slug: string | undefined;
     templateId: string | undefined;
     everythingPermissions: boolean | undefined;
-    participantUids: (string | undefined)[];
+    participantUids: string[];
     memberTargetCount: number | undefined;
     groupName: string;
     groupNameAliases: {
@@ -30,7 +30,9 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
     lastMessageUid: string | undefined;
     isSharingDisabled: boolean | undefined;
     isTemplate: boolean | undefined;
-    unreadCounts: {};
+    unreadCounts: {
+        [x: string]: number;
+    };
     permissions: {};
     suggestedTacticIds: {};
 }, yup.AnyObject, {
@@ -62,7 +64,7 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
     lastMessageUid: undefined;
     isSharingDisabled: undefined;
     isTemplate: undefined;
-    unreadCounts: {};
+    unreadCounts: undefined;
     permissions: undefined;
     suggestedTacticIds: {};
 }, "">;

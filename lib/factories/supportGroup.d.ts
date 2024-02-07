@@ -27,11 +27,13 @@ export declare const makeSupportGroupFactory: (TimestampKlass: typeof TimestampL
     };
     thumbnailUrl: string;
     suggestedTacticIds: {};
-    participantUids: (string | undefined)[];
+    participantUids: string[];
     groupName: string;
     creatorName: string;
     creatorUid: string;
     icon: {};
-    unreadCounts: {};
+    unreadCounts: {
+        [x: string]: number;
+    };
     permissions: {};
 }, "createdAt" | "updatedAt" | "thumbnailUrl" | "suggestedTacticIds" | "participantUids" | "groupName" | "creatorName" | "creatorUid" | "icon" | "unreadCounts" | "permissions" | ("isTemplate" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "lastMessagePreview" | "invitationCode" | "invitationUrl" | "lastMessageUid" | "isSharingDisabled")>;

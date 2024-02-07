@@ -37,5 +37,5 @@ export declare class ImpulseGameplan extends Gameplan {
     constructor(id: string, data: ImpulseGameplanValue);
     get summary(): "Debriefing" | "When I have an impulse moment";
 }
-export declare function gameplanToClass(id: string, gameplan: GameplanValue, location: LocationValue): TimeGameplan | DebriefGameplan | LocationGameplan | ImpulseGameplan;
+export declare function gameplanToClass(id: string, gameplan: GameplanValue, location?: LocationValue): TimeGameplan | DebriefGameplan | LocationGameplan | ImpulseGameplan;
 export {};

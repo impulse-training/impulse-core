@@ -52,7 +52,7 @@ const baseLogSchema = yup.object().shape({
     .notRequired(),
   tacticData: optionalObjectOf(
     yup.object({
-      value: yup.mixed().required(),
+      value: yup.number().required(),
       unit: yup.string().required(),
       formattedValue: yup.string().required(),
       isTotal: yup.boolean().notRequired(),
@@ -142,7 +142,7 @@ const dayDebriefLogSchema = baseLogSchema.concat(
     isDisplayable: yup.boolean().oneOf([true]).required(),
     gameplanId: yup.string().required(),
     patternIds: yup.array().of(yup.string()).required(),
-    tacticDataEntries: yup.object().shape({}).required(), // Replace with Record<string, Record<string, PatternUsageSchema>> if defined
+    tacticDataEntries: objectOf(yup.mixed()), // Replace with Record<string, Record<string, PatternUsageSchema>> if defined
   })
 );
 

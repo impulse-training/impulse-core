@@ -123,13 +123,14 @@ export class ImpulseGameplan extends Gameplan {
 export function gameplanToClass(
   id: string,
   gameplan: GameplanValue,
-  location: LocationValue
+  location?: LocationValue
 ) {
   if (gameplan.type === 'time') {
     return new TimeGameplan(id, gameplan as TimeGameplanValue);
   } else if (['success', 'setback'].includes(gameplan.type)) {
     return new DebriefGameplan(id, gameplan as DayDebriefGameplanValue);
   } else if (gameplan.type === 'location') {
+    if (!location) throw new Error('no location');
     return new LocationGameplan(
       id,
       gameplan as LocationGameplanValue,

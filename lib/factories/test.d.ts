@@ -25,11 +25,13 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     };
     thumbnailUrl: string;
     suggestedTacticIds: {};
-    participantUids: (string | undefined)[];
+    participantUids: string[];
     groupName: string;
     creatorName: string;
     creatorUid: string;
     icon: {};
-    unreadCounts: {};
+    unreadCounts: {
+        [x: string]: number;
+    };
     permissions: {};
 }, "createdAt" | "updatedAt" | "thumbnailUrl" | "suggestedTacticIds" | "participantUids" | "groupName" | "creatorName" | "creatorUid" | "icon" | "unreadCounts" | "permissions" | ("isTemplate" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "lastMessagePreview" | "invitationCode" | "invitationUrl" | "lastMessageUid" | "isSharingDisabled")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "type" | "uid" | "ordinal" | "createdAt" | "updatedAt" | "title" | "description" | "image" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "isAvailableForRecommendation">, recommendationRuleFactory: import("factory.ts").Factory<import("..").RecommendationRuleValue, keyof import("..").RecommendationRuleValue>;
