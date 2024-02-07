@@ -58,7 +58,10 @@ const baseLogSchema = yup.object().shape({
       isTotal: yup.boolean().notRequired(),
     })
   ),
-  sharedWithSupportGroupIds: yup.array().of(yup.string()).notRequired(),
+  sharedWithSupportGroupIds: yup
+    .array()
+    .of(yup.string().required())
+    .notRequired(),
 });
 // This is important to prevent typescript generating a 40k line file :/
 

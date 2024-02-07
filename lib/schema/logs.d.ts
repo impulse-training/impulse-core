@@ -506,7 +506,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
             formattedValue: string;
         };
     } | null | undefined;
-    sharedWithSupportGroupIds: yup.Maybe<(string | undefined)[] | undefined>;
+    sharedWithSupportGroupIds: yup.Maybe<string[] | undefined>;
 }, yup.AnyObject, {
     uid: undefined;
     createdAt: {
@@ -1060,7 +1060,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             formattedValue: string;
         };
     } | null | undefined;
-    sharedWithSupportGroupIds: yup.Maybe<(string | undefined)[] | undefined>;
+    sharedWithSupportGroupIds: yup.Maybe<string[] | undefined>;
 } & {
     type: "impulse";
     setAsActiveImpulse: yup.Maybe<boolean | undefined>;
@@ -2560,7 +2560,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
             formattedValue: string;
         };
     } | null | undefined;
-    sharedWithSupportGroupIds: yup.Maybe<(string | undefined)[] | undefined>;
+    sharedWithSupportGroupIds: yup.Maybe<string[] | undefined>;
 } & {
     type: "location";
     locationId: string;
@@ -3117,7 +3117,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
             formattedValue: string;
         };
     } | null | undefined;
-    sharedWithSupportGroupIds: yup.Maybe<(string | undefined)[] | undefined>;
+    sharedWithSupportGroupIds: yup.Maybe<string[] | undefined>;
 } & {
     type: "time";
     isDisplayable: NonNullable<boolean | undefined>;
@@ -3670,7 +3670,7 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             formattedValue: string;
         };
     } | null | undefined;
-    sharedWithSupportGroupIds: yup.Maybe<(string | undefined)[] | undefined>;
+    sharedWithSupportGroupIds: yup.Maybe<string[] | undefined>;
 } & {
     type: "dayDebrief";
     patterns: {
@@ -4255,7 +4255,7 @@ declare const motionLogSchema: yup.ObjectSchema<{
             formattedValue: string;
         };
     } | null | undefined;
-    sharedWithSupportGroupIds: yup.Maybe<(string | undefined)[] | undefined>;
+    sharedWithSupportGroupIds: yup.Maybe<string[] | undefined>;
 } & {
     type: "motion";
     isDisplayable: NonNullable<boolean | undefined>;
@@ -4806,7 +4806,7 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             formattedValue: string;
         };
     } | null | undefined;
-    sharedWithSupportGroupIds: yup.Maybe<(string | undefined)[] | undefined>;
+    sharedWithSupportGroupIds: yup.Maybe<string[] | undefined>;
 } & {
     type: "button";
     isDisplayable: NonNullable<boolean | undefined>;
@@ -5331,7 +5331,7 @@ export declare const logSchema: yup.Lazy<{
             formattedValue: string;
         };
     } | null | undefined;
-    sharedWithSupportGroupIds?: yup.Maybe<(string | undefined)[] | undefined>;
+    sharedWithSupportGroupIds?: yup.Maybe<string[] | undefined>;
     setAsActiveImpulse?: yup.Maybe<boolean | undefined>;
     pressCount?: yup.Maybe<number | undefined>;
     buttonPressSecondsSinceEpoch?: yup.Maybe<number | undefined>;
@@ -6772,7 +6772,7 @@ export declare const logSchema: yup.Lazy<{
             formattedValue: string;
         };
     } | null | undefined;
-    sharedWithSupportGroupIds?: yup.Maybe<(string | undefined)[] | undefined>;
+    sharedWithSupportGroupIds?: yup.Maybe<string[] | undefined>;
     type: "location";
     uid: string;
     createdAt: {
@@ -7277,7 +7277,7 @@ export declare const logSchema: yup.Lazy<{
             formattedValue: string;
         };
     } | null | undefined;
-    sharedWithSupportGroupIds?: yup.Maybe<(string | undefined)[] | undefined>;
+    sharedWithSupportGroupIds?: yup.Maybe<string[] | undefined>;
     type: "time";
     uid: string;
     createdAt: {
@@ -7780,7 +7780,7 @@ export declare const logSchema: yup.Lazy<{
             formattedValue: string;
         };
     } | null | undefined;
-    sharedWithSupportGroupIds?: yup.Maybe<(string | undefined)[] | undefined>;
+    sharedWithSupportGroupIds?: yup.Maybe<string[] | undefined>;
     type: "dayDebrief";
     uid: string;
     createdAt: {
@@ -8312,7 +8312,7 @@ export declare const logSchema: yup.Lazy<{
             formattedValue: string;
         };
     } | null | undefined;
-    sharedWithSupportGroupIds?: yup.Maybe<(string | undefined)[] | undefined>;
+    sharedWithSupportGroupIds?: yup.Maybe<string[] | undefined>;
     type: "motion";
     uid: string;
     createdAt: {
@@ -8814,7 +8814,7 @@ export declare const logSchema: yup.Lazy<{
             formattedValue: string;
         };
     } | null | undefined;
-    sharedWithSupportGroupIds?: yup.Maybe<(string | undefined)[] | undefined>;
+    sharedWithSupportGroupIds?: yup.Maybe<string[] | undefined>;
     type: "button";
     uid: string;
     createdAt: {
