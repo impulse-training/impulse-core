@@ -345,6 +345,76 @@ declare const measureSlidersTacticSchema: yup.ObjectSchema<{
     rows: "";
 }, "">;
 export type MeasureSlidersTactic = yup.InferType<typeof measureSlidersTacticSchema>;
+declare const measureSliderTacticSchema: yup.ObjectSchema<{
+    type: "measure-slider";
+    uid: string | null | undefined;
+    ordinal: number | null | undefined;
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    title: string;
+    description: string | null | undefined;
+    image: {
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
+        uri?: yup.Maybe<string | undefined>;
+    } | null | undefined;
+    backgroundColor: string | null | undefined;
+    isTemplate: boolean | null | undefined;
+    language: string | null | undefined;
+    href: string | null | undefined;
+    categoryIds: (string | undefined)[] | null | undefined;
+    isShared: boolean | null | undefined;
+    isResponseRequired: boolean | null | undefined;
+    isAvailableForRecommendation: boolean | null | undefined;
+    key: string;
+    label: string;
+    value: number | null | undefined;
+    lowEmoji: string;
+    highEmoji: string;
+}, yup.AnyObject, {
+    type: undefined;
+    uid: undefined;
+    ordinal: undefined;
+    createdAt: {
+        seconds: undefined;
+        nanoseconds: undefined;
+        toDate: undefined;
+    };
+    updatedAt: {
+        seconds: undefined;
+        nanoseconds: undefined;
+        toDate: undefined;
+    };
+    title: undefined;
+    description: undefined;
+    image: {
+        localFilePath: undefined;
+        storagePath: undefined;
+        uri: undefined;
+    };
+    backgroundColor: undefined;
+    isTemplate: undefined;
+    language: undefined;
+    href: undefined;
+    categoryIds: "";
+    isShared: undefined;
+    isResponseRequired: undefined;
+    isAvailableForRecommendation: undefined;
+    key: undefined;
+    label: undefined;
+    value: undefined;
+    lowEmoji: undefined;
+    highEmoji: undefined;
+}, "">;
+export type MeasureSliderTactic = yup.InferType<typeof measureSliderTacticSchema>;
 declare const measureTimeTacticSchema: yup.ObjectSchema<{
     type: "measure-time";
     uid: string | null | undefined;
@@ -465,7 +535,7 @@ declare const measureCounterTacticSchema: yup.ObjectSchema<{
     isAvailableForRecommendation: undefined;
 }, "">;
 export type MeasureCounterTactic = yup.InferType<typeof measureCounterTacticSchema>;
-export type MeasureTactic = MeasureSlidersTactic | MeasureTimeTactic | MeasureCounterTactic;
+export type MeasureTactic = MeasureSlidersTactic | MeasureSliderTactic | MeasureTimeTactic | MeasureCounterTactic;
 declare const folderTacticSchema: yup.ObjectSchema<{
     type: "folder";
     uid: string | null | undefined;
@@ -1097,6 +1167,40 @@ export declare const tacticSchema: yup.Lazy<{
     isShared?: boolean | null | undefined;
     isResponseRequired?: boolean | null | undefined;
     isAvailableForRecommendation?: boolean | null | undefined;
+    value?: number | null | undefined;
+    type: "measure-slider";
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    title: string;
+    key: string;
+    label: string;
+    lowEmoji: string;
+    highEmoji: string;
+} | {
+    uid?: string | null | undefined;
+    ordinal?: number | null | undefined;
+    description?: string | null | undefined;
+    image?: {
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
+        uri?: yup.Maybe<string | undefined>;
+    } | null | undefined;
+    backgroundColor?: string | null | undefined;
+    isTemplate?: boolean | null | undefined;
+    language?: string | null | undefined;
+    href?: string | null | undefined;
+    categoryIds?: (string | undefined)[] | null | undefined;
+    isShared?: boolean | null | undefined;
+    isResponseRequired?: boolean | null | undefined;
+    isAvailableForRecommendation?: boolean | null | undefined;
     type: "measure-time";
     createdAt: {
         seconds: number;
@@ -1355,7 +1459,7 @@ export declare const tacticSchema: yup.Lazy<{
 }, yup.AnyObject, any>;
 declare const tacticSchemas: Record<TacticValue['type'], yup.ObjectSchema<TacticValue>>;
 export declare const tacticColors: string[];
-export { audioTacticSchema, breatheTacticSchema, emotionsTacticSchema, folderTacticSchema, measureCounterTacticSchema, measureSlidersTacticSchema, measureTimeTacticSchema, optionsTacticSchema, phoneTacticSchema, questionTacticSchema, stepsTacticSchema, tacticSchemas, taskTacticSchema, timerTacticSchema, videoTacticSchema, };
+export { audioTacticSchema, breatheTacticSchema, emotionsTacticSchema, folderTacticSchema, measureCounterTacticSchema, measureSliderTacticSchema, measureSlidersTacticSchema, measureTimeTacticSchema, optionsTacticSchema, phoneTacticSchema, questionTacticSchema, stepsTacticSchema, tacticSchemas, taskTacticSchema, timerTacticSchema, videoTacticSchema, };
 export type WithTacticsById<T> = Omit<T, 'tacticsById'> & {
     tacticsById: Record<string, TacticValue>;
 };

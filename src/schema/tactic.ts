@@ -69,8 +69,22 @@ const measureSlidersTacticSchema = tacticValueBaseSchema(
     )
     .required(),
 });
+
 export type MeasureSlidersTactic = yup.InferType<
   typeof measureSlidersTacticSchema
+>;
+const measureSliderTacticSchema = tacticValueBaseSchema('measure-slider').shape(
+  {
+    key: yup.string().required(),
+    label: yup.string().required(),
+    value: yup.number().nullable(),
+    lowEmoji: yup.string().required(),
+    highEmoji: yup.string().required(),
+  }
+);
+
+export type MeasureSliderTactic = yup.InferType<
+  typeof measureSliderTacticSchema
 >;
 
 const measureTimeTacticSchema = tacticValueBaseSchema('measure-time');
@@ -83,6 +97,7 @@ export type MeasureCounterTactic = yup.InferType<
 
 export type MeasureTactic =
   | MeasureSlidersTactic
+  | MeasureSliderTactic
   | MeasureTimeTactic
   | MeasureCounterTactic;
 
@@ -149,6 +164,8 @@ export const tacticSchema = yup.lazy(value => {
       return questionTacticSchema;
     case 'measure-sliders':
       return measureSlidersTacticSchema;
+    case 'measure-slider':
+      return measureSliderTacticSchema;
     case 'measure-time':
       return measureTimeTacticSchema;
     case 'measure-counter':
@@ -236,6 +253,7 @@ export {
   emotionsTacticSchema,
   folderTacticSchema,
   measureCounterTacticSchema,
+  measureSliderTacticSchema,
   measureSlidersTacticSchema,
   measureTimeTacticSchema,
   optionsTacticSchema,

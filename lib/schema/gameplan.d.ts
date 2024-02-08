@@ -192,6 +192,40 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
+            value?: number | null | undefined;
+            type: "measure-slider";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+            key: string;
+            label: string;
+            lowEmoji: string;
+            highEmoji: string;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-time";
             createdAt: {
                 seconds: number;
@@ -631,6 +665,40 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
                 lowEmoji: string;
                 highEmoji: string;
             }[];
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            value?: number | null | undefined;
+            type: "measure-slider";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+            key: string;
+            label: string;
+            lowEmoji: string;
+            highEmoji: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
@@ -1145,6 +1213,40 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
+            value?: number | null | undefined;
+            type: "measure-slider";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+            key: string;
+            label: string;
+            lowEmoji: string;
+            highEmoji: string;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-time";
             createdAt: {
                 seconds: number;
@@ -1629,6 +1731,40 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
                 lowEmoji: string;
                 highEmoji: string;
             }[];
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            value?: number | null | undefined;
+            type: "measure-slider";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+            key: string;
+            label: string;
+            lowEmoji: string;
+            highEmoji: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
@@ -2148,6 +2284,40 @@ declare const dayDebriefGameplanSchema: yup.ObjectSchema<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
+            value?: number | null | undefined;
+            type: "measure-slider";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+            key: string;
+            label: string;
+            lowEmoji: string;
+            highEmoji: string;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-time";
             createdAt: {
                 seconds: number;
@@ -2625,6 +2795,40 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
                 lowEmoji: string;
                 highEmoji: string;
             }[];
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            value?: number | null | undefined;
+            type: "measure-slider";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+            key: string;
+            label: string;
+            lowEmoji: string;
+            highEmoji: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
@@ -3159,6 +3363,40 @@ export declare const gameplanSchema: yup.Lazy<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
+            value?: number | null | undefined;
+            type: "measure-slider";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+            key: string;
+            label: string;
+            lowEmoji: string;
+            highEmoji: string;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-time";
             createdAt: {
                 seconds: number;
@@ -3611,6 +3849,40 @@ export declare const gameplanSchema: yup.Lazy<{
                 lowEmoji: string;
                 highEmoji: string;
             }[];
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            value?: number | null | undefined;
+            type: "measure-slider";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+            key: string;
+            label: string;
+            lowEmoji: string;
+            highEmoji: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
@@ -4100,6 +4372,40 @@ export declare const gameplanSchema: yup.Lazy<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
+            value?: number | null | undefined;
+            type: "measure-slider";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+            key: string;
+            label: string;
+            lowEmoji: string;
+            highEmoji: string;
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-time";
             createdAt: {
                 seconds: number;
@@ -4552,6 +4858,40 @@ export declare const gameplanSchema: yup.Lazy<{
                 lowEmoji: string;
                 highEmoji: string;
             }[];
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            value?: number | null | undefined;
+            type: "measure-slider";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+            key: string;
+            label: string;
+            lowEmoji: string;
+            highEmoji: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
