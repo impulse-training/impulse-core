@@ -8,12 +8,16 @@ import { TacticValue, tacticSchema } from './tactic';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { timestampSchema } from './utils/timestamp';
 
-type GameplanObject = {
+type ImpulseGameplan = {
   main: Gameplan;
   impulseDebrief: Gameplan;
 };
 
-export type BaseLogValue = WithTypes<typeof baseLogSchema>;
+type BasicGameplan = {
+  main: Gameplan;
+};
+
+export type BaseLogValue = WithTypes<typeof baseLogSchema, unknown>;
 const baseLogSchema = yup.object().shape({
   uid: yup.string().required(),
   createdAt: timestampSchema.required(),
@@ -65,19 +69,22 @@ const baseLogSchema = yup.object().shape({
 });
 // This is important to prevent typescript generating a 40k line file :/
 
-type WithTypes<T extends yup.ISchema<unknown>> = Omit<
+type WithTypes<T extends yup.ISchema<unknown>, G> = Omit<
   yup.InferType<T>,
   'gameplan' | 'tactics' | 'gameplans'
 > & {
   createdAt: TimestampLike;
   updatedAt: TimestampLike;
   startTime: TimestampLike;
-  gameplan: GameplanObject;
-  gameplans?: Record<string, GameplanObject>;
-  tactics: Record<string, TacticValue>;
+  gameplan: G;
+  gameplans?: Record<string, G>;
+  tacticsById: Record<string, TacticValue>;
 };
 
-export type ImpulseLogValue = WithTypes<typeof impulseLogSchema>;
+export type ImpulseLogValue = WithTypes<
+  typeof impulseLogSchema,
+  ImpulseGameplan
+>;
 
 export function logIsImpulseLog(log: LogValue): log is ImpulseLogValue {
   return log.type === 'impulse';
@@ -104,7 +111,10 @@ const impulseLogSchema = baseLogSchema.concat(
   })
 );
 
-export type LocationLogValue = WithTypes<typeof locationLogSchema>;
+export type LocationLogValue = WithTypes<
+  typeof locationLogSchema,
+  BasicGameplan
+>;
 export function logIsLocationLog(log: LogValue): log is LocationLogValue {
   return log.type === 'location';
 }
@@ -118,7 +128,7 @@ const locationLogSchema = baseLogSchema.concat(
   })
 );
 
-export type TimeLogValue = WithTypes<typeof timeLogSchema>;
+export type TimeLogValue = WithTypes<typeof timeLogSchema, BasicGameplan>;
 export function logIsTimeLog(log: LogValue): log is TimeLogValue {
   return log.type === 'time';
 }
@@ -130,7 +140,10 @@ const timeLogSchema = baseLogSchema.concat(
   })
 );
 
-export type DebriefLogValue = WithTypes<typeof dayDebriefLogSchema>;
+export type DebriefLogValue = WithTypes<
+  typeof dayDebriefLogSchema,
+  BasicGameplan
+>;
 
 export function logIsDebriefLog(log: LogValue): log is DebriefLogValue {
   return log.type === 'dayDebrief';
@@ -146,7 +159,7 @@ const dayDebriefLogSchema = baseLogSchema.concat(
   })
 );
 
-export type MotionLogValue = WithTypes<typeof motionLogSchema>;
+export type MotionLogValue = WithTypes<typeof motionLogSchema, BasicGameplan>;
 export function logIsMotionLog(log: LogValue): log is MotionLogValue {
   return log.type === 'motion';
 }
@@ -157,7 +170,7 @@ const motionLogSchema = baseLogSchema.concat(
   })
 );
 
-export type ButtonLogValue = WithTypes<typeof buttonLogSchema>;
+export type ButtonLogValue = WithTypes<typeof buttonLogSchema, BasicGameplan>;
 export function logIsButtonLog(log: LogValue): log is ButtonLogValue {
   return log.type === 'button';
 }

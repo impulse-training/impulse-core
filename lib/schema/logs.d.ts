@@ -2,11 +2,14 @@ import * as yup from 'yup';
 import { TimestampLike } from '../utils/TimestampLike';
 import { Gameplan } from './gameplan';
 import { TacticValue } from './tactic';
-type GameplanObject = {
+type ImpulseGameplan = {
     main: Gameplan;
     impulseDebrief: Gameplan;
 };
-export type BaseLogValue = WithTypes<typeof baseLogSchema>;
+type BasicGameplan = {
+    main: Gameplan;
+};
+export type BaseLogValue = WithTypes<typeof baseLogSchema, unknown>;
 declare const baseLogSchema: yup.ObjectSchema<{
     uid: string;
     createdAt: {
@@ -551,15 +554,15 @@ declare const baseLogSchema: yup.ObjectSchema<{
     tacticData: undefined;
     sharedWithSupportGroupIds: "";
 }, "">;
-type WithTypes<T extends yup.ISchema<unknown>> = Omit<yup.InferType<T>, 'gameplan' | 'tactics' | 'gameplans'> & {
+type WithTypes<T extends yup.ISchema<unknown>, G> = Omit<yup.InferType<T>, 'gameplan' | 'tactics' | 'gameplans'> & {
     createdAt: TimestampLike;
     updatedAt: TimestampLike;
     startTime: TimestampLike;
-    gameplan: GameplanObject;
-    gameplans?: Record<string, GameplanObject>;
-    tactics: Record<string, TacticValue>;
+    gameplan: G;
+    gameplans?: Record<string, G>;
+    tacticsById: Record<string, TacticValue>;
 };
-export type ImpulseLogValue = WithTypes<typeof impulseLogSchema>;
+export type ImpulseLogValue = WithTypes<typeof impulseLogSchema, ImpulseGameplan>;
 export declare function logIsImpulseLog(log: LogValue): log is ImpulseLogValue;
 declare const impulseLogSchema: yup.ObjectSchema<{
     uid: string;
@@ -2059,7 +2062,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     debriefReminderSentAt: undefined;
     debriefedAt: undefined;
 }, "">;
-export type LocationLogValue = WithTypes<typeof locationLogSchema>;
+export type LocationLogValue = WithTypes<typeof locationLogSchema, BasicGameplan>;
 export declare function logIsLocationLog(log: LogValue): log is LocationLogValue;
 declare const locationLogSchema: yup.ObjectSchema<{
     uid: string;
@@ -2616,7 +2619,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
     locationName: undefined;
     locationMode: undefined;
 }, "">;
-export type TimeLogValue = WithTypes<typeof timeLogSchema>;
+export type TimeLogValue = WithTypes<typeof timeLogSchema, BasicGameplan>;
 export declare function logIsTimeLog(log: LogValue): log is TimeLogValue;
 declare const timeLogSchema: yup.ObjectSchema<{
     uid: string;
@@ -3169,7 +3172,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
     isDisplayable: undefined;
     gameplanId: undefined;
 }, "">;
-export type DebriefLogValue = WithTypes<typeof dayDebriefLogSchema>;
+export type DebriefLogValue = WithTypes<typeof dayDebriefLogSchema, BasicGameplan>;
 export declare function logIsDebriefLog(log: LogValue): log is DebriefLogValue;
 declare const dayDebriefLogSchema: yup.ObjectSchema<{
     uid: string;
@@ -3756,7 +3759,7 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
     patternIds: "";
     tacticDataEntries: undefined;
 }, "">;
-export type MotionLogValue = WithTypes<typeof motionLogSchema>;
+export type MotionLogValue = WithTypes<typeof motionLogSchema, BasicGameplan>;
 export declare function logIsMotionLog(log: LogValue): log is MotionLogValue;
 declare const motionLogSchema: yup.ObjectSchema<{
     uid: string;
@@ -4307,7 +4310,7 @@ declare const motionLogSchema: yup.ObjectSchema<{
     type: undefined;
     isDisplayable: undefined;
 }, "">;
-export type ButtonLogValue = WithTypes<typeof buttonLogSchema>;
+export type ButtonLogValue = WithTypes<typeof buttonLogSchema, BasicGameplan>;
 export declare function logIsButtonLog(log: LogValue): log is ButtonLogValue;
 declare const buttonLogSchema: yup.ObjectSchema<{
     uid: string;
