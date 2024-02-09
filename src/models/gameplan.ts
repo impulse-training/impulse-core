@@ -76,7 +76,7 @@ export class TimeGameplan extends Gameplan {
   }
 }
 
-export class DebriefGameplan extends Gameplan {
+export class DayDebriefGameplan extends Gameplan {
   constructor(private id: string, private data: DayDebriefGameplanValue) {
     super();
   }
@@ -127,8 +127,8 @@ export function gameplanToClass(
 ) {
   if (gameplan.type === 'time') {
     return new TimeGameplan(id, gameplan as TimeGameplanValue);
-  } else if (['success', 'setback'].includes(gameplan.type)) {
-    return new DebriefGameplan(id, gameplan as DayDebriefGameplanValue);
+  } else if (gameplan.type === 'dayDebrief') {
+    return new DayDebriefGameplan(id, gameplan as DayDebriefGameplanValue);
   } else if (gameplan.type === 'location') {
     if (!location) throw new Error('no location');
     return new LocationGameplan(

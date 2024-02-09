@@ -15,7 +15,7 @@ export declare class TimeGameplan extends Gameplan {
     };
     get summary(): string | null;
 }
-export declare class DebriefGameplan extends Gameplan {
+export declare class DayDebriefGameplan extends Gameplan {
     private id;
     private data;
     constructor(id: string, data: DayDebriefGameplanValue);
@@ -37,5 +37,5 @@ export declare class ImpulseGameplan extends Gameplan {
     constructor(id: string, data: ImpulseGameplanValue);
     get summary(): "Debriefing" | "When I have an impulse moment";
 }
-export declare function gameplanToClass(id: string, gameplan: GameplanValue, location?: LocationValue): TimeGameplan | DebriefGameplan | LocationGameplan | ImpulseGameplan;
+export declare function gameplanToClass(id: string, gameplan: GameplanValue, location?: LocationValue): TimeGameplan | DayDebriefGameplan | LocationGameplan | ImpulseGameplan;
 export {};
