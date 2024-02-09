@@ -238,7 +238,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
-            value?: number | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -251,8 +250,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
-            key: string;
-            label: string;
             lowEmoji: string;
             highEmoji: string;
         } | {
@@ -313,37 +310,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
-        } | {
-            uid?: string | null | undefined;
-            ordinal?: number | null | undefined;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            backgroundColor?: string | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            type: "folder";
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            title: string;
-            tacticIds: (string | undefined)[];
-            tacticsById: {} | null;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
@@ -826,7 +792,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
-            value?: number | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -839,8 +804,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
-            key: string;
-            label: string;
             lowEmoji: string;
             highEmoji: string;
         } | {
@@ -901,37 +864,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
-        } | {
-            uid?: string | null | undefined;
-            ordinal?: number | null | undefined;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            backgroundColor?: string | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            type: "folder";
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            title: string;
-            tacticIds: (string | undefined)[];
-            tacticsById: {} | null;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
@@ -1331,7 +1263,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         isShared?: boolean | null | undefined;
                         isResponseRequired?: boolean | null | undefined;
                         isAvailableForRecommendation?: boolean | null | undefined;
-                        value?: number | null | undefined;
                         type: "measure-slider";
                         createdAt: {
                             seconds: number;
@@ -1344,8 +1275,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                             toDate: {};
                         };
                         title: string;
-                        key: string;
-                        label: string;
                         lowEmoji: string;
                         highEmoji: string;
                     } | {
@@ -1406,37 +1335,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                             toDate: {};
                         };
                         title: string;
-                    } | {
-                        uid?: string | null | undefined;
-                        ordinal?: number | null | undefined;
-                        description?: string | null | undefined;
-                        image?: {
-                            localFilePath?: yup.Maybe<string | undefined>;
-                            storagePath?: yup.Maybe<string | undefined>;
-                            uri?: yup.Maybe<string | undefined>;
-                        } | null | undefined;
-                        backgroundColor?: string | null | undefined;
-                        isTemplate?: boolean | null | undefined;
-                        language?: string | null | undefined;
-                        href?: string | null | undefined;
-                        categoryIds?: (string | undefined)[] | null | undefined;
-                        isShared?: boolean | null | undefined;
-                        isResponseRequired?: boolean | null | undefined;
-                        isAvailableForRecommendation?: boolean | null | undefined;
-                        type: "folder";
-                        createdAt: {
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: {};
-                        };
-                        updatedAt: {
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: {};
-                        };
-                        title: string;
-                        tacticIds: (string | undefined)[];
-                        tacticsById: {} | null;
                     } | {
                         uid?: string | null | undefined;
                         ordinal?: number | null | undefined;
@@ -1815,7 +1713,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         isShared?: boolean | null | undefined;
                         isResponseRequired?: boolean | null | undefined;
                         isAvailableForRecommendation?: boolean | null | undefined;
-                        value?: number | null | undefined;
                         type: "measure-slider";
                         createdAt: {
                             seconds: number;
@@ -1828,8 +1725,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                             toDate: {};
                         };
                         title: string;
-                        key: string;
-                        label: string;
                         lowEmoji: string;
                         highEmoji: string;
                     } | {
@@ -1890,37 +1785,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                             toDate: {};
                         };
                         title: string;
-                    } | {
-                        uid?: string | null | undefined;
-                        ordinal?: number | null | undefined;
-                        description?: string | null | undefined;
-                        image?: {
-                            localFilePath?: yup.Maybe<string | undefined>;
-                            storagePath?: yup.Maybe<string | undefined>;
-                            uri?: yup.Maybe<string | undefined>;
-                        } | null | undefined;
-                        backgroundColor?: string | null | undefined;
-                        isTemplate?: boolean | null | undefined;
-                        language?: string | null | undefined;
-                        href?: string | null | undefined;
-                        categoryIds?: (string | undefined)[] | null | undefined;
-                        isShared?: boolean | null | undefined;
-                        isResponseRequired?: boolean | null | undefined;
-                        isAvailableForRecommendation?: boolean | null | undefined;
-                        type: "folder";
-                        createdAt: {
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: {};
-                        };
-                        updatedAt: {
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: {};
-                        };
-                        title: string;
-                        tacticIds: (string | undefined)[];
-                        tacticsById: {} | null;
                     } | {
                         uid?: string | null | undefined;
                         ordinal?: number | null | undefined;
@@ -2428,7 +2292,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
-            value?: number | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -2441,8 +2304,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
-            key: string;
-            label: string;
             lowEmoji: string;
             highEmoji: string;
         } | {
@@ -2503,37 +2364,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
-        } | {
-            uid?: string | null | undefined;
-            ordinal?: number | null | undefined;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            backgroundColor?: string | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            type: "folder";
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            title: string;
-            tacticIds: (string | undefined)[];
-            tacticsById: {} | null;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
@@ -3019,7 +2849,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
-            value?: number | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -3032,8 +2861,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
-            key: string;
-            label: string;
             lowEmoji: string;
             highEmoji: string;
         } | {
@@ -3094,37 +2921,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
-        } | {
-            uid?: string | null | undefined;
-            ordinal?: number | null | undefined;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            backgroundColor?: string | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            type: "folder";
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            title: string;
-            tacticIds: (string | undefined)[];
-            tacticsById: {} | null;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
@@ -3606,7 +3402,6 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
-            value?: number | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -3619,8 +3414,6 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
-            key: string;
-            label: string;
             lowEmoji: string;
             highEmoji: string;
         } | {
@@ -3681,37 +3474,6 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
-        } | {
-            uid?: string | null | undefined;
-            ordinal?: number | null | undefined;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            backgroundColor?: string | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            type: "folder";
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            title: string;
-            tacticIds: (string | undefined)[];
-            tacticsById: {} | null;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
@@ -4227,7 +3989,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
-            value?: number | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -4240,8 +4001,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
-            key: string;
-            label: string;
             lowEmoji: string;
             highEmoji: string;
         } | {
@@ -4302,37 +4061,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
-        } | {
-            uid?: string | null | undefined;
-            ordinal?: number | null | undefined;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            backgroundColor?: string | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            type: "folder";
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            title: string;
-            tacticIds: (string | undefined)[];
-            tacticsById: {} | null;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
@@ -4812,7 +4540,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
-            value?: number | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -4825,8 +4552,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
-            key: string;
-            label: string;
             lowEmoji: string;
             highEmoji: string;
         } | {
@@ -4887,37 +4612,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
-        } | {
-            uid?: string | null | undefined;
-            ordinal?: number | null | undefined;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            backgroundColor?: string | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            type: "folder";
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            title: string;
-            tacticIds: (string | undefined)[];
-            tacticsById: {} | null;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
@@ -5362,7 +5056,6 @@ export declare const logSchema: yup.Lazy<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
-            value?: number | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -5375,8 +5068,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
-            key: string;
-            label: string;
             lowEmoji: string;
             highEmoji: string;
         } | {
@@ -5437,37 +5128,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
-        } | {
-            uid?: string | null | undefined;
-            ordinal?: number | null | undefined;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            backgroundColor?: string | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            type: "folder";
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            title: string;
-            tacticIds: (string | undefined)[];
-            tacticsById: {} | null;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
@@ -5906,7 +5566,6 @@ export declare const logSchema: yup.Lazy<{
                         isShared?: boolean | null | undefined;
                         isResponseRequired?: boolean | null | undefined;
                         isAvailableForRecommendation?: boolean | null | undefined;
-                        value?: number | null | undefined;
                         type: "measure-slider";
                         createdAt: {
                             seconds: number;
@@ -5919,8 +5578,6 @@ export declare const logSchema: yup.Lazy<{
                             toDate: {};
                         };
                         title: string;
-                        key: string;
-                        label: string;
                         lowEmoji: string;
                         highEmoji: string;
                     } | {
@@ -5981,37 +5638,6 @@ export declare const logSchema: yup.Lazy<{
                             toDate: {};
                         };
                         title: string;
-                    } | {
-                        uid?: string | null | undefined;
-                        ordinal?: number | null | undefined;
-                        description?: string | null | undefined;
-                        image?: {
-                            localFilePath?: yup.Maybe<string | undefined>;
-                            storagePath?: yup.Maybe<string | undefined>;
-                            uri?: yup.Maybe<string | undefined>;
-                        } | null | undefined;
-                        backgroundColor?: string | null | undefined;
-                        isTemplate?: boolean | null | undefined;
-                        language?: string | null | undefined;
-                        href?: string | null | undefined;
-                        categoryIds?: (string | undefined)[] | null | undefined;
-                        isShared?: boolean | null | undefined;
-                        isResponseRequired?: boolean | null | undefined;
-                        isAvailableForRecommendation?: boolean | null | undefined;
-                        type: "folder";
-                        createdAt: {
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: {};
-                        };
-                        updatedAt: {
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: {};
-                        };
-                        title: string;
-                        tacticIds: (string | undefined)[];
-                        tacticsById: {} | null;
                     } | {
                         uid?: string | null | undefined;
                         ordinal?: number | null | undefined;
@@ -6390,7 +6016,6 @@ export declare const logSchema: yup.Lazy<{
                         isShared?: boolean | null | undefined;
                         isResponseRequired?: boolean | null | undefined;
                         isAvailableForRecommendation?: boolean | null | undefined;
-                        value?: number | null | undefined;
                         type: "measure-slider";
                         createdAt: {
                             seconds: number;
@@ -6403,8 +6028,6 @@ export declare const logSchema: yup.Lazy<{
                             toDate: {};
                         };
                         title: string;
-                        key: string;
-                        label: string;
                         lowEmoji: string;
                         highEmoji: string;
                     } | {
@@ -6465,37 +6088,6 @@ export declare const logSchema: yup.Lazy<{
                             toDate: {};
                         };
                         title: string;
-                    } | {
-                        uid?: string | null | undefined;
-                        ordinal?: number | null | undefined;
-                        description?: string | null | undefined;
-                        image?: {
-                            localFilePath?: yup.Maybe<string | undefined>;
-                            storagePath?: yup.Maybe<string | undefined>;
-                            uri?: yup.Maybe<string | undefined>;
-                        } | null | undefined;
-                        backgroundColor?: string | null | undefined;
-                        isTemplate?: boolean | null | undefined;
-                        language?: string | null | undefined;
-                        href?: string | null | undefined;
-                        categoryIds?: (string | undefined)[] | null | undefined;
-                        isShared?: boolean | null | undefined;
-                        isResponseRequired?: boolean | null | undefined;
-                        isAvailableForRecommendation?: boolean | null | undefined;
-                        type: "folder";
-                        createdAt: {
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: {};
-                        };
-                        updatedAt: {
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: {};
-                        };
-                        title: string;
-                        tacticIds: (string | undefined)[];
-                        tacticsById: {} | null;
                     } | {
                         uid?: string | null | undefined;
                         ordinal?: number | null | undefined;
@@ -6905,7 +6497,6 @@ export declare const logSchema: yup.Lazy<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
-            value?: number | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -6918,8 +6509,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
-            key: string;
-            label: string;
             lowEmoji: string;
             highEmoji: string;
         } | {
@@ -6980,37 +6569,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
-        } | {
-            uid?: string | null | undefined;
-            ordinal?: number | null | undefined;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            backgroundColor?: string | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            type: "folder";
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            title: string;
-            tacticIds: (string | undefined)[];
-            tacticsById: {} | null;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
@@ -7444,7 +7002,6 @@ export declare const logSchema: yup.Lazy<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
-            value?: number | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -7457,8 +7014,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
-            key: string;
-            label: string;
             lowEmoji: string;
             highEmoji: string;
         } | {
@@ -7519,37 +7074,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
-        } | {
-            uid?: string | null | undefined;
-            ordinal?: number | null | undefined;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            backgroundColor?: string | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            type: "folder";
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            title: string;
-            tacticIds: (string | undefined)[];
-            tacticsById: {} | null;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
@@ -7981,7 +7505,6 @@ export declare const logSchema: yup.Lazy<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
-            value?: number | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -7994,8 +7517,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
-            key: string;
-            label: string;
             lowEmoji: string;
             highEmoji: string;
         } | {
@@ -8056,37 +7577,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
-        } | {
-            uid?: string | null | undefined;
-            ordinal?: number | null | undefined;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            backgroundColor?: string | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            type: "folder";
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            title: string;
-            tacticIds: (string | undefined)[];
-            tacticsById: {} | null;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
@@ -8549,7 +8039,6 @@ export declare const logSchema: yup.Lazy<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
-            value?: number | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -8562,8 +8051,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
-            key: string;
-            label: string;
             lowEmoji: string;
             highEmoji: string;
         } | {
@@ -8624,37 +8111,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
-        } | {
-            uid?: string | null | undefined;
-            ordinal?: number | null | undefined;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            backgroundColor?: string | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            type: "folder";
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            title: string;
-            tacticIds: (string | undefined)[];
-            tacticsById: {} | null;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
@@ -9085,7 +8541,6 @@ export declare const logSchema: yup.Lazy<{
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
             isAvailableForRecommendation?: boolean | null | undefined;
-            value?: number | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -9098,8 +8553,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
-            key: string;
-            label: string;
             lowEmoji: string;
             highEmoji: string;
         } | {
@@ -9160,37 +8613,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
-        } | {
-            uid?: string | null | undefined;
-            ordinal?: number | null | undefined;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            backgroundColor?: string | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            type: "folder";
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            title: string;
-            tacticIds: (string | undefined)[];
-            tacticsById: {} | null;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;

@@ -75,9 +75,6 @@ export type MeasureSlidersTactic = yup.InferType<
 >;
 const measureSliderTacticSchema = tacticValueBaseSchema('measure-slider').shape(
   {
-    key: yup.string().required(),
-    label: yup.string().required(),
-    value: yup.number().nullable(),
     lowEmoji: yup.string().required(),
     highEmoji: yup.string().required(),
   }
@@ -100,12 +97,6 @@ export type MeasureTactic =
   | MeasureSliderTactic
   | MeasureTimeTactic
   | MeasureCounterTactic;
-
-const folderTacticSchema = tacticValueBaseSchema('folder').shape({
-  tacticIds: yup.array().of(yup.string()).required(),
-  tacticsById: yup.object().nullable(),
-});
-export type FolderTactic = yup.InferType<typeof folderTacticSchema>;
 
 const phoneTacticSchema = tacticValueBaseSchema('phone').shape({
   supportGroupId: yup.string().required(),
@@ -145,7 +136,6 @@ export type TacticValue =
   | QuestionTactic
   | TaskTactic
   | TimerTactic
-  | FolderTactic
   | MeasureTactic
   | OptionsTactic
   | BreatheTactic
@@ -172,8 +162,6 @@ export const tacticSchema = yup.lazy(value => {
       return measureCounterTacticSchema;
     case 'timer':
       return timerTacticSchema;
-    case 'folder':
-      return folderTacticSchema;
     case 'options':
       return optionsTacticSchema;
     case 'breathe':
@@ -202,7 +190,6 @@ const tacticSchemas: Record<
   'measure-time': measureTimeTacticSchema,
   'measure-counter': measureCounterTacticSchema,
   timer: timerTacticSchema,
-  folder: folderTacticSchema,
   options: optionsTacticSchema,
   breathe: breatheTacticSchema,
   steps: stepsTacticSchema,
@@ -246,12 +233,31 @@ export const tacticColors = [
   '#D08BCD',
 ];
 
+// Export type guard functions for each tactic type
+export const isStepsTactic = ({ type }: TacticValue) => type === 'steps';
+export const isEmotionsTactic = ({ type }: TacticValue) => type === 'emotions';
+export const isAudioTactic = ({ type }: TacticValue) => type === 'audio';
+export const isVideoTactic = ({ type }: TacticValue) => type === 'video';
+export const isMeasureSlidersTactic = ({ type }: TacticValue) =>
+  type === 'measure-sliders';
+export const isMeasureSliderTactic = ({ type }: TacticValue) =>
+  type === 'measure-slider';
+export const isMeasureTimeTactic = ({ type }: TacticValue) =>
+  type === 'measure-time';
+export const isMeasureCounterTactic = ({ type }: TacticValue) =>
+  type === 'measure-counter';
+export const isPhoneTacticValue = ({ type }: TacticValue) => type === 'phone';
+export const isTimerTactic = ({ type }: TacticValue) => type === 'timer';
+export const isBreatheTactic = ({ type }: TacticValue) => type === 'breathe';
+export const isOptionsTactic = ({ type }: TacticValue) => type === 'options';
+export const isTaskTactic = ({ type }: TacticValue) => type === 'task';
+export const isQuestionTactic = ({ type }: TacticValue) => type === 'question';
+
 // Export all schema so they can be used elsewhere in the application
 export {
   audioTacticSchema,
   breatheTacticSchema,
   emotionsTacticSchema,
-  folderTacticSchema,
   measureCounterTacticSchema,
   measureSliderTacticSchema,
   measureSlidersTacticSchema,

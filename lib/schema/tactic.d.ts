@@ -374,9 +374,6 @@ declare const measureSliderTacticSchema: yup.ObjectSchema<{
     isShared: boolean | null | undefined;
     isResponseRequired: boolean | null | undefined;
     isAvailableForRecommendation: boolean | null | undefined;
-    key: string;
-    label: string;
-    value: number | null | undefined;
     lowEmoji: string;
     highEmoji: string;
 }, yup.AnyObject, {
@@ -408,9 +405,6 @@ declare const measureSliderTacticSchema: yup.ObjectSchema<{
     isShared: undefined;
     isResponseRequired: undefined;
     isAvailableForRecommendation: undefined;
-    key: undefined;
-    label: undefined;
-    value: undefined;
     lowEmoji: undefined;
     highEmoji: undefined;
 }, "">;
@@ -536,70 +530,6 @@ declare const measureCounterTacticSchema: yup.ObjectSchema<{
 }, "">;
 export type MeasureCounterTactic = yup.InferType<typeof measureCounterTacticSchema>;
 export type MeasureTactic = MeasureSlidersTactic | MeasureSliderTactic | MeasureTimeTactic | MeasureCounterTactic;
-declare const folderTacticSchema: yup.ObjectSchema<{
-    type: "folder";
-    uid: string | null | undefined;
-    ordinal: number | null | undefined;
-    createdAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    title: string;
-    description: string | null | undefined;
-    image: {
-        localFilePath?: yup.Maybe<string | undefined>;
-        storagePath?: yup.Maybe<string | undefined>;
-        uri?: yup.Maybe<string | undefined>;
-    } | null | undefined;
-    backgroundColor: string | null | undefined;
-    isTemplate: boolean | null | undefined;
-    language: string | null | undefined;
-    href: string | null | undefined;
-    categoryIds: (string | undefined)[] | null | undefined;
-    isShared: boolean | null | undefined;
-    isResponseRequired: boolean | null | undefined;
-    isAvailableForRecommendation: boolean | null | undefined;
-    tacticIds: (string | undefined)[];
-    tacticsById: {} | null;
-}, yup.AnyObject, {
-    type: undefined;
-    uid: undefined;
-    ordinal: undefined;
-    createdAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    updatedAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    title: undefined;
-    description: undefined;
-    image: {
-        localFilePath: undefined;
-        storagePath: undefined;
-        uri: undefined;
-    };
-    backgroundColor: undefined;
-    isTemplate: undefined;
-    language: undefined;
-    href: undefined;
-    categoryIds: "";
-    isShared: undefined;
-    isResponseRequired: undefined;
-    isAvailableForRecommendation: undefined;
-    tacticIds: "";
-    tacticsById: {};
-}, "">;
-export type FolderTactic = yup.InferType<typeof folderTacticSchema>;
 declare const phoneTacticSchema: yup.ObjectSchema<{
     type: "phone";
     uid: string | null | undefined;
@@ -978,7 +908,7 @@ declare const questionTacticSchema: yup.ObjectSchema<{
     isAvailableForRecommendation: undefined;
 }, "">;
 export type QuestionTactic = yup.InferType<typeof questionTacticSchema>;
-export type TacticValue = PhoneTacticValue | AudioTactic | VideoTactic | QuestionTactic | TaskTactic | TimerTactic | FolderTactic | MeasureTactic | OptionsTactic | BreatheTactic | StepsTactic | EmotionsTactic;
+export type TacticValue = PhoneTacticValue | AudioTactic | VideoTactic | QuestionTactic | TaskTactic | TimerTactic | MeasureTactic | OptionsTactic | BreatheTactic | StepsTactic | EmotionsTactic;
 export declare const tacticSchema: yup.Lazy<{
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
@@ -1167,7 +1097,6 @@ export declare const tacticSchema: yup.Lazy<{
     isShared?: boolean | null | undefined;
     isResponseRequired?: boolean | null | undefined;
     isAvailableForRecommendation?: boolean | null | undefined;
-    value?: number | null | undefined;
     type: "measure-slider";
     createdAt: {
         seconds: number;
@@ -1180,8 +1109,6 @@ export declare const tacticSchema: yup.Lazy<{
         toDate: {};
     };
     title: string;
-    key: string;
-    label: string;
     lowEmoji: string;
     highEmoji: string;
 } | {
@@ -1242,37 +1169,6 @@ export declare const tacticSchema: yup.Lazy<{
         toDate: {};
     };
     title: string;
-} | {
-    uid?: string | null | undefined;
-    ordinal?: number | null | undefined;
-    description?: string | null | undefined;
-    image?: {
-        localFilePath?: yup.Maybe<string | undefined>;
-        storagePath?: yup.Maybe<string | undefined>;
-        uri?: yup.Maybe<string | undefined>;
-    } | null | undefined;
-    backgroundColor?: string | null | undefined;
-    isTemplate?: boolean | null | undefined;
-    language?: string | null | undefined;
-    href?: string | null | undefined;
-    categoryIds?: (string | undefined)[] | null | undefined;
-    isShared?: boolean | null | undefined;
-    isResponseRequired?: boolean | null | undefined;
-    isAvailableForRecommendation?: boolean | null | undefined;
-    type: "folder";
-    createdAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    title: string;
-    tacticIds: (string | undefined)[];
-    tacticsById: {} | null;
 } | {
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
@@ -1459,7 +1355,21 @@ export declare const tacticSchema: yup.Lazy<{
 }, yup.AnyObject, any>;
 declare const tacticSchemas: Record<TacticValue['type'], yup.ObjectSchema<TacticValue>>;
 export declare const tacticColors: string[];
-export { audioTacticSchema, breatheTacticSchema, emotionsTacticSchema, folderTacticSchema, measureCounterTacticSchema, measureSliderTacticSchema, measureSlidersTacticSchema, measureTimeTacticSchema, optionsTacticSchema, phoneTacticSchema, questionTacticSchema, stepsTacticSchema, tacticSchemas, taskTacticSchema, timerTacticSchema, videoTacticSchema, };
+export declare const isStepsTactic: ({ type }: TacticValue) => boolean;
+export declare const isEmotionsTactic: ({ type }: TacticValue) => boolean;
+export declare const isAudioTactic: ({ type }: TacticValue) => boolean;
+export declare const isVideoTactic: ({ type }: TacticValue) => boolean;
+export declare const isMeasureSlidersTactic: ({ type }: TacticValue) => boolean;
+export declare const isMeasureSliderTactic: ({ type }: TacticValue) => boolean;
+export declare const isMeasureTimeTactic: ({ type }: TacticValue) => boolean;
+export declare const isMeasureCounterTactic: ({ type }: TacticValue) => boolean;
+export declare const isPhoneTacticValue: ({ type }: TacticValue) => boolean;
+export declare const isTimerTactic: ({ type }: TacticValue) => boolean;
+export declare const isBreatheTactic: ({ type }: TacticValue) => boolean;
+export declare const isOptionsTactic: ({ type }: TacticValue) => boolean;
+export declare const isTaskTactic: ({ type }: TacticValue) => boolean;
+export declare const isQuestionTactic: ({ type }: TacticValue) => boolean;
+export { audioTacticSchema, breatheTacticSchema, emotionsTacticSchema, measureCounterTacticSchema, measureSliderTacticSchema, measureSlidersTacticSchema, measureTimeTacticSchema, optionsTacticSchema, phoneTacticSchema, questionTacticSchema, stepsTacticSchema, tacticSchemas, taskTacticSchema, timerTacticSchema, videoTacticSchema, };
 export type WithTacticsById<T> = Omit<T, 'tacticsById'> & {
     tacticsById: Record<string, TacticValue>;
 };
