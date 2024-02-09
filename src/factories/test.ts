@@ -12,7 +12,6 @@ export const {
   motionLogFactory,
   recommendationFactory,
   debriefLogFactory,
-  logSummaryFactory,
   debriefGameplanFactory,
   profileFactory,
   supportGroupFactory,

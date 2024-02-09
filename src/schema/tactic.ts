@@ -53,26 +53,6 @@ const videoTacticSchema = tacticValueBaseSchema('video').shape({
 });
 export type VideoTactic = yup.InferType<typeof videoTacticSchema>;
 
-const measureSlidersTacticSchema = tacticValueBaseSchema(
-  'measure-sliders'
-).shape({
-  rows: yup
-    .array()
-    .of(
-      yup.object({
-        key: yup.string().required(),
-        label: yup.string().required(),
-        value: yup.number().nullable(),
-        lowEmoji: yup.string().required(),
-        highEmoji: yup.string().required(),
-      })
-    )
-    .required(),
-});
-
-export type MeasureSlidersTactic = yup.InferType<
-  typeof measureSlidersTacticSchema
->;
 const measureSliderTacticSchema = tacticValueBaseSchema('measure-slider').shape(
   {
     lowEmoji: yup.string().required(),
@@ -93,7 +73,6 @@ export type MeasureCounterTactic = yup.InferType<
 >;
 
 export type MeasureTactic =
-  | MeasureSlidersTactic
   | MeasureSliderTactic
   | MeasureTimeTactic
   | MeasureCounterTactic;
@@ -152,8 +131,6 @@ export const tacticSchema = yup.lazy(value => {
       return videoTacticSchema;
     case 'question':
       return questionTacticSchema;
-    case 'measure-sliders':
-      return measureSlidersTacticSchema;
     case 'measure-slider':
       return measureSliderTacticSchema;
     case 'measure-time':
@@ -186,7 +163,6 @@ const tacticSchemas: Record<
   audio: audioTacticSchema,
   video: videoTacticSchema,
   question: questionTacticSchema,
-  'measure-sliders': measureSlidersTacticSchema,
   'measure-time': measureTimeTacticSchema,
   'measure-counter': measureCounterTacticSchema,
   timer: timerTacticSchema,
@@ -238,8 +214,6 @@ export const isStepsTactic = ({ type }: TacticValue) => type === 'steps';
 export const isEmotionsTactic = ({ type }: TacticValue) => type === 'emotions';
 export const isAudioTactic = ({ type }: TacticValue) => type === 'audio';
 export const isVideoTactic = ({ type }: TacticValue) => type === 'video';
-export const isMeasureSlidersTactic = ({ type }: TacticValue) =>
-  type === 'measure-sliders';
 export const isMeasureSliderTactic = ({ type }: TacticValue) =>
   type === 'measure-slider';
 export const isMeasureTimeTactic = ({ type }: TacticValue) =>
@@ -260,7 +234,6 @@ export {
   emotionsTacticSchema,
   measureCounterTacticSchema,
   measureSliderTacticSchema,
-  measureSlidersTacticSchema,
   measureTimeTacticSchema,
   optionsTacticSchema,
   phoneTacticSchema,

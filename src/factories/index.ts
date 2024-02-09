@@ -16,7 +16,6 @@ import {
   makeMotionLogFactory,
   makeTimeLogFactory,
 } from './log';
-import { makeLogSummaryFactory } from './logSummary';
 import { makeMessageFactory } from './message';
 import { makePatternFactory } from './pattern';
 import { makeAdminProfileFactory, makeProfileFactory } from './profile';
@@ -41,7 +40,6 @@ export function makeFactories(TimestampKlass: typeof TimestampLike) {
     locationLogFactory: makeLocationLogFactory(TimestampKlass),
     debriefLogFactory: makeDebriefLogFactory(TimestampKlass),
     locationFactory: makeLocationFactory(TimestampKlass),
-    logSummaryFactory: makeLogSummaryFactory(TimestampKlass),
     profileFactory: makeProfileFactory(TimestampKlass),
     issueFactory: makeIssueFactory(TimestampKlass),
     adminProfileFactory: makeAdminProfileFactory(TimestampKlass),

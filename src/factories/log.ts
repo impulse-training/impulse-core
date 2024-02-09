@@ -30,6 +30,7 @@ export const makeImpulseFactory = (TimestampKlass: typeof TimestampLike) =>
     location: {},
     locationIsFetching: false,
     tacticIds: [],
+    seenTacticIds: [],
     patterns: {},
     gameplans: {},
     gameplan: gameplan,
@@ -49,6 +50,7 @@ export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>
     location: {},
     locationIsFetching: false,
     tacticIds: [],
+    seenTacticIds: [],
     gameplan: gameplan,
   });
 
@@ -66,6 +68,7 @@ export const makeDebriefLogFactory = (TimestampKlass: typeof TimestampLike) =>
     location: {},
     locationIsFetching: false,
     tacticIds: [],
+    seenTacticIds: [],
     gameplan: gameplan,
     patterns: {},
     patternIds: [],
@@ -85,6 +88,7 @@ export const makeMotionLogFactory = (TimestampKlass: typeof TimestampLike) =>
     location: {},
     locationIsFetching: false,
     tacticIds: [],
+    seenTacticIds: [],
     gameplan: gameplan,
   });
 
@@ -104,5 +108,6 @@ export const makeLocationLogFactory = (TimestampKlass: typeof TimestampLike) =>
     location: {},
     locationIsFetching: false,
     tacticIds: [],
+    seenTacticIds: [],
     gameplan: gameplan,
   });
