@@ -21,25 +21,26 @@ function tacticValueBaseSchema<K extends string>(type: K) {
     categoryIds: yup.array().of(yup.string()).nullable(),
     isShared: yup.boolean().nullable(),
     isResponseRequired: yup.boolean().nullable(),
+    timerSeconds: yup.number().notRequired(),
     isAvailableForRecommendation: yup.boolean().nullable(),
   });
 }
 
-const stepsTacticSchema = tacticValueBaseSchema('steps').shape({
+export const stepsTacticSchema = tacticValueBaseSchema('steps').shape({
   steps: yup.number().required(),
 });
 export type StepsTactic = yup.InferType<typeof stepsTacticSchema>;
 
-const emotionsTacticSchema = tacticValueBaseSchema('emotions');
+export const emotionsTacticSchema = tacticValueBaseSchema('emotions');
 export type EmotionsTactic = yup.InferType<typeof emotionsTacticSchema>;
 
-const audioTacticSchema = tacticValueBaseSchema('audio').shape({
+export const audioTacticSchema = tacticValueBaseSchema('audio').shape({
   metadata: recordingSchema.required(),
   recording: recordingSchema.nullable(),
 });
 export type AudioTactic = yup.InferType<typeof audioTacticSchema>;
 
-const videoTacticSchema = tacticValueBaseSchema('video').shape({
+export const videoTacticSchema = tacticValueBaseSchema('video').shape({
   video: yup
     .object({
       url: yup.string().url().nullable(),
@@ -53,21 +54,22 @@ const videoTacticSchema = tacticValueBaseSchema('video').shape({
 });
 export type VideoTactic = yup.InferType<typeof videoTacticSchema>;
 
-const measureSliderTacticSchema = tacticValueBaseSchema('measure-slider').shape(
-  {
-    lowEmoji: yup.string().required(),
-    highEmoji: yup.string().required(),
-  }
-);
+export const measureSliderTacticSchema = tacticValueBaseSchema(
+  'measure-slider'
+).shape({
+  lowEmoji: yup.string().required(),
+  highEmoji: yup.string().required(),
+});
 
 export type MeasureSliderTactic = yup.InferType<
   typeof measureSliderTacticSchema
 >;
 
-const measureTimeTacticSchema = tacticValueBaseSchema('measure-time');
+export const measureTimeTacticSchema = tacticValueBaseSchema('measure-time');
 export type MeasureTimeTactic = yup.InferType<typeof measureTimeTacticSchema>;
 
-const measureCounterTacticSchema = tacticValueBaseSchema('measure-counter');
+export const measureCounterTacticSchema =
+  tacticValueBaseSchema('measure-counter');
 export type MeasureCounterTactic = yup.InferType<
   typeof measureCounterTacticSchema
 >;
@@ -77,18 +79,13 @@ export type MeasureTactic =
   | MeasureTimeTactic
   | MeasureCounterTactic;
 
-const phoneTacticSchema = tacticValueBaseSchema('phone').shape({
+export const phoneTacticSchema = tacticValueBaseSchema('phone').shape({
   supportGroupId: yup.string().required(),
   trigger: yup.mixed().oneOf(['automatic', 'manual']).required(),
 });
 export type PhoneTacticValue = yup.InferType<typeof phoneTacticSchema>;
 
-const timerTacticSchema = tacticValueBaseSchema('timer').shape({
-  timerSeconds: yup.number().required(),
-});
-export type TimerTactic = yup.InferType<typeof timerTacticSchema>;
-
-const breatheTacticSchema = tacticValueBaseSchema('breathe').shape({
+export const breatheTacticSchema = tacticValueBaseSchema('breathe').shape({
   inFor: yup.number().positive().required(),
   holdFor: yup.number().positive().required(),
   outFor: yup.number().positive().required(),
@@ -96,25 +93,30 @@ const breatheTacticSchema = tacticValueBaseSchema('breathe').shape({
 });
 export type BreatheTactic = yup.InferType<typeof breatheTacticSchema>;
 
-const optionsTacticSchema = tacticValueBaseSchema('options').shape({
+export const urgeSurfingTacticSchema = tacticValueBaseSchema(
+  'urge-surfing'
+).shape({});
+export type UrgeSurfingTactic = yup.InferType<typeof urgeSurfingTacticSchema>;
+
+export const optionsTacticSchema = tacticValueBaseSchema('options').shape({
   tacticIds: yup.array().of(yup.string()).required(),
   tacticsById: yup.object().required(),
 });
 export type OptionsTactic = yup.InferType<typeof optionsTacticSchema>;
 
-const taskTacticSchema = tacticValueBaseSchema('task');
+export const taskTacticSchema = tacticValueBaseSchema('task');
 export type TaskTactic = yup.InferType<typeof taskTacticSchema>;
 
-const questionTacticSchema = tacticValueBaseSchema('question');
+export const questionTacticSchema = tacticValueBaseSchema('question');
 export type QuestionTactic = yup.InferType<typeof questionTacticSchema>;
 
 export type TacticValue =
   | PhoneTacticValue
   | AudioTactic
+  | UrgeSurfingTactic
   | VideoTactic
   | QuestionTactic
   | TaskTactic
-  | TimerTactic
   | MeasureTactic
   | OptionsTactic
   | BreatheTactic
@@ -137,8 +139,6 @@ export const tacticSchema = yup.lazy(value => {
       return measureTimeTacticSchema;
     case 'measure-counter':
       return measureCounterTacticSchema;
-    case 'timer':
-      return timerTacticSchema;
     case 'options':
       return optionsTacticSchema;
     case 'breathe':
@@ -155,7 +155,7 @@ export const tacticSchema = yup.lazy(value => {
 });
 
 // Utility to dynamically select the correct schema based on the tactic type
-const tacticSchemas: Record<
+export const tacticSchemas: Record<
   TacticValue['type'],
   yup.ObjectSchema<TacticValue>
 > = {
@@ -165,7 +165,6 @@ const tacticSchemas: Record<
   question: questionTacticSchema,
   'measure-time': measureTimeTacticSchema,
   'measure-counter': measureCounterTacticSchema,
-  timer: timerTacticSchema,
   options: optionsTacticSchema,
   breathe: breatheTacticSchema,
   steps: stepsTacticSchema,
@@ -221,29 +220,10 @@ export const isMeasureTimeTactic = ({ type }: TacticValue) =>
 export const isMeasureCounterTactic = ({ type }: TacticValue) =>
   type === 'measure-counter';
 export const isPhoneTacticValue = ({ type }: TacticValue) => type === 'phone';
-export const isTimerTactic = ({ type }: TacticValue) => type === 'timer';
 export const isBreatheTactic = ({ type }: TacticValue) => type === 'breathe';
 export const isOptionsTactic = ({ type }: TacticValue) => type === 'options';
 export const isTaskTactic = ({ type }: TacticValue) => type === 'task';
 export const isQuestionTactic = ({ type }: TacticValue) => type === 'question';
-
-// Export all schema so they can be used elsewhere in the application
-export {
-  audioTacticSchema,
-  breatheTacticSchema,
-  emotionsTacticSchema,
-  measureCounterTacticSchema,
-  measureSliderTacticSchema,
-  measureTimeTacticSchema,
-  optionsTacticSchema,
-  phoneTacticSchema,
-  questionTacticSchema,
-  stepsTacticSchema,
-  tacticSchemas,
-  taskTacticSchema,
-  timerTacticSchema,
-  videoTacticSchema,
-};
 
 export type WithTacticsById<T> = Omit<T, 'tacticsById'> & {
   tacticsById: Record<string, TacticValue>;

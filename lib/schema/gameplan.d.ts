@@ -20,6 +20,7 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "steps";
             createdAt: {
@@ -50,6 +51,7 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "emotions";
             createdAt: {
@@ -79,6 +81,7 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
@@ -118,6 +121,7 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "video";
             createdAt: {
@@ -155,6 +159,7 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-slider";
             createdAt: {
@@ -186,6 +191,7 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-time";
             createdAt: {
@@ -215,6 +221,7 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-counter";
             createdAt: {
@@ -244,6 +251,7 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "phone";
             createdAt: {
@@ -275,36 +283,7 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            type: "timer";
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            title: string;
-            timerSeconds: number;
-        } | {
-            uid?: string | null | undefined;
-            ordinal?: number | null | undefined;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            backgroundColor?: string | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "breathe";
             createdAt: {
@@ -338,6 +317,7 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "options";
             createdAt: {
@@ -369,6 +349,7 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "task";
             createdAt: {
@@ -398,6 +379,7 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "question";
             createdAt: {
@@ -440,6 +422,7 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "steps";
             createdAt: {
@@ -470,6 +453,7 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "emotions";
             createdAt: {
@@ -499,6 +483,7 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
@@ -538,6 +523,7 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "video";
             createdAt: {
@@ -575,6 +561,7 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-slider";
             createdAt: {
@@ -606,6 +593,7 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-time";
             createdAt: {
@@ -635,6 +623,7 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-counter";
             createdAt: {
@@ -664,6 +653,7 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "phone";
             createdAt: {
@@ -695,36 +685,7 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            type: "timer";
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            title: string;
-            timerSeconds: number;
-        } | {
-            uid?: string | null | undefined;
-            ordinal?: number | null | undefined;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            backgroundColor?: string | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "breathe";
             createdAt: {
@@ -758,6 +719,7 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "options";
             createdAt: {
@@ -789,6 +751,7 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "task";
             createdAt: {
@@ -818,6 +781,7 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "question";
             createdAt: {
@@ -901,6 +865,7 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "steps";
             createdAt: {
@@ -931,6 +896,7 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "emotions";
             createdAt: {
@@ -960,6 +926,7 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
@@ -999,6 +966,7 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "video";
             createdAt: {
@@ -1036,6 +1004,7 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-slider";
             createdAt: {
@@ -1067,6 +1036,7 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-time";
             createdAt: {
@@ -1096,6 +1066,7 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-counter";
             createdAt: {
@@ -1125,6 +1096,7 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "phone";
             createdAt: {
@@ -1156,36 +1128,7 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            type: "timer";
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            title: string;
-            timerSeconds: number;
-        } | {
-            uid?: string | null | undefined;
-            ordinal?: number | null | undefined;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            backgroundColor?: string | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "breathe";
             createdAt: {
@@ -1219,6 +1162,7 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "options";
             createdAt: {
@@ -1250,6 +1194,7 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "task";
             createdAt: {
@@ -1279,6 +1224,7 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "question";
             createdAt: {
@@ -1366,6 +1312,7 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "steps";
             createdAt: {
@@ -1396,6 +1343,7 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "emotions";
             createdAt: {
@@ -1425,6 +1373,7 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
@@ -1464,6 +1413,7 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "video";
             createdAt: {
@@ -1501,6 +1451,7 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-slider";
             createdAt: {
@@ -1532,6 +1483,7 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-time";
             createdAt: {
@@ -1561,6 +1513,7 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-counter";
             createdAt: {
@@ -1590,6 +1543,7 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "phone";
             createdAt: {
@@ -1621,36 +1575,7 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            type: "timer";
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            title: string;
-            timerSeconds: number;
-        } | {
-            uid?: string | null | undefined;
-            ordinal?: number | null | undefined;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            backgroundColor?: string | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "breathe";
             createdAt: {
@@ -1684,6 +1609,7 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "options";
             createdAt: {
@@ -1715,6 +1641,7 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "task";
             createdAt: {
@@ -1744,6 +1671,7 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "question";
             createdAt: {
@@ -1832,6 +1760,7 @@ declare const dayDebriefGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "steps";
             createdAt: {
@@ -1862,6 +1791,7 @@ declare const dayDebriefGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "emotions";
             createdAt: {
@@ -1891,6 +1821,7 @@ declare const dayDebriefGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
@@ -1930,6 +1861,7 @@ declare const dayDebriefGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "video";
             createdAt: {
@@ -1967,6 +1899,7 @@ declare const dayDebriefGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-slider";
             createdAt: {
@@ -1998,6 +1931,7 @@ declare const dayDebriefGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-time";
             createdAt: {
@@ -2027,6 +1961,7 @@ declare const dayDebriefGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-counter";
             createdAt: {
@@ -2056,6 +1991,7 @@ declare const dayDebriefGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "phone";
             createdAt: {
@@ -2087,36 +2023,7 @@ declare const dayDebriefGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            type: "timer";
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            title: string;
-            timerSeconds: number;
-        } | {
-            uid?: string | null | undefined;
-            ordinal?: number | null | undefined;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            backgroundColor?: string | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "breathe";
             createdAt: {
@@ -2150,6 +2057,7 @@ declare const dayDebriefGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "options";
             createdAt: {
@@ -2181,6 +2089,7 @@ declare const dayDebriefGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "task";
             createdAt: {
@@ -2210,6 +2119,7 @@ declare const dayDebriefGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "question";
             createdAt: {
@@ -2290,6 +2200,7 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "steps";
             createdAt: {
@@ -2320,6 +2231,7 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "emotions";
             createdAt: {
@@ -2349,6 +2261,7 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
@@ -2388,6 +2301,7 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "video";
             createdAt: {
@@ -2425,6 +2339,7 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-slider";
             createdAt: {
@@ -2456,6 +2371,7 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-time";
             createdAt: {
@@ -2485,6 +2401,7 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-counter";
             createdAt: {
@@ -2514,6 +2431,7 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "phone";
             createdAt: {
@@ -2545,36 +2463,7 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            type: "timer";
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            title: string;
-            timerSeconds: number;
-        } | {
-            uid?: string | null | undefined;
-            ordinal?: number | null | undefined;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            backgroundColor?: string | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "breathe";
             createdAt: {
@@ -2608,6 +2497,7 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "options";
             createdAt: {
@@ -2639,6 +2529,7 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "task";
             createdAt: {
@@ -2668,6 +2559,7 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "question";
             createdAt: {
@@ -2771,6 +2663,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "steps";
             createdAt: {
@@ -2801,6 +2694,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "emotions";
             createdAt: {
@@ -2830,6 +2724,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
@@ -2869,6 +2764,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "video";
             createdAt: {
@@ -2906,6 +2802,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-slider";
             createdAt: {
@@ -2937,6 +2834,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-time";
             createdAt: {
@@ -2966,6 +2864,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-counter";
             createdAt: {
@@ -2995,6 +2894,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "phone";
             createdAt: {
@@ -3026,36 +2926,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            type: "timer";
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            title: string;
-            timerSeconds: number;
-        } | {
-            uid?: string | null | undefined;
-            ordinal?: number | null | undefined;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            backgroundColor?: string | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "breathe";
             createdAt: {
@@ -3089,6 +2960,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "options";
             createdAt: {
@@ -3120,6 +2992,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "task";
             createdAt: {
@@ -3149,6 +3022,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "question";
             createdAt: {
@@ -3204,6 +3078,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "steps";
             createdAt: {
@@ -3234,6 +3109,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "emotions";
             createdAt: {
@@ -3263,6 +3139,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
@@ -3302,6 +3179,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "video";
             createdAt: {
@@ -3339,6 +3217,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-slider";
             createdAt: {
@@ -3370,6 +3249,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-time";
             createdAt: {
@@ -3399,6 +3279,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-counter";
             createdAt: {
@@ -3428,6 +3309,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "phone";
             createdAt: {
@@ -3459,36 +3341,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            type: "timer";
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            title: string;
-            timerSeconds: number;
-        } | {
-            uid?: string | null | undefined;
-            ordinal?: number | null | undefined;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            backgroundColor?: string | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "breathe";
             createdAt: {
@@ -3522,6 +3375,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "options";
             createdAt: {
@@ -3553,6 +3407,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "task";
             createdAt: {
@@ -3582,6 +3437,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "question";
             createdAt: {
@@ -3640,6 +3496,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "steps";
             createdAt: {
@@ -3670,6 +3527,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "emotions";
             createdAt: {
@@ -3699,6 +3557,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
@@ -3738,6 +3597,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "video";
             createdAt: {
@@ -3775,6 +3635,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-slider";
             createdAt: {
@@ -3806,6 +3667,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-time";
             createdAt: {
@@ -3835,6 +3697,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-counter";
             createdAt: {
@@ -3864,6 +3727,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "phone";
             createdAt: {
@@ -3895,36 +3759,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            type: "timer";
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            title: string;
-            timerSeconds: number;
-        } | {
-            uid?: string | null | undefined;
-            ordinal?: number | null | undefined;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            backgroundColor?: string | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "breathe";
             createdAt: {
@@ -3958,6 +3793,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "options";
             createdAt: {
@@ -3989,6 +3825,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "task";
             createdAt: {
@@ -4018,6 +3855,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "question";
             createdAt: {
@@ -4073,6 +3911,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "steps";
             createdAt: {
@@ -4103,6 +3942,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "emotions";
             createdAt: {
@@ -4132,6 +3972,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "audio";
             createdAt: {
@@ -4171,6 +4012,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "video";
             createdAt: {
@@ -4208,6 +4050,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-slider";
             createdAt: {
@@ -4239,6 +4082,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-time";
             createdAt: {
@@ -4268,6 +4112,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "measure-counter";
             createdAt: {
@@ -4297,6 +4142,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "phone";
             createdAt: {
@@ -4328,36 +4174,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            type: "timer";
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            title: string;
-            timerSeconds: number;
-        } | {
-            uid?: string | null | undefined;
-            ordinal?: number | null | undefined;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            backgroundColor?: string | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "breathe";
             createdAt: {
@@ -4391,6 +4208,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "options";
             createdAt: {
@@ -4422,6 +4240,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "task";
             createdAt: {
@@ -4451,6 +4270,7 @@ export declare const gameplanSchema: yup.Lazy<{
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             type: "question";
             createdAt: {
