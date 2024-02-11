@@ -7,6 +7,7 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
         title: string;
         body: string;
     } | null | undefined;
+    setbackTacticId?: import("yup").Maybe<string | undefined>;
     gameplanId?: import("yup").Maybe<string | undefined>;
     debriefGameplanId?: import("yup").Maybe<string | undefined>;
     uid: string;
@@ -22,6 +23,6 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
         toDate: {};
     };
     name: string;
-    sendWeeklyReports: NonNullable<boolean | undefined>;
     setbackThreshold: number;
-}, "uid" | "ordinal" | "createdAt" | "updatedAt" | "name" | "sendWeeklyReports" | "setbackThreshold" | ("issueId" | "supportGroupIds" | "notification" | "gameplanId" | "debriefGameplanId")>;
+    sendWeeklyReports: NonNullable<boolean | undefined>;
+}, "uid" | "ordinal" | "createdAt" | "updatedAt" | "name" | "setbackThreshold" | "sendWeeklyReports" | ("issueId" | "supportGroupIds" | "notification" | "setbackTacticId" | "gameplanId" | "debriefGameplanId")>;

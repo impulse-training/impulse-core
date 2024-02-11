@@ -59,6 +59,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             title: string;
             body: string;
         } | null | undefined;
+        setbackTacticId?: import("yup").Maybe<string | undefined>;
         gameplanId?: import("yup").Maybe<string | undefined>;
         debriefGameplanId?: import("yup").Maybe<string | undefined>;
         uid: string;
@@ -74,9 +75,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: {};
         };
         name: string;
-        sendWeeklyReports: NonNullable<boolean | undefined>;
         setbackThreshold: number;
-    }, "uid" | "ordinal" | "createdAt" | "updatedAt" | "name" | "sendWeeklyReports" | "setbackThreshold" | ("issueId" | "supportGroupIds" | "notification" | "gameplanId" | "debriefGameplanId")>;
+        sendWeeklyReports: NonNullable<boolean | undefined>;
+    }, "uid" | "ordinal" | "createdAt" | "updatedAt" | "name" | "setbackThreshold" | "sendWeeklyReports" | ("issueId" | "supportGroupIds" | "notification" | "setbackTacticId" | "gameplanId" | "debriefGameplanId")>;
     locationGameplanFactory: import("factory.ts").Factory<import("..").LocationGameplanValue, "type" | "uid" | "createdAt" | "updatedAt" | "tacticIds" | "tacticsById" | "suggestedTacticIds" | "mode" | ("title" | "isTemplate" | "navigationTitle" | "timezone" | "patternName" | "issueId" | "parentIssueIds" | "locationId")>;
     recommendationFactory: import("factory.ts").Factory<import("..").RecommendationValue, "uid" | "ordinal" | "createdAt" | "updatedAt" | "title" | "tacticIds" | "tacticsById" | "appliedAt" | "dismissedAt" | "explanation" | "gameplanExplanation" | "recommenderUid" | "recommenderName" | "ruleId" | "gameplanIds" | "defaultSelected">;
     recommendationRuleFactory: import("factory.ts").Factory<import("..").RecommendationRuleValue, keyof import("..").RecommendationRuleValue>;

@@ -11,6 +11,7 @@ export declare class Log {
             title: string;
             body: string;
         } | null | undefined;
+        setbackTacticId?: import("yup").Maybe<string | undefined>;
         gameplanId?: import("yup").Maybe<string | undefined>;
         debriefGameplanId?: import("yup").Maybe<string | undefined>;
         uid: string;
@@ -26,8 +27,8 @@ export declare class Log {
             toDate: {};
         };
         name: string;
-        sendWeeklyReports: NonNullable<boolean | undefined>;
         setbackThreshold: number;
+        sendWeeklyReports: NonNullable<boolean | undefined>;
     };
 }
 export declare function formatPattern(pattern?: {

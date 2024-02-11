@@ -12,9 +12,10 @@ export const patternSchema = Yup.object().shape({
     title: Yup.string().required(),
     body: Yup.string().required(),
   }).notRequired(),
+  setbackTacticId: Yup.string().notRequired(),
+  setbackThreshold: Yup.number().required(),
   issueId: Yup.string().notRequired(),
   sendWeeklyReports: Yup.boolean().required(),
-  setbackThreshold: Yup.number().required(),
   gameplanId: Yup.string().notRequired(),
   debriefGameplanId: Yup.string().notRequired(),
 });

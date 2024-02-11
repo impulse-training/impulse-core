@@ -1841,6 +1841,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 title: string;
                 body: string;
             } | null | undefined;
+            setbackTacticId?: yup.Maybe<string | undefined>;
             gameplanId?: yup.Maybe<string | undefined>;
             debriefGameplanId?: yup.Maybe<string | undefined>;
             uid: string;
@@ -1856,8 +1857,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             name: string;
-            sendWeeklyReports: NonNullable<boolean | undefined>;
             setbackThreshold: number;
+            sendWeeklyReports: NonNullable<boolean | undefined>;
         };
     };
     patternId: string;
@@ -3441,6 +3442,7 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
                 title: string;
                 body: string;
             } | null | undefined;
+            setbackTacticId?: yup.Maybe<string | undefined>;
             gameplanId?: yup.Maybe<string | undefined>;
             debriefGameplanId?: yup.Maybe<string | undefined>;
             uid: string;
@@ -3456,8 +3458,8 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             name: string;
-            sendWeeklyReports: NonNullable<boolean | undefined>;
             setbackThreshold: number;
+            sendWeeklyReports: NonNullable<boolean | undefined>;
         };
     };
     isDisplayable: NonNullable<boolean | undefined>;
@@ -5869,6 +5871,7 @@ export declare const logSchema: yup.Lazy<{
                 title: string;
                 body: string;
             } | null | undefined;
+            setbackTacticId?: yup.Maybe<string | undefined>;
             gameplanId?: yup.Maybe<string | undefined>;
             debriefGameplanId?: yup.Maybe<string | undefined>;
             uid: string;
@@ -5884,8 +5887,8 @@ export declare const logSchema: yup.Lazy<{
                 toDate: {};
             };
             name: string;
-            sendWeeklyReports: NonNullable<boolean | undefined>;
             setbackThreshold: number;
+            sendWeeklyReports: NonNullable<boolean | undefined>;
         };
     };
     patternIds: (string | undefined)[];
@@ -7303,6 +7306,7 @@ export declare const logSchema: yup.Lazy<{
                 title: string;
                 body: string;
             } | null | undefined;
+            setbackTacticId?: yup.Maybe<string | undefined>;
             gameplanId?: yup.Maybe<string | undefined>;
             debriefGameplanId?: yup.Maybe<string | undefined>;
             uid: string;
@@ -7318,8 +7322,8 @@ export declare const logSchema: yup.Lazy<{
                 toDate: {};
             };
             name: string;
-            sendWeeklyReports: NonNullable<boolean | undefined>;
             setbackThreshold: number;
+            sendWeeklyReports: NonNullable<boolean | undefined>;
         };
     };
     patternIds: (string | undefined)[];

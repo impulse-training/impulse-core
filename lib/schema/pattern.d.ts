@@ -18,9 +18,10 @@ export declare const patternSchema: Yup.ObjectSchema<{
         title: string;
         body: string;
     } | null | undefined;
+    setbackTacticId: Yup.Maybe<string | undefined>;
+    setbackThreshold: number;
     issueId: Yup.Maybe<string | undefined>;
     sendWeeklyReports: NonNullable<boolean | undefined>;
-    setbackThreshold: number;
     gameplanId: Yup.Maybe<string | undefined>;
     debriefGameplanId: Yup.Maybe<string | undefined>;
 }, Yup.AnyObject, {
@@ -42,9 +43,10 @@ export declare const patternSchema: Yup.ObjectSchema<{
         title: undefined;
         body: undefined;
     };
+    setbackTacticId: undefined;
+    setbackThreshold: undefined;
     issueId: undefined;
     sendWeeklyReports: undefined;
-    setbackThreshold: undefined;
     gameplanId: undefined;
     debriefGameplanId: undefined;
 }, "">;
