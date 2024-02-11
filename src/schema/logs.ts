@@ -17,6 +17,8 @@ type BasicGameplan = {
   main: Gameplan;
 };
 
+type Outcome = 'success' | 'setback' | 'indeterminate';
+
 export type BaseLogValue = WithTypes<typeof baseLogSchema, unknown>;
 const baseLogSchema = yup.object().shape({
   uid: yup.string().required(),
@@ -103,6 +105,9 @@ const impulseLogSchema = baseLogSchema.concat(
         impulseDebrief: gameplanBaseSchema,
       })
     ),
+    outcome: yup
+      .mixed<Outcome>()
+      .oneOf(['success', 'setback', 'indeterminate']),
     patterns: objectOf(patternSchema),
     patternId: yup.string().required(),
     patternIds: yup.array().of(yup.string()).required(),

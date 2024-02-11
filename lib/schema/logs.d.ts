@@ -9,6 +9,7 @@ type ImpulseGameplan = {
 type BasicGameplan = {
     main: Gameplan;
 };
+type Outcome = 'success' | 'setback' | 'indeterminate';
 export type BaseLogValue = WithTypes<typeof baseLogSchema, unknown>;
 declare const baseLogSchema: yup.ObjectSchema<{
     uid: string;
@@ -1833,6 +1834,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             };
         };
     };
+    outcome: Outcome | undefined;
     patterns: {
         [x: string]: {
             issueId?: yup.Maybe<string | undefined>;
@@ -1916,6 +1918,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     isDisplayable: undefined;
     buttonPressSecondsSinceEpoch: undefined;
     gameplans: undefined;
+    outcome: undefined;
     patterns: undefined;
     patternId: undefined;
     patternIds: "";
@@ -4996,6 +4999,7 @@ export declare const logSchema: yup.Lazy<{
     setAsActiveImpulse?: yup.Maybe<boolean | undefined>;
     pressCount?: yup.Maybe<number | undefined>;
     buttonPressSecondsSinceEpoch?: yup.Maybe<number | undefined>;
+    outcome?: Outcome | undefined;
     debriefNotes?: yup.Maybe<string | undefined>;
     debriefReminderSentAt?: yup.Maybe<{} | undefined>;
     debriefedAt?: yup.Maybe<{} | undefined>;
