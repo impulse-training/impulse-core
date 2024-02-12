@@ -7,13 +7,48 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         [x: string]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            nextId?: string | undefined;
+            type: "folder";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+            backgroundColor: string;
+            tacticIds: string[];
+            currentTacticIndex: number;
+            tacticsById: {};
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -34,17 +69,18 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             steps: number;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -65,16 +101,17 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -95,6 +132,7 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             metadata: {
                 waveform?: string | null | undefined;
                 localFilePath: string;
@@ -108,13 +146,13 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -135,6 +173,7 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             video: {
                 storagePath?: string | null | undefined;
                 url?: string | null | undefined;
@@ -146,13 +185,13 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -173,18 +212,19 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             lowEmoji: string;
             highEmoji: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -205,16 +245,17 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -235,16 +276,17 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -265,18 +307,19 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             supportGroupId: string;
             trigger: {};
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -297,6 +340,7 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             inFor: number;
             holdFor: number;
             outFor: number;
@@ -304,13 +348,13 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -319,7 +363,7 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
-            type: "options";
+            type: "urge-surfing";
             createdAt: {
                 seconds: number;
                 nanoseconds: number;
@@ -331,18 +375,17 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
-            tacticIds: (string | undefined)[];
-            tacticsById: {};
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -363,16 +406,17 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -393,6 +437,7 @@ export declare const gameplanBaseSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         };
     };
 }, yup.AnyObject, {
@@ -409,13 +454,48 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         [x: string]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            nextId?: string | undefined;
+            type: "folder";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+            backgroundColor: string;
+            tacticIds: string[];
+            currentTacticIndex: number;
+            tacticsById: {};
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -436,17 +516,18 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             steps: number;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -467,16 +548,17 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -497,6 +579,7 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             metadata: {
                 waveform?: string | null | undefined;
                 localFilePath: string;
@@ -510,13 +593,13 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -537,6 +620,7 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             video: {
                 storagePath?: string | null | undefined;
                 url?: string | null | undefined;
@@ -548,13 +632,13 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -575,18 +659,19 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             lowEmoji: string;
             highEmoji: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -607,16 +692,17 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -637,16 +723,17 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -667,18 +754,19 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             supportGroupId: string;
             trigger: {};
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -699,6 +787,7 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             inFor: number;
             holdFor: number;
             outFor: number;
@@ -706,13 +795,13 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -721,7 +810,7 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
-            type: "options";
+            type: "urge-surfing";
             createdAt: {
                 seconds: number;
                 nanoseconds: number;
@@ -733,18 +822,17 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
-            tacticIds: (string | undefined)[];
-            tacticsById: {};
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -765,16 +853,17 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -795,6 +884,7 @@ declare const impulseGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         };
     };
     uid: string;
@@ -852,13 +942,48 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         [x: string]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            nextId?: string | undefined;
+            type: "folder";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+            backgroundColor: string;
+            tacticIds: string[];
+            currentTacticIndex: number;
+            tacticsById: {};
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -879,17 +1004,18 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             steps: number;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -910,16 +1036,17 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -940,6 +1067,7 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             metadata: {
                 waveform?: string | null | undefined;
                 localFilePath: string;
@@ -953,13 +1081,13 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -980,6 +1108,7 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             video: {
                 storagePath?: string | null | undefined;
                 url?: string | null | undefined;
@@ -991,13 +1120,13 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -1018,18 +1147,19 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             lowEmoji: string;
             highEmoji: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -1050,16 +1180,17 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -1080,16 +1211,17 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -1110,18 +1242,19 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             supportGroupId: string;
             trigger: {};
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -1142,6 +1275,7 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             inFor: number;
             holdFor: number;
             outFor: number;
@@ -1149,13 +1283,13 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -1164,7 +1298,7 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
-            type: "options";
+            type: "urge-surfing";
             createdAt: {
                 seconds: number;
                 nanoseconds: number;
@@ -1176,18 +1310,17 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
-            tacticIds: (string | undefined)[];
-            tacticsById: {};
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -1208,16 +1341,17 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -1238,6 +1372,7 @@ declare const schedulableGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         };
     };
     uid: string;
@@ -1299,13 +1434,48 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         [x: string]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            nextId?: string | undefined;
+            type: "folder";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+            backgroundColor: string;
+            tacticIds: string[];
+            currentTacticIndex: number;
+            tacticsById: {};
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -1326,17 +1496,18 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             steps: number;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -1357,16 +1528,17 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -1387,6 +1559,7 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             metadata: {
                 waveform?: string | null | undefined;
                 localFilePath: string;
@@ -1400,13 +1573,13 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -1427,6 +1600,7 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             video: {
                 storagePath?: string | null | undefined;
                 url?: string | null | undefined;
@@ -1438,13 +1612,13 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -1465,18 +1639,19 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             lowEmoji: string;
             highEmoji: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -1497,16 +1672,17 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -1527,16 +1703,17 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -1557,18 +1734,19 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             supportGroupId: string;
             trigger: {};
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -1589,6 +1767,7 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             inFor: number;
             holdFor: number;
             outFor: number;
@@ -1596,13 +1775,13 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -1611,7 +1790,7 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
-            type: "options";
+            type: "urge-surfing";
             createdAt: {
                 seconds: number;
                 nanoseconds: number;
@@ -1623,18 +1802,17 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
-            tacticIds: (string | undefined)[];
-            tacticsById: {};
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -1655,16 +1833,17 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -1685,6 +1864,7 @@ declare const timeGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         };
     };
     uid: string;
@@ -1747,13 +1927,48 @@ declare const dayDebriefGameplanSchema: yup.ObjectSchema<{
         [x: string]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            nextId?: string | undefined;
+            type: "folder";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+            backgroundColor: string;
+            tacticIds: string[];
+            currentTacticIndex: number;
+            tacticsById: {};
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -1774,17 +1989,18 @@ declare const dayDebriefGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             steps: number;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -1805,16 +2021,17 @@ declare const dayDebriefGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -1835,6 +2052,7 @@ declare const dayDebriefGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             metadata: {
                 waveform?: string | null | undefined;
                 localFilePath: string;
@@ -1848,13 +2066,13 @@ declare const dayDebriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -1875,6 +2093,7 @@ declare const dayDebriefGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             video: {
                 storagePath?: string | null | undefined;
                 url?: string | null | undefined;
@@ -1886,13 +2105,13 @@ declare const dayDebriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -1913,18 +2132,19 @@ declare const dayDebriefGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             lowEmoji: string;
             highEmoji: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -1945,16 +2165,17 @@ declare const dayDebriefGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -1975,16 +2196,17 @@ declare const dayDebriefGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -2005,18 +2227,19 @@ declare const dayDebriefGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             supportGroupId: string;
             trigger: {};
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -2037,6 +2260,7 @@ declare const dayDebriefGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             inFor: number;
             holdFor: number;
             outFor: number;
@@ -2044,13 +2268,13 @@ declare const dayDebriefGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -2059,7 +2283,7 @@ declare const dayDebriefGameplanSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
-            type: "options";
+            type: "urge-surfing";
             createdAt: {
                 seconds: number;
                 nanoseconds: number;
@@ -2071,18 +2295,17 @@ declare const dayDebriefGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
-            tacticIds: (string | undefined)[];
-            tacticsById: {};
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -2103,16 +2326,17 @@ declare const dayDebriefGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -2133,6 +2357,7 @@ declare const dayDebriefGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         };
     };
     uid: string;
@@ -2187,13 +2412,48 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         [x: string]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            nextId?: string | undefined;
+            type: "folder";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+            backgroundColor: string;
+            tacticIds: string[];
+            currentTacticIndex: number;
+            tacticsById: {};
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -2214,17 +2474,18 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             steps: number;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -2245,16 +2506,17 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -2275,6 +2537,7 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             metadata: {
                 waveform?: string | null | undefined;
                 localFilePath: string;
@@ -2288,13 +2551,13 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -2315,6 +2578,7 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             video: {
                 storagePath?: string | null | undefined;
                 url?: string | null | undefined;
@@ -2326,13 +2590,13 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -2353,18 +2617,19 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             lowEmoji: string;
             highEmoji: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -2385,16 +2650,17 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -2415,16 +2681,17 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -2445,18 +2712,19 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             supportGroupId: string;
             trigger: {};
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -2477,6 +2745,7 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             inFor: number;
             holdFor: number;
             outFor: number;
@@ -2484,13 +2753,13 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -2499,7 +2768,7 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
-            type: "options";
+            type: "urge-surfing";
             createdAt: {
                 seconds: number;
                 nanoseconds: number;
@@ -2511,18 +2780,17 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
-            tacticIds: (string | undefined)[];
-            tacticsById: {};
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -2543,16 +2811,17 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -2573,6 +2842,7 @@ declare const locationGameplanSchema: yup.ObjectSchema<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         };
     };
     uid: string;
@@ -2650,13 +2920,48 @@ export declare const gameplanSchema: yup.Lazy<{
         [x: string]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            nextId?: string | undefined;
+            type: "folder";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+            backgroundColor: string;
+            tacticIds: string[];
+            currentTacticIndex: number;
+            tacticsById: {};
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -2677,17 +2982,18 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             steps: number;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -2708,16 +3014,17 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -2738,6 +3045,7 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             metadata: {
                 waveform?: string | null | undefined;
                 localFilePath: string;
@@ -2751,13 +3059,13 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -2778,6 +3086,7 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             video: {
                 storagePath?: string | null | undefined;
                 url?: string | null | undefined;
@@ -2789,13 +3098,13 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -2816,18 +3125,19 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             lowEmoji: string;
             highEmoji: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -2848,16 +3158,17 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -2878,16 +3189,17 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -2908,18 +3220,19 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             supportGroupId: string;
             trigger: {};
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -2940,6 +3253,7 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             inFor: number;
             holdFor: number;
             outFor: number;
@@ -2947,13 +3261,13 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -2962,7 +3276,7 @@ export declare const gameplanSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
-            type: "options";
+            type: "urge-surfing";
             createdAt: {
                 seconds: number;
                 nanoseconds: number;
@@ -2974,18 +3288,17 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
-            tacticIds: (string | undefined)[];
-            tacticsById: {};
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -3006,16 +3319,17 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -3036,6 +3350,7 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         };
     };
     suggestedTacticIds: string[];
@@ -3065,13 +3380,48 @@ export declare const gameplanSchema: yup.Lazy<{
         [x: string]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            nextId?: string | undefined;
+            type: "folder";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+            backgroundColor: string;
+            tacticIds: string[];
+            currentTacticIndex: number;
+            tacticsById: {};
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -3092,17 +3442,18 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             steps: number;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -3123,16 +3474,17 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -3153,6 +3505,7 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             metadata: {
                 waveform?: string | null | undefined;
                 localFilePath: string;
@@ -3166,13 +3519,13 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -3193,6 +3546,7 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             video: {
                 storagePath?: string | null | undefined;
                 url?: string | null | undefined;
@@ -3204,13 +3558,13 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -3231,18 +3585,19 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             lowEmoji: string;
             highEmoji: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -3263,16 +3618,17 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -3293,16 +3649,17 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -3323,18 +3680,19 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             supportGroupId: string;
             trigger: {};
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -3355,6 +3713,7 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             inFor: number;
             holdFor: number;
             outFor: number;
@@ -3362,13 +3721,13 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -3377,7 +3736,7 @@ export declare const gameplanSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
-            type: "options";
+            type: "urge-surfing";
             createdAt: {
                 seconds: number;
                 nanoseconds: number;
@@ -3389,18 +3748,17 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
-            tacticIds: (string | undefined)[];
-            tacticsById: {};
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -3421,16 +3779,17 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -3451,6 +3810,7 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         };
     };
     suggestedTacticIds: string[];
@@ -3483,13 +3843,48 @@ export declare const gameplanSchema: yup.Lazy<{
         [x: string]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            nextId?: string | undefined;
+            type: "folder";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+            backgroundColor: string;
+            tacticIds: string[];
+            currentTacticIndex: number;
+            tacticsById: {};
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -3510,17 +3905,18 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             steps: number;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -3541,16 +3937,17 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -3571,6 +3968,7 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             metadata: {
                 waveform?: string | null | undefined;
                 localFilePath: string;
@@ -3584,13 +3982,13 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -3611,6 +4009,7 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             video: {
                 storagePath?: string | null | undefined;
                 url?: string | null | undefined;
@@ -3622,13 +4021,13 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -3649,18 +4048,19 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             lowEmoji: string;
             highEmoji: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -3681,16 +4081,17 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -3711,16 +4112,17 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -3741,18 +4143,19 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             supportGroupId: string;
             trigger: {};
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -3773,6 +4176,7 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             inFor: number;
             holdFor: number;
             outFor: number;
@@ -3780,13 +4184,13 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -3795,7 +4199,7 @@ export declare const gameplanSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
-            type: "options";
+            type: "urge-surfing";
             createdAt: {
                 seconds: number;
                 nanoseconds: number;
@@ -3807,18 +4211,17 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
-            tacticIds: (string | undefined)[];
-            tacticsById: {};
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -3839,16 +4242,17 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -3869,6 +4273,7 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         };
     };
     suggestedTacticIds: string[];
@@ -3898,13 +4303,48 @@ export declare const gameplanSchema: yup.Lazy<{
         [x: string]: {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            nextId?: string | undefined;
+            type: "folder";
+            createdAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            updatedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            title: string;
+            backgroundColor: string;
+            tacticIds: string[];
+            currentTacticIndex: number;
+            tacticsById: {};
+        } | {
+            uid?: string | null | undefined;
+            ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -3925,17 +4365,18 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             steps: number;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -3956,16 +4397,17 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -3986,6 +4428,7 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             metadata: {
                 waveform?: string | null | undefined;
                 localFilePath: string;
@@ -3999,13 +4442,13 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -4026,6 +4469,7 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             video: {
                 storagePath?: string | null | undefined;
                 url?: string | null | undefined;
@@ -4037,13 +4481,13 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -4064,18 +4508,19 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             lowEmoji: string;
             highEmoji: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -4096,16 +4541,17 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -4126,16 +4572,17 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -4156,18 +4603,19 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             supportGroupId: string;
             trigger: {};
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -4188,6 +4636,7 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
             inFor: number;
             holdFor: number;
             outFor: number;
@@ -4195,13 +4644,13 @@ export declare const gameplanSchema: yup.Lazy<{
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -4210,7 +4659,7 @@ export declare const gameplanSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
-            type: "options";
+            type: "urge-surfing";
             createdAt: {
                 seconds: number;
                 nanoseconds: number;
@@ -4222,18 +4671,17 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
-            tacticIds: (string | undefined)[];
-            tacticsById: {};
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -4254,16 +4702,17 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             ordinal?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            backgroundColor?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -4284,6 +4733,7 @@ export declare const gameplanSchema: yup.Lazy<{
                 toDate: {};
             };
             title: string;
+            backgroundColor: string;
         };
     };
     suggestedTacticIds: string[];

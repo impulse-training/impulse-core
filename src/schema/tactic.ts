@@ -12,9 +12,10 @@ function tacticValueBaseSchema<K extends string>(type: K) {
     createdAt: timestampSchema.required(),
     updatedAt: timestampSchema.required(),
     title: yup.string().required(),
+    subtitle: yup.string().notRequired(),
     description: yup.string().nullable(),
     image: imageSchema.optional().nullable(),
-    backgroundColor: yup.string().nullable(),
+    backgroundColor: yup.string().required(),
     isTemplate: yup.boolean().nullable(),
     language: yup.string().nullable(),
     href: yup.string().url().nullable(),
@@ -25,6 +26,15 @@ function tacticValueBaseSchema<K extends string>(type: K) {
     isAvailableForRecommendation: yup.boolean().nullable(),
   });
 }
+
+export const folderTacticSchema = tacticValueBaseSchema('folder').shape({
+  nextId: yup.string(),
+  tacticIds: yup.array().of(yup.string().required()).required(),
+  currentTacticIndex: yup.number().required(),
+  // For now, we don't specify the tactic schema here, as it would lead to recursion
+  tacticsById: yup.object().required(),
+});
+export type FolderTactic = yup.InferType<typeof folderTacticSchema>;
 
 export const stepsTacticSchema = tacticValueBaseSchema('steps').shape({
   steps: yup.number().required(),
@@ -98,12 +108,6 @@ export const urgeSurfingTacticSchema = tacticValueBaseSchema(
 ).shape({});
 export type UrgeSurfingTactic = yup.InferType<typeof urgeSurfingTacticSchema>;
 
-export const optionsTacticSchema = tacticValueBaseSchema('options').shape({
-  tacticIds: yup.array().of(yup.string()).required(),
-  tacticsById: yup.object().required(),
-});
-export type OptionsTactic = yup.InferType<typeof optionsTacticSchema>;
-
 export const taskTacticSchema = tacticValueBaseSchema('task');
 export type TaskTactic = yup.InferType<typeof taskTacticSchema>;
 
@@ -118,41 +122,10 @@ export type TacticValue =
   | QuestionTactic
   | TaskTactic
   | MeasureTactic
-  | OptionsTactic
+  | FolderTactic
   | BreatheTactic
   | StepsTactic
   | EmotionsTactic;
-
-export const tacticSchema = yup.lazy(value => {
-  switch (value.type) {
-    case 'phone':
-      return phoneTacticSchema;
-    case 'audio':
-      return audioTacticSchema;
-    case 'video':
-      return videoTacticSchema;
-    case 'question':
-      return questionTacticSchema;
-    case 'measure-slider':
-      return measureSliderTacticSchema;
-    case 'measure-time':
-      return measureTimeTacticSchema;
-    case 'measure-counter':
-      return measureCounterTacticSchema;
-    case 'options':
-      return optionsTacticSchema;
-    case 'breathe':
-      return breatheTacticSchema;
-    case 'steps':
-      return stepsTacticSchema;
-    case 'emotions':
-      return emotionsTacticSchema;
-    case 'task':
-      return taskTacticSchema;
-    default:
-      throw new yup.ValidationError(`Unknown type: ${value.type}`);
-  }
-});
 
 // Utility to dynamically select the correct schema based on the tactic type
 export const tacticSchemas: Record<
@@ -163,14 +136,20 @@ export const tacticSchemas: Record<
   audio: audioTacticSchema,
   video: videoTacticSchema,
   question: questionTacticSchema,
+  folder: folderTacticSchema,
   'measure-time': measureTimeTacticSchema,
   'measure-counter': measureCounterTacticSchema,
-  options: optionsTacticSchema,
   breathe: breatheTacticSchema,
   steps: stepsTacticSchema,
   task: taskTacticSchema,
   emotions: emotionsTacticSchema,
 } as any;
+
+export const tacticSchema = yup.lazy(value => {
+  const schema = tacticSchemas[value.type as TacticValue['type']];
+  if (schema) return schema;
+  throw new yup.ValidationError(`Unknown type: ${value.type}`);
+});
 
 export const tacticColors = [
   '#20303C',
@@ -217,11 +196,11 @@ export const isMeasureSliderTactic = ({ type }: TacticValue) =>
   type === 'measure-slider';
 export const isMeasureTimeTactic = ({ type }: TacticValue) =>
   type === 'measure-time';
+export const isFolderTactic = ({ type }: TacticValue) => type === 'folder';
 export const isMeasureCounterTactic = ({ type }: TacticValue) =>
   type === 'measure-counter';
 export const isPhoneTacticValue = ({ type }: TacticValue) => type === 'phone';
 export const isBreatheTactic = ({ type }: TacticValue) => type === 'breathe';
-export const isOptionsTactic = ({ type }: TacticValue) => type === 'options';
 export const isTaskTactic = ({ type }: TacticValue) => type === 'task';
 export const isQuestionTactic = ({ type }: TacticValue) => type === 'question';
 

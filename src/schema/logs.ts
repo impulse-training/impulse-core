@@ -92,6 +92,7 @@ export type ImpulseLogValue = WithTypes<
 export function logIsImpulseLog(log: LogValue): log is ImpulseLogValue {
   return log.type === 'impulse';
 }
+
 const impulseLogSchema = baseLogSchema.concat(
   yup.object().shape({
     type: yup.mixed<'impulse'>().oneOf(['impulse']).required(),
