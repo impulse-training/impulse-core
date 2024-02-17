@@ -57,6 +57,7 @@ const baseLogSchema = yup.object().shape({
       impulseDebrief: yup.object().shape({}), // Replace with Record<string, string> if defined
     })
     .notRequired(),
+  tacticLikes: optionalObjectOf(yup.boolean().required()),
   tacticData: optionalObjectOf(
     yup.object({
       value: yup.number().required(),

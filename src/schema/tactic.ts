@@ -24,11 +24,13 @@ function tacticValueBaseSchema<K extends string>(type: K) {
     isResponseRequired: yup.boolean().nullable(),
     timerSeconds: yup.number().notRequired(),
     isAvailableForRecommendation: yup.boolean().nullable(),
+    numberOfLikes: yup.number().nullable(),
   });
 }
 
 export const folderTacticSchema = tacticValueBaseSchema('folder').shape({
   nextId: yup.string(),
+  autogenerate: yup.boolean(),
   tacticIds: yup.array().of(yup.string().required()).required(),
   currentTacticIndex: yup.number().required(),
   // For now, we don't specify the tactic schema here, as it would lead to recursion

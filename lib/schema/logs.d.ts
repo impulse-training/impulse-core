@@ -70,7 +70,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             nextId?: string | undefined;
+            autogenerate?: boolean | undefined;
             type: "folder";
             createdAt: {
                 seconds: number;
@@ -105,6 +107,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "steps";
             createdAt: {
                 seconds: number;
@@ -137,6 +140,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "emotions";
             createdAt: {
                 seconds: number;
@@ -168,6 +172,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -209,6 +214,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "video";
             createdAt: {
                 seconds: number;
@@ -248,6 +254,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -281,6 +288,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-time";
             createdAt: {
                 seconds: number;
@@ -312,6 +320,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-counter";
             createdAt: {
                 seconds: number;
@@ -343,6 +352,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "phone";
             createdAt: {
                 seconds: number;
@@ -376,6 +386,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "breathe";
             createdAt: {
                 seconds: number;
@@ -411,6 +422,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "urge-surfing";
             createdAt: {
                 seconds: number;
@@ -442,6 +454,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "task";
             createdAt: {
                 seconds: number;
@@ -473,6 +486,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "question";
             createdAt: {
                 seconds: number;
@@ -493,6 +507,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
     supportGroupSuggestedTacticIds: {
         impulse: {};
         impulseDebrief: {};
+    } | null | undefined;
+    tacticLikes: {
+        [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
     tacticData: {
         [x: string]: {
@@ -545,6 +562,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
         impulse: {};
         impulseDebrief: {};
     };
+    tacticLikes: undefined;
     tacticData: undefined;
     sharedWithSupportGroupIds: "";
 }, "">;
@@ -617,7 +635,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             nextId?: string | undefined;
+            autogenerate?: boolean | undefined;
             type: "folder";
             createdAt: {
                 seconds: number;
@@ -652,6 +672,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "steps";
             createdAt: {
                 seconds: number;
@@ -684,6 +705,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "emotions";
             createdAt: {
                 seconds: number;
@@ -715,6 +737,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -756,6 +779,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "video";
             createdAt: {
                 seconds: number;
@@ -795,6 +819,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -828,6 +853,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-time";
             createdAt: {
                 seconds: number;
@@ -859,6 +885,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-counter";
             createdAt: {
                 seconds: number;
@@ -890,6 +917,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "phone";
             createdAt: {
                 seconds: number;
@@ -923,6 +951,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "breathe";
             createdAt: {
                 seconds: number;
@@ -958,6 +987,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "urge-surfing";
             createdAt: {
                 seconds: number;
@@ -989,6 +1019,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "task";
             createdAt: {
                 seconds: number;
@@ -1020,6 +1051,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "question";
             createdAt: {
                 seconds: number;
@@ -1040,6 +1072,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     supportGroupSuggestedTacticIds: {
         impulse: {};
         impulseDebrief: {};
+    } | null | undefined;
+    tacticLikes: {
+        [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
     tacticData: {
         [x: string]: {
@@ -1079,7 +1114,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         nextId?: string | undefined;
+                        autogenerate?: boolean | undefined;
                         type: "folder";
                         createdAt: {
                             seconds: number;
@@ -1114,6 +1151,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "steps";
                         createdAt: {
                             seconds: number;
@@ -1146,6 +1184,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "emotions";
                         createdAt: {
                             seconds: number;
@@ -1177,6 +1216,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "audio";
                         createdAt: {
                             seconds: number;
@@ -1218,6 +1258,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "video";
                         createdAt: {
                             seconds: number;
@@ -1257,6 +1298,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "measure-slider";
                         createdAt: {
                             seconds: number;
@@ -1290,6 +1332,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "measure-time";
                         createdAt: {
                             seconds: number;
@@ -1321,6 +1364,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "measure-counter";
                         createdAt: {
                             seconds: number;
@@ -1352,6 +1396,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "phone";
                         createdAt: {
                             seconds: number;
@@ -1385,6 +1430,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "breathe";
                         createdAt: {
                             seconds: number;
@@ -1420,6 +1466,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "urge-surfing";
                         createdAt: {
                             seconds: number;
@@ -1451,6 +1498,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "task";
                         createdAt: {
                             seconds: number;
@@ -1482,6 +1530,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "question";
                         createdAt: {
                             seconds: number;
@@ -1520,7 +1569,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         nextId?: string | undefined;
+                        autogenerate?: boolean | undefined;
                         type: "folder";
                         createdAt: {
                             seconds: number;
@@ -1555,6 +1606,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "steps";
                         createdAt: {
                             seconds: number;
@@ -1587,6 +1639,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "emotions";
                         createdAt: {
                             seconds: number;
@@ -1618,6 +1671,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "audio";
                         createdAt: {
                             seconds: number;
@@ -1659,6 +1713,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "video";
                         createdAt: {
                             seconds: number;
@@ -1698,6 +1753,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "measure-slider";
                         createdAt: {
                             seconds: number;
@@ -1731,6 +1787,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "measure-time";
                         createdAt: {
                             seconds: number;
@@ -1762,6 +1819,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "measure-counter";
                         createdAt: {
                             seconds: number;
@@ -1793,6 +1851,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "phone";
                         createdAt: {
                             seconds: number;
@@ -1826,6 +1885,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "breathe";
                         createdAt: {
                             seconds: number;
@@ -1861,6 +1921,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "urge-surfing";
                         createdAt: {
                             seconds: number;
@@ -1892,6 +1953,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "task";
                         createdAt: {
                             seconds: number;
@@ -1923,6 +1985,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "question";
                         createdAt: {
                             seconds: number;
@@ -2018,6 +2081,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         impulse: {};
         impulseDebrief: {};
     };
+    tacticLikes: undefined;
     tacticData: undefined;
     sharedWithSupportGroupIds: "";
     type: undefined;
@@ -2095,7 +2159,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             nextId?: string | undefined;
+            autogenerate?: boolean | undefined;
             type: "folder";
             createdAt: {
                 seconds: number;
@@ -2130,6 +2196,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "steps";
             createdAt: {
                 seconds: number;
@@ -2162,6 +2229,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "emotions";
             createdAt: {
                 seconds: number;
@@ -2193,6 +2261,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -2234,6 +2303,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "video";
             createdAt: {
                 seconds: number;
@@ -2273,6 +2343,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -2306,6 +2377,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-time";
             createdAt: {
                 seconds: number;
@@ -2337,6 +2409,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-counter";
             createdAt: {
                 seconds: number;
@@ -2368,6 +2441,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "phone";
             createdAt: {
                 seconds: number;
@@ -2401,6 +2475,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "breathe";
             createdAt: {
                 seconds: number;
@@ -2436,6 +2511,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "urge-surfing";
             createdAt: {
                 seconds: number;
@@ -2467,6 +2543,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "task";
             createdAt: {
                 seconds: number;
@@ -2498,6 +2575,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "question";
             createdAt: {
                 seconds: number;
@@ -2518,6 +2596,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
     supportGroupSuggestedTacticIds: {
         impulse: {};
         impulseDebrief: {};
+    } | null | undefined;
+    tacticLikes: {
+        [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
     tacticData: {
         [x: string]: {
@@ -2576,6 +2657,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
         impulse: {};
         impulseDebrief: {};
     };
+    tacticLikes: undefined;
     tacticData: undefined;
     sharedWithSupportGroupIds: "";
     type: undefined;
@@ -2645,7 +2727,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             nextId?: string | undefined;
+            autogenerate?: boolean | undefined;
             type: "folder";
             createdAt: {
                 seconds: number;
@@ -2680,6 +2764,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "steps";
             createdAt: {
                 seconds: number;
@@ -2712,6 +2797,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "emotions";
             createdAt: {
                 seconds: number;
@@ -2743,6 +2829,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -2784,6 +2871,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "video";
             createdAt: {
                 seconds: number;
@@ -2823,6 +2911,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -2856,6 +2945,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-time";
             createdAt: {
                 seconds: number;
@@ -2887,6 +2977,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-counter";
             createdAt: {
                 seconds: number;
@@ -2918,6 +3009,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "phone";
             createdAt: {
                 seconds: number;
@@ -2951,6 +3043,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "breathe";
             createdAt: {
                 seconds: number;
@@ -2986,6 +3079,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "urge-surfing";
             createdAt: {
                 seconds: number;
@@ -3017,6 +3111,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "task";
             createdAt: {
                 seconds: number;
@@ -3048,6 +3143,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "question";
             createdAt: {
                 seconds: number;
@@ -3068,6 +3164,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
     supportGroupSuggestedTacticIds: {
         impulse: {};
         impulseDebrief: {};
+    } | null | undefined;
+    tacticLikes: {
+        [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
     tacticData: {
         [x: string]: {
@@ -3124,6 +3223,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
         impulse: {};
         impulseDebrief: {};
     };
+    tacticLikes: undefined;
     tacticData: undefined;
     sharedWithSupportGroupIds: "";
     type: undefined;
@@ -3191,7 +3291,9 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             nextId?: string | undefined;
+            autogenerate?: boolean | undefined;
             type: "folder";
             createdAt: {
                 seconds: number;
@@ -3226,6 +3328,7 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "steps";
             createdAt: {
                 seconds: number;
@@ -3258,6 +3361,7 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "emotions";
             createdAt: {
                 seconds: number;
@@ -3289,6 +3393,7 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -3330,6 +3435,7 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "video";
             createdAt: {
                 seconds: number;
@@ -3369,6 +3475,7 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -3402,6 +3509,7 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-time";
             createdAt: {
                 seconds: number;
@@ -3433,6 +3541,7 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-counter";
             createdAt: {
                 seconds: number;
@@ -3464,6 +3573,7 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "phone";
             createdAt: {
                 seconds: number;
@@ -3497,6 +3607,7 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "breathe";
             createdAt: {
                 seconds: number;
@@ -3532,6 +3643,7 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "urge-surfing";
             createdAt: {
                 seconds: number;
@@ -3563,6 +3675,7 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "task";
             createdAt: {
                 seconds: number;
@@ -3594,6 +3707,7 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "question";
             createdAt: {
                 seconds: number;
@@ -3614,6 +3728,9 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
     supportGroupSuggestedTacticIds: {
         impulse: {};
         impulseDebrief: {};
+    } | null | undefined;
+    tacticLikes: {
+        [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
     tacticData: {
         [x: string]: {
@@ -3702,6 +3819,7 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
         impulse: {};
         impulseDebrief: {};
     };
+    tacticLikes: undefined;
     tacticData: undefined;
     sharedWithSupportGroupIds: "";
     type: undefined;
@@ -3772,7 +3890,9 @@ declare const motionLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             nextId?: string | undefined;
+            autogenerate?: boolean | undefined;
             type: "folder";
             createdAt: {
                 seconds: number;
@@ -3807,6 +3927,7 @@ declare const motionLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "steps";
             createdAt: {
                 seconds: number;
@@ -3839,6 +3960,7 @@ declare const motionLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "emotions";
             createdAt: {
                 seconds: number;
@@ -3870,6 +3992,7 @@ declare const motionLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -3911,6 +4034,7 @@ declare const motionLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "video";
             createdAt: {
                 seconds: number;
@@ -3950,6 +4074,7 @@ declare const motionLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -3983,6 +4108,7 @@ declare const motionLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-time";
             createdAt: {
                 seconds: number;
@@ -4014,6 +4140,7 @@ declare const motionLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-counter";
             createdAt: {
                 seconds: number;
@@ -4045,6 +4172,7 @@ declare const motionLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "phone";
             createdAt: {
                 seconds: number;
@@ -4078,6 +4206,7 @@ declare const motionLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "breathe";
             createdAt: {
                 seconds: number;
@@ -4113,6 +4242,7 @@ declare const motionLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "urge-surfing";
             createdAt: {
                 seconds: number;
@@ -4144,6 +4274,7 @@ declare const motionLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "task";
             createdAt: {
                 seconds: number;
@@ -4175,6 +4306,7 @@ declare const motionLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "question";
             createdAt: {
                 seconds: number;
@@ -4195,6 +4327,9 @@ declare const motionLogSchema: yup.ObjectSchema<{
     supportGroupSuggestedTacticIds: {
         impulse: {};
         impulseDebrief: {};
+    } | null | undefined;
+    tacticLikes: {
+        [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
     tacticData: {
         [x: string]: {
@@ -4250,6 +4385,7 @@ declare const motionLogSchema: yup.ObjectSchema<{
         impulse: {};
         impulseDebrief: {};
     };
+    tacticLikes: undefined;
     tacticData: undefined;
     sharedWithSupportGroupIds: "";
     type: undefined;
@@ -4316,7 +4452,9 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             nextId?: string | undefined;
+            autogenerate?: boolean | undefined;
             type: "folder";
             createdAt: {
                 seconds: number;
@@ -4351,6 +4489,7 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "steps";
             createdAt: {
                 seconds: number;
@@ -4383,6 +4522,7 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "emotions";
             createdAt: {
                 seconds: number;
@@ -4414,6 +4554,7 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -4455,6 +4596,7 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "video";
             createdAt: {
                 seconds: number;
@@ -4494,6 +4636,7 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -4527,6 +4670,7 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-time";
             createdAt: {
                 seconds: number;
@@ -4558,6 +4702,7 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-counter";
             createdAt: {
                 seconds: number;
@@ -4589,6 +4734,7 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "phone";
             createdAt: {
                 seconds: number;
@@ -4622,6 +4768,7 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "breathe";
             createdAt: {
                 seconds: number;
@@ -4657,6 +4804,7 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "urge-surfing";
             createdAt: {
                 seconds: number;
@@ -4688,6 +4836,7 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "task";
             createdAt: {
                 seconds: number;
@@ -4719,6 +4868,7 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "question";
             createdAt: {
                 seconds: number;
@@ -4739,6 +4889,9 @@ declare const buttonLogSchema: yup.ObjectSchema<{
     supportGroupSuggestedTacticIds: {
         impulse: {};
         impulseDebrief: {};
+    } | null | undefined;
+    tacticLikes: {
+        [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
     tacticData: {
         [x: string]: {
@@ -4796,6 +4949,7 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         impulse: {};
         impulseDebrief: {};
     };
+    tacticLikes: undefined;
     tacticData: undefined;
     sharedWithSupportGroupIds: "";
     type: undefined;
@@ -4823,7 +4977,9 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             nextId?: string | undefined;
+            autogenerate?: boolean | undefined;
             type: "folder";
             createdAt: {
                 seconds: number;
@@ -4858,6 +5014,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "steps";
             createdAt: {
                 seconds: number;
@@ -4890,6 +5047,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "emotions";
             createdAt: {
                 seconds: number;
@@ -4921,6 +5079,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -4962,6 +5121,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "video";
             createdAt: {
                 seconds: number;
@@ -5001,6 +5161,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -5034,6 +5195,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-time";
             createdAt: {
                 seconds: number;
@@ -5065,6 +5227,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-counter";
             createdAt: {
                 seconds: number;
@@ -5096,6 +5259,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "phone";
             createdAt: {
                 seconds: number;
@@ -5129,6 +5293,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "breathe";
             createdAt: {
                 seconds: number;
@@ -5164,6 +5329,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "urge-surfing";
             createdAt: {
                 seconds: number;
@@ -5195,6 +5361,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "task";
             createdAt: {
                 seconds: number;
@@ -5226,6 +5393,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "question";
             createdAt: {
                 seconds: number;
@@ -5256,6 +5424,9 @@ export declare const logSchema: yup.Lazy<{
     supportGroupSuggestedTacticIds?: {
         impulse: {};
         impulseDebrief: {};
+    } | null | undefined;
+    tacticLikes?: {
+        [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
     tacticData?: {
         [x: string]: {
@@ -5327,7 +5498,9 @@ export declare const logSchema: yup.Lazy<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         nextId?: string | undefined;
+                        autogenerate?: boolean | undefined;
                         type: "folder";
                         createdAt: {
                             seconds: number;
@@ -5362,6 +5535,7 @@ export declare const logSchema: yup.Lazy<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "steps";
                         createdAt: {
                             seconds: number;
@@ -5394,6 +5568,7 @@ export declare const logSchema: yup.Lazy<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "emotions";
                         createdAt: {
                             seconds: number;
@@ -5425,6 +5600,7 @@ export declare const logSchema: yup.Lazy<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "audio";
                         createdAt: {
                             seconds: number;
@@ -5466,6 +5642,7 @@ export declare const logSchema: yup.Lazy<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "video";
                         createdAt: {
                             seconds: number;
@@ -5505,6 +5682,7 @@ export declare const logSchema: yup.Lazy<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "measure-slider";
                         createdAt: {
                             seconds: number;
@@ -5538,6 +5716,7 @@ export declare const logSchema: yup.Lazy<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "measure-time";
                         createdAt: {
                             seconds: number;
@@ -5569,6 +5748,7 @@ export declare const logSchema: yup.Lazy<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "measure-counter";
                         createdAt: {
                             seconds: number;
@@ -5600,6 +5780,7 @@ export declare const logSchema: yup.Lazy<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "phone";
                         createdAt: {
                             seconds: number;
@@ -5633,6 +5814,7 @@ export declare const logSchema: yup.Lazy<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "breathe";
                         createdAt: {
                             seconds: number;
@@ -5668,6 +5850,7 @@ export declare const logSchema: yup.Lazy<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "urge-surfing";
                         createdAt: {
                             seconds: number;
@@ -5699,6 +5882,7 @@ export declare const logSchema: yup.Lazy<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "task";
                         createdAt: {
                             seconds: number;
@@ -5730,6 +5914,7 @@ export declare const logSchema: yup.Lazy<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "question";
                         createdAt: {
                             seconds: number;
@@ -5768,7 +5953,9 @@ export declare const logSchema: yup.Lazy<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         nextId?: string | undefined;
+                        autogenerate?: boolean | undefined;
                         type: "folder";
                         createdAt: {
                             seconds: number;
@@ -5803,6 +5990,7 @@ export declare const logSchema: yup.Lazy<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "steps";
                         createdAt: {
                             seconds: number;
@@ -5835,6 +6023,7 @@ export declare const logSchema: yup.Lazy<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "emotions";
                         createdAt: {
                             seconds: number;
@@ -5866,6 +6055,7 @@ export declare const logSchema: yup.Lazy<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "audio";
                         createdAt: {
                             seconds: number;
@@ -5907,6 +6097,7 @@ export declare const logSchema: yup.Lazy<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "video";
                         createdAt: {
                             seconds: number;
@@ -5946,6 +6137,7 @@ export declare const logSchema: yup.Lazy<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "measure-slider";
                         createdAt: {
                             seconds: number;
@@ -5979,6 +6171,7 @@ export declare const logSchema: yup.Lazy<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "measure-time";
                         createdAt: {
                             seconds: number;
@@ -6010,6 +6203,7 @@ export declare const logSchema: yup.Lazy<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "measure-counter";
                         createdAt: {
                             seconds: number;
@@ -6041,6 +6235,7 @@ export declare const logSchema: yup.Lazy<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "phone";
                         createdAt: {
                             seconds: number;
@@ -6074,6 +6269,7 @@ export declare const logSchema: yup.Lazy<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "breathe";
                         createdAt: {
                             seconds: number;
@@ -6109,6 +6305,7 @@ export declare const logSchema: yup.Lazy<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "urge-surfing";
                         createdAt: {
                             seconds: number;
@@ -6140,6 +6337,7 @@ export declare const logSchema: yup.Lazy<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "task";
                         createdAt: {
                             seconds: number;
@@ -6171,6 +6369,7 @@ export declare const logSchema: yup.Lazy<{
                         isResponseRequired?: boolean | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
+                        numberOfLikes?: number | null | undefined;
                         type: "question";
                         createdAt: {
                             seconds: number;
@@ -6240,7 +6439,9 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             nextId?: string | undefined;
+            autogenerate?: boolean | undefined;
             type: "folder";
             createdAt: {
                 seconds: number;
@@ -6275,6 +6476,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "steps";
             createdAt: {
                 seconds: number;
@@ -6307,6 +6509,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "emotions";
             createdAt: {
                 seconds: number;
@@ -6338,6 +6541,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -6379,6 +6583,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "video";
             createdAt: {
                 seconds: number;
@@ -6418,6 +6623,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -6451,6 +6657,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-time";
             createdAt: {
                 seconds: number;
@@ -6482,6 +6689,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-counter";
             createdAt: {
                 seconds: number;
@@ -6513,6 +6721,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "phone";
             createdAt: {
                 seconds: number;
@@ -6546,6 +6755,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "breathe";
             createdAt: {
                 seconds: number;
@@ -6581,6 +6791,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "urge-surfing";
             createdAt: {
                 seconds: number;
@@ -6612,6 +6823,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "task";
             createdAt: {
                 seconds: number;
@@ -6643,6 +6855,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "question";
             createdAt: {
                 seconds: number;
@@ -6673,6 +6886,9 @@ export declare const logSchema: yup.Lazy<{
     supportGroupSuggestedTacticIds?: {
         impulse: {};
         impulseDebrief: {};
+    } | null | undefined;
+    tacticLikes?: {
+        [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
     tacticData?: {
         [x: string]: {
@@ -6737,7 +6953,9 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             nextId?: string | undefined;
+            autogenerate?: boolean | undefined;
             type: "folder";
             createdAt: {
                 seconds: number;
@@ -6772,6 +6990,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "steps";
             createdAt: {
                 seconds: number;
@@ -6804,6 +7023,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "emotions";
             createdAt: {
                 seconds: number;
@@ -6835,6 +7055,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -6876,6 +7097,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "video";
             createdAt: {
                 seconds: number;
@@ -6915,6 +7137,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -6948,6 +7171,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-time";
             createdAt: {
                 seconds: number;
@@ -6979,6 +7203,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-counter";
             createdAt: {
                 seconds: number;
@@ -7010,6 +7235,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "phone";
             createdAt: {
                 seconds: number;
@@ -7043,6 +7269,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "breathe";
             createdAt: {
                 seconds: number;
@@ -7078,6 +7305,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "urge-surfing";
             createdAt: {
                 seconds: number;
@@ -7109,6 +7337,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "task";
             createdAt: {
                 seconds: number;
@@ -7140,6 +7369,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "question";
             createdAt: {
                 seconds: number;
@@ -7170,6 +7400,9 @@ export declare const logSchema: yup.Lazy<{
     supportGroupSuggestedTacticIds?: {
         impulse: {};
         impulseDebrief: {};
+    } | null | undefined;
+    tacticLikes?: {
+        [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
     tacticData?: {
         [x: string]: {
@@ -7232,7 +7465,9 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             nextId?: string | undefined;
+            autogenerate?: boolean | undefined;
             type: "folder";
             createdAt: {
                 seconds: number;
@@ -7267,6 +7502,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "steps";
             createdAt: {
                 seconds: number;
@@ -7299,6 +7535,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "emotions";
             createdAt: {
                 seconds: number;
@@ -7330,6 +7567,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -7371,6 +7609,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "video";
             createdAt: {
                 seconds: number;
@@ -7410,6 +7649,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -7443,6 +7683,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-time";
             createdAt: {
                 seconds: number;
@@ -7474,6 +7715,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-counter";
             createdAt: {
                 seconds: number;
@@ -7505,6 +7747,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "phone";
             createdAt: {
                 seconds: number;
@@ -7538,6 +7781,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "breathe";
             createdAt: {
                 seconds: number;
@@ -7573,6 +7817,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "urge-surfing";
             createdAt: {
                 seconds: number;
@@ -7604,6 +7849,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "task";
             createdAt: {
                 seconds: number;
@@ -7635,6 +7881,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "question";
             createdAt: {
                 seconds: number;
@@ -7665,6 +7912,9 @@ export declare const logSchema: yup.Lazy<{
     supportGroupSuggestedTacticIds?: {
         impulse: {};
         impulseDebrief: {};
+    } | null | undefined;
+    tacticLikes?: {
+        [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
     tacticData?: {
         [x: string]: {
@@ -7759,7 +8009,9 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             nextId?: string | undefined;
+            autogenerate?: boolean | undefined;
             type: "folder";
             createdAt: {
                 seconds: number;
@@ -7794,6 +8046,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "steps";
             createdAt: {
                 seconds: number;
@@ -7826,6 +8079,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "emotions";
             createdAt: {
                 seconds: number;
@@ -7857,6 +8111,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -7898,6 +8153,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "video";
             createdAt: {
                 seconds: number;
@@ -7937,6 +8193,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -7970,6 +8227,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-time";
             createdAt: {
                 seconds: number;
@@ -8001,6 +8259,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-counter";
             createdAt: {
                 seconds: number;
@@ -8032,6 +8291,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "phone";
             createdAt: {
                 seconds: number;
@@ -8065,6 +8325,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "breathe";
             createdAt: {
                 seconds: number;
@@ -8100,6 +8361,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "urge-surfing";
             createdAt: {
                 seconds: number;
@@ -8131,6 +8393,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "task";
             createdAt: {
                 seconds: number;
@@ -8162,6 +8425,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "question";
             createdAt: {
                 seconds: number;
@@ -8192,6 +8456,9 @@ export declare const logSchema: yup.Lazy<{
     supportGroupSuggestedTacticIds?: {
         impulse: {};
         impulseDebrief: {};
+    } | null | undefined;
+    tacticLikes?: {
+        [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
     tacticData?: {
         [x: string]: {
@@ -8253,7 +8520,9 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             nextId?: string | undefined;
+            autogenerate?: boolean | undefined;
             type: "folder";
             createdAt: {
                 seconds: number;
@@ -8288,6 +8557,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "steps";
             createdAt: {
                 seconds: number;
@@ -8320,6 +8590,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "emotions";
             createdAt: {
                 seconds: number;
@@ -8351,6 +8622,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -8392,6 +8664,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "video";
             createdAt: {
                 seconds: number;
@@ -8431,6 +8704,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -8464,6 +8738,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-time";
             createdAt: {
                 seconds: number;
@@ -8495,6 +8770,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "measure-counter";
             createdAt: {
                 seconds: number;
@@ -8526,6 +8802,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "phone";
             createdAt: {
                 seconds: number;
@@ -8559,6 +8836,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "breathe";
             createdAt: {
                 seconds: number;
@@ -8594,6 +8872,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "urge-surfing";
             createdAt: {
                 seconds: number;
@@ -8625,6 +8904,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "task";
             createdAt: {
                 seconds: number;
@@ -8656,6 +8936,7 @@ export declare const logSchema: yup.Lazy<{
             isResponseRequired?: boolean | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
             type: "question";
             createdAt: {
                 seconds: number;
@@ -8686,6 +8967,9 @@ export declare const logSchema: yup.Lazy<{
     supportGroupSuggestedTacticIds?: {
         impulse: {};
         impulseDebrief: {};
+    } | null | undefined;
+    tacticLikes?: {
+        [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
     tacticData?: {
         [x: string]: {
