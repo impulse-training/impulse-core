@@ -1,4 +1,5 @@
 import * as Yup from 'yup';
+import { gameplanBaseSchema } from './gameplan';
 import { timestampSchema } from './utils/timestamp';
 
 export const patternSchema = Yup.object().shape({
@@ -18,6 +19,8 @@ export const patternSchema = Yup.object().shape({
   sendWeeklyReports: Yup.boolean().required(),
   gameplanId: Yup.string().notRequired(),
   debriefGameplanId: Yup.string().notRequired(),
+  impulse: gameplanBaseSchema,
+  debrief: gameplanBaseSchema,
 });
 
 export type PatternValue = Yup.InferType<typeof patternSchema>;

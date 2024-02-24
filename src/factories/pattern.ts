@@ -13,4 +13,14 @@ export const makePatternFactory = (TimestampKlass: typeof TimestampLike) =>
     sendWeeklyReports: false,
     gameplanId: Factory.each(i => i.toString()),
     debriefGameplanId: Factory.each(i => i.toString()),
+    impulse: {
+      tacticIds: [],
+      suggestedTacticIds: [],
+      tacticsById: {},
+    },
+    debrief: {
+      tacticIds: [],
+      suggestedTacticIds: [],
+      tacticsById: {},
+    },
   });
