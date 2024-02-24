@@ -46,6 +46,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 timerSeconds?: Yup.Maybe<number | undefined>;
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
                 impulseOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -55,10 +56,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 emotionOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                scheduledMinuteOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledLocationOrdinals?: {
+                scheduledGameplanOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 nextId?: string | undefined;
@@ -98,6 +96,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 timerSeconds?: Yup.Maybe<number | undefined>;
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
                 impulseOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -107,10 +106,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 emotionOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                scheduledMinuteOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledLocationOrdinals?: {
+                scheduledGameplanOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 type: "steps";
@@ -146,6 +142,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 timerSeconds?: Yup.Maybe<number | undefined>;
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
                 impulseOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -155,10 +152,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 emotionOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                scheduledMinuteOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledLocationOrdinals?: {
+                scheduledGameplanOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 type: "emotions";
@@ -193,6 +187,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 timerSeconds?: Yup.Maybe<number | undefined>;
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
                 impulseOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -202,10 +197,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 emotionOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                scheduledMinuteOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledLocationOrdinals?: {
+                scheduledGameplanOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 type: "audio";
@@ -250,6 +242,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 timerSeconds?: Yup.Maybe<number | undefined>;
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
                 impulseOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -259,10 +252,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 emotionOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                scheduledMinuteOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledLocationOrdinals?: {
+                scheduledGameplanOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 type: "video";
@@ -305,6 +295,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 timerSeconds?: Yup.Maybe<number | undefined>;
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
                 impulseOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -314,10 +305,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 emotionOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                scheduledMinuteOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledLocationOrdinals?: {
+                scheduledGameplanOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 type: "measure-slider";
@@ -354,6 +342,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 timerSeconds?: Yup.Maybe<number | undefined>;
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
                 impulseOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -363,10 +352,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 emotionOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                scheduledMinuteOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledLocationOrdinals?: {
+                scheduledGameplanOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 type: "measure-time";
@@ -401,6 +387,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 timerSeconds?: Yup.Maybe<number | undefined>;
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
                 impulseOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -410,10 +397,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 emotionOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                scheduledMinuteOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledLocationOrdinals?: {
+                scheduledGameplanOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 type: "measure-counter";
@@ -448,6 +432,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 timerSeconds?: Yup.Maybe<number | undefined>;
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
                 impulseOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -457,10 +442,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 emotionOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                scheduledMinuteOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledLocationOrdinals?: {
+                scheduledGameplanOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 type: "phone";
@@ -497,6 +479,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 timerSeconds?: Yup.Maybe<number | undefined>;
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
                 impulseOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -506,10 +489,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 emotionOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                scheduledMinuteOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledLocationOrdinals?: {
+                scheduledGameplanOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 type: "breathe";
@@ -548,6 +528,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 timerSeconds?: Yup.Maybe<number | undefined>;
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
                 impulseOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -557,10 +538,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 emotionOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                scheduledMinuteOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledLocationOrdinals?: {
+                scheduledGameplanOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 type: "urge-surfing";
@@ -595,6 +573,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 timerSeconds?: Yup.Maybe<number | undefined>;
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
                 impulseOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -604,10 +583,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 emotionOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                scheduledMinuteOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledLocationOrdinals?: {
+                scheduledGameplanOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 type: "task";
@@ -642,6 +618,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 timerSeconds?: Yup.Maybe<number | undefined>;
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
                 impulseOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -651,10 +628,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 emotionOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                scheduledMinuteOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledLocationOrdinals?: {
+                scheduledGameplanOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 type: "question";
@@ -696,6 +670,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 timerSeconds?: Yup.Maybe<number | undefined>;
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
                 impulseOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -705,10 +680,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 emotionOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                scheduledMinuteOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledLocationOrdinals?: {
+                scheduledGameplanOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 nextId?: string | undefined;
@@ -748,6 +720,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 timerSeconds?: Yup.Maybe<number | undefined>;
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
                 impulseOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -757,10 +730,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 emotionOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                scheduledMinuteOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledLocationOrdinals?: {
+                scheduledGameplanOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 type: "steps";
@@ -796,6 +766,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 timerSeconds?: Yup.Maybe<number | undefined>;
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
                 impulseOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -805,10 +776,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 emotionOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                scheduledMinuteOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledLocationOrdinals?: {
+                scheduledGameplanOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 type: "emotions";
@@ -843,6 +811,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 timerSeconds?: Yup.Maybe<number | undefined>;
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
                 impulseOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -852,10 +821,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 emotionOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                scheduledMinuteOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledLocationOrdinals?: {
+                scheduledGameplanOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 type: "audio";
@@ -900,6 +866,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 timerSeconds?: Yup.Maybe<number | undefined>;
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
                 impulseOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -909,10 +876,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 emotionOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                scheduledMinuteOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledLocationOrdinals?: {
+                scheduledGameplanOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 type: "video";
@@ -955,6 +919,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 timerSeconds?: Yup.Maybe<number | undefined>;
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
                 impulseOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -964,10 +929,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 emotionOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                scheduledMinuteOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledLocationOrdinals?: {
+                scheduledGameplanOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 type: "measure-slider";
@@ -1004,6 +966,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 timerSeconds?: Yup.Maybe<number | undefined>;
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
                 impulseOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1013,10 +976,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 emotionOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                scheduledMinuteOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledLocationOrdinals?: {
+                scheduledGameplanOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 type: "measure-time";
@@ -1051,6 +1011,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 timerSeconds?: Yup.Maybe<number | undefined>;
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
                 impulseOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1060,10 +1021,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 emotionOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                scheduledMinuteOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledLocationOrdinals?: {
+                scheduledGameplanOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 type: "measure-counter";
@@ -1098,6 +1056,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 timerSeconds?: Yup.Maybe<number | undefined>;
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
                 impulseOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1107,10 +1066,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 emotionOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                scheduledMinuteOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledLocationOrdinals?: {
+                scheduledGameplanOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 type: "phone";
@@ -1147,6 +1103,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 timerSeconds?: Yup.Maybe<number | undefined>;
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
                 impulseOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1156,10 +1113,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 emotionOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                scheduledMinuteOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledLocationOrdinals?: {
+                scheduledGameplanOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 type: "breathe";
@@ -1198,6 +1152,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 timerSeconds?: Yup.Maybe<number | undefined>;
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
                 impulseOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1207,10 +1162,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 emotionOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                scheduledMinuteOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledLocationOrdinals?: {
+                scheduledGameplanOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 type: "urge-surfing";
@@ -1245,6 +1197,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 timerSeconds?: Yup.Maybe<number | undefined>;
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
                 impulseOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1254,10 +1207,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 emotionOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                scheduledMinuteOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledLocationOrdinals?: {
+                scheduledGameplanOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 type: "task";
@@ -1292,6 +1242,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 timerSeconds?: Yup.Maybe<number | undefined>;
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
                 impulseOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1301,10 +1252,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
                 emotionOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                scheduledMinuteOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledLocationOrdinals?: {
+                scheduledGameplanOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 type: "question";

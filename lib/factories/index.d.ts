@@ -96,6 +96,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -105,10 +106,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     nextId?: string | undefined;
@@ -148,6 +146,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -157,10 +156,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "steps";
@@ -196,6 +192,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -205,10 +202,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "emotions";
@@ -243,6 +237,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -252,10 +247,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "audio";
@@ -300,6 +292,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -309,10 +302,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "video";
@@ -355,6 +345,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -364,10 +355,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "measure-slider";
@@ -404,6 +392,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -413,10 +402,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "measure-time";
@@ -451,6 +437,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -460,10 +447,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "measure-counter";
@@ -498,6 +482,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -507,10 +492,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "phone";
@@ -547,6 +529,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -556,10 +539,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "breathe";
@@ -598,6 +578,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -607,10 +588,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "urge-surfing";
@@ -645,6 +623,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -654,10 +633,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "task";
@@ -692,6 +668,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -701,10 +678,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "question";
@@ -749,6 +723,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -758,10 +733,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     nextId?: string | undefined;
@@ -801,6 +773,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -810,10 +783,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "steps";
@@ -849,6 +819,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -858,10 +829,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "emotions";
@@ -896,6 +864,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -905,10 +874,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "audio";
@@ -953,6 +919,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -962,10 +929,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "video";
@@ -1008,6 +972,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -1017,10 +982,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "measure-slider";
@@ -1057,6 +1019,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -1066,10 +1029,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "measure-time";
@@ -1104,6 +1064,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -1113,10 +1074,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "measure-counter";
@@ -1151,6 +1109,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -1160,10 +1119,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "phone";
@@ -1200,6 +1156,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -1209,10 +1166,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "breathe";
@@ -1251,6 +1205,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -1260,10 +1215,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "urge-surfing";
@@ -1298,6 +1250,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -1307,10 +1260,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "task";
@@ -1345,6 +1295,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -1354,10 +1305,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "question";
@@ -1382,5 +1330,5 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
     recommendationFactory: import("factory.ts").Factory<import("..").RecommendationValue, "uid" | "ordinal" | "createdAt" | "updatedAt" | "title" | "tacticIds" | "tacticsById" | "appliedAt" | "dismissedAt" | "explanation" | "gameplanExplanation" | "recommenderUid" | "recommenderName" | "ruleId" | "gameplanIds" | "defaultSelected">;
     recommendationRuleFactory: import("factory.ts").Factory<import("..").RecommendationRuleValue, keyof import("..").RecommendationRuleValue>;
     newGameplanRecommendationRuleFactory: import("factory.ts").Factory<import("..").RecommendationRuleValue, keyof import("..").RecommendationRuleValue>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "type" | "uid" | "ordinal" | "createdAt" | "updatedAt" | "title" | "subtitle" | "description" | "image" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "impulseOrdinals" | "debriefOrdinals" | "emotionOrdinals" | "scheduledMinuteOrdinals" | "scheduledLocationOrdinals">;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "type" | "uid" | "ordinal" | "createdAt" | "updatedAt" | "title" | "subtitle" | "description" | "image" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested" | "impulseOrdinals" | "debriefOrdinals" | "emotionOrdinals" | "scheduledGameplanOrdinals">;
 };

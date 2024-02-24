@@ -48,6 +48,7 @@ export declare class Log {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -57,10 +58,7 @@ export declare class Log {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     nextId?: string | undefined;
@@ -100,6 +98,7 @@ export declare class Log {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -109,10 +108,7 @@ export declare class Log {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "steps";
@@ -148,6 +144,7 @@ export declare class Log {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -157,10 +154,7 @@ export declare class Log {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "emotions";
@@ -195,6 +189,7 @@ export declare class Log {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -204,10 +199,7 @@ export declare class Log {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "audio";
@@ -252,6 +244,7 @@ export declare class Log {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -261,10 +254,7 @@ export declare class Log {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "video";
@@ -307,6 +297,7 @@ export declare class Log {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -316,10 +307,7 @@ export declare class Log {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "measure-slider";
@@ -356,6 +344,7 @@ export declare class Log {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -365,10 +354,7 @@ export declare class Log {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "measure-time";
@@ -403,6 +389,7 @@ export declare class Log {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -412,10 +399,7 @@ export declare class Log {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "measure-counter";
@@ -450,6 +434,7 @@ export declare class Log {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -459,10 +444,7 @@ export declare class Log {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "phone";
@@ -499,6 +481,7 @@ export declare class Log {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -508,10 +491,7 @@ export declare class Log {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "breathe";
@@ -550,6 +530,7 @@ export declare class Log {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -559,10 +540,7 @@ export declare class Log {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "urge-surfing";
@@ -597,6 +575,7 @@ export declare class Log {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -606,10 +585,7 @@ export declare class Log {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "task";
@@ -644,6 +620,7 @@ export declare class Log {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -653,10 +630,7 @@ export declare class Log {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "question";
@@ -701,6 +675,7 @@ export declare class Log {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -710,10 +685,7 @@ export declare class Log {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     nextId?: string | undefined;
@@ -753,6 +725,7 @@ export declare class Log {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -762,10 +735,7 @@ export declare class Log {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "steps";
@@ -801,6 +771,7 @@ export declare class Log {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -810,10 +781,7 @@ export declare class Log {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "emotions";
@@ -848,6 +816,7 @@ export declare class Log {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -857,10 +826,7 @@ export declare class Log {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "audio";
@@ -905,6 +871,7 @@ export declare class Log {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -914,10 +881,7 @@ export declare class Log {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "video";
@@ -960,6 +924,7 @@ export declare class Log {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -969,10 +934,7 @@ export declare class Log {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "measure-slider";
@@ -1009,6 +971,7 @@ export declare class Log {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -1018,10 +981,7 @@ export declare class Log {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "measure-time";
@@ -1056,6 +1016,7 @@ export declare class Log {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -1065,10 +1026,7 @@ export declare class Log {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "measure-counter";
@@ -1103,6 +1061,7 @@ export declare class Log {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -1112,10 +1071,7 @@ export declare class Log {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "phone";
@@ -1152,6 +1108,7 @@ export declare class Log {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -1161,10 +1118,7 @@ export declare class Log {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "breathe";
@@ -1203,6 +1157,7 @@ export declare class Log {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -1212,10 +1167,7 @@ export declare class Log {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "urge-surfing";
@@ -1250,6 +1202,7 @@ export declare class Log {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -1259,10 +1212,7 @@ export declare class Log {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "task";
@@ -1297,6 +1247,7 @@ export declare class Log {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isAvailableForRecommendation?: boolean | null | undefined;
                     numberOfLikes?: number | null | undefined;
+                    isSuggested?: boolean | undefined;
                     impulseOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -1306,10 +1257,7 @@ export declare class Log {
                     emotionOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    scheduledMinuteOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    scheduledLocationOrdinals?: {
+                    scheduledGameplanOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     type: "question";
