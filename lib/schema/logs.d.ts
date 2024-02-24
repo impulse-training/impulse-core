@@ -71,6 +71,21 @@ declare const baseLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             nextId?: string | undefined;
             autogenerate?: boolean | undefined;
             type: "folder";
@@ -108,6 +123,21 @@ declare const baseLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "steps";
             createdAt: {
                 seconds: number;
@@ -141,6 +171,21 @@ declare const baseLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "emotions";
             createdAt: {
                 seconds: number;
@@ -173,6 +218,21 @@ declare const baseLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -215,6 +275,21 @@ declare const baseLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "video";
             createdAt: {
                 seconds: number;
@@ -255,6 +330,21 @@ declare const baseLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -289,6 +379,21 @@ declare const baseLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-time";
             createdAt: {
                 seconds: number;
@@ -321,6 +426,21 @@ declare const baseLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-counter";
             createdAt: {
                 seconds: number;
@@ -353,6 +473,21 @@ declare const baseLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "phone";
             createdAt: {
                 seconds: number;
@@ -387,6 +522,21 @@ declare const baseLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "breathe";
             createdAt: {
                 seconds: number;
@@ -423,6 +573,21 @@ declare const baseLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "urge-surfing";
             createdAt: {
                 seconds: number;
@@ -455,6 +620,21 @@ declare const baseLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "task";
             createdAt: {
                 seconds: number;
@@ -487,6 +667,21 @@ declare const baseLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "question";
             createdAt: {
                 seconds: number;
@@ -636,6 +831,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             nextId?: string | undefined;
             autogenerate?: boolean | undefined;
             type: "folder";
@@ -673,6 +883,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "steps";
             createdAt: {
                 seconds: number;
@@ -706,6 +931,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "emotions";
             createdAt: {
                 seconds: number;
@@ -738,6 +978,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -780,6 +1035,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "video";
             createdAt: {
                 seconds: number;
@@ -820,6 +1090,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -854,6 +1139,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-time";
             createdAt: {
                 seconds: number;
@@ -886,6 +1186,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-counter";
             createdAt: {
                 seconds: number;
@@ -918,6 +1233,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "phone";
             createdAt: {
                 seconds: number;
@@ -952,6 +1282,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "breathe";
             createdAt: {
                 seconds: number;
@@ -988,6 +1333,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "urge-surfing";
             createdAt: {
                 seconds: number;
@@ -1020,6 +1380,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "task";
             createdAt: {
                 seconds: number;
@@ -1052,6 +1427,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "question";
             createdAt: {
                 seconds: number;
@@ -1115,6 +1505,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         nextId?: string | undefined;
                         autogenerate?: boolean | undefined;
                         type: "folder";
@@ -1152,6 +1557,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "steps";
                         createdAt: {
                             seconds: number;
@@ -1185,6 +1605,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "emotions";
                         createdAt: {
                             seconds: number;
@@ -1217,6 +1652,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "audio";
                         createdAt: {
                             seconds: number;
@@ -1259,6 +1709,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "video";
                         createdAt: {
                             seconds: number;
@@ -1299,6 +1764,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-slider";
                         createdAt: {
                             seconds: number;
@@ -1333,6 +1813,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-time";
                         createdAt: {
                             seconds: number;
@@ -1365,6 +1860,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-counter";
                         createdAt: {
                             seconds: number;
@@ -1397,6 +1907,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "phone";
                         createdAt: {
                             seconds: number;
@@ -1431,6 +1956,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "breathe";
                         createdAt: {
                             seconds: number;
@@ -1467,6 +2007,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "urge-surfing";
                         createdAt: {
                             seconds: number;
@@ -1499,6 +2054,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "task";
                         createdAt: {
                             seconds: number;
@@ -1531,6 +2101,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "question";
                         createdAt: {
                             seconds: number;
@@ -1570,6 +2155,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         nextId?: string | undefined;
                         autogenerate?: boolean | undefined;
                         type: "folder";
@@ -1607,6 +2207,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "steps";
                         createdAt: {
                             seconds: number;
@@ -1640,6 +2255,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "emotions";
                         createdAt: {
                             seconds: number;
@@ -1672,6 +2302,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "audio";
                         createdAt: {
                             seconds: number;
@@ -1714,6 +2359,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "video";
                         createdAt: {
                             seconds: number;
@@ -1754,6 +2414,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-slider";
                         createdAt: {
                             seconds: number;
@@ -1788,6 +2463,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-time";
                         createdAt: {
                             seconds: number;
@@ -1820,6 +2510,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-counter";
                         createdAt: {
                             seconds: number;
@@ -1852,6 +2557,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "phone";
                         createdAt: {
                             seconds: number;
@@ -1886,6 +2606,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "breathe";
                         createdAt: {
                             seconds: number;
@@ -1922,6 +2657,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "urge-surfing";
                         createdAt: {
                             seconds: number;
@@ -1954,6 +2704,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "task";
                         createdAt: {
                             seconds: number;
@@ -1986,6 +2751,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "question";
                         createdAt: {
                             seconds: number;
@@ -2051,6 +2831,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         nextId?: string | undefined;
                         autogenerate?: boolean | undefined;
                         type: "folder";
@@ -2088,6 +2883,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "steps";
                         createdAt: {
                             seconds: number;
@@ -2121,6 +2931,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "emotions";
                         createdAt: {
                             seconds: number;
@@ -2153,6 +2978,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "audio";
                         createdAt: {
                             seconds: number;
@@ -2195,6 +3035,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "video";
                         createdAt: {
                             seconds: number;
@@ -2235,6 +3090,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-slider";
                         createdAt: {
                             seconds: number;
@@ -2269,6 +3139,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-time";
                         createdAt: {
                             seconds: number;
@@ -2301,6 +3186,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-counter";
                         createdAt: {
                             seconds: number;
@@ -2333,6 +3233,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "phone";
                         createdAt: {
                             seconds: number;
@@ -2367,6 +3282,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "breathe";
                         createdAt: {
                             seconds: number;
@@ -2403,6 +3333,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "urge-surfing";
                         createdAt: {
                             seconds: number;
@@ -2435,6 +3380,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "task";
                         createdAt: {
                             seconds: number;
@@ -2467,6 +3427,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "question";
                         createdAt: {
                             seconds: number;
@@ -2509,6 +3484,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         nextId?: string | undefined;
                         autogenerate?: boolean | undefined;
                         type: "folder";
@@ -2546,6 +3536,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "steps";
                         createdAt: {
                             seconds: number;
@@ -2579,6 +3584,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "emotions";
                         createdAt: {
                             seconds: number;
@@ -2611,6 +3631,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "audio";
                         createdAt: {
                             seconds: number;
@@ -2653,6 +3688,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "video";
                         createdAt: {
                             seconds: number;
@@ -2693,6 +3743,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-slider";
                         createdAt: {
                             seconds: number;
@@ -2727,6 +3792,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-time";
                         createdAt: {
                             seconds: number;
@@ -2759,6 +3839,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-counter";
                         createdAt: {
                             seconds: number;
@@ -2791,6 +3886,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "phone";
                         createdAt: {
                             seconds: number;
@@ -2825,6 +3935,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "breathe";
                         createdAt: {
                             seconds: number;
@@ -2861,6 +3986,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "urge-surfing";
                         createdAt: {
                             seconds: number;
@@ -2893,6 +4033,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "task";
                         createdAt: {
                             seconds: number;
@@ -2925,6 +4080,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "question";
                         createdAt: {
                             seconds: number;
@@ -3070,6 +4240,21 @@ declare const locationLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             nextId?: string | undefined;
             autogenerate?: boolean | undefined;
             type: "folder";
@@ -3107,6 +4292,21 @@ declare const locationLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "steps";
             createdAt: {
                 seconds: number;
@@ -3140,6 +4340,21 @@ declare const locationLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "emotions";
             createdAt: {
                 seconds: number;
@@ -3172,6 +4387,21 @@ declare const locationLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -3214,6 +4444,21 @@ declare const locationLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "video";
             createdAt: {
                 seconds: number;
@@ -3254,6 +4499,21 @@ declare const locationLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -3288,6 +4548,21 @@ declare const locationLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-time";
             createdAt: {
                 seconds: number;
@@ -3320,6 +4595,21 @@ declare const locationLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-counter";
             createdAt: {
                 seconds: number;
@@ -3352,6 +4642,21 @@ declare const locationLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "phone";
             createdAt: {
                 seconds: number;
@@ -3386,6 +4691,21 @@ declare const locationLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "breathe";
             createdAt: {
                 seconds: number;
@@ -3422,6 +4742,21 @@ declare const locationLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "urge-surfing";
             createdAt: {
                 seconds: number;
@@ -3454,6 +4789,21 @@ declare const locationLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "task";
             createdAt: {
                 seconds: number;
@@ -3486,6 +4836,21 @@ declare const locationLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "question";
             createdAt: {
                 seconds: number;
@@ -3638,6 +5003,21 @@ declare const timeLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             nextId?: string | undefined;
             autogenerate?: boolean | undefined;
             type: "folder";
@@ -3675,6 +5055,21 @@ declare const timeLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "steps";
             createdAt: {
                 seconds: number;
@@ -3708,6 +5103,21 @@ declare const timeLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "emotions";
             createdAt: {
                 seconds: number;
@@ -3740,6 +5150,21 @@ declare const timeLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -3782,6 +5207,21 @@ declare const timeLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "video";
             createdAt: {
                 seconds: number;
@@ -3822,6 +5262,21 @@ declare const timeLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -3856,6 +5311,21 @@ declare const timeLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-time";
             createdAt: {
                 seconds: number;
@@ -3888,6 +5358,21 @@ declare const timeLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-counter";
             createdAt: {
                 seconds: number;
@@ -3920,6 +5405,21 @@ declare const timeLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "phone";
             createdAt: {
                 seconds: number;
@@ -3954,6 +5454,21 @@ declare const timeLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "breathe";
             createdAt: {
                 seconds: number;
@@ -3990,6 +5505,21 @@ declare const timeLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "urge-surfing";
             createdAt: {
                 seconds: number;
@@ -4022,6 +5552,21 @@ declare const timeLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "task";
             createdAt: {
                 seconds: number;
@@ -4054,6 +5599,21 @@ declare const timeLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "question";
             createdAt: {
                 seconds: number;
@@ -4202,6 +5762,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             nextId?: string | undefined;
             autogenerate?: boolean | undefined;
             type: "folder";
@@ -4239,6 +5814,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "steps";
             createdAt: {
                 seconds: number;
@@ -4272,6 +5862,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "emotions";
             createdAt: {
                 seconds: number;
@@ -4304,6 +5909,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -4346,6 +5966,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "video";
             createdAt: {
                 seconds: number;
@@ -4386,6 +6021,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -4420,6 +6070,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-time";
             createdAt: {
                 seconds: number;
@@ -4452,6 +6117,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-counter";
             createdAt: {
                 seconds: number;
@@ -4484,6 +6164,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "phone";
             createdAt: {
                 seconds: number;
@@ -4518,6 +6213,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "breathe";
             createdAt: {
                 seconds: number;
@@ -4554,6 +6264,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "urge-surfing";
             createdAt: {
                 seconds: number;
@@ -4586,6 +6311,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "task";
             createdAt: {
                 seconds: number;
@@ -4618,6 +6358,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "question";
             createdAt: {
                 seconds: number;
@@ -4698,6 +6453,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         nextId?: string | undefined;
                         autogenerate?: boolean | undefined;
                         type: "folder";
@@ -4735,6 +6505,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "steps";
                         createdAt: {
                             seconds: number;
@@ -4768,6 +6553,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "emotions";
                         createdAt: {
                             seconds: number;
@@ -4800,6 +6600,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "audio";
                         createdAt: {
                             seconds: number;
@@ -4842,6 +6657,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "video";
                         createdAt: {
                             seconds: number;
@@ -4882,6 +6712,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-slider";
                         createdAt: {
                             seconds: number;
@@ -4916,6 +6761,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-time";
                         createdAt: {
                             seconds: number;
@@ -4948,6 +6808,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-counter";
                         createdAt: {
                             seconds: number;
@@ -4980,6 +6855,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "phone";
                         createdAt: {
                             seconds: number;
@@ -5014,6 +6904,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "breathe";
                         createdAt: {
                             seconds: number;
@@ -5050,6 +6955,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "urge-surfing";
                         createdAt: {
                             seconds: number;
@@ -5082,6 +7002,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "task";
                         createdAt: {
                             seconds: number;
@@ -5114,6 +7049,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "question";
                         createdAt: {
                             seconds: number;
@@ -5156,6 +7106,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         nextId?: string | undefined;
                         autogenerate?: boolean | undefined;
                         type: "folder";
@@ -5193,6 +7158,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "steps";
                         createdAt: {
                             seconds: number;
@@ -5226,6 +7206,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "emotions";
                         createdAt: {
                             seconds: number;
@@ -5258,6 +7253,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "audio";
                         createdAt: {
                             seconds: number;
@@ -5300,6 +7310,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "video";
                         createdAt: {
                             seconds: number;
@@ -5340,6 +7365,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-slider";
                         createdAt: {
                             seconds: number;
@@ -5374,6 +7414,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-time";
                         createdAt: {
                             seconds: number;
@@ -5406,6 +7461,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-counter";
                         createdAt: {
                             seconds: number;
@@ -5438,6 +7508,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "phone";
                         createdAt: {
                             seconds: number;
@@ -5472,6 +7557,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "breathe";
                         createdAt: {
                             seconds: number;
@@ -5508,6 +7608,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "urge-surfing";
                         createdAt: {
                             seconds: number;
@@ -5540,6 +7655,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "task";
                         createdAt: {
                             seconds: number;
@@ -5572,6 +7702,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "question";
                         createdAt: {
                             seconds: number;
@@ -5711,6 +7856,21 @@ declare const motionLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             nextId?: string | undefined;
             autogenerate?: boolean | undefined;
             type: "folder";
@@ -5748,6 +7908,21 @@ declare const motionLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "steps";
             createdAt: {
                 seconds: number;
@@ -5781,6 +7956,21 @@ declare const motionLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "emotions";
             createdAt: {
                 seconds: number;
@@ -5813,6 +8003,21 @@ declare const motionLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -5855,6 +8060,21 @@ declare const motionLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "video";
             createdAt: {
                 seconds: number;
@@ -5895,6 +8115,21 @@ declare const motionLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -5929,6 +8164,21 @@ declare const motionLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-time";
             createdAt: {
                 seconds: number;
@@ -5961,6 +8211,21 @@ declare const motionLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-counter";
             createdAt: {
                 seconds: number;
@@ -5993,6 +8258,21 @@ declare const motionLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "phone";
             createdAt: {
                 seconds: number;
@@ -6027,6 +8307,21 @@ declare const motionLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "breathe";
             createdAt: {
                 seconds: number;
@@ -6063,6 +8358,21 @@ declare const motionLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "urge-surfing";
             createdAt: {
                 seconds: number;
@@ -6095,6 +8405,21 @@ declare const motionLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "task";
             createdAt: {
                 seconds: number;
@@ -6127,6 +8452,21 @@ declare const motionLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "question";
             createdAt: {
                 seconds: number;
@@ -6273,6 +8613,21 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             nextId?: string | undefined;
             autogenerate?: boolean | undefined;
             type: "folder";
@@ -6310,6 +8665,21 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "steps";
             createdAt: {
                 seconds: number;
@@ -6343,6 +8713,21 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "emotions";
             createdAt: {
                 seconds: number;
@@ -6375,6 +8760,21 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -6417,6 +8817,21 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "video";
             createdAt: {
                 seconds: number;
@@ -6457,6 +8872,21 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -6491,6 +8921,21 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-time";
             createdAt: {
                 seconds: number;
@@ -6523,6 +8968,21 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-counter";
             createdAt: {
                 seconds: number;
@@ -6555,6 +9015,21 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "phone";
             createdAt: {
                 seconds: number;
@@ -6589,6 +9064,21 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "breathe";
             createdAt: {
                 seconds: number;
@@ -6625,6 +9115,21 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "urge-surfing";
             createdAt: {
                 seconds: number;
@@ -6657,6 +9162,21 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "task";
             createdAt: {
                 seconds: number;
@@ -6689,6 +9209,21 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "question";
             createdAt: {
                 seconds: number;
@@ -6798,6 +9333,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             nextId?: string | undefined;
             autogenerate?: boolean | undefined;
             type: "folder";
@@ -6835,6 +9385,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "steps";
             createdAt: {
                 seconds: number;
@@ -6868,6 +9433,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "emotions";
             createdAt: {
                 seconds: number;
@@ -6900,6 +9480,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -6942,6 +9537,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "video";
             createdAt: {
                 seconds: number;
@@ -6982,6 +9592,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -7016,6 +9641,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-time";
             createdAt: {
                 seconds: number;
@@ -7048,6 +9688,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-counter";
             createdAt: {
                 seconds: number;
@@ -7080,6 +9735,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "phone";
             createdAt: {
                 seconds: number;
@@ -7114,6 +9784,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "breathe";
             createdAt: {
                 seconds: number;
@@ -7150,6 +9835,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "urge-surfing";
             createdAt: {
                 seconds: number;
@@ -7182,6 +9882,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "task";
             createdAt: {
                 seconds: number;
@@ -7214,6 +9929,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "question";
             createdAt: {
                 seconds: number;
@@ -7319,6 +10049,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         nextId?: string | undefined;
                         autogenerate?: boolean | undefined;
                         type: "folder";
@@ -7356,6 +10101,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "steps";
                         createdAt: {
                             seconds: number;
@@ -7389,6 +10149,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "emotions";
                         createdAt: {
                             seconds: number;
@@ -7421,6 +10196,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "audio";
                         createdAt: {
                             seconds: number;
@@ -7463,6 +10253,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "video";
                         createdAt: {
                             seconds: number;
@@ -7503,6 +10308,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-slider";
                         createdAt: {
                             seconds: number;
@@ -7537,6 +10357,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-time";
                         createdAt: {
                             seconds: number;
@@ -7569,6 +10404,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-counter";
                         createdAt: {
                             seconds: number;
@@ -7601,6 +10451,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "phone";
                         createdAt: {
                             seconds: number;
@@ -7635,6 +10500,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "breathe";
                         createdAt: {
                             seconds: number;
@@ -7671,6 +10551,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "urge-surfing";
                         createdAt: {
                             seconds: number;
@@ -7703,6 +10598,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "task";
                         createdAt: {
                             seconds: number;
@@ -7735,6 +10645,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "question";
                         createdAt: {
                             seconds: number;
@@ -7774,6 +10699,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         nextId?: string | undefined;
                         autogenerate?: boolean | undefined;
                         type: "folder";
@@ -7811,6 +10751,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "steps";
                         createdAt: {
                             seconds: number;
@@ -7844,6 +10799,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "emotions";
                         createdAt: {
                             seconds: number;
@@ -7876,6 +10846,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "audio";
                         createdAt: {
                             seconds: number;
@@ -7918,6 +10903,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "video";
                         createdAt: {
                             seconds: number;
@@ -7958,6 +10958,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-slider";
                         createdAt: {
                             seconds: number;
@@ -7992,6 +11007,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-time";
                         createdAt: {
                             seconds: number;
@@ -8024,6 +11054,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-counter";
                         createdAt: {
                             seconds: number;
@@ -8056,6 +11101,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "phone";
                         createdAt: {
                             seconds: number;
@@ -8090,6 +11150,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "breathe";
                         createdAt: {
                             seconds: number;
@@ -8126,6 +11201,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "urge-surfing";
                         createdAt: {
                             seconds: number;
@@ -8158,6 +11248,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "task";
                         createdAt: {
                             seconds: number;
@@ -8190,6 +11295,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "question";
                         createdAt: {
                             seconds: number;
@@ -8255,6 +11375,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         nextId?: string | undefined;
                         autogenerate?: boolean | undefined;
                         type: "folder";
@@ -8292,6 +11427,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "steps";
                         createdAt: {
                             seconds: number;
@@ -8325,6 +11475,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "emotions";
                         createdAt: {
                             seconds: number;
@@ -8357,6 +11522,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "audio";
                         createdAt: {
                             seconds: number;
@@ -8399,6 +11579,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "video";
                         createdAt: {
                             seconds: number;
@@ -8439,6 +11634,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-slider";
                         createdAt: {
                             seconds: number;
@@ -8473,6 +11683,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-time";
                         createdAt: {
                             seconds: number;
@@ -8505,6 +11730,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-counter";
                         createdAt: {
                             seconds: number;
@@ -8537,6 +11777,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "phone";
                         createdAt: {
                             seconds: number;
@@ -8571,6 +11826,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "breathe";
                         createdAt: {
                             seconds: number;
@@ -8607,6 +11877,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "urge-surfing";
                         createdAt: {
                             seconds: number;
@@ -8639,6 +11924,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "task";
                         createdAt: {
                             seconds: number;
@@ -8671,6 +11971,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "question";
                         createdAt: {
                             seconds: number;
@@ -8713,6 +12028,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         nextId?: string | undefined;
                         autogenerate?: boolean | undefined;
                         type: "folder";
@@ -8750,6 +12080,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "steps";
                         createdAt: {
                             seconds: number;
@@ -8783,6 +12128,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "emotions";
                         createdAt: {
                             seconds: number;
@@ -8815,6 +12175,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "audio";
                         createdAt: {
                             seconds: number;
@@ -8857,6 +12232,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "video";
                         createdAt: {
                             seconds: number;
@@ -8897,6 +12287,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-slider";
                         createdAt: {
                             seconds: number;
@@ -8931,6 +12336,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-time";
                         createdAt: {
                             seconds: number;
@@ -8963,6 +12383,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-counter";
                         createdAt: {
                             seconds: number;
@@ -8995,6 +12430,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "phone";
                         createdAt: {
                             seconds: number;
@@ -9029,6 +12479,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "breathe";
                         createdAt: {
                             seconds: number;
@@ -9065,6 +12530,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "urge-surfing";
                         createdAt: {
                             seconds: number;
@@ -9097,6 +12577,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "task";
                         createdAt: {
                             seconds: number;
@@ -9129,6 +12624,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "question";
                         createdAt: {
                             seconds: number;
@@ -9170,6 +12680,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             nextId?: string | undefined;
             autogenerate?: boolean | undefined;
             type: "folder";
@@ -9207,6 +12732,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "steps";
             createdAt: {
                 seconds: number;
@@ -9240,6 +12780,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "emotions";
             createdAt: {
                 seconds: number;
@@ -9272,6 +12827,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -9314,6 +12884,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "video";
             createdAt: {
                 seconds: number;
@@ -9354,6 +12939,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -9388,6 +12988,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-time";
             createdAt: {
                 seconds: number;
@@ -9420,6 +13035,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-counter";
             createdAt: {
                 seconds: number;
@@ -9452,6 +13082,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "phone";
             createdAt: {
                 seconds: number;
@@ -9486,6 +13131,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "breathe";
             createdAt: {
                 seconds: number;
@@ -9522,6 +13182,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "urge-surfing";
             createdAt: {
                 seconds: number;
@@ -9554,6 +13229,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "task";
             createdAt: {
                 seconds: number;
@@ -9586,6 +13276,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "question";
             createdAt: {
                 seconds: number;
@@ -9684,6 +13389,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             nextId?: string | undefined;
             autogenerate?: boolean | undefined;
             type: "folder";
@@ -9721,6 +13441,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "steps";
             createdAt: {
                 seconds: number;
@@ -9754,6 +13489,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "emotions";
             createdAt: {
                 seconds: number;
@@ -9786,6 +13536,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -9828,6 +13593,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "video";
             createdAt: {
                 seconds: number;
@@ -9868,6 +13648,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -9902,6 +13697,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-time";
             createdAt: {
                 seconds: number;
@@ -9934,6 +13744,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-counter";
             createdAt: {
                 seconds: number;
@@ -9966,6 +13791,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "phone";
             createdAt: {
                 seconds: number;
@@ -10000,6 +13840,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "breathe";
             createdAt: {
                 seconds: number;
@@ -10036,6 +13891,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "urge-surfing";
             createdAt: {
                 seconds: number;
@@ -10068,6 +13938,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "task";
             createdAt: {
                 seconds: number;
@@ -10100,6 +13985,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "question";
             createdAt: {
                 seconds: number;
@@ -10196,6 +14096,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             nextId?: string | undefined;
             autogenerate?: boolean | undefined;
             type: "folder";
@@ -10233,6 +14148,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "steps";
             createdAt: {
                 seconds: number;
@@ -10266,6 +14196,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "emotions";
             createdAt: {
                 seconds: number;
@@ -10298,6 +14243,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -10340,6 +14300,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "video";
             createdAt: {
                 seconds: number;
@@ -10380,6 +14355,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -10414,6 +14404,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-time";
             createdAt: {
                 seconds: number;
@@ -10446,6 +14451,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-counter";
             createdAt: {
                 seconds: number;
@@ -10478,6 +14498,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "phone";
             createdAt: {
                 seconds: number;
@@ -10512,6 +14547,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "breathe";
             createdAt: {
                 seconds: number;
@@ -10548,6 +14598,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "urge-surfing";
             createdAt: {
                 seconds: number;
@@ -10580,6 +14645,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "task";
             createdAt: {
                 seconds: number;
@@ -10612,6 +14692,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "question";
             createdAt: {
                 seconds: number;
@@ -10732,6 +14827,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         nextId?: string | undefined;
                         autogenerate?: boolean | undefined;
                         type: "folder";
@@ -10769,6 +14879,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "steps";
                         createdAt: {
                             seconds: number;
@@ -10802,6 +14927,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "emotions";
                         createdAt: {
                             seconds: number;
@@ -10834,6 +14974,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "audio";
                         createdAt: {
                             seconds: number;
@@ -10876,6 +15031,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "video";
                         createdAt: {
                             seconds: number;
@@ -10916,6 +15086,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-slider";
                         createdAt: {
                             seconds: number;
@@ -10950,6 +15135,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-time";
                         createdAt: {
                             seconds: number;
@@ -10982,6 +15182,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-counter";
                         createdAt: {
                             seconds: number;
@@ -11014,6 +15229,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "phone";
                         createdAt: {
                             seconds: number;
@@ -11048,6 +15278,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "breathe";
                         createdAt: {
                             seconds: number;
@@ -11084,6 +15329,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "urge-surfing";
                         createdAt: {
                             seconds: number;
@@ -11116,6 +15376,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "task";
                         createdAt: {
                             seconds: number;
@@ -11148,6 +15423,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "question";
                         createdAt: {
                             seconds: number;
@@ -11190,6 +15480,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         nextId?: string | undefined;
                         autogenerate?: boolean | undefined;
                         type: "folder";
@@ -11227,6 +15532,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "steps";
                         createdAt: {
                             seconds: number;
@@ -11260,6 +15580,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "emotions";
                         createdAt: {
                             seconds: number;
@@ -11292,6 +15627,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "audio";
                         createdAt: {
                             seconds: number;
@@ -11334,6 +15684,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "video";
                         createdAt: {
                             seconds: number;
@@ -11374,6 +15739,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-slider";
                         createdAt: {
                             seconds: number;
@@ -11408,6 +15788,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-time";
                         createdAt: {
                             seconds: number;
@@ -11440,6 +15835,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "measure-counter";
                         createdAt: {
                             seconds: number;
@@ -11472,6 +15882,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "phone";
                         createdAt: {
                             seconds: number;
@@ -11506,6 +15931,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "breathe";
                         createdAt: {
                             seconds: number;
@@ -11542,6 +15982,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "urge-surfing";
                         createdAt: {
                             seconds: number;
@@ -11574,6 +16029,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "task";
                         createdAt: {
                             seconds: number;
@@ -11606,6 +16076,21 @@ export declare const logSchema: yup.Lazy<{
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isAvailableForRecommendation?: boolean | null | undefined;
                         numberOfLikes?: number | null | undefined;
+                        impulseOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        debriefOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        emotionOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledMinuteOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        scheduledLocationOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
                         type: "question";
                         createdAt: {
                             seconds: number;
@@ -11650,6 +16135,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             nextId?: string | undefined;
             autogenerate?: boolean | undefined;
             type: "folder";
@@ -11687,6 +16187,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "steps";
             createdAt: {
                 seconds: number;
@@ -11720,6 +16235,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "emotions";
             createdAt: {
                 seconds: number;
@@ -11752,6 +16282,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -11794,6 +16339,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "video";
             createdAt: {
                 seconds: number;
@@ -11834,6 +16394,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -11868,6 +16443,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-time";
             createdAt: {
                 seconds: number;
@@ -11900,6 +16490,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-counter";
             createdAt: {
                 seconds: number;
@@ -11932,6 +16537,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "phone";
             createdAt: {
                 seconds: number;
@@ -11966,6 +16586,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "breathe";
             createdAt: {
                 seconds: number;
@@ -12002,6 +16637,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "urge-surfing";
             createdAt: {
                 seconds: number;
@@ -12034,6 +16684,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "task";
             createdAt: {
                 seconds: number;
@@ -12066,6 +16731,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "question";
             createdAt: {
                 seconds: number;
@@ -12161,6 +16841,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             nextId?: string | undefined;
             autogenerate?: boolean | undefined;
             type: "folder";
@@ -12198,6 +16893,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "steps";
             createdAt: {
                 seconds: number;
@@ -12231,6 +16941,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "emotions";
             createdAt: {
                 seconds: number;
@@ -12263,6 +16988,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "audio";
             createdAt: {
                 seconds: number;
@@ -12305,6 +17045,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "video";
             createdAt: {
                 seconds: number;
@@ -12345,6 +17100,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-slider";
             createdAt: {
                 seconds: number;
@@ -12379,6 +17149,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-time";
             createdAt: {
                 seconds: number;
@@ -12411,6 +17196,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "measure-counter";
             createdAt: {
                 seconds: number;
@@ -12443,6 +17243,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "phone";
             createdAt: {
                 seconds: number;
@@ -12477,6 +17292,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "breathe";
             createdAt: {
                 seconds: number;
@@ -12513,6 +17343,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "urge-surfing";
             createdAt: {
                 seconds: number;
@@ -12545,6 +17390,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "task";
             createdAt: {
                 seconds: number;
@@ -12577,6 +17437,21 @@ export declare const logSchema: yup.Lazy<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
+            impulseOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            debriefOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            emotionOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledMinuteOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            scheduledLocationOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
             type: "question";
             createdAt: {
                 seconds: number;
