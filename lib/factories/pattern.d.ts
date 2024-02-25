@@ -45,18 +45,6 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                impulseOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                debriefOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                emotionOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledGameplanOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
                 nextId?: string | undefined;
                 autogenerate?: boolean | undefined;
                 type: "folder";
@@ -72,6 +60,20 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 };
                 title: string;
                 backgroundColor: string;
+                ordinals: {
+                    impulse?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    debrief?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    emotion?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    scheduledGameplan?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                };
                 tacticIds: string[];
                 currentTacticIndex: number;
                 tacticsById: {};
@@ -95,18 +97,6 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                impulseOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                debriefOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                emotionOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledGameplanOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
                 type: "steps";
                 createdAt: {
                     seconds: number;
@@ -120,6 +110,20 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 };
                 title: string;
                 backgroundColor: string;
+                ordinals: {
+                    impulse?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    debrief?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    emotion?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    scheduledGameplan?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                };
                 steps: number;
             } | {
                 uid?: string | null | undefined;
@@ -141,18 +145,6 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                impulseOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                debriefOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                emotionOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledGameplanOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
                 type: "emotions";
                 createdAt: {
                     seconds: number;
@@ -166,6 +158,20 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 };
                 title: string;
                 backgroundColor: string;
+                ordinals: {
+                    impulse?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    debrief?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    emotion?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    scheduledGameplan?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                };
             } | {
                 uid?: string | null | undefined;
                 ordinal?: number | null | undefined;
@@ -186,18 +192,6 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                impulseOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                debriefOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                emotionOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledGameplanOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
                 type: "audio";
                 createdAt: {
                     seconds: number;
@@ -211,6 +205,20 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 };
                 title: string;
                 backgroundColor: string;
+                ordinals: {
+                    impulse?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    debrief?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    emotion?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    scheduledGameplan?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                };
                 metadata: {
                     waveform?: string | null | undefined;
                     localFilePath: string;
@@ -241,18 +249,6 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                impulseOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                debriefOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                emotionOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledGameplanOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
                 type: "video";
                 createdAt: {
                     seconds: number;
@@ -266,6 +262,20 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 };
                 title: string;
                 backgroundColor: string;
+                ordinals: {
+                    impulse?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    debrief?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    emotion?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    scheduledGameplan?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                };
                 video: {
                     storagePath?: string | null | undefined;
                     url?: string | null | undefined;
@@ -294,18 +304,6 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                impulseOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                debriefOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                emotionOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledGameplanOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
                 type: "measure-slider";
                 createdAt: {
                     seconds: number;
@@ -319,6 +317,20 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 };
                 title: string;
                 backgroundColor: string;
+                ordinals: {
+                    impulse?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    debrief?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    emotion?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    scheduledGameplan?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                };
                 lowEmoji: string;
                 highEmoji: string;
             } | {
@@ -341,18 +353,6 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                impulseOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                debriefOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                emotionOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledGameplanOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
                 type: "measure-time";
                 createdAt: {
                     seconds: number;
@@ -366,6 +366,20 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 };
                 title: string;
                 backgroundColor: string;
+                ordinals: {
+                    impulse?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    debrief?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    emotion?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    scheduledGameplan?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                };
             } | {
                 uid?: string | null | undefined;
                 ordinal?: number | null | undefined;
@@ -386,18 +400,6 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                impulseOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                debriefOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                emotionOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledGameplanOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
                 type: "measure-counter";
                 createdAt: {
                     seconds: number;
@@ -411,6 +413,20 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 };
                 title: string;
                 backgroundColor: string;
+                ordinals: {
+                    impulse?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    debrief?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    emotion?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    scheduledGameplan?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                };
             } | {
                 uid?: string | null | undefined;
                 ordinal?: number | null | undefined;
@@ -431,18 +447,6 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                impulseOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                debriefOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                emotionOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledGameplanOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
                 type: "phone";
                 createdAt: {
                     seconds: number;
@@ -456,6 +460,20 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 };
                 title: string;
                 backgroundColor: string;
+                ordinals: {
+                    impulse?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    debrief?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    emotion?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    scheduledGameplan?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                };
                 supportGroupId: string;
                 trigger: {};
             } | {
@@ -478,18 +496,6 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                impulseOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                debriefOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                emotionOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledGameplanOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
                 type: "breathe";
                 createdAt: {
                     seconds: number;
@@ -503,6 +509,20 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 };
                 title: string;
                 backgroundColor: string;
+                ordinals: {
+                    impulse?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    debrief?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    emotion?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    scheduledGameplan?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                };
                 inFor: number;
                 holdFor: number;
                 outFor: number;
@@ -527,18 +547,6 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                impulseOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                debriefOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                emotionOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledGameplanOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
                 type: "urge-surfing";
                 createdAt: {
                     seconds: number;
@@ -552,6 +560,20 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 };
                 title: string;
                 backgroundColor: string;
+                ordinals: {
+                    impulse?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    debrief?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    emotion?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    scheduledGameplan?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                };
             } | {
                 uid?: string | null | undefined;
                 ordinal?: number | null | undefined;
@@ -572,18 +594,6 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                impulseOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                debriefOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                emotionOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledGameplanOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
                 type: "task";
                 createdAt: {
                     seconds: number;
@@ -597,6 +607,20 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 };
                 title: string;
                 backgroundColor: string;
+                ordinals: {
+                    impulse?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    debrief?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    emotion?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    scheduledGameplan?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                };
             } | {
                 uid?: string | null | undefined;
                 ordinal?: number | null | undefined;
@@ -617,18 +641,6 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                impulseOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                debriefOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                emotionOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledGameplanOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
                 type: "question";
                 createdAt: {
                     seconds: number;
@@ -642,13 +654,24 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 };
                 title: string;
                 backgroundColor: string;
+                ordinals: {
+                    impulse?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    debrief?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    emotion?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    scheduledGameplan?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                };
             };
         };
         suggestedTacticIds: string[];
     };
-    name: string;
-    setbackThreshold: number;
-    sendWeeklyReports: NonNullable<boolean | undefined>;
     debrief: {
         tacticIds: string[];
         tacticsById: {
@@ -672,18 +695,6 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                impulseOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                debriefOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                emotionOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledGameplanOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
                 nextId?: string | undefined;
                 autogenerate?: boolean | undefined;
                 type: "folder";
@@ -699,6 +710,20 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 };
                 title: string;
                 backgroundColor: string;
+                ordinals: {
+                    impulse?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    debrief?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    emotion?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    scheduledGameplan?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                };
                 tacticIds: string[];
                 currentTacticIndex: number;
                 tacticsById: {};
@@ -722,18 +747,6 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                impulseOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                debriefOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                emotionOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledGameplanOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
                 type: "steps";
                 createdAt: {
                     seconds: number;
@@ -747,6 +760,20 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 };
                 title: string;
                 backgroundColor: string;
+                ordinals: {
+                    impulse?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    debrief?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    emotion?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    scheduledGameplan?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                };
                 steps: number;
             } | {
                 uid?: string | null | undefined;
@@ -768,18 +795,6 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                impulseOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                debriefOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                emotionOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledGameplanOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
                 type: "emotions";
                 createdAt: {
                     seconds: number;
@@ -793,6 +808,20 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 };
                 title: string;
                 backgroundColor: string;
+                ordinals: {
+                    impulse?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    debrief?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    emotion?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    scheduledGameplan?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                };
             } | {
                 uid?: string | null | undefined;
                 ordinal?: number | null | undefined;
@@ -813,18 +842,6 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                impulseOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                debriefOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                emotionOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledGameplanOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
                 type: "audio";
                 createdAt: {
                     seconds: number;
@@ -838,6 +855,20 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 };
                 title: string;
                 backgroundColor: string;
+                ordinals: {
+                    impulse?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    debrief?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    emotion?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    scheduledGameplan?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                };
                 metadata: {
                     waveform?: string | null | undefined;
                     localFilePath: string;
@@ -868,18 +899,6 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                impulseOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                debriefOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                emotionOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledGameplanOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
                 type: "video";
                 createdAt: {
                     seconds: number;
@@ -893,6 +912,20 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 };
                 title: string;
                 backgroundColor: string;
+                ordinals: {
+                    impulse?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    debrief?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    emotion?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    scheduledGameplan?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                };
                 video: {
                     storagePath?: string | null | undefined;
                     url?: string | null | undefined;
@@ -921,18 +954,6 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                impulseOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                debriefOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                emotionOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledGameplanOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
                 type: "measure-slider";
                 createdAt: {
                     seconds: number;
@@ -946,6 +967,20 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 };
                 title: string;
                 backgroundColor: string;
+                ordinals: {
+                    impulse?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    debrief?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    emotion?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    scheduledGameplan?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                };
                 lowEmoji: string;
                 highEmoji: string;
             } | {
@@ -968,18 +1003,6 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                impulseOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                debriefOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                emotionOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledGameplanOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
                 type: "measure-time";
                 createdAt: {
                     seconds: number;
@@ -993,6 +1016,20 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 };
                 title: string;
                 backgroundColor: string;
+                ordinals: {
+                    impulse?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    debrief?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    emotion?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    scheduledGameplan?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                };
             } | {
                 uid?: string | null | undefined;
                 ordinal?: number | null | undefined;
@@ -1013,18 +1050,6 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                impulseOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                debriefOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                emotionOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledGameplanOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
                 type: "measure-counter";
                 createdAt: {
                     seconds: number;
@@ -1038,6 +1063,20 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 };
                 title: string;
                 backgroundColor: string;
+                ordinals: {
+                    impulse?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    debrief?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    emotion?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    scheduledGameplan?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                };
             } | {
                 uid?: string | null | undefined;
                 ordinal?: number | null | undefined;
@@ -1058,18 +1097,6 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                impulseOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                debriefOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                emotionOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledGameplanOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
                 type: "phone";
                 createdAt: {
                     seconds: number;
@@ -1083,6 +1110,20 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 };
                 title: string;
                 backgroundColor: string;
+                ordinals: {
+                    impulse?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    debrief?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    emotion?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    scheduledGameplan?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                };
                 supportGroupId: string;
                 trigger: {};
             } | {
@@ -1105,18 +1146,6 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                impulseOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                debriefOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                emotionOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledGameplanOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
                 type: "breathe";
                 createdAt: {
                     seconds: number;
@@ -1130,6 +1159,20 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 };
                 title: string;
                 backgroundColor: string;
+                ordinals: {
+                    impulse?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    debrief?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    emotion?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    scheduledGameplan?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                };
                 inFor: number;
                 holdFor: number;
                 outFor: number;
@@ -1154,18 +1197,6 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                impulseOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                debriefOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                emotionOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledGameplanOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
                 type: "urge-surfing";
                 createdAt: {
                     seconds: number;
@@ -1179,6 +1210,20 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 };
                 title: string;
                 backgroundColor: string;
+                ordinals: {
+                    impulse?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    debrief?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    emotion?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    scheduledGameplan?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                };
             } | {
                 uid?: string | null | undefined;
                 ordinal?: number | null | undefined;
@@ -1199,18 +1244,6 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                impulseOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                debriefOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                emotionOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledGameplanOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
                 type: "task";
                 createdAt: {
                     seconds: number;
@@ -1224,6 +1257,20 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 };
                 title: string;
                 backgroundColor: string;
+                ordinals: {
+                    impulse?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    debrief?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    emotion?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    scheduledGameplan?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                };
             } | {
                 uid?: string | null | undefined;
                 ordinal?: number | null | undefined;
@@ -1244,18 +1291,6 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                impulseOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                debriefOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                emotionOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                scheduledGameplanOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
                 type: "question";
                 createdAt: {
                     seconds: number;
@@ -1269,8 +1304,25 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 };
                 title: string;
                 backgroundColor: string;
+                ordinals: {
+                    impulse?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    debrief?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    emotion?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    scheduledGameplan?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                };
             };
         };
         suggestedTacticIds: string[];
     };
-}, "uid" | "ordinal" | "createdAt" | "updatedAt" | "impulse" | "name" | "setbackThreshold" | "sendWeeklyReports" | "debrief" | ("issueId" | "supportGroupIds" | "notification" | "setbackTacticId" | "gameplanId" | "debriefGameplanId")>;
+    name: string;
+    setbackThreshold: number;
+    sendWeeklyReports: NonNullable<boolean | undefined>;
+}, "uid" | "ordinal" | "createdAt" | "updatedAt" | "impulse" | "debrief" | "name" | "setbackThreshold" | "sendWeeklyReports" | ("issueId" | "supportGroupIds" | "notification" | "setbackTacticId" | "gameplanId" | "debriefGameplanId")>;

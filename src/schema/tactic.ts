@@ -27,10 +27,12 @@ function tacticValueBaseSchema<K extends string>(type: K) {
     isAvailableForRecommendation: yup.boolean().nullable(),
     numberOfLikes: yup.number().nullable(),
     isSuggested: yup.boolean(),
-    impulseOrdinals: optionalObjectOf(yup.number().required()),
-    debriefOrdinals: optionalObjectOf(yup.number().required()),
-    emotionOrdinals: optionalObjectOf(yup.number().required()),
-    scheduledGameplanOrdinals: optionalObjectOf(yup.number().required()),
+    ordinals: yup.object({
+      impulse: optionalObjectOf(yup.number().required()),
+      debrief: optionalObjectOf(yup.number().required()),
+      emotion: optionalObjectOf(yup.number().required()),
+      scheduledGameplan: optionalObjectOf(yup.number().required()),
+    }),
   });
 }
 

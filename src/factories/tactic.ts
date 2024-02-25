@@ -14,4 +14,10 @@ export const makeTacticFactory = (TimestampKlass: typeof TimestampLike) =>
     updatedAt: TimestampKlass.now(),
     isTemplate: false,
     backgroundColor: '#FF0000',
+    ordinals: {
+      impulse: {},
+      debrief: {},
+      emotion: {},
+      scheduledGameplan: {},
+    },
   });
