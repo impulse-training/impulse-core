@@ -1,5 +1,5 @@
 import * as Factory from 'factory.ts';
-import { NewGameplanRecommendationValue, RecommendationValue } from '../schema';
+import { NewRoutineRecommendationValue, RecommendationValue } from '../schema';
 import { TimestampLike } from '../utils/TimestampLike';
 
 export const makeRecommendationFactory = (
@@ -20,7 +20,7 @@ export const makeRecommendationFactory = (
     dismissedAt: null,
   });
 
-export const makeExistingGameplanRecommendationFactory = (
+export const makeExistingRoutineRecommendationFactory = (
   TimestampKlass: typeof TimestampLike
 ) =>
   Factory.makeFactory<RecommendationValue>({
@@ -40,10 +40,10 @@ export const makeExistingGameplanRecommendationFactory = (
     dismissedAt: null,
   });
 
-export const makeNewGameplanRecommendationFactory = (
+export const makeNewRoutineRecommendationFactory = (
   TimestampKlass: typeof TimestampLike
 ) =>
-  Factory.makeFactory<NewGameplanRecommendationValue>({
+  Factory.makeFactory<NewRoutineRecommendationValue>({
     uid: Factory.each(i => i.toString()),
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
@@ -60,9 +60,6 @@ export const makeNewGameplanRecommendationFactory = (
       timezone: 'America/Chihuahua',
       weekdays: [1, 2, 3, 4, 5],
       type: 'time',
-      tacticIds: [],
-      suggestedTacticIds: [],
-      tacticsById: {},
     },
     recommenderName: 'Michael',
     recommenderUid: 'abc123',

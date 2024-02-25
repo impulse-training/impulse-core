@@ -1,12 +1,6 @@
 import { TimestampLike } from '../utils/TimestampLike';
 import { makeApplicationFactory } from './application';
 import { makeCommentFactory } from './comment';
-import {
-  makeDebriefGameplanFactory,
-  makeImpulseGameplanFactory,
-  makeLocationGameplanFactory,
-  makeTimeGameplanFactory,
-} from './gameplan';
 import { makeIssueFactory } from './issue';
 import { makeLocationFactory } from './location';
 import {
@@ -21,9 +15,14 @@ import { makePatternFactory } from './pattern';
 import { makeAdminProfileFactory, makeProfileFactory } from './profile';
 import { makeRecommendationFactory } from './recommendation';
 import {
-  makeNewGameplanRecommendationRuleFactory,
+  makeNewRoutineRecommendationRuleFactory,
   makeRecommendationRuleFactory,
 } from './recommendationRuleFactory';
+import {
+  makeDebriefRoutineFactory,
+  makeLocationRoutineFactory,
+  makeTimeRoutineFactory,
+} from './routine';
 import { makeSupportGroupFactory } from './supportGroup';
 import { makeTacticFactory } from './tactic';
 
@@ -44,16 +43,15 @@ export function makeFactories(TimestampKlass: typeof TimestampLike) {
     issueFactory: makeIssueFactory(TimestampKlass),
     adminProfileFactory: makeAdminProfileFactory(TimestampKlass),
     supportGroupFactory: makeSupportGroupFactory(TimestampKlass),
-    impulseGameplanFactory: makeImpulseGameplanFactory(TimestampKlass),
-    debriefGameplanFactory: makeDebriefGameplanFactory(TimestampKlass),
+    debriefRoutineFactory: makeDebriefRoutineFactory(TimestampKlass),
     messageFactory: makeMessageFactory(TimestampKlass),
-    timeGameplanFactory: makeTimeGameplanFactory(TimestampKlass),
+    timeRoutineFactory: makeTimeRoutineFactory(TimestampKlass),
     patternFactory: makePatternFactory(TimestampKlass),
-    locationGameplanFactory: makeLocationGameplanFactory(TimestampKlass),
+    locationRoutineFactory: makeLocationRoutineFactory(TimestampKlass),
     recommendationFactory: makeRecommendationFactory(TimestampKlass),
     recommendationRuleFactory: makeRecommendationRuleFactory(TimestampKlass),
-    newGameplanRecommendationRuleFactory:
-      makeNewGameplanRecommendationRuleFactory(TimestampKlass),
+    newRoutineRecommendationRuleFactory:
+      makeNewRoutineRecommendationRuleFactory(TimestampKlass),
     tacticFactory: makeTacticFactory(TimestampKlass),
   };
 }

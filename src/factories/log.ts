@@ -9,8 +9,8 @@ import {
 import { TimestampLike } from '../utils/TimestampLike';
 
 const gameplan = {
-  main: { tacticIds: [], suggestedTacticIds: [], tacticsById: {} },
-  impulseDebrief: { tacticIds: [], suggestedTacticIds: [], tacticsById: {} },
+  main: [],
+  impulseDebrief: [],
 };
 
 export const makeImpulseFactory = (TimestampKlass: typeof TimestampLike) =>
@@ -26,14 +26,14 @@ export const makeImpulseFactory = (TimestampKlass: typeof TimestampLike) =>
     debriefNotes: '',
     patternId: 'abc123',
     patternIds: [],
-    tacticsById: {},
     location: {},
     locationIsFetching: false,
-    tacticIds: [],
-    seenTacticIds: [],
     patterns: {},
-    gameplans: {},
+    tacticsById: {},
     gameplan: gameplan,
+    gameplans: {},
+    seenGameplan: gameplan,
+    seenGameplans: {},
   });
 
 export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>
@@ -46,12 +46,11 @@ export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>
     startTime: TimestampKlass.now(),
     timezone: 'America/Botota',
     isDisplayable: true,
-    tacticsById: {},
     location: {},
+    tacticsById: {},
     locationIsFetching: false,
-    tacticIds: [],
-    seenTacticIds: [],
     gameplan: gameplan,
+    seenGameplan: gameplan,
   });
 
 export const makeDebriefLogFactory = (TimestampKlass: typeof TimestampLike) =>
@@ -64,15 +63,14 @@ export const makeDebriefLogFactory = (TimestampKlass: typeof TimestampLike) =>
     startTime: TimestampKlass.now(),
     timezone: 'America/Botota',
     isDisplayable: true,
-    tacticsById: {},
     location: {},
     locationIsFetching: false,
-    tacticIds: [],
-    seenTacticIds: [],
     gameplan: gameplan,
     patterns: {},
+    tacticsById: {},
     patternIds: [],
     tacticDataEntries: {},
+    seenGameplan: gameplan,
   });
 
 export const makeMotionLogFactory = (TimestampKlass: typeof TimestampLike) =>
@@ -84,12 +82,11 @@ export const makeMotionLogFactory = (TimestampKlass: typeof TimestampLike) =>
     startTime: TimestampKlass.now(),
     timezone: 'America/Botota',
     isDisplayable: false,
-    tacticsById: {},
     location: {},
+    tacticsById: {},
     locationIsFetching: false,
-    tacticIds: [],
-    seenTacticIds: [],
     gameplan: gameplan,
+    seenGameplan: gameplan,
   });
 
 export const makeLocationLogFactory = (TimestampKlass: typeof TimestampLike) =>
@@ -107,7 +104,6 @@ export const makeLocationLogFactory = (TimestampKlass: typeof TimestampLike) =>
     tacticsById: {},
     location: {},
     locationIsFetching: false,
-    tacticIds: [],
-    seenTacticIds: [],
     gameplan: gameplan,
+    seenGameplan: gameplan,
   });

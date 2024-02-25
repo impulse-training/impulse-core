@@ -15,8 +15,6 @@ export const makeProfileFactory = (TimestampKlass: typeof TimestampLike) =>
     timezone: 'America/Bogota',
     invitationCode: 'abc123',
     notificationPreferences: {},
-    gameplans: {},
-    gameplansUpdatedAt: TimestampKlass.now(),
   });
 
 export const makeAdminProfileFactory = (TimestampKlass: typeof TimestampLike) =>

@@ -1,5 +1,5 @@
 import * as Factory from 'factory.ts';
-import { NewGameplanRecommendationValue } from '../schema';
+import { NewRoutineRecommendationValue } from '../schema';
 import { RecommendationRuleValue } from '../schema/recommendationRule';
 import { TimestampLike } from '../utils/TimestampLike';
 
@@ -26,12 +26,12 @@ export const makeRecommendationRuleFactory = (
       recommenderName: 'Michael',
       recommenderUid: 'abc123',
     },
-    forType: 'impulse',
+    forType: 'dayDebrief',
     forIssueIds: [],
     ordinal: 0,
   });
 
-export const makeNewGameplanRecommendationRuleFactory = (
+export const makeNewRoutineRecommendationRuleFactory = (
   TimestampKlass: typeof TimestampLike
 ) =>
   Factory.makeFactory<RecommendationRuleValue>({
@@ -67,11 +67,8 @@ export const makeNewGameplanRecommendationRuleFactory = (
       ordinal: 0,
       appliedAt: null,
       dismissedAt: null,
-    } as Omit<
-      NewGameplanRecommendationValue,
-      'createdAt' | 'updatedAt' | 'uid'
-    >,
-    forType: 'impulse',
+    } as Omit<NewRoutineRecommendationValue, 'createdAt' | 'updatedAt' | 'uid'>,
+    forType: 'dayDebrief',
     forIssueIds: [],
     ordinal: 0,
   });

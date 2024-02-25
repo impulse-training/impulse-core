@@ -9,6 +9,7 @@ function tacticValueBaseSchema<K extends string>(type: K) {
   return yup.object({
     type: yup.mixed<K>().oneOf([type]).defined(),
     uid: yup.string().nullable(),
+    sourceId: yup.string(),
     ordinal: yup.number().nullable(),
     createdAt: timestampSchema.required(),
     updatedAt: timestampSchema.required(),
@@ -27,11 +28,13 @@ function tacticValueBaseSchema<K extends string>(type: K) {
     isAvailableForRecommendation: yup.boolean().nullable(),
     numberOfLikes: yup.number().nullable(),
     isSuggested: yup.boolean(),
+    // While there are known keys in this object, such as "impulse", "routine", etc, it may also
+    // include string keys that correspond to tacticIds.
     ordinals: yup.object({
-      impulse: optionalObjectOf(yup.number().required()),
-      debrief: optionalObjectOf(yup.number().required()),
-      emotion: optionalObjectOf(yup.number().required()),
-      scheduledGameplan: optionalObjectOf(yup.number().required()),
+      main: optionalObjectOf(yup.number().required()),
+      impulseDebrief: optionalObjectOf(yup.number().required()),
+      routine: optionalObjectOf(yup.number().required()),
+      tactic: optionalObjectOf(yup.number().required()),
     }),
   });
 }

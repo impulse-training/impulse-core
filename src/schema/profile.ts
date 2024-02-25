@@ -1,8 +1,8 @@
 import { AppStateStatus, Permission } from 'react-native';
 import { TimestampLike } from '../utils/TimestampLike';
 import { Image } from '../utils/image';
-import { Gameplan, TimeGameplanValue } from './gameplan';
 import { NOTIFICATION_TYPES, NotificationOption } from './notification';
+import { TimeRoutineValue } from './routine';
 import { TacticValue } from './tactic';
 
 export interface ProfileValue {
@@ -48,24 +48,13 @@ export interface ProfileValue {
   isButtonSetupSkipped?: boolean;
 
   invitationCode: string;
-
-  // A gameplan is a set of pre-prepared tactics, as well as suggested tactics, that a user can
-  // follow to help them through an impulse moment. We store these on the profile document so that
-  // we can quickly copy them to a new impulse log document. We also store the last time the
-  // gameplan was updated - this is primarily to prevent an infinite loop of updates when a gameplan
-  // is updated.
-  gameplans: Record<
-    string,
-    { main: Gameplan; success: Gameplan; setback: Gameplan }
-  >;
-  gameplansUpdatedAt: TimestampLike;
   impulseNotifications?: Record<string, { title: string; body: string }>;
   viewAccessGrantedTo?: Array<string>;
 
   // We store a cached summary of time gameplans on the profile, which we use to set up
   // notifications
-  timeGameplans?: Record<
+  timeRoutines?: Record<
     string,
-    { gameplan: TimeGameplanValue; tactic: TacticValue }
+    { gameplan: TimeRoutineValue; tactic: TacticValue }
   >;
 }

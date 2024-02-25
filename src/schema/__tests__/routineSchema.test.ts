@@ -1,17 +1,17 @@
 import { forEach } from 'lodash';
 import { ValidationError } from 'yup';
-import * as factoryBuilders from '../../factories/gameplan';
+import * as factoryBuilders from '../../factories/routine';
 import { TimestampLike } from '../../utils/TimestampLike';
-import { gameplanSchema } from '../gameplan';
+import { routineSchema } from '../routine';
 
-describe('gameplanSchema', () => {
+describe('routineSchema', () => {
   describe('factories', () => {
     forEach(factoryBuilders, factoryBuilder => {
       it(factoryBuilder.name, () => {
         const factory = factoryBuilder(TimestampLike);
-        const gameplan = factory.build({});
+        const routine = factory.build({});
         try {
-          const result = gameplanSchema.validateSync(gameplan, {
+          const result = routineSchema.validateSync(routine, {
             abortEarly: false,
           });
           expect(result).toBeDefined();

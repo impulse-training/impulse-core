@@ -1,5 +1,5 @@
 import { TimestampLike } from '../utils/TimestampLike';
-import { DayDebriefGameplanValue, LocationGameplanValue, TimeGameplanValue } from './gameplan';
+import { DayDebriefRoutineValue, LocationRoutineValue, TimeRoutineValue } from './routine';
 import { TacticValue } from './tactic';
 export interface RecommendationValueBase {
     uid: string;
@@ -19,10 +19,10 @@ export interface RecommendationValueBase {
     gameplanIds?: Array<string>;
     defaultSelected?: 'all' | 'first' | 'none';
 }
-export type NewGameplanRecommendationValue = RecommendationValueBase & {
-    gameplan: TimeGameplanValue | LocationGameplanValue | DayDebriefGameplanValue;
+export type NewRoutineRecommendationValue = RecommendationValueBase & {
+    gameplan: TimeRoutineValue | LocationRoutineValue | DayDebriefRoutineValue;
 };
-export type ExistingGameplanRecommendationValue = RecommendationValueBase & {
+export type ExistingRoutineRecommendationValue = RecommendationValueBase & {
     gameplanIds?: Array<string>;
 };
-export type RecommendationValue = NewGameplanRecommendationValue | ExistingGameplanRecommendationValue;
+export type RecommendationValue = NewRoutineRecommendationValue | ExistingRoutineRecommendationValue;

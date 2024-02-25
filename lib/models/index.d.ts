@@ -1,2 +1,2 @@
-export { LocationGameplan, TimeGameplan } from './gameplan';
 export { Log } from './log';
+export { LocationRoutine, TimeRoutine } from './routine';

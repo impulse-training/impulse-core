@@ -1,8 +1,8 @@
 import { AppStateStatus, Permission } from 'react-native';
 import { TimestampLike } from '../utils/TimestampLike';
 import { Image } from '../utils/image';
-import { Gameplan, TimeGameplanValue } from './gameplan';
 import { NOTIFICATION_TYPES, NotificationOption } from './notification';
+import { TimeRoutineValue } from './routine';
 import { TacticValue } from './tactic';
 export interface ProfileValue {
     uid: string;
@@ -37,19 +37,13 @@ export interface ProfileValue {
     isTourCompleted?: boolean;
     isButtonSetupSkipped?: boolean;
     invitationCode: string;
-    gameplans: Record<string, {
-        main: Gameplan;
-        success: Gameplan;
-        setback: Gameplan;
-    }>;
-    gameplansUpdatedAt: TimestampLike;
     impulseNotifications?: Record<string, {
         title: string;
         body: string;
     }>;
     viewAccessGrantedTo?: Array<string>;
-    timeGameplans?: Record<string, {
-        gameplan: TimeGameplanValue;
+    timeRoutines?: Record<string, {
+        gameplan: TimeRoutineValue;
         tactic: TacticValue;
     }>;
 }

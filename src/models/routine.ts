@@ -1,12 +1,11 @@
 import { difference, isEqual } from 'lodash';
 import { LocationValue } from '../schema';
 import {
-  DayDebriefGameplanValue,
-  GameplanValue,
-  ImpulseGameplanValue,
-  LocationGameplanValue,
-  TimeGameplanValue,
-} from '../schema/gameplan';
+  DayDebriefRoutineValue,
+  LocationRoutineValue,
+  RoutineValue,
+  TimeRoutineValue,
+} from '../schema/routine';
 
 export const SHORT_DAYS: { [key: number]: string } = {
   1: 'Sun',
@@ -29,12 +28,12 @@ const LONG_DAYS = [
   'Saturdays',
 ];
 
-abstract class Gameplan {
+abstract class Routine {
   abstract get summary(): string | null;
 }
 
-export class TimeGameplan extends Gameplan {
-  constructor(private id: string, private data: TimeGameplanValue) {
+export class TimeRoutine extends Routine {
+  constructor(private id: string, private data: TimeRoutineValue) {
     super();
   }
 
@@ -76,8 +75,8 @@ export class TimeGameplan extends Gameplan {
   }
 }
 
-export class DayDebriefGameplan extends Gameplan {
-  constructor(private id: string, private data: DayDebriefGameplanValue) {
+export class DayDebriefRoutine extends Routine {
+  constructor(private id: string, private data: DayDebriefRoutineValue) {
     super();
   }
 
@@ -88,10 +87,10 @@ export class DayDebriefGameplan extends Gameplan {
   }
 }
 
-export class LocationGameplan extends Gameplan {
+export class LocationRoutine extends Routine {
   constructor(
     private id: string,
-    private data: LocationGameplanValue,
+    private data: LocationRoutineValue,
     private location: LocationValue
   ) {
     super();
@@ -108,35 +107,20 @@ export class LocationGameplan extends Gameplan {
   }
 }
 
-export class ImpulseGameplan extends Gameplan {
-  constructor(private id: string, private data: ImpulseGameplanValue) {
-    super();
-  }
-
-  get summary() {
-    if (this.data.type === 'impulseDebrief') return 'Debriefing';
-    return 'When I have an impulse moment';
-  }
-}
-
 // TODO: this doesn't support other gameplan types yet
 export function gameplanToClass(
   id: string,
-  gameplan: GameplanValue,
+  gameplan: RoutineValue,
   location?: LocationValue
 ) {
   if (gameplan.type === 'time') {
-    return new TimeGameplan(id, gameplan as TimeGameplanValue);
+    return new TimeRoutine(id, gameplan as TimeRoutineValue);
   } else if (gameplan.type === 'dayDebrief') {
-    return new DayDebriefGameplan(id, gameplan as DayDebriefGameplanValue);
+    return new DayDebriefRoutine(id, gameplan as DayDebriefRoutineValue);
   } else if (gameplan.type === 'location') {
     if (!location) throw new Error('no location');
-    return new LocationGameplan(
-      id,
-      gameplan as LocationGameplanValue,
-      location
-    );
+    return new LocationRoutine(id, gameplan as LocationRoutineValue, location);
   } else {
-    return new ImpulseGameplan(id, gameplan as ImpulseGameplanValue);
+    throw new Error('Invalid routine');
   }
 }

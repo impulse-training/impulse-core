@@ -2,24 +2,23 @@
 // take)
 import * as yup from 'yup';
 import { TimestampLike } from '../utils/TimestampLike';
-import { Gameplan, gameplanBaseSchema } from './gameplan';
 import { patternSchema } from './pattern';
-import { TacticValue, tacticSchema } from './tactic';
+import { tacticSchema } from './tactic';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { timestampSchema } from './utils/timestamp';
 
-type ImpulseGameplan = {
-  main: Gameplan;
-  impulseDebrief: Gameplan;
-};
-
-type BasicGameplan = {
-  main: Gameplan;
-};
-
 type Outcome = 'success' | 'setback' | 'indeterminate';
 
-export type BaseLogValue = WithTypes<typeof baseLogSchema, unknown>;
+const gameplanBaseSchema = yup.object({
+  // This is where we put tactics to show the user
+  nextTactics: yup.array().of(tacticSchema).required(),
+  // And after showing them, we push them here
+  seenTactics: yup.array().of(tacticSchema).required(),
+});
+
+const arrayOfStrings = yup.array().of(yup.string().required());
+
+export type BaseLogValue = WithTypes<typeof baseLogSchema>;
 const baseLogSchema = yup.object().shape({
   uid: yup.string().required(),
   createdAt: timestampSchema.required(),
@@ -45,18 +44,23 @@ const baseLogSchema = yup.object().shape({
       .shape({ tacticTitle: yup.string().required(), comments: yup.array() })
   ),
   steps: yup.number().notRequired(),
-  tacticIds: yup.array().of(yup.string().required()).required(),
-  seenTacticIds: yup.array().of(yup.string().required()).required(),
-  tacticsById: optionalObjectOf(tacticSchema),
-  suggestedTacticIds: yup.array().of(yup.string()).notRequired(),
-  isUpdatingSuggestions: yup.boolean().notRequired(),
-  supportGroupSuggestedTacticIds: yup
+
+  // All tactic data is stored here
+  tacticsById: objectOf(tacticSchema),
+
+  gameplan: yup
     .object()
     .shape({
-      impulse: yup.object().shape({}), // Replace with Record<string, string> if defined
-      impulseDebrief: yup.object().shape({}), // Replace with Record<string, string> if defined
+      main: arrayOfStrings.required(),
+      impulseDebrief: arrayOfStrings.notRequired(),
     })
-    .notRequired(),
+    .required(),
+
+  seenGameplan: yup.object().shape({
+    main: arrayOfStrings.required(),
+    impulseDebrief: arrayOfStrings.notRequired(),
+  }),
+
   tacticLikes: optionalObjectOf(yup.boolean().required()),
   tacticData: optionalObjectOf(
     yup.object({
@@ -73,22 +77,13 @@ const baseLogSchema = yup.object().shape({
 });
 // This is important to prevent typescript generating a 40k line file :/
 
-type WithTypes<T extends yup.ISchema<unknown>, G> = Omit<
-  yup.InferType<T>,
-  'gameplan' | 'tactics' | 'gameplans'
-> & {
+type WithTypes<T extends yup.ISchema<unknown>> = yup.InferType<T> & {
   createdAt: TimestampLike;
   updatedAt: TimestampLike;
   startTime: TimestampLike;
-  gameplan: G;
-  gameplans?: Record<string, G>;
-  tacticsById: Record<string, TacticValue>;
 };
 
-export type ImpulseLogValue = WithTypes<
-  typeof impulseLogSchema,
-  ImpulseGameplan
->;
+export type ImpulseLogValue = WithTypes<typeof impulseLogSchema>;
 
 export function logIsImpulseLog(log: LogValue): log is ImpulseLogValue {
   return log.type === 'impulse';
@@ -102,9 +97,15 @@ const impulseLogSchema = baseLogSchema.concat(
     isDisplayable: yup.boolean().oneOf([true]).required(),
     buttonPressSecondsSinceEpoch: yup.number().notRequired(),
     gameplans: objectOf(
-      yup.object().shape({
-        main: gameplanBaseSchema,
-        impulseDebrief: gameplanBaseSchema,
+      yup.object({
+        main: arrayOfStrings.required(),
+        impulseDebrief: arrayOfStrings.required(),
+      })
+    ),
+    seenGameplans: objectOf(
+      yup.object({
+        main: arrayOfStrings.required(),
+        impulseDebrief: arrayOfStrings.required(),
       })
     ),
     outcome: yup
@@ -112,17 +113,14 @@ const impulseLogSchema = baseLogSchema.concat(
       .oneOf(['success', 'setback', 'indeterminate']),
     patterns: objectOf(patternSchema),
     patternId: yup.string().required(),
-    patternIds: yup.array().of(yup.string()).required(),
+    patternIds: arrayOfStrings.required(),
     debriefNotes: yup.string().notRequired(),
     debriefReminderSentAt: yup.mixed().notRequired(),
     debriefedAt: yup.mixed().notRequired(),
   })
 );
 
-export type LocationLogValue = WithTypes<
-  typeof locationLogSchema,
-  BasicGameplan
->;
+export type LocationLogValue = WithTypes<typeof locationLogSchema>;
 export function logIsLocationLog(log: LogValue): log is LocationLogValue {
   return log.type === 'location';
 }
@@ -136,7 +134,7 @@ const locationLogSchema = baseLogSchema.concat(
   })
 );
 
-export type TimeLogValue = WithTypes<typeof timeLogSchema, BasicGameplan>;
+export type TimeLogValue = WithTypes<typeof timeLogSchema>;
 export function logIsTimeLog(log: LogValue): log is TimeLogValue {
   return log.type === 'time';
 }
@@ -148,10 +146,7 @@ const timeLogSchema = baseLogSchema.concat(
   })
 );
 
-export type DebriefLogValue = WithTypes<
-  typeof dayDebriefLogSchema,
-  BasicGameplan
->;
+export type DebriefLogValue = WithTypes<typeof dayDebriefLogSchema>;
 
 export function logIsDebriefLog(log: LogValue): log is DebriefLogValue {
   return log.type === 'dayDebrief';
@@ -167,7 +162,7 @@ const dayDebriefLogSchema = baseLogSchema.concat(
   })
 );
 
-export type MotionLogValue = WithTypes<typeof motionLogSchema, BasicGameplan>;
+export type MotionLogValue = WithTypes<typeof motionLogSchema>;
 export function logIsMotionLog(log: LogValue): log is MotionLogValue {
   return log.type === 'motion';
 }
@@ -178,7 +173,7 @@ const motionLogSchema = baseLogSchema.concat(
   })
 );
 
-export type ButtonLogValue = WithTypes<typeof buttonLogSchema, BasicGameplan>;
+export type ButtonLogValue = WithTypes<typeof buttonLogSchema>;
 export function logIsButtonLog(log: LogValue): log is ButtonLogValue {
   return log.type === 'button';
 }

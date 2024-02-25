@@ -1,9 +1,9 @@
 import { TimestampLike } from '../utils/TimestampLike';
 import {
-  DayDebriefGameplanValue,
-  LocationGameplanValue,
-  TimeGameplanValue,
-} from './gameplan';
+  DayDebriefRoutineValue,
+  LocationRoutineValue,
+  TimeRoutineValue,
+} from './routine';
 import { TacticValue } from './tactic';
 
 export interface RecommendationValueBase {
@@ -31,16 +31,16 @@ export interface RecommendationValueBase {
 // to wear your impulse button every morning at 8am". In this case the gameplan property would
 // specify a time gameplan for every day at 8am, and the tactics fields would specify the reminder
 // to wear the impulse button.
-export type NewGameplanRecommendationValue = RecommendationValueBase & {
-  gameplan: TimeGameplanValue | LocationGameplanValue | DayDebriefGameplanValue;
+export type NewRoutineRecommendationValue = RecommendationValueBase & {
+  gameplan: TimeRoutineValue | LocationRoutineValue | DayDebriefRoutineValue;
 };
 
 // These recommendations are for additional tactics to add to an existing gameplan.
-export type ExistingGameplanRecommendationValue = RecommendationValueBase & {
+export type ExistingRoutineRecommendationValue = RecommendationValueBase & {
   // This field is required, but omitted for template recommendations
   gameplanIds?: Array<string>;
 };
 
 export type RecommendationValue =
-  | NewGameplanRecommendationValue
-  | ExistingGameplanRecommendationValue;
+  | NewRoutineRecommendationValue
+  | ExistingRoutineRecommendationValue;
