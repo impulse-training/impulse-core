@@ -32,7 +32,7 @@ export class Log {
 
   get selectedPattern() {
     const data = this.data as ImpulseLogValue;
-    return data.patterns[data.patternId];
+    return data.patternsById?.[data.patternId];
   }
 
   // get getTacticSummary() {

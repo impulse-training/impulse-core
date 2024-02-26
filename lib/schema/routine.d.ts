@@ -205,8 +205,8 @@ export type RoutineValue = TimeRoutineValue | DayDebriefRoutineValue | LocationR
 export { dayDebriefRoutineSchema, locationRoutineSchema, timeRoutineSchema };
 export declare const routineSchema: yup.Lazy<{
     title?: string | null | undefined;
-    isTemplate?: boolean | null | undefined;
     navigationTitle?: string | null | undefined;
+    isTemplate?: boolean | null | undefined;
     scheduledNotificationIds?: string[] | null | undefined;
     uid: string;
     createdAt: {
@@ -219,16 +219,16 @@ export declare const routineSchema: yup.Lazy<{
         nanoseconds: number;
         toDate: {};
     };
-    type: "time";
     timezone: string;
     weekdays: number[];
     hour: number;
     minute: number;
+    type: "time";
 } | {
     title?: string | null | undefined;
+    navigationTitle?: string | null | undefined;
     isTemplate?: boolean | null | undefined;
     timezone?: string | null | undefined;
-    navigationTitle?: string | null | undefined;
     uid: string;
     createdAt: {
         seconds: number;
@@ -243,10 +243,10 @@ export declare const routineSchema: yup.Lazy<{
     type: "dayDebrief";
 } | {
     title?: string | null | undefined;
+    navigationTitle?: string | null | undefined;
     isTemplate?: boolean | null | undefined;
     timezone?: string | null | undefined;
     locationId?: string | null | undefined;
-    navigationTitle?: string | null | undefined;
     uid: string;
     createdAt: {
         seconds: number;

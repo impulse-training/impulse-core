@@ -2,10 +2,10 @@ import * as Factory from 'factory.ts';
 import { TimestampLike } from '../utils/TimestampLike';
 export declare const makeLocationRoutineFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     title?: string | null | undefined;
+    navigationTitle?: string | null | undefined;
     isTemplate?: boolean | null | undefined;
     timezone?: string | null | undefined;
     locationId?: string | null | undefined;
-    navigationTitle?: string | null | undefined;
     uid: string;
     createdAt: {
         seconds: number;
@@ -19,11 +19,11 @@ export declare const makeLocationRoutineFactory: (TimestampKlass: typeof Timesta
     };
     type: "location";
     mode: {};
-}, "uid" | "createdAt" | "updatedAt" | "type" | "mode" | ("title" | "isTemplate" | "timezone" | "locationId" | "navigationTitle")>;
+}, "uid" | "createdAt" | "updatedAt" | "type" | "mode" | ("title" | "navigationTitle" | "isTemplate" | "timezone" | "locationId")>;
 export declare const makeTimeRoutineFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     title?: string | null | undefined;
-    isTemplate?: boolean | null | undefined;
     navigationTitle?: string | null | undefined;
+    isTemplate?: boolean | null | undefined;
     scheduledNotificationIds?: string[] | null | undefined;
     uid: string;
     createdAt: {
@@ -36,17 +36,17 @@ export declare const makeTimeRoutineFactory: (TimestampKlass: typeof TimestampLi
         nanoseconds: number;
         toDate: {};
     };
-    type: "time";
     timezone: string;
     weekdays: number[];
     hour: number;
     minute: number;
-}, "uid" | "createdAt" | "updatedAt" | "type" | "timezone" | "weekdays" | "hour" | "minute" | ("title" | "isTemplate" | "navigationTitle" | "scheduledNotificationIds")>;
+    type: "time";
+}, "uid" | "createdAt" | "updatedAt" | "timezone" | "weekdays" | "hour" | "minute" | "type" | ("title" | "navigationTitle" | "isTemplate" | "scheduledNotificationIds")>;
 export declare const makeDebriefRoutineFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     title?: string | null | undefined;
+    navigationTitle?: string | null | undefined;
     isTemplate?: boolean | null | undefined;
     timezone?: string | null | undefined;
-    navigationTitle?: string | null | undefined;
     uid: string;
     createdAt: {
         seconds: number;
@@ -59,4 +59,4 @@ export declare const makeDebriefRoutineFactory: (TimestampKlass: typeof Timestam
         toDate: {};
     };
     type: "dayDebrief";
-}, "uid" | "createdAt" | "updatedAt" | "type" | ("title" | "isTemplate" | "timezone" | "navigationTitle")>;
+}, "uid" | "createdAt" | "updatedAt" | "type" | ("title" | "navigationTitle" | "isTemplate" | "timezone")>;

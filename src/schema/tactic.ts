@@ -1,7 +1,6 @@
 import * as yup from 'yup';
 import { recordingSchema } from './recording';
 import { imageSchema } from './utils/image';
-import { optionalObjectOf } from './utils/objectOf';
 import { timestampSchema } from './utils/timestamp';
 
 // Define a base schema for TacticValueBase with generic type K to accommodate the type field.
@@ -28,14 +27,6 @@ function tacticValueBaseSchema<K extends string>(type: K) {
     isAvailableForRecommendation: yup.boolean().nullable(),
     numberOfLikes: yup.number().nullable(),
     isSuggested: yup.boolean(),
-    // While there are known keys in this object, such as "impulse", "routine", etc, it may also
-    // include string keys that correspond to tacticIds.
-    ordinals: yup.object({
-      main: optionalObjectOf(yup.number().required()),
-      impulseDebrief: optionalObjectOf(yup.number().required()),
-      routine: optionalObjectOf(yup.number().required()),
-      tactic: optionalObjectOf(yup.number().required()),
-    }),
   });
 }
 

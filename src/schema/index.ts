@@ -6,6 +6,7 @@ export * from './category';
 export * from './challenge';
 export * from './comment';
 export * from './contact';
+export * from './gameplan';
 export * from './invitation';
 export * from './issue';
 export * from './location';

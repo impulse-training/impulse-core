@@ -7,10 +7,17 @@ import {
   TimeLogValue,
 } from '../schema/logs';
 import { TimestampLike } from '../utils/TimestampLike';
+import { makeGameplanFactory } from './gameplan';
 
-const gameplan = {
-  main: [],
-  impulseDebrief: [],
+const strategy = {
+  main: {
+    tacticIds: [],
+    suggestedTacticIds: [],
+  },
+  impulseDebrief: {
+    tacticIds: [],
+    suggestedTacticIds: [],
+  },
 };
 
 export const makeImpulseFactory = (TimestampKlass: typeof TimestampLike) =>
@@ -25,15 +32,14 @@ export const makeImpulseFactory = (TimestampKlass: typeof TimestampLike) =>
     isDisplayable: true,
     debriefNotes: '',
     patternId: 'abc123',
-    patternIds: [],
     location: {},
     locationIsFetching: false,
-    patterns: {},
+    patternsById: {},
     tacticsById: {},
-    gameplan: gameplan,
-    gameplans: {},
-    seenGameplan: gameplan,
-    seenGameplans: {},
+    strategy,
+    gameplan: makeGameplanFactory(TimestampKlass).build(),
+    seenTacticIds: [],
+    completedTacticIds: [],
   });
 
 export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>
@@ -49,8 +55,9 @@ export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>
     location: {},
     tacticsById: {},
     locationIsFetching: false,
-    gameplan: gameplan,
-    seenGameplan: gameplan,
+    strategy,
+    seenTacticIds: [],
+    completedTacticIds: [],
   });
 
 export const makeDebriefLogFactory = (TimestampKlass: typeof TimestampLike) =>
@@ -65,12 +72,12 @@ export const makeDebriefLogFactory = (TimestampKlass: typeof TimestampLike) =>
     isDisplayable: true,
     location: {},
     locationIsFetching: false,
-    gameplan: gameplan,
-    patterns: {},
+    patternsById: {},
     tacticsById: {},
-    patternIds: [],
     tacticDataEntries: {},
-    seenGameplan: gameplan,
+    strategy,
+    seenTacticIds: [],
+    completedTacticIds: [],
   });
 
 export const makeMotionLogFactory = (TimestampKlass: typeof TimestampLike) =>
@@ -85,8 +92,9 @@ export const makeMotionLogFactory = (TimestampKlass: typeof TimestampLike) =>
     location: {},
     tacticsById: {},
     locationIsFetching: false,
-    gameplan: gameplan,
-    seenGameplan: gameplan,
+    strategy,
+    seenTacticIds: [],
+    completedTacticIds: [],
   });
 
 export const makeLocationLogFactory = (TimestampKlass: typeof TimestampLike) =>
@@ -104,6 +112,7 @@ export const makeLocationLogFactory = (TimestampKlass: typeof TimestampLike) =>
     tacticsById: {},
     location: {},
     locationIsFetching: false,
-    gameplan: gameplan,
-    seenGameplan: gameplan,
+    strategy,
+    seenTacticIds: [],
+    completedTacticIds: [],
   });

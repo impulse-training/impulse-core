@@ -26,6 +26,7 @@ export declare const makeSupportGroupFactory: (TimestampKlass: typeof TimestampL
         toDate: {};
     };
     thumbnailUrl: string;
+    suggestedTacticIds: {};
     participantUids: string[];
     groupName: string;
     creatorName: string;
@@ -35,5 +36,4 @@ export declare const makeSupportGroupFactory: (TimestampKlass: typeof TimestampL
         [x: string]: number;
     };
     permissions: {};
-    suggestedTacticIds: {};
-}, "createdAt" | "updatedAt" | "thumbnailUrl" | "participantUids" | "groupName" | "creatorName" | "creatorUid" | "icon" | "unreadCounts" | "permissions" | "suggestedTacticIds" | ("isTemplate" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "lastMessagePreview" | "invitationCode" | "invitationUrl" | "lastMessageUid" | "isSharingDisabled")>;
+}, "createdAt" | "updatedAt" | "thumbnailUrl" | "suggestedTacticIds" | "participantUids" | "groupName" | "creatorName" | "creatorUid" | "icon" | "unreadCounts" | "permissions" | ("isTemplate" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "lastMessagePreview" | "invitationCode" | "invitationUrl" | "lastMessageUid" | "isSharingDisabled")>;

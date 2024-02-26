@@ -2,21 +2,14 @@
 // take)
 import * as yup from 'yup';
 import { TimestampLike } from '../utils/TimestampLike';
+import { gameplanSchema, strategy } from './gameplan';
 import { patternSchema } from './pattern';
 import { tacticSchema } from './tactic';
+import { requiredStringArray } from './utils/array';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { timestampSchema } from './utils/timestamp';
 
 type Outcome = 'success' | 'setback' | 'indeterminate';
-
-const gameplanBaseSchema = yup.object({
-  // This is where we put tactics to show the user
-  nextTactics: yup.array().of(tacticSchema).required(),
-  // And after showing them, we push them here
-  seenTactics: yup.array().of(tacticSchema).required(),
-});
-
-const arrayOfStrings = yup.array().of(yup.string().required());
 
 export type BaseLogValue = WithTypes<typeof baseLogSchema>;
 const baseLogSchema = yup.object().shape({
@@ -44,23 +37,18 @@ const baseLogSchema = yup.object().shape({
       .shape({ tacticTitle: yup.string().required(), comments: yup.array() })
   ),
   steps: yup.number().notRequired(),
-
-  // All tactic data is stored here
-  tacticsById: objectOf(tacticSchema),
-
-  gameplan: yup
-    .object()
-    .shape({
-      main: arrayOfStrings.required(),
-      impulseDebrief: arrayOfStrings.notRequired(),
-    })
-    .required(),
-
-  seenGameplan: yup.object().shape({
-    main: arrayOfStrings.required(),
-    impulseDebrief: arrayOfStrings.notRequired(),
+  // The heart of the log is the strategy - the tactics that should be shown to the user (including
+  // conditional tactics). The main property is required, which is the default. However, impulse
+  // logs also have a debrief strategy. Additionally, we store tactics by id, so the log always has
+  // the data to render the tactics from the strategy, even if those tactics are deleted or modified
+  // later.
+  strategy: yup.object({
+    main: strategy.required(),
+    impulseDebrief: strategy.notRequired(),
   }),
-
+  tacticsById: objectOf(tacticSchema),
+  seenTacticIds: requiredStringArray,
+  completedTacticIds: requiredStringArray,
   tacticLikes: optionalObjectOf(yup.boolean().required()),
   tacticData: optionalObjectOf(
     yup.object({
@@ -96,24 +84,15 @@ const impulseLogSchema = baseLogSchema.concat(
     pressCount: yup.number().notRequired(),
     isDisplayable: yup.boolean().oneOf([true]).required(),
     buttonPressSecondsSinceEpoch: yup.number().notRequired(),
-    gameplans: objectOf(
-      yup.object({
-        main: arrayOfStrings.required(),
-        impulseDebrief: arrayOfStrings.required(),
-      })
-    ),
-    seenGameplans: objectOf(
-      yup.object({
-        main: arrayOfStrings.required(),
-        impulseDebrief: arrayOfStrings.required(),
-      })
-    ),
+    // In addition to the strategy field, which is the set of tactics for the currently-selected
+    // pattern, we also store the entire "gameplan" on impulse log documents, which is copied from
+    // the user's gameplan document at the time.
+    gameplan: gameplanSchema,
     outcome: yup
       .mixed<Outcome>()
       .oneOf(['success', 'setback', 'indeterminate']),
-    patterns: objectOf(patternSchema),
     patternId: yup.string().required(),
-    patternIds: arrayOfStrings.required(),
+    patternsById: objectOf(patternSchema),
     debriefNotes: yup.string().notRequired(),
     debriefReminderSentAt: yup.mixed().notRequired(),
     debriefedAt: yup.mixed().notRequired(),
@@ -154,10 +133,9 @@ export function logIsDebriefLog(log: LogValue): log is DebriefLogValue {
 const dayDebriefLogSchema = baseLogSchema.concat(
   yup.object().shape({
     type: yup.mixed<'dayDebrief'>().oneOf(['dayDebrief']).required(),
-    patterns: objectOf(patternSchema),
+    patternsById: objectOf(patternSchema),
     isDisplayable: yup.boolean().oneOf([true]).required(),
     gameplanId: yup.string().required(),
-    patternIds: yup.array().of(yup.string()).required(),
     tacticDataEntries: objectOf(yup.mixed()), // Replace with Record<string, Record<string, PatternUsageSchema>> if defined
   })
 );
