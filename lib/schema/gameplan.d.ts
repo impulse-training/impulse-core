@@ -412,6 +412,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
+            repeat?: yup.Maybe<number | undefined>;
             sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
@@ -430,7 +431,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
-            repeat: number;
             type: "breathe";
             backgroundColor: string;
             inFor: number;

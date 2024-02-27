@@ -408,6 +408,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
             };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
+            repeat?: yup.Maybe<number | undefined>;
             sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
@@ -426,7 +427,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
-            repeat: number;
             type: "breathe";
             backgroundColor: string;
             inFor: number;
@@ -1007,6 +1007,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
+            repeat?: yup.Maybe<number | undefined>;
             sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
@@ -1025,7 +1026,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
-            repeat: number;
             type: "breathe";
             backgroundColor: string;
             inFor: number;
@@ -1511,6 +1511,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 };
                 ordinal?: number | null | undefined;
                 isTemplate?: boolean | null | undefined;
+                repeat?: yup.Maybe<number | undefined>;
                 sourceId?: string | undefined;
                 subtitle?: yup.Maybe<string | undefined>;
                 description?: string | null | undefined;
@@ -1529,7 +1530,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
                 title: string;
-                repeat: number;
                 type: "breathe";
                 backgroundColor: string;
                 inFor: number;
@@ -2274,6 +2274,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
             };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
+            repeat?: yup.Maybe<number | undefined>;
             sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
@@ -2292,7 +2293,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
-            repeat: number;
             type: "breathe";
             backgroundColor: string;
             inFor: number;
@@ -2879,6 +2879,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
             };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
+            repeat?: yup.Maybe<number | undefined>;
             sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
@@ -2897,7 +2898,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
-            repeat: number;
             type: "breathe";
             backgroundColor: string;
             inFor: number;
@@ -3480,6 +3480,7 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
+            repeat?: yup.Maybe<number | undefined>;
             sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
@@ -3498,7 +3499,6 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
-            repeat: number;
             type: "breathe";
             backgroundColor: string;
             inFor: number;
@@ -4112,6 +4112,7 @@ declare const motionLogSchema: yup.ObjectSchema<{
             };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
+            repeat?: yup.Maybe<number | undefined>;
             sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
@@ -4130,7 +4131,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
-            repeat: number;
             type: "breathe";
             backgroundColor: string;
             inFor: number;
@@ -4711,6 +4711,7 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
+            repeat?: yup.Maybe<number | undefined>;
             sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
@@ -4729,7 +4730,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
-            repeat: number;
             type: "breathe";
             backgroundColor: string;
             inFor: number;
@@ -5302,6 +5302,7 @@ export declare const logSchema: yup.Lazy<{
             };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
+            repeat?: yup.Maybe<number | undefined>;
             sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
@@ -5320,7 +5321,6 @@ export declare const logSchema: yup.Lazy<{
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
-            repeat: number;
             type: "breathe";
             backgroundColor: string;
             inFor: number;
@@ -5845,6 +5845,7 @@ export declare const logSchema: yup.Lazy<{
                 };
                 ordinal?: number | null | undefined;
                 isTemplate?: boolean | null | undefined;
+                repeat?: yup.Maybe<number | undefined>;
                 sourceId?: string | undefined;
                 subtitle?: yup.Maybe<string | undefined>;
                 description?: string | null | undefined;
@@ -5863,7 +5864,6 @@ export declare const logSchema: yup.Lazy<{
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
                 title: string;
-                repeat: number;
                 type: "breathe";
                 backgroundColor: string;
                 inFor: number;
@@ -6494,6 +6494,7 @@ export declare const logSchema: yup.Lazy<{
             };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
+            repeat?: yup.Maybe<number | undefined>;
             sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
@@ -6512,7 +6513,6 @@ export declare const logSchema: yup.Lazy<{
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
-            repeat: number;
             type: "breathe";
             backgroundColor: string;
             inFor: number;
@@ -7046,6 +7046,7 @@ export declare const logSchema: yup.Lazy<{
             };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
+            repeat?: yup.Maybe<number | undefined>;
             sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
@@ -7064,7 +7065,6 @@ export declare const logSchema: yup.Lazy<{
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
-            repeat: number;
             type: "breathe";
             backgroundColor: string;
             inFor: number;
@@ -7597,6 +7597,7 @@ export declare const logSchema: yup.Lazy<{
             };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
+            repeat?: yup.Maybe<number | undefined>;
             sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
@@ -7615,7 +7616,6 @@ export declare const logSchema: yup.Lazy<{
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
-            repeat: number;
             type: "breathe";
             backgroundColor: string;
             inFor: number;
@@ -8177,6 +8177,7 @@ export declare const logSchema: yup.Lazy<{
             };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
+            repeat?: yup.Maybe<number | undefined>;
             sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
@@ -8195,7 +8196,6 @@ export declare const logSchema: yup.Lazy<{
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
-            repeat: number;
             type: "breathe";
             backgroundColor: string;
             inFor: number;
@@ -8727,6 +8727,7 @@ export declare const logSchema: yup.Lazy<{
             };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
+            repeat?: yup.Maybe<number | undefined>;
             sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
@@ -8745,7 +8746,6 @@ export declare const logSchema: yup.Lazy<{
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
-            repeat: number;
             type: "breathe";
             backgroundColor: string;
             inFor: number;

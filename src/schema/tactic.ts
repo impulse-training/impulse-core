@@ -102,7 +102,7 @@ export const breatheTacticSchema = tacticValueBaseSchema('breathe').shape({
   inFor: yup.number().positive().required(),
   holdFor: yup.number().positive().required(),
   outFor: yup.number().positive().required(),
-  repeat: yup.number().positive().required(),
+  repeat: yup.number().positive().notRequired(),
 });
 export type BreatheTactic = yup.InferType<typeof breatheTacticSchema>;
 

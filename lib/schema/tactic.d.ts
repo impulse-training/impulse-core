@@ -641,7 +641,7 @@ export declare const breatheTacticSchema: yup.ObjectSchema<{
     inFor: number;
     holdFor: number;
     outFor: number;
-    repeat: number;
+    repeat: yup.Maybe<number | undefined>;
 }, yup.AnyObject, {
     type: undefined;
     uid: undefined;
