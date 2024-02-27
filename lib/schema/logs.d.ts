@@ -35,8 +35,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
     commentsById: {} | null | undefined;
     commentsByTacticId: {
         [x: string]: {
-            comments?: any[] | undefined;
             tacticTitle: string;
+            comments: any[];
         };
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
@@ -539,8 +539,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
             title: string;
             type: "question";
             backgroundColor: string;
-        } | {
-            type: {};
         };
     };
     seenTacticIds: string[];
@@ -641,8 +639,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     commentsById: {} | null | undefined;
     commentsByTacticId: {
         [x: string]: {
-            comments?: any[] | undefined;
             tacticTitle: string;
+            comments: any[];
         };
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
@@ -1145,8 +1143,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             title: string;
             type: "question";
             backgroundColor: string;
-        } | {
-            type: {};
         };
     };
     seenTacticIds: string[];
@@ -1656,8 +1652,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 title: string;
                 type: "question";
                 backgroundColor: string;
-            } | {
-                type: {};
             };
         };
         impulse: {
@@ -1717,10 +1711,10 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 scheduledNotificationIds?: string[] | null | undefined;
                 uid: string;
                 timezone: string;
+                type: "time";
                 weekdays: number[];
                 hour: number;
                 minute: number;
-                type: "time";
             } | {
                 updatedAt?: yup.Maybe<{} | undefined> | {
                     seconds: number;
@@ -1735,8 +1729,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 title?: string | null | undefined;
                 navigationTitle?: string | null | undefined;
                 isTemplate?: boolean | null | undefined;
-                timezone?: string | null | undefined;
                 uid: string;
+                timezone: string;
                 type: "dayDebrief";
             } | {
                 updatedAt?: yup.Maybe<{} | undefined> | {
@@ -1752,9 +1746,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 title?: string | null | undefined;
                 navigationTitle?: string | null | undefined;
                 isTemplate?: boolean | null | undefined;
-                timezone?: string | null | undefined;
                 locationId?: string | null | undefined;
                 uid: string;
+                timezone: string;
                 type: "location";
                 mode: {};
             };
@@ -1918,8 +1912,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
     commentsById: {} | null | undefined;
     commentsByTacticId: {
         [x: string]: {
-            comments?: any[] | undefined;
             tacticTitle: string;
+            comments: any[];
         };
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
@@ -2422,8 +2416,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
             title: string;
             type: "question";
             backgroundColor: string;
-        } | {
-            type: {};
         };
     };
     seenTacticIds: string[];
@@ -2530,8 +2522,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
     commentsById: {} | null | undefined;
     commentsByTacticId: {
         [x: string]: {
-            comments?: any[] | undefined;
             tacticTitle: string;
+            comments: any[];
         };
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
@@ -3034,8 +3026,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
             title: string;
             type: "question";
             backgroundColor: string;
-        } | {
-            type: {};
         };
     };
     seenTacticIds: string[];
@@ -3055,7 +3045,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
 } & {
     type: "time";
     isDisplayable: NonNullable<boolean | undefined>;
-    gameplanId: string;
+    routineId: string;
 }, yup.AnyObject, {
     uid: undefined;
     createdAt: undefined;
@@ -3101,7 +3091,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
     sharedWithSupportGroupIds: "";
     type: undefined;
     isDisplayable: undefined;
-    gameplanId: undefined;
+    routineId: undefined;
 }, "">;
 export type DebriefLogValue = WithTypes<typeof dayDebriefLogSchema>;
 export declare function logIsDebriefLog(log: LogValue): log is DebriefLogValue;
@@ -3138,8 +3128,8 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
     commentsById: {} | null | undefined;
     commentsByTacticId: {
         [x: string]: {
-            comments?: any[] | undefined;
             tacticTitle: string;
+            comments: any[];
         };
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
@@ -3642,8 +3632,6 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             title: string;
             type: "question";
             backgroundColor: string;
-        } | {
-            type: {};
         };
     };
     seenTacticIds: string[];
@@ -3689,7 +3677,7 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
         };
     };
     isDisplayable: NonNullable<boolean | undefined>;
-    gameplanId: string;
+    routineId: string;
     tacticDataEntries: {
         [x: string]: {} | undefined;
     };
@@ -3739,7 +3727,7 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
     type: undefined;
     patternsById: undefined;
     isDisplayable: undefined;
-    gameplanId: undefined;
+    routineId: undefined;
     tacticDataEntries: undefined;
 }, "">;
 export type MotionLogValue = WithTypes<typeof motionLogSchema>;
@@ -3777,8 +3765,8 @@ declare const motionLogSchema: yup.ObjectSchema<{
     commentsById: {} | null | undefined;
     commentsByTacticId: {
         [x: string]: {
-            comments?: any[] | undefined;
             tacticTitle: string;
+            comments: any[];
         };
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
@@ -4281,8 +4269,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
             title: string;
             type: "question";
             backgroundColor: string;
-        } | {
-            type: {};
         };
     };
     seenTacticIds: string[];
@@ -4383,8 +4369,8 @@ declare const buttonLogSchema: yup.ObjectSchema<{
     commentsById: {} | null | undefined;
     commentsByTacticId: {
         [x: string]: {
-            comments?: any[] | undefined;
             tacticTitle: string;
+            comments: any[];
         };
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
@@ -4887,8 +4873,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             title: string;
             type: "question";
             backgroundColor: string;
-        } | {
-            type: {};
         };
     };
     seenTacticIds: string[];
@@ -4975,8 +4959,8 @@ export declare const logSchema: yup.Lazy<{
     commentsById?: {} | null | undefined;
     commentsByTacticId?: {
         [x: string]: {
-            comments?: any[] | undefined;
             tacticTitle: string;
+            comments: any[];
         };
     } | null | undefined;
     tacticLikes?: {
@@ -5000,7 +4984,6 @@ export declare const logSchema: yup.Lazy<{
     debriefedAt?: yup.Maybe<{} | undefined>;
     uid: string;
     timezone: string;
-    type: "impulse";
     location: {
         latitude?: number | undefined;
         longitude?: number | undefined;
@@ -5010,6 +4993,7 @@ export declare const logSchema: yup.Lazy<{
         heading?: number | undefined;
         speed?: number | undefined;
     };
+    type: "impulse";
     tacticsById: {
         [x: string]: {
             uid?: string | null | undefined;
@@ -5485,8 +5469,6 @@ export declare const logSchema: yup.Lazy<{
             title: string;
             type: "question";
             backgroundColor: string;
-        } | {
-            type: {};
         };
     };
     patternsById: {
@@ -6035,8 +6017,6 @@ export declare const logSchema: yup.Lazy<{
                 title: string;
                 type: "question";
                 backgroundColor: string;
-            } | {
-                type: {};
             };
         };
         impulse: {
@@ -6096,10 +6076,10 @@ export declare const logSchema: yup.Lazy<{
                 scheduledNotificationIds?: string[] | null | undefined;
                 uid: string;
                 timezone: string;
+                type: "time";
                 weekdays: number[];
                 hour: number;
                 minute: number;
-                type: "time";
             } | {
                 updatedAt?: yup.Maybe<{} | undefined> | {
                     seconds: number;
@@ -6114,8 +6094,8 @@ export declare const logSchema: yup.Lazy<{
                 title?: string | null | undefined;
                 navigationTitle?: string | null | undefined;
                 isTemplate?: boolean | null | undefined;
-                timezone?: string | null | undefined;
                 uid: string;
+                timezone: string;
                 type: "dayDebrief";
             } | {
                 updatedAt?: yup.Maybe<{} | undefined> | {
@@ -6131,9 +6111,9 @@ export declare const logSchema: yup.Lazy<{
                 title?: string | null | undefined;
                 navigationTitle?: string | null | undefined;
                 isTemplate?: boolean | null | undefined;
-                timezone?: string | null | undefined;
                 locationId?: string | null | undefined;
                 uid: string;
+                timezone: string;
                 type: "location";
                 mode: {};
             };
@@ -6183,8 +6163,8 @@ export declare const logSchema: yup.Lazy<{
     commentsById?: {} | null | undefined;
     commentsByTacticId?: {
         [x: string]: {
-            comments?: any[] | undefined;
             tacticTitle: string;
+            comments: any[];
         };
     } | null | undefined;
     tacticLikes?: {
@@ -6201,7 +6181,6 @@ export declare const logSchema: yup.Lazy<{
     sharedWithSupportGroupIds?: yup.Maybe<string[] | undefined>;
     uid: string;
     timezone: string;
-    type: "location";
     location: {
         latitude?: number | undefined;
         longitude?: number | undefined;
@@ -6211,6 +6190,7 @@ export declare const logSchema: yup.Lazy<{
         heading?: number | undefined;
         speed?: number | undefined;
     };
+    type: "location";
     locationId: string;
     tacticsById: {
         [x: string]: {
@@ -6687,8 +6667,6 @@ export declare const logSchema: yup.Lazy<{
             title: string;
             type: "question";
             backgroundColor: string;
-        } | {
-            type: {};
         };
     };
     startTime: {
@@ -6743,8 +6721,8 @@ export declare const logSchema: yup.Lazy<{
     commentsById?: {} | null | undefined;
     commentsByTacticId?: {
         [x: string]: {
-            comments?: any[] | undefined;
             tacticTitle: string;
+            comments: any[];
         };
     } | null | undefined;
     tacticLikes?: {
@@ -6761,7 +6739,6 @@ export declare const logSchema: yup.Lazy<{
     sharedWithSupportGroupIds?: yup.Maybe<string[] | undefined>;
     uid: string;
     timezone: string;
-    type: "time";
     location: {
         latitude?: number | undefined;
         longitude?: number | undefined;
@@ -6771,6 +6748,7 @@ export declare const logSchema: yup.Lazy<{
         heading?: number | undefined;
         speed?: number | undefined;
     };
+    type: "time";
     tacticsById: {
         [x: string]: {
             uid?: string | null | undefined;
@@ -7246,8 +7224,6 @@ export declare const logSchema: yup.Lazy<{
             title: string;
             type: "question";
             backgroundColor: string;
-        } | {
-            type: {};
         };
     };
     startTime: {
@@ -7283,7 +7259,7 @@ export declare const logSchema: yup.Lazy<{
     seenTacticIds: string[];
     completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
-    gameplanId: string;
+    routineId: string;
 } | {
     updatedAt?: yup.Maybe<{} | undefined> | {
         seconds: number;
@@ -7301,8 +7277,8 @@ export declare const logSchema: yup.Lazy<{
     commentsById?: {} | null | undefined;
     commentsByTacticId?: {
         [x: string]: {
-            comments?: any[] | undefined;
             tacticTitle: string;
+            comments: any[];
         };
     } | null | undefined;
     tacticLikes?: {
@@ -7319,7 +7295,6 @@ export declare const logSchema: yup.Lazy<{
     sharedWithSupportGroupIds?: yup.Maybe<string[] | undefined>;
     uid: string;
     timezone: string;
-    type: "dayDebrief";
     location: {
         latitude?: number | undefined;
         longitude?: number | undefined;
@@ -7329,6 +7304,7 @@ export declare const logSchema: yup.Lazy<{
         heading?: number | undefined;
         speed?: number | undefined;
     };
+    type: "dayDebrief";
     tacticsById: {
         [x: string]: {
             uid?: string | null | undefined;
@@ -7804,8 +7780,6 @@ export declare const logSchema: yup.Lazy<{
             title: string;
             type: "question";
             backgroundColor: string;
-        } | {
-            type: {};
         };
     };
     patternsById: {
@@ -7867,7 +7841,7 @@ export declare const logSchema: yup.Lazy<{
     seenTacticIds: string[];
     completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
-    gameplanId: string;
+    routineId: string;
     tacticDataEntries: {
         [x: string]: {} | undefined;
     };
@@ -7888,8 +7862,8 @@ export declare const logSchema: yup.Lazy<{
     commentsById?: {} | null | undefined;
     commentsByTacticId?: {
         [x: string]: {
-            comments?: any[] | undefined;
             tacticTitle: string;
+            comments: any[];
         };
     } | null | undefined;
     tacticLikes?: {
@@ -7906,7 +7880,6 @@ export declare const logSchema: yup.Lazy<{
     sharedWithSupportGroupIds?: yup.Maybe<string[] | undefined>;
     uid: string;
     timezone: string;
-    type: "motion";
     location: {
         latitude?: number | undefined;
         longitude?: number | undefined;
@@ -7916,6 +7889,7 @@ export declare const logSchema: yup.Lazy<{
         heading?: number | undefined;
         speed?: number | undefined;
     };
+    type: "motion";
     tacticsById: {
         [x: string]: {
             uid?: string | null | undefined;
@@ -8391,8 +8365,6 @@ export declare const logSchema: yup.Lazy<{
             title: string;
             type: "question";
             backgroundColor: string;
-        } | {
-            type: {};
         };
     };
     startTime: {
@@ -8445,8 +8417,8 @@ export declare const logSchema: yup.Lazy<{
     commentsById?: {} | null | undefined;
     commentsByTacticId?: {
         [x: string]: {
-            comments?: any[] | undefined;
             tacticTitle: string;
+            comments: any[];
         };
     } | null | undefined;
     tacticLikes?: {
@@ -8463,7 +8435,6 @@ export declare const logSchema: yup.Lazy<{
     sharedWithSupportGroupIds?: yup.Maybe<string[] | undefined>;
     uid: string;
     timezone: string;
-    type: "button";
     location: {
         latitude?: number | undefined;
         longitude?: number | undefined;
@@ -8473,6 +8444,7 @@ export declare const logSchema: yup.Lazy<{
         heading?: number | undefined;
         speed?: number | undefined;
     };
+    type: "button";
     tacticsById: {
         [x: string]: {
             uid?: string | null | undefined;
@@ -8948,8 +8920,6 @@ export declare const logSchema: yup.Lazy<{
             title: string;
             type: "question";
             backgroundColor: string;
-        } | {
-            type: {};
         };
     };
     startTime: {

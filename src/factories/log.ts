@@ -46,7 +46,7 @@ export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<TimeLogValue>({
     uid: Factory.each(i => i.toString()),
     type: 'time',
-    gameplanId: 'reminder1',
+    routineId: 'reminder1',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     startTime: TimestampKlass.now(),
@@ -64,7 +64,7 @@ export const makeDebriefLogFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<DebriefLogValue>({
     uid: Factory.each(i => i.toString()),
     type: 'dayDebrief',
-    gameplanId: 'reminder1',
+    routineId: 'reminder1',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     startTime: TimestampKlass.now(),

@@ -16,7 +16,7 @@ declare const routineBaseSchema: yup.ObjectSchema<{
     title: string | null | undefined;
     navigationTitle: string | null | undefined;
     isTemplate: boolean | null | undefined;
-    timezone: string | null | undefined;
+    timezone: string;
 }, yup.AnyObject, {
     uid: undefined;
     createdAt: undefined;
@@ -44,6 +44,7 @@ declare const schedulableRoutineSchema: yup.ObjectSchema<{
     isTemplate: boolean | null | undefined;
     timezone: string;
 } & {
+    type: NonNullable<"time" | "location" | undefined>;
     weekdays: number[];
     hour: number;
     minute: number;
@@ -57,6 +58,7 @@ declare const schedulableRoutineSchema: yup.ObjectSchema<{
     navigationTitle: undefined;
     isTemplate: undefined;
     timezone: undefined;
+    type: undefined;
     weekdays: "";
     hour: undefined;
     minute: undefined;
@@ -79,6 +81,7 @@ declare const timeRoutineSchema: yup.ObjectSchema<{
     navigationTitle: string | null | undefined;
     isTemplate: boolean | null | undefined;
     timezone: string;
+    type: "time";
     weekdays: number[];
     hour: number;
     minute: number;
@@ -93,11 +96,11 @@ declare const timeRoutineSchema: yup.ObjectSchema<{
     navigationTitle: undefined;
     isTemplate: undefined;
     timezone: undefined;
+    type: undefined;
     weekdays: "";
     hour: undefined;
     minute: undefined;
     scheduledNotificationIds: "";
-    type: undefined;
 }, "">;
 export type DayDebriefRoutineValue = Inferred<typeof dayDebriefRoutineSchema>;
 declare const dayDebriefRoutineSchema: yup.ObjectSchema<{
@@ -115,7 +118,7 @@ declare const dayDebriefRoutineSchema: yup.ObjectSchema<{
     title: string | null | undefined;
     navigationTitle: string | null | undefined;
     isTemplate: boolean | null | undefined;
-    timezone: string | null | undefined;
+    timezone: string;
 } & {
     type: "dayDebrief";
 }, yup.AnyObject, {
@@ -144,7 +147,7 @@ declare const locationRoutineSchema: yup.ObjectSchema<{
     title: string | null | undefined;
     navigationTitle: string | null | undefined;
     isTemplate: boolean | null | undefined;
-    timezone: string | null | undefined;
+    timezone: string;
 } & {
     type: "location";
     locationId: string | null | undefined;
@@ -180,10 +183,10 @@ export declare const routineSchema: yup.Lazy<{
     scheduledNotificationIds?: string[] | null | undefined;
     uid: string;
     timezone: string;
+    type: "time";
     weekdays: number[];
     hour: number;
     minute: number;
-    type: "time";
 } | {
     updatedAt?: yup.Maybe<{} | undefined> | {
         seconds: number;
@@ -198,8 +201,8 @@ export declare const routineSchema: yup.Lazy<{
     title?: string | null | undefined;
     navigationTitle?: string | null | undefined;
     isTemplate?: boolean | null | undefined;
-    timezone?: string | null | undefined;
     uid: string;
+    timezone: string;
     type: "dayDebrief";
 } | {
     updatedAt?: yup.Maybe<{} | undefined> | {
@@ -215,9 +218,9 @@ export declare const routineSchema: yup.Lazy<{
     title?: string | null | undefined;
     navigationTitle?: string | null | undefined;
     isTemplate?: boolean | null | undefined;
-    timezone?: string | null | undefined;
     locationId?: string | null | undefined;
     uid: string;
+    timezone: string;
     type: "location";
     mode: {};
 }, yup.AnyObject, any>;

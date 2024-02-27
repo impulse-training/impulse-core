@@ -543,8 +543,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             title: string;
             type: "question";
             backgroundColor: string;
-        } | {
-            type: {};
         };
     };
     routinesById: {
@@ -565,10 +563,10 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             scheduledNotificationIds?: string[] | null | undefined;
             uid: string;
             timezone: string;
+            type: "time";
             weekdays: number[];
             hour: number;
             minute: number;
-            type: "time";
         } | {
             updatedAt?: yup.Maybe<{} | undefined> | {
                 seconds: number;
@@ -583,8 +581,8 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             title?: string | null | undefined;
             navigationTitle?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
-            timezone?: string | null | undefined;
             uid: string;
+            timezone: string;
             type: "dayDebrief";
         } | {
             updatedAt?: yup.Maybe<{} | undefined> | {
@@ -600,9 +598,9 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             title?: string | null | undefined;
             navigationTitle?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
-            timezone?: string | null | undefined;
             locationId?: string | null | undefined;
             uid: string;
+            timezone: string;
             type: "location";
             mode: {};
         };

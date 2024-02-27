@@ -14,12 +14,12 @@ export declare const makeLocationRoutineFactory: (TimestampKlass: typeof Timesta
     title?: string | null | undefined;
     navigationTitle?: string | null | undefined;
     isTemplate?: boolean | null | undefined;
-    timezone?: string | null | undefined;
     locationId?: string | null | undefined;
     uid: string;
+    timezone: string;
     type: "location";
     mode: {};
-}, "uid" | "type" | "mode" | ("updatedAt" | "createdAt" | "title" | "navigationTitle" | "isTemplate" | "timezone" | "locationId")>;
+}, "uid" | "timezone" | "type" | "mode" | ("updatedAt" | "createdAt" | "title" | "navigationTitle" | "isTemplate" | "locationId")>;
 export declare const makeTimeRoutineFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     updatedAt?: import("yup").Maybe<{} | undefined> | {
         seconds: number;
@@ -37,11 +37,11 @@ export declare const makeTimeRoutineFactory: (TimestampKlass: typeof TimestampLi
     scheduledNotificationIds?: string[] | null | undefined;
     uid: string;
     timezone: string;
+    type: "time";
     weekdays: number[];
     hour: number;
     minute: number;
-    type: "time";
-}, "uid" | "timezone" | "weekdays" | "hour" | "minute" | "type" | ("updatedAt" | "createdAt" | "title" | "navigationTitle" | "isTemplate" | "scheduledNotificationIds")>;
+}, "uid" | "timezone" | "type" | "weekdays" | "hour" | "minute" | ("updatedAt" | "createdAt" | "title" | "navigationTitle" | "isTemplate" | "scheduledNotificationIds")>;
 export declare const makeDebriefRoutineFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     updatedAt?: import("yup").Maybe<{} | undefined> | {
         seconds: number;
@@ -56,7 +56,7 @@ export declare const makeDebriefRoutineFactory: (TimestampKlass: typeof Timestam
     title?: string | null | undefined;
     navigationTitle?: string | null | undefined;
     isTemplate?: boolean | null | undefined;
-    timezone?: string | null | undefined;
     uid: string;
+    timezone: string;
     type: "dayDebrief";
-}, "uid" | "type" | ("updatedAt" | "createdAt" | "title" | "navigationTitle" | "isTemplate" | "timezone")>;
+}, "uid" | "timezone" | "type" | ("updatedAt" | "createdAt" | "title" | "navigationTitle" | "isTemplate")>;

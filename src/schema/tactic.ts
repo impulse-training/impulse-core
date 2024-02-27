@@ -1,4 +1,3 @@
-import { keys } from 'lodash';
 import * as yup from 'yup';
 import { recordingSchema } from './recording';
 import { imageSchema } from './utils/image';
@@ -151,13 +150,35 @@ export const tacticSchemas: Record<
   emotions: emotionsTacticSchema,
 } as any;
 
-export const tacticSchema = yup.lazy(value => {
-  const schema = tacticSchemas[value.type as TacticValue['type']];
-  if (schema) return schema;
+// / This type represents the union of all possible validated tactic objects
+type ValidatedTactic = {
+  [K in TacticValue['type']]: yup.InferType<(typeof tacticSchemas)[K]>;
+}[TacticValue['type']];
+
+// This is what's used to validate tactics in our database. We set an explicit return type to ensure
+// that the conditional validation of only type doesn't infer that a tactic may only be an object
+// with only the "type" field specified. Instead, we say that it always returns a validator for the
+// known tactic types.
+export const tacticSchema: yup.Lazy<ValidatedTactic> = yup.lazy(value => {
+  if (typeof value.type === 'string' && value.type in tacticSchemas) {
+    return tacticSchemas[value.type as TacticValue['type']];
+  }
+
   return yup.object({
-    type: yup.mixed().oneOf(keys(tacticSchemas)).required(),
-  });
+    type: yup
+      .mixed<TacticValue['type']>()
+      .oneOf(Object.keys(tacticSchemas) as TacticValue['type'][])
+      .required(),
+  }) as unknown as yup.ObjectSchema<ValidatedTactic>;
 });
+
+// export const tacticSchema = yup.lazy(value => {
+//   const schema = tacticSchemas[value.type as TacticValue['type']];
+//   if (schema) return schema;
+//   return yup.object({
+//     type: yup.mixed().oneOf(keys(tacticSchemas)).required(),
+//   });
+// });
 
 export const tacticColors = [
   '#20303C',

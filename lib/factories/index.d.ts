@@ -2,11 +2,11 @@ import { TimestampLike } from '../utils/TimestampLike';
 export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
     applicationFactory: import("factory.ts").Factory<import("..").ApplicationValue, keyof import("..").ApplicationValue>;
     commentFactory: import("factory.ts").Factory<import("..").CommentValue, keyof import("..").CommentValue>;
-    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "uid" | "timezone" | "type" | "location" | "tacticsById" | "patternsById" | "startTime" | "locationIsFetching" | "strategy" | "seenTacticIds" | "completedTacticIds" | "isDisplayable" | "gameplan" | "patternId" | ("updatedAt" | "createdAt" | "steps" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "setAsActiveImpulse" | "pressCount" | "buttonPressSecondsSinceEpoch" | "outcome" | "debriefNotes" | "debriefReminderSentAt" | "debriefedAt")>;
-    timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "uid" | "timezone" | "type" | "location" | "tacticsById" | "startTime" | "locationIsFetching" | "strategy" | "seenTacticIds" | "completedTacticIds" | "isDisplayable" | "gameplanId" | ("updatedAt" | "createdAt" | "steps" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds")>;
-    motionLogFactory: import("factory.ts").Factory<import("..").MotionLogValue, "uid" | "timezone" | "type" | "location" | "tacticsById" | "startTime" | "locationIsFetching" | "strategy" | "seenTacticIds" | "completedTacticIds" | "isDisplayable" | ("updatedAt" | "createdAt" | "steps" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds")>;
-    locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "uid" | "timezone" | "type" | "location" | "locationId" | "tacticsById" | "startTime" | "locationIsFetching" | "strategy" | "seenTacticIds" | "completedTacticIds" | "isDisplayable" | "locationName" | "locationMode" | ("updatedAt" | "createdAt" | "steps" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds")>;
-    debriefLogFactory: import("factory.ts").Factory<import("..").DebriefLogValue, "uid" | "timezone" | "type" | "location" | "tacticsById" | "patternsById" | "startTime" | "locationIsFetching" | "strategy" | "seenTacticIds" | "completedTacticIds" | "isDisplayable" | "gameplanId" | "tacticDataEntries" | ("updatedAt" | "createdAt" | "steps" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds")>;
+    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "uid" | "timezone" | "location" | "type" | "tacticsById" | "patternsById" | "startTime" | "locationIsFetching" | "strategy" | "seenTacticIds" | "completedTacticIds" | "isDisplayable" | "gameplan" | "patternId" | ("updatedAt" | "createdAt" | "steps" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "setAsActiveImpulse" | "pressCount" | "buttonPressSecondsSinceEpoch" | "outcome" | "debriefNotes" | "debriefReminderSentAt" | "debriefedAt")>;
+    timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "uid" | "timezone" | "location" | "type" | "tacticsById" | "startTime" | "locationIsFetching" | "strategy" | "seenTacticIds" | "completedTacticIds" | "isDisplayable" | "routineId" | ("updatedAt" | "createdAt" | "steps" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds")>;
+    motionLogFactory: import("factory.ts").Factory<import("..").MotionLogValue, "uid" | "timezone" | "location" | "type" | "tacticsById" | "startTime" | "locationIsFetching" | "strategy" | "seenTacticIds" | "completedTacticIds" | "isDisplayable" | ("updatedAt" | "createdAt" | "steps" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds")>;
+    locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "uid" | "timezone" | "location" | "type" | "locationId" | "tacticsById" | "startTime" | "locationIsFetching" | "strategy" | "seenTacticIds" | "completedTacticIds" | "isDisplayable" | "locationName" | "locationMode" | ("updatedAt" | "createdAt" | "steps" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds")>;
+    debriefLogFactory: import("factory.ts").Factory<import("..").DebriefLogValue, "uid" | "timezone" | "location" | "type" | "tacticsById" | "patternsById" | "startTime" | "locationIsFetching" | "strategy" | "seenTacticIds" | "completedTacticIds" | "isDisplayable" | "routineId" | "tacticDataEntries" | ("updatedAt" | "createdAt" | "steps" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds")>;
     locationFactory: import("factory.ts").Factory<import("..").LocationValue, keyof import("..").LocationValue>;
     profileFactory: import("factory.ts").Factory<import("..").ProfileValue, keyof import("..").ProfileValue>;
     gameplanFactory: import("factory.ts").Factory<import("..").GameplanValue, "uid" | "tacticsById" | "impulse" | "impulseDebrief" | "routine" | "routinesById" | "patternsById" | ("updatedAt" | "createdAt")>;
@@ -63,10 +63,10 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         title?: string | null | undefined;
         navigationTitle?: string | null | undefined;
         isTemplate?: boolean | null | undefined;
-        timezone?: string | null | undefined;
         uid: string;
+        timezone: string;
         type: "dayDebrief";
-    }, "uid" | "type" | ("updatedAt" | "createdAt" | "title" | "navigationTitle" | "isTemplate" | "timezone")>;
+    }, "uid" | "timezone" | "type" | ("updatedAt" | "createdAt" | "title" | "navigationTitle" | "isTemplate")>;
     messageFactory: import("factory.ts").Factory<import("..").MessageValue, keyof import("..").MessageValue>;
     timeRoutineFactory: import("factory.ts").Factory<{
         updatedAt?: import("yup").Maybe<{} | undefined> | {
@@ -85,11 +85,11 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         scheduledNotificationIds?: string[] | null | undefined;
         uid: string;
         timezone: string;
+        type: "time";
         weekdays: number[];
         hour: number;
         minute: number;
-        type: "time";
-    }, "uid" | "timezone" | "weekdays" | "hour" | "minute" | "type" | ("updatedAt" | "createdAt" | "title" | "navigationTitle" | "isTemplate" | "scheduledNotificationIds")>;
+    }, "uid" | "timezone" | "type" | "weekdays" | "hour" | "minute" | ("updatedAt" | "createdAt" | "title" | "navigationTitle" | "isTemplate" | "scheduledNotificationIds")>;
     patternFactory: import("factory.ts").Factory<{
         updatedAt?: import("yup").Maybe<{} | undefined> | {
             seconds: number;
@@ -128,12 +128,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         title?: string | null | undefined;
         navigationTitle?: string | null | undefined;
         isTemplate?: boolean | null | undefined;
-        timezone?: string | null | undefined;
         locationId?: string | null | undefined;
         uid: string;
+        timezone: string;
         type: "location";
         mode: {};
-    }, "uid" | "type" | "mode" | ("updatedAt" | "createdAt" | "title" | "navigationTitle" | "isTemplate" | "timezone" | "locationId")>;
+    }, "uid" | "timezone" | "type" | "mode" | ("updatedAt" | "createdAt" | "title" | "navigationTitle" | "isTemplate" | "locationId")>;
     recommendationFactory: import("factory.ts").Factory<import("..").RecommendationValue, "uid" | "updatedAt" | "createdAt" | "ordinal" | "title" | "tacticIds" | "tacticsById" | "appliedAt" | "dismissedAt" | "explanation" | "gameplanExplanation" | "recommenderUid" | "recommenderName" | "ruleId" | "gameplanIds" | "defaultSelected">;
     recommendationRuleFactory: import("factory.ts").Factory<import("..").RecommendationRuleValue, keyof import("..").RecommendationRuleValue>;
     newRoutineRecommendationRuleFactory: import("factory.ts").Factory<import("..").RecommendationRuleValue, keyof import("..").RecommendationRuleValue>;

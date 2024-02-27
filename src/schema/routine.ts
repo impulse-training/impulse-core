@@ -12,12 +12,16 @@ const routineBaseSchema = yup.object().shape({
   title: yup.string().nullable(),
   navigationTitle: yup.string().nullable(),
   isTemplate: yup.boolean().nullable(),
-  timezone: yup.string().nullable(),
+  timezone: yup.string().required(),
 });
 
 export type SchedulableRoutineValue = Inferred<typeof schedulableRoutineSchema>;
 const schedulableRoutineSchema = routineBaseSchema.concat(
   yup.object().shape({
+    type: yup
+      .mixed<'time' | 'location'>()
+      .oneOf(['time', 'location'])
+      .required(),
     weekdays: yup.array().of(yup.number().min(1).max(7).required()).required(),
     hour: yup.number().min(0).max(23).required(),
     minute: yup.number().min(0).max(59).required(),

@@ -32,9 +32,10 @@ const baseLogSchema = yup.object().shape({
   commentCount: yup.number().notRequired(),
   commentsById: yup.object().notRequired(), // TODO: introduce comment schema
   commentsByTacticId: optionalObjectOf(
-    yup
-      .object()
-      .shape({ tacticTitle: yup.string().required(), comments: yup.array() })
+    yup.object().shape({
+      tacticTitle: yup.string().required(),
+      comments: yup.array().required(),
+    })
   ),
   steps: yup.number().notRequired(),
   // The heart of the log is the strategy - the tactics that should be shown to the user (including
@@ -121,7 +122,7 @@ const timeLogSchema = baseLogSchema.concat(
   yup.object().shape({
     type: yup.mixed<'time'>().oneOf(['time']).required(),
     isDisplayable: yup.boolean().oneOf([true]).required(),
-    gameplanId: yup.string().required(),
+    routineId: yup.string().required(),
   })
 );
 
@@ -135,7 +136,7 @@ const dayDebriefLogSchema = baseLogSchema.concat(
     type: yup.mixed<'dayDebrief'>().oneOf(['dayDebrief']).required(),
     patternsById: objectOf(patternSchema),
     isDisplayable: yup.boolean().oneOf([true]).required(),
-    gameplanId: yup.string().required(),
+    routineId: yup.string().required(),
     tacticDataEntries: objectOf(yup.mixed()), // Replace with Record<string, Record<string, PatternUsageSchema>> if defined
   })
 );
