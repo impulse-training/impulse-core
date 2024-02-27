@@ -1,3 +1,4 @@
+import { keys } from 'lodash';
 import * as yup from 'yup';
 import { recordingSchema } from './recording';
 import { imageSchema } from './utils/image';
@@ -152,7 +153,9 @@ export const tacticSchemas: Record<
 export const tacticSchema = yup.lazy(value => {
   const schema = tacticSchemas[value.type as TacticValue['type']];
   if (schema) return schema;
-  throw new yup.ValidationError(`Unknown type: ${value.type}`);
+  return yup.object({
+    type: yup.mixed().oneOf(keys(tacticSchemas)).required(),
+  });
 });
 
 export const tacticColors = [

@@ -543,6 +543,8 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             title: string;
             type: "question";
             backgroundColor: string;
+        } | {
+            type: {};
         };
     };
     routinesById: {

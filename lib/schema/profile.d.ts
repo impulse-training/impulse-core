@@ -2,8 +2,6 @@ import { AppStateStatus, Permission } from 'react-native';
 import { TimestampLike } from '../utils/TimestampLike';
 import { Image } from '../utils/image';
 import { NOTIFICATION_TYPES, NotificationOption } from './notification';
-import { TimeRoutineValue } from './routine';
-import { TacticValue } from './tactic';
 export interface ProfileValue {
     uid: string;
     createdAt: TimestampLike;
@@ -42,8 +40,4 @@ export interface ProfileValue {
         body: string;
     }>;
     viewAccessGrantedTo?: Array<string>;
-    timeRoutines?: Record<string, {
-        gameplan: TimeRoutineValue;
-        tactic: TacticValue;
-    }>;
 }

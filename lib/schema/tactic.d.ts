@@ -1450,6 +1450,8 @@ export declare const tacticSchema: yup.Lazy<{
     title: string;
     type: "question";
     backgroundColor: string;
+} | {
+    type: {};
 }, yup.AnyObject, any>;
 export declare const tacticColors: string[];
 export declare const isStepsTactic: ({ type }: TacticValue) => boolean;

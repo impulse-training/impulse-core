@@ -539,6 +539,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
             title: string;
             type: "question";
             backgroundColor: string;
+        } | {
+            type: {};
         };
     };
     seenTacticIds: string[];
@@ -1151,6 +1153,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             title: string;
             type: "question";
             backgroundColor: string;
+        } | {
+            type: {};
         };
     };
     seenTacticIds: string[];
@@ -1660,6 +1664,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 title: string;
                 type: "question";
                 backgroundColor: string;
+            } | {
+                type: {};
             };
         };
         impulse: {
@@ -2440,6 +2446,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
             title: string;
             type: "question";
             backgroundColor: string;
+        } | {
+            type: {};
         };
     };
     seenTacticIds: string[];
@@ -3058,6 +3066,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
             title: string;
             type: "question";
             backgroundColor: string;
+        } | {
+            type: {};
         };
     };
     seenTacticIds: string[];
@@ -3672,6 +3682,8 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             title: string;
             type: "question";
             backgroundColor: string;
+        } | {
+            type: {};
         };
     };
     seenTacticIds: string[];
@@ -4317,6 +4329,8 @@ declare const motionLogSchema: yup.ObjectSchema<{
             title: string;
             type: "question";
             backgroundColor: string;
+        } | {
+            type: {};
         };
     };
     seenTacticIds: string[];
@@ -4929,6 +4943,8 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             title: string;
             type: "question";
             backgroundColor: string;
+        } | {
+            type: {};
         };
     };
     seenTacticIds: string[];
@@ -5533,6 +5549,8 @@ export declare const logSchema: yup.Lazy<{
             title: string;
             type: "question";
             backgroundColor: string;
+        } | {
+            type: {};
         };
     };
     patternsById: {
@@ -6081,6 +6099,8 @@ export declare const logSchema: yup.Lazy<{
                 title: string;
                 type: "question";
                 backgroundColor: string;
+            } | {
+                type: {};
             };
         };
         impulse: {
@@ -6731,6 +6751,8 @@ export declare const logSchema: yup.Lazy<{
             title: string;
             type: "question";
             backgroundColor: string;
+        } | {
+            type: {};
         };
     };
     startTime: {
@@ -7288,6 +7310,8 @@ export declare const logSchema: yup.Lazy<{
             title: string;
             type: "question";
             backgroundColor: string;
+        } | {
+            type: {};
         };
     };
     startTime: {
@@ -7844,6 +7868,8 @@ export declare const logSchema: yup.Lazy<{
             title: string;
             type: "question";
             backgroundColor: string;
+        } | {
+            type: {};
         };
     };
     patternsById: {
@@ -8429,6 +8455,8 @@ export declare const logSchema: yup.Lazy<{
             title: string;
             type: "question";
             backgroundColor: string;
+        } | {
+            type: {};
         };
     };
     startTime: {
@@ -8984,6 +9012,8 @@ export declare const logSchema: yup.Lazy<{
             title: string;
             type: "question";
             backgroundColor: string;
+        } | {
+            type: {};
         };
     };
     startTime: {

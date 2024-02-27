@@ -2,8 +2,6 @@ import { AppStateStatus, Permission } from 'react-native';
 import { TimestampLike } from '../utils/TimestampLike';
 import { Image } from '../utils/image';
 import { NOTIFICATION_TYPES, NotificationOption } from './notification';
-import { TimeRoutineValue } from './routine';
-import { TacticValue } from './tactic';
 
 export interface ProfileValue {
   uid: string;
@@ -50,11 +48,4 @@ export interface ProfileValue {
   invitationCode: string;
   impulseNotifications?: Record<string, { title: string; body: string }>;
   viewAccessGrantedTo?: Array<string>;
-
-  // We store a cached summary of time gameplans on the profile, which we use to set up
-  // notifications
-  timeRoutines?: Record<
-    string,
-    { gameplan: TimeRoutineValue; tactic: TacticValue }
-  >;
 }
