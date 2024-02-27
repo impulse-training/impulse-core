@@ -3,12 +3,12 @@ type Inferred<T extends yup.ISchema<unknown>> = yup.InferType<T>;
 export type Routine = Inferred<typeof routineBaseSchema>;
 declare const routineBaseSchema: yup.ObjectSchema<{
     uid: string;
-    createdAt: {
+    createdAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    updatedAt: {
+    updatedAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
@@ -19,16 +19,8 @@ declare const routineBaseSchema: yup.ObjectSchema<{
     timezone: string | null | undefined;
 }, yup.AnyObject, {
     uid: undefined;
-    createdAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    updatedAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
+    createdAt: undefined;
+    updatedAt: undefined;
     title: undefined;
     navigationTitle: undefined;
     isTemplate: undefined;
@@ -37,12 +29,12 @@ declare const routineBaseSchema: yup.ObjectSchema<{
 export type SchedulableRoutineValue = Inferred<typeof schedulableRoutineSchema>;
 declare const schedulableRoutineSchema: yup.ObjectSchema<{
     uid: string;
-    createdAt: {
+    createdAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    updatedAt: {
+    updatedAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
@@ -59,16 +51,8 @@ declare const schedulableRoutineSchema: yup.ObjectSchema<{
     scheduledNotificationIds: string[] | null | undefined;
 }, yup.AnyObject, {
     uid: undefined;
-    createdAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    updatedAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
+    createdAt: undefined;
+    updatedAt: undefined;
     title: undefined;
     navigationTitle: undefined;
     isTemplate: undefined;
@@ -81,12 +65,12 @@ declare const schedulableRoutineSchema: yup.ObjectSchema<{
 export type TimeRoutineValue = Inferred<typeof timeRoutineSchema>;
 declare const timeRoutineSchema: yup.ObjectSchema<{
     uid: string;
-    createdAt: {
+    createdAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    updatedAt: {
+    updatedAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
@@ -103,16 +87,8 @@ declare const timeRoutineSchema: yup.ObjectSchema<{
     type: "time";
 }, yup.AnyObject, {
     uid: undefined;
-    createdAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    updatedAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
+    createdAt: undefined;
+    updatedAt: undefined;
     title: undefined;
     navigationTitle: undefined;
     isTemplate: undefined;
@@ -126,12 +102,12 @@ declare const timeRoutineSchema: yup.ObjectSchema<{
 export type DayDebriefRoutineValue = Inferred<typeof dayDebriefRoutineSchema>;
 declare const dayDebriefRoutineSchema: yup.ObjectSchema<{
     uid: string;
-    createdAt: {
+    createdAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    updatedAt: {
+    updatedAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
@@ -144,16 +120,8 @@ declare const dayDebriefRoutineSchema: yup.ObjectSchema<{
     type: "dayDebrief";
 }, yup.AnyObject, {
     uid: undefined;
-    createdAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    updatedAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
+    createdAt: undefined;
+    updatedAt: undefined;
     title: undefined;
     navigationTitle: undefined;
     isTemplate: undefined;
@@ -163,12 +131,12 @@ declare const dayDebriefRoutineSchema: yup.ObjectSchema<{
 export type LocationRoutineValue = Inferred<typeof locationRoutineSchema>;
 declare const locationRoutineSchema: yup.ObjectSchema<{
     uid: string;
-    createdAt: {
+    createdAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    updatedAt: {
+    updatedAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
@@ -183,16 +151,8 @@ declare const locationRoutineSchema: yup.ObjectSchema<{
     mode: {};
 }, yup.AnyObject, {
     uid: undefined;
-    createdAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    updatedAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
+    createdAt: undefined;
+    updatedAt: undefined;
     title: undefined;
     navigationTitle: undefined;
     isTemplate: undefined;
@@ -204,60 +164,60 @@ declare const locationRoutineSchema: yup.ObjectSchema<{
 export type RoutineValue = TimeRoutineValue | DayDebriefRoutineValue | LocationRoutineValue;
 export { dayDebriefRoutineSchema, locationRoutineSchema, timeRoutineSchema };
 export declare const routineSchema: yup.Lazy<{
+    updatedAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    createdAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
     title?: string | null | undefined;
     navigationTitle?: string | null | undefined;
     isTemplate?: boolean | null | undefined;
     scheduledNotificationIds?: string[] | null | undefined;
     uid: string;
-    createdAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
     timezone: string;
     weekdays: number[];
     hour: number;
     minute: number;
     type: "time";
 } | {
+    updatedAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    createdAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
     title?: string | null | undefined;
     navigationTitle?: string | null | undefined;
     isTemplate?: boolean | null | undefined;
     timezone?: string | null | undefined;
     uid: string;
-    createdAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
     type: "dayDebrief";
 } | {
+    updatedAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    createdAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
     title?: string | null | undefined;
     navigationTitle?: string | null | undefined;
     isTemplate?: boolean | null | undefined;
     timezone?: string | null | undefined;
     locationId?: string | null | undefined;
     uid: string;
-    createdAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
     type: "location";
     mode: {};
 }, yup.AnyObject, any>;

@@ -1,12 +1,12 @@
 import * as Yup from 'yup';
 export declare const patternSchema: Yup.ObjectSchema<{
     uid: string;
-    createdAt: {
+    updatedAt: Yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    updatedAt: {
+    createdAt: Yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
@@ -24,16 +24,8 @@ export declare const patternSchema: Yup.ObjectSchema<{
     sendWeeklyReports: NonNullable<boolean | undefined>;
 }, Yup.AnyObject, {
     uid: undefined;
-    createdAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    updatedAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
+    updatedAt: undefined;
+    createdAt: undefined;
     name: undefined;
     ordinal: undefined;
     supportGroupIds: "";

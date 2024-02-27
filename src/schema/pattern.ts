@@ -1,10 +1,10 @@
 import * as Yup from 'yup';
-import { timestampSchema } from './utils/timestamp';
+import { optionalTimestampSchema } from './utils/timestamp';
 
 export const patternSchema = Yup.object().shape({
   uid: Yup.string().required(),
-  createdAt: timestampSchema.required(), // You should define a more specific validation based on what TimestampLike is
-  updatedAt: timestampSchema.required(), // Same as above for TimestampLike
+  updatedAt: optionalTimestampSchema, // Same as above for TimestampLike
+  createdAt: optionalTimestampSchema, // You should define a more specific validation based on what TimestampLike is
   name: Yup.string().required(),
   ordinal: Yup.number().required(),
   supportGroupIds: Yup.array().of(Yup.string()).notRequired(),

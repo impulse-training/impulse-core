@@ -8,3 +8,8 @@ export declare const timestampSchema: yup.ObjectSchema<{
     nanoseconds: undefined;
     toDate: undefined;
 }, "">;
+export declare const optionalTimestampSchema: yup.Lazy<yup.Maybe<{} | undefined> | {
+    seconds: number;
+    nanoseconds: number;
+    toDate: {};
+}, yup.AnyObject, any>;

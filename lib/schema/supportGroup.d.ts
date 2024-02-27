@@ -1,11 +1,11 @@
 import * as yup from 'yup';
 export declare const supportGroupSchema: yup.ObjectSchema<{
-    createdAt: {
+    createdAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    updatedAt: {
+    updatedAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
@@ -36,16 +36,8 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
     permissions: {};
     suggestedTacticIds: {};
 }, yup.AnyObject, {
-    createdAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    updatedAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
+    createdAt: undefined;
+    updatedAt: undefined;
     slug: undefined;
     templateId: undefined;
     everythingPermissions: undefined;

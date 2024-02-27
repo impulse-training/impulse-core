@@ -4,12 +4,12 @@ type Outcome = 'success' | 'setback' | 'indeterminate';
 export type BaseLogValue = WithTypes<typeof baseLogSchema>;
 declare const baseLogSchema: yup.ObjectSchema<{
     uid: string;
-    createdAt: {
+    createdAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    updatedAt: {
+    updatedAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
@@ -67,6 +67,16 @@ declare const baseLogSchema: yup.ObjectSchema<{
     tacticsById: {
         [x: string]: {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -88,16 +98,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isSuggested?: boolean | undefined;
             nextId?: string | undefined;
             autogenerate?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "folder";
             backgroundColor: string;
@@ -106,6 +106,16 @@ declare const baseLogSchema: yup.ObjectSchema<{
             tacticsById: {};
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -125,22 +135,22 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "steps";
             backgroundColor: string;
             steps: number;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -160,21 +170,21 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "emotions";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -194,16 +204,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "audio";
             backgroundColor: string;
@@ -219,6 +219,16 @@ declare const baseLogSchema: yup.ObjectSchema<{
             } | null;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -238,16 +248,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "video";
             backgroundColor: string;
@@ -261,6 +261,16 @@ declare const baseLogSchema: yup.ObjectSchema<{
             };
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -280,16 +290,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-slider";
             backgroundColor: string;
@@ -297,6 +297,16 @@ declare const baseLogSchema: yup.ObjectSchema<{
             highEmoji: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -316,21 +326,21 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-time";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -350,21 +360,21 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-counter";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -384,16 +394,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "phone";
             backgroundColor: string;
@@ -401,6 +401,16 @@ declare const baseLogSchema: yup.ObjectSchema<{
             trigger: {};
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -420,16 +430,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             repeat: number;
             type: "breathe";
@@ -439,6 +439,16 @@ declare const baseLogSchema: yup.ObjectSchema<{
             outFor: number;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -458,21 +468,21 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "urge-surfing";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -492,21 +502,21 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "task";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -526,16 +536,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "question";
             backgroundColor: string;
@@ -559,16 +559,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
     sharedWithSupportGroupIds: yup.Maybe<string[] | undefined>;
 }, yup.AnyObject, {
     uid: undefined;
-    createdAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    updatedAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
+    createdAt: undefined;
+    updatedAt: undefined;
     startTime: {
         seconds: undefined;
         nanoseconds: undefined;
@@ -618,12 +610,12 @@ export type ImpulseLogValue = WithTypes<typeof impulseLogSchema>;
 export declare function logIsImpulseLog(log: LogValue): log is ImpulseLogValue;
 declare const impulseLogSchema: yup.ObjectSchema<{
     uid: string;
-    createdAt: {
+    createdAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    updatedAt: {
+    updatedAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
@@ -681,6 +673,16 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     tacticsById: {
         [x: string]: {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -702,16 +704,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isSuggested?: boolean | undefined;
             nextId?: string | undefined;
             autogenerate?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "folder";
             backgroundColor: string;
@@ -720,6 +712,16 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             tacticsById: {};
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -739,22 +741,22 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "steps";
             backgroundColor: string;
             steps: number;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -774,21 +776,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "emotions";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -808,16 +810,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "audio";
             backgroundColor: string;
@@ -833,6 +825,16 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             } | null;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -852,16 +854,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "video";
             backgroundColor: string;
@@ -875,6 +867,16 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             };
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -894,16 +896,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-slider";
             backgroundColor: string;
@@ -911,6 +903,16 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             highEmoji: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -930,21 +932,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-time";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -964,21 +966,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-counter";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -998,16 +1000,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "phone";
             backgroundColor: string;
@@ -1015,6 +1007,16 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             trigger: {};
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -1034,16 +1036,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             repeat: number;
             type: "breathe";
@@ -1053,6 +1045,16 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             outFor: number;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -1072,21 +1074,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "urge-surfing";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -1106,21 +1108,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "task";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -1140,16 +1142,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "question";
             backgroundColor: string;
@@ -1178,20 +1170,30 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     isDisplayable: NonNullable<boolean | undefined>;
     buttonPressSecondsSinceEpoch: yup.Maybe<number | undefined>;
     gameplan: {
+        updatedAt?: yup.Maybe<{} | undefined> | {
+            seconds: number;
+            nanoseconds: number;
+            toDate: {};
+        };
+        createdAt?: yup.Maybe<{} | undefined> | {
+            seconds: number;
+            nanoseconds: number;
+            toDate: {};
+        };
         uid: string;
-        createdAt: {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
-        updatedAt: {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
         tacticsById: {
             [x: string]: {
                 uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 ordinal?: number | null | undefined;
                 isTemplate?: boolean | null | undefined;
                 sourceId?: string | undefined;
@@ -1213,16 +1215,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 isSuggested?: boolean | undefined;
                 nextId?: string | undefined;
                 autogenerate?: boolean | undefined;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 title: string;
                 type: "folder";
                 backgroundColor: string;
@@ -1231,6 +1223,16 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 tacticsById: {};
             } | {
                 uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 ordinal?: number | null | undefined;
                 isTemplate?: boolean | null | undefined;
                 sourceId?: string | undefined;
@@ -1250,22 +1252,22 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 title: string;
                 type: "steps";
                 backgroundColor: string;
                 steps: number;
             } | {
                 uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 ordinal?: number | null | undefined;
                 isTemplate?: boolean | null | undefined;
                 sourceId?: string | undefined;
@@ -1285,21 +1287,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 title: string;
                 type: "emotions";
                 backgroundColor: string;
             } | {
                 uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 ordinal?: number | null | undefined;
                 isTemplate?: boolean | null | undefined;
                 sourceId?: string | undefined;
@@ -1319,16 +1321,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 title: string;
                 type: "audio";
                 backgroundColor: string;
@@ -1344,6 +1336,16 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 } | null;
             } | {
                 uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 ordinal?: number | null | undefined;
                 isTemplate?: boolean | null | undefined;
                 sourceId?: string | undefined;
@@ -1363,16 +1365,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 title: string;
                 type: "video";
                 backgroundColor: string;
@@ -1386,6 +1378,16 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 };
             } | {
                 uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 ordinal?: number | null | undefined;
                 isTemplate?: boolean | null | undefined;
                 sourceId?: string | undefined;
@@ -1405,16 +1407,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 title: string;
                 type: "measure-slider";
                 backgroundColor: string;
@@ -1422,6 +1414,16 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 highEmoji: string;
             } | {
                 uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 ordinal?: number | null | undefined;
                 isTemplate?: boolean | null | undefined;
                 sourceId?: string | undefined;
@@ -1441,21 +1443,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 title: string;
                 type: "measure-time";
                 backgroundColor: string;
             } | {
                 uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 ordinal?: number | null | undefined;
                 isTemplate?: boolean | null | undefined;
                 sourceId?: string | undefined;
@@ -1475,21 +1477,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 title: string;
                 type: "measure-counter";
                 backgroundColor: string;
             } | {
                 uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 ordinal?: number | null | undefined;
                 isTemplate?: boolean | null | undefined;
                 sourceId?: string | undefined;
@@ -1509,16 +1511,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 title: string;
                 type: "phone";
                 backgroundColor: string;
@@ -1526,6 +1518,16 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 trigger: {};
             } | {
                 uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 ordinal?: number | null | undefined;
                 isTemplate?: boolean | null | undefined;
                 sourceId?: string | undefined;
@@ -1545,16 +1547,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 title: string;
                 repeat: number;
                 type: "breathe";
@@ -1564,6 +1556,16 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 outFor: number;
             } | {
                 uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 ordinal?: number | null | undefined;
                 isTemplate?: boolean | null | undefined;
                 sourceId?: string | undefined;
@@ -1583,21 +1585,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 title: string;
                 type: "urge-surfing";
                 backgroundColor: string;
             } | {
                 uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 ordinal?: number | null | undefined;
                 isTemplate?: boolean | null | undefined;
                 sourceId?: string | undefined;
@@ -1617,21 +1619,21 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 title: string;
                 type: "task";
                 backgroundColor: string;
             } | {
                 uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 ordinal?: number | null | undefined;
                 isTemplate?: boolean | null | undefined;
                 sourceId?: string | undefined;
@@ -1651,16 +1653,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 title: string;
                 type: "question";
                 backgroundColor: string;
@@ -1709,66 +1701,76 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         };
         routinesById: {
             [x: string]: {
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 title?: string | null | undefined;
                 navigationTitle?: string | null | undefined;
                 isTemplate?: boolean | null | undefined;
                 scheduledNotificationIds?: string[] | null | undefined;
                 uid: string;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 timezone: string;
                 weekdays: number[];
                 hour: number;
                 minute: number;
                 type: "time";
             } | {
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 title?: string | null | undefined;
                 navigationTitle?: string | null | undefined;
                 isTemplate?: boolean | null | undefined;
                 timezone?: string | null | undefined;
                 uid: string;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 type: "dayDebrief";
             } | {
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 title?: string | null | undefined;
                 navigationTitle?: string | null | undefined;
                 isTemplate?: boolean | null | undefined;
                 timezone?: string | null | undefined;
                 locationId?: string | null | undefined;
                 uid: string;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 type: "location";
                 mode: {};
             };
         };
         patternsById: {
             [x: string]: {
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 supportGroupIds?: yup.Maybe<(string | undefined)[] | undefined>;
                 notification?: {
                     title: string;
@@ -1777,16 +1779,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 setbackTacticId?: yup.Maybe<string | undefined>;
                 issueId?: yup.Maybe<string | undefined>;
                 uid: string;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 name: string;
                 ordinal: number;
                 setbackThreshold: number;
@@ -1798,6 +1790,16 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     patternId: string;
     patternsById: {
         [x: string]: {
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             supportGroupIds?: yup.Maybe<(string | undefined)[] | undefined>;
             notification?: {
                 title: string;
@@ -1806,16 +1808,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             setbackTacticId?: yup.Maybe<string | undefined>;
             issueId?: yup.Maybe<string | undefined>;
             uid: string;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             name: string;
             ordinal: number;
             setbackThreshold: number;
@@ -1827,16 +1819,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     debriefedAt: yup.Maybe<{} | undefined>;
 }, yup.AnyObject, {
     uid: undefined;
-    createdAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    updatedAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
+    createdAt: undefined;
+    updatedAt: undefined;
     startTime: {
         seconds: undefined;
         nanoseconds: undefined;
@@ -1883,16 +1867,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     buttonPressSecondsSinceEpoch: undefined;
     gameplan: {
         uid: undefined;
-        createdAt: {
-            seconds: undefined;
-            nanoseconds: undefined;
-            toDate: undefined;
-        };
-        updatedAt: {
-            seconds: undefined;
-            nanoseconds: undefined;
-            toDate: undefined;
-        };
+        createdAt: undefined;
+        updatedAt: undefined;
         impulse: undefined;
         impulseDebrief: undefined;
         routine: undefined;
@@ -1911,12 +1887,12 @@ export type LocationLogValue = WithTypes<typeof locationLogSchema>;
 export declare function logIsLocationLog(log: LogValue): log is LocationLogValue;
 declare const locationLogSchema: yup.ObjectSchema<{
     uid: string;
-    createdAt: {
+    createdAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    updatedAt: {
+    updatedAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
@@ -1974,6 +1950,16 @@ declare const locationLogSchema: yup.ObjectSchema<{
     tacticsById: {
         [x: string]: {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -1995,16 +1981,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isSuggested?: boolean | undefined;
             nextId?: string | undefined;
             autogenerate?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "folder";
             backgroundColor: string;
@@ -2013,6 +1989,16 @@ declare const locationLogSchema: yup.ObjectSchema<{
             tacticsById: {};
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -2032,22 +2018,22 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "steps";
             backgroundColor: string;
             steps: number;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -2067,21 +2053,21 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "emotions";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -2101,16 +2087,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "audio";
             backgroundColor: string;
@@ -2126,6 +2102,16 @@ declare const locationLogSchema: yup.ObjectSchema<{
             } | null;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -2145,16 +2131,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "video";
             backgroundColor: string;
@@ -2168,6 +2144,16 @@ declare const locationLogSchema: yup.ObjectSchema<{
             };
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -2187,16 +2173,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-slider";
             backgroundColor: string;
@@ -2204,6 +2180,16 @@ declare const locationLogSchema: yup.ObjectSchema<{
             highEmoji: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -2223,21 +2209,21 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-time";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -2257,21 +2243,21 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-counter";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -2291,16 +2277,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "phone";
             backgroundColor: string;
@@ -2308,6 +2284,16 @@ declare const locationLogSchema: yup.ObjectSchema<{
             trigger: {};
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -2327,16 +2313,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             repeat: number;
             type: "breathe";
@@ -2346,6 +2322,16 @@ declare const locationLogSchema: yup.ObjectSchema<{
             outFor: number;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -2365,21 +2351,21 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "urge-surfing";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -2399,21 +2385,21 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "task";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -2433,16 +2419,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "question";
             backgroundColor: string;
@@ -2472,16 +2448,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
     locationMode: {};
 }, yup.AnyObject, {
     uid: undefined;
-    createdAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    updatedAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
+    createdAt: undefined;
+    updatedAt: undefined;
     startTime: {
         seconds: undefined;
         nanoseconds: undefined;
@@ -2531,12 +2499,12 @@ export type TimeLogValue = WithTypes<typeof timeLogSchema>;
 export declare function logIsTimeLog(log: LogValue): log is TimeLogValue;
 declare const timeLogSchema: yup.ObjectSchema<{
     uid: string;
-    createdAt: {
+    createdAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    updatedAt: {
+    updatedAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
@@ -2594,6 +2562,16 @@ declare const timeLogSchema: yup.ObjectSchema<{
     tacticsById: {
         [x: string]: {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -2615,16 +2593,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isSuggested?: boolean | undefined;
             nextId?: string | undefined;
             autogenerate?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "folder";
             backgroundColor: string;
@@ -2633,6 +2601,16 @@ declare const timeLogSchema: yup.ObjectSchema<{
             tacticsById: {};
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -2652,22 +2630,22 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "steps";
             backgroundColor: string;
             steps: number;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -2687,21 +2665,21 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "emotions";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -2721,16 +2699,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "audio";
             backgroundColor: string;
@@ -2746,6 +2714,16 @@ declare const timeLogSchema: yup.ObjectSchema<{
             } | null;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -2765,16 +2743,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "video";
             backgroundColor: string;
@@ -2788,6 +2756,16 @@ declare const timeLogSchema: yup.ObjectSchema<{
             };
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -2807,16 +2785,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-slider";
             backgroundColor: string;
@@ -2824,6 +2792,16 @@ declare const timeLogSchema: yup.ObjectSchema<{
             highEmoji: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -2843,21 +2821,21 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-time";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -2877,21 +2855,21 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-counter";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -2911,16 +2889,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "phone";
             backgroundColor: string;
@@ -2928,6 +2896,16 @@ declare const timeLogSchema: yup.ObjectSchema<{
             trigger: {};
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -2947,16 +2925,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             repeat: number;
             type: "breathe";
@@ -2966,6 +2934,16 @@ declare const timeLogSchema: yup.ObjectSchema<{
             outFor: number;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -2985,21 +2963,21 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "urge-surfing";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -3019,21 +2997,21 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "task";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -3053,16 +3031,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "question";
             backgroundColor: string;
@@ -3090,16 +3058,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
     gameplanId: string;
 }, yup.AnyObject, {
     uid: undefined;
-    createdAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    updatedAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
+    createdAt: undefined;
+    updatedAt: undefined;
     startTime: {
         seconds: undefined;
         nanoseconds: undefined;
@@ -3147,12 +3107,12 @@ export type DebriefLogValue = WithTypes<typeof dayDebriefLogSchema>;
 export declare function logIsDebriefLog(log: LogValue): log is DebriefLogValue;
 declare const dayDebriefLogSchema: yup.ObjectSchema<{
     uid: string;
-    createdAt: {
+    createdAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    updatedAt: {
+    updatedAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
@@ -3210,6 +3170,16 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
     tacticsById: {
         [x: string]: {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -3231,16 +3201,6 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             isSuggested?: boolean | undefined;
             nextId?: string | undefined;
             autogenerate?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "folder";
             backgroundColor: string;
@@ -3249,6 +3209,16 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             tacticsById: {};
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -3268,22 +3238,22 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "steps";
             backgroundColor: string;
             steps: number;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -3303,21 +3273,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "emotions";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -3337,16 +3307,6 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "audio";
             backgroundColor: string;
@@ -3362,6 +3322,16 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             } | null;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -3381,16 +3351,6 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "video";
             backgroundColor: string;
@@ -3404,6 +3364,16 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             };
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -3423,16 +3393,6 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-slider";
             backgroundColor: string;
@@ -3440,6 +3400,16 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             highEmoji: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -3459,21 +3429,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-time";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -3493,21 +3463,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-counter";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -3527,16 +3497,6 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "phone";
             backgroundColor: string;
@@ -3544,6 +3504,16 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             trigger: {};
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -3563,16 +3533,6 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             repeat: number;
             type: "breathe";
@@ -3582,6 +3542,16 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             outFor: number;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -3601,21 +3571,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "urge-surfing";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -3635,21 +3605,21 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "task";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -3669,16 +3639,6 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "question";
             backgroundColor: string;
@@ -3704,6 +3664,16 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
     type: "dayDebrief";
     patternsById: {
         [x: string]: {
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             supportGroupIds?: yup.Maybe<(string | undefined)[] | undefined>;
             notification?: {
                 title: string;
@@ -3712,16 +3682,6 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             setbackTacticId?: yup.Maybe<string | undefined>;
             issueId?: yup.Maybe<string | undefined>;
             uid: string;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             name: string;
             ordinal: number;
             setbackThreshold: number;
@@ -3735,16 +3695,8 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
     };
 }, yup.AnyObject, {
     uid: undefined;
-    createdAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    updatedAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
+    createdAt: undefined;
+    updatedAt: undefined;
     startTime: {
         seconds: undefined;
         nanoseconds: undefined;
@@ -3794,12 +3746,12 @@ export type MotionLogValue = WithTypes<typeof motionLogSchema>;
 export declare function logIsMotionLog(log: LogValue): log is MotionLogValue;
 declare const motionLogSchema: yup.ObjectSchema<{
     uid: string;
-    createdAt: {
+    createdAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    updatedAt: {
+    updatedAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
@@ -3857,6 +3809,16 @@ declare const motionLogSchema: yup.ObjectSchema<{
     tacticsById: {
         [x: string]: {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -3878,16 +3840,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
             isSuggested?: boolean | undefined;
             nextId?: string | undefined;
             autogenerate?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "folder";
             backgroundColor: string;
@@ -3896,6 +3848,16 @@ declare const motionLogSchema: yup.ObjectSchema<{
             tacticsById: {};
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -3915,22 +3877,22 @@ declare const motionLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "steps";
             backgroundColor: string;
             steps: number;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -3950,21 +3912,21 @@ declare const motionLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "emotions";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -3984,16 +3946,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "audio";
             backgroundColor: string;
@@ -4009,6 +3961,16 @@ declare const motionLogSchema: yup.ObjectSchema<{
             } | null;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -4028,16 +3990,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "video";
             backgroundColor: string;
@@ -4051,6 +4003,16 @@ declare const motionLogSchema: yup.ObjectSchema<{
             };
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -4070,16 +4032,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-slider";
             backgroundColor: string;
@@ -4087,6 +4039,16 @@ declare const motionLogSchema: yup.ObjectSchema<{
             highEmoji: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -4106,21 +4068,21 @@ declare const motionLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-time";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -4140,21 +4102,21 @@ declare const motionLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-counter";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -4174,16 +4136,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "phone";
             backgroundColor: string;
@@ -4191,6 +4143,16 @@ declare const motionLogSchema: yup.ObjectSchema<{
             trigger: {};
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -4210,16 +4172,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             repeat: number;
             type: "breathe";
@@ -4229,6 +4181,16 @@ declare const motionLogSchema: yup.ObjectSchema<{
             outFor: number;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -4248,21 +4210,21 @@ declare const motionLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "urge-surfing";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -4282,21 +4244,21 @@ declare const motionLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "task";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -4316,16 +4278,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "question";
             backgroundColor: string;
@@ -4352,16 +4304,8 @@ declare const motionLogSchema: yup.ObjectSchema<{
     isDisplayable: NonNullable<boolean | undefined>;
 }, yup.AnyObject, {
     uid: undefined;
-    createdAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    updatedAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
+    createdAt: undefined;
+    updatedAt: undefined;
     startTime: {
         seconds: undefined;
         nanoseconds: undefined;
@@ -4408,12 +4352,12 @@ export type ButtonLogValue = WithTypes<typeof buttonLogSchema>;
 export declare function logIsButtonLog(log: LogValue): log is ButtonLogValue;
 declare const buttonLogSchema: yup.ObjectSchema<{
     uid: string;
-    createdAt: {
+    createdAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    updatedAt: {
+    updatedAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
@@ -4471,6 +4415,16 @@ declare const buttonLogSchema: yup.ObjectSchema<{
     tacticsById: {
         [x: string]: {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -4492,16 +4446,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             isSuggested?: boolean | undefined;
             nextId?: string | undefined;
             autogenerate?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "folder";
             backgroundColor: string;
@@ -4510,6 +4454,16 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             tacticsById: {};
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -4529,22 +4483,22 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "steps";
             backgroundColor: string;
             steps: number;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -4564,21 +4518,21 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "emotions";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -4598,16 +4552,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "audio";
             backgroundColor: string;
@@ -4623,6 +4567,16 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             } | null;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -4642,16 +4596,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "video";
             backgroundColor: string;
@@ -4665,6 +4609,16 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             };
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -4684,16 +4638,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-slider";
             backgroundColor: string;
@@ -4701,6 +4645,16 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             highEmoji: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -4720,21 +4674,21 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-time";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -4754,21 +4708,21 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-counter";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -4788,16 +4742,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "phone";
             backgroundColor: string;
@@ -4805,6 +4749,16 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             trigger: {};
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -4824,16 +4778,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             repeat: number;
             type: "breathe";
@@ -4843,6 +4787,16 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             outFor: number;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -4862,21 +4816,21 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "urge-surfing";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -4896,21 +4850,21 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "task";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -4930,16 +4884,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "question";
             backgroundColor: string;
@@ -4968,16 +4912,8 @@ declare const buttonLogSchema: yup.ObjectSchema<{
     characteristics: {};
 }, yup.AnyObject, {
     uid: undefined;
-    createdAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    updatedAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
+    createdAt: undefined;
+    updatedAt: undefined;
     startTime: {
         seconds: undefined;
         nanoseconds: undefined;
@@ -5023,6 +4959,16 @@ declare const buttonLogSchema: yup.ObjectSchema<{
     characteristics: {};
 }, "">;
 export declare const logSchema: yup.Lazy<{
+    updatedAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    createdAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
     steps?: yup.Maybe<number | undefined>;
     locationFormatted?: yup.Maybe<string | undefined>;
     commentCount?: yup.Maybe<number | undefined>;
@@ -5053,16 +4999,6 @@ export declare const logSchema: yup.Lazy<{
     debriefReminderSentAt?: yup.Maybe<{} | undefined>;
     debriefedAt?: yup.Maybe<{} | undefined>;
     uid: string;
-    createdAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
     timezone: string;
     type: "impulse";
     location: {
@@ -5077,6 +5013,16 @@ export declare const logSchema: yup.Lazy<{
     tacticsById: {
         [x: string]: {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -5098,16 +5044,6 @@ export declare const logSchema: yup.Lazy<{
             isSuggested?: boolean | undefined;
             nextId?: string | undefined;
             autogenerate?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "folder";
             backgroundColor: string;
@@ -5116,6 +5052,16 @@ export declare const logSchema: yup.Lazy<{
             tacticsById: {};
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -5135,22 +5081,22 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "steps";
             backgroundColor: string;
             steps: number;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -5170,21 +5116,21 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "emotions";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -5204,16 +5150,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "audio";
             backgroundColor: string;
@@ -5229,6 +5165,16 @@ export declare const logSchema: yup.Lazy<{
             } | null;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -5248,16 +5194,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "video";
             backgroundColor: string;
@@ -5271,6 +5207,16 @@ export declare const logSchema: yup.Lazy<{
             };
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -5290,16 +5236,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-slider";
             backgroundColor: string;
@@ -5307,6 +5243,16 @@ export declare const logSchema: yup.Lazy<{
             highEmoji: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -5326,21 +5272,21 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-time";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -5360,21 +5306,21 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-counter";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -5394,16 +5340,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "phone";
             backgroundColor: string;
@@ -5411,6 +5347,16 @@ export declare const logSchema: yup.Lazy<{
             trigger: {};
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -5430,16 +5376,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             repeat: number;
             type: "breathe";
@@ -5449,6 +5385,16 @@ export declare const logSchema: yup.Lazy<{
             outFor: number;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -5468,21 +5414,21 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "urge-surfing";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -5502,21 +5448,21 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "task";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -5536,16 +5482,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "question";
             backgroundColor: string;
@@ -5555,6 +5491,16 @@ export declare const logSchema: yup.Lazy<{
     };
     patternsById: {
         [x: string]: {
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             supportGroupIds?: yup.Maybe<(string | undefined)[] | undefined>;
             notification?: {
                 title: string;
@@ -5563,16 +5509,6 @@ export declare const logSchema: yup.Lazy<{
             setbackTacticId?: yup.Maybe<string | undefined>;
             issueId?: yup.Maybe<string | undefined>;
             uid: string;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             name: string;
             ordinal: number;
             setbackThreshold: number;
@@ -5613,20 +5549,30 @@ export declare const logSchema: yup.Lazy<{
     completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
     gameplan: {
+        updatedAt?: yup.Maybe<{} | undefined> | {
+            seconds: number;
+            nanoseconds: number;
+            toDate: {};
+        };
+        createdAt?: yup.Maybe<{} | undefined> | {
+            seconds: number;
+            nanoseconds: number;
+            toDate: {};
+        };
         uid: string;
-        createdAt: {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
-        updatedAt: {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
         tacticsById: {
             [x: string]: {
                 uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 ordinal?: number | null | undefined;
                 isTemplate?: boolean | null | undefined;
                 sourceId?: string | undefined;
@@ -5648,16 +5594,6 @@ export declare const logSchema: yup.Lazy<{
                 isSuggested?: boolean | undefined;
                 nextId?: string | undefined;
                 autogenerate?: boolean | undefined;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 title: string;
                 type: "folder";
                 backgroundColor: string;
@@ -5666,6 +5602,16 @@ export declare const logSchema: yup.Lazy<{
                 tacticsById: {};
             } | {
                 uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 ordinal?: number | null | undefined;
                 isTemplate?: boolean | null | undefined;
                 sourceId?: string | undefined;
@@ -5685,22 +5631,22 @@ export declare const logSchema: yup.Lazy<{
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 title: string;
                 type: "steps";
                 backgroundColor: string;
                 steps: number;
             } | {
                 uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 ordinal?: number | null | undefined;
                 isTemplate?: boolean | null | undefined;
                 sourceId?: string | undefined;
@@ -5720,21 +5666,21 @@ export declare const logSchema: yup.Lazy<{
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 title: string;
                 type: "emotions";
                 backgroundColor: string;
             } | {
                 uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 ordinal?: number | null | undefined;
                 isTemplate?: boolean | null | undefined;
                 sourceId?: string | undefined;
@@ -5754,16 +5700,6 @@ export declare const logSchema: yup.Lazy<{
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 title: string;
                 type: "audio";
                 backgroundColor: string;
@@ -5779,6 +5715,16 @@ export declare const logSchema: yup.Lazy<{
                 } | null;
             } | {
                 uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 ordinal?: number | null | undefined;
                 isTemplate?: boolean | null | undefined;
                 sourceId?: string | undefined;
@@ -5798,16 +5744,6 @@ export declare const logSchema: yup.Lazy<{
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 title: string;
                 type: "video";
                 backgroundColor: string;
@@ -5821,6 +5757,16 @@ export declare const logSchema: yup.Lazy<{
                 };
             } | {
                 uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 ordinal?: number | null | undefined;
                 isTemplate?: boolean | null | undefined;
                 sourceId?: string | undefined;
@@ -5840,16 +5786,6 @@ export declare const logSchema: yup.Lazy<{
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 title: string;
                 type: "measure-slider";
                 backgroundColor: string;
@@ -5857,6 +5793,16 @@ export declare const logSchema: yup.Lazy<{
                 highEmoji: string;
             } | {
                 uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 ordinal?: number | null | undefined;
                 isTemplate?: boolean | null | undefined;
                 sourceId?: string | undefined;
@@ -5876,21 +5822,21 @@ export declare const logSchema: yup.Lazy<{
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 title: string;
                 type: "measure-time";
                 backgroundColor: string;
             } | {
                 uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 ordinal?: number | null | undefined;
                 isTemplate?: boolean | null | undefined;
                 sourceId?: string | undefined;
@@ -5910,21 +5856,21 @@ export declare const logSchema: yup.Lazy<{
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 title: string;
                 type: "measure-counter";
                 backgroundColor: string;
             } | {
                 uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 ordinal?: number | null | undefined;
                 isTemplate?: boolean | null | undefined;
                 sourceId?: string | undefined;
@@ -5944,16 +5890,6 @@ export declare const logSchema: yup.Lazy<{
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 title: string;
                 type: "phone";
                 backgroundColor: string;
@@ -5961,6 +5897,16 @@ export declare const logSchema: yup.Lazy<{
                 trigger: {};
             } | {
                 uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 ordinal?: number | null | undefined;
                 isTemplate?: boolean | null | undefined;
                 sourceId?: string | undefined;
@@ -5980,16 +5926,6 @@ export declare const logSchema: yup.Lazy<{
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 title: string;
                 repeat: number;
                 type: "breathe";
@@ -5999,6 +5935,16 @@ export declare const logSchema: yup.Lazy<{
                 outFor: number;
             } | {
                 uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 ordinal?: number | null | undefined;
                 isTemplate?: boolean | null | undefined;
                 sourceId?: string | undefined;
@@ -6018,21 +5964,21 @@ export declare const logSchema: yup.Lazy<{
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 title: string;
                 type: "urge-surfing";
                 backgroundColor: string;
             } | {
                 uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 ordinal?: number | null | undefined;
                 isTemplate?: boolean | null | undefined;
                 sourceId?: string | undefined;
@@ -6052,21 +5998,21 @@ export declare const logSchema: yup.Lazy<{
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 title: string;
                 type: "task";
                 backgroundColor: string;
             } | {
                 uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 ordinal?: number | null | undefined;
                 isTemplate?: boolean | null | undefined;
                 sourceId?: string | undefined;
@@ -6086,16 +6032,6 @@ export declare const logSchema: yup.Lazy<{
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 title: string;
                 type: "question";
                 backgroundColor: string;
@@ -6144,66 +6080,76 @@ export declare const logSchema: yup.Lazy<{
         };
         routinesById: {
             [x: string]: {
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 title?: string | null | undefined;
                 navigationTitle?: string | null | undefined;
                 isTemplate?: boolean | null | undefined;
                 scheduledNotificationIds?: string[] | null | undefined;
                 uid: string;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 timezone: string;
                 weekdays: number[];
                 hour: number;
                 minute: number;
                 type: "time";
             } | {
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 title?: string | null | undefined;
                 navigationTitle?: string | null | undefined;
                 isTemplate?: boolean | null | undefined;
                 timezone?: string | null | undefined;
                 uid: string;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 type: "dayDebrief";
             } | {
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 title?: string | null | undefined;
                 navigationTitle?: string | null | undefined;
                 isTemplate?: boolean | null | undefined;
                 timezone?: string | null | undefined;
                 locationId?: string | null | undefined;
                 uid: string;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 type: "location";
                 mode: {};
             };
         };
         patternsById: {
             [x: string]: {
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
                 supportGroupIds?: yup.Maybe<(string | undefined)[] | undefined>;
                 notification?: {
                     title: string;
@@ -6212,16 +6158,6 @@ export declare const logSchema: yup.Lazy<{
                 setbackTacticId?: yup.Maybe<string | undefined>;
                 issueId?: yup.Maybe<string | undefined>;
                 uid: string;
-                createdAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
                 name: string;
                 ordinal: number;
                 setbackThreshold: number;
@@ -6231,6 +6167,16 @@ export declare const logSchema: yup.Lazy<{
     };
     patternId: string;
 } | {
+    updatedAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    createdAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
     steps?: yup.Maybe<number | undefined>;
     locationFormatted?: yup.Maybe<string | undefined>;
     commentCount?: yup.Maybe<number | undefined>;
@@ -6254,16 +6200,6 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     sharedWithSupportGroupIds?: yup.Maybe<string[] | undefined>;
     uid: string;
-    createdAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
     timezone: string;
     type: "location";
     location: {
@@ -6279,6 +6215,16 @@ export declare const logSchema: yup.Lazy<{
     tacticsById: {
         [x: string]: {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -6300,16 +6246,6 @@ export declare const logSchema: yup.Lazy<{
             isSuggested?: boolean | undefined;
             nextId?: string | undefined;
             autogenerate?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "folder";
             backgroundColor: string;
@@ -6318,6 +6254,16 @@ export declare const logSchema: yup.Lazy<{
             tacticsById: {};
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -6337,22 +6283,22 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "steps";
             backgroundColor: string;
             steps: number;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -6372,21 +6318,21 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "emotions";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -6406,16 +6352,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "audio";
             backgroundColor: string;
@@ -6431,6 +6367,16 @@ export declare const logSchema: yup.Lazy<{
             } | null;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -6450,16 +6396,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "video";
             backgroundColor: string;
@@ -6473,6 +6409,16 @@ export declare const logSchema: yup.Lazy<{
             };
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -6492,16 +6438,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-slider";
             backgroundColor: string;
@@ -6509,6 +6445,16 @@ export declare const logSchema: yup.Lazy<{
             highEmoji: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -6528,21 +6474,21 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-time";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -6562,21 +6508,21 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-counter";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -6596,16 +6542,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "phone";
             backgroundColor: string;
@@ -6613,6 +6549,16 @@ export declare const logSchema: yup.Lazy<{
             trigger: {};
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -6632,16 +6578,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             repeat: number;
             type: "breathe";
@@ -6651,6 +6587,16 @@ export declare const logSchema: yup.Lazy<{
             outFor: number;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -6670,21 +6616,21 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "urge-surfing";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -6704,21 +6650,21 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "task";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -6738,16 +6684,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "question";
             backgroundColor: string;
@@ -6791,6 +6727,16 @@ export declare const logSchema: yup.Lazy<{
     locationName: string;
     locationMode: {};
 } | {
+    updatedAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    createdAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
     steps?: yup.Maybe<number | undefined>;
     locationFormatted?: yup.Maybe<string | undefined>;
     commentCount?: yup.Maybe<number | undefined>;
@@ -6814,16 +6760,6 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     sharedWithSupportGroupIds?: yup.Maybe<string[] | undefined>;
     uid: string;
-    createdAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
     timezone: string;
     type: "time";
     location: {
@@ -6838,6 +6774,16 @@ export declare const logSchema: yup.Lazy<{
     tacticsById: {
         [x: string]: {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -6859,16 +6805,6 @@ export declare const logSchema: yup.Lazy<{
             isSuggested?: boolean | undefined;
             nextId?: string | undefined;
             autogenerate?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "folder";
             backgroundColor: string;
@@ -6877,6 +6813,16 @@ export declare const logSchema: yup.Lazy<{
             tacticsById: {};
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -6896,22 +6842,22 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "steps";
             backgroundColor: string;
             steps: number;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -6931,21 +6877,21 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "emotions";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -6965,16 +6911,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "audio";
             backgroundColor: string;
@@ -6990,6 +6926,16 @@ export declare const logSchema: yup.Lazy<{
             } | null;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -7009,16 +6955,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "video";
             backgroundColor: string;
@@ -7032,6 +6968,16 @@ export declare const logSchema: yup.Lazy<{
             };
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -7051,16 +6997,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-slider";
             backgroundColor: string;
@@ -7068,6 +7004,16 @@ export declare const logSchema: yup.Lazy<{
             highEmoji: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -7087,21 +7033,21 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-time";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -7121,21 +7067,21 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-counter";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -7155,16 +7101,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "phone";
             backgroundColor: string;
@@ -7172,6 +7108,16 @@ export declare const logSchema: yup.Lazy<{
             trigger: {};
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -7191,16 +7137,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             repeat: number;
             type: "breathe";
@@ -7210,6 +7146,16 @@ export declare const logSchema: yup.Lazy<{
             outFor: number;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -7229,21 +7175,21 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "urge-surfing";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -7263,21 +7209,21 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "task";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -7297,16 +7243,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "question";
             backgroundColor: string;
@@ -7349,6 +7285,16 @@ export declare const logSchema: yup.Lazy<{
     isDisplayable: NonNullable<boolean | undefined>;
     gameplanId: string;
 } | {
+    updatedAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    createdAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
     steps?: yup.Maybe<number | undefined>;
     locationFormatted?: yup.Maybe<string | undefined>;
     commentCount?: yup.Maybe<number | undefined>;
@@ -7372,16 +7318,6 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     sharedWithSupportGroupIds?: yup.Maybe<string[] | undefined>;
     uid: string;
-    createdAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
     timezone: string;
     type: "dayDebrief";
     location: {
@@ -7396,6 +7332,16 @@ export declare const logSchema: yup.Lazy<{
     tacticsById: {
         [x: string]: {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -7417,16 +7363,6 @@ export declare const logSchema: yup.Lazy<{
             isSuggested?: boolean | undefined;
             nextId?: string | undefined;
             autogenerate?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "folder";
             backgroundColor: string;
@@ -7435,6 +7371,16 @@ export declare const logSchema: yup.Lazy<{
             tacticsById: {};
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -7454,22 +7400,22 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "steps";
             backgroundColor: string;
             steps: number;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -7489,21 +7435,21 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "emotions";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -7523,16 +7469,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "audio";
             backgroundColor: string;
@@ -7548,6 +7484,16 @@ export declare const logSchema: yup.Lazy<{
             } | null;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -7567,16 +7513,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "video";
             backgroundColor: string;
@@ -7590,6 +7526,16 @@ export declare const logSchema: yup.Lazy<{
             };
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -7609,16 +7555,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-slider";
             backgroundColor: string;
@@ -7626,6 +7562,16 @@ export declare const logSchema: yup.Lazy<{
             highEmoji: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -7645,21 +7591,21 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-time";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -7679,21 +7625,21 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-counter";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -7713,16 +7659,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "phone";
             backgroundColor: string;
@@ -7730,6 +7666,16 @@ export declare const logSchema: yup.Lazy<{
             trigger: {};
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -7749,16 +7695,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             repeat: number;
             type: "breathe";
@@ -7768,6 +7704,16 @@ export declare const logSchema: yup.Lazy<{
             outFor: number;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -7787,21 +7733,21 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "urge-surfing";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -7821,21 +7767,21 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "task";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -7855,16 +7801,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "question";
             backgroundColor: string;
@@ -7874,6 +7810,16 @@ export declare const logSchema: yup.Lazy<{
     };
     patternsById: {
         [x: string]: {
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             supportGroupIds?: yup.Maybe<(string | undefined)[] | undefined>;
             notification?: {
                 title: string;
@@ -7882,16 +7828,6 @@ export declare const logSchema: yup.Lazy<{
             setbackTacticId?: yup.Maybe<string | undefined>;
             issueId?: yup.Maybe<string | undefined>;
             uid: string;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             name: string;
             ordinal: number;
             setbackThreshold: number;
@@ -7936,6 +7872,16 @@ export declare const logSchema: yup.Lazy<{
         [x: string]: {} | undefined;
     };
 } | {
+    updatedAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    createdAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
     steps?: yup.Maybe<number | undefined>;
     locationFormatted?: yup.Maybe<string | undefined>;
     commentCount?: yup.Maybe<number | undefined>;
@@ -7959,16 +7905,6 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     sharedWithSupportGroupIds?: yup.Maybe<string[] | undefined>;
     uid: string;
-    createdAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
     timezone: string;
     type: "motion";
     location: {
@@ -7983,6 +7919,16 @@ export declare const logSchema: yup.Lazy<{
     tacticsById: {
         [x: string]: {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -8004,16 +7950,6 @@ export declare const logSchema: yup.Lazy<{
             isSuggested?: boolean | undefined;
             nextId?: string | undefined;
             autogenerate?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "folder";
             backgroundColor: string;
@@ -8022,6 +7958,16 @@ export declare const logSchema: yup.Lazy<{
             tacticsById: {};
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -8041,22 +7987,22 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "steps";
             backgroundColor: string;
             steps: number;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -8076,21 +8022,21 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "emotions";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -8110,16 +8056,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "audio";
             backgroundColor: string;
@@ -8135,6 +8071,16 @@ export declare const logSchema: yup.Lazy<{
             } | null;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -8154,16 +8100,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "video";
             backgroundColor: string;
@@ -8177,6 +8113,16 @@ export declare const logSchema: yup.Lazy<{
             };
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -8196,16 +8142,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-slider";
             backgroundColor: string;
@@ -8213,6 +8149,16 @@ export declare const logSchema: yup.Lazy<{
             highEmoji: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -8232,21 +8178,21 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-time";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -8266,21 +8212,21 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-counter";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -8300,16 +8246,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "phone";
             backgroundColor: string;
@@ -8317,6 +8253,16 @@ export declare const logSchema: yup.Lazy<{
             trigger: {};
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -8336,16 +8282,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             repeat: number;
             type: "breathe";
@@ -8355,6 +8291,16 @@ export declare const logSchema: yup.Lazy<{
             outFor: number;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -8374,21 +8320,21 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "urge-surfing";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -8408,21 +8354,21 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "task";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -8442,16 +8388,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "question";
             backgroundColor: string;
@@ -8493,6 +8429,16 @@ export declare const logSchema: yup.Lazy<{
     completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
 } | {
+    updatedAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    createdAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
     steps?: yup.Maybe<number | undefined>;
     locationFormatted?: yup.Maybe<string | undefined>;
     commentCount?: yup.Maybe<number | undefined>;
@@ -8516,16 +8462,6 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     sharedWithSupportGroupIds?: yup.Maybe<string[] | undefined>;
     uid: string;
-    createdAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
     timezone: string;
     type: "button";
     location: {
@@ -8540,6 +8476,16 @@ export declare const logSchema: yup.Lazy<{
     tacticsById: {
         [x: string]: {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -8561,16 +8507,6 @@ export declare const logSchema: yup.Lazy<{
             isSuggested?: boolean | undefined;
             nextId?: string | undefined;
             autogenerate?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "folder";
             backgroundColor: string;
@@ -8579,6 +8515,16 @@ export declare const logSchema: yup.Lazy<{
             tacticsById: {};
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -8598,22 +8544,22 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "steps";
             backgroundColor: string;
             steps: number;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -8633,21 +8579,21 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "emotions";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -8667,16 +8613,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "audio";
             backgroundColor: string;
@@ -8692,6 +8628,16 @@ export declare const logSchema: yup.Lazy<{
             } | null;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -8711,16 +8657,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "video";
             backgroundColor: string;
@@ -8734,6 +8670,16 @@ export declare const logSchema: yup.Lazy<{
             };
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -8753,16 +8699,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-slider";
             backgroundColor: string;
@@ -8770,6 +8706,16 @@ export declare const logSchema: yup.Lazy<{
             highEmoji: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -8789,21 +8735,21 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-time";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -8823,21 +8769,21 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-counter";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -8857,16 +8803,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "phone";
             backgroundColor: string;
@@ -8874,6 +8810,16 @@ export declare const logSchema: yup.Lazy<{
             trigger: {};
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -8893,16 +8839,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             repeat: number;
             type: "breathe";
@@ -8912,6 +8848,16 @@ export declare const logSchema: yup.Lazy<{
             outFor: number;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -8931,21 +8877,21 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "urge-surfing";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -8965,21 +8911,21 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "task";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -8999,16 +8945,6 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "question";
             backgroundColor: string;

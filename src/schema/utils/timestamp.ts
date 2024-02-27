@@ -6,7 +6,11 @@ export const timestampSchema = yup.object({
   toDate: yup
     .mixed()
     .test('is-timestamp', 'Must be a valid Timestamp', value => {
-      return typeof (value as any) === 'function';
+      return typeof value === 'function';
     })
     .required(),
 });
+
+export const optionalTimestampSchema = yup.lazy(value =>
+  value == null ? yup.mixed().notRequired() : timestampSchema
+);

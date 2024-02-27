@@ -5,7 +5,7 @@ import { routineSchema } from './routine';
 import { tacticSchema } from './tactic';
 import { requiredStringArray } from './utils/array';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
-import { timestampSchema } from './utils/timestamp';
+import { optionalTimestampSchema } from './utils/timestamp';
 
 // Used to conditionally show tactics based on the value of a response. E.g. I watched more than 10
 // hours of YouTube: activate rescue mode.
@@ -32,8 +32,8 @@ export type Strategy = yup.InferType<typeof strategy>;
 export type GameplanValue = WithTypes<typeof gameplanSchema>;
 export const gameplanSchema = yup.object().shape({
   uid: yup.string().required(),
-  createdAt: timestampSchema.required(),
-  updatedAt: timestampSchema.required(),
+  createdAt: optionalTimestampSchema,
+  updatedAt: optionalTimestampSchema,
   // Strategies - these are the sequences of tactics to try, including conditional tactics
   impulse: objectOf(strategy),
   impulseDebrief: objectOf(strategy),

@@ -4,12 +4,12 @@ export declare const folderTacticSchema: yup.ObjectSchema<{
     uid: string | null | undefined;
     sourceId: string | undefined;
     ordinal: number | null | undefined;
-    createdAt: {
+    createdAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    updatedAt: {
+    updatedAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
@@ -43,16 +43,8 @@ export declare const folderTacticSchema: yup.ObjectSchema<{
     uid: undefined;
     sourceId: undefined;
     ordinal: undefined;
-    createdAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    updatedAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
+    createdAt: undefined;
+    updatedAt: undefined;
     title: undefined;
     subtitle: undefined;
     description: undefined;
@@ -84,12 +76,12 @@ export declare const stepsTacticSchema: yup.ObjectSchema<{
     uid: string | null | undefined;
     sourceId: string | undefined;
     ordinal: number | null | undefined;
-    createdAt: {
+    createdAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    updatedAt: {
+    updatedAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
@@ -119,16 +111,8 @@ export declare const stepsTacticSchema: yup.ObjectSchema<{
     uid: undefined;
     sourceId: undefined;
     ordinal: undefined;
-    createdAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    updatedAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
+    createdAt: undefined;
+    updatedAt: undefined;
     title: undefined;
     subtitle: undefined;
     description: undefined;
@@ -156,12 +140,12 @@ export declare const emotionsTacticSchema: yup.ObjectSchema<{
     uid: string | null | undefined;
     sourceId: string | undefined;
     ordinal: number | null | undefined;
-    createdAt: {
+    createdAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    updatedAt: {
+    updatedAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
@@ -190,16 +174,8 @@ export declare const emotionsTacticSchema: yup.ObjectSchema<{
     uid: undefined;
     sourceId: undefined;
     ordinal: undefined;
-    createdAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    updatedAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
+    createdAt: undefined;
+    updatedAt: undefined;
     title: undefined;
     subtitle: undefined;
     description: undefined;
@@ -226,12 +202,12 @@ export declare const audioTacticSchema: yup.ObjectSchema<{
     uid: string | null | undefined;
     sourceId: string | undefined;
     ordinal: number | null | undefined;
-    createdAt: {
+    createdAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    updatedAt: {
+    updatedAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
@@ -270,16 +246,8 @@ export declare const audioTacticSchema: yup.ObjectSchema<{
     uid: undefined;
     sourceId: undefined;
     ordinal: undefined;
-    createdAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    updatedAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
+    createdAt: undefined;
+    updatedAt: undefined;
     title: undefined;
     subtitle: undefined;
     description: undefined;
@@ -316,12 +284,12 @@ export declare const videoTacticSchema: yup.ObjectSchema<{
     uid: string | null | undefined;
     sourceId: string | undefined;
     ordinal: number | null | undefined;
-    createdAt: {
+    createdAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    updatedAt: {
+    updatedAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
@@ -358,16 +326,8 @@ export declare const videoTacticSchema: yup.ObjectSchema<{
     uid: undefined;
     sourceId: undefined;
     ordinal: undefined;
-    createdAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    updatedAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
+    createdAt: undefined;
+    updatedAt: undefined;
     title: undefined;
     subtitle: undefined;
     description: undefined;
@@ -402,12 +362,12 @@ export declare const measureSliderTacticSchema: yup.ObjectSchema<{
     uid: string | null | undefined;
     sourceId: string | undefined;
     ordinal: number | null | undefined;
-    createdAt: {
+    createdAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    updatedAt: {
+    updatedAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
@@ -438,16 +398,8 @@ export declare const measureSliderTacticSchema: yup.ObjectSchema<{
     uid: undefined;
     sourceId: undefined;
     ordinal: undefined;
-    createdAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    updatedAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
+    createdAt: undefined;
+    updatedAt: undefined;
     title: undefined;
     subtitle: undefined;
     description: undefined;
@@ -476,12 +428,12 @@ export declare const measureTimeTacticSchema: yup.ObjectSchema<{
     uid: string | null | undefined;
     sourceId: string | undefined;
     ordinal: number | null | undefined;
-    createdAt: {
+    createdAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    updatedAt: {
+    updatedAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
@@ -510,16 +462,8 @@ export declare const measureTimeTacticSchema: yup.ObjectSchema<{
     uid: undefined;
     sourceId: undefined;
     ordinal: undefined;
-    createdAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    updatedAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
+    createdAt: undefined;
+    updatedAt: undefined;
     title: undefined;
     subtitle: undefined;
     description: undefined;
@@ -546,12 +490,12 @@ export declare const measureCounterTacticSchema: yup.ObjectSchema<{
     uid: string | null | undefined;
     sourceId: string | undefined;
     ordinal: number | null | undefined;
-    createdAt: {
+    createdAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    updatedAt: {
+    updatedAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
@@ -580,16 +524,8 @@ export declare const measureCounterTacticSchema: yup.ObjectSchema<{
     uid: undefined;
     sourceId: undefined;
     ordinal: undefined;
-    createdAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    updatedAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
+    createdAt: undefined;
+    updatedAt: undefined;
     title: undefined;
     subtitle: undefined;
     description: undefined;
@@ -617,12 +553,12 @@ export declare const phoneTacticSchema: yup.ObjectSchema<{
     uid: string | null | undefined;
     sourceId: string | undefined;
     ordinal: number | null | undefined;
-    createdAt: {
+    createdAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    updatedAt: {
+    updatedAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
@@ -653,16 +589,8 @@ export declare const phoneTacticSchema: yup.ObjectSchema<{
     uid: undefined;
     sourceId: undefined;
     ordinal: undefined;
-    createdAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    updatedAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
+    createdAt: undefined;
+    updatedAt: undefined;
     title: undefined;
     subtitle: undefined;
     description: undefined;
@@ -691,12 +619,12 @@ export declare const breatheTacticSchema: yup.ObjectSchema<{
     uid: string | null | undefined;
     sourceId: string | undefined;
     ordinal: number | null | undefined;
-    createdAt: {
+    createdAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    updatedAt: {
+    updatedAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
@@ -729,16 +657,8 @@ export declare const breatheTacticSchema: yup.ObjectSchema<{
     uid: undefined;
     sourceId: undefined;
     ordinal: undefined;
-    createdAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    updatedAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
+    createdAt: undefined;
+    updatedAt: undefined;
     title: undefined;
     subtitle: undefined;
     description: undefined;
@@ -769,12 +689,12 @@ export declare const urgeSurfingTacticSchema: yup.ObjectSchema<{
     uid: string | null | undefined;
     sourceId: string | undefined;
     ordinal: number | null | undefined;
-    createdAt: {
+    createdAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    updatedAt: {
+    updatedAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
@@ -803,16 +723,8 @@ export declare const urgeSurfingTacticSchema: yup.ObjectSchema<{
     uid: undefined;
     sourceId: undefined;
     ordinal: undefined;
-    createdAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    updatedAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
+    createdAt: undefined;
+    updatedAt: undefined;
     title: undefined;
     subtitle: undefined;
     description: undefined;
@@ -839,12 +751,12 @@ export declare const taskTacticSchema: yup.ObjectSchema<{
     uid: string | null | undefined;
     sourceId: string | undefined;
     ordinal: number | null | undefined;
-    createdAt: {
+    createdAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    updatedAt: {
+    updatedAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
@@ -873,16 +785,8 @@ export declare const taskTacticSchema: yup.ObjectSchema<{
     uid: undefined;
     sourceId: undefined;
     ordinal: undefined;
-    createdAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    updatedAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
+    createdAt: undefined;
+    updatedAt: undefined;
     title: undefined;
     subtitle: undefined;
     description: undefined;
@@ -909,12 +813,12 @@ export declare const questionTacticSchema: yup.ObjectSchema<{
     uid: string | null | undefined;
     sourceId: string | undefined;
     ordinal: number | null | undefined;
-    createdAt: {
+    createdAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    updatedAt: {
+    updatedAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
@@ -943,16 +847,8 @@ export declare const questionTacticSchema: yup.ObjectSchema<{
     uid: undefined;
     sourceId: undefined;
     ordinal: undefined;
-    createdAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    updatedAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
+    createdAt: undefined;
+    updatedAt: undefined;
     title: undefined;
     subtitle: undefined;
     description: undefined;
@@ -978,6 +874,16 @@ export type TacticValue = PhoneTacticValue | AudioTactic | UrgeSurfingTactic | V
 export declare const tacticSchemas: Record<TacticValue['type'], yup.ObjectSchema<TacticValue>>;
 export declare const tacticSchema: yup.Lazy<{
     uid?: string | null | undefined;
+    updatedAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    createdAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
     ordinal?: number | null | undefined;
     isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
@@ -999,16 +905,6 @@ export declare const tacticSchema: yup.Lazy<{
     isSuggested?: boolean | undefined;
     nextId?: string | undefined;
     autogenerate?: boolean | undefined;
-    createdAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
     title: string;
     type: "folder";
     backgroundColor: string;
@@ -1017,6 +913,16 @@ export declare const tacticSchema: yup.Lazy<{
     tacticsById: {};
 } | {
     uid?: string | null | undefined;
+    updatedAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    createdAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
     ordinal?: number | null | undefined;
     isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
@@ -1036,22 +942,22 @@ export declare const tacticSchema: yup.Lazy<{
     isAvailableForRecommendation?: boolean | null | undefined;
     numberOfLikes?: number | null | undefined;
     isSuggested?: boolean | undefined;
-    createdAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
     title: string;
     type: "steps";
     backgroundColor: string;
     steps: number;
 } | {
     uid?: string | null | undefined;
+    updatedAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    createdAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
     ordinal?: number | null | undefined;
     isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
@@ -1071,21 +977,21 @@ export declare const tacticSchema: yup.Lazy<{
     isAvailableForRecommendation?: boolean | null | undefined;
     numberOfLikes?: number | null | undefined;
     isSuggested?: boolean | undefined;
-    createdAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
     title: string;
     type: "emotions";
     backgroundColor: string;
 } | {
     uid?: string | null | undefined;
+    updatedAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    createdAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
     ordinal?: number | null | undefined;
     isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
@@ -1105,16 +1011,6 @@ export declare const tacticSchema: yup.Lazy<{
     isAvailableForRecommendation?: boolean | null | undefined;
     numberOfLikes?: number | null | undefined;
     isSuggested?: boolean | undefined;
-    createdAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
     title: string;
     type: "audio";
     backgroundColor: string;
@@ -1130,6 +1026,16 @@ export declare const tacticSchema: yup.Lazy<{
     } | null;
 } | {
     uid?: string | null | undefined;
+    updatedAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    createdAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
     ordinal?: number | null | undefined;
     isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
@@ -1149,16 +1055,6 @@ export declare const tacticSchema: yup.Lazy<{
     isAvailableForRecommendation?: boolean | null | undefined;
     numberOfLikes?: number | null | undefined;
     isSuggested?: boolean | undefined;
-    createdAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
     title: string;
     type: "video";
     backgroundColor: string;
@@ -1172,6 +1068,16 @@ export declare const tacticSchema: yup.Lazy<{
     };
 } | {
     uid?: string | null | undefined;
+    updatedAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    createdAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
     ordinal?: number | null | undefined;
     isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
@@ -1191,16 +1097,6 @@ export declare const tacticSchema: yup.Lazy<{
     isAvailableForRecommendation?: boolean | null | undefined;
     numberOfLikes?: number | null | undefined;
     isSuggested?: boolean | undefined;
-    createdAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
     title: string;
     type: "measure-slider";
     backgroundColor: string;
@@ -1208,6 +1104,16 @@ export declare const tacticSchema: yup.Lazy<{
     highEmoji: string;
 } | {
     uid?: string | null | undefined;
+    updatedAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    createdAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
     ordinal?: number | null | undefined;
     isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
@@ -1227,21 +1133,21 @@ export declare const tacticSchema: yup.Lazy<{
     isAvailableForRecommendation?: boolean | null | undefined;
     numberOfLikes?: number | null | undefined;
     isSuggested?: boolean | undefined;
-    createdAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
     title: string;
     type: "measure-time";
     backgroundColor: string;
 } | {
     uid?: string | null | undefined;
+    updatedAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    createdAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
     ordinal?: number | null | undefined;
     isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
@@ -1261,21 +1167,21 @@ export declare const tacticSchema: yup.Lazy<{
     isAvailableForRecommendation?: boolean | null | undefined;
     numberOfLikes?: number | null | undefined;
     isSuggested?: boolean | undefined;
-    createdAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
     title: string;
     type: "measure-counter";
     backgroundColor: string;
 } | {
     uid?: string | null | undefined;
+    updatedAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    createdAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
     ordinal?: number | null | undefined;
     isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
@@ -1295,16 +1201,6 @@ export declare const tacticSchema: yup.Lazy<{
     isAvailableForRecommendation?: boolean | null | undefined;
     numberOfLikes?: number | null | undefined;
     isSuggested?: boolean | undefined;
-    createdAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
     title: string;
     type: "phone";
     backgroundColor: string;
@@ -1312,6 +1208,16 @@ export declare const tacticSchema: yup.Lazy<{
     trigger: {};
 } | {
     uid?: string | null | undefined;
+    updatedAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    createdAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
     ordinal?: number | null | undefined;
     isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
@@ -1331,16 +1237,6 @@ export declare const tacticSchema: yup.Lazy<{
     isAvailableForRecommendation?: boolean | null | undefined;
     numberOfLikes?: number | null | undefined;
     isSuggested?: boolean | undefined;
-    createdAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
     title: string;
     repeat: number;
     type: "breathe";
@@ -1350,6 +1246,16 @@ export declare const tacticSchema: yup.Lazy<{
     outFor: number;
 } | {
     uid?: string | null | undefined;
+    updatedAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    createdAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
     ordinal?: number | null | undefined;
     isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
@@ -1369,21 +1275,21 @@ export declare const tacticSchema: yup.Lazy<{
     isAvailableForRecommendation?: boolean | null | undefined;
     numberOfLikes?: number | null | undefined;
     isSuggested?: boolean | undefined;
-    createdAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
     title: string;
     type: "urge-surfing";
     backgroundColor: string;
 } | {
     uid?: string | null | undefined;
+    updatedAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    createdAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
     ordinal?: number | null | undefined;
     isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
@@ -1403,21 +1309,21 @@ export declare const tacticSchema: yup.Lazy<{
     isAvailableForRecommendation?: boolean | null | undefined;
     numberOfLikes?: number | null | undefined;
     isSuggested?: boolean | undefined;
-    createdAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
     title: string;
     type: "task";
     backgroundColor: string;
 } | {
     uid?: string | null | undefined;
+    updatedAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    createdAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
     ordinal?: number | null | undefined;
     isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
@@ -1437,16 +1343,6 @@ export declare const tacticSchema: yup.Lazy<{
     isAvailableForRecommendation?: boolean | null | undefined;
     numberOfLikes?: number | null | undefined;
     isSuggested?: boolean | undefined;
-    createdAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
     title: string;
     type: "question";
     backgroundColor: string;

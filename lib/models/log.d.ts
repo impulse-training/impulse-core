@@ -5,6 +5,16 @@ export declare class Log {
     constructor(id: string, data: LogValue);
     get text(): string | undefined;
     get selectedPattern(): {
+        updatedAt?: import("yup").Maybe<{} | undefined> | {
+            seconds: number;
+            nanoseconds: number;
+            toDate: {};
+        };
+        createdAt?: import("yup").Maybe<{} | undefined> | {
+            seconds: number;
+            nanoseconds: number;
+            toDate: {};
+        };
         supportGroupIds?: import("yup").Maybe<(string | undefined)[] | undefined>;
         notification?: {
             title: string;
@@ -13,16 +23,6 @@ export declare class Log {
         setbackTacticId?: import("yup").Maybe<string | undefined>;
         issueId?: import("yup").Maybe<string | undefined>;
         uid: string;
-        createdAt: {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
-        updatedAt: {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
         name: string;
         ordinal: number;
         setbackThreshold: number;

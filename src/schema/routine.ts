@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-import { timestampSchema } from './utils/timestamp';
+import { optionalTimestampSchema } from './utils/timestamp';
 
 type Inferred<T extends yup.ISchema<unknown>> = yup.InferType<T>;
 export type Routine = Inferred<typeof routineBaseSchema>;
@@ -7,8 +7,8 @@ export type Routine = Inferred<typeof routineBaseSchema>;
 // Base schema for RoutineValueBase
 const routineBaseSchema = yup.object().shape({
   uid: yup.string().required(),
-  createdAt: timestampSchema.required(),
-  updatedAt: timestampSchema.required(),
+  createdAt: optionalTimestampSchema,
+  updatedAt: optionalTimestampSchema,
   title: yup.string().nullable(),
   navigationTitle: yup.string().nullable(),
   isTemplate: yup.boolean().nullable(),

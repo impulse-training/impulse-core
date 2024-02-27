@@ -19,12 +19,12 @@ export type Strategy = yup.InferType<typeof strategy>;
 export type GameplanValue = WithTypes<typeof gameplanSchema>;
 export declare const gameplanSchema: yup.ObjectSchema<{
     uid: string;
-    createdAt: {
+    createdAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    updatedAt: {
+    updatedAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
@@ -71,6 +71,16 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     tacticsById: {
         [x: string]: {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -92,16 +102,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             isSuggested?: boolean | undefined;
             nextId?: string | undefined;
             autogenerate?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "folder";
             backgroundColor: string;
@@ -110,6 +110,16 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             tacticsById: {};
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -129,22 +139,22 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "steps";
             backgroundColor: string;
             steps: number;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -164,21 +174,21 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "emotions";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -198,16 +208,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "audio";
             backgroundColor: string;
@@ -223,6 +223,16 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             } | null;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -242,16 +252,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "video";
             backgroundColor: string;
@@ -265,6 +265,16 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             };
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -284,16 +294,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-slider";
             backgroundColor: string;
@@ -301,6 +301,16 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             highEmoji: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -320,21 +330,21 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-time";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -354,21 +364,21 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "measure-counter";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -388,16 +398,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "phone";
             backgroundColor: string;
@@ -405,6 +405,16 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             trigger: {};
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -424,16 +434,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             repeat: number;
             type: "breathe";
@@ -443,6 +443,16 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             outFor: number;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -462,21 +472,21 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "urge-surfing";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -496,21 +506,21 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "task";
             backgroundColor: string;
         } | {
             uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             ordinal?: number | null | undefined;
             isTemplate?: boolean | null | undefined;
             sourceId?: string | undefined;
@@ -530,16 +540,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             title: string;
             type: "question";
             backgroundColor: string;
@@ -549,66 +549,76 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     };
     routinesById: {
         [x: string]: {
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             title?: string | null | undefined;
             navigationTitle?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             scheduledNotificationIds?: string[] | null | undefined;
             uid: string;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             timezone: string;
             weekdays: number[];
             hour: number;
             minute: number;
             type: "time";
         } | {
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             title?: string | null | undefined;
             navigationTitle?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             timezone?: string | null | undefined;
             uid: string;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             type: "dayDebrief";
         } | {
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             title?: string | null | undefined;
             navigationTitle?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
             timezone?: string | null | undefined;
             locationId?: string | null | undefined;
             uid: string;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             type: "location";
             mode: {};
         };
     };
     patternsById: {
         [x: string]: {
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             supportGroupIds?: yup.Maybe<(string | undefined)[] | undefined>;
             notification?: {
                 title: string;
@@ -617,16 +627,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             setbackTacticId?: yup.Maybe<string | undefined>;
             issueId?: yup.Maybe<string | undefined>;
             uid: string;
-            createdAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             name: string;
             ordinal: number;
             setbackThreshold: number;
@@ -635,16 +635,8 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     };
 }, yup.AnyObject, {
     uid: undefined;
-    createdAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    updatedAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
+    createdAt: undefined;
+    updatedAt: undefined;
     impulse: undefined;
     impulseDebrief: undefined;
     routine: undefined;

@@ -2,7 +2,7 @@ import { keys } from 'lodash';
 import * as yup from 'yup';
 import { recordingSchema } from './recording';
 import { imageSchema } from './utils/image';
-import { timestampSchema } from './utils/timestamp';
+import { optionalTimestampSchema } from './utils/timestamp';
 
 // Define a base schema for TacticValueBase with generic type K to accommodate the type field.
 function tacticValueBaseSchema<K extends string>(type: K) {
@@ -11,8 +11,8 @@ function tacticValueBaseSchema<K extends string>(type: K) {
     uid: yup.string().nullable(),
     sourceId: yup.string(),
     ordinal: yup.number().nullable(),
-    createdAt: timestampSchema.required(),
-    updatedAt: timestampSchema.required(),
+    createdAt: optionalTimestampSchema,
+    updatedAt: optionalTimestampSchema,
     title: yup.string().required(),
     subtitle: yup.string().notRequired(),
     description: yup.string().nullable(),

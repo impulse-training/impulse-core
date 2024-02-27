@@ -7,16 +7,16 @@ import { patternSchema } from './pattern';
 import { tacticSchema } from './tactic';
 import { requiredStringArray } from './utils/array';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
-import { timestampSchema } from './utils/timestamp';
+import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
 
 type Outcome = 'success' | 'setback' | 'indeterminate';
 
 export type BaseLogValue = WithTypes<typeof baseLogSchema>;
 const baseLogSchema = yup.object().shape({
   uid: yup.string().required(),
-  createdAt: timestampSchema.required(),
-  updatedAt: timestampSchema.required(),
-  startTime: timestampSchema.required(),
+  createdAt: optionalTimestampSchema,
+  updatedAt: optionalTimestampSchema,
+  startTime: timestampSchema,
   timezone: yup.string().required(),
   location: yup.object().shape({
     latitude: yup.number(),

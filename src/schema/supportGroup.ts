@@ -1,10 +1,10 @@
 import * as yup from 'yup';
 import { objectOf } from './utils/objectOf';
-import { timestampSchema } from './utils/timestamp';
+import { optionalTimestampSchema } from './utils/timestamp';
 
 export const supportGroupSchema = yup.object().shape({
-  createdAt: timestampSchema.required(),
-  updatedAt: timestampSchema.required(),
+  createdAt: optionalTimestampSchema,
+  updatedAt: optionalTimestampSchema,
   slug: yup.string(),
   templateId: yup.string().optional(),
   everythingPermissions: yup.boolean().optional(),
