@@ -581,9 +581,13 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             title?: string | null | undefined;
             navigationTitle?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
+            scheduledNotificationIds?: string[] | null | undefined;
             uid: string;
             timezone: string;
             type: "dayDebrief";
+            weekdays: number[];
+            hour: number;
+            minute: number;
         } | {
             updatedAt?: yup.Maybe<{} | undefined> | {
                 seconds: number;
@@ -598,9 +602,9 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             title?: string | null | undefined;
             navigationTitle?: string | null | undefined;
             isTemplate?: boolean | null | undefined;
+            timezone?: string | null | undefined;
             locationId?: string | null | undefined;
             uid: string;
-            timezone: string;
             type: "location";
             mode: {};
         };

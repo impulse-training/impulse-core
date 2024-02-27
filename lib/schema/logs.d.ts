@@ -1729,9 +1729,13 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 title?: string | null | undefined;
                 navigationTitle?: string | null | undefined;
                 isTemplate?: boolean | null | undefined;
+                scheduledNotificationIds?: string[] | null | undefined;
                 uid: string;
                 timezone: string;
                 type: "dayDebrief";
+                weekdays: number[];
+                hour: number;
+                minute: number;
             } | {
                 updatedAt?: yup.Maybe<{} | undefined> | {
                     seconds: number;
@@ -1746,9 +1750,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 title?: string | null | undefined;
                 navigationTitle?: string | null | undefined;
                 isTemplate?: boolean | null | undefined;
+                timezone?: string | null | undefined;
                 locationId?: string | null | undefined;
                 uid: string;
-                timezone: string;
                 type: "location";
                 mode: {};
             };
@@ -4984,6 +4988,7 @@ export declare const logSchema: yup.Lazy<{
     debriefedAt?: yup.Maybe<{} | undefined>;
     uid: string;
     timezone: string;
+    type: "impulse";
     location: {
         latitude?: number | undefined;
         longitude?: number | undefined;
@@ -4993,7 +4998,6 @@ export declare const logSchema: yup.Lazy<{
         heading?: number | undefined;
         speed?: number | undefined;
     };
-    type: "impulse";
     tacticsById: {
         [x: string]: {
             uid?: string | null | undefined;
@@ -6094,9 +6098,13 @@ export declare const logSchema: yup.Lazy<{
                 title?: string | null | undefined;
                 navigationTitle?: string | null | undefined;
                 isTemplate?: boolean | null | undefined;
+                scheduledNotificationIds?: string[] | null | undefined;
                 uid: string;
                 timezone: string;
                 type: "dayDebrief";
+                weekdays: number[];
+                hour: number;
+                minute: number;
             } | {
                 updatedAt?: yup.Maybe<{} | undefined> | {
                     seconds: number;
@@ -6111,9 +6119,9 @@ export declare const logSchema: yup.Lazy<{
                 title?: string | null | undefined;
                 navigationTitle?: string | null | undefined;
                 isTemplate?: boolean | null | undefined;
+                timezone?: string | null | undefined;
                 locationId?: string | null | undefined;
                 uid: string;
-                timezone: string;
                 type: "location";
                 mode: {};
             };
@@ -6181,6 +6189,7 @@ export declare const logSchema: yup.Lazy<{
     sharedWithSupportGroupIds?: yup.Maybe<string[] | undefined>;
     uid: string;
     timezone: string;
+    type: "location";
     location: {
         latitude?: number | undefined;
         longitude?: number | undefined;
@@ -6190,7 +6199,6 @@ export declare const logSchema: yup.Lazy<{
         heading?: number | undefined;
         speed?: number | undefined;
     };
-    type: "location";
     locationId: string;
     tacticsById: {
         [x: string]: {
@@ -6739,6 +6747,7 @@ export declare const logSchema: yup.Lazy<{
     sharedWithSupportGroupIds?: yup.Maybe<string[] | undefined>;
     uid: string;
     timezone: string;
+    type: "time";
     location: {
         latitude?: number | undefined;
         longitude?: number | undefined;
@@ -6748,7 +6757,6 @@ export declare const logSchema: yup.Lazy<{
         heading?: number | undefined;
         speed?: number | undefined;
     };
-    type: "time";
     tacticsById: {
         [x: string]: {
             uid?: string | null | undefined;
@@ -7295,6 +7303,7 @@ export declare const logSchema: yup.Lazy<{
     sharedWithSupportGroupIds?: yup.Maybe<string[] | undefined>;
     uid: string;
     timezone: string;
+    type: "dayDebrief";
     location: {
         latitude?: number | undefined;
         longitude?: number | undefined;
@@ -7304,7 +7313,6 @@ export declare const logSchema: yup.Lazy<{
         heading?: number | undefined;
         speed?: number | undefined;
     };
-    type: "dayDebrief";
     tacticsById: {
         [x: string]: {
             uid?: string | null | undefined;
@@ -7880,6 +7888,7 @@ export declare const logSchema: yup.Lazy<{
     sharedWithSupportGroupIds?: yup.Maybe<string[] | undefined>;
     uid: string;
     timezone: string;
+    type: "motion";
     location: {
         latitude?: number | undefined;
         longitude?: number | undefined;
@@ -7889,7 +7898,6 @@ export declare const logSchema: yup.Lazy<{
         heading?: number | undefined;
         speed?: number | undefined;
     };
-    type: "motion";
     tacticsById: {
         [x: string]: {
             uid?: string | null | undefined;
@@ -8435,6 +8443,7 @@ export declare const logSchema: yup.Lazy<{
     sharedWithSupportGroupIds?: yup.Maybe<string[] | undefined>;
     uid: string;
     timezone: string;
+    type: "button";
     location: {
         latitude?: number | undefined;
         longitude?: number | undefined;
@@ -8444,7 +8453,6 @@ export declare const logSchema: yup.Lazy<{
         heading?: number | undefined;
         speed?: number | undefined;
     };
-    type: "button";
     tacticsById: {
         [x: string]: {
             uid?: string | null | undefined;

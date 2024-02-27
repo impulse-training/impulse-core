@@ -38,4 +38,8 @@ export const makeDebriefRoutineFactory = (
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     type: 'dayDebrief',
+    timezone: 'America/Los_Angeles',
+    weekdays: [1, 2, 3, 4, 5, 6, 7],
+    hour: 20,
+    minute: 0,
   });
