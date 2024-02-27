@@ -231,16 +231,11 @@ export declare const audioTacticSchema: yup.ObjectSchema<{
     isAvailableForRecommendation: boolean | null | undefined;
     numberOfLikes: number | null | undefined;
     isSuggested: boolean | undefined;
-    metadata: {
-        waveform?: string | null | undefined;
-        localFilePath: string;
-        remoteFilePath: string;
-    };
     recording: {
         waveform?: string | null | undefined;
         localFilePath: string;
         remoteFilePath: string;
-    } | null;
+    };
 }, yup.AnyObject, {
     type: undefined;
     uid: undefined;
@@ -267,11 +262,6 @@ export declare const audioTacticSchema: yup.ObjectSchema<{
     isAvailableForRecommendation: undefined;
     numberOfLikes: undefined;
     isSuggested: undefined;
-    metadata: {
-        localFilePath: undefined;
-        remoteFilePath: undefined;
-        waveform: undefined;
-    };
     recording: {
         localFilePath: undefined;
         remoteFilePath: undefined;

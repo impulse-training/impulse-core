@@ -207,16 +207,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
             title: string;
             type: "audio";
             backgroundColor: string;
-            metadata: {
-                waveform?: string | null | undefined;
-                localFilePath: string;
-                remoteFilePath: string;
-            };
             recording: {
                 waveform?: string | null | undefined;
                 localFilePath: string;
                 remoteFilePath: string;
-            } | null;
+            };
         } | {
             uid?: string | null | undefined;
             updatedAt?: yup.Maybe<{} | undefined> | {
@@ -811,16 +806,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             title: string;
             type: "audio";
             backgroundColor: string;
-            metadata: {
-                waveform?: string | null | undefined;
-                localFilePath: string;
-                remoteFilePath: string;
-            };
             recording: {
                 waveform?: string | null | undefined;
                 localFilePath: string;
                 remoteFilePath: string;
-            } | null;
+            };
         } | {
             uid?: string | null | undefined;
             updatedAt?: yup.Maybe<{} | undefined> | {
@@ -1320,16 +1310,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 title: string;
                 type: "audio";
                 backgroundColor: string;
-                metadata: {
-                    waveform?: string | null | undefined;
-                    localFilePath: string;
-                    remoteFilePath: string;
-                };
                 recording: {
                     waveform?: string | null | undefined;
                     localFilePath: string;
                     remoteFilePath: string;
-                } | null;
+                };
             } | {
                 uid?: string | null | undefined;
                 updatedAt?: yup.Maybe<{} | undefined> | {
@@ -2088,16 +2073,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
             title: string;
             type: "audio";
             backgroundColor: string;
-            metadata: {
-                waveform?: string | null | undefined;
-                localFilePath: string;
-                remoteFilePath: string;
-            };
             recording: {
                 waveform?: string | null | undefined;
                 localFilePath: string;
                 remoteFilePath: string;
-            } | null;
+            };
         } | {
             uid?: string | null | undefined;
             updatedAt?: yup.Maybe<{} | undefined> | {
@@ -2698,16 +2678,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
             title: string;
             type: "audio";
             backgroundColor: string;
-            metadata: {
-                waveform?: string | null | undefined;
-                localFilePath: string;
-                remoteFilePath: string;
-            };
             recording: {
                 waveform?: string | null | undefined;
                 localFilePath: string;
                 remoteFilePath: string;
-            } | null;
+            };
         } | {
             uid?: string | null | undefined;
             updatedAt?: yup.Maybe<{} | undefined> | {
@@ -3304,16 +3279,11 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             title: string;
             type: "audio";
             backgroundColor: string;
-            metadata: {
-                waveform?: string | null | undefined;
-                localFilePath: string;
-                remoteFilePath: string;
-            };
             recording: {
                 waveform?: string | null | undefined;
                 localFilePath: string;
                 remoteFilePath: string;
-            } | null;
+            };
         } | {
             uid?: string | null | undefined;
             updatedAt?: yup.Maybe<{} | undefined> | {
@@ -3941,16 +3911,11 @@ declare const motionLogSchema: yup.ObjectSchema<{
             title: string;
             type: "audio";
             backgroundColor: string;
-            metadata: {
-                waveform?: string | null | undefined;
-                localFilePath: string;
-                remoteFilePath: string;
-            };
             recording: {
                 waveform?: string | null | undefined;
                 localFilePath: string;
                 remoteFilePath: string;
-            } | null;
+            };
         } | {
             uid?: string | null | undefined;
             updatedAt?: yup.Maybe<{} | undefined> | {
@@ -4545,16 +4510,11 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             title: string;
             type: "audio";
             backgroundColor: string;
-            metadata: {
-                waveform?: string | null | undefined;
-                localFilePath: string;
-                remoteFilePath: string;
-            };
             recording: {
                 waveform?: string | null | undefined;
                 localFilePath: string;
                 remoteFilePath: string;
-            } | null;
+            };
         } | {
             uid?: string | null | undefined;
             updatedAt?: yup.Maybe<{} | undefined> | {
@@ -5141,16 +5101,11 @@ export declare const logSchema: yup.Lazy<{
             title: string;
             type: "audio";
             backgroundColor: string;
-            metadata: {
-                waveform?: string | null | undefined;
-                localFilePath: string;
-                remoteFilePath: string;
-            };
             recording: {
                 waveform?: string | null | undefined;
                 localFilePath: string;
                 remoteFilePath: string;
-            } | null;
+            };
         } | {
             uid?: string | null | undefined;
             updatedAt?: yup.Maybe<{} | undefined> | {
@@ -5689,16 +5644,11 @@ export declare const logSchema: yup.Lazy<{
                 title: string;
                 type: "audio";
                 backgroundColor: string;
-                metadata: {
-                    waveform?: string | null | undefined;
-                    localFilePath: string;
-                    remoteFilePath: string;
-                };
                 recording: {
                     waveform?: string | null | undefined;
                     localFilePath: string;
                     remoteFilePath: string;
-                } | null;
+                };
             } | {
                 uid?: string | null | undefined;
                 updatedAt?: yup.Maybe<{} | undefined> | {
@@ -6343,16 +6293,11 @@ export declare const logSchema: yup.Lazy<{
             title: string;
             type: "audio";
             backgroundColor: string;
-            metadata: {
-                waveform?: string | null | undefined;
-                localFilePath: string;
-                remoteFilePath: string;
-            };
             recording: {
                 waveform?: string | null | undefined;
                 localFilePath: string;
                 remoteFilePath: string;
-            } | null;
+            };
         } | {
             uid?: string | null | undefined;
             updatedAt?: yup.Maybe<{} | undefined> | {
@@ -6900,16 +6845,11 @@ export declare const logSchema: yup.Lazy<{
             title: string;
             type: "audio";
             backgroundColor: string;
-            metadata: {
-                waveform?: string | null | undefined;
-                localFilePath: string;
-                remoteFilePath: string;
-            };
             recording: {
                 waveform?: string | null | undefined;
                 localFilePath: string;
                 remoteFilePath: string;
-            } | null;
+            };
         } | {
             uid?: string | null | undefined;
             updatedAt?: yup.Maybe<{} | undefined> | {
@@ -7456,16 +7396,11 @@ export declare const logSchema: yup.Lazy<{
             title: string;
             type: "audio";
             backgroundColor: string;
-            metadata: {
-                waveform?: string | null | undefined;
-                localFilePath: string;
-                remoteFilePath: string;
-            };
             recording: {
                 waveform?: string | null | undefined;
                 localFilePath: string;
                 remoteFilePath: string;
-            } | null;
+            };
         } | {
             uid?: string | null | undefined;
             updatedAt?: yup.Maybe<{} | undefined> | {
@@ -8041,16 +7976,11 @@ export declare const logSchema: yup.Lazy<{
             title: string;
             type: "audio";
             backgroundColor: string;
-            metadata: {
-                waveform?: string | null | undefined;
-                localFilePath: string;
-                remoteFilePath: string;
-            };
             recording: {
                 waveform?: string | null | undefined;
                 localFilePath: string;
                 remoteFilePath: string;
-            } | null;
+            };
         } | {
             uid?: string | null | undefined;
             updatedAt?: yup.Maybe<{} | undefined> | {
@@ -8596,16 +8526,11 @@ export declare const logSchema: yup.Lazy<{
             title: string;
             type: "audio";
             backgroundColor: string;
-            metadata: {
-                waveform?: string | null | undefined;
-                localFilePath: string;
-                remoteFilePath: string;
-            };
             recording: {
                 waveform?: string | null | undefined;
                 localFilePath: string;
                 remoteFilePath: string;
-            } | null;
+            };
         } | {
             uid?: string | null | undefined;
             updatedAt?: yup.Maybe<{} | undefined> | {

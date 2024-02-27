@@ -211,16 +211,11 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             title: string;
             type: "audio";
             backgroundColor: string;
-            metadata: {
-                waveform?: string | null | undefined;
-                localFilePath: string;
-                remoteFilePath: string;
-            };
             recording: {
                 waveform?: string | null | undefined;
                 localFilePath: string;
                 remoteFilePath: string;
-            } | null;
+            };
         } | {
             uid?: string | null | undefined;
             updatedAt?: yup.Maybe<{} | undefined> | {

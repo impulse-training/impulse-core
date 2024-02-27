@@ -49,8 +49,7 @@ export const emotionsTacticSchema = tacticValueBaseSchema('emotions');
 export type EmotionsTactic = yup.InferType<typeof emotionsTacticSchema>;
 
 export const audioTacticSchema = tacticValueBaseSchema('audio').shape({
-  metadata: recordingSchema.required(),
-  recording: recordingSchema.nullable(),
+  recording: recordingSchema.required(),
 });
 export type AudioTactic = yup.InferType<typeof audioTacticSchema>;
 
