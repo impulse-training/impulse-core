@@ -391,8 +391,8 @@ export declare const measureSliderTacticSchema: yup.ObjectSchema<{
     isAvailableForRecommendation: boolean | null | undefined;
     numberOfLikes: number | null | undefined;
     isSuggested: boolean | undefined;
-    lowEmoji: string;
-    highEmoji: string;
+    lowEmoji: yup.Maybe<string | undefined>;
+    highEmoji: yup.Maybe<string | undefined>;
 }, yup.AnyObject, {
     type: undefined;
     uid: undefined;
@@ -1097,11 +1097,11 @@ export declare const tacticSchema: yup.Lazy<{
     isAvailableForRecommendation?: boolean | null | undefined;
     numberOfLikes?: number | null | undefined;
     isSuggested?: boolean | undefined;
+    lowEmoji?: yup.Maybe<string | undefined>;
+    highEmoji?: yup.Maybe<string | undefined>;
     title: string;
     type: "measure-slider";
     backgroundColor: string;
-    lowEmoji: string;
-    highEmoji: string;
 } | {
     uid?: string | null | undefined;
     updatedAt?: yup.Maybe<{} | undefined> | {

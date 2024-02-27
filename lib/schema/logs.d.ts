@@ -290,11 +290,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             title: string;
             type: "measure-slider";
             backgroundColor: string;
-            lowEmoji: string;
-            highEmoji: string;
         } | {
             uid?: string | null | undefined;
             updatedAt?: yup.Maybe<{} | undefined> | {
@@ -896,11 +896,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             title: string;
             type: "measure-slider";
             backgroundColor: string;
-            lowEmoji: string;
-            highEmoji: string;
         } | {
             uid?: string | null | undefined;
             updatedAt?: yup.Maybe<{} | undefined> | {
@@ -1407,11 +1407,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
+                lowEmoji?: yup.Maybe<string | undefined>;
+                highEmoji?: yup.Maybe<string | undefined>;
                 title: string;
                 type: "measure-slider";
                 backgroundColor: string;
-                lowEmoji: string;
-                highEmoji: string;
             } | {
                 uid?: string | null | undefined;
                 updatedAt?: yup.Maybe<{} | undefined> | {
@@ -2173,11 +2173,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             title: string;
             type: "measure-slider";
             backgroundColor: string;
-            lowEmoji: string;
-            highEmoji: string;
         } | {
             uid?: string | null | undefined;
             updatedAt?: yup.Maybe<{} | undefined> | {
@@ -2785,11 +2785,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             title: string;
             type: "measure-slider";
             backgroundColor: string;
-            lowEmoji: string;
-            highEmoji: string;
         } | {
             uid?: string | null | undefined;
             updatedAt?: yup.Maybe<{} | undefined> | {
@@ -3393,11 +3393,11 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             title: string;
             type: "measure-slider";
             backgroundColor: string;
-            lowEmoji: string;
-            highEmoji: string;
         } | {
             uid?: string | null | undefined;
             updatedAt?: yup.Maybe<{} | undefined> | {
@@ -4032,11 +4032,11 @@ declare const motionLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             title: string;
             type: "measure-slider";
             backgroundColor: string;
-            lowEmoji: string;
-            highEmoji: string;
         } | {
             uid?: string | null | undefined;
             updatedAt?: yup.Maybe<{} | undefined> | {
@@ -4638,11 +4638,11 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             title: string;
             type: "measure-slider";
             backgroundColor: string;
-            lowEmoji: string;
-            highEmoji: string;
         } | {
             uid?: string | null | undefined;
             updatedAt?: yup.Maybe<{} | undefined> | {
@@ -5236,11 +5236,11 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             title: string;
             type: "measure-slider";
             backgroundColor: string;
-            lowEmoji: string;
-            highEmoji: string;
         } | {
             uid?: string | null | undefined;
             updatedAt?: yup.Maybe<{} | undefined> | {
@@ -5786,11 +5786,11 @@ export declare const logSchema: yup.Lazy<{
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
+                lowEmoji?: yup.Maybe<string | undefined>;
+                highEmoji?: yup.Maybe<string | undefined>;
                 title: string;
                 type: "measure-slider";
                 backgroundColor: string;
-                lowEmoji: string;
-                highEmoji: string;
             } | {
                 uid?: string | null | undefined;
                 updatedAt?: yup.Maybe<{} | undefined> | {
@@ -6438,11 +6438,11 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             title: string;
             type: "measure-slider";
             backgroundColor: string;
-            lowEmoji: string;
-            highEmoji: string;
         } | {
             uid?: string | null | undefined;
             updatedAt?: yup.Maybe<{} | undefined> | {
@@ -6997,11 +6997,11 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             title: string;
             type: "measure-slider";
             backgroundColor: string;
-            lowEmoji: string;
-            highEmoji: string;
         } | {
             uid?: string | null | undefined;
             updatedAt?: yup.Maybe<{} | undefined> | {
@@ -7555,11 +7555,11 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             title: string;
             type: "measure-slider";
             backgroundColor: string;
-            lowEmoji: string;
-            highEmoji: string;
         } | {
             uid?: string | null | undefined;
             updatedAt?: yup.Maybe<{} | undefined> | {
@@ -8142,11 +8142,11 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             title: string;
             type: "measure-slider";
             backgroundColor: string;
-            lowEmoji: string;
-            highEmoji: string;
         } | {
             uid?: string | null | undefined;
             updatedAt?: yup.Maybe<{} | undefined> | {
@@ -8699,11 +8699,11 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             title: string;
             type: "measure-slider";
             backgroundColor: string;
-            lowEmoji: string;
-            highEmoji: string;
         } | {
             uid?: string | null | undefined;
             updatedAt?: yup.Maybe<{} | undefined> | {

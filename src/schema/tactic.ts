@@ -72,8 +72,8 @@ export type VideoTactic = yup.InferType<typeof videoTacticSchema>;
 export const measureSliderTacticSchema = tacticValueBaseSchema(
   'measure-slider'
 ).shape({
-  lowEmoji: yup.string().required(),
-  highEmoji: yup.string().required(),
+  lowEmoji: yup.string().notRequired(),
+  highEmoji: yup.string().notRequired(),
 });
 
 export type MeasureSliderTactic = yup.InferType<
@@ -143,6 +143,7 @@ export const tacticSchemas: Record<
   question: questionTacticSchema,
   folder: folderTacticSchema,
   'measure-time': measureTimeTacticSchema,
+  'measure-slider': measureSliderTacticSchema,
   'measure-counter': measureCounterTacticSchema,
   breathe: breatheTacticSchema,
   steps: stepsTacticSchema,
