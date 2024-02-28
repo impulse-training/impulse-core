@@ -21,7 +21,7 @@ export const makeIssueFactory = (TimestampKlass: typeof TimestampLike) =>
         'Please suggest tactics for overcoming an impulse to watch youtube',
       suggestedTacticIds: [],
     },
-    debrief: {
+    impulseDebrief: {
       llmPrompt:
         'Please suggest tactics after overcoming an impulse to watch youtube',
       suggestedTacticIds: [],

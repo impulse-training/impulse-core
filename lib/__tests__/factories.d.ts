@@ -1,5 +1,4 @@
-import { TimestampLike } from '../utils/TimestampLike';
-export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
+export declare const factories: {
     applicationFactory: import("factory.ts").Factory<import("..").ApplicationValue, keyof import("..").ApplicationValue>;
     commentFactory: import("factory.ts").Factory<import("..").CommentValue, keyof import("..").CommentValue>;
     impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "uid" | "timezone" | "type" | "location" | "tacticsById" | "patternsById" | "startTime" | "locationIsFetching" | "strategy" | "seenTacticIds" | "completedTacticIds" | "isDisplayable" | "gameplan" | "patternId" | ("updatedAt" | "createdAt" | "steps" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "setAsActiveImpulse" | "pressCount" | "buttonPressSecondsSinceEpoch" | "outcome" | "debriefNotes" | "debriefReminderSentAt" | "debriefedAt")>;

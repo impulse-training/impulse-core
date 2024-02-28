@@ -33,11 +33,11 @@ export declare const folderTacticSchema: yup.ObjectSchema<{
     isAvailableForRecommendation: boolean | null | undefined;
     numberOfLikes: number | null | undefined;
     isSuggested: boolean | undefined;
-    nextId: string | undefined;
-    autogenerate: boolean | undefined;
     tacticIds: string[];
+    suggestedTacticIds: string[] | undefined;
     currentTacticIndex: number;
     tacticsById: {};
+    autogenerate: boolean | undefined;
 }, yup.AnyObject, {
     type: undefined;
     uid: undefined;
@@ -64,13 +64,15 @@ export declare const folderTacticSchema: yup.ObjectSchema<{
     isAvailableForRecommendation: undefined;
     numberOfLikes: undefined;
     isSuggested: undefined;
-    nextId: undefined;
-    autogenerate: undefined;
     tacticIds: "";
+    suggestedTacticIds: "";
     currentTacticIndex: undefined;
     tacticsById: {};
+    autogenerate: undefined;
 }, "">;
-export type FolderTactic = yup.InferType<typeof folderTacticSchema>;
+export type FolderTacticValue = Omit<yup.InferType<typeof folderTacticSchema>, 'tacticsById'> & {
+    tacticsById: Record<string, Exclude<TacticValue, FolderTacticValue>>;
+};
 export declare const stepsTacticSchema: yup.ObjectSchema<{
     type: "steps";
     uid: string | null | undefined;
@@ -134,7 +136,7 @@ export declare const stepsTacticSchema: yup.ObjectSchema<{
     isSuggested: undefined;
     steps: undefined;
 }, "">;
-export type StepsTactic = yup.InferType<typeof stepsTacticSchema>;
+export type StepsTacticValue = yup.InferType<typeof stepsTacticSchema>;
 export declare const emotionsTacticSchema: yup.ObjectSchema<{
     type: "emotions";
     uid: string | null | undefined;
@@ -196,7 +198,7 @@ export declare const emotionsTacticSchema: yup.ObjectSchema<{
     numberOfLikes: undefined;
     isSuggested: undefined;
 }, "">;
-export type EmotionsTactic = yup.InferType<typeof emotionsTacticSchema>;
+export type EmotionsTacticValue = yup.InferType<typeof emotionsTacticSchema>;
 export declare const audioTacticSchema: yup.ObjectSchema<{
     type: "audio";
     uid: string | null | undefined;
@@ -268,7 +270,7 @@ export declare const audioTacticSchema: yup.ObjectSchema<{
         waveform: undefined;
     };
 }, "">;
-export type AudioTactic = yup.InferType<typeof audioTacticSchema>;
+export type AudioTacticValue = yup.InferType<typeof audioTacticSchema>;
 export declare const videoTacticSchema: yup.ObjectSchema<{
     type: "video";
     uid: string | null | undefined;
@@ -346,7 +348,7 @@ export declare const videoTacticSchema: yup.ObjectSchema<{
         duration: undefined;
     };
 }, "">;
-export type VideoTactic = yup.InferType<typeof videoTacticSchema>;
+export type VideoTacticValue = yup.InferType<typeof videoTacticSchema>;
 export declare const measureSliderTacticSchema: yup.ObjectSchema<{
     type: "measure-slider";
     uid: string | null | undefined;
@@ -412,7 +414,7 @@ export declare const measureSliderTacticSchema: yup.ObjectSchema<{
     lowEmoji: undefined;
     highEmoji: undefined;
 }, "">;
-export type MeasureSliderTactic = yup.InferType<typeof measureSliderTacticSchema>;
+export type MeasureSliderTacticValue = yup.InferType<typeof measureSliderTacticSchema>;
 export declare const measureTimeTacticSchema: yup.ObjectSchema<{
     type: "measure-time";
     uid: string | null | undefined;
@@ -474,7 +476,7 @@ export declare const measureTimeTacticSchema: yup.ObjectSchema<{
     numberOfLikes: undefined;
     isSuggested: undefined;
 }, "">;
-export type MeasureTimeTactic = yup.InferType<typeof measureTimeTacticSchema>;
+export type MeasureTimeTacticValue = yup.InferType<typeof measureTimeTacticSchema>;
 export declare const measureCounterTacticSchema: yup.ObjectSchema<{
     type: "measure-counter";
     uid: string | null | undefined;
@@ -536,8 +538,8 @@ export declare const measureCounterTacticSchema: yup.ObjectSchema<{
     numberOfLikes: undefined;
     isSuggested: undefined;
 }, "">;
-export type MeasureCounterTactic = yup.InferType<typeof measureCounterTacticSchema>;
-export type MeasureTactic = MeasureSliderTactic | MeasureTimeTactic | MeasureCounterTactic;
+export type MeasureCounterTacticValue = yup.InferType<typeof measureCounterTacticSchema>;
+export type MeasureTacticValue = MeasureSliderTacticValue | MeasureTimeTacticValue | MeasureCounterTacticValue;
 export declare const phoneTacticSchema: yup.ObjectSchema<{
     type: "phone";
     uid: string | null | undefined;
@@ -673,7 +675,7 @@ export declare const breatheTacticSchema: yup.ObjectSchema<{
     outFor: undefined;
     repeat: undefined;
 }, "">;
-export type BreatheTactic = yup.InferType<typeof breatheTacticSchema>;
+export type BreatheTacticValue = yup.InferType<typeof breatheTacticSchema>;
 export declare const urgeSurfingTacticSchema: yup.ObjectSchema<{
     type: "urge-surfing";
     uid: string | null | undefined;
@@ -735,7 +737,7 @@ export declare const urgeSurfingTacticSchema: yup.ObjectSchema<{
     numberOfLikes: undefined;
     isSuggested: undefined;
 }, "">;
-export type UrgeSurfingTactic = yup.InferType<typeof urgeSurfingTacticSchema>;
+export type UrgeSurfingTacticValue = yup.InferType<typeof urgeSurfingTacticSchema>;
 export declare const taskTacticSchema: yup.ObjectSchema<{
     type: "task";
     uid: string | null | undefined;
@@ -797,7 +799,7 @@ export declare const taskTacticSchema: yup.ObjectSchema<{
     numberOfLikes: undefined;
     isSuggested: undefined;
 }, "">;
-export type TaskTactic = yup.InferType<typeof taskTacticSchema>;
+export type TaskTacticValue = yup.InferType<typeof taskTacticSchema>;
 export declare const questionTacticSchema: yup.ObjectSchema<{
     type: "question";
     uid: string | null | undefined;
@@ -859,13 +861,13 @@ export declare const questionTacticSchema: yup.ObjectSchema<{
     numberOfLikes: undefined;
     isSuggested: undefined;
 }, "">;
-export type QuestionTactic = yup.InferType<typeof questionTacticSchema>;
-export type TacticValue = PhoneTacticValue | AudioTactic | UrgeSurfingTactic | VideoTactic | QuestionTactic | TaskTactic | MeasureTactic | FolderTactic | BreatheTactic | StepsTactic | EmotionsTactic;
+export type QuestionTacticValue = yup.InferType<typeof questionTacticSchema>;
+export type TacticValue = PhoneTacticValue | AudioTacticValue | UrgeSurfingTacticValue | VideoTacticValue | QuestionTacticValue | TaskTacticValue | MeasureTacticValue | FolderTacticValue | BreatheTacticValue | StepsTacticValue | EmotionsTacticValue;
 export declare const tacticSchemas: Record<TacticValue['type'], yup.ObjectSchema<TacticValue>>;
+export declare const tacticSchema: yup.Lazy<ValidatedTactic, yup.AnyObject, any>;
 type ValidatedTactic = {
     [K in TacticValue['type']]: yup.InferType<(typeof tacticSchemas)[K]>;
 }[TacticValue['type']];
-export declare const tacticSchema: yup.Lazy<ValidatedTactic>;
 export declare const tacticColors: string[];
 export declare const isStepsTactic: ({ type }: TacticValue) => boolean;
 export declare const isEmotionsTactic: ({ type }: TacticValue) => boolean;

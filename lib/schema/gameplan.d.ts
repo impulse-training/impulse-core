@@ -100,83 +100,11 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            nextId?: string | undefined;
-            autogenerate?: boolean | undefined;
             title: string;
-            type: "folder";
+            type: "phone";
             backgroundColor: string;
-            tacticIds: string[];
-            currentTacticIndex: number;
-            tacticsById: {};
-        } | {
-            uid?: string | null | undefined;
-            updatedAt?: yup.Maybe<{} | undefined> | {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            createdAt?: yup.Maybe<{} | undefined> | {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            ordinal?: number | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            sourceId?: string | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: "steps";
-            backgroundColor: string;
-            steps: number;
-        } | {
-            uid?: string | null | undefined;
-            updatedAt?: yup.Maybe<{} | undefined> | {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            createdAt?: yup.Maybe<{} | undefined> | {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            ordinal?: number | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            sourceId?: string | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: "emotions";
-            backgroundColor: string;
+            supportGroupId: string;
+            trigger: {};
         } | {
             uid?: string | null | undefined;
             updatedAt?: yup.Maybe<{} | undefined> | {
@@ -248,6 +176,40 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
+            type: "urge-surfing";
+            backgroundColor: string;
+        } | {
+            uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            ordinal?: number | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            sourceId?: string | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
             type: "video";
             backgroundColor: string;
             video: {
@@ -258,6 +220,74 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                 thumbnailUrl: string;
                 duration: number;
             };
+        } | {
+            uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            ordinal?: number | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            sourceId?: string | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: "question";
+            backgroundColor: string;
+        } | {
+            uid?: string | null | undefined;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            createdAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            ordinal?: number | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            sourceId?: string | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: "task";
+            backgroundColor: string;
         } | {
             uid?: string | null | undefined;
             updatedAt?: yup.Maybe<{} | undefined> | {
@@ -393,11 +423,340 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
+            suggestedTacticIds?: string[] | undefined;
+            autogenerate?: boolean | undefined;
             title: string;
-            type: "phone";
+            type: "folder";
             backgroundColor: string;
-            supportGroupId: string;
-            trigger: {};
+            tacticIds: string[];
+            currentTacticIndex: number;
+            tacticsById: Record<string, {
+                uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                ordinal?: number | null | undefined;
+                isTemplate?: boolean | null | undefined;
+                sourceId?: string | undefined;
+                subtitle?: yup.Maybe<string | undefined>;
+                description?: string | null | undefined;
+                image?: {
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    storagePath?: yup.Maybe<string | undefined>;
+                    uri?: yup.Maybe<string | undefined>;
+                } | null | undefined;
+                language?: string | null | undefined;
+                href?: string | null | undefined;
+                categoryIds?: (string | undefined)[] | null | undefined;
+                isShared?: boolean | null | undefined;
+                isResponseRequired?: boolean | null | undefined;
+                timerSeconds?: yup.Maybe<number | undefined>;
+                isAvailableForRecommendation?: boolean | null | undefined;
+                numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
+                title: string;
+                type: "phone";
+                backgroundColor: string;
+                supportGroupId: string;
+                trigger: {};
+            } | {
+                uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                ordinal?: number | null | undefined;
+                isTemplate?: boolean | null | undefined;
+                sourceId?: string | undefined;
+                subtitle?: yup.Maybe<string | undefined>;
+                description?: string | null | undefined;
+                image?: {
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    storagePath?: yup.Maybe<string | undefined>;
+                    uri?: yup.Maybe<string | undefined>;
+                } | null | undefined;
+                language?: string | null | undefined;
+                href?: string | null | undefined;
+                categoryIds?: (string | undefined)[] | null | undefined;
+                isShared?: boolean | null | undefined;
+                isResponseRequired?: boolean | null | undefined;
+                timerSeconds?: yup.Maybe<number | undefined>;
+                isAvailableForRecommendation?: boolean | null | undefined;
+                numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
+                title: string;
+                type: "audio";
+                backgroundColor: string;
+                recording: {
+                    waveform?: string | null | undefined;
+                    localFilePath: string;
+                    remoteFilePath: string;
+                };
+            } | {
+                uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                ordinal?: number | null | undefined;
+                isTemplate?: boolean | null | undefined;
+                sourceId?: string | undefined;
+                subtitle?: yup.Maybe<string | undefined>;
+                description?: string | null | undefined;
+                image?: {
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    storagePath?: yup.Maybe<string | undefined>;
+                    uri?: yup.Maybe<string | undefined>;
+                } | null | undefined;
+                language?: string | null | undefined;
+                href?: string | null | undefined;
+                categoryIds?: (string | undefined)[] | null | undefined;
+                isShared?: boolean | null | undefined;
+                isResponseRequired?: boolean | null | undefined;
+                timerSeconds?: yup.Maybe<number | undefined>;
+                isAvailableForRecommendation?: boolean | null | undefined;
+                numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
+                title: string;
+                type: "urge-surfing";
+                backgroundColor: string;
+            } | {
+                uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                ordinal?: number | null | undefined;
+                isTemplate?: boolean | null | undefined;
+                sourceId?: string | undefined;
+                subtitle?: yup.Maybe<string | undefined>;
+                description?: string | null | undefined;
+                image?: {
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    storagePath?: yup.Maybe<string | undefined>;
+                    uri?: yup.Maybe<string | undefined>;
+                } | null | undefined;
+                language?: string | null | undefined;
+                href?: string | null | undefined;
+                categoryIds?: (string | undefined)[] | null | undefined;
+                isShared?: boolean | null | undefined;
+                isResponseRequired?: boolean | null | undefined;
+                timerSeconds?: yup.Maybe<number | undefined>;
+                isAvailableForRecommendation?: boolean | null | undefined;
+                numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
+                title: string;
+                type: "video";
+                backgroundColor: string;
+                video: {
+                    storagePath?: string | null | undefined;
+                    url?: string | null | undefined;
+                    title: string;
+                    description: string;
+                    thumbnailUrl: string;
+                    duration: number;
+                };
+            } | {
+                uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                ordinal?: number | null | undefined;
+                isTemplate?: boolean | null | undefined;
+                sourceId?: string | undefined;
+                subtitle?: yup.Maybe<string | undefined>;
+                description?: string | null | undefined;
+                image?: {
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    storagePath?: yup.Maybe<string | undefined>;
+                    uri?: yup.Maybe<string | undefined>;
+                } | null | undefined;
+                language?: string | null | undefined;
+                href?: string | null | undefined;
+                categoryIds?: (string | undefined)[] | null | undefined;
+                isShared?: boolean | null | undefined;
+                isResponseRequired?: boolean | null | undefined;
+                timerSeconds?: yup.Maybe<number | undefined>;
+                isAvailableForRecommendation?: boolean | null | undefined;
+                numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
+                title: string;
+                type: "question";
+                backgroundColor: string;
+            } | {
+                uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                ordinal?: number | null | undefined;
+                isTemplate?: boolean | null | undefined;
+                sourceId?: string | undefined;
+                subtitle?: yup.Maybe<string | undefined>;
+                description?: string | null | undefined;
+                image?: {
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    storagePath?: yup.Maybe<string | undefined>;
+                    uri?: yup.Maybe<string | undefined>;
+                } | null | undefined;
+                language?: string | null | undefined;
+                href?: string | null | undefined;
+                categoryIds?: (string | undefined)[] | null | undefined;
+                isShared?: boolean | null | undefined;
+                isResponseRequired?: boolean | null | undefined;
+                timerSeconds?: yup.Maybe<number | undefined>;
+                isAvailableForRecommendation?: boolean | null | undefined;
+                numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
+                title: string;
+                type: "task";
+                backgroundColor: string;
+            } | import("./tactic").MeasureTacticValue | {
+                uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                ordinal?: number | null | undefined;
+                isTemplate?: boolean | null | undefined;
+                repeat?: yup.Maybe<number | undefined>;
+                sourceId?: string | undefined;
+                subtitle?: yup.Maybe<string | undefined>;
+                description?: string | null | undefined;
+                image?: {
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    storagePath?: yup.Maybe<string | undefined>;
+                    uri?: yup.Maybe<string | undefined>;
+                } | null | undefined;
+                language?: string | null | undefined;
+                href?: string | null | undefined;
+                categoryIds?: (string | undefined)[] | null | undefined;
+                isShared?: boolean | null | undefined;
+                isResponseRequired?: boolean | null | undefined;
+                timerSeconds?: yup.Maybe<number | undefined>;
+                isAvailableForRecommendation?: boolean | null | undefined;
+                numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
+                title: string;
+                type: "breathe";
+                backgroundColor: string;
+                inFor: number;
+                holdFor: number;
+                outFor: number;
+            } | {
+                uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                ordinal?: number | null | undefined;
+                isTemplate?: boolean | null | undefined;
+                sourceId?: string | undefined;
+                subtitle?: yup.Maybe<string | undefined>;
+                description?: string | null | undefined;
+                image?: {
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    storagePath?: yup.Maybe<string | undefined>;
+                    uri?: yup.Maybe<string | undefined>;
+                } | null | undefined;
+                language?: string | null | undefined;
+                href?: string | null | undefined;
+                categoryIds?: (string | undefined)[] | null | undefined;
+                isShared?: boolean | null | undefined;
+                isResponseRequired?: boolean | null | undefined;
+                timerSeconds?: yup.Maybe<number | undefined>;
+                isAvailableForRecommendation?: boolean | null | undefined;
+                numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
+                title: string;
+                type: "steps";
+                backgroundColor: string;
+                steps: number;
+            } | {
+                uid?: string | null | undefined;
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                ordinal?: number | null | undefined;
+                isTemplate?: boolean | null | undefined;
+                sourceId?: string | undefined;
+                subtitle?: yup.Maybe<string | undefined>;
+                description?: string | null | undefined;
+                image?: {
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    storagePath?: yup.Maybe<string | undefined>;
+                    uri?: yup.Maybe<string | undefined>;
+                } | null | undefined;
+                language?: string | null | undefined;
+                href?: string | null | undefined;
+                categoryIds?: (string | undefined)[] | null | undefined;
+                isShared?: boolean | null | undefined;
+                isResponseRequired?: boolean | null | undefined;
+                timerSeconds?: yup.Maybe<number | undefined>;
+                isAvailableForRecommendation?: boolean | null | undefined;
+                numberOfLikes?: number | null | undefined;
+                isSuggested?: boolean | undefined;
+                title: string;
+                type: "emotions";
+                backgroundColor: string;
+            }>;
         } | {
             uid?: string | null | undefined;
             updatedAt?: yup.Maybe<{} | undefined> | {
@@ -468,8 +827,9 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
-            type: "urge-surfing";
+            type: "steps";
             backgroundColor: string;
+            steps: number;
         } | {
             uid?: string | null | undefined;
             updatedAt?: yup.Maybe<{} | undefined> | {
@@ -502,41 +862,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
-            type: "task";
-            backgroundColor: string;
-        } | {
-            uid?: string | null | undefined;
-            updatedAt?: yup.Maybe<{} | undefined> | {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            createdAt?: yup.Maybe<{} | undefined> | {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            ordinal?: number | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            sourceId?: string | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: "question";
+            type: "emotions";
             backgroundColor: string;
         };
     };

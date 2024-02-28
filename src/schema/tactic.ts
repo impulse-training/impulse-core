@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 import { recordingSchema } from './recording';
+import { optionalStringArray, requiredStringArray } from './utils/array';
 import { imageSchema } from './utils/image';
 import { optionalTimestampSchema } from './utils/timestamp';
 
@@ -31,27 +32,33 @@ function tacticValueBaseSchema<K extends string>(type: K) {
 }
 
 export const folderTacticSchema = tacticValueBaseSchema('folder').shape({
-  nextId: yup.string(),
-  autogenerate: yup.boolean(),
-  tacticIds: yup.array().of(yup.string().required()).required(),
+  tacticIds: requiredStringArray,
+  suggestedTacticIds: optionalStringArray,
+  // We can simply keep incrementing this number to show different tactics
   currentTacticIndex: yup.number().required(),
   // For now, we don't specify the tactic schema here, as it would lead to recursion
   tacticsById: yup.object().required(),
+  autogenerate: yup.boolean(),
 });
-export type FolderTactic = yup.InferType<typeof folderTacticSchema>;
+export type FolderTacticValue = Omit<
+  yup.InferType<typeof folderTacticSchema>,
+  'tacticsById'
+> & {
+  tacticsById: Record<string, Exclude<TacticValue, FolderTacticValue>>;
+};
 
 export const stepsTacticSchema = tacticValueBaseSchema('steps').shape({
   steps: yup.number().required(),
 });
-export type StepsTactic = yup.InferType<typeof stepsTacticSchema>;
+export type StepsTacticValue = yup.InferType<typeof stepsTacticSchema>;
 
 export const emotionsTacticSchema = tacticValueBaseSchema('emotions');
-export type EmotionsTactic = yup.InferType<typeof emotionsTacticSchema>;
+export type EmotionsTacticValue = yup.InferType<typeof emotionsTacticSchema>;
 
 export const audioTacticSchema = tacticValueBaseSchema('audio').shape({
   recording: recordingSchema.required(),
 });
-export type AudioTactic = yup.InferType<typeof audioTacticSchema>;
+export type AudioTacticValue = yup.InferType<typeof audioTacticSchema>;
 
 export const videoTacticSchema = tacticValueBaseSchema('video').shape({
   video: yup
@@ -65,7 +72,7 @@ export const videoTacticSchema = tacticValueBaseSchema('video').shape({
     })
     .required(),
 });
-export type VideoTactic = yup.InferType<typeof videoTacticSchema>;
+export type VideoTacticValue = yup.InferType<typeof videoTacticSchema>;
 
 export const measureSliderTacticSchema = tacticValueBaseSchema(
   'measure-slider'
@@ -74,23 +81,25 @@ export const measureSliderTacticSchema = tacticValueBaseSchema(
   highEmoji: yup.string().notRequired(),
 });
 
-export type MeasureSliderTactic = yup.InferType<
+export type MeasureSliderTacticValue = yup.InferType<
   typeof measureSliderTacticSchema
 >;
 
 export const measureTimeTacticSchema = tacticValueBaseSchema('measure-time');
-export type MeasureTimeTactic = yup.InferType<typeof measureTimeTacticSchema>;
+export type MeasureTimeTacticValue = yup.InferType<
+  typeof measureTimeTacticSchema
+>;
 
 export const measureCounterTacticSchema =
   tacticValueBaseSchema('measure-counter');
-export type MeasureCounterTactic = yup.InferType<
+export type MeasureCounterTacticValue = yup.InferType<
   typeof measureCounterTacticSchema
 >;
 
-export type MeasureTactic =
-  | MeasureSliderTactic
-  | MeasureTimeTactic
-  | MeasureCounterTactic;
+export type MeasureTacticValue =
+  | MeasureSliderTacticValue
+  | MeasureTimeTacticValue
+  | MeasureCounterTacticValue;
 
 export const phoneTacticSchema = tacticValueBaseSchema('phone').shape({
   supportGroupId: yup.string().required(),
@@ -104,31 +113,33 @@ export const breatheTacticSchema = tacticValueBaseSchema('breathe').shape({
   outFor: yup.number().positive().required(),
   repeat: yup.number().positive().notRequired(),
 });
-export type BreatheTactic = yup.InferType<typeof breatheTacticSchema>;
+export type BreatheTacticValue = yup.InferType<typeof breatheTacticSchema>;
 
 export const urgeSurfingTacticSchema = tacticValueBaseSchema(
   'urge-surfing'
 ).shape({});
-export type UrgeSurfingTactic = yup.InferType<typeof urgeSurfingTacticSchema>;
+export type UrgeSurfingTacticValue = yup.InferType<
+  typeof urgeSurfingTacticSchema
+>;
 
 export const taskTacticSchema = tacticValueBaseSchema('task');
-export type TaskTactic = yup.InferType<typeof taskTacticSchema>;
+export type TaskTacticValue = yup.InferType<typeof taskTacticSchema>;
 
 export const questionTacticSchema = tacticValueBaseSchema('question');
-export type QuestionTactic = yup.InferType<typeof questionTacticSchema>;
+export type QuestionTacticValue = yup.InferType<typeof questionTacticSchema>;
 
 export type TacticValue =
   | PhoneTacticValue
-  | AudioTactic
-  | UrgeSurfingTactic
-  | VideoTactic
-  | QuestionTactic
-  | TaskTactic
-  | MeasureTactic
-  | FolderTactic
-  | BreatheTactic
-  | StepsTactic
-  | EmotionsTactic;
+  | AudioTacticValue
+  | UrgeSurfingTacticValue
+  | VideoTacticValue
+  | QuestionTacticValue
+  | TaskTacticValue
+  | MeasureTacticValue
+  | FolderTacticValue
+  | BreatheTacticValue
+  | StepsTacticValue
+  | EmotionsTacticValue;
 
 // Utility to dynamically select the correct schema based on the tactic type
 export const tacticSchemas: Record<
@@ -149,16 +160,11 @@ export const tacticSchemas: Record<
   emotions: emotionsTacticSchema,
 } as any;
 
-// / This type represents the union of all possible validated tactic objects
-type ValidatedTactic = {
-  [K in TacticValue['type']]: yup.InferType<(typeof tacticSchemas)[K]>;
-}[TacticValue['type']];
-
 // This is what's used to validate tactics in our database. We set an explicit return type to ensure
 // that the conditional validation of only type doesn't infer that a tactic may only be an object
 // with only the "type" field specified. Instead, we say that it always returns a validator for the
 // known tactic types.
-export const tacticSchema: yup.Lazy<ValidatedTactic> = yup.lazy(value => {
+export const tacticSchema = yup.lazy(value => {
   if (typeof value.type === 'string' && value.type in tacticSchemas) {
     return tacticSchemas[value.type as TacticValue['type']];
   }
@@ -168,16 +174,13 @@ export const tacticSchema: yup.Lazy<ValidatedTactic> = yup.lazy(value => {
       .mixed<TacticValue['type']>()
       .oneOf(Object.keys(tacticSchemas) as TacticValue['type'][])
       .required(),
-  }) as unknown as yup.ObjectSchema<ValidatedTactic>;
-});
+  });
+}) as yup.Lazy<ValidatedTactic>;
 
-// export const tacticSchema = yup.lazy(value => {
-//   const schema = tacticSchemas[value.type as TacticValue['type']];
-//   if (schema) return schema;
-//   return yup.object({
-//     type: yup.mixed().oneOf(keys(tacticSchemas)).required(),
-//   });
-// });
+// / This type represents the union of all possible validated tactic objects
+type ValidatedTactic = {
+  [K in TacticValue['type']]: yup.InferType<(typeof tacticSchemas)[K]>;
+}[TacticValue['type']];
 
 export const tacticColors = [
   '#20303C',

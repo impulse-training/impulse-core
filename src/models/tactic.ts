@@ -1,44 +1,82 @@
-// import { TacticValue } from '../schema';
-// import { PhoneTacticValue } from '../schema/tactic';
-// import { TimestampLike } from '../utils/TimestampLike';
-// import twilioClient, { IMPULSE_NUMBER } from '../utils/twlioClient';
+import {
+  EmotionsTacticValue,
+  FolderTacticValue,
+  QuestionTacticValue,
+  TacticValue,
+} from '../schema';
+import { TimestampLike } from '../utils/TimestampLike';
 
-// abstract class Tactic {
-//   static from(
-//     id: string,
-//     value: TacticValue,
-//     TimestampClass: typeof TimestampLike
-//   ) {
-//     const Klass = value.type === 'phone' ? PhoneTactic : OtherTactic;
+export abstract class Tactic {
+  static from(id: string, value: TacticValue, T: typeof TimestampLike) {
+    switch (value.type) {
+      case 'emotions':
+        return new EmotionsTactic(id, value as EmotionsTacticValue, T);
+      case 'question':
+        return new QuestionTactic(id, value as QuestionTacticValue, T);
+      case 'folder':
+        return new FolderTactic(id, value as FolderTacticValue, T);
+      default:
+        return new OtherTactic(id, value, T);
+    }
+  }
 
-//     return new Klass(id, value, TimestampClass);
-//   }
+  get subtitle(): string | null {
+    return null;
+  }
+}
 
-//   process() {}
-// }
+class OtherTactic extends Tactic {
+  constructor(
+    private id: string,
+    private data: TacticValue,
+    private T: typeof TimestampLike
+  ) {
+    super();
+  }
+}
 
-// class OtherTactic {}
+class FolderTactic extends Tactic {
+  constructor(
+    private id: string,
+    private data: FolderTacticValue,
+    private T: typeof TimestampLike
+  ) {
+    super();
+  }
 
-// export class PhoneTactic extends Tactic {
-//   constructor(
-//     private id: string,
-//     private data: PhoneTacticValue,
-//     private TimestampClass: typeof TimestampLike
-//   ) {
-//     super();
-//   }
+  get subtitle() {
+    const { tacticIds, tacticsById } = this.data;
+    const firstTactic = tacticsById[tacticIds[0]];
+    const suffix =
+      tacticIds.length > 1 ? ` and ${tacticIds.length - 1} more` : '';
+    return firstTactic ? firstTactic.title + suffix : null;
+  }
+}
 
-//   // Make a phone call to the number provided, using Twilio
-//   process() {
-//     if (!this.data.phoneScript || !this.data.phoneNumber) return;
+class EmotionsTactic extends Tactic {
+  constructor(
+    private id: string,
+    private data: EmotionsTacticValue,
+    private T: typeof TimestampLike
+  ) {
+    super();
+  }
 
-//     twilioClient.calls.create({
-//       twiml: `<Response>
-//         <Say>${this.data.phoneScript}</Say>
-//       </Response>
-//       `,
-//       to: this.data.phoneNumber,
-//       from: IMPULSE_NUMBER,
-//     });
-//   }
-// }
+  get subtitle() {
+    return 'Check in';
+  }
+}
+
+class QuestionTactic extends Tactic {
+  constructor(
+    private id: string,
+    private data: QuestionTacticValue,
+    private T: typeof TimestampLike
+  ) {
+    super();
+  }
+
+  get subtitle() {
+    return 'Ask myself';
+  }
+}
