@@ -20,7 +20,7 @@ export interface IssueValue {
     llmPrompt: string;
     suggestedTacticIds: Array<string>;
   };
-  debrief?: {
+  impulseDebrief?: {
     llmPrompt: string;
     suggestedTacticIds: Array<string>;
   };
