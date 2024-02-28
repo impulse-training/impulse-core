@@ -226,7 +226,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: {};
         };
+        parentIssueIds?: string[] | undefined;
         tacticsById?: any;
+        recommendationsCount?: number | undefined;
         uid: string;
         impulse: {
             [x: string]: {
@@ -350,6 +352,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 } | null | undefined;
                 setbackTacticId?: yup.Maybe<string | undefined>;
                 issueId?: yup.Maybe<string | undefined>;
+                parentIssueIds?: string[] | undefined;
                 uid: string;
                 name: string;
                 ordinal: number;
@@ -379,6 +382,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             } | null | undefined;
             setbackTacticId?: yup.Maybe<string | undefined>;
             issueId?: yup.Maybe<string | undefined>;
+            parentIssueIds?: string[] | undefined;
             uid: string;
             name: string;
             ordinal: number;
@@ -441,6 +445,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         uid: undefined;
         createdAt: undefined;
         updatedAt: undefined;
+        parentIssueIds: "";
+        recommendationsCount: undefined;
         impulse: undefined;
         impulseDebrief: undefined;
         routine: undefined;
@@ -819,6 +825,7 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
             } | null | undefined;
             setbackTacticId?: yup.Maybe<string | undefined>;
             issueId?: yup.Maybe<string | undefined>;
+            parentIssueIds?: string[] | undefined;
             uid: string;
             name: string;
             ordinal: number;
@@ -1212,6 +1219,7 @@ export declare const logSchema: yup.Lazy<{
             } | null | undefined;
             setbackTacticId?: yup.Maybe<string | undefined>;
             issueId?: yup.Maybe<string | undefined>;
+            parentIssueIds?: string[] | undefined;
             uid: string;
             name: string;
             ordinal: number;
@@ -1263,7 +1271,9 @@ export declare const logSchema: yup.Lazy<{
             nanoseconds: number;
             toDate: {};
         };
+        parentIssueIds?: string[] | undefined;
         tacticsById?: any;
+        recommendationsCount?: number | undefined;
         uid: string;
         impulse: {
             [x: string]: {
@@ -1387,6 +1397,7 @@ export declare const logSchema: yup.Lazy<{
                 } | null | undefined;
                 setbackTacticId?: yup.Maybe<string | undefined>;
                 issueId?: yup.Maybe<string | undefined>;
+                parentIssueIds?: string[] | undefined;
                 uid: string;
                 name: string;
                 ordinal: number;
@@ -1623,6 +1634,7 @@ export declare const logSchema: yup.Lazy<{
             } | null | undefined;
             setbackTacticId?: yup.Maybe<string | undefined>;
             issueId?: yup.Maybe<string | undefined>;
+            parentIssueIds?: string[] | undefined;
             uid: string;
             name: string;
             ordinal: number;

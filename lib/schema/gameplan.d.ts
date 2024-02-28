@@ -30,6 +30,8 @@ export declare const gameplanSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: {};
     };
+    parentIssueIds: string[] | undefined;
+    recommendationsCount: number | undefined;
     impulse: {
         [x: string]: {
             conditionalTacticIds?: {
@@ -153,6 +155,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             } | null | undefined;
             setbackTacticId?: yup.Maybe<string | undefined>;
             issueId?: yup.Maybe<string | undefined>;
+            parentIssueIds?: string[] | undefined;
             uid: string;
             name: string;
             ordinal: number;
@@ -164,6 +167,8 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     uid: undefined;
     createdAt: undefined;
     updatedAt: undefined;
+    parentIssueIds: "";
+    recommendationsCount: undefined;
     impulse: undefined;
     impulseDebrief: undefined;
     routine: undefined;

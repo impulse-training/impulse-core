@@ -3,7 +3,7 @@ import { TimestampLike } from '../utils/TimestampLike';
 import { patternSchema } from './pattern';
 import { routineSchema } from './routine';
 import { TacticValue, WithTacticsById, tacticSchema } from './tactic';
-import { requiredStringArray } from './utils/array';
+import { optionalStringArray, requiredStringArray } from './utils/array';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema } from './utils/timestamp';
 
@@ -34,6 +34,8 @@ export const gameplanSchema = yup.object().shape({
   uid: yup.string().required(),
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
+  parentIssueIds: optionalStringArray,
+  recommendationsCount: yup.number(),
   // Strategies - these are the sequences of tactics to try, including conditional tactics
   impulse: objectOf(strategy),
   impulseDebrief: objectOf(strategy),

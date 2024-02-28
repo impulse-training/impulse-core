@@ -20,7 +20,6 @@ export interface ProfileValue {
     isCurrentlyTrackingMotion?: boolean;
     showTacticsFromSupportGroups?: boolean;
     androidPermissions?: Record<Permission, boolean>;
-    recommendationsCount?: number;
     parentIssueIds?: Array<string>;
     stepTrackingEnabled?: boolean;
     displayName?: string;

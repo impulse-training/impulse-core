@@ -1,5 +1,5 @@
 import * as Factory from 'factory.ts';
-import { NewRoutineRecommendationValue, RecommendationValue } from '../schema';
+import { RecommendationValue } from '../schema';
 import { TimestampLike } from '../utils/TimestampLike';
 
 export const makeRecommendationFactory = (
@@ -15,6 +15,7 @@ export const makeRecommendationFactory = (
     tacticsById: {},
     recommenderName: 'Michael',
     recommenderUid: 'abc123',
+    property: 'impulse',
     ordinal: 0,
     appliedAt: null,
     dismissedAt: null,
@@ -29,12 +30,13 @@ export const makeExistingRoutineRecommendationFactory = (
     updatedAt: TimestampKlass.now(),
     title: "Let's start with a distraction",
     explanation: 'You should try this!',
-    gameplanExplanation: 'Choose a time of day to review',
+    routineExplanation: 'Choose a time of day to review',
     tacticIds: [],
     tacticsById: {},
-    gameplanIds: [],
+    patternIds: [],
     recommenderName: 'Michael',
     recommenderUid: 'abc123',
+    property: 'routine',
     ordinal: 0,
     appliedAt: null,
     dismissedAt: null,
@@ -43,7 +45,7 @@ export const makeExistingRoutineRecommendationFactory = (
 export const makeNewRoutineRecommendationFactory = (
   TimestampKlass: typeof TimestampLike
 ) =>
-  Factory.makeFactory<NewRoutineRecommendationValue>({
+  Factory.makeFactory<RecommendationValue>({
     uid: Factory.each(i => i.toString()),
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
@@ -51,7 +53,8 @@ export const makeNewRoutineRecommendationFactory = (
     explanation: 'You should try this!',
     tacticIds: [],
     tacticsById: {},
-    gameplan: {
+    property: 'routine',
+    routine: {
       uid: 'abc',
       createdAt: TimestampKlass.now(),
       updatedAt: TimestampKlass.now(),

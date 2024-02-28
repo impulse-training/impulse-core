@@ -1,46 +1,41 @@
-import { TimestampLike } from '../utils/TimestampLike';
+import * as yup from 'yup';
 import {
-  DayDebriefRoutineValue,
-  LocationRoutineValue,
-  TimeRoutineValue,
+  dayDebriefRoutineSchema,
+  locationRoutineSchema,
+  timeRoutineSchema,
 } from './routine';
-import { TacticValue } from './tactic';
+import { WithTacticsById, tacticSchema } from './tactic';
+import { requiredStringArray } from './utils/array';
+import { objectOf } from './utils/objectOf';
+import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
 
-export interface RecommendationValueBase {
-  uid: string;
-  ordinal: number;
-  title: string;
-  explanation: string;
-  gameplanExplanation?: string;
-  recommenderUid: string;
-  recommenderName: string;
-  createdAt: TimestampLike;
-  updatedAt: TimestampLike;
-  appliedAt: TimestampLike | null;
-  dismissedAt: TimestampLike | null;
-  tacticIds: Array<string>;
-  tacticsById: Record<string, TacticValue>;
-  ruleId?: string;
-  // This property is actually a hack to work around an issue with factory type protection with the
-  // union type
-  gameplanIds?: Array<string>;
-  defaultSelected?: 'all' | 'first' | 'none'; // undefined means 'none'
-}
+export const recommendationSchema = yup.object().shape({
+  uid: yup.string().required(),
+  ordinal: yup.number().required(),
+  title: yup.string().required(),
+  explanation: yup.string().required(),
+  routineExplanation: yup.string().nullable(),
+  recommenderUid: yup.string().required(),
+  recommenderName: yup.string().required(),
+  createdAt: timestampSchema,
+  updatedAt: timestampSchema,
+  appliedAt: optionalTimestampSchema,
+  dismissedAt: optionalTimestampSchema,
+  tacticIds: requiredStringArray,
+  tacticsById: objectOf(tacticSchema) as any,
+  property: yup
+    .mixed<'impulse' | 'impulseDebrief' | 'routine'>()
+    .oneOf(['impulse', 'impulseDebrief', 'routine'])
+    .required(),
+  ruleId: yup.string().nullable(),
+  routine: yup
+    .mixed()
+    .oneOf([timeRoutineSchema, locationRoutineSchema, dayDebriefRoutineSchema])
+    .notRequired(),
+  patternIds: yup.array().of(yup.string()).notRequired(),
+  defaultSelected: yup.mixed().oneOf(['all', 'first']).nullable(),
+});
 
-// These recommendations are to create a new gameplan that includes tactics. For example, "Reminder
-// to wear your impulse button every morning at 8am". In this case the gameplan property would
-// specify a time gameplan for every day at 8am, and the tactics fields would specify the reminder
-// to wear the impulse button.
-export type NewRoutineRecommendationValue = RecommendationValueBase & {
-  gameplan: TimeRoutineValue | LocationRoutineValue | DayDebriefRoutineValue;
-};
-
-// These recommendations are for additional tactics to add to an existing gameplan.
-export type ExistingRoutineRecommendationValue = RecommendationValueBase & {
-  // This field is required, but omitted for template recommendations
-  gameplanIds?: Array<string>;
-};
-
-export type RecommendationValue =
-  | NewRoutineRecommendationValue
-  | ExistingRoutineRecommendationValue;
+export type RecommendationValue = WithTacticsById<
+  yup.InferType<typeof recommendationSchema>
+>;

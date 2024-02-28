@@ -1,28 +1,29 @@
-import * as Yup from 'yup';
-export declare const patternSchema: Yup.ObjectSchema<{
+import * as yup from 'yup';
+export declare const patternSchema: yup.ObjectSchema<{
     uid: string;
-    updatedAt: Yup.Maybe<{} | undefined> | {
+    updatedAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    createdAt: Yup.Maybe<{} | undefined> | {
+    createdAt: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
     name: string;
     ordinal: number;
-    supportGroupIds: Yup.Maybe<(string | undefined)[] | undefined>;
+    supportGroupIds: yup.Maybe<(string | undefined)[] | undefined>;
     notification: {
         title: string;
         body: string;
     } | null | undefined;
-    setbackTacticId: Yup.Maybe<string | undefined>;
+    setbackTacticId: yup.Maybe<string | undefined>;
     setbackThreshold: number;
-    issueId: Yup.Maybe<string | undefined>;
+    issueId: yup.Maybe<string | undefined>;
+    parentIssueIds: string[] | undefined;
     sendWeeklyReports: NonNullable<boolean | undefined>;
-}, Yup.AnyObject, {
+}, yup.AnyObject, {
     uid: undefined;
     updatedAt: undefined;
     createdAt: undefined;
@@ -36,6 +37,7 @@ export declare const patternSchema: Yup.ObjectSchema<{
     setbackTacticId: undefined;
     setbackThreshold: undefined;
     issueId: undefined;
+    parentIssueIds: "";
     sendWeeklyReports: undefined;
 }, "">;
-export type PatternValue = Yup.InferType<typeof patternSchema>;
+export type PatternValue = yup.InferType<typeof patternSchema>;

@@ -9,7 +9,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
     debriefLogFactory: import("factory.ts").Factory<import("..").DebriefLogValue, "uid" | "updatedAt" | "createdAt" | "timezone" | "type" | "location" | "tacticsById" | "steps" | "patternsById" | "startTime" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "routineId" | "tacticDataEntries">;
     locationFactory: import("factory.ts").Factory<import("..").LocationValue, keyof import("..").LocationValue>;
     profileFactory: import("factory.ts").Factory<import("..").ProfileValue, keyof import("..").ProfileValue>;
-    gameplanFactory: import("factory.ts").Factory<import("..").GameplanValue, "uid" | "updatedAt" | "createdAt" | "tacticsById" | "impulse" | "impulseDebrief" | "routine" | "routinesById" | "patternsById">;
+    gameplanFactory: import("factory.ts").Factory<import("..").GameplanValue, "uid" | "updatedAt" | "createdAt" | "parentIssueIds" | "tacticsById" | "recommendationsCount" | "impulse" | "impulseDebrief" | "routine" | "routinesById" | "patternsById">;
     issueFactory: import("factory.ts").Factory<import("..").IssueValue, keyof import("..").IssueValue>;
     adminProfileFactory: import("factory.ts").Factory<import("..").ProfileValue, keyof import("..").ProfileValue>;
     supportGroupFactory: import("factory.ts").Factory<{
@@ -112,12 +112,13 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         } | null | undefined;
         setbackTacticId?: import("yup").Maybe<string | undefined>;
         issueId?: import("yup").Maybe<string | undefined>;
+        parentIssueIds?: string[] | undefined;
         uid: string;
         name: string;
         ordinal: number;
         setbackThreshold: number;
         sendWeeklyReports: NonNullable<boolean | undefined>;
-    }, "uid" | "name" | "ordinal" | "setbackThreshold" | "sendWeeklyReports" | ("updatedAt" | "createdAt" | "supportGroupIds" | "notification" | "setbackTacticId" | "issueId")>;
+    }, "uid" | "name" | "ordinal" | "setbackThreshold" | "sendWeeklyReports" | ("updatedAt" | "createdAt" | "supportGroupIds" | "notification" | "setbackTacticId" | "issueId" | "parentIssueIds")>;
     locationRoutineFactory: import("factory.ts").Factory<{
         updatedAt?: import("yup").Maybe<{} | undefined> | {
             seconds: number;
@@ -138,9 +139,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         type: "location";
         mode: {};
     }, "uid" | "type" | "mode" | ("updatedAt" | "createdAt" | "title" | "navigationTitle" | "isTemplate" | "timezone" | "locationId")>;
-    recommendationFactory: import("factory.ts").Factory<import("..").RecommendationValue, "uid" | "updatedAt" | "createdAt" | "ordinal" | "title" | "tacticIds" | "tacticsById" | "appliedAt" | "dismissedAt" | "explanation" | "gameplanExplanation" | "recommenderUid" | "recommenderName" | "ruleId" | "gameplanIds" | "defaultSelected">;
-    recommendationRuleFactory: import("factory.ts").Factory<import("..").RecommendationRuleValue, keyof import("..").RecommendationRuleValue>;
-    newRoutineRecommendationRuleFactory: import("factory.ts").Factory<import("..").RecommendationRuleValue, keyof import("..").RecommendationRuleValue>;
+    recommendationFactory: import("factory.ts").Factory<import("..").RecommendationValue, "uid" | "updatedAt" | "createdAt" | "ordinal" | "title" | "tacticIds" | "tacticsById" | "routine" | "explanation" | "routineExplanation" | "recommenderUid" | "recommenderName" | "appliedAt" | "dismissedAt" | "property" | "ruleId" | "patternIds" | "defaultSelected">;
+    recommendationRuleFactory: import("factory.ts").Factory<import("..").RecommendationRuleValue, "uid" | "updatedAt" | "createdAt" | "ordinal" | "recommendation" | "forIssueIds" | ("issueNames" | "issueNamesSummary" | "recommendationSummary")>;
+    newRoutineRecommendationRuleFactory: import("factory.ts").Factory<import("..").RecommendationRuleValue, "uid" | "updatedAt" | "createdAt" | "ordinal" | "recommendation" | "forIssueIds" | ("issueNames" | "issueNamesSummary" | "recommendationSummary")>;
     tacticFactory: import("factory.ts").Factory<{
         uid?: string | null | undefined;
         updatedAt?: import("yup").Maybe<{} | undefined> | {

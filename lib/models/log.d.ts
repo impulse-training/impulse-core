@@ -22,6 +22,7 @@ export declare class Log {
         } | null | undefined;
         setbackTacticId?: import("yup").Maybe<string | undefined>;
         issueId?: import("yup").Maybe<string | undefined>;
+        parentIssueIds?: string[] | undefined;
         uid: string;
         name: string;
         ordinal: number;

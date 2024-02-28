@@ -1,15 +1,52 @@
-import { TimestampLike } from '../utils/TimestampLike';
+import * as yup from 'yup';
 import { RecommendationValue } from './recommendation';
-import { RoutineValue } from './routine';
-export interface RecommendationRuleValue {
-    recommendation: Omit<RecommendationValue, 'uid' | 'ordinal' | 'createdAt' | 'updatedAt' | 'appliedAt' | 'dismissedAt'>;
-    forIssueIds: Array<string>;
-    forType: RoutineValue['type'];
-    issueNames?: Record<string, string>;
-    issueNamesSummary?: string;
-    recommendationSummary?: string;
+import { WithTacticsById } from './tactic';
+export declare const recommendationRuleSchema: yup.ObjectSchema<{
+    recommendation: {
+        [x: string]: unknown;
+        [x: number]: unknown;
+    };
+    forIssueIds: string[];
+    issueNames: {
+        [x: string]: string | undefined;
+    } | null | undefined;
+    issueNamesSummary: string | null | undefined;
+    recommendationSummary: string | null | undefined;
     uid: string;
     ordinal: number;
-    createdAt: TimestampLike;
-    updatedAt: TimestampLike;
-}
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+}, yup.AnyObject, {
+    recommendation: {
+        [x: string]: undefined;
+    };
+    forIssueIds: "";
+    issueNames: undefined;
+    issueNamesSummary: undefined;
+    recommendationSummary: undefined;
+    uid: undefined;
+    ordinal: undefined;
+    createdAt: {
+        seconds: undefined;
+        nanoseconds: undefined;
+        toDate: undefined;
+    };
+    updatedAt: {
+        seconds: undefined;
+        nanoseconds: undefined;
+        toDate: undefined;
+    };
+}, "">;
+type RecommendationRuleValueBase = yup.InferType<typeof recommendationRuleSchema>;
+export type RecommendationRuleValue = Omit<RecommendationRuleValueBase, 'recommendation'> & {
+    recommendation: WithTacticsById<Omit<RecommendationValue, 'uid' | 'ordinal' | 'createdAt' | 'updatedAt' | 'appliedAt' | 'dismissedAt'>>;
+};
+export {};

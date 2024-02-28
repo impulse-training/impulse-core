@@ -18,9 +18,10 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
     } | null | undefined;
     setbackTacticId?: import("yup").Maybe<string | undefined>;
     issueId?: import("yup").Maybe<string | undefined>;
+    parentIssueIds?: string[] | undefined;
     uid: string;
     name: string;
     ordinal: number;
     setbackThreshold: number;
     sendWeeklyReports: NonNullable<boolean | undefined>;
-}, "uid" | "name" | "ordinal" | "setbackThreshold" | "sendWeeklyReports" | ("updatedAt" | "createdAt" | "supportGroupIds" | "notification" | "setbackTacticId" | "issueId")>;
+}, "uid" | "name" | "ordinal" | "setbackThreshold" | "sendWeeklyReports" | ("updatedAt" | "createdAt" | "supportGroupIds" | "notification" | "setbackTacticId" | "issueId" | "parentIssueIds")>;

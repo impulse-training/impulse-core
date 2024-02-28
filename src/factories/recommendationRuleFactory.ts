@@ -1,6 +1,5 @@
 import * as Factory from 'factory.ts';
-import { NewRoutineRecommendationValue } from '../schema';
-import { RecommendationRuleValue } from '../schema/recommendationRule';
+import { RecommendationRuleValue } from '../schema';
 import { TimestampLike } from '../utils/TimestampLike';
 
 export const makeRecommendationRuleFactory = (
@@ -19,14 +18,14 @@ export const makeRecommendationRuleFactory = (
     recommendation: {
       title: "Let's start with a distraction",
       explanation: 'You should try this!',
-      gameplanExplanation: 'Choose a time of day to review',
+      routineExplanation: 'Choose a time of day to review',
       tacticIds: [],
       tacticsById: {},
-      gameplanIds: [],
+      patternIds: [],
       recommenderName: 'Michael',
       recommenderUid: 'abc123',
+      property: 'impulseDebrief',
     },
-    forType: 'dayDebrief',
     forIssueIds: [],
     ordinal: 0,
   });
@@ -49,7 +48,8 @@ export const makeNewRoutineRecommendationRuleFactory = (
       explanation: 'You should try this!',
       tacticIds: [],
       tacticsById: {},
-      gameplan: {
+      property: 'routine',
+      routine: {
         uid: 'abc',
         createdAt: TimestampKlass.now(),
         updatedAt: TimestampKlass.now(),
@@ -64,11 +64,7 @@ export const makeNewRoutineRecommendationRuleFactory = (
       },
       recommenderName: 'Michael',
       recommenderUid: 'abc123',
-      ordinal: 0,
-      appliedAt: null,
-      dismissedAt: null,
-    } as Omit<NewRoutineRecommendationValue, 'createdAt' | 'updatedAt' | 'uid'>,
-    forType: 'dayDebrief',
+    },
     forIssueIds: [],
     ordinal: 0,
   });
