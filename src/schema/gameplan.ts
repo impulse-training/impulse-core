@@ -2,7 +2,7 @@ import * as yup from 'yup';
 import { TimestampLike } from '../utils/TimestampLike';
 import { patternSchema } from './pattern';
 import { routineSchema } from './routine';
-import { tacticSchema } from './tactic';
+import { TacticValue, WithTacticsById, tacticSchema } from './tactic';
 import { requiredStringArray } from './utils/array';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema } from './utils/timestamp';
@@ -39,12 +39,15 @@ export const gameplanSchema = yup.object().shape({
   impulseDebrief: objectOf(strategy),
   routine: objectOf(strategy),
   // Data - we keep copies of relevant data on the gameplan document, for performance reasons
-  tacticsById: objectOf(tacticSchema),
+  tacticsById: objectOf(tacticSchema) as any,
   routinesById: objectOf(routineSchema),
   patternsById: objectOf(patternSchema),
 });
 
-type WithTypes<T extends yup.ISchema<unknown>> = yup.InferType<T> & {
+type WithTypes<T extends yup.ISchema<unknown>> = WithTacticsById<
+  yup.InferType<T>
+> & {
   createdAt: TimestampLike;
   updatedAt: TimestampLike;
+  tacticsById: Record<string, TacticValue>;
 };

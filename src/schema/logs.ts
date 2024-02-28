@@ -4,7 +4,7 @@ import * as yup from 'yup';
 import { TimestampLike } from '../utils/TimestampLike';
 import { gameplanSchema, strategy } from './gameplan';
 import { patternSchema } from './pattern';
-import { tacticSchema } from './tactic';
+import { TacticValue, WithTacticsById, tacticSchema } from './tactic';
 import { requiredStringArray } from './utils/array';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
@@ -47,7 +47,10 @@ const baseLogSchema = yup.object().shape({
     main: strategy.required(),
     impulseDebrief: strategy.notRequired(),
   }),
-  tacticsById: objectOf(tacticSchema),
+  // Tactics are a complex union type. We omit this key from the base log schema and add it back in
+  // using typescript, so we just "neuter" it here to tell typescript to relax. This saves 10k+
+  // lines of type annotations in the generated typescript file.
+  tacticsById: objectOf(tacticSchema) as any,
   seenTacticIds: requiredStringArray,
   completedTacticIds: requiredStringArray,
   tacticLikes: optionalObjectOf(yup.boolean().required()),
@@ -66,10 +69,13 @@ const baseLogSchema = yup.object().shape({
 });
 // This is important to prevent typescript generating a 40k line file :/
 
-type WithTypes<T extends yup.ISchema<unknown>> = yup.InferType<T> & {
+type WithTypes<T extends yup.ISchema<unknown>> = WithTacticsById<
+  yup.InferType<T>
+> & {
   createdAt: TimestampLike;
   updatedAt: TimestampLike;
   startTime: TimestampLike;
+  tacticsById: Record<string, TacticValue>;
 };
 
 export type ImpulseLogValue = WithTypes<typeof impulseLogSchema>;

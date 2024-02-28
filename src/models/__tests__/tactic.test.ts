@@ -8,7 +8,7 @@ describe('Tactic', () => {
       it('should return a description for a folder tactic with multiple child tactics', () => {
         const tactic = Tactic.from(
           '1',
-          factories.folderTactic.build({
+          factories.folderTacticFactory.build({
             tacticIds: ['1', '2', '3'],
             tacticsById: {
               1: factories.tacticFactory.build({ title: 'Go for a walk' }),
@@ -24,7 +24,7 @@ describe('Tactic', () => {
       it('should return a description for a folder tactic with one child tactic', () => {
         const tactic = Tactic.from(
           '1',
-          factories.folderTactic.build({
+          factories.folderTacticFactory.build({
             tacticIds: ['1'],
             tacticsById: {
               1: factories.tacticFactory.build({ title: 'Go for a walk' }),
@@ -38,7 +38,7 @@ describe('Tactic', () => {
       it('should return null for a folder tactic with no child tactic', () => {
         const tactic = Tactic.from(
           '1',
-          factories.folderTactic.build({
+          factories.folderTacticFactory.build({
             tacticIds: [],
             tacticsById: {},
           }),
