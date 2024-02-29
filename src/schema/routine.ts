@@ -2,15 +2,14 @@ import * as yup from 'yup';
 import { optionalTimestampSchema } from './utils/timestamp';
 
 type Inferred<T extends yup.ISchema<unknown>> = yup.InferType<T>;
-export type Routine = Inferred<typeof routineBaseSchema>;
 
 // Base schema for RoutineValueBase
 const routineBaseSchema = yup.object({
   uid: yup.string().required(),
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
-  title: yup.string().nullable(),
-  navigationTitle: yup.string().nullable(),
+  title: yup.string().required(),
+  summary: yup.string().required(),
   isTemplate: yup.boolean().nullable(),
   timezone: yup.string().nullable(),
 });

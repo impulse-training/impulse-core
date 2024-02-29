@@ -17,7 +17,6 @@ export const makeRecommendationRuleFactory = (
     // :)
     recommendation: {
       title: "Let's start with a distraction",
-      explanation: 'You should try this!',
       routineExplanation: 'Choose a time of day to review',
       tacticIds: [],
       tacticsById: {},
@@ -45,7 +44,6 @@ export const makeNewRoutineRecommendationRuleFactory = (
     // :)
     recommendation: {
       title: "Let's start with a distraction",
-      explanation: 'You should try this!',
       tacticIds: [],
       tacticsById: {},
       property: 'routine',

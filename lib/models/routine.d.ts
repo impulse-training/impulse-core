@@ -3,8 +3,9 @@ import { DayDebriefRoutineValue, LocationRoutineValue, RoutineValue, TimeRoutine
 export declare const SHORT_DAYS: {
     [key: number]: string;
 };
-declare abstract class Routine {
+export declare abstract class Routine {
     abstract get summary(): string | null;
+    static from(id: string, routine: RoutineValue, location?: LocationValue): TimeRoutine | DayDebriefRoutine | LocationRoutine;
 }
 export declare class TimeRoutine extends Routine {
     private id;
@@ -13,7 +14,8 @@ export declare class TimeRoutine extends Routine {
     static DAYS: {
         [key: number]: string;
     };
-    get summary(): string | null;
+    get title(): string;
+    get summary(): string;
 }
 export declare class DayDebriefRoutine extends Routine {
     private id;
@@ -22,14 +24,14 @@ export declare class DayDebriefRoutine extends Routine {
     static DAYS: {
         [key: number]: string;
     };
+    get title(): string;
     get summary(): string;
 }
 export declare class LocationRoutine extends Routine {
     private id;
     private data;
-    private location;
-    constructor(id: string, data: LocationRoutineValue, location: LocationValue);
+    private location?;
+    constructor(id: string, data: LocationRoutineValue, location?: LocationValue | undefined);
+    get title(): string;
     get summary(): string;
 }
-export declare function gameplanToClass(id: string, gameplan: RoutineValue, location?: LocationValue): TimeRoutine | DayDebriefRoutine | LocationRoutine;
-export {};

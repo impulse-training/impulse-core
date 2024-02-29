@@ -28,8 +28,20 @@ const LONG_DAYS = [
   'Saturdays',
 ];
 
-abstract class Routine {
+export abstract class Routine {
   abstract get summary(): string | null;
+
+  static from(id: string, routine: RoutineValue, location?: LocationValue) {
+    if (routine.type === 'time') {
+      return new TimeRoutine(id, routine as TimeRoutineValue);
+    } else if (routine.type === 'dayDebrief') {
+      return new DayDebriefRoutine(id, routine as DayDebriefRoutineValue);
+    } else if (routine.type === 'location') {
+      return new LocationRoutine(id, routine as LocationRoutineValue, location);
+    } else {
+      throw new Error('Invalid routine');
+    }
+  }
 }
 
 export class TimeRoutine extends Routine {
@@ -39,8 +51,13 @@ export class TimeRoutine extends Routine {
 
   static DAYS = SHORT_DAYS;
 
+  // Title is a cut-down version of the summary
+  get title() {
+    return 'Scheduled gameplan';
+  }
+
   get summary() {
-    if (!this.data.weekdays?.length) return null;
+    if (!this.data.weekdays?.length) return '';
     const weekdays = this.data.weekdays.sort();
     const weekdayNames = weekdays.map(dayNumber => LONG_DAYS[dayNumber]);
 
@@ -82,6 +99,10 @@ export class DayDebriefRoutine extends Routine {
 
   static DAYS = SHORT_DAYS;
 
+  get title() {
+    return this.summary;
+  }
+
   get summary() {
     return 'Daily debrief';
   }
@@ -91,9 +112,13 @@ export class LocationRoutine extends Routine {
   constructor(
     private id: string,
     private data: LocationRoutineValue,
-    private location: LocationValue
+    private location?: LocationValue
   ) {
     super();
+  }
+
+  get title() {
+    return this.summary;
   }
 
   get summary() {
@@ -104,23 +129,5 @@ export class LocationRoutine extends Routine {
         ' ' +
         this.location.name || '...'
     );
-  }
-}
-
-// TODO: this doesn't support other gameplan types yet
-export function gameplanToClass(
-  id: string,
-  gameplan: RoutineValue,
-  location?: LocationValue
-) {
-  if (gameplan.type === 'time') {
-    return new TimeRoutine(id, gameplan as TimeRoutineValue);
-  } else if (gameplan.type === 'dayDebrief') {
-    return new DayDebriefRoutine(id, gameplan as DayDebriefRoutineValue);
-  } else if (gameplan.type === 'location') {
-    if (!location) throw new Error('no location');
-    return new LocationRoutine(id, gameplan as LocationRoutineValue, location);
-  } else {
-    throw new Error('Invalid routine');
   }
 }

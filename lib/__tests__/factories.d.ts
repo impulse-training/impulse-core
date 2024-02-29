@@ -59,17 +59,17 @@ export declare const factories: {
             nanoseconds: number;
             toDate: {};
         };
-        title?: string | null | undefined;
-        navigationTitle?: string | null | undefined;
         isTemplate?: boolean | null | undefined;
         scheduledNotificationIds?: string[] | null | undefined;
         uid: string;
+        title: string;
+        summary: string;
         timezone: string;
         type: "dayDebrief";
         weekdays: number[];
         hour: number;
         minute: number;
-    }, "uid" | "timezone" | "type" | "weekdays" | "hour" | "minute" | ("updatedAt" | "createdAt" | "title" | "navigationTitle" | "isTemplate" | "scheduledNotificationIds")>;
+    }, "uid" | "title" | "summary" | "timezone" | "type" | "weekdays" | "hour" | "minute" | ("updatedAt" | "createdAt" | "isTemplate" | "scheduledNotificationIds")>;
     messageFactory: import("factory.ts").Factory<import("..").MessageValue, keyof import("..").MessageValue>;
     timeRoutineFactory: import("factory.ts").Factory<{
         updatedAt?: import("yup").Maybe<{} | undefined> | {
@@ -82,17 +82,17 @@ export declare const factories: {
             nanoseconds: number;
             toDate: {};
         };
-        title?: string | null | undefined;
-        navigationTitle?: string | null | undefined;
         isTemplate?: boolean | null | undefined;
         scheduledNotificationIds?: string[] | null | undefined;
         uid: string;
+        title: string;
+        summary: string;
         timezone: string;
         type: "time";
         weekdays: number[];
         hour: number;
         minute: number;
-    }, "uid" | "timezone" | "type" | "weekdays" | "hour" | "minute" | ("updatedAt" | "createdAt" | "title" | "navigationTitle" | "isTemplate" | "scheduledNotificationIds")>;
+    }, "uid" | "title" | "summary" | "timezone" | "type" | "weekdays" | "hour" | "minute" | ("updatedAt" | "createdAt" | "isTemplate" | "scheduledNotificationIds")>;
     patternFactory: import("factory.ts").Factory<{
         updatedAt?: import("yup").Maybe<{} | undefined> | {
             seconds: number;
@@ -129,16 +129,16 @@ export declare const factories: {
             nanoseconds: number;
             toDate: {};
         };
-        title?: string | null | undefined;
-        navigationTitle?: string | null | undefined;
         isTemplate?: boolean | null | undefined;
         timezone?: string | null | undefined;
         locationId?: string | null | undefined;
         uid: string;
+        title: string;
+        summary: string;
         type: "location";
         mode: {};
-    }, "uid" | "type" | "mode" | ("updatedAt" | "createdAt" | "title" | "navigationTitle" | "isTemplate" | "timezone" | "locationId")>;
-    recommendationFactory: import("factory.ts").Factory<import("..").RecommendationValue, "uid" | "updatedAt" | "createdAt" | "ordinal" | "title" | "tacticIds" | "tacticsById" | "routine" | "explanation" | "routineExplanation" | "recommenderUid" | "recommenderName" | "appliedAt" | "dismissedAt" | "property" | "ruleId" | "patternIds" | "defaultSelected">;
+    }, "uid" | "title" | "summary" | "type" | "mode" | ("updatedAt" | "createdAt" | "isTemplate" | "timezone" | "locationId")>;
+    recommendationFactory: import("factory.ts").Factory<import("..").RecommendationValue, "uid" | "updatedAt" | "createdAt" | "ordinal" | "title" | "tacticIds" | "tacticsById" | "routine" | "routineExplanation" | "recommenderUid" | "recommenderName" | "appliedAt" | "dismissedAt" | "property" | "ruleId" | "patternIds">;
     recommendationRuleFactory: import("factory.ts").Factory<import("..").RecommendationRuleValue, "uid" | "updatedAt" | "createdAt" | "ordinal" | "recommendation" | "forIssueIds" | ("issueNames" | "issueNamesSummary" | "recommendationSummary")>;
     newRoutineRecommendationRuleFactory: import("factory.ts").Factory<import("..").RecommendationRuleValue, "uid" | "updatedAt" | "createdAt" | "ordinal" | "recommendation" | "forIssueIds" | ("issueNames" | "issueNamesSummary" | "recommendationSummary")>;
     tacticFactory: import("factory.ts").Factory<{

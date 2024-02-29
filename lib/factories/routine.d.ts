@@ -11,15 +11,15 @@ export declare const makeLocationRoutineFactory: (TimestampKlass: typeof Timesta
         nanoseconds: number;
         toDate: {};
     };
-    title?: string | null | undefined;
-    navigationTitle?: string | null | undefined;
     isTemplate?: boolean | null | undefined;
     timezone?: string | null | undefined;
     locationId?: string | null | undefined;
     uid: string;
+    title: string;
+    summary: string;
     type: "location";
     mode: {};
-}, "uid" | "type" | "mode" | ("updatedAt" | "createdAt" | "title" | "navigationTitle" | "isTemplate" | "timezone" | "locationId")>;
+}, "uid" | "title" | "summary" | "type" | "mode" | ("updatedAt" | "createdAt" | "isTemplate" | "timezone" | "locationId")>;
 export declare const makeTimeRoutineFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     updatedAt?: import("yup").Maybe<{} | undefined> | {
         seconds: number;
@@ -31,17 +31,17 @@ export declare const makeTimeRoutineFactory: (TimestampKlass: typeof TimestampLi
         nanoseconds: number;
         toDate: {};
     };
-    title?: string | null | undefined;
-    navigationTitle?: string | null | undefined;
     isTemplate?: boolean | null | undefined;
     scheduledNotificationIds?: string[] | null | undefined;
     uid: string;
+    title: string;
+    summary: string;
     timezone: string;
     type: "time";
     weekdays: number[];
     hour: number;
     minute: number;
-}, "uid" | "timezone" | "type" | "weekdays" | "hour" | "minute" | ("updatedAt" | "createdAt" | "title" | "navigationTitle" | "isTemplate" | "scheduledNotificationIds")>;
+}, "uid" | "title" | "summary" | "timezone" | "type" | "weekdays" | "hour" | "minute" | ("updatedAt" | "createdAt" | "isTemplate" | "scheduledNotificationIds")>;
 export declare const makeDebriefRoutineFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     updatedAt?: import("yup").Maybe<{} | undefined> | {
         seconds: number;
@@ -53,14 +53,14 @@ export declare const makeDebriefRoutineFactory: (TimestampKlass: typeof Timestam
         nanoseconds: number;
         toDate: {};
     };
-    title?: string | null | undefined;
-    navigationTitle?: string | null | undefined;
     isTemplate?: boolean | null | undefined;
     scheduledNotificationIds?: string[] | null | undefined;
     uid: string;
+    title: string;
+    summary: string;
     timezone: string;
     type: "dayDebrief";
     weekdays: number[];
     hour: number;
     minute: number;
-}, "uid" | "timezone" | "type" | "weekdays" | "hour" | "minute" | ("updatedAt" | "createdAt" | "title" | "navigationTitle" | "isTemplate" | "scheduledNotificationIds")>;
+}, "uid" | "title" | "summary" | "timezone" | "type" | "weekdays" | "hour" | "minute" | ("updatedAt" | "createdAt" | "isTemplate" | "scheduledNotificationIds")>;

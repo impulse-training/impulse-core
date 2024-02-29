@@ -6,7 +6,7 @@ describe('Routine classes', () => {
   describe('TimeRoutine', () => {
     describe('summary', () => {
       it('should return null if weekdays array is empty', () => {
-        const gameplan = new TimeRoutine('1', {
+        const routine = new TimeRoutine('1', {
           uid,
           createdAt: new Date() as any,
           updatedAt: new Date() as any,
@@ -15,12 +15,14 @@ describe('Routine classes', () => {
           weekdays: [],
           hour: 12,
           minute: 0,
+          summary: '',
+          title: '',
         });
-        expect(gameplan.summary).toBeNull();
+        expect(routine.summary).toBeNull();
       });
 
       it('should return the correct summary for every day', () => {
-        const gameplan = new TimeRoutine('1', {
+        const routine = new TimeRoutine('1', {
           uid,
           createdAt: new Date() as any,
           updatedAt: new Date() as any,
@@ -29,12 +31,14 @@ describe('Routine classes', () => {
           weekdays: [1, 2, 3, 4, 5, 6, 7],
           hour: 12,
           minute: 0,
+          summary: '',
+          title: '',
         });
-        expect(gameplan.summary).toBe('Every day at 12:00 PM');
+        expect(routine.summary).toBe('Every day at 12:00 PM');
       });
 
       it('should return the correct summary for every weekday', () => {
-        const gameplan = new TimeRoutine('1', {
+        const routine = new TimeRoutine('1', {
           uid,
           createdAt: new Date() as any,
           updatedAt: new Date() as any,
@@ -43,12 +47,14 @@ describe('Routine classes', () => {
           weekdays: [2, 3, 4, 5, 6],
           hour: 12,
           minute: 0,
+          summary: '',
+          title: '',
         });
-        expect(gameplan.summary).toBe('Every weekday at 12:00 PM');
+        expect(routine.summary).toBe('Every weekday at 12:00 PM');
       });
 
       it('should return the correct summary for specific weekdays', () => {
-        const gameplan = new TimeRoutine('1', {
+        const routine = new TimeRoutine('1', {
           uid,
           createdAt: new Date() as any,
           updatedAt: new Date() as any,
@@ -57,14 +63,16 @@ describe('Routine classes', () => {
           weekdays: [1, 3, 5],
           hour: 12,
           minute: 0,
+          summary: '',
+          title: '',
         });
-        expect(gameplan.summary).toBe(
+        expect(routine.summary).toBe(
           'Sundays, Tuesdays, and Thursdays at 12:00 PM'
         );
       });
 
       it('should return the correct summary for specific weekdays', () => {
-        const gameplan = new TimeRoutine('1', {
+        const routine = new TimeRoutine('1', {
           uid,
           createdAt: new Date() as any,
           updatedAt: new Date() as any,
@@ -73,12 +81,14 @@ describe('Routine classes', () => {
           weekdays: [3, 2, 4, 6, 5],
           hour: 1,
           minute: 0,
+          summary: '',
+          title: '',
         });
-        expect(gameplan.summary).toBe('Every weekday at 1:00 AM');
+        expect(routine.summary).toBe('Every weekday at 1:00 AM');
       });
 
       it('should return the correct summary for all days but one', () => {
-        const gameplan = new TimeRoutine('1', {
+        const routine = new TimeRoutine('1', {
           uid,
           createdAt: new Date() as any,
           updatedAt: new Date() as any,
@@ -87,15 +97,17 @@ describe('Routine classes', () => {
           weekdays: [1, 2, 3, 4, 5, 6],
           hour: 1,
           minute: 0,
+          summary: '',
+          title: '',
         });
-        expect(gameplan.summary).toBe('Daily except Saturdays at 1:00 AM');
+        expect(routine.summary).toBe('Daily except Saturdays at 1:00 AM');
       });
     });
   });
 
   describe('LocationRoutine', () => {
     it('should return the correct summary', () => {
-      const gameplan = new LocationRoutine(
+      const routine = new LocationRoutine(
         '1',
         {
           uid,
@@ -104,6 +116,8 @@ describe('Routine classes', () => {
           type: 'location',
           locationId: 'abc',
           mode: 'enter',
+          summary: '',
+          title: '',
         },
         {
           uid,
@@ -113,10 +127,10 @@ describe('Routine classes', () => {
           name: 'Home',
           latitude: 0,
           longitude: 0,
-          gameplanIds: [],
+          routineIds: [],
         }
       );
-      expect(gameplan.summary).toBe('When I arrive at Home');
+      expect(routine.summary).toBe('When I arrive at Home');
     });
   });
 });

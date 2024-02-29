@@ -7,5 +7,5 @@ export interface LocationValue {
     latitude: number;
     longitude: number;
     address: string;
-    gameplanIds: Array<string>;
+    routineIds: Array<string>;
 }

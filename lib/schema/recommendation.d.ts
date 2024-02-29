@@ -4,7 +4,6 @@ export declare const recommendationSchema: yup.ObjectSchema<{
     uid: string;
     ordinal: number;
     title: string;
-    explanation: string;
     routineExplanation: string | null | undefined;
     recommenderUid: string;
     recommenderName: string;
@@ -34,12 +33,10 @@ export declare const recommendationSchema: yup.ObjectSchema<{
     ruleId: string | null | undefined;
     routine: yup.Maybe<{} | undefined>;
     patternIds: yup.Maybe<(string | undefined)[] | undefined>;
-    defaultSelected: {} | null | undefined;
 }, yup.AnyObject, {
     uid: undefined;
     ordinal: undefined;
     title: undefined;
-    explanation: undefined;
     routineExplanation: undefined;
     recommenderUid: undefined;
     recommenderName: undefined;
@@ -61,6 +58,5 @@ export declare const recommendationSchema: yup.ObjectSchema<{
     ruleId: undefined;
     routine: undefined;
     patternIds: "";
-    defaultSelected: undefined;
 }, "">;
 export type RecommendationValue = WithTacticsById<yup.InferType<typeof recommendationSchema>>;

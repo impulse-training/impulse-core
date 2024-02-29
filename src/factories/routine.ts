@@ -16,6 +16,8 @@ export const makeLocationRoutineFactory = (
     updatedAt: TimestampKlass.now(),
     type: 'location',
     mode: 'enter',
+    title: '',
+    summary: '',
   });
 
 export const makeTimeRoutineFactory = (TimestampKlass: typeof TimestampLike) =>
@@ -28,6 +30,8 @@ export const makeTimeRoutineFactory = (TimestampKlass: typeof TimestampLike) =>
     weekdays: [1, 2, 3, 4, 5, 6, 7],
     hour: 12,
     minute: 0,
+    title: '',
+    summary: '',
   });
 
 export const makeDebriefRoutineFactory = (
@@ -42,4 +46,6 @@ export const makeDebriefRoutineFactory = (
     weekdays: [1, 2, 3, 4, 5, 6, 7],
     hour: 20,
     minute: 0,
+    title: '',
+    summary: '',
   });

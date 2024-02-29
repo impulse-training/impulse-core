@@ -13,7 +13,6 @@ export const recommendationSchema = yup.object().shape({
   uid: yup.string().required(),
   ordinal: yup.number().required(),
   title: yup.string().required(),
-  explanation: yup.string().required(),
   routineExplanation: yup.string().nullable(),
   recommenderUid: yup.string().required(),
   recommenderName: yup.string().required(),
@@ -33,7 +32,6 @@ export const recommendationSchema = yup.object().shape({
     .oneOf([timeRoutineSchema, locationRoutineSchema, dayDebriefRoutineSchema])
     .notRequired(),
   patternIds: yup.array().of(yup.string()).notRequired(),
-  defaultSelected: yup.mixed().oneOf(['all', 'first']).nullable(),
 });
 
 export type RecommendationValue = WithTacticsById<
