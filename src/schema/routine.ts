@@ -49,7 +49,7 @@ const locationRoutineSchema = routineBaseSchema.concat(
   yup.object({
     type: yup.mixed<'location'>().oneOf(['location']).required(),
     locationId: yup.string().nullable(),
-    mode: yup.mixed().oneOf(['enter', 'exit']).required(),
+    mode: yup.mixed<'enter' | 'exit'>().oneOf(['enter', 'exit']).required(),
   })
 );
 

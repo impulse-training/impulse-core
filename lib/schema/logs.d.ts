@@ -322,7 +322,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 title: string;
                 summary: string;
                 type: "location";
-                mode: {};
+                mode: NonNullable<"enter" | "exit" | undefined>;
             };
         };
         patternsById: {
@@ -1319,7 +1319,7 @@ export declare const logSchema: yup.Lazy<{
                 title: string;
                 summary: string;
                 type: "location";
-                mode: {};
+                mode: NonNullable<"enter" | "exit" | undefined>;
             };
         };
         patternsById: {

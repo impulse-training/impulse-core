@@ -18,7 +18,7 @@ export declare const makeLocationRoutineFactory: (TimestampKlass: typeof Timesta
     title: string;
     summary: string;
     type: "location";
-    mode: {};
+    mode: NonNullable<"enter" | "exit" | undefined>;
 }, "uid" | "title" | "summary" | "type" | "mode" | ("createdAt" | "updatedAt" | "isTemplate" | "timezone" | "locationId")>;
 export declare const makeTimeRoutineFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     createdAt?: import("yup").Maybe<{} | undefined> | {

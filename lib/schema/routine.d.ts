@@ -134,7 +134,7 @@ declare const locationRoutineSchema: yup.ObjectSchema<{
 } & {
     type: "location";
     locationId: string | null | undefined;
-    mode: {};
+    mode: NonNullable<"enter" | "exit" | undefined>;
 }, yup.AnyObject, {
     uid: undefined;
     createdAt: undefined;
@@ -209,5 +209,5 @@ export declare const routineSchema: yup.Lazy<{
     title: string;
     summary: string;
     type: "location";
-    mode: {};
+    mode: NonNullable<"enter" | "exit" | undefined>;
 }, yup.AnyObject, any>;

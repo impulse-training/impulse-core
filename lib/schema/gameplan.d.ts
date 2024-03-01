@@ -117,7 +117,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             title: string;
             summary: string;
             type: "location";
-            mode: {};
+            mode: NonNullable<"enter" | "exit" | undefined>;
         };
     };
     patternsById: {
