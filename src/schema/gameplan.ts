@@ -3,7 +3,11 @@ import { TimestampLike } from '../utils/TimestampLike';
 import { patternSchema } from './pattern';
 import { routineSchema } from './routine';
 import { TacticValue, WithTacticsById, tacticSchema } from './tactic';
-import { optionalStringArray, requiredStringArray } from './utils/array';
+import {
+  optionalStringArray,
+  requiredArrayOf,
+  requiredStringArray,
+} from './utils/array';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema } from './utils/timestamp';
 
@@ -15,7 +19,7 @@ const conditional = yup.object({
     .oneOf(['eq', 'gt', 'lt', 'keyword'])
     .required(),
   value: yup.mixed().required(),
-  ids: yup.array().of(yup.string().required()).required(),
+  ids: requiredStringArray,
 });
 
 // A gameplan is a set of tactics and when they should be used. Of these properties, only tacticIds
@@ -23,7 +27,7 @@ const conditional = yup.object({
 export const strategy = yup.object({
   tacticIds: requiredStringArray,
   suggestedTacticIds: requiredStringArray,
-  conditionalTacticIds: optionalObjectOf(yup.array().of(conditional)),
+  conditionalTacticIds: optionalObjectOf(requiredArrayOf(conditional)),
 });
 
 export type Strategy = yup.InferType<typeof strategy>;

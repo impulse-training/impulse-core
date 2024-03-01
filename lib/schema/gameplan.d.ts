@@ -2,14 +2,10 @@ import * as yup from 'yup';
 import { TimestampLike } from '../utils/TimestampLike';
 import { TacticValue, WithTacticsById } from './tactic';
 export declare const strategy: yup.ObjectSchema<{
-    tacticIds: string[];
-    suggestedTacticIds: string[];
+    tacticIds: any[];
+    suggestedTacticIds: any[];
     conditionalTacticIds: {
-        [x: string]: {
-            condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-            value: {};
-            ids: string[];
-        }[] | undefined;
+        [x: string]: any[];
     } | null | undefined;
 }, yup.AnyObject, {
     tacticIds: "";
@@ -35,93 +31,81 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     impulse: {
         [x: string]: {
             conditionalTacticIds?: {
-                [x: string]: {
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                    ids: string[];
-                }[] | undefined;
+                [x: string]: any[];
             } | null | undefined;
-            tacticIds: string[];
-            suggestedTacticIds: string[];
+            tacticIds: any[];
+            suggestedTacticIds: any[];
         };
     };
     impulseDebrief: {
         [x: string]: {
             conditionalTacticIds?: {
-                [x: string]: {
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                    ids: string[];
-                }[] | undefined;
+                [x: string]: any[];
             } | null | undefined;
-            tacticIds: string[];
-            suggestedTacticIds: string[];
+            tacticIds: any[];
+            suggestedTacticIds: any[];
         };
     };
     routine: {
         [x: string]: {
             conditionalTacticIds?: {
-                [x: string]: {
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                    ids: string[];
-                }[] | undefined;
+                [x: string]: any[];
             } | null | undefined;
-            tacticIds: string[];
-            suggestedTacticIds: string[];
+            tacticIds: any[];
+            suggestedTacticIds: any[];
         };
     };
     tacticsById: any;
     routinesById: {
         [x: string]: {
-            updatedAt?: yup.Maybe<{} | undefined> | {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             createdAt?: yup.Maybe<{} | undefined> | {
                 seconds: number;
                 nanoseconds: number;
                 toDate: {};
             };
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
             isTemplate?: boolean | null | undefined;
-            scheduledNotificationIds?: string[] | null | undefined;
+            scheduledNotificationIds?: any[] | undefined;
             uid: string;
             title: string;
             summary: string;
             timezone: string;
             type: "time";
-            weekdays: number[];
+            weekdays: any[];
             hour: number;
             minute: number;
         } | {
-            updatedAt?: yup.Maybe<{} | undefined> | {
+            createdAt?: yup.Maybe<{} | undefined> | {
                 seconds: number;
                 nanoseconds: number;
                 toDate: {};
             };
-            createdAt?: yup.Maybe<{} | undefined> | {
+            updatedAt?: yup.Maybe<{} | undefined> | {
                 seconds: number;
                 nanoseconds: number;
                 toDate: {};
             };
             isTemplate?: boolean | null | undefined;
-            scheduledNotificationIds?: string[] | null | undefined;
+            scheduledNotificationIds?: any[] | undefined;
             uid: string;
             title: string;
             summary: string;
             timezone: string;
             type: "dayDebrief";
-            weekdays: number[];
+            weekdays: any[];
             hour: number;
             minute: number;
         } | {
-            updatedAt?: yup.Maybe<{} | undefined> | {
+            createdAt?: yup.Maybe<{} | undefined> | {
                 seconds: number;
                 nanoseconds: number;
                 toDate: {};
             };
-            createdAt?: yup.Maybe<{} | undefined> | {
+            updatedAt?: yup.Maybe<{} | undefined> | {
                 seconds: number;
                 nanoseconds: number;
                 toDate: {};
@@ -138,17 +122,17 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     };
     patternsById: {
         [x: string]: {
-            updatedAt?: yup.Maybe<{} | undefined> | {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
             createdAt?: yup.Maybe<{} | undefined> | {
                 seconds: number;
                 nanoseconds: number;
                 toDate: {};
             };
-            supportGroupIds?: yup.Maybe<(string | undefined)[] | undefined>;
+            updatedAt?: yup.Maybe<{} | undefined> | {
+                seconds: number;
+                nanoseconds: number;
+                toDate: {};
+            };
+            supportGroupIds?: string[] | undefined;
             notification?: {
                 title: string;
                 body: string;

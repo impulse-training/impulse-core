@@ -1,4 +1,5 @@
 import * as yup from 'yup';
+import { optionalArrayOf, requiredArrayOf } from './utils/array';
 import { optionalTimestampSchema } from './utils/timestamp';
 
 type Inferred<T extends yup.ISchema<unknown>> = yup.InferType<T>;
@@ -21,14 +22,11 @@ const schedulableRoutineSchema = routineBaseSchema.concat(
       .mixed<'time' | 'dayDebrief'>()
       .oneOf(['time', 'dayDebrief'])
       .required(),
-    weekdays: yup.array().of(yup.number().min(1).max(7).required()).required(),
+    weekdays: requiredArrayOf(yup.number().min(1).max(7)),
     hour: yup.number().min(0).max(23).required(),
     minute: yup.number().min(0).max(59).required(),
     timezone: yup.string().required(),
-    scheduledNotificationIds: yup
-      .array()
-      .of(yup.string().required())
-      .nullable(),
+    scheduledNotificationIds: optionalArrayOf(yup.string()),
   })
 );
 

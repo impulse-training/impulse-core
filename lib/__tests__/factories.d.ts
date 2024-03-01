@@ -1,23 +1,50 @@
 export declare const factories: {
     applicationFactory: import("factory.ts").Factory<import("..").ApplicationValue, keyof import("..").ApplicationValue>;
-    commentFactory: import("factory.ts").Factory<import("..").CommentValue, keyof import("..").CommentValue>;
-    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "uid" | "updatedAt" | "createdAt" | "timezone" | "type" | "location" | "tacticsById" | "steps" | "patternsById" | "startTime" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "setAsActiveImpulse" | "pressCount" | "isDisplayable" | "buttonPressSecondsSinceEpoch" | "gameplan" | "outcome" | "patternId" | "debriefNotes" | "debriefReminderSentAt" | "debriefedAt">;
-    timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "uid" | "updatedAt" | "createdAt" | "timezone" | "type" | "location" | "tacticsById" | "steps" | "startTime" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "routineId">;
-    motionLogFactory: import("factory.ts").Factory<import("..").MotionLogValue, "uid" | "updatedAt" | "createdAt" | "timezone" | "type" | "location" | "tacticsById" | "steps" | "startTime" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable">;
-    locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "uid" | "updatedAt" | "createdAt" | "timezone" | "type" | "location" | "locationId" | "tacticsById" | "steps" | "startTime" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "locationName" | "locationMode">;
-    debriefLogFactory: import("factory.ts").Factory<import("..").DebriefLogValue, "uid" | "updatedAt" | "createdAt" | "timezone" | "type" | "location" | "tacticsById" | "steps" | "patternsById" | "startTime" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "routineId" | "tacticDataEntries">;
-    locationFactory: import("factory.ts").Factory<import("..").LocationValue, keyof import("..").LocationValue>;
-    profileFactory: import("factory.ts").Factory<import("..").ProfileValue, keyof import("..").ProfileValue>;
-    gameplanFactory: import("factory.ts").Factory<import("..").GameplanValue, "uid" | "updatedAt" | "createdAt" | "parentIssueIds" | "tacticsById" | "recommendationsCount" | "impulse" | "impulseDebrief" | "routine" | "routinesById" | "patternsById">;
-    issueFactory: import("factory.ts").Factory<import("..").IssueValue, keyof import("..").IssueValue>;
-    adminProfileFactory: import("factory.ts").Factory<import("..").ProfileValue, keyof import("..").ProfileValue>;
-    supportGroupFactory: import("factory.ts").Factory<{
+    commentFactory: import("factory.ts").Factory<{
+        createdAt?: import("yup").Maybe<{} | undefined> | {
+            seconds: number;
+            nanoseconds: number;
+            toDate: {};
+        };
         updatedAt?: import("yup").Maybe<{} | undefined> | {
             seconds: number;
             nanoseconds: number;
             toDate: {};
         };
+        tacticId?: string | null | undefined;
+        tacticName?: string | null | undefined;
+        text?: string | undefined;
+        recording?: {
+            waveform?: string | null | undefined;
+            localFilePath: string;
+            remoteFilePath: string;
+        } | undefined;
+        isEdited?: boolean | undefined;
+        avatar?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | undefined;
+        uid: string;
+        authorName: string;
+    }, "uid" | "authorName" | ("createdAt" | "updatedAt" | "tacticId" | "tacticName" | "text" | "recording" | "isEdited" | "avatar")>;
+    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "uid" | "timezone" | "type" | "location" | "tacticsById" | "steps" | "patternsById" | "startTime" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "setAsActiveImpulse" | "pressCount" | "isDisplayable" | "buttonPressSecondsSinceEpoch" | "gameplan" | "outcome" | "patternId" | "debriefNotes" | "debriefReminderSentAt" | "debriefedAt">;
+    timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "uid" | "timezone" | "type" | "location" | "tacticsById" | "steps" | "startTime" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "routineId">;
+    motionLogFactory: import("factory.ts").Factory<import("..").MotionLogValue, "createdAt" | "updatedAt" | "uid" | "timezone" | "type" | "location" | "tacticsById" | "steps" | "startTime" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable">;
+    locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "createdAt" | "updatedAt" | "uid" | "timezone" | "type" | "location" | "locationId" | "tacticsById" | "steps" | "startTime" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "locationName" | "locationMode">;
+    debriefLogFactory: import("factory.ts").Factory<import("..").DebriefLogValue, "createdAt" | "updatedAt" | "uid" | "timezone" | "type" | "location" | "tacticsById" | "steps" | "patternsById" | "startTime" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "routineId" | "tacticDataEntries">;
+    locationFactory: import("factory.ts").Factory<import("..").LocationValue, keyof import("..").LocationValue>;
+    profileFactory: import("factory.ts").Factory<import("..").ProfileValue, keyof import("..").ProfileValue>;
+    gameplanFactory: import("factory.ts").Factory<import("..").GameplanValue, "createdAt" | "updatedAt" | "uid" | "parentIssueIds" | "tacticsById" | "recommendationsCount" | "impulse" | "impulseDebrief" | "routine" | "routinesById" | "patternsById">;
+    issueFactory: import("factory.ts").Factory<import("..").IssueValue, keyof import("..").IssueValue>;
+    adminProfileFactory: import("factory.ts").Factory<import("..").ProfileValue, keyof import("..").ProfileValue>;
+    supportGroupFactory: import("factory.ts").Factory<{
         createdAt?: import("yup").Maybe<{} | undefined> | {
+            seconds: number;
+            nanoseconds: number;
+            toDate: {};
+        };
+        updatedAt?: import("yup").Maybe<{} | undefined> | {
             seconds: number;
             nanoseconds: number;
             toDate: {};
@@ -38,7 +65,7 @@ export declare const factories: {
         isSharingDisabled?: boolean | undefined;
         suggestedTacticIds: {};
         thumbnailUrl: string;
-        participantUids: string[];
+        participantUids: any[];
         groupName: string;
         creatorName: string;
         creatorUid: string;
@@ -47,64 +74,64 @@ export declare const factories: {
             [x: string]: number;
         };
         permissions: {};
-    }, "suggestedTacticIds" | "thumbnailUrl" | "participantUids" | "groupName" | "creatorName" | "creatorUid" | "icon" | "unreadCounts" | "permissions" | ("updatedAt" | "createdAt" | "isTemplate" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "lastMessagePreview" | "invitationCode" | "invitationUrl" | "lastMessageUid" | "isSharingDisabled")>;
+    }, "suggestedTacticIds" | "thumbnailUrl" | "participantUids" | "groupName" | "creatorName" | "creatorUid" | "icon" | "unreadCounts" | "permissions" | ("createdAt" | "updatedAt" | "isTemplate" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "lastMessagePreview" | "invitationCode" | "invitationUrl" | "lastMessageUid" | "isSharingDisabled")>;
     debriefRoutineFactory: import("factory.ts").Factory<{
-        updatedAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
         createdAt?: import("yup").Maybe<{} | undefined> | {
             seconds: number;
             nanoseconds: number;
             toDate: {};
         };
+        updatedAt?: import("yup").Maybe<{} | undefined> | {
+            seconds: number;
+            nanoseconds: number;
+            toDate: {};
+        };
         isTemplate?: boolean | null | undefined;
-        scheduledNotificationIds?: string[] | null | undefined;
+        scheduledNotificationIds?: any[] | undefined;
         uid: string;
         title: string;
         summary: string;
         timezone: string;
         type: "dayDebrief";
-        weekdays: number[];
+        weekdays: any[];
         hour: number;
         minute: number;
-    }, "uid" | "title" | "summary" | "timezone" | "type" | "weekdays" | "hour" | "minute" | ("updatedAt" | "createdAt" | "isTemplate" | "scheduledNotificationIds")>;
+    }, "uid" | "title" | "summary" | "timezone" | "type" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt" | "isTemplate" | "scheduledNotificationIds")>;
     messageFactory: import("factory.ts").Factory<import("..").MessageValue, keyof import("..").MessageValue>;
     timeRoutineFactory: import("factory.ts").Factory<{
-        updatedAt?: import("yup").Maybe<{} | undefined> | {
+        createdAt?: import("yup").Maybe<{} | undefined> | {
             seconds: number;
             nanoseconds: number;
             toDate: {};
         };
-        createdAt?: import("yup").Maybe<{} | undefined> | {
+        updatedAt?: import("yup").Maybe<{} | undefined> | {
             seconds: number;
             nanoseconds: number;
             toDate: {};
         };
         isTemplate?: boolean | null | undefined;
-        scheduledNotificationIds?: string[] | null | undefined;
+        scheduledNotificationIds?: any[] | undefined;
         uid: string;
         title: string;
         summary: string;
         timezone: string;
         type: "time";
-        weekdays: number[];
+        weekdays: any[];
         hour: number;
         minute: number;
-    }, "uid" | "title" | "summary" | "timezone" | "type" | "weekdays" | "hour" | "minute" | ("updatedAt" | "createdAt" | "isTemplate" | "scheduledNotificationIds")>;
+    }, "uid" | "title" | "summary" | "timezone" | "type" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt" | "isTemplate" | "scheduledNotificationIds")>;
     patternFactory: import("factory.ts").Factory<{
-        updatedAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
         createdAt?: import("yup").Maybe<{} | undefined> | {
             seconds: number;
             nanoseconds: number;
             toDate: {};
         };
-        supportGroupIds?: import("yup").Maybe<(string | undefined)[] | undefined>;
+        updatedAt?: import("yup").Maybe<{} | undefined> | {
+            seconds: number;
+            nanoseconds: number;
+            toDate: {};
+        };
+        supportGroupIds?: string[] | undefined;
         notification?: {
             title: string;
             body: string;
@@ -117,14 +144,14 @@ export declare const factories: {
         ordinal: number;
         setbackThreshold: number;
         sendWeeklyReports: NonNullable<boolean | undefined>;
-    }, "uid" | "name" | "ordinal" | "setbackThreshold" | "sendWeeklyReports" | ("updatedAt" | "createdAt" | "supportGroupIds" | "notification" | "setbackTacticId" | "issueId" | "parentIssueIds")>;
+    }, "uid" | "name" | "ordinal" | "setbackThreshold" | "sendWeeklyReports" | ("createdAt" | "updatedAt" | "supportGroupIds" | "notification" | "setbackTacticId" | "issueId" | "parentIssueIds")>;
     locationRoutineFactory: import("factory.ts").Factory<{
-        updatedAt?: import("yup").Maybe<{} | undefined> | {
+        createdAt?: import("yup").Maybe<{} | undefined> | {
             seconds: number;
             nanoseconds: number;
             toDate: {};
         };
-        createdAt?: import("yup").Maybe<{} | undefined> | {
+        updatedAt?: import("yup").Maybe<{} | undefined> | {
             seconds: number;
             nanoseconds: number;
             toDate: {};
@@ -137,22 +164,22 @@ export declare const factories: {
         summary: string;
         type: "location";
         mode: {};
-    }, "uid" | "title" | "summary" | "type" | "mode" | ("updatedAt" | "createdAt" | "isTemplate" | "timezone" | "locationId")>;
-    recommendationFactory: import("factory.ts").Factory<import("..").RecommendationValue, "uid" | "updatedAt" | "createdAt" | "ordinal" | "title" | "tacticIds" | "tacticsById" | "routine" | "routineExplanation" | "recommenderUid" | "recommenderName" | "appliedAt" | "dismissedAt" | "property" | "ruleId" | "patternIds">;
-    recommendationRuleFactory: import("factory.ts").Factory<import("..").RecommendationRuleValue, "uid" | "updatedAt" | "createdAt" | "ordinal" | "recommendation" | "forIssueIds" | ("issueNames" | "issueNamesSummary" | "recommendationSummary")>;
-    newRoutineRecommendationRuleFactory: import("factory.ts").Factory<import("..").RecommendationRuleValue, "uid" | "updatedAt" | "createdAt" | "ordinal" | "recommendation" | "forIssueIds" | ("issueNames" | "issueNamesSummary" | "recommendationSummary")>;
+    }, "uid" | "title" | "summary" | "type" | "mode" | ("createdAt" | "updatedAt" | "isTemplate" | "timezone" | "locationId")>;
+    recommendationFactory: import("factory.ts").Factory<import("..").RecommendationValue, "createdAt" | "updatedAt" | "uid" | "ordinal" | "title" | "tacticIds" | "tacticsById" | "routine" | "routineExplanation" | "recommenderUid" | "recommenderName" | "appliedAt" | "dismissedAt" | "property" | "ruleId" | "patternIds">;
+    recommendationRuleFactory: import("factory.ts").Factory<import("..").RecommendationRuleValue, "createdAt" | "updatedAt" | "uid" | "ordinal" | "recommendation" | "forIssueIds" | ("issueNames" | "issueNamesSummary" | "recommendationSummary")>;
+    newRoutineRecommendationRuleFactory: import("factory.ts").Factory<import("..").RecommendationRuleValue, "createdAt" | "updatedAt" | "uid" | "ordinal" | "recommendation" | "forIssueIds" | ("issueNames" | "issueNamesSummary" | "recommendationSummary")>;
     tacticFactory: import("factory.ts").Factory<{
-        uid?: string | null | undefined;
-        updatedAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
         createdAt?: import("yup").Maybe<{} | undefined> | {
             seconds: number;
             nanoseconds: number;
             toDate: {};
         };
+        updatedAt?: import("yup").Maybe<{} | undefined> | {
+            seconds: number;
+            nanoseconds: number;
+            toDate: {};
+        };
+        uid?: string | null | undefined;
         ordinal?: number | null | undefined;
         isTemplate?: boolean | null | undefined;
         sourceId?: string | undefined;
@@ -178,17 +205,17 @@ export declare const factories: {
         supportGroupId: string;
         trigger: {};
     } | {
-        uid?: string | null | undefined;
-        updatedAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
         createdAt?: import("yup").Maybe<{} | undefined> | {
             seconds: number;
             nanoseconds: number;
             toDate: {};
         };
+        updatedAt?: import("yup").Maybe<{} | undefined> | {
+            seconds: number;
+            nanoseconds: number;
+            toDate: {};
+        };
+        uid?: string | null | undefined;
         ordinal?: number | null | undefined;
         isTemplate?: boolean | null | undefined;
         sourceId?: string | undefined;
@@ -208,26 +235,26 @@ export declare const factories: {
         isAvailableForRecommendation?: boolean | null | undefined;
         numberOfLikes?: number | null | undefined;
         isSuggested?: boolean | undefined;
-        title: string;
-        type: "audio";
-        backgroundColor: string;
         recording: {
             waveform?: string | null | undefined;
             localFilePath: string;
             remoteFilePath: string;
         };
+        title: string;
+        type: "audio";
+        backgroundColor: string;
     } | {
-        uid?: string | null | undefined;
-        updatedAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
         createdAt?: import("yup").Maybe<{} | undefined> | {
             seconds: number;
             nanoseconds: number;
             toDate: {};
         };
+        updatedAt?: import("yup").Maybe<{} | undefined> | {
+            seconds: number;
+            nanoseconds: number;
+            toDate: {};
+        };
+        uid?: string | null | undefined;
         ordinal?: number | null | undefined;
         isTemplate?: boolean | null | undefined;
         sourceId?: string | undefined;
@@ -251,17 +278,17 @@ export declare const factories: {
         type: "urge-surfing";
         backgroundColor: string;
     } | {
-        uid?: string | null | undefined;
-        updatedAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
         createdAt?: import("yup").Maybe<{} | undefined> | {
             seconds: number;
             nanoseconds: number;
             toDate: {};
         };
+        updatedAt?: import("yup").Maybe<{} | undefined> | {
+            seconds: number;
+            nanoseconds: number;
+            toDate: {};
+        };
+        uid?: string | null | undefined;
         ordinal?: number | null | undefined;
         isTemplate?: boolean | null | undefined;
         sourceId?: string | undefined;
@@ -293,17 +320,17 @@ export declare const factories: {
             duration: number;
         };
     } | {
-        uid?: string | null | undefined;
-        updatedAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
         createdAt?: import("yup").Maybe<{} | undefined> | {
             seconds: number;
             nanoseconds: number;
             toDate: {};
         };
+        updatedAt?: import("yup").Maybe<{} | undefined> | {
+            seconds: number;
+            nanoseconds: number;
+            toDate: {};
+        };
+        uid?: string | null | undefined;
         ordinal?: number | null | undefined;
         isTemplate?: boolean | null | undefined;
         sourceId?: string | undefined;
@@ -327,17 +354,17 @@ export declare const factories: {
         type: "question";
         backgroundColor: string;
     } | {
-        uid?: string | null | undefined;
-        updatedAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
         createdAt?: import("yup").Maybe<{} | undefined> | {
             seconds: number;
             nanoseconds: number;
             toDate: {};
         };
+        updatedAt?: import("yup").Maybe<{} | undefined> | {
+            seconds: number;
+            nanoseconds: number;
+            toDate: {};
+        };
+        uid?: string | null | undefined;
         ordinal?: number | null | undefined;
         isTemplate?: boolean | null | undefined;
         sourceId?: string | undefined;
@@ -361,17 +388,17 @@ export declare const factories: {
         type: "task";
         backgroundColor: string;
     } | import("..").MeasureTacticValue | {
-        uid?: string | null | undefined;
-        updatedAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
         createdAt?: import("yup").Maybe<{} | undefined> | {
             seconds: number;
             nanoseconds: number;
             toDate: {};
         };
+        updatedAt?: import("yup").Maybe<{} | undefined> | {
+            seconds: number;
+            nanoseconds: number;
+            toDate: {};
+        };
+        uid?: string | null | undefined;
         ordinal?: number | null | undefined;
         isTemplate?: boolean | null | undefined;
         repeat?: import("yup").Maybe<number | undefined>;
@@ -399,17 +426,17 @@ export declare const factories: {
         holdFor: number;
         outFor: number;
     } | {
-        uid?: string | null | undefined;
-        updatedAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
         createdAt?: import("yup").Maybe<{} | undefined> | {
             seconds: number;
             nanoseconds: number;
             toDate: {};
         };
+        updatedAt?: import("yup").Maybe<{} | undefined> | {
+            seconds: number;
+            nanoseconds: number;
+            toDate: {};
+        };
+        uid?: string | null | undefined;
         ordinal?: number | null | undefined;
         isTemplate?: boolean | null | undefined;
         sourceId?: string | undefined;
@@ -434,17 +461,17 @@ export declare const factories: {
         backgroundColor: string;
         steps: number;
     } | {
-        uid?: string | null | undefined;
-        updatedAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
         createdAt?: import("yup").Maybe<{} | undefined> | {
             seconds: number;
             nanoseconds: number;
             toDate: {};
         };
+        updatedAt?: import("yup").Maybe<{} | undefined> | {
+            seconds: number;
+            nanoseconds: number;
+            toDate: {};
+        };
+        uid?: string | null | undefined;
         ordinal?: number | null | undefined;
         isTemplate?: boolean | null | undefined;
         sourceId?: string | undefined;
@@ -467,6 +494,6 @@ export declare const factories: {
         title: string;
         type: "emotions";
         backgroundColor: string;
-    }, "uid" | "updatedAt" | "createdAt" | "ordinal" | "title" | "isTemplate" | "type" | "sourceId" | "subtitle" | "description" | "image" | "backgroundColor" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
-    folderTacticFactory: import("factory.ts").Factory<import("..").FolderTacticValue, "title" | "type" | "backgroundColor" | "tacticIds" | "currentTacticIndex" | "tacticsById" | ("uid" | "updatedAt" | "createdAt" | "ordinal" | "isTemplate" | "sourceId" | "subtitle" | "description" | "image" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested" | "suggestedTacticIds" | "autogenerate")>;
+    }, "createdAt" | "updatedAt" | "uid" | "ordinal" | "title" | "isTemplate" | "type" | "sourceId" | "subtitle" | "description" | "image" | "backgroundColor" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
+    folderTacticFactory: import("factory.ts").Factory<import("..").FolderTacticValue, "title" | "type" | "backgroundColor" | "tacticIds" | "currentTacticIndex" | "tacticsById" | ("createdAt" | "updatedAt" | "uid" | "ordinal" | "isTemplate" | "sourceId" | "subtitle" | "description" | "image" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested" | "suggestedTacticIds" | "autogenerate")>;
 };

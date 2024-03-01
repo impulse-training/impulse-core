@@ -2,10 +2,15 @@
 // take)
 import * as yup from 'yup';
 import { TimestampLike } from '../utils/TimestampLike';
+import { commentSchema } from './comment';
 import { gameplanSchema, strategy } from './gameplan';
 import { patternSchema } from './pattern';
 import { TacticValue, WithTacticsById, tacticSchema } from './tactic';
-import { requiredStringArray } from './utils/array';
+import {
+  optionalStringArray,
+  requiredArrayOf,
+  requiredStringArray,
+} from './utils/array';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
 
@@ -34,7 +39,7 @@ const baseLogSchema = yup.object().shape({
   commentsByTacticId: optionalObjectOf(
     yup.object().shape({
       tacticTitle: yup.string().required(),
-      comments: yup.array().required(),
+      comments: requiredArrayOf(commentSchema),
     })
   ),
   steps: yup.number().notRequired(),
@@ -62,10 +67,7 @@ const baseLogSchema = yup.object().shape({
       isTotal: yup.boolean().notRequired(),
     })
   ),
-  sharedWithSupportGroupIds: yup
-    .array()
-    .of(yup.string().required())
-    .notRequired(),
+  sharedWithSupportGroupIds: optionalStringArray,
 });
 // This is important to prevent typescript generating a 40k line file :/
 

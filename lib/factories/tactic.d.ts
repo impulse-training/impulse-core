@@ -2,17 +2,17 @@ import * as Factory from 'factory.ts';
 import { FolderTacticValue } from '../schema';
 import { TimestampLike } from '../utils/TimestampLike';
 export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
-    uid?: string | null | undefined;
-    updatedAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
     createdAt?: import("yup").Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
+    updatedAt?: import("yup").Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    uid?: string | null | undefined;
     ordinal?: number | null | undefined;
     isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
@@ -38,17 +38,17 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
     supportGroupId: string;
     trigger: {};
 } | {
-    uid?: string | null | undefined;
-    updatedAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
     createdAt?: import("yup").Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
+    updatedAt?: import("yup").Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    uid?: string | null | undefined;
     ordinal?: number | null | undefined;
     isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
@@ -68,26 +68,26 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
     isAvailableForRecommendation?: boolean | null | undefined;
     numberOfLikes?: number | null | undefined;
     isSuggested?: boolean | undefined;
-    title: string;
-    type: "audio";
-    backgroundColor: string;
     recording: {
         waveform?: string | null | undefined;
         localFilePath: string;
         remoteFilePath: string;
     };
+    title: string;
+    type: "audio";
+    backgroundColor: string;
 } | {
-    uid?: string | null | undefined;
-    updatedAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
     createdAt?: import("yup").Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
+    updatedAt?: import("yup").Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    uid?: string | null | undefined;
     ordinal?: number | null | undefined;
     isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
@@ -111,17 +111,17 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
     type: "urge-surfing";
     backgroundColor: string;
 } | {
-    uid?: string | null | undefined;
-    updatedAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
     createdAt?: import("yup").Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
+    updatedAt?: import("yup").Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    uid?: string | null | undefined;
     ordinal?: number | null | undefined;
     isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
@@ -153,17 +153,17 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
         duration: number;
     };
 } | {
-    uid?: string | null | undefined;
-    updatedAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
     createdAt?: import("yup").Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
+    updatedAt?: import("yup").Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    uid?: string | null | undefined;
     ordinal?: number | null | undefined;
     isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
@@ -187,17 +187,17 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
     type: "question";
     backgroundColor: string;
 } | {
-    uid?: string | null | undefined;
-    updatedAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
     createdAt?: import("yup").Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
+    updatedAt?: import("yup").Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    uid?: string | null | undefined;
     ordinal?: number | null | undefined;
     isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
@@ -221,17 +221,17 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
     type: "task";
     backgroundColor: string;
 } | import("../schema").MeasureTacticValue | {
-    uid?: string | null | undefined;
-    updatedAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
     createdAt?: import("yup").Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
+    updatedAt?: import("yup").Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    uid?: string | null | undefined;
     ordinal?: number | null | undefined;
     isTemplate?: boolean | null | undefined;
     repeat?: import("yup").Maybe<number | undefined>;
@@ -259,17 +259,17 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
     holdFor: number;
     outFor: number;
 } | {
-    uid?: string | null | undefined;
-    updatedAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
     createdAt?: import("yup").Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
+    updatedAt?: import("yup").Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    uid?: string | null | undefined;
     ordinal?: number | null | undefined;
     isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
@@ -294,17 +294,17 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
     backgroundColor: string;
     steps: number;
 } | {
-    uid?: string | null | undefined;
-    updatedAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
     createdAt?: import("yup").Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
+    updatedAt?: import("yup").Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    uid?: string | null | undefined;
     ordinal?: number | null | undefined;
     isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
@@ -327,5 +327,5 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
     title: string;
     type: "emotions";
     backgroundColor: string;
-}, "uid" | "updatedAt" | "createdAt" | "ordinal" | "title" | "isTemplate" | "type" | "sourceId" | "subtitle" | "description" | "image" | "backgroundColor" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
-export declare const makeFolderTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<FolderTacticValue, "title" | "type" | "backgroundColor" | "tacticIds" | "currentTacticIndex" | "tacticsById" | ("uid" | "updatedAt" | "createdAt" | "ordinal" | "isTemplate" | "sourceId" | "subtitle" | "description" | "image" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested" | "suggestedTacticIds" | "autogenerate")>;
+}, "createdAt" | "updatedAt" | "uid" | "ordinal" | "title" | "isTemplate" | "type" | "sourceId" | "subtitle" | "description" | "image" | "backgroundColor" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
+export declare const makeFolderTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<FolderTacticValue, "title" | "type" | "backgroundColor" | "tacticIds" | "currentTacticIndex" | "tacticsById" | ("createdAt" | "updatedAt" | "uid" | "ordinal" | "isTemplate" | "sourceId" | "subtitle" | "description" | "image" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested" | "suggestedTacticIds" | "autogenerate")>;

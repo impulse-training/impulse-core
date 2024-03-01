@@ -5,17 +5,17 @@ export declare class Log {
     constructor(id: string, data: LogValue);
     get text(): string | undefined;
     get selectedPattern(): {
-        updatedAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
         createdAt?: import("yup").Maybe<{} | undefined> | {
             seconds: number;
             nanoseconds: number;
             toDate: {};
         };
-        supportGroupIds?: import("yup").Maybe<(string | undefined)[] | undefined>;
+        updatedAt?: import("yup").Maybe<{} | undefined> | {
+            seconds: number;
+            nanoseconds: number;
+            toDate: {};
+        };
+        supportGroupIds?: string[] | undefined;
         notification?: {
             title: string;
             body: string;

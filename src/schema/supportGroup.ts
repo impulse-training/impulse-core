@@ -1,4 +1,5 @@
 import * as yup from 'yup';
+import { requiredStringArray } from './utils/array';
 import { objectOf } from './utils/objectOf';
 import { optionalTimestampSchema } from './utils/timestamp';
 
@@ -8,7 +9,7 @@ export const supportGroupSchema = yup.object().shape({
   slug: yup.string(),
   templateId: yup.string().optional(),
   everythingPermissions: yup.boolean().optional(),
-  participantUids: yup.array().of(yup.string().required()).required(),
+  participantUids: requiredStringArray,
   memberTargetCount: yup.number().optional(),
   groupName: yup.string().required(),
   groupNameAliases: yup

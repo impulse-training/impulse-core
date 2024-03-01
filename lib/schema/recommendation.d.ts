@@ -27,12 +27,12 @@ export declare const recommendationSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: {};
     };
-    tacticIds: string[];
+    tacticIds: any[];
     tacticsById: any;
     property: NonNullable<"impulse" | "impulseDebrief" | "routine" | undefined>;
     ruleId: string | null | undefined;
     routine: yup.Maybe<{} | undefined>;
-    patternIds: yup.Maybe<(string | undefined)[] | undefined>;
+    patternIds: any[] | undefined;
 }, yup.AnyObject, {
     uid: undefined;
     ordinal: undefined;

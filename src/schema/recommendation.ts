@@ -5,7 +5,7 @@ import {
   timeRoutineSchema,
 } from './routine';
 import { WithTacticsById, tacticSchema } from './tactic';
-import { requiredStringArray } from './utils/array';
+import { optionalArrayOf, requiredStringArray } from './utils/array';
 import { objectOf } from './utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
 
@@ -31,7 +31,7 @@ export const recommendationSchema = yup.object().shape({
     .mixed()
     .oneOf([timeRoutineSchema, locationRoutineSchema, dayDebriefRoutineSchema])
     .notRequired(),
-  patternIds: yup.array().of(yup.string()).notRequired(),
+  patternIds: optionalArrayOf(yup.string()),
 });
 
 export type RecommendationValue = WithTacticsById<

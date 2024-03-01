@@ -6,7 +6,7 @@ export declare const recommendationRuleSchema: yup.ObjectSchema<{
         [x: string]: unknown;
         [x: number]: unknown;
     };
-    forIssueIds: string[];
+    forIssueIds: any[];
     issueNames: {
         [x: string]: string | undefined;
     } | null | undefined;

@@ -13,7 +13,7 @@ export declare const patternSchema: yup.ObjectSchema<{
     };
     name: string;
     ordinal: number;
-    supportGroupIds: yup.Maybe<(string | undefined)[] | undefined>;
+    supportGroupIds: string[] | undefined;
     notification: {
         title: string;
         body: string;

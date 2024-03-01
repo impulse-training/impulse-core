@@ -1,16 +1,18 @@
-import { TimestampLike } from '../utils/TimestampLike';
-import { Image } from '../utils/image';
-import { Recording } from './recording';
+import * as yup from 'yup';
+import { recordingSchema } from './recording';
+import { imageSchema } from './utils/image';
+import { optionalTimestampSchema } from './utils/timestamp';
 
-export interface CommentValue {
-  createdAt: TimestampLike;
-  updatedAt: TimestampLike;
-  tacticId?: string | null;
-  tacticName?: string | null;
-  text?: string;
-  uid: string;
-  authorName: string;
-  recording?: Recording;
-  isEdited?: boolean;
-  avatar?: Image;
-}
+export const commentSchema = yup.object().shape({
+  createdAt: optionalTimestampSchema,
+  updatedAt: optionalTimestampSchema,
+  tacticId: yup.string().nullable(),
+  tacticName: yup.string().nullable(),
+  text: yup.string().optional(),
+  uid: yup.string().required(),
+  authorName: yup.string().required(),
+  recording: recordingSchema.optional(),
+  isEdited: yup.boolean().optional(),
+  avatar: imageSchema.optional(),
+});
+export type CommentValue = yup.InferType<typeof commentSchema>;

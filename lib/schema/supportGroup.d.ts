@@ -13,7 +13,7 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
     slug: string | undefined;
     templateId: string | undefined;
     everythingPermissions: boolean | undefined;
-    participantUids: string[];
+    participantUids: any[];
     memberTargetCount: number | undefined;
     groupName: string;
     groupNameAliases: {

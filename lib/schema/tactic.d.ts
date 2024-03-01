@@ -33,7 +33,7 @@ export declare const folderTacticSchema: yup.ObjectSchema<{
     isAvailableForRecommendation: boolean | null | undefined;
     numberOfLikes: number | null | undefined;
     isSuggested: boolean | undefined;
-    tacticIds: string[];
+    tacticIds: any[];
     suggestedTacticIds: string[] | undefined;
     currentTacticIndex: number;
     tacticsById: {};

@@ -8,7 +8,7 @@ export const patternSchema = yup.object().shape({
   createdAt: optionalTimestampSchema, // You should define a more specific validation based on what TimestampLike is
   name: yup.string().required(),
   ordinal: yup.number().required(),
-  supportGroupIds: yup.array().of(yup.string()).notRequired(),
+  supportGroupIds: optionalStringArray,
   notification: yup
     .object({
       title: yup.string().required(),

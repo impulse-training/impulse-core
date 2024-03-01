@@ -1,12 +1,12 @@
 import * as Factory from 'factory.ts';
 import { TimestampLike } from '../utils/TimestampLike';
 export declare const makeSupportGroupFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
-    updatedAt?: import("yup").Maybe<{} | undefined> | {
+    createdAt?: import("yup").Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    createdAt?: import("yup").Maybe<{} | undefined> | {
+    updatedAt?: import("yup").Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
@@ -27,7 +27,7 @@ export declare const makeSupportGroupFactory: (TimestampKlass: typeof TimestampL
     isSharingDisabled?: boolean | undefined;
     suggestedTacticIds: {};
     thumbnailUrl: string;
-    participantUids: string[];
+    participantUids: any[];
     groupName: string;
     creatorName: string;
     creatorUid: string;
@@ -36,4 +36,4 @@ export declare const makeSupportGroupFactory: (TimestampKlass: typeof TimestampL
         [x: string]: number;
     };
     permissions: {};
-}, "suggestedTacticIds" | "thumbnailUrl" | "participantUids" | "groupName" | "creatorName" | "creatorUid" | "icon" | "unreadCounts" | "permissions" | ("updatedAt" | "createdAt" | "isTemplate" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "lastMessagePreview" | "invitationCode" | "invitationUrl" | "lastMessageUid" | "isSharingDisabled")>;
+}, "suggestedTacticIds" | "thumbnailUrl" | "participantUids" | "groupName" | "creatorName" | "creatorUid" | "icon" | "unreadCounts" | "permissions" | ("createdAt" | "updatedAt" | "isTemplate" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "lastMessagePreview" | "invitationCode" | "invitationUrl" | "lastMessageUid" | "isSharingDisabled")>;

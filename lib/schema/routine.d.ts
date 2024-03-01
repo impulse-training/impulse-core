@@ -19,11 +19,11 @@ declare const schedulableRoutineSchema: yup.ObjectSchema<{
     timezone: string;
 } & {
     type: NonNullable<"time" | "dayDebrief" | undefined>;
-    weekdays: number[];
+    weekdays: any[];
     hour: number;
     minute: number;
     timezone: string;
-    scheduledNotificationIds: string[] | null | undefined;
+    scheduledNotificationIds: any[] | undefined;
 }, yup.AnyObject, {
     uid: undefined;
     createdAt: undefined;
@@ -56,10 +56,10 @@ declare const timeRoutineSchema: yup.ObjectSchema<{
     isTemplate: boolean | null | undefined;
     timezone: string;
     type: "time";
-    weekdays: number[];
+    weekdays: any[];
     hour: number;
     minute: number;
-    scheduledNotificationIds: string[] | null | undefined;
+    scheduledNotificationIds: any[] | undefined;
 } & {
     type: "time";
 }, yup.AnyObject, {
@@ -94,10 +94,10 @@ declare const dayDebriefRoutineSchema: yup.ObjectSchema<{
     isTemplate: boolean | null | undefined;
     timezone: string;
     type: "dayDebrief";
-    weekdays: number[];
+    weekdays: any[];
     hour: number;
     minute: number;
-    scheduledNotificationIds: string[] | null | undefined;
+    scheduledNotificationIds: any[] | undefined;
 } & {
     type: "dayDebrief";
 }, yup.AnyObject, {
@@ -150,54 +150,54 @@ declare const locationRoutineSchema: yup.ObjectSchema<{
 export type RoutineValue = TimeRoutineValue | DayDebriefRoutineValue | LocationRoutineValue;
 export { dayDebriefRoutineSchema, locationRoutineSchema, timeRoutineSchema };
 export declare const routineSchema: yup.Lazy<{
-    updatedAt?: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
     createdAt?: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
+    updatedAt?: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
     isTemplate?: boolean | null | undefined;
-    scheduledNotificationIds?: string[] | null | undefined;
+    scheduledNotificationIds?: any[] | undefined;
     uid: string;
     title: string;
     summary: string;
     timezone: string;
     type: "time";
-    weekdays: number[];
+    weekdays: any[];
     hour: number;
     minute: number;
 } | {
-    updatedAt?: yup.Maybe<{} | undefined> | {
+    createdAt?: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    createdAt?: yup.Maybe<{} | undefined> | {
+    updatedAt?: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
     isTemplate?: boolean | null | undefined;
-    scheduledNotificationIds?: string[] | null | undefined;
+    scheduledNotificationIds?: any[] | undefined;
     uid: string;
     title: string;
     summary: string;
     timezone: string;
     type: "dayDebrief";
-    weekdays: number[];
+    weekdays: any[];
     hour: number;
     minute: number;
 } | {
-    updatedAt?: yup.Maybe<{} | undefined> | {
+    createdAt?: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    createdAt?: yup.Maybe<{} | undefined> | {
+    updatedAt?: yup.Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
