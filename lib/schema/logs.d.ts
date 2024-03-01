@@ -2,6 +2,22 @@ import * as yup from 'yup';
 import { TimestampLike } from '../utils/TimestampLike';
 import { TacticValue, WithTacticsById } from './tactic';
 type Outcome = 'success' | 'setback' | 'indeterminate';
+export declare const tacticDataSchema: yup.ObjectSchema<{
+    value: number;
+    unit: string;
+    formattedValue: string;
+    isTotal: yup.Maybe<boolean | undefined>;
+    lowEmoji: yup.Maybe<string | undefined>;
+    highEmoji: yup.Maybe<string | undefined>;
+}, yup.AnyObject, {
+    value: undefined;
+    unit: undefined;
+    formattedValue: undefined;
+    isTotal: undefined;
+    lowEmoji: undefined;
+    highEmoji: undefined;
+}, "">;
+export type TacticData = yup.InferType<typeof tacticDataSchema>;
 export type BaseLogValue = WithTypes<typeof baseLogSchema>;
 declare const baseLogSchema: yup.ObjectSchema<{
     uid: string;
@@ -65,6 +81,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     tacticData: {
         [x: string]: {
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             isTotal?: yup.Maybe<boolean | undefined>;
             value: number;
             unit: string;
@@ -186,6 +204,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     tacticData: {
         [x: string]: {
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             isTotal?: yup.Maybe<boolean | undefined>;
             value: number;
             unit: string;
@@ -497,6 +517,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     tacticData: {
         [x: string]: {
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             isTotal?: yup.Maybe<boolean | undefined>;
             value: number;
             unit: string;
@@ -623,6 +645,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     tacticData: {
         [x: string]: {
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             isTotal?: yup.Maybe<boolean | undefined>;
             value: number;
             unit: string;
@@ -745,6 +769,8 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     tacticData: {
         [x: string]: {
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             isTotal?: yup.Maybe<boolean | undefined>;
             value: number;
             unit: string;
@@ -899,6 +925,8 @@ declare const motionLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     tacticData: {
         [x: string]: {
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             isTotal?: yup.Maybe<boolean | undefined>;
             value: number;
             unit: string;
@@ -1019,6 +1047,8 @@ declare const buttonLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     tacticData: {
         [x: string]: {
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             isTotal?: yup.Maybe<boolean | undefined>;
             value: number;
             unit: string;
@@ -1106,6 +1136,8 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     tacticData?: {
         [x: string]: {
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             isTotal?: yup.Maybe<boolean | undefined>;
             value: number;
             unit: string;
@@ -1346,6 +1378,8 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     tacticData?: {
         [x: string]: {
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             isTotal?: yup.Maybe<boolean | undefined>;
             value: number;
             unit: string;
@@ -1420,6 +1454,8 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     tacticData?: {
         [x: string]: {
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             isTotal?: yup.Maybe<boolean | undefined>;
             value: number;
             unit: string;
@@ -1492,6 +1528,8 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     tacticData?: {
         [x: string]: {
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             isTotal?: yup.Maybe<boolean | undefined>;
             value: number;
             unit: string;
@@ -1594,6 +1632,8 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     tacticData?: {
         [x: string]: {
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             isTotal?: yup.Maybe<boolean | undefined>;
             value: number;
             unit: string;
@@ -1665,6 +1705,8 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     tacticData?: {
         [x: string]: {
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             isTotal?: yup.Maybe<boolean | undefined>;
             value: number;
             unit: string;

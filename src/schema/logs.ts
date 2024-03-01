@@ -16,6 +16,16 @@ import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
 
 type Outcome = 'success' | 'setback' | 'indeterminate';
 
+export const tacticDataSchema = yup.object({
+  value: yup.number().required(),
+  unit: yup.string().required(),
+  formattedValue: yup.string().required(),
+  isTotal: yup.boolean().notRequired(),
+  lowEmoji: yup.string().notRequired(),
+  highEmoji: yup.string().notRequired(),
+});
+export type TacticData = yup.InferType<typeof tacticDataSchema>;
+
 export type BaseLogValue = WithTypes<typeof baseLogSchema>;
 const baseLogSchema = yup.object().shape({
   uid: yup.string().required(),
@@ -59,14 +69,7 @@ const baseLogSchema = yup.object().shape({
   seenTacticIds: requiredStringArray,
   completedTacticIds: requiredStringArray,
   tacticLikes: optionalObjectOf(yup.boolean().required()),
-  tacticData: optionalObjectOf(
-    yup.object({
-      value: yup.number().required(),
-      unit: yup.string().required(),
-      formattedValue: yup.string().required(),
-      isTotal: yup.boolean().notRequired(),
-    })
-  ),
+  tacticData: optionalObjectOf(tacticDataSchema),
   sharedWithSupportGroupIds: optionalStringArray,
 });
 // This is important to prevent typescript generating a 40k line file :/
