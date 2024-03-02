@@ -4,9 +4,10 @@ import { makeFactories } from '../../factories';
 import {
   commentSchema,
   gameplanSchema,
+  impulseDebriefRecommendationRuleSchema,
+  impulseRecommendationRuleSchema,
   logSchema,
   patternSchema,
-  recommendationRuleSchema,
   recommendationSchema,
   supportGroupSchema,
   tacticSchema,
@@ -66,7 +67,9 @@ const schemaMap: Record<keyof typeof factories, null | Schema | Lazy<unknown>> =
     messageFactory: null,
     patternFactory: patternSchema,
     impulseRecommendationFactory: recommendationSchema,
-    impulseRecommendationRuleFactory: recommendationRuleSchema,
+    impulseRecommendationRuleFactory: impulseRecommendationRuleSchema,
+    impulseDebriefRecommendationRuleFactory:
+      impulseDebriefRecommendationRuleSchema,
     tacticFactory: tacticSchema,
     folderTacticFactory: tacticSchema,
   };

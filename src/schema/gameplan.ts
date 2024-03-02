@@ -2,11 +2,7 @@ import * as yup from 'yup';
 import { TimestampLike } from '../utils/TimestampLike';
 import { patternSchema } from './pattern';
 import { TacticValue, WithTacticsById, tacticSchema } from './tactic';
-import {
-  optionalStringArray,
-  requiredArrayOf,
-  requiredStringArray,
-} from './utils/array';
+import { optionalStringArray, requiredStringArray } from './utils/array';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema } from './utils/timestamp';
 
@@ -26,25 +22,26 @@ const conditional = yup.object({
 export const strategy = yup.object({
   tacticIds: requiredStringArray,
   suggestedTacticIds: requiredStringArray,
-  conditionalTacticIds: optionalObjectOf(requiredArrayOf(conditional)),
+  conditionalTacticIds: optionalObjectOf(
+    yup.array().of(conditional).required()
+  ),
 });
+export type Strategy = yup.InferType<typeof strategy>;
 
-export const timeStrategy = yup.object({
-  weekdays: requiredArrayOf(yup.number().required()),
+export type TimeRoutine = yup.InferType<typeof timeRoutine>;
+export const timeRoutine = strategy.shape({
+  weekdays: yup.array().of(yup.number().required()).required(),
   hour: yup.number().required(),
   minute: yup.number().required(),
   title: yup.string().required(),
-  strategy,
 });
 
-export const locationStrategy = yup.object({
+export type LocationRoutine = yup.InferType<typeof locationRoutine>;
+export const locationRoutine = strategy.shape({
   locationKey: yup.string().required(),
   mode: yup.mixed<'enter' | 'exit'>().oneOf(['enter', 'exit']).required(),
   title: yup.string().required(),
-  strategy,
 });
-
-export type Strategy = yup.InferType<typeof strategy>;
 
 // This really represents the user's "gameplans"
 export type GameplanValue = WithTypes<typeof gameplanSchema>;
@@ -58,11 +55,11 @@ export const gameplanSchema = yup.object().shape({
   impulse: objectOf(strategy),
   impulseDebrief: objectOf(strategy),
 
-  dayDebrief: timeStrategy.optional(),
+  dayDebrief: timeRoutine.optional(),
   // These are the strategies for scheduled times of day...
-  time: requiredArrayOf(timeStrategy.required()),
+  time: optionalObjectOf(timeRoutine.required()),
   // ...Or when arriving at a location
-  locations: requiredArrayOf(locationStrategy.required()),
+  location: optionalObjectOf(locationRoutine.required()),
   // Data - we keep copies of relevant data on the gameplan document, for performance reasons
   tacticsById: objectOf(tacticSchema) as any,
   patternsById: objectOf(patternSchema),
@@ -76,3 +73,24 @@ type WithTypes<T extends yup.ISchema<unknown>> = WithTacticsById<
   updatedAt: TimestampLike;
   tacticsById: Record<string, TacticValue>;
 };
+
+export const SHORT_DAYS = {
+  1: 'Sun',
+  2: 'Mon',
+  3: 'Tue',
+  4: 'Wed',
+  5: 'Thu',
+  6: 'Fri',
+  7: 'Sat',
+};
+
+export const LONG_DAYS = [
+  '',
+  'Sundays',
+  'Mondays',
+  'Tuesdays',
+  'Wednesdays',
+  'Thursdays',
+  'Fridays',
+  'Saturdays',
+];

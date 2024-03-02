@@ -15,7 +15,10 @@ import { makeMessageFactory } from './message';
 import { makePatternFactory } from './pattern';
 import { makeAdminProfileFactory, makeProfileFactory } from './profile';
 import { makeImpulseRecommendationFactory } from './recommendation';
-import { makeImpulseRecommendationRuleFactory } from './recommendationRule';
+import {
+  makeImpulseDebriefRecommendationRuleFactory,
+  makeImpulseRecommendationRuleFactory,
+} from './recommendationRule';
 import { makeSupportGroupFactory } from './supportGroup';
 import { makeFolderTacticFactory, makeTacticFactory } from './tactic';
 // Our admin and client apps use the same factories, but the firebase-admin versus firebase client
@@ -42,6 +45,8 @@ export function makeFactories(TimestampKlass: typeof TimestampLike) {
       makeImpulseRecommendationFactory(TimestampKlass),
     impulseRecommendationRuleFactory:
       makeImpulseRecommendationRuleFactory(TimestampKlass),
+    impulseDebriefRecommendationRuleFactory:
+      makeImpulseDebriefRecommendationRuleFactory(TimestampKlass),
     tacticFactory: makeTacticFactory(TimestampKlass),
     folderTacticFactory: makeFolderTacticFactory(TimestampKlass),
   };

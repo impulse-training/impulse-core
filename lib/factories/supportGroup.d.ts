@@ -29,7 +29,7 @@ export declare const makeSupportGroupFactory: (TimestampKlass: typeof TimestampL
     isSharingDisabled?: boolean | undefined;
     suggestedTacticIds: {};
     thumbnailUrl: string;
-    participantUids: any[];
+    participantUids: string[];
     groupName: string;
     creatorName: string;
     creatorUid: string;

@@ -2,61 +2,67 @@ import * as yup from 'yup';
 import { TimestampLike } from '../utils/TimestampLike';
 import { TacticValue, WithTacticsById } from './tactic';
 export declare const strategy: yup.ObjectSchema<{
-    tacticIds: any[];
-    suggestedTacticIds: any[];
+    tacticIds: string[];
+    suggestedTacticIds: string[];
     conditionalTacticIds: {
-        [x: string]: any[];
+        [x: string]: {
+            ids: string[];
+            condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+            value: {};
+        }[];
     } | null | undefined;
 }, yup.AnyObject, {
     tacticIds: "";
     suggestedTacticIds: "";
     conditionalTacticIds: undefined;
 }, "">;
-export declare const timeStrategy: yup.ObjectSchema<{
-    weekdays: any[];
+export type Strategy = yup.InferType<typeof strategy>;
+export type TimeRoutine = yup.InferType<typeof timeRoutine>;
+export declare const timeRoutine: yup.ObjectSchema<{
+    tacticIds: string[];
+    suggestedTacticIds: string[];
+    conditionalTacticIds: {
+        [x: string]: {
+            ids: string[];
+            condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+            value: {};
+        }[];
+    } | null | undefined;
+    weekdays: number[];
     hour: number;
     minute: number;
     title: string;
-    strategy: {
-        conditionalTacticIds?: {
-            [x: string]: any[];
-        } | null | undefined;
-        tacticIds: any[];
-        suggestedTacticIds: any[];
-    };
 }, yup.AnyObject, {
+    tacticIds: "";
+    suggestedTacticIds: "";
+    conditionalTacticIds: undefined;
     weekdays: "";
     hour: undefined;
     minute: undefined;
     title: undefined;
-    strategy: {
-        tacticIds: "";
-        suggestedTacticIds: "";
-        conditionalTacticIds: undefined;
-    };
 }, "">;
-export declare const locationStrategy: yup.ObjectSchema<{
+export type LocationRoutine = yup.InferType<typeof locationRoutine>;
+export declare const locationRoutine: yup.ObjectSchema<{
+    tacticIds: string[];
+    suggestedTacticIds: string[];
+    conditionalTacticIds: {
+        [x: string]: {
+            ids: string[];
+            condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+            value: {};
+        }[];
+    } | null | undefined;
     locationKey: string;
     mode: NonNullable<"enter" | "exit" | undefined>;
     title: string;
-    strategy: {
-        conditionalTacticIds?: {
-            [x: string]: any[];
-        } | null | undefined;
-        tacticIds: any[];
-        suggestedTacticIds: any[];
-    };
 }, yup.AnyObject, {
+    tacticIds: "";
+    suggestedTacticIds: "";
+    conditionalTacticIds: undefined;
     locationKey: undefined;
     mode: undefined;
     title: undefined;
-    strategy: {
-        tacticIds: "";
-        suggestedTacticIds: "";
-        conditionalTacticIds: undefined;
-    };
 }, "">;
-export type Strategy = yup.InferType<typeof strategy>;
 export type GameplanValue = WithTypes<typeof gameplanSchema>;
 export declare const gameplanSchema: yup.ObjectSchema<{
     uid: string;
@@ -75,36 +81,77 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     impulse: {
         [x: string]: {
             conditionalTacticIds?: {
-                [x: string]: any[];
+                [x: string]: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[];
             } | null | undefined;
-            tacticIds: any[];
-            suggestedTacticIds: any[];
+            tacticIds: string[];
+            suggestedTacticIds: string[];
         };
     };
     impulseDebrief: {
         [x: string]: {
             conditionalTacticIds?: {
-                [x: string]: any[];
+                [x: string]: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[];
             } | null | undefined;
-            tacticIds: any[];
-            suggestedTacticIds: any[];
+            tacticIds: string[];
+            suggestedTacticIds: string[];
         };
     };
     dayDebrief: {
+        conditionalTacticIds?: {
+            [x: string]: {
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[];
+        } | null | undefined;
         title: string;
-        weekdays: any[];
+        tacticIds: string[];
+        suggestedTacticIds: string[];
+        weekdays: number[];
         hour: number;
         minute: number;
-        strategy: {
-            conditionalTacticIds?: {
-                [x: string]: any[];
-            } | null | undefined;
-            tacticIds: any[];
-            suggestedTacticIds: any[];
-        };
     } | undefined;
-    time: any[];
-    locations: any[];
+    time: {
+        [x: string]: {
+            conditionalTacticIds?: {
+                [x: string]: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[];
+            } | null | undefined;
+            title: string;
+            tacticIds: string[];
+            suggestedTacticIds: string[];
+            weekdays: number[];
+            hour: number;
+            minute: number;
+        };
+    } | null | undefined;
+    location: {
+        [x: string]: {
+            conditionalTacticIds?: {
+                [x: string]: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[];
+            } | null | undefined;
+            title: string;
+            tacticIds: string[];
+            suggestedTacticIds: string[];
+            locationKey: string;
+            mode: NonNullable<"enter" | "exit" | undefined>;
+        };
+    } | null | undefined;
     tacticsById: any;
     patternsById: {
         [x: string]: {
@@ -143,18 +190,16 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     impulse: undefined;
     impulseDebrief: undefined;
     dayDebrief: {
+        tacticIds: "";
+        suggestedTacticIds: "";
+        conditionalTacticIds: undefined;
         weekdays: "";
         hour: undefined;
         minute: undefined;
         title: undefined;
-        strategy: {
-            tacticIds: "";
-            suggestedTacticIds: "";
-            conditionalTacticIds: undefined;
-        };
     };
-    time: "";
-    locations: "";
+    time: undefined;
+    location: undefined;
     tacticsById: any;
     patternsById: undefined;
     scheduledNotificationIds: "";
@@ -164,4 +209,14 @@ type WithTypes<T extends yup.ISchema<unknown>> = WithTacticsById<yup.InferType<T
     updatedAt: TimestampLike;
     tacticsById: Record<string, TacticValue>;
 };
+export declare const SHORT_DAYS: {
+    1: string;
+    2: string;
+    3: string;
+    4: string;
+    5: string;
+    6: string;
+    7: string;
+};
+export declare const LONG_DAYS: string[];
 export {};

@@ -28,10 +28,10 @@ export declare const makeImpulseRecommendationFactory: (TimestampKlass: typeof T
     ordinal: number;
     title: string;
     type: "impulse";
-    tacticIds: any[];
+    tacticIds: string[];
     recommenderUid: string;
     recommenderName: string;
-    patternIds: any[];
+    patternIds: string[];
 }, "createdAt" | "updatedAt" | "uid" | "ordinal" | "title" | "type" | "tacticIds" | "recommenderUid" | "recommenderName" | "patternIds" | ("tacticsById" | "explanation" | "appliedAt" | "dismissedAt" | "ruleId")>;
 export declare const makeImpulseDebriefRecommendationFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     tacticsById?: any;
@@ -61,10 +61,10 @@ export declare const makeImpulseDebriefRecommendationFactory: (TimestampKlass: t
     ordinal: number;
     title: string;
     type: "impulseDebrief";
-    tacticIds: any[];
+    tacticIds: string[];
     recommenderUid: string;
     recommenderName: string;
-    patternIds: any[];
+    patternIds: string[];
 }, "createdAt" | "updatedAt" | "uid" | "ordinal" | "title" | "type" | "tacticIds" | "recommenderUid" | "recommenderName" | "patternIds" | ("tacticsById" | "explanation" | "appliedAt" | "dismissedAt" | "ruleId")>;
 export declare const makeTimeRecommendationFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     tacticsById?: any;
@@ -94,9 +94,9 @@ export declare const makeTimeRecommendationFactory: (TimestampKlass: typeof Time
     ordinal: number;
     title: string;
     type: "time";
-    tacticIds: any[];
+    tacticIds: string[];
     time: {
-        weekdays: any[];
+        weekdays: string[];
         hour: number;
         minute: number;
     };
@@ -131,7 +131,7 @@ export declare const makeLocationRecommendationFactory: (TimestampKlass: typeof 
     ordinal: number;
     title: string;
     type: "location";
-    tacticIds: any[];
+    tacticIds: string[];
     locationKey: string;
     recommenderUid: string;
     recommenderName: string;

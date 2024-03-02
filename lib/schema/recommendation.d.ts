@@ -6,7 +6,7 @@ export declare const recommendationBaseSchema: yup.ObjectSchema<{
     explanation: string | null | undefined;
     recommenderUid: string;
     recommenderName: string;
-    tacticIds: any[];
+    tacticIds: string[];
     tacticsById: any;
 }, yup.AnyObject, {
     title: undefined;
@@ -19,7 +19,7 @@ export declare const recommendationBaseSchema: yup.ObjectSchema<{
 export declare const timeScheduleSchema: yup.ObjectSchema<{
     hour: number;
     minute: number;
-    weekdays: any[];
+    weekdays: string[];
 }, yup.AnyObject, {
     hour: undefined;
     minute: undefined;
@@ -31,7 +31,7 @@ declare const impulseRecommendationSchema: yup.ObjectSchema<{
     explanation: string | null | undefined;
     recommenderUid: string;
     recommenderName: string;
-    tacticIds: any[];
+    tacticIds: string[];
     tacticsById: any;
     ordinal: number;
     uid: string;
@@ -57,7 +57,7 @@ declare const impulseRecommendationSchema: yup.ObjectSchema<{
     };
     ruleId: string | null | undefined;
     type: "impulse";
-    patternIds: any[];
+    patternIds: string[];
 }, yup.AnyObject, {
     title: undefined;
     explanation: undefined;
@@ -89,7 +89,7 @@ declare const impulseDebriefRecommendationSchema: yup.ObjectSchema<{
     explanation: string | null | undefined;
     recommenderUid: string;
     recommenderName: string;
-    tacticIds: any[];
+    tacticIds: string[];
     tacticsById: any;
     ordinal: number;
     uid: string;
@@ -115,7 +115,7 @@ declare const impulseDebriefRecommendationSchema: yup.ObjectSchema<{
     };
     ruleId: string | null | undefined;
     type: "impulseDebrief";
-    patternIds: any[];
+    patternIds: string[];
 }, yup.AnyObject, {
     title: undefined;
     explanation: undefined;
@@ -147,7 +147,7 @@ declare const timeRecommendationSchema: yup.ObjectSchema<{
     explanation: string | null | undefined;
     recommenderUid: string;
     recommenderName: string;
-    tacticIds: any[];
+    tacticIds: string[];
     tacticsById: any;
     ordinal: number;
     uid: string;
@@ -174,7 +174,7 @@ declare const timeRecommendationSchema: yup.ObjectSchema<{
     ruleId: string | null | undefined;
     type: "time";
     time: {
-        weekdays: any[];
+        weekdays: string[];
         hour: number;
         minute: number;
     };
@@ -213,7 +213,7 @@ declare const locationRecommendationSchema: yup.ObjectSchema<{
     explanation: string | null | undefined;
     recommenderUid: string;
     recommenderName: string;
-    tacticIds: any[];
+    tacticIds: string[];
     tacticsById: any;
     ordinal: number;
     uid: string;

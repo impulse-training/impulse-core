@@ -6,11 +6,7 @@ import { commentSchema } from './comment';
 import { gameplanSchema, strategy } from './gameplan';
 import { patternSchema } from './pattern';
 import { TacticValue, WithTacticsById, tacticSchema } from './tactic';
-import {
-  optionalStringArray,
-  requiredArrayOf,
-  requiredStringArray,
-} from './utils/array';
+import { optionalStringArray, requiredStringArray } from './utils/array';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
 
@@ -49,7 +45,7 @@ const baseLogSchema = yup.object().shape({
   commentsByTacticId: optionalObjectOf(
     yup.object().shape({
       tacticTitle: yup.string().required(),
-      comments: requiredArrayOf(commentSchema),
+      comments: yup.array().of(commentSchema.required()).required(),
     })
   ),
   steps: yup.number().notRequired(),

@@ -53,29 +53,64 @@ declare const baseLogSchema: yup.ObjectSchema<{
     commentsByTacticId: {
         [x: string]: {
             tacticTitle: string;
-            comments: any[];
+            comments: {
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                tacticId?: string | null | undefined;
+                tacticName?: string | null | undefined;
+                text?: string | undefined;
+                recording?: {
+                    waveform?: string | null | undefined;
+                    localFilePath: string;
+                    remoteFilePath: string;
+                } | undefined;
+                isEdited?: boolean | undefined;
+                avatar?: {
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    storagePath?: yup.Maybe<string | undefined>;
+                    uri?: yup.Maybe<string | undefined>;
+                } | undefined;
+                uid: string;
+                authorName: string;
+            }[];
         };
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
     strategy: {
         impulseDebrief?: {
             conditionalTacticIds?: {
-                [x: string]: any[];
+                [x: string]: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[];
             } | null | undefined;
-            tacticIds: any[];
-            suggestedTacticIds: any[];
+            tacticIds: string[];
+            suggestedTacticIds: string[];
         } | null | undefined;
         main: {
             conditionalTacticIds?: {
-                [x: string]: any[];
+                [x: string]: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[];
             } | null | undefined;
-            tacticIds: any[];
-            suggestedTacticIds: any[];
+            tacticIds: string[];
+            suggestedTacticIds: string[];
         };
     };
     tacticsById: any;
-    seenTacticIds: any[];
-    completedTacticIds: any[];
+    seenTacticIds: string[];
+    completedTacticIds: string[];
     tacticLikes: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
@@ -176,29 +211,64 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     commentsByTacticId: {
         [x: string]: {
             tacticTitle: string;
-            comments: any[];
+            comments: {
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                tacticId?: string | null | undefined;
+                tacticName?: string | null | undefined;
+                text?: string | undefined;
+                recording?: {
+                    waveform?: string | null | undefined;
+                    localFilePath: string;
+                    remoteFilePath: string;
+                } | undefined;
+                isEdited?: boolean | undefined;
+                avatar?: {
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    storagePath?: yup.Maybe<string | undefined>;
+                    uri?: yup.Maybe<string | undefined>;
+                } | undefined;
+                uid: string;
+                authorName: string;
+            }[];
         };
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
     strategy: {
         impulseDebrief?: {
             conditionalTacticIds?: {
-                [x: string]: any[];
+                [x: string]: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[];
             } | null | undefined;
-            tacticIds: any[];
-            suggestedTacticIds: any[];
+            tacticIds: string[];
+            suggestedTacticIds: string[];
         } | null | undefined;
         main: {
             conditionalTacticIds?: {
-                [x: string]: any[];
+                [x: string]: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[];
             } | null | undefined;
-            tacticIds: any[];
-            suggestedTacticIds: any[];
+            tacticIds: string[];
+            suggestedTacticIds: string[];
         };
     };
     tacticsById: any;
-    seenTacticIds: any[];
-    completedTacticIds: any[];
+    seenTacticIds: string[];
+    completedTacticIds: string[];
     tacticLikes: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
@@ -234,40 +304,81 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         tacticsById?: any;
         recommendationsCount?: number | undefined;
         dayDebrief?: {
+            conditionalTacticIds?: {
+                [x: string]: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[];
+            } | null | undefined;
             title: string;
-            weekdays: any[];
+            tacticIds: string[];
+            suggestedTacticIds: string[];
+            weekdays: number[];
             hour: number;
             minute: number;
-            strategy: {
-                conditionalTacticIds?: {
-                    [x: string]: any[];
-                } | null | undefined;
-                tacticIds: any[];
-                suggestedTacticIds: any[];
-            };
         } | undefined;
+        time?: {
+            [x: string]: {
+                conditionalTacticIds?: {
+                    [x: string]: {
+                        ids: string[];
+                        condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                        value: {};
+                    }[];
+                } | null | undefined;
+                title: string;
+                tacticIds: string[];
+                suggestedTacticIds: string[];
+                weekdays: number[];
+                hour: number;
+                minute: number;
+            };
+        } | null | undefined;
+        location?: {
+            [x: string]: {
+                conditionalTacticIds?: {
+                    [x: string]: {
+                        ids: string[];
+                        condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                        value: {};
+                    }[];
+                } | null | undefined;
+                title: string;
+                tacticIds: string[];
+                suggestedTacticIds: string[];
+                locationKey: string;
+                mode: NonNullable<"enter" | "exit" | undefined>;
+            };
+        } | null | undefined;
         scheduledNotificationIds?: string[] | undefined;
         uid: string;
         impulse: {
             [x: string]: {
                 conditionalTacticIds?: {
-                    [x: string]: any[];
+                    [x: string]: {
+                        ids: string[];
+                        condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                        value: {};
+                    }[];
                 } | null | undefined;
-                tacticIds: any[];
-                suggestedTacticIds: any[];
+                tacticIds: string[];
+                suggestedTacticIds: string[];
             };
         };
         impulseDebrief: {
             [x: string]: {
                 conditionalTacticIds?: {
-                    [x: string]: any[];
+                    [x: string]: {
+                        ids: string[];
+                        condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                        value: {};
+                    }[];
                 } | null | undefined;
-                tacticIds: any[];
-                suggestedTacticIds: any[];
+                tacticIds: string[];
+                suggestedTacticIds: string[];
             };
         };
-        time: any[];
-        locations: any[];
         patternsById: {
             [x: string]: {
                 createdAt?: yup.Maybe<{} | undefined> | {
@@ -385,18 +496,16 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         impulse: undefined;
         impulseDebrief: undefined;
         dayDebrief: {
+            tacticIds: "";
+            suggestedTacticIds: "";
+            conditionalTacticIds: undefined;
             weekdays: "";
             hour: undefined;
             minute: undefined;
             title: undefined;
-            strategy: {
-                tacticIds: "";
-                suggestedTacticIds: "";
-                conditionalTacticIds: undefined;
-            };
         };
-        time: "";
-        locations: "";
+        time: undefined;
+        location: undefined;
         tacticsById: any;
         patternsById: undefined;
         scheduledNotificationIds: "";
@@ -444,29 +553,64 @@ declare const locationLogSchema: yup.ObjectSchema<{
     commentsByTacticId: {
         [x: string]: {
             tacticTitle: string;
-            comments: any[];
+            comments: {
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                tacticId?: string | null | undefined;
+                tacticName?: string | null | undefined;
+                text?: string | undefined;
+                recording?: {
+                    waveform?: string | null | undefined;
+                    localFilePath: string;
+                    remoteFilePath: string;
+                } | undefined;
+                isEdited?: boolean | undefined;
+                avatar?: {
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    storagePath?: yup.Maybe<string | undefined>;
+                    uri?: yup.Maybe<string | undefined>;
+                } | undefined;
+                uid: string;
+                authorName: string;
+            }[];
         };
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
     strategy: {
         impulseDebrief?: {
             conditionalTacticIds?: {
-                [x: string]: any[];
+                [x: string]: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[];
             } | null | undefined;
-            tacticIds: any[];
-            suggestedTacticIds: any[];
+            tacticIds: string[];
+            suggestedTacticIds: string[];
         } | null | undefined;
         main: {
             conditionalTacticIds?: {
-                [x: string]: any[];
+                [x: string]: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[];
             } | null | undefined;
-            tacticIds: any[];
-            suggestedTacticIds: any[];
+            tacticIds: string[];
+            suggestedTacticIds: string[];
         };
     };
     tacticsById: any;
-    seenTacticIds: any[];
-    completedTacticIds: any[];
+    seenTacticIds: string[];
+    completedTacticIds: string[];
     tacticLikes: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
@@ -572,29 +716,64 @@ declare const timeLogSchema: yup.ObjectSchema<{
     commentsByTacticId: {
         [x: string]: {
             tacticTitle: string;
-            comments: any[];
+            comments: {
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                tacticId?: string | null | undefined;
+                tacticName?: string | null | undefined;
+                text?: string | undefined;
+                recording?: {
+                    waveform?: string | null | undefined;
+                    localFilePath: string;
+                    remoteFilePath: string;
+                } | undefined;
+                isEdited?: boolean | undefined;
+                avatar?: {
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    storagePath?: yup.Maybe<string | undefined>;
+                    uri?: yup.Maybe<string | undefined>;
+                } | undefined;
+                uid: string;
+                authorName: string;
+            }[];
         };
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
     strategy: {
         impulseDebrief?: {
             conditionalTacticIds?: {
-                [x: string]: any[];
+                [x: string]: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[];
             } | null | undefined;
-            tacticIds: any[];
-            suggestedTacticIds: any[];
+            tacticIds: string[];
+            suggestedTacticIds: string[];
         } | null | undefined;
         main: {
             conditionalTacticIds?: {
-                [x: string]: any[];
+                [x: string]: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[];
             } | null | undefined;
-            tacticIds: any[];
-            suggestedTacticIds: any[];
+            tacticIds: string[];
+            suggestedTacticIds: string[];
         };
     };
     tacticsById: any;
-    seenTacticIds: any[];
-    completedTacticIds: any[];
+    seenTacticIds: string[];
+    completedTacticIds: string[];
     tacticLikes: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
@@ -696,29 +875,64 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
     commentsByTacticId: {
         [x: string]: {
             tacticTitle: string;
-            comments: any[];
+            comments: {
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                tacticId?: string | null | undefined;
+                tacticName?: string | null | undefined;
+                text?: string | undefined;
+                recording?: {
+                    waveform?: string | null | undefined;
+                    localFilePath: string;
+                    remoteFilePath: string;
+                } | undefined;
+                isEdited?: boolean | undefined;
+                avatar?: {
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    storagePath?: yup.Maybe<string | undefined>;
+                    uri?: yup.Maybe<string | undefined>;
+                } | undefined;
+                uid: string;
+                authorName: string;
+            }[];
         };
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
     strategy: {
         impulseDebrief?: {
             conditionalTacticIds?: {
-                [x: string]: any[];
+                [x: string]: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[];
             } | null | undefined;
-            tacticIds: any[];
-            suggestedTacticIds: any[];
+            tacticIds: string[];
+            suggestedTacticIds: string[];
         } | null | undefined;
         main: {
             conditionalTacticIds?: {
-                [x: string]: any[];
+                [x: string]: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[];
             } | null | undefined;
-            tacticIds: any[];
-            suggestedTacticIds: any[];
+            tacticIds: string[];
+            suggestedTacticIds: string[];
         };
     };
     tacticsById: any;
-    seenTacticIds: any[];
-    completedTacticIds: any[];
+    seenTacticIds: string[];
+    completedTacticIds: string[];
     tacticLikes: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
@@ -852,29 +1066,64 @@ declare const motionLogSchema: yup.ObjectSchema<{
     commentsByTacticId: {
         [x: string]: {
             tacticTitle: string;
-            comments: any[];
+            comments: {
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                tacticId?: string | null | undefined;
+                tacticName?: string | null | undefined;
+                text?: string | undefined;
+                recording?: {
+                    waveform?: string | null | undefined;
+                    localFilePath: string;
+                    remoteFilePath: string;
+                } | undefined;
+                isEdited?: boolean | undefined;
+                avatar?: {
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    storagePath?: yup.Maybe<string | undefined>;
+                    uri?: yup.Maybe<string | undefined>;
+                } | undefined;
+                uid: string;
+                authorName: string;
+            }[];
         };
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
     strategy: {
         impulseDebrief?: {
             conditionalTacticIds?: {
-                [x: string]: any[];
+                [x: string]: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[];
             } | null | undefined;
-            tacticIds: any[];
-            suggestedTacticIds: any[];
+            tacticIds: string[];
+            suggestedTacticIds: string[];
         } | null | undefined;
         main: {
             conditionalTacticIds?: {
-                [x: string]: any[];
+                [x: string]: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[];
             } | null | undefined;
-            tacticIds: any[];
-            suggestedTacticIds: any[];
+            tacticIds: string[];
+            suggestedTacticIds: string[];
         };
     };
     tacticsById: any;
-    seenTacticIds: any[];
-    completedTacticIds: any[];
+    seenTacticIds: string[];
+    completedTacticIds: string[];
     tacticLikes: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
@@ -974,29 +1223,64 @@ declare const buttonLogSchema: yup.ObjectSchema<{
     commentsByTacticId: {
         [x: string]: {
             tacticTitle: string;
-            comments: any[];
+            comments: {
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                tacticId?: string | null | undefined;
+                tacticName?: string | null | undefined;
+                text?: string | undefined;
+                recording?: {
+                    waveform?: string | null | undefined;
+                    localFilePath: string;
+                    remoteFilePath: string;
+                } | undefined;
+                isEdited?: boolean | undefined;
+                avatar?: {
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    storagePath?: yup.Maybe<string | undefined>;
+                    uri?: yup.Maybe<string | undefined>;
+                } | undefined;
+                uid: string;
+                authorName: string;
+            }[];
         };
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
     strategy: {
         impulseDebrief?: {
             conditionalTacticIds?: {
-                [x: string]: any[];
+                [x: string]: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[];
             } | null | undefined;
-            tacticIds: any[];
-            suggestedTacticIds: any[];
+            tacticIds: string[];
+            suggestedTacticIds: string[];
         } | null | undefined;
         main: {
             conditionalTacticIds?: {
-                [x: string]: any[];
+                [x: string]: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[];
             } | null | undefined;
-            tacticIds: any[];
-            suggestedTacticIds: any[];
+            tacticIds: string[];
+            suggestedTacticIds: string[];
         };
     };
     tacticsById: any;
-    seenTacticIds: any[];
-    completedTacticIds: any[];
+    seenTacticIds: string[];
+    completedTacticIds: string[];
     tacticLikes: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
@@ -1083,7 +1367,34 @@ export declare const logSchema: yup.Lazy<{
     commentsByTacticId?: {
         [x: string]: {
             tacticTitle: string;
-            comments: any[];
+            comments: {
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                tacticId?: string | null | undefined;
+                tacticName?: string | null | undefined;
+                text?: string | undefined;
+                recording?: {
+                    waveform?: string | null | undefined;
+                    localFilePath: string;
+                    remoteFilePath: string;
+                } | undefined;
+                isEdited?: boolean | undefined;
+                avatar?: {
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    storagePath?: yup.Maybe<string | undefined>;
+                    uri?: yup.Maybe<string | undefined>;
+                } | undefined;
+                uid: string;
+                authorName: string;
+            }[];
         };
     } | null | undefined;
     tacticLikes?: {
@@ -1109,21 +1420,14 @@ export declare const logSchema: yup.Lazy<{
     debriefedAt?: yup.Maybe<{} | undefined>;
     uid: string;
     type: "impulse";
-    strategy: {
-        impulseDebrief?: {
-            conditionalTacticIds?: {
-                [x: string]: any[];
-            } | null | undefined;
-            tacticIds: any[];
-            suggestedTacticIds: any[];
-        } | null | undefined;
-        main: {
-            conditionalTacticIds?: {
-                [x: string]: any[];
-            } | null | undefined;
-            tacticIds: any[];
-            suggestedTacticIds: any[];
-        };
+    location: {
+        latitude?: number | undefined;
+        longitude?: number | undefined;
+        altitude?: number | undefined;
+        accuracy?: number | undefined;
+        altitudeAccuracy?: number | undefined;
+        heading?: number | undefined;
+        speed?: number | undefined;
     };
     patternsById: {
         [x: string]: {
@@ -1158,18 +1462,33 @@ export declare const logSchema: yup.Lazy<{
         toDate: {};
     };
     timezone: string;
-    location: {
-        latitude?: number | undefined;
-        longitude?: number | undefined;
-        altitude?: number | undefined;
-        accuracy?: number | undefined;
-        altitudeAccuracy?: number | undefined;
-        heading?: number | undefined;
-        speed?: number | undefined;
-    };
     locationIsFetching: NonNullable<boolean | undefined>;
-    seenTacticIds: any[];
-    completedTacticIds: any[];
+    strategy: {
+        impulseDebrief?: {
+            conditionalTacticIds?: {
+                [x: string]: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[];
+            } | null | undefined;
+            tacticIds: string[];
+            suggestedTacticIds: string[];
+        } | null | undefined;
+        main: {
+            conditionalTacticIds?: {
+                [x: string]: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[];
+            } | null | undefined;
+            tacticIds: string[];
+            suggestedTacticIds: string[];
+        };
+    };
+    seenTacticIds: string[];
+    completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
     gameplan: {
         createdAt?: yup.Maybe<{} | undefined> | {
@@ -1186,40 +1505,81 @@ export declare const logSchema: yup.Lazy<{
         tacticsById?: any;
         recommendationsCount?: number | undefined;
         dayDebrief?: {
+            conditionalTacticIds?: {
+                [x: string]: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[];
+            } | null | undefined;
             title: string;
-            weekdays: any[];
+            tacticIds: string[];
+            suggestedTacticIds: string[];
+            weekdays: number[];
             hour: number;
             minute: number;
-            strategy: {
-                conditionalTacticIds?: {
-                    [x: string]: any[];
-                } | null | undefined;
-                tacticIds: any[];
-                suggestedTacticIds: any[];
-            };
         } | undefined;
+        time?: {
+            [x: string]: {
+                conditionalTacticIds?: {
+                    [x: string]: {
+                        ids: string[];
+                        condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                        value: {};
+                    }[];
+                } | null | undefined;
+                title: string;
+                tacticIds: string[];
+                suggestedTacticIds: string[];
+                weekdays: number[];
+                hour: number;
+                minute: number;
+            };
+        } | null | undefined;
+        location?: {
+            [x: string]: {
+                conditionalTacticIds?: {
+                    [x: string]: {
+                        ids: string[];
+                        condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                        value: {};
+                    }[];
+                } | null | undefined;
+                title: string;
+                tacticIds: string[];
+                suggestedTacticIds: string[];
+                locationKey: string;
+                mode: NonNullable<"enter" | "exit" | undefined>;
+            };
+        } | null | undefined;
         scheduledNotificationIds?: string[] | undefined;
         uid: string;
         impulse: {
             [x: string]: {
                 conditionalTacticIds?: {
-                    [x: string]: any[];
+                    [x: string]: {
+                        ids: string[];
+                        condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                        value: {};
+                    }[];
                 } | null | undefined;
-                tacticIds: any[];
-                suggestedTacticIds: any[];
+                tacticIds: string[];
+                suggestedTacticIds: string[];
             };
         };
         impulseDebrief: {
             [x: string]: {
                 conditionalTacticIds?: {
-                    [x: string]: any[];
+                    [x: string]: {
+                        ids: string[];
+                        condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                        value: {};
+                    }[];
                 } | null | undefined;
-                tacticIds: any[];
-                suggestedTacticIds: any[];
+                tacticIds: string[];
+                suggestedTacticIds: string[];
             };
         };
-        time: any[];
-        locations: any[];
         patternsById: {
             [x: string]: {
                 createdAt?: yup.Maybe<{} | undefined> | {
@@ -1268,7 +1628,34 @@ export declare const logSchema: yup.Lazy<{
     commentsByTacticId?: {
         [x: string]: {
             tacticTitle: string;
-            comments: any[];
+            comments: {
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                tacticId?: string | null | undefined;
+                tacticName?: string | null | undefined;
+                text?: string | undefined;
+                recording?: {
+                    waveform?: string | null | undefined;
+                    localFilePath: string;
+                    remoteFilePath: string;
+                } | undefined;
+                isEdited?: boolean | undefined;
+                avatar?: {
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    storagePath?: yup.Maybe<string | undefined>;
+                    uri?: yup.Maybe<string | undefined>;
+                } | undefined;
+                uid: string;
+                authorName: string;
+            }[];
         };
     } | null | undefined;
     tacticLikes?: {
@@ -1287,28 +1674,6 @@ export declare const logSchema: yup.Lazy<{
     sharedWithSupportGroupIds?: string[] | undefined;
     uid: string;
     type: "location";
-    strategy: {
-        impulseDebrief?: {
-            conditionalTacticIds?: {
-                [x: string]: any[];
-            } | null | undefined;
-            tacticIds: any[];
-            suggestedTacticIds: any[];
-        } | null | undefined;
-        main: {
-            conditionalTacticIds?: {
-                [x: string]: any[];
-            } | null | undefined;
-            tacticIds: any[];
-            suggestedTacticIds: any[];
-        };
-    };
-    startTime: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    timezone: string;
     location: {
         latitude?: number | undefined;
         longitude?: number | undefined;
@@ -1318,9 +1683,39 @@ export declare const logSchema: yup.Lazy<{
         heading?: number | undefined;
         speed?: number | undefined;
     };
+    startTime: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    timezone: string;
     locationIsFetching: NonNullable<boolean | undefined>;
-    seenTacticIds: any[];
-    completedTacticIds: any[];
+    strategy: {
+        impulseDebrief?: {
+            conditionalTacticIds?: {
+                [x: string]: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[];
+            } | null | undefined;
+            tacticIds: string[];
+            suggestedTacticIds: string[];
+        } | null | undefined;
+        main: {
+            conditionalTacticIds?: {
+                [x: string]: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[];
+            } | null | undefined;
+            tacticIds: string[];
+            suggestedTacticIds: string[];
+        };
+    };
+    seenTacticIds: string[];
+    completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
     locationId: string;
     locationName: string;
@@ -1344,7 +1739,34 @@ export declare const logSchema: yup.Lazy<{
     commentsByTacticId?: {
         [x: string]: {
             tacticTitle: string;
-            comments: any[];
+            comments: {
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                tacticId?: string | null | undefined;
+                tacticName?: string | null | undefined;
+                text?: string | undefined;
+                recording?: {
+                    waveform?: string | null | undefined;
+                    localFilePath: string;
+                    remoteFilePath: string;
+                } | undefined;
+                isEdited?: boolean | undefined;
+                avatar?: {
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    storagePath?: yup.Maybe<string | undefined>;
+                    uri?: yup.Maybe<string | undefined>;
+                } | undefined;
+                uid: string;
+                authorName: string;
+            }[];
         };
     } | null | undefined;
     tacticLikes?: {
@@ -1363,28 +1785,6 @@ export declare const logSchema: yup.Lazy<{
     sharedWithSupportGroupIds?: string[] | undefined;
     uid: string;
     type: "time";
-    strategy: {
-        impulseDebrief?: {
-            conditionalTacticIds?: {
-                [x: string]: any[];
-            } | null | undefined;
-            tacticIds: any[];
-            suggestedTacticIds: any[];
-        } | null | undefined;
-        main: {
-            conditionalTacticIds?: {
-                [x: string]: any[];
-            } | null | undefined;
-            tacticIds: any[];
-            suggestedTacticIds: any[];
-        };
-    };
-    startTime: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    timezone: string;
     location: {
         latitude?: number | undefined;
         longitude?: number | undefined;
@@ -1394,9 +1794,39 @@ export declare const logSchema: yup.Lazy<{
         heading?: number | undefined;
         speed?: number | undefined;
     };
+    startTime: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    timezone: string;
     locationIsFetching: NonNullable<boolean | undefined>;
-    seenTacticIds: any[];
-    completedTacticIds: any[];
+    strategy: {
+        impulseDebrief?: {
+            conditionalTacticIds?: {
+                [x: string]: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[];
+            } | null | undefined;
+            tacticIds: string[];
+            suggestedTacticIds: string[];
+        } | null | undefined;
+        main: {
+            conditionalTacticIds?: {
+                [x: string]: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[];
+            } | null | undefined;
+            tacticIds: string[];
+            suggestedTacticIds: string[];
+        };
+    };
+    seenTacticIds: string[];
+    completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
     routineId: string;
 } | {
@@ -1418,7 +1848,34 @@ export declare const logSchema: yup.Lazy<{
     commentsByTacticId?: {
         [x: string]: {
             tacticTitle: string;
-            comments: any[];
+            comments: {
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                tacticId?: string | null | undefined;
+                tacticName?: string | null | undefined;
+                text?: string | undefined;
+                recording?: {
+                    waveform?: string | null | undefined;
+                    localFilePath: string;
+                    remoteFilePath: string;
+                } | undefined;
+                isEdited?: boolean | undefined;
+                avatar?: {
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    storagePath?: yup.Maybe<string | undefined>;
+                    uri?: yup.Maybe<string | undefined>;
+                } | undefined;
+                uid: string;
+                authorName: string;
+            }[];
         };
     } | null | undefined;
     tacticLikes?: {
@@ -1437,21 +1894,14 @@ export declare const logSchema: yup.Lazy<{
     sharedWithSupportGroupIds?: string[] | undefined;
     uid: string;
     type: "dayDebrief";
-    strategy: {
-        impulseDebrief?: {
-            conditionalTacticIds?: {
-                [x: string]: any[];
-            } | null | undefined;
-            tacticIds: any[];
-            suggestedTacticIds: any[];
-        } | null | undefined;
-        main: {
-            conditionalTacticIds?: {
-                [x: string]: any[];
-            } | null | undefined;
-            tacticIds: any[];
-            suggestedTacticIds: any[];
-        };
+    location: {
+        latitude?: number | undefined;
+        longitude?: number | undefined;
+        altitude?: number | undefined;
+        accuracy?: number | undefined;
+        altitudeAccuracy?: number | undefined;
+        heading?: number | undefined;
+        speed?: number | undefined;
     };
     patternsById: {
         [x: string]: {
@@ -1486,18 +1936,33 @@ export declare const logSchema: yup.Lazy<{
         toDate: {};
     };
     timezone: string;
-    location: {
-        latitude?: number | undefined;
-        longitude?: number | undefined;
-        altitude?: number | undefined;
-        accuracy?: number | undefined;
-        altitudeAccuracy?: number | undefined;
-        heading?: number | undefined;
-        speed?: number | undefined;
-    };
     locationIsFetching: NonNullable<boolean | undefined>;
-    seenTacticIds: any[];
-    completedTacticIds: any[];
+    strategy: {
+        impulseDebrief?: {
+            conditionalTacticIds?: {
+                [x: string]: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[];
+            } | null | undefined;
+            tacticIds: string[];
+            suggestedTacticIds: string[];
+        } | null | undefined;
+        main: {
+            conditionalTacticIds?: {
+                [x: string]: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[];
+            } | null | undefined;
+            tacticIds: string[];
+            suggestedTacticIds: string[];
+        };
+    };
+    seenTacticIds: string[];
+    completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
     routineId: string;
     tacticDataEntries: {
@@ -1522,7 +1987,34 @@ export declare const logSchema: yup.Lazy<{
     commentsByTacticId?: {
         [x: string]: {
             tacticTitle: string;
-            comments: any[];
+            comments: {
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                tacticId?: string | null | undefined;
+                tacticName?: string | null | undefined;
+                text?: string | undefined;
+                recording?: {
+                    waveform?: string | null | undefined;
+                    localFilePath: string;
+                    remoteFilePath: string;
+                } | undefined;
+                isEdited?: boolean | undefined;
+                avatar?: {
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    storagePath?: yup.Maybe<string | undefined>;
+                    uri?: yup.Maybe<string | undefined>;
+                } | undefined;
+                uid: string;
+                authorName: string;
+            }[];
         };
     } | null | undefined;
     tacticLikes?: {
@@ -1541,28 +2033,6 @@ export declare const logSchema: yup.Lazy<{
     sharedWithSupportGroupIds?: string[] | undefined;
     uid: string;
     type: "motion";
-    strategy: {
-        impulseDebrief?: {
-            conditionalTacticIds?: {
-                [x: string]: any[];
-            } | null | undefined;
-            tacticIds: any[];
-            suggestedTacticIds: any[];
-        } | null | undefined;
-        main: {
-            conditionalTacticIds?: {
-                [x: string]: any[];
-            } | null | undefined;
-            tacticIds: any[];
-            suggestedTacticIds: any[];
-        };
-    };
-    startTime: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    timezone: string;
     location: {
         latitude?: number | undefined;
         longitude?: number | undefined;
@@ -1572,9 +2042,39 @@ export declare const logSchema: yup.Lazy<{
         heading?: number | undefined;
         speed?: number | undefined;
     };
+    startTime: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    timezone: string;
     locationIsFetching: NonNullable<boolean | undefined>;
-    seenTacticIds: any[];
-    completedTacticIds: any[];
+    strategy: {
+        impulseDebrief?: {
+            conditionalTacticIds?: {
+                [x: string]: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[];
+            } | null | undefined;
+            tacticIds: string[];
+            suggestedTacticIds: string[];
+        } | null | undefined;
+        main: {
+            conditionalTacticIds?: {
+                [x: string]: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[];
+            } | null | undefined;
+            tacticIds: string[];
+            suggestedTacticIds: string[];
+        };
+    };
+    seenTacticIds: string[];
+    completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
 } | {
     createdAt?: yup.Maybe<{} | undefined> | {
@@ -1595,7 +2095,34 @@ export declare const logSchema: yup.Lazy<{
     commentsByTacticId?: {
         [x: string]: {
             tacticTitle: string;
-            comments: any[];
+            comments: {
+                createdAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                updatedAt?: yup.Maybe<{} | undefined> | {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: {};
+                };
+                tacticId?: string | null | undefined;
+                tacticName?: string | null | undefined;
+                text?: string | undefined;
+                recording?: {
+                    waveform?: string | null | undefined;
+                    localFilePath: string;
+                    remoteFilePath: string;
+                } | undefined;
+                isEdited?: boolean | undefined;
+                avatar?: {
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    storagePath?: yup.Maybe<string | undefined>;
+                    uri?: yup.Maybe<string | undefined>;
+                } | undefined;
+                uid: string;
+                authorName: string;
+            }[];
         };
     } | null | undefined;
     tacticLikes?: {
@@ -1614,28 +2141,6 @@ export declare const logSchema: yup.Lazy<{
     sharedWithSupportGroupIds?: string[] | undefined;
     uid: string;
     type: "button";
-    strategy: {
-        impulseDebrief?: {
-            conditionalTacticIds?: {
-                [x: string]: any[];
-            } | null | undefined;
-            tacticIds: any[];
-            suggestedTacticIds: any[];
-        } | null | undefined;
-        main: {
-            conditionalTacticIds?: {
-                [x: string]: any[];
-            } | null | undefined;
-            tacticIds: any[];
-            suggestedTacticIds: any[];
-        };
-    };
-    startTime: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    timezone: string;
     location: {
         latitude?: number | undefined;
         longitude?: number | undefined;
@@ -1645,9 +2150,39 @@ export declare const logSchema: yup.Lazy<{
         heading?: number | undefined;
         speed?: number | undefined;
     };
+    startTime: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    timezone: string;
     locationIsFetching: NonNullable<boolean | undefined>;
-    seenTacticIds: any[];
-    completedTacticIds: any[];
+    strategy: {
+        impulseDebrief?: {
+            conditionalTacticIds?: {
+                [x: string]: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[];
+            } | null | undefined;
+            tacticIds: string[];
+            suggestedTacticIds: string[];
+        } | null | undefined;
+        main: {
+            conditionalTacticIds?: {
+                [x: string]: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[];
+            } | null | undefined;
+            tacticIds: string[];
+            suggestedTacticIds: string[];
+        };
+    };
+    seenTacticIds: string[];
+    completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
     isDeviceConnected: NonNullable<boolean | undefined>;
     characteristics: {};
