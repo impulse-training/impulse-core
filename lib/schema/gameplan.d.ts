@@ -78,6 +78,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     };
     parentIssueIds: string[] | undefined;
     recommendationsCount: number | undefined;
+    timezone: string;
     impulse: {
         [x: string]: {
             conditionalTacticIds?: {
@@ -187,6 +188,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     updatedAt: undefined;
     parentIssueIds: "";
     recommendationsCount: undefined;
+    timezone: undefined;
     impulse: undefined;
     impulseDebrief: undefined;
     dayDebrief: {

@@ -51,6 +51,7 @@ export const gameplanSchema = yup.object().shape({
   updatedAt: optionalTimestampSchema,
   parentIssueIds: optionalStringArray,
   recommendationsCount: yup.number(),
+  timezone: yup.string().required(),
   // Strategies - these are the sequences of tactics to try, including conditional tactics
   impulse: objectOf(strategy),
   impulseDebrief: objectOf(strategy),

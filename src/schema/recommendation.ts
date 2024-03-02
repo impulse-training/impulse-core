@@ -37,32 +37,32 @@ export const timeScheduleSchema = yup.object({
 });
 
 // Finally, we export specific recommendation types
-export type ImpulseRecommendationValue = yup.InferType<
-  typeof impulseRecommendationSchema
+export type ImpulseRecommendationValue = WithTacticsById<
+  yup.InferType<typeof impulseRecommendationSchema>
 >;
 const impulseRecommendationSchema = extendedRecommendationSchema.shape({
   type: yup.mixed<'impulse'>().oneOf(['impulse']).required(),
   patternIds: requiredStringArray,
 });
 
-export type ImpulseDebriefRecommendationValue = yup.InferType<
-  typeof impulseDebriefRecommendationSchema
+export type ImpulseDebriefRecommendationValue = WithTacticsById<
+  yup.InferType<typeof impulseDebriefRecommendationSchema>
 >;
 const impulseDebriefRecommendationSchema = extendedRecommendationSchema.shape({
   type: yup.mixed<'impulseDebrief'>().oneOf(['impulseDebrief']).required(),
   patternIds: requiredStringArray,
 });
 
-export type TimeRecommendationValue = yup.InferType<
-  typeof timeRecommendationSchema
+export type TimeRecommendationValue = WithTacticsById<
+  yup.InferType<typeof timeRecommendationSchema>
 >;
 const timeRecommendationSchema = extendedRecommendationSchema.shape({
   type: yup.mixed<'time'>().oneOf(['time']).required(),
   time: timeScheduleSchema.required(),
 });
 
-export type LocationRecommendationValue = yup.InferType<
-  typeof locationRecommendationSchema
+export type LocationRecommendationValue = WithTacticsById<
+  yup.InferType<typeof locationRecommendationSchema>
 >;
 const locationRecommendationSchema = extendedRecommendationSchema.shape({
   type: yup.mixed<'location'>().oneOf(['location']).required(),
@@ -97,9 +97,8 @@ export const recommendationSchema = yup.lazy(value => {
   }
 });
 
-export type RecommendationValue = WithTacticsById<
+export type RecommendationValue =
   | ImpulseRecommendationValue
   | ImpulseDebriefRecommendationValue
   | TimeRecommendationValue
-  | LocationRecommendationValue
->;
+  | LocationRecommendationValue;

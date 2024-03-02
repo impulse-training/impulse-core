@@ -25,7 +25,7 @@ export declare const timeScheduleSchema: yup.ObjectSchema<{
     minute: undefined;
     weekdays: "";
 }, "">;
-export type ImpulseRecommendationValue = yup.InferType<typeof impulseRecommendationSchema>;
+export type ImpulseRecommendationValue = WithTacticsById<yup.InferType<typeof impulseRecommendationSchema>>;
 declare const impulseRecommendationSchema: yup.ObjectSchema<{
     title: string;
     explanation: string | null | undefined;
@@ -83,7 +83,7 @@ declare const impulseRecommendationSchema: yup.ObjectSchema<{
     type: undefined;
     patternIds: "";
 }, "">;
-export type ImpulseDebriefRecommendationValue = yup.InferType<typeof impulseDebriefRecommendationSchema>;
+export type ImpulseDebriefRecommendationValue = WithTacticsById<yup.InferType<typeof impulseDebriefRecommendationSchema>>;
 declare const impulseDebriefRecommendationSchema: yup.ObjectSchema<{
     title: string;
     explanation: string | null | undefined;
@@ -141,7 +141,7 @@ declare const impulseDebriefRecommendationSchema: yup.ObjectSchema<{
     type: undefined;
     patternIds: "";
 }, "">;
-export type TimeRecommendationValue = yup.InferType<typeof timeRecommendationSchema>;
+export type TimeRecommendationValue = WithTacticsById<yup.InferType<typeof timeRecommendationSchema>>;
 declare const timeRecommendationSchema: yup.ObjectSchema<{
     title: string;
     explanation: string | null | undefined;
@@ -207,7 +207,7 @@ declare const timeRecommendationSchema: yup.ObjectSchema<{
         weekdays: "";
     };
 }, "">;
-export type LocationRecommendationValue = yup.InferType<typeof locationRecommendationSchema>;
+export type LocationRecommendationValue = WithTacticsById<yup.InferType<typeof locationRecommendationSchema>>;
 declare const locationRecommendationSchema: yup.ObjectSchema<{
     title: string;
     explanation: string | null | undefined;
@@ -268,5 +268,5 @@ declare const locationRecommendationSchema: yup.ObjectSchema<{
 export declare const recommendationSchema: yup.Lazy<{
     type: NonNullable<"impulse" | "impulseDebrief" | "time" | "location" | undefined>;
 }, yup.AnyObject, any>;
-export type RecommendationValue = WithTacticsById<ImpulseRecommendationValue | ImpulseDebriefRecommendationValue | TimeRecommendationValue | LocationRecommendationValue>;
+export type RecommendationValue = ImpulseRecommendationValue | ImpulseDebriefRecommendationValue | TimeRecommendationValue | LocationRecommendationValue;
 export {};

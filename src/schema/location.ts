@@ -8,5 +8,4 @@ export interface LocationValue {
   latitude: number;
   longitude: number;
   address: string;
-  routineIds: Array<string>;
 }
