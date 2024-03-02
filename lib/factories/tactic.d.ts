@@ -14,7 +14,6 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
     };
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
-    isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
     subtitle?: import("yup").Maybe<string | undefined>;
     description?: string | null | undefined;
@@ -23,6 +22,7 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
         storagePath?: import("yup").Maybe<string | undefined>;
         uri?: import("yup").Maybe<string | undefined>;
     } | null | undefined;
+    isTemplate?: boolean | null | undefined;
     language?: string | null | undefined;
     href?: string | null | undefined;
     categoryIds?: (string | undefined)[] | null | undefined;
@@ -50,7 +50,6 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
     };
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
-    isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
     subtitle?: import("yup").Maybe<string | undefined>;
     description?: string | null | undefined;
@@ -59,6 +58,7 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
         storagePath?: import("yup").Maybe<string | undefined>;
         uri?: import("yup").Maybe<string | undefined>;
     } | null | undefined;
+    isTemplate?: boolean | null | undefined;
     language?: string | null | undefined;
     href?: string | null | undefined;
     categoryIds?: (string | undefined)[] | null | undefined;
@@ -89,7 +89,6 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
     };
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
-    isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
     subtitle?: import("yup").Maybe<string | undefined>;
     description?: string | null | undefined;
@@ -98,6 +97,7 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
         storagePath?: import("yup").Maybe<string | undefined>;
         uri?: import("yup").Maybe<string | undefined>;
     } | null | undefined;
+    isTemplate?: boolean | null | undefined;
     language?: string | null | undefined;
     href?: string | null | undefined;
     categoryIds?: (string | undefined)[] | null | undefined;
@@ -123,7 +123,6 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
     };
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
-    isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
     subtitle?: import("yup").Maybe<string | undefined>;
     description?: string | null | undefined;
@@ -132,6 +131,7 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
         storagePath?: import("yup").Maybe<string | undefined>;
         uri?: import("yup").Maybe<string | undefined>;
     } | null | undefined;
+    isTemplate?: boolean | null | undefined;
     language?: string | null | undefined;
     href?: string | null | undefined;
     categoryIds?: (string | undefined)[] | null | undefined;
@@ -165,7 +165,6 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
     };
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
-    isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
     subtitle?: import("yup").Maybe<string | undefined>;
     description?: string | null | undefined;
@@ -174,6 +173,7 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
         storagePath?: import("yup").Maybe<string | undefined>;
         uri?: import("yup").Maybe<string | undefined>;
     } | null | undefined;
+    isTemplate?: boolean | null | undefined;
     language?: string | null | undefined;
     href?: string | null | undefined;
     categoryIds?: (string | undefined)[] | null | undefined;
@@ -199,7 +199,6 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
     };
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
-    isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
     subtitle?: import("yup").Maybe<string | undefined>;
     description?: string | null | undefined;
@@ -208,6 +207,7 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
         storagePath?: import("yup").Maybe<string | undefined>;
         uri?: import("yup").Maybe<string | undefined>;
     } | null | undefined;
+    isTemplate?: boolean | null | undefined;
     language?: string | null | undefined;
     href?: string | null | undefined;
     categoryIds?: (string | undefined)[] | null | undefined;
@@ -233,8 +233,6 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
     };
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
-    isTemplate?: boolean | null | undefined;
-    repeat?: import("yup").Maybe<number | undefined>;
     sourceId?: string | undefined;
     subtitle?: import("yup").Maybe<string | undefined>;
     description?: string | null | undefined;
@@ -243,6 +241,7 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
         storagePath?: import("yup").Maybe<string | undefined>;
         uri?: import("yup").Maybe<string | undefined>;
     } | null | undefined;
+    isTemplate?: boolean | null | undefined;
     language?: string | null | undefined;
     href?: string | null | undefined;
     categoryIds?: (string | undefined)[] | null | undefined;
@@ -252,6 +251,7 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
     isAvailableForRecommendation?: boolean | null | undefined;
     numberOfLikes?: number | null | undefined;
     isSuggested?: boolean | undefined;
+    repeat?: import("yup").Maybe<number | undefined>;
     title: string;
     type: "breathe";
     backgroundColor: string;
@@ -271,7 +271,6 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
     };
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
-    isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
     subtitle?: import("yup").Maybe<string | undefined>;
     description?: string | null | undefined;
@@ -280,6 +279,7 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
         storagePath?: import("yup").Maybe<string | undefined>;
         uri?: import("yup").Maybe<string | undefined>;
     } | null | undefined;
+    isTemplate?: boolean | null | undefined;
     language?: string | null | undefined;
     href?: string | null | undefined;
     categoryIds?: (string | undefined)[] | null | undefined;
@@ -306,7 +306,6 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
     };
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
-    isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
     subtitle?: import("yup").Maybe<string | undefined>;
     description?: string | null | undefined;
@@ -315,6 +314,7 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
         storagePath?: import("yup").Maybe<string | undefined>;
         uri?: import("yup").Maybe<string | undefined>;
     } | null | undefined;
+    isTemplate?: boolean | null | undefined;
     language?: string | null | undefined;
     href?: string | null | undefined;
     categoryIds?: (string | undefined)[] | null | undefined;
@@ -327,5 +327,5 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
     title: string;
     type: "emotions";
     backgroundColor: string;
-}, "createdAt" | "updatedAt" | "uid" | "ordinal" | "title" | "isTemplate" | "type" | "sourceId" | "subtitle" | "description" | "image" | "backgroundColor" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
-export declare const makeFolderTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<FolderTacticValue, "title" | "type" | "backgroundColor" | "tacticIds" | "currentTacticIndex" | "tacticsById" | ("createdAt" | "updatedAt" | "uid" | "ordinal" | "isTemplate" | "sourceId" | "subtitle" | "description" | "image" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested" | "suggestedTacticIds" | "autogenerate")>;
+}, "createdAt" | "updatedAt" | "uid" | "ordinal" | "title" | "type" | "sourceId" | "subtitle" | "description" | "image" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
+export declare const makeFolderTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<FolderTacticValue, "title" | "type" | "backgroundColor" | "tacticIds" | "currentTacticIndex" | "tacticsById" | ("createdAt" | "updatedAt" | "uid" | "ordinal" | "sourceId" | "subtitle" | "description" | "image" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested" | "suggestedTacticIds" | "autogenerate")>;

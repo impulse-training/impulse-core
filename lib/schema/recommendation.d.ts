@@ -1,12 +1,40 @@
 import * as yup from 'yup';
 import { WithTacticsById } from './tactic';
-export declare const recommendationSchema: yup.ObjectSchema<{
-    uid: string;
-    ordinal: number;
+export type RecommendationBaseValue = yup.InferType<typeof recommendationBaseSchema>;
+export declare const recommendationBaseSchema: yup.ObjectSchema<{
     title: string;
-    routineExplanation: string | null | undefined;
+    explanation: string | null | undefined;
     recommenderUid: string;
     recommenderName: string;
+    tacticIds: any[];
+    tacticsById: any;
+}, yup.AnyObject, {
+    title: undefined;
+    explanation: undefined;
+    recommenderUid: undefined;
+    recommenderName: undefined;
+    tacticIds: "";
+    tacticsById: any;
+}, "">;
+export declare const timeScheduleSchema: yup.ObjectSchema<{
+    hour: number;
+    minute: number;
+    weekdays: any[];
+}, yup.AnyObject, {
+    hour: undefined;
+    minute: undefined;
+    weekdays: "";
+}, "">;
+export type ImpulseRecommendationValue = yup.InferType<typeof impulseRecommendationSchema>;
+declare const impulseRecommendationSchema: yup.ObjectSchema<{
+    title: string;
+    explanation: string | null | undefined;
+    recommenderUid: string;
+    recommenderName: string;
+    tacticIds: any[];
+    tacticsById: any;
+    ordinal: number;
+    uid: string;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -27,19 +55,18 @@ export declare const recommendationSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: {};
     };
-    tacticIds: any[];
-    tacticsById: any;
-    property: NonNullable<"impulse" | "impulseDebrief" | "routine" | undefined>;
     ruleId: string | null | undefined;
-    routine: yup.Maybe<{} | undefined>;
-    patternIds: any[] | undefined;
+    type: "impulse";
+    patternIds: any[];
 }, yup.AnyObject, {
-    uid: undefined;
-    ordinal: undefined;
     title: undefined;
-    routineExplanation: undefined;
+    explanation: undefined;
     recommenderUid: undefined;
     recommenderName: undefined;
+    tacticIds: "";
+    tacticsById: any;
+    ordinal: undefined;
+    uid: undefined;
     createdAt: {
         seconds: undefined;
         nanoseconds: undefined;
@@ -52,11 +79,194 @@ export declare const recommendationSchema: yup.ObjectSchema<{
     };
     appliedAt: undefined;
     dismissedAt: undefined;
-    tacticIds: "";
-    tacticsById: any;
-    property: undefined;
     ruleId: undefined;
-    routine: undefined;
+    type: undefined;
     patternIds: "";
 }, "">;
-export type RecommendationValue = WithTacticsById<yup.InferType<typeof recommendationSchema>>;
+export type ImpulseDebriefRecommendationValue = yup.InferType<typeof impulseDebriefRecommendationSchema>;
+declare const impulseDebriefRecommendationSchema: yup.ObjectSchema<{
+    title: string;
+    explanation: string | null | undefined;
+    recommenderUid: string;
+    recommenderName: string;
+    tacticIds: any[];
+    tacticsById: any;
+    ordinal: number;
+    uid: string;
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    appliedAt: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    dismissedAt: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    ruleId: string | null | undefined;
+    type: "impulseDebrief";
+    patternIds: any[];
+}, yup.AnyObject, {
+    title: undefined;
+    explanation: undefined;
+    recommenderUid: undefined;
+    recommenderName: undefined;
+    tacticIds: "";
+    tacticsById: any;
+    ordinal: undefined;
+    uid: undefined;
+    createdAt: {
+        seconds: undefined;
+        nanoseconds: undefined;
+        toDate: undefined;
+    };
+    updatedAt: {
+        seconds: undefined;
+        nanoseconds: undefined;
+        toDate: undefined;
+    };
+    appliedAt: undefined;
+    dismissedAt: undefined;
+    ruleId: undefined;
+    type: undefined;
+    patternIds: "";
+}, "">;
+export type TimeRecommendationValue = yup.InferType<typeof timeRecommendationSchema>;
+declare const timeRecommendationSchema: yup.ObjectSchema<{
+    title: string;
+    explanation: string | null | undefined;
+    recommenderUid: string;
+    recommenderName: string;
+    tacticIds: any[];
+    tacticsById: any;
+    ordinal: number;
+    uid: string;
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    appliedAt: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    dismissedAt: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    ruleId: string | null | undefined;
+    type: "time";
+    time: {
+        weekdays: any[];
+        hour: number;
+        minute: number;
+    };
+}, yup.AnyObject, {
+    title: undefined;
+    explanation: undefined;
+    recommenderUid: undefined;
+    recommenderName: undefined;
+    tacticIds: "";
+    tacticsById: any;
+    ordinal: undefined;
+    uid: undefined;
+    createdAt: {
+        seconds: undefined;
+        nanoseconds: undefined;
+        toDate: undefined;
+    };
+    updatedAt: {
+        seconds: undefined;
+        nanoseconds: undefined;
+        toDate: undefined;
+    };
+    appliedAt: undefined;
+    dismissedAt: undefined;
+    ruleId: undefined;
+    type: undefined;
+    time: {
+        hour: undefined;
+        minute: undefined;
+        weekdays: "";
+    };
+}, "">;
+export type LocationRecommendationValue = yup.InferType<typeof locationRecommendationSchema>;
+declare const locationRecommendationSchema: yup.ObjectSchema<{
+    title: string;
+    explanation: string | null | undefined;
+    recommenderUid: string;
+    recommenderName: string;
+    tacticIds: any[];
+    tacticsById: any;
+    ordinal: number;
+    uid: string;
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    appliedAt: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    dismissedAt: yup.Maybe<{} | undefined> | {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    ruleId: string | null | undefined;
+    type: "location";
+    locationKey: string;
+}, yup.AnyObject, {
+    title: undefined;
+    explanation: undefined;
+    recommenderUid: undefined;
+    recommenderName: undefined;
+    tacticIds: "";
+    tacticsById: any;
+    ordinal: undefined;
+    uid: undefined;
+    createdAt: {
+        seconds: undefined;
+        nanoseconds: undefined;
+        toDate: undefined;
+    };
+    updatedAt: {
+        seconds: undefined;
+        nanoseconds: undefined;
+        toDate: undefined;
+    };
+    appliedAt: undefined;
+    dismissedAt: undefined;
+    ruleId: undefined;
+    type: undefined;
+    locationKey: undefined;
+}, "">;
+export declare const recommendationSchema: yup.Lazy<{
+    type: NonNullable<"impulse" | "impulseDebrief" | "time" | "location" | undefined>;
+}, yup.AnyObject, any>;
+export type RecommendationValue = WithTacticsById<ImpulseRecommendationValue | ImpulseDebriefRecommendationValue | TimeRecommendationValue | LocationRecommendationValue>;
+export {};

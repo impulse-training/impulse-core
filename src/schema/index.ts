@@ -19,7 +19,6 @@ export * from './profile';
 export * from './recommendation';
 export * from './recommendationRule';
 export * from './recording';
-export * from './routine';
 export * from './spotifyCredentials';
 export * from './supportGroup';
 export * from './tactic';

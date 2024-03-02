@@ -29,14 +29,14 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         uid: string;
         authorName: string;
     }, "uid" | "authorName" | ("createdAt" | "updatedAt" | "tacticId" | "tacticName" | "text" | "recording" | "isEdited" | "avatar")>;
-    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "uid" | "timezone" | "type" | "location" | "tacticsById" | "steps" | "patternsById" | "startTime" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "setAsActiveImpulse" | "pressCount" | "isDisplayable" | "buttonPressSecondsSinceEpoch" | "gameplan" | "outcome" | "patternId" | "debriefNotes" | "debriefReminderSentAt" | "debriefedAt">;
-    timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "uid" | "timezone" | "type" | "location" | "tacticsById" | "steps" | "startTime" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "routineId">;
-    motionLogFactory: import("factory.ts").Factory<import("..").MotionLogValue, "createdAt" | "updatedAt" | "uid" | "timezone" | "type" | "location" | "tacticsById" | "steps" | "startTime" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable">;
-    locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "createdAt" | "updatedAt" | "uid" | "timezone" | "type" | "location" | "locationId" | "tacticsById" | "steps" | "startTime" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "locationName" | "locationMode">;
-    debriefLogFactory: import("factory.ts").Factory<import("..").DebriefLogValue, "createdAt" | "updatedAt" | "uid" | "timezone" | "type" | "location" | "tacticsById" | "steps" | "patternsById" | "startTime" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "routineId" | "tacticDataEntries">;
+    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "uid" | "type" | "tacticsById" | "steps" | "strategy" | "patternsById" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "setAsActiveImpulse" | "pressCount" | "isDisplayable" | "buttonPressSecondsSinceEpoch" | "gameplan" | "outcome" | "patternId" | "debriefNotes" | "debriefReminderSentAt" | "debriefedAt">;
+    timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "uid" | "type" | "tacticsById" | "steps" | "strategy" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "routineId">;
+    motionLogFactory: import("factory.ts").Factory<import("..").MotionLogValue, "createdAt" | "updatedAt" | "uid" | "type" | "tacticsById" | "steps" | "strategy" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable">;
+    locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "createdAt" | "updatedAt" | "uid" | "type" | "tacticsById" | "steps" | "strategy" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "locationId" | "locationName" | "locationMode">;
+    debriefLogFactory: import("factory.ts").Factory<import("..").DebriefLogValue, "createdAt" | "updatedAt" | "uid" | "type" | "tacticsById" | "steps" | "strategy" | "patternsById" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "routineId" | "tacticDataEntries">;
     locationFactory: import("factory.ts").Factory<import("..").LocationValue, keyof import("..").LocationValue>;
     profileFactory: import("factory.ts").Factory<import("..").ProfileValue, keyof import("..").ProfileValue>;
-    gameplanFactory: import("factory.ts").Factory<import("..").GameplanValue, "createdAt" | "updatedAt" | "uid" | "parentIssueIds" | "tacticsById" | "recommendationsCount" | "impulse" | "impulseDebrief" | "routine" | "routinesById" | "patternsById">;
+    gameplanFactory: import("factory.ts").Factory<import("..").GameplanValue, "createdAt" | "updatedAt" | "uid" | "parentIssueIds" | "tacticsById" | "recommendationsCount" | "impulse" | "impulseDebrief" | "dayDebrief" | "time" | "locations" | "patternsById" | "scheduledNotificationIds">;
     issueFactory: import("factory.ts").Factory<import("..").IssueValue, keyof import("..").IssueValue>;
     adminProfileFactory: import("factory.ts").Factory<import("..").ProfileValue, keyof import("..").ProfileValue>;
     supportGroupFactory: import("factory.ts").Factory<{
@@ -56,7 +56,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         everythingPermissions?: boolean | undefined;
         memberTargetCount?: number | undefined;
         groupNameAliases?: {
-            [x: string]: string | undefined;
+            [x: string]: string;
+            [x: number]: string;
+            [x: symbol]: string;
         } | undefined;
         groupDescription?: string | undefined;
         lastMessagePreview?: string | undefined;
@@ -76,51 +78,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         };
         permissions: {};
     }, "suggestedTacticIds" | "thumbnailUrl" | "participantUids" | "groupName" | "creatorName" | "creatorUid" | "icon" | "unreadCounts" | "permissions" | ("createdAt" | "updatedAt" | "isTemplate" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "lastMessagePreview" | "invitationCode" | "invitationUrl" | "lastMessageUid" | "isSharingDisabled")>;
-    debriefRoutineFactory: import("factory.ts").Factory<{
-        createdAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
-        updatedAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
-        isTemplate?: boolean | null | undefined;
-        scheduledNotificationIds?: any[] | undefined;
-        uid: string;
-        title: string;
-        summary: string;
-        timezone: string;
-        type: "dayDebrief";
-        weekdays: any[];
-        hour: number;
-        minute: number;
-    }, "uid" | "title" | "summary" | "timezone" | "type" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt" | "isTemplate" | "scheduledNotificationIds")>;
     messageFactory: import("factory.ts").Factory<import("..").MessageValue, keyof import("..").MessageValue>;
-    timeRoutineFactory: import("factory.ts").Factory<{
-        createdAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
-        updatedAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
-        isTemplate?: boolean | null | undefined;
-        scheduledNotificationIds?: any[] | undefined;
-        uid: string;
-        title: string;
-        summary: string;
-        timezone: string;
-        type: "time";
-        weekdays: any[];
-        hour: number;
-        minute: number;
-    }, "uid" | "title" | "summary" | "timezone" | "type" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt" | "isTemplate" | "scheduledNotificationIds")>;
     patternFactory: import("factory.ts").Factory<{
         createdAt?: import("yup").Maybe<{} | undefined> | {
             seconds: number;
@@ -146,29 +104,40 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         setbackThreshold: number;
         sendWeeklyReports: NonNullable<boolean | undefined>;
     }, "uid" | "name" | "ordinal" | "setbackThreshold" | "sendWeeklyReports" | ("createdAt" | "updatedAt" | "supportGroupIds" | "notification" | "setbackTacticId" | "issueId" | "parentIssueIds")>;
-    locationRoutineFactory: import("factory.ts").Factory<{
-        createdAt?: import("yup").Maybe<{} | undefined> | {
+    impulseRecommendationFactory: import("factory.ts").Factory<{
+        tacticsById?: any;
+        explanation?: string | null | undefined;
+        appliedAt?: import("yup").Maybe<{} | undefined> | {
             seconds: number;
             nanoseconds: number;
             toDate: {};
         };
-        updatedAt?: import("yup").Maybe<{} | undefined> | {
+        dismissedAt?: import("yup").Maybe<{} | undefined> | {
             seconds: number;
             nanoseconds: number;
             toDate: {};
         };
-        isTemplate?: boolean | null | undefined;
-        timezone?: string | null | undefined;
-        locationId?: string | null | undefined;
+        ruleId?: string | null | undefined;
+        createdAt: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: {};
+        };
+        updatedAt: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: {};
+        };
         uid: string;
+        ordinal: number;
         title: string;
-        summary: string;
-        type: "location";
-        mode: NonNullable<"enter" | "exit" | undefined>;
-    }, "uid" | "title" | "summary" | "type" | "mode" | ("createdAt" | "updatedAt" | "isTemplate" | "timezone" | "locationId")>;
-    recommendationFactory: import("factory.ts").Factory<import("..").RecommendationValue, "createdAt" | "updatedAt" | "uid" | "ordinal" | "title" | "tacticIds" | "tacticsById" | "routine" | "routineExplanation" | "recommenderUid" | "recommenderName" | "appliedAt" | "dismissedAt" | "property" | "ruleId" | "patternIds">;
-    recommendationRuleFactory: import("factory.ts").Factory<import("..").RecommendationRuleValue, "createdAt" | "updatedAt" | "uid" | "ordinal" | "recommendation" | "forIssueIds" | ("issueNames" | "issueNamesSummary" | "recommendationSummary")>;
-    newRoutineRecommendationRuleFactory: import("factory.ts").Factory<import("..").RecommendationRuleValue, "createdAt" | "updatedAt" | "uid" | "ordinal" | "recommendation" | "forIssueIds" | ("issueNames" | "issueNamesSummary" | "recommendationSummary")>;
+        type: "impulse";
+        tacticIds: any[];
+        recommenderUid: string;
+        recommenderName: string;
+        patternIds: any[];
+    }, "createdAt" | "updatedAt" | "uid" | "ordinal" | "title" | "type" | "tacticIds" | "recommenderUid" | "recommenderName" | "patternIds" | ("tacticsById" | "explanation" | "appliedAt" | "dismissedAt" | "ruleId")>;
+    impulseRecommendationRuleFactory: import("factory.ts").Factory<import("..").RecommendationRuleValue, "createdAt" | "updatedAt" | "uid" | "ordinal" | "type" | "recommendation" | "forIssueIds" | "issueNames" | "issueNamesSummary" | "recommendationSummary">;
     tacticFactory: import("factory.ts").Factory<{
         createdAt?: import("yup").Maybe<{} | undefined> | {
             seconds: number;
@@ -182,7 +151,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         };
         uid?: string | null | undefined;
         ordinal?: number | null | undefined;
-        isTemplate?: boolean | null | undefined;
         sourceId?: string | undefined;
         subtitle?: import("yup").Maybe<string | undefined>;
         description?: string | null | undefined;
@@ -191,6 +159,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             storagePath?: import("yup").Maybe<string | undefined>;
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
+        isTemplate?: boolean | null | undefined;
         language?: string | null | undefined;
         href?: string | null | undefined;
         categoryIds?: (string | undefined)[] | null | undefined;
@@ -218,7 +187,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         };
         uid?: string | null | undefined;
         ordinal?: number | null | undefined;
-        isTemplate?: boolean | null | undefined;
         sourceId?: string | undefined;
         subtitle?: import("yup").Maybe<string | undefined>;
         description?: string | null | undefined;
@@ -227,6 +195,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             storagePath?: import("yup").Maybe<string | undefined>;
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
+        isTemplate?: boolean | null | undefined;
         language?: string | null | undefined;
         href?: string | null | undefined;
         categoryIds?: (string | undefined)[] | null | undefined;
@@ -257,7 +226,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         };
         uid?: string | null | undefined;
         ordinal?: number | null | undefined;
-        isTemplate?: boolean | null | undefined;
         sourceId?: string | undefined;
         subtitle?: import("yup").Maybe<string | undefined>;
         description?: string | null | undefined;
@@ -266,6 +234,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             storagePath?: import("yup").Maybe<string | undefined>;
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
+        isTemplate?: boolean | null | undefined;
         language?: string | null | undefined;
         href?: string | null | undefined;
         categoryIds?: (string | undefined)[] | null | undefined;
@@ -291,7 +260,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         };
         uid?: string | null | undefined;
         ordinal?: number | null | undefined;
-        isTemplate?: boolean | null | undefined;
         sourceId?: string | undefined;
         subtitle?: import("yup").Maybe<string | undefined>;
         description?: string | null | undefined;
@@ -300,6 +268,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             storagePath?: import("yup").Maybe<string | undefined>;
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
+        isTemplate?: boolean | null | undefined;
         language?: string | null | undefined;
         href?: string | null | undefined;
         categoryIds?: (string | undefined)[] | null | undefined;
@@ -333,7 +302,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         };
         uid?: string | null | undefined;
         ordinal?: number | null | undefined;
-        isTemplate?: boolean | null | undefined;
         sourceId?: string | undefined;
         subtitle?: import("yup").Maybe<string | undefined>;
         description?: string | null | undefined;
@@ -342,6 +310,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             storagePath?: import("yup").Maybe<string | undefined>;
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
+        isTemplate?: boolean | null | undefined;
         language?: string | null | undefined;
         href?: string | null | undefined;
         categoryIds?: (string | undefined)[] | null | undefined;
@@ -367,7 +336,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         };
         uid?: string | null | undefined;
         ordinal?: number | null | undefined;
-        isTemplate?: boolean | null | undefined;
         sourceId?: string | undefined;
         subtitle?: import("yup").Maybe<string | undefined>;
         description?: string | null | undefined;
@@ -376,6 +344,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             storagePath?: import("yup").Maybe<string | undefined>;
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
+        isTemplate?: boolean | null | undefined;
         language?: string | null | undefined;
         href?: string | null | undefined;
         categoryIds?: (string | undefined)[] | null | undefined;
@@ -401,8 +370,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         };
         uid?: string | null | undefined;
         ordinal?: number | null | undefined;
-        isTemplate?: boolean | null | undefined;
-        repeat?: import("yup").Maybe<number | undefined>;
         sourceId?: string | undefined;
         subtitle?: import("yup").Maybe<string | undefined>;
         description?: string | null | undefined;
@@ -411,6 +378,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             storagePath?: import("yup").Maybe<string | undefined>;
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
+        isTemplate?: boolean | null | undefined;
         language?: string | null | undefined;
         href?: string | null | undefined;
         categoryIds?: (string | undefined)[] | null | undefined;
@@ -420,6 +388,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         isAvailableForRecommendation?: boolean | null | undefined;
         numberOfLikes?: number | null | undefined;
         isSuggested?: boolean | undefined;
+        repeat?: import("yup").Maybe<number | undefined>;
         title: string;
         type: "breathe";
         backgroundColor: string;
@@ -439,7 +408,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         };
         uid?: string | null | undefined;
         ordinal?: number | null | undefined;
-        isTemplate?: boolean | null | undefined;
         sourceId?: string | undefined;
         subtitle?: import("yup").Maybe<string | undefined>;
         description?: string | null | undefined;
@@ -448,6 +416,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             storagePath?: import("yup").Maybe<string | undefined>;
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
+        isTemplate?: boolean | null | undefined;
         language?: string | null | undefined;
         href?: string | null | undefined;
         categoryIds?: (string | undefined)[] | null | undefined;
@@ -474,7 +443,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         };
         uid?: string | null | undefined;
         ordinal?: number | null | undefined;
-        isTemplate?: boolean | null | undefined;
         sourceId?: string | undefined;
         subtitle?: import("yup").Maybe<string | undefined>;
         description?: string | null | undefined;
@@ -483,6 +451,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             storagePath?: import("yup").Maybe<string | undefined>;
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
+        isTemplate?: boolean | null | undefined;
         language?: string | null | undefined;
         href?: string | null | undefined;
         categoryIds?: (string | undefined)[] | null | undefined;
@@ -495,6 +464,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         title: string;
         type: "emotions";
         backgroundColor: string;
-    }, "createdAt" | "updatedAt" | "uid" | "ordinal" | "title" | "isTemplate" | "type" | "sourceId" | "subtitle" | "description" | "image" | "backgroundColor" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
-    folderTacticFactory: import("factory.ts").Factory<import("..").FolderTacticValue, "title" | "type" | "backgroundColor" | "tacticIds" | "currentTacticIndex" | "tacticsById" | ("createdAt" | "updatedAt" | "uid" | "ordinal" | "isTemplate" | "sourceId" | "subtitle" | "description" | "image" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested" | "suggestedTacticIds" | "autogenerate")>;
+    }, "createdAt" | "updatedAt" | "uid" | "ordinal" | "title" | "type" | "sourceId" | "subtitle" | "description" | "image" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
+    folderTacticFactory: import("factory.ts").Factory<import("..").FolderTacticValue, "title" | "type" | "backgroundColor" | "tacticIds" | "currentTacticIndex" | "tacticsById" | ("createdAt" | "updatedAt" | "uid" | "ordinal" | "sourceId" | "subtitle" | "description" | "image" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested" | "suggestedTacticIds" | "autogenerate")>;
 };

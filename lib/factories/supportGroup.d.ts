@@ -17,7 +17,9 @@ export declare const makeSupportGroupFactory: (TimestampKlass: typeof TimestampL
     everythingPermissions?: boolean | undefined;
     memberTargetCount?: number | undefined;
     groupNameAliases?: {
-        [x: string]: string | undefined;
+        [x: string]: string;
+        [x: number]: string;
+        [x: symbol]: string;
     } | undefined;
     groupDescription?: string | undefined;
     lastMessagePreview?: string | undefined;

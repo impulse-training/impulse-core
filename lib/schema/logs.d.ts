@@ -233,6 +233,20 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         parentIssueIds?: string[] | undefined;
         tacticsById?: any;
         recommendationsCount?: number | undefined;
+        dayDebrief?: {
+            title: string;
+            weekdays: any[];
+            hour: number;
+            minute: number;
+            strategy: {
+                conditionalTacticIds?: {
+                    [x: string]: any[];
+                } | null | undefined;
+                tacticIds: any[];
+                suggestedTacticIds: any[];
+            };
+        } | undefined;
+        scheduledNotificationIds?: string[] | undefined;
         uid: string;
         impulse: {
             [x: string]: {
@@ -252,79 +266,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 suggestedTacticIds: any[];
             };
         };
-        routine: {
-            [x: string]: {
-                conditionalTacticIds?: {
-                    [x: string]: any[];
-                } | null | undefined;
-                tacticIds: any[];
-                suggestedTacticIds: any[];
-            };
-        };
-        routinesById: {
-            [x: string]: {
-                createdAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                isTemplate?: boolean | null | undefined;
-                scheduledNotificationIds?: any[] | undefined;
-                uid: string;
-                title: string;
-                summary: string;
-                timezone: string;
-                type: "time";
-                weekdays: any[];
-                hour: number;
-                minute: number;
-            } | {
-                createdAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                isTemplate?: boolean | null | undefined;
-                scheduledNotificationIds?: any[] | undefined;
-                uid: string;
-                title: string;
-                summary: string;
-                timezone: string;
-                type: "dayDebrief";
-                weekdays: any[];
-                hour: number;
-                minute: number;
-            } | {
-                createdAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                isTemplate?: boolean | null | undefined;
-                timezone?: string | null | undefined;
-                locationId?: string | null | undefined;
-                uid: string;
-                title: string;
-                summary: string;
-                type: "location";
-                mode: NonNullable<"enter" | "exit" | undefined>;
-            };
-        };
+        time: any[];
+        locations: any[];
         patternsById: {
             [x: string]: {
                 createdAt?: yup.Maybe<{} | undefined> | {
@@ -441,10 +384,22 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         recommendationsCount: undefined;
         impulse: undefined;
         impulseDebrief: undefined;
-        routine: undefined;
+        dayDebrief: {
+            weekdays: "";
+            hour: undefined;
+            minute: undefined;
+            title: undefined;
+            strategy: {
+                tacticIds: "";
+                suggestedTacticIds: "";
+                conditionalTacticIds: undefined;
+            };
+        };
+        time: "";
+        locations: "";
         tacticsById: any;
-        routinesById: undefined;
         patternsById: undefined;
+        scheduledNotificationIds: "";
     };
     outcome: undefined;
     patternId: undefined;
@@ -1153,16 +1108,22 @@ export declare const logSchema: yup.Lazy<{
     debriefReminderSentAt?: yup.Maybe<{} | undefined>;
     debriefedAt?: yup.Maybe<{} | undefined>;
     uid: string;
-    timezone: string;
     type: "impulse";
-    location: {
-        latitude?: number | undefined;
-        longitude?: number | undefined;
-        altitude?: number | undefined;
-        accuracy?: number | undefined;
-        altitudeAccuracy?: number | undefined;
-        heading?: number | undefined;
-        speed?: number | undefined;
+    strategy: {
+        impulseDebrief?: {
+            conditionalTacticIds?: {
+                [x: string]: any[];
+            } | null | undefined;
+            tacticIds: any[];
+            suggestedTacticIds: any[];
+        } | null | undefined;
+        main: {
+            conditionalTacticIds?: {
+                [x: string]: any[];
+            } | null | undefined;
+            tacticIds: any[];
+            suggestedTacticIds: any[];
+        };
     };
     patternsById: {
         [x: string]: {
@@ -1196,23 +1157,17 @@ export declare const logSchema: yup.Lazy<{
         nanoseconds: number;
         toDate: {};
     };
-    locationIsFetching: NonNullable<boolean | undefined>;
-    strategy: {
-        impulseDebrief?: {
-            conditionalTacticIds?: {
-                [x: string]: any[];
-            } | null | undefined;
-            tacticIds: any[];
-            suggestedTacticIds: any[];
-        } | null | undefined;
-        main: {
-            conditionalTacticIds?: {
-                [x: string]: any[];
-            } | null | undefined;
-            tacticIds: any[];
-            suggestedTacticIds: any[];
-        };
+    timezone: string;
+    location: {
+        latitude?: number | undefined;
+        longitude?: number | undefined;
+        altitude?: number | undefined;
+        accuracy?: number | undefined;
+        altitudeAccuracy?: number | undefined;
+        heading?: number | undefined;
+        speed?: number | undefined;
     };
+    locationIsFetching: NonNullable<boolean | undefined>;
     seenTacticIds: any[];
     completedTacticIds: any[];
     isDisplayable: NonNullable<boolean | undefined>;
@@ -1230,6 +1185,20 @@ export declare const logSchema: yup.Lazy<{
         parentIssueIds?: string[] | undefined;
         tacticsById?: any;
         recommendationsCount?: number | undefined;
+        dayDebrief?: {
+            title: string;
+            weekdays: any[];
+            hour: number;
+            minute: number;
+            strategy: {
+                conditionalTacticIds?: {
+                    [x: string]: any[];
+                } | null | undefined;
+                tacticIds: any[];
+                suggestedTacticIds: any[];
+            };
+        } | undefined;
+        scheduledNotificationIds?: string[] | undefined;
         uid: string;
         impulse: {
             [x: string]: {
@@ -1249,79 +1218,8 @@ export declare const logSchema: yup.Lazy<{
                 suggestedTacticIds: any[];
             };
         };
-        routine: {
-            [x: string]: {
-                conditionalTacticIds?: {
-                    [x: string]: any[];
-                } | null | undefined;
-                tacticIds: any[];
-                suggestedTacticIds: any[];
-            };
-        };
-        routinesById: {
-            [x: string]: {
-                createdAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                isTemplate?: boolean | null | undefined;
-                scheduledNotificationIds?: any[] | undefined;
-                uid: string;
-                title: string;
-                summary: string;
-                timezone: string;
-                type: "time";
-                weekdays: any[];
-                hour: number;
-                minute: number;
-            } | {
-                createdAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                isTemplate?: boolean | null | undefined;
-                scheduledNotificationIds?: any[] | undefined;
-                uid: string;
-                title: string;
-                summary: string;
-                timezone: string;
-                type: "dayDebrief";
-                weekdays: any[];
-                hour: number;
-                minute: number;
-            } | {
-                createdAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                isTemplate?: boolean | null | undefined;
-                timezone?: string | null | undefined;
-                locationId?: string | null | undefined;
-                uid: string;
-                title: string;
-                summary: string;
-                type: "location";
-                mode: NonNullable<"enter" | "exit" | undefined>;
-            };
-        };
+        time: any[];
+        locations: any[];
         patternsById: {
             [x: string]: {
                 createdAt?: yup.Maybe<{} | undefined> | {
@@ -1388,24 +1286,7 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     sharedWithSupportGroupIds?: string[] | undefined;
     uid: string;
-    timezone: string;
     type: "location";
-    location: {
-        latitude?: number | undefined;
-        longitude?: number | undefined;
-        altitude?: number | undefined;
-        accuracy?: number | undefined;
-        altitudeAccuracy?: number | undefined;
-        heading?: number | undefined;
-        speed?: number | undefined;
-    };
-    locationId: string;
-    startTime: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
         impulseDebrief?: {
             conditionalTacticIds?: {
@@ -1422,9 +1303,26 @@ export declare const logSchema: yup.Lazy<{
             suggestedTacticIds: any[];
         };
     };
+    startTime: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    timezone: string;
+    location: {
+        latitude?: number | undefined;
+        longitude?: number | undefined;
+        altitude?: number | undefined;
+        accuracy?: number | undefined;
+        altitudeAccuracy?: number | undefined;
+        heading?: number | undefined;
+        speed?: number | undefined;
+    };
+    locationIsFetching: NonNullable<boolean | undefined>;
     seenTacticIds: any[];
     completedTacticIds: any[];
     isDisplayable: NonNullable<boolean | undefined>;
+    locationId: string;
     locationName: string;
     locationMode: {};
 } | {
@@ -1464,23 +1362,7 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     sharedWithSupportGroupIds?: string[] | undefined;
     uid: string;
-    timezone: string;
     type: "time";
-    location: {
-        latitude?: number | undefined;
-        longitude?: number | undefined;
-        altitude?: number | undefined;
-        accuracy?: number | undefined;
-        altitudeAccuracy?: number | undefined;
-        heading?: number | undefined;
-        speed?: number | undefined;
-    };
-    startTime: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
         impulseDebrief?: {
             conditionalTacticIds?: {
@@ -1497,6 +1379,22 @@ export declare const logSchema: yup.Lazy<{
             suggestedTacticIds: any[];
         };
     };
+    startTime: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    timezone: string;
+    location: {
+        latitude?: number | undefined;
+        longitude?: number | undefined;
+        altitude?: number | undefined;
+        accuracy?: number | undefined;
+        altitudeAccuracy?: number | undefined;
+        heading?: number | undefined;
+        speed?: number | undefined;
+    };
+    locationIsFetching: NonNullable<boolean | undefined>;
     seenTacticIds: any[];
     completedTacticIds: any[];
     isDisplayable: NonNullable<boolean | undefined>;
@@ -1538,16 +1436,22 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     sharedWithSupportGroupIds?: string[] | undefined;
     uid: string;
-    timezone: string;
     type: "dayDebrief";
-    location: {
-        latitude?: number | undefined;
-        longitude?: number | undefined;
-        altitude?: number | undefined;
-        accuracy?: number | undefined;
-        altitudeAccuracy?: number | undefined;
-        heading?: number | undefined;
-        speed?: number | undefined;
+    strategy: {
+        impulseDebrief?: {
+            conditionalTacticIds?: {
+                [x: string]: any[];
+            } | null | undefined;
+            tacticIds: any[];
+            suggestedTacticIds: any[];
+        } | null | undefined;
+        main: {
+            conditionalTacticIds?: {
+                [x: string]: any[];
+            } | null | undefined;
+            tacticIds: any[];
+            suggestedTacticIds: any[];
+        };
     };
     patternsById: {
         [x: string]: {
@@ -1581,23 +1485,17 @@ export declare const logSchema: yup.Lazy<{
         nanoseconds: number;
         toDate: {};
     };
-    locationIsFetching: NonNullable<boolean | undefined>;
-    strategy: {
-        impulseDebrief?: {
-            conditionalTacticIds?: {
-                [x: string]: any[];
-            } | null | undefined;
-            tacticIds: any[];
-            suggestedTacticIds: any[];
-        } | null | undefined;
-        main: {
-            conditionalTacticIds?: {
-                [x: string]: any[];
-            } | null | undefined;
-            tacticIds: any[];
-            suggestedTacticIds: any[];
-        };
+    timezone: string;
+    location: {
+        latitude?: number | undefined;
+        longitude?: number | undefined;
+        altitude?: number | undefined;
+        accuracy?: number | undefined;
+        altitudeAccuracy?: number | undefined;
+        heading?: number | undefined;
+        speed?: number | undefined;
     };
+    locationIsFetching: NonNullable<boolean | undefined>;
     seenTacticIds: any[];
     completedTacticIds: any[];
     isDisplayable: NonNullable<boolean | undefined>;
@@ -1642,23 +1540,7 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     sharedWithSupportGroupIds?: string[] | undefined;
     uid: string;
-    timezone: string;
     type: "motion";
-    location: {
-        latitude?: number | undefined;
-        longitude?: number | undefined;
-        altitude?: number | undefined;
-        accuracy?: number | undefined;
-        altitudeAccuracy?: number | undefined;
-        heading?: number | undefined;
-        speed?: number | undefined;
-    };
-    startTime: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
         impulseDebrief?: {
             conditionalTacticIds?: {
@@ -1675,6 +1557,22 @@ export declare const logSchema: yup.Lazy<{
             suggestedTacticIds: any[];
         };
     };
+    startTime: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    timezone: string;
+    location: {
+        latitude?: number | undefined;
+        longitude?: number | undefined;
+        altitude?: number | undefined;
+        accuracy?: number | undefined;
+        altitudeAccuracy?: number | undefined;
+        heading?: number | undefined;
+        speed?: number | undefined;
+    };
+    locationIsFetching: NonNullable<boolean | undefined>;
     seenTacticIds: any[];
     completedTacticIds: any[];
     isDisplayable: NonNullable<boolean | undefined>;
@@ -1715,23 +1613,7 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     sharedWithSupportGroupIds?: string[] | undefined;
     uid: string;
-    timezone: string;
     type: "button";
-    location: {
-        latitude?: number | undefined;
-        longitude?: number | undefined;
-        altitude?: number | undefined;
-        accuracy?: number | undefined;
-        altitudeAccuracy?: number | undefined;
-        heading?: number | undefined;
-        speed?: number | undefined;
-    };
-    startTime: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
         impulseDebrief?: {
             conditionalTacticIds?: {
@@ -1748,6 +1630,22 @@ export declare const logSchema: yup.Lazy<{
             suggestedTacticIds: any[];
         };
     };
+    startTime: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    timezone: string;
+    location: {
+        latitude?: number | undefined;
+        longitude?: number | undefined;
+        altitude?: number | undefined;
+        accuracy?: number | undefined;
+        altitudeAccuracy?: number | undefined;
+        heading?: number | undefined;
+        speed?: number | undefined;
+    };
+    locationIsFetching: NonNullable<boolean | undefined>;
     seenTacticIds: any[];
     completedTacticIds: any[];
     isDisplayable: NonNullable<boolean | undefined>;

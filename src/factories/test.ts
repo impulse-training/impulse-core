@@ -10,11 +10,10 @@ export const {
   impulseFactory,
   timeLogFactory,
   motionLogFactory,
-  recommendationFactory,
+  impulseRecommendationFactory,
   debriefLogFactory,
-  debriefRoutineFactory,
   profileFactory,
   supportGroupFactory,
   tacticFactory,
-  recommendationRuleFactory,
+  impulseRecommendationRuleFactory,
 } = makeFactories(TimestampLike);

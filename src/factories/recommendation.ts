@@ -1,11 +1,16 @@
 import * as Factory from 'factory.ts';
-import { RecommendationValue } from '../schema';
+import {
+  ImpulseDebriefRecommendationValue,
+  ImpulseRecommendationValue,
+  LocationRecommendationValue,
+  TimeRecommendationValue,
+} from '../schema';
 import { TimestampLike } from '../utils/TimestampLike';
 
-export const makeRecommendationFactory = (
+export const makeImpulseRecommendationFactory = (
   TimestampKlass: typeof TimestampLike
 ) =>
-  Factory.makeFactory<RecommendationValue>({
+  Factory.makeFactory<ImpulseRecommendationValue>({
     uid: Factory.each(i => i.toString()),
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
@@ -14,56 +19,70 @@ export const makeRecommendationFactory = (
     tacticsById: {},
     recommenderName: 'Michael',
     recommenderUid: 'abc123',
-    property: 'impulse',
     ordinal: 0,
     appliedAt: null,
     dismissedAt: null,
-  });
-
-export const makeExistingRoutineRecommendationFactory = (
-  TimestampKlass: typeof TimestampLike
-) =>
-  Factory.makeFactory<RecommendationValue>({
-    uid: Factory.each(i => i.toString()),
-    createdAt: TimestampKlass.now(),
-    updatedAt: TimestampKlass.now(),
-    title: "Let's start with a distraction",
-    routineExplanation: 'Choose a time of day to review',
-    tacticIds: [],
-    tacticsById: {},
     patternIds: [],
-    recommenderName: 'Michael',
-    recommenderUid: 'abc123',
-    property: 'routine',
-    ordinal: 0,
-    appliedAt: null,
-    dismissedAt: null,
+    type: 'impulse',
   });
 
-export const makeNewRoutineRecommendationFactory = (
+export const makeImpulseDebriefRecommendationFactory = (
   TimestampKlass: typeof TimestampLike
 ) =>
-  Factory.makeFactory<RecommendationValue>({
+  Factory.makeFactory<ImpulseDebriefRecommendationValue>({
     uid: Factory.each(i => i.toString()),
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     title: "Let's start with a distraction",
     tacticIds: [],
     tacticsById: {},
-    property: 'routine',
-    routine: {
-      uid: 'abc',
-      createdAt: TimestampKlass.now(),
-      updatedAt: TimestampKlass.now(),
-      hour: 8,
-      minute: 0,
-      timezone: 'America/Chihuahua',
-      weekdays: [1, 2, 3, 4, 5],
-      type: 'time',
-    },
     recommenderName: 'Michael',
     recommenderUid: 'abc123',
     ordinal: 0,
     appliedAt: null,
     dismissedAt: null,
+    type: 'impulseDebrief',
+    patternIds: [],
+  });
+
+export const makeTimeRecommendationFactory = (
+  TimestampKlass: typeof TimestampLike
+) =>
+  Factory.makeFactory<TimeRecommendationValue>({
+    uid: Factory.each(i => i.toString()),
+    createdAt: TimestampKlass.now(),
+    updatedAt: TimestampKlass.now(),
+    title: "Let's start with a distraction",
+    tacticIds: [],
+    tacticsById: {},
+    recommenderName: 'Michael',
+    recommenderUid: 'abc123',
+    ordinal: 0,
+    appliedAt: null,
+    dismissedAt: null,
+    type: 'time',
+    time: {
+      hour: 0,
+      minute: 0,
+      weekdays: [],
+    },
+  });
+
+export const makeLocationRecommendationFactory = (
+  TimestampKlass: typeof TimestampLike
+) =>
+  Factory.makeFactory<LocationRecommendationValue>({
+    uid: Factory.each(i => i.toString()),
+    createdAt: TimestampKlass.now(),
+    updatedAt: TimestampKlass.now(),
+    title: "Let's start with a distraction",
+    tacticIds: [],
+    tacticsById: {},
+    recommenderName: 'Michael',
+    recommenderUid: 'abc123',
+    ordinal: 0,
+    appliedAt: null,
+    dismissedAt: null,
+    type: 'location',
+    locationKey: 'home',
   });

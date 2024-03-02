@@ -9,8 +9,9 @@ export const makeGameplanFactory = (TimestampKlass: typeof TimestampLike) =>
     updatedAt: TimestampKlass.now(),
     impulse: {},
     impulseDebrief: {},
-    routine: {},
     tacticsById: {},
-    routinesById: {},
     patternsById: {},
+    time: [],
+    locations: [],
+    scheduledNotificationIds: [],
   });

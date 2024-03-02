@@ -14,16 +14,8 @@ import {
 import { makeMessageFactory } from './message';
 import { makePatternFactory } from './pattern';
 import { makeAdminProfileFactory, makeProfileFactory } from './profile';
-import { makeRecommendationFactory } from './recommendation';
-import {
-  makeNewRoutineRecommendationRuleFactory,
-  makeRecommendationRuleFactory,
-} from './recommendationRuleFactory';
-import {
-  makeDebriefRoutineFactory,
-  makeLocationRoutineFactory,
-  makeTimeRoutineFactory,
-} from './routine';
+import { makeImpulseRecommendationFactory } from './recommendation';
+import { makeImpulseRecommendationRuleFactory } from './recommendationRule';
 import { makeSupportGroupFactory } from './supportGroup';
 import { makeFolderTacticFactory, makeTacticFactory } from './tactic';
 // Our admin and client apps use the same factories, but the firebase-admin versus firebase client
@@ -44,15 +36,12 @@ export function makeFactories(TimestampKlass: typeof TimestampLike) {
     issueFactory: makeIssueFactory(TimestampKlass),
     adminProfileFactory: makeAdminProfileFactory(TimestampKlass),
     supportGroupFactory: makeSupportGroupFactory(TimestampKlass),
-    debriefRoutineFactory: makeDebriefRoutineFactory(TimestampKlass),
     messageFactory: makeMessageFactory(TimestampKlass),
-    timeRoutineFactory: makeTimeRoutineFactory(TimestampKlass),
     patternFactory: makePatternFactory(TimestampKlass),
-    locationRoutineFactory: makeLocationRoutineFactory(TimestampKlass),
-    recommendationFactory: makeRecommendationFactory(TimestampKlass),
-    recommendationRuleFactory: makeRecommendationRuleFactory(TimestampKlass),
-    newRoutineRecommendationRuleFactory:
-      makeNewRoutineRecommendationRuleFactory(TimestampKlass),
+    impulseRecommendationFactory:
+      makeImpulseRecommendationFactory(TimestampKlass),
+    impulseRecommendationRuleFactory:
+      makeImpulseRecommendationRuleFactory(TimestampKlass),
     tacticFactory: makeTacticFactory(TimestampKlass),
     folderTacticFactory: makeFolderTacticFactory(TimestampKlass),
   };

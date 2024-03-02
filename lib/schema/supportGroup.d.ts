@@ -17,7 +17,9 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
     memberTargetCount: number | undefined;
     groupName: string;
     groupNameAliases: {
-        [x: string]: string | undefined;
+        [x: string]: string;
+        [x: number]: string;
+        [x: symbol]: string;
     } | undefined;
     groupDescription: string | undefined;
     creatorName: string;

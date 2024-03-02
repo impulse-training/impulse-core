@@ -1,3 +1,4 @@
+import { mapValues } from 'lodash';
 import * as yup from 'yup';
 import { requiredStringArray } from './utils/array';
 import { objectOf } from './utils/objectOf';
@@ -13,14 +14,7 @@ export const supportGroupSchema = yup.object().shape({
   memberTargetCount: yup.number().optional(),
   groupName: yup.string().required(),
   groupNameAliases: yup
-    .lazy(obj =>
-      yup.object().shape(
-        Object.keys(obj).reduce((acc, key) => {
-          acc[key] = yup.string().required();
-          return acc;
-        }, {} as Record<string, yup.StringSchema>)
-      )
-    )
+    .lazy(obj => yup.object(mapValues(obj, () => yup.string().required())))
     .optional(),
   groupDescription: yup.string().optional(),
   creatorName: yup.string().required(),

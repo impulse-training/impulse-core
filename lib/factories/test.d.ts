@@ -25,28 +25,39 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     } | undefined;
     uid: string;
     authorName: string;
-}, "uid" | "authorName" | ("createdAt" | "updatedAt" | "tacticId" | "tacticName" | "text" | "recording" | "isEdited" | "avatar")>, impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "uid" | "timezone" | "type" | "location" | "tacticsById" | "steps" | "patternsById" | "startTime" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "setAsActiveImpulse" | "pressCount" | "isDisplayable" | "buttonPressSecondsSinceEpoch" | "gameplan" | "outcome" | "patternId" | "debriefNotes" | "debriefReminderSentAt" | "debriefedAt">, timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "uid" | "timezone" | "type" | "location" | "tacticsById" | "steps" | "startTime" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "routineId">, motionLogFactory: import("factory.ts").Factory<import("..").MotionLogValue, "createdAt" | "updatedAt" | "uid" | "timezone" | "type" | "location" | "tacticsById" | "steps" | "startTime" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable">, recommendationFactory: import("factory.ts").Factory<import("..").RecommendationValue, "createdAt" | "updatedAt" | "uid" | "ordinal" | "title" | "tacticIds" | "tacticsById" | "routine" | "routineExplanation" | "recommenderUid" | "recommenderName" | "appliedAt" | "dismissedAt" | "property" | "ruleId" | "patternIds">, debriefLogFactory: import("factory.ts").Factory<import("..").DebriefLogValue, "createdAt" | "updatedAt" | "uid" | "timezone" | "type" | "location" | "tacticsById" | "steps" | "patternsById" | "startTime" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "routineId" | "tacticDataEntries">, debriefRoutineFactory: import("factory.ts").Factory<{
-    createdAt?: import("yup").Maybe<{} | undefined> | {
+}, "uid" | "authorName" | ("createdAt" | "updatedAt" | "tacticId" | "tacticName" | "text" | "recording" | "isEdited" | "avatar")>, impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "uid" | "type" | "tacticsById" | "steps" | "strategy" | "patternsById" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "setAsActiveImpulse" | "pressCount" | "isDisplayable" | "buttonPressSecondsSinceEpoch" | "gameplan" | "outcome" | "patternId" | "debriefNotes" | "debriefReminderSentAt" | "debriefedAt">, timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "uid" | "type" | "tacticsById" | "steps" | "strategy" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "routineId">, motionLogFactory: import("factory.ts").Factory<import("..").MotionLogValue, "createdAt" | "updatedAt" | "uid" | "type" | "tacticsById" | "steps" | "strategy" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable">, impulseRecommendationFactory: import("factory.ts").Factory<{
+    tacticsById?: any;
+    explanation?: string | null | undefined;
+    appliedAt?: import("yup").Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    updatedAt?: import("yup").Maybe<{} | undefined> | {
+    dismissedAt?: import("yup").Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
         toDate: {};
     };
-    isTemplate?: boolean | null | undefined;
-    scheduledNotificationIds?: any[] | undefined;
+    ruleId?: string | null | undefined;
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: {};
+    };
     uid: string;
+    ordinal: number;
     title: string;
-    summary: string;
-    timezone: string;
-    type: "dayDebrief";
-    weekdays: any[];
-    hour: number;
-    minute: number;
-}, "uid" | "title" | "summary" | "timezone" | "type" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt" | "isTemplate" | "scheduledNotificationIds")>, profileFactory: import("factory.ts").Factory<import("..").ProfileValue, keyof import("..").ProfileValue>, supportGroupFactory: import("factory.ts").Factory<{
+    type: "impulse";
+    tacticIds: any[];
+    recommenderUid: string;
+    recommenderName: string;
+    patternIds: any[];
+}, "createdAt" | "updatedAt" | "uid" | "ordinal" | "title" | "type" | "tacticIds" | "recommenderUid" | "recommenderName" | "patternIds" | ("tacticsById" | "explanation" | "appliedAt" | "dismissedAt" | "ruleId")>, debriefLogFactory: import("factory.ts").Factory<import("..").DebriefLogValue, "createdAt" | "updatedAt" | "uid" | "type" | "tacticsById" | "steps" | "strategy" | "patternsById" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "routineId" | "tacticDataEntries">, profileFactory: import("factory.ts").Factory<import("..").ProfileValue, keyof import("..").ProfileValue>, supportGroupFactory: import("factory.ts").Factory<{
     createdAt?: import("yup").Maybe<{} | undefined> | {
         seconds: number;
         nanoseconds: number;
@@ -63,7 +74,9 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     everythingPermissions?: boolean | undefined;
     memberTargetCount?: number | undefined;
     groupNameAliases?: {
-        [x: string]: string | undefined;
+        [x: string]: string;
+        [x: number]: string;
+        [x: symbol]: string;
     } | undefined;
     groupDescription?: string | undefined;
     lastMessagePreview?: string | undefined;
@@ -95,7 +108,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     };
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
-    isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
     subtitle?: import("yup").Maybe<string | undefined>;
     description?: string | null | undefined;
@@ -104,6 +116,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         storagePath?: import("yup").Maybe<string | undefined>;
         uri?: import("yup").Maybe<string | undefined>;
     } | null | undefined;
+    isTemplate?: boolean | null | undefined;
     language?: string | null | undefined;
     href?: string | null | undefined;
     categoryIds?: (string | undefined)[] | null | undefined;
@@ -131,7 +144,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     };
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
-    isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
     subtitle?: import("yup").Maybe<string | undefined>;
     description?: string | null | undefined;
@@ -140,6 +152,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         storagePath?: import("yup").Maybe<string | undefined>;
         uri?: import("yup").Maybe<string | undefined>;
     } | null | undefined;
+    isTemplate?: boolean | null | undefined;
     language?: string | null | undefined;
     href?: string | null | undefined;
     categoryIds?: (string | undefined)[] | null | undefined;
@@ -170,7 +183,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     };
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
-    isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
     subtitle?: import("yup").Maybe<string | undefined>;
     description?: string | null | undefined;
@@ -179,6 +191,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         storagePath?: import("yup").Maybe<string | undefined>;
         uri?: import("yup").Maybe<string | undefined>;
     } | null | undefined;
+    isTemplate?: boolean | null | undefined;
     language?: string | null | undefined;
     href?: string | null | undefined;
     categoryIds?: (string | undefined)[] | null | undefined;
@@ -204,7 +217,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     };
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
-    isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
     subtitle?: import("yup").Maybe<string | undefined>;
     description?: string | null | undefined;
@@ -213,6 +225,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         storagePath?: import("yup").Maybe<string | undefined>;
         uri?: import("yup").Maybe<string | undefined>;
     } | null | undefined;
+    isTemplate?: boolean | null | undefined;
     language?: string | null | undefined;
     href?: string | null | undefined;
     categoryIds?: (string | undefined)[] | null | undefined;
@@ -246,7 +259,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     };
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
-    isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
     subtitle?: import("yup").Maybe<string | undefined>;
     description?: string | null | undefined;
@@ -255,6 +267,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         storagePath?: import("yup").Maybe<string | undefined>;
         uri?: import("yup").Maybe<string | undefined>;
     } | null | undefined;
+    isTemplate?: boolean | null | undefined;
     language?: string | null | undefined;
     href?: string | null | undefined;
     categoryIds?: (string | undefined)[] | null | undefined;
@@ -280,7 +293,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     };
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
-    isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
     subtitle?: import("yup").Maybe<string | undefined>;
     description?: string | null | undefined;
@@ -289,6 +301,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         storagePath?: import("yup").Maybe<string | undefined>;
         uri?: import("yup").Maybe<string | undefined>;
     } | null | undefined;
+    isTemplate?: boolean | null | undefined;
     language?: string | null | undefined;
     href?: string | null | undefined;
     categoryIds?: (string | undefined)[] | null | undefined;
@@ -314,8 +327,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     };
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
-    isTemplate?: boolean | null | undefined;
-    repeat?: import("yup").Maybe<number | undefined>;
     sourceId?: string | undefined;
     subtitle?: import("yup").Maybe<string | undefined>;
     description?: string | null | undefined;
@@ -324,6 +335,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         storagePath?: import("yup").Maybe<string | undefined>;
         uri?: import("yup").Maybe<string | undefined>;
     } | null | undefined;
+    isTemplate?: boolean | null | undefined;
     language?: string | null | undefined;
     href?: string | null | undefined;
     categoryIds?: (string | undefined)[] | null | undefined;
@@ -333,6 +345,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     isAvailableForRecommendation?: boolean | null | undefined;
     numberOfLikes?: number | null | undefined;
     isSuggested?: boolean | undefined;
+    repeat?: import("yup").Maybe<number | undefined>;
     title: string;
     type: "breathe";
     backgroundColor: string;
@@ -352,7 +365,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     };
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
-    isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
     subtitle?: import("yup").Maybe<string | undefined>;
     description?: string | null | undefined;
@@ -361,6 +373,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         storagePath?: import("yup").Maybe<string | undefined>;
         uri?: import("yup").Maybe<string | undefined>;
     } | null | undefined;
+    isTemplate?: boolean | null | undefined;
     language?: string | null | undefined;
     href?: string | null | undefined;
     categoryIds?: (string | undefined)[] | null | undefined;
@@ -387,7 +400,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     };
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
-    isTemplate?: boolean | null | undefined;
     sourceId?: string | undefined;
     subtitle?: import("yup").Maybe<string | undefined>;
     description?: string | null | undefined;
@@ -396,6 +408,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         storagePath?: import("yup").Maybe<string | undefined>;
         uri?: import("yup").Maybe<string | undefined>;
     } | null | undefined;
+    isTemplate?: boolean | null | undefined;
     language?: string | null | undefined;
     href?: string | null | undefined;
     categoryIds?: (string | undefined)[] | null | undefined;
@@ -408,4 +421,4 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     title: string;
     type: "emotions";
     backgroundColor: string;
-}, "createdAt" | "updatedAt" | "uid" | "ordinal" | "title" | "isTemplate" | "type" | "sourceId" | "subtitle" | "description" | "image" | "backgroundColor" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">, recommendationRuleFactory: import("factory.ts").Factory<import("..").RecommendationRuleValue, "createdAt" | "updatedAt" | "uid" | "ordinal" | "recommendation" | "forIssueIds" | ("issueNames" | "issueNamesSummary" | "recommendationSummary")>;
+}, "createdAt" | "updatedAt" | "uid" | "ordinal" | "title" | "type" | "sourceId" | "subtitle" | "description" | "image" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">, impulseRecommendationRuleFactory: import("factory.ts").Factory<import("..").RecommendationRuleValue, "createdAt" | "updatedAt" | "uid" | "ordinal" | "type" | "recommendation" | "forIssueIds" | "issueNames" | "issueNamesSummary" | "recommendationSummary">;
