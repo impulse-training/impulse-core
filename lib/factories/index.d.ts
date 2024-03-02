@@ -107,6 +107,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
     impulseRecommendationFactory: import("factory.ts").Factory<import("..").ImpulseRecommendationValue, "createdAt" | "updatedAt" | "uid" | "ordinal" | "title" | "type" | "tacticIds" | "tacticsById" | "explanation" | "recommenderUid" | "recommenderName" | "appliedAt" | "dismissedAt" | "ruleId" | "patternIds">;
     impulseRecommendationRuleFactory: import("factory.ts").Factory<import("..").RecommendationRuleValue, "createdAt" | "updatedAt" | "uid" | "ordinal" | "type" | "recommendation" | "forIssueIds" | "issueNames" | "issueNamesSummary" | "recommendationSummary">;
     impulseDebriefRecommendationRuleFactory: import("factory.ts").Factory<import("..").RecommendationRuleValue, "createdAt" | "updatedAt" | "uid" | "ordinal" | "type" | "recommendation" | "forIssueIds" | "issueNames" | "issueNamesSummary" | "recommendationSummary">;
+    timeRecommendationRuleFactory: import("factory.ts").Factory<import("..").RecommendationRuleValue, "createdAt" | "updatedAt" | "uid" | "ordinal" | "type" | "recommendation" | "forIssueIds" | "issueNames" | "issueNamesSummary" | "recommendationSummary">;
     tacticFactory: import("factory.ts").Factory<{
         createdAt?: import("yup").Maybe<{} | undefined> | {
             seconds: number;

@@ -18,6 +18,7 @@ import { makeImpulseRecommendationFactory } from './recommendation';
 import {
   makeImpulseDebriefRecommendationRuleFactory,
   makeImpulseRecommendationRuleFactory,
+  makeTimeRecommendationRuleFactory,
 } from './recommendationRule';
 import { makeSupportGroupFactory } from './supportGroup';
 import { makeFolderTacticFactory, makeTacticFactory } from './tactic';
@@ -47,6 +48,8 @@ export function makeFactories(TimestampKlass: typeof TimestampLike) {
       makeImpulseRecommendationRuleFactory(TimestampKlass),
     impulseDebriefRecommendationRuleFactory:
       makeImpulseDebriefRecommendationRuleFactory(TimestampKlass),
+    timeRecommendationRuleFactory:
+      makeTimeRecommendationRuleFactory(TimestampKlass),
     tacticFactory: makeTacticFactory(TimestampKlass),
     folderTacticFactory: makeFolderTacticFactory(TimestampKlass),
   };

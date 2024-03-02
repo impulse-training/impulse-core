@@ -303,21 +303,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         parentIssueIds?: string[] | undefined;
         tacticsById?: any;
         recommendationsCount?: number | undefined;
-        dayDebrief?: {
-            conditionalTacticIds?: {
-                [x: string]: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[];
-            } | null | undefined;
-            title: string;
-            tacticIds: string[];
-            suggestedTacticIds: string[];
-            weekdays: number[];
-            hour: number;
-            minute: number;
-        } | undefined;
         time?: {
             [x: string]: {
                 conditionalTacticIds?: {
@@ -380,6 +365,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 suggestedTacticIds: string[];
             };
         };
+        dayDebrief: {};
         patternsById: {
             [x: string]: {
                 createdAt?: yup.Maybe<{} | undefined> | {
@@ -497,15 +483,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         timezone: undefined;
         impulse: undefined;
         impulseDebrief: undefined;
-        dayDebrief: {
-            tacticIds: "";
-            suggestedTacticIds: "";
-            conditionalTacticIds: undefined;
-            weekdays: "";
-            hour: undefined;
-            minute: undefined;
-            title: undefined;
-        };
+        dayDebrief: undefined;
         time: undefined;
         location: undefined;
         tacticsById: any;
@@ -1506,21 +1484,6 @@ export declare const logSchema: yup.Lazy<{
         parentIssueIds?: string[] | undefined;
         tacticsById?: any;
         recommendationsCount?: number | undefined;
-        dayDebrief?: {
-            conditionalTacticIds?: {
-                [x: string]: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[];
-            } | null | undefined;
-            title: string;
-            tacticIds: string[];
-            suggestedTacticIds: string[];
-            weekdays: number[];
-            hour: number;
-            minute: number;
-        } | undefined;
         time?: {
             [x: string]: {
                 conditionalTacticIds?: {
@@ -1583,6 +1546,7 @@ export declare const logSchema: yup.Lazy<{
                 suggestedTacticIds: string[];
             };
         };
+        dayDebrief: {};
         patternsById: {
             [x: string]: {
                 createdAt?: yup.Maybe<{} | undefined> | {

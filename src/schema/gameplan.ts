@@ -56,7 +56,7 @@ export const gameplanSchema = yup.object().shape({
   impulse: objectOf(strategy),
   impulseDebrief: objectOf(strategy),
 
-  dayDebrief: timeRoutine.optional(),
+  dayDebrief: yup.lazy(value => (value ? timeRoutine : yup.object().shape({}))),
   // These are the strategies for scheduled times of day...
   time: optionalObjectOf(timeRoutine.required()),
   // ...Or when arriving at a location

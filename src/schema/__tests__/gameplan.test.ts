@@ -1,16 +1,18 @@
 import { ValidationError } from 'yup';
+import { factories } from '../../__tests__/factories';
 import { gameplanSchema } from '../gameplan';
 
 describe('gameplan', () => {
   it("isn't valid with a time routine with no weekdays", () => {
-    const gameplan = {
+    const gameplan = factories.gameplanFactory.build({
       time: {
-        start: '10:00',
-        end: '12:00',
-        duration: 30,
-        weekdays: [],
+        foobar: {
+          hour: 20,
+          minute: 0,
+          weekdays: [],
+        },
       },
-    };
+    });
 
     let errors: Array<Error> = [];
 
@@ -25,6 +27,7 @@ describe('gameplan', () => {
       }
     }
 
+    console.log({ errors });
     expect(errors.length).toEqual(1);
   });
 });

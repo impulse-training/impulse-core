@@ -105,21 +105,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             suggestedTacticIds: string[];
         };
     };
-    dayDebrief: {
-        conditionalTacticIds?: {
-            [x: string]: {
-                ids: string[];
-                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                value: {};
-            }[];
-        } | null | undefined;
-        title: string;
-        tacticIds: string[];
-        suggestedTacticIds: string[];
-        weekdays: number[];
-        hour: number;
-        minute: number;
-    } | undefined;
+    dayDebrief: {};
     time: {
         [x: string]: {
             conditionalTacticIds?: {
@@ -191,15 +177,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     timezone: undefined;
     impulse: undefined;
     impulseDebrief: undefined;
-    dayDebrief: {
-        tacticIds: "";
-        suggestedTacticIds: "";
-        conditionalTacticIds: undefined;
-        weekdays: "";
-        hour: undefined;
-        minute: undefined;
-        title: undefined;
-    };
+    dayDebrief: undefined;
     time: undefined;
     location: undefined;
     tacticsById: any;

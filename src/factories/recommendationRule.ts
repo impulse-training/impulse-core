@@ -4,6 +4,7 @@ import { TimestampLike } from '../utils/TimestampLike';
 import {
   makeImpulseDebriefRecommendationFactory,
   makeImpulseRecommendationFactory,
+  makeTimeRecommendationFactory,
 } from './recommendation';
 
 export const makeImpulseRecommendationRuleFactory = (
@@ -29,6 +30,19 @@ export const makeImpulseDebriefRecommendationRuleFactory = (
     uid: Factory.each(i => `impulse-debrief-recommendation-rule-${i}`),
     recommendation:
       makeImpulseDebriefRecommendationFactory(TimestampKlass).build(),
+    forIssueIds: [],
+    ordinal: 0,
+  });
+
+export const makeTimeRecommendationRuleFactory = (
+  TimestampKlass: typeof TimestampLike
+) =>
+  Factory.makeFactory<RecommendationRuleValue>({
+    createdAt: TimestampKlass.now(),
+    updatedAt: TimestampKlass.now(),
+    type: 'time',
+    uid: Factory.each(i => `impulse-debrief-recommendation-rule-${i}`),
+    recommendation: makeTimeRecommendationFactory(TimestampKlass).build(),
     forIssueIds: [],
     ordinal: 0,
   });
