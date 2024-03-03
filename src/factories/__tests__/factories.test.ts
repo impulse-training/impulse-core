@@ -11,6 +11,7 @@ import {
   recommendationSchema,
   supportGroupSchema,
   tacticSchema,
+  timeRecommendationRuleSchema,
 } from '../../schema';
 import { TimestampLike } from '../../utils/TimestampLike';
 
@@ -70,6 +71,7 @@ const schemaMap: Record<keyof typeof factories, null | Schema | Lazy<unknown>> =
     impulseRecommendationRuleFactory: impulseRecommendationRuleSchema,
     impulseDebriefRecommendationRuleFactory:
       impulseDebriefRecommendationRuleSchema,
+    timeRecommendationRuleFactory: timeRecommendationRuleSchema,
     tacticFactory: tacticSchema,
     folderTacticFactory: tacticSchema,
   };

@@ -1,7 +1,7 @@
 import { difference, isEqual } from 'lodash';
 import { LONG_DAYS, TimeRoutine } from '../schema';
 
-export function timeRoutineSummary(routine: TimeRoutine) {
+export function timeRoutineSchemaSummary(routine: TimeRoutine) {
   if (!routine.weekdays?.length) return '';
   const weekdays = routine.weekdays.sort();
   const weekdayNames = weekdays.map(dayNumber => LONG_DAYS[dayNumber]);

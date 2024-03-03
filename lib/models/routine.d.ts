@@ -1,2 +1,2 @@
 import { TimeRoutine } from '../schema';
-export declare function timeRoutineSummary(routine: TimeRoutine): string;
+export declare function timeRoutineSchemaSummary(routine: TimeRoutine): string;

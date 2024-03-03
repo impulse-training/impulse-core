@@ -10,6 +10,9 @@ describe('gameplan', () => {
           hour: 20,
           minute: 0,
           weekdays: [],
+          tacticIds: [],
+          suggestedTacticIds: [],
+          title: 'At 8pm',
         },
       },
     });

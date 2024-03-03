@@ -28,16 +28,26 @@ export const strategy = yup.object({
 });
 export type Strategy = yup.InferType<typeof strategy>;
 
-export type TimeRoutine = yup.InferType<typeof timeRoutine>;
-export const timeRoutine = strategy.shape({
-  weekdays: yup.array().of(yup.number().required()).required(),
+export type TimeRoutine = yup.InferType<typeof timeRoutineSchema>;
+export const timeRoutineSchema = strategy.shape({
+  weekdays: yup
+    .array()
+    .of(
+      yup
+        .number()
+        .min(0, 'Weekday must be a number between 0 and 6')
+        .max(6, 'Weekday must be a number between 0 and 6')
+        .required('Weekday is required')
+    )
+    .required()
+    .min(1, 'At least one weekday is required'),
   hour: yup.number().required(),
   minute: yup.number().required(),
   title: yup.string().required(),
 });
 
-export type LocationRoutine = yup.InferType<typeof locationRoutine>;
-export const locationRoutine = strategy.shape({
+export type LocationRoutine = yup.InferType<typeof locationRoutineSchema>;
+export const locationRoutineSchema = strategy.shape({
   locationKey: yup.string().required(),
   mode: yup.mixed<'enter' | 'exit'>().oneOf(['enter', 'exit']).required(),
   title: yup.string().required(),
@@ -56,11 +66,11 @@ export const gameplanSchema = yup.object().shape({
   impulse: objectOf(strategy),
   impulseDebrief: objectOf(strategy),
 
-  dayDebrief: yup.lazy(value => (value ? timeRoutine : yup.object().shape({}))),
+  dayDebrief: yup.lazy(value => (value ? timeRoutineSchema : yup.mixed())),
   // These are the strategies for scheduled times of day...
-  time: optionalObjectOf(timeRoutine.required()),
+  time: optionalObjectOf(timeRoutineSchema.required()),
   // ...Or when arriving at a location
-  location: optionalObjectOf(locationRoutine.required()),
+  location: optionalObjectOf(locationRoutineSchema.required()),
   // Data - we keep copies of relevant data on the gameplan document, for performance reasons
   tacticsById: objectOf(tacticSchema) as any,
   patternsById: objectOf(patternSchema),

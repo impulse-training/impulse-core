@@ -17,8 +17,8 @@ export declare const strategy: yup.ObjectSchema<{
     conditionalTacticIds: undefined;
 }, "">;
 export type Strategy = yup.InferType<typeof strategy>;
-export type TimeRoutine = yup.InferType<typeof timeRoutine>;
-export declare const timeRoutine: yup.ObjectSchema<{
+export type TimeRoutine = yup.InferType<typeof timeRoutineSchema>;
+export declare const timeRoutineSchema: yup.ObjectSchema<{
     tacticIds: string[];
     suggestedTacticIds: string[];
     conditionalTacticIds: {
@@ -41,8 +41,8 @@ export declare const timeRoutine: yup.ObjectSchema<{
     minute: undefined;
     title: undefined;
 }, "">;
-export type LocationRoutine = yup.InferType<typeof locationRoutine>;
-export declare const locationRoutine: yup.ObjectSchema<{
+export type LocationRoutine = yup.InferType<typeof locationRoutineSchema>;
+export declare const locationRoutineSchema: yup.ObjectSchema<{
     tacticIds: string[];
     suggestedTacticIds: string[];
     conditionalTacticIds: {
@@ -105,7 +105,21 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             suggestedTacticIds: string[];
         };
     };
-    dayDebrief: {};
+    dayDebrief: {} | {
+        conditionalTacticIds?: {
+            [x: string]: {
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[];
+        } | null | undefined;
+        title: string;
+        tacticIds: string[];
+        suggestedTacticIds: string[];
+        weekdays: number[];
+        hour: number;
+        minute: number;
+    } | undefined;
     time: {
         [x: string]: {
             conditionalTacticIds?: {
