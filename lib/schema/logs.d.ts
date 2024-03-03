@@ -52,35 +52,37 @@ declare const baseLogSchema: yup.ObjectSchema<{
     commentsById: {} | null | undefined;
     commentsByTacticId: {
         [x: string]: {
+            commentsById: {
+                [x: string]: {
+                    createdAt?: yup.Maybe<{} | undefined> | {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: {};
+                    };
+                    updatedAt?: yup.Maybe<{} | undefined> | {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: {};
+                    };
+                    tacticId?: string | null | undefined;
+                    tacticName?: string | null | undefined;
+                    text?: string | undefined;
+                    recording?: {
+                        waveform?: string | null | undefined;
+                        localFilePath: string;
+                        remoteFilePath: string;
+                    } | undefined;
+                    isEdited?: boolean | undefined;
+                    avatar?: {
+                        localFilePath?: yup.Maybe<string | undefined>;
+                        storagePath?: yup.Maybe<string | undefined>;
+                        uri?: yup.Maybe<string | undefined>;
+                    } | undefined;
+                    uid: string;
+                    authorName: string;
+                };
+            };
             tacticTitle: string;
-            comments: {
-                createdAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                tacticId?: string | null | undefined;
-                tacticName?: string | null | undefined;
-                text?: string | undefined;
-                recording?: {
-                    waveform?: string | null | undefined;
-                    localFilePath: string;
-                    remoteFilePath: string;
-                } | undefined;
-                isEdited?: boolean | undefined;
-                avatar?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
-                } | undefined;
-                uid: string;
-                authorName: string;
-            }[];
         };
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
@@ -210,35 +212,37 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     commentsById: {} | null | undefined;
     commentsByTacticId: {
         [x: string]: {
+            commentsById: {
+                [x: string]: {
+                    createdAt?: yup.Maybe<{} | undefined> | {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: {};
+                    };
+                    updatedAt?: yup.Maybe<{} | undefined> | {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: {};
+                    };
+                    tacticId?: string | null | undefined;
+                    tacticName?: string | null | undefined;
+                    text?: string | undefined;
+                    recording?: {
+                        waveform?: string | null | undefined;
+                        localFilePath: string;
+                        remoteFilePath: string;
+                    } | undefined;
+                    isEdited?: boolean | undefined;
+                    avatar?: {
+                        localFilePath?: yup.Maybe<string | undefined>;
+                        storagePath?: yup.Maybe<string | undefined>;
+                        uri?: yup.Maybe<string | undefined>;
+                    } | undefined;
+                    uid: string;
+                    authorName: string;
+                };
+            };
             tacticTitle: string;
-            comments: {
-                createdAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                tacticId?: string | null | undefined;
-                tacticName?: string | null | undefined;
-                text?: string | undefined;
-                recording?: {
-                    waveform?: string | null | undefined;
-                    localFilePath: string;
-                    remoteFilePath: string;
-                } | undefined;
-                isEdited?: boolean | undefined;
-                avatar?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
-                } | undefined;
-                uid: string;
-                authorName: string;
-            }[];
         };
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
@@ -546,35 +550,37 @@ declare const locationLogSchema: yup.ObjectSchema<{
     commentsById: {} | null | undefined;
     commentsByTacticId: {
         [x: string]: {
+            commentsById: {
+                [x: string]: {
+                    createdAt?: yup.Maybe<{} | undefined> | {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: {};
+                    };
+                    updatedAt?: yup.Maybe<{} | undefined> | {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: {};
+                    };
+                    tacticId?: string | null | undefined;
+                    tacticName?: string | null | undefined;
+                    text?: string | undefined;
+                    recording?: {
+                        waveform?: string | null | undefined;
+                        localFilePath: string;
+                        remoteFilePath: string;
+                    } | undefined;
+                    isEdited?: boolean | undefined;
+                    avatar?: {
+                        localFilePath?: yup.Maybe<string | undefined>;
+                        storagePath?: yup.Maybe<string | undefined>;
+                        uri?: yup.Maybe<string | undefined>;
+                    } | undefined;
+                    uid: string;
+                    authorName: string;
+                };
+            };
             tacticTitle: string;
-            comments: {
-                createdAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                tacticId?: string | null | undefined;
-                tacticName?: string | null | undefined;
-                text?: string | undefined;
-                recording?: {
-                    waveform?: string | null | undefined;
-                    localFilePath: string;
-                    remoteFilePath: string;
-                } | undefined;
-                isEdited?: boolean | undefined;
-                avatar?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
-                } | undefined;
-                uid: string;
-                authorName: string;
-            }[];
         };
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
@@ -709,35 +715,37 @@ declare const timeLogSchema: yup.ObjectSchema<{
     commentsById: {} | null | undefined;
     commentsByTacticId: {
         [x: string]: {
+            commentsById: {
+                [x: string]: {
+                    createdAt?: yup.Maybe<{} | undefined> | {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: {};
+                    };
+                    updatedAt?: yup.Maybe<{} | undefined> | {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: {};
+                    };
+                    tacticId?: string | null | undefined;
+                    tacticName?: string | null | undefined;
+                    text?: string | undefined;
+                    recording?: {
+                        waveform?: string | null | undefined;
+                        localFilePath: string;
+                        remoteFilePath: string;
+                    } | undefined;
+                    isEdited?: boolean | undefined;
+                    avatar?: {
+                        localFilePath?: yup.Maybe<string | undefined>;
+                        storagePath?: yup.Maybe<string | undefined>;
+                        uri?: yup.Maybe<string | undefined>;
+                    } | undefined;
+                    uid: string;
+                    authorName: string;
+                };
+            };
             tacticTitle: string;
-            comments: {
-                createdAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                tacticId?: string | null | undefined;
-                tacticName?: string | null | undefined;
-                text?: string | undefined;
-                recording?: {
-                    waveform?: string | null | undefined;
-                    localFilePath: string;
-                    remoteFilePath: string;
-                } | undefined;
-                isEdited?: boolean | undefined;
-                avatar?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
-                } | undefined;
-                uid: string;
-                authorName: string;
-            }[];
         };
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
@@ -868,35 +876,37 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
     commentsById: {} | null | undefined;
     commentsByTacticId: {
         [x: string]: {
+            commentsById: {
+                [x: string]: {
+                    createdAt?: yup.Maybe<{} | undefined> | {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: {};
+                    };
+                    updatedAt?: yup.Maybe<{} | undefined> | {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: {};
+                    };
+                    tacticId?: string | null | undefined;
+                    tacticName?: string | null | undefined;
+                    text?: string | undefined;
+                    recording?: {
+                        waveform?: string | null | undefined;
+                        localFilePath: string;
+                        remoteFilePath: string;
+                    } | undefined;
+                    isEdited?: boolean | undefined;
+                    avatar?: {
+                        localFilePath?: yup.Maybe<string | undefined>;
+                        storagePath?: yup.Maybe<string | undefined>;
+                        uri?: yup.Maybe<string | undefined>;
+                    } | undefined;
+                    uid: string;
+                    authorName: string;
+                };
+            };
             tacticTitle: string;
-            comments: {
-                createdAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                tacticId?: string | null | undefined;
-                tacticName?: string | null | undefined;
-                text?: string | undefined;
-                recording?: {
-                    waveform?: string | null | undefined;
-                    localFilePath: string;
-                    remoteFilePath: string;
-                } | undefined;
-                isEdited?: boolean | undefined;
-                avatar?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
-                } | undefined;
-                uid: string;
-                authorName: string;
-            }[];
         };
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
@@ -1059,35 +1069,37 @@ declare const motionLogSchema: yup.ObjectSchema<{
     commentsById: {} | null | undefined;
     commentsByTacticId: {
         [x: string]: {
+            commentsById: {
+                [x: string]: {
+                    createdAt?: yup.Maybe<{} | undefined> | {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: {};
+                    };
+                    updatedAt?: yup.Maybe<{} | undefined> | {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: {};
+                    };
+                    tacticId?: string | null | undefined;
+                    tacticName?: string | null | undefined;
+                    text?: string | undefined;
+                    recording?: {
+                        waveform?: string | null | undefined;
+                        localFilePath: string;
+                        remoteFilePath: string;
+                    } | undefined;
+                    isEdited?: boolean | undefined;
+                    avatar?: {
+                        localFilePath?: yup.Maybe<string | undefined>;
+                        storagePath?: yup.Maybe<string | undefined>;
+                        uri?: yup.Maybe<string | undefined>;
+                    } | undefined;
+                    uid: string;
+                    authorName: string;
+                };
+            };
             tacticTitle: string;
-            comments: {
-                createdAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                tacticId?: string | null | undefined;
-                tacticName?: string | null | undefined;
-                text?: string | undefined;
-                recording?: {
-                    waveform?: string | null | undefined;
-                    localFilePath: string;
-                    remoteFilePath: string;
-                } | undefined;
-                isEdited?: boolean | undefined;
-                avatar?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
-                } | undefined;
-                uid: string;
-                authorName: string;
-            }[];
         };
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
@@ -1216,35 +1228,37 @@ declare const buttonLogSchema: yup.ObjectSchema<{
     commentsById: {} | null | undefined;
     commentsByTacticId: {
         [x: string]: {
+            commentsById: {
+                [x: string]: {
+                    createdAt?: yup.Maybe<{} | undefined> | {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: {};
+                    };
+                    updatedAt?: yup.Maybe<{} | undefined> | {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: {};
+                    };
+                    tacticId?: string | null | undefined;
+                    tacticName?: string | null | undefined;
+                    text?: string | undefined;
+                    recording?: {
+                        waveform?: string | null | undefined;
+                        localFilePath: string;
+                        remoteFilePath: string;
+                    } | undefined;
+                    isEdited?: boolean | undefined;
+                    avatar?: {
+                        localFilePath?: yup.Maybe<string | undefined>;
+                        storagePath?: yup.Maybe<string | undefined>;
+                        uri?: yup.Maybe<string | undefined>;
+                    } | undefined;
+                    uid: string;
+                    authorName: string;
+                };
+            };
             tacticTitle: string;
-            comments: {
-                createdAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                tacticId?: string | null | undefined;
-                tacticName?: string | null | undefined;
-                text?: string | undefined;
-                recording?: {
-                    waveform?: string | null | undefined;
-                    localFilePath: string;
-                    remoteFilePath: string;
-                } | undefined;
-                isEdited?: boolean | undefined;
-                avatar?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
-                } | undefined;
-                uid: string;
-                authorName: string;
-            }[];
         };
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
@@ -1360,35 +1374,37 @@ export declare const logSchema: yup.Lazy<{
     commentsById?: {} | null | undefined;
     commentsByTacticId?: {
         [x: string]: {
+            commentsById: {
+                [x: string]: {
+                    createdAt?: yup.Maybe<{} | undefined> | {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: {};
+                    };
+                    updatedAt?: yup.Maybe<{} | undefined> | {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: {};
+                    };
+                    tacticId?: string | null | undefined;
+                    tacticName?: string | null | undefined;
+                    text?: string | undefined;
+                    recording?: {
+                        waveform?: string | null | undefined;
+                        localFilePath: string;
+                        remoteFilePath: string;
+                    } | undefined;
+                    isEdited?: boolean | undefined;
+                    avatar?: {
+                        localFilePath?: yup.Maybe<string | undefined>;
+                        storagePath?: yup.Maybe<string | undefined>;
+                        uri?: yup.Maybe<string | undefined>;
+                    } | undefined;
+                    uid: string;
+                    authorName: string;
+                };
+            };
             tacticTitle: string;
-            comments: {
-                createdAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                tacticId?: string | null | undefined;
-                tacticName?: string | null | undefined;
-                text?: string | undefined;
-                recording?: {
-                    waveform?: string | null | undefined;
-                    localFilePath: string;
-                    remoteFilePath: string;
-                } | undefined;
-                isEdited?: boolean | undefined;
-                avatar?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
-                } | undefined;
-                uid: string;
-                authorName: string;
-            }[];
         };
     } | null | undefined;
     tacticLikes?: {
@@ -1622,35 +1638,37 @@ export declare const logSchema: yup.Lazy<{
     commentsById?: {} | null | undefined;
     commentsByTacticId?: {
         [x: string]: {
+            commentsById: {
+                [x: string]: {
+                    createdAt?: yup.Maybe<{} | undefined> | {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: {};
+                    };
+                    updatedAt?: yup.Maybe<{} | undefined> | {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: {};
+                    };
+                    tacticId?: string | null | undefined;
+                    tacticName?: string | null | undefined;
+                    text?: string | undefined;
+                    recording?: {
+                        waveform?: string | null | undefined;
+                        localFilePath: string;
+                        remoteFilePath: string;
+                    } | undefined;
+                    isEdited?: boolean | undefined;
+                    avatar?: {
+                        localFilePath?: yup.Maybe<string | undefined>;
+                        storagePath?: yup.Maybe<string | undefined>;
+                        uri?: yup.Maybe<string | undefined>;
+                    } | undefined;
+                    uid: string;
+                    authorName: string;
+                };
+            };
             tacticTitle: string;
-            comments: {
-                createdAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                tacticId?: string | null | undefined;
-                tacticName?: string | null | undefined;
-                text?: string | undefined;
-                recording?: {
-                    waveform?: string | null | undefined;
-                    localFilePath: string;
-                    remoteFilePath: string;
-                } | undefined;
-                isEdited?: boolean | undefined;
-                avatar?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
-                } | undefined;
-                uid: string;
-                authorName: string;
-            }[];
         };
     } | null | undefined;
     tacticLikes?: {
@@ -1733,35 +1751,37 @@ export declare const logSchema: yup.Lazy<{
     commentsById?: {} | null | undefined;
     commentsByTacticId?: {
         [x: string]: {
+            commentsById: {
+                [x: string]: {
+                    createdAt?: yup.Maybe<{} | undefined> | {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: {};
+                    };
+                    updatedAt?: yup.Maybe<{} | undefined> | {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: {};
+                    };
+                    tacticId?: string | null | undefined;
+                    tacticName?: string | null | undefined;
+                    text?: string | undefined;
+                    recording?: {
+                        waveform?: string | null | undefined;
+                        localFilePath: string;
+                        remoteFilePath: string;
+                    } | undefined;
+                    isEdited?: boolean | undefined;
+                    avatar?: {
+                        localFilePath?: yup.Maybe<string | undefined>;
+                        storagePath?: yup.Maybe<string | undefined>;
+                        uri?: yup.Maybe<string | undefined>;
+                    } | undefined;
+                    uid: string;
+                    authorName: string;
+                };
+            };
             tacticTitle: string;
-            comments: {
-                createdAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                tacticId?: string | null | undefined;
-                tacticName?: string | null | undefined;
-                text?: string | undefined;
-                recording?: {
-                    waveform?: string | null | undefined;
-                    localFilePath: string;
-                    remoteFilePath: string;
-                } | undefined;
-                isEdited?: boolean | undefined;
-                avatar?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
-                } | undefined;
-                uid: string;
-                authorName: string;
-            }[];
         };
     } | null | undefined;
     tacticLikes?: {
@@ -1842,35 +1862,37 @@ export declare const logSchema: yup.Lazy<{
     commentsById?: {} | null | undefined;
     commentsByTacticId?: {
         [x: string]: {
+            commentsById: {
+                [x: string]: {
+                    createdAt?: yup.Maybe<{} | undefined> | {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: {};
+                    };
+                    updatedAt?: yup.Maybe<{} | undefined> | {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: {};
+                    };
+                    tacticId?: string | null | undefined;
+                    tacticName?: string | null | undefined;
+                    text?: string | undefined;
+                    recording?: {
+                        waveform?: string | null | undefined;
+                        localFilePath: string;
+                        remoteFilePath: string;
+                    } | undefined;
+                    isEdited?: boolean | undefined;
+                    avatar?: {
+                        localFilePath?: yup.Maybe<string | undefined>;
+                        storagePath?: yup.Maybe<string | undefined>;
+                        uri?: yup.Maybe<string | undefined>;
+                    } | undefined;
+                    uid: string;
+                    authorName: string;
+                };
+            };
             tacticTitle: string;
-            comments: {
-                createdAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                tacticId?: string | null | undefined;
-                tacticName?: string | null | undefined;
-                text?: string | undefined;
-                recording?: {
-                    waveform?: string | null | undefined;
-                    localFilePath: string;
-                    remoteFilePath: string;
-                } | undefined;
-                isEdited?: boolean | undefined;
-                avatar?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
-                } | undefined;
-                uid: string;
-                authorName: string;
-            }[];
         };
     } | null | undefined;
     tacticLikes?: {
@@ -1981,35 +2003,37 @@ export declare const logSchema: yup.Lazy<{
     commentsById?: {} | null | undefined;
     commentsByTacticId?: {
         [x: string]: {
+            commentsById: {
+                [x: string]: {
+                    createdAt?: yup.Maybe<{} | undefined> | {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: {};
+                    };
+                    updatedAt?: yup.Maybe<{} | undefined> | {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: {};
+                    };
+                    tacticId?: string | null | undefined;
+                    tacticName?: string | null | undefined;
+                    text?: string | undefined;
+                    recording?: {
+                        waveform?: string | null | undefined;
+                        localFilePath: string;
+                        remoteFilePath: string;
+                    } | undefined;
+                    isEdited?: boolean | undefined;
+                    avatar?: {
+                        localFilePath?: yup.Maybe<string | undefined>;
+                        storagePath?: yup.Maybe<string | undefined>;
+                        uri?: yup.Maybe<string | undefined>;
+                    } | undefined;
+                    uid: string;
+                    authorName: string;
+                };
+            };
             tacticTitle: string;
-            comments: {
-                createdAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                tacticId?: string | null | undefined;
-                tacticName?: string | null | undefined;
-                text?: string | undefined;
-                recording?: {
-                    waveform?: string | null | undefined;
-                    localFilePath: string;
-                    remoteFilePath: string;
-                } | undefined;
-                isEdited?: boolean | undefined;
-                avatar?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
-                } | undefined;
-                uid: string;
-                authorName: string;
-            }[];
         };
     } | null | undefined;
     tacticLikes?: {
@@ -2089,35 +2113,37 @@ export declare const logSchema: yup.Lazy<{
     commentsById?: {} | null | undefined;
     commentsByTacticId?: {
         [x: string]: {
+            commentsById: {
+                [x: string]: {
+                    createdAt?: yup.Maybe<{} | undefined> | {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: {};
+                    };
+                    updatedAt?: yup.Maybe<{} | undefined> | {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: {};
+                    };
+                    tacticId?: string | null | undefined;
+                    tacticName?: string | null | undefined;
+                    text?: string | undefined;
+                    recording?: {
+                        waveform?: string | null | undefined;
+                        localFilePath: string;
+                        remoteFilePath: string;
+                    } | undefined;
+                    isEdited?: boolean | undefined;
+                    avatar?: {
+                        localFilePath?: yup.Maybe<string | undefined>;
+                        storagePath?: yup.Maybe<string | undefined>;
+                        uri?: yup.Maybe<string | undefined>;
+                    } | undefined;
+                    uid: string;
+                    authorName: string;
+                };
+            };
             tacticTitle: string;
-            comments: {
-                createdAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                tacticId?: string | null | undefined;
-                tacticName?: string | null | undefined;
-                text?: string | undefined;
-                recording?: {
-                    waveform?: string | null | undefined;
-                    localFilePath: string;
-                    remoteFilePath: string;
-                } | undefined;
-                isEdited?: boolean | undefined;
-                avatar?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
-                } | undefined;
-                uid: string;
-                authorName: string;
-            }[];
         };
     } | null | undefined;
     tacticLikes?: {

@@ -45,7 +45,7 @@ const baseLogSchema = yup.object().shape({
   commentsByTacticId: optionalObjectOf(
     yup.object().shape({
       tacticTitle: yup.string().required(),
-      comments: yup.array().of(commentSchema.required()).required(),
+      commentsById: objectOf(commentSchema),
     })
   ),
   steps: yup.number().notRequired(),
