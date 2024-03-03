@@ -49,7 +49,7 @@ export const timeRoutineSchema = strategy.shape({
 
 export type LocationRoutine = yup.InferType<typeof locationRoutineSchema>;
 export const locationRoutineSchema = strategy.shape({
-  locationKey: yup.string().required(),
+  locationId: yup.string().required(),
   mode: yup.mixed<'enter' | 'exit'>().oneOf(['enter', 'exit']).required(),
   title: yup.string().required(),
 });

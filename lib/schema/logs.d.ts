@@ -311,7 +311,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 title: string;
                 tacticIds: string[];
                 suggestedTacticIds: string[];
-                locationKey: string;
+                locationId: string;
                 mode: NonNullable<"enter" | "exit" | undefined>;
             };
         } | null | undefined;
@@ -1382,7 +1382,7 @@ export declare const logSchema: yup.Lazy<{
                 title: string;
                 tacticIds: string[];
                 suggestedTacticIds: string[];
-                locationKey: string;
+                locationId: string;
                 mode: NonNullable<"enter" | "exit" | undefined>;
             };
         } | null | undefined;
@@ -1487,6 +1487,7 @@ export declare const logSchema: yup.Lazy<{
     sharedWithSupportGroupIds?: string[] | undefined;
     uid: string;
     type: "location";
+    locationId: string;
     timezone: string;
     location: {
         latitude?: number | undefined;
@@ -1530,7 +1531,6 @@ export declare const logSchema: yup.Lazy<{
     seenTacticIds: string[];
     completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
-    locationId: string;
     locationName: string;
     locationMode: {};
 } | {

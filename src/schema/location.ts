@@ -1,11 +1,13 @@
-import { TimestampLike } from '../utils/TimestampLike';
+import * as yup from 'yup';
+import { optionalTimestampSchema } from './utils/timestamp';
 
-export interface LocationValue {
-  uid: string;
-  createdAt: TimestampLike;
-  updatedAt: TimestampLike;
-  name: string;
-  latitude: number;
-  longitude: number;
-  address: string;
-}
+export const locationSchema = yup.object().shape({
+  uid: yup.string().required(),
+  createdAt: optionalTimestampSchema,
+  updatedAt: optionalTimestampSchema,
+  name: yup.string().required(),
+  latitude: yup.number().min(-90).max(90), // latitude ranges from -90 to 90
+  longitude: yup.number().min(-180).max(180), // longitude ranges from -180 to 180
+  address: yup.string().required(),
+});
+export type LocationValue = yup.InferType<typeof locationSchema>;

@@ -66,7 +66,7 @@ export type LocationRecommendationValue = WithTacticsById<
 >;
 const locationRecommendationSchema = extendedRecommendationSchema.shape({
   type: yup.mixed<'location'>().oneOf(['location']).required(),
-  locationKey: yup.string().required(),
+  locationName: yup.string().required(),
 });
 
 const defaultValidation = yup

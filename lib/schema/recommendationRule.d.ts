@@ -259,7 +259,7 @@ export declare const locationRecommendationRuleSchema: yup.ObjectSchema<{
         toDate: Function;
     };
     type: "location";
-    locationKey: string;
+    locationName: string;
 }, yup.AnyObject, {
     recommendation: {
         title: undefined;
@@ -286,7 +286,7 @@ export declare const locationRecommendationRuleSchema: yup.ObjectSchema<{
         toDate: undefined;
     };
     type: undefined;
-    locationKey: undefined;
+    locationName: undefined;
 }, "">;
 export declare const recommendationRuleSchema: yup.Lazy<{
     type: NonNullable<"impulse" | "impulseDebrief" | "time" | "location" | undefined>;

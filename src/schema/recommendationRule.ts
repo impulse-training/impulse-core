@@ -46,7 +46,7 @@ export type LocationRecommendationRuleValue = yup.InferType<
 export const locationRecommendationRuleSchema =
   recommendationRuleBaseSchema.shape({
     type: yup.mixed<'location'>().oneOf(['location']).required(),
-    locationKey: yup.string().required(),
+    locationName: yup.string().required(),
   });
 
 const defaultValidation = yup

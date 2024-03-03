@@ -52,14 +52,14 @@ export declare const locationRoutineSchema: yup.ObjectSchema<{
             value: {};
         }[];
     } | null | undefined;
-    locationKey: string;
+    locationId: string;
     mode: NonNullable<"enter" | "exit" | undefined>;
     title: string;
 }, yup.AnyObject, {
     tacticIds: "";
     suggestedTacticIds: "";
     conditionalTacticIds: undefined;
-    locationKey: undefined;
+    locationId: undefined;
     mode: undefined;
     title: undefined;
 }, "">;
@@ -141,7 +141,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             title: string;
             tacticIds: string[];
             suggestedTacticIds: string[];
-            locationKey: string;
+            locationId: string;
             mode: NonNullable<"enter" | "exit" | undefined>;
         };
     } | null | undefined;

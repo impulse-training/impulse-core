@@ -84,5 +84,5 @@ export const makeLocationRecommendationFactory = (
     appliedAt: null,
     dismissedAt: null,
     type: 'location',
-    locationKey: 'home',
+    locationName: 'home',
   });

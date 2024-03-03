@@ -207,7 +207,7 @@ declare const locationRecommendationSchema: yup.ObjectSchema<{
     dismissedAt: import("..").TimestampLike | yup.Maybe<null>;
     ruleId: string | null | undefined;
     type: "location";
-    locationKey: string;
+    locationName: string;
 }, yup.AnyObject, {
     title: undefined;
     explanation: undefined;
@@ -231,7 +231,7 @@ declare const locationRecommendationSchema: yup.ObjectSchema<{
     dismissedAt: undefined;
     ruleId: undefined;
     type: undefined;
-    locationKey: undefined;
+    locationName: undefined;
 }, "">;
 export declare const recommendationSchema: yup.Lazy<{
     type: NonNullable<"impulse" | "impulseDebrief" | "time" | "location" | undefined>;

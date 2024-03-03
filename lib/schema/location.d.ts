@@ -1,10 +1,19 @@
-import { TimestampLike } from '../utils/TimestampLike';
-export interface LocationValue {
+import * as yup from 'yup';
+export declare const locationSchema: yup.ObjectSchema<{
     uid: string;
-    createdAt: TimestampLike;
-    updatedAt: TimestampLike;
+    createdAt: import("..").TimestampLike | yup.Maybe<null>;
+    updatedAt: import("..").TimestampLike | yup.Maybe<null>;
     name: string;
-    latitude: number;
-    longitude: number;
+    latitude: number | undefined;
+    longitude: number | undefined;
     address: string;
-}
+}, yup.AnyObject, {
+    uid: undefined;
+    createdAt: undefined;
+    updatedAt: undefined;
+    name: undefined;
+    latitude: undefined;
+    longitude: undefined;
+    address: undefined;
+}, "">;
+export type LocationValue = yup.InferType<typeof locationSchema>;
