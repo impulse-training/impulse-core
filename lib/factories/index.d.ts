@@ -2,16 +2,8 @@ import { TimestampLike } from '../utils/TimestampLike';
 export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
     applicationFactory: import("factory.ts").Factory<import("..").ApplicationValue, keyof import("..").ApplicationValue>;
     commentFactory: import("factory.ts").Factory<{
-        createdAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
-        updatedAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
+        createdAt?: TimestampLike | import("yup").Maybe<null>;
+        updatedAt?: TimestampLike | import("yup").Maybe<null>;
         tacticId?: string | null | undefined;
         tacticName?: string | null | undefined;
         text?: string | undefined;
@@ -40,16 +32,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
     issueFactory: import("factory.ts").Factory<import("..").IssueValue, keyof import("..").IssueValue>;
     adminProfileFactory: import("factory.ts").Factory<import("..").ProfileValue, keyof import("..").ProfileValue>;
     supportGroupFactory: import("factory.ts").Factory<{
-        createdAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
-        updatedAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
+        createdAt?: TimestampLike | import("yup").Maybe<null>;
+        updatedAt?: TimestampLike | import("yup").Maybe<null>;
         isTemplate?: boolean | undefined;
         slug?: string | undefined;
         templateId?: string | undefined;
@@ -80,16 +64,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
     }, "suggestedTacticIds" | "thumbnailUrl" | "participantUids" | "groupName" | "creatorName" | "creatorUid" | "icon" | "unreadCounts" | "permissions" | ("createdAt" | "updatedAt" | "isTemplate" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "lastMessagePreview" | "invitationCode" | "invitationUrl" | "lastMessageUid" | "isSharingDisabled")>;
     messageFactory: import("factory.ts").Factory<import("..").MessageValue, keyof import("..").MessageValue>;
     patternFactory: import("factory.ts").Factory<{
-        createdAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
-        updatedAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
+        createdAt?: TimestampLike | import("yup").Maybe<null>;
+        updatedAt?: TimestampLike | import("yup").Maybe<null>;
         supportGroupIds?: string[] | undefined;
         notification?: {
             title: string;
@@ -109,16 +85,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
     impulseDebriefRecommendationRuleFactory: import("factory.ts").Factory<import("..").RecommendationRuleValue, "createdAt" | "updatedAt" | "uid" | "ordinal" | "type" | "recommendation" | "forIssueIds" | "issueNames" | "issueNamesSummary" | "recommendationSummary">;
     timeRecommendationRuleFactory: import("factory.ts").Factory<import("..").RecommendationRuleValue, "createdAt" | "updatedAt" | "uid" | "ordinal" | "type" | "recommendation" | "forIssueIds" | "issueNames" | "issueNamesSummary" | "recommendationSummary">;
     tacticFactory: import("factory.ts").Factory<{
-        createdAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
-        updatedAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
+        createdAt?: TimestampLike | import("yup").Maybe<null>;
+        updatedAt?: TimestampLike | import("yup").Maybe<null>;
         uid?: string | null | undefined;
         ordinal?: number | null | undefined;
         sourceId?: string | undefined;
@@ -145,16 +113,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         supportGroupId: string;
         trigger: {};
     } | {
-        createdAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
-        updatedAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
+        createdAt?: TimestampLike | import("yup").Maybe<null>;
+        updatedAt?: TimestampLike | import("yup").Maybe<null>;
         uid?: string | null | undefined;
         ordinal?: number | null | undefined;
         sourceId?: string | undefined;
@@ -184,16 +144,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         type: "audio";
         backgroundColor: string;
     } | {
-        createdAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
-        updatedAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
+        createdAt?: TimestampLike | import("yup").Maybe<null>;
+        updatedAt?: TimestampLike | import("yup").Maybe<null>;
         uid?: string | null | undefined;
         ordinal?: number | null | undefined;
         sourceId?: string | undefined;
@@ -218,16 +170,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         type: "urge-surfing";
         backgroundColor: string;
     } | {
-        createdAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
-        updatedAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
+        createdAt?: TimestampLike | import("yup").Maybe<null>;
+        updatedAt?: TimestampLike | import("yup").Maybe<null>;
         uid?: string | null | undefined;
         ordinal?: number | null | undefined;
         sourceId?: string | undefined;
@@ -260,16 +204,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             duration: number;
         };
     } | {
-        createdAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
-        updatedAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
+        createdAt?: TimestampLike | import("yup").Maybe<null>;
+        updatedAt?: TimestampLike | import("yup").Maybe<null>;
         uid?: string | null | undefined;
         ordinal?: number | null | undefined;
         sourceId?: string | undefined;
@@ -294,16 +230,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         type: "question";
         backgroundColor: string;
     } | {
-        createdAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
-        updatedAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
+        createdAt?: TimestampLike | import("yup").Maybe<null>;
+        updatedAt?: TimestampLike | import("yup").Maybe<null>;
         uid?: string | null | undefined;
         ordinal?: number | null | undefined;
         sourceId?: string | undefined;
@@ -328,16 +256,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         type: "task";
         backgroundColor: string;
     } | import("..").MeasureTacticValue | {
-        createdAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
-        updatedAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
+        createdAt?: TimestampLike | import("yup").Maybe<null>;
+        updatedAt?: TimestampLike | import("yup").Maybe<null>;
         uid?: string | null | undefined;
         ordinal?: number | null | undefined;
         sourceId?: string | undefined;
@@ -366,16 +286,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         holdFor: number;
         outFor: number;
     } | {
-        createdAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
-        updatedAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
+        createdAt?: TimestampLike | import("yup").Maybe<null>;
+        updatedAt?: TimestampLike | import("yup").Maybe<null>;
         uid?: string | null | undefined;
         ordinal?: number | null | undefined;
         sourceId?: string | undefined;
@@ -401,16 +313,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         backgroundColor: string;
         steps: number;
     } | {
-        createdAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
-        updatedAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
+        createdAt?: TimestampLike | import("yup").Maybe<null>;
+        updatedAt?: TimestampLike | import("yup").Maybe<null>;
         uid?: string | null | undefined;
         ordinal?: number | null | undefined;
         sourceId?: string | undefined;

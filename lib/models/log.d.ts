@@ -5,16 +5,8 @@ export declare class Log {
     constructor(id: string, data: LogValue);
     get text(): string | undefined;
     get selectedPattern(): {
-        createdAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
-        updatedAt?: import("yup").Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
+        createdAt?: import("..").TimestampLike | import("yup").Maybe<null>;
+        updatedAt?: import("..").TimestampLike | import("yup").Maybe<null>;
         supportGroupIds?: string[] | undefined;
         notification?: {
             title: string;

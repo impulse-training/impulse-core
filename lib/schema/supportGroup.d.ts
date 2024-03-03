@@ -1,15 +1,7 @@
 import * as yup from 'yup';
 export declare const supportGroupSchema: yup.ObjectSchema<{
-    createdAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt: import("..").TimestampLike | yup.Maybe<null>;
+    updatedAt: import("..").TimestampLike | yup.Maybe<null>;
     slug: string | undefined;
     templateId: string | undefined;
     everythingPermissions: boolean | undefined;

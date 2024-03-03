@@ -1,16 +1,8 @@
 import * as Factory from 'factory.ts';
 import { TimestampLike } from '../utils/TimestampLike';
 export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
-    createdAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt?: TimestampLike | import("yup").Maybe<null>;
+    updatedAt?: TimestampLike | import("yup").Maybe<null>;
     supportGroupIds?: string[] | undefined;
     notification?: {
         title: string;

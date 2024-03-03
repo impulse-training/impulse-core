@@ -1,16 +1,8 @@
 import * as yup from 'yup';
 export declare const patternSchema: yup.ObjectSchema<{
     uid: string;
-    updatedAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    createdAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    updatedAt: import("..").TimestampLike | yup.Maybe<null>;
+    createdAt: import("..").TimestampLike | yup.Maybe<null>;
     name: string;
     ordinal: number;
     supportGroupIds: string[] | undefined;

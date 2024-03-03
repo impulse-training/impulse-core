@@ -2,16 +2,8 @@ import * as Factory from 'factory.ts';
 import { FolderTacticValue } from '../schema';
 import { TimestampLike } from '../utils/TimestampLike';
 export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
-    createdAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt?: TimestampLike | import("yup").Maybe<null>;
+    updatedAt?: TimestampLike | import("yup").Maybe<null>;
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
     sourceId?: string | undefined;
@@ -38,16 +30,8 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
     supportGroupId: string;
     trigger: {};
 } | {
-    createdAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt?: TimestampLike | import("yup").Maybe<null>;
+    updatedAt?: TimestampLike | import("yup").Maybe<null>;
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
     sourceId?: string | undefined;
@@ -77,16 +61,8 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
     type: "audio";
     backgroundColor: string;
 } | {
-    createdAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt?: TimestampLike | import("yup").Maybe<null>;
+    updatedAt?: TimestampLike | import("yup").Maybe<null>;
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
     sourceId?: string | undefined;
@@ -111,16 +87,8 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
     type: "urge-surfing";
     backgroundColor: string;
 } | {
-    createdAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt?: TimestampLike | import("yup").Maybe<null>;
+    updatedAt?: TimestampLike | import("yup").Maybe<null>;
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
     sourceId?: string | undefined;
@@ -153,16 +121,8 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
         duration: number;
     };
 } | {
-    createdAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt?: TimestampLike | import("yup").Maybe<null>;
+    updatedAt?: TimestampLike | import("yup").Maybe<null>;
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
     sourceId?: string | undefined;
@@ -187,16 +147,8 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
     type: "question";
     backgroundColor: string;
 } | {
-    createdAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt?: TimestampLike | import("yup").Maybe<null>;
+    updatedAt?: TimestampLike | import("yup").Maybe<null>;
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
     sourceId?: string | undefined;
@@ -221,16 +173,8 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
     type: "task";
     backgroundColor: string;
 } | import("../schema").MeasureTacticValue | {
-    createdAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt?: TimestampLike | import("yup").Maybe<null>;
+    updatedAt?: TimestampLike | import("yup").Maybe<null>;
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
     sourceId?: string | undefined;
@@ -259,16 +203,8 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
     holdFor: number;
     outFor: number;
 } | {
-    createdAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt?: TimestampLike | import("yup").Maybe<null>;
+    updatedAt?: TimestampLike | import("yup").Maybe<null>;
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
     sourceId?: string | undefined;
@@ -294,16 +230,8 @@ export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) =
     backgroundColor: string;
     steps: number;
 } | {
-    createdAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt?: TimestampLike | import("yup").Maybe<null>;
+    updatedAt?: TimestampLike | import("yup").Maybe<null>;
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
     sourceId?: string | undefined;

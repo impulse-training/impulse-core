@@ -4,16 +4,8 @@ export declare const folderTacticSchema: yup.ObjectSchema<{
     uid: string | null | undefined;
     sourceId: string | undefined;
     ordinal: number | null | undefined;
-    createdAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt: import("..").TimestampLike | yup.Maybe<null>;
+    updatedAt: import("..").TimestampLike | yup.Maybe<null>;
     title: string;
     subtitle: yup.Maybe<string | undefined>;
     description: string | null | undefined;
@@ -78,16 +70,8 @@ export declare const stepsTacticSchema: yup.ObjectSchema<{
     uid: string | null | undefined;
     sourceId: string | undefined;
     ordinal: number | null | undefined;
-    createdAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt: import("..").TimestampLike | yup.Maybe<null>;
+    updatedAt: import("..").TimestampLike | yup.Maybe<null>;
     title: string;
     subtitle: yup.Maybe<string | undefined>;
     description: string | null | undefined;
@@ -142,16 +126,8 @@ export declare const emotionsTacticSchema: yup.ObjectSchema<{
     uid: string | null | undefined;
     sourceId: string | undefined;
     ordinal: number | null | undefined;
-    createdAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt: import("..").TimestampLike | yup.Maybe<null>;
+    updatedAt: import("..").TimestampLike | yup.Maybe<null>;
     title: string;
     subtitle: yup.Maybe<string | undefined>;
     description: string | null | undefined;
@@ -204,16 +180,8 @@ export declare const audioTacticSchema: yup.ObjectSchema<{
     uid: string | null | undefined;
     sourceId: string | undefined;
     ordinal: number | null | undefined;
-    createdAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt: import("..").TimestampLike | yup.Maybe<null>;
+    updatedAt: import("..").TimestampLike | yup.Maybe<null>;
     title: string;
     subtitle: yup.Maybe<string | undefined>;
     description: string | null | undefined;
@@ -276,16 +244,8 @@ export declare const videoTacticSchema: yup.ObjectSchema<{
     uid: string | null | undefined;
     sourceId: string | undefined;
     ordinal: number | null | undefined;
-    createdAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt: import("..").TimestampLike | yup.Maybe<null>;
+    updatedAt: import("..").TimestampLike | yup.Maybe<null>;
     title: string;
     subtitle: yup.Maybe<string | undefined>;
     description: string | null | undefined;
@@ -354,16 +314,8 @@ export declare const measureSliderTacticSchema: yup.ObjectSchema<{
     uid: string | null | undefined;
     sourceId: string | undefined;
     ordinal: number | null | undefined;
-    createdAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt: import("..").TimestampLike | yup.Maybe<null>;
+    updatedAt: import("..").TimestampLike | yup.Maybe<null>;
     title: string;
     subtitle: yup.Maybe<string | undefined>;
     description: string | null | undefined;
@@ -420,16 +372,8 @@ export declare const measureTimeTacticSchema: yup.ObjectSchema<{
     uid: string | null | undefined;
     sourceId: string | undefined;
     ordinal: number | null | undefined;
-    createdAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt: import("..").TimestampLike | yup.Maybe<null>;
+    updatedAt: import("..").TimestampLike | yup.Maybe<null>;
     title: string;
     subtitle: yup.Maybe<string | undefined>;
     description: string | null | undefined;
@@ -482,16 +426,8 @@ export declare const measureCounterTacticSchema: yup.ObjectSchema<{
     uid: string | null | undefined;
     sourceId: string | undefined;
     ordinal: number | null | undefined;
-    createdAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt: import("..").TimestampLike | yup.Maybe<null>;
+    updatedAt: import("..").TimestampLike | yup.Maybe<null>;
     title: string;
     subtitle: yup.Maybe<string | undefined>;
     description: string | null | undefined;
@@ -545,16 +481,8 @@ export declare const phoneTacticSchema: yup.ObjectSchema<{
     uid: string | null | undefined;
     sourceId: string | undefined;
     ordinal: number | null | undefined;
-    createdAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt: import("..").TimestampLike | yup.Maybe<null>;
+    updatedAt: import("..").TimestampLike | yup.Maybe<null>;
     title: string;
     subtitle: yup.Maybe<string | undefined>;
     description: string | null | undefined;
@@ -611,16 +539,8 @@ export declare const breatheTacticSchema: yup.ObjectSchema<{
     uid: string | null | undefined;
     sourceId: string | undefined;
     ordinal: number | null | undefined;
-    createdAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt: import("..").TimestampLike | yup.Maybe<null>;
+    updatedAt: import("..").TimestampLike | yup.Maybe<null>;
     title: string;
     subtitle: yup.Maybe<string | undefined>;
     description: string | null | undefined;
@@ -681,16 +601,8 @@ export declare const urgeSurfingTacticSchema: yup.ObjectSchema<{
     uid: string | null | undefined;
     sourceId: string | undefined;
     ordinal: number | null | undefined;
-    createdAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt: import("..").TimestampLike | yup.Maybe<null>;
+    updatedAt: import("..").TimestampLike | yup.Maybe<null>;
     title: string;
     subtitle: yup.Maybe<string | undefined>;
     description: string | null | undefined;
@@ -743,16 +655,8 @@ export declare const taskTacticSchema: yup.ObjectSchema<{
     uid: string | null | undefined;
     sourceId: string | undefined;
     ordinal: number | null | undefined;
-    createdAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt: import("..").TimestampLike | yup.Maybe<null>;
+    updatedAt: import("..").TimestampLike | yup.Maybe<null>;
     title: string;
     subtitle: yup.Maybe<string | undefined>;
     description: string | null | undefined;
@@ -805,16 +709,8 @@ export declare const questionTacticSchema: yup.ObjectSchema<{
     uid: string | null | undefined;
     sourceId: string | undefined;
     ordinal: number | null | undefined;
-    createdAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt: import("..").TimestampLike | yup.Maybe<null>;
+    updatedAt: import("..").TimestampLike | yup.Maybe<null>;
     title: string;
     subtitle: yup.Maybe<string | undefined>;
     description: string | null | undefined;

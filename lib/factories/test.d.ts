@@ -1,14 +1,7 @@
+import { TimestampLike } from '../utils/TimestampLike';
 export declare const applicationFactory: import("factory.ts").Factory<import("..").ApplicationValue, keyof import("..").ApplicationValue>, commentFactory: import("factory.ts").Factory<{
-    createdAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt?: TimestampLike | import("yup").Maybe<null>;
+    updatedAt?: TimestampLike | import("yup").Maybe<null>;
     tacticId?: string | null | undefined;
     tacticName?: string | null | undefined;
     text?: string | undefined;
@@ -26,16 +19,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     uid: string;
     authorName: string;
 }, "uid" | "authorName" | ("createdAt" | "updatedAt" | "tacticId" | "tacticName" | "text" | "recording" | "isEdited" | "avatar")>, impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "uid" | "type" | "tacticsById" | "steps" | "timezone" | "location" | "patternsById" | "startTime" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "setAsActiveImpulse" | "pressCount" | "isDisplayable" | "buttonPressSecondsSinceEpoch" | "gameplan" | "outcome" | "patternId" | "debriefNotes" | "debriefReminderSentAt" | "debriefedAt">, timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "uid" | "type" | "tacticsById" | "steps" | "timezone" | "location" | "startTime" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "routineId">, motionLogFactory: import("factory.ts").Factory<import("..").MotionLogValue, "createdAt" | "updatedAt" | "uid" | "type" | "tacticsById" | "steps" | "timezone" | "location" | "startTime" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable">, impulseRecommendationFactory: import("factory.ts").Factory<import("..").ImpulseRecommendationValue, "createdAt" | "updatedAt" | "uid" | "ordinal" | "title" | "type" | "tacticIds" | "tacticsById" | "explanation" | "recommenderUid" | "recommenderName" | "appliedAt" | "dismissedAt" | "ruleId" | "patternIds">, debriefLogFactory: import("factory.ts").Factory<import("..").DebriefLogValue, "createdAt" | "updatedAt" | "uid" | "type" | "tacticsById" | "steps" | "timezone" | "location" | "patternsById" | "startTime" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "routineId" | "tacticDataEntries">, profileFactory: import("factory.ts").Factory<import("..").ProfileValue, keyof import("..").ProfileValue>, supportGroupFactory: import("factory.ts").Factory<{
-    createdAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt?: TimestampLike | import("yup").Maybe<null>;
+    updatedAt?: TimestampLike | import("yup").Maybe<null>;
     isTemplate?: boolean | undefined;
     slug?: string | undefined;
     templateId?: string | undefined;
@@ -64,16 +49,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     };
     permissions: {};
 }, "suggestedTacticIds" | "thumbnailUrl" | "participantUids" | "groupName" | "creatorName" | "creatorUid" | "icon" | "unreadCounts" | "permissions" | ("createdAt" | "updatedAt" | "isTemplate" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "lastMessagePreview" | "invitationCode" | "invitationUrl" | "lastMessageUid" | "isSharingDisabled")>, tacticFactory: import("factory.ts").Factory<{
-    createdAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt?: TimestampLike | import("yup").Maybe<null>;
+    updatedAt?: TimestampLike | import("yup").Maybe<null>;
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
     sourceId?: string | undefined;
@@ -100,16 +77,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     supportGroupId: string;
     trigger: {};
 } | {
-    createdAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt?: TimestampLike | import("yup").Maybe<null>;
+    updatedAt?: TimestampLike | import("yup").Maybe<null>;
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
     sourceId?: string | undefined;
@@ -139,16 +108,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     type: "audio";
     backgroundColor: string;
 } | {
-    createdAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt?: TimestampLike | import("yup").Maybe<null>;
+    updatedAt?: TimestampLike | import("yup").Maybe<null>;
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
     sourceId?: string | undefined;
@@ -173,16 +134,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     type: "urge-surfing";
     backgroundColor: string;
 } | {
-    createdAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt?: TimestampLike | import("yup").Maybe<null>;
+    updatedAt?: TimestampLike | import("yup").Maybe<null>;
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
     sourceId?: string | undefined;
@@ -215,16 +168,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         duration: number;
     };
 } | {
-    createdAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt?: TimestampLike | import("yup").Maybe<null>;
+    updatedAt?: TimestampLike | import("yup").Maybe<null>;
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
     sourceId?: string | undefined;
@@ -249,16 +194,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     type: "question";
     backgroundColor: string;
 } | {
-    createdAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt?: TimestampLike | import("yup").Maybe<null>;
+    updatedAt?: TimestampLike | import("yup").Maybe<null>;
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
     sourceId?: string | undefined;
@@ -283,16 +220,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     type: "task";
     backgroundColor: string;
 } | import("..").MeasureTacticValue | {
-    createdAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt?: TimestampLike | import("yup").Maybe<null>;
+    updatedAt?: TimestampLike | import("yup").Maybe<null>;
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
     sourceId?: string | undefined;
@@ -321,16 +250,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     holdFor: number;
     outFor: number;
 } | {
-    createdAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt?: TimestampLike | import("yup").Maybe<null>;
+    updatedAt?: TimestampLike | import("yup").Maybe<null>;
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
     sourceId?: string | undefined;
@@ -356,16 +277,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     backgroundColor: string;
     steps: number;
 } | {
-    createdAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt?: import("yup").Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt?: TimestampLike | import("yup").Maybe<null>;
+    updatedAt?: TimestampLike | import("yup").Maybe<null>;
     uid?: string | null | undefined;
     ordinal?: number | null | undefined;
     sourceId?: string | undefined;

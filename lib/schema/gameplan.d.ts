@@ -66,16 +66,8 @@ export declare const locationRoutineSchema: yup.ObjectSchema<{
 export type GameplanValue = WithTypes<typeof gameplanSchema>;
 export declare const gameplanSchema: yup.ObjectSchema<{
     uid: string;
-    createdAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt: TimestampLike | yup.Maybe<null>;
+    updatedAt: TimestampLike | yup.Maybe<null>;
     parentIssueIds: string[] | undefined;
     recommendationsCount: number | undefined;
     timezone: string;
@@ -156,16 +148,8 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     tacticsById: any;
     patternsById: {
         [x: string]: {
-            createdAt?: yup.Maybe<{} | undefined> | {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt?: yup.Maybe<{} | undefined> | {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
+            createdAt?: TimestampLike | yup.Maybe<null>;
+            updatedAt?: TimestampLike | yup.Maybe<null>;
             supportGroupIds?: string[] | undefined;
             notification?: {
                 title: string;

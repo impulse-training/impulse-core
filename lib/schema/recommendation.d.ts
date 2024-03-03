@@ -38,23 +38,15 @@ declare const impulseRecommendationSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
         nanoseconds: number;
-        toDate: {};
+        toDate: Function;
     };
     updatedAt: {
         seconds: number;
         nanoseconds: number;
-        toDate: {};
+        toDate: Function;
     };
-    appliedAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    dismissedAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    appliedAt: import("..").TimestampLike | yup.Maybe<null>;
+    dismissedAt: import("..").TimestampLike | yup.Maybe<null>;
     ruleId: string | null | undefined;
     type: "impulse";
     patternIds: string[];
@@ -96,23 +88,15 @@ declare const impulseDebriefRecommendationSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
         nanoseconds: number;
-        toDate: {};
+        toDate: Function;
     };
     updatedAt: {
         seconds: number;
         nanoseconds: number;
-        toDate: {};
+        toDate: Function;
     };
-    appliedAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    dismissedAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    appliedAt: import("..").TimestampLike | yup.Maybe<null>;
+    dismissedAt: import("..").TimestampLike | yup.Maybe<null>;
     ruleId: string | null | undefined;
     type: "impulseDebrief";
     patternIds: string[];
@@ -154,23 +138,15 @@ declare const timeRecommendationSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
         nanoseconds: number;
-        toDate: {};
+        toDate: Function;
     };
     updatedAt: {
         seconds: number;
         nanoseconds: number;
-        toDate: {};
+        toDate: Function;
     };
-    appliedAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    dismissedAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    appliedAt: import("..").TimestampLike | yup.Maybe<null>;
+    dismissedAt: import("..").TimestampLike | yup.Maybe<null>;
     ruleId: string | null | undefined;
     type: "time";
     time: {
@@ -220,23 +196,15 @@ declare const locationRecommendationSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
         nanoseconds: number;
-        toDate: {};
+        toDate: Function;
     };
     updatedAt: {
         seconds: number;
         nanoseconds: number;
-        toDate: {};
+        toDate: Function;
     };
-    appliedAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    dismissedAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    appliedAt: import("..").TimestampLike | yup.Maybe<null>;
+    dismissedAt: import("..").TimestampLike | yup.Maybe<null>;
     ruleId: string | null | undefined;
     type: "location";
     locationKey: string;

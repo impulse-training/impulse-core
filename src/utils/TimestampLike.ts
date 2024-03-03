@@ -28,6 +28,7 @@ export class TimestampLike {
   toMillis() {
     return 0;
   }
+
   isEqual(other: TimestampLike) {
     return false;
   }

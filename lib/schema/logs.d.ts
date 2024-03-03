@@ -21,20 +21,12 @@ export type TacticData = yup.InferType<typeof tacticDataSchema>;
 export type BaseLogValue = WithTypes<typeof baseLogSchema>;
 declare const baseLogSchema: yup.ObjectSchema<{
     uid: string;
-    createdAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt: TimestampLike | yup.Maybe<null>;
+    updatedAt: TimestampLike | yup.Maybe<null>;
     startTime: {
         seconds: number;
         nanoseconds: number;
-        toDate: {};
+        toDate: Function;
     };
     timezone: string;
     location: {
@@ -54,16 +46,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
         [x: string]: {
             commentsById: {
                 [x: string]: {
-                    createdAt?: yup.Maybe<{} | undefined> | {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: {};
-                    };
-                    updatedAt?: yup.Maybe<{} | undefined> | {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: {};
-                    };
+                    createdAt?: TimestampLike | yup.Maybe<null>;
+                    updatedAt?: TimestampLike | yup.Maybe<null>;
                     tacticId?: string | null | undefined;
                     tacticName?: string | null | undefined;
                     text?: string | undefined;
@@ -181,20 +165,12 @@ export type ImpulseLogValue = WithTypes<typeof impulseLogSchema>;
 export declare function logIsImpulseLog(log: LogValue): log is ImpulseLogValue;
 declare const impulseLogSchema: yup.ObjectSchema<{
     uid: string;
-    createdAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt: TimestampLike | yup.Maybe<null>;
+    updatedAt: TimestampLike | yup.Maybe<null>;
     startTime: {
         seconds: number;
         nanoseconds: number;
-        toDate: {};
+        toDate: Function;
     };
     timezone: string;
     location: {
@@ -214,16 +190,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         [x: string]: {
             commentsById: {
                 [x: string]: {
-                    createdAt?: yup.Maybe<{} | undefined> | {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: {};
-                    };
-                    updatedAt?: yup.Maybe<{} | undefined> | {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: {};
-                    };
+                    createdAt?: TimestampLike | yup.Maybe<null>;
+                    updatedAt?: TimestampLike | yup.Maybe<null>;
                     tacticId?: string | null | undefined;
                     tacticName?: string | null | undefined;
                     text?: string | undefined;
@@ -294,16 +262,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     isDisplayable: NonNullable<boolean | undefined>;
     buttonPressSecondsSinceEpoch: yup.Maybe<number | undefined>;
     gameplan: {
-        createdAt?: yup.Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
-        updatedAt?: yup.Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
+        createdAt?: TimestampLike | yup.Maybe<null>;
+        updatedAt?: TimestampLike | yup.Maybe<null>;
         parentIssueIds?: string[] | undefined;
         tacticsById?: any;
         recommendationsCount?: number | undefined;
@@ -386,16 +346,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         };
         patternsById: {
             [x: string]: {
-                createdAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
+                createdAt?: TimestampLike | yup.Maybe<null>;
+                updatedAt?: TimestampLike | yup.Maybe<null>;
                 supportGroupIds?: string[] | undefined;
                 notification?: {
                     title: string;
@@ -416,16 +368,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     patternId: string;
     patternsById: {
         [x: string]: {
-            createdAt?: yup.Maybe<{} | undefined> | {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt?: yup.Maybe<{} | undefined> | {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
+            createdAt?: TimestampLike | yup.Maybe<null>;
+            updatedAt?: TimestampLike | yup.Maybe<null>;
             supportGroupIds?: string[] | undefined;
             notification?: {
                 title: string;
@@ -519,20 +463,12 @@ export type LocationLogValue = WithTypes<typeof locationLogSchema>;
 export declare function logIsLocationLog(log: LogValue): log is LocationLogValue;
 declare const locationLogSchema: yup.ObjectSchema<{
     uid: string;
-    createdAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt: TimestampLike | yup.Maybe<null>;
+    updatedAt: TimestampLike | yup.Maybe<null>;
     startTime: {
         seconds: number;
         nanoseconds: number;
-        toDate: {};
+        toDate: Function;
     };
     timezone: string;
     location: {
@@ -552,16 +488,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
         [x: string]: {
             commentsById: {
                 [x: string]: {
-                    createdAt?: yup.Maybe<{} | undefined> | {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: {};
-                    };
-                    updatedAt?: yup.Maybe<{} | undefined> | {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: {};
-                    };
+                    createdAt?: TimestampLike | yup.Maybe<null>;
+                    updatedAt?: TimestampLike | yup.Maybe<null>;
                     tacticId?: string | null | undefined;
                     tacticName?: string | null | undefined;
                     text?: string | undefined;
@@ -684,20 +612,12 @@ export type TimeLogValue = WithTypes<typeof timeLogSchema>;
 export declare function logIsTimeLog(log: LogValue): log is TimeLogValue;
 declare const timeLogSchema: yup.ObjectSchema<{
     uid: string;
-    createdAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt: TimestampLike | yup.Maybe<null>;
+    updatedAt: TimestampLike | yup.Maybe<null>;
     startTime: {
         seconds: number;
         nanoseconds: number;
-        toDate: {};
+        toDate: Function;
     };
     timezone: string;
     location: {
@@ -717,16 +637,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
         [x: string]: {
             commentsById: {
                 [x: string]: {
-                    createdAt?: yup.Maybe<{} | undefined> | {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: {};
-                    };
-                    updatedAt?: yup.Maybe<{} | undefined> | {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: {};
-                    };
+                    createdAt?: TimestampLike | yup.Maybe<null>;
+                    updatedAt?: TimestampLike | yup.Maybe<null>;
                     tacticId?: string | null | undefined;
                     tacticName?: string | null | undefined;
                     text?: string | undefined;
@@ -845,20 +757,12 @@ export type DebriefLogValue = WithTypes<typeof dayDebriefLogSchema>;
 export declare function logIsDebriefLog(log: LogValue): log is DebriefLogValue;
 declare const dayDebriefLogSchema: yup.ObjectSchema<{
     uid: string;
-    createdAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt: TimestampLike | yup.Maybe<null>;
+    updatedAt: TimestampLike | yup.Maybe<null>;
     startTime: {
         seconds: number;
         nanoseconds: number;
-        toDate: {};
+        toDate: Function;
     };
     timezone: string;
     location: {
@@ -878,16 +782,8 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
         [x: string]: {
             commentsById: {
                 [x: string]: {
-                    createdAt?: yup.Maybe<{} | undefined> | {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: {};
-                    };
-                    updatedAt?: yup.Maybe<{} | undefined> | {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: {};
-                    };
+                    createdAt?: TimestampLike | yup.Maybe<null>;
+                    updatedAt?: TimestampLike | yup.Maybe<null>;
                     tacticId?: string | null | undefined;
                     tacticName?: string | null | undefined;
                     text?: string | undefined;
@@ -955,16 +851,8 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
     type: "dayDebrief";
     patternsById: {
         [x: string]: {
-            createdAt?: yup.Maybe<{} | undefined> | {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt?: yup.Maybe<{} | undefined> | {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
+            createdAt?: TimestampLike | yup.Maybe<null>;
+            updatedAt?: TimestampLike | yup.Maybe<null>;
             supportGroupIds?: string[] | undefined;
             notification?: {
                 title: string;
@@ -1038,20 +926,12 @@ export type MotionLogValue = WithTypes<typeof motionLogSchema>;
 export declare function logIsMotionLog(log: LogValue): log is MotionLogValue;
 declare const motionLogSchema: yup.ObjectSchema<{
     uid: string;
-    createdAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt: TimestampLike | yup.Maybe<null>;
+    updatedAt: TimestampLike | yup.Maybe<null>;
     startTime: {
         seconds: number;
         nanoseconds: number;
-        toDate: {};
+        toDate: Function;
     };
     timezone: string;
     location: {
@@ -1071,16 +951,8 @@ declare const motionLogSchema: yup.ObjectSchema<{
         [x: string]: {
             commentsById: {
                 [x: string]: {
-                    createdAt?: yup.Maybe<{} | undefined> | {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: {};
-                    };
-                    updatedAt?: yup.Maybe<{} | undefined> | {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: {};
-                    };
+                    createdAt?: TimestampLike | yup.Maybe<null>;
+                    updatedAt?: TimestampLike | yup.Maybe<null>;
                     tacticId?: string | null | undefined;
                     tacticName?: string | null | undefined;
                     text?: string | undefined;
@@ -1197,20 +1069,12 @@ export type ButtonLogValue = WithTypes<typeof buttonLogSchema>;
 export declare function logIsButtonLog(log: LogValue): log is ButtonLogValue;
 declare const buttonLogSchema: yup.ObjectSchema<{
     uid: string;
-    createdAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt: TimestampLike | yup.Maybe<null>;
+    updatedAt: TimestampLike | yup.Maybe<null>;
     startTime: {
         seconds: number;
         nanoseconds: number;
-        toDate: {};
+        toDate: Function;
     };
     timezone: string;
     location: {
@@ -1230,16 +1094,8 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         [x: string]: {
             commentsById: {
                 [x: string]: {
-                    createdAt?: yup.Maybe<{} | undefined> | {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: {};
-                    };
-                    updatedAt?: yup.Maybe<{} | undefined> | {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: {};
-                    };
+                    createdAt?: TimestampLike | yup.Maybe<null>;
+                    updatedAt?: TimestampLike | yup.Maybe<null>;
                     tacticId?: string | null | undefined;
                     tacticName?: string | null | undefined;
                     text?: string | undefined;
@@ -1357,16 +1213,8 @@ declare const buttonLogSchema: yup.ObjectSchema<{
     characteristics: {};
 }, "">;
 export declare const logSchema: yup.Lazy<{
-    createdAt?: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt?: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt?: TimestampLike | yup.Maybe<null>;
+    updatedAt?: TimestampLike | yup.Maybe<null>;
     tacticsById?: any;
     steps?: yup.Maybe<number | undefined>;
     locationFormatted?: yup.Maybe<string | undefined>;
@@ -1376,16 +1224,8 @@ export declare const logSchema: yup.Lazy<{
         [x: string]: {
             commentsById: {
                 [x: string]: {
-                    createdAt?: yup.Maybe<{} | undefined> | {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: {};
-                    };
-                    updatedAt?: yup.Maybe<{} | undefined> | {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: {};
-                    };
+                    createdAt?: TimestampLike | yup.Maybe<null>;
+                    updatedAt?: TimestampLike | yup.Maybe<null>;
                     tacticId?: string | null | undefined;
                     tacticName?: string | null | undefined;
                     text?: string | undefined;
@@ -1442,16 +1282,8 @@ export declare const logSchema: yup.Lazy<{
     };
     patternsById: {
         [x: string]: {
-            createdAt?: yup.Maybe<{} | undefined> | {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt?: yup.Maybe<{} | undefined> | {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
+            createdAt?: TimestampLike | yup.Maybe<null>;
+            updatedAt?: TimestampLike | yup.Maybe<null>;
             supportGroupIds?: string[] | undefined;
             notification?: {
                 title: string;
@@ -1470,7 +1302,7 @@ export declare const logSchema: yup.Lazy<{
     startTime: {
         seconds: number;
         nanoseconds: number;
-        toDate: {};
+        toDate: Function;
     };
     locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
@@ -1501,16 +1333,8 @@ export declare const logSchema: yup.Lazy<{
     completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
     gameplan: {
-        createdAt?: yup.Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
-        updatedAt?: yup.Maybe<{} | undefined> | {
-            seconds: number;
-            nanoseconds: number;
-            toDate: {};
-        };
+        createdAt?: TimestampLike | yup.Maybe<null>;
+        updatedAt?: TimestampLike | yup.Maybe<null>;
         parentIssueIds?: string[] | undefined;
         tacticsById?: any;
         recommendationsCount?: number | undefined;
@@ -1593,16 +1417,8 @@ export declare const logSchema: yup.Lazy<{
         };
         patternsById: {
             [x: string]: {
-                createdAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
-                updatedAt?: yup.Maybe<{} | undefined> | {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: {};
-                };
+                createdAt?: TimestampLike | yup.Maybe<null>;
+                updatedAt?: TimestampLike | yup.Maybe<null>;
                 supportGroupIds?: string[] | undefined;
                 notification?: {
                     title: string;
@@ -1621,16 +1437,8 @@ export declare const logSchema: yup.Lazy<{
     };
     patternId: string;
 } | {
-    createdAt?: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt?: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt?: TimestampLike | yup.Maybe<null>;
+    updatedAt?: TimestampLike | yup.Maybe<null>;
     tacticsById?: any;
     steps?: yup.Maybe<number | undefined>;
     locationFormatted?: yup.Maybe<string | undefined>;
@@ -1640,16 +1448,8 @@ export declare const logSchema: yup.Lazy<{
         [x: string]: {
             commentsById: {
                 [x: string]: {
-                    createdAt?: yup.Maybe<{} | undefined> | {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: {};
-                    };
-                    updatedAt?: yup.Maybe<{} | undefined> | {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: {};
-                    };
+                    createdAt?: TimestampLike | yup.Maybe<null>;
+                    updatedAt?: TimestampLike | yup.Maybe<null>;
                     tacticId?: string | null | undefined;
                     tacticName?: string | null | undefined;
                     text?: string | undefined;
@@ -1700,7 +1500,7 @@ export declare const logSchema: yup.Lazy<{
     startTime: {
         seconds: number;
         nanoseconds: number;
-        toDate: {};
+        toDate: Function;
     };
     locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
@@ -1734,16 +1534,8 @@ export declare const logSchema: yup.Lazy<{
     locationName: string;
     locationMode: {};
 } | {
-    createdAt?: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt?: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt?: TimestampLike | yup.Maybe<null>;
+    updatedAt?: TimestampLike | yup.Maybe<null>;
     tacticsById?: any;
     steps?: yup.Maybe<number | undefined>;
     locationFormatted?: yup.Maybe<string | undefined>;
@@ -1753,16 +1545,8 @@ export declare const logSchema: yup.Lazy<{
         [x: string]: {
             commentsById: {
                 [x: string]: {
-                    createdAt?: yup.Maybe<{} | undefined> | {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: {};
-                    };
-                    updatedAt?: yup.Maybe<{} | undefined> | {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: {};
-                    };
+                    createdAt?: TimestampLike | yup.Maybe<null>;
+                    updatedAt?: TimestampLike | yup.Maybe<null>;
                     tacticId?: string | null | undefined;
                     tacticName?: string | null | undefined;
                     text?: string | undefined;
@@ -1813,7 +1597,7 @@ export declare const logSchema: yup.Lazy<{
     startTime: {
         seconds: number;
         nanoseconds: number;
-        toDate: {};
+        toDate: Function;
     };
     locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
@@ -1845,16 +1629,8 @@ export declare const logSchema: yup.Lazy<{
     isDisplayable: NonNullable<boolean | undefined>;
     routineId: string;
 } | {
-    createdAt?: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt?: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt?: TimestampLike | yup.Maybe<null>;
+    updatedAt?: TimestampLike | yup.Maybe<null>;
     tacticsById?: any;
     steps?: yup.Maybe<number | undefined>;
     locationFormatted?: yup.Maybe<string | undefined>;
@@ -1864,16 +1640,8 @@ export declare const logSchema: yup.Lazy<{
         [x: string]: {
             commentsById: {
                 [x: string]: {
-                    createdAt?: yup.Maybe<{} | undefined> | {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: {};
-                    };
-                    updatedAt?: yup.Maybe<{} | undefined> | {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: {};
-                    };
+                    createdAt?: TimestampLike | yup.Maybe<null>;
+                    updatedAt?: TimestampLike | yup.Maybe<null>;
                     tacticId?: string | null | undefined;
                     tacticName?: string | null | undefined;
                     text?: string | undefined;
@@ -1923,16 +1691,8 @@ export declare const logSchema: yup.Lazy<{
     };
     patternsById: {
         [x: string]: {
-            createdAt?: yup.Maybe<{} | undefined> | {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
-            updatedAt?: yup.Maybe<{} | undefined> | {
-                seconds: number;
-                nanoseconds: number;
-                toDate: {};
-            };
+            createdAt?: TimestampLike | yup.Maybe<null>;
+            updatedAt?: TimestampLike | yup.Maybe<null>;
             supportGroupIds?: string[] | undefined;
             notification?: {
                 title: string;
@@ -1951,7 +1711,7 @@ export declare const logSchema: yup.Lazy<{
     startTime: {
         seconds: number;
         nanoseconds: number;
-        toDate: {};
+        toDate: Function;
     };
     locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
@@ -1986,16 +1746,8 @@ export declare const logSchema: yup.Lazy<{
         [x: string]: {} | undefined;
     };
 } | {
-    createdAt?: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt?: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt?: TimestampLike | yup.Maybe<null>;
+    updatedAt?: TimestampLike | yup.Maybe<null>;
     tacticsById?: any;
     steps?: yup.Maybe<number | undefined>;
     locationFormatted?: yup.Maybe<string | undefined>;
@@ -2005,16 +1757,8 @@ export declare const logSchema: yup.Lazy<{
         [x: string]: {
             commentsById: {
                 [x: string]: {
-                    createdAt?: yup.Maybe<{} | undefined> | {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: {};
-                    };
-                    updatedAt?: yup.Maybe<{} | undefined> | {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: {};
-                    };
+                    createdAt?: TimestampLike | yup.Maybe<null>;
+                    updatedAt?: TimestampLike | yup.Maybe<null>;
                     tacticId?: string | null | undefined;
                     tacticName?: string | null | undefined;
                     text?: string | undefined;
@@ -2065,7 +1809,7 @@ export declare const logSchema: yup.Lazy<{
     startTime: {
         seconds: number;
         nanoseconds: number;
-        toDate: {};
+        toDate: Function;
     };
     locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
@@ -2096,16 +1840,8 @@ export declare const logSchema: yup.Lazy<{
     completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
 } | {
-    createdAt?: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
-    updatedAt?: yup.Maybe<{} | undefined> | {
-        seconds: number;
-        nanoseconds: number;
-        toDate: {};
-    };
+    createdAt?: TimestampLike | yup.Maybe<null>;
+    updatedAt?: TimestampLike | yup.Maybe<null>;
     tacticsById?: any;
     steps?: yup.Maybe<number | undefined>;
     locationFormatted?: yup.Maybe<string | undefined>;
@@ -2115,16 +1851,8 @@ export declare const logSchema: yup.Lazy<{
         [x: string]: {
             commentsById: {
                 [x: string]: {
-                    createdAt?: yup.Maybe<{} | undefined> | {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: {};
-                    };
-                    updatedAt?: yup.Maybe<{} | undefined> | {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: {};
-                    };
+                    createdAt?: TimestampLike | yup.Maybe<null>;
+                    updatedAt?: TimestampLike | yup.Maybe<null>;
                     tacticId?: string | null | undefined;
                     tacticName?: string | null | undefined;
                     text?: string | undefined;
@@ -2175,7 +1903,7 @@ export declare const logSchema: yup.Lazy<{
     startTime: {
         seconds: number;
         nanoseconds: number;
-        toDate: {};
+        toDate: Function;
     };
     locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {

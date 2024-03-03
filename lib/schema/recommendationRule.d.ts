@@ -19,12 +19,12 @@ export declare const recommendationRuleBaseSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
         nanoseconds: number;
-        toDate: {};
+        toDate: Function;
     };
     updatedAt: {
         seconds: number;
         nanoseconds: number;
-        toDate: {};
+        toDate: Function;
     };
 }, yup.AnyObject, {
     recommendation: {
@@ -73,12 +73,12 @@ export declare const impulseRecommendationRuleSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
         nanoseconds: number;
-        toDate: {};
+        toDate: Function;
     };
     updatedAt: {
         seconds: number;
         nanoseconds: number;
-        toDate: {};
+        toDate: Function;
     };
     type: "impulse";
 }, yup.AnyObject, {
@@ -129,12 +129,12 @@ export declare const impulseDebriefRecommendationRuleSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
         nanoseconds: number;
-        toDate: {};
+        toDate: Function;
     };
     updatedAt: {
         seconds: number;
         nanoseconds: number;
-        toDate: {};
+        toDate: Function;
     };
     type: "impulseDebrief";
 }, yup.AnyObject, {
@@ -185,12 +185,12 @@ export declare const timeRecommendationRuleSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
         nanoseconds: number;
-        toDate: {};
+        toDate: Function;
     };
     updatedAt: {
         seconds: number;
         nanoseconds: number;
-        toDate: {};
+        toDate: Function;
     };
     type: "time";
     schedule: {
@@ -251,12 +251,12 @@ export declare const locationRecommendationRuleSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
         nanoseconds: number;
-        toDate: {};
+        toDate: Function;
     };
     updatedAt: {
         seconds: number;
         nanoseconds: number;
-        toDate: {};
+        toDate: Function;
     };
     type: "location";
     locationKey: string;
