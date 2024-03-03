@@ -35,12 +35,13 @@ export const timeRoutineSchema = strategy.shape({
     .of(
       yup
         .number()
-        .min(0, 'Weekday must be a number between 0 and 6')
-        .max(6, 'Weekday must be a number between 0 and 6')
+        .integer()
+        .min(1, 'Weekday must be a number between 1 and 7')
+        .max(7, 'Weekday must be a number between 1 and 7')
         .required('Weekday is required')
     )
     .required()
-    .min(1, 'At least one weekday is required'),
+    .min(1, 'Please select at least one day'),
   hour: yup.number().required(),
   minute: yup.number().required(),
   title: yup.string().required(),
@@ -96,7 +97,7 @@ export const SHORT_DAYS = {
 };
 
 export const LONG_DAYS = [
-  '',
+  '', // This is intentional, as we don't have a 0-indexed day
   'Sundays',
   'Mondays',
   'Tuesdays',
