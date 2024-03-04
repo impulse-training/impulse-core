@@ -58,7 +58,7 @@ const schemaMap: Record<keyof typeof factories, null | Schema | Lazy<unknown>> =
     timeLogFactory: logSchema,
     motionLogFactory: logSchema,
     locationLogFactory: logSchema,
-    debriefLogFactory: logSchema,
+    recapLogFactory: logSchema,
     locationFactory: null,
     profileFactory: null,
     gameplanFactory: gameplanSchema,

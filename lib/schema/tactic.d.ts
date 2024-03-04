@@ -1,4 +1,5 @@
 import * as yup from 'yup';
+export type NonRecursiveTactic = Exclude<TacticValue, FolderTacticValue | RecapTacticValue>;
 export declare const folderTacticSchema: yup.ObjectSchema<{
     type: "folder";
     uid: string | null | undefined;
@@ -63,10 +64,10 @@ export declare const folderTacticSchema: yup.ObjectSchema<{
     autogenerate: undefined;
 }, "">;
 export type FolderTacticValue = Omit<yup.InferType<typeof folderTacticSchema>, 'tacticsById'> & {
-    tacticsById: Record<string, Exclude<TacticValue, FolderTacticValue>>;
+    tacticsById: Record<string, NonRecursiveTactic>;
 };
-export declare const summaryTacticSchema: yup.ObjectSchema<{
-    type: "summary";
+export declare const recapTacticSchema: yup.ObjectSchema<{
+    type: "recap";
     uid: string | null | undefined;
     sourceId: string | undefined;
     ordinal: number | null | undefined;
@@ -122,7 +123,9 @@ export declare const summaryTacticSchema: yup.ObjectSchema<{
     tacticId: undefined;
     tacticsById: {};
 }, "">;
-export type SummaryTacticValue = WithTacticsById<yup.InferType<typeof summaryTacticSchema>>;
+export type RecapTacticValue = Omit<yup.InferType<typeof recapTacticSchema>, 'tacticsById'> & {
+    tacticsById: Record<string, NonRecursiveTactic>;
+};
 export declare const stepsTacticSchema: yup.ObjectSchema<{
     type: "steps";
     uid: string | null | undefined;
@@ -816,7 +819,7 @@ export declare const questionTacticSchema: yup.ObjectSchema<{
     isSuggested: undefined;
 }, "">;
 export type QuestionTacticValue = yup.InferType<typeof questionTacticSchema>;
-export type TacticValue = PhoneTacticValue | AudioTacticValue | UrgeSurfingTacticValue | VideoTacticValue | QuestionTacticValue | TaskTacticValue | MeasureTacticValue | FolderTacticValue | BreatheTacticValue | StepsTacticValue | EmotionsTacticValue;
+export type TacticValue = PhoneTacticValue | AudioTacticValue | UrgeSurfingTacticValue | VideoTacticValue | QuestionTacticValue | TaskTacticValue | MeasureTacticValue | FolderTacticValue | BreatheTacticValue | StepsTacticValue | EmotionsTacticValue | RecapTacticValue;
 export declare const tacticSchemas: Record<TacticValue['type'], yup.ObjectSchema<TacticValue>>;
 export declare const tacticSchema: yup.Lazy<ValidatedTactic, yup.AnyObject, any>;
 type ValidatedTactic = {
@@ -835,7 +838,8 @@ export declare const isPhoneTacticValue: ({ type }: TacticValue) => boolean;
 export declare const isBreatheTactic: ({ type }: TacticValue) => boolean;
 export declare const isTaskTactic: ({ type }: TacticValue) => boolean;
 export declare const isQuestionTactic: ({ type }: TacticValue) => boolean;
-export type WithTacticsById<T> = Omit<T, 'tacticsById'> & {
-    tacticsById: Record<string, TacticValue>;
+export declare const isRecapTactic: ({ type }: TacticValue) => boolean;
+export type WithTacticsById<T, TT = TacticValue> = Omit<T, 'tacticsById'> & {
+    tacticsById: Record<string, TT>;
 };
 export {};

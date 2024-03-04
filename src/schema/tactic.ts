@@ -31,6 +31,13 @@ function tacticValueBaseSchema<K extends string>(type: K) {
   });
 }
 
+// These tactics can contain other tactics. We need to exclude these from the NonRecursiveTactic
+// type, which can then be used to define the FolderTacticValue and RecapTacticValue types.
+export type NonRecursiveTactic = Exclude<
+  TacticValue,
+  FolderTacticValue | RecapTacticValue
+>;
+
 export const folderTacticSchema = tacticValueBaseSchema('folder').shape({
   tacticIds: requiredStringArray,
   suggestedTacticIds: optionalStringArray,
@@ -44,18 +51,21 @@ export type FolderTacticValue = Omit<
   yup.InferType<typeof folderTacticSchema>,
   'tacticsById'
 > & {
-  tacticsById: Record<string, Exclude<TacticValue, FolderTacticValue>>;
+  tacticsById: Record<string, NonRecursiveTactic>;
 };
 
-export const summaryTacticSchema = tacticValueBaseSchema('summary').shape({
+export const recapTacticSchema = tacticValueBaseSchema('recap').shape({
   tacticId: yup.string().required(),
   // While a little "redundant" as we only have one tactic, keeping this "tacticsById" makes it
   // easier to update all documents that have a "tacticsById" field that contains a certain tactic.
   tacticsById: yup.object().required(),
 });
-export type SummaryTacticValue = WithTacticsById<
-  yup.InferType<typeof summaryTacticSchema>
->;
+export type RecapTacticValue = Omit<
+  yup.InferType<typeof recapTacticSchema>,
+  'tacticsById'
+> & {
+  tacticsById: Record<string, NonRecursiveTactic>;
+};
 
 export const stepsTacticSchema = tacticValueBaseSchema('steps').shape({
   steps: yup.number().required(),
@@ -149,7 +159,8 @@ export type TacticValue =
   | FolderTacticValue
   | BreatheTacticValue
   | StepsTacticValue
-  | EmotionsTacticValue;
+  | EmotionsTacticValue
+  | RecapTacticValue;
 
 // Utility to dynamically select the correct schema based on the tactic type
 export const tacticSchemas: Record<
@@ -167,6 +178,7 @@ export const tacticSchemas: Record<
   breathe: breatheTacticSchema,
   steps: stepsTacticSchema,
   task: taskTacticSchema,
+  recap: recapTacticSchema,
   emotions: emotionsTacticSchema,
 } as any;
 
@@ -244,7 +256,8 @@ export const isPhoneTacticValue = ({ type }: TacticValue) => type === 'phone';
 export const isBreatheTactic = ({ type }: TacticValue) => type === 'breathe';
 export const isTaskTactic = ({ type }: TacticValue) => type === 'task';
 export const isQuestionTactic = ({ type }: TacticValue) => type === 'question';
+export const isRecapTactic = ({ type }: TacticValue) => type === 'recap';
 
-export type WithTacticsById<T> = Omit<T, 'tacticsById'> & {
-  tacticsById: Record<string, TacticValue>;
+export type WithTacticsById<T, TT = TacticValue> = Omit<T, 'tacticsById'> & {
+  tacticsById: Record<string, TT>;
 };

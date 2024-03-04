@@ -1,9 +1,9 @@
 import {
   ImpulseLogValue,
   LogValue,
-  logIsDebriefLog,
   logIsImpulseLog,
   logIsLocationLog,
+  logIsRecapLog,
   logIsTimeLog,
 } from '../schema';
 
@@ -23,8 +23,8 @@ export class Log {
       return `Scheduled`;
     }
 
-    if (logIsDebriefLog(this.data)) {
-      return `Daily debrief`;
+    if (logIsRecapLog(this.data)) {
+      return `Daily recap`;
     }
 
     return '';

@@ -1,9 +1,9 @@
 import * as Factory from 'factory.ts';
 import {
-  DebriefLogValue,
   ImpulseLogValue,
   LocationLogValue,
   MotionLogValue,
+  RecapLogValue,
   TimeLogValue,
 } from '../schema/logs';
 import { TimestampLike } from '../utils/TimestampLike';
@@ -14,7 +14,7 @@ const strategy = {
     tacticIds: [],
     suggestedTacticIds: [],
   },
-  impulseDebrief: {
+  impulseRecap: {
     tacticIds: [],
     suggestedTacticIds: [],
   },
@@ -46,7 +46,6 @@ export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<TimeLogValue>({
     uid: Factory.each(i => i.toString()),
     type: 'time',
-    routineId: 'reminder1',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     startTime: TimestampKlass.now(),
@@ -60,11 +59,10 @@ export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>
     completedTacticIds: [],
   });
 
-export const makeDebriefLogFactory = (TimestampKlass: typeof TimestampLike) =>
-  Factory.makeFactory<DebriefLogValue>({
+export const makeRecapLogFactory = (TimestampKlass: typeof TimestampLike) =>
+  Factory.makeFactory<RecapLogValue>({
     uid: Factory.each(i => i.toString()),
     type: 'recap',
-    routineId: 'reminder1',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     startTime: TimestampKlass.now(),
@@ -72,7 +70,6 @@ export const makeDebriefLogFactory = (TimestampKlass: typeof TimestampLike) =>
     isDisplayable: true,
     location: {},
     locationIsFetching: false,
-    patternsById: {},
     tacticsById: {},
     strategy,
     seenTacticIds: [],

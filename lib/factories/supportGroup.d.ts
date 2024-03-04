@@ -19,8 +19,8 @@ export declare const makeSupportGroupFactory: (TimestampKlass: typeof TimestampL
     invitationUrl?: string | undefined;
     lastMessageUid?: string | undefined;
     isSharingDisabled?: boolean | undefined;
-    suggestedTacticIds: {};
     thumbnailUrl: string;
+    suggestedTacticIds: {};
     participantUids: string[];
     groupName: string;
     creatorName: string;
@@ -30,4 +30,4 @@ export declare const makeSupportGroupFactory: (TimestampKlass: typeof TimestampL
         [x: string]: number;
     };
     permissions: {};
-}, "suggestedTacticIds" | "thumbnailUrl" | "participantUids" | "groupName" | "creatorName" | "creatorUid" | "icon" | "unreadCounts" | "permissions" | ("createdAt" | "updatedAt" | "isTemplate" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "lastMessagePreview" | "invitationCode" | "invitationUrl" | "lastMessageUid" | "isSharingDisabled")>;
+}, "thumbnailUrl" | "suggestedTacticIds" | "participantUids" | "groupName" | "creatorName" | "creatorUid" | "icon" | "unreadCounts" | "permissions" | ("createdAt" | "updatedAt" | "isTemplate" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "lastMessagePreview" | "invitationCode" | "invitationUrl" | "lastMessageUid" | "isSharingDisabled")>;

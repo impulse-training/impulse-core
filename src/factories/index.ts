@@ -5,10 +5,10 @@ import { makeGameplanFactory } from './gameplan';
 import { makeIssueFactory } from './issue';
 import { makeLocationFactory } from './location';
 import {
-  makeDebriefLogFactory,
   makeImpulseFactory,
   makeLocationLogFactory,
   makeMotionLogFactory,
+  makeRecapLogFactory,
   makeTimeLogFactory,
 } from './log';
 import { makeMessageFactory } from './message';
@@ -37,7 +37,7 @@ export function makeFactories(TimestampKlass: typeof TimestampLike) {
     timeLogFactory: makeTimeLogFactory(TimestampKlass),
     motionLogFactory: makeMotionLogFactory(TimestampKlass),
     locationLogFactory: makeLocationLogFactory(TimestampKlass),
-    debriefLogFactory: makeDebriefLogFactory(TimestampKlass),
+    recapLogFactory: makeRecapLogFactory(TimestampKlass),
     locationFactory: makeLocationFactory(TimestampKlass),
     profileFactory: makeProfileFactory(TimestampKlass),
     gameplanFactory: makeGameplanFactory(TimestampKlass),

@@ -2,12 +2,12 @@ import * as Factory from 'factory.ts';
 import {
   FolderTacticValue,
   MeasureTimeTacticValue,
-  TacticValue,
+  NonRecursiveTactic,
 } from '../schema';
 import { TimestampLike } from '../utils/TimestampLike';
 
 export const makeTacticFactory = (TimestampKlass: typeof TimestampLike) =>
-  Factory.makeFactory<Exclude<TacticValue, FolderTacticValue>>({
+  Factory.makeFactory<NonRecursiveTactic>({
     uid: Factory.each(i => i.toString()),
     type: 'task',
     title: 'Go outside',

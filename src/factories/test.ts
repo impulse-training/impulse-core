@@ -11,7 +11,7 @@ export const {
   timeLogFactory,
   motionLogFactory,
   impulseRecommendationFactory,
-  debriefLogFactory,
+  recapLogFactory,
   profileFactory,
   supportGroupFactory,
   tacticFactory,

@@ -56,7 +56,7 @@ const baseLogSchema = yup.object().shape({
   // later.
   strategy: yup.object({
     main: strategy.required(),
-    impulseDebrief: strategy.notRequired(),
+    impulseRecap: strategy.notRequired(),
   }),
   // Tactics are a complex union type. We omit this key from the base log schema and add it back in
   // using typescript, so we just "neuter" it here to tell typescript to relax. This saves 10k+
@@ -132,21 +132,18 @@ const timeLogSchema = baseLogSchema.concat(
   yup.object().shape({
     type: yup.mixed<'time'>().oneOf(['time']).required(),
     isDisplayable: yup.boolean().oneOf([true]).required(),
-    routineId: yup.string().required(),
   })
 );
 
-export type DebriefLogValue = WithTypes<typeof recapLogSchema>;
+export type RecapLogValue = WithTypes<typeof recapLogSchema>;
 
-export function logIsDebriefLog(log: LogValue): log is DebriefLogValue {
+export function logIsRecapLog(log: LogValue): log is RecapLogValue {
   return log.type === 'recap';
 }
 const recapLogSchema = baseLogSchema.concat(
   yup.object().shape({
     type: yup.mixed<'recap'>().oneOf(['recap']).required(),
-    patternsById: objectOf(patternSchema),
     isDisplayable: yup.boolean().oneOf([true]).required(),
-    routineId: yup.string().required(),
   })
 );
 
@@ -197,6 +194,6 @@ export type LogValue =
   | ImpulseLogValue
   | LocationLogValue
   | TimeLogValue
-  | DebriefLogValue
+  | RecapLogValue
   | MotionLogValue
   | ButtonLogValue;
