@@ -870,9 +870,6 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
     };
     isDisplayable: NonNullable<boolean | undefined>;
     routineId: string;
-    tacticDataEntries: {
-        [x: string]: {} | undefined;
-    };
 }, yup.AnyObject, {
     uid: undefined;
     createdAt: undefined;
@@ -920,7 +917,6 @@ declare const dayDebriefLogSchema: yup.ObjectSchema<{
     patternsById: undefined;
     isDisplayable: undefined;
     routineId: undefined;
-    tacticDataEntries: undefined;
 }, "">;
 export type MotionLogValue = WithTypes<typeof motionLogSchema>;
 export declare function logIsMotionLog(log: LogValue): log is MotionLogValue;
@@ -1742,9 +1738,6 @@ export declare const logSchema: yup.Lazy<{
     completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
     routineId: string;
-    tacticDataEntries: {
-        [x: string]: {} | undefined;
-    };
 } | {
     createdAt?: TimestampLike | yup.Maybe<null>;
     updatedAt?: TimestampLike | yup.Maybe<null>;

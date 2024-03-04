@@ -74,7 +74,6 @@ export const makeDebriefLogFactory = (TimestampKlass: typeof TimestampLike) =>
     locationIsFetching: false,
     patternsById: {},
     tacticsById: {},
-    tacticDataEntries: {},
     strategy,
     seenTacticIds: [],
     completedTacticIds: [],

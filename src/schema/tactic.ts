@@ -47,6 +47,16 @@ export type FolderTacticValue = Omit<
   tacticsById: Record<string, Exclude<TacticValue, FolderTacticValue>>;
 };
 
+export const summaryTacticSchema = tacticValueBaseSchema('summary').shape({
+  tacticId: yup.string().required(),
+  // While a little "redundant" as we only have one tactic, keeping this "tacticsById" makes it
+  // easier to update all documents that have a "tacticsById" field that contains a certain tactic.
+  tacticsById: yup.object().required(),
+});
+export type SummaryTacticValue = WithTacticsById<
+  yup.InferType<typeof folderTacticSchema>
+>;
+
 export const stepsTacticSchema = tacticValueBaseSchema('steps').shape({
   steps: yup.number().required(),
 });

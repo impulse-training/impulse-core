@@ -147,7 +147,6 @@ const dayDebriefLogSchema = baseLogSchema.concat(
     patternsById: objectOf(patternSchema),
     isDisplayable: yup.boolean().oneOf([true]).required(),
     routineId: yup.string().required(),
-    tacticDataEntries: objectOf(yup.mixed()), // Replace with Record<string, Record<string, PatternUsageSchema>> if defined
   })
 );
 
