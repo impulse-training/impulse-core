@@ -347,5 +347,32 @@ export declare const factories: {
         type: "emotions";
         backgroundColor: string;
     }, "createdAt" | "updatedAt" | "uid" | "ordinal" | "title" | "type" | "sourceId" | "subtitle" | "description" | "image" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
+    measureTimeTacticFactory: import("factory.ts").Factory<{
+        createdAt?: TimestampLike | import("yup").Maybe<null>;
+        updatedAt?: TimestampLike | import("yup").Maybe<null>;
+        uid?: string | null | undefined;
+        ordinal?: number | null | undefined;
+        sourceId?: string | undefined;
+        subtitle?: import("yup").Maybe<string | undefined>;
+        description?: string | null | undefined;
+        image?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | null | undefined;
+        isTemplate?: boolean | null | undefined;
+        language?: string | null | undefined;
+        href?: string | null | undefined;
+        categoryIds?: (string | undefined)[] | null | undefined;
+        isShared?: boolean | null | undefined;
+        isResponseRequired?: boolean | null | undefined;
+        timerSeconds?: import("yup").Maybe<number | undefined>;
+        isAvailableForRecommendation?: boolean | null | undefined;
+        numberOfLikes?: number | null | undefined;
+        isSuggested?: boolean | undefined;
+        title: string;
+        type: "measure-time";
+        backgroundColor: string;
+    }, "title" | "type" | "backgroundColor" | ("createdAt" | "updatedAt" | "uid" | "ordinal" | "sourceId" | "subtitle" | "description" | "image" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested")>;
     folderTacticFactory: import("factory.ts").Factory<import("..").FolderTacticValue, "title" | "type" | "backgroundColor" | "tacticIds" | "currentTacticIndex" | "tacticsById" | ("createdAt" | "updatedAt" | "uid" | "ordinal" | "sourceId" | "subtitle" | "description" | "image" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested" | "suggestedTacticIds" | "autogenerate")>;
 };

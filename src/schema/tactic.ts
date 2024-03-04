@@ -54,7 +54,7 @@ export const summaryTacticSchema = tacticValueBaseSchema('summary').shape({
   tacticsById: yup.object().required(),
 });
 export type SummaryTacticValue = WithTacticsById<
-  yup.InferType<typeof folderTacticSchema>
+  yup.InferType<typeof summaryTacticSchema>
 >;
 
 export const stepsTacticSchema = tacticValueBaseSchema('steps').shape({

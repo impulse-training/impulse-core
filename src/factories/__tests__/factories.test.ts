@@ -73,5 +73,6 @@ const schemaMap: Record<keyof typeof factories, null | Schema | Lazy<unknown>> =
       impulseDebriefRecommendationRuleSchema,
     timeRecommendationRuleFactory: timeRecommendationRuleSchema,
     tacticFactory: tacticSchema,
+    measureTimeTacticFactory: tacticSchema,
     folderTacticFactory: tacticSchema,
   };

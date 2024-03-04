@@ -122,7 +122,7 @@ export declare const summaryTacticSchema: yup.ObjectSchema<{
     tacticId: undefined;
     tacticsById: {};
 }, "">;
-export type SummaryTacticValue = WithTacticsById<yup.InferType<typeof folderTacticSchema>>;
+export type SummaryTacticValue = WithTacticsById<yup.InferType<typeof summaryTacticSchema>>;
 export declare const stepsTacticSchema: yup.ObjectSchema<{
     type: "steps";
     uid: string | null | undefined;
