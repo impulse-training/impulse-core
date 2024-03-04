@@ -71,7 +71,10 @@ const baseLogSchema = yup.object().shape({
 // This is important to prevent typescript generating a 40k line file :/
 
 type WithTypes<T extends yup.ISchema<unknown>> = WithTacticsById<
-  yup.InferType<T>
+  Omit<
+    yup.InferType<T>,
+    'createdAt' | 'updatedAt' | 'startTime' | 'tacticsById'
+  >
 > & {
   createdAt: TimestampLike;
   updatedAt: TimestampLike;

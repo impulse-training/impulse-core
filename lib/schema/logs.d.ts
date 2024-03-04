@@ -155,7 +155,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
     tacticData: undefined;
     sharedWithSupportGroupIds: "";
 }, "">;
-type WithTypes<T extends yup.ISchema<unknown>> = WithTacticsById<yup.InferType<T>> & {
+type WithTypes<T extends yup.ISchema<unknown>> = WithTacticsById<Omit<yup.InferType<T>, 'createdAt' | 'updatedAt' | 'startTime' | 'tacticsById'>> & {
     createdAt: TimestampLike;
     updatedAt: TimestampLike;
     startTime: TimestampLike;
