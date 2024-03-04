@@ -72,7 +72,7 @@ export function timeRoutineSchemaSummary(routine: TimeRoutine) {
 //   static from(id: string, routine: RoutineValue, location?: LocationValue) {
 //     if (routine.type === 'time') {
 //       return new TimeRoutine(id, routine as TimeRoutineValue);
-//     } else if (routine.type === 'dayDebrief') {
+//     } else if (routine.type === 'recap') {
 //       return new DayDebriefRoutine(id, routine as DayDebriefRoutineValue);
 //     } else if (routine.type === 'location') {
 //       return new LocationRoutine(id, routine as LocationRoutineValue, location);

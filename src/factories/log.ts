@@ -63,7 +63,7 @@ export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>
 export const makeDebriefLogFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<DebriefLogValue>({
     uid: Factory.each(i => i.toString()),
-    type: 'dayDebrief',
+    type: 'recap',
     routineId: 'reminder1',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),

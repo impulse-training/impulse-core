@@ -136,14 +136,14 @@ const timeLogSchema = baseLogSchema.concat(
   })
 );
 
-export type DebriefLogValue = WithTypes<typeof dayDebriefLogSchema>;
+export type DebriefLogValue = WithTypes<typeof recapLogSchema>;
 
 export function logIsDebriefLog(log: LogValue): log is DebriefLogValue {
-  return log.type === 'dayDebrief';
+  return log.type === 'recap';
 }
-const dayDebriefLogSchema = baseLogSchema.concat(
+const recapLogSchema = baseLogSchema.concat(
   yup.object().shape({
-    type: yup.mixed<'dayDebrief'>().oneOf(['dayDebrief']).required(),
+    type: yup.mixed<'recap'>().oneOf(['recap']).required(),
     patternsById: objectOf(patternSchema),
     isDisplayable: yup.boolean().oneOf([true]).required(),
     routineId: yup.string().required(),
@@ -182,8 +182,8 @@ export const logSchema = yup.lazy(value => {
       return locationLogSchema;
     case 'time':
       return timeLogSchema;
-    case 'dayDebrief':
-      return dayDebriefLogSchema;
+    case 'recap':
+      return recapLogSchema;
     case 'motion':
       return motionLogSchema;
     case 'button':
