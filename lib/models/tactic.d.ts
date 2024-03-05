@@ -3,6 +3,7 @@ import { TimestampLike } from '../utils/TimestampLike';
 export declare abstract class Tactic {
     static from(id: string, value: TacticValue, T: typeof TimestampLike): EmotionsTactic | QuestionTactic | FolderTactic | OtherTactic;
     get subtitle(): string | null;
+    get title(): string | null;
 }
 declare class OtherTactic extends Tactic {
     private id;
@@ -15,7 +16,7 @@ declare class FolderTactic extends Tactic {
     private data;
     private T;
     constructor(id: string, data: FolderTacticValue, T: typeof TimestampLike);
-    get subtitle(): string | null;
+    get title(): string | null;
 }
 declare class EmotionsTactic extends Tactic {
     private id;

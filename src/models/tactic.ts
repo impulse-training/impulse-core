@@ -23,6 +23,10 @@ export abstract class Tactic {
   get subtitle(): string | null {
     return null;
   }
+
+  get title(): string | null {
+    return null;
+  }
 }
 
 class OtherTactic extends Tactic {
@@ -44,7 +48,7 @@ class FolderTactic extends Tactic {
     super();
   }
 
-  get subtitle() {
+  get title() {
     const { tacticIds, tacticsById } = this.data;
     const firstTactic = tacticsById[tacticIds[0]];
     const suffix =
