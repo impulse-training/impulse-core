@@ -66,6 +66,8 @@ export declare const locationRoutineSchema: yup.ObjectSchema<{
 export type GameplanValue = WithTypes<typeof gameplanSchema>;
 export declare const gameplanSchema: yup.ObjectSchema<{
     uid: string;
+    name: yup.Maybe<string | undefined>;
+    isFeatured: yup.Maybe<boolean | undefined>;
     createdAt: TimestampLike | yup.Maybe<null>;
     updatedAt: TimestampLike | yup.Maybe<null>;
     parentIssueIds: string[] | undefined;
@@ -171,6 +173,8 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     dontGenerateRecapTacticsForTacticIds: string[] | undefined;
 }, yup.AnyObject, {
     uid: undefined;
+    name: undefined;
+    isFeatured: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     parentIssueIds: "";
