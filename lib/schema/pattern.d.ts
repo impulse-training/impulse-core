@@ -6,15 +6,15 @@ export declare const patternSchema: yup.ObjectSchema<{
     name: string;
     ordinal: number;
     supportGroupIds: string[] | undefined;
-    notification: {
+    notification: yup.Maybe<{} | undefined> | {
         title: string;
         body: string;
-    } | null | undefined;
+    };
     setbackTacticId: yup.Maybe<string | undefined>;
-    setbackThreshold: number;
+    setbackThreshold: yup.Maybe<number | undefined>;
     issueId: yup.Maybe<string | undefined>;
     parentIssueIds: string[] | undefined;
-    sendWeeklyReports: NonNullable<boolean | undefined>;
+    sendWeeklyReports: yup.Maybe<boolean | undefined>;
 }, yup.AnyObject, {
     uid: undefined;
     updatedAt: undefined;
@@ -22,10 +22,7 @@ export declare const patternSchema: yup.ObjectSchema<{
     name: undefined;
     ordinal: undefined;
     supportGroupIds: "";
-    notification: {
-        title: undefined;
-        body: undefined;
-    };
+    notification: undefined;
     setbackTacticId: undefined;
     setbackThreshold: undefined;
     issueId: undefined;

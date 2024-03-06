@@ -9,17 +9,19 @@ export const patternSchema = yup.object().shape({
   name: yup.string().required(),
   ordinal: yup.number().required(),
   supportGroupIds: optionalStringArray,
-  notification: yup
-    .object({
-      title: yup.string().required(),
-      body: yup.string().required(),
-    })
-    .notRequired(),
+  notification: yup.lazy(value =>
+    typeof value === 'object' && value !== null
+      ? yup.object({
+          title: yup.string().required(),
+          body: yup.string().required(),
+        })
+      : yup.mixed().notRequired()
+  ),
   setbackTacticId: yup.string().notRequired(),
-  setbackThreshold: yup.number().required(),
+  setbackThreshold: yup.number().notRequired(),
   issueId: yup.string().notRequired(),
   parentIssueIds: optionalStringArray,
-  sendWeeklyReports: yup.boolean().required(),
+  sendWeeklyReports: yup.boolean().notRequired(),
 });
 
 export type PatternValue = yup.InferType<typeof patternSchema>;

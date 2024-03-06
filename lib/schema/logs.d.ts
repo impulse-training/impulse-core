@@ -71,7 +71,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
     strategy: {
-        impulseRecap?: {
+        impulseDebrief?: {
             conditionalTacticIds?: {
                 [x: string]: {
                     ids: string[];
@@ -142,7 +142,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
             suggestedTacticIds: "";
             conditionalTacticIds: undefined;
         };
-        impulseRecap: {
+        impulseDebrief: {
             tacticIds: "";
             suggestedTacticIds: "";
             conditionalTacticIds: undefined;
@@ -215,7 +215,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
     strategy: {
-        impulseRecap?: {
+        impulseDebrief?: {
             conditionalTacticIds?: {
                 [x: string]: {
                     ids: string[];
@@ -352,18 +352,18 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 createdAt?: TimestampLike | yup.Maybe<null>;
                 updatedAt?: TimestampLike | yup.Maybe<null>;
                 supportGroupIds?: string[] | undefined;
-                notification?: {
+                notification?: yup.Maybe<{} | undefined> | {
                     title: string;
                     body: string;
-                } | null | undefined;
+                };
                 setbackTacticId?: yup.Maybe<string | undefined>;
+                setbackThreshold?: yup.Maybe<number | undefined>;
                 issueId?: yup.Maybe<string | undefined>;
                 parentIssueIds?: string[] | undefined;
+                sendWeeklyReports?: yup.Maybe<boolean | undefined>;
                 uid: string;
                 name: string;
                 ordinal: number;
-                setbackThreshold: number;
-                sendWeeklyReports: NonNullable<boolean | undefined>;
             };
         };
     };
@@ -374,18 +374,18 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             createdAt?: TimestampLike | yup.Maybe<null>;
             updatedAt?: TimestampLike | yup.Maybe<null>;
             supportGroupIds?: string[] | undefined;
-            notification?: {
+            notification?: yup.Maybe<{} | undefined> | {
                 title: string;
                 body: string;
-            } | null | undefined;
+            };
             setbackTacticId?: yup.Maybe<string | undefined>;
+            setbackThreshold?: yup.Maybe<number | undefined>;
             issueId?: yup.Maybe<string | undefined>;
             parentIssueIds?: string[] | undefined;
+            sendWeeklyReports?: yup.Maybe<boolean | undefined>;
             uid: string;
             name: string;
             ordinal: number;
-            setbackThreshold: number;
-            sendWeeklyReports: NonNullable<boolean | undefined>;
         };
     };
     debriefNotes: yup.Maybe<string | undefined>;
@@ -422,7 +422,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             suggestedTacticIds: "";
             conditionalTacticIds: undefined;
         };
-        impulseRecap: {
+        impulseDebrief: {
             tacticIds: "";
             suggestedTacticIds: "";
             conditionalTacticIds: undefined;
@@ -517,7 +517,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
     strategy: {
-        impulseRecap?: {
+        impulseDebrief?: {
             conditionalTacticIds?: {
                 [x: string]: {
                     ids: string[];
@@ -594,7 +594,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
             suggestedTacticIds: "";
             conditionalTacticIds: undefined;
         };
-        impulseRecap: {
+        impulseDebrief: {
             tacticIds: "";
             suggestedTacticIds: "";
             conditionalTacticIds: undefined;
@@ -666,7 +666,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
     strategy: {
-        impulseRecap?: {
+        impulseDebrief?: {
             conditionalTacticIds?: {
                 [x: string]: {
                     ids: string[];
@@ -740,7 +740,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
             suggestedTacticIds: "";
             conditionalTacticIds: undefined;
         };
-        impulseRecap: {
+        impulseDebrief: {
             tacticIds: "";
             suggestedTacticIds: "";
             conditionalTacticIds: undefined;
@@ -809,7 +809,7 @@ declare const recapLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
     strategy: {
-        impulseRecap?: {
+        impulseDebrief?: {
             conditionalTacticIds?: {
                 [x: string]: {
                     ids: string[];
@@ -883,7 +883,7 @@ declare const recapLogSchema: yup.ObjectSchema<{
             suggestedTacticIds: "";
             conditionalTacticIds: undefined;
         };
-        impulseRecap: {
+        impulseDebrief: {
             tacticIds: "";
             suggestedTacticIds: "";
             conditionalTacticIds: undefined;
@@ -952,7 +952,7 @@ declare const motionLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
     strategy: {
-        impulseRecap?: {
+        impulseDebrief?: {
             conditionalTacticIds?: {
                 [x: string]: {
                     ids: string[];
@@ -1026,7 +1026,7 @@ declare const motionLogSchema: yup.ObjectSchema<{
             suggestedTacticIds: "";
             conditionalTacticIds: undefined;
         };
-        impulseRecap: {
+        impulseDebrief: {
             tacticIds: "";
             suggestedTacticIds: "";
             conditionalTacticIds: undefined;
@@ -1095,7 +1095,7 @@ declare const buttonLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
     strategy: {
-        impulseRecap?: {
+        impulseDebrief?: {
             conditionalTacticIds?: {
                 [x: string]: {
                     ids: string[];
@@ -1171,7 +1171,7 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             suggestedTacticIds: "";
             conditionalTacticIds: undefined;
         };
-        impulseRecap: {
+        impulseDebrief: {
             tacticIds: "";
             suggestedTacticIds: "";
             conditionalTacticIds: undefined;
@@ -1261,18 +1261,18 @@ export declare const logSchema: yup.Lazy<{
             createdAt?: TimestampLike | yup.Maybe<null>;
             updatedAt?: TimestampLike | yup.Maybe<null>;
             supportGroupIds?: string[] | undefined;
-            notification?: {
+            notification?: yup.Maybe<{} | undefined> | {
                 title: string;
                 body: string;
-            } | null | undefined;
+            };
             setbackTacticId?: yup.Maybe<string | undefined>;
+            setbackThreshold?: yup.Maybe<number | undefined>;
             issueId?: yup.Maybe<string | undefined>;
             parentIssueIds?: string[] | undefined;
+            sendWeeklyReports?: yup.Maybe<boolean | undefined>;
             uid: string;
             name: string;
             ordinal: number;
-            setbackThreshold: number;
-            sendWeeklyReports: NonNullable<boolean | undefined>;
         };
     };
     startTime: {
@@ -1282,7 +1282,7 @@ export declare const logSchema: yup.Lazy<{
     };
     locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
-        impulseRecap?: {
+        impulseDebrief?: {
             conditionalTacticIds?: {
                 [x: string]: {
                     ids: string[];
@@ -1399,18 +1399,18 @@ export declare const logSchema: yup.Lazy<{
                 createdAt?: TimestampLike | yup.Maybe<null>;
                 updatedAt?: TimestampLike | yup.Maybe<null>;
                 supportGroupIds?: string[] | undefined;
-                notification?: {
+                notification?: yup.Maybe<{} | undefined> | {
                     title: string;
                     body: string;
-                } | null | undefined;
+                };
                 setbackTacticId?: yup.Maybe<string | undefined>;
+                setbackThreshold?: yup.Maybe<number | undefined>;
                 issueId?: yup.Maybe<string | undefined>;
                 parentIssueIds?: string[] | undefined;
+                sendWeeklyReports?: yup.Maybe<boolean | undefined>;
                 uid: string;
                 name: string;
                 ordinal: number;
-                setbackThreshold: number;
-                sendWeeklyReports: NonNullable<boolean | undefined>;
             };
         };
     };
@@ -1484,7 +1484,7 @@ export declare const logSchema: yup.Lazy<{
     };
     locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
-        impulseRecap?: {
+        impulseDebrief?: {
             conditionalTacticIds?: {
                 [x: string]: {
                     ids: string[];
@@ -1580,7 +1580,7 @@ export declare const logSchema: yup.Lazy<{
     };
     locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
-        impulseRecap?: {
+        impulseDebrief?: {
             conditionalTacticIds?: {
                 [x: string]: {
                     ids: string[];
@@ -1674,7 +1674,7 @@ export declare const logSchema: yup.Lazy<{
     };
     locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
-        impulseRecap?: {
+        impulseDebrief?: {
             conditionalTacticIds?: {
                 [x: string]: {
                     ids: string[];
@@ -1768,7 +1768,7 @@ export declare const logSchema: yup.Lazy<{
     };
     locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
-        impulseRecap?: {
+        impulseDebrief?: {
             conditionalTacticIds?: {
                 [x: string]: {
                     ids: string[];
@@ -1862,7 +1862,7 @@ export declare const logSchema: yup.Lazy<{
     };
     locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
-        impulseRecap?: {
+        impulseDebrief?: {
             conditionalTacticIds?: {
                 [x: string]: {
                     ids: string[];

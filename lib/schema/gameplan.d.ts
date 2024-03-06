@@ -153,18 +153,18 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             createdAt?: TimestampLike | yup.Maybe<null>;
             updatedAt?: TimestampLike | yup.Maybe<null>;
             supportGroupIds?: string[] | undefined;
-            notification?: {
+            notification?: yup.Maybe<{} | undefined> | {
                 title: string;
                 body: string;
-            } | null | undefined;
+            };
             setbackTacticId?: yup.Maybe<string | undefined>;
+            setbackThreshold?: yup.Maybe<number | undefined>;
             issueId?: yup.Maybe<string | undefined>;
             parentIssueIds?: string[] | undefined;
+            sendWeeklyReports?: yup.Maybe<boolean | undefined>;
             uid: string;
             name: string;
             ordinal: number;
-            setbackThreshold: number;
-            sendWeeklyReports: NonNullable<boolean | undefined>;
         };
     };
     scheduledNotificationIds: string[] | undefined;

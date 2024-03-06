@@ -14,7 +14,7 @@ const strategy = {
     tacticIds: [],
     suggestedTacticIds: [],
   },
-  impulseRecap: {
+  impulseDebrief: {
     tacticIds: [],
     suggestedTacticIds: [],
   },

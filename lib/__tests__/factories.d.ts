@@ -75,19 +75,19 @@ export declare const factories: {
         createdAt?: TimestampLike | import("yup").Maybe<null>;
         updatedAt?: TimestampLike | import("yup").Maybe<null>;
         supportGroupIds?: string[] | undefined;
-        notification?: {
+        notification?: import("yup").Maybe<{} | undefined> | {
             title: string;
             body: string;
-        } | null | undefined;
+        };
         setbackTacticId?: import("yup").Maybe<string | undefined>;
+        setbackThreshold?: import("yup").Maybe<number | undefined>;
         issueId?: import("yup").Maybe<string | undefined>;
         parentIssueIds?: string[] | undefined;
+        sendWeeklyReports?: import("yup").Maybe<boolean | undefined>;
         uid: string;
         name: string;
         ordinal: number;
-        setbackThreshold: number;
-        sendWeeklyReports: NonNullable<boolean | undefined>;
-    }, "uid" | "name" | "ordinal" | "setbackThreshold" | "sendWeeklyReports" | ("createdAt" | "updatedAt" | "supportGroupIds" | "notification" | "setbackTacticId" | "issueId" | "parentIssueIds")>;
+    }, "uid" | "name" | "ordinal" | ("createdAt" | "updatedAt" | "supportGroupIds" | "notification" | "setbackTacticId" | "setbackThreshold" | "issueId" | "parentIssueIds" | "sendWeeklyReports")>;
     impulseRecommendationFactory: import("factory.ts").Factory<import("..").ImpulseRecommendationValue, "createdAt" | "updatedAt" | "uid" | "ordinal" | "title" | "type" | "tacticIds" | "tacticsById" | "explanation" | "recommenderUid" | "recommenderName" | "appliedAt" | "dismissedAt" | "ruleId" | "patternIds">;
     impulseRecommendationRuleFactory: import("factory.ts").Factory<import("..").RecommendationRuleValue, "createdAt" | "updatedAt" | "uid" | "ordinal" | "type" | "recommendation" | "forIssueIds" | "issueNames" | "issueNamesSummary" | "recommendationSummary">;
     impulseDebriefRecommendationRuleFactory: import("factory.ts").Factory<import("..").RecommendationRuleValue, "createdAt" | "updatedAt" | "uid" | "ordinal" | "type" | "recommendation" | "forIssueIds" | "issueNames" | "issueNamesSummary" | "recommendationSummary">;
