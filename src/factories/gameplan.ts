@@ -15,5 +15,4 @@ export const makeGameplanFactory = (TimestampKlass: typeof TimestampLike) =>
     time: {},
     location: {},
     scheduledNotificationIds: [],
-    recap: {},
   });

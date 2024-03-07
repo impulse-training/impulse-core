@@ -72,26 +72,22 @@ declare const baseLogSchema: yup.ObjectSchema<{
     steps: yup.Maybe<number | undefined>;
     strategy: {
         impulseDebrief?: {
+            suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
-                [x: string]: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[];
-            } | null | undefined;
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[] | undefined;
             tacticIds: string[];
-            suggestedTacticIds: string[];
         } | null | undefined;
         main: {
+            suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
-                [x: string]: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[];
-            } | null | undefined;
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[] | undefined;
             tacticIds: string[];
-            suggestedTacticIds: string[];
         };
     };
     tacticsById: any;
@@ -140,12 +136,12 @@ declare const baseLogSchema: yup.ObjectSchema<{
         main: {
             tacticIds: "";
             suggestedTacticIds: "";
-            conditionalTacticIds: undefined;
+            conditionalTacticIds: "";
         };
         impulseDebrief: {
             tacticIds: "";
             suggestedTacticIds: "";
-            conditionalTacticIds: undefined;
+            conditionalTacticIds: "";
         };
     };
     tacticsById: any;
@@ -216,26 +212,22 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     steps: yup.Maybe<number | undefined>;
     strategy: {
         impulseDebrief?: {
+            suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
-                [x: string]: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[];
-            } | null | undefined;
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[] | undefined;
             tacticIds: string[];
-            suggestedTacticIds: string[];
         } | null | undefined;
         main: {
+            suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
-                [x: string]: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[];
-            } | null | undefined;
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[] | undefined;
             tacticIds: string[];
-            suggestedTacticIds: string[];
         };
     };
     tacticsById: any;
@@ -267,20 +259,31 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         name?: yup.Maybe<string | undefined>;
         parentIssueIds?: string[] | undefined;
         tacticsById?: any;
+        recap?: {
+            suggestedTacticIds?: string[] | undefined;
+            conditionalTacticIds?: {
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[] | undefined;
+            title: string;
+            tacticIds: string[];
+            weekdays: number[];
+            hour: number;
+            minute: number;
+        } | undefined;
         isFeatured?: yup.Maybe<boolean | undefined>;
         recommendationsCount?: number | undefined;
         time?: {
             [x: string]: {
+                suggestedTacticIds?: string[] | undefined;
                 conditionalTacticIds?: {
-                    [x: string]: {
-                        ids: string[];
-                        condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                        value: {};
-                    }[];
-                } | null | undefined;
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[] | undefined;
                 title: string;
                 tacticIds: string[];
-                suggestedTacticIds: string[];
                 weekdays: number[];
                 hour: number;
                 minute: number;
@@ -288,16 +291,14 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | null | undefined;
         location?: {
             [x: string]: {
+                suggestedTacticIds?: string[] | undefined;
                 conditionalTacticIds?: {
-                    [x: string]: {
-                        ids: string[];
-                        condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                        value: {};
-                    }[];
-                } | null | undefined;
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[] | undefined;
                 title: string;
                 tacticIds: string[];
-                suggestedTacticIds: string[];
                 locationId: string;
                 mode: NonNullable<"enter" | "exit" | undefined>;
             };
@@ -305,48 +306,27 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         scheduledNotificationIds?: string[] | undefined;
         dontGenerateRecapTacticsForTacticIds?: string[] | undefined;
         uid: string;
-        recap: {
-            [x: string]: {
-                conditionalTacticIds?: {
-                    [x: string]: {
-                        ids: string[];
-                        condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                        value: {};
-                    }[];
-                } | null | undefined;
-                title: string;
-                tacticIds: string[];
-                suggestedTacticIds: string[];
-                weekdays: number[];
-                hour: number;
-                minute: number;
-            };
-        };
         timezone: string;
         impulse: {
             [x: string]: {
+                suggestedTacticIds?: string[] | undefined;
                 conditionalTacticIds?: {
-                    [x: string]: {
-                        ids: string[];
-                        condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                        value: {};
-                    }[];
-                } | null | undefined;
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[] | undefined;
                 tacticIds: string[];
-                suggestedTacticIds: string[];
             };
         };
         impulseDebrief: {
             [x: string]: {
+                suggestedTacticIds?: string[] | undefined;
                 conditionalTacticIds?: {
-                    [x: string]: {
-                        ids: string[];
-                        condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                        value: {};
-                    }[];
-                } | null | undefined;
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[] | undefined;
                 tacticIds: string[];
-                suggestedTacticIds: string[];
             };
         };
         patternsById: {
@@ -422,12 +402,12 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         main: {
             tacticIds: "";
             suggestedTacticIds: "";
-            conditionalTacticIds: undefined;
+            conditionalTacticIds: "";
         };
         impulseDebrief: {
             tacticIds: "";
             suggestedTacticIds: "";
-            conditionalTacticIds: undefined;
+            conditionalTacticIds: "";
         };
     };
     tacticsById: any;
@@ -522,26 +502,22 @@ declare const locationLogSchema: yup.ObjectSchema<{
     steps: yup.Maybe<number | undefined>;
     strategy: {
         impulseDebrief?: {
+            suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
-                [x: string]: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[];
-            } | null | undefined;
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[] | undefined;
             tacticIds: string[];
-            suggestedTacticIds: string[];
         } | null | undefined;
         main: {
+            suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
-                [x: string]: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[];
-            } | null | undefined;
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[] | undefined;
             tacticIds: string[];
-            suggestedTacticIds: string[];
         };
     };
     tacticsById: any;
@@ -596,12 +572,12 @@ declare const locationLogSchema: yup.ObjectSchema<{
         main: {
             tacticIds: "";
             suggestedTacticIds: "";
-            conditionalTacticIds: undefined;
+            conditionalTacticIds: "";
         };
         impulseDebrief: {
             tacticIds: "";
             suggestedTacticIds: "";
-            conditionalTacticIds: undefined;
+            conditionalTacticIds: "";
         };
     };
     tacticsById: any;
@@ -671,26 +647,22 @@ declare const timeLogSchema: yup.ObjectSchema<{
     steps: yup.Maybe<number | undefined>;
     strategy: {
         impulseDebrief?: {
+            suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
-                [x: string]: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[];
-            } | null | undefined;
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[] | undefined;
             tacticIds: string[];
-            suggestedTacticIds: string[];
         } | null | undefined;
         main: {
+            suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
-                [x: string]: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[];
-            } | null | undefined;
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[] | undefined;
             tacticIds: string[];
-            suggestedTacticIds: string[];
         };
     };
     tacticsById: any;
@@ -742,12 +714,12 @@ declare const timeLogSchema: yup.ObjectSchema<{
         main: {
             tacticIds: "";
             suggestedTacticIds: "";
-            conditionalTacticIds: undefined;
+            conditionalTacticIds: "";
         };
         impulseDebrief: {
             tacticIds: "";
             suggestedTacticIds: "";
-            conditionalTacticIds: undefined;
+            conditionalTacticIds: "";
         };
     };
     tacticsById: any;
@@ -814,26 +786,22 @@ declare const recapLogSchema: yup.ObjectSchema<{
     steps: yup.Maybe<number | undefined>;
     strategy: {
         impulseDebrief?: {
+            suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
-                [x: string]: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[];
-            } | null | undefined;
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[] | undefined;
             tacticIds: string[];
-            suggestedTacticIds: string[];
         } | null | undefined;
         main: {
+            suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
-                [x: string]: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[];
-            } | null | undefined;
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[] | undefined;
             tacticIds: string[];
-            suggestedTacticIds: string[];
         };
     };
     tacticsById: any;
@@ -885,12 +853,12 @@ declare const recapLogSchema: yup.ObjectSchema<{
         main: {
             tacticIds: "";
             suggestedTacticIds: "";
-            conditionalTacticIds: undefined;
+            conditionalTacticIds: "";
         };
         impulseDebrief: {
             tacticIds: "";
             suggestedTacticIds: "";
-            conditionalTacticIds: undefined;
+            conditionalTacticIds: "";
         };
     };
     tacticsById: any;
@@ -957,26 +925,22 @@ declare const motionLogSchema: yup.ObjectSchema<{
     steps: yup.Maybe<number | undefined>;
     strategy: {
         impulseDebrief?: {
+            suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
-                [x: string]: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[];
-            } | null | undefined;
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[] | undefined;
             tacticIds: string[];
-            suggestedTacticIds: string[];
         } | null | undefined;
         main: {
+            suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
-                [x: string]: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[];
-            } | null | undefined;
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[] | undefined;
             tacticIds: string[];
-            suggestedTacticIds: string[];
         };
     };
     tacticsById: any;
@@ -1028,12 +992,12 @@ declare const motionLogSchema: yup.ObjectSchema<{
         main: {
             tacticIds: "";
             suggestedTacticIds: "";
-            conditionalTacticIds: undefined;
+            conditionalTacticIds: "";
         };
         impulseDebrief: {
             tacticIds: "";
             suggestedTacticIds: "";
-            conditionalTacticIds: undefined;
+            conditionalTacticIds: "";
         };
     };
     tacticsById: any;
@@ -1100,26 +1064,22 @@ declare const buttonLogSchema: yup.ObjectSchema<{
     steps: yup.Maybe<number | undefined>;
     strategy: {
         impulseDebrief?: {
+            suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
-                [x: string]: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[];
-            } | null | undefined;
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[] | undefined;
             tacticIds: string[];
-            suggestedTacticIds: string[];
         } | null | undefined;
         main: {
+            suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
-                [x: string]: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[];
-            } | null | undefined;
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[] | undefined;
             tacticIds: string[];
-            suggestedTacticIds: string[];
         };
     };
     tacticsById: any;
@@ -1173,12 +1133,12 @@ declare const buttonLogSchema: yup.ObjectSchema<{
         main: {
             tacticIds: "";
             suggestedTacticIds: "";
-            conditionalTacticIds: undefined;
+            conditionalTacticIds: "";
         };
         impulseDebrief: {
             tacticIds: "";
             suggestedTacticIds: "";
-            conditionalTacticIds: undefined;
+            conditionalTacticIds: "";
         };
     };
     tacticsById: any;
@@ -1287,26 +1247,22 @@ export declare const logSchema: yup.Lazy<{
     locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
         impulseDebrief?: {
+            suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
-                [x: string]: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[];
-            } | null | undefined;
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[] | undefined;
             tacticIds: string[];
-            suggestedTacticIds: string[];
         } | null | undefined;
         main: {
+            suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
-                [x: string]: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[];
-            } | null | undefined;
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[] | undefined;
             tacticIds: string[];
-            suggestedTacticIds: string[];
         };
     };
     seenTacticIds: string[];
@@ -1318,20 +1274,31 @@ export declare const logSchema: yup.Lazy<{
         name?: yup.Maybe<string | undefined>;
         parentIssueIds?: string[] | undefined;
         tacticsById?: any;
+        recap?: {
+            suggestedTacticIds?: string[] | undefined;
+            conditionalTacticIds?: {
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[] | undefined;
+            title: string;
+            tacticIds: string[];
+            weekdays: number[];
+            hour: number;
+            minute: number;
+        } | undefined;
         isFeatured?: yup.Maybe<boolean | undefined>;
         recommendationsCount?: number | undefined;
         time?: {
             [x: string]: {
+                suggestedTacticIds?: string[] | undefined;
                 conditionalTacticIds?: {
-                    [x: string]: {
-                        ids: string[];
-                        condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                        value: {};
-                    }[];
-                } | null | undefined;
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[] | undefined;
                 title: string;
                 tacticIds: string[];
-                suggestedTacticIds: string[];
                 weekdays: number[];
                 hour: number;
                 minute: number;
@@ -1339,16 +1306,14 @@ export declare const logSchema: yup.Lazy<{
         } | null | undefined;
         location?: {
             [x: string]: {
+                suggestedTacticIds?: string[] | undefined;
                 conditionalTacticIds?: {
-                    [x: string]: {
-                        ids: string[];
-                        condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                        value: {};
-                    }[];
-                } | null | undefined;
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[] | undefined;
                 title: string;
                 tacticIds: string[];
-                suggestedTacticIds: string[];
                 locationId: string;
                 mode: NonNullable<"enter" | "exit" | undefined>;
             };
@@ -1356,48 +1321,27 @@ export declare const logSchema: yup.Lazy<{
         scheduledNotificationIds?: string[] | undefined;
         dontGenerateRecapTacticsForTacticIds?: string[] | undefined;
         uid: string;
-        recap: {
-            [x: string]: {
-                conditionalTacticIds?: {
-                    [x: string]: {
-                        ids: string[];
-                        condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                        value: {};
-                    }[];
-                } | null | undefined;
-                title: string;
-                tacticIds: string[];
-                suggestedTacticIds: string[];
-                weekdays: number[];
-                hour: number;
-                minute: number;
-            };
-        };
         timezone: string;
         impulse: {
             [x: string]: {
+                suggestedTacticIds?: string[] | undefined;
                 conditionalTacticIds?: {
-                    [x: string]: {
-                        ids: string[];
-                        condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                        value: {};
-                    }[];
-                } | null | undefined;
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[] | undefined;
                 tacticIds: string[];
-                suggestedTacticIds: string[];
             };
         };
         impulseDebrief: {
             [x: string]: {
+                suggestedTacticIds?: string[] | undefined;
                 conditionalTacticIds?: {
-                    [x: string]: {
-                        ids: string[];
-                        condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                        value: {};
-                    }[];
-                } | null | undefined;
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[] | undefined;
                 tacticIds: string[];
-                suggestedTacticIds: string[];
             };
         };
         patternsById: {
@@ -1491,26 +1435,22 @@ export declare const logSchema: yup.Lazy<{
     locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
         impulseDebrief?: {
+            suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
-                [x: string]: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[];
-            } | null | undefined;
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[] | undefined;
             tacticIds: string[];
-            suggestedTacticIds: string[];
         } | null | undefined;
         main: {
+            suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
-                [x: string]: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[];
-            } | null | undefined;
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[] | undefined;
             tacticIds: string[];
-            suggestedTacticIds: string[];
         };
     };
     seenTacticIds: string[];
@@ -1587,26 +1527,22 @@ export declare const logSchema: yup.Lazy<{
     locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
         impulseDebrief?: {
+            suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
-                [x: string]: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[];
-            } | null | undefined;
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[] | undefined;
             tacticIds: string[];
-            suggestedTacticIds: string[];
         } | null | undefined;
         main: {
+            suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
-                [x: string]: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[];
-            } | null | undefined;
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[] | undefined;
             tacticIds: string[];
-            suggestedTacticIds: string[];
         };
     };
     seenTacticIds: string[];
@@ -1681,26 +1617,22 @@ export declare const logSchema: yup.Lazy<{
     locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
         impulseDebrief?: {
+            suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
-                [x: string]: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[];
-            } | null | undefined;
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[] | undefined;
             tacticIds: string[];
-            suggestedTacticIds: string[];
         } | null | undefined;
         main: {
+            suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
-                [x: string]: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[];
-            } | null | undefined;
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[] | undefined;
             tacticIds: string[];
-            suggestedTacticIds: string[];
         };
     };
     seenTacticIds: string[];
@@ -1775,26 +1707,22 @@ export declare const logSchema: yup.Lazy<{
     locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
         impulseDebrief?: {
+            suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
-                [x: string]: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[];
-            } | null | undefined;
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[] | undefined;
             tacticIds: string[];
-            suggestedTacticIds: string[];
         } | null | undefined;
         main: {
+            suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
-                [x: string]: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[];
-            } | null | undefined;
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[] | undefined;
             tacticIds: string[];
-            suggestedTacticIds: string[];
         };
     };
     seenTacticIds: string[];
@@ -1869,26 +1797,22 @@ export declare const logSchema: yup.Lazy<{
     locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
         impulseDebrief?: {
+            suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
-                [x: string]: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[];
-            } | null | undefined;
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[] | undefined;
             tacticIds: string[];
-            suggestedTacticIds: string[];
         } | null | undefined;
         main: {
+            suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
-                [x: string]: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[];
-            } | null | undefined;
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[] | undefined;
             tacticIds: string[];
-            suggestedTacticIds: string[];
         };
     };
     seenTacticIds: string[];

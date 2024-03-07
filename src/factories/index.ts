@@ -14,12 +14,7 @@ import {
 import { makeMessageFactory } from './message';
 import { makePatternFactory } from './pattern';
 import { makeAdminProfileFactory, makeProfileFactory } from './profile';
-import { makeImpulseRecommendationFactory } from './recommendation';
-import {
-  makeImpulseDebriefRecommendationRuleFactory,
-  makeImpulseRecommendationRuleFactory,
-  makeTimeRecommendationRuleFactory,
-} from './recommendationRule';
+import { makeProgramFactory } from './program';
 import { makeSupportGroupFactory } from './supportGroup';
 import {
   makeFolderTacticFactory,
@@ -46,14 +41,7 @@ export function makeFactories(TimestampKlass: typeof TimestampLike) {
     supportGroupFactory: makeSupportGroupFactory(TimestampKlass),
     messageFactory: makeMessageFactory(TimestampKlass),
     patternFactory: makePatternFactory(TimestampKlass),
-    impulseRecommendationFactory:
-      makeImpulseRecommendationFactory(TimestampKlass),
-    impulseRecommendationRuleFactory:
-      makeImpulseRecommendationRuleFactory(TimestampKlass),
-    impulseDebriefRecommendationRuleFactory:
-      makeImpulseDebriefRecommendationRuleFactory(TimestampKlass),
-    timeRecommendationRuleFactory:
-      makeTimeRecommendationRuleFactory(TimestampKlass),
+    programFactory: makeProgramFactory(TimestampKlass),
     tacticFactory: makeTacticFactory(TimestampKlass),
     measureTimeTacticFactory: makeMeasureTimeTacticFactory(TimestampKlass),
     folderTacticFactory: makeFolderTacticFactory(TimestampKlass),

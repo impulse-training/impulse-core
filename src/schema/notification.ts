@@ -3,6 +3,7 @@ import {
   ExpoPushReceipt,
   ExpoPushTicket,
 } from 'expo-server-sdk';
+import * as yup from 'yup';
 import { TimestampLike } from '../utils/TimestampLike';
 
 export const NOTIFICATION_TYPES = {
@@ -12,7 +13,11 @@ export const NOTIFICATION_TYPES = {
   // DEBRIEF_REMINDERS: 'A reminder to debrief my impulse moments',
 };
 
-export type NotificationOption = 'push' | 'email';
+export const notificationOptionSchema = yup
+  .mixed<'push' | 'email'>()
+  .oneOf(['push', 'email'])
+  .required();
+export type NotificationOption = yup.InferType<typeof notificationOptionSchema>;
 
 export interface NotificationValue {
   uid: string;

@@ -4,14 +4,11 @@ import { makeFactories } from '../../factories';
 import {
   commentSchema,
   gameplanSchema,
-  impulseDebriefRecommendationRuleSchema,
-  impulseRecommendationRuleSchema,
   logSchema,
   patternSchema,
-  recommendationSchema,
+  programSchema,
   supportGroupSchema,
   tacticSchema,
-  timeRecommendationRuleSchema,
 } from '../../schema';
 import { TimestampLike } from '../../utils/TimestampLike';
 
@@ -67,11 +64,7 @@ const schemaMap: Record<keyof typeof factories, null | Schema | Lazy<unknown>> =
     supportGroupFactory: supportGroupSchema,
     messageFactory: null,
     patternFactory: patternSchema,
-    impulseRecommendationFactory: recommendationSchema,
-    impulseRecommendationRuleFactory: impulseRecommendationRuleSchema,
-    impulseDebriefRecommendationRuleFactory:
-      impulseDebriefRecommendationRuleSchema,
-    timeRecommendationRuleFactory: timeRecommendationRuleSchema,
+    programFactory: programSchema,
     tacticFactory: tacticSchema,
     measureTimeTacticFactory: tacticSchema,
     folderTacticFactory: tacticSchema,

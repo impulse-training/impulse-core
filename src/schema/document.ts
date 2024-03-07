@@ -17,19 +17,17 @@ export const documentSchema = yup.lazy(snap => {
 
 export const schemaMap: Record<string, yup.Schema | yup.Lazy<unknown>> = {
   tactics: schemas.tacticSchema,
-  gameplans: schemas.gameplanSchema,
+  programs: schemas.programSchema,
   logs: schemas.logSchema,
   patterns: schemas.patternSchema,
-  recommendationRules: schemas.recommendationRuleSchema,
-  recommendations: schemas.recommendationSchema,
   supportGroups: schemas.supportGroupSchema,
   comments: schemas.commentSchema,
   locations: schemas.locationSchema,
+  profiles: schemas.profileSchema,
 
   // These are yet to be implemented
   // locations: schemas.locationSchema,
   // categories: schemas.categorySchema,
   // issues: schemas.issueSchema,
   // mailTemplates: schemas.mailTemplateSchema,
-  // profiles: schemas.profileSchema,
 };

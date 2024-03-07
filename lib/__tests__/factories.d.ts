@@ -35,14 +35,111 @@ export declare const factories: {
         name: string;
         address: string;
     }, "uid" | "name" | "address" | ("createdAt" | "updatedAt" | "latitude" | "longitude")>;
-    profileFactory: import("factory.ts").Factory<import("..").ProfileValue, keyof import("..").ProfileValue>;
+    profileFactory: import("factory.ts").Factory<{
+        avatar?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | undefined;
+        parentIssueIds?: (string | undefined)[] | undefined;
+        timezone?: string | undefined;
+        buttonId?: string | undefined;
+        isAdmin?: boolean | undefined;
+        isSuperAdmin?: boolean | undefined;
+        activeImpulseId?: string | undefined;
+        currentAppState?: import("react-native/types").AppStateStatus | undefined;
+        showStorybook?: boolean | undefined;
+        lastActiveAt?: Date | undefined;
+        expoPushToken?: string | undefined;
+        releaseChannel?: "default" | "canary" | undefined;
+        notificationPreferences?: {
+            [x: string]: NonNullable<"push" | "email" | undefined>;
+        } | null | undefined;
+        isCurrentlyTrackingMotion?: boolean | undefined;
+        showTacticsFromSupportGroups?: boolean | undefined;
+        androidPermissions?: {
+            [x: string]: NonNullable<boolean | undefined>;
+        } | null | undefined;
+        stepTrackingEnabled?: boolean | undefined;
+        displayName?: string | undefined;
+        firstName?: string | undefined;
+        lastName?: string | undefined;
+        nickName?: string | undefined;
+        region?: string | null | undefined;
+        phoneNumber?: string | undefined;
+        isReadyForTour?: boolean | undefined;
+        isTourCompleted?: boolean | undefined;
+        isButtonSetupSkipped?: boolean | undefined;
+        createdAt: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        };
+        updatedAt: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        };
+        uid: string;
+        email: string;
+        invitationCode: string;
+    }, "createdAt" | "updatedAt" | "uid" | "email" | "invitationCode" | ("avatar" | "parentIssueIds" | "timezone" | "buttonId" | "isAdmin" | "isSuperAdmin" | "activeImpulseId" | "currentAppState" | "showStorybook" | "lastActiveAt" | "expoPushToken" | "releaseChannel" | "notificationPreferences" | "isCurrentlyTrackingMotion" | "showTacticsFromSupportGroups" | "androidPermissions" | "stepTrackingEnabled" | "displayName" | "firstName" | "lastName" | "nickName" | "region" | "phoneNumber" | "isReadyForTour" | "isTourCompleted" | "isButtonSetupSkipped")>;
     gameplanFactory: import("factory.ts").Factory<import("..").GameplanValue, "createdAt" | "updatedAt" | "uid" | "name" | "parentIssueIds" | "tacticsById" | "recap" | "isFeatured" | "recommendationsCount" | "timezone" | "impulse" | "impulseDebrief" | "time" | "location" | "patternsById" | "scheduledNotificationIds" | "dontGenerateRecapTacticsForTacticIds">;
     issueFactory: import("factory.ts").Factory<import("..").IssueValue, keyof import("..").IssueValue>;
-    adminProfileFactory: import("factory.ts").Factory<import("..").ProfileValue, keyof import("..").ProfileValue>;
+    adminProfileFactory: import("factory.ts").Factory<{
+        avatar?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | undefined;
+        parentIssueIds?: (string | undefined)[] | undefined;
+        timezone?: string | undefined;
+        buttonId?: string | undefined;
+        isAdmin?: boolean | undefined;
+        isSuperAdmin?: boolean | undefined;
+        activeImpulseId?: string | undefined;
+        currentAppState?: import("react-native/types").AppStateStatus | undefined;
+        showStorybook?: boolean | undefined;
+        lastActiveAt?: Date | undefined;
+        expoPushToken?: string | undefined;
+        releaseChannel?: "default" | "canary" | undefined;
+        notificationPreferences?: {
+            [x: string]: NonNullable<"push" | "email" | undefined>;
+        } | null | undefined;
+        isCurrentlyTrackingMotion?: boolean | undefined;
+        showTacticsFromSupportGroups?: boolean | undefined;
+        androidPermissions?: {
+            [x: string]: NonNullable<boolean | undefined>;
+        } | null | undefined;
+        stepTrackingEnabled?: boolean | undefined;
+        displayName?: string | undefined;
+        firstName?: string | undefined;
+        lastName?: string | undefined;
+        nickName?: string | undefined;
+        region?: string | null | undefined;
+        phoneNumber?: string | undefined;
+        isReadyForTour?: boolean | undefined;
+        isTourCompleted?: boolean | undefined;
+        isButtonSetupSkipped?: boolean | undefined;
+        createdAt: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        };
+        updatedAt: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        };
+        uid: string;
+        email: string;
+        invitationCode: string;
+    }, "createdAt" | "updatedAt" | "uid" | "email" | "invitationCode" | ("avatar" | "parentIssueIds" | "timezone" | "buttonId" | "isAdmin" | "isSuperAdmin" | "activeImpulseId" | "currentAppState" | "showStorybook" | "lastActiveAt" | "expoPushToken" | "releaseChannel" | "notificationPreferences" | "isCurrentlyTrackingMotion" | "showTacticsFromSupportGroups" | "androidPermissions" | "stepTrackingEnabled" | "displayName" | "firstName" | "lastName" | "nickName" | "region" | "phoneNumber" | "isReadyForTour" | "isTourCompleted" | "isButtonSetupSkipped")>;
     supportGroupFactory: import("factory.ts").Factory<{
         createdAt?: TimestampLike | import("yup").Maybe<null>;
         updatedAt?: TimestampLike | import("yup").Maybe<null>;
         isTemplate?: boolean | undefined;
+        invitationCode?: string | undefined;
         slug?: string | undefined;
         templateId?: string | undefined;
         everythingPermissions?: boolean | undefined;
@@ -54,7 +151,6 @@ export declare const factories: {
         } | undefined;
         groupDescription?: string | undefined;
         lastMessagePreview?: string | undefined;
-        invitationCode?: string | undefined;
         invitationUrl?: string | undefined;
         lastMessageUid?: string | undefined;
         isSharingDisabled?: boolean | undefined;
@@ -69,7 +165,7 @@ export declare const factories: {
             [x: string]: number;
         };
         permissions: {};
-    }, "thumbnailUrl" | "suggestedTacticIds" | "participantUids" | "groupName" | "creatorName" | "creatorUid" | "icon" | "unreadCounts" | "permissions" | ("createdAt" | "updatedAt" | "isTemplate" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "lastMessagePreview" | "invitationCode" | "invitationUrl" | "lastMessageUid" | "isSharingDisabled")>;
+    }, "thumbnailUrl" | "suggestedTacticIds" | "participantUids" | "groupName" | "creatorName" | "creatorUid" | "icon" | "unreadCounts" | "permissions" | ("createdAt" | "updatedAt" | "isTemplate" | "invitationCode" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "lastMessagePreview" | "invitationUrl" | "lastMessageUid" | "isSharingDisabled")>;
     messageFactory: import("factory.ts").Factory<import("..").MessageValue, keyof import("..").MessageValue>;
     patternFactory: import("factory.ts").Factory<{
         createdAt?: TimestampLike | import("yup").Maybe<null>;
@@ -88,10 +184,7 @@ export declare const factories: {
         name: string;
         ordinal: number;
     }, "uid" | "name" | "ordinal" | ("createdAt" | "updatedAt" | "supportGroupIds" | "notification" | "setbackTacticId" | "setbackThreshold" | "issueId" | "parentIssueIds" | "sendWeeklyReports")>;
-    impulseRecommendationFactory: import("factory.ts").Factory<import("..").ImpulseRecommendationValue, "createdAt" | "updatedAt" | "uid" | "ordinal" | "title" | "type" | "tacticIds" | "tacticsById" | "explanation" | "recommenderUid" | "recommenderName" | "appliedAt" | "dismissedAt" | "ruleId" | "patternIds">;
-    impulseRecommendationRuleFactory: import("factory.ts").Factory<import("..").RecommendationRuleValue, "createdAt" | "updatedAt" | "uid" | "ordinal" | "type" | "recommendation" | "forIssueIds" | "issueNames" | "issueNamesSummary" | "recommendationSummary">;
-    impulseDebriefRecommendationRuleFactory: import("factory.ts").Factory<import("..").RecommendationRuleValue, "createdAt" | "updatedAt" | "uid" | "ordinal" | "type" | "recommendation" | "forIssueIds" | "issueNames" | "issueNamesSummary" | "recommendationSummary">;
-    timeRecommendationRuleFactory: import("factory.ts").Factory<import("..").RecommendationRuleValue, "createdAt" | "updatedAt" | "uid" | "ordinal" | "type" | "recommendation" | "forIssueIds" | "issueNames" | "issueNamesSummary" | "recommendationSummary">;
+    programFactory: import("factory.ts").Factory<import("..").ProgramValue, "createdAt" | "updatedAt" | "uid" | "tacticsById" | "recap" | "impulse" | "impulseDebrief" | "time" | "location" | "forIssueIds" | "issueNames" | "issueNamesSummary" | "recommendationSummary">;
     tacticFactory: import("factory.ts").Factory<import("..").NonRecursiveTactic, "createdAt" | "updatedAt" | "uid" | "ordinal" | "title" | "type" | "sourceId" | "subtitle" | "description" | "image" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
     measureTimeTacticFactory: import("factory.ts").Factory<{
         createdAt?: TimestampLike | import("yup").Maybe<null>;

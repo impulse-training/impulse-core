@@ -19,17 +19,15 @@ const conditional = yup.object({
 
 // A gameplan is a set of tactics and when they should be used. Of these properties, only tacticIds
 // is required.
-export const strategy = yup.object({
+export const strategySchema = yup.object({
   tacticIds: requiredStringArray,
-  suggestedTacticIds: requiredStringArray,
-  conditionalTacticIds: optionalObjectOf(
-    yup.array().of(conditional).required()
-  ),
+  suggestedTacticIds: optionalStringArray,
+  conditionalTacticIds: yup.array().of(conditional),
 });
-export type Strategy = yup.InferType<typeof strategy>;
+export type Strategy = yup.InferType<typeof strategySchema>;
 
 export type TimeRoutine = yup.InferType<typeof timeRoutineSchema>;
-export const timeRoutineSchema = strategy.shape({
+export const timeRoutineSchema = strategySchema.shape({
   weekdays: yup
     .array()
     .of(
@@ -48,7 +46,7 @@ export const timeRoutineSchema = strategy.shape({
 });
 
 export type LocationRoutine = yup.InferType<typeof locationRoutineSchema>;
-export const locationRoutineSchema = strategy.shape({
+export const locationRoutineSchema = strategySchema.shape({
   locationId: yup.string().required(),
   mode: yup.mixed<'enter' | 'exit'>().oneOf(['enter', 'exit']).required(),
   title: yup.string().required(),
@@ -66,10 +64,10 @@ export const gameplanSchema = yup.object().shape({
   recommendationsCount: yup.number(),
   timezone: yup.string().required(),
   // Strategies - these are the sequences of tactics to try, including conditional tactics
-  impulse: objectOf(strategy),
-  impulseDebrief: objectOf(strategy),
+  impulse: objectOf(strategySchema),
+  impulseDebrief: objectOf(strategySchema),
   // Daily recap
-  recap: objectOf(timeRoutineSchema),
+  recap: timeRoutineSchema.optional().default(undefined),
   // These are the strategies for scheduled times of day...
   time: optionalObjectOf(timeRoutineSchema.required()),
   // ...Or when arriving at or leaving a location

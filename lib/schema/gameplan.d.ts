@@ -1,33 +1,29 @@
 import * as yup from 'yup';
 import { TimestampLike } from '../utils/TimestampLike';
 import { TacticValue, WithTacticsById } from './tactic';
-export declare const strategy: yup.ObjectSchema<{
+export declare const strategySchema: yup.ObjectSchema<{
     tacticIds: string[];
-    suggestedTacticIds: string[];
+    suggestedTacticIds: string[] | undefined;
     conditionalTacticIds: {
-        [x: string]: {
-            ids: string[];
-            condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-            value: {};
-        }[];
-    } | null | undefined;
+        ids: string[];
+        condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+        value: {};
+    }[] | undefined;
 }, yup.AnyObject, {
     tacticIds: "";
     suggestedTacticIds: "";
-    conditionalTacticIds: undefined;
+    conditionalTacticIds: "";
 }, "">;
-export type Strategy = yup.InferType<typeof strategy>;
+export type Strategy = yup.InferType<typeof strategySchema>;
 export type TimeRoutine = yup.InferType<typeof timeRoutineSchema>;
 export declare const timeRoutineSchema: yup.ObjectSchema<{
     tacticIds: string[];
-    suggestedTacticIds: string[];
+    suggestedTacticIds: string[] | undefined;
     conditionalTacticIds: {
-        [x: string]: {
-            ids: string[];
-            condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-            value: {};
-        }[];
-    } | null | undefined;
+        ids: string[];
+        condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+        value: {};
+    }[] | undefined;
     weekdays: number[];
     hour: number;
     minute: number;
@@ -35,7 +31,7 @@ export declare const timeRoutineSchema: yup.ObjectSchema<{
 }, yup.AnyObject, {
     tacticIds: "";
     suggestedTacticIds: "";
-    conditionalTacticIds: undefined;
+    conditionalTacticIds: "";
     weekdays: "";
     hour: undefined;
     minute: undefined;
@@ -44,21 +40,19 @@ export declare const timeRoutineSchema: yup.ObjectSchema<{
 export type LocationRoutine = yup.InferType<typeof locationRoutineSchema>;
 export declare const locationRoutineSchema: yup.ObjectSchema<{
     tacticIds: string[];
-    suggestedTacticIds: string[];
+    suggestedTacticIds: string[] | undefined;
     conditionalTacticIds: {
-        [x: string]: {
-            ids: string[];
-            condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-            value: {};
-        }[];
-    } | null | undefined;
+        ids: string[];
+        condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+        value: {};
+    }[] | undefined;
     locationId: string;
     mode: NonNullable<"enter" | "exit" | undefined>;
     title: string;
 }, yup.AnyObject, {
     tacticIds: "";
     suggestedTacticIds: "";
-    conditionalTacticIds: undefined;
+    conditionalTacticIds: "";
     locationId: undefined;
     mode: undefined;
     title: undefined;
@@ -75,59 +69,49 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     timezone: string;
     impulse: {
         [x: string]: {
+            suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
-                [x: string]: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[];
-            } | null | undefined;
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[] | undefined;
             tacticIds: string[];
-            suggestedTacticIds: string[];
         };
     };
     impulseDebrief: {
         [x: string]: {
+            suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
-                [x: string]: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[];
-            } | null | undefined;
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[] | undefined;
             tacticIds: string[];
-            suggestedTacticIds: string[];
         };
     };
     recap: {
-        [x: string]: {
-            conditionalTacticIds?: {
-                [x: string]: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[];
-            } | null | undefined;
-            title: string;
-            tacticIds: string[];
-            suggestedTacticIds: string[];
-            weekdays: number[];
-            hour: number;
-            minute: number;
-        };
-    };
+        suggestedTacticIds?: string[] | undefined;
+        conditionalTacticIds?: {
+            ids: string[];
+            condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+            value: {};
+        }[] | undefined;
+        title: string;
+        tacticIds: string[];
+        weekdays: number[];
+        hour: number;
+        minute: number;
+    } | undefined;
     time: {
         [x: string]: {
+            suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
-                [x: string]: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[];
-            } | null | undefined;
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[] | undefined;
             title: string;
             tacticIds: string[];
-            suggestedTacticIds: string[];
             weekdays: number[];
             hour: number;
             minute: number;
@@ -135,16 +119,14 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     } | null | undefined;
     location: {
         [x: string]: {
+            suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
-                [x: string]: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[];
-            } | null | undefined;
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[] | undefined;
             title: string;
             tacticIds: string[];
-            suggestedTacticIds: string[];
             locationId: string;
             mode: NonNullable<"enter" | "exit" | undefined>;
         };

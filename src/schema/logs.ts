@@ -3,7 +3,7 @@
 import * as yup from 'yup';
 import { TimestampLike } from '../utils/TimestampLike';
 import { commentSchema } from './comment';
-import { gameplanSchema, strategy } from './gameplan';
+import { gameplanSchema, strategySchema } from './gameplan';
 import { patternSchema } from './pattern';
 import { TacticValue, WithTacticsById, tacticSchema } from './tactic';
 import { optionalStringArray, requiredStringArray } from './utils/array';
@@ -55,8 +55,8 @@ const baseLogSchema = yup.object().shape({
   // the data to render the tactics from the strategy, even if those tactics are deleted or modified
   // later.
   strategy: yup.object({
-    main: strategy.required(),
-    impulseDebrief: strategy.notRequired(),
+    main: strategySchema.required(),
+    impulseDebrief: strategySchema.notRequired(),
   }),
   // Tactics are a complex union type. We omit this key from the base log schema and add it back in
   // using typescript, so we just "neuter" it here to tell typescript to relax. This saves 10k+
