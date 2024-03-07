@@ -24,10 +24,10 @@ export const schemaMap: Record<string, yup.Schema | yup.Lazy<unknown>> = {
   comments: schemas.commentSchema,
   locations: schemas.locationSchema,
   profiles: schemas.profileSchema,
+  issues: schemas.issueSchema,
+  mailTemplates: schemas.mailTemplateSchema,
 
-  // These are yet to be implemented
-  // locations: schemas.locationSchema,
+  // NOT implemented
+  // invitations: schemas.invitationSchema,
   // categories: schemas.categorySchema,
-  // issues: schemas.issueSchema,
-  // mailTemplates: schemas.mailTemplateSchema,
 };

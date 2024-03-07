@@ -273,7 +273,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             minute: number;
         } | undefined;
         isFeatured?: yup.Maybe<boolean | undefined>;
-        programsCount?: number | undefined;
         time?: {
             [x: string]: {
                 suggestedTacticIds?: string[] | undefined;
@@ -306,7 +305,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         scheduledNotificationIds?: string[] | undefined;
         dontGenerateRecapTacticsForTacticIds?: string[] | undefined;
         uid: string;
-        timezone: string;
         impulse: {
             [x: string]: {
                 suggestedTacticIds?: string[] | undefined;
@@ -428,8 +426,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         createdAt: undefined;
         updatedAt: undefined;
         parentIssueIds: "";
-        programsCount: undefined;
-        timezone: undefined;
         impulse: undefined;
         impulseDebrief: undefined;
         recap: undefined;
@@ -1210,7 +1206,6 @@ export declare const logSchema: yup.Lazy<{
     debriefedAt?: yup.Maybe<{} | undefined>;
     uid: string;
     type: "impulse";
-    timezone: string;
     location: {
         latitude?: number | undefined;
         longitude?: number | undefined;
@@ -1244,6 +1239,7 @@ export declare const logSchema: yup.Lazy<{
         nanoseconds: number;
         toDate: Function;
     };
+    timezone: string;
     locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
         impulseDebrief?: {
@@ -1288,7 +1284,6 @@ export declare const logSchema: yup.Lazy<{
             minute: number;
         } | undefined;
         isFeatured?: yup.Maybe<boolean | undefined>;
-        programsCount?: number | undefined;
         time?: {
             [x: string]: {
                 suggestedTacticIds?: string[] | undefined;
@@ -1321,7 +1316,6 @@ export declare const logSchema: yup.Lazy<{
         scheduledNotificationIds?: string[] | undefined;
         dontGenerateRecapTacticsForTacticIds?: string[] | undefined;
         uid: string;
-        timezone: string;
         impulse: {
             [x: string]: {
                 suggestedTacticIds?: string[] | undefined;
@@ -1417,7 +1411,6 @@ export declare const logSchema: yup.Lazy<{
     uid: string;
     type: "location";
     locationId: string;
-    timezone: string;
     location: {
         latitude?: number | undefined;
         longitude?: number | undefined;
@@ -1432,6 +1425,7 @@ export declare const logSchema: yup.Lazy<{
         nanoseconds: number;
         toDate: Function;
     };
+    timezone: string;
     locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
         impulseDebrief?: {
@@ -1509,7 +1503,6 @@ export declare const logSchema: yup.Lazy<{
     sharedWithSupportGroupIds?: string[] | undefined;
     uid: string;
     type: "time";
-    timezone: string;
     location: {
         latitude?: number | undefined;
         longitude?: number | undefined;
@@ -1524,6 +1517,7 @@ export declare const logSchema: yup.Lazy<{
         nanoseconds: number;
         toDate: Function;
     };
+    timezone: string;
     locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
         impulseDebrief?: {
@@ -1599,7 +1593,6 @@ export declare const logSchema: yup.Lazy<{
     sharedWithSupportGroupIds?: string[] | undefined;
     uid: string;
     type: "recap";
-    timezone: string;
     location: {
         latitude?: number | undefined;
         longitude?: number | undefined;
@@ -1614,6 +1607,7 @@ export declare const logSchema: yup.Lazy<{
         nanoseconds: number;
         toDate: Function;
     };
+    timezone: string;
     locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
         impulseDebrief?: {
@@ -1689,7 +1683,6 @@ export declare const logSchema: yup.Lazy<{
     sharedWithSupportGroupIds?: string[] | undefined;
     uid: string;
     type: "motion";
-    timezone: string;
     location: {
         latitude?: number | undefined;
         longitude?: number | undefined;
@@ -1704,6 +1697,7 @@ export declare const logSchema: yup.Lazy<{
         nanoseconds: number;
         toDate: Function;
     };
+    timezone: string;
     locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
         impulseDebrief?: {
@@ -1779,7 +1773,6 @@ export declare const logSchema: yup.Lazy<{
     sharedWithSupportGroupIds?: string[] | undefined;
     uid: string;
     type: "button";
-    timezone: string;
     location: {
         latitude?: number | undefined;
         longitude?: number | undefined;
@@ -1794,6 +1787,7 @@ export declare const logSchema: yup.Lazy<{
         nanoseconds: number;
         toDate: Function;
     };
+    timezone: string;
     locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
         impulseDebrief?: {

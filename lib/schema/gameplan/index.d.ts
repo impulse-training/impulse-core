@@ -1,62 +1,8 @@
 import * as yup from 'yup';
-import { TimestampLike } from '../utils/TimestampLike';
-import { TacticValue, WithTacticsById } from './tactic';
-export declare const strategySchema: yup.ObjectSchema<{
-    tacticIds: string[];
-    suggestedTacticIds: string[] | undefined;
-    conditionalTacticIds: {
-        ids: string[];
-        condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-        value: {};
-    }[] | undefined;
-}, yup.AnyObject, {
-    tacticIds: "";
-    suggestedTacticIds: "";
-    conditionalTacticIds: "";
-}, "">;
-export type Strategy = yup.InferType<typeof strategySchema>;
-export type TimeRoutine = yup.InferType<typeof timeRoutineSchema>;
-export declare const timeRoutineSchema: yup.ObjectSchema<{
-    tacticIds: string[];
-    suggestedTacticIds: string[] | undefined;
-    conditionalTacticIds: {
-        ids: string[];
-        condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-        value: {};
-    }[] | undefined;
-    weekdays: number[];
-    hour: number;
-    minute: number;
-    title: string;
-}, yup.AnyObject, {
-    tacticIds: "";
-    suggestedTacticIds: "";
-    conditionalTacticIds: "";
-    weekdays: "";
-    hour: undefined;
-    minute: undefined;
-    title: undefined;
-}, "">;
-export type LocationRoutine = yup.InferType<typeof locationRoutineSchema>;
-export declare const locationRoutineSchema: yup.ObjectSchema<{
-    tacticIds: string[];
-    suggestedTacticIds: string[] | undefined;
-    conditionalTacticIds: {
-        ids: string[];
-        condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-        value: {};
-    }[] | undefined;
-    locationId: string;
-    mode: NonNullable<"enter" | "exit" | undefined>;
-    title: string;
-}, yup.AnyObject, {
-    tacticIds: "";
-    suggestedTacticIds: "";
-    conditionalTacticIds: "";
-    locationId: undefined;
-    mode: undefined;
-    title: undefined;
-}, "">;
+import { TimestampLike } from '../../utils/TimestampLike';
+import { TacticValue, WithTacticsById } from '../tactic';
+export * from './routines';
+export * from './strategy';
 export type GameplanValue = WithTypes<typeof gameplanSchema>;
 export declare const gameplanSchema: yup.ObjectSchema<{
     uid: string;
@@ -65,8 +11,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     createdAt: TimestampLike | yup.Maybe<null>;
     updatedAt: TimestampLike | yup.Maybe<null>;
     parentIssueIds: string[] | undefined;
-    programsCount: number | undefined;
-    timezone: string;
     impulse: {
         [x: string]: {
             suggestedTacticIds?: string[] | undefined;
@@ -160,8 +104,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     createdAt: undefined;
     updatedAt: undefined;
     parentIssueIds: "";
-    programsCount: undefined;
-    timezone: undefined;
     impulse: undefined;
     impulseDebrief: undefined;
     recap: undefined;
@@ -187,4 +129,3 @@ export declare const SHORT_DAYS: {
     7: string;
 };
 export declare const LONG_DAYS: string[];
-export {};
