@@ -1,24 +1,63 @@
-import { TimestampLike } from '../utils/TimestampLike';
-export interface IssueValue {
-    createdAt: TimestampLike;
-    updatedAt: TimestampLike;
-    parentId?: string;
+import * as yup from 'yup';
+export declare const issueSchema: yup.ObjectSchema<{
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    };
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    };
+    parentId: string | null | undefined;
     name: string;
-    synonyms: Array<string>;
-    unit: 'time' | 'custom';
-    customUnit?: string;
-    path?: string;
-    parentIds: Array<string>;
-    parentNames: Array<string>;
-    recommendationsCount?: number;
-    profileCount?: number;
-    isFeatured?: boolean;
-    impulse?: {
+    synonyms: (string | undefined)[];
+    unit: NonNullable<"time" | "custom" | undefined>;
+    customUnit: string | undefined;
+    path: string | null | undefined;
+    parentIds: (string | undefined)[];
+    parentNames: (string | undefined)[];
+    programsCount: number | null | undefined;
+    profileCount: number | null | undefined;
+    isFeatured: boolean | null | undefined;
+    impulse: {
+        suggestedTacticIds: (string | undefined)[];
         llmPrompt: string;
-        suggestedTacticIds: Array<string>;
-    };
-    impulseDebrief?: {
+    } | null;
+    impulseDebrief: {
+        suggestedTacticIds: (string | undefined)[];
         llmPrompt: string;
-        suggestedTacticIds: Array<string>;
+    } | null;
+}, yup.AnyObject, {
+    createdAt: {
+        seconds: undefined;
+        nanoseconds: undefined;
+        toDate: undefined;
     };
-}
+    updatedAt: {
+        seconds: undefined;
+        nanoseconds: undefined;
+        toDate: undefined;
+    };
+    parentId: undefined;
+    name: undefined;
+    synonyms: "";
+    unit: undefined;
+    customUnit: undefined;
+    path: undefined;
+    parentIds: "";
+    parentNames: "";
+    programsCount: undefined;
+    profileCount: undefined;
+    isFeatured: undefined;
+    impulse: {
+        llmPrompt: undefined;
+        suggestedTacticIds: "";
+    };
+    impulseDebrief: {
+        llmPrompt: undefined;
+        suggestedTacticIds: "";
+    };
+}, "">;
+export type IssueValue = yup.InferType<typeof issueSchema>;

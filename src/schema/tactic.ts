@@ -10,7 +10,6 @@ function tacticValueBaseSchema<K extends string>(type: K) {
     type: yup.mixed<K>().oneOf([type]).defined(),
     uid: yup.string().nullable(),
     sourceId: yup.string(),
-    ordinal: yup.number().nullable(),
     createdAt: optionalTimestampSchema,
     updatedAt: optionalTimestampSchema,
     title: yup.string().required(),

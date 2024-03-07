@@ -4,7 +4,6 @@ export declare const folderTacticSchema: yup.ObjectSchema<{
     type: "folder";
     uid: string | null | undefined;
     sourceId: string | undefined;
-    ordinal: number | null | undefined;
     createdAt: import("..").TimestampLike | yup.Maybe<null>;
     updatedAt: import("..").TimestampLike | yup.Maybe<null>;
     title: string;
@@ -35,7 +34,6 @@ export declare const folderTacticSchema: yup.ObjectSchema<{
     type: undefined;
     uid: undefined;
     sourceId: undefined;
-    ordinal: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     title: undefined;
@@ -70,7 +68,6 @@ export declare const recapTacticSchema: yup.ObjectSchema<{
     type: "recap";
     uid: string | null | undefined;
     sourceId: string | undefined;
-    ordinal: number | null | undefined;
     createdAt: import("..").TimestampLike | yup.Maybe<null>;
     updatedAt: import("..").TimestampLike | yup.Maybe<null>;
     title: string;
@@ -98,7 +95,6 @@ export declare const recapTacticSchema: yup.ObjectSchema<{
     type: undefined;
     uid: undefined;
     sourceId: undefined;
-    ordinal: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     title: undefined;
@@ -130,7 +126,6 @@ export declare const stepsTacticSchema: yup.ObjectSchema<{
     type: "steps";
     uid: string | null | undefined;
     sourceId: string | undefined;
-    ordinal: number | null | undefined;
     createdAt: import("..").TimestampLike | yup.Maybe<null>;
     updatedAt: import("..").TimestampLike | yup.Maybe<null>;
     title: string;
@@ -157,7 +152,6 @@ export declare const stepsTacticSchema: yup.ObjectSchema<{
     type: undefined;
     uid: undefined;
     sourceId: undefined;
-    ordinal: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     title: undefined;
@@ -186,7 +180,6 @@ export declare const emotionsTacticSchema: yup.ObjectSchema<{
     type: "emotions";
     uid: string | null | undefined;
     sourceId: string | undefined;
-    ordinal: number | null | undefined;
     createdAt: import("..").TimestampLike | yup.Maybe<null>;
     updatedAt: import("..").TimestampLike | yup.Maybe<null>;
     title: string;
@@ -212,7 +205,6 @@ export declare const emotionsTacticSchema: yup.ObjectSchema<{
     type: undefined;
     uid: undefined;
     sourceId: undefined;
-    ordinal: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     title: undefined;
@@ -240,7 +232,6 @@ export declare const audioTacticSchema: yup.ObjectSchema<{
     type: "audio";
     uid: string | null | undefined;
     sourceId: string | undefined;
-    ordinal: number | null | undefined;
     createdAt: import("..").TimestampLike | yup.Maybe<null>;
     updatedAt: import("..").TimestampLike | yup.Maybe<null>;
     title: string;
@@ -271,7 +262,6 @@ export declare const audioTacticSchema: yup.ObjectSchema<{
     type: undefined;
     uid: undefined;
     sourceId: undefined;
-    ordinal: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     title: undefined;
@@ -304,7 +294,6 @@ export declare const videoTacticSchema: yup.ObjectSchema<{
     type: "video";
     uid: string | null | undefined;
     sourceId: string | undefined;
-    ordinal: number | null | undefined;
     createdAt: import("..").TimestampLike | yup.Maybe<null>;
     updatedAt: import("..").TimestampLike | yup.Maybe<null>;
     title: string;
@@ -338,7 +327,6 @@ export declare const videoTacticSchema: yup.ObjectSchema<{
     type: undefined;
     uid: undefined;
     sourceId: undefined;
-    ordinal: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     title: undefined;
@@ -374,7 +362,6 @@ export declare const measureSliderTacticSchema: yup.ObjectSchema<{
     type: "measure-slider";
     uid: string | null | undefined;
     sourceId: string | undefined;
-    ordinal: number | null | undefined;
     createdAt: import("..").TimestampLike | yup.Maybe<null>;
     updatedAt: import("..").TimestampLike | yup.Maybe<null>;
     title: string;
@@ -402,7 +389,6 @@ export declare const measureSliderTacticSchema: yup.ObjectSchema<{
     type: undefined;
     uid: undefined;
     sourceId: undefined;
-    ordinal: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     title: undefined;
@@ -432,7 +418,6 @@ export declare const measureTimeTacticSchema: yup.ObjectSchema<{
     type: "measure-time";
     uid: string | null | undefined;
     sourceId: string | undefined;
-    ordinal: number | null | undefined;
     createdAt: import("..").TimestampLike | yup.Maybe<null>;
     updatedAt: import("..").TimestampLike | yup.Maybe<null>;
     title: string;
@@ -458,7 +443,6 @@ export declare const measureTimeTacticSchema: yup.ObjectSchema<{
     type: undefined;
     uid: undefined;
     sourceId: undefined;
-    ordinal: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     title: undefined;
@@ -486,7 +470,6 @@ export declare const measureCounterTacticSchema: yup.ObjectSchema<{
     type: "measure-counter";
     uid: string | null | undefined;
     sourceId: string | undefined;
-    ordinal: number | null | undefined;
     createdAt: import("..").TimestampLike | yup.Maybe<null>;
     updatedAt: import("..").TimestampLike | yup.Maybe<null>;
     title: string;
@@ -512,7 +495,6 @@ export declare const measureCounterTacticSchema: yup.ObjectSchema<{
     type: undefined;
     uid: undefined;
     sourceId: undefined;
-    ordinal: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     title: undefined;
@@ -541,7 +523,6 @@ export declare const phoneTacticSchema: yup.ObjectSchema<{
     type: "phone";
     uid: string | null | undefined;
     sourceId: string | undefined;
-    ordinal: number | null | undefined;
     createdAt: import("..").TimestampLike | yup.Maybe<null>;
     updatedAt: import("..").TimestampLike | yup.Maybe<null>;
     title: string;
@@ -569,7 +550,6 @@ export declare const phoneTacticSchema: yup.ObjectSchema<{
     type: undefined;
     uid: undefined;
     sourceId: undefined;
-    ordinal: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     title: undefined;
@@ -599,7 +579,6 @@ export declare const breatheTacticSchema: yup.ObjectSchema<{
     type: "breathe";
     uid: string | null | undefined;
     sourceId: string | undefined;
-    ordinal: number | null | undefined;
     createdAt: import("..").TimestampLike | yup.Maybe<null>;
     updatedAt: import("..").TimestampLike | yup.Maybe<null>;
     title: string;
@@ -629,7 +608,6 @@ export declare const breatheTacticSchema: yup.ObjectSchema<{
     type: undefined;
     uid: undefined;
     sourceId: undefined;
-    ordinal: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     title: undefined;
@@ -661,7 +639,6 @@ export declare const urgeSurfingTacticSchema: yup.ObjectSchema<{
     type: "urge-surfing";
     uid: string | null | undefined;
     sourceId: string | undefined;
-    ordinal: number | null | undefined;
     createdAt: import("..").TimestampLike | yup.Maybe<null>;
     updatedAt: import("..").TimestampLike | yup.Maybe<null>;
     title: string;
@@ -687,7 +664,6 @@ export declare const urgeSurfingTacticSchema: yup.ObjectSchema<{
     type: undefined;
     uid: undefined;
     sourceId: undefined;
-    ordinal: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     title: undefined;
@@ -715,7 +691,6 @@ export declare const taskTacticSchema: yup.ObjectSchema<{
     type: "task";
     uid: string | null | undefined;
     sourceId: string | undefined;
-    ordinal: number | null | undefined;
     createdAt: import("..").TimestampLike | yup.Maybe<null>;
     updatedAt: import("..").TimestampLike | yup.Maybe<null>;
     title: string;
@@ -741,7 +716,6 @@ export declare const taskTacticSchema: yup.ObjectSchema<{
     type: undefined;
     uid: undefined;
     sourceId: undefined;
-    ordinal: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     title: undefined;
@@ -769,7 +743,6 @@ export declare const questionTacticSchema: yup.ObjectSchema<{
     type: "question";
     uid: string | null | undefined;
     sourceId: string | undefined;
-    ordinal: number | null | undefined;
     createdAt: import("..").TimestampLike | yup.Maybe<null>;
     updatedAt: import("..").TimestampLike | yup.Maybe<null>;
     title: string;
@@ -795,7 +768,6 @@ export declare const questionTacticSchema: yup.ObjectSchema<{
     type: undefined;
     uid: undefined;
     sourceId: undefined;
-    ordinal: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     title: undefined;

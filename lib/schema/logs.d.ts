@@ -273,7 +273,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             minute: number;
         } | undefined;
         isFeatured?: yup.Maybe<boolean | undefined>;
-        recommendationsCount?: number | undefined;
+        programsCount?: number | undefined;
         time?: {
             [x: string]: {
                 suggestedTacticIds?: string[] | undefined;
@@ -428,7 +428,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         createdAt: undefined;
         updatedAt: undefined;
         parentIssueIds: "";
-        recommendationsCount: undefined;
+        programsCount: undefined;
         timezone: undefined;
         impulse: undefined;
         impulseDebrief: undefined;
@@ -1288,7 +1288,7 @@ export declare const logSchema: yup.Lazy<{
             minute: number;
         } | undefined;
         isFeatured?: yup.Maybe<boolean | undefined>;
-        recommendationsCount?: number | undefined;
+        programsCount?: number | undefined;
         time?: {
             [x: string]: {
                 suggestedTacticIds?: string[] | undefined;

@@ -65,7 +65,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     createdAt: TimestampLike | yup.Maybe<null>;
     updatedAt: TimestampLike | yup.Maybe<null>;
     parentIssueIds: string[] | undefined;
-    recommendationsCount: number | undefined;
+    programsCount: number | undefined;
     timezone: string;
     impulse: {
         [x: string]: {
@@ -160,7 +160,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     createdAt: undefined;
     updatedAt: undefined;
     parentIssueIds: "";
-    recommendationsCount: undefined;
+    programsCount: undefined;
     timezone: undefined;
     impulse: undefined;
     impulseDebrief: undefined;

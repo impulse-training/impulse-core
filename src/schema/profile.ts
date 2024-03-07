@@ -40,5 +40,5 @@ export const profileSchema = yup.object().shape({
 });
 
 export type ProfileValue = yup.InferType<typeof profileSchema>;
-// recommendationsCount: yup.number(),
+// programsCount: yup.number(),
 // scheduledNotificationIds: optionalStringArray,
