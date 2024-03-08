@@ -16,7 +16,6 @@ export const programSchema = yup.object().shape({
   recommendationSummary: yup.string().nullable(),
   impulse: strategySchema,
   impulseDebrief: strategySchema,
-  recap: timeRoutineSchema.optional().default(undefined),
   time: optionalObjectOf(timeRoutineSchema.required()),
   location: optionalObjectOf(locationRoutineSchema.required()),
   uid: yup.string().required(),

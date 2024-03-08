@@ -135,18 +135,6 @@ const timeLogSchema = baseLogSchema.concat(
   })
 );
 
-export type RecapLogValue = WithTypes<typeof recapLogSchema>;
-
-export function logIsRecapLog(log: LogValue): log is RecapLogValue {
-  return log.type === 'recap';
-}
-const recapLogSchema = baseLogSchema.concat(
-  yup.object().shape({
-    type: yup.mixed<'recap'>().oneOf(['recap']).required(),
-    isDisplayable: yup.boolean().oneOf([true]).required(),
-  })
-);
-
 export type MotionLogValue = WithTypes<typeof motionLogSchema>;
 export function logIsMotionLog(log: LogValue): log is MotionLogValue {
   return log.type === 'motion';
@@ -179,8 +167,6 @@ export const logSchema = yup.lazy(value => {
       return locationLogSchema;
     case 'time':
       return timeLogSchema;
-    case 'recap':
-      return recapLogSchema;
     case 'motion':
       return motionLogSchema;
     case 'button':
@@ -194,6 +180,5 @@ export type LogValue =
   | ImpulseLogValue
   | LocationLogValue
   | TimeLogValue
-  | RecapLogValue
   | MotionLogValue
   | ButtonLogValue;

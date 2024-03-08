@@ -8,7 +8,6 @@ export const {
   impulseFactory,
   timeLogFactory,
   motionLogFactory,
-  recapLogFactory,
   profileFactory,
   supportGroupFactory,
   tacticFactory,

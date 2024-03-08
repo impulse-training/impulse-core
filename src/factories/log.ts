@@ -3,7 +3,6 @@ import {
   ImpulseLogValue,
   LocationLogValue,
   MotionLogValue,
-  RecapLogValue,
   TimeLogValue,
 } from '../schema/logs';
 import { TimestampLike } from '../utils/TimestampLike';
@@ -54,23 +53,6 @@ export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>
     location: {},
     tacticsById: {},
     locationIsFetching: false,
-    strategy,
-    seenTacticIds: [],
-    completedTacticIds: [],
-  });
-
-export const makeRecapLogFactory = (TimestampKlass: typeof TimestampLike) =>
-  Factory.makeFactory<RecapLogValue>({
-    uid: Factory.each(i => i.toString()),
-    type: 'recap',
-    createdAt: TimestampKlass.now(),
-    updatedAt: TimestampKlass.now(),
-    startTime: TimestampKlass.now(),
-    timezone: 'America/Botota',
-    isDisplayable: true,
-    location: {},
-    locationIsFetching: false,
-    tacticsById: {},
     strategy,
     seenTacticIds: [],
     completedTacticIds: [],

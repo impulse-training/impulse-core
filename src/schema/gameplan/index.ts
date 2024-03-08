@@ -22,8 +22,6 @@ export const gameplanSchema = yup.object().shape({
   // Strategies - these are the sequences of tactics to try, including conditional tactics
   impulse: objectOf(strategySchema),
   impulseDebrief: objectOf(strategySchema),
-  // Daily recap
-  recap: timeRoutineSchema.optional().default(undefined),
   // These are the strategies for scheduled times of day...
   time: optionalObjectOf(timeRoutineSchema.required()),
   // ...Or when arriving at or leaving a location
