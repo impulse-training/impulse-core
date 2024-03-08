@@ -74,14 +74,14 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         email: string;
         invitationCode: string;
     }, "uid" | "email" | "invitationCode" | ("createdAt" | "updatedAt" | "avatar" | "parentIssueIds" | "timezone" | "buttonId" | "isAdmin" | "isSuperAdmin" | "activeImpulseId" | "currentAppState" | "showStorybook" | "lastActiveAt" | "expoPushToken" | "releaseChannel" | "notificationPreferences" | "isCurrentlyTrackingMotion" | "showTacticsFromSupportGroups" | "androidPermissions" | "stepTrackingEnabled" | "displayName" | "firstName" | "lastName" | "nickName" | "region" | "phoneNumber" | "isTourCompleted" | "isButtonSetupSkipped")>;
-    gameplanFactory: import("factory.ts").Factory<import("..").GameplanValue, "createdAt" | "updatedAt" | "uid" | "tacticsById" | "name" | "isFeatured" | "parentIssueIds" | "impulse" | "impulseDebrief" | "time" | "location" | "scheduledNotificationIds" | "dontGenerateRecapTacticsForTacticIds">;
+    gameplanFactory: import("factory.ts").Factory<import("..").GameplanValue, "createdAt" | "updatedAt" | "uid" | "tacticsById" | "name" | "programId" | "parentIssueIds" | "impulse" | "impulseDebrief" | "time" | "location" | "scheduledNotificationIds" | "dontGenerateRecapTacticsForTacticIds">;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
-        isFeatured?: boolean | null | undefined;
         parentId?: string | null | undefined;
         customUnit?: string | undefined;
         programsCount?: number | null | undefined;
         profileCount?: number | null | undefined;
+        isFeatured?: boolean | null | undefined;
         createdAt: {
             seconds: number;
             nanoseconds: number;
@@ -105,7 +105,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         synonyms: (string | undefined)[];
         parentIds: (string | undefined)[];
         parentNames: (string | undefined)[];
-    }, "createdAt" | "updatedAt" | "name" | "impulse" | "impulseDebrief" | "unit" | "synonyms" | "parentIds" | "parentNames" | ("path" | "isFeatured" | "parentId" | "customUnit" | "programsCount" | "profileCount")>;
+    }, "createdAt" | "updatedAt" | "name" | "impulse" | "impulseDebrief" | "unit" | "synonyms" | "parentIds" | "parentNames" | ("path" | "parentId" | "customUnit" | "programsCount" | "profileCount" | "isFeatured")>;
     adminProfileFactory: import("factory.ts").Factory<{
         createdAt?: TimestampLike | import("yup").Maybe<null>;
         updatedAt?: TimestampLike | import("yup").Maybe<null>;

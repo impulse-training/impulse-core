@@ -258,7 +258,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         updatedAt?: TimestampLike | yup.Maybe<null>;
         tacticsById?: any;
         name?: yup.Maybe<string | undefined>;
-        isFeatured?: yup.Maybe<boolean | undefined>;
+        programId?: yup.Maybe<string | undefined>;
         parentIssueIds?: string[] | undefined;
         time?: {
             [x: string]: {
@@ -390,7 +390,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     gameplan: {
         uid: undefined;
         name: undefined;
-        isFeatured: undefined;
+        programId: undefined;
         createdAt: undefined;
         updatedAt: undefined;
         parentIssueIds: "";
@@ -1077,7 +1077,7 @@ export declare const logSchema: yup.Lazy<{
         updatedAt?: TimestampLike | yup.Maybe<null>;
         tacticsById?: any;
         name?: yup.Maybe<string | undefined>;
-        isFeatured?: yup.Maybe<boolean | undefined>;
+        programId?: yup.Maybe<string | undefined>;
         parentIssueIds?: string[] | undefined;
         time?: {
             [x: string]: {

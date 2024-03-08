@@ -2,11 +2,11 @@ import * as Factory from 'factory.ts';
 import { TimestampLike } from '../utils/TimestampLike';
 export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     path?: string | null | undefined;
-    isFeatured?: boolean | null | undefined;
     parentId?: string | null | undefined;
     customUnit?: string | undefined;
     programsCount?: number | null | undefined;
     profileCount?: number | null | undefined;
+    isFeatured?: boolean | null | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -30,4 +30,4 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
     synonyms: (string | undefined)[];
     parentIds: (string | undefined)[];
     parentNames: (string | undefined)[];
-}, "createdAt" | "updatedAt" | "name" | "impulse" | "impulseDebrief" | "unit" | "synonyms" | "parentIds" | "parentNames" | ("path" | "isFeatured" | "parentId" | "customUnit" | "programsCount" | "profileCount")>;
+}, "createdAt" | "updatedAt" | "name" | "impulse" | "impulseDebrief" | "unit" | "synonyms" | "parentIds" | "parentNames" | ("path" | "parentId" | "customUnit" | "programsCount" | "profileCount" | "isFeatured")>;

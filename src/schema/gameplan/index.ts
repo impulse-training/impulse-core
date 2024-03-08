@@ -14,7 +14,7 @@ export type GameplanValue = WithTypes<typeof gameplanSchema>;
 export const gameplanSchema = yup.object().shape({
   uid: yup.string().required(),
   name: yup.string().notRequired(),
-  isFeatured: yup.boolean().notRequired(),
+  programId: yup.string().notRequired(),
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
   parentIssueIds: optionalStringArray,

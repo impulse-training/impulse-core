@@ -7,7 +7,7 @@ export type GameplanValue = WithTypes<typeof gameplanSchema>;
 export declare const gameplanSchema: yup.ObjectSchema<{
     uid: string;
     name: yup.Maybe<string | undefined>;
-    isFeatured: yup.Maybe<boolean | undefined>;
+    programId: yup.Maybe<string | undefined>;
     createdAt: TimestampLike | yup.Maybe<null>;
     updatedAt: TimestampLike | yup.Maybe<null>;
     parentIssueIds: string[] | undefined;
@@ -68,7 +68,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
 }, yup.AnyObject, {
     uid: undefined;
     name: undefined;
-    isFeatured: undefined;
+    programId: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     parentIssueIds: "";
