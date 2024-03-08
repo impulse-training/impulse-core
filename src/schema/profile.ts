@@ -3,12 +3,12 @@ import * as yup from 'yup';
 import { notificationOptionSchema } from './notification';
 import { imageSchema } from './utils/image';
 import { optionalObjectOf } from './utils/objectOf';
-import { timestampSchema } from './utils/timestamp';
+import { optionalTimestampSchema } from './utils/timestamp';
 
 export const profileSchema = yup.object().shape({
   uid: yup.string().required(),
-  createdAt: timestampSchema,
-  updatedAt: timestampSchema,
+  createdAt: optionalTimestampSchema,
+  updatedAt: optionalTimestampSchema,
   buttonId: yup.string().optional(),
   isAdmin: yup.boolean().optional(),
   isSuperAdmin: yup.boolean().optional(),
@@ -19,7 +19,9 @@ export const profileSchema = yup.object().shape({
   lastActiveAt: yup.date().optional(),
   expoPushToken: yup.string().optional(),
   releaseChannel: yup.string().oneOf(['default', 'canary']).optional(),
-  notificationPreferences: optionalObjectOf(notificationOptionSchema),
+  notificationPreferences: optionalObjectOf(
+    yup.array().of(notificationOptionSchema)
+  ),
   isCurrentlyTrackingMotion: yup.boolean().optional(),
   showTacticsFromSupportGroups: yup.boolean().optional(),
   androidPermissions: optionalObjectOf(yup.boolean().required()),

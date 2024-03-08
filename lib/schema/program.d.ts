@@ -25,19 +25,6 @@ export declare const programSchema: yup.ObjectSchema<{
         }[] | undefined;
         tacticIds: string[];
     };
-    recap: {
-        suggestedTacticIds?: string[] | undefined;
-        conditionalTacticIds?: {
-            ids: string[];
-            condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-            value: {};
-        }[] | undefined;
-        title: string;
-        tacticIds: string[];
-        weekdays: number[];
-        hour: number;
-        minute: number;
-    } | undefined;
     time: {
         [x: string]: {
             suggestedTacticIds?: string[] | undefined;
@@ -94,7 +81,6 @@ export declare const programSchema: yup.ObjectSchema<{
         suggestedTacticIds: "";
         conditionalTacticIds: "";
     };
-    recap: undefined;
     time: undefined;
     location: undefined;
     uid: undefined;

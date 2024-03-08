@@ -55,14 +55,3 @@ export class Log {
 export function formatPattern(pattern?: { emoji?: string; name: string }) {
   return pattern?.emoji || pattern?.name;
 }
-// TODO: Remove this export (it's used in the app)
-export const tagSymbol = formatPattern;
-
-export function initials(str: string) {
-  if (!str) return '';
-  const matches = str
-    .split(/(?=[A-Z])/)
-    .join(' ')
-    .match(/\b(\w)/g);
-  return (matches?.join('') || '').toUpperCase();
-}

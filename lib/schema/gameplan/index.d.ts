@@ -33,19 +33,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             tacticIds: string[];
         };
     };
-    recap: {
-        suggestedTacticIds?: string[] | undefined;
-        conditionalTacticIds?: {
-            ids: string[];
-            condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-            value: {};
-        }[] | undefined;
-        title: string;
-        tacticIds: string[];
-        weekdays: number[];
-        hour: number;
-        minute: number;
-    } | undefined;
     time: {
         [x: string]: {
             suggestedTacticIds?: string[] | undefined;
@@ -106,7 +93,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     parentIssueIds: "";
     impulse: undefined;
     impulseDebrief: undefined;
-    recap: undefined;
     time: undefined;
     location: undefined;
     tacticsById: any;

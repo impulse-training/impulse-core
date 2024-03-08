@@ -1,6 +1,8 @@
 import * as Factory from 'factory.ts';
 import { TimestampLike } from '../utils/TimestampLike';
 export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
+    createdAt?: TimestampLike | import("yup").Maybe<null>;
+    updatedAt?: TimestampLike | import("yup").Maybe<null>;
     avatar?: {
         localFilePath?: import("yup").Maybe<string | undefined>;
         storagePath?: import("yup").Maybe<string | undefined>;
@@ -18,7 +20,7 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     expoPushToken?: string | undefined;
     releaseChannel?: "default" | "canary" | undefined;
     notificationPreferences?: {
-        [x: string]: NonNullable<"push" | "email" | undefined>;
+        [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
     } | null | undefined;
     isCurrentlyTrackingMotion?: boolean | undefined;
     showTacticsFromSupportGroups?: boolean | undefined;
@@ -35,21 +37,13 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     isReadyForTour?: boolean | undefined;
     isTourCompleted?: boolean | undefined;
     isButtonSetupSkipped?: boolean | undefined;
-    createdAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    };
-    updatedAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    };
     uid: string;
     email: string;
     invitationCode: string;
-}, "createdAt" | "updatedAt" | "uid" | "email" | "invitationCode" | ("avatar" | "parentIssueIds" | "timezone" | "buttonId" | "isAdmin" | "isSuperAdmin" | "activeImpulseId" | "currentAppState" | "showStorybook" | "lastActiveAt" | "expoPushToken" | "releaseChannel" | "notificationPreferences" | "isCurrentlyTrackingMotion" | "showTacticsFromSupportGroups" | "androidPermissions" | "stepTrackingEnabled" | "displayName" | "firstName" | "lastName" | "nickName" | "region" | "phoneNumber" | "isReadyForTour" | "isTourCompleted" | "isButtonSetupSkipped")>;
+}, "uid" | "email" | "invitationCode" | ("createdAt" | "updatedAt" | "avatar" | "parentIssueIds" | "timezone" | "buttonId" | "isAdmin" | "isSuperAdmin" | "activeImpulseId" | "currentAppState" | "showStorybook" | "lastActiveAt" | "expoPushToken" | "releaseChannel" | "notificationPreferences" | "isCurrentlyTrackingMotion" | "showTacticsFromSupportGroups" | "androidPermissions" | "stepTrackingEnabled" | "displayName" | "firstName" | "lastName" | "nickName" | "region" | "phoneNumber" | "isReadyForTour" | "isTourCompleted" | "isButtonSetupSkipped")>;
 export declare const makeAdminProfileFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
+    createdAt?: TimestampLike | import("yup").Maybe<null>;
+    updatedAt?: TimestampLike | import("yup").Maybe<null>;
     avatar?: {
         localFilePath?: import("yup").Maybe<string | undefined>;
         storagePath?: import("yup").Maybe<string | undefined>;
@@ -67,7 +61,7 @@ export declare const makeAdminProfileFactory: (TimestampKlass: typeof TimestampL
     expoPushToken?: string | undefined;
     releaseChannel?: "default" | "canary" | undefined;
     notificationPreferences?: {
-        [x: string]: NonNullable<"push" | "email" | undefined>;
+        [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
     } | null | undefined;
     isCurrentlyTrackingMotion?: boolean | undefined;
     showTacticsFromSupportGroups?: boolean | undefined;
@@ -84,17 +78,7 @@ export declare const makeAdminProfileFactory: (TimestampKlass: typeof TimestampL
     isReadyForTour?: boolean | undefined;
     isTourCompleted?: boolean | undefined;
     isButtonSetupSkipped?: boolean | undefined;
-    createdAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    };
-    updatedAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    };
     uid: string;
     email: string;
     invitationCode: string;
-}, "createdAt" | "updatedAt" | "uid" | "email" | "invitationCode" | ("avatar" | "parentIssueIds" | "timezone" | "buttonId" | "isAdmin" | "isSuperAdmin" | "activeImpulseId" | "currentAppState" | "showStorybook" | "lastActiveAt" | "expoPushToken" | "releaseChannel" | "notificationPreferences" | "isCurrentlyTrackingMotion" | "showTacticsFromSupportGroups" | "androidPermissions" | "stepTrackingEnabled" | "displayName" | "firstName" | "lastName" | "nickName" | "region" | "phoneNumber" | "isReadyForTour" | "isTourCompleted" | "isButtonSetupSkipped")>;
+}, "uid" | "email" | "invitationCode" | ("createdAt" | "updatedAt" | "avatar" | "parentIssueIds" | "timezone" | "buttonId" | "isAdmin" | "isSuperAdmin" | "activeImpulseId" | "currentAppState" | "showStorybook" | "lastActiveAt" | "expoPushToken" | "releaseChannel" | "notificationPreferences" | "isCurrentlyTrackingMotion" | "showTacticsFromSupportGroups" | "androidPermissions" | "stepTrackingEnabled" | "displayName" | "firstName" | "lastName" | "nickName" | "region" | "phoneNumber" | "isReadyForTour" | "isTourCompleted" | "isButtonSetupSkipped")>;

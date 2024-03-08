@@ -26,5 +26,3 @@ export declare function formatPattern(pattern?: {
     emoji?: string;
     name: string;
 }): string | undefined;
-export declare const tagSymbol: typeof formatPattern;
-export declare function initials(str: string): string;

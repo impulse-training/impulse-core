@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-export type NonRecursiveTactic = Exclude<TacticValue, FolderTacticValue | RecapTacticValue>;
+export type NonRecursiveTactic = Exclude<TacticValue, FolderTacticValue>;
 export declare const folderTacticSchema: yup.ObjectSchema<{
     type: "folder";
     uid: string | null | undefined;
@@ -62,64 +62,6 @@ export declare const folderTacticSchema: yup.ObjectSchema<{
     autogenerate: undefined;
 }, "">;
 export type FolderTacticValue = Omit<yup.InferType<typeof folderTacticSchema>, 'tacticsById'> & {
-    tacticsById: Record<string, NonRecursiveTactic>;
-};
-export declare const recapTacticSchema: yup.ObjectSchema<{
-    type: "recap";
-    uid: string | null | undefined;
-    sourceId: string | undefined;
-    createdAt: import("..").TimestampLike | yup.Maybe<null>;
-    updatedAt: import("..").TimestampLike | yup.Maybe<null>;
-    title: string;
-    subtitle: yup.Maybe<string | undefined>;
-    description: string | null | undefined;
-    image: {
-        localFilePath?: yup.Maybe<string | undefined>;
-        storagePath?: yup.Maybe<string | undefined>;
-        uri?: yup.Maybe<string | undefined>;
-    } | null | undefined;
-    backgroundColor: string;
-    isTemplate: boolean | null | undefined;
-    language: string | null | undefined;
-    href: string | null | undefined;
-    categoryIds: (string | undefined)[] | null | undefined;
-    isShared: boolean | null | undefined;
-    isResponseRequired: boolean | null | undefined;
-    timerSeconds: yup.Maybe<number | undefined>;
-    isAvailableForRecommendation: boolean | null | undefined;
-    numberOfLikes: number | null | undefined;
-    isSuggested: boolean | undefined;
-    tacticId: string;
-    tacticsById: {};
-}, yup.AnyObject, {
-    type: undefined;
-    uid: undefined;
-    sourceId: undefined;
-    createdAt: undefined;
-    updatedAt: undefined;
-    title: undefined;
-    subtitle: undefined;
-    description: undefined;
-    image: {
-        localFilePath: undefined;
-        storagePath: undefined;
-        uri: undefined;
-    };
-    backgroundColor: undefined;
-    isTemplate: undefined;
-    language: undefined;
-    href: undefined;
-    categoryIds: "";
-    isShared: undefined;
-    isResponseRequired: undefined;
-    timerSeconds: undefined;
-    isAvailableForRecommendation: undefined;
-    numberOfLikes: undefined;
-    isSuggested: undefined;
-    tacticId: undefined;
-    tacticsById: {};
-}, "">;
-export type RecapTacticValue = Omit<yup.InferType<typeof recapTacticSchema>, 'tacticsById'> & {
     tacticsById: Record<string, NonRecursiveTactic>;
 };
 export declare const stepsTacticSchema: yup.ObjectSchema<{
@@ -791,7 +733,7 @@ export declare const questionTacticSchema: yup.ObjectSchema<{
     isSuggested: undefined;
 }, "">;
 export type QuestionTacticValue = yup.InferType<typeof questionTacticSchema>;
-export type TacticValue = PhoneTacticValue | AudioTacticValue | UrgeSurfingTacticValue | VideoTacticValue | QuestionTacticValue | TaskTacticValue | MeasureTacticValue | FolderTacticValue | BreatheTacticValue | StepsTacticValue | EmotionsTacticValue | RecapTacticValue;
+export type TacticValue = PhoneTacticValue | AudioTacticValue | UrgeSurfingTacticValue | VideoTacticValue | QuestionTacticValue | TaskTacticValue | MeasureTacticValue | FolderTacticValue | BreatheTacticValue | StepsTacticValue | EmotionsTacticValue;
 export declare const tacticSchemas: Record<TacticValue['type'], yup.ObjectSchema<TacticValue>>;
 export declare const tacticSchema: yup.Lazy<ValidatedTactic, yup.AnyObject, any>;
 type ValidatedTactic = {
@@ -810,7 +752,6 @@ export declare const isPhoneTacticValue: ({ type }: TacticValue) => boolean;
 export declare const isBreatheTactic: ({ type }: TacticValue) => boolean;
 export declare const isTaskTactic: ({ type }: TacticValue) => boolean;
 export declare const isQuestionTactic: ({ type }: TacticValue) => boolean;
-export declare const isRecapTactic: ({ type }: TacticValue) => boolean;
 export type WithTacticsById<T, TT = TacticValue> = Omit<T, 'tacticsById'> & {
     tacticsById: Record<string, TT>;
 };

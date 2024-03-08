@@ -2,16 +2,8 @@ import { AppStateStatus } from 'react-native';
 import * as yup from 'yup';
 export declare const profileSchema: yup.ObjectSchema<{
     uid: string;
-    createdAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    };
-    updatedAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    };
+    createdAt: import("..").TimestampLike | yup.Maybe<null>;
+    updatedAt: import("..").TimestampLike | yup.Maybe<null>;
     buttonId: string | undefined;
     isAdmin: boolean | undefined;
     isSuperAdmin: boolean | undefined;
@@ -23,7 +15,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     expoPushToken: string | undefined;
     releaseChannel: "default" | "canary" | undefined;
     notificationPreferences: {
-        [x: string]: NonNullable<"push" | "email" | undefined>;
+        [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
     } | null | undefined;
     isCurrentlyTrackingMotion: boolean | undefined;
     showTacticsFromSupportGroups: boolean | undefined;
@@ -50,16 +42,8 @@ export declare const profileSchema: yup.ObjectSchema<{
     invitationCode: string;
 }, yup.AnyObject, {
     uid: undefined;
-    createdAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    updatedAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
+    createdAt: undefined;
+    updatedAt: undefined;
     buttonId: undefined;
     isAdmin: undefined;
     isSuperAdmin: undefined;
