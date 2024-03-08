@@ -7,6 +7,7 @@ export declare class Log {
     get selectedPattern(): {
         createdAt?: import("..").TimestampLike | import("yup").Maybe<null>;
         updatedAt?: import("..").TimestampLike | import("yup").Maybe<null>;
+        parentIssueIds?: string[] | undefined;
         supportGroupIds?: string[] | undefined;
         notification?: import("yup").Maybe<{} | undefined> | {
             title: string;
@@ -15,7 +16,6 @@ export declare class Log {
         setbackTacticId?: import("yup").Maybe<string | undefined>;
         setbackThreshold?: import("yup").Maybe<number | undefined>;
         issueId?: import("yup").Maybe<string | undefined>;
-        parentIssueIds?: string[] | undefined;
         sendWeeklyReports?: import("yup").Maybe<boolean | undefined>;
         uid: string;
         name: string;

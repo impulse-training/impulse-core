@@ -35,7 +35,6 @@ export const profileSchema = yup.object().shape({
   timezone: yup.string().optional(),
   phoneNumber: yup.string().optional(),
   avatar: imageSchema.optional().default(undefined),
-  isReadyForTour: yup.boolean().optional(),
   isTourCompleted: yup.boolean().optional(),
   isButtonSetupSkipped: yup.boolean().optional(),
   invitationCode: yup.string().required(),

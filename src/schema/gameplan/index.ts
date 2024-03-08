@@ -1,6 +1,5 @@
 import * as yup from 'yup';
 import { TimestampLike } from '../../utils/TimestampLike';
-import { patternSchema } from '../pattern';
 import { TacticValue, WithTacticsById, tacticSchema } from '../tactic';
 import { optionalStringArray } from '../utils/array';
 import { objectOf, optionalObjectOf } from '../utils/objectOf';
@@ -28,7 +27,6 @@ export const gameplanSchema = yup.object().shape({
   location: optionalObjectOf(locationRoutineSchema.required()),
   // Data - we keep copies of relevant data on the gameplan document, for performance reasons
   tacticsById: objectOf(tacticSchema) as any,
-  patternsById: objectOf(patternSchema),
   scheduledNotificationIds: optionalStringArray,
   dontGenerateRecapTacticsForTacticIds: optionalStringArray,
 });

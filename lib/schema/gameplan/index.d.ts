@@ -63,25 +63,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
         };
     } | null | undefined;
     tacticsById: any;
-    patternsById: {
-        [x: string]: {
-            createdAt?: TimestampLike | yup.Maybe<null>;
-            updatedAt?: TimestampLike | yup.Maybe<null>;
-            supportGroupIds?: string[] | undefined;
-            notification?: yup.Maybe<{} | undefined> | {
-                title: string;
-                body: string;
-            };
-            setbackTacticId?: yup.Maybe<string | undefined>;
-            setbackThreshold?: yup.Maybe<number | undefined>;
-            issueId?: yup.Maybe<string | undefined>;
-            parentIssueIds?: string[] | undefined;
-            sendWeeklyReports?: yup.Maybe<boolean | undefined>;
-            uid: string;
-            name: string;
-            ordinal: number;
-        };
-    };
     scheduledNotificationIds: string[] | undefined;
     dontGenerateRecapTacticsForTacticIds: string[] | undefined;
 }, yup.AnyObject, {
@@ -96,7 +77,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     time: undefined;
     location: undefined;
     tacticsById: any;
-    patternsById: undefined;
     scheduledNotificationIds: "";
     dontGenerateRecapTacticsForTacticIds: "";
 }, "">;

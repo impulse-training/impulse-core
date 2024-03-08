@@ -36,7 +36,6 @@ export declare const profileSchema: yup.ObjectSchema<{
         storagePath?: yup.Maybe<string | undefined>;
         uri?: yup.Maybe<string | undefined>;
     } | undefined;
-    isReadyForTour: boolean | undefined;
     isTourCompleted: boolean | undefined;
     isButtonSetupSkipped: boolean | undefined;
     invitationCode: string;
@@ -68,7 +67,6 @@ export declare const profileSchema: yup.ObjectSchema<{
     timezone: undefined;
     phoneNumber: undefined;
     avatar: undefined;
-    isReadyForTour: undefined;
     isTourCompleted: undefined;
     isButtonSetupSkipped: undefined;
     invitationCode: undefined;

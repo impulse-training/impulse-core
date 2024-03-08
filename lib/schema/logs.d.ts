@@ -256,10 +256,10 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     gameplan: {
         createdAt?: TimestampLike | yup.Maybe<null>;
         updatedAt?: TimestampLike | yup.Maybe<null>;
-        name?: yup.Maybe<string | undefined>;
-        parentIssueIds?: string[] | undefined;
         tacticsById?: any;
+        name?: yup.Maybe<string | undefined>;
         isFeatured?: yup.Maybe<boolean | undefined>;
+        parentIssueIds?: string[] | undefined;
         time?: {
             [x: string]: {
                 suggestedTacticIds?: string[] | undefined;
@@ -314,25 +314,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 tacticIds: string[];
             };
         };
-        patternsById: {
-            [x: string]: {
-                createdAt?: TimestampLike | yup.Maybe<null>;
-                updatedAt?: TimestampLike | yup.Maybe<null>;
-                supportGroupIds?: string[] | undefined;
-                notification?: yup.Maybe<{} | undefined> | {
-                    title: string;
-                    body: string;
-                };
-                setbackTacticId?: yup.Maybe<string | undefined>;
-                setbackThreshold?: yup.Maybe<number | undefined>;
-                issueId?: yup.Maybe<string | undefined>;
-                parentIssueIds?: string[] | undefined;
-                sendWeeklyReports?: yup.Maybe<boolean | undefined>;
-                uid: string;
-                name: string;
-                ordinal: number;
-            };
-        };
     };
     outcome: Outcome | undefined;
     patternId: string;
@@ -340,6 +321,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         [x: string]: {
             createdAt?: TimestampLike | yup.Maybe<null>;
             updatedAt?: TimestampLike | yup.Maybe<null>;
+            parentIssueIds?: string[] | undefined;
             supportGroupIds?: string[] | undefined;
             notification?: yup.Maybe<{} | undefined> | {
                 title: string;
@@ -348,7 +330,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             setbackTacticId?: yup.Maybe<string | undefined>;
             setbackThreshold?: yup.Maybe<number | undefined>;
             issueId?: yup.Maybe<string | undefined>;
-            parentIssueIds?: string[] | undefined;
             sendWeeklyReports?: yup.Maybe<boolean | undefined>;
             uid: string;
             name: string;
@@ -418,7 +399,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         time: undefined;
         location: undefined;
         tacticsById: any;
-        patternsById: undefined;
         scheduledNotificationIds: "";
         dontGenerateRecapTacticsForTacticIds: "";
     };
@@ -1062,25 +1042,6 @@ export declare const logSchema: yup.Lazy<{
         heading?: number | undefined;
         speed?: number | undefined;
     };
-    patternsById: {
-        [x: string]: {
-            createdAt?: TimestampLike | yup.Maybe<null>;
-            updatedAt?: TimestampLike | yup.Maybe<null>;
-            supportGroupIds?: string[] | undefined;
-            notification?: yup.Maybe<{} | undefined> | {
-                title: string;
-                body: string;
-            };
-            setbackTacticId?: yup.Maybe<string | undefined>;
-            setbackThreshold?: yup.Maybe<number | undefined>;
-            issueId?: yup.Maybe<string | undefined>;
-            parentIssueIds?: string[] | undefined;
-            sendWeeklyReports?: yup.Maybe<boolean | undefined>;
-            uid: string;
-            name: string;
-            ordinal: number;
-        };
-    };
     startTime: {
         seconds: number;
         nanoseconds: number;
@@ -1114,10 +1075,10 @@ export declare const logSchema: yup.Lazy<{
     gameplan: {
         createdAt?: TimestampLike | yup.Maybe<null>;
         updatedAt?: TimestampLike | yup.Maybe<null>;
-        name?: yup.Maybe<string | undefined>;
-        parentIssueIds?: string[] | undefined;
         tacticsById?: any;
+        name?: yup.Maybe<string | undefined>;
         isFeatured?: yup.Maybe<boolean | undefined>;
+        parentIssueIds?: string[] | undefined;
         time?: {
             [x: string]: {
                 suggestedTacticIds?: string[] | undefined;
@@ -1172,27 +1133,27 @@ export declare const logSchema: yup.Lazy<{
                 tacticIds: string[];
             };
         };
-        patternsById: {
-            [x: string]: {
-                createdAt?: TimestampLike | yup.Maybe<null>;
-                updatedAt?: TimestampLike | yup.Maybe<null>;
-                supportGroupIds?: string[] | undefined;
-                notification?: yup.Maybe<{} | undefined> | {
-                    title: string;
-                    body: string;
-                };
-                setbackTacticId?: yup.Maybe<string | undefined>;
-                setbackThreshold?: yup.Maybe<number | undefined>;
-                issueId?: yup.Maybe<string | undefined>;
-                parentIssueIds?: string[] | undefined;
-                sendWeeklyReports?: yup.Maybe<boolean | undefined>;
-                uid: string;
-                name: string;
-                ordinal: number;
-            };
-        };
     };
     patternId: string;
+    patternsById: {
+        [x: string]: {
+            createdAt?: TimestampLike | yup.Maybe<null>;
+            updatedAt?: TimestampLike | yup.Maybe<null>;
+            parentIssueIds?: string[] | undefined;
+            supportGroupIds?: string[] | undefined;
+            notification?: yup.Maybe<{} | undefined> | {
+                title: string;
+                body: string;
+            };
+            setbackTacticId?: yup.Maybe<string | undefined>;
+            setbackThreshold?: yup.Maybe<number | undefined>;
+            issueId?: yup.Maybe<string | undefined>;
+            sendWeeklyReports?: yup.Maybe<boolean | undefined>;
+            uid: string;
+            name: string;
+            ordinal: number;
+        };
+    };
 } | {
     createdAt?: TimestampLike | yup.Maybe<null>;
     updatedAt?: TimestampLike | yup.Maybe<null>;
