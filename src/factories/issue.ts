@@ -1,5 +1,6 @@
 import * as Factory from 'factory.ts';
-import { IssueValue } from '../schema';
+import { sample } from 'lodash';
+import { IssueValue, tacticColors } from '../schema';
 import { TimestampLike } from '../utils/TimestampLike';
 
 export const makeIssueFactory = (TimestampKlass: typeof TimestampLike) =>
@@ -8,7 +9,11 @@ export const makeIssueFactory = (TimestampKlass: typeof TimestampLike) =>
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     synonyms: ['Videos'],
-    unit: 'time',
+    measureTactic: {
+      type: 'measure-time',
+      title: 'How long did you spend?',
+      backgroundColor: sample(tacticColors)!,
+    },
     parentIds: [],
     parentNames: [
       'Behavioral pattern',

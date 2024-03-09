@@ -4,14 +4,12 @@ import { TacticValue, WithTacticsById } from './tactic';
 type Outcome = 'success' | 'setback' | 'indeterminate';
 export declare const tacticDataSchema: yup.ObjectSchema<{
     value: number;
-    unit: string;
     formattedValue: string;
     isTotal: yup.Maybe<boolean | undefined>;
     lowEmoji: yup.Maybe<string | undefined>;
     highEmoji: yup.Maybe<string | undefined>;
 }, yup.AnyObject, {
     value: undefined;
-    unit: undefined;
     formattedValue: undefined;
     isTotal: undefined;
     lowEmoji: undefined;
@@ -102,7 +100,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
             highEmoji?: yup.Maybe<string | undefined>;
             isTotal?: yup.Maybe<boolean | undefined>;
             value: number;
-            unit: string;
             formattedValue: string;
         };
     } | null | undefined;
@@ -242,7 +239,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             highEmoji?: yup.Maybe<string | undefined>;
             isTotal?: yup.Maybe<boolean | undefined>;
             value: number;
-            unit: string;
             formattedValue: string;
         };
     } | null | undefined;
@@ -572,7 +568,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
             highEmoji?: yup.Maybe<string | undefined>;
             isTotal?: yup.Maybe<boolean | undefined>;
             value: number;
-            unit: string;
             formattedValue: string;
         };
     } | null | undefined;
@@ -717,7 +712,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
             highEmoji?: yup.Maybe<string | undefined>;
             isTotal?: yup.Maybe<boolean | undefined>;
             value: number;
-            unit: string;
             formattedValue: string;
         };
     } | null | undefined;
@@ -856,7 +850,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
             highEmoji?: yup.Maybe<string | undefined>;
             isTotal?: yup.Maybe<boolean | undefined>;
             value: number;
-            unit: string;
             formattedValue: string;
         };
     } | null | undefined;
@@ -995,7 +988,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             highEmoji?: yup.Maybe<string | undefined>;
             isTotal?: yup.Maybe<boolean | undefined>;
             value: number;
-            unit: string;
             formattedValue: string;
         };
     } | null | undefined;
@@ -1097,7 +1089,6 @@ export declare const logSchema: yup.Lazy<{
             highEmoji?: yup.Maybe<string | undefined>;
             isTotal?: yup.Maybe<boolean | undefined>;
             value: number;
-            unit: string;
             formattedValue: string;
         };
     } | null | undefined;
@@ -1354,7 +1345,6 @@ export declare const logSchema: yup.Lazy<{
             highEmoji?: yup.Maybe<string | undefined>;
             isTotal?: yup.Maybe<boolean | undefined>;
             value: number;
-            unit: string;
             formattedValue: string;
         };
     } | null | undefined;
@@ -1447,7 +1437,6 @@ export declare const logSchema: yup.Lazy<{
             highEmoji?: yup.Maybe<string | undefined>;
             isTotal?: yup.Maybe<boolean | undefined>;
             value: number;
-            unit: string;
             formattedValue: string;
         };
     } | null | undefined;
@@ -1537,7 +1526,6 @@ export declare const logSchema: yup.Lazy<{
             highEmoji?: yup.Maybe<string | undefined>;
             isTotal?: yup.Maybe<boolean | undefined>;
             value: number;
-            unit: string;
             formattedValue: string;
         };
     } | null | undefined;
@@ -1627,7 +1615,6 @@ export declare const logSchema: yup.Lazy<{
             highEmoji?: yup.Maybe<string | undefined>;
             isTotal?: yup.Maybe<boolean | undefined>;
             value: number;
-            unit: string;
             formattedValue: string;
         };
     } | null | undefined;

@@ -14,7 +14,6 @@ type Outcome = 'success' | 'setback' | 'indeterminate';
 
 export const tacticDataSchema = yup.object({
   value: yup.number().required(),
-  unit: yup.string().required(),
   formattedValue: yup.string().required(),
   isTotal: yup.boolean().notRequired(),
   lowEmoji: yup.string().notRequired(),

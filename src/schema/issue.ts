@@ -1,4 +1,5 @@
 import * as yup from 'yup';
+import { measureTacticSchema } from './tactic';
 import { requiredStringArray } from './utils/array';
 import { timestampSchema } from './utils/timestamp';
 
@@ -19,12 +20,8 @@ export const issueSchema = yup.object().shape({
     .test('includes-name', 'Synonyms must include name', function (synonyms) {
       return synonyms.includes(this.parent.name);
     }),
-  unit: yup.mixed<'time' | 'custom'>().oneOf(['time', 'custom']).required(),
-  customUnit: yup.string().when('unit', (unit, schema) => {
-    return (unit as unknown as string) === 'custom'
-      ? schema.required('customUnit is required when unit is custom')
-      : schema.notRequired();
-  }),
+  measureTactic: measureTacticSchema,
+  setbackThreshold: yup.number(),
   path: yup.string().nullable(),
   parentIds: yup.array().of(yup.string()).required(),
   parentNames: yup.array().of(yup.string()).required(),
