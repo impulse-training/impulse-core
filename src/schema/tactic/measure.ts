@@ -33,6 +33,8 @@ export const measureTacticSchemas: Record<
 } as any;
 
 export const measureTacticSchema = yup.lazy(value => {
+  if (!value) return yup.mixed().required();
+
   if (typeof value.type === 'string' && value.type in measureTacticSchemas) {
     return measureTacticSchemas[value.type as MeasureTacticValue['type']];
   }

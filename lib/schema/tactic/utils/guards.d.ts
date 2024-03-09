@@ -1,0 +1,13 @@
+import { TacticValue } from '..';
+export declare const isStepsTactic: ({ type }: TacticValue) => boolean;
+export declare const isEmotionsTactic: ({ type }: TacticValue) => boolean;
+export declare const isAudioTactic: ({ type }: TacticValue) => boolean;
+export declare const isVideoTactic: ({ type }: TacticValue) => boolean;
+export declare const isMeasureSliderTactic: ({ type }: TacticValue) => boolean;
+export declare const isMeasureTimeTactic: ({ type }: TacticValue) => boolean;
+export declare const isFolderTactic: ({ type }: TacticValue) => boolean;
+export declare const isMeasureCounterTactic: ({ type }: TacticValue) => boolean;
+export declare const isPhoneTacticValue: ({ type }: TacticValue) => boolean;
+export declare const isBreatheTactic: ({ type }: TacticValue) => boolean;
+export declare const isTaskTactic: ({ type }: TacticValue) => boolean;
+export declare const isQuestionTactic: ({ type }: TacticValue) => boolean;

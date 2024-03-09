@@ -30,7 +30,6 @@ describe('gameplan', () => {
       }
     }
 
-    console.log({ errors });
     expect(errors.length).toEqual(1);
   });
 });
