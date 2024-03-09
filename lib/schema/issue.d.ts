@@ -22,11 +22,11 @@ export declare const issueSchema: yup.ObjectSchema<{
     profileCount: number | null | undefined;
     isFeatured: boolean | null | undefined;
     impulse: {
-        suggestedTacticIds: (string | undefined)[];
+        suggestedTacticIds: string[];
         llmPrompt: string;
     } | null;
     impulseDebrief: {
-        suggestedTacticIds: (string | undefined)[];
+        suggestedTacticIds: string[];
         llmPrompt: string;
     } | null;
 }, yup.AnyObject, {

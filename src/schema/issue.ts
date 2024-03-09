@@ -1,9 +1,10 @@
 import * as yup from 'yup';
+import { requiredStringArray } from './utils/array';
 import { timestampSchema } from './utils/timestamp';
 
 const impulseSchema = yup.object().shape({
   llmPrompt: yup.string().required(),
-  suggestedTacticIds: yup.array().of(yup.string()).required(),
+  suggestedTacticIds: requiredStringArray,
 });
 
 export const issueSchema = yup.object().shape({

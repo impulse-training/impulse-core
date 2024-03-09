@@ -94,11 +94,11 @@ export declare const factories: {
         };
         name: string;
         impulse: {
-            suggestedTacticIds: (string | undefined)[];
+            suggestedTacticIds: string[];
             llmPrompt: string;
         } | null;
         impulseDebrief: {
-            suggestedTacticIds: (string | undefined)[];
+            suggestedTacticIds: string[];
             llmPrompt: string;
         } | null;
         unit: NonNullable<"time" | "custom" | undefined>;
