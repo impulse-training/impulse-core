@@ -27,7 +27,7 @@ export const gameplanSchema = yup.object().shape({
   success: objectOf(strategySchema),
 
   // A record of the tactics that are used to measure the outcome, by patternId
-  measure: objectOf(strategySchema),
+  measureTacticIds: objectOf(yup.string().required()),
 
   // These are the strategies for scheduled times of day...
   time: optionalObjectOf(timeRoutineSchema.required()),

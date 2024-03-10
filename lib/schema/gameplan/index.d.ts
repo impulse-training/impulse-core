@@ -30,11 +30,8 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             tacticIds: string[];
         };
     };
-    measure: {
-        [x: string]: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        };
+    measureTacticIds: {
+        [x: string]: string;
     };
     time: {
         [x: string]: {
@@ -67,7 +64,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     main: undefined;
     setback: undefined;
     success: undefined;
-    measure: undefined;
+    measureTacticIds: undefined;
     time: undefined;
     location: undefined;
     tacticsById: any;

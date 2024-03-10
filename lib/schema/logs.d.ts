@@ -77,10 +77,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
             suggestedTacticIds?: string[] | undefined;
             tacticIds: string[];
         } | null | undefined;
-        measure?: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        } | null | undefined;
+        measureTacticId?: yup.Maybe<string | undefined>;
         main: {
             suggestedTacticIds?: string[] | undefined;
             tacticIds: string[];
@@ -134,10 +131,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
             tacticIds: "";
             suggestedTacticIds: "";
         };
-        measure: {
-            tacticIds: "";
-            suggestedTacticIds: "";
-        };
         success: {
             tacticIds: "";
             suggestedTacticIds: "";
@@ -146,6 +139,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
             tacticIds: "";
             suggestedTacticIds: "";
         };
+        measureTacticId: undefined;
     };
     seenStrategy: undefined;
     tacticsById: any;
@@ -222,10 +216,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             suggestedTacticIds?: string[] | undefined;
             tacticIds: string[];
         } | null | undefined;
-        measure?: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        } | null | undefined;
+        measureTacticId?: yup.Maybe<string | undefined>;
         main: {
             suggestedTacticIds?: string[] | undefined;
             tacticIds: string[];
@@ -301,11 +292,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 tacticIds: string[];
             };
         };
-        measure: {
-            [x: string]: {
-                suggestedTacticIds?: string[] | undefined;
-                tacticIds: string[];
-            };
+        measureTacticIds: {
+            [x: string]: string;
         };
     };
     outcome: Outcome | undefined;
@@ -440,10 +428,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             tacticIds: "";
             suggestedTacticIds: "";
         };
-        measure: {
-            tacticIds: "";
-            suggestedTacticIds: "";
-        };
         success: {
             tacticIds: "";
             suggestedTacticIds: "";
@@ -452,6 +436,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             tacticIds: "";
             suggestedTacticIds: "";
         };
+        measureTacticId: undefined;
     };
     seenStrategy: undefined;
     tacticsById: any;
@@ -474,7 +459,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         main: undefined;
         setback: undefined;
         success: undefined;
-        measure: undefined;
+        measureTacticIds: undefined;
         time: undefined;
         location: undefined;
         tacticsById: any;
@@ -549,10 +534,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
             suggestedTacticIds?: string[] | undefined;
             tacticIds: string[];
         } | null | undefined;
-        measure?: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        } | null | undefined;
+        measureTacticId?: yup.Maybe<string | undefined>;
         main: {
             suggestedTacticIds?: string[] | undefined;
             tacticIds: string[];
@@ -612,10 +594,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
             tacticIds: "";
             suggestedTacticIds: "";
         };
-        measure: {
-            tacticIds: "";
-            suggestedTacticIds: "";
-        };
         success: {
             tacticIds: "";
             suggestedTacticIds: "";
@@ -624,6 +602,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
             tacticIds: "";
             suggestedTacticIds: "";
         };
+        measureTacticId: undefined;
     };
     seenStrategy: undefined;
     tacticsById: any;
@@ -699,10 +678,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
             suggestedTacticIds?: string[] | undefined;
             tacticIds: string[];
         } | null | undefined;
-        measure?: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        } | null | undefined;
+        measureTacticId?: yup.Maybe<string | undefined>;
         main: {
             suggestedTacticIds?: string[] | undefined;
             tacticIds: string[];
@@ -759,10 +735,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
             tacticIds: "";
             suggestedTacticIds: "";
         };
-        measure: {
-            tacticIds: "";
-            suggestedTacticIds: "";
-        };
         success: {
             tacticIds: "";
             suggestedTacticIds: "";
@@ -771,6 +743,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
             tacticIds: "";
             suggestedTacticIds: "";
         };
+        measureTacticId: undefined;
     };
     seenStrategy: undefined;
     tacticsById: any;
@@ -843,10 +816,7 @@ declare const motionLogSchema: yup.ObjectSchema<{
             suggestedTacticIds?: string[] | undefined;
             tacticIds: string[];
         } | null | undefined;
-        measure?: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        } | null | undefined;
+        measureTacticId?: yup.Maybe<string | undefined>;
         main: {
             suggestedTacticIds?: string[] | undefined;
             tacticIds: string[];
@@ -903,10 +873,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
             tacticIds: "";
             suggestedTacticIds: "";
         };
-        measure: {
-            tacticIds: "";
-            suggestedTacticIds: "";
-        };
         success: {
             tacticIds: "";
             suggestedTacticIds: "";
@@ -915,6 +881,7 @@ declare const motionLogSchema: yup.ObjectSchema<{
             tacticIds: "";
             suggestedTacticIds: "";
         };
+        measureTacticId: undefined;
     };
     seenStrategy: undefined;
     tacticsById: any;
@@ -987,10 +954,7 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             suggestedTacticIds?: string[] | undefined;
             tacticIds: string[];
         } | null | undefined;
-        measure?: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        } | null | undefined;
+        measureTacticId?: yup.Maybe<string | undefined>;
         main: {
             suggestedTacticIds?: string[] | undefined;
             tacticIds: string[];
@@ -1049,10 +1013,6 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             tacticIds: "";
             suggestedTacticIds: "";
         };
-        measure: {
-            tacticIds: "";
-            suggestedTacticIds: "";
-        };
         success: {
             tacticIds: "";
             suggestedTacticIds: "";
@@ -1061,6 +1021,7 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             tacticIds: "";
             suggestedTacticIds: "";
         };
+        measureTacticId: undefined;
     };
     seenStrategy: undefined;
     tacticsById: any;
@@ -1155,10 +1116,7 @@ export declare const logSchema: yup.Lazy<{
             suggestedTacticIds?: string[] | undefined;
             tacticIds: string[];
         } | null | undefined;
-        measure?: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        } | null | undefined;
+        measureTacticId?: yup.Maybe<string | undefined>;
         main: {
             suggestedTacticIds?: string[] | undefined;
             tacticIds: string[];
@@ -1215,11 +1173,8 @@ export declare const logSchema: yup.Lazy<{
                 tacticIds: string[];
             };
         };
-        measure: {
-            [x: string]: {
-                suggestedTacticIds?: string[] | undefined;
-                tacticIds: string[];
-            };
+        measureTacticIds: {
+            [x: string]: string;
         };
     };
     patternId: string;
@@ -1396,10 +1351,7 @@ export declare const logSchema: yup.Lazy<{
             suggestedTacticIds?: string[] | undefined;
             tacticIds: string[];
         } | null | undefined;
-        measure?: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        } | null | undefined;
+        measureTacticId?: yup.Maybe<string | undefined>;
         main: {
             suggestedTacticIds?: string[] | undefined;
             tacticIds: string[];
@@ -1487,10 +1439,7 @@ export declare const logSchema: yup.Lazy<{
             suggestedTacticIds?: string[] | undefined;
             tacticIds: string[];
         } | null | undefined;
-        measure?: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        } | null | undefined;
+        measureTacticId?: yup.Maybe<string | undefined>;
         main: {
             suggestedTacticIds?: string[] | undefined;
             tacticIds: string[];
@@ -1576,10 +1525,7 @@ export declare const logSchema: yup.Lazy<{
             suggestedTacticIds?: string[] | undefined;
             tacticIds: string[];
         } | null | undefined;
-        measure?: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        } | null | undefined;
+        measureTacticId?: yup.Maybe<string | undefined>;
         main: {
             suggestedTacticIds?: string[] | undefined;
             tacticIds: string[];
@@ -1665,10 +1611,7 @@ export declare const logSchema: yup.Lazy<{
             suggestedTacticIds?: string[] | undefined;
             tacticIds: string[];
         } | null | undefined;
-        measure?: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        } | null | undefined;
+        measureTacticId?: yup.Maybe<string | undefined>;
         main: {
             suggestedTacticIds?: string[] | undefined;
             tacticIds: string[];

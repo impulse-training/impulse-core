@@ -55,9 +55,9 @@ const baseLogSchema = yup.object().shape({
   // later.
   strategy: yup.object({
     main: strategySchema.required(),
-    measure: strategySchema.notRequired(),
     success: strategySchema.notRequired(),
     setback: strategySchema.notRequired(),
+    measureTacticId: yup.string().notRequired(),
   }),
   seenStrategy: objectOf(requiredStringArray),
   // Tactics are a complex union type. We omit this key from the base log schema and add it back in
