@@ -9,39 +9,19 @@ export declare const programSchema: yup.ObjectSchema<{
     recommendationSummary: string | null | undefined;
     main: {
         suggestedTacticIds?: string[] | undefined;
-        conditionalTacticIds?: {
-            ids: string[];
-            condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-            value: {};
-        }[] | undefined;
         tacticIds: string[];
     };
     success: {
         suggestedTacticIds?: string[] | undefined;
-        conditionalTacticIds?: {
-            ids: string[];
-            condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-            value: {};
-        }[] | undefined;
         tacticIds: string[];
     } | null | undefined;
     setback: {
         suggestedTacticIds?: string[] | undefined;
-        conditionalTacticIds?: {
-            ids: string[];
-            condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-            value: {};
-        }[] | undefined;
         tacticIds: string[];
     } | null | undefined;
     time: {
         [x: string]: {
             suggestedTacticIds?: string[] | undefined;
-            conditionalTacticIds?: {
-                ids: string[];
-                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                value: {};
-            }[] | undefined;
             title: string;
             tacticIds: string[];
             weekdays: number[];
@@ -52,11 +32,6 @@ export declare const programSchema: yup.ObjectSchema<{
     location: {
         [x: string]: {
             suggestedTacticIds?: string[] | undefined;
-            conditionalTacticIds?: {
-                ids: string[];
-                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                value: {};
-            }[] | undefined;
             title: string;
             tacticIds: string[];
             locationId: string;
@@ -83,7 +58,6 @@ export declare const programSchema: yup.ObjectSchema<{
     main: {
         tacticIds: "";
         suggestedTacticIds: "";
-        conditionalTacticIds: "";
     };
     success: undefined;
     setback: undefined;

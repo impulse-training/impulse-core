@@ -15,33 +15,18 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     main: {
         [x: string]: {
             suggestedTacticIds?: string[] | undefined;
-            conditionalTacticIds?: {
-                ids: string[];
-                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                value: {};
-            }[] | undefined;
             tacticIds: string[];
         };
     };
     setback: {
         [x: string]: {
             suggestedTacticIds?: string[] | undefined;
-            conditionalTacticIds?: {
-                ids: string[];
-                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                value: {};
-            }[] | undefined;
             tacticIds: string[];
         };
     };
     success: {
         [x: string]: {
             suggestedTacticIds?: string[] | undefined;
-            conditionalTacticIds?: {
-                ids: string[];
-                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                value: {};
-            }[] | undefined;
             tacticIds: string[];
         };
     };
@@ -51,11 +36,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     time: {
         [x: string]: {
             suggestedTacticIds?: string[] | undefined;
-            conditionalTacticIds?: {
-                ids: string[];
-                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                value: {};
-            }[] | undefined;
             title: string;
             tacticIds: string[];
             weekdays: number[];
@@ -66,11 +46,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     location: {
         [x: string]: {
             suggestedTacticIds?: string[] | undefined;
-            conditionalTacticIds?: {
-                ids: string[];
-                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                value: {};
-            }[] | undefined;
             title: string;
             tacticIds: string[];
             locationId: string;
