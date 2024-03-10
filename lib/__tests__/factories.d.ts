@@ -74,7 +74,7 @@ export declare const factories: {
         email: string;
         invitationCode: string;
     }, "uid" | "email" | "invitationCode" | ("createdAt" | "updatedAt" | "avatar" | "parentIssueIds" | "timezone" | "buttonId" | "isAdmin" | "isSuperAdmin" | "activeImpulseId" | "currentAppState" | "showStorybook" | "lastActiveAt" | "expoPushToken" | "releaseChannel" | "notificationPreferences" | "isCurrentlyTrackingMotion" | "showTacticsFromSupportGroups" | "androidPermissions" | "stepTrackingEnabled" | "displayName" | "firstName" | "lastName" | "nickName" | "region" | "phoneNumber" | "isTourCompleted" | "isButtonSetupSkipped")>;
-    gameplanFactory: import("factory.ts").Factory<import("..").GameplanValue, "createdAt" | "updatedAt" | "uid" | "tacticsById" | "name" | "programId" | "parentIssueIds" | "impulse" | "setback" | "success" | "time" | "location" | "scheduledNotificationIds">;
+    gameplanFactory: import("factory.ts").Factory<import("..").GameplanValue, "createdAt" | "updatedAt" | "uid" | "tacticsById" | "main" | "success" | "setback" | "name" | "programId" | "parentIssueIds" | "measureTacticIds" | "time" | "location" | "scheduledNotificationIds">;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
         setbackThreshold?: number | undefined;
@@ -93,10 +93,6 @@ export declare const factories: {
             toDate: Function;
         };
         name: string;
-        impulse: {
-            suggestedTacticIds: string[];
-            llmPrompt: string;
-        } | null;
         measureTactic: {
             createdAt?: TimestampLike | import("yup").Maybe<null>;
             updatedAt?: TimestampLike | import("yup").Maybe<null>;
@@ -175,6 +171,10 @@ export declare const factories: {
             title: string;
             backgroundColor: string;
         };
+        impulse: {
+            suggestedTacticIds: string[];
+            llmPrompt: string;
+        } | null;
         synonyms: (string | undefined)[];
         parentIds: (string | undefined)[];
         parentNames: (string | undefined)[];
@@ -182,7 +182,7 @@ export declare const factories: {
             suggestedTacticIds: string[];
             llmPrompt: string;
         } | null;
-    }, "createdAt" | "updatedAt" | "name" | "impulse" | "measureTactic" | "synonyms" | "parentIds" | "parentNames" | "impulseDebrief" | ("path" | "setbackThreshold" | "parentId" | "programsCount" | "profileCount" | "isFeatured")>;
+    }, "createdAt" | "updatedAt" | "name" | "measureTactic" | "impulse" | "synonyms" | "parentIds" | "parentNames" | "impulseDebrief" | ("path" | "setbackThreshold" | "parentId" | "programsCount" | "profileCount" | "isFeatured")>;
     adminProfileFactory: import("factory.ts").Factory<{
         createdAt?: TimestampLike | import("yup").Maybe<null>;
         updatedAt?: TimestampLike | import("yup").Maybe<null>;
@@ -350,7 +350,7 @@ export declare const factories: {
             backgroundColor: string;
         };
     }, "uid" | "name" | "ordinal" | "measureTactic" | ("createdAt" | "updatedAt" | "parentIssueIds" | "supportGroupIds" | "notification" | "dailySetbackThreshold" | "setbackThreshold" | "issueId" | "sendWeeklyReports")>;
-    programFactory: import("factory.ts").Factory<import("..").ProgramValue, "createdAt" | "updatedAt" | "uid" | "tacticsById" | "impulse" | "setback" | "success" | "time" | "location" | "forIssueIds" | "issueNames" | "issueNamesSummary" | "recommendationSummary">;
+    programFactory: import("factory.ts").Factory<import("..").ProgramValue, "createdAt" | "updatedAt" | "uid" | "tacticsById" | "main" | "success" | "setback" | "time" | "location" | "forIssueIds" | "issueNames" | "issueNamesSummary" | "recommendationSummary">;
     tacticFactory: import("factory.ts").Factory<import("..").NonRecursiveTactic, "createdAt" | "updatedAt" | "uid" | "type" | "sourceId" | "title" | "subtitle" | "description" | "image" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
     measureTimeTacticFactory: import("factory.ts").Factory<{
         createdAt?: TimestampLike | import("yup").Maybe<null>;

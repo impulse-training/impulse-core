@@ -10,6 +10,8 @@ import { strategySchema } from './strategy';
 export * from './routines';
 export * from './strategy';
 
+export type StrategyKey = 'main' | 'success' | 'setback';
+
 export type GameplanValue = WithTypes<typeof gameplanSchema>;
 export const gameplanSchema = yup.object().shape({
   uid: yup.string().required(),
@@ -18,10 +20,14 @@ export const gameplanSchema = yup.object().shape({
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
   parentIssueIds: optionalStringArray,
+
   // Strategies - these are the sequences of tactics to try, including conditional tactics
-  impulse: objectOf(strategySchema),
+  main: objectOf(strategySchema),
   setback: objectOf(strategySchema),
   success: objectOf(strategySchema),
+
+  // A record of the tactics that are used to measure the outcome, by patternId
+  measureTacticIds: objectOf(yup.string()),
 
   // These are the strategies for scheduled times of day...
   time: optionalObjectOf(timeRoutineSchema.required()),

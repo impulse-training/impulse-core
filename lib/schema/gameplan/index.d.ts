@@ -3,6 +3,7 @@ import { TimestampLike } from '../../utils/TimestampLike';
 import { TacticValue, WithTacticsById } from '../tactic';
 export * from './routines';
 export * from './strategy';
+export type StrategyKey = 'main' | 'success' | 'setback';
 export type GameplanValue = WithTypes<typeof gameplanSchema>;
 export declare const gameplanSchema: yup.ObjectSchema<{
     uid: string;
@@ -11,7 +12,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     createdAt: TimestampLike | yup.Maybe<null>;
     updatedAt: TimestampLike | yup.Maybe<null>;
     parentIssueIds: string[] | undefined;
-    impulse: {
+    main: {
         [x: string]: {
             suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
@@ -43,6 +44,9 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             }[] | undefined;
             tacticIds: string[];
         };
+    };
+    measureTacticIds: {
+        [x: string]: string | undefined;
     };
     time: {
         [x: string]: {
@@ -82,9 +86,10 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     createdAt: undefined;
     updatedAt: undefined;
     parentIssueIds: "";
-    impulse: undefined;
+    main: undefined;
     setback: undefined;
     success: undefined;
+    measureTacticIds: undefined;
     time: undefined;
     location: undefined;
     tacticsById: any;

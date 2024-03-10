@@ -69,7 +69,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
     strategy: {
-        setback?: {
+        success?: {
             suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
                 ids: string[];
@@ -78,7 +78,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
             }[] | undefined;
             tacticIds: string[];
         } | null | undefined;
-        success?: {
+        setback?: {
             suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
                 ids: string[];
@@ -222,7 +222,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
     strategy: {
-        setback?: {
+        success?: {
             suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
                 ids: string[];
@@ -231,7 +231,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             }[] | undefined;
             tacticIds: string[];
         } | null | undefined;
-        success?: {
+        setback?: {
             suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
                 ids: string[];
@@ -310,7 +310,18 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | null | undefined;
         scheduledNotificationIds?: string[] | undefined;
         uid: string;
-        impulse: {
+        main: {
+            [x: string]: {
+                suggestedTacticIds?: string[] | undefined;
+                conditionalTacticIds?: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[] | undefined;
+                tacticIds: string[];
+            };
+        };
+        success: {
             [x: string]: {
                 suggestedTacticIds?: string[] | undefined;
                 conditionalTacticIds?: {
@@ -332,16 +343,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 tacticIds: string[];
             };
         };
-        success: {
-            [x: string]: {
-                suggestedTacticIds?: string[] | undefined;
-                conditionalTacticIds?: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[] | undefined;
-                tacticIds: string[];
-            };
+        measureTacticIds: {
+            [x: string]: string | undefined;
         };
     };
     outcome: Outcome | undefined;
@@ -506,9 +509,10 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         createdAt: undefined;
         updatedAt: undefined;
         parentIssueIds: "";
-        impulse: undefined;
+        main: undefined;
         setback: undefined;
         success: undefined;
+        measureTacticIds: undefined;
         time: undefined;
         location: undefined;
         tacticsById: any;
@@ -575,7 +579,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
     strategy: {
-        setback?: {
+        success?: {
             suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
                 ids: string[];
@@ -584,7 +588,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
             }[] | undefined;
             tacticIds: string[];
         } | null | undefined;
-        success?: {
+        setback?: {
             suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
                 ids: string[];
@@ -733,7 +737,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
     strategy: {
-        setback?: {
+        success?: {
             suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
                 ids: string[];
@@ -742,7 +746,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
             }[] | undefined;
             tacticIds: string[];
         } | null | undefined;
-        success?: {
+        setback?: {
             suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
                 ids: string[];
@@ -885,7 +889,7 @@ declare const motionLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
     strategy: {
-        setback?: {
+        success?: {
             suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
                 ids: string[];
@@ -894,7 +898,7 @@ declare const motionLogSchema: yup.ObjectSchema<{
             }[] | undefined;
             tacticIds: string[];
         } | null | undefined;
-        success?: {
+        setback?: {
             suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
                 ids: string[];
@@ -1037,7 +1041,7 @@ declare const buttonLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
     strategy: {
-        setback?: {
+        success?: {
             suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
                 ids: string[];
@@ -1046,7 +1050,7 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             }[] | undefined;
             tacticIds: string[];
         } | null | undefined;
-        success?: {
+        setback?: {
             suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
                 ids: string[];
@@ -1213,7 +1217,7 @@ export declare const logSchema: yup.Lazy<{
     timezone: string;
     locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
-        setback?: {
+        success?: {
             suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
                 ids: string[];
@@ -1222,7 +1226,7 @@ export declare const logSchema: yup.Lazy<{
             }[] | undefined;
             tacticIds: string[];
         } | null | undefined;
-        success?: {
+        setback?: {
             suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
                 ids: string[];
@@ -1282,7 +1286,18 @@ export declare const logSchema: yup.Lazy<{
         } | null | undefined;
         scheduledNotificationIds?: string[] | undefined;
         uid: string;
-        impulse: {
+        main: {
+            [x: string]: {
+                suggestedTacticIds?: string[] | undefined;
+                conditionalTacticIds?: {
+                    ids: string[];
+                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                    value: {};
+                }[] | undefined;
+                tacticIds: string[];
+            };
+        };
+        success: {
             [x: string]: {
                 suggestedTacticIds?: string[] | undefined;
                 conditionalTacticIds?: {
@@ -1304,16 +1319,8 @@ export declare const logSchema: yup.Lazy<{
                 tacticIds: string[];
             };
         };
-        success: {
-            [x: string]: {
-                suggestedTacticIds?: string[] | undefined;
-                conditionalTacticIds?: {
-                    ids: string[];
-                    condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
-                    value: {};
-                }[] | undefined;
-                tacticIds: string[];
-            };
+        measureTacticIds: {
+            [x: string]: string | undefined;
         };
     };
     patternId: string;
@@ -1482,7 +1489,7 @@ export declare const logSchema: yup.Lazy<{
     timezone: string;
     locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
-        setback?: {
+        success?: {
             suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
                 ids: string[];
@@ -1491,7 +1498,7 @@ export declare const logSchema: yup.Lazy<{
             }[] | undefined;
             tacticIds: string[];
         } | null | undefined;
-        success?: {
+        setback?: {
             suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
                 ids: string[];
@@ -1582,7 +1589,7 @@ export declare const logSchema: yup.Lazy<{
     timezone: string;
     locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
-        setback?: {
+        success?: {
             suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
                 ids: string[];
@@ -1591,7 +1598,7 @@ export declare const logSchema: yup.Lazy<{
             }[] | undefined;
             tacticIds: string[];
         } | null | undefined;
-        success?: {
+        setback?: {
             suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
                 ids: string[];
@@ -1680,7 +1687,7 @@ export declare const logSchema: yup.Lazy<{
     timezone: string;
     locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
-        setback?: {
+        success?: {
             suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
                 ids: string[];
@@ -1689,7 +1696,7 @@ export declare const logSchema: yup.Lazy<{
             }[] | undefined;
             tacticIds: string[];
         } | null | undefined;
-        success?: {
+        setback?: {
             suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
                 ids: string[];
@@ -1778,7 +1785,7 @@ export declare const logSchema: yup.Lazy<{
     timezone: string;
     locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
-        setback?: {
+        success?: {
             suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
                 ids: string[];
@@ -1787,7 +1794,7 @@ export declare const logSchema: yup.Lazy<{
             }[] | undefined;
             tacticIds: string[];
         } | null | undefined;
-        success?: {
+        setback?: {
             suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
                 ids: string[];

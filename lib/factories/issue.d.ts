@@ -18,10 +18,6 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         toDate: Function;
     };
     name: string;
-    impulse: {
-        suggestedTacticIds: string[];
-        llmPrompt: string;
-    } | null;
     measureTactic: {
         createdAt?: TimestampLike | import("yup").Maybe<null>;
         updatedAt?: TimestampLike | import("yup").Maybe<null>;
@@ -100,6 +96,10 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         title: string;
         backgroundColor: string;
     };
+    impulse: {
+        suggestedTacticIds: string[];
+        llmPrompt: string;
+    } | null;
     synonyms: (string | undefined)[];
     parentIds: (string | undefined)[];
     parentNames: (string | undefined)[];
@@ -107,4 +107,4 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         suggestedTacticIds: string[];
         llmPrompt: string;
     } | null;
-}, "createdAt" | "updatedAt" | "name" | "impulse" | "measureTactic" | "synonyms" | "parentIds" | "parentNames" | "impulseDebrief" | ("path" | "setbackThreshold" | "parentId" | "programsCount" | "profileCount" | "isFeatured")>;
+}, "createdAt" | "updatedAt" | "name" | "measureTactic" | "impulse" | "synonyms" | "parentIds" | "parentNames" | "impulseDebrief" | ("path" | "setbackThreshold" | "parentId" | "programsCount" | "profileCount" | "isFeatured")>;

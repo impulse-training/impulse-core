@@ -7,7 +7,7 @@ export declare const programSchema: yup.ObjectSchema<{
     } | null | undefined;
     issueNamesSummary: string | null | undefined;
     recommendationSummary: string | null | undefined;
-    impulse: {
+    main: {
         suggestedTacticIds?: string[] | undefined;
         conditionalTacticIds?: {
             ids: string[];
@@ -80,7 +80,7 @@ export declare const programSchema: yup.ObjectSchema<{
     issueNames: undefined;
     issueNamesSummary: undefined;
     recommendationSummary: undefined;
-    impulse: {
+    main: {
         tacticIds: "";
         suggestedTacticIds: "";
         conditionalTacticIds: "";

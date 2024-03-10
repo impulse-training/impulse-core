@@ -14,7 +14,7 @@ export const programSchema = yup.object().shape({
   issueNames: optionalObjectOf(yup.string()),
   issueNamesSummary: yup.string().nullable(),
   recommendationSummary: yup.string().nullable(),
-  impulse: strategySchema,
+  main: strategySchema,
   success: strategySchema.notRequired().default(undefined),
   setback: strategySchema.notRequired().default(undefined),
   time: optionalObjectOf(timeRoutineSchema.required()),
