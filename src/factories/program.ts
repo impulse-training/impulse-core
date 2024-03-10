@@ -8,13 +8,10 @@ export const makeProgramFactory = (TimestampKlass: typeof TimestampLike) =>
     updatedAt: TimestampKlass.now(),
     uid: Factory.each(i => `impulse-recommendation-rule-${i}`),
     forIssueIds: [],
+    issueNamesSummary: '',
     issueNames: {},
     impulse: {
       tacticIds: [],
     },
     tacticsById: {},
-    impulseDebrief: {
-      tacticIds: [],
-    },
-    issueNamesSummary: '',
   });

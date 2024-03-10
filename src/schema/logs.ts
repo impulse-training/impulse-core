@@ -55,7 +55,8 @@ const baseLogSchema = yup.object().shape({
   // later.
   strategy: yup.object({
     main: strategySchema.required(),
-    impulseDebrief: strategySchema.notRequired(),
+    success: strategySchema.notRequired(),
+    setback: strategySchema.notRequired(),
   }),
   // Tactics are a complex union type. We omit this key from the base log schema and add it back in
   // using typescript, so we just "neuter" it here to tell typescript to relax. This saves 10k+

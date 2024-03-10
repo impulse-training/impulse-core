@@ -20,7 +20,9 @@ export const gameplanSchema = yup.object().shape({
   parentIssueIds: optionalStringArray,
   // Strategies - these are the sequences of tactics to try, including conditional tactics
   impulse: objectOf(strategySchema),
-  impulseDebrief: objectOf(strategySchema),
+  setback: objectOf(strategySchema),
+  success: objectOf(strategySchema),
+
   // These are the strategies for scheduled times of day...
   time: optionalObjectOf(timeRoutineSchema.required()),
   // ...Or when arriving at or leaving a location
@@ -28,7 +30,6 @@ export const gameplanSchema = yup.object().shape({
   // Data - we keep copies of relevant data on the gameplan document, for performance reasons
   tacticsById: objectOf(tacticSchema) as any,
   scheduledNotificationIds: optionalStringArray,
-  dontGenerateRecapTacticsForTacticIds: optionalStringArray,
 });
 
 type WithTypes<T extends yup.ISchema<unknown>> = WithTacticsById<

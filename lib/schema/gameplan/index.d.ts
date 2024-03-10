@@ -22,7 +22,18 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             tacticIds: string[];
         };
     };
-    impulseDebrief: {
+    setback: {
+        [x: string]: {
+            suggestedTacticIds?: string[] | undefined;
+            conditionalTacticIds?: {
+                ids: string[];
+                condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+                value: {};
+            }[] | undefined;
+            tacticIds: string[];
+        };
+    };
+    success: {
         [x: string]: {
             suggestedTacticIds?: string[] | undefined;
             conditionalTacticIds?: {
@@ -64,7 +75,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     } | null | undefined;
     tacticsById: any;
     scheduledNotificationIds: string[] | undefined;
-    dontGenerateRecapTacticsForTacticIds: string[] | undefined;
 }, yup.AnyObject, {
     uid: undefined;
     name: undefined;
@@ -73,12 +83,12 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     updatedAt: undefined;
     parentIssueIds: "";
     impulse: undefined;
-    impulseDebrief: undefined;
+    setback: undefined;
+    success: undefined;
     time: undefined;
     location: undefined;
     tacticsById: any;
     scheduledNotificationIds: "";
-    dontGenerateRecapTacticsForTacticIds: "";
 }, "">;
 type WithTypes<T extends yup.ISchema<unknown>> = WithTacticsById<yup.InferType<T>> & {
     createdAt: TimestampLike;

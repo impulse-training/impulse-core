@@ -16,7 +16,7 @@ export declare const programSchema: yup.ObjectSchema<{
         }[] | undefined;
         tacticIds: string[];
     };
-    impulseDebrief: {
+    success: {
         suggestedTacticIds?: string[] | undefined;
         conditionalTacticIds?: {
             ids: string[];
@@ -24,7 +24,16 @@ export declare const programSchema: yup.ObjectSchema<{
             value: {};
         }[] | undefined;
         tacticIds: string[];
-    };
+    } | null | undefined;
+    setback: {
+        suggestedTacticIds?: string[] | undefined;
+        conditionalTacticIds?: {
+            ids: string[];
+            condition: NonNullable<"eq" | "gt" | "lt" | "keyword" | undefined>;
+            value: {};
+        }[] | undefined;
+        tacticIds: string[];
+    } | null | undefined;
     time: {
         [x: string]: {
             suggestedTacticIds?: string[] | undefined;
@@ -76,11 +85,8 @@ export declare const programSchema: yup.ObjectSchema<{
         suggestedTacticIds: "";
         conditionalTacticIds: "";
     };
-    impulseDebrief: {
-        tacticIds: "";
-        suggestedTacticIds: "";
-        conditionalTacticIds: "";
-    };
+    success: undefined;
+    setback: undefined;
     time: undefined;
     location: undefined;
     uid: undefined;

@@ -91,6 +91,7 @@ export declare const issueSchema: yup.ObjectSchema<{
         title: string;
         backgroundColor: string;
     };
+    setbackThreshold: number | undefined;
     path: string | null | undefined;
     parentIds: (string | undefined)[];
     parentNames: (string | undefined)[];
@@ -120,6 +121,7 @@ export declare const issueSchema: yup.ObjectSchema<{
     name: undefined;
     synonyms: "";
     measureTactic: undefined;
+    setbackThreshold: undefined;
     path: undefined;
     parentIds: "";
     parentNames: "";

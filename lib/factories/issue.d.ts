@@ -2,6 +2,7 @@ import * as Factory from 'factory.ts';
 import { TimestampLike } from '../utils/TimestampLike';
 export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     path?: string | null | undefined;
+    setbackThreshold?: number | undefined;
     parentId?: string | null | undefined;
     programsCount?: number | null | undefined;
     profileCount?: number | null | undefined;
@@ -18,10 +19,6 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
     };
     name: string;
     impulse: {
-        suggestedTacticIds: string[];
-        llmPrompt: string;
-    } | null;
-    impulseDebrief: {
         suggestedTacticIds: string[];
         llmPrompt: string;
     } | null;
@@ -106,4 +103,8 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
     synonyms: (string | undefined)[];
     parentIds: (string | undefined)[];
     parentNames: (string | undefined)[];
-}, "createdAt" | "updatedAt" | "name" | "impulse" | "impulseDebrief" | "measureTactic" | "synonyms" | "parentIds" | "parentNames" | ("path" | "parentId" | "programsCount" | "profileCount" | "isFeatured")>;
+    impulseDebrief: {
+        suggestedTacticIds: string[];
+        llmPrompt: string;
+    } | null;
+}, "createdAt" | "updatedAt" | "name" | "impulse" | "measureTactic" | "synonyms" | "parentIds" | "parentNames" | "impulseDebrief" | ("path" | "setbackThreshold" | "parentId" | "programsCount" | "profileCount" | "isFeatured")>;
