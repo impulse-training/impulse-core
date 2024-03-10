@@ -77,6 +77,18 @@ export declare const factories: {
     gameplanFactory: import("factory.ts").Factory<import("..").GameplanValue, "createdAt" | "updatedAt" | "uid" | "tacticsById" | "main" | "success" | "setback" | "name" | "programId" | "parentIssueIds" | "measureTacticIds" | "time" | "location" | "scheduledNotificationIds">;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
+        main?: {
+            suggestedTacticIds: string[];
+            llmPrompt: string;
+        } | null | undefined;
+        success?: {
+            suggestedTacticIds: string[];
+            llmPrompt: string;
+        } | null | undefined;
+        setback?: {
+            suggestedTacticIds: string[];
+            llmPrompt: string;
+        } | null | undefined;
         setbackThreshold?: number | undefined;
         parentId?: string | null | undefined;
         programsCount?: number | null | undefined;
@@ -171,18 +183,10 @@ export declare const factories: {
             title: string;
             backgroundColor: string;
         };
-        impulse: {
-            suggestedTacticIds: string[];
-            llmPrompt: string;
-        } | null;
         synonyms: (string | undefined)[];
         parentIds: (string | undefined)[];
         parentNames: (string | undefined)[];
-        impulseDebrief: {
-            suggestedTacticIds: string[];
-            llmPrompt: string;
-        } | null;
-    }, "createdAt" | "updatedAt" | "name" | "measureTactic" | "impulse" | "synonyms" | "parentIds" | "parentNames" | "impulseDebrief" | ("path" | "setbackThreshold" | "parentId" | "programsCount" | "profileCount" | "isFeatured")>;
+    }, "createdAt" | "updatedAt" | "name" | "measureTactic" | "synonyms" | "parentIds" | "parentNames" | ("path" | "main" | "success" | "setback" | "setbackThreshold" | "parentId" | "programsCount" | "profileCount" | "isFeatured")>;
     adminProfileFactory: import("factory.ts").Factory<{
         createdAt?: TimestampLike | import("yup").Maybe<null>;
         updatedAt?: TimestampLike | import("yup").Maybe<null>;

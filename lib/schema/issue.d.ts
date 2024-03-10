@@ -98,14 +98,18 @@ export declare const issueSchema: yup.ObjectSchema<{
     programsCount: number | null | undefined;
     profileCount: number | null | undefined;
     isFeatured: boolean | null | undefined;
-    impulse: {
+    main: {
         suggestedTacticIds: string[];
         llmPrompt: string;
-    } | null;
-    impulseDebrief: {
+    } | null | undefined;
+    success: {
         suggestedTacticIds: string[];
         llmPrompt: string;
-    } | null;
+    } | null | undefined;
+    setback: {
+        suggestedTacticIds: string[];
+        llmPrompt: string;
+    } | null | undefined;
 }, yup.AnyObject, {
     createdAt: {
         seconds: undefined;
@@ -128,13 +132,8 @@ export declare const issueSchema: yup.ObjectSchema<{
     programsCount: undefined;
     profileCount: undefined;
     isFeatured: undefined;
-    impulse: {
-        llmPrompt: undefined;
-        suggestedTacticIds: "";
-    };
-    impulseDebrief: {
-        llmPrompt: undefined;
-        suggestedTacticIds: "";
-    };
+    main: undefined;
+    success: undefined;
+    setback: undefined;
 }, "">;
 export type IssueValue = yup.InferType<typeof issueSchema>;

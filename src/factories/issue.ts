@@ -21,12 +21,12 @@ export const makeIssueFactory = (TimestampKlass: typeof TimestampLike) =>
       'Process addiction',
       'YouTube',
     ],
-    impulse: {
+    main: {
       llmPrompt:
         'Please suggest tactics for overcoming an impulse to watch youtube',
       suggestedTacticIds: [],
     },
-    impulseDebrief: {
+    success: {
       llmPrompt:
         'Please suggest tactics after overcoming an impulse to watch youtube',
       suggestedTacticIds: [],
