@@ -10,7 +10,7 @@ import { optionalStringArray, requiredStringArray } from './utils/array';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
 
-type Outcome = 'success' | 'setback' | 'indeterminate';
+type Outcome = 'success' | 'setback';
 
 export const tacticDataSchema = yup.object({
   value: yup.number().required(),
@@ -99,9 +99,7 @@ const impulseLogSchema = baseLogSchema.concat(
     // pattern, we also store the entire "gameplan" on impulse log documents, which is copied from
     // the user's gameplan document at the time.
     gameplan: gameplanSchema,
-    outcome: yup
-      .mixed<Outcome>()
-      .oneOf(['success', 'setback', 'indeterminate']),
+    outcome: yup.mixed<Outcome>().oneOf(['success', 'setback']),
     patternId: yup.string().required(),
     patternsById: objectOf(patternSchema),
     debriefNotes: yup.string().notRequired(),

@@ -1,7 +1,7 @@
 import * as yup from 'yup';
 import { TimestampLike } from '../utils/TimestampLike';
 import { TacticValue, WithTacticsById } from './tactic';
-type Outcome = 'success' | 'setback' | 'indeterminate';
+type Outcome = 'success' | 'setback';
 export declare const tacticDataSchema: yup.ObjectSchema<{
     value: number;
     formattedValue: string;
