@@ -97,8 +97,10 @@ declare const baseLogSchema: yup.ObjectSchema<{
             tacticIds: string[];
         };
     };
+    seenStrategy: {
+        [x: string]: string[];
+    };
     tacticsById: any;
-    seenTacticIds: string[];
     completedTacticIds: string[];
     tacticLikes: {
         [x: string]: NonNullable<boolean | undefined>;
@@ -155,8 +157,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
             conditionalTacticIds: "";
         };
     };
+    seenStrategy: undefined;
     tacticsById: any;
-    seenTacticIds: "";
     completedTacticIds: "";
     tacticLikes: undefined;
     tacticData: undefined;
@@ -250,8 +252,10 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             tacticIds: string[];
         };
     };
+    seenStrategy: {
+        [x: string]: string[];
+    };
     tacticsById: any;
-    seenTacticIds: string[];
     completedTacticIds: string[];
     tacticLikes: {
         [x: string]: NonNullable<boolean | undefined>;
@@ -491,8 +495,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             conditionalTacticIds: "";
         };
     };
+    seenStrategy: undefined;
     tacticsById: any;
-    seenTacticIds: "";
     completedTacticIds: "";
     tacticLikes: undefined;
     tacticData: undefined;
@@ -607,8 +611,10 @@ declare const locationLogSchema: yup.ObjectSchema<{
             tacticIds: string[];
         };
     };
+    seenStrategy: {
+        [x: string]: string[];
+    };
     tacticsById: any;
-    seenTacticIds: string[];
     completedTacticIds: string[];
     tacticLikes: {
         [x: string]: NonNullable<boolean | undefined>;
@@ -671,8 +677,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
             conditionalTacticIds: "";
         };
     };
+    seenStrategy: undefined;
     tacticsById: any;
-    seenTacticIds: "";
     completedTacticIds: "";
     tacticLikes: undefined;
     tacticData: undefined;
@@ -765,8 +771,10 @@ declare const timeLogSchema: yup.ObjectSchema<{
             tacticIds: string[];
         };
     };
+    seenStrategy: {
+        [x: string]: string[];
+    };
     tacticsById: any;
-    seenTacticIds: string[];
     completedTacticIds: string[];
     tacticLikes: {
         [x: string]: NonNullable<boolean | undefined>;
@@ -826,8 +834,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
             conditionalTacticIds: "";
         };
     };
+    seenStrategy: undefined;
     tacticsById: any;
-    seenTacticIds: "";
     completedTacticIds: "";
     tacticLikes: undefined;
     tacticData: undefined;
@@ -917,8 +925,10 @@ declare const motionLogSchema: yup.ObjectSchema<{
             tacticIds: string[];
         };
     };
+    seenStrategy: {
+        [x: string]: string[];
+    };
     tacticsById: any;
-    seenTacticIds: string[];
     completedTacticIds: string[];
     tacticLikes: {
         [x: string]: NonNullable<boolean | undefined>;
@@ -978,8 +988,8 @@ declare const motionLogSchema: yup.ObjectSchema<{
             conditionalTacticIds: "";
         };
     };
+    seenStrategy: undefined;
     tacticsById: any;
-    seenTacticIds: "";
     completedTacticIds: "";
     tacticLikes: undefined;
     tacticData: undefined;
@@ -1069,8 +1079,10 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             tacticIds: string[];
         };
     };
+    seenStrategy: {
+        [x: string]: string[];
+    };
     tacticsById: any;
-    seenTacticIds: string[];
     completedTacticIds: string[];
     tacticLikes: {
         [x: string]: NonNullable<boolean | undefined>;
@@ -1132,8 +1144,8 @@ declare const buttonLogSchema: yup.ObjectSchema<{
             conditionalTacticIds: "";
         };
     };
+    seenStrategy: undefined;
     tacticsById: any;
-    seenTacticIds: "";
     completedTacticIds: "";
     tacticLikes: undefined;
     tacticData: undefined;
@@ -1245,7 +1257,9 @@ export declare const logSchema: yup.Lazy<{
             tacticIds: string[];
         };
     };
-    seenTacticIds: string[];
+    seenStrategy: {
+        [x: string]: string[];
+    };
     completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
     gameplan: {
@@ -1517,7 +1531,9 @@ export declare const logSchema: yup.Lazy<{
             tacticIds: string[];
         };
     };
-    seenTacticIds: string[];
+    seenStrategy: {
+        [x: string]: string[];
+    };
     completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
     locationName: string;
@@ -1617,7 +1633,9 @@ export declare const logSchema: yup.Lazy<{
             tacticIds: string[];
         };
     };
-    seenTacticIds: string[];
+    seenStrategy: {
+        [x: string]: string[];
+    };
     completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
 } | {
@@ -1715,7 +1733,9 @@ export declare const logSchema: yup.Lazy<{
             tacticIds: string[];
         };
     };
-    seenTacticIds: string[];
+    seenStrategy: {
+        [x: string]: string[];
+    };
     completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
 } | {
@@ -1813,7 +1833,9 @@ export declare const logSchema: yup.Lazy<{
             tacticIds: string[];
         };
     };
-    seenTacticIds: string[];
+    seenStrategy: {
+        [x: string]: string[];
+    };
     completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
     isDeviceConnected: NonNullable<boolean | undefined>;

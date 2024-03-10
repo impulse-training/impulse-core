@@ -58,11 +58,11 @@ const baseLogSchema = yup.object().shape({
     success: strategySchema.notRequired(),
     setback: strategySchema.notRequired(),
   }),
+  seenStrategy: objectOf(requiredStringArray),
   // Tactics are a complex union type. We omit this key from the base log schema and add it back in
   // using typescript, so we just "neuter" it here to tell typescript to relax. This saves 10k+
   // lines of type annotations in the generated typescript file.
   tacticsById: objectOf(tacticSchema) as any,
-  seenTacticIds: requiredStringArray,
   completedTacticIds: requiredStringArray,
   tacticLikes: optionalObjectOf(yup.boolean().required()),
   tacticData: optionalObjectOf(tacticDataSchema),
