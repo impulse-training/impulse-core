@@ -55,6 +55,7 @@ const baseLogSchema = yup.object().shape({
   // later.
   strategy: yup.object({
     main: strategySchema.required(),
+    measure: strategySchema.notRequired(),
     success: strategySchema.notRequired(),
     setback: strategySchema.notRequired(),
   }),

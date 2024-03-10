@@ -11,7 +11,7 @@ export const makeGameplanFactory = (TimestampKlass: typeof TimestampLike) =>
     success: {},
     setback: {},
     tacticsById: {},
-    measureTacticIds: {},
+    measure: {},
     time: {},
     location: {},
     scheduledNotificationIds: [],
