@@ -2,7 +2,6 @@ export const DATE_FORMAT = 'yyyy-MM-dd';
 
 export * from './application';
 export * from './category';
-export * from './challenge';
 export * from './comment';
 export * from './contact';
 export * from './gameplan';

@@ -145,19 +145,6 @@ const motionLogSchema = baseLogSchema.concat(
   })
 );
 
-export type ButtonLogValue = WithTypes<typeof buttonLogSchema>;
-export function logIsButtonLog(log: LogValue): log is ButtonLogValue {
-  return log.type === 'button';
-}
-const buttonLogSchema = baseLogSchema.concat(
-  yup.object().shape({
-    type: yup.mixed<'button'>().oneOf(['button']).required(),
-    isDisplayable: yup.boolean().oneOf([false]).required(),
-    isDeviceConnected: yup.boolean().required(),
-    characteristics: yup.object().shape({}).required(),
-  })
-);
-
 export const logSchema = yup.lazy(value => {
   switch (value.type) {
     case 'impulse':
@@ -168,8 +155,6 @@ export const logSchema = yup.lazy(value => {
       return timeLogSchema;
     case 'motion':
       return motionLogSchema;
-    case 'button':
-      return buttonLogSchema;
     default:
       throw new yup.ValidationError(`Unknown type: ${value.type}`);
   }
@@ -179,5 +164,4 @@ export type LogValue =
   | ImpulseLogValue
   | LocationLogValue
   | TimeLogValue
-  | MotionLogValue
-  | ButtonLogValue;
+  | MotionLogValue;

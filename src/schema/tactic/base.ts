@@ -10,7 +10,7 @@ export function tacticValueBaseSchema<K extends string>(type: K) {
     sourceId: yup.string(),
     createdAt: optionalTimestampSchema,
     updatedAt: optionalTimestampSchema,
-    title: yup.string().required(),
+    title: yup.string().required('is required'),
     subtitle: yup.string().notRequired(),
     description: yup.string().nullable(),
     image: imageSchema.optional().nullable(),

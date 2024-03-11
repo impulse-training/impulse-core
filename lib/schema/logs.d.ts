@@ -303,18 +303,17 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             createdAt?: TimestampLike | yup.Maybe<null>;
             updatedAt?: TimestampLike | yup.Maybe<null>;
             parentIssueIds?: string[] | undefined;
+            setbackThreshold?: yup.Maybe<number | undefined>;
             supportGroupIds?: string[] | undefined;
             notification?: yup.Maybe<{} | undefined> | {
                 title: string;
                 body: string;
             };
             dailySetbackThreshold?: yup.Maybe<number | undefined>;
-            setbackThreshold?: yup.Maybe<number | undefined>;
             issueId?: yup.Maybe<string | undefined>;
             sendWeeklyReports?: yup.Maybe<boolean | undefined>;
             uid: string;
             name: string;
-            ordinal: number;
             measureTactic: {
                 createdAt?: TimestampLike | yup.Maybe<null>;
                 updatedAt?: TimestampLike | yup.Maybe<null>;
@@ -393,6 +392,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 title: string;
                 backgroundColor: string;
             };
+            ordinal: number;
         };
     };
     debriefNotes: yup.Maybe<string | undefined>;
@@ -892,148 +892,6 @@ declare const motionLogSchema: yup.ObjectSchema<{
     type: undefined;
     isDisplayable: undefined;
 }, "">;
-export type ButtonLogValue = WithTypes<typeof buttonLogSchema>;
-export declare function logIsButtonLog(log: LogValue): log is ButtonLogValue;
-declare const buttonLogSchema: yup.ObjectSchema<{
-    uid: string;
-    createdAt: TimestampLike | yup.Maybe<null>;
-    updatedAt: TimestampLike | yup.Maybe<null>;
-    startTime: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    };
-    timezone: string;
-    location: {
-        latitude?: number | undefined;
-        longitude?: number | undefined;
-        altitude?: number | undefined;
-        accuracy?: number | undefined;
-        altitudeAccuracy?: number | undefined;
-        heading?: number | undefined;
-        speed?: number | undefined;
-    };
-    locationIsFetching: NonNullable<boolean | undefined>;
-    locationFormatted: yup.Maybe<string | undefined>;
-    commentCount: yup.Maybe<number | undefined>;
-    commentsById: {} | null | undefined;
-    commentsByTacticId: {
-        [x: string]: {
-            commentsById: {
-                [x: string]: {
-                    createdAt?: TimestampLike | yup.Maybe<null>;
-                    updatedAt?: TimestampLike | yup.Maybe<null>;
-                    tacticId?: string | null | undefined;
-                    tacticName?: string | null | undefined;
-                    text?: string | undefined;
-                    recording?: {
-                        waveform?: string | null | undefined;
-                        localFilePath: string;
-                        remoteFilePath: string;
-                    } | undefined;
-                    isEdited?: boolean | undefined;
-                    avatar?: {
-                        localFilePath?: yup.Maybe<string | undefined>;
-                        storagePath?: yup.Maybe<string | undefined>;
-                        uri?: yup.Maybe<string | undefined>;
-                    } | undefined;
-                    uid: string;
-                    authorName: string;
-                };
-            };
-            tacticTitle: string;
-        };
-    } | null | undefined;
-    steps: yup.Maybe<number | undefined>;
-    strategy: {
-        success?: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        } | null | undefined;
-        setback?: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        } | null | undefined;
-        measureTacticId?: yup.Maybe<string | undefined>;
-        main: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        };
-    };
-    seenStrategy: {
-        [x: string]: string[];
-    };
-    tacticsById: any;
-    completedTacticIds: string[];
-    tacticLikes: {
-        [x: string]: NonNullable<boolean | undefined>;
-    } | null | undefined;
-    tacticData: {
-        [x: string]: {
-            lowEmoji?: yup.Maybe<string | undefined>;
-            highEmoji?: yup.Maybe<string | undefined>;
-            isTotal?: yup.Maybe<boolean | undefined>;
-            value: number;
-            formattedValue: string;
-        };
-    } | null | undefined;
-    sharedWithSupportGroupIds: string[] | undefined;
-} & {
-    type: "button";
-    isDisplayable: NonNullable<boolean | undefined>;
-    isDeviceConnected: NonNullable<boolean | undefined>;
-    characteristics: {};
-}, yup.AnyObject, {
-    uid: undefined;
-    createdAt: undefined;
-    updatedAt: undefined;
-    startTime: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    timezone: undefined;
-    location: {
-        latitude: undefined;
-        longitude: undefined;
-        altitude: undefined;
-        accuracy: undefined;
-        altitudeAccuracy: undefined;
-        heading: undefined;
-        speed: undefined;
-    };
-    locationIsFetching: undefined;
-    locationFormatted: undefined;
-    commentCount: undefined;
-    commentsById: {};
-    commentsByTacticId: undefined;
-    steps: undefined;
-    strategy: {
-        main: {
-            tacticIds: "";
-            suggestedTacticIds: "";
-        };
-        success: {
-            tacticIds: "";
-            suggestedTacticIds: "";
-        };
-        setback: {
-            tacticIds: "";
-            suggestedTacticIds: "";
-        };
-        measureTacticId: undefined;
-    };
-    seenStrategy: undefined;
-    tacticsById: any;
-    completedTacticIds: "";
-    tacticLikes: undefined;
-    tacticData: undefined;
-    sharedWithSupportGroupIds: "";
-    type: undefined;
-    isDisplayable: undefined;
-    isDeviceConnected: undefined;
-    characteristics: {};
-}, "">;
 export declare const logSchema: yup.Lazy<{
     createdAt?: TimestampLike | yup.Maybe<null>;
     updatedAt?: TimestampLike | yup.Maybe<null>;
@@ -1183,18 +1041,17 @@ export declare const logSchema: yup.Lazy<{
             createdAt?: TimestampLike | yup.Maybe<null>;
             updatedAt?: TimestampLike | yup.Maybe<null>;
             parentIssueIds?: string[] | undefined;
+            setbackThreshold?: yup.Maybe<number | undefined>;
             supportGroupIds?: string[] | undefined;
             notification?: yup.Maybe<{} | undefined> | {
                 title: string;
                 body: string;
             };
             dailySetbackThreshold?: yup.Maybe<number | undefined>;
-            setbackThreshold?: yup.Maybe<number | undefined>;
             issueId?: yup.Maybe<string | undefined>;
             sendWeeklyReports?: yup.Maybe<boolean | undefined>;
             uid: string;
             name: string;
-            ordinal: number;
             measureTactic: {
                 createdAt?: TimestampLike | yup.Maybe<null>;
                 updatedAt?: TimestampLike | yup.Maybe<null>;
@@ -1273,6 +1130,7 @@ export declare const logSchema: yup.Lazy<{
                 title: string;
                 backgroundColor: string;
             };
+            ordinal: number;
         };
     };
 } | {
@@ -1536,94 +1394,6 @@ export declare const logSchema: yup.Lazy<{
     };
     completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
-} | {
-    createdAt?: TimestampLike | yup.Maybe<null>;
-    updatedAt?: TimestampLike | yup.Maybe<null>;
-    tacticsById?: any;
-    steps?: yup.Maybe<number | undefined>;
-    locationFormatted?: yup.Maybe<string | undefined>;
-    commentCount?: yup.Maybe<number | undefined>;
-    commentsById?: {} | null | undefined;
-    commentsByTacticId?: {
-        [x: string]: {
-            commentsById: {
-                [x: string]: {
-                    createdAt?: TimestampLike | yup.Maybe<null>;
-                    updatedAt?: TimestampLike | yup.Maybe<null>;
-                    tacticId?: string | null | undefined;
-                    tacticName?: string | null | undefined;
-                    text?: string | undefined;
-                    recording?: {
-                        waveform?: string | null | undefined;
-                        localFilePath: string;
-                        remoteFilePath: string;
-                    } | undefined;
-                    isEdited?: boolean | undefined;
-                    avatar?: {
-                        localFilePath?: yup.Maybe<string | undefined>;
-                        storagePath?: yup.Maybe<string | undefined>;
-                        uri?: yup.Maybe<string | undefined>;
-                    } | undefined;
-                    uid: string;
-                    authorName: string;
-                };
-            };
-            tacticTitle: string;
-        };
-    } | null | undefined;
-    tacticLikes?: {
-        [x: string]: NonNullable<boolean | undefined>;
-    } | null | undefined;
-    tacticData?: {
-        [x: string]: {
-            lowEmoji?: yup.Maybe<string | undefined>;
-            highEmoji?: yup.Maybe<string | undefined>;
-            isTotal?: yup.Maybe<boolean | undefined>;
-            value: number;
-            formattedValue: string;
-        };
-    } | null | undefined;
-    sharedWithSupportGroupIds?: string[] | undefined;
-    uid: string;
-    type: "button";
-    location: {
-        latitude?: number | undefined;
-        longitude?: number | undefined;
-        altitude?: number | undefined;
-        accuracy?: number | undefined;
-        altitudeAccuracy?: number | undefined;
-        heading?: number | undefined;
-        speed?: number | undefined;
-    };
-    startTime: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    };
-    timezone: string;
-    locationIsFetching: NonNullable<boolean | undefined>;
-    strategy: {
-        success?: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        } | null | undefined;
-        setback?: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        } | null | undefined;
-        measureTacticId?: yup.Maybe<string | undefined>;
-        main: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        };
-    };
-    seenStrategy: {
-        [x: string]: string[];
-    };
-    completedTacticIds: string[];
-    isDisplayable: NonNullable<boolean | undefined>;
-    isDeviceConnected: NonNullable<boolean | undefined>;
-    characteristics: {};
 }, yup.AnyObject, any>;
-export type LogValue = ImpulseLogValue | LocationLogValue | TimeLogValue | MotionLogValue | ButtonLogValue;
+export type LogValue = ImpulseLogValue | LocationLogValue | TimeLogValue | MotionLogValue;
 export {};

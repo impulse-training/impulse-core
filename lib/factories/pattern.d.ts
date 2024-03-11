@@ -4,18 +4,17 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
     createdAt?: TimestampLike | import("yup").Maybe<null>;
     updatedAt?: TimestampLike | import("yup").Maybe<null>;
     parentIssueIds?: string[] | undefined;
+    setbackThreshold?: import("yup").Maybe<number | undefined>;
     supportGroupIds?: string[] | undefined;
     notification?: import("yup").Maybe<{} | undefined> | {
         title: string;
         body: string;
     };
     dailySetbackThreshold?: import("yup").Maybe<number | undefined>;
-    setbackThreshold?: import("yup").Maybe<number | undefined>;
     issueId?: import("yup").Maybe<string | undefined>;
     sendWeeklyReports?: import("yup").Maybe<boolean | undefined>;
     uid: string;
     name: string;
-    ordinal: number;
     measureTactic: {
         createdAt?: TimestampLike | import("yup").Maybe<null>;
         updatedAt?: TimestampLike | import("yup").Maybe<null>;
@@ -94,4 +93,5 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
         title: string;
         backgroundColor: string;
     };
-}, "uid" | "name" | "ordinal" | "measureTactic" | ("createdAt" | "updatedAt" | "parentIssueIds" | "supportGroupIds" | "notification" | "dailySetbackThreshold" | "setbackThreshold" | "issueId" | "sendWeeklyReports")>;
+    ordinal: number;
+}, "uid" | "name" | "measureTactic" | "ordinal" | ("createdAt" | "updatedAt" | "parentIssueIds" | "setbackThreshold" | "supportGroupIds" | "notification" | "dailySetbackThreshold" | "issueId" | "sendWeeklyReports")>;

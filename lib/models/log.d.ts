@@ -8,18 +8,17 @@ export declare class Log {
         createdAt?: import("..").TimestampLike | import("yup").Maybe<null>;
         updatedAt?: import("..").TimestampLike | import("yup").Maybe<null>;
         parentIssueIds?: string[] | undefined;
+        setbackThreshold?: import("yup").Maybe<number | undefined>;
         supportGroupIds?: string[] | undefined;
         notification?: import("yup").Maybe<{} | undefined> | {
             title: string;
             body: string;
         };
         dailySetbackThreshold?: import("yup").Maybe<number | undefined>;
-        setbackThreshold?: import("yup").Maybe<number | undefined>;
         issueId?: import("yup").Maybe<string | undefined>;
         sendWeeklyReports?: import("yup").Maybe<boolean | undefined>;
         uid: string;
         name: string;
-        ordinal: number;
         measureTactic: {
             createdAt?: import("..").TimestampLike | import("yup").Maybe<null>;
             updatedAt?: import("..").TimestampLike | import("yup").Maybe<null>;
@@ -98,6 +97,7 @@ export declare class Log {
             title: string;
             backgroundColor: string;
         };
+        ordinal: number;
     };
 }
 export declare function formatPattern(pattern?: {

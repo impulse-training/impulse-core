@@ -14,8 +14,8 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         suggestedTacticIds: string[];
         llmPrompt: string;
     } | null | undefined;
-    setbackThreshold?: number | undefined;
     parentId?: string | null | undefined;
+    setbackThreshold?: number | undefined;
     programsCount?: number | null | undefined;
     profileCount?: number | null | undefined;
     isFeatured?: boolean | null | undefined;
@@ -30,6 +30,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         toDate: Function;
     };
     name: string;
+    synonyms: (string | undefined)[];
     measureTactic: {
         createdAt?: TimestampLike | import("yup").Maybe<null>;
         updatedAt?: TimestampLike | import("yup").Maybe<null>;
@@ -108,7 +109,6 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         title: string;
         backgroundColor: string;
     };
-    synonyms: (string | undefined)[];
     parentIds: (string | undefined)[];
     parentNames: (string | undefined)[];
-}, "createdAt" | "updatedAt" | "name" | "measureTactic" | "synonyms" | "parentIds" | "parentNames" | ("path" | "main" | "success" | "setback" | "setbackThreshold" | "parentId" | "programsCount" | "profileCount" | "isFeatured")>;
+}, "createdAt" | "updatedAt" | "name" | "synonyms" | "measureTactic" | "parentIds" | "parentNames" | ("path" | "main" | "success" | "setback" | "parentId" | "setbackThreshold" | "programsCount" | "profileCount" | "isFeatured")>;

@@ -89,8 +89,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             suggestedTacticIds: string[];
             llmPrompt: string;
         } | null | undefined;
-        setbackThreshold?: number | undefined;
         parentId?: string | null | undefined;
+        setbackThreshold?: number | undefined;
         programsCount?: number | null | undefined;
         profileCount?: number | null | undefined;
         isFeatured?: boolean | null | undefined;
@@ -105,6 +105,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: Function;
         };
         name: string;
+        synonyms: (string | undefined)[];
         measureTactic: {
             createdAt?: TimestampLike | import("yup").Maybe<null>;
             updatedAt?: TimestampLike | import("yup").Maybe<null>;
@@ -183,10 +184,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             title: string;
             backgroundColor: string;
         };
-        synonyms: (string | undefined)[];
         parentIds: (string | undefined)[];
         parentNames: (string | undefined)[];
-    }, "createdAt" | "updatedAt" | "name" | "measureTactic" | "synonyms" | "parentIds" | "parentNames" | ("path" | "main" | "success" | "setback" | "setbackThreshold" | "parentId" | "programsCount" | "profileCount" | "isFeatured")>;
+    }, "createdAt" | "updatedAt" | "name" | "synonyms" | "measureTactic" | "parentIds" | "parentNames" | ("path" | "main" | "success" | "setback" | "parentId" | "setbackThreshold" | "programsCount" | "profileCount" | "isFeatured")>;
     adminProfileFactory: import("factory.ts").Factory<{
         createdAt?: TimestampLike | import("yup").Maybe<null>;
         updatedAt?: TimestampLike | import("yup").Maybe<null>;
@@ -263,18 +263,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         createdAt?: TimestampLike | import("yup").Maybe<null>;
         updatedAt?: TimestampLike | import("yup").Maybe<null>;
         parentIssueIds?: string[] | undefined;
+        setbackThreshold?: import("yup").Maybe<number | undefined>;
         supportGroupIds?: string[] | undefined;
         notification?: import("yup").Maybe<{} | undefined> | {
             title: string;
             body: string;
         };
         dailySetbackThreshold?: import("yup").Maybe<number | undefined>;
-        setbackThreshold?: import("yup").Maybe<number | undefined>;
         issueId?: import("yup").Maybe<string | undefined>;
         sendWeeklyReports?: import("yup").Maybe<boolean | undefined>;
         uid: string;
         name: string;
-        ordinal: number;
         measureTactic: {
             createdAt?: TimestampLike | import("yup").Maybe<null>;
             updatedAt?: TimestampLike | import("yup").Maybe<null>;
@@ -353,7 +352,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             title: string;
             backgroundColor: string;
         };
-    }, "uid" | "name" | "ordinal" | "measureTactic" | ("createdAt" | "updatedAt" | "parentIssueIds" | "supportGroupIds" | "notification" | "dailySetbackThreshold" | "setbackThreshold" | "issueId" | "sendWeeklyReports")>;
+        ordinal: number;
+    }, "uid" | "name" | "measureTactic" | "ordinal" | ("createdAt" | "updatedAt" | "parentIssueIds" | "setbackThreshold" | "supportGroupIds" | "notification" | "dailySetbackThreshold" | "issueId" | "sendWeeklyReports")>;
     programFactory: import("factory.ts").Factory<import("..").ProgramValue, "createdAt" | "updatedAt" | "uid" | "tacticsById" | "main" | "success" | "setback" | "time" | "location" | "forIssueIds" | "issueNames" | "issueNamesSummary" | "recommendationSummary">;
     tacticFactory: import("factory.ts").Factory<import("..").NonRecursiveTactic, "createdAt" | "updatedAt" | "uid" | "type" | "sourceId" | "title" | "subtitle" | "description" | "image" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
     measureTimeTacticFactory: import("factory.ts").Factory<{
