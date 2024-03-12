@@ -1,6 +1,7 @@
 import * as yup from 'yup';
 import { WithTacticsById } from './tactic';
 export declare const programSchema: yup.ObjectSchema<{
+    title: string;
     forIssueIds: string[];
     issueNames: {
         [x: string]: string | undefined;
@@ -51,6 +52,7 @@ export declare const programSchema: yup.ObjectSchema<{
         toDate: Function;
     };
 }, yup.AnyObject, {
+    title: undefined;
     forIssueIds: "";
     issueNames: undefined;
     issueNamesSummary: undefined;

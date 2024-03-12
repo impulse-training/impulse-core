@@ -10,6 +10,7 @@ import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { timestampSchema } from './utils/timestamp';
 
 export const programSchema = yup.object().shape({
+  title: yup.string().required(),
   forIssueIds: requiredStringArray,
   issueNames: optionalObjectOf(yup.string()),
   issueNamesSummary: yup.string().nullable(),

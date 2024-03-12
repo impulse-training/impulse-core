@@ -4,9 +4,10 @@ import { TimestampLike } from '../utils/TimestampLike';
 
 export const makeProgramFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<ProgramValue>({
+    title: 'Default',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
-    uid: Factory.each(i => `impulse-recommendation-rule-${i}`),
+    uid: 'abc123',
     forIssueIds: [],
     issueNamesSummary: '',
     issueNames: {},

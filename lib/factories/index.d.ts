@@ -354,7 +354,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         };
         ordinal: number;
     }, "uid" | "name" | "measureTactic" | "ordinal" | ("createdAt" | "updatedAt" | "parentIssueIds" | "setbackThreshold" | "supportGroupIds" | "notification" | "dailySetbackThreshold" | "issueId" | "sendWeeklyReports")>;
-    programFactory: import("factory.ts").Factory<import("..").ProgramValue, "createdAt" | "updatedAt" | "uid" | "tacticsById" | "main" | "success" | "setback" | "time" | "location" | "forIssueIds" | "issueNames" | "issueNamesSummary" | "recommendationSummary">;
+    programFactory: import("factory.ts").Factory<import("..").ProgramValue, "createdAt" | "updatedAt" | "uid" | "title" | "tacticsById" | "main" | "success" | "setback" | "time" | "location" | "forIssueIds" | "issueNames" | "issueNamesSummary" | "recommendationSummary">;
     tacticFactory: import("factory.ts").Factory<import("..").NonRecursiveTactic, "createdAt" | "updatedAt" | "uid" | "type" | "sourceId" | "title" | "subtitle" | "description" | "image" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
     measureTimeTacticFactory: import("factory.ts").Factory<{
         createdAt?: TimestampLike | import("yup").Maybe<null>;
