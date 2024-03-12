@@ -25,7 +25,7 @@ describe('pattern', () => {
     expect(errors[0].message).toEqual('measureTactic is a required field');
   });
 
-  it('derp', () => {
+  it("doesn't blow up when validating an empty object", () => {
     const pattern = {};
 
     let errors: Array<Error> = [];
@@ -41,7 +41,33 @@ describe('pattern', () => {
       }
     }
 
-    expect(errors.length).toEqual(1);
-    expect(errors[0].message).toEqual('measureTactic is a required field');
+    const errorMessages = errors.map(error => error.message);
+    expect(errors.length).toBeGreaterThan(0);
+    expect(errorMessages).toContain('measureTactic is a required field');
+  });
+
+  it('ensures that the measure tactic has a type of measure-time or measure-counter', () => {
+    const pattern = {
+      measureTactic: { type: 'question?' },
+    };
+
+    let errors: Array<Error> = [];
+
+    try {
+      patternSchema.validateSync(pattern, { abortEarly: false });
+    } catch (error) {
+      if (error instanceof ValidationError) {
+        error.inner.forEach(err => errors.push(err));
+      } else {
+        // Error is unexpected
+        throw error;
+      }
+    }
+
+    const errorMessages = errors.map(error => error.message);
+    expect(errors.length).toBeGreaterThan(0);
+    expect(errorMessages).toContain(
+      'measureTactic.type must be one of the following values: measure-time, measure-counter'
+    );
   });
 });

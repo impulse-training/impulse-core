@@ -23,6 +23,36 @@ export type MeasureCounterTacticValue = yup.InferType<
   typeof measureCounterTacticSchema
 >;
 
+export const measureTacticSubsetSchemas: Record<
+  MeasureTacticValue['type'],
+  yup.ObjectSchema<MeasureTacticValue>
+> = {
+  'measure-time': measureTimeTacticSchema,
+  'measure-counter': measureCounterTacticSchema,
+} as any;
+
+export const measureTacticSubsetSchema = yup.lazy(value => {
+  if (!value) return yup.mixed().required();
+
+  if (
+    typeof value.type === 'string' &&
+    value.type in measureTacticSubsetSchemas
+  ) {
+    return measureTacticSubsetSchemas[value.type as MeasureTacticValue['type']];
+  }
+
+  return yup.object({
+    type: yup
+      .mixed<MeasureTacticValue['type']>()
+      .oneOf(
+        Object.keys(measureTacticSubsetSchemas) as MeasureTacticValue['type'][]
+      )
+      .required(),
+  });
+}) as yup.Lazy<ValidatedMeasureTactic>;
+
+// We also have this subset of the measure tactic schema that we use in the pattern schema - it's
+// either a measure-time or measure-counter tactic
 export const measureTacticSchemas: Record<
   MeasureTacticValue['type'],
   yup.ObjectSchema<MeasureTacticValue>
