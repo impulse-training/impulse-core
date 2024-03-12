@@ -29,7 +29,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     lastName: string | undefined;
     nickName: string | undefined;
     region: string | null | undefined;
-    timezone: string | undefined;
+    timezone: string;
     phoneNumber: string | undefined;
     avatar: {
         localFilePath?: yup.Maybe<string | undefined>;

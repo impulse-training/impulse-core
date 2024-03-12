@@ -9,7 +9,6 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
         uri?: import("yup").Maybe<string | undefined>;
     } | undefined;
     parentIssueIds?: (string | undefined)[] | undefined;
-    timezone?: string | undefined;
     buttonId?: string | undefined;
     isAdmin?: boolean | undefined;
     isSuperAdmin?: boolean | undefined;
@@ -37,9 +36,10 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     isTourCompleted?: boolean | undefined;
     isButtonSetupSkipped?: boolean | undefined;
     uid: string;
+    timezone: string;
     email: string;
     invitationCode: string;
-}, "uid" | "email" | "invitationCode" | ("createdAt" | "updatedAt" | "avatar" | "parentIssueIds" | "timezone" | "buttonId" | "isAdmin" | "isSuperAdmin" | "activeImpulseId" | "currentAppState" | "showStorybook" | "lastActiveAt" | "expoPushToken" | "releaseChannel" | "notificationPreferences" | "isCurrentlyTrackingMotion" | "showTacticsFromSupportGroups" | "androidPermissions" | "stepTrackingEnabled" | "displayName" | "firstName" | "lastName" | "nickName" | "region" | "phoneNumber" | "isTourCompleted" | "isButtonSetupSkipped")>;
+}, "uid" | "timezone" | "email" | "invitationCode" | ("createdAt" | "updatedAt" | "avatar" | "parentIssueIds" | "buttonId" | "isAdmin" | "isSuperAdmin" | "activeImpulseId" | "currentAppState" | "showStorybook" | "lastActiveAt" | "expoPushToken" | "releaseChannel" | "notificationPreferences" | "isCurrentlyTrackingMotion" | "showTacticsFromSupportGroups" | "androidPermissions" | "stepTrackingEnabled" | "displayName" | "firstName" | "lastName" | "nickName" | "region" | "phoneNumber" | "isTourCompleted" | "isButtonSetupSkipped")>;
 export declare const makeAdminProfileFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     createdAt?: TimestampLike | import("yup").Maybe<null>;
     updatedAt?: TimestampLike | import("yup").Maybe<null>;
@@ -49,7 +49,6 @@ export declare const makeAdminProfileFactory: (TimestampKlass: typeof TimestampL
         uri?: import("yup").Maybe<string | undefined>;
     } | undefined;
     parentIssueIds?: (string | undefined)[] | undefined;
-    timezone?: string | undefined;
     buttonId?: string | undefined;
     isAdmin?: boolean | undefined;
     isSuperAdmin?: boolean | undefined;
@@ -77,6 +76,7 @@ export declare const makeAdminProfileFactory: (TimestampKlass: typeof TimestampL
     isTourCompleted?: boolean | undefined;
     isButtonSetupSkipped?: boolean | undefined;
     uid: string;
+    timezone: string;
     email: string;
     invitationCode: string;
-}, "uid" | "email" | "invitationCode" | ("createdAt" | "updatedAt" | "avatar" | "parentIssueIds" | "timezone" | "buttonId" | "isAdmin" | "isSuperAdmin" | "activeImpulseId" | "currentAppState" | "showStorybook" | "lastActiveAt" | "expoPushToken" | "releaseChannel" | "notificationPreferences" | "isCurrentlyTrackingMotion" | "showTacticsFromSupportGroups" | "androidPermissions" | "stepTrackingEnabled" | "displayName" | "firstName" | "lastName" | "nickName" | "region" | "phoneNumber" | "isTourCompleted" | "isButtonSetupSkipped")>;
+}, "uid" | "timezone" | "email" | "invitationCode" | ("createdAt" | "updatedAt" | "avatar" | "parentIssueIds" | "buttonId" | "isAdmin" | "isSuperAdmin" | "activeImpulseId" | "currentAppState" | "showStorybook" | "lastActiveAt" | "expoPushToken" | "releaseChannel" | "notificationPreferences" | "isCurrentlyTrackingMotion" | "showTacticsFromSupportGroups" | "androidPermissions" | "stepTrackingEnabled" | "displayName" | "firstName" | "lastName" | "nickName" | "region" | "phoneNumber" | "isTourCompleted" | "isButtonSetupSkipped")>;

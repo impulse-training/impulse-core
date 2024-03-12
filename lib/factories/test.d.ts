@@ -27,7 +27,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         uri?: import("yup").Maybe<string | undefined>;
     } | undefined;
     parentIssueIds?: (string | undefined)[] | undefined;
-    timezone?: string | undefined;
     buttonId?: string | undefined;
     isAdmin?: boolean | undefined;
     isSuperAdmin?: boolean | undefined;
@@ -55,9 +54,10 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     isTourCompleted?: boolean | undefined;
     isButtonSetupSkipped?: boolean | undefined;
     uid: string;
+    timezone: string;
     email: string;
     invitationCode: string;
-}, "uid" | "email" | "invitationCode" | ("createdAt" | "updatedAt" | "avatar" | "parentIssueIds" | "timezone" | "buttonId" | "isAdmin" | "isSuperAdmin" | "activeImpulseId" | "currentAppState" | "showStorybook" | "lastActiveAt" | "expoPushToken" | "releaseChannel" | "notificationPreferences" | "isCurrentlyTrackingMotion" | "showTacticsFromSupportGroups" | "androidPermissions" | "stepTrackingEnabled" | "displayName" | "firstName" | "lastName" | "nickName" | "region" | "phoneNumber" | "isTourCompleted" | "isButtonSetupSkipped")>, supportGroupFactory: import("factory.ts").Factory<{
+}, "uid" | "timezone" | "email" | "invitationCode" | ("createdAt" | "updatedAt" | "avatar" | "parentIssueIds" | "buttonId" | "isAdmin" | "isSuperAdmin" | "activeImpulseId" | "currentAppState" | "showStorybook" | "lastActiveAt" | "expoPushToken" | "releaseChannel" | "notificationPreferences" | "isCurrentlyTrackingMotion" | "showTacticsFromSupportGroups" | "androidPermissions" | "stepTrackingEnabled" | "displayName" | "firstName" | "lastName" | "nickName" | "region" | "phoneNumber" | "isTourCompleted" | "isButtonSetupSkipped")>, supportGroupFactory: import("factory.ts").Factory<{
     createdAt?: TimestampLike | import("yup").Maybe<null>;
     updatedAt?: TimestampLike | import("yup").Maybe<null>;
     isTemplate?: boolean | undefined;

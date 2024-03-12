@@ -32,7 +32,7 @@ export const profileSchema = yup.object().shape({
   lastName: yup.string().optional(),
   nickName: yup.string().optional(),
   region: yup.string().nullable().optional(),
-  timezone: yup.string().optional(),
+  timezone: yup.string().required(),
   phoneNumber: yup.string().optional(),
   avatar: imageSchema.optional().default(undefined),
   isTourCompleted: yup.boolean().optional(),

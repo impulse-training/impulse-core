@@ -43,7 +43,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             uri?: import("yup").Maybe<string | undefined>;
         } | undefined;
         parentIssueIds?: (string | undefined)[] | undefined;
-        timezone?: string | undefined;
         buttonId?: string | undefined;
         isAdmin?: boolean | undefined;
         isSuperAdmin?: boolean | undefined;
@@ -71,9 +70,10 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         isTourCompleted?: boolean | undefined;
         isButtonSetupSkipped?: boolean | undefined;
         uid: string;
+        timezone: string;
         email: string;
         invitationCode: string;
-    }, "uid" | "email" | "invitationCode" | ("createdAt" | "updatedAt" | "avatar" | "parentIssueIds" | "timezone" | "buttonId" | "isAdmin" | "isSuperAdmin" | "activeImpulseId" | "currentAppState" | "showStorybook" | "lastActiveAt" | "expoPushToken" | "releaseChannel" | "notificationPreferences" | "isCurrentlyTrackingMotion" | "showTacticsFromSupportGroups" | "androidPermissions" | "stepTrackingEnabled" | "displayName" | "firstName" | "lastName" | "nickName" | "region" | "phoneNumber" | "isTourCompleted" | "isButtonSetupSkipped")>;
+    }, "uid" | "timezone" | "email" | "invitationCode" | ("createdAt" | "updatedAt" | "avatar" | "parentIssueIds" | "buttonId" | "isAdmin" | "isSuperAdmin" | "activeImpulseId" | "currentAppState" | "showStorybook" | "lastActiveAt" | "expoPushToken" | "releaseChannel" | "notificationPreferences" | "isCurrentlyTrackingMotion" | "showTacticsFromSupportGroups" | "androidPermissions" | "stepTrackingEnabled" | "displayName" | "firstName" | "lastName" | "nickName" | "region" | "phoneNumber" | "isTourCompleted" | "isButtonSetupSkipped")>;
     gameplanFactory: import("factory.ts").Factory<import("..").GameplanValue, "createdAt" | "updatedAt" | "uid" | "tacticsById" | "main" | "success" | "setback" | "name" | "programId" | "parentIssueIds" | "measureTacticIds" | "time" | "location" | "scheduledNotificationIds">;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
@@ -196,7 +196,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             uri?: import("yup").Maybe<string | undefined>;
         } | undefined;
         parentIssueIds?: (string | undefined)[] | undefined;
-        timezone?: string | undefined;
         buttonId?: string | undefined;
         isAdmin?: boolean | undefined;
         isSuperAdmin?: boolean | undefined;
@@ -224,9 +223,10 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         isTourCompleted?: boolean | undefined;
         isButtonSetupSkipped?: boolean | undefined;
         uid: string;
+        timezone: string;
         email: string;
         invitationCode: string;
-    }, "uid" | "email" | "invitationCode" | ("createdAt" | "updatedAt" | "avatar" | "parentIssueIds" | "timezone" | "buttonId" | "isAdmin" | "isSuperAdmin" | "activeImpulseId" | "currentAppState" | "showStorybook" | "lastActiveAt" | "expoPushToken" | "releaseChannel" | "notificationPreferences" | "isCurrentlyTrackingMotion" | "showTacticsFromSupportGroups" | "androidPermissions" | "stepTrackingEnabled" | "displayName" | "firstName" | "lastName" | "nickName" | "region" | "phoneNumber" | "isTourCompleted" | "isButtonSetupSkipped")>;
+    }, "uid" | "timezone" | "email" | "invitationCode" | ("createdAt" | "updatedAt" | "avatar" | "parentIssueIds" | "buttonId" | "isAdmin" | "isSuperAdmin" | "activeImpulseId" | "currentAppState" | "showStorybook" | "lastActiveAt" | "expoPushToken" | "releaseChannel" | "notificationPreferences" | "isCurrentlyTrackingMotion" | "showTacticsFromSupportGroups" | "androidPermissions" | "stepTrackingEnabled" | "displayName" | "firstName" | "lastName" | "nickName" | "region" | "phoneNumber" | "isTourCompleted" | "isButtonSetupSkipped")>;
     supportGroupFactory: import("factory.ts").Factory<{
         createdAt?: TimestampLike | import("yup").Maybe<null>;
         updatedAt?: TimestampLike | import("yup").Maybe<null>;
