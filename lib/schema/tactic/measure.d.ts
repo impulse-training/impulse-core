@@ -159,6 +159,8 @@ export declare const measureCounterTacticSchema: yup.ObjectSchema<{
     isSuggested: undefined;
 }, "">;
 export type MeasureCounterTacticValue = yup.InferType<typeof measureCounterTacticSchema>;
+export declare const measureTacticSubsetSchemas: Record<MeasureTacticValue['type'], yup.ObjectSchema<MeasureTacticValue>>;
+export declare const measureTacticSubsetSchema: yup.Lazy<ValidatedMeasureTactic, yup.AnyObject, any>;
 export declare const measureTacticSchemas: Record<MeasureTacticValue['type'], yup.ObjectSchema<MeasureTacticValue>>;
 export declare const measureTacticSchema: yup.Lazy<ValidatedMeasureTactic, yup.AnyObject, any>;
 type ValidatedMeasureTactic = {

@@ -15,7 +15,7 @@ export const issueSchema = yup.object().shape({
   name: yup.string().required(),
   synonyms: yup
     .array()
-    .of(yup.string())
+    .of(yup.string().required())
     .required()
     .test('includes-name', 'Synonyms must include name', function (synonyms) {
       return synonyms.includes(this.parent.name);

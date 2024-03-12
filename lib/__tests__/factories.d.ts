@@ -105,7 +105,7 @@ export declare const factories: {
             toDate: Function;
         };
         name: string;
-        synonyms: (string | undefined)[];
+        synonyms: string[];
         measureTactic: {
             createdAt?: TimestampLike | import("yup").Maybe<null>;
             updatedAt?: TimestampLike | import("yup").Maybe<null>;

@@ -12,7 +12,7 @@ export declare const issueSchema: yup.ObjectSchema<{
     };
     parentId: string | null | undefined;
     name: string;
-    synonyms: (string | undefined)[];
+    synonyms: string[];
     measureTactic: {
         createdAt?: import("..").TimestampLike | yup.Maybe<null>;
         updatedAt?: import("..").TimestampLike | yup.Maybe<null>;
