@@ -60,7 +60,7 @@ export const tacticSchemas: Record<
   steps: stepsTacticSchema,
   task: taskTacticSchema,
   emotions: emotionsTacticSchema,
-  urgeSurfing: urgeSurfingTacticSchema,
+  'urge-surfing': urgeSurfingTacticSchema,
 } as any;
 // We do highly value static typing, but the problem is that yup's generated types are bloated and
 // cause problems. Instead of exporting generated types for top-level types like tacticSchemas, we

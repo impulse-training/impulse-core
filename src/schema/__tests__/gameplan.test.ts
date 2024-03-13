@@ -1,5 +1,6 @@
-import { ValidationError } from 'yup';
 import { factories } from '../../__tests__/factories';
+import { getErrors } from '../../__tests__/utils';
+import { tacticFactory } from '../../factories/test';
 import { gameplanSchema } from '../gameplan';
 
 describe('gameplan', () => {
@@ -17,19 +18,19 @@ describe('gameplan', () => {
       },
     });
 
-    let errors: Array<Error> = [];
-
-    try {
-      gameplanSchema.validateSync(gameplan, { abortEarly: false });
-    } catch (error) {
-      if (error instanceof ValidationError) {
-        error.inner.forEach(err => errors.push(err));
-      } else {
-        // Error is unexpected
-        throw error;
-      }
-    }
-
+    const errors = getErrors(gameplan, gameplanSchema);
     expect(errors.length).toEqual(1);
+  });
+
+  it.only('is valid with an urge surfing tactic in tacticsById', () => {
+    const gameplan = factories.gameplanFactory.build({
+      tacticsById: {
+        abc: tacticFactory.build({ type: 'urge-surfing' }),
+      },
+    });
+
+    const errors = getErrors(gameplan, gameplanSchema);
+    console.log({ errors });
+    expect(errors.length).toEqual(0);
   });
 });
