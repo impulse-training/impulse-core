@@ -32,8 +32,16 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
     name: string;
     synonyms: string[];
     measureTactic: {
-        createdAt?: TimestampLike | import("yup").Maybe<null>;
-        updatedAt?: TimestampLike | import("yup").Maybe<null>;
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
         uid?: string | null | undefined;
         sourceId?: string | undefined;
         subtitle?: import("yup").Maybe<string | undefined>;
@@ -59,8 +67,16 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         title: string;
         backgroundColor: string;
     } | {
-        createdAt?: TimestampLike | import("yup").Maybe<null>;
-        updatedAt?: TimestampLike | import("yup").Maybe<null>;
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
         uid?: string | null | undefined;
         sourceId?: string | undefined;
         subtitle?: import("yup").Maybe<string | undefined>;
@@ -84,8 +100,16 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         title: string;
         backgroundColor: string;
     } | {
-        createdAt?: TimestampLike | import("yup").Maybe<null>;
-        updatedAt?: TimestampLike | import("yup").Maybe<null>;
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
         uid?: string | null | undefined;
         sourceId?: string | undefined;
         subtitle?: import("yup").Maybe<string | undefined>;

@@ -7,7 +7,7 @@ import {
 import { WithTacticsById, tacticSchema } from './tactic';
 import { requiredStringArray } from './utils/array';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
-import { timestampSchema } from './utils/timestamp';
+import { optionalTimestampSchema } from './utils/timestamp';
 
 export const programSchema = yup.object().shape({
   title: yup.string().required(),
@@ -22,8 +22,8 @@ export const programSchema = yup.object().shape({
   location: optionalObjectOf(locationRoutineSchema.required()),
   uid: yup.string().required(),
   tacticsById: objectOf(tacticSchema) as any,
-  createdAt: timestampSchema.required(),
-  updatedAt: timestampSchema.required(),
+  createdAt: optionalTimestampSchema,
+  updatedAt: optionalTimestampSchema,
 });
 
 export type ProgramValue = WithTacticsById<yup.InferType<typeof programSchema>>;

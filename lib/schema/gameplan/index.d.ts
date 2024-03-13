@@ -9,8 +9,16 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     uid: string;
     name: yup.Maybe<string | undefined>;
     programId: yup.Maybe<string | undefined>;
-    createdAt: TimestampLike | yup.Maybe<null>;
-    updatedAt: TimestampLike | yup.Maybe<null>;
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
     parentIssueIds: string[] | undefined;
     main: {
         [x: string]: {

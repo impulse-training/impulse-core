@@ -1,8 +1,16 @@
 import * as yup from 'yup';
 export declare const locationSchema: yup.ObjectSchema<{
     uid: string;
-    createdAt: import("..").TimestampLike | yup.Maybe<null>;
-    updatedAt: import("..").TimestampLike | yup.Maybe<null>;
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
     name: string;
     latitude: number | undefined;
     longitude: number | undefined;

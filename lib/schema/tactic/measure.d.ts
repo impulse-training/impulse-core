@@ -3,8 +3,16 @@ export declare const measureSliderTacticSchema: yup.ObjectSchema<{
     type: "measure-slider";
     uid: string | null | undefined;
     sourceId: string | undefined;
-    createdAt: import("../..").TimestampLike | yup.Maybe<null>;
-    updatedAt: import("../..").TimestampLike | yup.Maybe<null>;
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
     title: string;
     subtitle: yup.Maybe<string | undefined>;
     description: string | null | undefined;
@@ -59,8 +67,16 @@ export declare const measureTimeTacticSchema: yup.ObjectSchema<{
     type: "measure-time";
     uid: string | null | undefined;
     sourceId: string | undefined;
-    createdAt: import("../..").TimestampLike | yup.Maybe<null>;
-    updatedAt: import("../..").TimestampLike | yup.Maybe<null>;
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
     title: string;
     subtitle: yup.Maybe<string | undefined>;
     description: string | null | undefined;
@@ -111,8 +127,16 @@ export declare const measureCounterTacticSchema: yup.ObjectSchema<{
     type: "measure-counter";
     uid: string | null | undefined;
     sourceId: string | undefined;
-    createdAt: import("../..").TimestampLike | yup.Maybe<null>;
-    updatedAt: import("../..").TimestampLike | yup.Maybe<null>;
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
     title: string;
     subtitle: yup.Maybe<string | undefined>;
     description: string | null | undefined;

@@ -1,7 +1,15 @@
 import * as yup from 'yup';
 export declare const commentSchema: yup.ObjectSchema<{
-    createdAt: import("..").TimestampLike | yup.Maybe<null>;
-    updatedAt: import("..").TimestampLike | yup.Maybe<null>;
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
     tacticId: string | null | undefined;
     tacticName: string | null | undefined;
     text: string | undefined;

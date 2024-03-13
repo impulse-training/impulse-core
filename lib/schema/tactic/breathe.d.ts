@@ -3,8 +3,16 @@ export declare const breatheTacticSchema: yup.ObjectSchema<{
     type: "breathe";
     uid: string | null | undefined;
     sourceId: string | undefined;
-    createdAt: import("../..").TimestampLike | yup.Maybe<null>;
-    updatedAt: import("../..").TimestampLike | yup.Maybe<null>;
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
     title: string;
     subtitle: yup.Maybe<string | undefined>;
     description: string | null | undefined;

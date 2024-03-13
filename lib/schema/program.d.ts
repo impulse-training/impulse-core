@@ -45,12 +45,12 @@ export declare const programSchema: yup.ObjectSchema<{
         seconds: number;
         nanoseconds: number;
         toDate: Function;
-    };
+    } | null | undefined;
     updatedAt: {
         seconds: number;
         nanoseconds: number;
         toDate: Function;
-    };
+    } | null | undefined;
 }, yup.AnyObject, {
     title: undefined;
     forIssueIds: "";
@@ -67,15 +67,7 @@ export declare const programSchema: yup.ObjectSchema<{
     location: undefined;
     uid: undefined;
     tacticsById: any;
-    createdAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    updatedAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
+    createdAt: undefined;
+    updatedAt: undefined;
 }, "">;
 export type ProgramValue = WithTacticsById<yup.InferType<typeof programSchema>>;

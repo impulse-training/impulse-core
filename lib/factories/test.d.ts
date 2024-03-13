@@ -1,7 +1,14 @@
-import { TimestampLike } from '../utils/TimestampLike';
 export declare const applicationFactory: import("factory.ts").Factory<import("..").ApplicationValue, keyof import("..").ApplicationValue>, commentFactory: import("factory.ts").Factory<{
-    createdAt?: TimestampLike | import("yup").Maybe<null>;
-    updatedAt?: TimestampLike | import("yup").Maybe<null>;
+    createdAt?: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    updatedAt?: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
     tacticId?: string | null | undefined;
     tacticName?: string | null | undefined;
     text?: string | undefined;
@@ -19,8 +26,16 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     uid: string;
     authorName: string;
 }, "uid" | "authorName" | ("createdAt" | "updatedAt" | "tacticId" | "tacticName" | "text" | "recording" | "isEdited" | "avatar")>, impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "uid" | "type" | "tacticsById" | "steps" | "location" | "startTime" | "timezone" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenStrategy" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "setAsActiveImpulse" | "pressCount" | "isDisplayable" | "buttonPressSecondsSinceEpoch" | "gameplan" | "outcome" | "patternId" | "patternsById" | "debriefNotes" | "debriefReminderSentAt" | "debriefedAt">, timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "uid" | "type" | "tacticsById" | "steps" | "location" | "startTime" | "timezone" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenStrategy" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable">, motionLogFactory: import("factory.ts").Factory<import("..").MotionLogValue, "createdAt" | "updatedAt" | "uid" | "type" | "tacticsById" | "steps" | "location" | "startTime" | "timezone" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenStrategy" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable">, profileFactory: import("factory.ts").Factory<{
-    createdAt?: TimestampLike | import("yup").Maybe<null>;
-    updatedAt?: TimestampLike | import("yup").Maybe<null>;
+    createdAt?: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    updatedAt?: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
     avatar?: {
         localFilePath?: import("yup").Maybe<string | undefined>;
         storagePath?: import("yup").Maybe<string | undefined>;
@@ -58,8 +73,16 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     email: string;
     invitationCode: string;
 }, "uid" | "timezone" | "email" | "invitationCode" | ("createdAt" | "updatedAt" | "avatar" | "parentIssueIds" | "buttonId" | "isAdmin" | "isSuperAdmin" | "activeImpulseId" | "currentAppState" | "showStorybook" | "lastActiveAt" | "expoPushToken" | "releaseChannel" | "notificationPreferences" | "isCurrentlyTrackingMotion" | "showTacticsFromSupportGroups" | "androidPermissions" | "stepTrackingEnabled" | "displayName" | "firstName" | "lastName" | "nickName" | "region" | "phoneNumber" | "isTourCompleted" | "isButtonSetupSkipped")>, supportGroupFactory: import("factory.ts").Factory<{
-    createdAt?: TimestampLike | import("yup").Maybe<null>;
-    updatedAt?: TimestampLike | import("yup").Maybe<null>;
+    createdAt?: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    updatedAt?: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
     isTemplate?: boolean | undefined;
     invitationCode?: string | undefined;
     slug?: string | undefined;

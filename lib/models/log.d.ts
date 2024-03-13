@@ -5,23 +5,39 @@ export declare class Log {
     constructor(id: string, data: LogValue);
     get text(): string | undefined;
     get selectedPattern(): {
-        createdAt?: import("..").TimestampLike | import("yup").Maybe<null>;
-        updatedAt?: import("..").TimestampLike | import("yup").Maybe<null>;
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
         parentIssueIds?: string[] | undefined;
         setbackThreshold?: import("yup").Maybe<number | undefined>;
         supportGroupIds?: string[] | undefined;
-        notification?: import("yup").Maybe<{} | undefined> | {
+        notification?: {
             title: string;
             body: string;
-        };
+        } | import("yup").Maybe<{} | undefined>;
         dailySetbackThreshold?: import("yup").Maybe<number | undefined>;
         issueId?: import("yup").Maybe<string | undefined>;
         sendWeeklyReports?: import("yup").Maybe<boolean | undefined>;
         uid: string;
         name: string;
         measureTactic: {
-            createdAt?: import("..").TimestampLike | import("yup").Maybe<null>;
-            updatedAt?: import("..").TimestampLike | import("yup").Maybe<null>;
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
             uid?: string | null | undefined;
             sourceId?: string | undefined;
             subtitle?: import("yup").Maybe<string | undefined>;
@@ -47,8 +63,16 @@ export declare class Log {
             title: string;
             backgroundColor: string;
         } | {
-            createdAt?: import("..").TimestampLike | import("yup").Maybe<null>;
-            updatedAt?: import("..").TimestampLike | import("yup").Maybe<null>;
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
             uid?: string | null | undefined;
             sourceId?: string | undefined;
             subtitle?: import("yup").Maybe<string | undefined>;
@@ -72,8 +96,16 @@ export declare class Log {
             title: string;
             backgroundColor: string;
         } | {
-            createdAt?: import("..").TimestampLike | import("yup").Maybe<null>;
-            updatedAt?: import("..").TimestampLike | import("yup").Maybe<null>;
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
             uid?: string | null | undefined;
             sourceId?: string | undefined;
             subtitle?: import("yup").Maybe<string | undefined>;

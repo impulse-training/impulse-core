@@ -1,5 +1,4 @@
 import * as yup from 'yup';
-import { TimestampLike } from '../../utils/TimestampLike';
 
 export const timestampSchema = yup.object({
   seconds: yup.number().required(),
@@ -12,6 +11,6 @@ export const timestampSchema = yup.object({
     .required(),
 });
 
-export const optionalTimestampSchema = yup.lazy(value =>
-  value == null ? yup.mixed().notRequired() : timestampSchema
-) as yup.Lazy<yup.Maybe<null> | TimestampLike, yup.AnyObject, any>;
+export const optionalTimestampSchema = timestampSchema
+  .notRequired()
+  .default(undefined);

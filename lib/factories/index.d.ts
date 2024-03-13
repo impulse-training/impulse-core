@@ -2,8 +2,16 @@ import { TimestampLike } from '../utils/TimestampLike';
 export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
     applicationFactory: import("factory.ts").Factory<import("..").ApplicationValue, keyof import("..").ApplicationValue>;
     commentFactory: import("factory.ts").Factory<{
-        createdAt?: TimestampLike | import("yup").Maybe<null>;
-        updatedAt?: TimestampLike | import("yup").Maybe<null>;
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
         tacticId?: string | null | undefined;
         tacticName?: string | null | undefined;
         text?: string | undefined;
@@ -26,8 +34,16 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
     motionLogFactory: import("factory.ts").Factory<import("..").MotionLogValue, "createdAt" | "updatedAt" | "uid" | "type" | "tacticsById" | "steps" | "location" | "startTime" | "timezone" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenStrategy" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable">;
     locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "createdAt" | "updatedAt" | "uid" | "type" | "tacticsById" | "steps" | "locationId" | "location" | "startTime" | "timezone" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenStrategy" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "locationName" | "locationMode">;
     locationFactory: import("factory.ts").Factory<{
-        createdAt?: TimestampLike | import("yup").Maybe<null>;
-        updatedAt?: TimestampLike | import("yup").Maybe<null>;
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
         latitude?: number | undefined;
         longitude?: number | undefined;
         uid: string;
@@ -35,8 +51,16 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         address: string;
     }, "uid" | "name" | "address" | ("createdAt" | "updatedAt" | "latitude" | "longitude")>;
     profileFactory: import("factory.ts").Factory<{
-        createdAt?: TimestampLike | import("yup").Maybe<null>;
-        updatedAt?: TimestampLike | import("yup").Maybe<null>;
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
         avatar?: {
             localFilePath?: import("yup").Maybe<string | undefined>;
             storagePath?: import("yup").Maybe<string | undefined>;
@@ -107,8 +131,16 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         name: string;
         synonyms: string[];
         measureTactic: {
-            createdAt?: TimestampLike | import("yup").Maybe<null>;
-            updatedAt?: TimestampLike | import("yup").Maybe<null>;
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
             uid?: string | null | undefined;
             sourceId?: string | undefined;
             subtitle?: import("yup").Maybe<string | undefined>;
@@ -134,8 +166,16 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             title: string;
             backgroundColor: string;
         } | {
-            createdAt?: TimestampLike | import("yup").Maybe<null>;
-            updatedAt?: TimestampLike | import("yup").Maybe<null>;
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
             uid?: string | null | undefined;
             sourceId?: string | undefined;
             subtitle?: import("yup").Maybe<string | undefined>;
@@ -159,8 +199,16 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             title: string;
             backgroundColor: string;
         } | {
-            createdAt?: TimestampLike | import("yup").Maybe<null>;
-            updatedAt?: TimestampLike | import("yup").Maybe<null>;
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
             uid?: string | null | undefined;
             sourceId?: string | undefined;
             subtitle?: import("yup").Maybe<string | undefined>;
@@ -188,8 +236,16 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         parentNames: (string | undefined)[];
     }, "createdAt" | "updatedAt" | "name" | "synonyms" | "measureTactic" | "parentIds" | "parentNames" | ("path" | "main" | "success" | "setback" | "parentId" | "setbackThreshold" | "programsCount" | "profileCount" | "isFeatured")>;
     adminProfileFactory: import("factory.ts").Factory<{
-        createdAt?: TimestampLike | import("yup").Maybe<null>;
-        updatedAt?: TimestampLike | import("yup").Maybe<null>;
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
         avatar?: {
             localFilePath?: import("yup").Maybe<string | undefined>;
             storagePath?: import("yup").Maybe<string | undefined>;
@@ -228,8 +284,16 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         invitationCode: string;
     }, "uid" | "timezone" | "email" | "invitationCode" | ("createdAt" | "updatedAt" | "avatar" | "parentIssueIds" | "buttonId" | "isAdmin" | "isSuperAdmin" | "activeImpulseId" | "currentAppState" | "showStorybook" | "lastActiveAt" | "expoPushToken" | "releaseChannel" | "notificationPreferences" | "isCurrentlyTrackingMotion" | "showTacticsFromSupportGroups" | "androidPermissions" | "stepTrackingEnabled" | "displayName" | "firstName" | "lastName" | "nickName" | "region" | "phoneNumber" | "isTourCompleted" | "isButtonSetupSkipped")>;
     supportGroupFactory: import("factory.ts").Factory<{
-        createdAt?: TimestampLike | import("yup").Maybe<null>;
-        updatedAt?: TimestampLike | import("yup").Maybe<null>;
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
         isTemplate?: boolean | undefined;
         invitationCode?: string | undefined;
         slug?: string | undefined;
@@ -260,23 +324,39 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
     }, "thumbnailUrl" | "suggestedTacticIds" | "participantUids" | "groupName" | "creatorName" | "creatorUid" | "icon" | "unreadCounts" | "permissions" | ("createdAt" | "updatedAt" | "isTemplate" | "invitationCode" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "lastMessagePreview" | "invitationUrl" | "lastMessageUid" | "isSharingDisabled")>;
     messageFactory: import("factory.ts").Factory<import("..").MessageValue, keyof import("..").MessageValue>;
     patternFactory: import("factory.ts").Factory<{
-        createdAt?: TimestampLike | import("yup").Maybe<null>;
-        updatedAt?: TimestampLike | import("yup").Maybe<null>;
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
         parentIssueIds?: string[] | undefined;
         setbackThreshold?: import("yup").Maybe<number | undefined>;
         supportGroupIds?: string[] | undefined;
-        notification?: import("yup").Maybe<{} | undefined> | {
+        notification?: {
             title: string;
             body: string;
-        };
+        } | import("yup").Maybe<{} | undefined>;
         dailySetbackThreshold?: import("yup").Maybe<number | undefined>;
         issueId?: import("yup").Maybe<string | undefined>;
         sendWeeklyReports?: import("yup").Maybe<boolean | undefined>;
         uid: string;
         name: string;
         measureTactic: {
-            createdAt?: TimestampLike | import("yup").Maybe<null>;
-            updatedAt?: TimestampLike | import("yup").Maybe<null>;
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
             uid?: string | null | undefined;
             sourceId?: string | undefined;
             subtitle?: import("yup").Maybe<string | undefined>;
@@ -302,8 +382,16 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             title: string;
             backgroundColor: string;
         } | {
-            createdAt?: TimestampLike | import("yup").Maybe<null>;
-            updatedAt?: TimestampLike | import("yup").Maybe<null>;
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
             uid?: string | null | undefined;
             sourceId?: string | undefined;
             subtitle?: import("yup").Maybe<string | undefined>;
@@ -327,8 +415,16 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             title: string;
             backgroundColor: string;
         } | {
-            createdAt?: TimestampLike | import("yup").Maybe<null>;
-            updatedAt?: TimestampLike | import("yup").Maybe<null>;
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
             uid?: string | null | undefined;
             sourceId?: string | undefined;
             subtitle?: import("yup").Maybe<string | undefined>;
@@ -357,8 +453,16 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
     programFactory: import("factory.ts").Factory<import("..").ProgramValue, "createdAt" | "updatedAt" | "uid" | "title" | "tacticsById" | "main" | "success" | "setback" | "time" | "location" | "forIssueIds" | "issueNames" | "issueNamesSummary" | "recommendationSummary">;
     tacticFactory: import("factory.ts").Factory<import("..").NonRecursiveTactic, "createdAt" | "updatedAt" | "uid" | "type" | "sourceId" | "title" | "subtitle" | "description" | "image" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
     measureTimeTacticFactory: import("factory.ts").Factory<{
-        createdAt?: TimestampLike | import("yup").Maybe<null>;
-        updatedAt?: TimestampLike | import("yup").Maybe<null>;
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
         uid?: string | null | undefined;
         sourceId?: string | undefined;
         subtitle?: import("yup").Maybe<string | undefined>;

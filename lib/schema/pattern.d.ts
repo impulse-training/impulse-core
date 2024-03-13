@@ -1,18 +1,34 @@
 import * as yup from 'yup';
 export declare const patternSchema: yup.ObjectSchema<{
     uid: string;
-    updatedAt: import("..").TimestampLike | yup.Maybe<null>;
-    createdAt: import("..").TimestampLike | yup.Maybe<null>;
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
     name: string;
     ordinal: number;
     supportGroupIds: string[] | undefined;
-    notification: yup.Maybe<{} | undefined> | {
+    notification: {
         title: string;
         body: string;
-    };
+    } | yup.Maybe<{} | undefined>;
     measureTactic: {
-        createdAt?: import("..").TimestampLike | yup.Maybe<null>;
-        updatedAt?: import("..").TimestampLike | yup.Maybe<null>;
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
         uid?: string | null | undefined;
         sourceId?: string | undefined;
         subtitle?: yup.Maybe<string | undefined>;
@@ -38,8 +54,16 @@ export declare const patternSchema: yup.ObjectSchema<{
         title: string;
         backgroundColor: string;
     } | {
-        createdAt?: import("..").TimestampLike | yup.Maybe<null>;
-        updatedAt?: import("..").TimestampLike | yup.Maybe<null>;
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
         uid?: string | null | undefined;
         sourceId?: string | undefined;
         subtitle?: yup.Maybe<string | undefined>;
@@ -63,8 +87,16 @@ export declare const patternSchema: yup.ObjectSchema<{
         title: string;
         backgroundColor: string;
     } | {
-        createdAt?: import("..").TimestampLike | yup.Maybe<null>;
-        updatedAt?: import("..").TimestampLike | yup.Maybe<null>;
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
         uid?: string | null | undefined;
         sourceId?: string | undefined;
         subtitle?: yup.Maybe<string | undefined>;

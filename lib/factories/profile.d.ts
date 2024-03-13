@@ -1,8 +1,16 @@
 import * as Factory from 'factory.ts';
 import { TimestampLike } from '../utils/TimestampLike';
 export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
-    createdAt?: TimestampLike | import("yup").Maybe<null>;
-    updatedAt?: TimestampLike | import("yup").Maybe<null>;
+    createdAt?: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    updatedAt?: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
     avatar?: {
         localFilePath?: import("yup").Maybe<string | undefined>;
         storagePath?: import("yup").Maybe<string | undefined>;
@@ -41,8 +49,16 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     invitationCode: string;
 }, "uid" | "timezone" | "email" | "invitationCode" | ("createdAt" | "updatedAt" | "avatar" | "parentIssueIds" | "buttonId" | "isAdmin" | "isSuperAdmin" | "activeImpulseId" | "currentAppState" | "showStorybook" | "lastActiveAt" | "expoPushToken" | "releaseChannel" | "notificationPreferences" | "isCurrentlyTrackingMotion" | "showTacticsFromSupportGroups" | "androidPermissions" | "stepTrackingEnabled" | "displayName" | "firstName" | "lastName" | "nickName" | "region" | "phoneNumber" | "isTourCompleted" | "isButtonSetupSkipped")>;
 export declare const makeAdminProfileFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
-    createdAt?: TimestampLike | import("yup").Maybe<null>;
-    updatedAt?: TimestampLike | import("yup").Maybe<null>;
+    createdAt?: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    updatedAt?: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
     avatar?: {
         localFilePath?: import("yup").Maybe<string | undefined>;
         storagePath?: import("yup").Maybe<string | undefined>;

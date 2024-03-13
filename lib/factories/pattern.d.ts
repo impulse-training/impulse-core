@@ -1,23 +1,39 @@
 import * as Factory from 'factory.ts';
 import { TimestampLike } from '../utils/TimestampLike';
 export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
-    createdAt?: TimestampLike | import("yup").Maybe<null>;
-    updatedAt?: TimestampLike | import("yup").Maybe<null>;
+    createdAt?: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    updatedAt?: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
     parentIssueIds?: string[] | undefined;
     setbackThreshold?: import("yup").Maybe<number | undefined>;
     supportGroupIds?: string[] | undefined;
-    notification?: import("yup").Maybe<{} | undefined> | {
+    notification?: {
         title: string;
         body: string;
-    };
+    } | import("yup").Maybe<{} | undefined>;
     dailySetbackThreshold?: import("yup").Maybe<number | undefined>;
     issueId?: import("yup").Maybe<string | undefined>;
     sendWeeklyReports?: import("yup").Maybe<boolean | undefined>;
     uid: string;
     name: string;
     measureTactic: {
-        createdAt?: TimestampLike | import("yup").Maybe<null>;
-        updatedAt?: TimestampLike | import("yup").Maybe<null>;
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
         uid?: string | null | undefined;
         sourceId?: string | undefined;
         subtitle?: import("yup").Maybe<string | undefined>;
@@ -43,8 +59,16 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
         title: string;
         backgroundColor: string;
     } | {
-        createdAt?: TimestampLike | import("yup").Maybe<null>;
-        updatedAt?: TimestampLike | import("yup").Maybe<null>;
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
         uid?: string | null | undefined;
         sourceId?: string | undefined;
         subtitle?: import("yup").Maybe<string | undefined>;
@@ -68,8 +92,16 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
         title: string;
         backgroundColor: string;
     } | {
-        createdAt?: TimestampLike | import("yup").Maybe<null>;
-        updatedAt?: TimestampLike | import("yup").Maybe<null>;
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
         uid?: string | null | undefined;
         sourceId?: string | undefined;
         subtitle?: import("yup").Maybe<string | undefined>;

@@ -3,8 +3,16 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
     type: yup.Defined<K>;
     uid: string | null | undefined;
     sourceId: string | undefined;
-    createdAt: import("../..").TimestampLike | yup.Maybe<null>;
-    updatedAt: import("../..").TimestampLike | yup.Maybe<null>;
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
     title: string;
     subtitle: yup.Maybe<string | undefined>;
     description: string | null | undefined;

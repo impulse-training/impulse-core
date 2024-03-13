@@ -14,8 +14,16 @@ export declare const issueSchema: yup.ObjectSchema<{
     name: string;
     synonyms: string[];
     measureTactic: {
-        createdAt?: import("..").TimestampLike | yup.Maybe<null>;
-        updatedAt?: import("..").TimestampLike | yup.Maybe<null>;
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
         uid?: string | null | undefined;
         sourceId?: string | undefined;
         subtitle?: yup.Maybe<string | undefined>;
@@ -41,8 +49,16 @@ export declare const issueSchema: yup.ObjectSchema<{
         title: string;
         backgroundColor: string;
     } | {
-        createdAt?: import("..").TimestampLike | yup.Maybe<null>;
-        updatedAt?: import("..").TimestampLike | yup.Maybe<null>;
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
         uid?: string | null | undefined;
         sourceId?: string | undefined;
         subtitle?: yup.Maybe<string | undefined>;
@@ -66,8 +82,16 @@ export declare const issueSchema: yup.ObjectSchema<{
         title: string;
         backgroundColor: string;
     } | {
-        createdAt?: import("..").TimestampLike | yup.Maybe<null>;
-        updatedAt?: import("..").TimestampLike | yup.Maybe<null>;
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
         uid?: string | null | undefined;
         sourceId?: string | undefined;
         subtitle?: yup.Maybe<string | undefined>;

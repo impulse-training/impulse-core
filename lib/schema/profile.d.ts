@@ -2,8 +2,16 @@ import { AppStateStatus } from 'react-native';
 import * as yup from 'yup';
 export declare const profileSchema: yup.ObjectSchema<{
     uid: string;
-    createdAt: import("..").TimestampLike | yup.Maybe<null>;
-    updatedAt: import("..").TimestampLike | yup.Maybe<null>;
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
     buttonId: string | undefined;
     isAdmin: boolean | undefined;
     isSuperAdmin: boolean | undefined;
