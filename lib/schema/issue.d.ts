@@ -117,8 +117,8 @@ export declare const issueSchema: yup.ObjectSchema<{
     };
     setbackThreshold: number | undefined;
     path: string | null | undefined;
-    parentIds: (string | undefined)[];
-    parentNames: (string | undefined)[];
+    parentIds: string[];
+    parentNames: string[];
     programsCount: number | null | undefined;
     profileCount: number | null | undefined;
     isFeatured: boolean | null | undefined;

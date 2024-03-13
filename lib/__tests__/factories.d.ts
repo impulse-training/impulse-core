@@ -231,8 +231,8 @@ export declare const factories: {
             title: string;
             backgroundColor: string;
         };
-        parentIds: (string | undefined)[];
-        parentNames: (string | undefined)[];
+        parentIds: string[];
+        parentNames: string[];
     }, "createdAt" | "updatedAt" | "name" | "synonyms" | "measureTactic" | "parentIds" | "parentNames" | ("path" | "main" | "success" | "setback" | "parentId" | "setbackThreshold" | "programsCount" | "profileCount" | "isFeatured")>;
     adminProfileFactory: import("factory.ts").Factory<{
         createdAt?: {

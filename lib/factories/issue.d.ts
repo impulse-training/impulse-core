@@ -133,6 +133,6 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         title: string;
         backgroundColor: string;
     };
-    parentIds: (string | undefined)[];
-    parentNames: (string | undefined)[];
+    parentIds: string[];
+    parentNames: string[];
 }, "createdAt" | "updatedAt" | "name" | "synonyms" | "measureTactic" | "parentIds" | "parentNames" | ("path" | "main" | "success" | "setback" | "parentId" | "setbackThreshold" | "programsCount" | "profileCount" | "isFeatured")>;
