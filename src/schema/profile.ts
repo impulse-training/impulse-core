@@ -19,6 +19,7 @@ export const profileSchema = yup.object().shape({
   lastActiveAt: yup.date().optional(),
   expoPushToken: yup.string().optional(),
   releaseChannel: yup.string().oneOf(['default', 'canary']).optional(),
+  isWidgetRegistered: yup.boolean().optional(),
   notificationPreferences: optionalObjectOf(
     yup.array().of(notificationOptionSchema)
   ),

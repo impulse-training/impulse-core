@@ -22,6 +22,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     lastActiveAt: Date | undefined;
     expoPushToken: string | undefined;
     releaseChannel: "default" | "canary" | undefined;
+    isWidgetRegistered: boolean | undefined;
     notificationPreferences: {
         [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
     } | null | undefined;
@@ -61,6 +62,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     lastActiveAt: undefined;
     expoPushToken: undefined;
     releaseChannel: undefined;
+    isWidgetRegistered: undefined;
     notificationPreferences: undefined;
     isCurrentlyTrackingMotion: undefined;
     showTacticsFromSupportGroups: undefined;

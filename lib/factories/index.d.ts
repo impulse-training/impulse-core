@@ -76,6 +76,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         lastActiveAt?: Date | undefined;
         expoPushToken?: string | undefined;
         releaseChannel?: "default" | "canary" | undefined;
+        isWidgetRegistered?: boolean | undefined;
         notificationPreferences?: {
             [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
         } | null | undefined;
@@ -97,7 +98,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         timezone: string;
         email: string;
         invitationCode: string;
-    }, "uid" | "timezone" | "email" | "invitationCode" | ("createdAt" | "updatedAt" | "avatar" | "parentIssueIds" | "buttonId" | "isAdmin" | "isSuperAdmin" | "activeImpulseId" | "currentAppState" | "showStorybook" | "lastActiveAt" | "expoPushToken" | "releaseChannel" | "notificationPreferences" | "isCurrentlyTrackingMotion" | "showTacticsFromSupportGroups" | "androidPermissions" | "stepTrackingEnabled" | "displayName" | "firstName" | "lastName" | "nickName" | "region" | "phoneNumber" | "isTourCompleted" | "isButtonSetupSkipped")>;
+    }, "uid" | "timezone" | "email" | "invitationCode" | ("createdAt" | "updatedAt" | "avatar" | "parentIssueIds" | "buttonId" | "isAdmin" | "isSuperAdmin" | "activeImpulseId" | "currentAppState" | "showStorybook" | "lastActiveAt" | "expoPushToken" | "releaseChannel" | "isWidgetRegistered" | "notificationPreferences" | "isCurrentlyTrackingMotion" | "showTacticsFromSupportGroups" | "androidPermissions" | "stepTrackingEnabled" | "displayName" | "firstName" | "lastName" | "nickName" | "region" | "phoneNumber" | "isTourCompleted" | "isButtonSetupSkipped")>;
     gameplanFactory: import("factory.ts").Factory<import("..").GameplanValue, "createdAt" | "updatedAt" | "uid" | "tacticsById" | "main" | "success" | "setback" | "name" | "programId" | "parentIssueIds" | "measureTacticIds" | "time" | "location" | "scheduledNotificationIds">;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
@@ -261,6 +262,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         lastActiveAt?: Date | undefined;
         expoPushToken?: string | undefined;
         releaseChannel?: "default" | "canary" | undefined;
+        isWidgetRegistered?: boolean | undefined;
         notificationPreferences?: {
             [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
         } | null | undefined;
@@ -282,7 +284,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         timezone: string;
         email: string;
         invitationCode: string;
-    }, "uid" | "timezone" | "email" | "invitationCode" | ("createdAt" | "updatedAt" | "avatar" | "parentIssueIds" | "buttonId" | "isAdmin" | "isSuperAdmin" | "activeImpulseId" | "currentAppState" | "showStorybook" | "lastActiveAt" | "expoPushToken" | "releaseChannel" | "notificationPreferences" | "isCurrentlyTrackingMotion" | "showTacticsFromSupportGroups" | "androidPermissions" | "stepTrackingEnabled" | "displayName" | "firstName" | "lastName" | "nickName" | "region" | "phoneNumber" | "isTourCompleted" | "isButtonSetupSkipped")>;
+    }, "uid" | "timezone" | "email" | "invitationCode" | ("createdAt" | "updatedAt" | "avatar" | "parentIssueIds" | "buttonId" | "isAdmin" | "isSuperAdmin" | "activeImpulseId" | "currentAppState" | "showStorybook" | "lastActiveAt" | "expoPushToken" | "releaseChannel" | "isWidgetRegistered" | "notificationPreferences" | "isCurrentlyTrackingMotion" | "showTacticsFromSupportGroups" | "androidPermissions" | "stepTrackingEnabled" | "displayName" | "firstName" | "lastName" | "nickName" | "region" | "phoneNumber" | "isTourCompleted" | "isButtonSetupSkipped")>;
     supportGroupFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
