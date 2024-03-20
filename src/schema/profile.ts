@@ -13,7 +13,7 @@ export const profileSchema = yup.object().shape({
   isAdmin: yup.boolean().optional(),
   isSuperAdmin: yup.boolean().optional(),
   activeImpulseId: yup.string().optional(),
-  email: yup.string().email().required(),
+  email: yup.string().email().notRequired(),
   currentAppState: yup.mixed<AppStateStatus>().optional(), // Define validation for AppStateStatus if needed
   showStorybook: yup.boolean().optional(),
   lastActiveAt: yup.date().optional(),

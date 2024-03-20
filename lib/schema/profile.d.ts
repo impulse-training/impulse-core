@@ -16,7 +16,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     isAdmin: boolean | undefined;
     isSuperAdmin: boolean | undefined;
     activeImpulseId: string | undefined;
-    email: string;
+    email: yup.Maybe<string | undefined>;
     currentAppState: AppStateStatus | undefined;
     showStorybook: boolean | undefined;
     lastActiveAt: Date | undefined;
