@@ -16,7 +16,10 @@ export * from './pattern';
 export * from './profile';
 export * from './program';
 export * from './recording';
+export * from './rsaKey';
 export * from './spotifyCredentials';
 export * from './supportGroup';
 export * from './tactic';
+
+// Utils
 export * from './utils/image';
