@@ -4,7 +4,7 @@ import { optionalStringArray } from './utils/array';
 import { optionalTimestampSchema } from './utils/timestamp';
 
 export const patternSchema = yup.object().shape({
-  uid: yup.string().required(),
+  profileId: yup.string().required(),
   updatedAt: optionalTimestampSchema, // Same as above for TimestampLike
   createdAt: optionalTimestampSchema, // You should define a more specific validation based on what TimestampLike is
   name: yup.string().required("can't be blank"),

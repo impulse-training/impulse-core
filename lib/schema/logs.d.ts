@@ -18,7 +18,7 @@ export declare const tacticDataSchema: yup.ObjectSchema<{
 export type TacticData = yup.InferType<typeof tacticDataSchema>;
 export type BaseLogValue = WithTypes<typeof baseLogSchema>;
 declare const baseLogSchema: yup.ObjectSchema<{
-    uid: string;
+    profileId: string;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -76,7 +76,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         storagePath?: yup.Maybe<string | undefined>;
                         uri?: yup.Maybe<string | undefined>;
                     } | undefined;
-                    uid: string;
+                    profileId: string;
                     authorName: string;
                 };
             };
@@ -118,7 +118,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     sharedWithSupportGroupIds: string[] | undefined;
 }, yup.AnyObject, {
-    uid: undefined;
+    profileId: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     startTime: {
@@ -173,7 +173,7 @@ type WithTypes<T extends yup.ISchema<unknown>> = WithTacticsById<Omit<yup.InferT
 export type ImpulseLogValue = WithTypes<typeof impulseLogSchema>;
 export declare function logIsImpulseLog(log: LogValue): log is ImpulseLogValue;
 declare const impulseLogSchema: yup.ObjectSchema<{
-    uid: string;
+    profileId: string;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -231,7 +231,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         storagePath?: yup.Maybe<string | undefined>;
                         uri?: yup.Maybe<string | undefined>;
                     } | undefined;
-                    uid: string;
+                    profileId: string;
                     authorName: string;
                 };
             };
@@ -313,7 +313,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             };
         } | null | undefined;
         scheduledNotificationIds?: string[] | undefined;
-        uid: string;
+        profileId: string;
         main: {
             [x: string]: {
                 suggestedTacticIds?: string[] | undefined;
@@ -360,7 +360,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             dailySetbackThreshold?: yup.Maybe<number | undefined>;
             issueId?: yup.Maybe<string | undefined>;
             sendWeeklyReports?: yup.Maybe<boolean | undefined>;
-            uid: string;
+            profileId: string;
             name: string;
             measureTactic: {
                 createdAt?: {
@@ -373,7 +373,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                uid?: string | null | undefined;
+                profileId?: string | null | undefined;
                 sourceId?: string | undefined;
                 subtitle?: yup.Maybe<string | undefined>;
                 description?: string | null | undefined;
@@ -408,7 +408,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                uid?: string | null | undefined;
+                profileId?: string | null | undefined;
                 sourceId?: string | undefined;
                 subtitle?: yup.Maybe<string | undefined>;
                 description?: string | null | undefined;
@@ -441,7 +441,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                uid?: string | null | undefined;
+                profileId?: string | null | undefined;
                 sourceId?: string | undefined;
                 subtitle?: yup.Maybe<string | undefined>;
                 description?: string | null | undefined;
@@ -471,7 +471,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     debriefReminderSentAt: yup.Maybe<{} | undefined>;
     debriefedAt: yup.Maybe<{} | undefined>;
 }, yup.AnyObject, {
-    uid: undefined;
+    profileId: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     startTime: {
@@ -522,7 +522,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     isDisplayable: undefined;
     buttonPressSecondsSinceEpoch: undefined;
     gameplan: {
-        uid: undefined;
+        profileId: undefined;
         name: undefined;
         programId: undefined;
         createdAt: undefined;
@@ -547,7 +547,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
 export type LocationLogValue = WithTypes<typeof locationLogSchema>;
 export declare function logIsLocationLog(log: LogValue): log is LocationLogValue;
 declare const locationLogSchema: yup.ObjectSchema<{
-    uid: string;
+    profileId: string;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -605,7 +605,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         storagePath?: yup.Maybe<string | undefined>;
                         uri?: yup.Maybe<string | undefined>;
                     } | undefined;
-                    uid: string;
+                    profileId: string;
                     authorName: string;
                 };
             };
@@ -653,7 +653,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
     locationName: string;
     locationMode: {};
 }, yup.AnyObject, {
-    uid: undefined;
+    profileId: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     startTime: {
@@ -707,7 +707,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
 export type TimeLogValue = WithTypes<typeof timeLogSchema>;
 export declare function logIsTimeLog(log: LogValue): log is TimeLogValue;
 declare const timeLogSchema: yup.ObjectSchema<{
-    uid: string;
+    profileId: string;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -765,7 +765,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         storagePath?: yup.Maybe<string | undefined>;
                         uri?: yup.Maybe<string | undefined>;
                     } | undefined;
-                    uid: string;
+                    profileId: string;
                     authorName: string;
                 };
             };
@@ -810,7 +810,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
     type: "time";
     isDisplayable: NonNullable<boolean | undefined>;
 }, yup.AnyObject, {
-    uid: undefined;
+    profileId: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     startTime: {
@@ -861,7 +861,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
 export type MotionLogValue = WithTypes<typeof motionLogSchema>;
 export declare function logIsMotionLog(log: LogValue): log is MotionLogValue;
 declare const motionLogSchema: yup.ObjectSchema<{
-    uid: string;
+    profileId: string;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -919,7 +919,7 @@ declare const motionLogSchema: yup.ObjectSchema<{
                         storagePath?: yup.Maybe<string | undefined>;
                         uri?: yup.Maybe<string | undefined>;
                     } | undefined;
-                    uid: string;
+                    profileId: string;
                     authorName: string;
                 };
             };
@@ -964,7 +964,7 @@ declare const motionLogSchema: yup.ObjectSchema<{
     type: "motion";
     isDisplayable: NonNullable<boolean | undefined>;
 }, yup.AnyObject, {
-    uid: undefined;
+    profileId: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     startTime: {
@@ -1056,7 +1056,7 @@ export declare const logSchema: yup.Lazy<{
                         storagePath?: yup.Maybe<string | undefined>;
                         uri?: yup.Maybe<string | undefined>;
                     } | undefined;
-                    uid: string;
+                    profileId: string;
                     authorName: string;
                 };
             };
@@ -1083,7 +1083,7 @@ export declare const logSchema: yup.Lazy<{
     debriefNotes?: yup.Maybe<string | undefined>;
     debriefReminderSentAt?: yup.Maybe<{} | undefined>;
     debriefedAt?: yup.Maybe<{} | undefined>;
-    uid: string;
+    profileId: string;
     type: "impulse";
     location: {
         latitude?: number | undefined;
@@ -1156,7 +1156,7 @@ export declare const logSchema: yup.Lazy<{
             };
         } | null | undefined;
         scheduledNotificationIds?: string[] | undefined;
-        uid: string;
+        profileId: string;
         main: {
             [x: string]: {
                 suggestedTacticIds?: string[] | undefined;
@@ -1202,7 +1202,7 @@ export declare const logSchema: yup.Lazy<{
             dailySetbackThreshold?: yup.Maybe<number | undefined>;
             issueId?: yup.Maybe<string | undefined>;
             sendWeeklyReports?: yup.Maybe<boolean | undefined>;
-            uid: string;
+            profileId: string;
             name: string;
             measureTactic: {
                 createdAt?: {
@@ -1215,7 +1215,7 @@ export declare const logSchema: yup.Lazy<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                uid?: string | null | undefined;
+                profileId?: string | null | undefined;
                 sourceId?: string | undefined;
                 subtitle?: yup.Maybe<string | undefined>;
                 description?: string | null | undefined;
@@ -1250,7 +1250,7 @@ export declare const logSchema: yup.Lazy<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                uid?: string | null | undefined;
+                profileId?: string | null | undefined;
                 sourceId?: string | undefined;
                 subtitle?: yup.Maybe<string | undefined>;
                 description?: string | null | undefined;
@@ -1283,7 +1283,7 @@ export declare const logSchema: yup.Lazy<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                uid?: string | null | undefined;
+                profileId?: string | null | undefined;
                 sourceId?: string | undefined;
                 subtitle?: yup.Maybe<string | undefined>;
                 description?: string | null | undefined;
@@ -1353,7 +1353,7 @@ export declare const logSchema: yup.Lazy<{
                         storagePath?: yup.Maybe<string | undefined>;
                         uri?: yup.Maybe<string | undefined>;
                     } | undefined;
-                    uid: string;
+                    profileId: string;
                     authorName: string;
                 };
             };
@@ -1373,7 +1373,7 @@ export declare const logSchema: yup.Lazy<{
         };
     } | null | undefined;
     sharedWithSupportGroupIds?: string[] | undefined;
-    uid: string;
+    profileId: string;
     type: "location";
     locationId: string;
     location: {
@@ -1458,7 +1458,7 @@ export declare const logSchema: yup.Lazy<{
                         storagePath?: yup.Maybe<string | undefined>;
                         uri?: yup.Maybe<string | undefined>;
                     } | undefined;
-                    uid: string;
+                    profileId: string;
                     authorName: string;
                 };
             };
@@ -1478,7 +1478,7 @@ export declare const logSchema: yup.Lazy<{
         };
     } | null | undefined;
     sharedWithSupportGroupIds?: string[] | undefined;
-    uid: string;
+    profileId: string;
     type: "time";
     location: {
         latitude?: number | undefined;
@@ -1560,7 +1560,7 @@ export declare const logSchema: yup.Lazy<{
                         storagePath?: yup.Maybe<string | undefined>;
                         uri?: yup.Maybe<string | undefined>;
                     } | undefined;
-                    uid: string;
+                    profileId: string;
                     authorName: string;
                 };
             };
@@ -1580,7 +1580,7 @@ export declare const logSchema: yup.Lazy<{
         };
     } | null | undefined;
     sharedWithSupportGroupIds?: string[] | undefined;
-    uid: string;
+    profileId: string;
     type: "motion";
     location: {
         latitude?: number | undefined;

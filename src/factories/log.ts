@@ -21,7 +21,7 @@ const strategy = {
 
 export const makeImpulseFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<ImpulseLogValue>({
-    uid: Factory.each(i => i.toString()),
+    profileId: Factory.each(i => i.toString()),
     type: 'impulse',
     setAsActiveImpulse: true,
     createdAt: TimestampKlass.now(),
@@ -43,7 +43,7 @@ export const makeImpulseFactory = (TimestampKlass: typeof TimestampLike) =>
 
 export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<TimeLogValue>({
-    uid: Factory.each(i => i.toString()),
+    profileId: Factory.each(i => i.toString()),
     type: 'time',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
@@ -60,7 +60,7 @@ export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>
 
 export const makeMotionLogFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<MotionLogValue>({
-    uid: Factory.each(i => i.toString()),
+    profileId: Factory.each(i => i.toString()),
     type: 'motion',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
@@ -77,7 +77,7 @@ export const makeMotionLogFactory = (TimestampKlass: typeof TimestampLike) =>
 
 export const makeLocationLogFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<LocationLogValue>({
-    uid: Factory.each(i => i.toString()),
+    profileId: Factory.each(i => i.toString()),
     type: 'location',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),

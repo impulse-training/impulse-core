@@ -42,7 +42,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        uid?: string | null | undefined;
+        profileId?: string | null | undefined;
         sourceId?: string | undefined;
         subtitle?: import("yup").Maybe<string | undefined>;
         description?: string | null | undefined;
@@ -77,7 +77,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        uid?: string | null | undefined;
+        profileId?: string | null | undefined;
         sourceId?: string | undefined;
         subtitle?: import("yup").Maybe<string | undefined>;
         description?: string | null | undefined;
@@ -110,7 +110,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        uid?: string | null | undefined;
+        profileId?: string | null | undefined;
         sourceId?: string | undefined;
         subtitle?: import("yup").Maybe<string | undefined>;
         description?: string | null | undefined;

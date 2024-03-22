@@ -6,7 +6,6 @@ import { optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema } from './utils/timestamp';
 
 export const profileSchema = yup.object().shape({
-  uid: yup.string().required(),
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
   buttonId: yup.string().optional(),

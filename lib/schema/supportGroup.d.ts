@@ -65,7 +65,7 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
 export type SupportGroupValue = yup.InferType<typeof supportGroupSchema>;
 export type PermissionKey = keyof typeof CONVERSATION_PERMISSIONS;
 export type SupportGroupPermissions = {
-    [uid: string]: Partial<{
+    [profileId: string]: Partial<{
         [key in PermissionKey]: boolean;
     }>;
 };

@@ -21,7 +21,7 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
     dailySetbackThreshold?: import("yup").Maybe<number | undefined>;
     issueId?: import("yup").Maybe<string | undefined>;
     sendWeeklyReports?: import("yup").Maybe<boolean | undefined>;
-    uid: string;
+    profileId: string;
     name: string;
     measureTactic: {
         createdAt?: {
@@ -34,7 +34,7 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        uid?: string | null | undefined;
+        profileId?: string | null | undefined;
         sourceId?: string | undefined;
         subtitle?: import("yup").Maybe<string | undefined>;
         description?: string | null | undefined;
@@ -69,7 +69,7 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        uid?: string | null | undefined;
+        profileId?: string | null | undefined;
         sourceId?: string | undefined;
         subtitle?: import("yup").Maybe<string | undefined>;
         description?: string | null | undefined;
@@ -102,7 +102,7 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        uid?: string | null | undefined;
+        profileId?: string | null | undefined;
         sourceId?: string | undefined;
         subtitle?: import("yup").Maybe<string | undefined>;
         description?: string | null | undefined;
@@ -126,4 +126,4 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
         backgroundColor: string;
     };
     ordinal: number;
-}, "uid" | "name" | "measureTactic" | "ordinal" | ("createdAt" | "updatedAt" | "parentIssueIds" | "setbackThreshold" | "supportGroupIds" | "notification" | "dailySetbackThreshold" | "issueId" | "sendWeeklyReports")>;
+}, "profileId" | "name" | "measureTactic" | "ordinal" | ("createdAt" | "updatedAt" | "parentIssueIds" | "setbackThreshold" | "supportGroupIds" | "notification" | "dailySetbackThreshold" | "issueId" | "sendWeeklyReports")>;

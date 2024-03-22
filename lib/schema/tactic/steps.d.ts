@@ -1,7 +1,7 @@
 import * as yup from 'yup';
 export declare const stepsTacticSchema: yup.ObjectSchema<{
     type: "steps";
-    uid: string | null | undefined;
+    profileId: string | null | undefined;
     sourceId: string | undefined;
     createdAt: {
         seconds: number;
@@ -35,7 +35,7 @@ export declare const stepsTacticSchema: yup.ObjectSchema<{
     steps: number;
 }, yup.AnyObject, {
     type: undefined;
-    uid: undefined;
+    profileId: undefined;
     sourceId: undefined;
     createdAt: undefined;
     updatedAt: undefined;

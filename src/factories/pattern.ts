@@ -5,7 +5,7 @@ import { makeMeasureTimeTacticFactory } from './tactic';
 
 export const makePatternFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<PatternValue>({
-    uid: Factory.each(i => i.toString()),
+    profileId: Factory.each(i => i.toString()),
     name: 'Cigarettes',
     ordinal: Factory.each(i => i),
     dailySetbackThreshold: 0,

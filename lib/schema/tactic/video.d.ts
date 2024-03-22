@@ -1,7 +1,7 @@
 import * as yup from 'yup';
 export declare const videoTacticSchema: yup.ObjectSchema<{
     type: "video";
-    uid: string | null | undefined;
+    profileId: string | null | undefined;
     sourceId: string | undefined;
     createdAt: {
         seconds: number;
@@ -42,7 +42,7 @@ export declare const videoTacticSchema: yup.ObjectSchema<{
     };
 }, yup.AnyObject, {
     type: undefined;
-    uid: undefined;
+    profileId: undefined;
     sourceId: undefined;
     createdAt: undefined;
     updatedAt: undefined;

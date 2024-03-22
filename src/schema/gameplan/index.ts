@@ -14,7 +14,7 @@ export type StrategyKey = 'main' | 'success' | 'setback';
 
 export type GameplanValue = WithTypes<typeof gameplanSchema>;
 export const gameplanSchema = yup.object().shape({
-  uid: yup.string().required(),
+  profileId: yup.string().required(),
   name: yup.string().notRequired(),
   programId: yup.string().notRequired(),
   createdAt: optionalTimestampSchema,

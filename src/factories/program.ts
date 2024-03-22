@@ -7,7 +7,6 @@ export const makeProgramFactory = (TimestampKlass: typeof TimestampLike) =>
     title: 'Default',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
-    uid: 'abc123',
     forIssueIds: [],
     issueNamesSummary: '',
     issueNames: {},

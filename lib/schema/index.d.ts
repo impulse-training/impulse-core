@@ -15,6 +15,7 @@ export * from './pattern';
 export * from './profile';
 export * from './program';
 export * from './recording';
+export * from './recoveryCode';
 export * from './spotifyCredentials';
 export * from './supportGroup';
 export * from './tactic';

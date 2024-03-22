@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 export declare const locationSchema: yup.ObjectSchema<{
-    uid: string;
+    profileId: string;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -16,7 +16,7 @@ export declare const locationSchema: yup.ObjectSchema<{
     longitude: number | undefined;
     address: string;
 }, yup.AnyObject, {
-    uid: undefined;
+    profileId: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     name: undefined;

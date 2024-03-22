@@ -25,7 +25,7 @@ export declare class Log {
         dailySetbackThreshold?: import("yup").Maybe<number | undefined>;
         issueId?: import("yup").Maybe<string | undefined>;
         sendWeeklyReports?: import("yup").Maybe<boolean | undefined>;
-        uid: string;
+        profileId: string;
         name: string;
         measureTactic: {
             createdAt?: {
@@ -38,7 +38,7 @@ export declare class Log {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            uid?: string | null | undefined;
+            profileId?: string | null | undefined;
             sourceId?: string | undefined;
             subtitle?: import("yup").Maybe<string | undefined>;
             description?: string | null | undefined;
@@ -73,7 +73,7 @@ export declare class Log {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            uid?: string | null | undefined;
+            profileId?: string | null | undefined;
             sourceId?: string | undefined;
             subtitle?: import("yup").Maybe<string | undefined>;
             description?: string | null | undefined;
@@ -106,7 +106,7 @@ export declare class Log {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            uid?: string | null | undefined;
+            profileId?: string | null | undefined;
             sourceId?: string | undefined;
             subtitle?: import("yup").Maybe<string | undefined>;
             description?: string | null | undefined;

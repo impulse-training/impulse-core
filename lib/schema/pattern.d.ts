@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 export declare const patternSchema: yup.ObjectSchema<{
-    uid: string;
+    profileId: string;
     updatedAt: {
         seconds: number;
         nanoseconds: number;
@@ -29,7 +29,7 @@ export declare const patternSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        uid?: string | null | undefined;
+        profileId?: string | null | undefined;
         sourceId?: string | undefined;
         subtitle?: yup.Maybe<string | undefined>;
         description?: string | null | undefined;
@@ -64,7 +64,7 @@ export declare const patternSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        uid?: string | null | undefined;
+        profileId?: string | null | undefined;
         sourceId?: string | undefined;
         subtitle?: yup.Maybe<string | undefined>;
         description?: string | null | undefined;
@@ -97,7 +97,7 @@ export declare const patternSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        uid?: string | null | undefined;
+        profileId?: string | null | undefined;
         sourceId?: string | undefined;
         subtitle?: yup.Maybe<string | undefined>;
         description?: string | null | undefined;
@@ -126,7 +126,7 @@ export declare const patternSchema: yup.ObjectSchema<{
     parentIssueIds: string[] | undefined;
     sendWeeklyReports: yup.Maybe<boolean | undefined>;
 }, yup.AnyObject, {
-    uid: undefined;
+    profileId: undefined;
     updatedAt: undefined;
     createdAt: undefined;
     name: undefined;

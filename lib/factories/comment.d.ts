@@ -25,6 +25,6 @@ export declare const makeCommentFactory: (TimestampKlass: typeof TimestampLike) 
         storagePath?: import("yup").Maybe<string | undefined>;
         uri?: import("yup").Maybe<string | undefined>;
     } | undefined;
-    uid: string;
+    profileId: string;
     authorName: string;
-}, "uid" | "authorName" | ("createdAt" | "updatedAt" | "tacticId" | "tacticName" | "text" | "recording" | "isEdited" | "avatar")>;
+}, "profileId" | "authorName" | ("createdAt" | "updatedAt" | "tacticId" | "tacticName" | "text" | "recording" | "isEdited" | "avatar")>;

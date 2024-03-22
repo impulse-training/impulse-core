@@ -6,7 +6,7 @@ import { optionalTimestampSchema } from '../utils/timestamp';
 export function tacticValueBaseSchema<K extends string>(type: K) {
   return yup.object({
     type: yup.mixed<K>().oneOf([type]).defined(),
-    uid: yup.string().nullable(),
+    profileId: yup.string().nullable(),
     sourceId: yup.string(),
     createdAt: optionalTimestampSchema,
     updatedAt: optionalTimestampSchema,

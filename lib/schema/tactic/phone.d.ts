@@ -1,7 +1,7 @@
 import * as yup from 'yup';
 export declare const phoneTacticSchema: yup.ObjectSchema<{
     type: "phone";
-    uid: string | null | undefined;
+    profileId: string | null | undefined;
     sourceId: string | undefined;
     createdAt: {
         seconds: number;
@@ -36,7 +36,7 @@ export declare const phoneTacticSchema: yup.ObjectSchema<{
     trigger: {};
 }, yup.AnyObject, {
     type: undefined;
-    uid: undefined;
+    profileId: undefined;
     sourceId: undefined;
     createdAt: undefined;
     updatedAt: undefined;

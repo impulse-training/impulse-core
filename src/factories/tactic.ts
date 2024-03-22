@@ -8,7 +8,7 @@ import { TimestampLike } from '../utils/TimestampLike';
 
 export const makeTacticFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<NonRecursiveTactic>({
-    uid: Factory.each(i => i.toString()),
+    profileId: Factory.each(i => i.toString()),
     type: 'task',
     title: 'Go outside',
     description:
@@ -22,7 +22,7 @@ export const makeTacticFactory = (TimestampKlass: typeof TimestampLike) =>
 
 export const makeFolderTacticFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<FolderTacticValue>({
-    uid: Factory.each(i => i.toString()),
+    profileId: Factory.each(i => i.toString()),
     type: 'folder',
     title: 'Get moving',
     description:
@@ -42,7 +42,7 @@ export const makeMeasureTimeTacticFactory = (
   TimestampKlass: typeof TimestampLike
 ) =>
   Factory.makeFactory<MeasureTimeTacticValue>({
-    uid: Factory.each(i => i.toString()),
+    profileId: Factory.each(i => i.toString()),
     type: 'measure-time',
     title: 'How long did you spend?',
     description:

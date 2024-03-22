@@ -20,7 +20,6 @@ export const programSchema = yup.object().shape({
   setback: strategySchema.notRequired().default(undefined),
   time: optionalObjectOf(timeRoutineSchema.required()),
   location: optionalObjectOf(locationRoutineSchema.required()),
-  uid: yup.string().required(),
   tacticsById: objectOf(tacticSchema) as any,
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,

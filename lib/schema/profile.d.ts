@@ -1,7 +1,6 @@
 import { AppStateStatus } from 'react-native';
 import * as yup from 'yup';
 export declare const profileSchema: yup.ObjectSchema<{
-    uid: string;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -53,7 +52,6 @@ export declare const profileSchema: yup.ObjectSchema<{
     isButtonSetupSkipped: boolean | undefined;
     invitationCode: string;
 }, yup.AnyObject, {
-    uid: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     buttonId: undefined;

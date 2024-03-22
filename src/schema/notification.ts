@@ -20,7 +20,7 @@ export const notificationOptionSchema = yup
 export type NotificationOption = yup.InferType<typeof notificationOptionSchema>;
 
 export interface NotificationValue {
-  uid: string;
+  profileId: string;
   createdAt: TimestampLike;
   updatedAt: TimestampLike;
   key: string;

@@ -1,8 +1,8 @@
 import * as Factory from 'factory.ts';
 import { FolderTacticValue, NonRecursiveTactic } from '../schema';
 import { TimestampLike } from '../utils/TimestampLike';
-export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<NonRecursiveTactic, "createdAt" | "updatedAt" | "uid" | "type" | "sourceId" | "title" | "subtitle" | "description" | "image" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
-export declare const makeFolderTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<FolderTacticValue, "type" | "title" | "backgroundColor" | "tacticIds" | "currentTacticIndex" | "tacticsById" | ("createdAt" | "updatedAt" | "uid" | "sourceId" | "subtitle" | "description" | "image" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested" | "suggestedTacticIds" | "autogenerate")>;
+export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<NonRecursiveTactic, "createdAt" | "updatedAt" | "profileId" | "type" | "sourceId" | "title" | "subtitle" | "description" | "image" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
+export declare const makeFolderTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<FolderTacticValue, "type" | "title" | "backgroundColor" | "tacticIds" | "currentTacticIndex" | "tacticsById" | ("createdAt" | "updatedAt" | "profileId" | "sourceId" | "subtitle" | "description" | "image" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested" | "suggestedTacticIds" | "autogenerate")>;
 export declare const makeMeasureTimeTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     createdAt?: {
         seconds: number;
@@ -14,7 +14,7 @@ export declare const makeMeasureTimeTacticFactory: (TimestampKlass: typeof Times
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    uid?: string | null | undefined;
+    profileId?: string | null | undefined;
     sourceId?: string | undefined;
     subtitle?: import("yup").Maybe<string | undefined>;
     description?: string | null | undefined;
@@ -36,4 +36,4 @@ export declare const makeMeasureTimeTacticFactory: (TimestampKlass: typeof Times
     type: "measure-time";
     title: string;
     backgroundColor: string;
-}, "type" | "title" | "backgroundColor" | ("createdAt" | "updatedAt" | "uid" | "sourceId" | "subtitle" | "description" | "image" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested")>;
+}, "type" | "title" | "backgroundColor" | ("createdAt" | "updatedAt" | "profileId" | "sourceId" | "subtitle" | "description" | "image" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested")>;

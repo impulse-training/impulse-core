@@ -1,7 +1,7 @@
 import * as yup from 'yup';
 export declare const questionTacticSchema: yup.ObjectSchema<{
     type: "question";
-    uid: string | null | undefined;
+    profileId: string | null | undefined;
     sourceId: string | undefined;
     createdAt: {
         seconds: number;
@@ -34,7 +34,7 @@ export declare const questionTacticSchema: yup.ObjectSchema<{
     isSuggested: boolean | undefined;
 }, yup.AnyObject, {
     type: undefined;
-    uid: undefined;
+    profileId: undefined;
     sourceId: undefined;
     createdAt: undefined;
     updatedAt: undefined;

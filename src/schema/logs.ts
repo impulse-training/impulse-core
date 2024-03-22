@@ -23,7 +23,7 @@ export type TacticData = yup.InferType<typeof tacticDataSchema>;
 
 export type BaseLogValue = WithTypes<typeof baseLogSchema>;
 const baseLogSchema = yup.object().shape({
-  uid: yup.string().required(),
+  profileId: yup.string().required(),
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
   startTime: timestampSchema,

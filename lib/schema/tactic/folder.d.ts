@@ -3,7 +3,7 @@ import { TacticValue } from '.';
 export type NonRecursiveTactic = Exclude<TacticValue, FolderTacticValue>;
 export declare const folderTacticSchema: yup.ObjectSchema<{
     type: "folder";
-    uid: string | null | undefined;
+    profileId: string | null | undefined;
     sourceId: string | undefined;
     createdAt: {
         seconds: number;
@@ -41,7 +41,7 @@ export declare const folderTacticSchema: yup.ObjectSchema<{
     autogenerate: boolean | undefined;
 }, yup.AnyObject, {
     type: undefined;
-    uid: undefined;
+    profileId: undefined;
     sourceId: undefined;
     createdAt: undefined;
     updatedAt: undefined;

@@ -1,7 +1,7 @@
 import * as yup from 'yup';
 export declare const urgeSurfingTacticSchema: yup.ObjectSchema<{
     type: "urge-surfing";
-    uid: string | null | undefined;
+    profileId: string | null | undefined;
     sourceId: string | undefined;
     createdAt: {
         seconds: number;
@@ -34,7 +34,7 @@ export declare const urgeSurfingTacticSchema: yup.ObjectSchema<{
     isSuggested: boolean | undefined;
 }, yup.AnyObject, {
     type: undefined;
-    uid: undefined;
+    profileId: undefined;
     sourceId: undefined;
     createdAt: undefined;
     updatedAt: undefined;

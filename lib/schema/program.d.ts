@@ -39,7 +39,6 @@ export declare const programSchema: yup.ObjectSchema<{
             mode: NonNullable<"enter" | "exit" | undefined>;
         };
     } | null | undefined;
-    uid: string;
     tacticsById: any;
     createdAt: {
         seconds: number;
@@ -65,7 +64,6 @@ export declare const programSchema: yup.ObjectSchema<{
     setback: undefined;
     time: undefined;
     location: undefined;
-    uid: undefined;
     tacticsById: any;
     createdAt: undefined;
     updatedAt: undefined;

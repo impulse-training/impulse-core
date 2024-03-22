@@ -24,7 +24,7 @@ export declare const issueSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        uid?: string | null | undefined;
+        profileId?: string | null | undefined;
         sourceId?: string | undefined;
         subtitle?: yup.Maybe<string | undefined>;
         description?: string | null | undefined;
@@ -59,7 +59,7 @@ export declare const issueSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        uid?: string | null | undefined;
+        profileId?: string | null | undefined;
         sourceId?: string | undefined;
         subtitle?: yup.Maybe<string | undefined>;
         description?: string | null | undefined;
@@ -92,7 +92,7 @@ export declare const issueSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        uid?: string | null | undefined;
+        profileId?: string | null | undefined;
         sourceId?: string | undefined;
         subtitle?: yup.Maybe<string | undefined>;
         description?: string | null | undefined;

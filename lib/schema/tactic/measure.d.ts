@@ -1,7 +1,7 @@
 import * as yup from 'yup';
 export declare const measureSliderTacticSchema: yup.ObjectSchema<{
     type: "measure-slider";
-    uid: string | null | undefined;
+    profileId: string | null | undefined;
     sourceId: string | undefined;
     createdAt: {
         seconds: number;
@@ -36,7 +36,7 @@ export declare const measureSliderTacticSchema: yup.ObjectSchema<{
     highEmoji: yup.Maybe<string | undefined>;
 }, yup.AnyObject, {
     type: undefined;
-    uid: undefined;
+    profileId: undefined;
     sourceId: undefined;
     createdAt: undefined;
     updatedAt: undefined;
@@ -65,7 +65,7 @@ export declare const measureSliderTacticSchema: yup.ObjectSchema<{
 export type MeasureSliderTacticValue = yup.InferType<typeof measureSliderTacticSchema>;
 export declare const measureTimeTacticSchema: yup.ObjectSchema<{
     type: "measure-time";
-    uid: string | null | undefined;
+    profileId: string | null | undefined;
     sourceId: string | undefined;
     createdAt: {
         seconds: number;
@@ -98,7 +98,7 @@ export declare const measureTimeTacticSchema: yup.ObjectSchema<{
     isSuggested: boolean | undefined;
 }, yup.AnyObject, {
     type: undefined;
-    uid: undefined;
+    profileId: undefined;
     sourceId: undefined;
     createdAt: undefined;
     updatedAt: undefined;
@@ -125,7 +125,7 @@ export declare const measureTimeTacticSchema: yup.ObjectSchema<{
 export type MeasureTimeTacticValue = yup.InferType<typeof measureTimeTacticSchema>;
 export declare const measureCounterTacticSchema: yup.ObjectSchema<{
     type: "measure-counter";
-    uid: string | null | undefined;
+    profileId: string | null | undefined;
     sourceId: string | undefined;
     createdAt: {
         seconds: number;
@@ -158,7 +158,7 @@ export declare const measureCounterTacticSchema: yup.ObjectSchema<{
     isSuggested: boolean | undefined;
 }, yup.AnyObject, {
     type: undefined;
-    uid: undefined;
+    profileId: undefined;
     sourceId: undefined;
     createdAt: undefined;
     updatedAt: undefined;

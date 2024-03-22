@@ -5,7 +5,6 @@ import { TimestampLike } from '../utils/TimestampLike';
 
 export const makeProfileFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<ProfileValue>({
-    uid: Factory.each(i => i.toString()),
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     displayName: faker.name.fullName(),
