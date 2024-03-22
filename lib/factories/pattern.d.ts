@@ -22,6 +22,7 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
     issueId?: import("yup").Maybe<string | undefined>;
     sendWeeklyReports?: import("yup").Maybe<boolean | undefined>;
     profileId: string;
+    uids: string[];
     name: string;
     measureTactic: {
         createdAt?: {
@@ -126,4 +127,4 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
         backgroundColor: string;
     };
     ordinal: number;
-}, "profileId" | "name" | "measureTactic" | "ordinal" | ("createdAt" | "updatedAt" | "parentIssueIds" | "setbackThreshold" | "supportGroupIds" | "notification" | "dailySetbackThreshold" | "issueId" | "sendWeeklyReports")>;
+}, "profileId" | "uids" | "name" | "measureTactic" | "ordinal" | ("createdAt" | "updatedAt" | "parentIssueIds" | "setbackThreshold" | "supportGroupIds" | "notification" | "dailySetbackThreshold" | "issueId" | "sendWeeklyReports")>;

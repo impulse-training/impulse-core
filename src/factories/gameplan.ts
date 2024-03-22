@@ -5,6 +5,7 @@ import { TimestampLike } from '../utils/TimestampLike';
 export const makeGameplanFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<GameplanValue>({
     profileId: Factory.each(i => i.toString()),
+    uids: [],
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     main: {},

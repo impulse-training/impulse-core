@@ -26,6 +26,7 @@ export declare class Log {
         issueId?: import("yup").Maybe<string | undefined>;
         sendWeeklyReports?: import("yup").Maybe<boolean | undefined>;
         profileId: string;
+        uids: string[];
         name: string;
         measureTactic: {
             createdAt?: {

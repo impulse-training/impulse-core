@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 import { recordingSchema } from './recording';
+import { requiredStringArray } from './utils/array';
 import { imageSchema } from './utils/image';
 import { optionalTimestampSchema } from './utils/timestamp';
 
@@ -10,6 +11,7 @@ export const commentSchema = yup.object().shape({
   tacticName: yup.string().nullable(),
   text: yup.string().optional(),
   profileId: yup.string().required(),
+  uids: requiredStringArray,
   authorName: yup.string().required(),
   recording: recordingSchema.optional(),
   isEdited: yup.boolean().optional(),

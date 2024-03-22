@@ -1,8 +1,10 @@
 import * as yup from 'yup';
+import { requiredStringArray } from './utils/array';
 import { optionalTimestampSchema } from './utils/timestamp';
 
 export const locationSchema = yup.object().shape({
   profileId: yup.string().required(),
+  uids: requiredStringArray,
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
   name: yup.string().required(),

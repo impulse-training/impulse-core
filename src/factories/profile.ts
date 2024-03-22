@@ -7,6 +7,7 @@ export const makeProfileFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<ProfileValue>({
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
+    uids: [],
     displayName: faker.name.fullName(),
     email: faker.internet.email(),
     isAdmin: false,

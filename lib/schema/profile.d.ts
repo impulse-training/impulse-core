@@ -11,6 +11,7 @@ export declare const profileSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    uids: string[];
     buttonId: string | undefined;
     isAdmin: boolean | undefined;
     isSuperAdmin: boolean | undefined;
@@ -54,6 +55,7 @@ export declare const profileSchema: yup.ObjectSchema<{
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
+    uids: "";
     buttonId: undefined;
     isAdmin: undefined;
     isSuperAdmin: undefined;

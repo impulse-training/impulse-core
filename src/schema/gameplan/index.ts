@@ -1,7 +1,7 @@
 import * as yup from 'yup';
 import { TimestampLike } from '../../utils/TimestampLike';
 import { TacticValue, WithTacticsById, tacticSchema } from '../tactic';
-import { optionalStringArray } from '../utils/array';
+import { optionalStringArray, requiredStringArray } from '../utils/array';
 import { objectOf, optionalObjectOf } from '../utils/objectOf';
 import { optionalTimestampSchema } from '../utils/timestamp';
 import { locationRoutineSchema, timeRoutineSchema } from './routines';
@@ -15,6 +15,7 @@ export type StrategyKey = 'main' | 'success' | 'setback';
 export type GameplanValue = WithTypes<typeof gameplanSchema>;
 export const gameplanSchema = yup.object().shape({
   profileId: yup.string().required(),
+  uids: requiredStringArray,
   name: yup.string().notRequired(),
   programId: yup.string().notRequired(),
   createdAt: optionalTimestampSchema,

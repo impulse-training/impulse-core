@@ -49,9 +49,10 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     phoneNumber?: string | undefined;
     isTourCompleted?: boolean | undefined;
     isButtonSetupSkipped?: boolean | undefined;
+    uids: string[];
     timezone: string;
     invitationCode: string;
-}, "timezone" | "invitationCode" | ("createdAt" | "updatedAt" | "avatar" | "parentIssueIds" | "email" | "buttonId" | "isAdmin" | "isSuperAdmin" | "activeImpulseId" | "currentAppState" | "showStorybook" | "lastActiveAt" | "expoPushToken" | "releaseChannel" | "widgetInstalledAt" | "notificationPreferences" | "isCurrentlyTrackingMotion" | "showTacticsFromSupportGroups" | "androidPermissions" | "stepTrackingEnabled" | "displayName" | "firstName" | "lastName" | "nickName" | "region" | "phoneNumber" | "isTourCompleted" | "isButtonSetupSkipped")>;
+}, "uids" | "timezone" | "invitationCode" | ("createdAt" | "updatedAt" | "avatar" | "parentIssueIds" | "email" | "buttonId" | "isAdmin" | "isSuperAdmin" | "activeImpulseId" | "currentAppState" | "showStorybook" | "lastActiveAt" | "expoPushToken" | "releaseChannel" | "widgetInstalledAt" | "notificationPreferences" | "isCurrentlyTrackingMotion" | "showTacticsFromSupportGroups" | "androidPermissions" | "stepTrackingEnabled" | "displayName" | "firstName" | "lastName" | "nickName" | "region" | "phoneNumber" | "isTourCompleted" | "isButtonSetupSkipped")>;
 export declare const makeAdminProfileFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     createdAt?: {
         seconds: number;
@@ -101,6 +102,7 @@ export declare const makeAdminProfileFactory: (TimestampKlass: typeof TimestampL
     phoneNumber?: string | undefined;
     isTourCompleted?: boolean | undefined;
     isButtonSetupSkipped?: boolean | undefined;
+    uids: string[];
     timezone: string;
     invitationCode: string;
-}, "timezone" | "invitationCode" | ("createdAt" | "updatedAt" | "avatar" | "parentIssueIds" | "email" | "buttonId" | "isAdmin" | "isSuperAdmin" | "activeImpulseId" | "currentAppState" | "showStorybook" | "lastActiveAt" | "expoPushToken" | "releaseChannel" | "widgetInstalledAt" | "notificationPreferences" | "isCurrentlyTrackingMotion" | "showTacticsFromSupportGroups" | "androidPermissions" | "stepTrackingEnabled" | "displayName" | "firstName" | "lastName" | "nickName" | "region" | "phoneNumber" | "isTourCompleted" | "isButtonSetupSkipped")>;
+}, "uids" | "timezone" | "invitationCode" | ("createdAt" | "updatedAt" | "avatar" | "parentIssueIds" | "email" | "buttonId" | "isAdmin" | "isSuperAdmin" | "activeImpulseId" | "currentAppState" | "showStorybook" | "lastActiveAt" | "expoPushToken" | "releaseChannel" | "widgetInstalledAt" | "notificationPreferences" | "isCurrentlyTrackingMotion" | "showTacticsFromSupportGroups" | "androidPermissions" | "stepTrackingEnabled" | "displayName" | "firstName" | "lastName" | "nickName" | "region" | "phoneNumber" | "isTourCompleted" | "isButtonSetupSkipped")>;

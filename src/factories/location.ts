@@ -6,6 +6,7 @@ import { TimestampLike } from '../utils/TimestampLike';
 export const makeLocationFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<LocationValue>({
     profileId: Factory.each(i => i.toString()),
+    uids: [],
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     name: 'Home',

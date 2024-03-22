@@ -7,6 +7,7 @@ export type StrategyKey = 'main' | 'success' | 'setback';
 export type GameplanValue = WithTypes<typeof gameplanSchema>;
 export declare const gameplanSchema: yup.ObjectSchema<{
     profileId: string;
+    uids: string[];
     name: yup.Maybe<string | undefined>;
     programId: yup.Maybe<string | undefined>;
     createdAt: {
@@ -64,6 +65,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     scheduledNotificationIds: string[] | undefined;
 }, yup.AnyObject, {
     profileId: undefined;
+    uids: "";
     name: undefined;
     programId: undefined;
     createdAt: undefined;

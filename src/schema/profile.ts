@@ -1,6 +1,7 @@
 import { AppStateStatus } from 'react-native';
 import * as yup from 'yup';
 import { notificationOptionSchema } from './notification';
+import { requiredStringArray } from './utils/array';
 import { imageSchema } from './utils/image';
 import { optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema } from './utils/timestamp';
@@ -8,6 +9,7 @@ import { optionalTimestampSchema } from './utils/timestamp';
 export const profileSchema = yup.object().shape({
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
+  uids: requiredStringArray,
   buttonId: yup.string().optional(),
   isAdmin: yup.boolean().optional(),
   isSuperAdmin: yup.boolean().optional(),
