@@ -7,15 +7,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
     programsCount?: number | null | undefined;
     profileCount?: number | null | undefined;
     isFeatured?: boolean | null | undefined;
-    main?: {
-        suggestedTacticIds: string[];
-        llmPrompt: string;
-    } | null | undefined;
-    success?: {
-        suggestedTacticIds: string[];
-        llmPrompt: string;
-    } | null | undefined;
-    setback?: {
+    impulseStrategy?: {
         suggestedTacticIds: string[];
         llmPrompt: string;
     } | null | undefined;
@@ -135,4 +127,4 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
     };
     parentIds: string[];
     parentNames: string[];
-}, "createdAt" | "updatedAt" | "name" | "synonyms" | "measureTactic" | "parentIds" | "parentNames" | ("path" | "parentId" | "setbackThreshold" | "programsCount" | "profileCount" | "isFeatured" | "main" | "success" | "setback")>;
+}, "createdAt" | "updatedAt" | "name" | "synonyms" | "measureTactic" | "parentIds" | "parentNames" | ("path" | "parentId" | "setbackThreshold" | "programsCount" | "profileCount" | "isFeatured" | "impulseStrategy")>;

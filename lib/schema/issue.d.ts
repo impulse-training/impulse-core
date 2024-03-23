@@ -122,15 +122,7 @@ export declare const issueSchema: yup.ObjectSchema<{
     programsCount: number | null | undefined;
     profileCount: number | null | undefined;
     isFeatured: boolean | null | undefined;
-    main: {
-        suggestedTacticIds: string[];
-        llmPrompt: string;
-    } | null | undefined;
-    success: {
-        suggestedTacticIds: string[];
-        llmPrompt: string;
-    } | null | undefined;
-    setback: {
+    impulseStrategy: {
         suggestedTacticIds: string[];
         llmPrompt: string;
     } | null | undefined;
@@ -156,8 +148,6 @@ export declare const issueSchema: yup.ObjectSchema<{
     programsCount: undefined;
     profileCount: undefined;
     isFeatured: undefined;
-    main: undefined;
-    success: undefined;
-    setback: undefined;
+    impulseStrategy: undefined;
 }, "">;
 export type IssueValue = yup.InferType<typeof issueSchema>;

@@ -28,8 +28,6 @@ export const issueSchema = yup.object().shape({
   programsCount: yup.number().nullable(),
   profileCount: yup.number().nullable(),
   isFeatured: yup.boolean().nullable(),
-  main: impulseSchema.notRequired().default(undefined),
-  success: impulseSchema.notRequired().default(undefined),
-  setback: impulseSchema.notRequired().default(undefined),
+  impulseStrategy: impulseSchema.notRequired().default(undefined),
 });
 export type IssueValue = yup.InferType<typeof issueSchema>;

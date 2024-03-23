@@ -58,15 +58,7 @@ export declare const factories: {
         programsCount?: number | null | undefined;
         profileCount?: number | null | undefined;
         isFeatured?: boolean | null | undefined;
-        main?: {
-            suggestedTacticIds: string[];
-            llmPrompt: string;
-        } | null | undefined;
-        success?: {
-            suggestedTacticIds: string[];
-            llmPrompt: string;
-        } | null | undefined;
-        setback?: {
+        impulseStrategy?: {
             suggestedTacticIds: string[];
             llmPrompt: string;
         } | null | undefined;
@@ -186,7 +178,7 @@ export declare const factories: {
         };
         parentIds: string[];
         parentNames: string[];
-    }, "createdAt" | "updatedAt" | "name" | "synonyms" | "measureTactic" | "parentIds" | "parentNames" | ("path" | "parentId" | "setbackThreshold" | "programsCount" | "profileCount" | "isFeatured" | "main" | "success" | "setback")>;
+    }, "createdAt" | "updatedAt" | "name" | "synonyms" | "measureTactic" | "parentIds" | "parentNames" | ("path" | "parentId" | "setbackThreshold" | "programsCount" | "profileCount" | "isFeatured" | "impulseStrategy")>;
     supportGroupFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -355,7 +347,7 @@ export declare const factories: {
         };
         ordinal: number;
     }, "profileId" | "uids" | "name" | "measureTactic" | "ordinal" | ("createdAt" | "updatedAt" | "setbackThreshold" | "supportGroupIds" | "notification" | "dailySetbackThreshold" | "issueId" | "parentIssueIds" | "sendWeeklyReports")>;
-    programFactory: import("factory.ts").Factory<import("..").ProgramValue, "createdAt" | "updatedAt" | "title" | "tacticsById" | "forIssueIds" | "issueNames" | "issueNamesSummary" | "recommendationSummary" | "impulseStrategy" | "timeStrategies" | "locationStrategies">;
+    programFactory: import("factory.ts").Factory<import("..").ProgramValue, "createdAt" | "updatedAt" | "title" | "tacticsById" | "impulseStrategy" | "forIssueIds" | "issueNames" | "issueNamesSummary" | "recommendationSummary" | "timeStrategies" | "locationStrategies">;
     tacticFactory: import("factory.ts").Factory<import("..").NonRecursiveTactic, "createdAt" | "updatedAt" | "profileId" | "type" | "sourceId" | "title" | "subtitle" | "description" | "image" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
     measureTimeTacticFactory: import("factory.ts").Factory<{
         createdAt?: {
