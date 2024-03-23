@@ -250,9 +250,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     pressCount: yup.Maybe<number | undefined>;
     isDisplayable: NonNullable<boolean | undefined>;
     buttonPressSecondsSinceEpoch: yup.Maybe<number | undefined>;
-    strategy: {
-        suggestedTacticIds?: string[] | undefined;
-        tacticIds: string[];
+    impulseStrategies: {
+        [x: string]: {
+            suggestedTacticIds?: string[] | undefined;
+            tacticIds: string[];
+        };
     };
     outcome: Outcome | undefined;
     patternId: string;
@@ -430,6 +432,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     pressCount: undefined;
     isDisplayable: undefined;
     buttonPressSecondsSinceEpoch: undefined;
+    impulseStrategies: undefined;
     outcome: undefined;
     patternId: undefined;
     patternsById: undefined;
@@ -948,6 +951,12 @@ export declare const logSchema: yup.Lazy<{
     };
     completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
+    impulseStrategies: {
+        [x: string]: {
+            suggestedTacticIds?: string[] | undefined;
+            tacticIds: string[];
+        };
+    };
     patternId: string;
     patternsById: {
         [x: string]: {

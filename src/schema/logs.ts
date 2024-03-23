@@ -95,7 +95,7 @@ const impulseLogSchema = baseLogSchema.concat(
     // In addition to the strategy field, which is the set of tactics for the currently-selected
     // pattern, we also store the entire "gameplan" on impulse log documents, which is copied from
     // the user's gameplan document at the time.
-    strategy: strategySchema,
+    impulseStrategies: objectOf(strategySchema),
     outcome: yup.mixed<Outcome>().oneOf(['success', 'setback']),
     patternId: yup.string().required(),
     patternsById: objectOf(patternSchema),
