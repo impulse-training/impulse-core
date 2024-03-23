@@ -15,7 +15,6 @@ export declare class Log {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        parentIssueIds?: string[] | undefined;
         setbackThreshold?: import("yup").Maybe<number | undefined>;
         supportGroupIds?: string[] | undefined;
         notification?: {
@@ -24,6 +23,7 @@ export declare class Log {
         } | import("yup").Maybe<{} | undefined>;
         dailySetbackThreshold?: import("yup").Maybe<number | undefined>;
         issueId?: import("yup").Maybe<string | undefined>;
+        parentIssueIds?: string[] | undefined;
         sendWeeklyReports?: import("yup").Maybe<boolean | undefined>;
         profileId: string;
         uids: string[];

@@ -1,47 +1,49 @@
 import { AppStateStatus } from 'react-native';
 import * as yup from 'yup';
+import { TimestampLike } from '../utils';
 import { notificationOptionSchema } from './notification';
-import { requiredStringArray } from './utils/array';
-import { imageSchema } from './utils/image';
-import { optionalObjectOf } from './utils/objectOf';
+import { WithTacticsById, tacticSchema } from './tactic';
+import { optionalStringArray, requiredStringArray } from './utils/array';
+import { objectOf, optionalObjectOf } from './utils/objectOf';
+import { locationStrategySchema, timeStrategySchema } from './utils/routines';
+import { strategySchema } from './utils/strategies';
 import { optionalTimestampSchema } from './utils/timestamp';
 
 export const profileSchema = yup.object().shape({
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
   uids: requiredStringArray,
-  buttonId: yup.string().optional(),
-  isAdmin: yup.boolean().optional(),
-  isSuperAdmin: yup.boolean().optional(),
   activeImpulseId: yup.string().optional(),
-  email: yup.string().email().notRequired(),
   currentAppState: yup.mixed<AppStateStatus>().optional(), // Define validation for AppStateStatus if needed
-  showStorybook: yup.boolean().optional(),
   lastActiveAt: yup.date().optional(),
   expoPushToken: yup.string().optional(),
-  releaseChannel: yup.string().oneOf(['default', 'canary']).optional(),
   widgetInstalledAt: optionalTimestampSchema,
   notificationPreferences: optionalObjectOf(
     yup.array().of(notificationOptionSchema)
   ),
-  isCurrentlyTrackingMotion: yup.boolean().optional(),
-  showTacticsFromSupportGroups: yup.boolean().optional(),
   androidPermissions: optionalObjectOf(yup.boolean().required()),
   parentIssueIds: yup.array().of(yup.string()).optional(),
-  stepTrackingEnabled: yup.boolean().optional(),
-  displayName: yup.string().optional(),
-  firstName: yup.string().optional(),
-  lastName: yup.string().optional(),
-  nickName: yup.string().optional(),
   region: yup.string().nullable().optional(),
   timezone: yup.string().required(),
-  phoneNumber: yup.string().optional(),
-  avatar: imageSchema.optional().default(undefined),
-  isTourCompleted: yup.boolean().optional(),
-  isButtonSetupSkipped: yup.boolean().optional(),
   invitationCode: yup.string().required(),
+  programId: yup.string().notRequired(),
+  scheduledNotificationIds: optionalStringArray,
+
+  // My gameplan is my set of strategies for overcoming impulses
+  impulseStrategies: objectOf(strategySchema),
+  timeStrategies: optionalObjectOf(timeStrategySchema.required()),
+  locationStrategies: optionalObjectOf(locationStrategySchema.required()),
+  // The any keyword helps to reduce the complexity of generated types. If we leave it up to yup,
+  // it will compile very complex union types, but we if do it ourselves, we can simply say
+  // tacticsById is a Record<string, TacticValue> and be done with it.
+  tacticsById: objectOf(tacticSchema) as any,
 });
 
-export type ProfileValue = yup.InferType<typeof profileSchema>;
-// programsCount: yup.number(),
-// scheduledNotificationIds: optionalStringArray,
+export type ProfileValue = WithTypes<typeof profileSchema>;
+
+type WithTypes<T extends yup.ISchema<unknown>> = WithTacticsById<
+  yup.InferType<T>
+> & {
+  createdAt: TimestampLike;
+  updatedAt: TimestampLike;
+};

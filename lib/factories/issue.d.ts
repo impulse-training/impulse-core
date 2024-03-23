@@ -2,6 +2,11 @@ import * as Factory from 'factory.ts';
 import { TimestampLike } from '../utils/TimestampLike';
 export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     path?: string | null | undefined;
+    parentId?: string | null | undefined;
+    setbackThreshold?: number | undefined;
+    programsCount?: number | null | undefined;
+    profileCount?: number | null | undefined;
+    isFeatured?: boolean | null | undefined;
     main?: {
         suggestedTacticIds: string[];
         llmPrompt: string;
@@ -14,11 +19,6 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         suggestedTacticIds: string[];
         llmPrompt: string;
     } | null | undefined;
-    parentId?: string | null | undefined;
-    setbackThreshold?: number | undefined;
-    programsCount?: number | null | undefined;
-    profileCount?: number | null | undefined;
-    isFeatured?: boolean | null | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -135,4 +135,4 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
     };
     parentIds: string[];
     parentNames: string[];
-}, "createdAt" | "updatedAt" | "name" | "synonyms" | "measureTactic" | "parentIds" | "parentNames" | ("path" | "main" | "success" | "setback" | "parentId" | "setbackThreshold" | "programsCount" | "profileCount" | "isFeatured")>;
+}, "createdAt" | "updatedAt" | "name" | "synonyms" | "measureTactic" | "parentIds" | "parentNames" | ("path" | "parentId" | "setbackThreshold" | "programsCount" | "profileCount" | "isFeatured" | "main" | "success" | "setback")>;

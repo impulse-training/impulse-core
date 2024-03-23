@@ -1,12 +1,9 @@
 import * as yup from 'yup';
-import {
-  locationRoutineSchema,
-  strategySchema,
-  timeRoutineSchema,
-} from './gameplan';
 import { WithTacticsById, tacticSchema } from './tactic';
 import { requiredStringArray } from './utils/array';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
+import { locationStrategySchema, timeStrategySchema } from './utils/routines';
+import { strategySchema } from './utils/strategies';
 import { optionalTimestampSchema } from './utils/timestamp';
 
 export const programSchema = yup.object().shape({
@@ -15,11 +12,9 @@ export const programSchema = yup.object().shape({
   issueNames: optionalObjectOf(yup.string()),
   issueNamesSummary: yup.string().nullable(),
   recommendationSummary: yup.string().nullable(),
-  main: strategySchema,
-  success: strategySchema.notRequired().default(undefined),
-  setback: strategySchema.notRequired().default(undefined),
-  time: optionalObjectOf(timeRoutineSchema.required()),
-  location: optionalObjectOf(locationRoutineSchema.required()),
+  impulseStrategy: strategySchema,
+  timeStrategies: optionalObjectOf(timeStrategySchema.required()),
+  locationStrategies: optionalObjectOf(locationStrategySchema.required()),
   tacticsById: objectOf(tacticSchema) as any,
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,

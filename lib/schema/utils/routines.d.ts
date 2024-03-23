@@ -1,6 +1,6 @@
 import * as yup from 'yup';
-export type TimeRoutine = yup.InferType<typeof timeRoutineSchema>;
-export declare const timeRoutineSchema: yup.ObjectSchema<{
+export type TimeStrategy = yup.InferType<typeof timeStrategySchema>;
+export declare const timeStrategySchema: yup.ObjectSchema<{
     tacticIds: string[];
     suggestedTacticIds: string[] | undefined;
     weekdays: number[];
@@ -15,8 +15,8 @@ export declare const timeRoutineSchema: yup.ObjectSchema<{
     minute: undefined;
     title: undefined;
 }, "">;
-export type LocationRoutine = yup.InferType<typeof locationRoutineSchema>;
-export declare const locationRoutineSchema: yup.ObjectSchema<{
+export type LocationStrategy = yup.InferType<typeof locationStrategySchema>;
+export declare const locationStrategySchema: yup.ObjectSchema<{
     tacticIds: string[];
     suggestedTacticIds: string[] | undefined;
     locationId: string;

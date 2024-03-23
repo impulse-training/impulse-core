@@ -1,18 +1,16 @@
 import { TimestampLike } from '../utils/TimestampLike';
 import { makeApplicationFactory } from './application';
 import { makeCommentFactory } from './comment';
-import { makeGameplanFactory } from './gameplan';
 import { makeIssueFactory } from './issue';
 import { makeLocationFactory } from './location';
 import {
-  makeImpulseFactory,
+  makeImpulseLogFactory,
   makeLocationLogFactory,
-  makeMotionLogFactory,
   makeTimeLogFactory,
 } from './log';
 import { makeMessageFactory } from './message';
 import { makePatternFactory } from './pattern';
-import { makeAdminProfileFactory, makeProfileFactory } from './profile';
+import { makeProfileFactory } from './profile';
 import { makeProgramFactory } from './program';
 import { makeSupportGroupFactory } from './supportGroup';
 import {
@@ -27,15 +25,12 @@ export function makeFactories(TimestampKlass: typeof TimestampLike) {
   return {
     applicationFactory: makeApplicationFactory(TimestampKlass),
     commentFactory: makeCommentFactory(TimestampKlass),
-    impulseFactory: makeImpulseFactory(TimestampKlass),
+    impulseFactory: makeImpulseLogFactory(TimestampKlass),
     timeLogFactory: makeTimeLogFactory(TimestampKlass),
-    motionLogFactory: makeMotionLogFactory(TimestampKlass),
     locationLogFactory: makeLocationLogFactory(TimestampKlass),
     locationFactory: makeLocationFactory(TimestampKlass),
     profileFactory: makeProfileFactory(TimestampKlass),
-    gameplanFactory: makeGameplanFactory(TimestampKlass),
     issueFactory: makeIssueFactory(TimestampKlass),
-    adminProfileFactory: makeAdminProfileFactory(TimestampKlass),
     supportGroupFactory: makeSupportGroupFactory(TimestampKlass),
     messageFactory: makeMessageFactory(TimestampKlass),
     patternFactory: makePatternFactory(TimestampKlass),

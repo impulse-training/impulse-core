@@ -2,24 +2,11 @@ import * as Factory from 'factory.ts';
 import {
   ImpulseLogValue,
   LocationLogValue,
-  MotionLogValue,
   TimeLogValue,
 } from '../schema/logs';
 import { TimestampLike } from '../utils/TimestampLike';
-import { makeGameplanFactory } from './gameplan';
 
-const strategy = {
-  main: {
-    tacticIds: [],
-    suggestedTacticIds: [],
-  },
-  impulseDebrief: {
-    tacticIds: [],
-    suggestedTacticIds: [],
-  },
-};
-
-export const makeImpulseFactory = (TimestampKlass: typeof TimestampLike) =>
+export const makeImpulseLogFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<ImpulseLogValue>({
     profileId: Factory.each(i => i.toString()),
     uids: [],
@@ -36,8 +23,10 @@ export const makeImpulseFactory = (TimestampKlass: typeof TimestampLike) =>
     locationIsFetching: false,
     patternsById: {},
     tacticsById: {},
-    strategy,
-    gameplan: makeGameplanFactory(TimestampKlass).build(),
+    strategy: {
+      tacticIds: [],
+      suggestedTacticIds: [],
+    },
     seenStrategy: {},
     completedTacticIds: [],
   });
@@ -55,25 +44,10 @@ export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>
     location: {},
     tacticsById: {},
     locationIsFetching: false,
-    strategy,
-    seenStrategy: {},
-    completedTacticIds: [],
-  });
-
-export const makeMotionLogFactory = (TimestampKlass: typeof TimestampLike) =>
-  Factory.makeFactory<MotionLogValue>({
-    profileId: Factory.each(i => i.toString()),
-    uids: [],
-    type: 'motion',
-    createdAt: TimestampKlass.now(),
-    updatedAt: TimestampKlass.now(),
-    startTime: TimestampKlass.now(),
-    timezone: 'America/Botota',
-    isDisplayable: false,
-    location: {},
-    tacticsById: {},
-    locationIsFetching: false,
-    strategy,
+    strategy: {
+      tacticIds: [],
+      suggestedTacticIds: [],
+    },
     seenStrategy: {},
     completedTacticIds: [],
   });
@@ -94,7 +68,10 @@ export const makeLocationLogFactory = (TimestampKlass: typeof TimestampLike) =>
     tacticsById: {},
     location: {},
     locationIsFetching: false,
-    strategy,
+    strategy: {
+      tacticIds: [],
+      suggestedTacticIds: [],
+    },
     seenStrategy: {},
     completedTacticIds: [],
   });

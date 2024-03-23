@@ -30,10 +30,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         uids: string[];
         authorName: string;
     }, "profileId" | "uids" | "authorName" | ("createdAt" | "updatedAt" | "tacticId" | "tacticName" | "text" | "recording" | "isEdited" | "avatar")>;
-    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "profileId" | "uids" | "type" | "tacticsById" | "steps" | "location" | "startTime" | "timezone" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenStrategy" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "setAsActiveImpulse" | "pressCount" | "isDisplayable" | "buttonPressSecondsSinceEpoch" | "gameplan" | "outcome" | "patternId" | "patternsById" | "debriefNotes" | "debriefReminderSentAt" | "debriefedAt">;
-    timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "profileId" | "uids" | "type" | "tacticsById" | "steps" | "location" | "startTime" | "timezone" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenStrategy" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable">;
-    motionLogFactory: import("factory.ts").Factory<import("..").MotionLogValue, "createdAt" | "updatedAt" | "profileId" | "uids" | "type" | "tacticsById" | "steps" | "location" | "startTime" | "timezone" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenStrategy" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable">;
-    locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "createdAt" | "updatedAt" | "profileId" | "uids" | "type" | "tacticsById" | "steps" | "locationId" | "location" | "startTime" | "timezone" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenStrategy" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "locationName" | "locationMode">;
+    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "profileId" | "uids" | "type" | "tacticsById" | "steps" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenStrategy" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "setAsActiveImpulse" | "pressCount" | "isDisplayable" | "buttonPressSecondsSinceEpoch" | "outcome" | "patternId" | "patternsById" | "debriefNotes" | "debriefReminderSentAt" | "debriefedAt">;
+    timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "profileId" | "uids" | "type" | "tacticsById" | "steps" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenStrategy" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable">;
+    locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "createdAt" | "updatedAt" | "profileId" | "uids" | "type" | "tacticsById" | "steps" | "locationId" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenStrategy" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "locationName" | "locationMode">;
     locationFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -52,62 +51,14 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         name: string;
         address: string;
     }, "profileId" | "uids" | "name" | "address" | ("createdAt" | "updatedAt" | "latitude" | "longitude")>;
-    profileFactory: import("factory.ts").Factory<{
-        createdAt?: {
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        avatar?: {
-            localFilePath?: import("yup").Maybe<string | undefined>;
-            storagePath?: import("yup").Maybe<string | undefined>;
-            uri?: import("yup").Maybe<string | undefined>;
-        } | undefined;
-        parentIssueIds?: (string | undefined)[] | undefined;
-        email?: import("yup").Maybe<string | undefined>;
-        buttonId?: string | undefined;
-        isAdmin?: boolean | undefined;
-        isSuperAdmin?: boolean | undefined;
-        activeImpulseId?: string | undefined;
-        currentAppState?: import("react-native/types").AppStateStatus | undefined;
-        showStorybook?: boolean | undefined;
-        lastActiveAt?: Date | undefined;
-        expoPushToken?: string | undefined;
-        releaseChannel?: "default" | "canary" | undefined;
-        widgetInstalledAt?: {
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        notificationPreferences?: {
-            [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
-        } | null | undefined;
-        isCurrentlyTrackingMotion?: boolean | undefined;
-        showTacticsFromSupportGroups?: boolean | undefined;
-        androidPermissions?: {
-            [x: string]: NonNullable<boolean | undefined>;
-        } | null | undefined;
-        stepTrackingEnabled?: boolean | undefined;
-        displayName?: string | undefined;
-        firstName?: string | undefined;
-        lastName?: string | undefined;
-        nickName?: string | undefined;
-        region?: string | null | undefined;
-        phoneNumber?: string | undefined;
-        isTourCompleted?: boolean | undefined;
-        isButtonSetupSkipped?: boolean | undefined;
-        uids: string[];
-        timezone: string;
-        invitationCode: string;
-    }, "uids" | "timezone" | "invitationCode" | ("createdAt" | "updatedAt" | "avatar" | "parentIssueIds" | "email" | "buttonId" | "isAdmin" | "isSuperAdmin" | "activeImpulseId" | "currentAppState" | "showStorybook" | "lastActiveAt" | "expoPushToken" | "releaseChannel" | "widgetInstalledAt" | "notificationPreferences" | "isCurrentlyTrackingMotion" | "showTacticsFromSupportGroups" | "androidPermissions" | "stepTrackingEnabled" | "displayName" | "firstName" | "lastName" | "nickName" | "region" | "phoneNumber" | "isTourCompleted" | "isButtonSetupSkipped")>;
-    gameplanFactory: import("factory.ts").Factory<import("..").GameplanValue, "createdAt" | "updatedAt" | "profileId" | "uids" | "tacticsById" | "main" | "success" | "setback" | "name" | "programId" | "parentIssueIds" | "measureTacticIds" | "time" | "location" | "scheduledNotificationIds">;
+    profileFactory: import("factory.ts").Factory<import("..").ProfileValue, "createdAt" | "updatedAt" | "uids" | "tacticsById" | "parentIssueIds" | "timezone" | "timeStrategies" | "locationStrategies" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "androidPermissions" | "region" | "invitationCode" | "programId" | "scheduledNotificationIds" | "impulseStrategies">;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
+        parentId?: string | null | undefined;
+        setbackThreshold?: number | undefined;
+        programsCount?: number | null | undefined;
+        profileCount?: number | null | undefined;
+        isFeatured?: boolean | null | undefined;
         main?: {
             suggestedTacticIds: string[];
             llmPrompt: string;
@@ -120,11 +71,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             suggestedTacticIds: string[];
             llmPrompt: string;
         } | null | undefined;
-        parentId?: string | null | undefined;
-        setbackThreshold?: number | undefined;
-        programsCount?: number | null | undefined;
-        profileCount?: number | null | undefined;
-        isFeatured?: boolean | null | undefined;
         createdAt: {
             seconds: number;
             nanoseconds: number;
@@ -241,60 +187,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         };
         parentIds: string[];
         parentNames: string[];
-    }, "createdAt" | "updatedAt" | "name" | "synonyms" | "measureTactic" | "parentIds" | "parentNames" | ("path" | "main" | "success" | "setback" | "parentId" | "setbackThreshold" | "programsCount" | "profileCount" | "isFeatured")>;
-    adminProfileFactory: import("factory.ts").Factory<{
-        createdAt?: {
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        avatar?: {
-            localFilePath?: import("yup").Maybe<string | undefined>;
-            storagePath?: import("yup").Maybe<string | undefined>;
-            uri?: import("yup").Maybe<string | undefined>;
-        } | undefined;
-        parentIssueIds?: (string | undefined)[] | undefined;
-        email?: import("yup").Maybe<string | undefined>;
-        buttonId?: string | undefined;
-        isAdmin?: boolean | undefined;
-        isSuperAdmin?: boolean | undefined;
-        activeImpulseId?: string | undefined;
-        currentAppState?: import("react-native/types").AppStateStatus | undefined;
-        showStorybook?: boolean | undefined;
-        lastActiveAt?: Date | undefined;
-        expoPushToken?: string | undefined;
-        releaseChannel?: "default" | "canary" | undefined;
-        widgetInstalledAt?: {
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        notificationPreferences?: {
-            [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
-        } | null | undefined;
-        isCurrentlyTrackingMotion?: boolean | undefined;
-        showTacticsFromSupportGroups?: boolean | undefined;
-        androidPermissions?: {
-            [x: string]: NonNullable<boolean | undefined>;
-        } | null | undefined;
-        stepTrackingEnabled?: boolean | undefined;
-        displayName?: string | undefined;
-        firstName?: string | undefined;
-        lastName?: string | undefined;
-        nickName?: string | undefined;
-        region?: string | null | undefined;
-        phoneNumber?: string | undefined;
-        isTourCompleted?: boolean | undefined;
-        isButtonSetupSkipped?: boolean | undefined;
-        uids: string[];
-        timezone: string;
-        invitationCode: string;
-    }, "uids" | "timezone" | "invitationCode" | ("createdAt" | "updatedAt" | "avatar" | "parentIssueIds" | "email" | "buttonId" | "isAdmin" | "isSuperAdmin" | "activeImpulseId" | "currentAppState" | "showStorybook" | "lastActiveAt" | "expoPushToken" | "releaseChannel" | "widgetInstalledAt" | "notificationPreferences" | "isCurrentlyTrackingMotion" | "showTacticsFromSupportGroups" | "androidPermissions" | "stepTrackingEnabled" | "displayName" | "firstName" | "lastName" | "nickName" | "region" | "phoneNumber" | "isTourCompleted" | "isButtonSetupSkipped")>;
+    }, "createdAt" | "updatedAt" | "name" | "synonyms" | "measureTactic" | "parentIds" | "parentNames" | ("path" | "parentId" | "setbackThreshold" | "programsCount" | "profileCount" | "isFeatured" | "main" | "success" | "setback")>;
     supportGroupFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -346,7 +239,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        parentIssueIds?: string[] | undefined;
         setbackThreshold?: import("yup").Maybe<number | undefined>;
         supportGroupIds?: string[] | undefined;
         notification?: {
@@ -355,6 +247,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         } | import("yup").Maybe<{} | undefined>;
         dailySetbackThreshold?: import("yup").Maybe<number | undefined>;
         issueId?: import("yup").Maybe<string | undefined>;
+        parentIssueIds?: string[] | undefined;
         sendWeeklyReports?: import("yup").Maybe<boolean | undefined>;
         profileId: string;
         uids: string[];
@@ -462,8 +355,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             backgroundColor: string;
         };
         ordinal: number;
-    }, "profileId" | "uids" | "name" | "measureTactic" | "ordinal" | ("createdAt" | "updatedAt" | "parentIssueIds" | "setbackThreshold" | "supportGroupIds" | "notification" | "dailySetbackThreshold" | "issueId" | "sendWeeklyReports")>;
-    programFactory: import("factory.ts").Factory<import("..").ProgramValue, "createdAt" | "updatedAt" | "title" | "tacticsById" | "main" | "success" | "setback" | "time" | "location" | "forIssueIds" | "issueNames" | "issueNamesSummary" | "recommendationSummary">;
+    }, "profileId" | "uids" | "name" | "measureTactic" | "ordinal" | ("createdAt" | "updatedAt" | "setbackThreshold" | "supportGroupIds" | "notification" | "dailySetbackThreshold" | "issueId" | "parentIssueIds" | "sendWeeklyReports")>;
+    programFactory: import("factory.ts").Factory<import("..").ProgramValue, "createdAt" | "updatedAt" | "title" | "tacticsById" | "forIssueIds" | "issueNames" | "issueNamesSummary" | "recommendationSummary" | "impulseStrategy" | "timeStrategies" | "locationStrategies">;
     tacticFactory: import("factory.ts").Factory<import("..").NonRecursiveTactic, "createdAt" | "updatedAt" | "profileId" | "type" | "sourceId" | "title" | "subtitle" | "description" | "image" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
     measureTimeTacticFactory: import("factory.ts").Factory<{
         createdAt?: {

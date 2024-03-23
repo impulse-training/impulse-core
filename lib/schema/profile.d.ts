@@ -1,5 +1,7 @@
 import { AppStateStatus } from 'react-native';
 import * as yup from 'yup';
+import { TimestampLike } from '../utils';
+import { WithTacticsById } from './tactic';
 export declare const profileSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
@@ -12,16 +14,10 @@ export declare const profileSchema: yup.ObjectSchema<{
         toDate: Function;
     } | null | undefined;
     uids: string[];
-    buttonId: string | undefined;
-    isAdmin: boolean | undefined;
-    isSuperAdmin: boolean | undefined;
     activeImpulseId: string | undefined;
-    email: yup.Maybe<string | undefined>;
     currentAppState: AppStateStatus | undefined;
-    showStorybook: boolean | undefined;
     lastActiveAt: Date | undefined;
     expoPushToken: string | undefined;
-    releaseChannel: "default" | "canary" | undefined;
     widgetInstalledAt: {
         seconds: number;
         nanoseconds: number;
@@ -30,59 +26,66 @@ export declare const profileSchema: yup.ObjectSchema<{
     notificationPreferences: {
         [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
     } | null | undefined;
-    isCurrentlyTrackingMotion: boolean | undefined;
-    showTacticsFromSupportGroups: boolean | undefined;
     androidPermissions: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
     parentIssueIds: (string | undefined)[] | undefined;
-    stepTrackingEnabled: boolean | undefined;
-    displayName: string | undefined;
-    firstName: string | undefined;
-    lastName: string | undefined;
-    nickName: string | undefined;
     region: string | null | undefined;
     timezone: string;
-    phoneNumber: string | undefined;
-    avatar: {
-        localFilePath?: yup.Maybe<string | undefined>;
-        storagePath?: yup.Maybe<string | undefined>;
-        uri?: yup.Maybe<string | undefined>;
-    } | undefined;
-    isTourCompleted: boolean | undefined;
-    isButtonSetupSkipped: boolean | undefined;
     invitationCode: string;
+    programId: yup.Maybe<string | undefined>;
+    scheduledNotificationIds: string[] | undefined;
+    impulseStrategies: {
+        [x: string]: {
+            suggestedTacticIds?: string[] | undefined;
+            tacticIds: string[];
+        };
+    };
+    timeStrategies: {
+        [x: string]: {
+            suggestedTacticIds?: string[] | undefined;
+            title: string;
+            tacticIds: string[];
+            weekdays: number[];
+            hour: number;
+            minute: number;
+        };
+    } | null | undefined;
+    locationStrategies: {
+        [x: string]: {
+            suggestedTacticIds?: string[] | undefined;
+            title: string;
+            tacticIds: string[];
+            locationId: string;
+            mode: NonNullable<"enter" | "exit" | undefined>;
+        };
+    } | null | undefined;
+    tacticsById: any;
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
     uids: "";
-    buttonId: undefined;
-    isAdmin: undefined;
-    isSuperAdmin: undefined;
     activeImpulseId: undefined;
-    email: undefined;
     currentAppState: undefined;
-    showStorybook: undefined;
     lastActiveAt: undefined;
     expoPushToken: undefined;
-    releaseChannel: undefined;
     widgetInstalledAt: undefined;
     notificationPreferences: undefined;
-    isCurrentlyTrackingMotion: undefined;
-    showTacticsFromSupportGroups: undefined;
     androidPermissions: undefined;
     parentIssueIds: "";
-    stepTrackingEnabled: undefined;
-    displayName: undefined;
-    firstName: undefined;
-    lastName: undefined;
-    nickName: undefined;
     region: undefined;
     timezone: undefined;
-    phoneNumber: undefined;
-    avatar: undefined;
-    isTourCompleted: undefined;
-    isButtonSetupSkipped: undefined;
     invitationCode: undefined;
+    programId: undefined;
+    scheduledNotificationIds: "";
+    impulseStrategies: undefined;
+    timeStrategies: undefined;
+    locationStrategies: undefined;
+    tacticsById: any;
 }, "">;
-export type ProfileValue = yup.InferType<typeof profileSchema>;
+export type ProfileValue = WithTypes<typeof profileSchema>;
+type WithTypes<T extends yup.ISchema<unknown>> = WithTacticsById<yup.InferType<T>> & {
+    createdAt: TimestampLike;
+    updatedAt: TimestampLike;
+};
+export {};

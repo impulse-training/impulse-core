@@ -1,4 +1,3 @@
-import { faker } from '@faker-js/faker';
 import * as Factory from 'factory.ts';
 import { ProfileValue } from '../schema';
 import { TimestampLike } from '../utils/TimestampLike';
@@ -8,16 +7,10 @@ export const makeProfileFactory = (TimestampKlass: typeof TimestampLike) =>
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     uids: [],
-    displayName: faker.name.fullName(),
-    email: faker.internet.email(),
-    isAdmin: false,
     region: 'US',
+    impulseStrategies: {},
+    tacticsById: {},
     timezone: 'America/Bogota',
     invitationCode: 'abc123',
     notificationPreferences: {},
-  });
-
-export const makeAdminProfileFactory = (TimestampKlass: typeof TimestampLike) =>
-  makeProfileFactory(TimestampKlass).extend({
-    isAdmin: true,
   });

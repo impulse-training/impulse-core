@@ -8,19 +8,11 @@ export declare const programSchema: yup.ObjectSchema<{
     } | null | undefined;
     issueNamesSummary: string | null | undefined;
     recommendationSummary: string | null | undefined;
-    main: {
+    impulseStrategy: {
         suggestedTacticIds?: string[] | undefined;
         tacticIds: string[];
     };
-    success: {
-        suggestedTacticIds?: string[] | undefined;
-        tacticIds: string[];
-    } | null | undefined;
-    setback: {
-        suggestedTacticIds?: string[] | undefined;
-        tacticIds: string[];
-    } | null | undefined;
-    time: {
+    timeStrategies: {
         [x: string]: {
             suggestedTacticIds?: string[] | undefined;
             title: string;
@@ -30,7 +22,7 @@ export declare const programSchema: yup.ObjectSchema<{
             minute: number;
         };
     } | null | undefined;
-    location: {
+    locationStrategies: {
         [x: string]: {
             suggestedTacticIds?: string[] | undefined;
             title: string;
@@ -56,14 +48,12 @@ export declare const programSchema: yup.ObjectSchema<{
     issueNames: undefined;
     issueNamesSummary: undefined;
     recommendationSummary: undefined;
-    main: {
+    impulseStrategy: {
         tacticIds: "";
         suggestedTacticIds: "";
     };
-    success: undefined;
-    setback: undefined;
-    time: undefined;
-    location: undefined;
+    timeStrategies: undefined;
+    locationStrategies: undefined;
     tacticsById: any;
     createdAt: undefined;
     updatedAt: undefined;

@@ -1,8 +1,8 @@
 import * as yup from 'yup';
-import { strategySchema } from './strategy';
+import { strategySchema } from './strategies';
 
-export type TimeRoutine = yup.InferType<typeof timeRoutineSchema>;
-export const timeRoutineSchema = strategySchema.shape({
+export type TimeStrategy = yup.InferType<typeof timeStrategySchema>;
+export const timeStrategySchema = strategySchema.shape({
   weekdays: yup
     .array()
     .of(
@@ -20,8 +20,8 @@ export const timeRoutineSchema = strategySchema.shape({
   title: yup.string().required(),
 });
 
-export type LocationRoutine = yup.InferType<typeof locationRoutineSchema>;
-export const locationRoutineSchema = strategySchema.shape({
+export type LocationStrategy = yup.InferType<typeof locationStrategySchema>;
+export const locationStrategySchema = strategySchema.shape({
   locationId: yup.string().required(),
   mode: yup.mixed<'enter' | 'exit'>().oneOf(['enter', 'exit']).required(),
   title: yup.string().required(),

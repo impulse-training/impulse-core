@@ -10,7 +10,7 @@ export const makeProgramFactory = (TimestampKlass: typeof TimestampLike) =>
     forIssueIds: [],
     issueNamesSummary: '',
     issueNames: {},
-    main: {
+    impulseStrategy: {
       tacticIds: [],
     },
     tacticsById: {},

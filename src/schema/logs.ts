@@ -3,11 +3,11 @@
 import * as yup from 'yup';
 import { TimestampLike } from '../utils/TimestampLike';
 import { commentSchema } from './comment';
-import { gameplanSchema, strategySchema } from './gameplan';
 import { patternSchema } from './pattern';
 import { TacticValue, WithTacticsById, tacticSchema } from './tactic';
 import { optionalStringArray, requiredStringArray } from './utils/array';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
+import { strategySchema } from './utils/strategies';
 import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
 
 type Outcome = 'success' | 'setback';
@@ -54,12 +54,7 @@ const baseLogSchema = yup.object().shape({
   // logs also have a debrief strategy. Additionally, we store tactics by id, so the log always has
   // the data to render the tactics from the strategy, even if those tactics are deleted or modified
   // later.
-  strategy: yup.object({
-    main: strategySchema.required(),
-    success: strategySchema.notRequired(),
-    setback: strategySchema.notRequired(),
-    measureTacticId: yup.string().notRequired(),
-  }),
+  strategy: strategySchema,
   seenStrategy: objectOf(requiredStringArray),
   // Tactics are a complex union type. We omit this key from the base log schema and add it back in
   // using typescript, so we just "neuter" it here to tell typescript to relax. This saves 10k+
@@ -100,7 +95,7 @@ const impulseLogSchema = baseLogSchema.concat(
     // In addition to the strategy field, which is the set of tactics for the currently-selected
     // pattern, we also store the entire "gameplan" on impulse log documents, which is copied from
     // the user's gameplan document at the time.
-    gameplan: gameplanSchema,
+    strategy: strategySchema,
     outcome: yup.mixed<Outcome>().oneOf(['success', 'setback']),
     patternId: yup.string().required(),
     patternsById: objectOf(patternSchema),

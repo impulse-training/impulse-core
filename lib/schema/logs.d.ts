@@ -87,19 +87,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
     strategy: {
-        success?: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        } | null | undefined;
-        setback?: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        } | null | undefined;
-        measureTacticId?: yup.Maybe<string | undefined>;
-        main: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        };
+        suggestedTacticIds?: string[] | undefined;
+        tacticIds: string[];
     };
     seenStrategy: {
         [x: string]: string[];
@@ -146,19 +135,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
     commentsByTacticId: undefined;
     steps: undefined;
     strategy: {
-        main: {
-            tacticIds: "";
-            suggestedTacticIds: "";
-        };
-        success: {
-            tacticIds: "";
-            suggestedTacticIds: "";
-        };
-        setback: {
-            tacticIds: "";
-            suggestedTacticIds: "";
-        };
-        measureTacticId: undefined;
+        tacticIds: "";
+        suggestedTacticIds: "";
     };
     seenStrategy: undefined;
     tacticsById: any;
@@ -245,19 +223,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
     strategy: {
-        success?: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        } | null | undefined;
-        setback?: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        } | null | undefined;
-        measureTacticId?: yup.Maybe<string | undefined>;
-        main: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        };
+        suggestedTacticIds?: string[] | undefined;
+        tacticIds: string[];
     };
     seenStrategy: {
         [x: string]: string[];
@@ -283,64 +250,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     pressCount: yup.Maybe<number | undefined>;
     isDisplayable: NonNullable<boolean | undefined>;
     buttonPressSecondsSinceEpoch: yup.Maybe<number | undefined>;
-    gameplan: {
-        createdAt?: {
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        tacticsById?: any;
-        name?: yup.Maybe<string | undefined>;
-        programId?: yup.Maybe<string | undefined>;
-        parentIssueIds?: string[] | undefined;
-        time?: {
-            [x: string]: {
-                suggestedTacticIds?: string[] | undefined;
-                title: string;
-                tacticIds: string[];
-                weekdays: number[];
-                hour: number;
-                minute: number;
-            };
-        } | null | undefined;
-        location?: {
-            [x: string]: {
-                suggestedTacticIds?: string[] | undefined;
-                title: string;
-                tacticIds: string[];
-                locationId: string;
-                mode: NonNullable<"enter" | "exit" | undefined>;
-            };
-        } | null | undefined;
-        scheduledNotificationIds?: string[] | undefined;
-        profileId: string;
-        uids: string[];
-        main: {
-            [x: string]: {
-                suggestedTacticIds?: string[] | undefined;
-                tacticIds: string[];
-            };
-        };
-        success: {
-            [x: string]: {
-                suggestedTacticIds?: string[] | undefined;
-                tacticIds: string[];
-            };
-        };
-        setback: {
-            [x: string]: {
-                suggestedTacticIds?: string[] | undefined;
-                tacticIds: string[];
-            };
-        };
-        measureTacticIds: {
-            [x: string]: string;
-        };
+    strategy: {
+        suggestedTacticIds?: string[] | undefined;
+        tacticIds: string[];
     };
     outcome: Outcome | undefined;
     patternId: string;
@@ -356,7 +268,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            parentIssueIds?: string[] | undefined;
             setbackThreshold?: yup.Maybe<number | undefined>;
             supportGroupIds?: string[] | undefined;
             notification?: {
@@ -365,6 +276,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             } | yup.Maybe<{} | undefined>;
             dailySetbackThreshold?: yup.Maybe<number | undefined>;
             issueId?: yup.Maybe<string | undefined>;
+            parentIssueIds?: string[] | undefined;
             sendWeeklyReports?: yup.Maybe<boolean | undefined>;
             profileId: string;
             uids: string[];
@@ -504,19 +416,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     commentsByTacticId: undefined;
     steps: undefined;
     strategy: {
-        main: {
-            tacticIds: "";
-            suggestedTacticIds: "";
-        };
-        success: {
-            tacticIds: "";
-            suggestedTacticIds: "";
-        };
-        setback: {
-            tacticIds: "";
-            suggestedTacticIds: "";
-        };
-        measureTacticId: undefined;
+        tacticIds: "";
+        suggestedTacticIds: "";
     };
     seenStrategy: undefined;
     tacticsById: any;
@@ -529,23 +430,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     pressCount: undefined;
     isDisplayable: undefined;
     buttonPressSecondsSinceEpoch: undefined;
-    gameplan: {
-        profileId: undefined;
-        uids: "";
-        name: undefined;
-        programId: undefined;
-        createdAt: undefined;
-        updatedAt: undefined;
-        parentIssueIds: "";
-        main: undefined;
-        setback: undefined;
-        success: undefined;
-        measureTacticIds: undefined;
-        time: undefined;
-        location: undefined;
-        tacticsById: any;
-        scheduledNotificationIds: "";
-    };
     outcome: undefined;
     patternId: undefined;
     patternsById: undefined;
@@ -625,19 +509,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
     strategy: {
-        success?: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        } | null | undefined;
-        setback?: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        } | null | undefined;
-        measureTacticId?: yup.Maybe<string | undefined>;
-        main: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        };
+        suggestedTacticIds?: string[] | undefined;
+        tacticIds: string[];
     };
     seenStrategy: {
         [x: string]: string[];
@@ -690,19 +563,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
     commentsByTacticId: undefined;
     steps: undefined;
     strategy: {
-        main: {
-            tacticIds: "";
-            suggestedTacticIds: "";
-        };
-        success: {
-            tacticIds: "";
-            suggestedTacticIds: "";
-        };
-        setback: {
-            tacticIds: "";
-            suggestedTacticIds: "";
-        };
-        measureTacticId: undefined;
+        tacticIds: "";
+        suggestedTacticIds: "";
     };
     seenStrategy: undefined;
     tacticsById: any;
@@ -788,19 +650,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
     strategy: {
-        success?: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        } | null | undefined;
-        setback?: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        } | null | undefined;
-        measureTacticId?: yup.Maybe<string | undefined>;
-        main: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        };
+        suggestedTacticIds?: string[] | undefined;
+        tacticIds: string[];
     };
     seenStrategy: {
         [x: string]: string[];
@@ -850,19 +701,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
     commentsByTacticId: undefined;
     steps: undefined;
     strategy: {
-        main: {
-            tacticIds: "";
-            suggestedTacticIds: "";
-        };
-        success: {
-            tacticIds: "";
-            suggestedTacticIds: "";
-        };
-        setback: {
-            tacticIds: "";
-            suggestedTacticIds: "";
-        };
-        measureTacticId: undefined;
+        tacticIds: "";
+        suggestedTacticIds: "";
     };
     seenStrategy: undefined;
     tacticsById: any;
@@ -945,19 +785,8 @@ declare const motionLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
     strategy: {
-        success?: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        } | null | undefined;
-        setback?: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        } | null | undefined;
-        measureTacticId?: yup.Maybe<string | undefined>;
-        main: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        };
+        suggestedTacticIds?: string[] | undefined;
+        tacticIds: string[];
     };
     seenStrategy: {
         [x: string]: string[];
@@ -1007,19 +836,8 @@ declare const motionLogSchema: yup.ObjectSchema<{
     commentsByTacticId: undefined;
     steps: undefined;
     strategy: {
-        main: {
-            tacticIds: "";
-            suggestedTacticIds: "";
-        };
-        success: {
-            tacticIds: "";
-            suggestedTacticIds: "";
-        };
-        setback: {
-            tacticIds: "";
-            suggestedTacticIds: "";
-        };
-        measureTacticId: undefined;
+        tacticIds: "";
+        suggestedTacticIds: "";
     };
     seenStrategy: undefined;
     tacticsById: any;
@@ -1105,6 +923,12 @@ export declare const logSchema: yup.Lazy<{
     profileId: string;
     uids: string[];
     type: "impulse";
+    startTime: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    };
+    timezone: string;
     location: {
         latitude?: number | undefined;
         longitude?: number | undefined;
@@ -1114,92 +938,16 @@ export declare const logSchema: yup.Lazy<{
         heading?: number | undefined;
         speed?: number | undefined;
     };
-    startTime: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    };
-    timezone: string;
     locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
-        success?: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        } | null | undefined;
-        setback?: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        } | null | undefined;
-        measureTacticId?: yup.Maybe<string | undefined>;
-        main: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        };
+        suggestedTacticIds?: string[] | undefined;
+        tacticIds: string[];
     };
     seenStrategy: {
         [x: string]: string[];
     };
     completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
-    gameplan: {
-        createdAt?: {
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        tacticsById?: any;
-        name?: yup.Maybe<string | undefined>;
-        programId?: yup.Maybe<string | undefined>;
-        parentIssueIds?: string[] | undefined;
-        time?: {
-            [x: string]: {
-                suggestedTacticIds?: string[] | undefined;
-                title: string;
-                tacticIds: string[];
-                weekdays: number[];
-                hour: number;
-                minute: number;
-            };
-        } | null | undefined;
-        location?: {
-            [x: string]: {
-                suggestedTacticIds?: string[] | undefined;
-                title: string;
-                tacticIds: string[];
-                locationId: string;
-                mode: NonNullable<"enter" | "exit" | undefined>;
-            };
-        } | null | undefined;
-        scheduledNotificationIds?: string[] | undefined;
-        profileId: string;
-        uids: string[];
-        main: {
-            [x: string]: {
-                suggestedTacticIds?: string[] | undefined;
-                tacticIds: string[];
-            };
-        };
-        success: {
-            [x: string]: {
-                suggestedTacticIds?: string[] | undefined;
-                tacticIds: string[];
-            };
-        };
-        setback: {
-            [x: string]: {
-                suggestedTacticIds?: string[] | undefined;
-                tacticIds: string[];
-            };
-        };
-        measureTacticIds: {
-            [x: string]: string;
-        };
-    };
     patternId: string;
     patternsById: {
         [x: string]: {
@@ -1213,7 +961,6 @@ export declare const logSchema: yup.Lazy<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            parentIssueIds?: string[] | undefined;
             setbackThreshold?: yup.Maybe<number | undefined>;
             supportGroupIds?: string[] | undefined;
             notification?: {
@@ -1222,6 +969,7 @@ export declare const logSchema: yup.Lazy<{
             } | yup.Maybe<{} | undefined>;
             dailySetbackThreshold?: yup.Maybe<number | undefined>;
             issueId?: yup.Maybe<string | undefined>;
+            parentIssueIds?: string[] | undefined;
             sendWeeklyReports?: yup.Maybe<boolean | undefined>;
             profileId: string;
             uids: string[];
@@ -1400,6 +1148,12 @@ export declare const logSchema: yup.Lazy<{
     uids: string[];
     type: "location";
     locationId: string;
+    startTime: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    };
+    timezone: string;
     location: {
         latitude?: number | undefined;
         longitude?: number | undefined;
@@ -1409,27 +1163,10 @@ export declare const logSchema: yup.Lazy<{
         heading?: number | undefined;
         speed?: number | undefined;
     };
-    startTime: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    };
-    timezone: string;
     locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
-        success?: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        } | null | undefined;
-        setback?: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        } | null | undefined;
-        measureTacticId?: yup.Maybe<string | undefined>;
-        main: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        };
+        suggestedTacticIds?: string[] | undefined;
+        tacticIds: string[];
     };
     seenStrategy: {
         [x: string]: string[];
@@ -1506,6 +1243,12 @@ export declare const logSchema: yup.Lazy<{
     profileId: string;
     uids: string[];
     type: "time";
+    startTime: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    };
+    timezone: string;
     location: {
         latitude?: number | undefined;
         longitude?: number | undefined;
@@ -1515,27 +1258,10 @@ export declare const logSchema: yup.Lazy<{
         heading?: number | undefined;
         speed?: number | undefined;
     };
-    startTime: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    };
-    timezone: string;
     locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
-        success?: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        } | null | undefined;
-        setback?: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        } | null | undefined;
-        measureTacticId?: yup.Maybe<string | undefined>;
-        main: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        };
+        suggestedTacticIds?: string[] | undefined;
+        tacticIds: string[];
     };
     seenStrategy: {
         [x: string]: string[];
@@ -1610,6 +1336,12 @@ export declare const logSchema: yup.Lazy<{
     profileId: string;
     uids: string[];
     type: "motion";
+    startTime: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    };
+    timezone: string;
     location: {
         latitude?: number | undefined;
         longitude?: number | undefined;
@@ -1619,27 +1351,10 @@ export declare const logSchema: yup.Lazy<{
         heading?: number | undefined;
         speed?: number | undefined;
     };
-    startTime: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    };
-    timezone: string;
     locationIsFetching: NonNullable<boolean | undefined>;
     strategy: {
-        success?: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        } | null | undefined;
-        setback?: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        } | null | undefined;
-        measureTacticId?: yup.Maybe<string | undefined>;
-        main: {
-            suggestedTacticIds?: string[] | undefined;
-            tacticIds: string[];
-        };
+        suggestedTacticIds?: string[] | undefined;
+        tacticIds: string[];
     };
     seenStrategy: {
         [x: string]: string[];
