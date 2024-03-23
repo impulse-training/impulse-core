@@ -16,13 +16,12 @@ export declare const recoveryCode: yup.ObjectSchema<{
         toDate: Function;
     } | null | undefined;
     profileId: string;
-    ordinal: number;
     hashedCode: string;
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
     usedAt: undefined;
     profileId: undefined;
-    ordinal: undefined;
     hashedCode: undefined;
 }, "">;
+export type RecoveryCodeValue = yup.InferType<typeof recoveryCode>;
