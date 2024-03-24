@@ -55,7 +55,7 @@ const baseLogSchema = yup.object().shape({
   // the data to render the tactics from the strategy, even if those tactics are deleted or modified
   // later.
   strategy: strategySchema,
-  seenStrategy: objectOf(requiredStringArray),
+  seenTacticIds: requiredStringArray,
   // Tactics are a complex union type. We omit this key from the base log schema and add it back in
   // using typescript, so we just "neuter" it here to tell typescript to relax. This saves 10k+
   // lines of type annotations in the generated typescript file.

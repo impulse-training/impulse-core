@@ -90,9 +90,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
         suggestedTacticIds?: string[] | undefined;
         tacticIds: string[];
     };
-    seenStrategy: {
-        [x: string]: string[];
-    };
+    seenTacticIds: string[];
     tacticsById: any;
     completedTacticIds: string[];
     tacticLikes: {
@@ -138,7 +136,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
         tacticIds: "";
         suggestedTacticIds: "";
     };
-    seenStrategy: undefined;
+    seenTacticIds: "";
     tacticsById: any;
     completedTacticIds: "";
     tacticLikes: undefined;
@@ -226,9 +224,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         suggestedTacticIds?: string[] | undefined;
         tacticIds: string[];
     };
-    seenStrategy: {
-        [x: string]: string[];
-    };
+    seenTacticIds: string[];
     tacticsById: any;
     completedTacticIds: string[];
     tacticLikes: {
@@ -421,7 +417,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         tacticIds: "";
         suggestedTacticIds: "";
     };
-    seenStrategy: undefined;
+    seenTacticIds: "";
     tacticsById: any;
     completedTacticIds: "";
     tacticLikes: undefined;
@@ -515,9 +511,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
         suggestedTacticIds?: string[] | undefined;
         tacticIds: string[];
     };
-    seenStrategy: {
-        [x: string]: string[];
-    };
+    seenTacticIds: string[];
     tacticsById: any;
     completedTacticIds: string[];
     tacticLikes: {
@@ -569,7 +563,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
         tacticIds: "";
         suggestedTacticIds: "";
     };
-    seenStrategy: undefined;
+    seenTacticIds: "";
     tacticsById: any;
     completedTacticIds: "";
     tacticLikes: undefined;
@@ -656,9 +650,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
         suggestedTacticIds?: string[] | undefined;
         tacticIds: string[];
     };
-    seenStrategy: {
-        [x: string]: string[];
-    };
+    seenTacticIds: string[];
     tacticsById: any;
     completedTacticIds: string[];
     tacticLikes: {
@@ -707,7 +699,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
         tacticIds: "";
         suggestedTacticIds: "";
     };
-    seenStrategy: undefined;
+    seenTacticIds: "";
     tacticsById: any;
     completedTacticIds: "";
     tacticLikes: undefined;
@@ -791,9 +783,7 @@ declare const motionLogSchema: yup.ObjectSchema<{
         suggestedTacticIds?: string[] | undefined;
         tacticIds: string[];
     };
-    seenStrategy: {
-        [x: string]: string[];
-    };
+    seenTacticIds: string[];
     tacticsById: any;
     completedTacticIds: string[];
     tacticLikes: {
@@ -842,7 +832,7 @@ declare const motionLogSchema: yup.ObjectSchema<{
         tacticIds: "";
         suggestedTacticIds: "";
     };
-    seenStrategy: undefined;
+    seenTacticIds: "";
     tacticsById: any;
     completedTacticIds: "";
     tacticLikes: undefined;
@@ -946,9 +936,7 @@ export declare const logSchema: yup.Lazy<{
         suggestedTacticIds?: string[] | undefined;
         tacticIds: string[];
     };
-    seenStrategy: {
-        [x: string]: string[];
-    };
+    seenTacticIds: string[];
     completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
     impulseStrategies: {
@@ -1177,9 +1165,7 @@ export declare const logSchema: yup.Lazy<{
         suggestedTacticIds?: string[] | undefined;
         tacticIds: string[];
     };
-    seenStrategy: {
-        [x: string]: string[];
-    };
+    seenTacticIds: string[];
     completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
     locationName: string;
@@ -1272,9 +1258,7 @@ export declare const logSchema: yup.Lazy<{
         suggestedTacticIds?: string[] | undefined;
         tacticIds: string[];
     };
-    seenStrategy: {
-        [x: string]: string[];
-    };
+    seenTacticIds: string[];
     completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
 } | {
@@ -1365,9 +1349,7 @@ export declare const logSchema: yup.Lazy<{
         suggestedTacticIds?: string[] | undefined;
         tacticIds: string[];
     };
-    seenStrategy: {
-        [x: string]: string[];
-    };
+    seenTacticIds: string[];
     completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
 }, yup.AnyObject, any>;

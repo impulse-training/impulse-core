@@ -28,7 +28,7 @@ export const makeImpulseLogFactory = (TimestampKlass: typeof TimestampLike) =>
       suggestedTacticIds: [],
     },
     impulseStrategies: {},
-    seenStrategy: {},
+    seenTacticIds: [],
     completedTacticIds: [],
   });
 
@@ -49,7 +49,7 @@ export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>
       tacticIds: [],
       suggestedTacticIds: [],
     },
-    seenStrategy: {},
+    seenTacticIds: [],
     completedTacticIds: [],
   });
 
@@ -73,6 +73,6 @@ export const makeLocationLogFactory = (TimestampKlass: typeof TimestampLike) =>
       tacticIds: [],
       suggestedTacticIds: [],
     },
-    seenStrategy: {},
+    seenTacticIds: [],
     completedTacticIds: [],
   });
