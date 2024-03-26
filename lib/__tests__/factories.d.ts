@@ -26,12 +26,11 @@ export declare const factories: {
             uri?: import("yup").Maybe<string | undefined>;
         } | undefined;
         profileId: string;
-        uids: string[];
         authorName: string;
-    }, "profileId" | "uids" | "authorName" | ("createdAt" | "updatedAt" | "tacticId" | "tacticName" | "text" | "recording" | "isEdited" | "avatar")>;
-    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "profileId" | "uids" | "type" | "tacticsById" | "steps" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "setAsActiveImpulse" | "pressCount" | "isDisplayable" | "buttonPressSecondsSinceEpoch" | "impulseStrategies" | "outcome" | "patternId" | "patternsById" | "debriefNotes" | "debriefReminderSentAt" | "debriefedAt">;
-    timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "profileId" | "uids" | "type" | "tacticsById" | "steps" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable">;
-    locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "createdAt" | "updatedAt" | "profileId" | "uids" | "type" | "tacticsById" | "steps" | "locationId" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategy" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "locationName" | "locationMode">;
+    }, "profileId" | "authorName" | ("createdAt" | "updatedAt" | "tacticId" | "tacticName" | "text" | "recording" | "isEdited" | "avatar")>;
+    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "steps" | "location" | "startTime" | "timezone" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategies" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "setAsActiveImpulse" | "pressCount" | "isDisplayable" | "buttonPressSecondsSinceEpoch" | "strategiesByPatternId" | "outcome" | "patternId" | "patternsById" | "debriefNotes" | "debriefReminderSentAt" | "debriefedAt">;
+    timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "steps" | "location" | "startTime" | "timezone" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategies" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable">;
+    locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "steps" | "location" | "locationId" | "startTime" | "timezone" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategies" | "seenTacticIds" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "locationName" | "locationMode">;
     locationFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -46,11 +45,10 @@ export declare const factories: {
         latitude?: number | undefined;
         longitude?: number | undefined;
         profileId: string;
-        uids: string[];
         name: string;
         address: string;
-    }, "profileId" | "uids" | "name" | "address" | ("createdAt" | "updatedAt" | "latitude" | "longitude")>;
-    profileFactory: import("factory.ts").Factory<import("..").ProfileValue, "createdAt" | "updatedAt" | "uids" | "tacticsById" | "parentIssueIds" | "timezone" | "impulseStrategies" | "timeStrategies" | "locationStrategies" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "androidPermissions" | "region" | "invitationCode" | "programId" | "scheduledNotificationIds">;
+    }, "profileId" | "name" | "address" | ("createdAt" | "updatedAt" | "latitude" | "longitude")>;
+    profileFactory: import("factory.ts").Factory<import("..").ProfileValue, "createdAt" | "updatedAt" | "tacticsById" | "parentIssueIds" | "timezone" | "scheduledStrategies" | "locationStrategies" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "androidPermissions" | "region" | "invitationCode" | "programId" | "scheduledNotificationIds" | "impulseStrategiesByPattern">;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
         parentId?: string | null | undefined;
@@ -241,7 +239,6 @@ export declare const factories: {
         parentIssueIds?: string[] | undefined;
         sendWeeklyReports?: import("yup").Maybe<boolean | undefined>;
         profileId: string;
-        uids: string[];
         name: string;
         measureTactic: {
             createdAt?: {
@@ -346,8 +343,8 @@ export declare const factories: {
             backgroundColor: string;
         };
         ordinal: number;
-    }, "profileId" | "uids" | "name" | "measureTactic" | "ordinal" | ("createdAt" | "updatedAt" | "setbackThreshold" | "supportGroupIds" | "notification" | "dailySetbackThreshold" | "issueId" | "parentIssueIds" | "sendWeeklyReports")>;
-    programFactory: import("factory.ts").Factory<import("..").ProgramValue, "createdAt" | "updatedAt" | "title" | "tacticsById" | "impulseStrategy" | "forIssueIds" | "issueNames" | "issueNamesSummary" | "recommendationSummary" | "timeStrategies" | "locationStrategies">;
+    }, "profileId" | "name" | "measureTactic" | "ordinal" | ("createdAt" | "updatedAt" | "setbackThreshold" | "supportGroupIds" | "notification" | "dailySetbackThreshold" | "issueId" | "parentIssueIds" | "sendWeeklyReports")>;
+    programFactory: import("factory.ts").Factory<import("..").ProgramValue, "createdAt" | "updatedAt" | "title" | "tacticsById" | "forIssueIds" | "issueNames" | "issueNamesSummary" | "recommendationSummary" | "impulseStrategies" | "scheduledStrategies" | "locationStrategies">;
     tacticFactory: import("factory.ts").Factory<import("..").NonRecursiveTactic, "createdAt" | "updatedAt" | "profileId" | "type" | "sourceId" | "title" | "subtitle" | "description" | "image" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
     measureTimeTacticFactory: import("factory.ts").Factory<{
         createdAt?: {

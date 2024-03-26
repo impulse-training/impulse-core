@@ -1,7 +1,6 @@
 import * as yup from 'yup';
 export declare const patternSchema: yup.ObjectSchema<{
     profileId: string;
-    uids: string[];
     updatedAt: {
         seconds: number;
         nanoseconds: number;
@@ -128,7 +127,6 @@ export declare const patternSchema: yup.ObjectSchema<{
     sendWeeklyReports: yup.Maybe<boolean | undefined>;
 }, yup.AnyObject, {
     profileId: undefined;
-    uids: "";
     updatedAt: undefined;
     createdAt: undefined;
     name: undefined;

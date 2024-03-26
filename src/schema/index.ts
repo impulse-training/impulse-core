@@ -22,4 +22,4 @@ export * from './tactic';
 
 // Utils
 export * from './utils/image';
-export * from './utils/strategies';
+export * from './utils/strategy';

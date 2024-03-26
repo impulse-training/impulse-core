@@ -14,7 +14,6 @@ export declare const commentSchema: yup.ObjectSchema<{
     tacticName: string | null | undefined;
     text: string | undefined;
     profileId: string;
-    uids: string[];
     authorName: string;
     recording: {
         waveform?: string | null | undefined;
@@ -34,7 +33,6 @@ export declare const commentSchema: yup.ObjectSchema<{
     tacticName: undefined;
     text: undefined;
     profileId: undefined;
-    uids: "";
     authorName: undefined;
     recording: {
         localFilePath: undefined;

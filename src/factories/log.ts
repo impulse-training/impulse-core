@@ -9,7 +9,6 @@ import { TimestampLike } from '../utils/TimestampLike';
 export const makeImpulseLogFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<ImpulseLogValue>({
     profileId: Factory.each(i => i.toString()),
-    uids: [],
     type: 'impulse',
     setAsActiveImpulse: true,
     createdAt: TimestampKlass.now(),
@@ -23,11 +22,8 @@ export const makeImpulseLogFactory = (TimestampKlass: typeof TimestampLike) =>
     locationIsFetching: false,
     patternsById: {},
     tacticsById: {},
-    strategy: {
-      tacticIds: [],
-      suggestedTacticIds: [],
-    },
-    impulseStrategies: {},
+    strategies: [],
+    strategiesByPatternId: {},
     seenTacticIds: [],
     completedTacticIds: [],
   });
@@ -35,7 +31,7 @@ export const makeImpulseLogFactory = (TimestampKlass: typeof TimestampLike) =>
 export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<TimeLogValue>({
     profileId: Factory.each(i => i.toString()),
-    uids: [],
+
     type: 'time',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
@@ -45,10 +41,7 @@ export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>
     location: {},
     tacticsById: {},
     locationIsFetching: false,
-    strategy: {
-      tacticIds: [],
-      suggestedTacticIds: [],
-    },
+    strategies: [],
     seenTacticIds: [],
     completedTacticIds: [],
   });
@@ -56,7 +49,7 @@ export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>
 export const makeLocationLogFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<LocationLogValue>({
     profileId: Factory.each(i => i.toString()),
-    uids: [],
+
     type: 'location',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
@@ -69,10 +62,7 @@ export const makeLocationLogFactory = (TimestampKlass: typeof TimestampLike) =>
     tacticsById: {},
     location: {},
     locationIsFetching: false,
-    strategy: {
-      tacticIds: [],
-      suggestedTacticIds: [],
-    },
+    strategies: [],
     seenTacticIds: [],
     completedTacticIds: [],
   });

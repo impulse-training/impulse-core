@@ -7,7 +7,7 @@ import { patternSchema } from './pattern';
 import { TacticValue, WithTacticsById, tacticSchema } from './tactic';
 import { optionalStringArray, requiredStringArray } from './utils/array';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
-import { strategySchema } from './utils/strategies';
+import { strategySchema } from './utils/strategy';
 import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
 
 type Outcome = 'success' | 'setback';
@@ -24,7 +24,7 @@ export type TacticData = yup.InferType<typeof tacticDataSchema>;
 export type BaseLogValue = WithTypes<typeof baseLogSchema>;
 const baseLogSchema = yup.object().shape({
   profileId: yup.string().required(),
-  uids: requiredStringArray,
+
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
   startTime: timestampSchema,
@@ -49,12 +49,7 @@ const baseLogSchema = yup.object().shape({
     })
   ),
   steps: yup.number().notRequired(),
-  // The heart of the log is the strategy - the tactics that should be shown to the user (including
-  // conditional tactics). The main property is required, which is the default. However, impulse
-  // logs also have a debrief strategy. Additionally, we store tactics by id, so the log always has
-  // the data to render the tactics from the strategy, even if those tactics are deleted or modified
-  // later.
-  strategy: strategySchema,
+  strategies: yup.array(strategySchema),
   seenTacticIds: requiredStringArray,
   // Tactics are a complex union type. We omit this key from the base log schema and add it back in
   // using typescript, so we just "neuter" it here to tell typescript to relax. This saves 10k+
@@ -92,10 +87,10 @@ const impulseLogSchema = baseLogSchema.concat(
     pressCount: yup.number().notRequired(),
     isDisplayable: yup.boolean().oneOf([true]).required(),
     buttonPressSecondsSinceEpoch: yup.number().notRequired(),
-    // In addition to the strategy field, which is the set of tactics for the currently-selected
+    // In addition to the tacticSet field, which is the set of tactics for the currently-selected
     // pattern, we also store the entire "gameplan" on impulse log documents, which is copied from
     // the user's gameplan document at the time.
-    impulseStrategies: objectOf(strategySchema),
+    strategiesByPatternId: objectOf(yup.array(strategySchema)),
     outcome: yup.mixed<Outcome>().oneOf(['success', 'setback']),
     patternId: yup.string().required(),
     patternsById: objectOf(patternSchema),

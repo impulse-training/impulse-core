@@ -5,8 +5,8 @@ import { profileSchema } from '../profile';
 describe('profile', () => {
   it("isn't valid with a time profile with no weekdays", () => {
     const profile = factories.profileFactory.build({
-      timeStrategies: {
-        foobar: {
+      scheduledStrategies: [
+        {
           hour: 20,
           minute: 0,
           weekdays: [],
@@ -14,7 +14,7 @@ describe('profile', () => {
           suggestedTacticIds: [],
           title: 'At 8pm',
         },
-      },
+      ],
     });
 
     const errors = getErrors(profile, profileSchema);

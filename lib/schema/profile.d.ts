@@ -13,7 +13,6 @@ export declare const profileSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    uids: string[];
     activeImpulseId: string | undefined;
     currentAppState: AppStateStatus | undefined;
     lastActiveAt: Date | undefined;
@@ -35,36 +34,55 @@ export declare const profileSchema: yup.ObjectSchema<{
     invitationCode: string;
     programId: yup.Maybe<string | undefined>;
     scheduledNotificationIds: string[] | undefined;
-    impulseStrategies: {
-        [x: string]: {
+    impulseStrategiesByPattern: {
+        [x: string]: ({
             suggestedTacticIds?: string[] | undefined;
+            prompt?: yup.Maybe<string | undefined>;
+            type: "impulse";
+            title: string;
             tacticIds: string[];
-        };
-    };
-    timeStrategies: {
-        [x: string]: {
+        } | {
             suggestedTacticIds?: string[] | undefined;
+            prompt?: yup.Maybe<string | undefined>;
+            type: "time";
             title: string;
             tacticIds: string[];
             weekdays: number[];
             hour: number;
             minute: number;
-        };
-    } | null | undefined;
-    locationStrategies: {
-        [x: string]: {
+        } | {
             suggestedTacticIds?: string[] | undefined;
+            prompt?: yup.Maybe<string | undefined>;
+            type: "location";
             title: string;
             tacticIds: string[];
             locationId: string;
             mode: NonNullable<"enter" | "exit" | undefined>;
-        };
-    } | null | undefined;
+        })[] | undefined;
+    };
+    scheduledStrategies: {
+        suggestedTacticIds?: string[] | undefined;
+        prompt?: yup.Maybe<string | undefined>;
+        type: "time";
+        title: string;
+        tacticIds: string[];
+        weekdays: number[];
+        hour: number;
+        minute: number;
+    }[];
+    locationStrategies: {
+        suggestedTacticIds?: string[] | undefined;
+        prompt?: yup.Maybe<string | undefined>;
+        type: "location";
+        title: string;
+        tacticIds: string[];
+        locationId: string;
+        mode: NonNullable<"enter" | "exit" | undefined>;
+    }[];
     tacticsById: any;
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
-    uids: "";
     activeImpulseId: undefined;
     currentAppState: undefined;
     lastActiveAt: undefined;
@@ -78,8 +96,8 @@ export declare const profileSchema: yup.ObjectSchema<{
     invitationCode: undefined;
     programId: undefined;
     scheduledNotificationIds: "";
-    impulseStrategies: undefined;
-    timeStrategies: undefined;
+    impulseStrategiesByPattern: undefined;
+    scheduledStrategies: undefined;
     locationStrategies: undefined;
     tacticsById: any;
 }, "">;

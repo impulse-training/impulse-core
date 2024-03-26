@@ -6,11 +6,11 @@ export const makeProfileFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<ProfileValue>({
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
-    uids: [],
+
     region: 'US',
-    timeStrategies: {},
-    impulseStrategies: {},
-    locationStrategies: {},
+    scheduledStrategies: [],
+    impulseStrategiesByPattern: {},
+    locationStrategies: [],
     tacticsById: {},
     timezone: 'America/Bogota',
     invitationCode: 'abc123',
