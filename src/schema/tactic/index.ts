@@ -2,6 +2,7 @@ import * as yup from 'yup';
 import { AudioTacticValue, audioTacticSchema } from './audio';
 import { BreatheTacticValue, breatheTacticSchema } from './breathe';
 import { EmotionsTacticValue, emotionsTacticSchema } from './emotions';
+import { LinkTacticValue, linkTacticSchema } from './link';
 import {
   MeasureTacticValue,
   measureCounterTacticSchema,
@@ -18,6 +19,7 @@ import { VideoTacticValue, videoTacticSchema } from './video';
 export * from './audio';
 export * from './breathe';
 export * from './emotions';
+export * from './link';
 export * from './measure';
 export * from './phone';
 export * from './question';
@@ -37,6 +39,7 @@ export type TacticValue =
   | TaskTacticValue
   | MeasureTacticValue
   | BreatheTacticValue
+  | LinkTacticValue
   | StepsTacticValue
   | EmotionsTacticValue;
 
@@ -48,6 +51,7 @@ export const tacticSchemas: Record<
   phone: phoneTacticSchema,
   audio: audioTacticSchema,
   video: videoTacticSchema,
+  link: linkTacticSchema,
   question: questionTacticSchema,
   'measure-time': measureTimeTacticSchema,
   'measure-slider': measureSliderTacticSchema,
