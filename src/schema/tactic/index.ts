@@ -2,7 +2,6 @@ import * as yup from 'yup';
 import { AudioTacticValue, audioTacticSchema } from './audio';
 import { BreatheTacticValue, breatheTacticSchema } from './breathe';
 import { EmotionsTacticValue, emotionsTacticSchema } from './emotions';
-import { FolderTacticValue, folderTacticSchema } from './folder';
 import {
   MeasureTacticValue,
   measureCounterTacticSchema,
@@ -19,7 +18,6 @@ import { VideoTacticValue, videoTacticSchema } from './video';
 export * from './audio';
 export * from './breathe';
 export * from './emotions';
-export * from './folder';
 export * from './measure';
 export * from './phone';
 export * from './question';
@@ -38,7 +36,6 @@ export type TacticValue =
   | QuestionTacticValue
   | TaskTacticValue
   | MeasureTacticValue
-  | FolderTacticValue
   | BreatheTacticValue
   | StepsTacticValue
   | EmotionsTacticValue;
@@ -52,7 +49,6 @@ export const tacticSchemas: Record<
   audio: audioTacticSchema,
   video: videoTacticSchema,
   question: questionTacticSchema,
-  folder: folderTacticSchema,
   'measure-time': measureTimeTacticSchema,
   'measure-slider': measureSliderTacticSchema,
   'measure-counter': measureCounterTacticSchema,

@@ -123,8 +123,8 @@ export declare const issueSchema: yup.ObjectSchema<{
     profileCount: number | null | undefined;
     isFeatured: boolean | null | undefined;
     impulseStrategy: {
-        suggestedTacticIds: string[];
         llmPrompt: string;
+        suggestedTacticIds: string[];
     } | null | undefined;
 }, yup.AnyObject, {
     createdAt: {

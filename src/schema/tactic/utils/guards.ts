@@ -8,7 +8,6 @@ export const isMeasureSliderTactic = ({ type }: TacticValue) =>
   type === 'measure-slider';
 export const isMeasureTimeTactic = ({ type }: TacticValue) =>
   type === 'measure-time';
-export const isFolderTactic = ({ type }: TacticValue) => type === 'folder';
 export const isMeasureCounterTactic = ({ type }: TacticValue) =>
   type === 'measure-counter';
 export const isPhoneTacticValue = ({ type }: TacticValue) => type === 'phone';

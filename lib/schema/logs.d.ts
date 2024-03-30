@@ -941,8 +941,8 @@ export declare const logSchema: yup.Lazy<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    tacticsById?: any;
     steps?: yup.Maybe<number | undefined>;
+    tacticsById?: any;
     locationFormatted?: yup.Maybe<string | undefined>;
     commentCount?: yup.Maybe<number | undefined>;
     commentsById?: {} | null | undefined;
@@ -1213,8 +1213,8 @@ export declare const logSchema: yup.Lazy<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    tacticsById?: any;
     steps?: yup.Maybe<number | undefined>;
+    tacticsById?: any;
     locationFormatted?: yup.Maybe<string | undefined>;
     commentCount?: yup.Maybe<number | undefined>;
     commentsById?: {} | null | undefined;
@@ -1325,8 +1325,8 @@ export declare const logSchema: yup.Lazy<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    tacticsById?: any;
     steps?: yup.Maybe<number | undefined>;
+    tacticsById?: any;
     locationFormatted?: yup.Maybe<string | undefined>;
     commentCount?: yup.Maybe<number | undefined>;
     commentsById?: {} | null | undefined;
@@ -1434,8 +1434,8 @@ export declare const logSchema: yup.Lazy<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    tacticsById?: any;
     steps?: yup.Maybe<number | undefined>;
+    tacticsById?: any;
     locationFormatted?: yup.Maybe<string | undefined>;
     commentCount?: yup.Maybe<number | undefined>;
     commentsById?: {} | null | undefined;

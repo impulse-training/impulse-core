@@ -1,7 +1,7 @@
-import { EmotionsTacticValue, FolderTacticValue, QuestionTacticValue, TacticValue } from '../schema';
+import { EmotionsTacticValue, QuestionTacticValue, TacticValue } from '../schema';
 import { TimestampLike } from '../utils/TimestampLike';
 export declare abstract class Tactic {
-    static from(id: string, value: TacticValue, T: typeof TimestampLike): EmotionsTactic | QuestionTactic | FolderTactic | OtherTactic;
+    static from(id: string, value: TacticValue, T: typeof TimestampLike): EmotionsTactic | QuestionTactic | OtherTactic;
     get subtitle(): string | null;
     get title(): string | null;
 }
@@ -10,13 +10,6 @@ declare class OtherTactic extends Tactic {
     private data;
     private T;
     constructor(id: string, data: TacticValue, T: typeof TimestampLike);
-}
-declare class FolderTactic extends Tactic {
-    private id;
-    private data;
-    private T;
-    constructor(id: string, data: FolderTacticValue, T: typeof TimestampLike);
-    get title(): string | null;
 }
 declare class EmotionsTactic extends Tactic {
     private id;

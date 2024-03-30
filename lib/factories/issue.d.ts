@@ -8,8 +8,8 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
     profileCount?: number | null | undefined;
     isFeatured?: boolean | null | undefined;
     impulseStrategy?: {
-        suggestedTacticIds: string[];
         llmPrompt: string;
+        suggestedTacticIds: string[];
     } | null | undefined;
     createdAt: {
         seconds: number;

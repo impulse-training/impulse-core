@@ -5,7 +5,6 @@ export declare const isAudioTactic: ({ type }: TacticValue) => boolean;
 export declare const isVideoTactic: ({ type }: TacticValue) => boolean;
 export declare const isMeasureSliderTactic: ({ type }: TacticValue) => boolean;
 export declare const isMeasureTimeTactic: ({ type }: TacticValue) => boolean;
-export declare const isFolderTactic: ({ type }: TacticValue) => boolean;
 export declare const isMeasureCounterTactic: ({ type }: TacticValue) => boolean;
 export declare const isPhoneTacticValue: ({ type }: TacticValue) => boolean;
 export declare const isBreatheTactic: ({ type }: TacticValue) => boolean;

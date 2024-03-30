@@ -62,5 +62,4 @@ const schemaMap: Record<keyof typeof factories, null | Schema | Lazy<unknown>> =
     programFactory: programSchema,
     tacticFactory: tacticSchema,
     measureTimeTacticFactory: tacticSchema,
-    folderTacticFactory: tacticSchema,
   };
