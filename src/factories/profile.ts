@@ -9,7 +9,7 @@ export const makeProfileFactory = (TimestampKlass: typeof TimestampLike) =>
 
     region: 'US',
     scheduledStrategies: [],
-    impulseStrategiesByPattern: {},
+    impulseStrategiesByPatternId: {},
     locationStrategies: [],
     tacticsById: {},
     timezone: 'America/Bogota',

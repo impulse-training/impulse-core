@@ -34,7 +34,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     invitationCode: string;
     programId: yup.Maybe<string | undefined>;
     scheduledNotificationIds: string[] | undefined;
-    impulseStrategiesByPattern: {
+    impulseStrategiesByPatternId: {
         [x: string]: ({
             suggestedTacticIds?: string[] | undefined;
             prompt?: yup.Maybe<string | undefined>;
@@ -96,7 +96,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     invitationCode: undefined;
     programId: undefined;
     scheduledNotificationIds: "";
-    impulseStrategiesByPattern: undefined;
+    impulseStrategiesByPatternId: undefined;
     scheduledStrategies: undefined;
     locationStrategies: undefined;
     tacticsById: any;
