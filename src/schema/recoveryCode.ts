@@ -7,5 +7,6 @@ export const recoveryCode = yup.object().shape({
   usedAt: optionalTimestampSchema,
   profileId: yup.string().required(),
   hashedCode: yup.string().required(),
+  last4: yup.string().required(),
 });
 export type RecoveryCodeValue = yup.InferType<typeof recoveryCode>;
