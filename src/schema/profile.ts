@@ -33,7 +33,7 @@ export const profileSchema = yup.object().shape({
   scheduledNotificationIds: optionalStringArray,
 
   // My set of tactics for overcoming impulses
-  impulseStrategiesByPatternId: objectOf(yup.array(strategySchema)),
+  impulseStrategiesByPatternId: objectOf(strategySchema),
   scheduledStrategies: yup.array(timeStrategySchema.required()).required(),
   locationStrategies: yup.array(locationStrategySchema.required()).required(),
   // The any keyword helps to reduce the complexity of generated types. If we leave it up to yup,

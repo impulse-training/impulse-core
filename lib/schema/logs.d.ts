@@ -84,30 +84,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
         };
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
-    strategies: ({
-        suggestedTacticIds?: string[] | undefined;
-        prompt?: yup.Maybe<string | undefined>;
-        type: "impulse";
-        title: string;
-        tacticIds: string[];
-    } | {
-        suggestedTacticIds?: string[] | undefined;
-        prompt?: yup.Maybe<string | undefined>;
-        type: "time";
-        title: string;
-        tacticIds: string[];
-        weekdays: number[];
-        hour: number;
-        minute: number;
-    } | {
-        suggestedTacticIds?: string[] | undefined;
-        prompt?: yup.Maybe<string | undefined>;
-        type: "location";
-        title: string;
-        tacticIds: string[];
-        locationId: string;
-        mode: NonNullable<"enter" | "exit" | undefined>;
-    })[] | undefined;
+    tacticIds: string[];
+    suggestedTacticIds: string[];
     seenTacticIds: string[];
     tacticsById: any;
     completedTacticIds: string[];
@@ -149,7 +127,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
     commentsById: {};
     commentsByTacticId: undefined;
     steps: undefined;
-    strategies: undefined;
+    tacticIds: "";
+    suggestedTacticIds: "";
     seenTacticIds: "";
     tacticsById: any;
     completedTacticIds: "";
@@ -232,30 +211,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         };
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
-    strategies: ({
-        suggestedTacticIds?: string[] | undefined;
-        prompt?: yup.Maybe<string | undefined>;
-        type: "impulse";
-        title: string;
-        tacticIds: string[];
-    } | {
-        suggestedTacticIds?: string[] | undefined;
-        prompt?: yup.Maybe<string | undefined>;
-        type: "time";
-        title: string;
-        tacticIds: string[];
-        weekdays: number[];
-        hour: number;
-        minute: number;
-    } | {
-        suggestedTacticIds?: string[] | undefined;
-        prompt?: yup.Maybe<string | undefined>;
-        type: "location";
-        title: string;
-        tacticIds: string[];
-        locationId: string;
-        mode: NonNullable<"enter" | "exit" | undefined>;
-    })[] | undefined;
+    tacticIds: string[];
+    suggestedTacticIds: string[];
     seenTacticIds: string[];
     tacticsById: any;
     completedTacticIds: string[];
@@ -279,30 +236,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     isDisplayable: NonNullable<boolean | undefined>;
     buttonPressSecondsSinceEpoch: yup.Maybe<number | undefined>;
     strategiesByPatternId: {
-        [x: string]: ({
-            suggestedTacticIds?: string[] | undefined;
-            prompt?: yup.Maybe<string | undefined>;
-            type: "impulse";
-            title: string;
-            tacticIds: string[];
-        } | {
-            suggestedTacticIds?: string[] | undefined;
-            prompt?: yup.Maybe<string | undefined>;
-            type: "time";
-            title: string;
-            tacticIds: string[];
-            weekdays: number[];
-            hour: number;
-            minute: number;
-        } | {
-            suggestedTacticIds?: string[] | undefined;
-            prompt?: yup.Maybe<string | undefined>;
-            type: "location";
-            title: string;
-            tacticIds: string[];
-            locationId: string;
-            mode: NonNullable<"enter" | "exit" | undefined>;
-        })[] | undefined;
+        [x: string]: import("./utils/strategy").Strategy;
     };
     outcome: Outcome | undefined;
     patternId: string;
@@ -463,7 +397,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     commentsById: {};
     commentsByTacticId: undefined;
     steps: undefined;
-    strategies: undefined;
+    tacticIds: "";
+    suggestedTacticIds: "";
     seenTacticIds: "";
     tacticsById: any;
     completedTacticIds: "";
@@ -552,30 +487,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
         };
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
-    strategies: ({
-        suggestedTacticIds?: string[] | undefined;
-        prompt?: yup.Maybe<string | undefined>;
-        type: "impulse";
-        title: string;
-        tacticIds: string[];
-    } | {
-        suggestedTacticIds?: string[] | undefined;
-        prompt?: yup.Maybe<string | undefined>;
-        type: "time";
-        title: string;
-        tacticIds: string[];
-        weekdays: number[];
-        hour: number;
-        minute: number;
-    } | {
-        suggestedTacticIds?: string[] | undefined;
-        prompt?: yup.Maybe<string | undefined>;
-        type: "location";
-        title: string;
-        tacticIds: string[];
-        locationId: string;
-        mode: NonNullable<"enter" | "exit" | undefined>;
-    })[] | undefined;
+    tacticIds: string[];
+    suggestedTacticIds: string[];
     seenTacticIds: string[];
     tacticsById: any;
     completedTacticIds: string[];
@@ -623,7 +536,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
     commentsById: {};
     commentsByTacticId: undefined;
     steps: undefined;
-    strategies: undefined;
+    tacticIds: "";
+    suggestedTacticIds: "";
     seenTacticIds: "";
     tacticsById: any;
     completedTacticIds: "";
@@ -705,30 +619,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
         };
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
-    strategies: ({
-        suggestedTacticIds?: string[] | undefined;
-        prompt?: yup.Maybe<string | undefined>;
-        type: "impulse";
-        title: string;
-        tacticIds: string[];
-    } | {
-        suggestedTacticIds?: string[] | undefined;
-        prompt?: yup.Maybe<string | undefined>;
-        type: "time";
-        title: string;
-        tacticIds: string[];
-        weekdays: number[];
-        hour: number;
-        minute: number;
-    } | {
-        suggestedTacticIds?: string[] | undefined;
-        prompt?: yup.Maybe<string | undefined>;
-        type: "location";
-        title: string;
-        tacticIds: string[];
-        locationId: string;
-        mode: NonNullable<"enter" | "exit" | undefined>;
-    })[] | undefined;
+    tacticIds: string[];
+    suggestedTacticIds: string[];
     seenTacticIds: string[];
     tacticsById: any;
     completedTacticIds: string[];
@@ -773,7 +665,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
     commentsById: {};
     commentsByTacticId: undefined;
     steps: undefined;
-    strategies: undefined;
+    tacticIds: "";
+    suggestedTacticIds: "";
     seenTacticIds: "";
     tacticsById: any;
     completedTacticIds: "";
@@ -852,30 +745,8 @@ declare const motionLogSchema: yup.ObjectSchema<{
         };
     } | null | undefined;
     steps: yup.Maybe<number | undefined>;
-    strategies: ({
-        suggestedTacticIds?: string[] | undefined;
-        prompt?: yup.Maybe<string | undefined>;
-        type: "impulse";
-        title: string;
-        tacticIds: string[];
-    } | {
-        suggestedTacticIds?: string[] | undefined;
-        prompt?: yup.Maybe<string | undefined>;
-        type: "time";
-        title: string;
-        tacticIds: string[];
-        weekdays: number[];
-        hour: number;
-        minute: number;
-    } | {
-        suggestedTacticIds?: string[] | undefined;
-        prompt?: yup.Maybe<string | undefined>;
-        type: "location";
-        title: string;
-        tacticIds: string[];
-        locationId: string;
-        mode: NonNullable<"enter" | "exit" | undefined>;
-    })[] | undefined;
+    tacticIds: string[];
+    suggestedTacticIds: string[];
     seenTacticIds: string[];
     tacticsById: any;
     completedTacticIds: string[];
@@ -920,7 +791,8 @@ declare const motionLogSchema: yup.ObjectSchema<{
     commentsById: {};
     commentsByTacticId: undefined;
     steps: undefined;
-    strategies: undefined;
+    tacticIds: "";
+    suggestedTacticIds: "";
     seenTacticIds: "";
     tacticsById: any;
     completedTacticIds: "";
@@ -981,30 +853,6 @@ export declare const logSchema: yup.Lazy<{
             tacticTitle: string;
         };
     } | null | undefined;
-    strategies?: ({
-        suggestedTacticIds?: string[] | undefined;
-        prompt?: yup.Maybe<string | undefined>;
-        type: "impulse";
-        title: string;
-        tacticIds: string[];
-    } | {
-        suggestedTacticIds?: string[] | undefined;
-        prompt?: yup.Maybe<string | undefined>;
-        type: "time";
-        title: string;
-        tacticIds: string[];
-        weekdays: number[];
-        hour: number;
-        minute: number;
-    } | {
-        suggestedTacticIds?: string[] | undefined;
-        prompt?: yup.Maybe<string | undefined>;
-        type: "location";
-        title: string;
-        tacticIds: string[];
-        locationId: string;
-        mode: NonNullable<"enter" | "exit" | undefined>;
-    })[] | undefined;
     tacticLikes?: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
@@ -1027,6 +875,8 @@ export declare const logSchema: yup.Lazy<{
     debriefedAt?: yup.Maybe<{} | undefined>;
     profileId: string;
     type: "impulse";
+    suggestedTacticIds: string[];
+    tacticIds: string[];
     location: {
         latitude?: number | undefined;
         longitude?: number | undefined;
@@ -1047,30 +897,7 @@ export declare const logSchema: yup.Lazy<{
     completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
     strategiesByPatternId: {
-        [x: string]: ({
-            suggestedTacticIds?: string[] | undefined;
-            prompt?: yup.Maybe<string | undefined>;
-            type: "impulse";
-            title: string;
-            tacticIds: string[];
-        } | {
-            suggestedTacticIds?: string[] | undefined;
-            prompt?: yup.Maybe<string | undefined>;
-            type: "time";
-            title: string;
-            tacticIds: string[];
-            weekdays: number[];
-            hour: number;
-            minute: number;
-        } | {
-            suggestedTacticIds?: string[] | undefined;
-            prompt?: yup.Maybe<string | undefined>;
-            type: "location";
-            title: string;
-            tacticIds: string[];
-            locationId: string;
-            mode: NonNullable<"enter" | "exit" | undefined>;
-        })[] | undefined;
+        [x: string]: import("./utils/strategy").Strategy;
     };
     patternId: string;
     patternsById: {
@@ -1253,30 +1080,6 @@ export declare const logSchema: yup.Lazy<{
             tacticTitle: string;
         };
     } | null | undefined;
-    strategies?: ({
-        suggestedTacticIds?: string[] | undefined;
-        prompt?: yup.Maybe<string | undefined>;
-        type: "impulse";
-        title: string;
-        tacticIds: string[];
-    } | {
-        suggestedTacticIds?: string[] | undefined;
-        prompt?: yup.Maybe<string | undefined>;
-        type: "time";
-        title: string;
-        tacticIds: string[];
-        weekdays: number[];
-        hour: number;
-        minute: number;
-    } | {
-        suggestedTacticIds?: string[] | undefined;
-        prompt?: yup.Maybe<string | undefined>;
-        type: "location";
-        title: string;
-        tacticIds: string[];
-        locationId: string;
-        mode: NonNullable<"enter" | "exit" | undefined>;
-    })[] | undefined;
     tacticLikes?: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
@@ -1292,6 +1095,8 @@ export declare const logSchema: yup.Lazy<{
     sharedWithSupportGroupIds?: string[] | undefined;
     profileId: string;
     type: "location";
+    suggestedTacticIds: string[];
+    tacticIds: string[];
     location: {
         latitude?: number | undefined;
         longitude?: number | undefined;
@@ -1365,30 +1170,6 @@ export declare const logSchema: yup.Lazy<{
             tacticTitle: string;
         };
     } | null | undefined;
-    strategies?: ({
-        suggestedTacticIds?: string[] | undefined;
-        prompt?: yup.Maybe<string | undefined>;
-        type: "impulse";
-        title: string;
-        tacticIds: string[];
-    } | {
-        suggestedTacticIds?: string[] | undefined;
-        prompt?: yup.Maybe<string | undefined>;
-        type: "time";
-        title: string;
-        tacticIds: string[];
-        weekdays: number[];
-        hour: number;
-        minute: number;
-    } | {
-        suggestedTacticIds?: string[] | undefined;
-        prompt?: yup.Maybe<string | undefined>;
-        type: "location";
-        title: string;
-        tacticIds: string[];
-        locationId: string;
-        mode: NonNullable<"enter" | "exit" | undefined>;
-    })[] | undefined;
     tacticLikes?: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
@@ -1404,6 +1185,8 @@ export declare const logSchema: yup.Lazy<{
     sharedWithSupportGroupIds?: string[] | undefined;
     profileId: string;
     type: "time";
+    suggestedTacticIds: string[];
+    tacticIds: string[];
     location: {
         latitude?: number | undefined;
         longitude?: number | undefined;
@@ -1474,30 +1257,6 @@ export declare const logSchema: yup.Lazy<{
             tacticTitle: string;
         };
     } | null | undefined;
-    strategies?: ({
-        suggestedTacticIds?: string[] | undefined;
-        prompt?: yup.Maybe<string | undefined>;
-        type: "impulse";
-        title: string;
-        tacticIds: string[];
-    } | {
-        suggestedTacticIds?: string[] | undefined;
-        prompt?: yup.Maybe<string | undefined>;
-        type: "time";
-        title: string;
-        tacticIds: string[];
-        weekdays: number[];
-        hour: number;
-        minute: number;
-    } | {
-        suggestedTacticIds?: string[] | undefined;
-        prompt?: yup.Maybe<string | undefined>;
-        type: "location";
-        title: string;
-        tacticIds: string[];
-        locationId: string;
-        mode: NonNullable<"enter" | "exit" | undefined>;
-    })[] | undefined;
     tacticLikes?: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
@@ -1513,6 +1272,8 @@ export declare const logSchema: yup.Lazy<{
     sharedWithSupportGroupIds?: string[] | undefined;
     profileId: string;
     type: "motion";
+    suggestedTacticIds: string[];
+    tacticIds: string[];
     location: {
         latitude?: number | undefined;
         longitude?: number | undefined;

@@ -49,7 +49,8 @@ const baseLogSchema = yup.object().shape({
     })
   ),
   steps: yup.number().notRequired(),
-  strategies: yup.array(strategySchema),
+  tacticIds: requiredStringArray,
+  suggestedTacticIds: requiredStringArray,
   seenTacticIds: requiredStringArray,
   // Tactics are a complex union type. We omit this key from the base log schema and add it back in
   // using typescript, so we just "neuter" it here to tell typescript to relax. This saves 10k+
@@ -90,7 +91,7 @@ const impulseLogSchema = baseLogSchema.concat(
     // In addition to the tacticSet field, which is the set of tactics for the currently-selected
     // pattern, we also store the entire "gameplan" on impulse log documents, which is copied from
     // the user's gameplan document at the time.
-    strategiesByPatternId: objectOf(yup.array(strategySchema)),
+    strategiesByPatternId: objectOf(strategySchema),
     outcome: yup.mixed<Outcome>().oneOf(['success', 'setback']),
     patternId: yup.string().required(),
     patternsById: objectOf(patternSchema),

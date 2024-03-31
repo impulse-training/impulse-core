@@ -35,30 +35,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     programId: yup.Maybe<string | undefined>;
     scheduledNotificationIds: string[] | undefined;
     impulseStrategiesByPatternId: {
-        [x: string]: ({
-            suggestedTacticIds?: string[] | undefined;
-            prompt?: yup.Maybe<string | undefined>;
-            type: "impulse";
-            title: string;
-            tacticIds: string[];
-        } | {
-            suggestedTacticIds?: string[] | undefined;
-            prompt?: yup.Maybe<string | undefined>;
-            type: "time";
-            title: string;
-            tacticIds: string[];
-            weekdays: number[];
-            hour: number;
-            minute: number;
-        } | {
-            suggestedTacticIds?: string[] | undefined;
-            prompt?: yup.Maybe<string | undefined>;
-            type: "location";
-            title: string;
-            tacticIds: string[];
-            locationId: string;
-            mode: NonNullable<"enter" | "exit" | undefined>;
-        })[] | undefined;
+        [x: string]: import("./utils/strategy").Strategy;
     };
     scheduledStrategies: {
         suggestedTacticIds?: string[] | undefined;
