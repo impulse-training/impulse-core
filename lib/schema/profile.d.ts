@@ -32,26 +32,124 @@ export declare const profileSchema: yup.ObjectSchema<{
     region: string | null | undefined;
     timezone: string;
     invitationCode: string;
-    programId: yup.Maybe<string | undefined>;
+    strategyId: yup.Maybe<string | undefined>;
     scheduledNotificationIds: string[] | undefined;
     impulseStrategiesByPatternId: {
-        [x: string]: import("./utils/strategy").Strategy;
+        [x: string]: ({
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            tacticsById?: any;
+            issueNames?: {
+                [x: string]: string | undefined;
+            } | null | undefined;
+            issueNamesSummary?: string | null | undefined;
+            recommendationSummary?: string | null | undefined;
+            type: "impulse";
+            title: string;
+            forIssueIds: string[];
+            tacticIds: string[];
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            tacticsById?: any;
+            issueNames?: {
+                [x: string]: string | undefined;
+            } | null | undefined;
+            issueNamesSummary?: string | null | undefined;
+            recommendationSummary?: string | null | undefined;
+            type: "time";
+            title: string;
+            forIssueIds: string[];
+            tacticIds: string[];
+            weekdays: number[];
+            hour: number;
+            minute: number;
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            tacticsById?: any;
+            issueNames?: {
+                [x: string]: string | undefined;
+            } | null | undefined;
+            issueNamesSummary?: string | null | undefined;
+            recommendationSummary?: string | null | undefined;
+            type: "location";
+            title: string;
+            forIssueIds: string[];
+            tacticIds: string[];
+            locationId: string;
+            mode: NonNullable<"enter" | "exit" | undefined>;
+        })[] | undefined;
     };
     scheduledStrategies: {
-        suggestedTacticIds?: string[] | undefined;
-        prompt?: yup.Maybe<string | undefined>;
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        tacticsById?: any;
+        issueNames?: {
+            [x: string]: string | undefined;
+        } | null | undefined;
+        issueNamesSummary?: string | null | undefined;
+        recommendationSummary?: string | null | undefined;
         type: "time";
         title: string;
+        forIssueIds: string[];
         tacticIds: string[];
         weekdays: number[];
         hour: number;
         minute: number;
     }[];
     locationStrategies: {
-        suggestedTacticIds?: string[] | undefined;
-        prompt?: yup.Maybe<string | undefined>;
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        tacticsById?: any;
+        issueNames?: {
+            [x: string]: string | undefined;
+        } | null | undefined;
+        issueNamesSummary?: string | null | undefined;
+        recommendationSummary?: string | null | undefined;
         type: "location";
         title: string;
+        forIssueIds: string[];
         tacticIds: string[];
         locationId: string;
         mode: NonNullable<"enter" | "exit" | undefined>;
@@ -71,7 +169,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     region: undefined;
     timezone: undefined;
     invitationCode: undefined;
-    programId: undefined;
+    strategyId: undefined;
     scheduledNotificationIds: "";
     impulseStrategiesByPatternId: undefined;
     scheduledStrategies: undefined;

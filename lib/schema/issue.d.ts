@@ -119,7 +119,7 @@ export declare const issueSchema: yup.ObjectSchema<{
     path: string | null | undefined;
     parentIds: string[];
     parentNames: string[];
-    programsCount: number | null | undefined;
+    strategiesCount: number | null | undefined;
     profileCount: number | null | undefined;
     isFeatured: boolean | null | undefined;
     impulseStrategy: {
@@ -145,7 +145,7 @@ export declare const issueSchema: yup.ObjectSchema<{
     path: undefined;
     parentIds: "";
     parentNames: "";
-    programsCount: undefined;
+    strategiesCount: undefined;
     profileCount: undefined;
     isFeatured: undefined;
     impulseStrategy: undefined;

@@ -6,7 +6,6 @@ export const makeProfileFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<ProfileValue>({
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
-
     region: 'US',
     scheduledStrategies: [],
     impulseStrategiesByPatternId: {},

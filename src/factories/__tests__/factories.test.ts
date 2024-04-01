@@ -5,7 +5,7 @@ import {
   commentSchema,
   logSchema,
   patternSchema,
-  programSchema,
+  strategySchema,
   supportGroupSchema,
   tacticSchema,
 } from '../../schema';
@@ -59,7 +59,7 @@ const schemaMap: Record<keyof typeof factories, null | Schema | Lazy<unknown>> =
     supportGroupFactory: supportGroupSchema,
     messageFactory: null,
     patternFactory: patternSchema,
-    programFactory: programSchema,
+    strategyFactory: strategySchema,
     tacticFactory: tacticSchema,
     measureTimeTacticFactory: tacticSchema,
   };

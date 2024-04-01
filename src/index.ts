@@ -22,7 +22,7 @@ export const COLLECTIONS = [
   'patterns',
   'presses',
   'profiles',
-  'programs',
+  'strategies',
   'reminders',
   'supportGroups',
   'tactics',

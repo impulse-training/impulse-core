@@ -10,5 +10,5 @@ export const {
   profileFactory,
   supportGroupFactory,
   tacticFactory,
-  programFactory,
+  strategyFactory,
 } = makeFactories(TimestampLike);

@@ -1,15 +1,16 @@
 import * as Factory from 'factory.ts';
-import { ProgramValue } from '../schema';
+import { StrategyValue } from '../schema';
 import { TimestampLike } from '../utils/TimestampLike';
 
-export const makeProgramFactory = (TimestampKlass: typeof TimestampLike) =>
-  Factory.makeFactory<ProgramValue>({
+export const makeStrategyFactory = (TimestampKlass: typeof TimestampLike) =>
+  Factory.makeFactory<StrategyValue>({
+    type: 'impulse',
     title: 'Default',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     forIssueIds: [],
     issueNamesSummary: '',
     issueNames: {},
-    impulseStrategies: [],
+    tacticIds: [],
     tacticsById: {},
   });

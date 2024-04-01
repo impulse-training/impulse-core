@@ -25,7 +25,7 @@ export const issueSchema = yup.object().shape({
   path: yup.string().nullable(),
   parentIds: requiredStringArray,
   parentNames: requiredStringArray,
-  programsCount: yup.number().nullable(),
+  strategiesCount: yup.number().nullable(),
   profileCount: yup.number().nullable(),
   isFeatured: yup.boolean().nullable(),
   impulseStrategy: impulseSchema.notRequired().default(undefined),

@@ -11,7 +11,7 @@ import {
 import { makeMessageFactory } from './message';
 import { makePatternFactory } from './pattern';
 import { makeProfileFactory } from './profile';
-import { makeProgramFactory } from './program';
+import { makeStrategyFactory } from './strategy';
 import { makeSupportGroupFactory } from './supportGroup';
 import { makeMeasureTimeTacticFactory, makeTacticFactory } from './tactic';
 // Our admin and client apps use the same factories, but the firebase-admin versus firebase client
@@ -30,7 +30,7 @@ export function makeFactories(TimestampKlass: typeof TimestampLike) {
     supportGroupFactory: makeSupportGroupFactory(TimestampKlass),
     messageFactory: makeMessageFactory(TimestampKlass),
     patternFactory: makePatternFactory(TimestampKlass),
-    programFactory: makeProgramFactory(TimestampKlass),
+    strategyFactory: makeStrategyFactory(TimestampKlass),
     tacticFactory: makeTacticFactory(TimestampKlass),
     measureTimeTacticFactory: makeMeasureTimeTacticFactory(TimestampKlass),
   };

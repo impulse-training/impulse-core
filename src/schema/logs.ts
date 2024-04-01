@@ -4,10 +4,10 @@ import * as yup from 'yup';
 import { TimestampLike } from '../utils/TimestampLike';
 import { commentSchema } from './comment';
 import { patternSchema } from './pattern';
+import { strategySchema } from './strategy';
 import { TacticValue, WithTacticsById, tacticSchema } from './tactic';
 import { optionalStringArray, requiredStringArray } from './utils/array';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
-import { strategySchema } from './utils/strategy';
 import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
 
 type Outcome = 'success' | 'setback';
@@ -88,7 +88,7 @@ const impulseLogSchema = baseLogSchema.concat(
     pressCount: yup.number().notRequired(),
     isDisplayable: yup.boolean().oneOf([true]).required(),
     buttonPressSecondsSinceEpoch: yup.number().notRequired(),
-    // In addition to the tacticSet field, which is the set of tactics for the currently-selected
+    // In addition to the tacticIds field, which is the set of tactics for the currently-selected
     // pattern, we also store the entire "gameplan" on impulse log documents, which is copied from
     // the user's gameplan document at the time.
     strategiesByPatternId: objectOf(strategySchema),

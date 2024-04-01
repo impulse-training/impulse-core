@@ -4,7 +4,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
     path?: string | null | undefined;
     parentId?: string | null | undefined;
     setbackThreshold?: number | undefined;
-    programsCount?: number | null | undefined;
+    strategiesCount?: number | null | undefined;
     profileCount?: number | null | undefined;
     isFeatured?: boolean | null | undefined;
     impulseStrategy?: {
@@ -127,4 +127,4 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
     };
     parentIds: string[];
     parentNames: string[];
-}, "createdAt" | "updatedAt" | "name" | "synonyms" | "measureTactic" | "parentIds" | "parentNames" | ("path" | "parentId" | "setbackThreshold" | "programsCount" | "profileCount" | "isFeatured" | "impulseStrategy")>;
+}, "createdAt" | "updatedAt" | "name" | "synonyms" | "measureTactic" | "parentIds" | "parentNames" | ("path" | "parentId" | "setbackThreshold" | "strategiesCount" | "profileCount" | "isFeatured" | "impulseStrategy")>;

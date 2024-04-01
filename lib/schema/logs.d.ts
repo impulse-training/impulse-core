@@ -236,7 +236,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     isDisplayable: NonNullable<boolean | undefined>;
     buttonPressSecondsSinceEpoch: yup.Maybe<number | undefined>;
     strategiesByPatternId: {
-        [x: string]: import("./utils/strategy").Strategy;
+        [x: string]: import("./strategy").StrategyValue;
     };
     outcome: Outcome | undefined;
     patternId: string;
@@ -897,7 +897,7 @@ export declare const logSchema: yup.Lazy<{
     completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
     strategiesByPatternId: {
-        [x: string]: import("./utils/strategy").Strategy;
+        [x: string]: import("./strategy").StrategyValue;
     };
     patternId: string;
     patternsById: {

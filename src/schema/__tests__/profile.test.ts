@@ -11,7 +11,6 @@ describe('profile', () => {
           minute: 0,
           weekdays: [],
           tacticIds: [],
-          suggestedTacticIds: [],
           title: 'At 8pm',
         },
       ],

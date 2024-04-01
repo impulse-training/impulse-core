@@ -2,14 +2,12 @@ import { AppStateStatus } from 'react-native';
 import * as yup from 'yup';
 import { TimestampLike } from '../utils';
 import { notificationOptionSchema } from './notification';
+import { strategySchema } from './strategy';
+import { locationStrategySchema } from './strategy/location';
+import { timeStrategySchema } from './strategy/time';
 import { WithTacticsById, tacticSchema } from './tactic';
 import { optionalStringArray } from './utils/array';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
-import {
-  locationStrategySchema,
-  strategySchema,
-  timeStrategySchema,
-} from './utils/strategy';
 import { optionalTimestampSchema } from './utils/timestamp';
 
 export const profileSchema = yup.object().shape({
@@ -29,11 +27,10 @@ export const profileSchema = yup.object().shape({
   region: yup.string().nullable().optional(),
   timezone: yup.string().required(),
   invitationCode: yup.string().required(),
-  programId: yup.string().notRequired(),
+  strategyId: yup.string().notRequired(),
   scheduledNotificationIds: optionalStringArray,
-
   // My set of tactics for overcoming impulses
-  impulseStrategiesByPatternId: objectOf(strategySchema),
+  impulseStrategiesByPatternId: objectOf(yup.array(strategySchema)),
   scheduledStrategies: yup.array(timeStrategySchema.required()).required(),
   locationStrategies: yup.array(locationStrategySchema.required()).required(),
   // The any keyword helps to reduce the complexity of generated types. If we leave it up to yup,
