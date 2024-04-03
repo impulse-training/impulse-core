@@ -21,9 +21,7 @@ export const makeIssueFactory = (TimestampKlass: typeof TimestampLike) =>
       'Process addiction',
       'YouTube',
     ],
-    impulseStrategy: {
-      llmPrompt:
-        'Please suggest tactics for overcoming an impulse to watch youtube',
-      suggestedTacticIds: [],
-    },
+    impulseStrategies: [],
+    scheduledStrategies: [],
+    locationStrategies: [],
   });

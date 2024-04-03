@@ -6,7 +6,7 @@ export * from './contact';
 export * from './invitation';
 export * from './issue';
 export * from './location';
-export * from './logs';
+export * from './log';
 export * from './mailTemplate';
 export * from './message';
 export * from './notification';

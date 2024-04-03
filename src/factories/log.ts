@@ -1,9 +1,5 @@
 import * as Factory from 'factory.ts';
-import {
-  ImpulseLogValue,
-  LocationLogValue,
-  TimeLogValue,
-} from '../schema/logs';
+import { ImpulseLogValue, LocationLogValue, TimeLogValue } from '../schema/log';
 import { TimestampLike } from '../utils/TimestampLike';
 
 export const makeImpulseLogFactory = (TimestampKlass: typeof TimestampLike) =>
@@ -22,7 +18,7 @@ export const makeImpulseLogFactory = (TimestampKlass: typeof TimestampLike) =>
     locationIsFetching: false,
     patternsById: {},
     tacticsById: {},
-    tacticIds: [],
+    strategies: {},
     suggestedTacticIds: [],
     strategiesByPatternId: {},
     seenTacticIds: [],
@@ -42,7 +38,7 @@ export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>
     location: {},
     tacticsById: {},
     locationIsFetching: false,
-    tacticIds: [],
+    strategies: {},
     suggestedTacticIds: [],
     seenTacticIds: [],
     completedTacticIds: [],
@@ -64,7 +60,7 @@ export const makeLocationLogFactory = (TimestampKlass: typeof TimestampLike) =>
     tacticsById: {},
     location: {},
     locationIsFetching: false,
-    tacticIds: [],
+    strategies: {},
     suggestedTacticIds: [],
     seenTacticIds: [],
     completedTacticIds: [],

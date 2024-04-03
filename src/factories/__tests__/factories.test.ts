@@ -3,11 +3,12 @@ import { Lazy, Schema, ValidationError } from 'yup';
 import { makeFactories } from '../../factories';
 import {
   commentSchema,
+  impulseStrategySchema,
   logSchema,
   patternSchema,
-  strategySchema,
   supportGroupSchema,
   tacticSchema,
+  timeStrategySchema,
 } from '../../schema';
 import { TimestampLike } from '../../utils/TimestampLike';
 
@@ -59,7 +60,8 @@ const schemaMap: Record<keyof typeof factories, null | Schema | Lazy<unknown>> =
     supportGroupFactory: supportGroupSchema,
     messageFactory: null,
     patternFactory: patternSchema,
-    strategyFactory: strategySchema,
     tacticFactory: tacticSchema,
+    impulseStrategyFactory: impulseStrategySchema,
     measureTimeTacticFactory: tacticSchema,
+    timeStrategyFactory: timeStrategySchema,
   };

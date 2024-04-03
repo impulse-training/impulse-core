@@ -4,7 +4,7 @@ import * as yup from 'yup';
 import { TimestampLike } from '../utils/TimestampLike';
 import { commentSchema } from './comment';
 import { patternSchema } from './pattern';
-import { strategySchema } from './strategy';
+import { impulseStrategySchema, strategySchema } from './strategy';
 import { TacticValue, WithTacticsById, tacticSchema } from './tactic';
 import { optionalStringArray, requiredStringArray } from './utils/array';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
@@ -49,7 +49,7 @@ const baseLogSchema = yup.object().shape({
     })
   ),
   steps: yup.number().notRequired(),
-  tacticIds: requiredStringArray,
+  strategies: objectOf(impulseStrategySchema),
   suggestedTacticIds: requiredStringArray,
   seenTacticIds: requiredStringArray,
   // Tactics are a complex union type. We omit this key from the base log schema and add it back in

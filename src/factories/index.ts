@@ -11,9 +11,13 @@ import {
 import { makeMessageFactory } from './message';
 import { makePatternFactory } from './pattern';
 import { makeProfileFactory } from './profile';
-import { makeStrategyFactory } from './strategy';
+import {
+  makeImpulseStrategyFactory,
+  makeTimeStrategyFactory,
+} from './strategy';
 import { makeSupportGroupFactory } from './supportGroup';
 import { makeMeasureTimeTacticFactory, makeTacticFactory } from './tactic';
+
 // Our admin and client apps use the same factories, but the firebase-admin versus firebase client
 // libraries respectively. These use different Timestamp classes, so we pass in the class as an
 // injected dependency
@@ -30,8 +34,9 @@ export function makeFactories(TimestampKlass: typeof TimestampLike) {
     supportGroupFactory: makeSupportGroupFactory(TimestampKlass),
     messageFactory: makeMessageFactory(TimestampKlass),
     patternFactory: makePatternFactory(TimestampKlass),
-    strategyFactory: makeStrategyFactory(TimestampKlass),
     tacticFactory: makeTacticFactory(TimestampKlass),
     measureTimeTacticFactory: makeMeasureTimeTacticFactory(TimestampKlass),
+    impulseStrategyFactory: makeImpulseStrategyFactory(TimestampKlass),
+    timeStrategyFactory: makeTimeStrategyFactory(TimestampKlass),
   };
 }

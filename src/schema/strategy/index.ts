@@ -3,6 +3,10 @@ import { ImpulseStrategyValue, impulseStrategySchema } from './impulse';
 import { LocationStrategyValue, locationStrategySchema } from './location';
 import { TimeStrategyValue, timeStrategySchema } from './time';
 
+export * from './impulse';
+export * from './location';
+export * from './time';
+
 export type StrategyValue =
   | ImpulseStrategyValue
   | TimeStrategyValue

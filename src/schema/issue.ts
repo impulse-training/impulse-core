@@ -1,12 +1,12 @@
 import * as yup from 'yup';
+import {
+  impulseStrategySchema,
+  locationStrategySchema,
+  timeStrategySchema,
+} from './strategy';
 import { measureTacticSchema } from './tactic';
 import { requiredStringArray } from './utils/array';
 import { timestampSchema } from './utils/timestamp';
-
-const impulseSchema = yup.object().shape({
-  llmPrompt: yup.string().required(),
-  suggestedTacticIds: requiredStringArray,
-});
 
 export const issueSchema = yup.object().shape({
   createdAt: timestampSchema.required(),
@@ -28,6 +28,9 @@ export const issueSchema = yup.object().shape({
   strategiesCount: yup.number().nullable(),
   profileCount: yup.number().nullable(),
   isFeatured: yup.boolean().nullable(),
-  impulseStrategy: impulseSchema.notRequired().default(undefined),
+  // Recommendations
+  impulseStrategies: yup.array().of(impulseStrategySchema),
+  scheduledStrategies: yup.array(timeStrategySchema).required(),
+  locationStrategies: yup.array(locationStrategySchema).required(),
 });
 export type IssueValue = yup.InferType<typeof issueSchema>;

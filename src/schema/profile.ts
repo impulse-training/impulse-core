@@ -2,10 +2,11 @@ import { AppStateStatus } from 'react-native';
 import * as yup from 'yup';
 import { TimestampLike } from '../utils';
 import { notificationOptionSchema } from './notification';
+import { impulseStrategySchema } from './strategy/impulse';
 import { locationStrategySchema } from './strategy/location';
 import { timeStrategySchema } from './strategy/time';
 import { WithTacticsById, tacticSchema } from './tactic';
-import { optionalStringArray, requiredStringArray } from './utils/array';
+import { optionalStringArray } from './utils/array';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema } from './utils/timestamp';
 
@@ -29,9 +30,11 @@ export const profileSchema = yup.object().shape({
   strategyId: yup.string().notRequired(),
   scheduledNotificationIds: optionalStringArray,
   // My set of tactics for overcoming impulses
-  impulseTacticIdsByPatternId: objectOf(requiredStringArray),
-  scheduledStrategies: yup.array(timeStrategySchema).required(),
-  locationStrategies: yup.array(locationStrategySchema).required(),
+
+  impulseStrategiesByPatternId: objectOf(objectOf(impulseStrategySchema)),
+  scheduledStrategies: objectOf(timeStrategySchema),
+  locationStrategies: objectOf(locationStrategySchema),
+
   // The any keyword helps to reduce the complexity of generated types. If we leave it up to yup,
   // it will compile very complex union types, but we if do it ourselves, we can simply say
   // tacticsById is a Record<string, TacticValue> and be done with it.

@@ -1,4 +1,8 @@
 import * as yup from 'yup';
-import { strategyValueBaseSchema } from './base';
-export const impulseStrategySchema = strategyValueBaseSchema('impulse');
-export type ImpulseStrategyValue = yup.InferType<typeof impulseStrategySchema>;
+import { WithTacticsById } from '../tactic';
+import { strategyBaseSchema } from './base';
+export const impulseStrategySchema = strategyBaseSchema('impulse');
+
+export type ImpulseStrategyValue = WithTacticsById<
+  yup.InferType<typeof impulseStrategySchema>
+>;

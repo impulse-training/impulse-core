@@ -1,5 +1,5 @@
 import { TimestampLike } from '../utils/TimestampLike';
-import { LogValue } from './logs';
+import { LogValue } from './log';
 
 export interface MessageValue {
   createdAt: TimestampLike;
