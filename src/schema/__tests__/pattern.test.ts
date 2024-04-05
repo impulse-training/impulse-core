@@ -3,9 +3,9 @@ import { factories } from '../../__tests__/factories';
 import { patternSchema } from '../pattern';
 
 describe('pattern', () => {
-  it("isn't valid without a measure", () => {
+  it("isn't valid without a question", () => {
     const pattern = factories.patternFactory.build({
-      measureTactic: undefined,
+      questionTactic: undefined,
     });
 
     let errors: Array<Error> = [];
@@ -22,7 +22,7 @@ describe('pattern', () => {
     }
 
     expect(errors.length).toEqual(1);
-    expect(errors[0].message).toEqual('measureTactic is a required field');
+    expect(errors[0].message).toEqual('questionTactic is a required field');
   });
 
   it("doesn't blow up when validating an empty object", () => {
@@ -43,12 +43,12 @@ describe('pattern', () => {
 
     const errorMessages = errors.map(error => error.message);
     expect(errors.length).toBeGreaterThan(0);
-    expect(errorMessages).toContain('measureTactic is a required field');
+    expect(errorMessages).toContain('questionTactic is a required field');
   });
 
-  it('ensures that the measure tactic has a type of measure-time or measure-counter', () => {
+  it('ensures that the question tactic has a type of question-time or question-counter', () => {
     const pattern = {
-      measureTactic: { type: 'question?' },
+      questionTactic: { type: 'question?' },
     };
 
     let errors: Array<Error> = [];
@@ -67,7 +67,7 @@ describe('pattern', () => {
     const errorMessages = errors.map(error => error.message);
     expect(errors.length).toBeGreaterThan(0);
     expect(errorMessages).toContain(
-      'measureTactic.type must be one of the following values: measure-time, measure-counter'
+      'questionTactic.type must be one of the following values: question-time, question-counter'
     );
   });
 });

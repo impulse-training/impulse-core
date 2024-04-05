@@ -4,7 +4,7 @@ import {
   locationStrategySchema,
   timeStrategySchema,
 } from './strategy';
-import { measureTacticSchema } from './tactic';
+import { questionTacticSchema } from './tactic';
 import { requiredStringArray } from './utils/array';
 import { timestampSchema } from './utils/timestamp';
 
@@ -20,7 +20,7 @@ export const issueSchema = yup.object().shape({
     .test('includes-name', 'Synonyms must include name', function (synonyms) {
       return synonyms.includes(this.parent.name);
     }),
-  measureTactic: measureTacticSchema,
+  questionTactic: questionTacticSchema,
   setbackThreshold: yup.number(),
   path: yup.string().nullable(),
   parentIds: requiredStringArray,

@@ -1,7 +1,7 @@
 import * as Factory from 'factory.ts';
 import { PatternValue } from '../schema';
 import { TimestampLike } from '../utils/TimestampLike';
-import { makeMeasureTimeTacticFactory } from './tactic';
+import { makeQuestionTimeTacticFactory } from './tactic';
 
 export const makePatternFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<PatternValue>({
@@ -13,5 +13,5 @@ export const makePatternFactory = (TimestampKlass: typeof TimestampLike) =>
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     sendWeeklyReports: false,
-    measureTactic: makeMeasureTimeTacticFactory(TimestampKlass).build(),
+    questionTactic: makeQuestionTimeTacticFactory(TimestampKlass).build(),
   });

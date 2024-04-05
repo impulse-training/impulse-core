@@ -1,6 +1,6 @@
 import * as yup from 'yup';
-export declare const questionTacticSchema: yup.ObjectSchema<{
-    type: "question";
+export declare const questionSliderTacticSchema: yup.ObjectSchema<{
+    type: "question-slider";
     profileId: string | null | undefined;
     sourceId: string | undefined;
     createdAt: {
@@ -32,6 +32,8 @@ export declare const questionTacticSchema: yup.ObjectSchema<{
     isAvailableForRecommendation: boolean | null | undefined;
     numberOfLikes: number | null | undefined;
     isSuggested: boolean | undefined;
+    lowEmoji: yup.Maybe<string | undefined>;
+    highEmoji: yup.Maybe<string | undefined>;
 }, yup.AnyObject, {
     type: undefined;
     profileId: undefined;
@@ -57,5 +59,7 @@ export declare const questionTacticSchema: yup.ObjectSchema<{
     isAvailableForRecommendation: undefined;
     numberOfLikes: undefined;
     isSuggested: undefined;
+    lowEmoji: undefined;
+    highEmoji: undefined;
 }, "">;
-export type QuestionTacticValue = yup.InferType<typeof questionTacticSchema>;
+export type QuestionSliderTacticValue = yup.InferType<typeof questionSliderTacticSchema>;

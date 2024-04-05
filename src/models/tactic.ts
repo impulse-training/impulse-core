@@ -10,7 +10,7 @@ export abstract class Tactic {
     switch (value.type) {
       case 'emotions':
         return new EmotionsTactic(id, value as EmotionsTacticValue, T);
-      case 'question':
+      case 'question-multiple-choice':
         return new QuestionTactic(id, value as QuestionTacticValue, T);
       default:
         return new OtherTactic(id, value, T);

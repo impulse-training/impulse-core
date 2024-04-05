@@ -62,6 +62,6 @@ const schemaMap: Record<keyof typeof factories, null | Schema | Lazy<unknown>> =
     patternFactory: patternSchema,
     tacticFactory: tacticSchema,
     impulseStrategyFactory: impulseStrategySchema,
-    measureTimeTacticFactory: tacticSchema,
+    questionTimeTacticFactory: tacticSchema,
     timeStrategyFactory: timeStrategySchema,
   };

@@ -3,14 +3,12 @@ import { AudioTacticValue, audioTacticSchema } from './audio';
 import { BreatheTacticValue, breatheTacticSchema } from './breathe';
 import { EmotionsTacticValue, emotionsTacticSchema } from './emotions';
 import { LinkTacticValue, linkTacticSchema } from './link';
-import {
-  MeasureTacticValue,
-  measureCounterTacticSchema,
-  measureSliderTacticSchema,
-  measureTimeTacticSchema,
-} from './measure';
 import { PhoneTacticValue, phoneTacticSchema } from './phone';
-import { QuestionTacticValue, questionTacticSchema } from './question';
+import {
+  QuestionTacticValue,
+  questionTacticSchema,
+  questionTacticSchemas,
+} from './question';
 import { StepsTacticValue, stepsTacticSchema } from './steps';
 import { TaskTacticValue, taskTacticSchema } from './task';
 import { UrgeSurfingTacticValue, urgeSurfingTacticSchema } from './urgeSurfing';
@@ -20,7 +18,6 @@ export * from './audio';
 export * from './breathe';
 export * from './emotions';
 export * from './link';
-export * from './measure';
 export * from './phone';
 export * from './question';
 export * from './steps';
@@ -37,7 +34,6 @@ export type TacticValue =
   | VideoTacticValue
   | QuestionTacticValue
   | TaskTacticValue
-  | MeasureTacticValue
   | BreatheTacticValue
   | LinkTacticValue
   | StepsTacticValue
@@ -53,9 +49,7 @@ export const tacticSchemas: Record<
   video: videoTacticSchema,
   link: linkTacticSchema,
   question: questionTacticSchema,
-  'measure-time': measureTimeTacticSchema,
-  'measure-slider': measureSliderTacticSchema,
-  'measure-counter': measureCounterTacticSchema,
+  ...questionTacticSchemas,
   breathe: breatheTacticSchema,
   steps: stepsTacticSchema,
   task: taskTacticSchema,

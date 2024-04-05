@@ -24,7 +24,73 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
     profileId: string;
     ordinal: number;
     name: string;
-    measureTactic: {
+    questionTactic: {
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        profileId?: string | null | undefined;
+        sourceId?: string | undefined;
+        subtitle?: import("yup").Maybe<string | undefined>;
+        description?: string | null | undefined;
+        image?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | null | undefined;
+        isTemplate?: boolean | null | undefined;
+        language?: string | null | undefined;
+        href?: string | null | undefined;
+        categoryIds?: (string | undefined)[] | null | undefined;
+        isShared?: boolean | null | undefined;
+        isResponseRequired?: boolean | null | undefined;
+        timerSeconds?: import("yup").Maybe<number | undefined>;
+        isAvailableForRecommendation?: boolean | null | undefined;
+        numberOfLikes?: number | null | undefined;
+        isSuggested?: boolean | undefined;
+        type: "question-counter";
+        title: string;
+        backgroundColor: string;
+    } | {
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        profileId?: string | null | undefined;
+        sourceId?: string | undefined;
+        subtitle?: import("yup").Maybe<string | undefined>;
+        description?: string | null | undefined;
+        image?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | null | undefined;
+        isTemplate?: boolean | null | undefined;
+        language?: string | null | undefined;
+        href?: string | null | undefined;
+        categoryIds?: (string | undefined)[] | null | undefined;
+        isShared?: boolean | null | undefined;
+        isResponseRequired?: boolean | null | undefined;
+        timerSeconds?: import("yup").Maybe<number | undefined>;
+        isAvailableForRecommendation?: boolean | null | undefined;
+        numberOfLikes?: number | null | undefined;
+        isSuggested?: boolean | undefined;
+        type: "question-multiple-choice";
+        title: string;
+        backgroundColor: string;
+    } | {
         createdAt?: {
             seconds: number;
             nanoseconds: number;
@@ -56,7 +122,7 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
         isSuggested?: boolean | undefined;
         lowEmoji?: import("yup").Maybe<string | undefined>;
         highEmoji?: import("yup").Maybe<string | undefined>;
-        type: "measure-slider";
+        type: "question-slider";
         title: string;
         backgroundColor: string;
     } | {
@@ -89,41 +155,8 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
         isAvailableForRecommendation?: boolean | null | undefined;
         numberOfLikes?: number | null | undefined;
         isSuggested?: boolean | undefined;
-        type: "measure-time";
-        title: string;
-        backgroundColor: string;
-    } | {
-        createdAt?: {
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        profileId?: string | null | undefined;
-        sourceId?: string | undefined;
-        subtitle?: import("yup").Maybe<string | undefined>;
-        description?: string | null | undefined;
-        image?: {
-            localFilePath?: import("yup").Maybe<string | undefined>;
-            storagePath?: import("yup").Maybe<string | undefined>;
-            uri?: import("yup").Maybe<string | undefined>;
-        } | null | undefined;
-        isTemplate?: boolean | null | undefined;
-        language?: string | null | undefined;
-        href?: string | null | undefined;
-        categoryIds?: (string | undefined)[] | null | undefined;
-        isShared?: boolean | null | undefined;
-        isResponseRequired?: boolean | null | undefined;
-        timerSeconds?: import("yup").Maybe<number | undefined>;
-        isAvailableForRecommendation?: boolean | null | undefined;
-        numberOfLikes?: number | null | undefined;
-        isSuggested?: boolean | undefined;
-        type: "measure-counter";
+        type: "question-time";
         title: string;
         backgroundColor: string;
     };
-}, "profileId" | "ordinal" | "name" | "measureTactic" | ("createdAt" | "updatedAt" | "setbackThreshold" | "supportGroupIds" | "notification" | "dailySetbackThreshold" | "issueId" | "parentIssueIds" | "sendWeeklyReports")>;
+}, "profileId" | "ordinal" | "name" | "questionTactic" | ("createdAt" | "updatedAt" | "setbackThreshold" | "supportGroupIds" | "notification" | "dailySetbackThreshold" | "issueId" | "parentIssueIds" | "sendWeeklyReports")>;

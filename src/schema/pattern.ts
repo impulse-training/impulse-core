@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-import { measureTacticSubsetSchema } from './tactic';
+import { questionTacticSchema } from './tactic';
 import { optionalStringArray } from './utils/array';
 import { optionalTimestampSchema } from './utils/timestamp';
 
@@ -19,7 +19,7 @@ export const patternSchema = yup.object().shape({
         })
       : yup.mixed().notRequired()
   ),
-  measureTactic: measureTacticSubsetSchema,
+  questionTactic: questionTacticSchema,
   dailySetbackThreshold: yup.number().notRequired(),
   setbackThreshold: yup.number().notRequired(),
   issueId: yup.string().notRequired(),

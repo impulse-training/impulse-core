@@ -9,8 +9,8 @@ export const makeIssueFactory = (TimestampKlass: typeof TimestampLike) =>
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     synonyms: ['Videos'],
-    measureTactic: {
-      type: 'measure-time',
+    questionTactic: {
+      type: 'question-time',
       title: 'How long did you spend?',
       backgroundColor: sample(tacticColors)!,
     },
