@@ -1,5 +1,4 @@
 import * as yup from 'yup';
-import { WithTacticsById } from '../tactic';
 import { strategyBaseSchema } from './base';
 export const timeStrategySchema = strategyBaseSchema('time').shape({
   weekdays: yup
@@ -18,6 +17,4 @@ export const timeStrategySchema = strategyBaseSchema('time').shape({
   minute: yup.number().required(),
 });
 
-export type TimeStrategyValue = WithTacticsById<
-  yup.InferType<typeof timeStrategySchema>
->;
+export type TimeStrategyValue = yup.InferType<typeof timeStrategySchema>;

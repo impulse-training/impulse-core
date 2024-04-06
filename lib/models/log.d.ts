@@ -28,7 +28,7 @@ export declare class Log {
         profileId: string;
         ordinal: number;
         name: string;
-        questionTactic: {
+        measureTactic: {
             createdAt?: {
                 seconds: number;
                 nanoseconds: number;
@@ -91,6 +91,22 @@ export declare class Log {
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
+            strategies?: {
+                createdAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                ordinal?: import("yup").Maybe<number | undefined>;
+                type: "impulse";
+                tacticIds: string[];
+                name: string;
+            }[] | undefined;
             type: "question-multiple-choice";
             title: string;
             backgroundColor: string;

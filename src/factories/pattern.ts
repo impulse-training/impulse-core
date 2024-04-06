@@ -13,5 +13,5 @@ export const makePatternFactory = (TimestampKlass: typeof TimestampLike) =>
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     sendWeeklyReports: false,
-    questionTactic: makeQuestionTimeTacticFactory(TimestampKlass).build(),
+    measureTactic: makeQuestionTimeTacticFactory(TimestampKlass).build(),
   });

@@ -24,7 +24,7 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
     profileId: string;
     ordinal: number;
     name: string;
-    questionTactic: {
+    measureTactic: {
         createdAt?: {
             seconds: number;
             nanoseconds: number;
@@ -87,6 +87,22 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
         isAvailableForRecommendation?: boolean | null | undefined;
         numberOfLikes?: number | null | undefined;
         isSuggested?: boolean | undefined;
+        strategies?: {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            ordinal?: import("yup").Maybe<number | undefined>;
+            type: "impulse";
+            tacticIds: string[];
+            name: string;
+        }[] | undefined;
         type: "question-multiple-choice";
         title: string;
         backgroundColor: string;
@@ -159,4 +175,4 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
         title: string;
         backgroundColor: string;
     };
-}, "profileId" | "ordinal" | "name" | "questionTactic" | ("createdAt" | "updatedAt" | "setbackThreshold" | "supportGroupIds" | "notification" | "dailySetbackThreshold" | "issueId" | "parentIssueIds" | "sendWeeklyReports")>;
+}, "profileId" | "ordinal" | "name" | "measureTactic" | ("createdAt" | "updatedAt" | "setbackThreshold" | "supportGroupIds" | "notification" | "dailySetbackThreshold" | "issueId" | "parentIssueIds" | "sendWeeklyReports")>;

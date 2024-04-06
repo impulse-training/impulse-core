@@ -18,7 +18,7 @@ export declare const patternSchema: yup.ObjectSchema<{
         title: string;
         body: string;
     } | yup.Maybe<{} | undefined>;
-    questionTactic: {
+    measureTactic: {
         createdAt?: {
             seconds: number;
             nanoseconds: number;
@@ -81,6 +81,22 @@ export declare const patternSchema: yup.ObjectSchema<{
         isAvailableForRecommendation?: boolean | null | undefined;
         numberOfLikes?: number | null | undefined;
         isSuggested?: boolean | undefined;
+        strategies?: {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            ordinal?: yup.Maybe<number | undefined>;
+            type: "impulse";
+            tacticIds: string[];
+            name: string;
+        }[] | undefined;
         type: "question-multiple-choice";
         title: string;
         backgroundColor: string;
@@ -166,7 +182,7 @@ export declare const patternSchema: yup.ObjectSchema<{
     ordinal: undefined;
     supportGroupIds: "";
     notification: undefined;
-    questionTactic: undefined;
+    measureTactic: undefined;
     dailySetbackThreshold: undefined;
     setbackThreshold: undefined;
     issueId: undefined;

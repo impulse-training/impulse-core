@@ -32,6 +32,22 @@ export declare const questionMultipleChoiceTacticSchema: yup.ObjectSchema<{
     isAvailableForRecommendation: boolean | null | undefined;
     numberOfLikes: number | null | undefined;
     isSuggested: boolean | undefined;
+    strategies: {
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        ordinal?: yup.Maybe<number | undefined>;
+        type: "impulse";
+        tacticIds: string[];
+        name: string;
+    }[] | undefined;
 }, yup.AnyObject, {
     type: undefined;
     profileId: undefined;
@@ -57,5 +73,6 @@ export declare const questionMultipleChoiceTacticSchema: yup.ObjectSchema<{
     isAvailableForRecommendation: undefined;
     numberOfLikes: undefined;
     isSuggested: undefined;
+    strategies: "";
 }, "">;
 export type QuestionMultipleChoiceTacticValue = yup.InferType<typeof questionMultipleChoiceTacticSchema>;

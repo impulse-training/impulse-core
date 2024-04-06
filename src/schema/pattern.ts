@@ -19,7 +19,7 @@ export const patternSchema = yup.object().shape({
         })
       : yup.mixed().notRequired()
   ),
-  questionTactic: questionTacticSchema,
+  measureTactic: questionTacticSchema,
   dailySetbackThreshold: yup.number().notRequired(),
   setbackThreshold: yup.number().notRequired(),
   issueId: yup.string().notRequired(),

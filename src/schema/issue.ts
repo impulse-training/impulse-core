@@ -20,7 +20,7 @@ export const issueSchema = yup.object().shape({
     .test('includes-name', 'Synonyms must include name', function (synonyms) {
       return synonyms.includes(this.parent.name);
     }),
-  questionTactic: questionTacticSchema,
+  measureTactic: questionTacticSchema,
   setbackThreshold: yup.number(),
   path: yup.string().nullable(),
   parentIds: requiredStringArray,
