@@ -1,4 +1,4 @@
-import { LogValue } from '../schema';
+import { LogValue, StrategyValue } from '../schema';
 export declare class Log {
     private id;
     private data;
@@ -91,22 +91,30 @@ export declare class Log {
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            strategies?: {
-                createdAt?: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                ordinal?: import("yup").Maybe<number | undefined>;
-                type: "impulse";
-                tacticIds: string[];
-                name: string;
-            }[] | undefined;
+            choices?: {
+                [x: string]: {
+                    text: string;
+                    strategies: {
+                        [x: string]: {
+                            createdAt?: {
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            updatedAt?: {
+                                seconds: number;
+                                nanoseconds: number;
+                                toDate: Function;
+                            } | null | undefined;
+                            ordinal?: import("yup").Maybe<number | undefined>;
+                            type: "impulse";
+                            tacticIds: string[];
+                            name: string;
+                        };
+                    };
+                    ordinal: number;
+                };
+            } | null | undefined;
             type: "question-multiple-choice";
             title: string;
             backgroundColor: string;
@@ -179,6 +187,60 @@ export declare class Log {
             title: string;
             backgroundColor: string;
         };
+    };
+    strategy(strategy: StrategyValue): {
+        tactics: void[];
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        ordinal?: import("yup").Maybe<number | undefined>;
+        type: "impulse";
+        tacticIds: string[];
+        name: string;
+    } | {
+        tactics: void[];
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        ordinal?: import("yup").Maybe<number | undefined>;
+        type: "time";
+        tacticIds: string[];
+        name: string;
+        weekdays: number[];
+        hour: number;
+        minute: number;
+    } | {
+        tactics: void[];
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        ordinal?: import("yup").Maybe<number | undefined>;
+        type: "location";
+        tacticIds: string[];
+        name: string;
+        locationId: string;
+        mode: NonNullable<"enter" | "exit" | undefined>;
     };
 }
 export declare function formatPattern(pattern?: {

@@ -87,22 +87,30 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
         isAvailableForRecommendation?: boolean | null | undefined;
         numberOfLikes?: number | null | undefined;
         isSuggested?: boolean | undefined;
-        strategies?: {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            ordinal?: import("yup").Maybe<number | undefined>;
-            type: "impulse";
-            tacticIds: string[];
-            name: string;
-        }[] | undefined;
+        choices?: {
+            [x: string]: {
+                text: string;
+                strategies: {
+                    [x: string]: {
+                        createdAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        ordinal?: import("yup").Maybe<number | undefined>;
+                        type: "impulse";
+                        tacticIds: string[];
+                        name: string;
+                    };
+                };
+                ordinal: number;
+            };
+        } | null | undefined;
         type: "question-multiple-choice";
         title: string;
         backgroundColor: string;

@@ -13,9 +13,8 @@ import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
 type Outcome = 'success' | 'setback';
 
 export const tacticDataSchema = yup.object({
-  value: yup.number().required(),
+  value: yup.mixed<string | number>().required(),
   formattedValue: yup.string().required(),
-  isTotal: yup.boolean().notRequired(),
   lowEmoji: yup.string().notRequired(),
   highEmoji: yup.string().notRequired(),
 });

@@ -1,6 +1,7 @@
 import {
   ImpulseLogValue,
   LogValue,
+  StrategyValue,
   logIsImpulseLog,
   logIsLocationLog,
   logIsTimeLog,
@@ -30,26 +31,18 @@ export class Log {
     return data.patternsById?.[data.patternId];
   }
 
-  // get getTacticSummary() {
-  //   return reduce(
-  //     this.data.tacticIds,
-  //     (memo, id) => {
-  //       const tags = pickBy(this.data.tagsByTacticId[id], (_tag, id) =>
-  //         this.data.tagIds.includes(id)
-  //       );
-  //       const tagsSummary = values(tags)
-  //         .map(tag => tag.emoji)
-  //         .join(' ');
-  //       const text = compact([this.data.tactics[id].title, tagsSummary]).join(
-  //         ' | '
-  //       );
+  // Return data from the strategies property, but add strategies that are "unlocked"
+  strategy(strategy: StrategyValue) {
+    return {
+      ...strategy,
+      tactics: strategy.tacticIds.map(id => {
+        const tactic = this.data.tacticsById[id];
+        const data = this.data.tacticData?.[id];
 
-  //       memo[id] = { text, applied: true };
-  //       return memo;
-  //     },
-  //     {} as Record<string, { text: string; applied: boolean }>
-  //   );
-  // }
+        return;
+      }),
+    };
+  }
 }
 
 export function formatPattern(pattern?: { emoji?: string; name: string }) {

@@ -3,15 +3,13 @@ import { TimestampLike } from '../utils/TimestampLike';
 import { TacticValue, WithTacticsById } from './tactic';
 type Outcome = 'success' | 'setback';
 export declare const tacticDataSchema: yup.ObjectSchema<{
-    value: number;
+    value: NonNullable<string | number | undefined>;
     formattedValue: string;
-    isTotal: yup.Maybe<boolean | undefined>;
     lowEmoji: yup.Maybe<string | undefined>;
     highEmoji: yup.Maybe<string | undefined>;
 }, yup.AnyObject, {
     value: undefined;
     formattedValue: undefined;
-    isTotal: undefined;
     lowEmoji: undefined;
     highEmoji: undefined;
 }, "">;
@@ -113,8 +111,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
         [x: string]: {
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            isTotal?: yup.Maybe<boolean | undefined>;
-            value: number;
+            value: NonNullable<string | number | undefined>;
             formattedValue: string;
         };
     } | null | undefined;
@@ -257,8 +254,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         [x: string]: {
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            isTotal?: yup.Maybe<boolean | undefined>;
-            value: number;
+            value: NonNullable<string | number | undefined>;
             formattedValue: string;
         };
     } | null | undefined;
@@ -362,22 +358,30 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                strategies?: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    ordinal?: yup.Maybe<number | undefined>;
-                    type: "impulse";
-                    tacticIds: string[];
-                    name: string;
-                }[] | undefined;
+                choices?: {
+                    [x: string]: {
+                        text: string;
+                        strategies: {
+                            [x: string]: {
+                                createdAt?: {
+                                    seconds: number;
+                                    nanoseconds: number;
+                                    toDate: Function;
+                                } | null | undefined;
+                                updatedAt?: {
+                                    seconds: number;
+                                    nanoseconds: number;
+                                    toDate: Function;
+                                } | null | undefined;
+                                ordinal?: yup.Maybe<number | undefined>;
+                                type: "impulse";
+                                tacticIds: string[];
+                                name: string;
+                            };
+                        };
+                        ordinal: number;
+                    };
+                } | null | undefined;
                 type: "question-multiple-choice";
                 title: string;
                 backgroundColor: string;
@@ -599,8 +603,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
         [x: string]: {
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            isTotal?: yup.Maybe<boolean | undefined>;
-            value: number;
+            value: NonNullable<string | number | undefined>;
             formattedValue: string;
         };
     } | null | undefined;
@@ -748,8 +751,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
         [x: string]: {
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            isTotal?: yup.Maybe<boolean | undefined>;
-            value: number;
+            value: NonNullable<string | number | undefined>;
             formattedValue: string;
         };
     } | null | undefined;
@@ -891,8 +893,7 @@ declare const motionLogSchema: yup.ObjectSchema<{
         [x: string]: {
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            isTotal?: yup.Maybe<boolean | undefined>;
-            value: number;
+            value: NonNullable<string | number | undefined>;
             formattedValue: string;
         };
     } | null | undefined;
@@ -994,8 +995,7 @@ export declare const logSchema: yup.Lazy<{
         [x: string]: {
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            isTotal?: yup.Maybe<boolean | undefined>;
-            value: number;
+            value: NonNullable<string | number | undefined>;
             formattedValue: string;
         };
     } | null | undefined;
@@ -1139,22 +1139,30 @@ export declare const logSchema: yup.Lazy<{
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                strategies?: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    ordinal?: yup.Maybe<number | undefined>;
-                    type: "impulse";
-                    tacticIds: string[];
-                    name: string;
-                }[] | undefined;
+                choices?: {
+                    [x: string]: {
+                        text: string;
+                        strategies: {
+                            [x: string]: {
+                                createdAt?: {
+                                    seconds: number;
+                                    nanoseconds: number;
+                                    toDate: Function;
+                                } | null | undefined;
+                                updatedAt?: {
+                                    seconds: number;
+                                    nanoseconds: number;
+                                    toDate: Function;
+                                } | null | undefined;
+                                ordinal?: yup.Maybe<number | undefined>;
+                                type: "impulse";
+                                tacticIds: string[];
+                                name: string;
+                            };
+                        };
+                        ordinal: number;
+                    };
+                } | null | undefined;
                 type: "question-multiple-choice";
                 title: string;
                 backgroundColor: string;
@@ -1287,8 +1295,7 @@ export declare const logSchema: yup.Lazy<{
         [x: string]: {
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            isTotal?: yup.Maybe<boolean | undefined>;
-            value: number;
+            value: NonNullable<string | number | undefined>;
             formattedValue: string;
         };
     } | null | undefined;
@@ -1394,8 +1401,7 @@ export declare const logSchema: yup.Lazy<{
         [x: string]: {
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            isTotal?: yup.Maybe<boolean | undefined>;
-            value: number;
+            value: NonNullable<string | number | undefined>;
             formattedValue: string;
         };
     } | null | undefined;
@@ -1498,8 +1504,7 @@ export declare const logSchema: yup.Lazy<{
         [x: string]: {
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            isTotal?: yup.Maybe<boolean | undefined>;
-            value: number;
+            value: NonNullable<string | number | undefined>;
             formattedValue: string;
         };
     } | null | undefined;

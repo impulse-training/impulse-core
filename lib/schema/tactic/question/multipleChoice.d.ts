@@ -1,4 +1,30 @@
 import * as yup from 'yup';
+export declare const choiceSchema: yup.ObjectSchema<{
+    text: string;
+    strategies: {
+        [x: string]: {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            ordinal?: yup.Maybe<number | undefined>;
+            type: "impulse";
+            tacticIds: string[];
+            name: string;
+        };
+    };
+    ordinal: number;
+}, yup.AnyObject, {
+    text: undefined;
+    strategies: undefined;
+    ordinal: undefined;
+}, "">;
 export declare const questionMultipleChoiceTacticSchema: yup.ObjectSchema<{
     type: "question-multiple-choice";
     profileId: string | null | undefined;
@@ -32,22 +58,30 @@ export declare const questionMultipleChoiceTacticSchema: yup.ObjectSchema<{
     isAvailableForRecommendation: boolean | null | undefined;
     numberOfLikes: number | null | undefined;
     isSuggested: boolean | undefined;
-    strategies: {
-        createdAt?: {
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        ordinal?: yup.Maybe<number | undefined>;
-        type: "impulse";
-        tacticIds: string[];
-        name: string;
-    }[] | undefined;
+    choices: {
+        [x: string]: {
+            text: string;
+            strategies: {
+                [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    ordinal?: yup.Maybe<number | undefined>;
+                    type: "impulse";
+                    tacticIds: string[];
+                    name: string;
+                };
+            };
+            ordinal: number;
+        };
+    } | null | undefined;
 }, yup.AnyObject, {
     type: undefined;
     profileId: undefined;
@@ -73,6 +107,6 @@ export declare const questionMultipleChoiceTacticSchema: yup.ObjectSchema<{
     isAvailableForRecommendation: undefined;
     numberOfLikes: undefined;
     isSuggested: undefined;
-    strategies: "";
+    choices: undefined;
 }, "">;
 export type QuestionMultipleChoiceTacticValue = yup.InferType<typeof questionMultipleChoiceTacticSchema>;
