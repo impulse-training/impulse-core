@@ -1,7 +1,6 @@
 import {
   ImpulseLogValue,
   LogValue,
-  StrategyValue,
   logIsImpulseLog,
   logIsLocationLog,
   logIsTimeLog,
@@ -29,19 +28,6 @@ export class Log {
   get selectedPattern() {
     const data = this.data as ImpulseLogValue;
     return data.patternsById?.[data.patternId];
-  }
-
-  // Return data from the strategies property, but add strategies that are "unlocked"
-  strategy(strategy: StrategyValue) {
-    return {
-      ...strategy,
-      tactics: strategy.tacticIds.map(id => {
-        const tactic = this.data.tacticsById[id];
-        const data = this.data.tacticData?.[id];
-
-        return;
-      }),
-    };
   }
 }
 

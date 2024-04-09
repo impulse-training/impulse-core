@@ -1,4 +1,4 @@
-import { LogValue, StrategyValue } from '../schema';
+import { LogValue } from '../schema';
 export declare class Log {
     private id;
     private data;
@@ -187,60 +187,6 @@ export declare class Log {
             title: string;
             backgroundColor: string;
         };
-    };
-    strategy(strategy: StrategyValue): {
-        tactics: void[];
-        createdAt?: {
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        ordinal?: import("yup").Maybe<number | undefined>;
-        type: "impulse";
-        tacticIds: string[];
-        name: string;
-    } | {
-        tactics: void[];
-        createdAt?: {
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        ordinal?: import("yup").Maybe<number | undefined>;
-        type: "time";
-        tacticIds: string[];
-        name: string;
-        weekdays: number[];
-        hour: number;
-        minute: number;
-    } | {
-        tactics: void[];
-        createdAt?: {
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        ordinal?: import("yup").Maybe<number | undefined>;
-        type: "location";
-        tacticIds: string[];
-        name: string;
-        locationId: string;
-        mode: NonNullable<"enter" | "exit" | undefined>;
     };
 }
 export declare function formatPattern(pattern?: {

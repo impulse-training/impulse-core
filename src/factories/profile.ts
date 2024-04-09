@@ -10,8 +10,4 @@ export const makeProfileFactory = (TimestampKlass: typeof TimestampLike) =>
     timezone: 'America/Bogota',
     invitationCode: 'abc123',
     notificationPreferences: {},
-    impulseStrategiesByPatternId: {},
-    scheduledStrategies: {},
-    locationStrategies: {},
-    tacticsById: {},
   });

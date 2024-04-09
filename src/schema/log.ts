@@ -4,7 +4,7 @@ import * as yup from 'yup';
 import { TimestampLike } from '../utils/TimestampLike';
 import { commentSchema } from './comment';
 import { patternSchema } from './pattern';
-import { impulseStrategySchema, strategySchema } from './strategy';
+import { strategySchema } from './strategy';
 import { TacticValue, WithTacticsById, tacticSchema } from './tactic';
 import { optionalStringArray, requiredStringArray } from './utils/array';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
@@ -23,7 +23,6 @@ export type TacticData = yup.InferType<typeof tacticDataSchema>;
 export type BaseLogValue = WithTypes<typeof baseLogSchema>;
 const baseLogSchema = yup.object().shape({
   profileId: yup.string().required(),
-
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
   startTime: timestampSchema,
@@ -47,14 +46,8 @@ const baseLogSchema = yup.object().shape({
       commentsById: objectOf(commentSchema),
     })
   ),
-  steps: yup.number().notRequired(),
-  strategies: objectOf(impulseStrategySchema),
-  suggestedTacticIds: requiredStringArray,
-  seenTacticIds: requiredStringArray,
-  // Tactics are a complex union type. We omit this key from the base log schema and add it back in
-  // using typescript, so we just "neuter" it here to tell typescript to relax. This saves 10k+
-  // lines of type annotations in the generated typescript file.
-  tacticsById: objectOf(tacticSchema) as any,
+  strategyIds: requiredStringArray,
+  seenTacticsById: objectOf(tacticSchema),
   completedTacticIds: requiredStringArray,
   tacticLikes: optionalObjectOf(yup.boolean().required()),
   tacticData: optionalObjectOf(tacticDataSchema),
