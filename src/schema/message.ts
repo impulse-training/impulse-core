@@ -1,4 +1,4 @@
-import { TimestampLike } from '../utils/TimestampLike';
+import { TimestampLike } from '../utils/firestore/TimestampLike';
 import { LogValue } from './log';
 
 export interface MessageValue {

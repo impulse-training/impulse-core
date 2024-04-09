@@ -1,6 +1,6 @@
 import { ExpoPushMessage, ExpoPushReceipt, ExpoPushTicket } from 'expo-server-sdk';
 import * as yup from 'yup';
-import { TimestampLike } from '../utils/TimestampLike';
+import { TimestampLike } from '../utils/firestore/TimestampLike';
 export declare const NOTIFICATION_TYPES: {
     NEW_MESSAGE: string;
     WEARING_BUTTON: string;

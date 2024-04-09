@@ -1,6 +1,6 @@
 import * as Factory from 'factory.ts';
 import { SupportGroupValue } from '../schema';
-import { TimestampLike } from '../utils/TimestampLike';
+import { TimestampLike } from '../utils/firestore/TimestampLike';
 
 export const makeSupportGroupFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<SupportGroupValue>({

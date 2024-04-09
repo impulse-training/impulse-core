@@ -1,5 +1,5 @@
 import * as Factory from 'factory.ts';
-import { TimestampLike } from '../utils/TimestampLike';
+import { TimestampLike } from '../utils/firestore/TimestampLike';
 export declare const makeCommentFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     createdAt?: {
         seconds: number;

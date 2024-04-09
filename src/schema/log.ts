@@ -1,7 +1,7 @@
 // Logs are records of either impulses (cravings or urges), or applied tactics (actions that we
 // take)
 import * as yup from 'yup';
-import { TimestampLike } from '../utils/TimestampLike';
+import { TimestampLike } from '../utils/firestore/TimestampLike';
 import { commentSchema } from './comment';
 import { patternSchema } from './pattern';
 import { strategySchema } from './strategy';

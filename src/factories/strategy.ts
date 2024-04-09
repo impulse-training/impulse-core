@@ -1,6 +1,6 @@
 import * as Factory from 'factory.ts';
 import { ImpulseStrategyValue, TimeStrategyValue } from '../schema';
-import { TimestampLike } from '../utils/TimestampLike';
+import { TimestampLike } from '../utils/firestore/TimestampLike';
 
 export const makeImpulseStrategyFactory = (
   TimestampKlass: typeof TimestampLike
@@ -9,6 +9,7 @@ export const makeImpulseStrategyFactory = (
     name: 'Cigarettes',
     type: 'impulse',
     tacticIds: [],
+    tacticsById: {},
     ordinal: Factory.each(i => i),
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
@@ -19,6 +20,7 @@ export const makeTimeStrategyFactory = (TimestampKlass: typeof TimestampLike) =>
     name: 'Cigarettes',
     type: 'time',
     tacticIds: [],
+    tacticsById: {},
     hour: 9,
     minute: 0,
     weekdays: [1, 2, 3, 4, 5, 6, 7],

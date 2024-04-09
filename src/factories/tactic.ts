@@ -1,6 +1,6 @@
 import * as Factory from 'factory.ts';
 import { QuestionTimeTacticValue, TacticValue } from '../schema';
-import { TimestampLike } from '../utils/TimestampLike';
+import { TimestampLike } from '../utils/firestore/TimestampLike';
 
 export const makeTacticFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<TacticValue>({

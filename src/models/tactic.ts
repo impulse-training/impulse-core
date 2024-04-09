@@ -3,7 +3,7 @@ import {
   QuestionTacticValue,
   TacticValue,
 } from '../schema';
-import { TimestampLike } from '../utils/TimestampLike';
+import { TimestampLike } from '../utils/firestore/TimestampLike';
 
 export abstract class Tactic {
   static from(id: string, value: TacticValue, T: typeof TimestampLike) {

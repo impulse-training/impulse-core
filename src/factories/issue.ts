@@ -1,7 +1,7 @@
 import * as Factory from 'factory.ts';
 import { sample } from 'lodash';
 import { IssueValue, tacticColors } from '../schema';
-import { TimestampLike } from '../utils/TimestampLike';
+import { TimestampLike } from '../utils/firestore/TimestampLike';
 
 export const makeIssueFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<IssueValue>({

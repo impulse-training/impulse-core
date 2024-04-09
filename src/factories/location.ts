@@ -1,7 +1,7 @@
 import { faker } from '@faker-js/faker';
 import * as Factory from 'factory.ts';
 import { LocationValue } from '../schema';
-import { TimestampLike } from '../utils/TimestampLike';
+import { TimestampLike } from '../utils/firestore/TimestampLike';
 
 export const makeLocationFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<LocationValue>({

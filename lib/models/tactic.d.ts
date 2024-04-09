@@ -1,5 +1,5 @@
 import { EmotionsTacticValue, QuestionTacticValue, TacticValue } from '../schema';
-import { TimestampLike } from '../utils/TimestampLike';
+import { TimestampLike } from '../utils/firestore/TimestampLike';
 export declare abstract class Tactic {
     static from(id: string, value: TacticValue, T: typeof TimestampLike): EmotionsTactic | QuestionTactic | OtherTactic;
     get subtitle(): string | null;

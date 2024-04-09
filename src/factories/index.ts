@@ -1,4 +1,4 @@
-import { TimestampLike } from '../utils/TimestampLike';
+import { TimestampLike } from '../utils/firestore/TimestampLike';
 import { makeApplicationFactory } from './application';
 import { makeCommentFactory } from './comment';
 import { makeIssueFactory } from './issue';

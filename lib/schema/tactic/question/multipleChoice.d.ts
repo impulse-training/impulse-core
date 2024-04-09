@@ -2,22 +2,7 @@ import * as yup from 'yup';
 export declare const choiceSchema: yup.ObjectSchema<{
     text: string;
     strategies: {
-        [x: string]: {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            ordinal?: yup.Maybe<number | undefined>;
-            type: "impulse";
-            tacticIds: string[];
-            name: string;
-        };
+        [x: string]: {} | undefined;
     };
     ordinal: number;
 }, yup.AnyObject, {
@@ -62,22 +47,7 @@ export declare const questionMultipleChoiceTacticSchema: yup.ObjectSchema<{
         [x: string]: {
             text: string;
             strategies: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    ordinal?: yup.Maybe<number | undefined>;
-                    type: "impulse";
-                    tacticIds: string[];
-                    name: string;
-                };
+                [x: string]: {} | undefined;
             };
             ordinal: number;
         };

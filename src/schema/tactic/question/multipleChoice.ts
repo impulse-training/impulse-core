@@ -1,11 +1,11 @@
 import * as yup from 'yup';
-import { impulseStrategySchema } from '../../strategy';
+import { documentReferenceSchema } from '../../utils/documentReference';
 import { objectOf, optionalObjectOf } from '../../utils/objectOf';
 import { tacticValueBaseSchema } from '../base';
 
 export const choiceSchema = yup.object({
   text: yup.string().required(),
-  strategies: objectOf(impulseStrategySchema),
+  strategies: objectOf(documentReferenceSchema),
   ordinal: yup.number().required(),
 });
 

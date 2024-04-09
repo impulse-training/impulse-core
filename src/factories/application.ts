@@ -1,6 +1,6 @@
 import * as Factory from 'factory.ts';
 import { ApplicationValue } from '../schema';
-import { TimestampLike } from '../utils/TimestampLike';
+import { TimestampLike } from '../utils/firestore/TimestampLike';
 
 export const makeApplicationFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<ApplicationValue>({

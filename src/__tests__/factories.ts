@@ -1,4 +1,4 @@
 import { makeFactories } from '../factories';
-import { TimestampLike } from '../utils/TimestampLike';
+import { TimestampLike } from '../utils/firestore/TimestampLike';
 
 export const factories = makeFactories(TimestampLike);

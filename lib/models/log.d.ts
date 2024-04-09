@@ -17,10 +17,10 @@ export declare class Log {
         } | null | undefined;
         setbackThreshold?: import("yup").Maybe<number | undefined>;
         supportGroupIds?: string[] | undefined;
-        notification?: {
+        notification?: import("yup").Maybe<{} | undefined> | {
             title: string;
             body: string;
-        } | import("yup").Maybe<{} | undefined>;
+        };
         dailySetbackThreshold?: import("yup").Maybe<number | undefined>;
         issueId?: import("yup").Maybe<string | undefined>;
         parentIssueIds?: string[] | undefined;
@@ -95,22 +95,7 @@ export declare class Log {
                 [x: string]: {
                     text: string;
                     strategies: {
-                        [x: string]: {
-                            createdAt?: {
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            ordinal?: import("yup").Maybe<number | undefined>;
-                            type: "impulse";
-                            tacticIds: string[];
-                            name: string;
-                        };
+                        [x: string]: {} | undefined;
                     };
                     ordinal: number;
                 };

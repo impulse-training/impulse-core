@@ -10,7 +10,7 @@ import {
   tacticSchema,
   timeStrategySchema,
 } from '../../schema';
-import { TimestampLike } from '../../utils/TimestampLike';
+import { TimestampLike } from '../../utils/firestore/TimestampLike';
 
 const factories = makeFactories(TimestampLike);
 

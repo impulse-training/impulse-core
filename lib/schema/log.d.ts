@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-import { TimestampLike } from '../utils/TimestampLike';
+import { TimestampLike } from '../utils/firestore/TimestampLike';
 import { TacticValue, WithTacticsById } from './tactic';
 type Outcome = 'success' | 'setback';
 export declare const tacticDataSchema: yup.ObjectSchema<{
@@ -150,22 +150,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 [x: string]: {
                     text: string;
                     strategies: {
-                        [x: string]: {
-                            createdAt?: {
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            ordinal?: yup.Maybe<number | undefined>;
-                            type: "impulse";
-                            tacticIds: string[];
-                            name: string;
-                        };
+                        [x: string]: {} | undefined;
                     };
                     ordinal: number;
                 };
@@ -747,22 +732,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 [x: string]: {
                     text: string;
                     strategies: {
-                        [x: string]: {
-                            createdAt?: {
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            ordinal?: yup.Maybe<number | undefined>;
-                            type: "impulse";
-                            tacticIds: string[];
-                            name: string;
-                        };
+                        [x: string]: {} | undefined;
                     };
                     ordinal: number;
                 };
@@ -1195,10 +1165,10 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             } | null | undefined;
             setbackThreshold?: yup.Maybe<number | undefined>;
             supportGroupIds?: string[] | undefined;
-            notification?: {
+            notification?: yup.Maybe<{} | undefined> | {
                 title: string;
                 body: string;
-            } | yup.Maybe<{} | undefined>;
+            };
             dailySetbackThreshold?: yup.Maybe<number | undefined>;
             issueId?: yup.Maybe<string | undefined>;
             parentIssueIds?: string[] | undefined;
@@ -1273,22 +1243,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     [x: string]: {
                         text: string;
                         strategies: {
-                            [x: string]: {
-                                createdAt?: {
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                ordinal?: yup.Maybe<number | undefined>;
-                                type: "impulse";
-                                tacticIds: string[];
-                                name: string;
-                            };
+                            [x: string]: {} | undefined;
                         };
                         ordinal: number;
                     };
@@ -1550,22 +1505,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 [x: string]: {
                     text: string;
                     strategies: {
-                        [x: string]: {
-                            createdAt?: {
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            ordinal?: yup.Maybe<number | undefined>;
-                            type: "impulse";
-                            tacticIds: string[];
-                            name: string;
-                        };
+                        [x: string]: {} | undefined;
                     };
                     ordinal: number;
                 };
@@ -2152,22 +2092,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 [x: string]: {
                     text: string;
                     strategies: {
-                        [x: string]: {
-                            createdAt?: {
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            ordinal?: yup.Maybe<number | undefined>;
-                            type: "impulse";
-                            tacticIds: string[];
-                            name: string;
-                        };
+                        [x: string]: {} | undefined;
                     };
                     ordinal: number;
                 };
@@ -2748,22 +2673,7 @@ declare const motionLogSchema: yup.ObjectSchema<{
                 [x: string]: {
                     text: string;
                     strategies: {
-                        [x: string]: {
-                            createdAt?: {
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            ordinal?: yup.Maybe<number | undefined>;
-                            type: "impulse";
-                            tacticIds: string[];
-                            name: string;
-                        };
+                        [x: string]: {} | undefined;
                     };
                     ordinal: number;
                 };
@@ -3362,22 +3272,7 @@ export declare const logSchema: yup.Lazy<{
                 [x: string]: {
                     text: string;
                     strategies: {
-                        [x: string]: {
-                            createdAt?: {
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            ordinal?: yup.Maybe<number | undefined>;
-                            type: "impulse";
-                            tacticIds: string[];
-                            name: string;
-                        };
+                        [x: string]: {} | undefined;
                     };
                     ordinal: number;
                 };
@@ -3792,10 +3687,10 @@ export declare const logSchema: yup.Lazy<{
             } | null | undefined;
             setbackThreshold?: yup.Maybe<number | undefined>;
             supportGroupIds?: string[] | undefined;
-            notification?: {
+            notification?: yup.Maybe<{} | undefined> | {
                 title: string;
                 body: string;
-            } | yup.Maybe<{} | undefined>;
+            };
             dailySetbackThreshold?: yup.Maybe<number | undefined>;
             issueId?: yup.Maybe<string | undefined>;
             parentIssueIds?: string[] | undefined;
@@ -3870,22 +3765,7 @@ export declare const logSchema: yup.Lazy<{
                     [x: string]: {
                         text: string;
                         strategies: {
-                            [x: string]: {
-                                createdAt?: {
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                updatedAt?: {
-                                    seconds: number;
-                                    nanoseconds: number;
-                                    toDate: Function;
-                                } | null | undefined;
-                                ordinal?: yup.Maybe<number | undefined>;
-                                type: "impulse";
-                                tacticIds: string[];
-                                name: string;
-                            };
+                            [x: string]: {} | undefined;
                         };
                         ordinal: number;
                     };
@@ -4113,22 +3993,7 @@ export declare const logSchema: yup.Lazy<{
                 [x: string]: {
                     text: string;
                     strategies: {
-                        [x: string]: {
-                            createdAt?: {
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            ordinal?: yup.Maybe<number | undefined>;
-                            type: "impulse";
-                            tacticIds: string[];
-                            name: string;
-                        };
+                        [x: string]: {} | undefined;
                     };
                     ordinal: number;
                 };
@@ -4675,22 +4540,7 @@ export declare const logSchema: yup.Lazy<{
                 [x: string]: {
                     text: string;
                     strategies: {
-                        [x: string]: {
-                            createdAt?: {
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            ordinal?: yup.Maybe<number | undefined>;
-                            type: "impulse";
-                            tacticIds: string[];
-                            name: string;
-                        };
+                        [x: string]: {} | undefined;
                     };
                     ordinal: number;
                 };
@@ -5235,22 +5085,7 @@ export declare const logSchema: yup.Lazy<{
                 [x: string]: {
                     text: string;
                     strategies: {
-                        [x: string]: {
-                            createdAt?: {
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            ordinal?: yup.Maybe<number | undefined>;
-                            type: "impulse";
-                            tacticIds: string[];
-                            name: string;
-                        };
+                        [x: string]: {} | undefined;
                     };
                     ordinal: number;
                 };

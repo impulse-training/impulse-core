@@ -1,6 +1,6 @@
 import * as Factory from 'factory.ts';
 import { ImpulseLogValue, LocationLogValue, TimeLogValue } from '../schema/log';
-import { TimestampLike } from '../utils/TimestampLike';
+import { TimestampLike } from '../utils/firestore/TimestampLike';
 
 export const makeImpulseLogFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<ImpulseLogValue>({

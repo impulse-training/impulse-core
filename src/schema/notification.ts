@@ -4,7 +4,7 @@ import {
   ExpoPushTicket,
 } from 'expo-server-sdk';
 import * as yup from 'yup';
-import { TimestampLike } from '../utils/TimestampLike';
+import { TimestampLike } from '../utils/firestore/TimestampLike';
 
 export const NOTIFICATION_TYPES = {
   NEW_MESSAGE: 'When I receive a new message',

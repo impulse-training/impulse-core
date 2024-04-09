@@ -1,5 +1,5 @@
 import * as Factory from 'factory.ts';
-import { TimestampLike } from '../utils/TimestampLike';
+import { TimestampLike } from '../utils/firestore/TimestampLike';
 export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     createdAt?: {
         seconds: number;
@@ -13,10 +13,10 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
     } | null | undefined;
     setbackThreshold?: import("yup").Maybe<number | undefined>;
     supportGroupIds?: string[] | undefined;
-    notification?: {
+    notification?: import("yup").Maybe<{} | undefined> | {
         title: string;
         body: string;
-    } | import("yup").Maybe<{} | undefined>;
+    };
     dailySetbackThreshold?: import("yup").Maybe<number | undefined>;
     issueId?: import("yup").Maybe<string | undefined>;
     parentIssueIds?: string[] | undefined;
@@ -91,22 +91,7 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
             [x: string]: {
                 text: string;
                 strategies: {
-                    [x: string]: {
-                        createdAt?: {
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        ordinal?: import("yup").Maybe<number | undefined>;
-                        type: "impulse";
-                        tacticIds: string[];
-                        name: string;
-                    };
+                    [x: string]: {} | undefined;
                 };
                 ordinal: number;
             };

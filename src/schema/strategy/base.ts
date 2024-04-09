@@ -1,7 +1,8 @@
 import * as yup from 'yup';
 import { strategySchema } from '.';
-import { WithTacticsById } from '../tactic';
+import { WithTacticsById, tacticSchema } from '../tactic';
 import { requiredStringArray } from '../utils/array';
+import { objectOf } from '../utils/objectOf';
 import { optionalTimestampSchema } from '../utils/timestamp';
 
 export function strategyBaseSchema<K extends string>(type: K) {
@@ -10,6 +11,7 @@ export function strategyBaseSchema<K extends string>(type: K) {
     type: yup.mixed<K>().oneOf([type]).defined(),
     name: yup.string().required(),
     tacticIds: requiredStringArray,
+    tacticsById: objectOf(tacticSchema),
     createdAt: optionalTimestampSchema,
     updatedAt: optionalTimestampSchema,
   });
