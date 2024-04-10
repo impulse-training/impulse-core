@@ -478,7 +478,8 @@ export declare const makeImpulseStrategyFactory: (TimestampKlass: typeof Timesta
     };
     tacticIds: string[];
     name: string;
-}, "type" | "tacticsById" | "tacticIds" | "name" | ("createdAt" | "updatedAt" | "ordinal")>;
+    forIssueIds: string[];
+}, "type" | "tacticsById" | "tacticIds" | "name" | "forIssueIds" | ("createdAt" | "updatedAt" | "ordinal")>;
 export declare const makeTimeStrategyFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     createdAt?: {
         seconds: number;

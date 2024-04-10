@@ -642,6 +642,7 @@ export declare const issueSchema: yup.ObjectSchema<{
         };
         tacticIds: string[];
         name: string;
+        forIssueIds: string[];
     }[] | undefined;
     scheduledStrategies: {
         createdAt?: {

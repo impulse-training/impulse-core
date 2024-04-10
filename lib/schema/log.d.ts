@@ -1,6 +1,5 @@
 import * as yup from 'yup';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
-import { TacticValue, WithTacticsById } from './tactic';
 type Outcome = 'success' | 'setback';
 export declare const tacticDataSchema: yup.ObjectSchema<{
     value: NonNullable<string | number | undefined>;
@@ -589,11 +588,10 @@ declare const baseLogSchema: yup.ObjectSchema<{
     tacticData: undefined;
     sharedWithSupportGroupIds: "";
 }, "">;
-type WithTypes<T extends yup.ISchema<unknown>> = WithTacticsById<Omit<yup.InferType<T>, 'createdAt' | 'updatedAt' | 'startTime' | 'tacticsById'>> & {
+type WithTypes<T extends yup.ISchema<unknown>> = Omit<yup.InferType<T>, 'createdAt' | 'updatedAt' | 'startTime'> & {
     createdAt: TimestampLike;
     updatedAt: TimestampLike;
     startTime: TimestampLike;
-    tacticsById: Record<string, TacticValue>;
 };
 export type ImpulseLogValue = WithTypes<typeof impulseLogSchema>;
 export declare function logIsImpulseLog(log: LogValue): log is ImpulseLogValue;

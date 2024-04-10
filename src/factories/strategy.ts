@@ -10,6 +10,7 @@ export const makeImpulseStrategyFactory = (
     type: 'impulse',
     tacticIds: [],
     tacticsById: {},
+    forIssueIds: [],
     ordinal: Factory.each(i => i),
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),

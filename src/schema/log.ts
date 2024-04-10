@@ -5,7 +5,7 @@ import { TimestampLike } from '../utils/firestore/TimestampLike';
 import { commentSchema } from './comment';
 import { patternSchema } from './pattern';
 import { strategySchema } from './strategy';
-import { TacticValue, WithTacticsById, tacticSchema } from './tactic';
+import { tacticSchema } from './tactic';
 import { optionalStringArray, requiredStringArray } from './utils/array';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
@@ -55,16 +55,13 @@ const baseLogSchema = yup.object().shape({
 });
 // This is important to prevent typescript generating a 40k line file :/
 
-type WithTypes<T extends yup.ISchema<unknown>> = WithTacticsById<
-  Omit<
-    yup.InferType<T>,
-    'createdAt' | 'updatedAt' | 'startTime' | 'tacticsById'
-  >
+type WithTypes<T extends yup.ISchema<unknown>> = Omit<
+  yup.InferType<T>,
+  'createdAt' | 'updatedAt' | 'startTime'
 > & {
   createdAt: TimestampLike;
   updatedAt: TimestampLike;
   startTime: TimestampLike;
-  tacticsById: Record<string, TacticValue>;
 };
 
 export type ImpulseLogValue = WithTypes<typeof impulseLogSchema>;

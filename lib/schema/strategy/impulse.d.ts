@@ -477,6 +477,7 @@ export declare const impulseStrategySchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    forIssueIds: string[];
 }, yup.AnyObject, {
     ordinal: undefined;
     type: undefined;
@@ -485,5 +486,6 @@ export declare const impulseStrategySchema: yup.ObjectSchema<{
     tacticsById: undefined;
     createdAt: undefined;
     updatedAt: undefined;
+    forIssueIds: "";
 }, "">;
 export type ImpulseStrategyValue = yup.InferType<typeof impulseStrategySchema>;

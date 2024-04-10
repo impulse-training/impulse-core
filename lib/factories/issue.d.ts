@@ -485,6 +485,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         };
         tacticIds: string[];
         name: string;
+        forIssueIds: string[];
     }[] | undefined;
     createdAt: {
         seconds: number;
