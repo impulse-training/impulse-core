@@ -13,12 +13,10 @@ export const makeImpulseLogFactory = (TimestampKlass: typeof TimestampLike) =>
     timezone: 'America/Botota',
     isDisplayable: true,
     debriefNotes: '',
-    patternId: 'abc123',
     location: {},
     locationIsFetching: false,
+    patternId: 'abc123',
     patternsById: {},
-    strategiesByPatternId: {},
-    strategyIds: [],
     seenTacticsById: {},
     completedTacticIds: [],
   });
@@ -26,7 +24,6 @@ export const makeImpulseLogFactory = (TimestampKlass: typeof TimestampLike) =>
 export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<TimeLogValue>({
     profileId: Factory.each(i => i.toString()),
-
     type: 'time',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
@@ -35,7 +32,6 @@ export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>
     isDisplayable: true,
     location: {},
     locationIsFetching: false,
-    strategyIds: [],
     seenTacticsById: {},
     completedTacticIds: [],
   });
@@ -43,7 +39,6 @@ export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>
 export const makeLocationLogFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<LocationLogValue>({
     profileId: Factory.each(i => i.toString()),
-
     type: 'location',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
@@ -55,7 +50,6 @@ export const makeLocationLogFactory = (TimestampKlass: typeof TimestampLike) =>
     locationName: 'Home',
     location: {},
     locationIsFetching: false,
-    strategyIds: [],
     seenTacticsById: {},
     completedTacticIds: [],
   });

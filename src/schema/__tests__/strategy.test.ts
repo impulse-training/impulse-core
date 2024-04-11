@@ -4,7 +4,7 @@ import { strategySchema } from '../strategy';
 
 describe('strategy', () => {
   it('is valid without timestamps', () => {
-    const strategy = factories.impulseStrategyFactory.build({
+    const strategy = factories.strategyFactory.build({
       createdAt: undefined,
       updatedAt: undefined,
     });

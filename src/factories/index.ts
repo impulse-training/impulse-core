@@ -11,10 +11,8 @@ import {
 import { makeMessageFactory } from './message';
 import { makePatternFactory } from './pattern';
 import { makeProfileFactory } from './profile';
-import {
-  makeImpulseStrategyFactory,
-  makeTimeStrategyFactory,
-} from './strategy';
+import { makeTimeRoutineFactory } from './routine';
+import { makeStrategyFactory } from './strategy';
 import { makeSupportGroupFactory } from './supportGroup';
 import { makeQuestionTimeTacticFactory, makeTacticFactory } from './tactic';
 
@@ -36,7 +34,7 @@ export function makeFactories(TimestampKlass: typeof TimestampLike) {
     patternFactory: makePatternFactory(TimestampKlass),
     tacticFactory: makeTacticFactory(TimestampKlass),
     questionTimeTacticFactory: makeQuestionTimeTacticFactory(TimestampKlass),
-    impulseStrategyFactory: makeImpulseStrategyFactory(TimestampKlass),
-    timeStrategyFactory: makeTimeStrategyFactory(TimestampKlass),
+    strategyFactory: makeStrategyFactory(TimestampKlass),
+    timeRoutineFactory: makeTimeRoutineFactory(TimestampKlass),
   };
 }

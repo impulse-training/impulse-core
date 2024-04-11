@@ -14,10 +14,10 @@ export declare const patternSchema: yup.ObjectSchema<{
     name: string;
     ordinal: number;
     supportGroupIds: string[] | undefined;
-    notification: yup.Maybe<{} | undefined> | {
+    notification: {
         title: string;
         body: string;
-    };
+    } | yup.Maybe<{} | undefined>;
     measureTactic: {
         createdAt?: {
             seconds: number;
@@ -85,7 +85,9 @@ export declare const patternSchema: yup.ObjectSchema<{
             [x: string]: {
                 text: string;
                 strategies: {
-                    [x: string]: {} | undefined;
+                    [x: string]: {
+                        id: string;
+                    } | undefined;
                 };
                 ordinal: number;
             };

@@ -2,7 +2,9 @@ import * as yup from 'yup';
 export declare const choiceSchema: yup.ObjectSchema<{
     text: string;
     strategies: {
-        [x: string]: {} | undefined;
+        [x: string]: {
+            id: string;
+        } | undefined;
     };
     ordinal: number;
 }, yup.AnyObject, {
@@ -47,7 +49,9 @@ export declare const questionMultipleChoiceTacticSchema: yup.ObjectSchema<{
         [x: string]: {
             text: string;
             strategies: {
-                [x: string]: {} | undefined;
+                [x: string]: {
+                    id: string;
+                } | undefined;
             };
             ordinal: number;
         };

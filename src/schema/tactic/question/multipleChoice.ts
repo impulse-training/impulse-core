@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-import { documentReferenceSchema } from '../../utils/documentReference';
+import { documentReferenceSchema } from '../../utils/firestore';
 import { objectOf, optionalObjectOf } from '../../utils/objectOf';
 import { tacticValueBaseSchema } from '../base';
 

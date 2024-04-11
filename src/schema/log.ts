@@ -4,9 +4,9 @@ import * as yup from 'yup';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 import { commentSchema } from './comment';
 import { patternSchema } from './pattern';
-import { strategySchema } from './strategy';
 import { tacticSchema } from './tactic';
 import { optionalStringArray, requiredStringArray } from './utils/array';
+import { collectionReferenceSchema } from './utils/firestore';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
 
@@ -46,7 +46,7 @@ const baseLogSchema = yup.object().shape({
       commentsById: objectOf(commentSchema),
     })
   ),
-  strategyIds: requiredStringArray,
+  strategiesPath: collectionReferenceSchema,
   seenTacticsById: objectOf(tacticSchema),
   completedTacticIds: requiredStringArray,
   tacticLikes: optionalObjectOf(yup.boolean().required()),
@@ -77,10 +77,6 @@ const impulseLogSchema = baseLogSchema.concat(
     pressCount: yup.number().notRequired(),
     isDisplayable: yup.boolean().oneOf([true]).required(),
     buttonPressSecondsSinceEpoch: yup.number().notRequired(),
-    // In addition to the tacticIds field, which is the set of tactics for the currently-selected
-    // pattern, we also store the entire "gameplan" on impulse log documents, which is copied from
-    // the user's gameplan document at the time.
-    strategiesByPatternId: objectOf(strategySchema),
     outcome: yup.mixed<Outcome>().oneOf(['success', 'setback']),
     patternId: yup.string().required(),
     patternsById: objectOf(patternSchema),
@@ -115,17 +111,6 @@ const timeLogSchema = baseLogSchema.concat(
   })
 );
 
-export type MotionLogValue = WithTypes<typeof motionLogSchema>;
-export function logIsMotionLog(log: LogValue): log is MotionLogValue {
-  return log.type === 'motion';
-}
-const motionLogSchema = baseLogSchema.concat(
-  yup.object().shape({
-    type: yup.mixed<'motion'>().oneOf(['motion']).required(),
-    isDisplayable: yup.boolean().oneOf([false]).required(),
-  })
-);
-
 export const logSchema = yup.lazy(value => {
   switch (value.type) {
     case 'impulse':
@@ -134,15 +119,9 @@ export const logSchema = yup.lazy(value => {
       return locationLogSchema;
     case 'time':
       return timeLogSchema;
-    case 'motion':
-      return motionLogSchema;
     default:
       throw new yup.ValidationError(`Unknown type: ${value.type}`);
   }
 });
 
-export type LogValue =
-  | ImpulseLogValue
-  | LocationLogValue
-  | TimeLogValue
-  | MotionLogValue;
+export type LogValue = ImpulseLogValue | LocationLogValue | TimeLogValue;

@@ -13,10 +13,10 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
     } | null | undefined;
     setbackThreshold?: import("yup").Maybe<number | undefined>;
     supportGroupIds?: string[] | undefined;
-    notification?: import("yup").Maybe<{} | undefined> | {
+    notification?: {
         title: string;
         body: string;
-    };
+    } | import("yup").Maybe<{} | undefined>;
     dailySetbackThreshold?: import("yup").Maybe<number | undefined>;
     issueId?: import("yup").Maybe<string | undefined>;
     parentIssueIds?: string[] | undefined;
@@ -91,7 +91,9 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
             [x: string]: {
                 text: string;
                 strategies: {
-                    [x: string]: {} | undefined;
+                    [x: string]: {
+                        id: string;
+                    } | undefined;
                 };
                 ordinal: number;
             };

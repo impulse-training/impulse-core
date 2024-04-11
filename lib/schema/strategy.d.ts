@@ -1,7 +1,7 @@
 import * as yup from 'yup';
-export declare const timeStrategySchema: yup.ObjectSchema<{
+import { WithTacticsById } from '.';
+export declare const strategySchema: yup.ObjectSchema<{
     ordinal: yup.Maybe<number | undefined>;
-    type: "time";
     name: string;
     tacticIds: string[];
     tacticsById: {
@@ -72,7 +72,9 @@ export declare const timeStrategySchema: yup.ObjectSchema<{
                 [x: string]: {
                     text: string;
                     strategies: {
-                        [x: string]: {} | undefined;
+                        [x: string]: {
+                            id: string;
+                        } | undefined;
                     };
                     ordinal: number;
                 };
@@ -477,19 +479,12 @@ export declare const timeStrategySchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    weekdays: number[];
-    hour: number;
-    minute: number;
 }, yup.AnyObject, {
     ordinal: undefined;
-    type: undefined;
     name: undefined;
     tacticIds: "";
     tacticsById: undefined;
     createdAt: undefined;
     updatedAt: undefined;
-    weekdays: "";
-    hour: undefined;
-    minute: undefined;
 }, "">;
-export type TimeStrategyValue = yup.InferType<typeof timeStrategySchema>;
+export type StrategyValue = WithTacticsById<yup.InferType<typeof strategySchema>>;
