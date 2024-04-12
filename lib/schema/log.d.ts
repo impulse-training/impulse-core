@@ -81,7 +81,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
         };
     } | null | undefined;
     strategiesPath: {};
-    seenTacticsById: {
+    tacticsById: {
         [x: string]: {
             createdAt?: {
                 seconds: number;
@@ -160,6 +160,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     strategies: {};
                     ordinal: number;
+                    strategiesPath: string;
                 };
             } | null | undefined;
             type: "question-multiple-choice";
@@ -590,7 +591,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
     commentsById: {};
     commentsByTacticId: undefined;
     strategiesPath: undefined;
-    seenTacticsById: undefined;
+    tacticsById: undefined;
     completedTacticIds: "";
     tacticLikes: undefined;
     tacticData: undefined;
@@ -670,7 +671,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         };
     } | null | undefined;
     strategiesPath: {};
-    seenTacticsById: {
+    tacticsById: {
         [x: string]: {
             createdAt?: {
                 seconds: number;
@@ -749,6 +750,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     strategies: {};
                     ordinal: number;
+                    strategiesPath: string;
                 };
             } | null | undefined;
             type: "question-multiple-choice";
@@ -1264,6 +1266,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         text: string;
                         strategies: {};
                         ordinal: number;
+                        strategiesPath: string;
                     };
                 } | null | undefined;
                 type: "question-multiple-choice";
@@ -1368,7 +1371,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     commentsById: {};
     commentsByTacticId: undefined;
     strategiesPath: undefined;
-    seenTacticsById: undefined;
+    tacticsById: undefined;
     completedTacticIds: "";
     tacticLikes: undefined;
     tacticData: undefined;
@@ -1453,7 +1456,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
         };
     } | null | undefined;
     strategiesPath: {};
-    seenTacticsById: {
+    tacticsById: {
         [x: string]: {
             createdAt?: {
                 seconds: number;
@@ -1532,6 +1535,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     strategies: {};
                     ordinal: number;
+                    strategiesPath: string;
                 };
             } | null | undefined;
             type: "question-multiple-choice";
@@ -1968,7 +1972,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
     commentsById: {};
     commentsByTacticId: undefined;
     strategiesPath: undefined;
-    seenTacticsById: undefined;
+    tacticsById: undefined;
     completedTacticIds: "";
     tacticLikes: undefined;
     tacticData: undefined;
@@ -2048,7 +2052,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
         };
     } | null | undefined;
     strategiesPath: {};
-    seenTacticsById: {
+    tacticsById: {
         [x: string]: {
             createdAt?: {
                 seconds: number;
@@ -2127,6 +2131,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     strategies: {};
                     ordinal: number;
+                    strategiesPath: string;
                 };
             } | null | undefined;
             type: "question-multiple-choice";
@@ -2560,7 +2565,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
     commentsById: {};
     commentsByTacticId: undefined;
     strategiesPath: undefined;
-    seenTacticsById: undefined;
+    tacticsById: undefined;
     completedTacticIds: "";
     tacticLikes: undefined;
     tacticData: undefined;
@@ -2637,24 +2642,8 @@ export declare const logSchema: yup.Lazy<{
     debriefStrategiesPath?: {} | undefined;
     profileId: string;
     type: "impulse";
-    startTime: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    };
-    timezone: string;
-    location: {
-        latitude?: number | undefined;
-        longitude?: number | undefined;
-        altitude?: number | undefined;
-        accuracy?: number | undefined;
-        altitudeAccuracy?: number | undefined;
-        heading?: number | undefined;
-        speed?: number | undefined;
-    };
-    locationIsFetching: NonNullable<boolean | undefined>;
     strategiesPath: {};
-    seenTacticsById: {
+    tacticsById: {
         [x: string]: {
             createdAt?: {
                 seconds: number;
@@ -2733,6 +2722,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     strategies: {};
                     ordinal: number;
+                    strategiesPath: string;
                 };
             } | null | undefined;
             type: "question-multiple-choice";
@@ -3125,6 +3115,22 @@ export declare const logSchema: yup.Lazy<{
             };
         };
     };
+    startTime: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    };
+    timezone: string;
+    location: {
+        latitude?: number | undefined;
+        longitude?: number | undefined;
+        altitude?: number | undefined;
+        accuracy?: number | undefined;
+        altitudeAccuracy?: number | undefined;
+        heading?: number | undefined;
+        speed?: number | undefined;
+    };
+    locationIsFetching: NonNullable<boolean | undefined>;
     completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
     patternId: string;
@@ -3231,6 +3237,7 @@ export declare const logSchema: yup.Lazy<{
                         text: string;
                         strategies: {};
                         ordinal: number;
+                        strategiesPath: string;
                     };
                 } | null | undefined;
                 type: "question-multiple-choice";
@@ -3370,24 +3377,8 @@ export declare const logSchema: yup.Lazy<{
     sharedWithSupportGroupIds?: string[] | undefined;
     profileId: string;
     type: "location";
-    startTime: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    };
-    timezone: string;
-    location: {
-        latitude?: number | undefined;
-        longitude?: number | undefined;
-        altitude?: number | undefined;
-        accuracy?: number | undefined;
-        altitudeAccuracy?: number | undefined;
-        heading?: number | undefined;
-        speed?: number | undefined;
-    };
-    locationIsFetching: NonNullable<boolean | undefined>;
     strategiesPath: {};
-    seenTacticsById: {
+    tacticsById: {
         [x: string]: {
             createdAt?: {
                 seconds: number;
@@ -3466,6 +3457,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     strategies: {};
                     ordinal: number;
+                    strategiesPath: string;
                 };
             } | null | undefined;
             type: "question-multiple-choice";
@@ -3858,6 +3850,22 @@ export declare const logSchema: yup.Lazy<{
             };
         };
     };
+    startTime: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    };
+    timezone: string;
+    location: {
+        latitude?: number | undefined;
+        longitude?: number | undefined;
+        altitude?: number | undefined;
+        accuracy?: number | undefined;
+        altitudeAccuracy?: number | undefined;
+        heading?: number | undefined;
+        speed?: number | undefined;
+    };
+    locationIsFetching: NonNullable<boolean | undefined>;
     completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
     locationId: string;
@@ -3926,24 +3934,8 @@ export declare const logSchema: yup.Lazy<{
     sharedWithSupportGroupIds?: string[] | undefined;
     profileId: string;
     type: "time";
-    startTime: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    };
-    timezone: string;
-    location: {
-        latitude?: number | undefined;
-        longitude?: number | undefined;
-        altitude?: number | undefined;
-        accuracy?: number | undefined;
-        altitudeAccuracy?: number | undefined;
-        heading?: number | undefined;
-        speed?: number | undefined;
-    };
-    locationIsFetching: NonNullable<boolean | undefined>;
     strategiesPath: {};
-    seenTacticsById: {
+    tacticsById: {
         [x: string]: {
             createdAt?: {
                 seconds: number;
@@ -4022,6 +4014,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     strategies: {};
                     ordinal: number;
+                    strategiesPath: string;
                 };
             } | null | undefined;
             type: "question-multiple-choice";
@@ -4414,6 +4407,22 @@ export declare const logSchema: yup.Lazy<{
             };
         };
     };
+    startTime: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    };
+    timezone: string;
+    location: {
+        latitude?: number | undefined;
+        longitude?: number | undefined;
+        altitude?: number | undefined;
+        accuracy?: number | undefined;
+        altitudeAccuracy?: number | undefined;
+        heading?: number | undefined;
+        speed?: number | undefined;
+    };
+    locationIsFetching: NonNullable<boolean | undefined>;
     completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
 }, yup.AnyObject, any>;

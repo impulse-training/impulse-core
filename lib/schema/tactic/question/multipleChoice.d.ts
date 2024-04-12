@@ -47,6 +47,7 @@ export declare const questionMultipleChoiceTacticSchema: yup.ObjectSchema<{
             text: string;
             strategies: {};
             ordinal: number;
+            strategiesPath: string;
         };
     } | null | undefined;
 }, yup.AnyObject, {

@@ -102,6 +102,7 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                 text: string;
                 strategies: {};
                 ordinal: number;
+                strategiesPath: string;
             };
         } | null | undefined;
         type: "question-multiple-choice";

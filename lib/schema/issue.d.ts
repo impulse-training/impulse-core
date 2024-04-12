@@ -91,6 +91,7 @@ export declare const issueSchema: yup.ObjectSchema<{
                 text: string;
                 strategies: {};
                 ordinal: number;
+                strategiesPath: string;
             };
         } | null | undefined;
         type: "question-multiple-choice";

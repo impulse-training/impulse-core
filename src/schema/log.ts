@@ -47,7 +47,9 @@ const baseLogSchema = yup.object().shape({
     })
   ),
   strategiesPath: collectionReferenceSchema.required(),
-  seenTacticsById: objectOf(tacticSchema),
+
+  // These represent seen tactics
+  tacticsById: objectOf(tacticSchema),
   completedTacticIds: requiredStringArray,
   tacticLikes: optionalObjectOf(yup.boolean().required()),
   tacticData: optionalObjectOf(tacticDataSchema),

@@ -97,6 +97,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
                 text: string;
                 strategies: {};
                 ordinal: number;
+                strategiesPath: string;
             };
         } | null | undefined;
         type: "question-multiple-choice";
