@@ -25,8 +25,8 @@ export declare class Log {
         issueId?: import("yup").Maybe<string | undefined>;
         parentIssueIds?: string[] | undefined;
         sendWeeklyReports?: import("yup").Maybe<boolean | undefined>;
-        profileId: string;
         ordinal: number;
+        profileId: string;
         name: string;
         measureTactic: {
             createdAt?: {
@@ -93,12 +93,18 @@ export declare class Log {
             isSuggested?: boolean | undefined;
             choicesById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
                     text: string;
-                    strategies: {
-                        [x: string]: {
-                            id: string;
-                        } | undefined;
-                    };
+                    strategies: {};
                     ordinal: number;
                 };
             } | null | undefined;

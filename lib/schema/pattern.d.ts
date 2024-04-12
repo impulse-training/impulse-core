@@ -83,12 +83,18 @@ export declare const patternSchema: yup.ObjectSchema<{
         isSuggested?: boolean | undefined;
         choicesById?: {
             [x: string]: {
+                createdAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
                 text: string;
-                strategies: {
-                    [x: string]: {
-                        id: string;
-                    } | undefined;
-                };
+                strategies: {};
                 ordinal: number;
             };
         } | null | undefined;

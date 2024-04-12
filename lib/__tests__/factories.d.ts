@@ -11,9 +11,9 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        text?: string | undefined;
         tacticId?: string | null | undefined;
         tacticName?: string | null | undefined;
-        text?: string | undefined;
         recording?: {
             waveform?: string | null | undefined;
             localFilePath: string;
@@ -27,7 +27,7 @@ export declare const factories: {
         } | undefined;
         profileId: string;
         authorName: string;
-    }, "profileId" | "authorName" | ("createdAt" | "updatedAt" | "tacticId" | "tacticName" | "text" | "recording" | "isEdited" | "avatar")>;
+    }, "profileId" | "authorName" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "tacticName" | "recording" | "isEdited" | "avatar")>;
     impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategiesPath" | "seenTacticsById" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "setAsActiveImpulse" | "pressCount" | "isDisplayable" | "outcome" | "patternId" | "patternsById" | "debriefReminderSentAt" | "debriefedAt" | "debriefStrategiesPath">;
     timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategiesPath" | "seenTacticsById" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable">;
     locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategiesPath" | "seenTacticsById" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "locationId" | "locationName" | "locationMode">;
@@ -164,12 +164,18 @@ export declare const factories: {
             isSuggested?: boolean | undefined;
             choicesById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
                     text: string;
-                    strategies: {
-                        [x: string]: {
-                            id: string;
-                        } | undefined;
-                    };
+                    strategies: {};
                     ordinal: number;
                 };
             } | null | undefined;
@@ -309,8 +315,8 @@ export declare const factories: {
         issueId?: import("yup").Maybe<string | undefined>;
         parentIssueIds?: string[] | undefined;
         sendWeeklyReports?: import("yup").Maybe<boolean | undefined>;
-        profileId: string;
         ordinal: number;
+        profileId: string;
         name: string;
         measureTactic: {
             createdAt?: {
@@ -377,12 +383,18 @@ export declare const factories: {
             isSuggested?: boolean | undefined;
             choicesById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
                     text: string;
-                    strategies: {
-                        [x: string]: {
-                            id: string;
-                        } | undefined;
-                    };
+                    strategies: {};
                     ordinal: number;
                 };
             } | null | undefined;
@@ -458,7 +470,7 @@ export declare const factories: {
             title: string;
             backgroundColor: string;
         };
-    }, "profileId" | "ordinal" | "name" | "measureTactic" | ("createdAt" | "updatedAt" | "setbackThreshold" | "supportGroupIds" | "notification" | "dailySetbackThreshold" | "issueId" | "parentIssueIds" | "sendWeeklyReports")>;
+    }, "ordinal" | "profileId" | "name" | "measureTactic" | ("createdAt" | "updatedAt" | "setbackThreshold" | "supportGroupIds" | "notification" | "dailySetbackThreshold" | "issueId" | "parentIssueIds" | "sendWeeklyReports")>;
     tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "sourceId" | "title" | "subtitle" | "description" | "image" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
     questionTimeTacticFactory: import("factory.ts").Factory<{
         createdAt?: {

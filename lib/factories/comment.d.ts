@@ -11,9 +11,9 @@ export declare const makeCommentFactory: (TimestampKlass: typeof TimestampLike) 
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    text?: string | undefined;
     tacticId?: string | null | undefined;
     tacticName?: string | null | undefined;
-    text?: string | undefined;
     recording?: {
         waveform?: string | null | undefined;
         localFilePath: string;
@@ -27,4 +27,4 @@ export declare const makeCommentFactory: (TimestampKlass: typeof TimestampLike) 
     } | undefined;
     profileId: string;
     authorName: string;
-}, "profileId" | "authorName" | ("createdAt" | "updatedAt" | "tacticId" | "tacticName" | "text" | "recording" | "isEdited" | "avatar")>;
+}, "profileId" | "authorName" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "tacticName" | "recording" | "isEdited" | "avatar")>;

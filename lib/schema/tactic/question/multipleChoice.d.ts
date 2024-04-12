@@ -1,17 +1,4 @@
 import * as yup from 'yup';
-export declare const choiceSchema: yup.ObjectSchema<{
-    text: string;
-    strategies: {
-        [x: string]: {
-            id: string;
-        } | undefined;
-    };
-    ordinal: number;
-}, yup.AnyObject, {
-    text: undefined;
-    strategies: undefined;
-    ordinal: undefined;
-}, "">;
 export declare const questionMultipleChoiceTacticSchema: yup.ObjectSchema<{
     type: "question-multiple-choice";
     profileId: string | null | undefined;
@@ -47,12 +34,18 @@ export declare const questionMultipleChoiceTacticSchema: yup.ObjectSchema<{
     isSuggested: boolean | undefined;
     choicesById: {
         [x: string]: {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
             text: string;
-            strategies: {
-                [x: string]: {
-                    id: string;
-                } | undefined;
-            };
+            strategies: {};
             ordinal: number;
         };
     } | null | undefined;

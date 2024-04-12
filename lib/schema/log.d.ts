@@ -59,9 +59,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    text?: string | undefined;
                     tacticId?: string | null | undefined;
                     tacticName?: string | null | undefined;
-                    text?: string | undefined;
                     recording?: {
                         waveform?: string | null | undefined;
                         localFilePath: string;
@@ -147,12 +147,18 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isSuggested?: boolean | undefined;
             choicesById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
                     text: string;
-                    strategies: {
-                        [x: string]: {
-                            id: string;
-                        } | undefined;
-                    };
+                    strategies: {};
                     ordinal: number;
                 };
             } | null | undefined;
@@ -642,9 +648,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    text?: string | undefined;
                     tacticId?: string | null | undefined;
                     tacticName?: string | null | undefined;
-                    text?: string | undefined;
                     recording?: {
                         waveform?: string | null | undefined;
                         localFilePath: string;
@@ -730,12 +736,18 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isSuggested?: boolean | undefined;
             choicesById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
                     text: string;
-                    strategies: {
-                        [x: string]: {
-                            id: string;
-                        } | undefined;
-                    };
+                    strategies: {};
                     ordinal: number;
                 };
             } | null | undefined;
@@ -1171,8 +1183,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             issueId?: yup.Maybe<string | undefined>;
             parentIssueIds?: string[] | undefined;
             sendWeeklyReports?: yup.Maybe<boolean | undefined>;
-            profileId: string;
             ordinal: number;
+            profileId: string;
             name: string;
             measureTactic: {
                 createdAt?: {
@@ -1239,12 +1251,18 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 isSuggested?: boolean | undefined;
                 choicesById?: {
                     [x: string]: {
+                        createdAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
                         text: string;
-                        strategies: {
-                            [x: string]: {
-                                id: string;
-                            } | undefined;
-                        };
+                        strategies: {};
                         ordinal: number;
                     };
                 } | null | undefined;
@@ -1413,9 +1431,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    text?: string | undefined;
                     tacticId?: string | null | undefined;
                     tacticName?: string | null | undefined;
-                    text?: string | undefined;
                     recording?: {
                         waveform?: string | null | undefined;
                         localFilePath: string;
@@ -1501,12 +1519,18 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isSuggested?: boolean | undefined;
             choicesById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
                     text: string;
-                    strategies: {
-                        [x: string]: {
-                            id: string;
-                        } | undefined;
-                    };
+                    strategies: {};
                     ordinal: number;
                 };
             } | null | undefined;
@@ -2002,9 +2026,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    text?: string | undefined;
                     tacticId?: string | null | undefined;
                     tacticName?: string | null | undefined;
-                    text?: string | undefined;
                     recording?: {
                         waveform?: string | null | undefined;
                         localFilePath: string;
@@ -2090,12 +2114,18 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isSuggested?: boolean | undefined;
             choicesById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
                     text: string;
-                    strategies: {
-                        [x: string]: {
-                            id: string;
-                        } | undefined;
-                    };
+                    strategies: {};
                     ordinal: number;
                 };
             } | null | undefined;
@@ -2566,9 +2596,9 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    text?: string | undefined;
                     tacticId?: string | null | undefined;
                     tacticName?: string | null | undefined;
-                    text?: string | undefined;
                     recording?: {
                         waveform?: string | null | undefined;
                         localFilePath: string;
@@ -2690,12 +2720,18 @@ export declare const logSchema: yup.Lazy<{
             isSuggested?: boolean | undefined;
             choicesById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
                     text: string;
-                    strategies: {
-                        [x: string]: {
-                            id: string;
-                        } | undefined;
-                    };
+                    strategies: {};
                     ordinal: number;
                 };
             } | null | undefined;
@@ -3114,8 +3150,8 @@ export declare const logSchema: yup.Lazy<{
             issueId?: yup.Maybe<string | undefined>;
             parentIssueIds?: string[] | undefined;
             sendWeeklyReports?: yup.Maybe<boolean | undefined>;
-            profileId: string;
             ordinal: number;
+            profileId: string;
             name: string;
             measureTactic: {
                 createdAt?: {
@@ -3182,12 +3218,18 @@ export declare const logSchema: yup.Lazy<{
                 isSuggested?: boolean | undefined;
                 choicesById?: {
                     [x: string]: {
+                        createdAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
                         text: string;
-                        strategies: {
-                            [x: string]: {
-                                id: string;
-                            } | undefined;
-                        };
+                        strategies: {};
                         ordinal: number;
                     };
                 } | null | undefined;
@@ -3293,9 +3335,9 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    text?: string | undefined;
                     tacticId?: string | null | undefined;
                     tacticName?: string | null | undefined;
-                    text?: string | undefined;
                     recording?: {
                         waveform?: string | null | undefined;
                         localFilePath: string;
@@ -3411,12 +3453,18 @@ export declare const logSchema: yup.Lazy<{
             isSuggested?: boolean | undefined;
             choicesById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
                     text: string;
-                    strategies: {
-                        [x: string]: {
-                            id: string;
-                        } | undefined;
-                    };
+                    strategies: {};
                     ordinal: number;
                 };
             } | null | undefined;
@@ -3843,9 +3891,9 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    text?: string | undefined;
                     tacticId?: string | null | undefined;
                     tacticName?: string | null | undefined;
-                    text?: string | undefined;
                     recording?: {
                         waveform?: string | null | undefined;
                         localFilePath: string;
@@ -3961,12 +4009,18 @@ export declare const logSchema: yup.Lazy<{
             isSuggested?: boolean | undefined;
             choicesById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
                     text: string;
-                    strategies: {
-                        [x: string]: {
-                            id: string;
-                        } | undefined;
-                    };
+                    strategies: {};
                     ordinal: number;
                 };
             } | null | undefined;
