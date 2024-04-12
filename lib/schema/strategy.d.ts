@@ -476,6 +476,7 @@ export declare const strategySchema: yup.ObjectSchema<{
             };
         };
     };
+    profileId: string | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -491,6 +492,7 @@ export declare const strategySchema: yup.ObjectSchema<{
     name: undefined;
     tacticIds: "";
     tacticsById: undefined;
+    profileId: undefined;
     createdAt: undefined;
     updatedAt: undefined;
 }, "">;

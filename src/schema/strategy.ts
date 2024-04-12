@@ -9,6 +9,7 @@ export const strategySchema = yup.object({
   name: yup.string().required(),
   tacticIds: requiredStringArray,
   tacticsById: objectOf(tacticSchema),
+  profileId: yup.string(),
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
 });
