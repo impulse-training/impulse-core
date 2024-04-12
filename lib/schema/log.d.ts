@@ -80,7 +80,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
             tacticTitle: string;
         };
     } | null | undefined;
-    strategiesPath: {} | undefined;
+    strategiesPath: {};
     seenTacticsById: {
         [x: string]: {
             createdAt?: {
@@ -145,7 +145,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            choices?: {
+            choicesById?: {
                 [x: string]: {
                     text: string;
                     strategies: {
@@ -663,7 +663,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             tacticTitle: string;
         };
     } | null | undefined;
-    strategiesPath: {} | undefined;
+    strategiesPath: {};
     seenTacticsById: {
         [x: string]: {
             createdAt?: {
@@ -728,7 +728,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            choices?: {
+            choicesById?: {
                 [x: string]: {
                     text: string;
                     strategies: {
@@ -1147,7 +1147,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     setAsActiveImpulse: yup.Maybe<boolean | undefined>;
     pressCount: yup.Maybe<number | undefined>;
     isDisplayable: NonNullable<boolean | undefined>;
-    buttonPressSecondsSinceEpoch: yup.Maybe<number | undefined>;
     outcome: Outcome | undefined;
     patternId: string;
     patternsById: {
@@ -1238,7 +1237,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                choices?: {
+                choicesById?: {
                     [x: string]: {
                         text: string;
                         strategies: {
@@ -1323,9 +1322,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             };
         };
     };
-    debriefNotes: yup.Maybe<string | undefined>;
     debriefReminderSentAt: yup.Maybe<{} | undefined>;
     debriefedAt: yup.Maybe<{} | undefined>;
+    debriefStrategiesPath: {} | undefined;
 }, yup.AnyObject, {
     profileId: undefined;
     createdAt: undefined;
@@ -1360,13 +1359,12 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     setAsActiveImpulse: undefined;
     pressCount: undefined;
     isDisplayable: undefined;
-    buttonPressSecondsSinceEpoch: undefined;
     outcome: undefined;
     patternId: undefined;
     patternsById: undefined;
-    debriefNotes: undefined;
     debriefReminderSentAt: undefined;
     debriefedAt: undefined;
+    debriefStrategiesPath: undefined;
 }, "">;
 export type LocationLogValue = WithTypes<typeof locationLogSchema>;
 export declare function logIsLocationLog(log: LogValue): log is LocationLogValue;
@@ -1436,7 +1434,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
             tacticTitle: string;
         };
     } | null | undefined;
-    strategiesPath: {} | undefined;
+    strategiesPath: {};
     seenTacticsById: {
         [x: string]: {
             createdAt?: {
@@ -1501,7 +1499,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            choices?: {
+            choicesById?: {
                 [x: string]: {
                     text: string;
                     strategies: {
@@ -2025,7 +2023,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
             tacticTitle: string;
         };
     } | null | undefined;
-    strategiesPath: {} | undefined;
+    strategiesPath: {};
     seenTacticsById: {
         [x: string]: {
             createdAt?: {
@@ -2090,7 +2088,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            choices?: {
+            choicesById?: {
                 [x: string]: {
                     text: string;
                     strategies: {
@@ -2589,7 +2587,6 @@ export declare const logSchema: yup.Lazy<{
             tacticTitle: string;
         };
     } | null | undefined;
-    strategiesPath?: {} | undefined;
     tacticLikes?: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
@@ -2604,11 +2601,10 @@ export declare const logSchema: yup.Lazy<{
     sharedWithSupportGroupIds?: string[] | undefined;
     setAsActiveImpulse?: yup.Maybe<boolean | undefined>;
     pressCount?: yup.Maybe<number | undefined>;
-    buttonPressSecondsSinceEpoch?: yup.Maybe<number | undefined>;
     outcome?: Outcome | undefined;
-    debriefNotes?: yup.Maybe<string | undefined>;
     debriefReminderSentAt?: yup.Maybe<{} | undefined>;
     debriefedAt?: yup.Maybe<{} | undefined>;
+    debriefStrategiesPath?: {} | undefined;
     profileId: string;
     type: "impulse";
     startTime: {
@@ -2627,6 +2623,7 @@ export declare const logSchema: yup.Lazy<{
         speed?: number | undefined;
     };
     locationIsFetching: NonNullable<boolean | undefined>;
+    strategiesPath: {};
     seenTacticsById: {
         [x: string]: {
             createdAt?: {
@@ -2691,7 +2688,7 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            choices?: {
+            choicesById?: {
                 [x: string]: {
                     text: string;
                     strategies: {
@@ -3183,7 +3180,7 @@ export declare const logSchema: yup.Lazy<{
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                choices?: {
+                choicesById?: {
                     [x: string]: {
                         text: string;
                         strategies: {
@@ -3317,7 +3314,6 @@ export declare const logSchema: yup.Lazy<{
             tacticTitle: string;
         };
     } | null | undefined;
-    strategiesPath?: {} | undefined;
     tacticLikes?: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
@@ -3348,6 +3344,7 @@ export declare const logSchema: yup.Lazy<{
         speed?: number | undefined;
     };
     locationIsFetching: NonNullable<boolean | undefined>;
+    strategiesPath: {};
     seenTacticsById: {
         [x: string]: {
             createdAt?: {
@@ -3412,7 +3409,7 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            choices?: {
+            choicesById?: {
                 [x: string]: {
                     text: string;
                     strategies: {
@@ -3867,7 +3864,6 @@ export declare const logSchema: yup.Lazy<{
             tacticTitle: string;
         };
     } | null | undefined;
-    strategiesPath?: {} | undefined;
     tacticLikes?: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
@@ -3898,6 +3894,7 @@ export declare const logSchema: yup.Lazy<{
         speed?: number | undefined;
     };
     locationIsFetching: NonNullable<boolean | undefined>;
+    strategiesPath: {};
     seenTacticsById: {
         [x: string]: {
             createdAt?: {
@@ -3962,7 +3959,7 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            choices?: {
+            choicesById?: {
                 [x: string]: {
                     text: string;
                     strategies: {

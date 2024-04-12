@@ -12,13 +12,14 @@ export const makeImpulseLogFactory = (TimestampKlass: typeof TimestampLike) =>
     startTime: TimestampKlass.now(),
     timezone: 'America/Botota',
     isDisplayable: true,
-    debriefNotes: '',
     location: {},
     locationIsFetching: false,
     patternId: 'abc123',
     patternsById: {},
     seenTacticsById: {},
     completedTacticIds: [],
+    strategiesPath: 'patterns/abc123/strategies',
+    debriefStrategiesPath: 'patterns/abc123/debriefStrategies',
   });
 
 export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>
@@ -30,6 +31,7 @@ export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>
     startTime: TimestampKlass.now(),
     timezone: 'America/Botota',
     isDisplayable: true,
+    strategiesPath: 'routines/abc123/strategies',
     location: {},
     locationIsFetching: false,
     seenTacticsById: {},
@@ -48,6 +50,7 @@ export const makeLocationLogFactory = (TimestampKlass: typeof TimestampLike) =>
     locationId: 'abc123',
     locationMode: 'enter',
     locationName: 'Home',
+    strategiesPath: 'routines/abc123/strategies',
     location: {},
     locationIsFetching: false,
     seenTacticsById: {},

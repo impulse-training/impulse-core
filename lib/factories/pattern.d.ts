@@ -87,7 +87,7 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
         isAvailableForRecommendation?: boolean | null | undefined;
         numberOfLikes?: number | null | undefined;
         isSuggested?: boolean | undefined;
-        choices?: {
+        choicesById?: {
             [x: string]: {
                 text: string;
                 strategies: {

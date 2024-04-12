@@ -82,7 +82,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         isAvailableForRecommendation?: boolean | null | undefined;
         numberOfLikes?: number | null | undefined;
         isSuggested?: boolean | undefined;
-        choices?: {
+        choicesById?: {
             [x: string]: {
                 text: string;
                 strategies: {

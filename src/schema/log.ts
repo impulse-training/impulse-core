@@ -46,7 +46,7 @@ const baseLogSchema = yup.object().shape({
       commentsById: objectOf(commentSchema),
     })
   ),
-  strategiesPath: collectionReferenceSchema,
+  strategiesPath: collectionReferenceSchema.required(),
   seenTacticsById: objectOf(tacticSchema),
   completedTacticIds: requiredStringArray,
   tacticLikes: optionalObjectOf(yup.boolean().required()),
@@ -76,13 +76,12 @@ const impulseLogSchema = baseLogSchema.concat(
     setAsActiveImpulse: yup.boolean().notRequired(),
     pressCount: yup.number().notRequired(),
     isDisplayable: yup.boolean().oneOf([true]).required(),
-    buttonPressSecondsSinceEpoch: yup.number().notRequired(),
     outcome: yup.mixed<Outcome>().oneOf(['success', 'setback']),
     patternId: yup.string().required(),
     patternsById: objectOf(patternSchema),
-    debriefNotes: yup.string().notRequired(),
     debriefReminderSentAt: yup.mixed().notRequired(),
     debriefedAt: yup.mixed().notRequired(),
+    debriefStrategiesPath: collectionReferenceSchema,
   })
 );
 

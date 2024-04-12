@@ -12,7 +12,7 @@ export const choiceSchema = yup.object({
 export const questionMultipleChoiceTacticSchema = tacticValueBaseSchema(
   'question-multiple-choice'
 ).shape({
-  choices: optionalObjectOf(choiceSchema.required()),
+  choicesById: optionalObjectOf(choiceSchema.required()),
 });
 
 export type QuestionMultipleChoiceTacticValue = yup.InferType<

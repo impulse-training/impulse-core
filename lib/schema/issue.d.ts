@@ -76,7 +76,7 @@ export declare const issueSchema: yup.ObjectSchema<{
         isAvailableForRecommendation?: boolean | null | undefined;
         numberOfLikes?: number | null | undefined;
         isSuggested?: boolean | undefined;
-        choices?: {
+        choicesById?: {
             [x: string]: {
                 text: string;
                 strategies: {
