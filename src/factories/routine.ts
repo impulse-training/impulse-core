@@ -5,6 +5,7 @@ import { TimestampLike } from '../utils';
 export const makeTimeRoutineFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<TimeRoutineValue>({
     name: 'Cigarettes',
+    profileId: 'abc123',
     type: 'time',
     hour: 9,
     minute: 0,

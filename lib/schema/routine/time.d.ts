@@ -1,6 +1,7 @@
 import * as yup from 'yup';
 export declare const timeRoutineSchema: yup.ObjectSchema<{
     type: "time";
+    profileId: string;
     name: string;
     createdAt: {
         seconds: number;
@@ -17,6 +18,7 @@ export declare const timeRoutineSchema: yup.ObjectSchema<{
     minute: number;
 }, yup.AnyObject, {
     type: undefined;
+    profileId: undefined;
     name: undefined;
     createdAt: undefined;
     updatedAt: undefined;

@@ -1,6 +1,7 @@
 import * as yup from 'yup';
 export declare const locationRoutineSchema: yup.ObjectSchema<{
     type: "location";
+    profileId: string;
     name: string;
     createdAt: {
         seconds: number;
@@ -16,6 +17,7 @@ export declare const locationRoutineSchema: yup.ObjectSchema<{
     mode: NonNullable<"enter" | "exit" | undefined>;
 }, yup.AnyObject, {
     type: undefined;
+    profileId: undefined;
     name: undefined;
     createdAt: undefined;
     updatedAt: undefined;

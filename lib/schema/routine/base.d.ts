@@ -3,6 +3,7 @@ import { routineSchema } from '.';
 import { WithTacticsById } from '../tactic';
 export declare function routineBaseSchema<K extends string>(type: K): yup.ObjectSchema<{
     type: yup.Defined<K>;
+    profileId: string;
     name: string;
     createdAt: {
         seconds: number;
@@ -16,6 +17,7 @@ export declare function routineBaseSchema<K extends string>(type: K): yup.Object
     } | null | undefined;
 }, yup.AnyObject, {
     type: undefined;
+    profileId: undefined;
     name: undefined;
     createdAt: undefined;
     updatedAt: undefined;
