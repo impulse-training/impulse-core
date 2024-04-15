@@ -74,7 +74,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         uri?: yup.Maybe<string | undefined>;
                     } | undefined;
                     profileId: string;
-                    authorName: string;
                 };
             };
             tacticTitle: string;
@@ -697,7 +696,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         uri?: yup.Maybe<string | undefined>;
                     } | undefined;
                     profileId: string;
-                    authorName: string;
                 };
             };
             tacticTitle: string;
@@ -1548,7 +1546,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         uri?: yup.Maybe<string | undefined>;
                     } | undefined;
                     profileId: string;
-                    authorName: string;
                 };
             };
             tacticTitle: string;
@@ -2177,7 +2174,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         uri?: yup.Maybe<string | undefined>;
                     } | undefined;
                     profileId: string;
-                    authorName: string;
                 };
             };
             tacticTitle: string;
@@ -2781,7 +2777,6 @@ export declare const logSchema: yup.Lazy<{
                         uri?: yup.Maybe<string | undefined>;
                     } | undefined;
                     profileId: string;
-                    authorName: string;
                 };
             };
             tacticTitle: string;
@@ -3588,7 +3583,6 @@ export declare const logSchema: yup.Lazy<{
                         uri?: yup.Maybe<string | undefined>;
                     } | undefined;
                     profileId: string;
-                    authorName: string;
                 };
             };
             tacticTitle: string;
@@ -4178,7 +4172,6 @@ export declare const logSchema: yup.Lazy<{
                         uri?: yup.Maybe<string | undefined>;
                     } | undefined;
                     profileId: string;
-                    authorName: string;
                 };
             };
             tacticTitle: string;

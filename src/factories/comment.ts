@@ -5,8 +5,6 @@ import { TimestampLike } from '../utils/firestore/TimestampLike';
 export const makeCommentFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<CommentValue>({
     profileId: 'abc123',
-
-    authorName: 'Moopy',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     text: 'This is a comment',
