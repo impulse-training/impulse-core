@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 export declare const questionNoResponseSchema: yup.ObjectSchema<{
-    type: "question-no-response";
+    type: "question";
     profileId: string | null | undefined;
     sourceId: string | undefined;
     createdAt: {

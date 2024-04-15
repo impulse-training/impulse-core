@@ -213,7 +213,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            type: "question-no-response";
+            type: "question";
             title: string;
             backgroundColor: string;
         } | {
@@ -466,7 +466,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            type: "question-no-response";
+            type: "question";
             title: string;
             backgroundColor: string;
         } | {

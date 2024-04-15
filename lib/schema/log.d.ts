@@ -195,7 +195,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            type: "question-no-response";
+            type: "question";
             title: string;
             backgroundColor: string;
         } | {
@@ -817,7 +817,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            type: "question-no-response";
+            type: "question";
             title: string;
             backgroundColor: string;
         } | {
@@ -1366,7 +1366,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                type: "question-no-response";
+                type: "question";
                 title: string;
                 backgroundColor: string;
             } | {
@@ -1667,7 +1667,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            type: "question-no-response";
+            type: "question";
             title: string;
             backgroundColor: string;
         } | {
@@ -2295,7 +2295,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            type: "question-no-response";
+            type: "question";
             title: string;
             backgroundColor: string;
         } | {
@@ -2918,7 +2918,7 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            type: "question-no-response";
+            type: "question";
             title: string;
             backgroundColor: string;
         } | {
@@ -3466,7 +3466,7 @@ export declare const logSchema: yup.Lazy<{
                 isAvailableForRecommendation?: boolean | null | undefined;
                 numberOfLikes?: number | null | undefined;
                 isSuggested?: boolean | undefined;
-                type: "question-no-response";
+                type: "question";
                 title: string;
                 backgroundColor: string;
             } | {
@@ -3718,7 +3718,7 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            type: "question-no-response";
+            type: "question";
             title: string;
             backgroundColor: string;
         } | {
@@ -4307,7 +4307,7 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            type: "question-no-response";
+            type: "question";
             title: string;
             backgroundColor: string;
         } | {

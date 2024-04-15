@@ -4,11 +4,7 @@ import { BreatheTacticValue, breatheTacticSchema } from './breathe';
 import { EmotionsTacticValue, emotionsTacticSchema } from './emotions';
 import { LinkTacticValue, linkTacticSchema } from './link';
 import { PhoneTacticValue, phoneTacticSchema } from './phone';
-import {
-  QuestionTacticValue,
-  questionTacticSchema,
-  questionTacticSchemas,
-} from './question';
+import { QuestionTacticValue, questionTacticSchemas } from './question';
 import { StepsTacticValue, stepsTacticSchema } from './steps';
 import { TaskTacticValue, taskTacticSchema } from './task';
 import { UrgeSurfingTacticValue, urgeSurfingTacticSchema } from './urgeSurfing';
@@ -48,7 +44,6 @@ export const tacticSchemas: Record<
   audio: audioTacticSchema,
   video: videoTacticSchema,
   link: linkTacticSchema,
-  question: questionTacticSchema,
   ...questionTacticSchemas,
   breathe: breatheTacticSchema,
   steps: stepsTacticSchema,

@@ -26,7 +26,7 @@ export const questionTacticSchemas: Record<
   QuestionTacticValue['type'],
   yup.ObjectSchema<QuestionTacticValue>
 > = {
-  'question-no-response': questionNoResponseSchema,
+  question: questionNoResponseSchema,
   'question-time': questionTimeTacticSchema,
   'question-counter': questionCounterTacticSchema,
   'question-slider': questionSliderTacticSchema,
