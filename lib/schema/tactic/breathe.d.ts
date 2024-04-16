@@ -21,6 +21,7 @@ export declare const breatheTacticSchema: yup.ObjectSchema<{
         storagePath?: yup.Maybe<string | undefined>;
         uri?: yup.Maybe<string | undefined>;
     } | null | undefined;
+    setbackThreshold: number | null | undefined;
     choicesById: {
         [x: string]: {
             createdAt?: {
@@ -34,8 +35,8 @@ export declare const breatheTacticSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             strategiesPath?: string | undefined;
-            greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-            lessThan?: yup.Maybe<number | undefined>;
+            greaterThan?: yup.Maybe<number | undefined>;
+            lessThanOrEqualTo?: yup.Maybe<number | undefined>;
             equalTo?: yup.Maybe<string | number | undefined>;
             text: string;
             ordinal: number;
@@ -70,6 +71,7 @@ export declare const breatheTacticSchema: yup.ObjectSchema<{
         storagePath: undefined;
         uri: undefined;
     };
+    setbackThreshold: undefined;
     choicesById: undefined;
     backgroundColor: undefined;
     isTemplate: undefined;

@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-import { questionTacticSchema } from './tactic';
+import { WithTacticsById } from './tactic';
 import { optionalStringArray } from './utils/array';
 import { optionalTimestampSchema } from './utils/timestamp';
 
@@ -19,7 +19,7 @@ export const patternSchema = yup.object().shape({
         })
       : yup.mixed().notRequired()
   ),
-  measureTactic: questionTacticSchema,
+  measureTacticId: yup.string().notRequired(),
   dailySetbackThreshold: yup.number().notRequired(),
   setbackThreshold: yup.number().notRequired(),
   issueId: yup.string().notRequired(),
@@ -27,4 +27,4 @@ export const patternSchema = yup.object().shape({
   sendWeeklyReports: yup.boolean().notRequired(),
 });
 
-export type PatternValue = yup.InferType<typeof patternSchema>;
+export type PatternValue = WithTacticsById<yup.InferType<typeof patternSchema>>;

@@ -14,8 +14,8 @@ export declare const choiceSchema: yup.ObjectSchema<{
     text: string;
     strategiesPath: string | undefined;
     ordinal: number;
-    greaterThanOrEqualTo: yup.Maybe<number | undefined>;
-    lessThan: yup.Maybe<number | undefined>;
+    greaterThan: yup.Maybe<number | undefined>;
+    lessThanOrEqualTo: yup.Maybe<number | undefined>;
     equalTo: yup.Maybe<string | number | undefined>;
 }, yup.AnyObject, {
     createdAt: undefined;
@@ -23,8 +23,8 @@ export declare const choiceSchema: yup.ObjectSchema<{
     text: undefined;
     strategiesPath: undefined;
     ordinal: undefined;
-    greaterThanOrEqualTo: undefined;
-    lessThan: undefined;
+    greaterThan: undefined;
+    lessThanOrEqualTo: undefined;
     equalTo: undefined;
 }, "">;
 export type ChoiceValue = yup.InferType<typeof choiceSchema>;

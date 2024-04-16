@@ -18,6 +18,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         toDate: Function;
     };
     name: string;
+    synonyms: string[];
     measureTactic: {
         createdAt?: {
             seconds: number;
@@ -38,6 +39,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
             storagePath?: import("yup").Maybe<string | undefined>;
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
+        setbackThreshold?: number | null | undefined;
         choicesById?: {
             [x: string]: {
                 createdAt?: {
@@ -51,8 +53,8 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
                     toDate: Function;
                 } | null | undefined;
                 strategiesPath?: string | undefined;
-                greaterThanOrEqualTo?: import("yup").Maybe<number | undefined>;
-                lessThan?: import("yup").Maybe<number | undefined>;
+                greaterThan?: import("yup").Maybe<number | undefined>;
+                lessThanOrEqualTo?: import("yup").Maybe<number | undefined>;
                 equalTo?: import("yup").Maybe<string | number | undefined>;
                 text: string;
                 ordinal: number;
@@ -91,6 +93,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
             storagePath?: import("yup").Maybe<string | undefined>;
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
+        setbackThreshold?: number | null | undefined;
         choicesById?: {
             [x: string]: {
                 createdAt?: {
@@ -104,8 +107,8 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
                     toDate: Function;
                 } | null | undefined;
                 strategiesPath?: string | undefined;
-                greaterThanOrEqualTo?: import("yup").Maybe<number | undefined>;
-                lessThan?: import("yup").Maybe<number | undefined>;
+                greaterThan?: import("yup").Maybe<number | undefined>;
+                lessThanOrEqualTo?: import("yup").Maybe<number | undefined>;
                 equalTo?: import("yup").Maybe<string | number | undefined>;
                 text: string;
                 ordinal: number;
@@ -144,6 +147,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
             storagePath?: import("yup").Maybe<string | undefined>;
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
+        setbackThreshold?: number | null | undefined;
         choicesById?: {
             [x: string]: {
                 createdAt?: {
@@ -157,8 +161,8 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
                     toDate: Function;
                 } | null | undefined;
                 strategiesPath?: string | undefined;
-                greaterThanOrEqualTo?: import("yup").Maybe<number | undefined>;
-                lessThan?: import("yup").Maybe<number | undefined>;
+                greaterThan?: import("yup").Maybe<number | undefined>;
+                lessThanOrEqualTo?: import("yup").Maybe<number | undefined>;
                 equalTo?: import("yup").Maybe<string | number | undefined>;
                 text: string;
                 ordinal: number;
@@ -197,6 +201,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
             storagePath?: import("yup").Maybe<string | undefined>;
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
+        setbackThreshold?: number | null | undefined;
         choicesById?: {
             [x: string]: {
                 createdAt?: {
@@ -210,8 +215,8 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
                     toDate: Function;
                 } | null | undefined;
                 strategiesPath?: string | undefined;
-                greaterThanOrEqualTo?: import("yup").Maybe<number | undefined>;
-                lessThan?: import("yup").Maybe<number | undefined>;
+                greaterThan?: import("yup").Maybe<number | undefined>;
+                lessThanOrEqualTo?: import("yup").Maybe<number | undefined>;
                 equalTo?: import("yup").Maybe<string | number | undefined>;
                 text: string;
                 ordinal: number;
@@ -252,6 +257,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
             storagePath?: import("yup").Maybe<string | undefined>;
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
+        setbackThreshold?: number | null | undefined;
         choicesById?: {
             [x: string]: {
                 createdAt?: {
@@ -265,8 +271,8 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
                     toDate: Function;
                 } | null | undefined;
                 strategiesPath?: string | undefined;
-                greaterThanOrEqualTo?: import("yup").Maybe<number | undefined>;
-                lessThan?: import("yup").Maybe<number | undefined>;
+                greaterThan?: import("yup").Maybe<number | undefined>;
+                lessThanOrEqualTo?: import("yup").Maybe<number | undefined>;
                 equalTo?: import("yup").Maybe<string | number | undefined>;
                 text: string;
                 ordinal: number;
@@ -286,7 +292,6 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         title: string;
         backgroundColor: string;
     };
-    synonyms: string[];
     parentIds: string[];
     parentNames: string[];
-}, "createdAt" | "updatedAt" | "name" | "measureTactic" | "synonyms" | "parentIds" | "parentNames" | ("path" | "setbackThreshold" | "parentId" | "strategiesCount" | "profileCount" | "isFeatured")>;
+}, "createdAt" | "updatedAt" | "name" | "synonyms" | "measureTactic" | "parentIds" | "parentNames" | ("path" | "setbackThreshold" | "parentId" | "strategiesCount" | "profileCount" | "isFeatured")>;

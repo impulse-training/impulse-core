@@ -103,6 +103,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -116,8 +117,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -156,6 +157,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -169,8 +171,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -209,6 +211,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -222,8 +225,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -262,6 +265,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -275,8 +279,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -317,6 +321,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -330,8 +335,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -370,6 +375,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -383,8 +389,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -428,6 +434,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -441,8 +448,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -485,6 +492,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -498,8 +506,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -538,6 +546,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -551,8 +560,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -591,6 +600,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -604,8 +614,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -646,6 +656,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -659,8 +670,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -700,6 +711,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -713,8 +725,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -753,6 +765,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -766,8 +779,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -806,6 +819,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -819,8 +833,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -988,6 +1002,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -1001,8 +1016,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -1041,6 +1056,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -1054,8 +1070,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -1094,6 +1110,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -1107,8 +1124,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -1147,6 +1164,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -1160,8 +1178,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -1202,6 +1220,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -1215,8 +1234,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -1255,6 +1274,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -1268,8 +1288,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -1313,6 +1333,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -1326,8 +1347,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -1370,6 +1391,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -1383,8 +1405,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -1423,6 +1445,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -1436,8 +1459,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -1476,6 +1499,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -1489,8 +1513,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -1531,6 +1555,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -1544,8 +1569,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -1585,6 +1610,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -1598,8 +1624,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -1638,6 +1664,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -1651,8 +1678,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -1691,6 +1718,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -1704,8 +1732,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -1767,287 +1795,20 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            setbackThreshold?: yup.Maybe<number | undefined>;
             supportGroupIds?: string[] | undefined;
             notification?: {
                 title: string;
                 body: string;
             } | yup.Maybe<{} | undefined>;
+            measureTacticId?: yup.Maybe<string | undefined>;
             dailySetbackThreshold?: yup.Maybe<number | undefined>;
-            setbackThreshold?: yup.Maybe<number | undefined>;
             issueId?: yup.Maybe<string | undefined>;
             parentIssueIds?: string[] | undefined;
             sendWeeklyReports?: yup.Maybe<boolean | undefined>;
             profileId: string;
             ordinal: number;
             name: string;
-            measureTactic: {
-                createdAt?: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                profileId?: string | null | undefined;
-                sourceId?: string | undefined;
-                subtitle?: yup.Maybe<string | undefined>;
-                description?: string | null | undefined;
-                image?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
-                } | null | undefined;
-                choicesById?: {
-                    [x: string]: {
-                        createdAt?: {
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        strategiesPath?: string | undefined;
-                        greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                        lessThan?: yup.Maybe<number | undefined>;
-                        equalTo?: yup.Maybe<string | number | undefined>;
-                        text: string;
-                        ordinal: number;
-                    };
-                } | null | undefined;
-                isTemplate?: boolean | null | undefined;
-                language?: string | null | undefined;
-                href?: string | null | undefined;
-                categoryIds?: (string | undefined)[] | null | undefined;
-                isShared?: boolean | null | undefined;
-                isResponseRequired?: boolean | null | undefined;
-                timerSeconds?: yup.Maybe<number | undefined>;
-                isAvailableForRecommendation?: boolean | null | undefined;
-                numberOfLikes?: number | null | undefined;
-                isSuggested?: boolean | undefined;
-                type: "question-counter";
-                title: string;
-                backgroundColor: string;
-            } | {
-                createdAt?: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                profileId?: string | null | undefined;
-                sourceId?: string | undefined;
-                subtitle?: yup.Maybe<string | undefined>;
-                description?: string | null | undefined;
-                image?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
-                } | null | undefined;
-                choicesById?: {
-                    [x: string]: {
-                        createdAt?: {
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        strategiesPath?: string | undefined;
-                        greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                        lessThan?: yup.Maybe<number | undefined>;
-                        equalTo?: yup.Maybe<string | number | undefined>;
-                        text: string;
-                        ordinal: number;
-                    };
-                } | null | undefined;
-                isTemplate?: boolean | null | undefined;
-                language?: string | null | undefined;
-                href?: string | null | undefined;
-                categoryIds?: (string | undefined)[] | null | undefined;
-                isShared?: boolean | null | undefined;
-                isResponseRequired?: boolean | null | undefined;
-                timerSeconds?: yup.Maybe<number | undefined>;
-                isAvailableForRecommendation?: boolean | null | undefined;
-                numberOfLikes?: number | null | undefined;
-                isSuggested?: boolean | undefined;
-                type: "question-multiple-choice";
-                title: string;
-                backgroundColor: string;
-            } | {
-                createdAt?: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                profileId?: string | null | undefined;
-                sourceId?: string | undefined;
-                subtitle?: yup.Maybe<string | undefined>;
-                description?: string | null | undefined;
-                image?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
-                } | null | undefined;
-                choicesById?: {
-                    [x: string]: {
-                        createdAt?: {
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        strategiesPath?: string | undefined;
-                        greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                        lessThan?: yup.Maybe<number | undefined>;
-                        equalTo?: yup.Maybe<string | number | undefined>;
-                        text: string;
-                        ordinal: number;
-                    };
-                } | null | undefined;
-                isTemplate?: boolean | null | undefined;
-                language?: string | null | undefined;
-                href?: string | null | undefined;
-                categoryIds?: (string | undefined)[] | null | undefined;
-                isShared?: boolean | null | undefined;
-                isResponseRequired?: boolean | null | undefined;
-                timerSeconds?: yup.Maybe<number | undefined>;
-                isAvailableForRecommendation?: boolean | null | undefined;
-                numberOfLikes?: number | null | undefined;
-                isSuggested?: boolean | undefined;
-                type: "question";
-                title: string;
-                backgroundColor: string;
-            } | {
-                createdAt?: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                profileId?: string | null | undefined;
-                sourceId?: string | undefined;
-                subtitle?: yup.Maybe<string | undefined>;
-                description?: string | null | undefined;
-                image?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
-                } | null | undefined;
-                choicesById?: {
-                    [x: string]: {
-                        createdAt?: {
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        strategiesPath?: string | undefined;
-                        greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                        lessThan?: yup.Maybe<number | undefined>;
-                        equalTo?: yup.Maybe<string | number | undefined>;
-                        text: string;
-                        ordinal: number;
-                    };
-                } | null | undefined;
-                isTemplate?: boolean | null | undefined;
-                language?: string | null | undefined;
-                href?: string | null | undefined;
-                categoryIds?: (string | undefined)[] | null | undefined;
-                isShared?: boolean | null | undefined;
-                isResponseRequired?: boolean | null | undefined;
-                timerSeconds?: yup.Maybe<number | undefined>;
-                isAvailableForRecommendation?: boolean | null | undefined;
-                numberOfLikes?: number | null | undefined;
-                isSuggested?: boolean | undefined;
-                lowEmoji?: yup.Maybe<string | undefined>;
-                highEmoji?: yup.Maybe<string | undefined>;
-                type: "question-slider";
-                title: string;
-                backgroundColor: string;
-            } | {
-                createdAt?: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                profileId?: string | null | undefined;
-                sourceId?: string | undefined;
-                subtitle?: yup.Maybe<string | undefined>;
-                description?: string | null | undefined;
-                image?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
-                } | null | undefined;
-                choicesById?: {
-                    [x: string]: {
-                        createdAt?: {
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        strategiesPath?: string | undefined;
-                        greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                        lessThan?: yup.Maybe<number | undefined>;
-                        equalTo?: yup.Maybe<string | number | undefined>;
-                        text: string;
-                        ordinal: number;
-                    };
-                } | null | undefined;
-                isTemplate?: boolean | null | undefined;
-                language?: string | null | undefined;
-                href?: string | null | undefined;
-                categoryIds?: (string | undefined)[] | null | undefined;
-                isShared?: boolean | null | undefined;
-                isResponseRequired?: boolean | null | undefined;
-                timerSeconds?: yup.Maybe<number | undefined>;
-                isAvailableForRecommendation?: boolean | null | undefined;
-                numberOfLikes?: number | null | undefined;
-                isSuggested?: boolean | undefined;
-                type: "question-time";
-                title: string;
-                backgroundColor: string;
-            };
         };
     };
     debriefReminderSentAt: yup.Maybe<{} | undefined>;
@@ -2183,6 +1944,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -2196,8 +1958,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -2236,6 +1998,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -2249,8 +2012,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -2289,6 +2052,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -2302,8 +2066,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -2342,6 +2106,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -2355,8 +2120,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -2397,6 +2162,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -2410,8 +2176,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -2450,6 +2216,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -2463,8 +2230,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -2508,6 +2275,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -2521,8 +2289,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -2565,6 +2333,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -2578,8 +2347,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -2618,6 +2387,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -2631,8 +2401,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -2671,6 +2441,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -2684,8 +2455,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -2726,6 +2497,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -2739,8 +2511,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -2780,6 +2552,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -2793,8 +2566,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -2833,6 +2606,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -2846,8 +2620,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -2886,6 +2660,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -2899,8 +2674,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -3074,6 +2849,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -3087,8 +2863,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -3127,6 +2903,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -3140,8 +2917,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -3180,6 +2957,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -3193,8 +2971,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -3233,6 +3011,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -3246,8 +3025,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -3288,6 +3067,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -3301,8 +3081,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -3341,6 +3121,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -3354,8 +3135,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -3399,6 +3180,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -3412,8 +3194,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -3456,6 +3238,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -3469,8 +3252,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -3509,6 +3292,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -3522,8 +3306,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -3562,6 +3346,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -3575,8 +3360,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -3617,6 +3402,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -3630,8 +3416,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -3671,6 +3457,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -3684,8 +3471,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -3724,6 +3511,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -3737,8 +3525,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -3777,6 +3565,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -3790,8 +3579,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -3960,6 +3749,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -3973,8 +3763,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -4013,6 +3803,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -4026,8 +3817,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -4066,6 +3857,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -4079,8 +3871,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -4119,6 +3911,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -4132,8 +3925,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -4174,6 +3967,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -4187,8 +3981,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -4227,6 +4021,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -4240,8 +4035,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -4285,6 +4080,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -4298,8 +4094,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -4342,6 +4138,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -4355,8 +4152,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -4395,6 +4192,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -4408,8 +4206,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -4448,6 +4246,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -4461,8 +4260,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -4503,6 +4302,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -4516,8 +4316,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -4557,6 +4357,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -4570,8 +4371,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -4610,6 +4411,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -4623,8 +4425,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -4663,6 +4465,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -4676,8 +4479,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -4737,287 +4540,20 @@ export declare const logSchema: yup.Lazy<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            setbackThreshold?: yup.Maybe<number | undefined>;
             supportGroupIds?: string[] | undefined;
             notification?: {
                 title: string;
                 body: string;
             } | yup.Maybe<{} | undefined>;
+            measureTacticId?: yup.Maybe<string | undefined>;
             dailySetbackThreshold?: yup.Maybe<number | undefined>;
-            setbackThreshold?: yup.Maybe<number | undefined>;
             issueId?: yup.Maybe<string | undefined>;
             parentIssueIds?: string[] | undefined;
             sendWeeklyReports?: yup.Maybe<boolean | undefined>;
             profileId: string;
             ordinal: number;
             name: string;
-            measureTactic: {
-                createdAt?: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                profileId?: string | null | undefined;
-                sourceId?: string | undefined;
-                subtitle?: yup.Maybe<string | undefined>;
-                description?: string | null | undefined;
-                image?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
-                } | null | undefined;
-                choicesById?: {
-                    [x: string]: {
-                        createdAt?: {
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        strategiesPath?: string | undefined;
-                        greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                        lessThan?: yup.Maybe<number | undefined>;
-                        equalTo?: yup.Maybe<string | number | undefined>;
-                        text: string;
-                        ordinal: number;
-                    };
-                } | null | undefined;
-                isTemplate?: boolean | null | undefined;
-                language?: string | null | undefined;
-                href?: string | null | undefined;
-                categoryIds?: (string | undefined)[] | null | undefined;
-                isShared?: boolean | null | undefined;
-                isResponseRequired?: boolean | null | undefined;
-                timerSeconds?: yup.Maybe<number | undefined>;
-                isAvailableForRecommendation?: boolean | null | undefined;
-                numberOfLikes?: number | null | undefined;
-                isSuggested?: boolean | undefined;
-                type: "question-counter";
-                title: string;
-                backgroundColor: string;
-            } | {
-                createdAt?: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                profileId?: string | null | undefined;
-                sourceId?: string | undefined;
-                subtitle?: yup.Maybe<string | undefined>;
-                description?: string | null | undefined;
-                image?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
-                } | null | undefined;
-                choicesById?: {
-                    [x: string]: {
-                        createdAt?: {
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        strategiesPath?: string | undefined;
-                        greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                        lessThan?: yup.Maybe<number | undefined>;
-                        equalTo?: yup.Maybe<string | number | undefined>;
-                        text: string;
-                        ordinal: number;
-                    };
-                } | null | undefined;
-                isTemplate?: boolean | null | undefined;
-                language?: string | null | undefined;
-                href?: string | null | undefined;
-                categoryIds?: (string | undefined)[] | null | undefined;
-                isShared?: boolean | null | undefined;
-                isResponseRequired?: boolean | null | undefined;
-                timerSeconds?: yup.Maybe<number | undefined>;
-                isAvailableForRecommendation?: boolean | null | undefined;
-                numberOfLikes?: number | null | undefined;
-                isSuggested?: boolean | undefined;
-                type: "question-multiple-choice";
-                title: string;
-                backgroundColor: string;
-            } | {
-                createdAt?: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                profileId?: string | null | undefined;
-                sourceId?: string | undefined;
-                subtitle?: yup.Maybe<string | undefined>;
-                description?: string | null | undefined;
-                image?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
-                } | null | undefined;
-                choicesById?: {
-                    [x: string]: {
-                        createdAt?: {
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        strategiesPath?: string | undefined;
-                        greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                        lessThan?: yup.Maybe<number | undefined>;
-                        equalTo?: yup.Maybe<string | number | undefined>;
-                        text: string;
-                        ordinal: number;
-                    };
-                } | null | undefined;
-                isTemplate?: boolean | null | undefined;
-                language?: string | null | undefined;
-                href?: string | null | undefined;
-                categoryIds?: (string | undefined)[] | null | undefined;
-                isShared?: boolean | null | undefined;
-                isResponseRequired?: boolean | null | undefined;
-                timerSeconds?: yup.Maybe<number | undefined>;
-                isAvailableForRecommendation?: boolean | null | undefined;
-                numberOfLikes?: number | null | undefined;
-                isSuggested?: boolean | undefined;
-                type: "question";
-                title: string;
-                backgroundColor: string;
-            } | {
-                createdAt?: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                profileId?: string | null | undefined;
-                sourceId?: string | undefined;
-                subtitle?: yup.Maybe<string | undefined>;
-                description?: string | null | undefined;
-                image?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
-                } | null | undefined;
-                choicesById?: {
-                    [x: string]: {
-                        createdAt?: {
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        strategiesPath?: string | undefined;
-                        greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                        lessThan?: yup.Maybe<number | undefined>;
-                        equalTo?: yup.Maybe<string | number | undefined>;
-                        text: string;
-                        ordinal: number;
-                    };
-                } | null | undefined;
-                isTemplate?: boolean | null | undefined;
-                language?: string | null | undefined;
-                href?: string | null | undefined;
-                categoryIds?: (string | undefined)[] | null | undefined;
-                isShared?: boolean | null | undefined;
-                isResponseRequired?: boolean | null | undefined;
-                timerSeconds?: yup.Maybe<number | undefined>;
-                isAvailableForRecommendation?: boolean | null | undefined;
-                numberOfLikes?: number | null | undefined;
-                isSuggested?: boolean | undefined;
-                lowEmoji?: yup.Maybe<string | undefined>;
-                highEmoji?: yup.Maybe<string | undefined>;
-                type: "question-slider";
-                title: string;
-                backgroundColor: string;
-            } | {
-                createdAt?: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                profileId?: string | null | undefined;
-                sourceId?: string | undefined;
-                subtitle?: yup.Maybe<string | undefined>;
-                description?: string | null | undefined;
-                image?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
-                } | null | undefined;
-                choicesById?: {
-                    [x: string]: {
-                        createdAt?: {
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        strategiesPath?: string | undefined;
-                        greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                        lessThan?: yup.Maybe<number | undefined>;
-                        equalTo?: yup.Maybe<string | number | undefined>;
-                        text: string;
-                        ordinal: number;
-                    };
-                } | null | undefined;
-                isTemplate?: boolean | null | undefined;
-                language?: string | null | undefined;
-                href?: string | null | undefined;
-                categoryIds?: (string | undefined)[] | null | undefined;
-                isShared?: boolean | null | undefined;
-                isResponseRequired?: boolean | null | undefined;
-                timerSeconds?: yup.Maybe<number | undefined>;
-                isAvailableForRecommendation?: boolean | null | undefined;
-                numberOfLikes?: number | null | undefined;
-                isSuggested?: boolean | undefined;
-                type: "question-time";
-                title: string;
-                backgroundColor: string;
-            };
         };
     };
     debriefStrategiesPath: string;
@@ -5106,6 +4642,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -5119,8 +4656,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -5159,6 +4696,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -5172,8 +4710,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -5212,6 +4750,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -5225,8 +4764,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -5265,6 +4804,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -5278,8 +4818,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -5320,6 +4860,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -5333,8 +4874,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -5373,6 +4914,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -5386,8 +4928,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -5431,6 +4973,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -5444,8 +4987,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -5488,6 +5031,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -5501,8 +5045,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -5541,6 +5085,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -5554,8 +5099,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -5594,6 +5139,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -5607,8 +5153,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -5649,6 +5195,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -5662,8 +5209,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -5703,6 +5250,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -5716,8 +5264,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -5756,6 +5304,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -5769,8 +5318,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -5809,6 +5358,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -5822,8 +5372,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -5958,6 +5508,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -5971,8 +5522,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -6011,6 +5562,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -6024,8 +5576,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -6064,6 +5616,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -6077,8 +5630,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -6117,6 +5670,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -6130,8 +5684,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -6172,6 +5726,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -6185,8 +5740,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -6225,6 +5780,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -6238,8 +5794,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -6283,6 +5839,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -6296,8 +5853,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -6340,6 +5897,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -6353,8 +5911,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -6393,6 +5951,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -6406,8 +5965,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -6446,6 +6005,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -6459,8 +6019,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -6501,6 +6061,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -6514,8 +6075,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -6555,6 +6116,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -6568,8 +6130,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -6608,6 +6170,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -6621,8 +6184,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
@@ -6661,6 +6224,7 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
+            setbackThreshold?: number | null | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -6674,8 +6238,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     strategiesPath?: string | undefined;
-                    greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    lessThan?: yup.Maybe<number | undefined>;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
