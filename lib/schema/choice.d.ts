@@ -1,7 +1,7 @@
 import * as yup from 'yup';
 export declare const choiceSchema: yup.ObjectSchema<{
     text: string;
-    strategies: {};
+    strategiesPath: string | undefined;
     ordinal: number;
     createdAt: {
         seconds: number;
@@ -15,7 +15,7 @@ export declare const choiceSchema: yup.ObjectSchema<{
     } | null | undefined;
 }, yup.AnyObject, {
     text: undefined;
-    strategies: {};
+    strategiesPath: undefined;
     ordinal: undefined;
     createdAt: undefined;
     updatedAt: undefined;

@@ -79,7 +79,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
             tacticTitle: string;
         };
     } | null | undefined;
-    strategiesPath: {};
+    strategiesPath: string;
     tacticsById: {
         [x: string]: {
             createdAt?: {
@@ -157,9 +157,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     text: string;
-                    strategies: {};
-                    ordinal: number;
                     strategiesPath: string;
+                    ordinal: number;
                 };
             } | null | undefined;
             type: "question-multiple-choice";
@@ -701,7 +700,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             tacticTitle: string;
         };
     } | null | undefined;
-    strategiesPath: {};
+    strategiesPath: string;
     tacticsById: {
         [x: string]: {
             createdAt?: {
@@ -779,9 +778,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     text: string;
-                    strategies: {};
-                    ordinal: number;
                     strategiesPath: string;
+                    ordinal: number;
                 };
             } | null | undefined;
             type: "question-multiple-choice";
@@ -1328,9 +1326,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                             toDate: Function;
                         } | null | undefined;
                         text: string;
-                        strategies: {};
-                        ordinal: number;
                         strategiesPath: string;
+                        ordinal: number;
                     };
                 } | null | undefined;
                 type: "question-multiple-choice";
@@ -1442,7 +1439,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     };
     debriefReminderSentAt: yup.Maybe<{} | undefined>;
     debriefedAt: yup.Maybe<{} | undefined>;
-    debriefStrategiesPath: {} | undefined;
+    debriefStrategiesPath: string;
 }, yup.AnyObject, {
     profileId: undefined;
     createdAt: undefined;
@@ -1551,7 +1548,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
             tacticTitle: string;
         };
     } | null | undefined;
-    strategiesPath: {};
+    strategiesPath: string;
     tacticsById: {
         [x: string]: {
             createdAt?: {
@@ -1629,9 +1626,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     text: string;
-                    strategies: {};
-                    ordinal: number;
                     strategiesPath: string;
+                    ordinal: number;
                 };
             } | null | undefined;
             type: "question-multiple-choice";
@@ -2179,7 +2175,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
             tacticTitle: string;
         };
     } | null | undefined;
-    strategiesPath: {};
+    strategiesPath: string;
     tacticsById: {
         [x: string]: {
             createdAt?: {
@@ -2257,9 +2253,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     text: string;
-                    strategies: {};
-                    ordinal: number;
                     strategiesPath: string;
+                    ordinal: number;
                 };
             } | null | undefined;
             type: "question-multiple-choice";
@@ -2799,10 +2794,9 @@ export declare const logSchema: yup.Lazy<{
     outcome?: Outcome | undefined;
     debriefReminderSentAt?: yup.Maybe<{} | undefined>;
     debriefedAt?: yup.Maybe<{} | undefined>;
-    debriefStrategiesPath?: {} | undefined;
+    strategiesPath: string;
     profileId: string;
     type: "impulse";
-    strategiesPath: {};
     tacticsById: {
         [x: string]: {
             createdAt?: {
@@ -2880,9 +2874,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     text: string;
-                    strategies: {};
-                    ordinal: number;
                     strategiesPath: string;
+                    ordinal: number;
                 };
             } | null | undefined;
             type: "question-multiple-choice";
@@ -3428,9 +3421,8 @@ export declare const logSchema: yup.Lazy<{
                             toDate: Function;
                         } | null | undefined;
                         text: string;
-                        strategies: {};
-                        ordinal: number;
                         strategiesPath: string;
+                        ordinal: number;
                     };
                 } | null | undefined;
                 type: "question-multiple-choice";
@@ -3540,6 +3532,7 @@ export declare const logSchema: yup.Lazy<{
             };
         };
     };
+    debriefStrategiesPath: string;
 } | {
     createdAt?: {
         seconds: number;
@@ -3600,9 +3593,9 @@ export declare const logSchema: yup.Lazy<{
         };
     } | null | undefined;
     sharedWithSupportGroupIds?: string[] | undefined;
+    strategiesPath: string;
     profileId: string;
     type: "location";
-    strategiesPath: {};
     tacticsById: {
         [x: string]: {
             createdAt?: {
@@ -3680,9 +3673,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     text: string;
-                    strategies: {};
-                    ordinal: number;
                     strategiesPath: string;
+                    ordinal: number;
                 };
             } | null | undefined;
             type: "question-multiple-choice";
@@ -4189,9 +4181,9 @@ export declare const logSchema: yup.Lazy<{
         };
     } | null | undefined;
     sharedWithSupportGroupIds?: string[] | undefined;
+    strategiesPath: string;
     profileId: string;
     type: "time";
-    strategiesPath: {};
     tacticsById: {
         [x: string]: {
             createdAt?: {
@@ -4269,9 +4261,8 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     text: string;
-                    strategies: {};
-                    ordinal: number;
                     strategiesPath: string;
+                    ordinal: number;
                 };
             } | null | undefined;
             type: "question-multiple-choice";

@@ -6,7 +6,6 @@ import { commentSchema } from './comment';
 import { patternSchema } from './pattern';
 import { tacticSchema } from './tactic';
 import { optionalStringArray, requiredStringArray } from './utils/array';
-import { collectionReferenceSchema } from './utils/firestore';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
 
@@ -39,16 +38,16 @@ const baseLogSchema = yup.object().shape({
   locationIsFetching: yup.boolean().required(),
   locationFormatted: yup.string().notRequired(),
   commentCount: yup.number().notRequired(),
-  commentsById: yup.object().notRequired(), // TODO: introduce comment schema
+  commentsById: yup.object().notRequired(),
   commentsByTacticId: optionalObjectOf(
     yup.object().shape({
       tacticTitle: yup.string().required(),
       commentsById: objectOf(commentSchema),
     })
   ),
-  strategiesPath: collectionReferenceSchema.required(),
+  strategiesPath: yup.string().required(),
 
-  // These represent seen tactics
+  // TODO: These represent seen tactics, but this may need some clarification
   tacticsById: objectOf(tacticSchema),
   completedTacticIds: requiredStringArray,
   tacticLikes: optionalObjectOf(yup.boolean().required()),
@@ -83,7 +82,7 @@ const impulseLogSchema = baseLogSchema.concat(
     patternsById: objectOf(patternSchema),
     debriefReminderSentAt: yup.mixed().notRequired(),
     debriefedAt: yup.mixed().notRequired(),
-    debriefStrategiesPath: collectionReferenceSchema,
+    debriefStrategiesPath: yup.string().required(),
   })
 );
 

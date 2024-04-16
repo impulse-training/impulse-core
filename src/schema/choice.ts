@@ -3,7 +3,7 @@ import { optionalTimestampSchema } from './utils/timestamp';
 
 export const choiceSchema = yup.object({
   text: yup.string().required(),
-  strategies: yup.object().required(),
+  strategiesPath: yup.string(),
   ordinal: yup.number().required(),
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,

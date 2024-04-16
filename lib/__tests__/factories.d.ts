@@ -27,9 +27,9 @@ export declare const factories: {
         } | undefined;
         profileId: string;
     }, "profileId" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "tacticName" | "recording" | "isEdited" | "avatar")>;
-    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "strategiesPath" | "tacticsById" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "setAsActiveImpulse" | "pressCount" | "isDisplayable" | "outcome" | "patternId" | "patternsById" | "debriefReminderSentAt" | "debriefedAt" | "debriefStrategiesPath">;
-    timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "strategiesPath" | "tacticsById" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable">;
-    locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "strategiesPath" | "tacticsById" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "locationId" | "locationName" | "locationMode">;
+    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "strategiesPath" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "setAsActiveImpulse" | "pressCount" | "isDisplayable" | "outcome" | "patternId" | "patternsById" | "debriefReminderSentAt" | "debriefedAt" | "debriefStrategiesPath">;
+    timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "strategiesPath" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable">;
+    locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "createdAt" | "updatedAt" | "strategiesPath" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "locationId" | "locationName" | "locationMode">;
     locationFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -174,9 +174,8 @@ export declare const factories: {
                         toDate: Function;
                     } | null | undefined;
                     text: string;
-                    strategies: {};
-                    ordinal: number;
                     strategiesPath: string;
+                    ordinal: number;
                 };
             } | null | undefined;
             type: "question-multiple-choice";
@@ -427,9 +426,8 @@ export declare const factories: {
                         toDate: Function;
                     } | null | undefined;
                     text: string;
-                    strategies: {};
-                    ordinal: number;
                     strategiesPath: string;
+                    ordinal: number;
                 };
             } | null | undefined;
             type: "question-multiple-choice";

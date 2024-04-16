@@ -94,9 +94,8 @@ export declare const patternSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 text: string;
-                strategies: {};
-                ordinal: number;
                 strategiesPath: string;
+                ordinal: number;
             };
         } | null | undefined;
         type: "question-multiple-choice";
