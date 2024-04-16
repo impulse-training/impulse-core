@@ -38,6 +38,26 @@ export declare const patternSchema: yup.ObjectSchema<{
             storagePath?: yup.Maybe<string | undefined>;
             uri?: yup.Maybe<string | undefined>;
         } | null | undefined;
+        choicesById?: {
+            [x: string]: {
+                createdAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                strategiesPath?: string | undefined;
+                greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
+                lessThan?: yup.Maybe<number | undefined>;
+                equalTo?: yup.Maybe<string | number | undefined>;
+                text: string;
+                ordinal: number;
+            };
+        } | null | undefined;
         isTemplate?: boolean | null | undefined;
         language?: string | null | undefined;
         href?: string | null | undefined;
@@ -71,16 +91,6 @@ export declare const patternSchema: yup.ObjectSchema<{
             storagePath?: yup.Maybe<string | undefined>;
             uri?: yup.Maybe<string | undefined>;
         } | null | undefined;
-        isTemplate?: boolean | null | undefined;
-        language?: string | null | undefined;
-        href?: string | null | undefined;
-        categoryIds?: (string | undefined)[] | null | undefined;
-        isShared?: boolean | null | undefined;
-        isResponseRequired?: boolean | null | undefined;
-        timerSeconds?: yup.Maybe<number | undefined>;
-        isAvailableForRecommendation?: boolean | null | undefined;
-        numberOfLikes?: number | null | undefined;
-        isSuggested?: boolean | undefined;
         choicesById?: {
             [x: string]: {
                 createdAt?: {
@@ -93,14 +103,24 @@ export declare const patternSchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                greaterThan?: yup.Maybe<number | undefined>;
+                strategiesPath?: string | undefined;
+                greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
                 lessThan?: yup.Maybe<number | undefined>;
                 equalTo?: yup.Maybe<string | number | undefined>;
                 text: string;
-                strategiesPath: string;
                 ordinal: number;
             };
         } | null | undefined;
+        isTemplate?: boolean | null | undefined;
+        language?: string | null | undefined;
+        href?: string | null | undefined;
+        categoryIds?: (string | undefined)[] | null | undefined;
+        isShared?: boolean | null | undefined;
+        isResponseRequired?: boolean | null | undefined;
+        timerSeconds?: yup.Maybe<number | undefined>;
+        isAvailableForRecommendation?: boolean | null | undefined;
+        numberOfLikes?: number | null | undefined;
+        isSuggested?: boolean | undefined;
         type: "question-multiple-choice";
         title: string;
         backgroundColor: string;
@@ -123,6 +143,26 @@ export declare const patternSchema: yup.ObjectSchema<{
             localFilePath?: yup.Maybe<string | undefined>;
             storagePath?: yup.Maybe<string | undefined>;
             uri?: yup.Maybe<string | undefined>;
+        } | null | undefined;
+        choicesById?: {
+            [x: string]: {
+                createdAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                strategiesPath?: string | undefined;
+                greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
+                lessThan?: yup.Maybe<number | undefined>;
+                equalTo?: yup.Maybe<string | number | undefined>;
+                text: string;
+                ordinal: number;
+            };
         } | null | undefined;
         isTemplate?: boolean | null | undefined;
         language?: string | null | undefined;
@@ -156,6 +196,26 @@ export declare const patternSchema: yup.ObjectSchema<{
             localFilePath?: yup.Maybe<string | undefined>;
             storagePath?: yup.Maybe<string | undefined>;
             uri?: yup.Maybe<string | undefined>;
+        } | null | undefined;
+        choicesById?: {
+            [x: string]: {
+                createdAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                strategiesPath?: string | undefined;
+                greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
+                lessThan?: yup.Maybe<number | undefined>;
+                equalTo?: yup.Maybe<string | number | undefined>;
+                text: string;
+                ordinal: number;
+            };
         } | null | undefined;
         isTemplate?: boolean | null | undefined;
         language?: string | null | undefined;
@@ -191,6 +251,26 @@ export declare const patternSchema: yup.ObjectSchema<{
             localFilePath?: yup.Maybe<string | undefined>;
             storagePath?: yup.Maybe<string | undefined>;
             uri?: yup.Maybe<string | undefined>;
+        } | null | undefined;
+        choicesById?: {
+            [x: string]: {
+                createdAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                strategiesPath?: string | undefined;
+                greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
+                lessThan?: yup.Maybe<number | undefined>;
+                equalTo?: yup.Maybe<string | number | undefined>;
+                text: string;
+                ordinal: number;
+            };
         } | null | undefined;
         isTemplate?: boolean | null | undefined;
         language?: string | null | undefined;

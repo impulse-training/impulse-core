@@ -1,4 +1,5 @@
 import * as yup from 'yup';
+import { TacticData } from './log';
 export declare const choiceSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
@@ -13,7 +14,7 @@ export declare const choiceSchema: yup.ObjectSchema<{
     text: string;
     strategiesPath: string | undefined;
     ordinal: number;
-    greaterThan: yup.Maybe<number | undefined>;
+    greaterThanOrEqualTo: yup.Maybe<number | undefined>;
     lessThan: yup.Maybe<number | undefined>;
     equalTo: yup.Maybe<string | number | undefined>;
 }, yup.AnyObject, {
@@ -22,8 +23,9 @@ export declare const choiceSchema: yup.ObjectSchema<{
     text: undefined;
     strategiesPath: undefined;
     ordinal: undefined;
-    greaterThan: undefined;
+    greaterThanOrEqualTo: undefined;
     lessThan: undefined;
     equalTo: undefined;
 }, "">;
 export type ChoiceValue = yup.InferType<typeof choiceSchema>;
+export declare function choiceMatches(choice: ChoiceValue, data: TacticData): boolean | undefined;

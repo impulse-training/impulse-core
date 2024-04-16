@@ -12,9 +12,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        text?: string | undefined;
         tacticId?: string | null | undefined;
         tacticName?: string | null | undefined;
+        text?: string | undefined;
         recording?: {
             waveform?: string | null | undefined;
             localFilePath: string;
@@ -27,10 +27,10 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             uri?: import("yup").Maybe<string | undefined>;
         } | undefined;
         profileId: string;
-    }, "profileId" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "tacticName" | "recording" | "isEdited" | "avatar")>;
-    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "strategiesPath" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "setAsActiveImpulse" | "pressCount" | "isDisplayable" | "outcome" | "patternId" | "patternsById" | "debriefReminderSentAt" | "debriefedAt" | "debriefStrategiesPath">;
-    timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "strategiesPath" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable">;
-    locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "createdAt" | "updatedAt" | "strategiesPath" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "locationId" | "locationName" | "locationMode">;
+    }, "profileId" | ("createdAt" | "updatedAt" | "tacticId" | "tacticName" | "text" | "recording" | "isEdited" | "avatar")>;
+    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "strategiesPath" | "tacticsById" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "setAsActiveImpulse" | "pressCount" | "isDisplayable" | "outcome" | "patternId" | "patternsById" | "debriefReminderSentAt" | "debriefedAt" | "debriefStrategiesPath">;
+    timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "strategiesPath" | "tacticsById" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable">;
+    locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "strategiesPath" | "tacticsById" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "locationId" | "locationName" | "locationMode">;
     locationFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -82,8 +82,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
     }, "timezone" | "invitationCode" | ("createdAt" | "updatedAt" | "parentIssueIds" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "androidPermissions" | "region" | "scheduledNotificationIds")>;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
-        parentId?: string | null | undefined;
         setbackThreshold?: number | undefined;
+        parentId?: string | null | undefined;
         strategiesCount?: number | null | undefined;
         profileCount?: number | null | undefined;
         isFeatured?: boolean | null | undefined;
@@ -98,7 +98,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: Function;
         };
         name: string;
-        synonyms: string[];
         measureTactic: {
             createdAt?: {
                 seconds: number;
@@ -118,6 +117,26 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 storagePath?: import("yup").Maybe<string | undefined>;
                 uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            choicesById?: {
+                [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    greaterThanOrEqualTo?: import("yup").Maybe<number | undefined>;
+                    lessThan?: import("yup").Maybe<number | undefined>;
+                    equalTo?: import("yup").Maybe<string | number | undefined>;
+                    text: string;
+                    ordinal: number;
+                };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
@@ -152,16 +171,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 storagePath?: import("yup").Maybe<string | undefined>;
                 uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: import("yup").Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -174,14 +183,24 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    greaterThan?: import("yup").Maybe<number | undefined>;
+                    strategiesPath?: string | undefined;
+                    greaterThanOrEqualTo?: import("yup").Maybe<number | undefined>;
                     lessThan?: import("yup").Maybe<number | undefined>;
                     equalTo?: import("yup").Maybe<string | number | undefined>;
                     text: string;
-                    strategiesPath: string;
                     ordinal: number;
                 };
             } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
             type: "question-multiple-choice";
             title: string;
             backgroundColor: string;
@@ -204,6 +223,26 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 storagePath?: import("yup").Maybe<string | undefined>;
                 uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            choicesById?: {
+                [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    greaterThanOrEqualTo?: import("yup").Maybe<number | undefined>;
+                    lessThan?: import("yup").Maybe<number | undefined>;
+                    equalTo?: import("yup").Maybe<string | number | undefined>;
+                    text: string;
+                    ordinal: number;
+                };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
@@ -237,6 +276,26 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 storagePath?: import("yup").Maybe<string | undefined>;
                 uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            choicesById?: {
+                [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    greaterThanOrEqualTo?: import("yup").Maybe<number | undefined>;
+                    lessThan?: import("yup").Maybe<number | undefined>;
+                    equalTo?: import("yup").Maybe<string | number | undefined>;
+                    text: string;
+                    ordinal: number;
+                };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
@@ -273,6 +332,26 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 storagePath?: import("yup").Maybe<string | undefined>;
                 uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
+            choicesById?: {
+                [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    greaterThanOrEqualTo?: import("yup").Maybe<number | undefined>;
+                    lessThan?: import("yup").Maybe<number | undefined>;
+                    equalTo?: import("yup").Maybe<string | number | undefined>;
+                    text: string;
+                    ordinal: number;
+                };
+            } | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -287,9 +366,10 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             title: string;
             backgroundColor: string;
         };
+        synonyms: string[];
         parentIds: string[];
         parentNames: string[];
-    }, "createdAt" | "updatedAt" | "name" | "synonyms" | "measureTactic" | "parentIds" | "parentNames" | ("path" | "parentId" | "setbackThreshold" | "strategiesCount" | "profileCount" | "isFeatured")>;
+    }, "createdAt" | "updatedAt" | "name" | "measureTactic" | "synonyms" | "parentIds" | "parentNames" | ("path" | "setbackThreshold" | "parentId" | "strategiesCount" | "profileCount" | "isFeatured")>;
     supportGroupFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -341,18 +421,18 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        setbackThreshold?: import("yup").Maybe<number | undefined>;
         supportGroupIds?: string[] | undefined;
         notification?: {
             title: string;
             body: string;
         } | import("yup").Maybe<{} | undefined>;
         dailySetbackThreshold?: import("yup").Maybe<number | undefined>;
+        setbackThreshold?: import("yup").Maybe<number | undefined>;
         issueId?: import("yup").Maybe<string | undefined>;
         parentIssueIds?: string[] | undefined;
         sendWeeklyReports?: import("yup").Maybe<boolean | undefined>;
-        ordinal: number;
         profileId: string;
+        ordinal: number;
         name: string;
         measureTactic: {
             createdAt?: {
@@ -373,6 +453,26 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 storagePath?: import("yup").Maybe<string | undefined>;
                 uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            choicesById?: {
+                [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    greaterThanOrEqualTo?: import("yup").Maybe<number | undefined>;
+                    lessThan?: import("yup").Maybe<number | undefined>;
+                    equalTo?: import("yup").Maybe<string | number | undefined>;
+                    text: string;
+                    ordinal: number;
+                };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
@@ -407,16 +507,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 storagePath?: import("yup").Maybe<string | undefined>;
                 uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: import("yup").Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
             choicesById?: {
                 [x: string]: {
                     createdAt?: {
@@ -429,14 +519,24 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    greaterThan?: import("yup").Maybe<number | undefined>;
+                    strategiesPath?: string | undefined;
+                    greaterThanOrEqualTo?: import("yup").Maybe<number | undefined>;
                     lessThan?: import("yup").Maybe<number | undefined>;
                     equalTo?: import("yup").Maybe<string | number | undefined>;
                     text: string;
-                    strategiesPath: string;
                     ordinal: number;
                 };
             } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
             type: "question-multiple-choice";
             title: string;
             backgroundColor: string;
@@ -459,6 +559,26 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 storagePath?: import("yup").Maybe<string | undefined>;
                 uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            choicesById?: {
+                [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    greaterThanOrEqualTo?: import("yup").Maybe<number | undefined>;
+                    lessThan?: import("yup").Maybe<number | undefined>;
+                    equalTo?: import("yup").Maybe<string | number | undefined>;
+                    text: string;
+                    ordinal: number;
+                };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
@@ -492,6 +612,26 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 storagePath?: import("yup").Maybe<string | undefined>;
                 uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            choicesById?: {
+                [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    greaterThanOrEqualTo?: import("yup").Maybe<number | undefined>;
+                    lessThan?: import("yup").Maybe<number | undefined>;
+                    equalTo?: import("yup").Maybe<string | number | undefined>;
+                    text: string;
+                    ordinal: number;
+                };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
@@ -528,6 +668,26 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 storagePath?: import("yup").Maybe<string | undefined>;
                 uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
+            choicesById?: {
+                [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    greaterThanOrEqualTo?: import("yup").Maybe<number | undefined>;
+                    lessThan?: import("yup").Maybe<number | undefined>;
+                    equalTo?: import("yup").Maybe<string | number | undefined>;
+                    text: string;
+                    ordinal: number;
+                };
+            } | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             href?: string | null | undefined;
@@ -542,8 +702,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             title: string;
             backgroundColor: string;
         };
-    }, "ordinal" | "profileId" | "name" | "measureTactic" | ("createdAt" | "updatedAt" | "setbackThreshold" | "supportGroupIds" | "notification" | "dailySetbackThreshold" | "issueId" | "parentIssueIds" | "sendWeeklyReports")>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "sourceId" | "title" | "subtitle" | "description" | "image" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
+    }, "profileId" | "ordinal" | "name" | "measureTactic" | ("createdAt" | "updatedAt" | "supportGroupIds" | "notification" | "dailySetbackThreshold" | "setbackThreshold" | "issueId" | "parentIssueIds" | "sendWeeklyReports")>;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "sourceId" | "title" | "subtitle" | "description" | "image" | "choicesById" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
     questionTimeTacticFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -564,6 +724,26 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             storagePath?: import("yup").Maybe<string | undefined>;
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
+        choicesById?: {
+            [x: string]: {
+                createdAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                strategiesPath?: string | undefined;
+                greaterThanOrEqualTo?: import("yup").Maybe<number | undefined>;
+                lessThan?: import("yup").Maybe<number | undefined>;
+                equalTo?: import("yup").Maybe<string | number | undefined>;
+                text: string;
+                ordinal: number;
+            };
+        } | null | undefined;
         isTemplate?: boolean | null | undefined;
         language?: string | null | undefined;
         href?: string | null | undefined;
@@ -577,8 +757,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         type: "question-time";
         title: string;
         backgroundColor: string;
-    }, "type" | "title" | "backgroundColor" | ("createdAt" | "updatedAt" | "profileId" | "sourceId" | "subtitle" | "description" | "image" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested")>;
-    strategyFactory: import("factory.ts").Factory<import("..").StrategyValue, "tacticsById" | "name" | "tacticIds" | ("createdAt" | "updatedAt" | "ordinal" | "profileId")>;
+    }, "type" | "title" | "backgroundColor" | ("createdAt" | "updatedAt" | "profileId" | "sourceId" | "subtitle" | "description" | "image" | "choicesById" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested")>;
+    strategyFactory: import("factory.ts").Factory<import("..").StrategyValue, "tacticsById" | "name" | "tacticIds" | ("createdAt" | "updatedAt" | "profileId" | "ordinal")>;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;

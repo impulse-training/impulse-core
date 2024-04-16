@@ -21,6 +21,26 @@ export declare const phoneTacticSchema: yup.ObjectSchema<{
         storagePath?: yup.Maybe<string | undefined>;
         uri?: yup.Maybe<string | undefined>;
     } | null | undefined;
+    choicesById: {
+        [x: string]: {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            strategiesPath?: string | undefined;
+            greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
+            lessThan?: yup.Maybe<number | undefined>;
+            equalTo?: yup.Maybe<string | number | undefined>;
+            text: string;
+            ordinal: number;
+        };
+    } | null | undefined;
     backgroundColor: string;
     isTemplate: boolean | null | undefined;
     language: string | null | undefined;
@@ -48,6 +68,7 @@ export declare const phoneTacticSchema: yup.ObjectSchema<{
         storagePath: undefined;
         uri: undefined;
     };
+    choicesById: undefined;
     backgroundColor: undefined;
     isTemplate: undefined;
     language: undefined;

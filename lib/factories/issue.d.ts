@@ -2,8 +2,8 @@ import * as Factory from 'factory.ts';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     path?: string | null | undefined;
-    parentId?: string | null | undefined;
     setbackThreshold?: number | undefined;
+    parentId?: string | null | undefined;
     strategiesCount?: number | null | undefined;
     profileCount?: number | null | undefined;
     isFeatured?: boolean | null | undefined;
@@ -18,7 +18,6 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         toDate: Function;
     };
     name: string;
-    synonyms: string[];
     measureTactic: {
         createdAt?: {
             seconds: number;
@@ -38,6 +37,26 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
             localFilePath?: import("yup").Maybe<string | undefined>;
             storagePath?: import("yup").Maybe<string | undefined>;
             uri?: import("yup").Maybe<string | undefined>;
+        } | null | undefined;
+        choicesById?: {
+            [x: string]: {
+                createdAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                strategiesPath?: string | undefined;
+                greaterThanOrEqualTo?: import("yup").Maybe<number | undefined>;
+                lessThan?: import("yup").Maybe<number | undefined>;
+                equalTo?: import("yup").Maybe<string | number | undefined>;
+                text: string;
+                ordinal: number;
+            };
         } | null | undefined;
         isTemplate?: boolean | null | undefined;
         language?: string | null | undefined;
@@ -72,16 +91,6 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
             storagePath?: import("yup").Maybe<string | undefined>;
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
-        isTemplate?: boolean | null | undefined;
-        language?: string | null | undefined;
-        href?: string | null | undefined;
-        categoryIds?: (string | undefined)[] | null | undefined;
-        isShared?: boolean | null | undefined;
-        isResponseRequired?: boolean | null | undefined;
-        timerSeconds?: import("yup").Maybe<number | undefined>;
-        isAvailableForRecommendation?: boolean | null | undefined;
-        numberOfLikes?: number | null | undefined;
-        isSuggested?: boolean | undefined;
         choicesById?: {
             [x: string]: {
                 createdAt?: {
@@ -94,14 +103,24 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                greaterThan?: import("yup").Maybe<number | undefined>;
+                strategiesPath?: string | undefined;
+                greaterThanOrEqualTo?: import("yup").Maybe<number | undefined>;
                 lessThan?: import("yup").Maybe<number | undefined>;
                 equalTo?: import("yup").Maybe<string | number | undefined>;
                 text: string;
-                strategiesPath: string;
                 ordinal: number;
             };
         } | null | undefined;
+        isTemplate?: boolean | null | undefined;
+        language?: string | null | undefined;
+        href?: string | null | undefined;
+        categoryIds?: (string | undefined)[] | null | undefined;
+        isShared?: boolean | null | undefined;
+        isResponseRequired?: boolean | null | undefined;
+        timerSeconds?: import("yup").Maybe<number | undefined>;
+        isAvailableForRecommendation?: boolean | null | undefined;
+        numberOfLikes?: number | null | undefined;
+        isSuggested?: boolean | undefined;
         type: "question-multiple-choice";
         title: string;
         backgroundColor: string;
@@ -124,6 +143,26 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
             localFilePath?: import("yup").Maybe<string | undefined>;
             storagePath?: import("yup").Maybe<string | undefined>;
             uri?: import("yup").Maybe<string | undefined>;
+        } | null | undefined;
+        choicesById?: {
+            [x: string]: {
+                createdAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                strategiesPath?: string | undefined;
+                greaterThanOrEqualTo?: import("yup").Maybe<number | undefined>;
+                lessThan?: import("yup").Maybe<number | undefined>;
+                equalTo?: import("yup").Maybe<string | number | undefined>;
+                text: string;
+                ordinal: number;
+            };
         } | null | undefined;
         isTemplate?: boolean | null | undefined;
         language?: string | null | undefined;
@@ -157,6 +196,26 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
             localFilePath?: import("yup").Maybe<string | undefined>;
             storagePath?: import("yup").Maybe<string | undefined>;
             uri?: import("yup").Maybe<string | undefined>;
+        } | null | undefined;
+        choicesById?: {
+            [x: string]: {
+                createdAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                strategiesPath?: string | undefined;
+                greaterThanOrEqualTo?: import("yup").Maybe<number | undefined>;
+                lessThan?: import("yup").Maybe<number | undefined>;
+                equalTo?: import("yup").Maybe<string | number | undefined>;
+                text: string;
+                ordinal: number;
+            };
         } | null | undefined;
         isTemplate?: boolean | null | undefined;
         language?: string | null | undefined;
@@ -193,6 +252,26 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
             storagePath?: import("yup").Maybe<string | undefined>;
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
+        choicesById?: {
+            [x: string]: {
+                createdAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                strategiesPath?: string | undefined;
+                greaterThanOrEqualTo?: import("yup").Maybe<number | undefined>;
+                lessThan?: import("yup").Maybe<number | undefined>;
+                equalTo?: import("yup").Maybe<string | number | undefined>;
+                text: string;
+                ordinal: number;
+            };
+        } | null | undefined;
         isTemplate?: boolean | null | undefined;
         language?: string | null | undefined;
         href?: string | null | undefined;
@@ -207,6 +286,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         title: string;
         backgroundColor: string;
     };
+    synonyms: string[];
     parentIds: string[];
     parentNames: string[];
-}, "createdAt" | "updatedAt" | "name" | "synonyms" | "measureTactic" | "parentIds" | "parentNames" | ("path" | "parentId" | "setbackThreshold" | "strategiesCount" | "profileCount" | "isFeatured")>;
+}, "createdAt" | "updatedAt" | "name" | "measureTactic" | "synonyms" | "parentIds" | "parentNames" | ("path" | "setbackThreshold" | "parentId" | "strategiesCount" | "profileCount" | "isFeatured")>;

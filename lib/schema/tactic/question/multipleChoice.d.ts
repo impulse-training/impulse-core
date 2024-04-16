@@ -21,17 +21,6 @@ export declare const questionMultipleChoiceTacticSchema: yup.ObjectSchema<{
         storagePath?: yup.Maybe<string | undefined>;
         uri?: yup.Maybe<string | undefined>;
     } | null | undefined;
-    backgroundColor: string;
-    isTemplate: boolean | null | undefined;
-    language: string | null | undefined;
-    href: string | null | undefined;
-    categoryIds: (string | undefined)[] | null | undefined;
-    isShared: boolean | null | undefined;
-    isResponseRequired: boolean | null | undefined;
-    timerSeconds: yup.Maybe<number | undefined>;
-    isAvailableForRecommendation: boolean | null | undefined;
-    numberOfLikes: number | null | undefined;
-    isSuggested: boolean | undefined;
     choicesById: {
         [x: string]: {
             createdAt?: {
@@ -44,14 +33,25 @@ export declare const questionMultipleChoiceTacticSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            greaterThan?: yup.Maybe<number | undefined>;
+            strategiesPath?: string | undefined;
+            greaterThanOrEqualTo?: yup.Maybe<number | undefined>;
             lessThan?: yup.Maybe<number | undefined>;
             equalTo?: yup.Maybe<string | number | undefined>;
             text: string;
-            strategiesPath: string;
             ordinal: number;
         };
     } | null | undefined;
+    backgroundColor: string;
+    isTemplate: boolean | null | undefined;
+    language: string | null | undefined;
+    href: string | null | undefined;
+    categoryIds: (string | undefined)[] | null | undefined;
+    isShared: boolean | null | undefined;
+    isResponseRequired: boolean | null | undefined;
+    timerSeconds: yup.Maybe<number | undefined>;
+    isAvailableForRecommendation: boolean | null | undefined;
+    numberOfLikes: number | null | undefined;
+    isSuggested: boolean | undefined;
 }, yup.AnyObject, {
     type: undefined;
     profileId: undefined;
@@ -66,6 +66,7 @@ export declare const questionMultipleChoiceTacticSchema: yup.ObjectSchema<{
         storagePath: undefined;
         uri: undefined;
     };
+    choicesById: undefined;
     backgroundColor: undefined;
     isTemplate: undefined;
     language: undefined;
@@ -77,6 +78,5 @@ export declare const questionMultipleChoiceTacticSchema: yup.ObjectSchema<{
     isAvailableForRecommendation: undefined;
     numberOfLikes: undefined;
     isSuggested: undefined;
-    choicesById: undefined;
 }, "">;
 export type QuestionMultipleChoiceTacticValue = yup.InferType<typeof questionMultipleChoiceTacticSchema>;

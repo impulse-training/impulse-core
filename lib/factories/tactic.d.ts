@@ -1,7 +1,7 @@
 import * as Factory from 'factory.ts';
 import { TacticValue } from '../schema';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
-export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "sourceId" | "title" | "subtitle" | "description" | "image" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
+export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "sourceId" | "title" | "subtitle" | "description" | "image" | "choicesById" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
 export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     createdAt?: {
         seconds: number;
@@ -22,6 +22,26 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
         storagePath?: import("yup").Maybe<string | undefined>;
         uri?: import("yup").Maybe<string | undefined>;
     } | null | undefined;
+    choicesById?: {
+        [x: string]: {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            strategiesPath?: string | undefined;
+            greaterThanOrEqualTo?: import("yup").Maybe<number | undefined>;
+            lessThan?: import("yup").Maybe<number | undefined>;
+            equalTo?: import("yup").Maybe<string | number | undefined>;
+            text: string;
+            ordinal: number;
+        };
+    } | null | undefined;
     isTemplate?: boolean | null | undefined;
     language?: string | null | undefined;
     href?: string | null | undefined;
@@ -35,4 +55,4 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
     type: "question-time";
     title: string;
     backgroundColor: string;
-}, "type" | "title" | "backgroundColor" | ("createdAt" | "updatedAt" | "profileId" | "sourceId" | "subtitle" | "description" | "image" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested")>;
+}, "type" | "title" | "backgroundColor" | ("createdAt" | "updatedAt" | "profileId" | "sourceId" | "subtitle" | "description" | "image" | "choicesById" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested")>;

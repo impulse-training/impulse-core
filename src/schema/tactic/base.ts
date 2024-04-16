@@ -1,5 +1,7 @@
 import * as yup from 'yup';
+import { choiceSchema } from '../choice';
 import { imageSchema } from '../utils/image';
+import { optionalObjectOf } from '../utils/objectOf';
 import { optionalTimestampSchema } from '../utils/timestamp';
 
 // Define a base schema for TacticValueBase with generic type K to accommodate the type field.
@@ -14,6 +16,7 @@ export function tacticValueBaseSchema<K extends string>(type: K) {
     subtitle: yup.string().notRequired(),
     description: yup.string().nullable(),
     image: imageSchema.optional().nullable(),
+    choicesById: optionalObjectOf(choiceSchema),
     backgroundColor: yup.string().required(),
     isTemplate: yup.boolean().nullable(),
     language: yup.string().nullable(),
