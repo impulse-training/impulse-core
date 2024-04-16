@@ -3,11 +3,13 @@ import { TimestampLike } from '../utils/firestore/TimestampLike';
 type Outcome = 'success' | 'setback';
 export declare const tacticDataSchema: yup.ObjectSchema<{
     value: NonNullable<string | number | undefined>;
+    choiceId: string | undefined;
     formattedValue: string;
     lowEmoji: yup.Maybe<string | undefined>;
     highEmoji: yup.Maybe<string | undefined>;
 }, yup.AnyObject, {
     value: undefined;
+    choiceId: undefined;
     formattedValue: undefined;
     lowEmoji: undefined;
     highEmoji: undefined;
@@ -592,6 +594,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
         [x: string]: {
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
+            choiceId?: string | undefined;
             value: NonNullable<string | number | undefined>;
             formattedValue: string;
         };
@@ -1213,6 +1216,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         [x: string]: {
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
+            choiceId?: string | undefined;
             value: NonNullable<string | number | undefined>;
             formattedValue: string;
         };
@@ -2061,6 +2065,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
         [x: string]: {
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
+            choiceId?: string | undefined;
             value: NonNullable<string | number | undefined>;
             formattedValue: string;
         };
@@ -2688,6 +2693,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
         [x: string]: {
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
+            choiceId?: string | undefined;
             value: NonNullable<string | number | undefined>;
             formattedValue: string;
         };
@@ -2784,6 +2790,7 @@ export declare const logSchema: yup.Lazy<{
         [x: string]: {
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
+            choiceId?: string | undefined;
             value: NonNullable<string | number | undefined>;
             formattedValue: string;
         };
@@ -3588,6 +3595,7 @@ export declare const logSchema: yup.Lazy<{
         [x: string]: {
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
+            choiceId?: string | undefined;
             value: NonNullable<string | number | undefined>;
             formattedValue: string;
         };
@@ -4176,6 +4184,7 @@ export declare const logSchema: yup.Lazy<{
         [x: string]: {
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
+            choiceId?: string | undefined;
             value: NonNullable<string | number | undefined>;
             formattedValue: string;
         };

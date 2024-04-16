@@ -13,6 +13,7 @@ type Outcome = 'success' | 'setback';
 
 export const tacticDataSchema = yup.object({
   value: yup.mixed<string | number>().required(),
+  choiceId: yup.string(),
   formattedValue: yup.string().required(),
   lowEmoji: yup.string().notRequired(),
   highEmoji: yup.string().notRequired(),
