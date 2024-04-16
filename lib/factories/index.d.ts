@@ -174,6 +174,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    greaterThan?: import("yup").Maybe<number | undefined>;
+                    lessThan?: import("yup").Maybe<number | undefined>;
+                    equalTo?: import("yup").Maybe<string | number | undefined>;
                     text: string;
                     strategiesPath: string;
                     ordinal: number;
@@ -426,6 +429,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    greaterThan?: import("yup").Maybe<number | undefined>;
+                    lessThan?: import("yup").Maybe<number | undefined>;
+                    equalTo?: import("yup").Maybe<string | number | undefined>;
                     text: string;
                     strategiesPath: string;
                     ordinal: number;

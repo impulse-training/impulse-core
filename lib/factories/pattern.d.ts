@@ -99,6 +99,9 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                greaterThan?: import("yup").Maybe<number | undefined>;
+                lessThan?: import("yup").Maybe<number | undefined>;
+                equalTo?: import("yup").Maybe<string | number | undefined>;
                 text: string;
                 strategiesPath: string;
                 ordinal: number;

@@ -44,6 +44,9 @@ export declare const questionMultipleChoiceTacticSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            greaterThan?: yup.Maybe<number | undefined>;
+            lessThan?: yup.Maybe<number | undefined>;
+            equalTo?: yup.Maybe<string | number | undefined>;
             text: string;
             strategiesPath: string;
             ordinal: number;

@@ -158,6 +158,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThan?: yup.Maybe<number | undefined>;
+                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     strategiesPath: string;
                     ordinal: number;
@@ -780,6 +783,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThan?: yup.Maybe<number | undefined>;
+                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     strategiesPath: string;
                     ordinal: number;
@@ -1329,6 +1335,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        greaterThan?: yup.Maybe<number | undefined>;
+                        lessThan?: yup.Maybe<number | undefined>;
+                        equalTo?: yup.Maybe<string | number | undefined>;
                         text: string;
                         strategiesPath: string;
                         ordinal: number;
@@ -1629,6 +1638,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThan?: yup.Maybe<number | undefined>;
+                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     strategiesPath: string;
                     ordinal: number;
@@ -2257,6 +2269,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThan?: yup.Maybe<number | undefined>;
+                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     strategiesPath: string;
                     ordinal: number;
@@ -2880,6 +2895,9 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThan?: yup.Maybe<number | undefined>;
+                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     strategiesPath: string;
                     ordinal: number;
@@ -3427,6 +3445,9 @@ export declare const logSchema: yup.Lazy<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        greaterThan?: yup.Maybe<number | undefined>;
+                        lessThan?: yup.Maybe<number | undefined>;
+                        equalTo?: yup.Maybe<string | number | undefined>;
                         text: string;
                         strategiesPath: string;
                         ordinal: number;
@@ -3680,6 +3701,9 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThan?: yup.Maybe<number | undefined>;
+                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     strategiesPath: string;
                     ordinal: number;
@@ -4269,6 +4293,9 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThan?: yup.Maybe<number | undefined>;
+                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     strategiesPath: string;
                     ordinal: number;
