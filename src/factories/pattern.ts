@@ -9,7 +9,6 @@ export const makePatternFactory = (TimestampKlass: typeof TimestampLike) =>
 
     name: 'Cigarettes',
     ordinal: Factory.each(i => i),
-    dailySetbackThreshold: 0,
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     sendWeeklyReports: false,

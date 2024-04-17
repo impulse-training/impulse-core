@@ -1795,14 +1795,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: yup.Maybe<number | undefined>;
             supportGroupIds?: string[] | undefined;
             notification?: {
                 title: string;
                 body: string;
             } | yup.Maybe<{} | undefined>;
-            measureTacticId?: yup.Maybe<string | undefined>;
-            dailySetbackThreshold?: yup.Maybe<number | undefined>;
             issueId?: yup.Maybe<string | undefined>;
             parentIssueIds?: string[] | undefined;
             sendWeeklyReports?: yup.Maybe<boolean | undefined>;
@@ -4540,14 +4537,11 @@ export declare const logSchema: yup.Lazy<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: yup.Maybe<number | undefined>;
             supportGroupIds?: string[] | undefined;
             notification?: {
                 title: string;
                 body: string;
             } | yup.Maybe<{} | undefined>;
-            measureTacticId?: yup.Maybe<string | undefined>;
-            dailySetbackThreshold?: yup.Maybe<number | undefined>;
             issueId?: yup.Maybe<string | undefined>;
             parentIssueIds?: string[] | undefined;
             sendWeeklyReports?: yup.Maybe<boolean | undefined>;

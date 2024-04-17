@@ -10,7 +10,7 @@ export const supportGroupSchema = yup.object().shape({
   slug: yup.string(),
   templateId: yup.string().optional(),
   everythingPermissions: yup.boolean().optional(),
-  participantUids: requiredStringArray,
+  participantProfileIds: requiredStringArray,
   memberTargetCount: yup.number().optional(),
   groupName: yup.string().required(),
   groupNameAliases: yup

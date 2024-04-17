@@ -19,9 +19,6 @@ export const patternSchema = yup.object().shape({
         })
       : yup.mixed().notRequired()
   ),
-  measureTacticId: yup.string().notRequired(),
-  dailySetbackThreshold: yup.number().notRequired(),
-  setbackThreshold: yup.number().notRequired(),
   issueId: yup.string().notRequired(),
   parentIssueIds: optionalStringArray,
   sendWeeklyReports: yup.boolean().notRequired(),

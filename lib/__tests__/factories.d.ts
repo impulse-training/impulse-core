@@ -402,7 +402,7 @@ export declare const factories: {
         lastMessageUid?: string | undefined;
         isSharingDisabled?: boolean | undefined;
         thumbnailUrl: string;
-        participantUids: string[];
+        participantProfileIds: string[];
         groupName: string;
         creatorName: string;
         creatorUid: string;
@@ -412,9 +412,9 @@ export declare const factories: {
         };
         permissions: {};
         suggestedTacticIds: {};
-    }, "thumbnailUrl" | "participantUids" | "groupName" | "creatorName" | "creatorUid" | "icon" | "unreadCounts" | "permissions" | "suggestedTacticIds" | ("createdAt" | "updatedAt" | "isTemplate" | "invitationCode" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "lastMessagePreview" | "invitationUrl" | "lastMessageUid" | "isSharingDisabled")>;
+    }, "thumbnailUrl" | "participantProfileIds" | "groupName" | "creatorName" | "creatorUid" | "icon" | "unreadCounts" | "permissions" | "suggestedTacticIds" | ("createdAt" | "updatedAt" | "isTemplate" | "invitationCode" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "lastMessagePreview" | "invitationUrl" | "lastMessageUid" | "isSharingDisabled")>;
     messageFactory: import("factory.ts").Factory<import("..").MessageValue, keyof import("..").MessageValue>;
-    patternFactory: import("factory.ts").Factory<import("..").PatternValue, "profileId" | "ordinal" | "tacticsById" | "name" | ("createdAt" | "updatedAt" | "setbackThreshold" | "supportGroupIds" | "notification" | "measureTacticId" | "dailySetbackThreshold" | "issueId" | "parentIssueIds" | "sendWeeklyReports")>;
+    patternFactory: import("factory.ts").Factory<import("..").PatternValue, "profileId" | "ordinal" | "tacticsById" | "name" | ("createdAt" | "updatedAt" | "supportGroupIds" | "notification" | "issueId" | "parentIssueIds" | "sendWeeklyReports")>;
     tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "sourceId" | "title" | "subtitle" | "description" | "image" | "setbackThreshold" | "choicesById" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
     questionTimeTacticFactory: import("factory.ts").Factory<{
         createdAt?: {

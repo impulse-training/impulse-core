@@ -15,14 +15,11 @@ export declare class Log {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        setbackThreshold?: import("yup").Maybe<number | undefined>;
         supportGroupIds?: string[] | undefined;
         notification?: {
             title: string;
             body: string;
         } | import("yup").Maybe<{} | undefined>;
-        measureTacticId?: import("yup").Maybe<string | undefined>;
-        dailySetbackThreshold?: import("yup").Maybe<number | undefined>;
         issueId?: import("yup").Maybe<string | undefined>;
         parentIssueIds?: string[] | undefined;
         sendWeeklyReports?: import("yup").Maybe<boolean | undefined>;
