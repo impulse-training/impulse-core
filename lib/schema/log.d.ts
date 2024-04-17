@@ -51,6 +51,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
     commentsById: {} | null | undefined;
     commentsByTacticId: {
         [x: string]: {
+            tacticTitle: string;
             commentsById: {
                 [x: string]: {
                     createdAt?: {
@@ -64,7 +65,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     tacticId?: string | null | undefined;
-                    tacticName?: string | null | undefined;
+                    tacticTitle?: string | null | undefined;
                     text?: string | undefined;
                     recording?: {
                         waveform?: string | null | undefined;
@@ -80,7 +81,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     profileId: string;
                 };
             };
-            tacticTitle: string;
         };
     } | null | undefined;
     strategiesPath: string;
@@ -951,6 +951,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     commentsById: {} | null | undefined;
     commentsByTacticId: {
         [x: string]: {
+            tacticTitle: string;
             commentsById: {
                 [x: string]: {
                     createdAt?: {
@@ -964,7 +965,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     tacticId?: string | null | undefined;
-                    tacticName?: string | null | undefined;
+                    tacticTitle?: string | null | undefined;
                     text?: string | undefined;
                     recording?: {
                         waveform?: string | null | undefined;
@@ -980,7 +981,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     profileId: string;
                 };
             };
-            tacticTitle: string;
         };
     } | null | undefined;
     strategiesPath: string;
@@ -1891,6 +1891,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
     commentsById: {} | null | undefined;
     commentsByTacticId: {
         [x: string]: {
+            tacticTitle: string;
             commentsById: {
                 [x: string]: {
                     createdAt?: {
@@ -1904,7 +1905,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     tacticId?: string | null | undefined;
-                    tacticName?: string | null | undefined;
+                    tacticTitle?: string | null | undefined;
                     text?: string | undefined;
                     recording?: {
                         waveform?: string | null | undefined;
@@ -1920,7 +1921,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     profileId: string;
                 };
             };
-            tacticTitle: string;
         };
     } | null | undefined;
     strategiesPath: string;
@@ -2797,6 +2797,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
     commentsById: {} | null | undefined;
     commentsByTacticId: {
         [x: string]: {
+            tacticTitle: string;
             commentsById: {
                 [x: string]: {
                     createdAt?: {
@@ -2810,7 +2811,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     tacticId?: string | null | undefined;
-                    tacticName?: string | null | undefined;
+                    tacticTitle?: string | null | undefined;
                     text?: string | undefined;
                     recording?: {
                         waveform?: string | null | undefined;
@@ -2826,7 +2827,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     profileId: string;
                 };
             };
-            tacticTitle: string;
         };
     } | null | undefined;
     strategiesPath: string;
@@ -3678,6 +3678,7 @@ export declare const logSchema: yup.Lazy<{
     commentsById?: {} | null | undefined;
     commentsByTacticId?: {
         [x: string]: {
+            tacticTitle: string;
             commentsById: {
                 [x: string]: {
                     createdAt?: {
@@ -3691,7 +3692,7 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     tacticId?: string | null | undefined;
-                    tacticName?: string | null | undefined;
+                    tacticTitle?: string | null | undefined;
                     text?: string | undefined;
                     recording?: {
                         waveform?: string | null | undefined;
@@ -3707,7 +3708,6 @@ export declare const logSchema: yup.Lazy<{
                     profileId: string;
                 };
             };
-            tacticTitle: string;
         };
     } | null | undefined;
     tacticLikes?: {
@@ -4574,6 +4574,7 @@ export declare const logSchema: yup.Lazy<{
     commentsById?: {} | null | undefined;
     commentsByTacticId?: {
         [x: string]: {
+            tacticTitle: string;
             commentsById: {
                 [x: string]: {
                     createdAt?: {
@@ -4587,7 +4588,7 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     tacticId?: string | null | undefined;
-                    tacticName?: string | null | undefined;
+                    tacticTitle?: string | null | undefined;
                     text?: string | undefined;
                     recording?: {
                         waveform?: string | null | undefined;
@@ -4603,7 +4604,6 @@ export declare const logSchema: yup.Lazy<{
                     profileId: string;
                 };
             };
-            tacticTitle: string;
         };
     } | null | undefined;
     tacticLikes?: {
@@ -5441,6 +5441,7 @@ export declare const logSchema: yup.Lazy<{
     commentsById?: {} | null | undefined;
     commentsByTacticId?: {
         [x: string]: {
+            tacticTitle: string;
             commentsById: {
                 [x: string]: {
                     createdAt?: {
@@ -5454,7 +5455,7 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     tacticId?: string | null | undefined;
-                    tacticName?: string | null | undefined;
+                    tacticTitle?: string | null | undefined;
                     text?: string | undefined;
                     recording?: {
                         waveform?: string | null | undefined;
@@ -5470,7 +5471,6 @@ export declare const logSchema: yup.Lazy<{
                     profileId: string;
                 };
             };
-            tacticTitle: string;
         };
     } | null | undefined;
     tacticLikes?: {

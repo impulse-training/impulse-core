@@ -12,7 +12,7 @@ export declare const makeCommentFactory: (TimestampKlass: typeof TimestampLike) 
         toDate: Function;
     } | null | undefined;
     tacticId?: string | null | undefined;
-    tacticName?: string | null | undefined;
+    tacticTitle?: string | null | undefined;
     text?: string | undefined;
     recording?: {
         waveform?: string | null | undefined;
@@ -26,4 +26,4 @@ export declare const makeCommentFactory: (TimestampKlass: typeof TimestampLike) 
         uri?: import("yup").Maybe<string | undefined>;
     } | undefined;
     profileId: string;
-}, "profileId" | ("createdAt" | "updatedAt" | "tacticId" | "tacticName" | "text" | "recording" | "isEdited" | "avatar")>;
+}, "profileId" | ("createdAt" | "updatedAt" | "tacticId" | "tacticTitle" | "text" | "recording" | "isEdited" | "avatar")>;

@@ -7,7 +7,7 @@ export const commentSchema = yup.object().shape({
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
   tacticId: yup.string().nullable(),
-  tacticName: yup.string().nullable(),
+  tacticTitle: yup.string().nullable(),
   text: yup.string().optional(),
   profileId: yup.string().required(),
   recording: recordingSchema.optional(),

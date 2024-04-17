@@ -11,7 +11,7 @@ export declare const commentSchema: yup.ObjectSchema<{
         toDate: Function;
     } | null | undefined;
     tacticId: string | null | undefined;
-    tacticName: string | null | undefined;
+    tacticTitle: string | null | undefined;
     text: string | undefined;
     profileId: string;
     recording: {
@@ -29,7 +29,7 @@ export declare const commentSchema: yup.ObjectSchema<{
     createdAt: undefined;
     updatedAt: undefined;
     tacticId: undefined;
-    tacticName: undefined;
+    tacticTitle: undefined;
     text: undefined;
     profileId: undefined;
     recording: {
