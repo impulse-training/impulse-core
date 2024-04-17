@@ -7,6 +7,7 @@ import { optionalTimestampSchema } from './utils/timestamp';
 export const strategySchema = yup.object({
   ordinal: yup.number().notRequired(),
   name: yup.string().required(),
+  type: yup.mixed<'impulse' | 'time'>().required(),
   tacticIds: requiredStringArray,
   tacticsById: objectOf(tacticSchema),
   profileId: yup.string(),

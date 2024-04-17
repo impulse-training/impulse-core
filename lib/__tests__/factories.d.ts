@@ -471,7 +471,7 @@ export declare const factories: {
         title: string;
         backgroundColor: string;
     }, "type" | "title" | "backgroundColor" | ("createdAt" | "updatedAt" | "profileId" | "sourceId" | "subtitle" | "description" | "image" | "setbackThreshold" | "choicesById" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested")>;
-    strategyFactory: import("factory.ts").Factory<import("..").StrategyValue, "tacticsById" | "name" | "tacticIds" | ("createdAt" | "updatedAt" | "profileId" | "ordinal")>;
+    strategyFactory: import("factory.ts").Factory<import("..").StrategyValue, "type" | "tacticsById" | "name" | "tacticIds" | ("createdAt" | "updatedAt" | "profileId" | "ordinal")>;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
