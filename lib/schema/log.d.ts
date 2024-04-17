@@ -5,12 +5,14 @@ export declare const tacticDataSchema: yup.ObjectSchema<{
     value: NonNullable<string | number | undefined>;
     choiceId: string | undefined;
     formattedValue: string;
+    strategiesPath: string | undefined;
     lowEmoji: yup.Maybe<string | undefined>;
     highEmoji: yup.Maybe<string | undefined>;
 }, yup.AnyObject, {
     value: undefined;
     choiceId: undefined;
     formattedValue: undefined;
+    strategiesPath: undefined;
     lowEmoji: undefined;
     highEmoji: undefined;
 }, "">;
@@ -869,6 +871,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     tacticData: {
         [x: string]: {
+            strategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
             choiceId?: string | undefined;
@@ -1768,6 +1771,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     tacticData: {
         [x: string]: {
+            strategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
             choiceId?: string | undefined;
@@ -2707,6 +2711,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     tacticData: {
         [x: string]: {
+            strategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
             choiceId?: string | undefined;
@@ -3612,6 +3617,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     tacticData: {
         [x: string]: {
+            strategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
             choiceId?: string | undefined;
@@ -3709,6 +3715,7 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     tacticData?: {
         [x: string]: {
+            strategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
             choiceId?: string | undefined;
@@ -4604,6 +4611,7 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     tacticData?: {
         [x: string]: {
+            strategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
             choiceId?: string | undefined;
@@ -5470,6 +5478,7 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     tacticData?: {
         [x: string]: {
+            strategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
             choiceId?: string | undefined;
