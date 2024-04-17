@@ -19,6 +19,7 @@ export declare const patternSchema: yup.ObjectSchema<{
         title: string;
         body: string;
     } | yup.Maybe<{} | undefined>;
+    measureTacticId: yup.Maybe<string | undefined>;
     issueId: yup.Maybe<string | undefined>;
     parentIssueIds: string[] | undefined;
     sendWeeklyReports: yup.Maybe<boolean | undefined>;
@@ -30,6 +31,7 @@ export declare const patternSchema: yup.ObjectSchema<{
     ordinal: undefined;
     supportGroupIds: "";
     notification: undefined;
+    measureTacticId: undefined;
     issueId: undefined;
     parentIssueIds: "";
     sendWeeklyReports: undefined;

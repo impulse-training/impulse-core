@@ -1804,6 +1804,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 title: string;
                 body: string;
             } | yup.Maybe<{} | undefined>;
+            measureTacticId?: yup.Maybe<string | undefined>;
             issueId?: yup.Maybe<string | undefined>;
             parentIssueIds?: string[] | undefined;
             sendWeeklyReports?: yup.Maybe<boolean | undefined>;
@@ -4549,6 +4550,7 @@ export declare const logSchema: yup.Lazy<{
                 title: string;
                 body: string;
             } | yup.Maybe<{} | undefined>;
+            measureTacticId?: yup.Maybe<string | undefined>;
             issueId?: yup.Maybe<string | undefined>;
             parentIssueIds?: string[] | undefined;
             sendWeeklyReports?: yup.Maybe<boolean | undefined>;
