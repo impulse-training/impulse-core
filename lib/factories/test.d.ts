@@ -80,17 +80,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     groupDescription?: string | undefined;
     lastMessagePreview?: string | undefined;
     invitationUrl?: string | undefined;
-    lastMessageUid?: string | undefined;
+    lastMessageProfileId?: string | undefined;
     isSharingDisabled?: boolean | undefined;
     thumbnailUrl: string;
     participantProfileIds: string[];
     groupName: string;
     creatorName: string;
-    creatorUid: string;
+    creatorProfileId: string;
     icon: {};
     unreadCounts: {
         [x: string]: number;
     };
     permissions: {};
     suggestedTacticIds: {};
-}, "thumbnailUrl" | "participantProfileIds" | "groupName" | "creatorName" | "creatorUid" | "icon" | "unreadCounts" | "permissions" | "suggestedTacticIds" | ("createdAt" | "updatedAt" | "isTemplate" | "invitationCode" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "lastMessagePreview" | "invitationUrl" | "lastMessageUid" | "isSharingDisabled")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "sourceId" | "title" | "subtitle" | "description" | "image" | "setbackThreshold" | "choicesById" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
+}, "thumbnailUrl" | "participantProfileIds" | "groupName" | "creatorName" | "creatorProfileId" | "icon" | "unreadCounts" | "permissions" | "suggestedTacticIds" | ("createdAt" | "updatedAt" | "isTemplate" | "invitationCode" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "lastMessagePreview" | "invitationUrl" | "lastMessageProfileId" | "isSharingDisabled")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "sourceId" | "title" | "subtitle" | "description" | "image" | "setbackThreshold" | "choicesById" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;

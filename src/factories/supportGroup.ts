@@ -12,7 +12,7 @@ export const makeSupportGroupFactory = (TimestampKlass: typeof TimestampLike) =>
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     creatorName: 'Mooky',
-    creatorUid: 'abc123',
+    creatorProfileId: 'abc123',
     icon: 'group',
     suggestedTacticIds: {},
   });

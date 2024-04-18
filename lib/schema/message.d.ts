@@ -4,7 +4,7 @@ export interface MessageValue {
     createdAt: TimestampLike;
     updatedAt: TimestampLike;
     deletedAt?: TimestampLike;
-    fromUid: string;
+    fromProfileId: string;
     text: string;
     href?: string;
     log?: LogValue;

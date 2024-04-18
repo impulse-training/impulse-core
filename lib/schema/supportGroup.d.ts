@@ -23,13 +23,13 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
     } | undefined;
     groupDescription: string | undefined;
     creatorName: string;
-    creatorUid: string;
+    creatorProfileId: string;
     icon: {};
     thumbnailUrl: string;
     lastMessagePreview: string | undefined;
     invitationCode: string | undefined;
     invitationUrl: string | undefined;
-    lastMessageUid: string | undefined;
+    lastMessageProfileId: string | undefined;
     isSharingDisabled: boolean | undefined;
     isTemplate: boolean | undefined;
     unreadCounts: {
@@ -49,13 +49,13 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
     groupNameAliases: undefined;
     groupDescription: undefined;
     creatorName: undefined;
-    creatorUid: undefined;
+    creatorProfileId: undefined;
     icon: undefined;
     thumbnailUrl: undefined;
     lastMessagePreview: undefined;
     invitationCode: undefined;
     invitationUrl: undefined;
-    lastMessageUid: undefined;
+    lastMessageProfileId: undefined;
     isSharingDisabled: undefined;
     isTemplate: undefined;
     unreadCounts: undefined;
