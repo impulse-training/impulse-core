@@ -48,6 +48,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     notificationPreferences?: {
         [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
     } | null | undefined;
+    defaultNickname?: string | undefined;
     androidPermissions?: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
@@ -55,7 +56,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     scheduledNotificationIds?: string[] | undefined;
     timezone: string;
     invitationCode: string;
-}, "timezone" | "invitationCode" | ("createdAt" | "updatedAt" | "parentIssueIds" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "androidPermissions" | "region" | "scheduledNotificationIds")>, supportGroupFactory: import("factory.ts").Factory<{
+}, "timezone" | "invitationCode" | ("createdAt" | "updatedAt" | "parentIssueIds" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "defaultNickname" | "androidPermissions" | "region" | "scheduledNotificationIds")>, supportGroupFactory: import("factory.ts").Factory<{
     createdAt?: {
         seconds: number;
         nanoseconds: number;
@@ -78,6 +79,9 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         [x: symbol]: string;
     } | undefined;
     groupDescription?: string | undefined;
+    profileNicknames?: {
+        [x: string]: string;
+    } | null | undefined;
     lastMessagePreview?: string | undefined;
     invitationUrl?: string | undefined;
     lastMessageProfileId?: string | undefined;
@@ -85,7 +89,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     thumbnailUrl: string;
     participantProfileIds: string[];
     groupName: string;
-    creatorName: string;
     creatorProfileId: string;
     icon: {};
     unreadCounts: {
@@ -93,4 +96,4 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     };
     permissions: {};
     suggestedTacticIds: {};
-}, "thumbnailUrl" | "participantProfileIds" | "groupName" | "creatorName" | "creatorProfileId" | "icon" | "unreadCounts" | "permissions" | "suggestedTacticIds" | ("createdAt" | "updatedAt" | "isTemplate" | "invitationCode" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "lastMessagePreview" | "invitationUrl" | "lastMessageProfileId" | "isSharingDisabled")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "sourceId" | "title" | "subtitle" | "description" | "image" | "setbackThreshold" | "choicesById" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
+}, "thumbnailUrl" | "participantProfileIds" | "groupName" | "creatorProfileId" | "icon" | "unreadCounts" | "permissions" | "suggestedTacticIds" | ("createdAt" | "updatedAt" | "isTemplate" | "invitationCode" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "profileNicknames" | "lastMessagePreview" | "invitationUrl" | "lastMessageProfileId" | "isSharingDisabled")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "sourceId" | "title" | "subtitle" | "description" | "image" | "setbackThreshold" | "choicesById" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;

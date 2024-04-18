@@ -23,6 +23,9 @@ export declare const makeSupportGroupFactory: (TimestampKlass: typeof TimestampL
         [x: symbol]: string;
     } | undefined;
     groupDescription?: string | undefined;
+    profileNicknames?: {
+        [x: string]: string;
+    } | null | undefined;
     lastMessagePreview?: string | undefined;
     invitationUrl?: string | undefined;
     lastMessageProfileId?: string | undefined;
@@ -30,7 +33,6 @@ export declare const makeSupportGroupFactory: (TimestampKlass: typeof TimestampL
     thumbnailUrl: string;
     participantProfileIds: string[];
     groupName: string;
-    creatorName: string;
     creatorProfileId: string;
     icon: {};
     unreadCounts: {
@@ -38,4 +40,4 @@ export declare const makeSupportGroupFactory: (TimestampKlass: typeof TimestampL
     };
     permissions: {};
     suggestedTacticIds: {};
-}, "thumbnailUrl" | "participantProfileIds" | "groupName" | "creatorName" | "creatorProfileId" | "icon" | "unreadCounts" | "permissions" | "suggestedTacticIds" | ("createdAt" | "updatedAt" | "isTemplate" | "invitationCode" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "lastMessagePreview" | "invitationUrl" | "lastMessageProfileId" | "isSharingDisabled")>;
+}, "thumbnailUrl" | "participantProfileIds" | "groupName" | "creatorProfileId" | "icon" | "unreadCounts" | "permissions" | "suggestedTacticIds" | ("createdAt" | "updatedAt" | "isTemplate" | "invitationCode" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "profileNicknames" | "lastMessagePreview" | "invitationUrl" | "lastMessageProfileId" | "isSharingDisabled")>;

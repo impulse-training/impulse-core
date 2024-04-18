@@ -23,6 +23,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     notificationPreferences: {
         [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
     } | null | undefined;
+    defaultNickname: string | undefined;
     androidPermissions: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
@@ -40,6 +41,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     expoPushToken: undefined;
     widgetInstalledAt: undefined;
     notificationPreferences: undefined;
+    defaultNickname: undefined;
     androidPermissions: undefined;
     parentIssueIds: "";
     region: undefined;

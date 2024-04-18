@@ -1,7 +1,7 @@
 import { mapValues } from 'lodash';
 import * as yup from 'yup';
 import { requiredStringArray } from './utils/array';
-import { objectOf } from './utils/objectOf';
+import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema } from './utils/timestamp';
 
 export const supportGroupSchema = yup.object().shape({
@@ -17,8 +17,8 @@ export const supportGroupSchema = yup.object().shape({
     .lazy(obj => yup.object(mapValues(obj, () => yup.string().required())))
     .optional(),
   groupDescription: yup.string().optional(),
-  creatorName: yup.string().required(),
   creatorProfileId: yup.string().required(),
+  profileNicknames: optionalObjectOf(yup.string().required()),
   icon: yup.mixed().oneOf(['bugs', 'team', 'group', 'tactics']).required(),
   thumbnailUrl: yup.string().url().required(),
   lastMessagePreview: yup.string().optional(),

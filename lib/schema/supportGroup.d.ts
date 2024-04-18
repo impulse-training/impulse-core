@@ -22,8 +22,10 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
         [x: symbol]: string;
     } | undefined;
     groupDescription: string | undefined;
-    creatorName: string;
     creatorProfileId: string;
+    profileNicknames: {
+        [x: string]: string;
+    } | null | undefined;
     icon: {};
     thumbnailUrl: string;
     lastMessagePreview: string | undefined;
@@ -48,8 +50,8 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
     groupName: undefined;
     groupNameAliases: undefined;
     groupDescription: undefined;
-    creatorName: undefined;
     creatorProfileId: undefined;
+    profileNicknames: undefined;
     icon: undefined;
     thumbnailUrl: undefined;
     lastMessagePreview: undefined;

@@ -8,7 +8,6 @@ import { optionalTimestampSchema } from './utils/timestamp';
 export const profileSchema = yup.object().shape({
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
-
   activeImpulseId: yup.string().optional(),
   currentAppState: yup.mixed<AppStateStatus>().optional(), // Define validation for AppStateStatus if needed
   lastActiveAt: yup.date().optional(),
@@ -17,6 +16,7 @@ export const profileSchema = yup.object().shape({
   notificationPreferences: optionalObjectOf(
     yup.array().of(notificationOptionSchema)
   ),
+  defaultNickname: yup.string().optional(),
   androidPermissions: optionalObjectOf(yup.boolean().required()),
   parentIssueIds: yup.array().of(yup.string()).optional(),
   region: yup.string().nullable().optional(),

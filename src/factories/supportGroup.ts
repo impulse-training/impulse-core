@@ -11,7 +11,7 @@ export const makeSupportGroupFactory = (TimestampKlass: typeof TimestampLike) =>
     unreadCounts: {},
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
-    creatorName: 'Mooky',
+    profileNicknames: { abc123: 'Mooky' },
     creatorProfileId: 'abc123',
     icon: 'group',
     suggestedTacticIds: {},
