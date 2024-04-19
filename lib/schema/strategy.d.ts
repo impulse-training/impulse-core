@@ -3,7 +3,7 @@ import { WithTacticsById } from '.';
 export declare const strategySchema: yup.ObjectSchema<{
     ordinal: yup.Maybe<number | undefined>;
     name: string;
-    type: NonNullable<"impulse" | "time" | undefined>;
+    type: NonNullable<"impulse" | "time" | "debrief" | undefined>;
     tacticIds: string[];
     tacticsById: {
         [x: string]: {
