@@ -3,7 +3,7 @@ import { WithTacticsById } from '.';
 export declare const strategySchema: yup.ObjectSchema<{
     ordinal: yup.Maybe<number | undefined>;
     name: string;
-    type: NonNullable<"impulse" | "time" | "debrief" | undefined>;
+    type: NonNullable<"time" | "impulse" | "debrief" | undefined>;
     tacticIds: string[];
     tacticsById: {
         [x: string]: {
@@ -44,7 +44,24 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "numeric";
+                    type: "time";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
+                    text: string;
+                    ordinal: number;
+                    type: "counter";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -116,7 +133,24 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "numeric";
+                    type: "time";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
+                    text: string;
+                    ordinal: number;
+                    type: "counter";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -191,7 +225,24 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "numeric";
+                    type: "time";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
+                    text: string;
+                    ordinal: number;
+                    type: "counter";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -261,7 +312,24 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "numeric";
+                    type: "time";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
+                    text: string;
+                    ordinal: number;
+                    type: "counter";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -339,7 +407,24 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "numeric";
+                    type: "time";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
+                    text: string;
+                    ordinal: number;
+                    type: "counter";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -409,7 +494,24 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "numeric";
+                    type: "time";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
+                    text: string;
+                    ordinal: number;
+                    type: "counter";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -481,7 +583,24 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "numeric";
+                    type: "time";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
+                    text: string;
+                    ordinal: number;
+                    type: "counter";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -551,7 +670,24 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "numeric";
+                    type: "time";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
+                    text: string;
+                    ordinal: number;
+                    type: "counter";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -621,7 +757,24 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "numeric";
+                    type: "time";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
+                    text: string;
+                    ordinal: number;
+                    type: "counter";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -691,7 +844,24 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "numeric";
+                    type: "time";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
+                    text: string;
+                    ordinal: number;
+                    type: "counter";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -761,7 +931,24 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "numeric";
+                    type: "time";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
+                    text: string;
+                    ordinal: number;
+                    type: "counter";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -835,7 +1022,24 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "numeric";
+                    type: "time";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
+                    text: string;
+                    ordinal: number;
+                    type: "counter";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -905,7 +1109,24 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "numeric";
+                    type: "time";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
+                    text: string;
+                    ordinal: number;
+                    type: "counter";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -976,7 +1197,24 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "numeric";
+                    type: "time";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    greaterThan?: yup.Maybe<number | undefined>;
+                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
+                    text: string;
+                    ordinal: number;
+                    type: "counter";
                 } | {
                     createdAt?: {
                         seconds: number;

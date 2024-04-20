@@ -137,7 +137,24 @@ export declare const factories: {
                     lessThanOrEqualTo?: import("yup").Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "numeric";
+                    type: "time";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    greaterThan?: import("yup").Maybe<number | undefined>;
+                    lessThanOrEqualTo?: import("yup").Maybe<number | undefined>;
+                    text: string;
+                    ordinal: number;
+                    type: "counter";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -207,7 +224,24 @@ export declare const factories: {
                     lessThanOrEqualTo?: import("yup").Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "numeric";
+                    type: "time";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    greaterThan?: import("yup").Maybe<number | undefined>;
+                    lessThanOrEqualTo?: import("yup").Maybe<number | undefined>;
+                    text: string;
+                    ordinal: number;
+                    type: "counter";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -279,7 +313,24 @@ export declare const factories: {
                     lessThanOrEqualTo?: import("yup").Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "numeric";
+                    type: "time";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    greaterThan?: import("yup").Maybe<number | undefined>;
+                    lessThanOrEqualTo?: import("yup").Maybe<number | undefined>;
+                    text: string;
+                    ordinal: number;
+                    type: "counter";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -349,7 +400,24 @@ export declare const factories: {
                     lessThanOrEqualTo?: import("yup").Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "numeric";
+                    type: "time";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    greaterThan?: import("yup").Maybe<number | undefined>;
+                    lessThanOrEqualTo?: import("yup").Maybe<number | undefined>;
+                    text: string;
+                    ordinal: number;
+                    type: "counter";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -419,7 +487,24 @@ export declare const factories: {
                     lessThanOrEqualTo?: import("yup").Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "numeric";
+                    type: "time";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    greaterThan?: import("yup").Maybe<number | undefined>;
+                    lessThanOrEqualTo?: import("yup").Maybe<number | undefined>;
+                    text: string;
+                    ordinal: number;
+                    type: "counter";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -537,7 +622,24 @@ export declare const factories: {
                 lessThanOrEqualTo?: import("yup").Maybe<number | undefined>;
                 text: string;
                 ordinal: number;
-                type: "numeric";
+                type: "time";
+            } | {
+                createdAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                strategiesPath?: string | undefined;
+                greaterThan?: import("yup").Maybe<number | undefined>;
+                lessThanOrEqualTo?: import("yup").Maybe<number | undefined>;
+                text: string;
+                ordinal: number;
+                type: "counter";
             } | {
                 createdAt?: {
                     seconds: number;

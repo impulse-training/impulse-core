@@ -1,6 +1,11 @@
 import * as yup from 'yup';
 import { TacticData } from '../log';
-import { NumericOptionValue, numericOptionSchema } from './numeric';
+import {
+  CounterOptionValue,
+  TimeOptionValue,
+  counterOptionSchema,
+  timeOptionSchema,
+} from './numeric';
 import {
   StringOptionValue,
   optionIsStringOption,
@@ -14,9 +19,10 @@ export const optionSchemas: Record<
   OptionValue['type'],
   yup.ObjectSchema<OptionValue>
 > = {
-  numeric: numericOptionSchema,
+  time: timeOptionSchema,
+  counter: counterOptionSchema,
   string: stringOptionSchema,
-} as any;
+};
 
 export const optionSchema = yup.lazy(value => {
   if (!value) return yup.mixed().required();
@@ -38,7 +44,10 @@ type ValidatedOption = {
   [K in OptionValue['type']]: yup.InferType<(typeof optionSchemas)[K]>;
 }[OptionValue['type']];
 
-export type OptionValue = NumericOptionValue | StringOptionValue;
+export type OptionValue =
+  | TimeOptionValue
+  | CounterOptionValue
+  | StringOptionValue;
 
 export function optionMatches(option: OptionValue, data: TacticData) {
   if (optionIsStringOption(option)) {
