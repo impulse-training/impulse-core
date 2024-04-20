@@ -12,9 +12,9 @@ export declare const makeTimeRoutineFactory: (TimestampKlass: typeof TimestampLi
         toDate: Function;
     } | null | undefined;
     profileId: string;
-    type: "time";
     name: string;
+    type: "time";
     weekdays: number[];
     hour: number;
     minute: number;
-}, "profileId" | "type" | "name" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;
+}, "profileId" | "name" | "type" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;

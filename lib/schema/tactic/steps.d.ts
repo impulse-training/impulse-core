@@ -22,7 +22,7 @@ export declare const stepsTacticSchema: yup.ObjectSchema<{
         uri?: yup.Maybe<string | undefined>;
     } | null | undefined;
     setbackThreshold: number | null | undefined;
-    choicesById: {
+    optionsById: {
         [x: string]: {
             createdAt?: {
                 seconds: number;
@@ -69,7 +69,7 @@ export declare const stepsTacticSchema: yup.ObjectSchema<{
         uri: undefined;
     };
     setbackThreshold: undefined;
-    choicesById: undefined;
+    optionsById: undefined;
     backgroundColor: undefined;
     isTemplate: undefined;
     language: undefined;

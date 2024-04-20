@@ -2,7 +2,6 @@ export const DATE_FORMAT = 'yyyy-MM-dd';
 
 export * from './application';
 export * from './category';
-export * from './choice';
 export * from './comment';
 export * from './contact';
 export * from './invitation';
@@ -12,6 +11,7 @@ export * from './log';
 export * from './mailTemplate';
 export * from './message';
 export * from './notification';
+export * from './option';
 export * from './pattern';
 export * from './profile';
 export * from './recording';

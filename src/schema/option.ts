@@ -2,7 +2,7 @@ import * as yup from 'yup';
 import { TacticData } from './log';
 import { optionalTimestampSchema } from './utils/timestamp';
 
-export const choiceSchema = yup
+export const optionSchema = yup
   .object({
     createdAt: optionalTimestampSchema,
     updatedAt: optionalTimestampSchema,
@@ -25,18 +25,18 @@ export const choiceSchema = yup
       return (hasRange && !hasEqualTo) || (!hasRange && hasEqualTo);
     }
   );
-export type ChoiceValue = yup.InferType<typeof choiceSchema>;
+export type OptionValue = yup.InferType<typeof optionSchema>;
 
-export function choiceMatches(choice: ChoiceValue, data: TacticData) {
-  if (choice.equalTo != null) {
-    return choice.equalTo === data.value;
+export function optionMatches(option: OptionValue, data: TacticData) {
+  if (option.equalTo != null) {
+    return option.equalTo === data.value;
   }
-  if (choice.greaterThan != null) {
-    return typeof data.value === 'number' && data.value > choice.greaterThan;
+  if (option.greaterThan != null) {
+    return typeof data.value === 'number' && data.value > option.greaterThan;
   }
-  if (choice.lessThanOrEqualTo != null) {
+  if (option.lessThanOrEqualTo != null) {
     return (
-      typeof data.value === 'number' && data.value <= choice.lessThanOrEqualTo
+      typeof data.value === 'number' && data.value <= option.lessThanOrEqualTo
     );
   }
 }

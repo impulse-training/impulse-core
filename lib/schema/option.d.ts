@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 import { TacticData } from './log';
-export declare const choiceSchema: yup.ObjectSchema<{
+export declare const optionSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -27,5 +27,5 @@ export declare const choiceSchema: yup.ObjectSchema<{
     lessThanOrEqualTo: undefined;
     equalTo: undefined;
 }, "">;
-export type ChoiceValue = yup.InferType<typeof choiceSchema>;
-export declare function choiceMatches(choice: ChoiceValue, data: TacticData): boolean | undefined;
+export type OptionValue = yup.InferType<typeof optionSchema>;
+export declare function optionMatches(option: OptionValue, data: TacticData): boolean | undefined;

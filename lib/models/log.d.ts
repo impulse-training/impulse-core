@@ -26,8 +26,8 @@ export declare class Log {
         parentIssueIds?: string[] | undefined;
         sendWeeklyReports?: import("yup").Maybe<boolean | undefined>;
         profileId: string;
-        ordinal: number;
         name: string;
+        ordinal: number;
     };
 }
 export declare function formatPattern(pattern?: {
