@@ -121,9 +121,25 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -177,9 +193,25 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -236,9 +268,25 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -290,9 +338,25 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -352,9 +416,25 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -406,9 +486,25 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -462,9 +558,25 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -516,9 +628,25 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -570,9 +698,25 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -624,9 +768,25 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -678,9 +838,25 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -736,9 +912,25 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -790,9 +982,25 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -845,9 +1053,25 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1021,9 +1245,25 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1077,9 +1317,25 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1136,9 +1392,25 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1190,9 +1462,25 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1252,9 +1540,25 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1306,9 +1610,25 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1362,9 +1682,25 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1416,9 +1752,25 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1470,9 +1822,25 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1524,9 +1892,25 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1578,9 +1962,25 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1636,9 +2036,25 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1690,9 +2106,25 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1745,9 +2177,25 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1963,9 +2411,25 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2019,9 +2483,25 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2078,9 +2558,25 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2132,9 +2628,25 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2194,9 +2706,25 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2248,9 +2776,25 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2304,9 +2848,25 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2358,9 +2918,25 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2412,9 +2988,25 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2466,9 +3058,25 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2520,9 +3128,25 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2578,9 +3202,25 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2632,9 +3272,25 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2687,9 +3343,25 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2869,9 +3541,25 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2925,9 +3613,25 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2984,9 +3688,25 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3038,9 +3758,25 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3100,9 +3836,25 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3154,9 +3906,25 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3210,9 +3978,25 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3264,9 +4048,25 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3318,9 +4118,25 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3372,9 +4188,25 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3426,9 +4258,25 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3484,9 +4332,25 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3538,9 +4402,25 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3593,9 +4473,25 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3769,9 +4665,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3825,9 +4737,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3884,9 +4812,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3938,9 +4882,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4000,9 +4960,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4054,9 +5030,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4110,9 +5102,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4164,9 +5172,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4218,9 +5242,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4272,9 +5312,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4326,9 +5382,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4384,9 +5456,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4438,9 +5526,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4493,9 +5597,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4662,9 +5782,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4718,9 +5854,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4777,9 +5929,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4831,9 +5999,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4893,9 +6077,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4947,9 +6147,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5003,9 +6219,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5057,9 +6289,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5111,9 +6359,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5165,9 +6429,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5219,9 +6499,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5277,9 +6573,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5331,9 +6643,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5386,9 +6714,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5529,9 +6873,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5585,9 +6945,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5644,9 +7020,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5698,9 +7090,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5760,9 +7168,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5814,9 +7238,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5870,9 +7310,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5924,9 +7380,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5978,9 +7450,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6032,9 +7520,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6086,9 +7590,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6144,9 +7664,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6198,9 +7734,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6253,9 +7805,25 @@ export declare const logSchema: yup.Lazy<{
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    equalTo?: yup.Maybe<string | number | undefined>;
                     text: string;
                     ordinal: number;
+                    type: "numeric";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    strategiesPath?: string | undefined;
+                    text: string;
+                    ordinal: number;
+                    type: "string";
+                    value: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;

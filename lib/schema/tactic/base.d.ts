@@ -37,9 +37,25 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
             strategiesPath?: string | undefined;
             greaterThan?: yup.Maybe<number | undefined>;
             lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-            equalTo?: yup.Maybe<string | number | undefined>;
             text: string;
             ordinal: number;
+            type: "numeric";
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            strategiesPath?: string | undefined;
+            text: string;
+            ordinal: number;
+            type: "string";
+            value: string;
         };
     } | null | undefined;
     backgroundColor: string;
