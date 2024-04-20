@@ -1,3 +1,4 @@
+import { findKey, isUndefined, pickBy, sortBy } from 'lodash';
 import * as yup from 'yup';
 import { TacticData } from '../log';
 import {
@@ -7,10 +8,12 @@ import {
 } from './multipleChoice';
 import {
   CounterOptionValue,
+  NumericOptionValue,
   TimeOptionValue,
   counterOptionSchema,
   numericOptionText,
   optionIsCounterOption,
+  optionIsNumericOption,
   optionIsTimeOption,
   timeOptionSchema,
 } from './numeric';
@@ -51,6 +54,56 @@ export type OptionValue =
   | TimeOptionValue
   | CounterOptionValue
   | MultipleChoiceOptionValue;
+
+// For display purposes, we sort by lessThanOrEqualTo ascending, then by greaterThan ascending
+// This function returns a tuple to sort the objects.
+// It checks if "lessThanOrEqualTo" or "greaterThan" exists and sorts based on these values.
+// The second element in the tuple (0 or 1) is used to ensure "lessThanOrEqualTo" comes before "greaterThan" when values are the same.
+export function optionSortValueForDisplay(
+  option: OptionValue
+): [number, number] {
+  const { greaterThan, lessThanOrEqualTo } = option as NumericOptionValue;
+  // Check if "lessThanOrEqualTo" is defined and use it as the primary sort value with higher
+  // priority (0).
+  if (lessThanOrEqualTo !== undefined) [lessThanOrEqualTo, 0];
+
+  // If "lessThanOrEqualTo" is not present, check "greaterThan". It is used as the sort value with
+  // lower priority (1).
+  if (greaterThan !== undefined) [greaterThan, 1];
+
+  // If neither is defined, treat it as the highest value for sorting purposes.
+  return [Infinity, 1];
+}
+// For matching purposes, we sort by lessThanOrEqualTo ascending, then by greaterThan descending
+// We first sort in a way that options with a small lessThanOrEqualTo value are first, then by
+// greaterThan value in descending order. This helps us find the "best" matching option
+function optionSortValueForMatching(option: OptionValue) {
+  return [
+    isUndefined((option as NumericOptionValue).lessThanOrEqualTo)
+      ? Infinity
+      : (option as NumericOptionValue).lessThanOrEqualTo,
+    isUndefined((option as NumericOptionValue).greaterThan)
+      ? -Infinity
+      : -((option as NumericOptionValue).greaterThan || 0),
+  ];
+}
+
+export function findBestMatchingNumericOption(
+  optionsById: Record<string, OptionValue>,
+  data: TacticData
+) {
+  const numericOptionsById = pickBy(optionsById, optionIsNumericOption);
+  const optionsArray = Object.keys(numericOptionsById).map(id => ({
+    id,
+    ...numericOptionsById[id],
+  }));
+  const sortedOptions = sortBy(optionsArray, optionSortValueForMatching);
+
+  // Find the first key that matches the criteria
+  return findKey(optionsById, (_option, key) =>
+    optionMatches(sortedOptions.find(opt => opt.id === key)!, data)
+  );
+}
 
 export function optionMatches(option: OptionValue, data: TacticData) {
   if (optionIsMultipleChoiceOption(option)) {

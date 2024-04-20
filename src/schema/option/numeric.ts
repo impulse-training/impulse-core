@@ -1,4 +1,4 @@
-import { compact, isUndefined } from 'lodash';
+import { isUndefined } from 'lodash';
 import * as yup from 'yup';
 import { OptionValue } from '.';
 import { QuestionKeyType } from '../utils/questionType';
@@ -22,6 +22,12 @@ export function optionIsCounterOption(
   option: OptionValue
 ): option is TimeOptionValue {
   return option.type === 'question-counter';
+}
+
+export function optionIsNumericOption(
+  option: OptionValue
+): option is NumericOptionValue {
+  return optionIsTimeOption(option) || optionIsCounterOption(option);
 }
 
 // Both time and counter options are "numeric", in the sense that we measure them with greaterThan
@@ -52,6 +58,8 @@ export function numericOptionText(option: NumericOptionValue) {
   if (isUndefined(greaterThan) && isUndefined(lessThanOrEqualTo)) return '';
   const formatter = optionIsTimeOption(option) ? formatSecondsInWords : String;
   const unit = isUndefined(greaterThan) ? 'Up to' : 'More than';
-  const value = compact([greaterThan, lessThanOrEqualTo])[0]!;
+  const value = [greaterThan, lessThanOrEqualTo].filter(
+    v => v !== undefined
+  )[0]!;
   return [unit, formatter(value)].join(' ');
 }
