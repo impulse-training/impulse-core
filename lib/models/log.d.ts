@@ -21,6 +21,7 @@ export declare class Log {
             body: string;
         } | import("yup").Maybe<{} | undefined>;
         measureTacticId?: import("yup").Maybe<string | undefined>;
+        measureCallToAction?: import("yup").Maybe<string | undefined>;
         issueId?: import("yup").Maybe<string | undefined>;
         parentIssueIds?: string[] | undefined;
         sendWeeklyReports?: import("yup").Maybe<boolean | undefined>;

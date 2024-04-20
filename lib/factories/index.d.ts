@@ -418,7 +418,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         suggestedTacticIds: {};
     }, "thumbnailUrl" | "participantProfileIds" | "groupName" | "creatorProfileId" | "icon" | "unreadCounts" | "permissions" | "suggestedTacticIds" | ("createdAt" | "updatedAt" | "isTemplate" | "invitationCode" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "profileNicknames" | "lastMessagePreview" | "invitationUrl" | "lastMessageProfileId" | "isSharingDisabled")>;
     messageFactory: import("factory.ts").Factory<import("..").MessageValue, keyof import("..").MessageValue>;
-    patternFactory: import("factory.ts").Factory<import("..").PatternValue, "profileId" | "ordinal" | "tacticsById" | "name" | ("createdAt" | "updatedAt" | "supportGroupIds" | "notification" | "measureTacticId" | "issueId" | "parentIssueIds" | "sendWeeklyReports")>;
+    patternFactory: import("factory.ts").Factory<import("..").PatternValue, "profileId" | "ordinal" | "tacticsById" | "name" | ("createdAt" | "updatedAt" | "supportGroupIds" | "notification" | "measureTacticId" | "measureCallToAction" | "issueId" | "parentIssueIds" | "sendWeeklyReports")>;
     tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "sourceId" | "title" | "subtitle" | "description" | "image" | "setbackThreshold" | "choicesById" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
     questionTimeTacticFactory: import("factory.ts").Factory<{
         createdAt?: {

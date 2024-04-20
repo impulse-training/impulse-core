@@ -19,6 +19,7 @@ export const patternSchema = yup.object().shape({
       : yup.mixed().notRequired()
   ),
   measureTacticId: yup.string().notRequired(),
+  measureCallToAction: yup.string().notRequired(),
   issueId: yup.string().notRequired(),
   parentIssueIds: optionalStringArray,
   sendWeeklyReports: yup.boolean().notRequired(),
