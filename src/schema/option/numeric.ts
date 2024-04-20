@@ -1,7 +1,8 @@
-import { compact } from 'lodash';
+import { compact, isUndefined } from 'lodash';
 import * as yup from 'yup';
 import { OptionValue } from '.';
 import { QuestionKeyType } from '../utils/questionType';
+import { formatSecondsInWords } from '../utils/time';
 import { optionValueBaseSchema } from './base';
 
 export const timeOptionSchema = numericOptionSchema('question-time');
@@ -48,15 +49,9 @@ function numericOptionSchema<K extends QuestionKeyType>(type: K) {
 
 export function numericOptionText(option: NumericOptionValue) {
   const { greaterThan, lessThanOrEqualTo } = option;
-  const unit = optionIsTimeOption(option) ? 'minutes' : null;
-
-  if (typeof greaterThan !== 'undefined') {
-    return compact([greaterThan!.toString(), unit, 'or more']).join(' ');
-  }
-
-  if (typeof lessThanOrEqualTo !== 'undefined') {
-    return compact(['up to', lessThanOrEqualTo!.toString(), unit]).join(' ');
-  }
-
-  return '';
+  if (isUndefined(greaterThan) && isUndefined(lessThanOrEqualTo)) return '';
+  const formatter = optionIsTimeOption(option) ? formatSecondsInWords : String;
+  const unit = isUndefined(greaterThan) ? 'Up to' : 'More than';
+  const value = compact([greaterThan, lessThanOrEqualTo])[0]!;
+  return [unit, formatter(value)].join(' ');
 }

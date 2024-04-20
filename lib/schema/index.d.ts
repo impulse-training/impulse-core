@@ -22,3 +22,4 @@ export * from './supportGroup';
 export * from './tactic';
 export * from './utils/image';
 export * from './utils/questionType';
+export * from './utils/time';

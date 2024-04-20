@@ -25,3 +25,4 @@ export * from './tactic';
 // Utils
 export * from './utils/image';
 export * from './utils/questionType';
+export * from './utils/time';
