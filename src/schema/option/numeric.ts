@@ -1,3 +1,4 @@
+import { compact } from 'lodash';
 import * as yup from 'yup';
 import { OptionValue } from '.';
 import { QuestionKeyType } from '../utils/questionType';
@@ -43,4 +44,19 @@ function numericOptionSchema<K extends QuestionKeyType>(type: K) {
         return true;
       }
     );
+}
+
+export function numericOptionText(option: NumericOptionValue) {
+  const { greaterThan, lessThanOrEqualTo } = option;
+  const unit = optionIsTimeOption(option) ? 'minutes' : null;
+
+  if (typeof greaterThan !== 'undefined') {
+    return compact([greaterThan!.toString(), unit, 'or more']).join(' ');
+  }
+
+  if (typeof lessThanOrEqualTo !== 'undefined') {
+    return compact(['up to', lessThanOrEqualTo!.toString(), unit]).join(' ');
+  }
+
+  return '';
 }

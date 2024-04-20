@@ -59,3 +59,4 @@ export type CounterOptionValue = yup.InferType<typeof counterOptionSchema>;
 export type NumericOptionValue = TimeOptionValue | CounterOptionValue;
 export declare function optionIsTimeOption(option: OptionValue): option is TimeOptionValue;
 export declare function optionIsCounterOption(option: OptionValue): option is TimeOptionValue;
+export declare function numericOptionText(option: NumericOptionValue): string;

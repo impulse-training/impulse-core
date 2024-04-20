@@ -9,6 +9,9 @@ import {
   CounterOptionValue,
   TimeOptionValue,
   counterOptionSchema,
+  numericOptionText,
+  optionIsCounterOption,
+  optionIsTimeOption,
   timeOptionSchema,
 } from './numeric';
 
@@ -61,4 +64,14 @@ export function optionMatches(option: OptionValue, data: TacticData) {
       typeof data.value === 'number' && data.value <= option.lessThanOrEqualTo
     );
   }
+}
+
+export function optionText(option: OptionValue) {
+  if (optionIsTimeOption(option) || optionIsCounterOption(option)) {
+    return numericOptionText(option);
+  }
+  if (optionIsMultipleChoiceOption(option)) {
+    return option.value;
+  }
+  return '';
 }

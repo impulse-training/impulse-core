@@ -11,3 +11,4 @@ type ValidatedOption = {
 }[OptionValue['type']];
 export type OptionValue = TimeOptionValue | CounterOptionValue | MultipleChoiceOptionValue;
 export declare function optionMatches(option: OptionValue, data: TacticData): boolean | undefined;
+export declare function optionText(option: OptionValue): string;
