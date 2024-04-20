@@ -1,27 +1,27 @@
 import * as yup from 'yup';
 import { TacticData } from '../log';
 import {
+  MultipleChoiceOptionValue,
+  multipleChoiceOptionSchema,
+  optionIsMultipleChoiceOption,
+} from './multipleChoice';
+import {
   CounterOptionValue,
   TimeOptionValue,
   counterOptionSchema,
   timeOptionSchema,
 } from './numeric';
-import {
-  StringOptionValue,
-  optionIsStringOption,
-  stringOptionSchema,
-} from './string';
 
+export * from './multipleChoice';
 export * from './numeric';
-export * from './string';
 
 export const optionSchemas: Record<
   OptionValue['type'],
   yup.ObjectSchema<OptionValue>
 > = {
-  time: timeOptionSchema,
-  counter: counterOptionSchema,
-  string: stringOptionSchema,
+  'question-time': timeOptionSchema,
+  'question-counter': counterOptionSchema,
+  'question-multiple-choice': multipleChoiceOptionSchema,
 };
 
 export const optionSchema = yup.lazy(value => {
@@ -47,10 +47,10 @@ type ValidatedOption = {
 export type OptionValue =
   | TimeOptionValue
   | CounterOptionValue
-  | StringOptionValue;
+  | MultipleChoiceOptionValue;
 
 export function optionMatches(option: OptionValue, data: TacticData) {
-  if (optionIsStringOption(option)) {
+  if (optionIsMultipleChoiceOption(option)) {
     return option.value === data.value;
   }
   if (option.greaterThan != null) {

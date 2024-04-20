@@ -1,6 +1,6 @@
-import * as yup from 'yup';
-export declare const emotionsTacticSchema: yup.ObjectSchema<{
-    type: "emotions";
+import { QuestionKeyType } from '../../utils/questionType';
+export declare function questionTacticValueBaseSchema(type: QuestionKeyType): import("yup").ObjectSchema<{
+    type: QuestionKeyType;
     profileId: string | null | undefined;
     sourceId: string | undefined;
     createdAt: {
@@ -14,12 +14,12 @@ export declare const emotionsTacticSchema: yup.ObjectSchema<{
         toDate: Function;
     } | null | undefined;
     title: string;
-    subtitle: yup.Maybe<string | undefined>;
+    subtitle: import("yup").Maybe<string | undefined>;
     description: string | null | undefined;
     image: {
-        localFilePath?: yup.Maybe<string | undefined>;
-        storagePath?: yup.Maybe<string | undefined>;
-        uri?: yup.Maybe<string | undefined>;
+        localFilePath?: import("yup").Maybe<string | undefined>;
+        storagePath?: import("yup").Maybe<string | undefined>;
+        uri?: import("yup").Maybe<string | undefined>;
     } | null | undefined;
     setbackThreshold: number | null | undefined;
     optionsById: {
@@ -35,8 +35,8 @@ export declare const emotionsTacticSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             strategiesPath?: string | undefined;
-            greaterThan?: yup.Maybe<number | undefined>;
-            lessThanOrEqualTo?: yup.Maybe<number | undefined>;
+            greaterThan?: import("yup").Maybe<number | undefined>;
+            lessThanOrEqualTo?: import("yup").Maybe<number | undefined>;
             text: string;
             ordinal: number;
             type: "question-time";
@@ -52,8 +52,8 @@ export declare const emotionsTacticSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             strategiesPath?: string | undefined;
-            greaterThan?: yup.Maybe<number | undefined>;
-            lessThanOrEqualTo?: yup.Maybe<number | undefined>;
+            greaterThan?: import("yup").Maybe<number | undefined>;
+            lessThanOrEqualTo?: import("yup").Maybe<number | undefined>;
             text: string;
             ordinal: number;
             type: "question-counter";
@@ -82,11 +82,11 @@ export declare const emotionsTacticSchema: yup.ObjectSchema<{
     categoryIds: (string | undefined)[] | null | undefined;
     isShared: boolean | null | undefined;
     isResponseRequired: boolean | null | undefined;
-    timerSeconds: yup.Maybe<number | undefined>;
+    timerSeconds: import("yup").Maybe<number | undefined>;
     isAvailableForRecommendation: boolean | null | undefined;
     numberOfLikes: number | null | undefined;
     isSuggested: boolean | undefined;
-}, yup.AnyObject, {
+}, import("yup").AnyObject, {
     type: undefined;
     profileId: undefined;
     sourceId: undefined;
@@ -114,4 +114,3 @@ export declare const emotionsTacticSchema: yup.ObjectSchema<{
     numberOfLikes: undefined;
     isSuggested: undefined;
 }, "">;
-export type EmotionsTacticValue = yup.InferType<typeof emotionsTacticSchema>;

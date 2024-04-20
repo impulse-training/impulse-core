@@ -1,7 +1,7 @@
 import * as yup from 'yup';
 import { OptionValue } from '.';
 export declare const timeOptionSchema: yup.ObjectSchema<{
-    type: "time";
+    type: "question-time";
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -28,7 +28,7 @@ export declare const timeOptionSchema: yup.ObjectSchema<{
     lessThanOrEqualTo: undefined;
 }, "">;
 export declare const counterOptionSchema: yup.ObjectSchema<{
-    type: "counter";
+    type: "question-counter";
     createdAt: {
         seconds: number;
         nanoseconds: number;

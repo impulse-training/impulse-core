@@ -1,7 +1,7 @@
 import * as yup from 'yup';
 import { OptionValue } from '.';
-export declare const stringOptionSchema: yup.ObjectSchema<{
-    type: "string";
+export declare const multipleChoiceOptionSchema: yup.ObjectSchema<{
+    type: "question-multiple-choice";
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -25,5 +25,5 @@ export declare const stringOptionSchema: yup.ObjectSchema<{
     ordinal: undefined;
     value: undefined;
 }, "">;
-export type StringOptionValue = yup.InferType<typeof stringOptionSchema>;
-export declare function optionIsStringOption(option: OptionValue): option is StringOptionValue;
+export type MultipleChoiceOptionValue = yup.InferType<typeof multipleChoiceOptionSchema>;
+export declare function optionIsMultipleChoiceOption(option: OptionValue): option is MultipleChoiceOptionValue;

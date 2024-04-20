@@ -3,7 +3,7 @@ import { WithTacticsById } from '.';
 export declare const strategySchema: yup.ObjectSchema<{
     ordinal: yup.Maybe<number | undefined>;
     name: string;
-    type: NonNullable<"time" | "impulse" | "debrief" | undefined>;
+    type: NonNullable<"impulse" | "time" | "debrief" | undefined>;
     tacticIds: string[];
     tacticsById: {
         [x: string]: {
@@ -44,7 +44,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "time";
+                    type: "question-time";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -61,7 +61,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "counter";
+                    type: "question-counter";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -76,7 +76,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     text: string;
                     ordinal: number;
-                    type: "string";
+                    type: "question-multiple-choice";
                     value: string;
                 };
             } | null | undefined;
@@ -133,7 +133,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "time";
+                    type: "question-time";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -150,7 +150,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "counter";
+                    type: "question-counter";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -165,7 +165,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     text: string;
                     ordinal: number;
-                    type: "string";
+                    type: "question-multiple-choice";
                     value: string;
                 };
             } | null | undefined;
@@ -225,7 +225,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "time";
+                    type: "question-time";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -242,7 +242,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "counter";
+                    type: "question-counter";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -257,7 +257,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     text: string;
                     ordinal: number;
-                    type: "string";
+                    type: "question-multiple-choice";
                     value: string;
                 };
             } | null | undefined;
@@ -312,7 +312,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "time";
+                    type: "question-time";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -329,7 +329,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "counter";
+                    type: "question-counter";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -344,7 +344,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     text: string;
                     ordinal: number;
-                    type: "string";
+                    type: "question-multiple-choice";
                     value: string;
                 };
             } | null | undefined;
@@ -407,7 +407,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "time";
+                    type: "question-time";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -424,7 +424,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "counter";
+                    type: "question-counter";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -439,7 +439,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     text: string;
                     ordinal: number;
-                    type: "string";
+                    type: "question-multiple-choice";
                     value: string;
                 };
             } | null | undefined;
@@ -454,7 +454,7 @@ export declare const strategySchema: yup.ObjectSchema<{
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
-            type: "question";
+            type: import(".").QuestionKeyType;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -494,7 +494,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "time";
+                    type: "question-time";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -511,7 +511,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "counter";
+                    type: "question-counter";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -526,7 +526,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     text: string;
                     ordinal: number;
-                    type: "string";
+                    type: "question-multiple-choice";
                     value: string;
                 };
             } | null | undefined;
@@ -543,7 +543,7 @@ export declare const strategySchema: yup.ObjectSchema<{
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
             title: string;
-            type: "question-slider";
+            type: import(".").QuestionKeyType;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -583,7 +583,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "time";
+                    type: "question-time";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -600,7 +600,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "counter";
+                    type: "question-counter";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -615,268 +615,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     text: string;
                     ordinal: number;
-                    type: "string";
-                    value: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: "question-time";
-            backgroundColor: string;
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            sourceId?: string | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    strategiesPath?: string | undefined;
-                    greaterThan?: yup.Maybe<number | undefined>;
-                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    text: string;
-                    ordinal: number;
-                    type: "time";
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    strategiesPath?: string | undefined;
-                    greaterThan?: yup.Maybe<number | undefined>;
-                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    text: string;
-                    ordinal: number;
-                    type: "counter";
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    strategiesPath?: string | undefined;
-                    text: string;
-                    ordinal: number;
-                    type: "string";
-                    value: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: "question-counter";
-            backgroundColor: string;
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            sourceId?: string | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    strategiesPath?: string | undefined;
-                    greaterThan?: yup.Maybe<number | undefined>;
-                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    text: string;
-                    ordinal: number;
-                    type: "time";
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    strategiesPath?: string | undefined;
-                    greaterThan?: yup.Maybe<number | undefined>;
-                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    text: string;
-                    ordinal: number;
-                    type: "counter";
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    strategiesPath?: string | undefined;
-                    text: string;
-                    ordinal: number;
-                    type: "string";
-                    value: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: "question-multiple-choice";
-            backgroundColor: string;
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            sourceId?: string | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    strategiesPath?: string | undefined;
-                    greaterThan?: yup.Maybe<number | undefined>;
-                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    text: string;
-                    ordinal: number;
-                    type: "time";
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    strategiesPath?: string | undefined;
-                    greaterThan?: yup.Maybe<number | undefined>;
-                    lessThanOrEqualTo?: yup.Maybe<number | undefined>;
-                    text: string;
-                    ordinal: number;
-                    type: "counter";
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    strategiesPath?: string | undefined;
-                    text: string;
-                    ordinal: number;
-                    type: "string";
+                    type: "question-multiple-choice";
                     value: string;
                 };
             } | null | undefined;
@@ -931,7 +670,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "time";
+                    type: "question-time";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -948,7 +687,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "counter";
+                    type: "question-counter";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -963,7 +702,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     text: string;
                     ordinal: number;
-                    type: "string";
+                    type: "question-multiple-choice";
                     value: string;
                 };
             } | null | undefined;
@@ -1022,7 +761,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "time";
+                    type: "question-time";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1039,7 +778,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "counter";
+                    type: "question-counter";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1054,7 +793,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     text: string;
                     ordinal: number;
-                    type: "string";
+                    type: "question-multiple-choice";
                     value: string;
                 };
             } | null | undefined;
@@ -1109,7 +848,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "time";
+                    type: "question-time";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1126,7 +865,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "counter";
+                    type: "question-counter";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1141,7 +880,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     text: string;
                     ordinal: number;
-                    type: "string";
+                    type: "question-multiple-choice";
                     value: string;
                 };
             } | null | undefined;
@@ -1197,7 +936,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "time";
+                    type: "question-time";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1214,7 +953,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
                     text: string;
                     ordinal: number;
-                    type: "counter";
+                    type: "question-counter";
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1229,7 +968,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                     strategiesPath?: string | undefined;
                     text: string;
                     ordinal: number;
-                    type: "string";
+                    type: "question-multiple-choice";
                     value: string;
                 };
             } | null | undefined;

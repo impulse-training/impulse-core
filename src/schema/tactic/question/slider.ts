@@ -1,7 +1,7 @@
 import * as yup from 'yup';
-import { tacticValueBaseSchema } from '../base';
+import { questionTacticValueBaseSchema } from './base';
 
-export const questionSliderTacticSchema = tacticValueBaseSchema(
+export const questionSliderTacticSchema = questionTacticValueBaseSchema(
   'question-slider'
 ).shape({
   lowEmoji: yup.string().notRequired(),

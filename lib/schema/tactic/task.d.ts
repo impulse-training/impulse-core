@@ -39,7 +39,7 @@ export declare const taskTacticSchema: yup.ObjectSchema<{
             lessThanOrEqualTo?: yup.Maybe<number | undefined>;
             text: string;
             ordinal: number;
-            type: "time";
+            type: "question-time";
         } | {
             createdAt?: {
                 seconds: number;
@@ -56,7 +56,7 @@ export declare const taskTacticSchema: yup.ObjectSchema<{
             lessThanOrEqualTo?: yup.Maybe<number | undefined>;
             text: string;
             ordinal: number;
-            type: "counter";
+            type: "question-counter";
         } | {
             createdAt?: {
                 seconds: number;
@@ -71,7 +71,7 @@ export declare const taskTacticSchema: yup.ObjectSchema<{
             strategiesPath?: string | undefined;
             text: string;
             ordinal: number;
-            type: "string";
+            type: "question-multiple-choice";
             value: string;
         };
     } | null | undefined;

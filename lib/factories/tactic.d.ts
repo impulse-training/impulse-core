@@ -40,7 +40,7 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
             lessThanOrEqualTo?: import("yup").Maybe<number | undefined>;
             text: string;
             ordinal: number;
-            type: "time";
+            type: "question-time";
         } | {
             createdAt?: {
                 seconds: number;
@@ -57,7 +57,7 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
             lessThanOrEqualTo?: import("yup").Maybe<number | undefined>;
             text: string;
             ordinal: number;
-            type: "counter";
+            type: "question-counter";
         } | {
             createdAt?: {
                 seconds: number;
@@ -72,7 +72,7 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
             strategiesPath?: string | undefined;
             text: string;
             ordinal: number;
-            type: "string";
+            type: "question-multiple-choice";
             value: string;
         };
     } | null | undefined;
@@ -87,6 +87,6 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
     numberOfLikes?: number | null | undefined;
     isSuggested?: boolean | undefined;
     title: string;
-    type: "question-time";
+    type: import("../schema").QuestionKeyType;
     backgroundColor: string;
 }, "title" | "type" | "backgroundColor" | ("createdAt" | "updatedAt" | "profileId" | "sourceId" | "subtitle" | "description" | "image" | "setbackThreshold" | "optionsById" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested")>;

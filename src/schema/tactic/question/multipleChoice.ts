@@ -1,7 +1,7 @@
 import * as yup from 'yup';
-import { tacticValueBaseSchema } from '../base';
+import { questionTacticValueBaseSchema } from './base';
 
-export const questionMultipleChoiceTacticSchema = tacticValueBaseSchema(
+export const questionMultipleChoiceTacticSchema = questionTacticValueBaseSchema(
   'question-multiple-choice'
 );
 export type QuestionMultipleChoiceTacticValue = yup.InferType<

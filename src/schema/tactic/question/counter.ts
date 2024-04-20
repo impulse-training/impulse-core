@@ -1,8 +1,8 @@
 import * as yup from 'yup';
-import { tacticValueBaseSchema } from '../base';
+import { questionTacticValueBaseSchema } from './base';
 
 export const questionCounterTacticSchema =
-  tacticValueBaseSchema('question-counter');
+  questionTacticValueBaseSchema('question-counter');
 export type QuestionCounterTacticValue = yup.InferType<
   typeof questionCounterTacticSchema
 >;

@@ -1,7 +1,8 @@
 import * as yup from 'yup';
-import { tacticValueBaseSchema } from '../base';
+import { questionTacticValueBaseSchema } from './base';
 
-export const questionNoResponseSchema = tacticValueBaseSchema('question');
+export const questionNoResponseSchema =
+  questionTacticValueBaseSchema('question');
 
 export type QuestionNoResponseValue = yup.InferType<
   typeof questionNoResponseSchema
