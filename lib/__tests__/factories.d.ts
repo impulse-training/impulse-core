@@ -139,7 +139,6 @@ export declare const factories: {
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    ordinal: number;
                     type: "question-time";
                 } | {
                     createdAt?: {
@@ -159,7 +158,6 @@ export declare const factories: {
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    ordinal: number;
                     type: "question-counter";
                 } | {
                     createdAt?: {
@@ -176,7 +174,6 @@ export declare const factories: {
                     color?: string | undefined;
                     strategiesPath?: string | undefined;
                     text: string;
-                    ordinal: number;
                     type: "question-multiple-choice";
                     value: string;
                 };
@@ -234,7 +231,6 @@ export declare const factories: {
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    ordinal: number;
                     type: "question-time";
                 } | {
                     createdAt?: {
@@ -254,7 +250,6 @@ export declare const factories: {
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    ordinal: number;
                     type: "question-counter";
                 } | {
                     createdAt?: {
@@ -271,7 +266,6 @@ export declare const factories: {
                     color?: string | undefined;
                     strategiesPath?: string | undefined;
                     text: string;
-                    ordinal: number;
                     type: "question-multiple-choice";
                     value: string;
                 };
@@ -379,7 +373,6 @@ export declare const factories: {
                 greaterThan?: number | undefined;
                 lessThanOrEqualTo?: number | undefined;
                 text: string;
-                ordinal: number;
                 type: "question-time";
             } | {
                 createdAt?: {
@@ -399,7 +392,6 @@ export declare const factories: {
                 greaterThan?: number | undefined;
                 lessThanOrEqualTo?: number | undefined;
                 text: string;
-                ordinal: number;
                 type: "question-counter";
             } | {
                 createdAt?: {
@@ -416,7 +408,6 @@ export declare const factories: {
                 color?: string | undefined;
                 strategiesPath?: string | undefined;
                 text: string;
-                ordinal: number;
                 type: "question-multiple-choice";
                 value: string;
             };

@@ -60,6 +60,7 @@ export function numericOptionText(option: NumericOptionValue) {
   if (isUndefined(greaterThan) && isUndefined(lessThanOrEqualTo)) return '';
   const formatter = optionIsTimeOption(option) ? formatSecondsInWords : String;
   if (optionIsTimeOption(option) && lessThanOrEqualTo === 0) return 'No time';
+  if (optionIsTimeOption(option) && greaterThan === 0) return 'Other';
   const unit = !isUndefined(lessThanOrEqualTo)
     ? lessThanOrEqualTo
       ? 'Up to'

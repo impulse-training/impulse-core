@@ -41,7 +41,6 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
             greaterThan?: number | undefined;
             lessThanOrEqualTo?: number | undefined;
             text: string;
-            ordinal: number;
             type: "question-time";
         } | {
             createdAt?: {
@@ -61,7 +60,6 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
             greaterThan?: number | undefined;
             lessThanOrEqualTo?: number | undefined;
             text: string;
-            ordinal: number;
             type: "question-counter";
         } | {
             createdAt?: {
@@ -78,7 +76,6 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
             color?: string | undefined;
             strategiesPath?: string | undefined;
             text: string;
-            ordinal: number;
             type: "question-multiple-choice";
             value: string;
         };

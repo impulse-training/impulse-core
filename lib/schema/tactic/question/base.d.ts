@@ -41,7 +41,6 @@ export declare function questionTacticValueBaseSchema(type: QuestionKeyType): im
             greaterThan?: number | undefined;
             lessThanOrEqualTo?: number | undefined;
             text: string;
-            ordinal: number;
             type: "question-time";
         } | {
             createdAt?: {
@@ -61,7 +60,6 @@ export declare function questionTacticValueBaseSchema(type: QuestionKeyType): im
             greaterThan?: number | undefined;
             lessThanOrEqualTo?: number | undefined;
             text: string;
-            ordinal: number;
             type: "question-counter";
         } | {
             createdAt?: {
@@ -78,7 +76,6 @@ export declare function questionTacticValueBaseSchema(type: QuestionKeyType): im
             color?: string | undefined;
             strategiesPath?: string | undefined;
             text: string;
-            ordinal: number;
             type: "question-multiple-choice";
             value: string;
         };

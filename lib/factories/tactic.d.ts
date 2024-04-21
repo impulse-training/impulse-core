@@ -42,7 +42,6 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
             greaterThan?: number | undefined;
             lessThanOrEqualTo?: number | undefined;
             text: string;
-            ordinal: number;
             type: "question-time";
         } | {
             createdAt?: {
@@ -62,7 +61,6 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
             greaterThan?: number | undefined;
             lessThanOrEqualTo?: number | undefined;
             text: string;
-            ordinal: number;
             type: "question-counter";
         } | {
             createdAt?: {
@@ -79,7 +77,6 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
             color?: string | undefined;
             strategiesPath?: string | undefined;
             text: string;
-            ordinal: number;
             type: "question-multiple-choice";
             value: string;
         };

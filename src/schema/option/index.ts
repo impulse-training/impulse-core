@@ -123,8 +123,6 @@ export function optionText(option: OptionValue) {
   if (optionIsTimeOption(option) || optionIsCounterOption(option)) {
     return numericOptionText(option);
   }
-  if (optionIsMultipleChoiceOption(option)) {
-    return option.value;
-  }
+  if (optionIsMultipleChoiceOption(option)) return option.text;
   return '';
 }
