@@ -34,10 +34,10 @@ export declare const videoTacticSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: yup.Maybe<number | undefined>;
+            setbackThreshold?: number | undefined;
             strategiesPath?: string | undefined;
-            greaterThan?: yup.Maybe<number | undefined>;
-            lessThanOrEqualTo?: yup.Maybe<number | undefined>;
+            greaterThan?: number | undefined;
+            lessThanOrEqualTo?: number | undefined;
             text: string;
             ordinal: number;
             type: "question-time";
@@ -52,10 +52,10 @@ export declare const videoTacticSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: yup.Maybe<number | undefined>;
+            setbackThreshold?: number | undefined;
             strategiesPath?: string | undefined;
-            greaterThan?: yup.Maybe<number | undefined>;
-            lessThanOrEqualTo?: yup.Maybe<number | undefined>;
+            greaterThan?: number | undefined;
+            lessThanOrEqualTo?: number | undefined;
             text: string;
             ordinal: number;
             type: "question-counter";

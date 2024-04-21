@@ -35,10 +35,10 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: import("yup").Maybe<number | undefined>;
+            setbackThreshold?: number | undefined;
             strategiesPath?: string | undefined;
-            greaterThan?: import("yup").Maybe<number | undefined>;
-            lessThanOrEqualTo?: import("yup").Maybe<number | undefined>;
+            greaterThan?: number | undefined;
+            lessThanOrEqualTo?: number | undefined;
             text: string;
             ordinal: number;
             type: "question-time";
@@ -53,10 +53,10 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: import("yup").Maybe<number | undefined>;
+            setbackThreshold?: number | undefined;
             strategiesPath?: string | undefined;
-            greaterThan?: import("yup").Maybe<number | undefined>;
-            lessThanOrEqualTo?: import("yup").Maybe<number | undefined>;
+            greaterThan?: number | undefined;
+            lessThanOrEqualTo?: number | undefined;
             text: string;
             ordinal: number;
             type: "question-counter";

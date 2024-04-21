@@ -1,4 +1,4 @@
-import { isUndefined } from 'lodash';
+import { compact, isUndefined } from 'lodash';
 import * as yup from 'yup';
 import { OptionValue } from '.';
 import { QuestionKeyType } from '../utils/questionType';
@@ -35,9 +35,9 @@ export function optionIsNumericOption(
 function numericOptionSchema<K extends QuestionKeyType>(type: K) {
   return optionValueBaseSchema(type)
     .shape({
-      setbackThreshold: yup.number().notRequired(),
-      greaterThan: yup.number().notRequired(),
-      lessThanOrEqualTo: yup.number().notRequired(),
+      setbackThreshold: yup.number(),
+      greaterThan: yup.number(),
+      lessThanOrEqualTo: yup.number(),
     })
     .test(
       'validate-conditions',
@@ -54,18 +54,37 @@ function numericOptionSchema<K extends QuestionKeyType>(type: K) {
     );
 }
 
+// Returns a string like "Up to 5 minutes (success)" or "More than 5 minutes (setback)"
 export function numericOptionText(option: NumericOptionValue) {
   const { greaterThan, lessThanOrEqualTo } = option;
   if (isUndefined(greaterThan) && isUndefined(lessThanOrEqualTo)) return '';
   const formatter = optionIsTimeOption(option) ? formatSecondsInWords : String;
   if (optionIsTimeOption(option) && lessThanOrEqualTo === 0) return 'No time';
-  const unit = isUndefined(greaterThan)
-    ? greaterThan
+  const unit = !isUndefined(lessThanOrEqualTo)
+    ? lessThanOrEqualTo
       ? 'Up to'
       : ''
     : 'More than';
   const value = [greaterThan, lessThanOrEqualTo].filter(
     v => v !== undefined
   )[0]!;
-  return [unit, formatter(value)].join(' ');
+  const suffix = isSetback(option)
+    ? '(setback)'
+    : isSuccess(option)
+    ? '(success)'
+    : null;
+  return compact([unit, formatter(value), suffix]).join(' ');
+}
+
+function isSuccess(option: NumericOptionValue) {
+  const { lessThanOrEqualTo, setbackThreshold } = option;
+  if (isUndefined(setbackThreshold) || isUndefined(lessThanOrEqualTo))
+    return false;
+  return lessThanOrEqualTo <= setbackThreshold;
+}
+
+function isSetback(option: NumericOptionValue) {
+  const { greaterThan, setbackThreshold } = option;
+  if (isUndefined(setbackThreshold) || isUndefined(greaterThan)) return false;
+  return greaterThan > setbackThreshold;
 }
