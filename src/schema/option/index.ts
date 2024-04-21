@@ -1,4 +1,4 @@
-import { findKey, isUndefined, pickBy, sortBy } from 'lodash';
+import { findKey, isUndefined, sortBy } from 'lodash';
 import * as yup from 'yup';
 import { TacticData } from '../log';
 import {
@@ -13,7 +13,6 @@ import {
   counterOptionSchema,
   numericOptionText,
   optionIsCounterOption,
-  optionIsNumericOption,
   optionIsTimeOption,
   timeOptionSchema,
 } from './numeric';
@@ -88,14 +87,13 @@ function optionSortValueForMatching(option: OptionValue) {
   ];
 }
 
-export function findBestMatchingNumericOption(
+export function findBestMatchingOption(
   optionsById: Record<string, OptionValue>,
   data: TacticData
 ) {
-  const numericOptionsById = pickBy(optionsById, optionIsNumericOption);
-  const optionsArray = Object.keys(numericOptionsById).map(id => ({
+  const optionsArray = Object.keys(optionsById).map(id => ({
     id,
-    ...numericOptionsById[id],
+    ...optionsById[id],
   }));
   const sortedOptions = sortBy(optionsArray, optionSortValueForMatching);
 
@@ -106,17 +104,17 @@ export function findBestMatchingNumericOption(
 }
 
 export function optionMatches(option: OptionValue, data: TacticData) {
-  if (optionIsMultipleChoiceOption(option)) {
-    return option.value === data.value;
-  }
-  if (option.greaterThan != null) {
+  if (optionIsMultipleChoiceOption(option)) return option.value === data.value;
+
+  if (option.greaterThan != null)
     return typeof data.value === 'number' && data.value > option.greaterThan;
-  }
-  if (option.lessThanOrEqualTo != null) {
+
+  if (option.lessThanOrEqualTo != null)
     return (
       typeof data.value === 'number' && data.value <= option.lessThanOrEqualTo
     );
-  }
+
+  return option.text === data.value;
 }
 
 export function optionText(option: OptionValue) {
