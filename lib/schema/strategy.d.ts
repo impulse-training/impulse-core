@@ -39,6 +39,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -56,6 +57,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -128,6 +130,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -145,6 +148,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -220,6 +224,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -237,6 +242,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -307,6 +313,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -324,6 +331,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -402,6 +410,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -419,6 +428,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -489,6 +499,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -506,6 +517,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -578,6 +590,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -595,6 +608,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -665,6 +679,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -682,6 +697,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -756,6 +772,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -773,6 +790,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -843,6 +861,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -860,6 +879,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -931,6 +951,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -948,6 +969,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;

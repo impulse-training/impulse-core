@@ -118,6 +118,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -135,6 +136,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -207,6 +209,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -224,6 +227,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -299,6 +303,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -316,6 +321,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -386,6 +392,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -403,6 +410,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -481,6 +489,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -498,6 +507,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -568,6 +578,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -585,6 +596,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -657,6 +669,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -674,6 +687,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -744,6 +758,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -761,6 +776,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -835,6 +851,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -852,6 +869,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -922,6 +940,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -939,6 +958,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -1010,6 +1030,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -1027,6 +1048,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -1219,6 +1241,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -1236,6 +1259,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -1308,6 +1332,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -1325,6 +1350,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -1400,6 +1426,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -1417,6 +1444,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -1487,6 +1515,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -1504,6 +1533,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -1582,6 +1612,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -1599,6 +1630,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -1669,6 +1701,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -1686,6 +1719,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -1758,6 +1792,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -1775,6 +1810,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -1845,6 +1881,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -1862,6 +1899,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -1936,6 +1974,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -1953,6 +1992,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -2023,6 +2063,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -2040,6 +2081,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -2111,6 +2153,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -2128,6 +2171,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -2362,6 +2406,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -2379,6 +2424,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -2451,6 +2497,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -2468,6 +2515,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -2543,6 +2591,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -2560,6 +2609,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -2630,6 +2680,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -2647,6 +2698,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -2725,6 +2777,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -2742,6 +2795,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -2812,6 +2866,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -2829,6 +2884,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -2901,6 +2957,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -2918,6 +2975,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -2988,6 +3046,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -3005,6 +3064,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -3079,6 +3139,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -3096,6 +3157,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -3166,6 +3228,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -3183,6 +3246,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -3254,6 +3318,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -3271,6 +3336,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -3469,6 +3535,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -3486,6 +3553,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -3558,6 +3626,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -3575,6 +3644,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -3650,6 +3720,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -3667,6 +3738,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -3737,6 +3809,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -3754,6 +3827,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -3832,6 +3906,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -3849,6 +3924,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -3919,6 +3995,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -3936,6 +4013,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -4008,6 +4086,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -4025,6 +4104,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -4095,6 +4175,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -4112,6 +4193,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -4186,6 +4268,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -4203,6 +4286,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -4273,6 +4357,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -4290,6 +4375,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -4361,6 +4447,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -4378,6 +4465,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -4570,6 +4658,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -4587,6 +4676,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -4659,6 +4749,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -4676,6 +4767,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -4751,6 +4843,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -4768,6 +4861,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -4838,6 +4932,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -4855,6 +4950,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -4933,6 +5029,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -4950,6 +5047,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -5020,6 +5118,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -5037,6 +5136,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -5109,6 +5209,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -5126,6 +5227,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -5196,6 +5298,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -5213,6 +5316,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -5287,6 +5391,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -5304,6 +5409,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -5374,6 +5480,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -5391,6 +5498,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -5462,6 +5570,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -5479,6 +5588,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -5664,6 +5774,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -5681,6 +5792,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -5753,6 +5865,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -5770,6 +5883,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -5845,6 +5959,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -5862,6 +5977,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -5932,6 +6048,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -5949,6 +6066,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -6027,6 +6145,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -6044,6 +6163,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -6114,6 +6234,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -6131,6 +6252,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -6203,6 +6325,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -6220,6 +6343,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -6290,6 +6414,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -6307,6 +6432,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -6381,6 +6507,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -6398,6 +6525,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -6468,6 +6596,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -6485,6 +6614,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -6556,6 +6686,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -6573,6 +6704,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -6732,6 +6864,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -6749,6 +6882,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -6821,6 +6955,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -6838,6 +6973,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -6913,6 +7049,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -6930,6 +7067,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -7000,6 +7138,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -7017,6 +7156,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -7095,6 +7235,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -7112,6 +7253,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -7182,6 +7324,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -7199,6 +7342,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -7271,6 +7415,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -7288,6 +7433,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -7358,6 +7504,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -7375,6 +7522,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -7449,6 +7597,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -7466,6 +7615,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -7536,6 +7686,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -7553,6 +7704,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -7624,6 +7776,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;
@@ -7641,6 +7794,7 @@ export declare const logSchema: yup.Lazy<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: yup.Maybe<number | undefined>;
                     strategiesPath?: string | undefined;
                     greaterThan?: yup.Maybe<number | undefined>;
                     lessThanOrEqualTo?: yup.Maybe<number | undefined>;

@@ -15,6 +15,7 @@ export declare const timeOptionSchema: yup.ObjectSchema<{
     text: string;
     strategiesPath: string | undefined;
     ordinal: number;
+    setbackThreshold: yup.Maybe<number | undefined>;
     greaterThan: yup.Maybe<number | undefined>;
     lessThanOrEqualTo: yup.Maybe<number | undefined>;
 }, yup.AnyObject, {
@@ -24,6 +25,7 @@ export declare const timeOptionSchema: yup.ObjectSchema<{
     text: undefined;
     strategiesPath: undefined;
     ordinal: undefined;
+    setbackThreshold: undefined;
     greaterThan: undefined;
     lessThanOrEqualTo: undefined;
 }, "">;
@@ -42,6 +44,7 @@ export declare const counterOptionSchema: yup.ObjectSchema<{
     text: string;
     strategiesPath: string | undefined;
     ordinal: number;
+    setbackThreshold: yup.Maybe<number | undefined>;
     greaterThan: yup.Maybe<number | undefined>;
     lessThanOrEqualTo: yup.Maybe<number | undefined>;
 }, yup.AnyObject, {
@@ -51,6 +54,7 @@ export declare const counterOptionSchema: yup.ObjectSchema<{
     text: undefined;
     strategiesPath: undefined;
     ordinal: undefined;
+    setbackThreshold: undefined;
     greaterThan: undefined;
     lessThanOrEqualTo: undefined;
 }, "">;

@@ -35,6 +35,7 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            setbackThreshold?: import("yup").Maybe<number | undefined>;
             strategiesPath?: string | undefined;
             greaterThan?: import("yup").Maybe<number | undefined>;
             lessThanOrEqualTo?: import("yup").Maybe<number | undefined>;
@@ -52,6 +53,7 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            setbackThreshold?: import("yup").Maybe<number | undefined>;
             strategiesPath?: string | undefined;
             greaterThan?: import("yup").Maybe<number | undefined>;
             lessThanOrEqualTo?: import("yup").Maybe<number | undefined>;

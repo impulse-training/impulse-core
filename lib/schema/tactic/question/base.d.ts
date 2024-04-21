@@ -34,6 +34,7 @@ export declare function questionTacticValueBaseSchema(type: QuestionKeyType): im
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            setbackThreshold?: import("yup").Maybe<number | undefined>;
             strategiesPath?: string | undefined;
             greaterThan?: import("yup").Maybe<number | undefined>;
             lessThanOrEqualTo?: import("yup").Maybe<number | undefined>;
@@ -51,6 +52,7 @@ export declare function questionTacticValueBaseSchema(type: QuestionKeyType): im
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            setbackThreshold?: import("yup").Maybe<number | undefined>;
             strategiesPath?: string | undefined;
             greaterThan?: import("yup").Maybe<number | undefined>;
             lessThanOrEqualTo?: import("yup").Maybe<number | undefined>;

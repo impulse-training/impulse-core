@@ -35,6 +35,7 @@ export function optionIsNumericOption(
 function numericOptionSchema<K extends QuestionKeyType>(type: K) {
   return optionValueBaseSchema(type)
     .shape({
+      setbackThreshold: yup.number().notRequired(),
       greaterThan: yup.number().notRequired(),
       lessThanOrEqualTo: yup.number().notRequired(),
     })
