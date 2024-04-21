@@ -57,7 +57,12 @@ export function numericOptionText(option: NumericOptionValue) {
   const { greaterThan, lessThanOrEqualTo } = option;
   if (isUndefined(greaterThan) && isUndefined(lessThanOrEqualTo)) return '';
   const formatter = optionIsTimeOption(option) ? formatSecondsInWords : String;
-  const unit = isUndefined(greaterThan) ? 'Up to' : 'More than';
+  if (optionIsTimeOption(option) && lessThanOrEqualTo === 0) return 'No time';
+  const unit = isUndefined(greaterThan)
+    ? greaterThan
+      ? 'Up to'
+      : ''
+    : 'More than';
   const value = [greaterThan, lessThanOrEqualTo].filter(
     v => v !== undefined
   )[0]!;
