@@ -13,6 +13,8 @@ export declare const multipleChoiceOptionSchema: yup.ObjectSchema<{
         toDate: Function;
     } | null | undefined;
     text: string;
+    label: string | undefined;
+    color: string | undefined;
     strategiesPath: string | undefined;
     ordinal: number;
     value: string;
@@ -21,6 +23,8 @@ export declare const multipleChoiceOptionSchema: yup.ObjectSchema<{
     createdAt: undefined;
     updatedAt: undefined;
     text: undefined;
+    label: undefined;
+    color: undefined;
     strategiesPath: undefined;
     ordinal: undefined;
     value: undefined;

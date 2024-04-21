@@ -8,6 +8,8 @@ export function optionValueBaseSchema<K extends string>(type: K) {
     createdAt: optionalTimestampSchema,
     updatedAt: optionalTimestampSchema,
     text: yup.string().required(),
+    label: yup.string(),
+    color: yup.string(),
     strategiesPath: yup.string(),
     ordinal: yup.number().required(),
   });

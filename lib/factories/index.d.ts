@@ -28,7 +28,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         } | undefined;
         profileId: string;
     }, "profileId" | ("createdAt" | "updatedAt" | "tacticId" | "tacticTitle" | "text" | "recording" | "isEdited" | "avatar")>;
-    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "profileId" | "tacticsById" | "type" | "strategiesPath" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "setAsActiveImpulse" | "pressCount" | "isDisplayable" | "outcome" | "patternId" | "patternsById" | "debriefReminderSentAt" | "debriefedAt" | "debriefStrategiesPath">;
+    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "profileId" | "tacticsById" | "type" | "strategiesPath" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "setAsActiveImpulse" | "pressCount" | "isDisplayable" | "patternId" | "patternsById" | "debriefReminderSentAt" | "debriefedAt" | "debriefStrategiesPath">;
     timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "profileId" | "tacticsById" | "type" | "strategiesPath" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable">;
     locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "createdAt" | "updatedAt" | "profileId" | "tacticsById" | "type" | "strategiesPath" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "locationId" | "locationName" | "locationMode">;
     locationFactory: import("factory.ts").Factory<{
@@ -133,7 +133,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    label?: string | undefined;
                     setbackThreshold?: number | undefined;
+                    color?: string | undefined;
                     strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
@@ -151,7 +153,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    label?: string | undefined;
                     setbackThreshold?: number | undefined;
+                    color?: string | undefined;
                     strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
@@ -169,6 +173,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    label?: string | undefined;
+                    color?: string | undefined;
                     strategiesPath?: string | undefined;
                     text: string;
                     ordinal: number;
@@ -222,7 +228,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    label?: string | undefined;
                     setbackThreshold?: number | undefined;
+                    color?: string | undefined;
                     strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
@@ -240,7 +248,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    label?: string | undefined;
                     setbackThreshold?: number | undefined;
+                    color?: string | undefined;
                     strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
@@ -258,6 +268,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    label?: string | undefined;
+                    color?: string | undefined;
                     strategiesPath?: string | undefined;
                     text: string;
                     ordinal: number;
@@ -361,7 +373,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                label?: string | undefined;
                 setbackThreshold?: number | undefined;
+                color?: string | undefined;
                 strategiesPath?: string | undefined;
                 greaterThan?: number | undefined;
                 lessThanOrEqualTo?: number | undefined;
@@ -379,7 +393,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                label?: string | undefined;
                 setbackThreshold?: number | undefined;
+                color?: string | undefined;
                 strategiesPath?: string | undefined;
                 greaterThan?: number | undefined;
                 lessThanOrEqualTo?: number | undefined;
@@ -397,6 +413,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                label?: string | undefined;
+                color?: string | undefined;
                 strategiesPath?: string | undefined;
                 text: string;
                 ordinal: number;

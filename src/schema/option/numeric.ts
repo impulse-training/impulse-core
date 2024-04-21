@@ -68,23 +68,5 @@ export function numericOptionText(option: NumericOptionValue) {
   const value = [greaterThan, lessThanOrEqualTo].filter(
     v => v !== undefined
   )[0]!;
-  const suffix = isSetback(option)
-    ? '(setback)'
-    : isSuccess(option)
-    ? '(success)'
-    : null;
-  return compact([unit, formatter(value), suffix]).join(' ');
-}
-
-function isSuccess(option: NumericOptionValue) {
-  const { lessThanOrEqualTo, setbackThreshold } = option;
-  if (isUndefined(setbackThreshold) || isUndefined(lessThanOrEqualTo))
-    return false;
-  return lessThanOrEqualTo <= setbackThreshold;
-}
-
-function isSetback(option: NumericOptionValue) {
-  const { greaterThan, setbackThreshold } = option;
-  if (isUndefined(setbackThreshold) || isUndefined(greaterThan)) return false;
-  return greaterThan > setbackThreshold;
+  return compact([unit, formatter(value)]).join(' ');
 }

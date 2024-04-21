@@ -13,6 +13,8 @@ export declare const timeOptionSchema: yup.ObjectSchema<{
         toDate: Function;
     } | null | undefined;
     text: string;
+    label: string | undefined;
+    color: string | undefined;
     strategiesPath: string | undefined;
     ordinal: number;
     setbackThreshold: number | undefined;
@@ -23,6 +25,8 @@ export declare const timeOptionSchema: yup.ObjectSchema<{
     createdAt: undefined;
     updatedAt: undefined;
     text: undefined;
+    label: undefined;
+    color: undefined;
     strategiesPath: undefined;
     ordinal: undefined;
     setbackThreshold: undefined;
@@ -42,6 +46,8 @@ export declare const counterOptionSchema: yup.ObjectSchema<{
         toDate: Function;
     } | null | undefined;
     text: string;
+    label: string | undefined;
+    color: string | undefined;
     strategiesPath: string | undefined;
     ordinal: number;
     setbackThreshold: number | undefined;
@@ -52,6 +58,8 @@ export declare const counterOptionSchema: yup.ObjectSchema<{
     createdAt: undefined;
     updatedAt: undefined;
     text: undefined;
+    label: undefined;
+    color: undefined;
     strategiesPath: undefined;
     ordinal: undefined;
     setbackThreshold: undefined;

@@ -34,7 +34,9 @@ export declare const questionNoResponseSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            label?: string | undefined;
             setbackThreshold?: number | undefined;
+            color?: string | undefined;
             strategiesPath?: string | undefined;
             greaterThan?: number | undefined;
             lessThanOrEqualTo?: number | undefined;
@@ -52,7 +54,9 @@ export declare const questionNoResponseSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            label?: string | undefined;
             setbackThreshold?: number | undefined;
+            color?: string | undefined;
             strategiesPath?: string | undefined;
             greaterThan?: number | undefined;
             lessThanOrEqualTo?: number | undefined;
@@ -70,6 +74,8 @@ export declare const questionNoResponseSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            label?: string | undefined;
+            color?: string | undefined;
             strategiesPath?: string | undefined;
             text: string;
             ordinal: number;

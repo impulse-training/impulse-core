@@ -12,6 +12,8 @@ export declare function optionValueBaseSchema<K extends string>(type: K): yup.Ob
         toDate: Function;
     } | null | undefined;
     text: string;
+    label: string | undefined;
+    color: string | undefined;
     strategiesPath: string | undefined;
     ordinal: number;
 }, yup.AnyObject, {
@@ -19,6 +21,8 @@ export declare function optionValueBaseSchema<K extends string>(type: K): yup.Ob
     createdAt: undefined;
     updatedAt: undefined;
     text: undefined;
+    label: undefined;
+    color: undefined;
     strategiesPath: undefined;
     ordinal: undefined;
 }, "">;

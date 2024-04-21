@@ -79,7 +79,6 @@ const impulseLogSchema = baseLogSchema.concat(
     setAsActiveImpulse: yup.boolean().notRequired(),
     pressCount: yup.number().notRequired(),
     isDisplayable: yup.boolean().oneOf([true]).required(),
-    outcome: yup.mixed<Outcome>().oneOf(['success', 'setback']),
     patternId: yup.string().required(),
     patternsById: objectOf(patternSchema),
     debriefReminderSentAt: yup.mixed().notRequired(),
