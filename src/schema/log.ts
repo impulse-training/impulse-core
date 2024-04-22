@@ -10,7 +10,7 @@ import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
 
 export const tacticDataSchema = yup.object({
-  value: yup.mixed<number>().required(),
+  value: yup.number(),
   optionId: yup.string(),
   optionLabel: yup.string(),
   optionColor: yup.string(),
