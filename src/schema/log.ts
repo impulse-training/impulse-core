@@ -9,11 +9,11 @@ import { optionalStringArray, requiredStringArray } from './utils/array';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
 
-type Outcome = 'success' | 'setback';
-
 export const tacticDataSchema = yup.object({
-  value: yup.mixed<string | number>().required(),
+  value: yup.mixed<number>().required(),
   choiceId: yup.string(),
+  choiceLabel: yup.string(),
+  choiceColor: yup.string(),
   formattedValue: yup.string().required(),
   strategiesPath: yup.string(),
   lowEmoji: yup.string().notRequired(),

@@ -1,8 +1,10 @@
 import * as yup from 'yup';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 export declare const tacticDataSchema: yup.ObjectSchema<{
-    value: NonNullable<string | number | undefined>;
+    value: number;
     choiceId: string | undefined;
+    choiceLabel: string | undefined;
+    choiceColor: string | undefined;
     formattedValue: string;
     strategiesPath: string | undefined;
     lowEmoji: yup.Maybe<string | undefined>;
@@ -10,6 +12,8 @@ export declare const tacticDataSchema: yup.ObjectSchema<{
 }, yup.AnyObject, {
     value: undefined;
     choiceId: undefined;
+    choiceLabel: undefined;
+    choiceColor: undefined;
     formattedValue: undefined;
     strategiesPath: undefined;
     lowEmoji: undefined;
@@ -1130,7 +1134,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
             choiceId?: string | undefined;
-            value: NonNullable<string | number | undefined>;
+            choiceLabel?: string | undefined;
+            choiceColor?: string | undefined;
+            value: number;
             formattedValue: string;
         };
     } | null | undefined;
@@ -2286,7 +2292,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
             choiceId?: string | undefined;
-            value: NonNullable<string | number | undefined>;
+            choiceLabel?: string | undefined;
+            choiceColor?: string | undefined;
+            value: number;
             formattedValue: string;
         };
     } | null | undefined;
@@ -3482,7 +3490,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
             choiceId?: string | undefined;
-            value: NonNullable<string | number | undefined>;
+            choiceLabel?: string | undefined;
+            choiceColor?: string | undefined;
+            value: number;
             formattedValue: string;
         };
     } | null | undefined;
@@ -4644,7 +4654,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
             choiceId?: string | undefined;
-            value: NonNullable<string | number | undefined>;
+            choiceLabel?: string | undefined;
+            choiceColor?: string | undefined;
+            value: number;
             formattedValue: string;
         };
     } | null | undefined;
@@ -4742,7 +4754,9 @@ export declare const logSchema: yup.Lazy<{
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
             choiceId?: string | undefined;
-            value: NonNullable<string | number | undefined>;
+            choiceLabel?: string | undefined;
+            choiceColor?: string | undefined;
+            value: number;
             formattedValue: string;
         };
     } | null | undefined;
@@ -5895,7 +5909,9 @@ export declare const logSchema: yup.Lazy<{
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
             choiceId?: string | undefined;
-            value: NonNullable<string | number | undefined>;
+            choiceLabel?: string | undefined;
+            choiceColor?: string | undefined;
+            value: number;
             formattedValue: string;
         };
     } | null | undefined;
@@ -7018,7 +7034,9 @@ export declare const logSchema: yup.Lazy<{
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
             choiceId?: string | undefined;
-            value: NonNullable<string | number | undefined>;
+            choiceLabel?: string | undefined;
+            choiceColor?: string | undefined;
+            value: number;
             formattedValue: string;
         };
     } | null | undefined;
