@@ -123,7 +123,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -142,7 +141,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -161,7 +159,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -217,7 +214,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -236,7 +232,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -255,7 +250,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -314,7 +308,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -333,7 +326,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -352,7 +344,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -406,7 +397,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -425,7 +415,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -444,7 +433,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -506,7 +494,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -525,7 +512,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -544,7 +530,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -600,7 +585,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -619,7 +603,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -638,7 +621,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -692,7 +674,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -711,7 +692,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -730,7 +710,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -784,7 +763,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -803,7 +781,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -822,7 +799,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -880,7 +856,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -899,7 +874,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -918,7 +892,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -972,7 +945,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -991,7 +963,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -1010,7 +981,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -1065,7 +1035,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -1084,7 +1053,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -1103,7 +1071,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -1283,7 +1250,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -1302,7 +1268,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -1321,7 +1286,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -1377,7 +1341,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -1396,7 +1359,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -1415,7 +1377,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -1474,7 +1435,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -1493,7 +1453,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -1512,7 +1471,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -1566,7 +1524,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -1585,7 +1542,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -1604,7 +1560,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -1666,7 +1621,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -1685,7 +1639,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -1704,7 +1657,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -1760,7 +1712,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -1779,7 +1730,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -1798,7 +1748,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -1852,7 +1801,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -1871,7 +1819,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -1890,7 +1837,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -1944,7 +1890,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -1963,7 +1908,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -1982,7 +1926,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -2040,7 +1983,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -2059,7 +2001,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -2078,7 +2019,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -2132,7 +2072,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -2151,7 +2090,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -2170,7 +2108,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -2225,7 +2162,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -2244,7 +2180,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -2263,7 +2198,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -2485,7 +2419,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -2504,7 +2437,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -2523,7 +2455,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -2579,7 +2510,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -2598,7 +2528,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -2617,7 +2546,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -2676,7 +2604,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -2695,7 +2622,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -2714,7 +2640,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -2768,7 +2693,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -2787,7 +2711,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -2806,7 +2729,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -2868,7 +2790,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -2887,7 +2808,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -2906,7 +2826,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -2962,7 +2881,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -2981,7 +2899,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -3000,7 +2917,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -3054,7 +2970,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -3073,7 +2988,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -3092,7 +3006,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -3146,7 +3059,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -3165,7 +3077,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -3184,7 +3095,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -3242,7 +3152,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -3261,7 +3170,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -3280,7 +3188,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -3334,7 +3241,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -3353,7 +3259,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -3372,7 +3277,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -3427,7 +3331,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -3446,7 +3349,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -3465,7 +3367,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -3651,7 +3552,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -3670,7 +3570,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -3689,7 +3588,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -3745,7 +3643,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -3764,7 +3661,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -3783,7 +3679,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -3842,7 +3737,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -3861,7 +3755,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -3880,7 +3773,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -3934,7 +3826,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -3953,7 +3844,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -3972,7 +3862,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -4034,7 +3923,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -4053,7 +3941,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -4072,7 +3959,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -4128,7 +4014,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -4147,7 +4032,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -4166,7 +4050,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -4220,7 +4103,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -4239,7 +4121,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -4258,7 +4139,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -4312,7 +4192,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -4331,7 +4210,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -4350,7 +4228,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -4408,7 +4285,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -4427,7 +4303,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -4446,7 +4321,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -4500,7 +4374,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -4519,7 +4392,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -4538,7 +4410,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -4593,7 +4464,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -4612,7 +4482,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -4631,7 +4500,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -4829,7 +4697,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -4848,7 +4715,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -4867,7 +4733,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -4923,7 +4788,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -4942,7 +4806,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -4961,7 +4824,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -5020,7 +4882,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -5039,7 +4900,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -5058,7 +4918,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -5112,7 +4971,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -5131,7 +4989,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -5150,7 +5007,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -5212,7 +5068,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -5231,7 +5086,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -5250,7 +5104,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -5306,7 +5159,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -5325,7 +5177,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -5344,7 +5195,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -5398,7 +5248,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -5417,7 +5266,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -5436,7 +5284,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -5490,7 +5337,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -5509,7 +5355,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -5528,7 +5373,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -5586,7 +5430,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -5605,7 +5448,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -5624,7 +5466,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -5678,7 +5519,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -5697,7 +5537,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -5716,7 +5555,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -5771,7 +5609,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -5790,7 +5627,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -5809,7 +5645,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -5982,7 +5817,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -6001,7 +5835,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -6020,7 +5853,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -6076,7 +5908,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -6095,7 +5926,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -6114,7 +5944,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -6173,7 +6002,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -6192,7 +6020,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -6211,7 +6038,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -6265,7 +6091,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -6284,7 +6109,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -6303,7 +6127,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -6365,7 +6188,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -6384,7 +6206,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -6403,7 +6224,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -6459,7 +6279,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -6478,7 +6297,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -6497,7 +6315,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -6551,7 +6368,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -6570,7 +6386,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -6589,7 +6404,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -6643,7 +6457,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -6662,7 +6475,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -6681,7 +6493,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -6739,7 +6550,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -6758,7 +6568,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -6777,7 +6586,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -6831,7 +6639,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -6850,7 +6657,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -6869,7 +6675,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -6924,7 +6729,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -6943,7 +6747,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -6962,7 +6765,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -7108,7 +6910,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -7127,7 +6928,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -7146,7 +6946,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -7202,7 +7001,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -7221,7 +7019,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -7240,7 +7037,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -7299,7 +7095,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -7318,7 +7113,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -7337,7 +7131,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -7391,7 +7184,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -7410,7 +7202,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -7429,7 +7220,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -7491,7 +7281,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -7510,7 +7299,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -7529,7 +7317,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -7585,7 +7372,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -7604,7 +7390,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -7623,7 +7408,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -7677,7 +7461,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -7696,7 +7479,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -7715,7 +7497,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -7769,7 +7550,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -7788,7 +7568,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -7807,7 +7586,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -7865,7 +7643,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -7884,7 +7661,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -7903,7 +7679,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -7957,7 +7732,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -7976,7 +7750,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -7995,7 +7768,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;
@@ -8050,7 +7822,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -8069,7 +7840,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
                     greaterThan?: number | undefined;
@@ -8088,7 +7858,6 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    strategiesPath?: string | undefined;
                     color?: string | undefined;
                     text: string;
                     value: string;

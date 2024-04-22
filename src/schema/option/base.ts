@@ -10,6 +10,5 @@ export function optionValueBaseSchema<K extends string>(type: K) {
     text: yup.string().required(),
     label: yup.string(),
     color: yup.string(),
-    strategiesPath: yup.string(),
   });
 }

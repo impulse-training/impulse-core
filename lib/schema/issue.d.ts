@@ -47,7 +47,6 @@ export declare const issueSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 label?: string | undefined;
-                strategiesPath?: string | undefined;
                 setbackThreshold?: number | undefined;
                 color?: string | undefined;
                 greaterThan?: number | undefined;
@@ -66,7 +65,6 @@ export declare const issueSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 label?: string | undefined;
-                strategiesPath?: string | undefined;
                 setbackThreshold?: number | undefined;
                 color?: string | undefined;
                 greaterThan?: number | undefined;
@@ -85,7 +83,6 @@ export declare const issueSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 label?: string | undefined;
-                strategiesPath?: string | undefined;
                 color?: string | undefined;
                 text: string;
                 value: string;
@@ -141,7 +138,6 @@ export declare const issueSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 label?: string | undefined;
-                strategiesPath?: string | undefined;
                 setbackThreshold?: number | undefined;
                 color?: string | undefined;
                 greaterThan?: number | undefined;
@@ -160,7 +156,6 @@ export declare const issueSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 label?: string | undefined;
-                strategiesPath?: string | undefined;
                 setbackThreshold?: number | undefined;
                 color?: string | undefined;
                 greaterThan?: number | undefined;
@@ -179,7 +174,6 @@ export declare const issueSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 label?: string | undefined;
-                strategiesPath?: string | undefined;
                 color?: string | undefined;
                 text: string;
                 value: string;

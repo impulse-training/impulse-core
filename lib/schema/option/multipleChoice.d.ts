@@ -15,7 +15,6 @@ export declare const multipleChoiceOptionSchema: yup.ObjectSchema<{
     text: string;
     label: string | undefined;
     color: string | undefined;
-    strategiesPath: string | undefined;
     value: string;
 }, yup.AnyObject, {
     type: undefined;
@@ -24,7 +23,6 @@ export declare const multipleChoiceOptionSchema: yup.ObjectSchema<{
     text: undefined;
     label: undefined;
     color: undefined;
-    strategiesPath: undefined;
     value: undefined;
 }, "">;
 export type MultipleChoiceOptionValue = yup.InferType<typeof multipleChoiceOptionSchema>;
