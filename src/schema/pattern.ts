@@ -1,5 +1,4 @@
 import * as yup from 'yup';
-import { WithTacticsById } from './tactic';
 import { optionalStringArray } from './utils/array';
 import { optionalTimestampSchema } from './utils/timestamp';
 
@@ -25,4 +24,4 @@ export const patternSchema = yup.object().shape({
   sendWeeklyReports: yup.boolean().notRequired(),
 });
 
-export type PatternValue = WithTacticsById<yup.InferType<typeof patternSchema>>;
+export type PatternValue = yup.InferType<typeof patternSchema>;

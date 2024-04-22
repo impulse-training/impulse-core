@@ -1,5 +1,4 @@
 import * as yup from 'yup';
-import { WithTacticsById } from './tactic';
 export declare const patternSchema: yup.ObjectSchema<{
     profileId: string;
     updatedAt: {
@@ -38,4 +37,4 @@ export declare const patternSchema: yup.ObjectSchema<{
     parentIssueIds: "";
     sendWeeklyReports: undefined;
 }, "">;
-export type PatternValue = WithTacticsById<yup.InferType<typeof patternSchema>>;
+export type PatternValue = yup.InferType<typeof patternSchema>;

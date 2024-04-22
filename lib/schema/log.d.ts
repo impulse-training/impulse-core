@@ -2,7 +2,7 @@ import * as yup from 'yup';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 export declare const tacticDataSchema: yup.ObjectSchema<{
     value: number;
-    choiceId: string | undefined;
+    optionId: string | undefined;
     choiceLabel: string | undefined;
     choiceColor: string | undefined;
     formattedValue: string;
@@ -11,7 +11,7 @@ export declare const tacticDataSchema: yup.ObjectSchema<{
     highEmoji: yup.Maybe<string | undefined>;
 }, yup.AnyObject, {
     value: undefined;
-    choiceId: undefined;
+    optionId: undefined;
     choiceLabel: undefined;
     choiceColor: undefined;
     formattedValue: undefined;
@@ -87,6 +87,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
         };
     } | null | undefined;
     strategiesPath: string;
+    tacticIds: string[];
     tacticsById: {
         [x: string]: {
             createdAt?: {
@@ -122,9 +123,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -141,9 +142,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -160,11 +161,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -216,9 +217,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -235,9 +236,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -254,11 +255,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -313,9 +314,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -332,9 +333,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -351,11 +352,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -405,9 +406,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -424,9 +425,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -443,11 +444,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -505,9 +506,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -524,9 +525,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -543,11 +544,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -575,85 +576,85 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    color?: string | undefined;
-                    strategiesPath?: string | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    color?: string | undefined;
-                    strategiesPath?: string | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    color?: string | undefined;
-                    strategiesPath?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    value: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
+            sourceId?: string | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            optionsById?: {
+                [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    strategiesPath?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    color?: string | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    strategiesPath?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    color?: string | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    strategiesPath?: string | undefined;
+                    color?: string | undefined;
+                    text: string;
+                    value: string;
+                    type: "question-multiple-choice";
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
             title: string;
             type: import(".").QuestionKeyType;
             backgroundColor: string;
@@ -691,9 +692,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -710,9 +711,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -729,11 +730,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -783,9 +784,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -802,9 +803,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -821,11 +822,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -879,9 +880,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -898,9 +899,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -917,11 +918,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -971,9 +972,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -990,9 +991,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -1009,11 +1010,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1064,9 +1065,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -1083,9 +1084,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -1102,11 +1103,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1130,12 +1131,12 @@ declare const baseLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     tacticData: {
         [x: string]: {
+            optionId?: string | undefined;
+            choiceLabel?: string | undefined;
+            choiceColor?: string | undefined;
             strategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            choiceId?: string | undefined;
-            choiceLabel?: string | undefined;
-            choiceColor?: string | undefined;
             value: number;
             formattedValue: string;
         };
@@ -1166,6 +1167,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
     commentsById: {};
     commentsByTacticId: undefined;
     strategiesPath: undefined;
+    tacticIds: "";
     tacticsById: undefined;
     completedTacticIds: "";
     tacticLikes: undefined;
@@ -1245,6 +1247,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         };
     } | null | undefined;
     strategiesPath: string;
+    tacticIds: string[];
     tacticsById: {
         [x: string]: {
             createdAt?: {
@@ -1280,9 +1283,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -1299,9 +1302,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -1318,11 +1321,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1374,9 +1377,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -1393,9 +1396,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -1412,11 +1415,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1471,9 +1474,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -1490,9 +1493,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -1509,11 +1512,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1563,9 +1566,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -1582,9 +1585,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -1601,11 +1604,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1663,9 +1666,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -1682,9 +1685,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -1701,11 +1704,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1733,85 +1736,85 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    color?: string | undefined;
-                    strategiesPath?: string | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    color?: string | undefined;
-                    strategiesPath?: string | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    color?: string | undefined;
-                    strategiesPath?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    value: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
+            sourceId?: string | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            optionsById?: {
+                [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    strategiesPath?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    color?: string | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    strategiesPath?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    color?: string | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    strategiesPath?: string | undefined;
+                    color?: string | undefined;
+                    text: string;
+                    value: string;
+                    type: "question-multiple-choice";
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
             title: string;
             type: import(".").QuestionKeyType;
             backgroundColor: string;
@@ -1849,9 +1852,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -1868,9 +1871,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -1887,11 +1890,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1941,9 +1944,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -1960,9 +1963,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -1979,11 +1982,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2037,9 +2040,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -2056,9 +2059,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -2075,11 +2078,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2129,9 +2132,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -2148,9 +2151,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -2167,11 +2170,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2222,9 +2225,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -2241,9 +2244,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -2260,11 +2263,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2288,12 +2291,12 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     tacticData: {
         [x: string]: {
+            optionId?: string | undefined;
+            choiceLabel?: string | undefined;
+            choiceColor?: string | undefined;
             strategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            choiceId?: string | undefined;
-            choiceLabel?: string | undefined;
-            choiceColor?: string | undefined;
             value: number;
             formattedValue: string;
         };
@@ -2305,6 +2308,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     pressCount: yup.Maybe<number | undefined>;
     isDisplayable: NonNullable<boolean | undefined>;
     patternId: string;
+    patternIds: string[];
     patternsById: {
         [x: string]: {
             createdAt?: {
@@ -2360,6 +2364,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     commentsById: {};
     commentsByTacticId: undefined;
     strategiesPath: undefined;
+    tacticIds: "";
     tacticsById: undefined;
     completedTacticIds: "";
     tacticLikes: undefined;
@@ -2370,6 +2375,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     pressCount: undefined;
     isDisplayable: undefined;
     patternId: undefined;
+    patternIds: "";
     patternsById: undefined;
     debriefReminderSentAt: undefined;
     debriefedAt: undefined;
@@ -2443,6 +2449,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
         };
     } | null | undefined;
     strategiesPath: string;
+    tacticIds: string[];
     tacticsById: {
         [x: string]: {
             createdAt?: {
@@ -2478,9 +2485,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -2497,9 +2504,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -2516,11 +2523,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2572,9 +2579,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -2591,9 +2598,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -2610,11 +2617,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2669,9 +2676,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -2688,9 +2695,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -2707,11 +2714,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2761,9 +2768,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -2780,9 +2787,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -2799,11 +2806,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2861,9 +2868,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -2880,9 +2887,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -2899,11 +2906,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2931,85 +2938,85 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    color?: string | undefined;
-                    strategiesPath?: string | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    color?: string | undefined;
-                    strategiesPath?: string | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    color?: string | undefined;
-                    strategiesPath?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    value: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
+            sourceId?: string | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            optionsById?: {
+                [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    strategiesPath?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    color?: string | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    strategiesPath?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    color?: string | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    strategiesPath?: string | undefined;
+                    color?: string | undefined;
+                    text: string;
+                    value: string;
+                    type: "question-multiple-choice";
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
             title: string;
             type: import(".").QuestionKeyType;
             backgroundColor: string;
@@ -3047,9 +3054,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -3066,9 +3073,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -3085,11 +3092,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3139,9 +3146,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -3158,9 +3165,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -3177,11 +3184,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3235,9 +3242,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -3254,9 +3261,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -3273,11 +3280,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3327,9 +3334,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -3346,9 +3353,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -3365,11 +3372,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3420,9 +3427,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -3439,9 +3446,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -3458,11 +3465,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3486,12 +3493,12 @@ declare const locationLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     tacticData: {
         [x: string]: {
+            optionId?: string | undefined;
+            choiceLabel?: string | undefined;
+            choiceColor?: string | undefined;
             strategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            choiceId?: string | undefined;
-            choiceLabel?: string | undefined;
-            choiceColor?: string | undefined;
             value: number;
             formattedValue: string;
         };
@@ -3528,6 +3535,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
     commentsById: {};
     commentsByTacticId: undefined;
     strategiesPath: undefined;
+    tacticIds: "";
     tacticsById: undefined;
     completedTacticIds: "";
     tacticLikes: undefined;
@@ -3607,6 +3615,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
         };
     } | null | undefined;
     strategiesPath: string;
+    tacticIds: string[];
     tacticsById: {
         [x: string]: {
             createdAt?: {
@@ -3642,9 +3651,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -3661,9 +3670,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -3680,11 +3689,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3736,9 +3745,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -3755,9 +3764,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -3774,11 +3783,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3833,9 +3842,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -3852,9 +3861,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -3871,11 +3880,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3925,9 +3934,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -3944,9 +3953,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -3963,11 +3972,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4025,9 +4034,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -4044,9 +4053,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -4063,11 +4072,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4095,85 +4104,85 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    color?: string | undefined;
-                    strategiesPath?: string | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    color?: string | undefined;
-                    strategiesPath?: string | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    color?: string | undefined;
-                    strategiesPath?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    value: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
+            sourceId?: string | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            optionsById?: {
+                [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    strategiesPath?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    color?: string | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    strategiesPath?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    color?: string | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    strategiesPath?: string | undefined;
+                    color?: string | undefined;
+                    text: string;
+                    value: string;
+                    type: "question-multiple-choice";
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
             title: string;
             type: import(".").QuestionKeyType;
             backgroundColor: string;
@@ -4211,9 +4220,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -4230,9 +4239,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -4249,11 +4258,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4303,9 +4312,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -4322,9 +4331,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -4341,11 +4350,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4399,9 +4408,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -4418,9 +4427,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -4437,11 +4446,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4491,9 +4500,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -4510,9 +4519,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -4529,11 +4538,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4584,9 +4593,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -4603,9 +4612,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -4622,11 +4631,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4650,12 +4659,12 @@ declare const timeLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     tacticData: {
         [x: string]: {
+            optionId?: string | undefined;
+            choiceLabel?: string | undefined;
+            choiceColor?: string | undefined;
             strategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            choiceId?: string | undefined;
-            choiceLabel?: string | undefined;
-            choiceColor?: string | undefined;
             value: number;
             formattedValue: string;
         };
@@ -4689,6 +4698,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
     commentsById: {};
     commentsByTacticId: undefined;
     strategiesPath: undefined;
+    tacticIds: "";
     tacticsById: undefined;
     completedTacticIds: "";
     tacticLikes: undefined;
@@ -4750,12 +4760,12 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     tacticData?: {
         [x: string]: {
+            optionId?: string | undefined;
+            choiceLabel?: string | undefined;
+            choiceColor?: string | undefined;
             strategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            choiceId?: string | undefined;
-            choiceLabel?: string | undefined;
-            choiceColor?: string | undefined;
             value: number;
             formattedValue: string;
         };
@@ -4766,6 +4776,24 @@ export declare const logSchema: yup.Lazy<{
     debriefReminderSentAt?: yup.Maybe<{} | undefined>;
     debriefedAt?: yup.Maybe<{} | undefined>;
     profileId: string;
+    strategiesPath: string;
+    startTime: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    };
+    timezone: string;
+    location: {
+        latitude?: number | undefined;
+        longitude?: number | undefined;
+        altitude?: number | undefined;
+        accuracy?: number | undefined;
+        altitudeAccuracy?: number | undefined;
+        heading?: number | undefined;
+        speed?: number | undefined;
+    };
+    locationIsFetching: NonNullable<boolean | undefined>;
+    tacticIds: string[];
     tacticsById: {
         [x: string]: {
             createdAt?: {
@@ -4801,9 +4829,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -4820,9 +4848,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -4839,11 +4867,11 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4895,9 +4923,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -4914,9 +4942,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -4933,11 +4961,11 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4992,9 +5020,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -5011,9 +5039,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -5030,11 +5058,11 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5084,9 +5112,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -5103,9 +5131,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -5122,11 +5150,11 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5184,9 +5212,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -5203,9 +5231,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -5222,11 +5250,11 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5254,85 +5282,85 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    color?: string | undefined;
-                    strategiesPath?: string | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    color?: string | undefined;
-                    strategiesPath?: string | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    color?: string | undefined;
-                    strategiesPath?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    value: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
+            sourceId?: string | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            optionsById?: {
+                [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    strategiesPath?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    color?: string | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    strategiesPath?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    color?: string | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    strategiesPath?: string | undefined;
+                    color?: string | undefined;
+                    text: string;
+                    value: string;
+                    type: "question-multiple-choice";
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
             title: string;
             type: import(".").QuestionKeyType;
             backgroundColor: string;
@@ -5370,9 +5398,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -5389,9 +5417,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -5408,11 +5436,11 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5462,9 +5490,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -5481,9 +5509,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -5500,11 +5528,11 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5558,9 +5586,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -5577,9 +5605,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -5596,11 +5624,11 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5650,9 +5678,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -5669,9 +5697,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -5688,11 +5716,11 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5743,9 +5771,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -5762,9 +5790,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -5781,11 +5809,11 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5804,26 +5832,10 @@ export declare const logSchema: yup.Lazy<{
         };
     };
     type: "impulse";
-    strategiesPath: string;
-    startTime: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    };
-    timezone: string;
-    location: {
-        latitude?: number | undefined;
-        longitude?: number | undefined;
-        altitude?: number | undefined;
-        accuracy?: number | undefined;
-        altitudeAccuracy?: number | undefined;
-        heading?: number | undefined;
-        speed?: number | undefined;
-    };
-    locationIsFetching: NonNullable<boolean | undefined>;
     completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
     patternId: string;
+    patternIds: string[];
     patternsById: {
         [x: string]: {
             createdAt?: {
@@ -5905,18 +5917,36 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     tacticData?: {
         [x: string]: {
+            optionId?: string | undefined;
+            choiceLabel?: string | undefined;
+            choiceColor?: string | undefined;
             strategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            choiceId?: string | undefined;
-            choiceLabel?: string | undefined;
-            choiceColor?: string | undefined;
             value: number;
             formattedValue: string;
         };
     } | null | undefined;
     sharedWithSupportGroupIds?: string[] | undefined;
     profileId: string;
+    strategiesPath: string;
+    startTime: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    };
+    timezone: string;
+    location: {
+        latitude?: number | undefined;
+        longitude?: number | undefined;
+        altitude?: number | undefined;
+        accuracy?: number | undefined;
+        altitudeAccuracy?: number | undefined;
+        heading?: number | undefined;
+        speed?: number | undefined;
+    };
+    locationIsFetching: NonNullable<boolean | undefined>;
+    tacticIds: string[];
     tacticsById: {
         [x: string]: {
             createdAt?: {
@@ -5952,9 +5982,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -5971,9 +6001,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -5990,11 +6020,11 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6046,9 +6076,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -6065,9 +6095,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -6084,11 +6114,11 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6143,9 +6173,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -6162,9 +6192,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -6181,11 +6211,11 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6235,9 +6265,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -6254,9 +6284,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -6273,11 +6303,11 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6335,9 +6365,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -6354,9 +6384,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -6373,11 +6403,11 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6405,85 +6435,85 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    color?: string | undefined;
-                    strategiesPath?: string | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    color?: string | undefined;
-                    strategiesPath?: string | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    color?: string | undefined;
-                    strategiesPath?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    value: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
+            sourceId?: string | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            optionsById?: {
+                [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    strategiesPath?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    color?: string | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    strategiesPath?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    color?: string | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    strategiesPath?: string | undefined;
+                    color?: string | undefined;
+                    text: string;
+                    value: string;
+                    type: "question-multiple-choice";
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
             title: string;
             type: import(".").QuestionKeyType;
             backgroundColor: string;
@@ -6521,9 +6551,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -6540,9 +6570,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -6559,11 +6589,11 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6613,9 +6643,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -6632,9 +6662,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -6651,11 +6681,11 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6709,9 +6739,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -6728,9 +6758,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -6747,11 +6777,11 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6801,9 +6831,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -6820,9 +6850,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -6839,11 +6869,11 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6894,9 +6924,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -6913,9 +6943,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -6932,11 +6962,11 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6955,23 +6985,6 @@ export declare const logSchema: yup.Lazy<{
         };
     };
     type: "location";
-    strategiesPath: string;
-    startTime: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    };
-    timezone: string;
-    location: {
-        latitude?: number | undefined;
-        longitude?: number | undefined;
-        altitude?: number | undefined;
-        accuracy?: number | undefined;
-        altitudeAccuracy?: number | undefined;
-        heading?: number | undefined;
-        speed?: number | undefined;
-    };
-    locationIsFetching: NonNullable<boolean | undefined>;
     completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
     locationId: string;
@@ -7030,18 +7043,36 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     tacticData?: {
         [x: string]: {
+            optionId?: string | undefined;
+            choiceLabel?: string | undefined;
+            choiceColor?: string | undefined;
             strategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            choiceId?: string | undefined;
-            choiceLabel?: string | undefined;
-            choiceColor?: string | undefined;
             value: number;
             formattedValue: string;
         };
     } | null | undefined;
     sharedWithSupportGroupIds?: string[] | undefined;
     profileId: string;
+    strategiesPath: string;
+    startTime: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    };
+    timezone: string;
+    location: {
+        latitude?: number | undefined;
+        longitude?: number | undefined;
+        altitude?: number | undefined;
+        accuracy?: number | undefined;
+        altitudeAccuracy?: number | undefined;
+        heading?: number | undefined;
+        speed?: number | undefined;
+    };
+    locationIsFetching: NonNullable<boolean | undefined>;
+    tacticIds: string[];
     tacticsById: {
         [x: string]: {
             createdAt?: {
@@ -7077,9 +7108,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -7096,9 +7127,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -7115,11 +7146,11 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -7171,9 +7202,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -7190,9 +7221,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -7209,11 +7240,11 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -7268,9 +7299,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -7287,9 +7318,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -7306,11 +7337,11 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -7360,9 +7391,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -7379,9 +7410,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -7398,11 +7429,11 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -7460,9 +7491,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -7479,9 +7510,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -7498,11 +7529,11 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -7530,85 +7561,85 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    color?: string | undefined;
-                    strategiesPath?: string | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    color?: string | undefined;
-                    strategiesPath?: string | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    color?: string | undefined;
-                    strategiesPath?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    value: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
+            sourceId?: string | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            optionsById?: {
+                [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    strategiesPath?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    color?: string | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    strategiesPath?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    color?: string | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    strategiesPath?: string | undefined;
+                    color?: string | undefined;
+                    text: string;
+                    value: string;
+                    type: "question-multiple-choice";
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
             title: string;
             type: import(".").QuestionKeyType;
             backgroundColor: string;
@@ -7646,9 +7677,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -7665,9 +7696,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -7684,11 +7715,11 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -7738,9 +7769,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -7757,9 +7788,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -7776,11 +7807,11 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -7834,9 +7865,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -7853,9 +7884,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -7872,11 +7903,11 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -7926,9 +7957,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -7945,9 +7976,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -7964,11 +7995,11 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -8019,9 +8050,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -8038,9 +8069,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -8057,11 +8088,11 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -8080,23 +8111,6 @@ export declare const logSchema: yup.Lazy<{
         };
     };
     type: "time";
-    strategiesPath: string;
-    startTime: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    };
-    timezone: string;
-    location: {
-        latitude?: number | undefined;
-        longitude?: number | undefined;
-        altitude?: number | undefined;
-        accuracy?: number | undefined;
-        altitudeAccuracy?: number | undefined;
-        heading?: number | undefined;
-        speed?: number | undefined;
-    };
-    locationIsFetching: NonNullable<boolean | undefined>;
     completedTacticIds: string[];
     isDisplayable: NonNullable<boolean | undefined>;
 }, yup.AnyObject, any>;

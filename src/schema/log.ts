@@ -11,7 +11,7 @@ import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
 
 export const tacticDataSchema = yup.object({
   value: yup.mixed<number>().required(),
-  choiceId: yup.string(),
+  optionId: yup.string(),
   choiceLabel: yup.string(),
   choiceColor: yup.string(),
   formattedValue: yup.string().required(),
@@ -50,6 +50,7 @@ const baseLogSchema = yup.object().shape({
   strategiesPath: yup.string().required(),
 
   // TODO: These represent seen tactics, but this may need some clarification
+  tacticIds: requiredStringArray,
   tacticsById: objectOf(tacticSchema),
   completedTacticIds: requiredStringArray,
   tacticLikes: optionalObjectOf(yup.boolean().required()),
@@ -80,6 +81,7 @@ const impulseLogSchema = baseLogSchema.concat(
     pressCount: yup.number().notRequired(),
     isDisplayable: yup.boolean().oneOf([true]).required(),
     patternId: yup.string().required(),
+    patternIds: requiredStringArray,
     patternsById: objectOf(patternSchema),
     debriefReminderSentAt: yup.mixed().notRequired(),
     debriefedAt: yup.mixed().notRequired(),

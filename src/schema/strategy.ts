@@ -12,7 +12,7 @@ export const strategySchema = yup.object({
     .oneOf(['impulse', 'time', 'debrief'])
     .required(),
   tacticIds: requiredStringArray,
-  tacticsById: objectOf(tacticSchema),
+  tacticsById: objectOf(tacticSchema) as any,
   profileId: yup.string(),
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,

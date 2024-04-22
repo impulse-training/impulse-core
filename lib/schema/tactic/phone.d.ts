@@ -35,9 +35,9 @@ export declare const phoneTacticSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             label?: string | undefined;
+            strategiesPath?: string | undefined;
             setbackThreshold?: number | undefined;
             color?: string | undefined;
-            strategiesPath?: string | undefined;
             greaterThan?: number | undefined;
             lessThanOrEqualTo?: number | undefined;
             text: string;
@@ -54,9 +54,9 @@ export declare const phoneTacticSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             label?: string | undefined;
+            strategiesPath?: string | undefined;
             setbackThreshold?: number | undefined;
             color?: string | undefined;
-            strategiesPath?: string | undefined;
             greaterThan?: number | undefined;
             lessThanOrEqualTo?: number | undefined;
             text: string;
@@ -73,11 +73,11 @@ export declare const phoneTacticSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             label?: string | undefined;
-            color?: string | undefined;
             strategiesPath?: string | undefined;
+            color?: string | undefined;
             text: string;
-            type: "question-multiple-choice";
             value: string;
+            type: "question-multiple-choice";
         };
     } | null | undefined;
     backgroundColor: string;

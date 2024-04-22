@@ -27,9 +27,9 @@ export declare const factories: {
         } | undefined;
         profileId: string;
     }, "profileId" | ("createdAt" | "updatedAt" | "tacticId" | "tacticTitle" | "text" | "recording" | "isEdited" | "avatar")>;
-    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "profileId" | "tacticsById" | "type" | "strategiesPath" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "setAsActiveImpulse" | "pressCount" | "isDisplayable" | "patternId" | "patternsById" | "debriefReminderSentAt" | "debriefedAt" | "debriefStrategiesPath">;
-    timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "profileId" | "tacticsById" | "type" | "strategiesPath" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable">;
-    locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "createdAt" | "updatedAt" | "profileId" | "tacticsById" | "type" | "strategiesPath" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "locationId" | "locationName" | "locationMode">;
+    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "profileId" | "strategiesPath" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "tacticIds" | "tacticsById" | "type" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "setAsActiveImpulse" | "pressCount" | "isDisplayable" | "patternId" | "patternIds" | "patternsById" | "debriefReminderSentAt" | "debriefedAt" | "debriefStrategiesPath">;
+    timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "profileId" | "strategiesPath" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "tacticIds" | "tacticsById" | "type" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable">;
+    locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "createdAt" | "updatedAt" | "profileId" | "strategiesPath" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "tacticIds" | "tacticsById" | "type" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "locationId" | "locationName" | "locationMode">;
     locationFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -133,9 +133,9 @@ export declare const factories: {
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -152,9 +152,9 @@ export declare const factories: {
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -171,11 +171,11 @@ export declare const factories: {
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -203,6 +203,8 @@ export declare const factories: {
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            lowEmoji?: import("yup").Maybe<string | undefined>;
+            highEmoji?: import("yup").Maybe<string | undefined>;
             sourceId?: string | undefined;
             subtitle?: import("yup").Maybe<string | undefined>;
             description?: string | null | undefined;
@@ -225,9 +227,9 @@ export declare const factories: {
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -244,9 +246,9 @@ export declare const factories: {
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
+                    strategiesPath?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
-                    strategiesPath?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
@@ -263,11 +265,11 @@ export declare const factories: {
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     strategiesPath?: string | undefined;
+                    color?: string | undefined;
                     text: string;
-                    type: "question-multiple-choice";
                     value: string;
+                    type: "question-multiple-choice";
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -280,8 +282,6 @@ export declare const factories: {
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            lowEmoji?: import("yup").Maybe<string | undefined>;
-            highEmoji?: import("yup").Maybe<string | undefined>;
             title: string;
             type: import("..").QuestionKeyType;
             backgroundColor: string;
@@ -331,7 +331,31 @@ export declare const factories: {
         suggestedTacticIds: {};
     }, "thumbnailUrl" | "participantProfileIds" | "groupName" | "creatorProfileId" | "icon" | "unreadCounts" | "permissions" | "suggestedTacticIds" | ("createdAt" | "updatedAt" | "isTemplate" | "invitationCode" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "profileNicknames" | "lastMessagePreview" | "invitationUrl" | "lastMessageProfileId" | "isSharingDisabled")>;
     messageFactory: import("factory.ts").Factory<import("..").MessageValue, keyof import("..").MessageValue>;
-    patternFactory: import("factory.ts").Factory<import("..").PatternValue, "profileId" | "name" | "ordinal" | ("createdAt" | "updatedAt" | "supportGroupIds" | "notification" | "measureTacticId" | "measureCallToAction" | "issueId" | "parentIssueIds" | "sendWeeklyReports") | "tacticsById">;
+    patternFactory: import("factory.ts").Factory<{
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        supportGroupIds?: string[] | undefined;
+        notification?: {
+            title: string;
+            body: string;
+        } | import("yup").Maybe<{} | undefined>;
+        measureTacticId?: import("yup").Maybe<string | undefined>;
+        measureCallToAction?: import("yup").Maybe<string | undefined>;
+        issueId?: import("yup").Maybe<string | undefined>;
+        parentIssueIds?: string[] | undefined;
+        sendWeeklyReports?: import("yup").Maybe<boolean | undefined>;
+        profileId: string;
+        name: string;
+        ordinal: number;
+    }, "profileId" | "name" | "ordinal" | ("createdAt" | "updatedAt" | "supportGroupIds" | "notification" | "measureTacticId" | "measureCallToAction" | "issueId" | "parentIssueIds" | "sendWeeklyReports")>;
     tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "title" | "type" | "sourceId" | "subtitle" | "description" | "image" | "setbackThreshold" | "optionsById" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
     questionTimeTacticFactory: import("factory.ts").Factory<{
         createdAt?: {
@@ -367,9 +391,9 @@ export declare const factories: {
                     toDate: Function;
                 } | null | undefined;
                 label?: string | undefined;
+                strategiesPath?: string | undefined;
                 setbackThreshold?: number | undefined;
                 color?: string | undefined;
-                strategiesPath?: string | undefined;
                 greaterThan?: number | undefined;
                 lessThanOrEqualTo?: number | undefined;
                 text: string;
@@ -386,9 +410,9 @@ export declare const factories: {
                     toDate: Function;
                 } | null | undefined;
                 label?: string | undefined;
+                strategiesPath?: string | undefined;
                 setbackThreshold?: number | undefined;
                 color?: string | undefined;
-                strategiesPath?: string | undefined;
                 greaterThan?: number | undefined;
                 lessThanOrEqualTo?: number | undefined;
                 text: string;
@@ -405,11 +429,11 @@ export declare const factories: {
                     toDate: Function;
                 } | null | undefined;
                 label?: string | undefined;
-                color?: string | undefined;
                 strategiesPath?: string | undefined;
+                color?: string | undefined;
                 text: string;
-                type: "question-multiple-choice";
                 value: string;
+                type: "question-multiple-choice";
             };
         } | null | undefined;
         isTemplate?: boolean | null | undefined;
@@ -426,7 +450,7 @@ export declare const factories: {
         type: import("..").QuestionKeyType;
         backgroundColor: string;
     }, "title" | "type" | "backgroundColor" | ("createdAt" | "updatedAt" | "profileId" | "sourceId" | "subtitle" | "description" | "image" | "setbackThreshold" | "optionsById" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested")>;
-    strategyFactory: import("factory.ts").Factory<import("..").StrategyValue, "name" | "tacticsById" | "type" | "tacticIds" | ("createdAt" | "updatedAt" | "profileId" | "ordinal")>;
+    strategyFactory: import("factory.ts").Factory<import("..").StrategyValue, "createdAt" | "updatedAt" | "profileId" | "name" | "ordinal" | "tacticIds" | "tacticsById" | "type">;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
