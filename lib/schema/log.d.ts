@@ -3,8 +3,8 @@ import { TimestampLike } from '../utils/firestore/TimestampLike';
 export declare const tacticDataSchema: yup.ObjectSchema<{
     value: number;
     optionId: string | undefined;
-    choiceLabel: string | undefined;
-    choiceColor: string | undefined;
+    optionLabel: string | undefined;
+    optionColor: string | undefined;
     formattedValue: string;
     strategiesPath: string | undefined;
     lowEmoji: yup.Maybe<string | undefined>;
@@ -12,8 +12,8 @@ export declare const tacticDataSchema: yup.ObjectSchema<{
 }, yup.AnyObject, {
     value: undefined;
     optionId: undefined;
-    choiceLabel: undefined;
-    choiceColor: undefined;
+    optionLabel: undefined;
+    optionColor: undefined;
     formattedValue: undefined;
     strategiesPath: undefined;
     lowEmoji: undefined;
@@ -1099,8 +1099,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
     tacticData: {
         [x: string]: {
             optionId?: string | undefined;
-            choiceLabel?: string | undefined;
-            choiceColor?: string | undefined;
+            optionLabel?: string | undefined;
+            optionColor?: string | undefined;
             strategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
@@ -2226,8 +2226,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     tacticData: {
         [x: string]: {
             optionId?: string | undefined;
-            choiceLabel?: string | undefined;
-            choiceColor?: string | undefined;
+            optionLabel?: string | undefined;
+            optionColor?: string | undefined;
             strategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
@@ -3395,8 +3395,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
     tacticData: {
         [x: string]: {
             optionId?: string | undefined;
-            choiceLabel?: string | undefined;
-            choiceColor?: string | undefined;
+            optionLabel?: string | undefined;
+            optionColor?: string | undefined;
             strategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
@@ -4528,8 +4528,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
     tacticData: {
         [x: string]: {
             optionId?: string | undefined;
-            choiceLabel?: string | undefined;
-            choiceColor?: string | undefined;
+            optionLabel?: string | undefined;
+            optionColor?: string | undefined;
             strategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
@@ -4629,8 +4629,8 @@ export declare const logSchema: yup.Lazy<{
     tacticData?: {
         [x: string]: {
             optionId?: string | undefined;
-            choiceLabel?: string | undefined;
-            choiceColor?: string | undefined;
+            optionLabel?: string | undefined;
+            optionColor?: string | undefined;
             strategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
@@ -5753,8 +5753,8 @@ export declare const logSchema: yup.Lazy<{
     tacticData?: {
         [x: string]: {
             optionId?: string | undefined;
-            choiceLabel?: string | undefined;
-            choiceColor?: string | undefined;
+            optionLabel?: string | undefined;
+            optionColor?: string | undefined;
             strategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
@@ -6846,8 +6846,8 @@ export declare const logSchema: yup.Lazy<{
     tacticData?: {
         [x: string]: {
             optionId?: string | undefined;
-            choiceLabel?: string | undefined;
-            choiceColor?: string | undefined;
+            optionLabel?: string | undefined;
+            optionColor?: string | undefined;
             strategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;

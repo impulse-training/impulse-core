@@ -12,8 +12,8 @@ import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
 export const tacticDataSchema = yup.object({
   value: yup.mixed<number>().required(),
   optionId: yup.string(),
-  choiceLabel: yup.string(),
-  choiceColor: yup.string(),
+  optionLabel: yup.string(),
+  optionColor: yup.string(),
   formattedValue: yup.string().required(),
   strategiesPath: yup.string(),
   lowEmoji: yup.string().notRequired(),
