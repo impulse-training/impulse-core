@@ -54,11 +54,11 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
                 } | null | undefined;
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
-                color?: string | undefined;
                 greaterThan?: number | undefined;
                 lessThanOrEqualTo?: number | undefined;
                 text: string;
                 type: "question-time";
+                color: string;
             } | {
                 createdAt?: {
                     seconds: number;
@@ -72,11 +72,11 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
                 } | null | undefined;
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
-                color?: string | undefined;
                 greaterThan?: number | undefined;
                 lessThanOrEqualTo?: number | undefined;
                 text: string;
                 type: "question-counter";
+                color: string;
             } | {
                 createdAt?: {
                     seconds: number;
@@ -89,10 +89,9 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
                     toDate: Function;
                 } | null | undefined;
                 label?: string | undefined;
-                color?: string | undefined;
                 text: string;
-                value: string;
                 type: "question-multiple-choice";
+                color: string;
             };
         } | null | undefined;
         isTemplate?: boolean | null | undefined;
@@ -145,11 +144,11 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
                 } | null | undefined;
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
-                color?: string | undefined;
                 greaterThan?: number | undefined;
                 lessThanOrEqualTo?: number | undefined;
                 text: string;
                 type: "question-time";
+                color: string;
             } | {
                 createdAt?: {
                     seconds: number;
@@ -163,11 +162,11 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
                 } | null | undefined;
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
-                color?: string | undefined;
                 greaterThan?: number | undefined;
                 lessThanOrEqualTo?: number | undefined;
                 text: string;
                 type: "question-counter";
+                color: string;
             } | {
                 createdAt?: {
                     seconds: number;
@@ -180,10 +179,9 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
                     toDate: Function;
                 } | null | undefined;
                 label?: string | undefined;
-                color?: string | undefined;
                 text: string;
-                value: string;
                 type: "question-multiple-choice";
+                color: string;
             };
         } | null | undefined;
         isTemplate?: boolean | null | undefined;

@@ -12,13 +12,13 @@ export declare function optionValueBaseSchema<K extends string>(type: K): yup.Ob
         toDate: Function;
     } | null | undefined;
     text: string;
+    color: string;
     label: string | undefined;
-    color: string | undefined;
 }, yup.AnyObject, {
     type: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     text: undefined;
-    label: undefined;
     color: undefined;
+    label: undefined;
 }, "">;

@@ -13,8 +13,8 @@ export declare const timeOptionSchema: yup.ObjectSchema<{
         toDate: Function;
     } | null | undefined;
     text: string;
+    color: string;
     label: string | undefined;
-    color: string | undefined;
     setbackThreshold: number | undefined;
     greaterThan: number | undefined;
     lessThanOrEqualTo: number | undefined;
@@ -23,8 +23,8 @@ export declare const timeOptionSchema: yup.ObjectSchema<{
     createdAt: undefined;
     updatedAt: undefined;
     text: undefined;
-    label: undefined;
     color: undefined;
+    label: undefined;
     setbackThreshold: undefined;
     greaterThan: undefined;
     lessThanOrEqualTo: undefined;
@@ -42,8 +42,8 @@ export declare const counterOptionSchema: yup.ObjectSchema<{
         toDate: Function;
     } | null | undefined;
     text: string;
+    color: string;
     label: string | undefined;
-    color: string | undefined;
     setbackThreshold: number | undefined;
     greaterThan: number | undefined;
     lessThanOrEqualTo: number | undefined;
@@ -52,8 +52,8 @@ export declare const counterOptionSchema: yup.ObjectSchema<{
     createdAt: undefined;
     updatedAt: undefined;
     text: undefined;
-    label: undefined;
     color: undefined;
+    label: undefined;
     setbackThreshold: undefined;
     greaterThan: undefined;
     lessThanOrEqualTo: undefined;

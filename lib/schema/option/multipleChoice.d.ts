@@ -13,17 +13,15 @@ export declare const multipleChoiceOptionSchema: yup.ObjectSchema<{
         toDate: Function;
     } | null | undefined;
     text: string;
+    color: string;
     label: string | undefined;
-    color: string | undefined;
-    value: string;
 }, yup.AnyObject, {
     type: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     text: undefined;
-    label: undefined;
     color: undefined;
-    value: undefined;
+    label: undefined;
 }, "">;
 export type MultipleChoiceOptionValue = yup.InferType<typeof multipleChoiceOptionSchema>;
 export declare function optionIsMultipleChoiceOption(option: OptionValue): option is MultipleChoiceOptionValue;

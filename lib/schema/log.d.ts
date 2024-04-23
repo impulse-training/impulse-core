@@ -124,11 +124,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -142,11 +142,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -159,10 +159,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -215,11 +214,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -233,11 +232,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -250,10 +249,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -309,11 +307,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -327,11 +325,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -344,10 +342,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -398,11 +395,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -416,11 +413,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -433,10 +430,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -495,11 +491,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -513,11 +509,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -530,10 +526,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -586,11 +581,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -604,11 +599,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -621,10 +616,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -675,11 +669,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -693,11 +687,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -710,10 +704,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -764,11 +757,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -782,11 +775,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -799,10 +792,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -857,11 +849,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -875,11 +867,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -892,10 +884,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -946,11 +937,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -964,11 +955,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -981,10 +972,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1036,11 +1026,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1054,11 +1044,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1071,10 +1061,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1251,11 +1240,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1269,11 +1258,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1286,10 +1275,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1342,11 +1330,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1360,11 +1348,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1377,10 +1365,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1436,11 +1423,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1454,11 +1441,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1471,10 +1458,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1525,11 +1511,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1543,11 +1529,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1560,10 +1546,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1622,11 +1607,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1640,11 +1625,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1657,10 +1642,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1713,11 +1697,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1731,11 +1715,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1748,10 +1732,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1802,11 +1785,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1820,11 +1803,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1837,10 +1820,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1891,11 +1873,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1909,11 +1891,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1926,10 +1908,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1984,11 +1965,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2002,11 +1983,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2019,10 +2000,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2073,11 +2053,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2091,11 +2071,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2108,10 +2088,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2163,11 +2142,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2181,11 +2160,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2198,10 +2177,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2420,11 +2398,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2438,11 +2416,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2455,10 +2433,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2511,11 +2488,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2529,11 +2506,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2546,10 +2523,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2605,11 +2581,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2623,11 +2599,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2640,10 +2616,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2694,11 +2669,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2712,11 +2687,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2729,10 +2704,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2791,11 +2765,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2809,11 +2783,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2826,10 +2800,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2882,11 +2855,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2900,11 +2873,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2917,10 +2890,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2971,11 +2943,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2989,11 +2961,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3006,10 +2978,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3060,11 +3031,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3078,11 +3049,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3095,10 +3066,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3153,11 +3123,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3171,11 +3141,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3188,10 +3158,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3242,11 +3211,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3260,11 +3229,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3277,10 +3246,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3332,11 +3300,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3350,11 +3318,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3367,10 +3335,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3553,11 +3520,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3571,11 +3538,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3588,10 +3555,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3644,11 +3610,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3662,11 +3628,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3679,10 +3645,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3738,11 +3703,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3756,11 +3721,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3773,10 +3738,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3827,11 +3791,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3845,11 +3809,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3862,10 +3826,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3924,11 +3887,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3942,11 +3905,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3959,10 +3922,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4015,11 +3977,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4033,11 +3995,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4050,10 +4012,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4104,11 +4065,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4122,11 +4083,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4139,10 +4100,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4193,11 +4153,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4211,11 +4171,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4228,10 +4188,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4286,11 +4245,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4304,11 +4263,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4321,10 +4280,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4375,11 +4333,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4393,11 +4351,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4410,10 +4368,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4465,11 +4422,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4483,11 +4440,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4500,10 +4457,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4698,11 +4654,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4716,11 +4672,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4733,10 +4689,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4789,11 +4744,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4807,11 +4762,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4824,10 +4779,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4883,11 +4837,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4901,11 +4855,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4918,10 +4872,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4972,11 +4925,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4990,11 +4943,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5007,10 +4960,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5069,11 +5021,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5087,11 +5039,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5104,10 +5056,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5160,11 +5111,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5178,11 +5129,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5195,10 +5146,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5249,11 +5199,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5267,11 +5217,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5284,10 +5234,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5338,11 +5287,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5356,11 +5305,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5373,10 +5322,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5431,11 +5379,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5449,11 +5397,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5466,10 +5414,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5520,11 +5467,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5538,11 +5485,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5555,10 +5502,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5610,11 +5556,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5628,11 +5574,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5645,10 +5591,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5818,11 +5763,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5836,11 +5781,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5853,10 +5798,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5909,11 +5853,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5927,11 +5871,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5944,10 +5888,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6003,11 +5946,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6021,11 +5964,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6038,10 +5981,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6092,11 +6034,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6110,11 +6052,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6127,10 +6069,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6189,11 +6130,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6207,11 +6148,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6224,10 +6165,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6280,11 +6220,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6298,11 +6238,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6315,10 +6255,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6369,11 +6308,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6387,11 +6326,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6404,10 +6343,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6458,11 +6396,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6476,11 +6414,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6493,10 +6431,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6551,11 +6488,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6569,11 +6506,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6586,10 +6523,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6640,11 +6576,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6658,11 +6594,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6675,10 +6611,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6730,11 +6665,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6748,11 +6683,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6765,10 +6700,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6911,11 +6845,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6929,11 +6863,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6946,10 +6880,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -7002,11 +6935,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7020,11 +6953,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7037,10 +6970,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -7096,11 +7028,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7114,11 +7046,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7131,10 +7063,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -7185,11 +7116,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7203,11 +7134,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7220,10 +7151,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -7282,11 +7212,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7300,11 +7230,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7317,10 +7247,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -7373,11 +7302,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7391,11 +7320,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7408,10 +7337,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -7462,11 +7390,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7480,11 +7408,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7497,10 +7425,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -7551,11 +7478,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7569,11 +7496,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7586,10 +7513,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -7644,11 +7570,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7662,11 +7588,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7679,10 +7605,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -7733,11 +7658,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7751,11 +7676,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7768,10 +7693,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -7823,11 +7747,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-time";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7841,11 +7765,11 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
+                    color: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7858,10 +7782,9 @@ export declare const logSchema: yup.Lazy<{
                         toDate: Function;
                     } | null | undefined;
                     label?: string | undefined;
-                    color?: string | undefined;
                     text: string;
-                    value: string;
                     type: "question-multiple-choice";
+                    color: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;

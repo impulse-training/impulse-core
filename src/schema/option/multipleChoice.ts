@@ -4,9 +4,7 @@ import { optionValueBaseSchema } from './base';
 
 export const multipleChoiceOptionSchema = optionValueBaseSchema(
   'question-multiple-choice'
-).shape({
-  value: yup.string().required(),
-});
+);
 
 export type MultipleChoiceOptionValue = yup.InferType<
   typeof multipleChoiceOptionSchema
