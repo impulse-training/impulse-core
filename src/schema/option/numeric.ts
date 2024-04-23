@@ -59,8 +59,9 @@ export function numericOptionText(option: NumericOptionValue) {
   const { greaterThan, lessThanOrEqualTo } = option;
   if (isUndefined(greaterThan) && isUndefined(lessThanOrEqualTo)) return '';
   const formatter = optionIsTimeOption(option) ? formatSecondsInWords : String;
-  if (optionIsTimeOption(option) && lessThanOrEqualTo === 0) return 'No time';
-  if (optionIsTimeOption(option) && greaterThan === 0) return 'Other';
+  if (optionIsTimeOption(option) && lessThanOrEqualTo === 0)
+    return 'No time spent';
+  if (optionIsTimeOption(option) && greaterThan === 0) return 'Time spent';
   const unit = !isUndefined(lessThanOrEqualTo)
     ? lessThanOrEqualTo
       ? 'Up to'
