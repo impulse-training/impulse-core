@@ -72,6 +72,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         notificationPreferences?: {
             [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
         } | null | undefined;
+        isTourCompleted?: boolean | undefined;
         defaultNickname?: string | undefined;
         androidPermissions?: {
             [x: string]: NonNullable<boolean | undefined>;
@@ -80,7 +81,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         scheduledNotificationIds?: string[] | undefined;
         timezone: string;
         invitationCode: string;
-    }, "timezone" | "invitationCode" | ("createdAt" | "updatedAt" | "parentIssueIds" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "defaultNickname" | "androidPermissions" | "region" | "scheduledNotificationIds")>;
+    }, "timezone" | "invitationCode" | ("createdAt" | "updatedAt" | "parentIssueIds" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "isTourCompleted" | "defaultNickname" | "androidPermissions" | "region" | "scheduledNotificationIds")>;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
         setbackThreshold?: number | undefined;

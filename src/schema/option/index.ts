@@ -105,7 +105,7 @@ export function findBestMatchingOption(
 
 export function optionMatches(option: OptionValue, data: TacticData) {
   if (optionIsMultipleChoiceOption(option))
-    return option.value === data.formattedValue;
+    return option.text === data.formattedValue;
 
   if (option.greaterThan != null)
     return typeof data.value === 'number' && data.value > option.greaterThan;

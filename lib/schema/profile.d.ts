@@ -23,6 +23,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     notificationPreferences: {
         [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
     } | null | undefined;
+    isTourCompleted: boolean | undefined;
     defaultNickname: string | undefined;
     androidPermissions: {
         [x: string]: NonNullable<boolean | undefined>;
@@ -41,6 +42,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     expoPushToken: undefined;
     widgetInstalledAt: undefined;
     notificationPreferences: undefined;
+    isTourCompleted: undefined;
     defaultNickname: undefined;
     androidPermissions: undefined;
     parentIssueIds: "";

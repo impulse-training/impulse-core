@@ -16,6 +16,7 @@ export const profileSchema = yup.object().shape({
   notificationPreferences: optionalObjectOf(
     yup.array().of(notificationOptionSchema)
   ),
+  isTourCompleted: yup.boolean(),
   defaultNickname: yup.string().optional(),
   androidPermissions: optionalObjectOf(yup.boolean().required()),
   parentIssueIds: yup.array().of(yup.string()).optional(),
