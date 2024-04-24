@@ -141,6 +141,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -159,6 +160,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -174,6 +176,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -231,6 +234,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -249,6 +253,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -264,6 +269,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -391,6 +397,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 text: string;
                 type: "question-time";
                 color: string;
+                textColor: string;
             } | {
                 createdAt?: {
                     seconds: number;
@@ -409,6 +416,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 text: string;
                 type: "question-counter";
                 color: string;
+                textColor: string;
             } | {
                 createdAt?: {
                     seconds: number;
@@ -424,6 +432,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 text: string;
                 type: "question-multiple-choice";
                 color: string;
+                textColor: string;
             };
         } | null | undefined;
         isTemplate?: boolean | null | undefined;

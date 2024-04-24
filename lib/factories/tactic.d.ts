@@ -42,6 +42,7 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
             text: string;
             type: "question-time";
             color: string;
+            textColor: string;
         } | {
             createdAt?: {
                 seconds: number;
@@ -60,6 +61,7 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
             text: string;
             type: "question-counter";
             color: string;
+            textColor: string;
         } | {
             createdAt?: {
                 seconds: number;
@@ -75,6 +77,7 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
             text: string;
             type: "question-multiple-choice";
             color: string;
+            textColor: string;
         };
     } | null | undefined;
     isTemplate?: boolean | null | undefined;

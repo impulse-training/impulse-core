@@ -9,6 +9,7 @@ export function optionValueBaseSchema<K extends string>(type: K) {
     updatedAt: optionalTimestampSchema,
     text: yup.string().required(),
     color: yup.string().required(),
+    textColor: yup.string().required(),
     label: yup.string(),
   });
 }

@@ -13,6 +13,7 @@ export declare function optionValueBaseSchema<K extends string>(type: K): yup.Ob
     } | null | undefined;
     text: string;
     color: string;
+    textColor: string;
     label: string | undefined;
 }, yup.AnyObject, {
     type: undefined;
@@ -20,5 +21,6 @@ export declare function optionValueBaseSchema<K extends string>(type: K): yup.Ob
     updatedAt: undefined;
     text: undefined;
     color: undefined;
+    textColor: undefined;
     label: undefined;
 }, "">;

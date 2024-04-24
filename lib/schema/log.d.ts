@@ -129,6 +129,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -147,6 +148,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -162,6 +164,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -219,6 +222,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -237,6 +241,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -252,6 +257,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -312,6 +318,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -330,6 +337,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -345,6 +353,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -400,6 +409,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -418,6 +428,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -433,6 +444,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -496,6 +508,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -514,6 +527,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -529,6 +543,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -586,6 +601,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -604,6 +620,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -619,6 +636,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -674,6 +692,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -692,6 +711,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -707,6 +727,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -762,6 +783,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -780,6 +802,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -795,6 +818,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -854,6 +878,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -872,6 +897,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -887,6 +913,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -942,6 +969,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -960,6 +988,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -975,6 +1004,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1031,6 +1061,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1049,6 +1080,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1064,6 +1096,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1245,6 +1278,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1263,6 +1297,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1278,6 +1313,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1335,6 +1371,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1353,6 +1390,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1368,6 +1406,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1428,6 +1467,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1446,6 +1486,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1461,6 +1502,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1516,6 +1558,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1534,6 +1577,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1549,6 +1593,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1612,6 +1657,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1630,6 +1676,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1645,6 +1692,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1702,6 +1750,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1720,6 +1769,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1735,6 +1785,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1790,6 +1841,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1808,6 +1860,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1823,6 +1876,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1878,6 +1932,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1896,6 +1951,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1911,6 +1967,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1970,6 +2027,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -1988,6 +2046,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2003,6 +2062,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2058,6 +2118,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2076,6 +2137,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2091,6 +2153,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2147,6 +2210,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2165,6 +2229,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2180,6 +2245,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2403,6 +2469,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2421,6 +2488,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2436,6 +2504,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2493,6 +2562,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2511,6 +2581,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2526,6 +2597,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2586,6 +2658,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2604,6 +2677,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2619,6 +2693,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2674,6 +2749,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2692,6 +2768,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2707,6 +2784,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2770,6 +2848,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2788,6 +2867,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2803,6 +2883,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2860,6 +2941,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2878,6 +2960,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2893,6 +2976,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2948,6 +3032,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2966,6 +3051,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -2981,6 +3067,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3036,6 +3123,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3054,6 +3142,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3069,6 +3158,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3128,6 +3218,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3146,6 +3237,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3161,6 +3253,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3216,6 +3309,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3234,6 +3328,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3249,6 +3344,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3305,6 +3401,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3323,6 +3420,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3338,6 +3436,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3525,6 +3624,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3543,6 +3643,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3558,6 +3659,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3615,6 +3717,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3633,6 +3736,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3648,6 +3752,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3708,6 +3813,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3726,6 +3832,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3741,6 +3848,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3796,6 +3904,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3814,6 +3923,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3829,6 +3939,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3892,6 +4003,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3910,6 +4022,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -3925,6 +4038,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3982,6 +4096,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4000,6 +4115,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4015,6 +4131,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4070,6 +4187,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4088,6 +4206,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4103,6 +4222,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4158,6 +4278,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4176,6 +4297,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4191,6 +4313,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4250,6 +4373,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4268,6 +4392,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4283,6 +4408,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4338,6 +4464,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4356,6 +4483,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4371,6 +4499,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4427,6 +4556,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4445,6 +4575,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4460,6 +4591,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4659,6 +4791,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4677,6 +4810,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4692,6 +4826,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4749,6 +4884,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4767,6 +4903,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4782,6 +4919,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4842,6 +4980,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4860,6 +4999,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4875,6 +5015,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4930,6 +5071,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4948,6 +5090,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -4963,6 +5106,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5026,6 +5170,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5044,6 +5189,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5059,6 +5205,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5116,6 +5263,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5134,6 +5282,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5149,6 +5298,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5204,6 +5354,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5222,6 +5373,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5237,6 +5389,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5292,6 +5445,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5310,6 +5464,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5325,6 +5480,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5384,6 +5540,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5402,6 +5559,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5417,6 +5575,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5472,6 +5631,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5490,6 +5650,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5505,6 +5666,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5561,6 +5723,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5579,6 +5742,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5594,6 +5758,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5768,6 +5933,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5786,6 +5952,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5801,6 +5968,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5858,6 +6026,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5876,6 +6045,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5891,6 +6061,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5951,6 +6122,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5969,6 +6141,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -5984,6 +6157,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6039,6 +6213,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6057,6 +6232,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6072,6 +6248,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6135,6 +6312,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6153,6 +6331,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6168,6 +6347,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6225,6 +6405,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6243,6 +6424,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6258,6 +6440,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6313,6 +6496,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6331,6 +6515,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6346,6 +6531,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6401,6 +6587,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6419,6 +6606,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6434,6 +6622,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6493,6 +6682,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6511,6 +6701,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6526,6 +6717,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6581,6 +6773,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6599,6 +6792,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6614,6 +6808,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6670,6 +6865,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6688,6 +6884,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6703,6 +6900,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6850,6 +7048,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6868,6 +7067,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6883,6 +7083,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6940,6 +7141,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6958,6 +7160,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -6973,6 +7176,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -7033,6 +7237,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7051,6 +7256,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7066,6 +7272,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -7121,6 +7328,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7139,6 +7347,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7154,6 +7363,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -7217,6 +7427,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7235,6 +7446,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7250,6 +7462,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -7307,6 +7520,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7325,6 +7539,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7340,6 +7555,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -7395,6 +7611,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7413,6 +7630,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7428,6 +7646,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -7483,6 +7702,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7501,6 +7721,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7516,6 +7737,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -7575,6 +7797,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7593,6 +7816,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7608,6 +7832,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -7663,6 +7888,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7681,6 +7907,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7696,6 +7923,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -7752,6 +7980,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-time";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7770,6 +7999,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-counter";
                     color: string;
+                    textColor: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -7785,6 +8015,7 @@ export declare const logSchema: yup.Lazy<{
                     text: string;
                     type: "question-multiple-choice";
                     color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
