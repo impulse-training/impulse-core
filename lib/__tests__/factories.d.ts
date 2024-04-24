@@ -27,9 +27,9 @@ export declare const factories: {
         } | undefined;
         profileId: string;
     }, "profileId" | ("createdAt" | "updatedAt" | "tacticId" | "tacticTitle" | "text" | "recording" | "isEdited" | "avatar")>;
-    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "profileId" | "strategiesPath" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "tacticIds" | "tacticsById" | "type" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "setAsActiveImpulse" | "pressCount" | "isDisplayable" | "patternId" | "patternIds" | "patternsById" | "debriefReminderSentAt" | "debriefedAt" | "debriefStrategiesPath">;
-    timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "profileId" | "strategiesPath" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "tacticIds" | "tacticsById" | "type" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable">;
-    locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "createdAt" | "updatedAt" | "profileId" | "strategiesPath" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "tacticIds" | "tacticsById" | "type" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "locationId" | "locationName" | "locationMode">;
+    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "profileId" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategiesPath" | "tacticIds" | "tacticsById" | "type" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "setAsActiveImpulse" | "pressCount" | "isDisplayable" | "patternId" | "patternIds" | "patternsById" | "debriefReminderSentAt" | "debriefedAt" | "debriefStrategiesPath">;
+    timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "profileId" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategiesPath" | "tacticIds" | "tacticsById" | "type" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable">;
+    locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "createdAt" | "updatedAt" | "profileId" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategiesPath" | "tacticIds" | "tacticsById" | "type" | "completedTacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "locationId" | "locationName" | "locationMode">;
     locationFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -138,6 +138,7 @@ export declare const factories: {
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
+                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -157,6 +158,7 @@ export declare const factories: {
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
+                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -173,6 +175,7 @@ export declare const factories: {
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
+                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -231,6 +234,7 @@ export declare const factories: {
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
+                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -250,6 +254,7 @@ export declare const factories: {
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
+                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -266,6 +271,7 @@ export declare const factories: {
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
+                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -394,6 +400,7 @@ export declare const factories: {
                 greaterThan?: number | undefined;
                 lessThanOrEqualTo?: number | undefined;
                 text: string;
+                strategiesPath: string;
                 type: "question-time";
                 color: string;
                 textColor: string;
@@ -413,6 +420,7 @@ export declare const factories: {
                 greaterThan?: number | undefined;
                 lessThanOrEqualTo?: number | undefined;
                 text: string;
+                strategiesPath: string;
                 type: "question-counter";
                 color: string;
                 textColor: string;
@@ -429,6 +437,7 @@ export declare const factories: {
                 } | null | undefined;
                 label?: string | undefined;
                 text: string;
+                strategiesPath: string;
                 type: "question-multiple-choice";
                 color: string;
                 textColor: string;

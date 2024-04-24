@@ -11,12 +11,11 @@ import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
 
 export const tacticDataSchema = yup.object({
   value: yup.number(),
-  optionId: yup.string(),
+  optionId: yup.string().nullable(),
   optionLabel: yup.string(),
   optionColor: yup.string(),
   optionTextColor: yup.string(),
   formattedValue: yup.string().required(),
-  strategiesPath: yup.string(),
   lowEmoji: yup.string().notRequired(),
   highEmoji: yup.string().notRequired(),
 });
