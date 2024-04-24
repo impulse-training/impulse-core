@@ -5,6 +5,7 @@ export declare const tacticDataSchema: yup.ObjectSchema<{
     optionId: string | undefined;
     optionLabel: string | undefined;
     optionColor: string | undefined;
+    optionTextColor: string | undefined;
     formattedValue: string;
     strategiesPath: string | undefined;
     lowEmoji: yup.Maybe<string | undefined>;
@@ -14,6 +15,7 @@ export declare const tacticDataSchema: yup.ObjectSchema<{
     optionId: undefined;
     optionLabel: undefined;
     optionColor: undefined;
+    optionTextColor: undefined;
     formattedValue: undefined;
     strategiesPath: undefined;
     lowEmoji: undefined;
@@ -1124,6 +1126,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
             optionId?: string | undefined;
             optionLabel?: string | undefined;
             optionColor?: string | undefined;
+            optionTextColor?: string | undefined;
             strategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
@@ -2273,6 +2276,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             optionId?: string | undefined;
             optionLabel?: string | undefined;
             optionColor?: string | undefined;
+            optionTextColor?: string | undefined;
             strategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
@@ -3464,6 +3468,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
             optionId?: string | undefined;
             optionLabel?: string | undefined;
             optionColor?: string | undefined;
+            optionTextColor?: string | undefined;
             strategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
@@ -4619,6 +4624,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
             optionId?: string | undefined;
             optionLabel?: string | undefined;
             optionColor?: string | undefined;
+            optionTextColor?: string | undefined;
             strategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
@@ -4720,6 +4726,7 @@ export declare const logSchema: yup.Lazy<{
             optionId?: string | undefined;
             optionLabel?: string | undefined;
             optionColor?: string | undefined;
+            optionTextColor?: string | undefined;
             strategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
@@ -5866,6 +5873,7 @@ export declare const logSchema: yup.Lazy<{
             optionId?: string | undefined;
             optionLabel?: string | undefined;
             optionColor?: string | undefined;
+            optionTextColor?: string | undefined;
             strategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
@@ -6981,6 +6989,7 @@ export declare const logSchema: yup.Lazy<{
             optionId?: string | undefined;
             optionLabel?: string | undefined;
             optionColor?: string | undefined;
+            optionTextColor?: string | undefined;
             strategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
