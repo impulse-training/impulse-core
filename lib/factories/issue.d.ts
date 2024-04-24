@@ -57,7 +57,6 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
                 greaterThan?: number | undefined;
                 lessThanOrEqualTo?: number | undefined;
                 text: string;
-                strategiesPath: string;
                 type: "question-time";
                 color: string;
                 textColor: string;
@@ -77,7 +76,6 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
                 greaterThan?: number | undefined;
                 lessThanOrEqualTo?: number | undefined;
                 text: string;
-                strategiesPath: string;
                 type: "question-counter";
                 color: string;
                 textColor: string;
@@ -94,7 +92,6 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
                 } | null | undefined;
                 label?: string | undefined;
                 text: string;
-                strategiesPath: string;
                 type: "question-multiple-choice";
                 color: string;
                 textColor: string;
@@ -153,7 +150,6 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
                 greaterThan?: number | undefined;
                 lessThanOrEqualTo?: number | undefined;
                 text: string;
-                strategiesPath: string;
                 type: "question-time";
                 color: string;
                 textColor: string;
@@ -173,7 +169,6 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
                 greaterThan?: number | undefined;
                 lessThanOrEqualTo?: number | undefined;
                 text: string;
-                strategiesPath: string;
                 type: "question-counter";
                 color: string;
                 textColor: string;
@@ -190,7 +185,6 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
                 } | null | undefined;
                 label?: string | undefined;
                 text: string;
-                strategiesPath: string;
                 type: "question-multiple-choice";
                 color: string;
                 textColor: string;

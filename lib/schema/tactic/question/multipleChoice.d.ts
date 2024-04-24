@@ -39,7 +39,6 @@ export declare const questionMultipleChoiceTacticSchema: yup.ObjectSchema<{
             greaterThan?: number | undefined;
             lessThanOrEqualTo?: number | undefined;
             text: string;
-            strategiesPath: string;
             type: "question-time";
             color: string;
             textColor: string;
@@ -59,7 +58,6 @@ export declare const questionMultipleChoiceTacticSchema: yup.ObjectSchema<{
             greaterThan?: number | undefined;
             lessThanOrEqualTo?: number | undefined;
             text: string;
-            strategiesPath: string;
             type: "question-counter";
             color: string;
             textColor: string;
@@ -76,7 +74,6 @@ export declare const questionMultipleChoiceTacticSchema: yup.ObjectSchema<{
             } | null | undefined;
             label?: string | undefined;
             text: string;
-            strategiesPath: string;
             type: "question-multiple-choice";
             color: string;
             textColor: string;

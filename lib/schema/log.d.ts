@@ -127,7 +127,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -147,7 +146,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -164,7 +162,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -223,7 +220,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -243,7 +239,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -260,7 +255,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -322,7 +316,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -342,7 +335,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -359,7 +351,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -416,7 +407,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -436,7 +426,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -453,7 +442,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -518,7 +506,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -538,7 +525,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -555,7 +541,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -614,7 +599,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -634,7 +618,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -651,7 +634,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -708,7 +690,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -728,7 +709,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -745,7 +725,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -802,7 +781,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -822,7 +800,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -839,7 +816,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -900,7 +876,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -920,7 +895,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -937,7 +911,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -994,7 +967,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -1014,7 +986,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -1031,7 +1002,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -1089,7 +1059,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -1109,7 +1078,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -1126,7 +1094,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -1309,7 +1276,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -1329,7 +1295,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -1346,7 +1311,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -1405,7 +1369,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -1425,7 +1388,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -1442,7 +1404,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -1504,7 +1465,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -1524,7 +1484,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -1541,7 +1500,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -1598,7 +1556,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -1618,7 +1575,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -1635,7 +1591,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -1700,7 +1655,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -1720,7 +1674,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -1737,7 +1690,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -1796,7 +1748,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -1816,7 +1767,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -1833,7 +1783,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -1890,7 +1839,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -1910,7 +1858,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -1927,7 +1874,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -1984,7 +1930,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -2004,7 +1949,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -2021,7 +1965,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -2082,7 +2025,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -2102,7 +2044,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -2119,7 +2060,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -2176,7 +2116,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -2196,7 +2135,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -2213,7 +2151,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -2271,7 +2208,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -2291,7 +2227,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -2308,7 +2243,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -2533,7 +2467,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -2553,7 +2486,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -2570,7 +2502,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -2629,7 +2560,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -2649,7 +2579,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -2666,7 +2595,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -2728,7 +2656,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -2748,7 +2675,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -2765,7 +2691,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -2822,7 +2747,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -2842,7 +2766,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -2859,7 +2782,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -2924,7 +2846,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -2944,7 +2865,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -2961,7 +2881,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -3020,7 +2939,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -3040,7 +2958,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -3057,7 +2974,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -3114,7 +3030,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -3134,7 +3049,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -3151,7 +3065,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -3208,7 +3121,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -3228,7 +3140,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -3245,7 +3156,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -3306,7 +3216,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -3326,7 +3235,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -3343,7 +3251,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -3400,7 +3307,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -3420,7 +3326,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -3437,7 +3342,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -3495,7 +3399,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -3515,7 +3418,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -3532,7 +3434,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -3721,7 +3622,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -3741,7 +3641,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -3758,7 +3657,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -3817,7 +3715,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -3837,7 +3734,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -3854,7 +3750,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -3916,7 +3811,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -3936,7 +3830,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -3953,7 +3846,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -4010,7 +3902,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -4030,7 +3921,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -4047,7 +3937,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -4112,7 +4001,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -4132,7 +4020,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -4149,7 +4036,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -4208,7 +4094,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -4228,7 +4113,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -4245,7 +4129,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -4302,7 +4185,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -4322,7 +4204,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -4339,7 +4220,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -4396,7 +4276,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -4416,7 +4295,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -4433,7 +4311,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -4494,7 +4371,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -4514,7 +4390,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -4531,7 +4406,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -4588,7 +4462,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -4608,7 +4481,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -4625,7 +4497,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -4683,7 +4554,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -4703,7 +4573,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -4720,7 +4589,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -4921,7 +4789,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -4941,7 +4808,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -4958,7 +4824,6 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -5017,7 +4882,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -5037,7 +4901,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -5054,7 +4917,6 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -5116,7 +4978,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -5136,7 +4997,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -5153,7 +5013,6 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -5210,7 +5069,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -5230,7 +5088,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -5247,7 +5104,6 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -5312,7 +5168,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -5332,7 +5187,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -5349,7 +5203,6 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -5408,7 +5261,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -5428,7 +5280,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -5445,7 +5296,6 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -5502,7 +5352,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -5522,7 +5371,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -5539,7 +5387,6 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -5596,7 +5443,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -5616,7 +5462,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -5633,7 +5478,6 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -5694,7 +5538,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -5714,7 +5557,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -5731,7 +5573,6 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -5788,7 +5629,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -5808,7 +5648,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -5825,7 +5664,6 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -5883,7 +5721,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -5903,7 +5740,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -5920,7 +5756,6 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -6096,7 +5931,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -6116,7 +5950,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -6133,7 +5966,6 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -6192,7 +6024,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -6212,7 +6043,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -6229,7 +6059,6 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -6291,7 +6120,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -6311,7 +6139,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -6328,7 +6155,6 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -6385,7 +6211,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -6405,7 +6230,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -6422,7 +6246,6 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -6487,7 +6310,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -6507,7 +6329,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -6524,7 +6345,6 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -6583,7 +6403,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -6603,7 +6422,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -6620,7 +6438,6 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -6677,7 +6494,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -6697,7 +6513,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -6714,7 +6529,6 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -6771,7 +6585,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -6791,7 +6604,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -6808,7 +6620,6 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -6869,7 +6680,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -6889,7 +6699,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -6906,7 +6715,6 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -6963,7 +6771,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -6983,7 +6790,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -7000,7 +6806,6 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -7058,7 +6863,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -7078,7 +6882,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -7095,7 +6898,6 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -7244,7 +7046,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -7264,7 +7065,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -7281,7 +7081,6 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -7340,7 +7139,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -7360,7 +7158,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -7377,7 +7174,6 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -7439,7 +7235,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -7459,7 +7254,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -7476,7 +7270,6 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -7533,7 +7326,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -7553,7 +7345,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -7570,7 +7361,6 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -7635,7 +7425,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -7655,7 +7444,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -7672,7 +7460,6 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -7731,7 +7518,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -7751,7 +7537,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -7768,7 +7553,6 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -7825,7 +7609,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -7845,7 +7628,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -7862,7 +7644,6 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -7919,7 +7700,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -7939,7 +7719,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -7956,7 +7735,6 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -8017,7 +7795,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -8037,7 +7814,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -8054,7 +7830,6 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -8111,7 +7886,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -8131,7 +7905,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -8148,7 +7921,6 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
@@ -8206,7 +7978,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-time";
                     color: string;
                     textColor: string;
@@ -8226,7 +7997,6 @@ export declare const logSchema: yup.Lazy<{
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-counter";
                     color: string;
                     textColor: string;
@@ -8243,7 +8013,6 @@ export declare const logSchema: yup.Lazy<{
                     } | null | undefined;
                     label?: string | undefined;
                     text: string;
-                    strategiesPath: string;
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
