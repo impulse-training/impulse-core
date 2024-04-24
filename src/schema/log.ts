@@ -15,6 +15,7 @@ export const tacticDataSchema = yup.object({
   optionLabel: yup.string(),
   optionColor: yup.string(),
   optionTextColor: yup.string(),
+  nextStrategiesPath: yup.string(),
   formattedValue: yup.string().required(),
   lowEmoji: yup.string().notRequired(),
   highEmoji: yup.string().notRequired(),
