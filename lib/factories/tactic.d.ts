@@ -1,7 +1,7 @@
 import * as Factory from 'factory.ts';
 import { TacticValue } from '../schema';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
-export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<TacticValue, "createdAt" | "updatedAt" | "profileId" | "title" | "type" | "sourceId" | "subtitle" | "description" | "image" | "setbackThreshold" | "optionsById" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
+export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<TacticValue, "createdAt" | "updatedAt" | "profileId" | "title" | "type" | "subtitle" | "description" | "image" | "setbackThreshold" | "optionsById" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
 export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     createdAt?: {
         seconds: number;
@@ -14,7 +14,6 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
         toDate: Function;
     } | null | undefined;
     profileId?: string | null | undefined;
-    sourceId?: string | undefined;
     subtitle?: import("yup").Maybe<string | undefined>;
     description?: string | null | undefined;
     image?: {
@@ -93,4 +92,4 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
     title: string;
     type: import("../schema").QuestionKeyType;
     backgroundColor: string;
-}, "title" | "type" | "backgroundColor" | ("createdAt" | "updatedAt" | "profileId" | "sourceId" | "subtitle" | "description" | "image" | "setbackThreshold" | "optionsById" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested")>;
+}, "title" | "type" | "backgroundColor" | ("createdAt" | "updatedAt" | "profileId" | "subtitle" | "description" | "image" | "setbackThreshold" | "optionsById" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested")>;

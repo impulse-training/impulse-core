@@ -9,7 +9,6 @@ export function tacticValueBaseSchema<K extends string>(type: K) {
   return yup.object({
     type: yup.mixed<K>().oneOf([type]).defined(),
     profileId: yup.string().nullable(),
-    sourceId: yup.string(),
     createdAt: optionalTimestampSchema,
     updatedAt: optionalTimestampSchema,
     title: yup.string().required('is required'),

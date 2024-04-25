@@ -2,7 +2,6 @@ import * as yup from 'yup';
 export declare const stepsTacticSchema: yup.ObjectSchema<{
     type: "steps";
     profileId: string | null | undefined;
-    sourceId: string | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -94,7 +93,6 @@ export declare const stepsTacticSchema: yup.ObjectSchema<{
 }, yup.AnyObject, {
     type: undefined;
     profileId: undefined;
-    sourceId: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     title: undefined;

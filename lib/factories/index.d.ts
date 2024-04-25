@@ -113,7 +113,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: import("yup").Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -206,7 +205,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             profileId?: string | null | undefined;
             lowEmoji?: import("yup").Maybe<string | undefined>;
             highEmoji?: import("yup").Maybe<string | undefined>;
-            sourceId?: string | undefined;
             subtitle?: import("yup").Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -356,7 +354,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         name: string;
         ordinal: number;
     }, "profileId" | "name" | "ordinal" | ("createdAt" | "updatedAt" | "supportGroupIds" | "notification" | "measureTacticId" | "measureCallToAction" | "issueId" | "parentIssueIds" | "sendWeeklyReports")>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "title" | "type" | "sourceId" | "subtitle" | "description" | "image" | "setbackThreshold" | "optionsById" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "title" | "type" | "subtitle" | "description" | "image" | "setbackThreshold" | "optionsById" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
     questionTimeTacticFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -369,7 +367,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
-        sourceId?: string | undefined;
         subtitle?: import("yup").Maybe<string | undefined>;
         description?: string | null | undefined;
         image?: {
@@ -448,7 +445,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         title: string;
         type: import("..").QuestionKeyType;
         backgroundColor: string;
-    }, "title" | "type" | "backgroundColor" | ("createdAt" | "updatedAt" | "profileId" | "sourceId" | "subtitle" | "description" | "image" | "setbackThreshold" | "optionsById" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested")>;
+    }, "title" | "type" | "backgroundColor" | ("createdAt" | "updatedAt" | "profileId" | "subtitle" | "description" | "image" | "setbackThreshold" | "optionsById" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested")>;
     strategyFactory: import("factory.ts").Factory<import("..").StrategyValue, "createdAt" | "updatedAt" | "profileId" | "name" | "ordinal" | "tacticIds" | "tacticsById" | "type">;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
@@ -462,10 +459,10 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: Function;
         } | null | undefined;
         profileId: string;
+        hour: number;
+        minute: number;
         name: string;
         type: "time";
         weekdays: number[];
-        hour: number;
-        minute: number;
-    }, "profileId" | "name" | "type" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;
+    }, "profileId" | "hour" | "minute" | "name" | "type" | "weekdays" | ("createdAt" | "updatedAt")>;
 };

@@ -103,7 +103,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -196,7 +195,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -292,7 +290,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -383,7 +380,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -482,7 +478,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -575,7 +570,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
             profileId?: string | null | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -666,7 +660,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -757,7 +750,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -852,7 +844,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -943,7 +934,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -1035,7 +1025,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -1122,10 +1111,10 @@ declare const baseLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     tacticData: {
         [x: string]: {
-            value?: number | undefined;
             optionId?: string | null | undefined;
             optionLabel?: string | undefined;
             optionColor?: string | undefined;
+            value?: number | undefined;
             optionTextColor?: string | undefined;
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
@@ -1253,7 +1242,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -1346,7 +1334,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -1442,7 +1429,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -1533,7 +1519,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -1632,7 +1617,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -1725,7 +1709,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             profileId?: string | null | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -1816,7 +1799,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -1907,7 +1889,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -2002,7 +1983,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -2093,7 +2073,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -2185,7 +2164,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -2272,10 +2250,10 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     tacticData: {
         [x: string]: {
-            value?: number | undefined;
             optionId?: string | null | undefined;
             optionLabel?: string | undefined;
             optionColor?: string | undefined;
+            value?: number | undefined;
             optionTextColor?: string | undefined;
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
@@ -2445,7 +2423,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -2538,7 +2515,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -2634,7 +2610,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -2725,7 +2700,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -2824,7 +2798,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -2917,7 +2890,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
             profileId?: string | null | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -3008,7 +2980,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -3099,7 +3070,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -3194,7 +3164,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -3285,7 +3254,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -3377,7 +3345,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -3464,10 +3431,10 @@ declare const locationLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     tacticData: {
         [x: string]: {
-            value?: number | undefined;
             optionId?: string | null | undefined;
             optionLabel?: string | undefined;
             optionColor?: string | undefined;
+            value?: number | undefined;
             optionTextColor?: string | undefined;
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
@@ -3601,7 +3568,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -3694,7 +3660,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -3790,7 +3755,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -3881,7 +3845,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -3980,7 +3943,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -4073,7 +4035,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
             profileId?: string | null | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -4164,7 +4125,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -4255,7 +4215,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -4350,7 +4309,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -4441,7 +4399,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -4533,7 +4490,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -4620,10 +4576,10 @@ declare const timeLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     tacticData: {
         [x: string]: {
-            value?: number | undefined;
             optionId?: string | null | undefined;
             optionLabel?: string | undefined;
             optionColor?: string | undefined;
+            value?: number | undefined;
             optionTextColor?: string | undefined;
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
@@ -4722,10 +4678,10 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     tacticData?: {
         [x: string]: {
-            value?: number | undefined;
             optionId?: string | null | undefined;
             optionLabel?: string | undefined;
             optionColor?: string | undefined;
+            value?: number | undefined;
             optionTextColor?: string | undefined;
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
@@ -4770,7 +4726,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -4863,7 +4818,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -4959,7 +4913,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -5050,7 +5003,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -5149,7 +5101,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -5242,7 +5193,6 @@ export declare const logSchema: yup.Lazy<{
             profileId?: string | null | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -5333,7 +5283,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -5424,7 +5373,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -5519,7 +5467,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -5610,7 +5557,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -5702,7 +5648,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -5869,10 +5814,10 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     tacticData?: {
         [x: string]: {
-            value?: number | undefined;
             optionId?: string | null | undefined;
             optionLabel?: string | undefined;
             optionColor?: string | undefined;
+            value?: number | undefined;
             optionTextColor?: string | undefined;
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
@@ -5913,7 +5858,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -6006,7 +5950,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -6102,7 +6045,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -6193,7 +6135,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -6292,7 +6233,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -6385,7 +6325,6 @@ export declare const logSchema: yup.Lazy<{
             profileId?: string | null | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -6476,7 +6415,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -6567,7 +6505,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -6662,7 +6599,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -6753,7 +6689,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -6845,7 +6780,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -6985,10 +6919,10 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     tacticData?: {
         [x: string]: {
-            value?: number | undefined;
             optionId?: string | null | undefined;
             optionLabel?: string | undefined;
             optionColor?: string | undefined;
+            value?: number | undefined;
             optionTextColor?: string | undefined;
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
@@ -7029,7 +6963,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -7122,7 +7055,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -7218,7 +7150,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -7309,7 +7240,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -7408,7 +7338,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -7501,7 +7430,6 @@ export declare const logSchema: yup.Lazy<{
             profileId?: string | null | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -7592,7 +7520,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -7683,7 +7610,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -7778,7 +7704,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -7869,7 +7794,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -7961,7 +7885,6 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            sourceId?: string | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {

@@ -2,7 +2,6 @@ import * as yup from 'yup';
 export declare const phoneTacticSchema: yup.ObjectSchema<{
     type: "phone";
     profileId: string | null | undefined;
-    sourceId: string | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -95,7 +94,6 @@ export declare const phoneTacticSchema: yup.ObjectSchema<{
 }, yup.AnyObject, {
     type: undefined;
     profileId: undefined;
-    sourceId: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     title: undefined;

@@ -25,7 +25,6 @@ export declare const issueSchema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
-        sourceId?: string | undefined;
         subtitle?: yup.Maybe<string | undefined>;
         description?: string | null | undefined;
         image?: {
@@ -118,7 +117,6 @@ export declare const issueSchema: yup.ObjectSchema<{
         profileId?: string | null | undefined;
         lowEmoji?: yup.Maybe<string | undefined>;
         highEmoji?: yup.Maybe<string | undefined>;
-        sourceId?: string | undefined;
         subtitle?: yup.Maybe<string | undefined>;
         description?: string | null | undefined;
         image?: {

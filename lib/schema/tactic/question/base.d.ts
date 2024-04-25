@@ -2,7 +2,6 @@ import { QuestionKeyType } from '../../utils/questionType';
 export declare function questionTacticValueBaseSchema(type: QuestionKeyType): import("yup").ObjectSchema<{
     type: QuestionKeyType;
     profileId: string | null | undefined;
-    sourceId: string | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -93,7 +92,6 @@ export declare function questionTacticValueBaseSchema(type: QuestionKeyType): im
 }, import("yup").AnyObject, {
     type: undefined;
     profileId: undefined;
-    sourceId: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     title: undefined;

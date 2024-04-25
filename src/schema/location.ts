@@ -1,7 +1,7 @@
 import * as yup from 'yup';
 import { optionalTimestampSchema } from './utils/timestamp';
 
-export const locationSchema = yup.object().shape({
+export const locationSchema = yup.object({
   profileId: yup.string().required(),
 
   createdAt: optionalTimestampSchema,
@@ -11,4 +11,5 @@ export const locationSchema = yup.object().shape({
   longitude: yup.number().min(-180).max(180), // longitude ranges from -180 to 180
   address: yup.string().required(),
 });
+
 export type LocationValue = yup.InferType<typeof locationSchema>;

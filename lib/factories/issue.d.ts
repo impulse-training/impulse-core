@@ -31,7 +31,6 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
-        sourceId?: string | undefined;
         subtitle?: import("yup").Maybe<string | undefined>;
         description?: string | null | undefined;
         image?: {
@@ -124,7 +123,6 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         profileId?: string | null | undefined;
         lowEmoji?: import("yup").Maybe<string | undefined>;
         highEmoji?: import("yup").Maybe<string | undefined>;
-        sourceId?: string | undefined;
         subtitle?: import("yup").Maybe<string | undefined>;
         description?: string | null | undefined;
         image?: {

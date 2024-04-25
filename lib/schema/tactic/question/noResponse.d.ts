@@ -2,7 +2,6 @@ import * as yup from 'yup';
 export declare const questionNoResponseSchema: yup.ObjectSchema<{
     type: import("../..").QuestionKeyType;
     profileId: string | null | undefined;
-    sourceId: string | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -93,7 +92,6 @@ export declare const questionNoResponseSchema: yup.ObjectSchema<{
 }, yup.AnyObject, {
     type: undefined;
     profileId: undefined;
-    sourceId: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     title: undefined;
