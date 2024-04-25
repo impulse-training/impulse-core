@@ -6,6 +6,7 @@ export declare const tacticDataSchema: yup.ObjectSchema<{
     optionLabel: string | undefined;
     optionColor: string | undefined;
     optionTextColor: string | undefined;
+    isCompleted: boolean | undefined;
     nextStrategiesPath: string | undefined;
     formattedValue: string;
     lowEmoji: yup.Maybe<string | undefined>;
@@ -16,6 +17,7 @@ export declare const tacticDataSchema: yup.ObjectSchema<{
     optionLabel: undefined;
     optionColor: undefined;
     optionTextColor: undefined;
+    isCompleted: undefined;
     nextStrategiesPath: undefined;
     formattedValue: undefined;
     lowEmoji: undefined;
@@ -1105,7 +1107,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
             backgroundColor: string;
         };
     };
-    completedTacticIds: string[];
     tacticLikes: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
@@ -1116,12 +1117,13 @@ declare const baseLogSchema: yup.ObjectSchema<{
             optionColor?: string | undefined;
             value?: number | undefined;
             optionTextColor?: string | undefined;
+            isCompleted?: boolean | undefined;
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
             formattedValue: string;
         };
-    } | null | undefined;
+    };
     sharedWithSupportGroupIds: string[] | undefined;
 }, yup.AnyObject, {
     profileId: undefined;
@@ -1150,7 +1152,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
     strategiesPath: undefined;
     tacticIds: "";
     tacticsById: undefined;
-    completedTacticIds: "";
     tacticLikes: undefined;
     tacticData: undefined;
     sharedWithSupportGroupIds: "";
@@ -2244,7 +2245,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             backgroundColor: string;
         };
     };
-    completedTacticIds: string[];
     tacticLikes: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
@@ -2255,12 +2255,13 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             optionColor?: string | undefined;
             value?: number | undefined;
             optionTextColor?: string | undefined;
+            isCompleted?: boolean | undefined;
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
             formattedValue: string;
         };
-    } | null | undefined;
+    };
     sharedWithSupportGroupIds: string[] | undefined;
 } & {
     type: "impulse";
@@ -2326,7 +2327,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     strategiesPath: undefined;
     tacticIds: "";
     tacticsById: undefined;
-    completedTacticIds: "";
     tacticLikes: undefined;
     tacticData: undefined;
     sharedWithSupportGroupIds: "";
@@ -3425,7 +3425,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
             backgroundColor: string;
         };
     };
-    completedTacticIds: string[];
     tacticLikes: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
@@ -3436,12 +3435,13 @@ declare const locationLogSchema: yup.ObjectSchema<{
             optionColor?: string | undefined;
             value?: number | undefined;
             optionTextColor?: string | undefined;
+            isCompleted?: boolean | undefined;
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
             formattedValue: string;
         };
-    } | null | undefined;
+    };
     sharedWithSupportGroupIds: string[] | undefined;
 } & {
     type: "location";
@@ -3476,7 +3476,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
     strategiesPath: undefined;
     tacticIds: "";
     tacticsById: undefined;
-    completedTacticIds: "";
     tacticLikes: undefined;
     tacticData: undefined;
     sharedWithSupportGroupIds: "";
@@ -4570,7 +4569,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
             backgroundColor: string;
         };
     };
-    completedTacticIds: string[];
     tacticLikes: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
@@ -4581,12 +4579,13 @@ declare const timeLogSchema: yup.ObjectSchema<{
             optionColor?: string | undefined;
             value?: number | undefined;
             optionTextColor?: string | undefined;
+            isCompleted?: boolean | undefined;
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
             formattedValue: string;
         };
-    } | null | undefined;
+    };
     sharedWithSupportGroupIds: string[] | undefined;
 } & {
     type: "time";
@@ -4618,7 +4617,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
     strategiesPath: undefined;
     tacticIds: "";
     tacticsById: undefined;
-    completedTacticIds: "";
     tacticLikes: undefined;
     tacticData: undefined;
     sharedWithSupportGroupIds: "";
@@ -4675,19 +4673,6 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     tacticLikes?: {
         [x: string]: NonNullable<boolean | undefined>;
-    } | null | undefined;
-    tacticData?: {
-        [x: string]: {
-            optionId?: string | null | undefined;
-            optionLabel?: string | undefined;
-            optionColor?: string | undefined;
-            value?: number | undefined;
-            optionTextColor?: string | undefined;
-            nextStrategiesPath?: string | undefined;
-            lowEmoji?: yup.Maybe<string | undefined>;
-            highEmoji?: yup.Maybe<string | undefined>;
-            formattedValue: string;
-        };
     } | null | undefined;
     sharedWithSupportGroupIds?: string[] | undefined;
     setAsActiveImpulse?: yup.Maybe<boolean | undefined>;
@@ -5729,7 +5714,20 @@ export declare const logSchema: yup.Lazy<{
         };
     };
     type: "impulse";
-    completedTacticIds: string[];
+    tacticData: {
+        [x: string]: {
+            optionId?: string | null | undefined;
+            optionLabel?: string | undefined;
+            optionColor?: string | undefined;
+            value?: number | undefined;
+            optionTextColor?: string | undefined;
+            isCompleted?: boolean | undefined;
+            nextStrategiesPath?: string | undefined;
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
+            formattedValue: string;
+        };
+    };
     isDisplayable: NonNullable<boolean | undefined>;
     patternId: string;
     patternIds: string[];
@@ -5811,19 +5809,6 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     tacticLikes?: {
         [x: string]: NonNullable<boolean | undefined>;
-    } | null | undefined;
-    tacticData?: {
-        [x: string]: {
-            optionId?: string | null | undefined;
-            optionLabel?: string | undefined;
-            optionColor?: string | undefined;
-            value?: number | undefined;
-            optionTextColor?: string | undefined;
-            nextStrategiesPath?: string | undefined;
-            lowEmoji?: yup.Maybe<string | undefined>;
-            highEmoji?: yup.Maybe<string | undefined>;
-            formattedValue: string;
-        };
     } | null | undefined;
     sharedWithSupportGroupIds?: string[] | undefined;
     profileId: string;
@@ -6861,7 +6846,20 @@ export declare const logSchema: yup.Lazy<{
         };
     };
     type: "location";
-    completedTacticIds: string[];
+    tacticData: {
+        [x: string]: {
+            optionId?: string | null | undefined;
+            optionLabel?: string | undefined;
+            optionColor?: string | undefined;
+            value?: number | undefined;
+            optionTextColor?: string | undefined;
+            isCompleted?: boolean | undefined;
+            nextStrategiesPath?: string | undefined;
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
+            formattedValue: string;
+        };
+    };
     isDisplayable: NonNullable<boolean | undefined>;
     locationId: string;
     locationName: string;
@@ -6916,19 +6914,6 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     tacticLikes?: {
         [x: string]: NonNullable<boolean | undefined>;
-    } | null | undefined;
-    tacticData?: {
-        [x: string]: {
-            optionId?: string | null | undefined;
-            optionLabel?: string | undefined;
-            optionColor?: string | undefined;
-            value?: number | undefined;
-            optionTextColor?: string | undefined;
-            nextStrategiesPath?: string | undefined;
-            lowEmoji?: yup.Maybe<string | undefined>;
-            highEmoji?: yup.Maybe<string | undefined>;
-            formattedValue: string;
-        };
     } | null | undefined;
     sharedWithSupportGroupIds?: string[] | undefined;
     profileId: string;
@@ -7966,7 +7951,20 @@ export declare const logSchema: yup.Lazy<{
         };
     };
     type: "time";
-    completedTacticIds: string[];
+    tacticData: {
+        [x: string]: {
+            optionId?: string | null | undefined;
+            optionLabel?: string | undefined;
+            optionColor?: string | undefined;
+            value?: number | undefined;
+            optionTextColor?: string | undefined;
+            isCompleted?: boolean | undefined;
+            nextStrategiesPath?: string | undefined;
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
+            formattedValue: string;
+        };
+    };
     isDisplayable: NonNullable<boolean | undefined>;
 }, yup.AnyObject, any>;
 export type LogValue = ImpulseLogValue | LocationLogValue | TimeLogValue;

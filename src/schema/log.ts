@@ -15,6 +15,7 @@ export const tacticDataSchema = yup.object({
   optionLabel: yup.string(),
   optionColor: yup.string(),
   optionTextColor: yup.string(),
+  isCompleted: yup.boolean(),
   nextStrategiesPath: yup.string(),
   formattedValue: yup.string().required(),
   lowEmoji: yup.string().notRequired(),
@@ -53,9 +54,8 @@ const baseLogSchema = yup.object().shape({
   // TODO: These represent seen tactics, but this may need some clarification
   tacticIds: requiredStringArray,
   tacticsById: objectOf(tacticSchema),
-  completedTacticIds: requiredStringArray,
   tacticLikes: optionalObjectOf(yup.boolean().required()),
-  tacticData: optionalObjectOf(tacticDataSchema),
+  tacticData: objectOf(tacticDataSchema),
   sharedWithSupportGroupIds: optionalStringArray,
 });
 // This is important to prevent typescript generating a 40k line file :/

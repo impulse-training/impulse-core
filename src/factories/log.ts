@@ -19,7 +19,7 @@ export const makeImpulseLogFactory = (TimestampKlass: typeof TimestampLike) =>
     patternsById: {},
     tacticIds: [],
     tacticsById: {},
-    completedTacticIds: [],
+    tacticData: {},
     strategiesPath: 'patterns/abc123/strategies',
     debriefStrategiesPath: 'patterns/abc123/debriefStrategies',
   });
@@ -38,7 +38,7 @@ export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>
     locationIsFetching: false,
     tacticIds: [],
     tacticsById: {},
-    completedTacticIds: [],
+    tacticData: {},
   });
 
 export const makeLocationLogFactory = (TimestampKlass: typeof TimestampLike) =>
@@ -58,5 +58,5 @@ export const makeLocationLogFactory = (TimestampKlass: typeof TimestampLike) =>
     locationIsFetching: false,
     tacticIds: [],
     tacticsById: {},
-    completedTacticIds: [],
+    tacticData: {},
   });
