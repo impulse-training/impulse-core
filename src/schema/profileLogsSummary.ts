@@ -3,6 +3,8 @@ import { requiredStringArray } from './utils/array';
 import { objectOf } from './utils/objectOf';
 
 const tacticDaySummarySchema = yup.object({
+  dataUnit: yup.mixed<'time' | 'custom'>().oneOf(['time', 'custom']).required(),
+  dataCustomUnit: yup.string(),
   totalDataValue: yup.number().required(),
   formattedTotalDataValue: yup.string().required(),
 });

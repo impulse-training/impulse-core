@@ -11,6 +11,8 @@ import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
 
 export const tacticDataSchema = yup.object({
   value: yup.number(),
+  unit: yup.mixed<'time' | 'custom'>().oneOf(['time', 'custom']).required(),
+  customUnit: yup.string(),
   optionId: yup.string().nullable(),
   optionLabel: yup.string(),
   optionColor: yup.string(),

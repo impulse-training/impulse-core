@@ -2,6 +2,8 @@ import * as yup from 'yup';
 declare const tacticSummarySchema: yup.ObjectSchema<{
     title: string;
     dataValue: number | undefined;
+    dataUnit: NonNullable<"time" | "custom" | undefined>;
+    dataCustomUnit: string | undefined;
     formattedDataValue: string | undefined;
     optionId: string | null | undefined;
     optionLabel: string | undefined;
@@ -9,6 +11,8 @@ declare const tacticSummarySchema: yup.ObjectSchema<{
 }, yup.AnyObject, {
     title: undefined;
     dataValue: undefined;
+    dataUnit: undefined;
+    dataCustomUnit: undefined;
     formattedDataValue: undefined;
     optionId: undefined;
     optionLabel: undefined;
@@ -21,11 +25,13 @@ declare const logSummarySchema: yup.ObjectSchema<{
     tacticSummariesById: {
         [x: string]: {
             dataValue?: number | undefined;
+            dataCustomUnit?: string | undefined;
             formattedDataValue?: string | undefined;
             optionId?: string | null | undefined;
             optionLabel?: string | undefined;
             optionColor?: string | undefined;
             title: string;
+            dataUnit: NonNullable<"time" | "custom" | undefined>;
         };
     };
 }, yup.AnyObject, {
@@ -34,41 +40,23 @@ declare const logSummarySchema: yup.ObjectSchema<{
     tacticSummariesById: undefined;
 }, "">;
 export type LogSummaryValue = yup.InferType<typeof logSummarySchema>;
-export declare const dayLogsSummarySchema: yup.ObjectSchema<{
-    createdAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    } | null | undefined;
-    updatedAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    } | null | undefined;
-    profileId: string;
-    dateString: string;
-    logSummariesById: {
-        [x: string]: {
-            hour: number;
-            minute: number;
-            tacticSummariesById: {
-                [x: string]: {
-                    dataValue?: number | undefined;
-                    formattedDataValue?: string | undefined;
-                    optionId?: string | null | undefined;
-                    optionLabel?: string | undefined;
-                    optionColor?: string | undefined;
-                    title: string;
-                };
+export declare const dayLogsSummarySchema: yup.Lazy<{
+    [x: string]: {
+        hour: number;
+        minute: number;
+        tacticSummariesById: {
+            [x: string]: {
+                dataValue?: number | undefined;
+                dataCustomUnit?: string | undefined;
+                formattedDataValue?: string | undefined;
+                optionId?: string | null | undefined;
+                optionLabel?: string | undefined;
+                optionColor?: string | undefined;
+                title: string;
+                dataUnit: NonNullable<"time" | "custom" | undefined>;
             };
         };
     };
-}, yup.AnyObject, {
-    createdAt: undefined;
-    updatedAt: undefined;
-    profileId: undefined;
-    dateString: undefined;
-    logSummariesById: undefined;
-}, "">;
+}, yup.AnyObject, any>;
 export type DayLogsSummaryValue = yup.InferType<typeof dayLogsSummarySchema>;
 export {};

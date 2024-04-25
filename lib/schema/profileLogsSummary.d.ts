@@ -4,6 +4,8 @@ export declare const profileLogsSummarySchema: yup.Lazy<{
         optionColors: string[];
         tactics: {
             [x: string]: {
+                dataCustomUnit?: string | undefined;
+                dataUnit: NonNullable<"time" | "custom" | undefined>;
                 totalDataValue: number;
                 formattedTotalDataValue: string;
             };

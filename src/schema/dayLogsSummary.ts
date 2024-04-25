@@ -1,11 +1,12 @@
 import * as yup from 'yup';
 import { objectOf } from './utils/objectOf';
-import { optionalTimestampSchema } from './utils/timestamp';
 
 // This is a summary of an individual tactic data entry
 const tacticSummarySchema = yup.object({
   title: yup.string().required(),
   dataValue: yup.number(),
+  dataUnit: yup.mixed<'time' | 'custom'>().oneOf(['time', 'custom']).required(),
+  dataCustomUnit: yup.string(),
   formattedDataValue: yup.string(),
   optionId: yup.string().nullable(),
   optionLabel: yup.string(),
@@ -22,12 +23,6 @@ const logSummarySchema = yup.object({
 export type LogSummaryValue = yup.InferType<typeof logSummarySchema>;
 
 // Which is combined into a daily summary
-export const dayLogsSummarySchema = yup.object({
-  createdAt: optionalTimestampSchema,
-  updatedAt: optionalTimestampSchema,
-  profileId: yup.string().required(),
-  dateString: yup.string().required(),
-  logSummariesById: objectOf(logSummarySchema),
-});
+export const dayLogsSummarySchema = objectOf(logSummarySchema);
 
 export type DayLogsSummaryValue = yup.InferType<typeof dayLogsSummarySchema>;
