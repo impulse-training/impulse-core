@@ -2,6 +2,7 @@ import * as yup from 'yup';
 import { objectOf } from './utils/objectOf';
 import { optionalTimestampSchema } from './utils/timestamp';
 
+// This is a summary of an individual tactic data entry
 const tacticSummarySchema = yup.object({
   title: yup.string().required(),
   dataValue: yup.number(),
@@ -12,6 +13,7 @@ const tacticSummarySchema = yup.object({
 });
 export type TacticSummaryValue = yup.InferType<typeof tacticSummarySchema>;
 
+// And this is a summary of all the tactics for a given log entry
 const logSummarySchema = yup.object({
   hour: yup.number().required(),
   minute: yup.number().required(),
@@ -19,7 +21,8 @@ const logSummarySchema = yup.object({
 });
 export type LogSummaryValue = yup.InferType<typeof logSummarySchema>;
 
-export const dateSummarySchema = yup.object({
+// Which is combined into a daily summary
+export const dayLogsSummarySchema = yup.object({
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
   profileId: yup.string().required(),
@@ -27,4 +30,4 @@ export const dateSummarySchema = yup.object({
   logSummariesById: objectOf(logSummarySchema),
 });
 
-export type DateSummaryValue = yup.InferType<typeof dateSummarySchema>;
+export type DayLogsSummaryValue = yup.InferType<typeof dayLogsSummarySchema>;

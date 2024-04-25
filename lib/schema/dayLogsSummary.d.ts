@@ -34,7 +34,7 @@ declare const logSummarySchema: yup.ObjectSchema<{
     tacticSummariesById: undefined;
 }, "">;
 export type LogSummaryValue = yup.InferType<typeof logSummarySchema>;
-export declare const dateSummarySchema: yup.ObjectSchema<{
+export declare const dayLogsSummarySchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -70,5 +70,5 @@ export declare const dateSummarySchema: yup.ObjectSchema<{
     dateString: undefined;
     logSummariesById: undefined;
 }, "">;
-export type DateSummaryValue = yup.InferType<typeof dateSummarySchema>;
+export type DayLogsSummaryValue = yup.InferType<typeof dayLogsSummarySchema>;
 export {};
