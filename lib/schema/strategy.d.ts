@@ -4,6 +4,10 @@ export declare const strategySchema: yup.ObjectSchema<{
     ordinal: yup.Maybe<number | undefined>;
     name: string;
     type: NonNullable<"time" | "impulse" | "debrief" | undefined>;
+    recommendedForIssueIds: string[] | undefined;
+    recommendedForIssuesOrdinals: {
+        [x: string]: number;
+    } | null | undefined;
     tacticIds: string[];
     tacticsById: any;
     profileId: string | undefined;
@@ -21,6 +25,8 @@ export declare const strategySchema: yup.ObjectSchema<{
     ordinal: undefined;
     name: undefined;
     type: undefined;
+    recommendedForIssueIds: "";
+    recommendedForIssuesOrdinals: undefined;
     tacticIds: "";
     tacticsById: any;
     profileId: undefined;

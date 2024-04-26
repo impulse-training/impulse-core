@@ -542,7 +542,7 @@ export declare const factories: {
         type: import("..").QuestionKeyType;
         backgroundColor: string;
     }, "title" | "type" | "backgroundColor" | ("createdAt" | "updatedAt" | "profileId" | "setbackThreshold" | "subtitle" | "description" | "image" | "optionsById" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested")>;
-    strategyFactory: import("factory.ts").Factory<import("..").StrategyValue, "createdAt" | "updatedAt" | "profileId" | "name" | "ordinal" | "type" | "tacticsById" | "tacticIds">;
+    strategyFactory: import("factory.ts").Factory<import("..").StrategyValue, "createdAt" | "updatedAt" | "profileId" | "name" | "ordinal" | "type" | "tacticsById" | "tacticIds" | "recommendedForIssueIds" | "recommendedForIssuesOrdinals">;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
