@@ -5,9 +5,9 @@ export const profileLogsSummaryFactory =
   Factory.makeFactory<ProfileLogsSummaryValue>({
     '2024-01-01': {
       tactic1: {
-        dataUnit: 'time',
-        totalDataValue: 1,
-        formattedTotalDataValue: '1 minute',
+        unit: 'time',
+        value: 1,
+        formattedValue: '1 minute',
         optionId: 'tactic1',
         optionColor: 'blue',
         optionLabel: 'Tactic 1',

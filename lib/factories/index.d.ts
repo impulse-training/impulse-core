@@ -82,14 +82,18 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
     profileLogsSummaryFactory: import("factory.ts").Factory<{
         [x: string]: {
             [x: string]: {
-                optionId?: string | undefined;
+                value?: number | undefined;
+                customUnit?: string | undefined;
+                optionId?: string | null | undefined;
                 optionLabel?: string | undefined;
                 optionColor?: string | undefined;
                 optionTextColor?: string | undefined;
-                dataCustomUnit?: string | undefined;
-                dataUnit: NonNullable<"time" | "custom" | undefined>;
-                totalDataValue: number;
-                formattedTotalDataValue: string;
+                isCompleted?: boolean | undefined;
+                nextStrategiesPath?: string | undefined;
+                lowEmoji?: import("yup").Maybe<string | undefined>;
+                highEmoji?: import("yup").Maybe<string | undefined>;
+                unit: NonNullable<"time" | "custom" | undefined>;
+                formattedValue: string;
             };
         };
     }, string | number>;
