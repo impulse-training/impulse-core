@@ -109,6 +109,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -116,9 +117,24 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -154,22 +170,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
                     color: string;
                     textColor: string;
                 };
@@ -185,10 +185,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
-            type: "phone";
+            type: import(".").QuestionKeyType;
             backgroundColor: string;
-            supportGroupId: string;
-            trigger: {};
         } | {
             createdAt?: {
                 seconds: number;
@@ -201,6 +199,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -208,9 +209,24 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -248,7 +264,43 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     type: "question-counter";
                     color: string;
                     textColor: string;
-                } | {
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: import(".").QuestionKeyType;
+            backgroundColor: string;
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -262,6 +314,44 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     label?: string | undefined;
                     text: string;
                     type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
                     color: string;
                     textColor: string;
                 };
@@ -296,542 +386,82 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
             setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: "urge-surfing";
-            backgroundColor: string;
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: "video";
-            backgroundColor: string;
-            video: {
-                storagePath?: string | null | undefined;
-                url?: string | null | undefined;
-                title: string;
-                description: string;
-                thumbnailUrl: string;
-                duration: number;
-            };
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: import(".").QuestionKeyType;
-            backgroundColor: string;
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            lowEmoji?: yup.Maybe<string | undefined>;
-            highEmoji?: yup.Maybe<string | undefined>;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: import(".").QuestionKeyType;
-            backgroundColor: string;
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: "task";
-            backgroundColor: string;
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
             repeat?: yup.Maybe<number | undefined>;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
+                    color: string;
+                    textColor: string;
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
             title: string;
             type: "breathe";
             backgroundColor: string;
@@ -850,6 +480,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -857,9 +488,24 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -897,7 +543,43 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     type: "question-counter";
                     color: string;
                     textColor: string;
-                } | {
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: "emotions";
+            backgroundColor: string;
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -911,6 +593,44 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     label?: string | undefined;
                     text: string;
                     type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
                     color: string;
                     textColor: string;
                 };
@@ -940,6 +660,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -947,9 +668,24 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -987,7 +723,45 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     type: "question-counter";
                     color: string;
                     textColor: string;
-                } | {
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: "phone";
+            backgroundColor: string;
+            supportGroupId: string;
+            trigger: {};
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -1001,6 +775,44 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     label?: string | undefined;
                     text: string;
                     type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
                     color: string;
                     textColor: string;
                 };
@@ -1031,6 +843,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -1038,9 +851,24 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -1078,7 +906,43 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     type: "question-counter";
                     color: string;
                     textColor: string;
-                } | {
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: "task";
+            backgroundColor: string;
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -1094,6 +958,44 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
+                    color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -1107,8 +1009,106 @@ declare const baseLogSchema: yup.ObjectSchema<{
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
-            type: "emotions";
+            type: "urge-surfing";
             backgroundColor: string;
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
+                    color: string;
+                    textColor: string;
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: "video";
+            backgroundColor: string;
+            video: {
+                storagePath?: string | null | undefined;
+                url?: string | null | undefined;
+                title: string;
+                description: string;
+                thumbnailUrl: string;
+                duration: number;
+            };
         };
     };
     tacticLikes: {
@@ -1116,11 +1116,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     tacticData: {
         [x: string]: {
+            value?: number | undefined;
+            customUnit?: string | undefined;
             optionId?: string | null | undefined;
             optionLabel?: string | undefined;
             optionColor?: string | undefined;
-            value?: number | undefined;
-            customUnit?: string | undefined;
             optionTextColor?: string | undefined;
             isCompleted?: boolean | undefined;
             nextStrategiesPath?: string | undefined;
@@ -1249,6 +1249,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -1256,9 +1257,24 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -1294,22 +1310,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
                     color: string;
                     textColor: string;
                 };
@@ -1325,10 +1325,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
-            type: "phone";
+            type: import(".").QuestionKeyType;
             backgroundColor: string;
-            supportGroupId: string;
-            trigger: {};
         } | {
             createdAt?: {
                 seconds: number;
@@ -1341,6 +1339,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -1348,9 +1349,24 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -1388,7 +1404,43 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     type: "question-counter";
                     color: string;
                     textColor: string;
-                } | {
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: import(".").QuestionKeyType;
+            backgroundColor: string;
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -1402,6 +1454,44 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     label?: string | undefined;
                     text: string;
                     type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
                     color: string;
                     textColor: string;
                 };
@@ -1436,542 +1526,82 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
             setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: "urge-surfing";
-            backgroundColor: string;
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: "video";
-            backgroundColor: string;
-            video: {
-                storagePath?: string | null | undefined;
-                url?: string | null | undefined;
-                title: string;
-                description: string;
-                thumbnailUrl: string;
-                duration: number;
-            };
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: import(".").QuestionKeyType;
-            backgroundColor: string;
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            lowEmoji?: yup.Maybe<string | undefined>;
-            highEmoji?: yup.Maybe<string | undefined>;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: import(".").QuestionKeyType;
-            backgroundColor: string;
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: "task";
-            backgroundColor: string;
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
             repeat?: yup.Maybe<number | undefined>;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
+                    color: string;
+                    textColor: string;
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
             title: string;
             type: "breathe";
             backgroundColor: string;
@@ -1990,6 +1620,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -1997,9 +1628,24 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -2037,7 +1683,43 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     type: "question-counter";
                     color: string;
                     textColor: string;
-                } | {
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: "emotions";
+            backgroundColor: string;
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -2051,6 +1733,44 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     label?: string | undefined;
                     text: string;
                     type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
                     color: string;
                     textColor: string;
                 };
@@ -2080,6 +1800,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -2087,9 +1808,24 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -2127,7 +1863,45 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     type: "question-counter";
                     color: string;
                     textColor: string;
-                } | {
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: "phone";
+            backgroundColor: string;
+            supportGroupId: string;
+            trigger: {};
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -2141,6 +1915,44 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     label?: string | undefined;
                     text: string;
                     type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
                     color: string;
                     textColor: string;
                 };
@@ -2171,6 +1983,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -2178,9 +1991,24 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -2218,7 +2046,43 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     type: "question-counter";
                     color: string;
                     textColor: string;
-                } | {
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: "task";
+            backgroundColor: string;
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -2234,6 +2098,44 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
+                    color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -2247,8 +2149,106 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
-            type: "emotions";
+            type: "urge-surfing";
             backgroundColor: string;
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
+                    color: string;
+                    textColor: string;
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: "video";
+            backgroundColor: string;
+            video: {
+                storagePath?: string | null | undefined;
+                url?: string | null | undefined;
+                title: string;
+                description: string;
+                thumbnailUrl: string;
+                duration: number;
+            };
         };
     };
     tacticLikes: {
@@ -2256,11 +2256,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     tacticData: {
         [x: string]: {
+            value?: number | undefined;
+            customUnit?: string | undefined;
             optionId?: string | null | undefined;
             optionLabel?: string | undefined;
             optionColor?: string | undefined;
-            value?: number | undefined;
-            customUnit?: string | undefined;
             optionTextColor?: string | undefined;
             isCompleted?: boolean | undefined;
             nextStrategiesPath?: string | undefined;
@@ -2431,6 +2431,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -2438,9 +2439,24 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -2476,22 +2492,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
                     color: string;
                     textColor: string;
                 };
@@ -2507,10 +2507,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
-            type: "phone";
+            type: import(".").QuestionKeyType;
             backgroundColor: string;
-            supportGroupId: string;
-            trigger: {};
         } | {
             createdAt?: {
                 seconds: number;
@@ -2523,6 +2521,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -2530,9 +2531,24 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -2570,7 +2586,43 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     type: "question-counter";
                     color: string;
                     textColor: string;
-                } | {
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: import(".").QuestionKeyType;
+            backgroundColor: string;
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -2584,6 +2636,44 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     label?: string | undefined;
                     text: string;
                     type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
                     color: string;
                     textColor: string;
                 };
@@ -2618,542 +2708,82 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
             setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: "urge-surfing";
-            backgroundColor: string;
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: "video";
-            backgroundColor: string;
-            video: {
-                storagePath?: string | null | undefined;
-                url?: string | null | undefined;
-                title: string;
-                description: string;
-                thumbnailUrl: string;
-                duration: number;
-            };
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: import(".").QuestionKeyType;
-            backgroundColor: string;
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            lowEmoji?: yup.Maybe<string | undefined>;
-            highEmoji?: yup.Maybe<string | undefined>;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: import(".").QuestionKeyType;
-            backgroundColor: string;
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: "task";
-            backgroundColor: string;
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
             repeat?: yup.Maybe<number | undefined>;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
+                    color: string;
+                    textColor: string;
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
             title: string;
             type: "breathe";
             backgroundColor: string;
@@ -3172,6 +2802,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -3179,9 +2810,24 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -3219,7 +2865,43 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     type: "question-counter";
                     color: string;
                     textColor: string;
-                } | {
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: "emotions";
+            backgroundColor: string;
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -3233,6 +2915,44 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     label?: string | undefined;
                     text: string;
                     type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
                     color: string;
                     textColor: string;
                 };
@@ -3262,6 +2982,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -3269,9 +2990,24 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -3309,7 +3045,45 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     type: "question-counter";
                     color: string;
                     textColor: string;
-                } | {
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: "phone";
+            backgroundColor: string;
+            supportGroupId: string;
+            trigger: {};
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -3323,6 +3097,44 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     label?: string | undefined;
                     text: string;
                     type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
                     color: string;
                     textColor: string;
                 };
@@ -3353,6 +3165,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -3360,9 +3173,24 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -3400,7 +3228,43 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     type: "question-counter";
                     color: string;
                     textColor: string;
-                } | {
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: "task";
+            backgroundColor: string;
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -3416,6 +3280,44 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
+                    color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -3429,8 +3331,106 @@ declare const locationLogSchema: yup.ObjectSchema<{
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
-            type: "emotions";
+            type: "urge-surfing";
             backgroundColor: string;
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
+                    color: string;
+                    textColor: string;
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: "video";
+            backgroundColor: string;
+            video: {
+                storagePath?: string | null | undefined;
+                url?: string | null | undefined;
+                title: string;
+                description: string;
+                thumbnailUrl: string;
+                duration: number;
+            };
         };
     };
     tacticLikes: {
@@ -3438,11 +3438,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     tacticData: {
         [x: string]: {
+            value?: number | undefined;
+            customUnit?: string | undefined;
             optionId?: string | null | undefined;
             optionLabel?: string | undefined;
             optionColor?: string | undefined;
-            value?: number | undefined;
-            customUnit?: string | undefined;
             optionTextColor?: string | undefined;
             isCompleted?: boolean | undefined;
             nextStrategiesPath?: string | undefined;
@@ -3577,6 +3577,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -3584,9 +3585,24 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -3622,22 +3638,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
                     color: string;
                     textColor: string;
                 };
@@ -3653,10 +3653,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
-            type: "phone";
+            type: import(".").QuestionKeyType;
             backgroundColor: string;
-            supportGroupId: string;
-            trigger: {};
         } | {
             createdAt?: {
                 seconds: number;
@@ -3669,6 +3667,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -3676,9 +3677,24 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -3716,7 +3732,43 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     type: "question-counter";
                     color: string;
                     textColor: string;
-                } | {
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: import(".").QuestionKeyType;
+            backgroundColor: string;
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -3730,6 +3782,44 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     label?: string | undefined;
                     text: string;
                     type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
                     color: string;
                     textColor: string;
                 };
@@ -3764,542 +3854,82 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
             setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: "urge-surfing";
-            backgroundColor: string;
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: "video";
-            backgroundColor: string;
-            video: {
-                storagePath?: string | null | undefined;
-                url?: string | null | undefined;
-                title: string;
-                description: string;
-                thumbnailUrl: string;
-                duration: number;
-            };
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: import(".").QuestionKeyType;
-            backgroundColor: string;
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            lowEmoji?: yup.Maybe<string | undefined>;
-            highEmoji?: yup.Maybe<string | undefined>;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: import(".").QuestionKeyType;
-            backgroundColor: string;
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: "task";
-            backgroundColor: string;
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
             repeat?: yup.Maybe<number | undefined>;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
+                    color: string;
+                    textColor: string;
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
             title: string;
             type: "breathe";
             backgroundColor: string;
@@ -4318,6 +3948,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -4325,9 +3956,24 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -4365,7 +4011,43 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     type: "question-counter";
                     color: string;
                     textColor: string;
-                } | {
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: "emotions";
+            backgroundColor: string;
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -4379,6 +4061,44 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     label?: string | undefined;
                     text: string;
                     type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
                     color: string;
                     textColor: string;
                 };
@@ -4408,6 +4128,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -4415,9 +4136,24 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -4455,7 +4191,45 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     type: "question-counter";
                     color: string;
                     textColor: string;
-                } | {
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: "phone";
+            backgroundColor: string;
+            supportGroupId: string;
+            trigger: {};
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -4469,6 +4243,44 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     label?: string | undefined;
                     text: string;
                     type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
                     color: string;
                     textColor: string;
                 };
@@ -4499,6 +4311,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -4506,9 +4319,24 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -4546,7 +4374,43 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     type: "question-counter";
                     color: string;
                     textColor: string;
-                } | {
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: "task";
+            backgroundColor: string;
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -4562,6 +4426,44 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
+                    color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -4575,8 +4477,106 @@ declare const timeLogSchema: yup.ObjectSchema<{
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
-            type: "emotions";
+            type: "urge-surfing";
             backgroundColor: string;
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
+                    color: string;
+                    textColor: string;
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: "video";
+            backgroundColor: string;
+            video: {
+                storagePath?: string | null | undefined;
+                url?: string | null | undefined;
+                title: string;
+                description: string;
+                thumbnailUrl: string;
+                duration: number;
+            };
         };
     };
     tacticLikes: {
@@ -4584,11 +4584,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     tacticData: {
         [x: string]: {
+            value?: number | undefined;
+            customUnit?: string | undefined;
             optionId?: string | null | undefined;
             optionLabel?: string | undefined;
             optionColor?: string | undefined;
-            value?: number | undefined;
-            customUnit?: string | undefined;
             optionTextColor?: string | undefined;
             isCompleted?: boolean | undefined;
             nextStrategiesPath?: string | undefined;
@@ -4692,24 +4692,7 @@ export declare const logSchema: yup.Lazy<{
     debriefReminderSentAt?: yup.Maybe<{} | undefined>;
     debriefedAt?: yup.Maybe<{} | undefined>;
     profileId: string;
-    startTime: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    };
-    timezone: string;
-    location: {
-        latitude?: number | undefined;
-        longitude?: number | undefined;
-        altitude?: number | undefined;
-        accuracy?: number | undefined;
-        altitudeAccuracy?: number | undefined;
-        heading?: number | undefined;
-        speed?: number | undefined;
-    };
-    locationIsFetching: NonNullable<boolean | undefined>;
-    strategiesPath: string;
-    tacticIds: string[];
+    type: "impulse";
     tacticsById: {
         [x: string]: {
             createdAt?: {
@@ -4723,6 +4706,7 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -4730,9 +4714,24 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -4768,22 +4767,6 @@ export declare const logSchema: yup.Lazy<{
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
                     color: string;
                     textColor: string;
                 };
@@ -4799,10 +4782,8 @@ export declare const logSchema: yup.Lazy<{
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
-            type: "phone";
+            type: import(".").QuestionKeyType;
             backgroundColor: string;
-            supportGroupId: string;
-            trigger: {};
         } | {
             createdAt?: {
                 seconds: number;
@@ -4815,6 +4796,9 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -4822,9 +4806,24 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -4862,7 +4861,43 @@ export declare const logSchema: yup.Lazy<{
                     type: "question-counter";
                     color: string;
                     textColor: string;
-                } | {
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: import(".").QuestionKeyType;
+            backgroundColor: string;
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -4876,6 +4911,44 @@ export declare const logSchema: yup.Lazy<{
                     label?: string | undefined;
                     text: string;
                     type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
                     color: string;
                     textColor: string;
                 };
@@ -4910,542 +4983,82 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
             setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: "urge-surfing";
-            backgroundColor: string;
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: "video";
-            backgroundColor: string;
-            video: {
-                storagePath?: string | null | undefined;
-                url?: string | null | undefined;
-                title: string;
-                description: string;
-                thumbnailUrl: string;
-                duration: number;
-            };
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: import(".").QuestionKeyType;
-            backgroundColor: string;
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            lowEmoji?: yup.Maybe<string | undefined>;
-            highEmoji?: yup.Maybe<string | undefined>;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: import(".").QuestionKeyType;
-            backgroundColor: string;
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: "task";
-            backgroundColor: string;
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
             repeat?: yup.Maybe<number | undefined>;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
+                    color: string;
+                    textColor: string;
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
             title: string;
             type: "breathe";
             backgroundColor: string;
@@ -5464,6 +5077,7 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -5471,9 +5085,24 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -5511,7 +5140,43 @@ export declare const logSchema: yup.Lazy<{
                     type: "question-counter";
                     color: string;
                     textColor: string;
-                } | {
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: "emotions";
+            backgroundColor: string;
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -5525,6 +5190,44 @@ export declare const logSchema: yup.Lazy<{
                     label?: string | undefined;
                     text: string;
                     type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
                     color: string;
                     textColor: string;
                 };
@@ -5554,6 +5257,7 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -5561,9 +5265,24 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -5601,7 +5320,45 @@ export declare const logSchema: yup.Lazy<{
                     type: "question-counter";
                     color: string;
                     textColor: string;
-                } | {
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: "phone";
+            backgroundColor: string;
+            supportGroupId: string;
+            trigger: {};
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -5615,6 +5372,44 @@ export declare const logSchema: yup.Lazy<{
                     label?: string | undefined;
                     text: string;
                     type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
                     color: string;
                     textColor: string;
                 };
@@ -5645,6 +5440,7 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -5652,9 +5448,24 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -5692,7 +5503,43 @@ export declare const logSchema: yup.Lazy<{
                     type: "question-counter";
                     color: string;
                     textColor: string;
-                } | {
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: "task";
+            backgroundColor: string;
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -5708,6 +5555,44 @@ export declare const logSchema: yup.Lazy<{
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
+                    color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -5721,18 +5606,133 @@ export declare const logSchema: yup.Lazy<{
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
-            type: "emotions";
+            type: "urge-surfing";
             backgroundColor: string;
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
+                    color: string;
+                    textColor: string;
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: "video";
+            backgroundColor: string;
+            video: {
+                storagePath?: string | null | undefined;
+                url?: string | null | undefined;
+                title: string;
+                description: string;
+                thumbnailUrl: string;
+                duration: number;
+            };
         };
     };
-    type: "impulse";
+    startTime: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    };
+    timezone: string;
+    location: {
+        latitude?: number | undefined;
+        longitude?: number | undefined;
+        altitude?: number | undefined;
+        accuracy?: number | undefined;
+        altitudeAccuracy?: number | undefined;
+        heading?: number | undefined;
+        speed?: number | undefined;
+    };
+    locationIsFetching: NonNullable<boolean | undefined>;
+    strategiesPath: string;
+    tacticIds: string[];
     tacticData: {
         [x: string]: {
+            value?: number | undefined;
+            customUnit?: string | undefined;
             optionId?: string | null | undefined;
             optionLabel?: string | undefined;
             optionColor?: string | undefined;
-            value?: number | undefined;
-            customUnit?: string | undefined;
             optionTextColor?: string | undefined;
             isCompleted?: boolean | undefined;
             nextStrategiesPath?: string | undefined;
@@ -5826,24 +5826,7 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     sharedWithSupportGroupIds?: string[] | undefined;
     profileId: string;
-    startTime: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    };
-    timezone: string;
-    location: {
-        latitude?: number | undefined;
-        longitude?: number | undefined;
-        altitude?: number | undefined;
-        accuracy?: number | undefined;
-        altitudeAccuracy?: number | undefined;
-        heading?: number | undefined;
-        speed?: number | undefined;
-    };
-    locationIsFetching: NonNullable<boolean | undefined>;
-    strategiesPath: string;
-    tacticIds: string[];
+    type: "location";
     tacticsById: {
         [x: string]: {
             createdAt?: {
@@ -5857,6 +5840,7 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -5864,9 +5848,24 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -5902,22 +5901,6 @@ export declare const logSchema: yup.Lazy<{
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
                     color: string;
                     textColor: string;
                 };
@@ -5933,10 +5916,8 @@ export declare const logSchema: yup.Lazy<{
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
-            type: "phone";
+            type: import(".").QuestionKeyType;
             backgroundColor: string;
-            supportGroupId: string;
-            trigger: {};
         } | {
             createdAt?: {
                 seconds: number;
@@ -5949,6 +5930,9 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -5956,9 +5940,24 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -5996,7 +5995,43 @@ export declare const logSchema: yup.Lazy<{
                     type: "question-counter";
                     color: string;
                     textColor: string;
-                } | {
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: import(".").QuestionKeyType;
+            backgroundColor: string;
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -6010,6 +6045,44 @@ export declare const logSchema: yup.Lazy<{
                     label?: string | undefined;
                     text: string;
                     type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
                     color: string;
                     textColor: string;
                 };
@@ -6044,542 +6117,82 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
             setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: "urge-surfing";
-            backgroundColor: string;
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: "video";
-            backgroundColor: string;
-            video: {
-                storagePath?: string | null | undefined;
-                url?: string | null | undefined;
-                title: string;
-                description: string;
-                thumbnailUrl: string;
-                duration: number;
-            };
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: import(".").QuestionKeyType;
-            backgroundColor: string;
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            lowEmoji?: yup.Maybe<string | undefined>;
-            highEmoji?: yup.Maybe<string | undefined>;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: import(".").QuestionKeyType;
-            backgroundColor: string;
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: "task";
-            backgroundColor: string;
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
             repeat?: yup.Maybe<number | undefined>;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
+                    color: string;
+                    textColor: string;
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
             title: string;
             type: "breathe";
             backgroundColor: string;
@@ -6598,6 +6211,7 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -6605,9 +6219,24 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -6645,7 +6274,43 @@ export declare const logSchema: yup.Lazy<{
                     type: "question-counter";
                     color: string;
                     textColor: string;
-                } | {
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: "emotions";
+            backgroundColor: string;
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -6659,6 +6324,44 @@ export declare const logSchema: yup.Lazy<{
                     label?: string | undefined;
                     text: string;
                     type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
                     color: string;
                     textColor: string;
                 };
@@ -6688,6 +6391,7 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -6695,9 +6399,24 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -6735,7 +6454,45 @@ export declare const logSchema: yup.Lazy<{
                     type: "question-counter";
                     color: string;
                     textColor: string;
-                } | {
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: "phone";
+            backgroundColor: string;
+            supportGroupId: string;
+            trigger: {};
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -6749,6 +6506,44 @@ export declare const logSchema: yup.Lazy<{
                     label?: string | undefined;
                     text: string;
                     type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
                     color: string;
                     textColor: string;
                 };
@@ -6779,6 +6574,7 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -6786,9 +6582,24 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -6826,7 +6637,43 @@ export declare const logSchema: yup.Lazy<{
                     type: "question-counter";
                     color: string;
                     textColor: string;
-                } | {
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: "task";
+            backgroundColor: string;
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -6842,6 +6689,44 @@ export declare const logSchema: yup.Lazy<{
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
+                    color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -6855,18 +6740,133 @@ export declare const logSchema: yup.Lazy<{
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
-            type: "emotions";
+            type: "urge-surfing";
             backgroundColor: string;
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
+                    color: string;
+                    textColor: string;
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: "video";
+            backgroundColor: string;
+            video: {
+                storagePath?: string | null | undefined;
+                url?: string | null | undefined;
+                title: string;
+                description: string;
+                thumbnailUrl: string;
+                duration: number;
+            };
         };
     };
-    type: "location";
+    startTime: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    };
+    timezone: string;
+    location: {
+        latitude?: number | undefined;
+        longitude?: number | undefined;
+        altitude?: number | undefined;
+        accuracy?: number | undefined;
+        altitudeAccuracy?: number | undefined;
+        heading?: number | undefined;
+        speed?: number | undefined;
+    };
+    locationIsFetching: NonNullable<boolean | undefined>;
+    strategiesPath: string;
+    tacticIds: string[];
     tacticData: {
         [x: string]: {
+            value?: number | undefined;
+            customUnit?: string | undefined;
             optionId?: string | null | undefined;
             optionLabel?: string | undefined;
             optionColor?: string | undefined;
-            value?: number | undefined;
-            customUnit?: string | undefined;
             optionTextColor?: string | undefined;
             isCompleted?: boolean | undefined;
             nextStrategiesPath?: string | undefined;
@@ -6933,24 +6933,7 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     sharedWithSupportGroupIds?: string[] | undefined;
     profileId: string;
-    startTime: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    };
-    timezone: string;
-    location: {
-        latitude?: number | undefined;
-        longitude?: number | undefined;
-        altitude?: number | undefined;
-        accuracy?: number | undefined;
-        altitudeAccuracy?: number | undefined;
-        heading?: number | undefined;
-        speed?: number | undefined;
-    };
-    locationIsFetching: NonNullable<boolean | undefined>;
-    strategiesPath: string;
-    tacticIds: string[];
+    type: "time";
     tacticsById: {
         [x: string]: {
             createdAt?: {
@@ -6964,6 +6947,7 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -6971,9 +6955,24 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -7009,22 +7008,6 @@ export declare const logSchema: yup.Lazy<{
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
                     color: string;
                     textColor: string;
                 };
@@ -7040,10 +7023,8 @@ export declare const logSchema: yup.Lazy<{
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
-            type: "phone";
+            type: import(".").QuestionKeyType;
             backgroundColor: string;
-            supportGroupId: string;
-            trigger: {};
         } | {
             createdAt?: {
                 seconds: number;
@@ -7056,6 +7037,9 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -7063,9 +7047,24 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -7103,7 +7102,43 @@ export declare const logSchema: yup.Lazy<{
                     type: "question-counter";
                     color: string;
                     textColor: string;
-                } | {
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: import(".").QuestionKeyType;
+            backgroundColor: string;
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -7117,6 +7152,44 @@ export declare const logSchema: yup.Lazy<{
                     label?: string | undefined;
                     text: string;
                     type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
                     color: string;
                     textColor: string;
                 };
@@ -7151,542 +7224,82 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
             setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: "urge-surfing";
-            backgroundColor: string;
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: "video";
-            backgroundColor: string;
-            video: {
-                storagePath?: string | null | undefined;
-                url?: string | null | undefined;
-                title: string;
-                description: string;
-                thumbnailUrl: string;
-                duration: number;
-            };
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: import(".").QuestionKeyType;
-            backgroundColor: string;
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            lowEmoji?: yup.Maybe<string | undefined>;
-            highEmoji?: yup.Maybe<string | undefined>;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: import(".").QuestionKeyType;
-            backgroundColor: string;
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
-            title: string;
-            type: "task";
-            backgroundColor: string;
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            subtitle?: yup.Maybe<string | undefined>;
-            description?: string | null | undefined;
-            image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                };
-            } | null | undefined;
-            isTemplate?: boolean | null | undefined;
-            language?: string | null | undefined;
-            href?: string | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
-            isSuggested?: boolean | undefined;
             repeat?: yup.Maybe<number | undefined>;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
+                    color: string;
+                    textColor: string;
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
             title: string;
             type: "breathe";
             backgroundColor: string;
@@ -7705,6 +7318,7 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -7712,9 +7326,24 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -7752,7 +7381,43 @@ export declare const logSchema: yup.Lazy<{
                     type: "question-counter";
                     color: string;
                     textColor: string;
-                } | {
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: "emotions";
+            backgroundColor: string;
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -7766,6 +7431,44 @@ export declare const logSchema: yup.Lazy<{
                     label?: string | undefined;
                     text: string;
                     type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
                     color: string;
                     textColor: string;
                 };
@@ -7795,6 +7498,7 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -7802,9 +7506,24 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -7842,7 +7561,45 @@ export declare const logSchema: yup.Lazy<{
                     type: "question-counter";
                     color: string;
                     textColor: string;
-                } | {
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: "phone";
+            backgroundColor: string;
+            supportGroupId: string;
+            trigger: {};
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -7856,6 +7613,44 @@ export declare const logSchema: yup.Lazy<{
                     label?: string | undefined;
                     text: string;
                     type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
                     color: string;
                     textColor: string;
                 };
@@ -7886,6 +7681,7 @@ export declare const logSchema: yup.Lazy<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             subtitle?: yup.Maybe<string | undefined>;
             description?: string | null | undefined;
             image?: {
@@ -7893,9 +7689,24 @@ export declare const logSchema: yup.Lazy<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
             optionsById?: {
                 [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -7933,7 +7744,43 @@ export declare const logSchema: yup.Lazy<{
                     type: "question-counter";
                     color: string;
                     textColor: string;
-                } | {
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: "task";
+            backgroundColor: string;
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
                     createdAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -7949,6 +7796,44 @@ export declare const logSchema: yup.Lazy<{
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
+                    color: string;
+                    textColor: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -7962,18 +7847,133 @@ export declare const logSchema: yup.Lazy<{
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
-            type: "emotions";
+            type: "urge-surfing";
             backgroundColor: string;
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            subtitle?: yup.Maybe<string | undefined>;
+            description?: string | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | null | undefined;
+            optionsById?: {
+                [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
+                    color: string;
+                    textColor: string;
+                };
+            } | null | undefined;
+            isTemplate?: boolean | null | undefined;
+            language?: string | null | undefined;
+            href?: string | null | undefined;
+            categoryIds?: (string | undefined)[] | null | undefined;
+            isShared?: boolean | null | undefined;
+            isResponseRequired?: boolean | null | undefined;
+            timerSeconds?: yup.Maybe<number | undefined>;
+            isAvailableForRecommendation?: boolean | null | undefined;
+            numberOfLikes?: number | null | undefined;
+            isSuggested?: boolean | undefined;
+            title: string;
+            type: "video";
+            backgroundColor: string;
+            video: {
+                storagePath?: string | null | undefined;
+                url?: string | null | undefined;
+                title: string;
+                description: string;
+                thumbnailUrl: string;
+                duration: number;
+            };
         };
     };
-    type: "time";
+    startTime: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    };
+    timezone: string;
+    location: {
+        latitude?: number | undefined;
+        longitude?: number | undefined;
+        altitude?: number | undefined;
+        accuracy?: number | undefined;
+        altitudeAccuracy?: number | undefined;
+        heading?: number | undefined;
+        speed?: number | undefined;
+    };
+    locationIsFetching: NonNullable<boolean | undefined>;
+    strategiesPath: string;
+    tacticIds: string[];
     tacticData: {
         [x: string]: {
+            value?: number | undefined;
+            customUnit?: string | undefined;
             optionId?: string | null | undefined;
             optionLabel?: string | undefined;
             optionColor?: string | undefined;
-            value?: number | undefined;
-            customUnit?: string | undefined;
             optionTextColor?: string | undefined;
             isCompleted?: boolean | undefined;
             nextStrategiesPath?: string | undefined;

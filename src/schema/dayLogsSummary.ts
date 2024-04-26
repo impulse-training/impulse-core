@@ -1,28 +1,20 @@
 import * as yup from 'yup';
+import { tacticDataSchema } from './log';
 import { objectOf } from './utils/objectOf';
 
 // This is a summary of an individual tactic data entry
-const tacticSummarySchema = yup.object({
-  title: yup.string().required(),
-  dataValue: yup.number(),
-  dataUnit: yup.mixed<'time' | 'custom'>().oneOf(['time', 'custom']).required(),
-  dataCustomUnit: yup.string(),
-  formattedDataValue: yup.string(),
-  optionId: yup.string().nullable(),
-  optionLabel: yup.string(),
-  optionColor: yup.string(),
-});
-export type TacticSummaryValue = yup.InferType<typeof tacticSummarySchema>;
+export type TacticSummaryValue = yup.InferType<typeof tacticDataSchema>;
 
 // And this is a summary of all the tactics for a given log entry
 const logSummarySchema = yup.object({
   hour: yup.number().required(),
   minute: yup.number().required(),
-  tacticSummariesById: objectOf(tacticSummarySchema),
+  tacticDataById: objectOf(tacticDataSchema),
 });
 export type LogSummaryValue = yup.InferType<typeof logSummarySchema>;
 
-// Which is combined into a daily summary
+// Which is combined into a daily summary. Note that this document doesn't include profileId, as
+// that's encoded into the document path
 export const dayLogsSummarySchema = objectOf(logSummarySchema);
 
 export type DayLogsSummaryValue = yup.InferType<typeof dayLogsSummarySchema>;

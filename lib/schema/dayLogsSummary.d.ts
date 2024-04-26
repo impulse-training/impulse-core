@@ -1,59 +1,49 @@
 import * as yup from 'yup';
-declare const tacticSummarySchema: yup.ObjectSchema<{
-    title: string;
-    dataValue: number | undefined;
-    dataUnit: NonNullable<"time" | "custom" | undefined>;
-    dataCustomUnit: string | undefined;
-    formattedDataValue: string | undefined;
-    optionId: string | null | undefined;
-    optionLabel: string | undefined;
-    optionColor: string | undefined;
-}, yup.AnyObject, {
-    title: undefined;
-    dataValue: undefined;
-    dataUnit: undefined;
-    dataCustomUnit: undefined;
-    formattedDataValue: undefined;
-    optionId: undefined;
-    optionLabel: undefined;
-    optionColor: undefined;
-}, "">;
-export type TacticSummaryValue = yup.InferType<typeof tacticSummarySchema>;
+import { tacticDataSchema } from './log';
+export type TacticSummaryValue = yup.InferType<typeof tacticDataSchema>;
 declare const logSummarySchema: yup.ObjectSchema<{
     hour: number;
     minute: number;
-    tacticSummariesById: {
+    tacticDataById: {
         [x: string]: {
-            dataValue?: number | undefined;
-            dataCustomUnit?: string | undefined;
-            formattedDataValue?: string | undefined;
+            value?: number | undefined;
+            customUnit?: string | undefined;
             optionId?: string | null | undefined;
             optionLabel?: string | undefined;
             optionColor?: string | undefined;
-            title: string;
-            dataUnit: NonNullable<"time" | "custom" | undefined>;
+            optionTextColor?: string | undefined;
+            isCompleted?: boolean | undefined;
+            nextStrategiesPath?: string | undefined;
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
+            unit: NonNullable<"time" | "custom" | undefined>;
+            formattedValue: string;
         };
     };
 }, yup.AnyObject, {
     hour: undefined;
     minute: undefined;
-    tacticSummariesById: undefined;
+    tacticDataById: undefined;
 }, "">;
 export type LogSummaryValue = yup.InferType<typeof logSummarySchema>;
 export declare const dayLogsSummarySchema: yup.Lazy<{
     [x: string]: {
         hour: number;
         minute: number;
-        tacticSummariesById: {
+        tacticDataById: {
             [x: string]: {
-                dataValue?: number | undefined;
-                dataCustomUnit?: string | undefined;
-                formattedDataValue?: string | undefined;
+                value?: number | undefined;
+                customUnit?: string | undefined;
                 optionId?: string | null | undefined;
                 optionLabel?: string | undefined;
                 optionColor?: string | undefined;
-                title: string;
-                dataUnit: NonNullable<"time" | "custom" | undefined>;
+                optionTextColor?: string | undefined;
+                isCompleted?: boolean | undefined;
+                nextStrategiesPath?: string | undefined;
+                lowEmoji?: yup.Maybe<string | undefined>;
+                highEmoji?: yup.Maybe<string | undefined>;
+                unit: NonNullable<"time" | "custom" | undefined>;
+                formattedValue: string;
             };
         };
     };

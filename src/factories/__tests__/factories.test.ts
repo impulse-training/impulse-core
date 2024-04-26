@@ -3,8 +3,10 @@ import { Lazy, Schema, ValidationError } from 'yup';
 import { makeFactories } from '../../factories';
 import {
   commentSchema,
+  dayLogsSummarySchema,
   logSchema,
   patternSchema,
+  profileLogsSummarySchema,
   strategySchema,
   supportGroupSchema,
   tacticSchema,
@@ -49,6 +51,8 @@ describe('factories', () => {
 
 const schemaMap: Record<keyof typeof factories, null | Schema | Lazy<unknown>> =
   {
+    profileLogsSummaryFactory: profileLogsSummarySchema,
+    dayLogsSummaryFactory: dayLogsSummarySchema,
     applicationFactory: null,
     commentFactory: commentSchema,
     impulseFactory: logSchema,

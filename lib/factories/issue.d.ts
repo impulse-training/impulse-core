@@ -31,6 +31,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
+        setbackThreshold?: number | null | undefined;
         subtitle?: import("yup").Maybe<string | undefined>;
         description?: string | null | undefined;
         image?: {
@@ -38,9 +39,24 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
             storagePath?: import("yup").Maybe<string | undefined>;
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
-        setbackThreshold?: number | null | undefined;
         optionsById?: {
             [x: string]: {
+                createdAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                label?: string | undefined;
+                text: string;
+                type: "question-multiple-choice";
+                color: string;
+                textColor: string;
+            } | {
                 createdAt?: {
                     seconds: number;
                     nanoseconds: number;
@@ -76,22 +92,6 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
                 lessThanOrEqualTo?: number | undefined;
                 text: string;
                 type: "question-counter";
-                color: string;
-                textColor: string;
-            } | {
-                createdAt?: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                label?: string | undefined;
-                text: string;
-                type: "question-multiple-choice";
                 color: string;
                 textColor: string;
             };
@@ -121,6 +121,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
+        setbackThreshold?: number | null | undefined;
         lowEmoji?: import("yup").Maybe<string | undefined>;
         highEmoji?: import("yup").Maybe<string | undefined>;
         subtitle?: import("yup").Maybe<string | undefined>;
@@ -130,9 +131,24 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
             storagePath?: import("yup").Maybe<string | undefined>;
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
-        setbackThreshold?: number | null | undefined;
         optionsById?: {
             [x: string]: {
+                createdAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                label?: string | undefined;
+                text: string;
+                type: "question-multiple-choice";
+                color: string;
+                textColor: string;
+            } | {
                 createdAt?: {
                     seconds: number;
                     nanoseconds: number;
@@ -168,22 +184,6 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
                 lessThanOrEqualTo?: number | undefined;
                 text: string;
                 type: "question-counter";
-                color: string;
-                textColor: string;
-            } | {
-                createdAt?: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                label?: string | undefined;
-                text: string;
-                type: "question-multiple-choice";
                 color: string;
                 textColor: string;
             };

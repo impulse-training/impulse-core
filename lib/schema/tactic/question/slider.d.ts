@@ -34,6 +34,22 @@ export declare const questionSliderTacticSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             label?: string | undefined;
+            text: string;
+            type: "question-multiple-choice";
+            color: string;
+            textColor: string;
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            label?: string | undefined;
             setbackThreshold?: number | undefined;
             greaterThan?: number | undefined;
             lessThanOrEqualTo?: number | undefined;
@@ -58,22 +74,6 @@ export declare const questionSliderTacticSchema: yup.ObjectSchema<{
             lessThanOrEqualTo?: number | undefined;
             text: string;
             type: "question-counter";
-            color: string;
-            textColor: string;
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            label?: string | undefined;
-            text: string;
-            type: "question-multiple-choice";
             color: string;
             textColor: string;
         };

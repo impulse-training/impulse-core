@@ -1,6 +1,7 @@
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 import { makeApplicationFactory } from './application';
 import { makeCommentFactory } from './comment';
+import { dayLogsSummaryFactory } from './dayLogsSummary';
 import { makeIssueFactory } from './issue';
 import { makeLocationFactory } from './location';
 import {
@@ -11,6 +12,7 @@ import {
 import { makeMessageFactory } from './message';
 import { makePatternFactory } from './pattern';
 import { makeProfileFactory } from './profile';
+import { profileLogsSummaryFactory } from './profileLogsSummary';
 import { makeTimeRoutineFactory } from './routine';
 import { makeStrategyFactory } from './strategy';
 import { makeSupportGroupFactory } from './supportGroup';
@@ -21,6 +23,8 @@ import { makeQuestionTimeTacticFactory, makeTacticFactory } from './tactic';
 // injected dependency
 export function makeFactories(TimestampKlass: typeof TimestampLike) {
   return {
+    dayLogsSummaryFactory,
+    profileLogsSummaryFactory,
     applicationFactory: makeApplicationFactory(TimestampKlass),
     commentFactory: makeCommentFactory(TimestampKlass),
     impulseFactory: makeImpulseLogFactory(TimestampKlass),

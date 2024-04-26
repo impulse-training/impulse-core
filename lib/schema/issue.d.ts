@@ -25,6 +25,7 @@ export declare const issueSchema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
+        setbackThreshold?: number | null | undefined;
         subtitle?: yup.Maybe<string | undefined>;
         description?: string | null | undefined;
         image?: {
@@ -32,9 +33,24 @@ export declare const issueSchema: yup.ObjectSchema<{
             storagePath?: yup.Maybe<string | undefined>;
             uri?: yup.Maybe<string | undefined>;
         } | null | undefined;
-        setbackThreshold?: number | null | undefined;
         optionsById?: {
             [x: string]: {
+                createdAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                label?: string | undefined;
+                text: string;
+                type: "question-multiple-choice";
+                color: string;
+                textColor: string;
+            } | {
                 createdAt?: {
                     seconds: number;
                     nanoseconds: number;
@@ -70,22 +86,6 @@ export declare const issueSchema: yup.ObjectSchema<{
                 lessThanOrEqualTo?: number | undefined;
                 text: string;
                 type: "question-counter";
-                color: string;
-                textColor: string;
-            } | {
-                createdAt?: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                label?: string | undefined;
-                text: string;
-                type: "question-multiple-choice";
                 color: string;
                 textColor: string;
             };
@@ -115,6 +115,7 @@ export declare const issueSchema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
+        setbackThreshold?: number | null | undefined;
         lowEmoji?: yup.Maybe<string | undefined>;
         highEmoji?: yup.Maybe<string | undefined>;
         subtitle?: yup.Maybe<string | undefined>;
@@ -124,9 +125,24 @@ export declare const issueSchema: yup.ObjectSchema<{
             storagePath?: yup.Maybe<string | undefined>;
             uri?: yup.Maybe<string | undefined>;
         } | null | undefined;
-        setbackThreshold?: number | null | undefined;
         optionsById?: {
             [x: string]: {
+                createdAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                label?: string | undefined;
+                text: string;
+                type: "question-multiple-choice";
+                color: string;
+                textColor: string;
+            } | {
                 createdAt?: {
                     seconds: number;
                     nanoseconds: number;
@@ -162,22 +178,6 @@ export declare const issueSchema: yup.ObjectSchema<{
                 lessThanOrEqualTo?: number | undefined;
                 text: string;
                 type: "question-counter";
-                color: string;
-                textColor: string;
-            } | {
-                createdAt?: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                label?: string | undefined;
-                text: string;
-                type: "question-multiple-choice";
                 color: string;
                 textColor: string;
             };
