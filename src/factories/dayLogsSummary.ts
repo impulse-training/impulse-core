@@ -6,5 +6,6 @@ export const dayLogsSummaryFactory = Factory.makeFactory<DayLogsSummaryValue>({
     hour: 8,
     minute: 0,
     tacticDataById: {},
+    optionsById: {},
   },
 });

@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 import { tacticDataSchema } from './log';
+import { optionSchema } from './option';
 import { objectOf } from './utils/objectOf';
 
 // This is a summary of an individual tactic data entry
@@ -10,6 +11,7 @@ const logSummarySchema = yup.object({
   hour: yup.number().required(),
   minute: yup.number().required(),
   tacticDataById: objectOf(tacticDataSchema),
+  optionsById: objectOf(optionSchema),
 });
 export type LogSummaryValue = yup.InferType<typeof logSummarySchema>;
 

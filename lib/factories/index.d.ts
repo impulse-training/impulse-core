@@ -2,6 +2,63 @@ import { TimestampLike } from '../utils/firestore/TimestampLike';
 export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
     dayLogsSummaryFactory: import("factory.ts").Factory<{
         [x: string]: {
+            optionsById: {
+                [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    text: string;
+                    type: "question-multiple-choice";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-time";
+                    color: string;
+                    textColor: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "question-counter";
+                    color: string;
+                    textColor: string;
+                };
+            };
             hour: number;
             minute: number;
             tacticDataById: {
