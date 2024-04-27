@@ -19,7 +19,7 @@ export const profileSchema = yup.object().shape({
   isTourCompleted: yup.boolean(),
   defaultNickname: yup.string().optional(),
   androidPermissions: optionalObjectOf(yup.boolean().required()),
-  parentIssueIds: yup.array().of(yup.string()).optional(),
+  parentIssueIds: optionalStringArray,
   region: yup.string().nullable().optional(),
   timezone: yup.string().required(),
   invitationCode: yup.string().required(),

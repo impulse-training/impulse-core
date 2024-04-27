@@ -5,7 +5,7 @@ export declare const strategySchema: yup.ObjectSchema<{
     name: string;
     type: NonNullable<"time" | "impulse" | "debrief" | undefined>;
     recommendedForIssueIds: string[] | undefined;
-    recommendedForIssuesOrdinals: {
+    recommendedForIssueOrdinals: {
         [x: string]: number;
     } | null | undefined;
     tacticIds: string[];
@@ -26,7 +26,7 @@ export declare const strategySchema: yup.ObjectSchema<{
     name: undefined;
     type: undefined;
     recommendedForIssueIds: "";
-    recommendedForIssuesOrdinals: undefined;
+    recommendedForIssueOrdinals: undefined;
     tacticIds: "";
     tacticsById: any;
     profileId: undefined;

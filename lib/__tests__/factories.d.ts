@@ -155,7 +155,7 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        parentIssueIds?: (string | undefined)[] | undefined;
+        parentIssueIds?: string[] | undefined;
         activeImpulseId?: string | undefined;
         currentAppState?: import("react-native/types").AppStateStatus | undefined;
         lastActiveAt?: Date | undefined;
@@ -542,7 +542,7 @@ export declare const factories: {
         type: import("..").QuestionKeyType;
         backgroundColor: string;
     }, "title" | "type" | "backgroundColor" | ("createdAt" | "updatedAt" | "profileId" | "setbackThreshold" | "subtitle" | "description" | "image" | "optionsById" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested")>;
-    strategyFactory: import("factory.ts").Factory<import("..").StrategyValue, "createdAt" | "updatedAt" | "profileId" | "name" | "ordinal" | "type" | "tacticsById" | "tacticIds" | "recommendedForIssueIds" | "recommendedForIssuesOrdinals">;
+    strategyFactory: import("factory.ts").Factory<import("..").StrategyValue, "createdAt" | "updatedAt" | "profileId" | "name" | "ordinal" | "type" | "tacticsById" | "tacticIds" | "recommendedForIssueIds" | "recommendedForIssueOrdinals">;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;

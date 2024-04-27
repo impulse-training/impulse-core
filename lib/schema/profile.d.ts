@@ -28,7 +28,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     androidPermissions: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
-    parentIssueIds: (string | undefined)[] | undefined;
+    parentIssueIds: string[] | undefined;
     region: string | null | undefined;
     timezone: string;
     invitationCode: string;

@@ -11,7 +11,7 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    parentIssueIds?: (string | undefined)[] | undefined;
+    parentIssueIds?: string[] | undefined;
     activeImpulseId?: string | undefined;
     currentAppState?: import("react-native/types").AppStateStatus | undefined;
     lastActiveAt?: Date | undefined;
