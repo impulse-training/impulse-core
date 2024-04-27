@@ -24,6 +24,7 @@ export const profileSchema = yup.object().shape({
   timezone: yup.string().required(),
   invitationCode: yup.string().required(),
   scheduledNotificationIds: optionalStringArray,
+  seenRecommendedStrategyIds: optionalStringArray,
 });
 
 export type ProfileValue = yup.InferType<typeof profileSchema>;

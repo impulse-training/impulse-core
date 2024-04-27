@@ -33,6 +33,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     timezone: string;
     invitationCode: string;
     scheduledNotificationIds: string[] | undefined;
+    seenRecommendedStrategyIds: string[] | undefined;
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
@@ -50,5 +51,6 @@ export declare const profileSchema: yup.ObjectSchema<{
     timezone: undefined;
     invitationCode: undefined;
     scheduledNotificationIds: "";
+    seenRecommendedStrategyIds: "";
 }, "">;
 export type ProfileValue = yup.InferType<typeof profileSchema>;

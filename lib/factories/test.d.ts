@@ -55,9 +55,10 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     } | null | undefined;
     region?: string | null | undefined;
     scheduledNotificationIds?: string[] | undefined;
+    seenRecommendedStrategyIds?: string[] | undefined;
     timezone: string;
     invitationCode: string;
-}, "timezone" | "invitationCode" | ("createdAt" | "updatedAt" | "parentIssueIds" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "isTourCompleted" | "defaultNickname" | "androidPermissions" | "region" | "scheduledNotificationIds")>, supportGroupFactory: import("factory.ts").Factory<{
+}, "timezone" | "invitationCode" | ("createdAt" | "updatedAt" | "parentIssueIds" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "isTourCompleted" | "defaultNickname" | "androidPermissions" | "region" | "scheduledNotificationIds" | "seenRecommendedStrategyIds")>, supportGroupFactory: import("factory.ts").Factory<{
     createdAt?: {
         seconds: number;
         nanoseconds: number;
