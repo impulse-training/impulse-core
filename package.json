@@ -116,6 +116,8 @@
   },
   "dependencies": {
     "@faker-js/faker": "^7.6.0",
+    "@types/crypto-js": "^4.2.2",
+    "crypto-js": "^4.2.0",
     "date-fns": "^2.29.3",
     "factory.ts": "^1.4.0",
     "lodash": "^4.17.21",
