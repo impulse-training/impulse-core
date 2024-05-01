@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-import { optionSchema } from '../option';
+import { optionWithStrategiesPathSchema } from '../option';
 import { imageSchema } from '../utils/image';
 import { optionalObjectOf } from '../utils/objectOf';
 import { optionalTimestampSchema } from '../utils/timestamp';
@@ -16,7 +16,7 @@ export function tacticValueBaseSchema<K extends string>(type: K) {
     description: yup.string().nullable(),
     image: imageSchema.optional().nullable(),
     setbackThreshold: yup.number().nullable(),
-    optionsById: optionalObjectOf(optionSchema),
+    optionsById: optionalObjectOf(optionWithStrategiesPathSchema),
     backgroundColor: yup.string().required(),
     isTemplate: yup.boolean().nullable(),
     language: yup.string().nullable(),

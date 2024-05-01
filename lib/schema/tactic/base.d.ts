@@ -38,6 +38,7 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
             type: "question-multiple-choice";
             color: string;
             textColor: string;
+            strategiesPath: string;
         } | {
             createdAt?: {
                 seconds: number;
@@ -57,6 +58,7 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
             type: "question-time";
             color: string;
             textColor: string;
+            strategiesPath: string;
         } | {
             createdAt?: {
                 seconds: number;
@@ -76,6 +78,7 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
             type: "question-counter";
             color: string;
             textColor: string;
+            strategiesPath: string;
         };
     } | null | undefined;
     backgroundColor: string;

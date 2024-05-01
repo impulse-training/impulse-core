@@ -124,9 +124,9 @@ export declare const factories: {
         } | undefined;
         profileId: string;
     }, "profileId" | ("createdAt" | "updatedAt" | "tacticId" | "tacticTitle" | "text" | "recording" | "isEdited" | "avatar")>;
-    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategiesPath" | "tacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "setAsActiveImpulse" | "pressCount" | "isDisplayable" | "patternId" | "patternIds" | "patternsById" | "debriefReminderSentAt" | "debriefedAt" | "debriefStrategiesPath">;
-    timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategiesPath" | "tacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable">;
-    locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "strategiesPath" | "tacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "locationId" | "locationName" | "locationMode">;
+    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "strategiesPath" | "tacticsById" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "tacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "setAsActiveImpulse" | "pressCount" | "isDisplayable" | "patternId" | "patternIds" | "patternsById" | "debriefReminderSentAt" | "debriefedAt" | "debriefStrategiesPath">;
+    timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "strategiesPath" | "tacticsById" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "tacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable">;
+    locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "strategiesPath" | "tacticsById" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "tacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "locationId" | "locationName" | "locationMode">;
     locationFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -235,6 +235,7 @@ export declare const factories: {
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
+                    strategiesPath: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -254,6 +255,7 @@ export declare const factories: {
                     type: "question-time";
                     color: string;
                     textColor: string;
+                    strategiesPath: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -273,6 +275,7 @@ export declare const factories: {
                     type: "question-counter";
                     color: string;
                     textColor: string;
+                    strategiesPath: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -327,6 +330,7 @@ export declare const factories: {
                     type: "question-multiple-choice";
                     color: string;
                     textColor: string;
+                    strategiesPath: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -346,6 +350,7 @@ export declare const factories: {
                     type: "question-time";
                     color: string;
                     textColor: string;
+                    strategiesPath: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -365,6 +370,7 @@ export declare const factories: {
                     type: "question-counter";
                     color: string;
                     textColor: string;
+                    strategiesPath: string;
                 };
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
@@ -489,6 +495,7 @@ export declare const factories: {
                 type: "question-multiple-choice";
                 color: string;
                 textColor: string;
+                strategiesPath: string;
             } | {
                 createdAt?: {
                     seconds: number;
@@ -508,6 +515,7 @@ export declare const factories: {
                 type: "question-time";
                 color: string;
                 textColor: string;
+                strategiesPath: string;
             } | {
                 createdAt?: {
                     seconds: number;
@@ -527,6 +535,7 @@ export declare const factories: {
                 type: "question-counter";
                 color: string;
                 textColor: string;
+                strategiesPath: string;
             };
         } | null | undefined;
         isTemplate?: boolean | null | undefined;

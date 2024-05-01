@@ -56,6 +56,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
                 type: "question-multiple-choice";
                 color: string;
                 textColor: string;
+                strategiesPath: string;
             } | {
                 createdAt?: {
                     seconds: number;
@@ -75,6 +76,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
                 type: "question-time";
                 color: string;
                 textColor: string;
+                strategiesPath: string;
             } | {
                 createdAt?: {
                     seconds: number;
@@ -94,6 +96,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
                 type: "question-counter";
                 color: string;
                 textColor: string;
+                strategiesPath: string;
             };
         } | null | undefined;
         isTemplate?: boolean | null | undefined;
@@ -148,6 +151,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
                 type: "question-multiple-choice";
                 color: string;
                 textColor: string;
+                strategiesPath: string;
             } | {
                 createdAt?: {
                     seconds: number;
@@ -167,6 +171,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
                 type: "question-time";
                 color: string;
                 textColor: string;
+                strategiesPath: string;
             } | {
                 createdAt?: {
                     seconds: number;
@@ -186,6 +191,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
                 type: "question-counter";
                 color: string;
                 textColor: string;
+                strategiesPath: string;
             };
         } | null | undefined;
         isTemplate?: boolean | null | undefined;

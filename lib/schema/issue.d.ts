@@ -50,6 +50,7 @@ export declare const issueSchema: yup.ObjectSchema<{
                 type: "question-multiple-choice";
                 color: string;
                 textColor: string;
+                strategiesPath: string;
             } | {
                 createdAt?: {
                     seconds: number;
@@ -69,6 +70,7 @@ export declare const issueSchema: yup.ObjectSchema<{
                 type: "question-time";
                 color: string;
                 textColor: string;
+                strategiesPath: string;
             } | {
                 createdAt?: {
                     seconds: number;
@@ -88,6 +90,7 @@ export declare const issueSchema: yup.ObjectSchema<{
                 type: "question-counter";
                 color: string;
                 textColor: string;
+                strategiesPath: string;
             };
         } | null | undefined;
         isTemplate?: boolean | null | undefined;
@@ -142,6 +145,7 @@ export declare const issueSchema: yup.ObjectSchema<{
                 type: "question-multiple-choice";
                 color: string;
                 textColor: string;
+                strategiesPath: string;
             } | {
                 createdAt?: {
                     seconds: number;
@@ -161,6 +165,7 @@ export declare const issueSchema: yup.ObjectSchema<{
                 type: "question-time";
                 color: string;
                 textColor: string;
+                strategiesPath: string;
             } | {
                 createdAt?: {
                     seconds: number;
@@ -180,6 +185,7 @@ export declare const issueSchema: yup.ObjectSchema<{
                 type: "question-counter";
                 color: string;
                 textColor: string;
+                strategiesPath: string;
             };
         } | null | undefined;
         isTemplate?: boolean | null | undefined;
