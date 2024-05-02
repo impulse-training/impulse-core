@@ -72,6 +72,7 @@ export function optionSortValueForDisplay(
 ): [number, number] {
   const { greaterThan, lessThanOrEqualTo } = option as NumericOptionValue;
   // Check if "lessThanOrEqualTo" is defined and use it as the primary sort value with higher
+  if (lessThanOrEqualTo === 0) return [-1, 0];
   // priority (0).
   if (lessThanOrEqualTo !== undefined) [lessThanOrEqualTo, 0];
 
