@@ -448,6 +448,7 @@ export declare const factories: {
             title: string;
             body: string;
         } | import("yup").Maybe<{} | undefined>;
+        debriefAfterMinutes?: import("yup").Maybe<number | undefined>;
         measureTacticId?: import("yup").Maybe<string | undefined>;
         measureCallToAction?: import("yup").Maybe<string | undefined>;
         issueId?: import("yup").Maybe<string | undefined>;
@@ -456,7 +457,7 @@ export declare const factories: {
         profileId: string;
         name: string;
         ordinal: number;
-    }, "profileId" | "name" | "ordinal" | ("createdAt" | "updatedAt" | "supportGroupIds" | "notification" | "measureTacticId" | "measureCallToAction" | "issueId" | "parentIssueIds" | "sendWeeklyReports")>;
+    }, "profileId" | "name" | "ordinal" | ("createdAt" | "updatedAt" | "supportGroupIds" | "notification" | "debriefAfterMinutes" | "measureTacticId" | "measureCallToAction" | "issueId" | "parentIssueIds" | "sendWeeklyReports")>;
     tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "title" | "type" | "setbackThreshold" | "subtitle" | "description" | "image" | "optionsById" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
     questionTimeTacticFactory: import("factory.ts").Factory<{
         createdAt?: {

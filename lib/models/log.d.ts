@@ -20,6 +20,7 @@ export declare class Log {
             title: string;
             body: string;
         } | import("yup").Maybe<{} | undefined>;
+        debriefAfterMinutes?: import("yup").Maybe<number | undefined>;
         measureTacticId?: import("yup").Maybe<string | undefined>;
         measureCallToAction?: import("yup").Maybe<string | undefined>;
         issueId?: import("yup").Maybe<string | undefined>;

@@ -18,6 +18,7 @@ export declare const patternSchema: yup.ObjectSchema<{
         title: string;
         body: string;
     } | yup.Maybe<{} | undefined>;
+    debriefAfterMinutes: yup.Maybe<number | undefined>;
     measureTacticId: yup.Maybe<string | undefined>;
     measureCallToAction: yup.Maybe<string | undefined>;
     issueId: yup.Maybe<string | undefined>;
@@ -31,6 +32,7 @@ export declare const patternSchema: yup.ObjectSchema<{
     ordinal: undefined;
     supportGroupIds: "";
     notification: undefined;
+    debriefAfterMinutes: undefined;
     measureTacticId: undefined;
     measureCallToAction: undefined;
     issueId: undefined;

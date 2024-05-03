@@ -17,6 +17,7 @@ export const patternSchema = yup.object().shape({
         })
       : yup.mixed().notRequired()
   ),
+  debriefAfterMinutes: yup.number().notRequired(),
   measureTacticId: yup.string().notRequired(),
   measureCallToAction: yup.string().notRequired(),
   issueId: yup.string().notRequired(),

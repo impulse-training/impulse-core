@@ -16,6 +16,7 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
         title: string;
         body: string;
     } | import("yup").Maybe<{} | undefined>;
+    debriefAfterMinutes?: import("yup").Maybe<number | undefined>;
     measureTacticId?: import("yup").Maybe<string | undefined>;
     measureCallToAction?: import("yup").Maybe<string | undefined>;
     issueId?: import("yup").Maybe<string | undefined>;
@@ -24,4 +25,4 @@ export declare const makePatternFactory: (TimestampKlass: typeof TimestampLike) 
     profileId: string;
     name: string;
     ordinal: number;
-}, "profileId" | "name" | "ordinal" | ("createdAt" | "updatedAt" | "supportGroupIds" | "notification" | "measureTacticId" | "measureCallToAction" | "issueId" | "parentIssueIds" | "sendWeeklyReports")>;
+}, "profileId" | "name" | "ordinal" | ("createdAt" | "updatedAt" | "supportGroupIds" | "notification" | "debriefAfterMinutes" | "measureTacticId" | "measureCallToAction" | "issueId" | "parentIssueIds" | "sendWeeklyReports")>;

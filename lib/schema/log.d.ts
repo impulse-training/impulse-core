@@ -2361,6 +2361,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 title: string;
                 body: string;
             } | yup.Maybe<{} | undefined>;
+            debriefAfterMinutes?: yup.Maybe<number | undefined>;
             measureTacticId?: yup.Maybe<string | undefined>;
             measureCallToAction?: yup.Maybe<string | undefined>;
             issueId?: yup.Maybe<string | undefined>;
@@ -5927,6 +5928,7 @@ export declare const logSchema: yup.Lazy<{
                 title: string;
                 body: string;
             } | yup.Maybe<{} | undefined>;
+            debriefAfterMinutes?: yup.Maybe<number | undefined>;
             measureTacticId?: yup.Maybe<string | undefined>;
             measureCallToAction?: yup.Maybe<string | undefined>;
             issueId?: yup.Maybe<string | undefined>;
