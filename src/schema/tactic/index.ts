@@ -1,6 +1,7 @@
 import * as yup from 'yup';
 import { AudioTacticValue, audioTacticSchema } from './audio';
 import { BreatheTacticValue, breatheTacticSchema } from './breathe';
+import { DayReviewTacticValue, dayReviewTacticSchema } from './dayReview';
 import { EmotionsTacticValue, emotionsTacticSchema } from './emotions';
 import { LinkTacticValue, linkTacticSchema } from './link';
 import { PhoneTacticValue, phoneTacticSchema } from './phone';
@@ -33,7 +34,8 @@ export type TacticValue =
   | BreatheTacticValue
   | LinkTacticValue
   | StepsTacticValue
-  | EmotionsTacticValue;
+  | EmotionsTacticValue
+  | DayReviewTacticValue;
 
 // Utility to dynamically select the correct schema based on the tactic type
 export const tacticSchemas: Record<
@@ -49,6 +51,7 @@ export const tacticSchemas: Record<
   steps: stepsTacticSchema,
   task: taskTacticSchema,
   emotions: emotionsTacticSchema,
+  'day-review': dayReviewTacticSchema,
   'urge-surfing': urgeSurfingTacticSchema,
 } as any;
 // We do highly value static typing, but the problem is that yup's generated types are bloated and

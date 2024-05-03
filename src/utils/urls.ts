@@ -23,5 +23,5 @@ export function getDeepLinkUrl(
   }
 
   const queryString = serializeParams(params);
-  return `${scheme}${target}?${queryString}`;
+  return `${scheme}${target}?${encodeURIComponent(queryString)}`;
 }
