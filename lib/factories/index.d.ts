@@ -2,6 +2,7 @@ import { TimestampLike } from '../utils/firestore/TimestampLike';
 export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
     dayLogsSummaryFactory: import("factory.ts").Factory<{
         [x: string]: {
+            type: NonNullable<"time" | "impulse" | undefined>;
             optionsById: {
                 [x: string]: {
                     createdAt?: {
