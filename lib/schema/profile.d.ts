@@ -23,8 +23,8 @@ export declare const profileSchema: yup.ObjectSchema<{
     notificationPreferences: {
         [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
     } | null | undefined;
+    debriefTacticId: string | undefined;
     isTourCompleted: boolean | undefined;
-    defaultNickname: string | undefined;
     androidPermissions: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
@@ -33,7 +33,6 @@ export declare const profileSchema: yup.ObjectSchema<{
     timezone: string;
     invitationCode: string;
     scheduledNotificationIds: string[] | undefined;
-    seenRecommendedStrategyIds: string[] | undefined;
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
@@ -43,14 +42,13 @@ export declare const profileSchema: yup.ObjectSchema<{
     expoPushToken: undefined;
     widgetInstalledAt: undefined;
     notificationPreferences: undefined;
+    debriefTacticId: undefined;
     isTourCompleted: undefined;
-    defaultNickname: undefined;
     androidPermissions: undefined;
     parentIssueIds: "";
     region: undefined;
     timezone: undefined;
     invitationCode: undefined;
     scheduledNotificationIds: "";
-    seenRecommendedStrategyIds: "";
 }, "">;
 export type ProfileValue = yup.InferType<typeof profileSchema>;
