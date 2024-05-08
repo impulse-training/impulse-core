@@ -3,7 +3,6 @@
 import * as yup from 'yup';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 import { commentSchema } from './comment';
-import { patternSchema } from './pattern';
 import { tacticSchema } from './tactic';
 import { optionalStringArray, requiredStringArray } from './utils/array';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
@@ -81,14 +80,10 @@ const impulseLogSchema = baseLogSchema.concat(
   yup.object().shape({
     type: yup.mixed<'impulse'>().oneOf(['impulse']).required(),
     setAsActiveImpulse: yup.boolean().notRequired(),
-    pressCount: yup.number().notRequired(),
     isDisplayable: yup.boolean().oneOf([true]).required(),
-    patternId: yup.string().required(),
-    patternIds: requiredStringArray,
-    patternsById: objectOf(patternSchema),
-    debriefReminderSentAt: yup.mixed().notRequired(),
-    debriefedAt: yup.mixed().notRequired(),
-    debriefStrategiesPath: yup.string().required(),
+    debriefAfter: optionalTimestampSchema,
+    debriefReminderSentAt: optionalTimestampSchema,
+    debriefedAt: optionalTimestampSchema,
   })
 );
 

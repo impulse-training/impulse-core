@@ -1,5 +1,4 @@
 import {
-  ImpulseLogValue,
   LogValue,
   logIsImpulseLog,
   logIsLocationLog,
@@ -10,7 +9,7 @@ export class Log {
   constructor(private id: string, private data: LogValue) {}
 
   get text() {
-    if (logIsImpulseLog(this.data)) return formatPattern(this.selectedPattern);
+    if (logIsImpulseLog(this.data)) return 'Impulse moment';
 
     if (logIsLocationLog(this.data)) {
       return `${this.data.locationMode === 'enter' ? 'Arrived at' : 'Left'} ${
@@ -24,13 +23,4 @@ export class Log {
 
     return '';
   }
-
-  get selectedPattern() {
-    const data = this.data as ImpulseLogValue;
-    return data.patternsById?.[data.patternId];
-  }
-}
-
-export function formatPattern(pattern?: { emoji?: string; name: string }) {
-  return pattern?.emoji || pattern?.name;
 }

@@ -187,8 +187,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: import(".").QuestionKeyType;
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -282,8 +282,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: import(".").QuestionKeyType;
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -380,8 +380,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 localFilePath: string;
                 remoteFilePath: string;
             };
-            title: string;
             type: "audio";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -474,8 +474,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "breathe";
+            title: string;
             backgroundColor: string;
             inFor: number;
             holdFor: number;
@@ -570,8 +570,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "day-review";
+            title: string;
             backgroundColor: string;
             forDay: NonNullable<"today" | "yesterday" | undefined>;
         } | {
@@ -664,8 +664,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "emotions";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -757,8 +757,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "link";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -850,8 +850,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "phone";
+            title: string;
             backgroundColor: string;
             supportGroupId: string;
             trigger: {};
@@ -945,8 +945,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "steps";
+            title: string;
             backgroundColor: string;
             steps: number;
         } | {
@@ -1039,8 +1039,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "task";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -1132,8 +1132,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "urge-surfing";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -1225,8 +1225,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "video";
+            title: string;
             backgroundColor: string;
             video: {
                 storagePath?: string | null | undefined;
@@ -1454,8 +1454,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: import(".").QuestionKeyType;
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -1549,8 +1549,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: import(".").QuestionKeyType;
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -1647,8 +1647,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 localFilePath: string;
                 remoteFilePath: string;
             };
-            title: string;
             type: "audio";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -1741,8 +1741,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "breathe";
+            title: string;
             backgroundColor: string;
             inFor: number;
             holdFor: number;
@@ -1837,8 +1837,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "day-review";
+            title: string;
             backgroundColor: string;
             forDay: NonNullable<"today" | "yesterday" | undefined>;
         } | {
@@ -1931,8 +1931,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "emotions";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -2024,8 +2024,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "link";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -2117,8 +2117,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "phone";
+            title: string;
             backgroundColor: string;
             supportGroupId: string;
             trigger: {};
@@ -2212,8 +2212,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "steps";
+            title: string;
             backgroundColor: string;
             steps: number;
         } | {
@@ -2306,8 +2306,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "task";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -2399,8 +2399,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "urge-surfing";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -2492,8 +2492,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "video";
+            title: string;
             backgroundColor: string;
             video: {
                 storagePath?: string | null | undefined;
@@ -2528,41 +2528,22 @@ declare const impulseLogSchema: yup.ObjectSchema<{
 } & {
     type: "impulse";
     setAsActiveImpulse: yup.Maybe<boolean | undefined>;
-    pressCount: yup.Maybe<number | undefined>;
     isDisplayable: NonNullable<boolean | undefined>;
-    patternId: string;
-    patternIds: string[];
-    patternsById: {
-        [x: string]: {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            supportGroupIds?: string[] | undefined;
-            notification?: {
-                title: string;
-                body: string;
-            } | yup.Maybe<{} | undefined>;
-            debriefAfterMinutes?: yup.Maybe<number | undefined>;
-            measureTacticId?: yup.Maybe<string | undefined>;
-            measureCallToAction?: yup.Maybe<string | undefined>;
-            issueId?: yup.Maybe<string | undefined>;
-            parentIssueIds?: string[] | undefined;
-            sendWeeklyReports?: yup.Maybe<boolean | undefined>;
-            profileId: string;
-            name: string;
-            ordinal: number;
-        };
-    };
-    debriefReminderSentAt: yup.Maybe<{} | undefined>;
-    debriefedAt: yup.Maybe<{} | undefined>;
-    debriefStrategiesPath: string;
+    debriefAfter: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    debriefReminderSentAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    debriefedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
 }, yup.AnyObject, {
     profileId: undefined;
     createdAt: undefined;
@@ -2595,14 +2576,10 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     sharedWithSupportGroupIds: "";
     type: undefined;
     setAsActiveImpulse: undefined;
-    pressCount: undefined;
     isDisplayable: undefined;
-    patternId: undefined;
-    patternIds: "";
-    patternsById: undefined;
+    debriefAfter: undefined;
     debriefReminderSentAt: undefined;
     debriefedAt: undefined;
-    debriefStrategiesPath: undefined;
 }, "">;
 export type LocationLogValue = WithTypes<typeof locationLogSchema>;
 export declare function logIsLocationLog(log: LogValue): log is LocationLogValue;
@@ -2764,8 +2741,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: import(".").QuestionKeyType;
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -2859,8 +2836,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: import(".").QuestionKeyType;
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -2957,8 +2934,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 localFilePath: string;
                 remoteFilePath: string;
             };
-            title: string;
             type: "audio";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -3051,8 +3028,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "breathe";
+            title: string;
             backgroundColor: string;
             inFor: number;
             holdFor: number;
@@ -3147,8 +3124,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "day-review";
+            title: string;
             backgroundColor: string;
             forDay: NonNullable<"today" | "yesterday" | undefined>;
         } | {
@@ -3241,8 +3218,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "emotions";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -3334,8 +3311,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "link";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -3427,8 +3404,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "phone";
+            title: string;
             backgroundColor: string;
             supportGroupId: string;
             trigger: {};
@@ -3522,8 +3499,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "steps";
+            title: string;
             backgroundColor: string;
             steps: number;
         } | {
@@ -3616,8 +3593,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "task";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -3709,8 +3686,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "urge-surfing";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -3802,8 +3779,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "video";
+            title: string;
             backgroundColor: string;
             video: {
                 storagePath?: string | null | undefined;
@@ -4037,8 +4014,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: import(".").QuestionKeyType;
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -4132,8 +4109,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: import(".").QuestionKeyType;
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -4230,8 +4207,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 localFilePath: string;
                 remoteFilePath: string;
             };
-            title: string;
             type: "audio";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -4324,8 +4301,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "breathe";
+            title: string;
             backgroundColor: string;
             inFor: number;
             holdFor: number;
@@ -4420,8 +4397,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "day-review";
+            title: string;
             backgroundColor: string;
             forDay: NonNullable<"today" | "yesterday" | undefined>;
         } | {
@@ -4514,8 +4491,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "emotions";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -4607,8 +4584,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "link";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -4700,8 +4677,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "phone";
+            title: string;
             backgroundColor: string;
             supportGroupId: string;
             trigger: {};
@@ -4795,8 +4772,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "steps";
+            title: string;
             backgroundColor: string;
             steps: number;
         } | {
@@ -4889,8 +4866,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "task";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -4982,8 +4959,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "urge-surfing";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -5075,8 +5052,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "video";
+            title: string;
             backgroundColor: string;
             video: {
                 storagePath?: string | null | undefined;
@@ -5197,9 +5174,21 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     sharedWithSupportGroupIds?: string[] | undefined;
     setAsActiveImpulse?: yup.Maybe<boolean | undefined>;
-    pressCount?: yup.Maybe<number | undefined>;
-    debriefReminderSentAt?: yup.Maybe<{} | undefined>;
-    debriefedAt?: yup.Maybe<{} | undefined>;
+    debriefAfter?: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    debriefReminderSentAt?: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    debriefedAt?: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
     profileId: string;
     type: "impulse";
     strategiesPath: string;
@@ -5294,8 +5283,8 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: import(".").QuestionKeyType;
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -5389,8 +5378,8 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: import(".").QuestionKeyType;
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -5487,8 +5476,8 @@ export declare const logSchema: yup.Lazy<{
                 localFilePath: string;
                 remoteFilePath: string;
             };
-            title: string;
             type: "audio";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -5581,8 +5570,8 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "breathe";
+            title: string;
             backgroundColor: string;
             inFor: number;
             holdFor: number;
@@ -5677,8 +5666,8 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "day-review";
+            title: string;
             backgroundColor: string;
             forDay: NonNullable<"today" | "yesterday" | undefined>;
         } | {
@@ -5771,8 +5760,8 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "emotions";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -5864,8 +5853,8 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "link";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -5957,8 +5946,8 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "phone";
+            title: string;
             backgroundColor: string;
             supportGroupId: string;
             trigger: {};
@@ -6052,8 +6041,8 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "steps";
+            title: string;
             backgroundColor: string;
             steps: number;
         } | {
@@ -6146,8 +6135,8 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "task";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -6239,8 +6228,8 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "urge-surfing";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -6332,8 +6321,8 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "video";
+            title: string;
             backgroundColor: string;
             video: {
                 storagePath?: string | null | undefined;
@@ -6379,37 +6368,6 @@ export declare const logSchema: yup.Lazy<{
         };
     };
     isDisplayable: NonNullable<boolean | undefined>;
-    patternId: string;
-    patternIds: string[];
-    patternsById: {
-        [x: string]: {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            supportGroupIds?: string[] | undefined;
-            notification?: {
-                title: string;
-                body: string;
-            } | yup.Maybe<{} | undefined>;
-            debriefAfterMinutes?: yup.Maybe<number | undefined>;
-            measureTacticId?: yup.Maybe<string | undefined>;
-            measureCallToAction?: yup.Maybe<string | undefined>;
-            issueId?: yup.Maybe<string | undefined>;
-            parentIssueIds?: string[] | undefined;
-            sendWeeklyReports?: yup.Maybe<boolean | undefined>;
-            profileId: string;
-            name: string;
-            ordinal: number;
-        };
-    };
-    debriefStrategiesPath: string;
 } | {
     createdAt?: {
         seconds: number;
@@ -6556,8 +6514,8 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: import(".").QuestionKeyType;
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -6651,8 +6609,8 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: import(".").QuestionKeyType;
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -6749,8 +6707,8 @@ export declare const logSchema: yup.Lazy<{
                 localFilePath: string;
                 remoteFilePath: string;
             };
-            title: string;
             type: "audio";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -6843,8 +6801,8 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "breathe";
+            title: string;
             backgroundColor: string;
             inFor: number;
             holdFor: number;
@@ -6939,8 +6897,8 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "day-review";
+            title: string;
             backgroundColor: string;
             forDay: NonNullable<"today" | "yesterday" | undefined>;
         } | {
@@ -7033,8 +6991,8 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "emotions";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -7126,8 +7084,8 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "link";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -7219,8 +7177,8 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "phone";
+            title: string;
             backgroundColor: string;
             supportGroupId: string;
             trigger: {};
@@ -7314,8 +7272,8 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "steps";
+            title: string;
             backgroundColor: string;
             steps: number;
         } | {
@@ -7408,8 +7366,8 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "task";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -7501,8 +7459,8 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "urge-surfing";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -7594,8 +7552,8 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "video";
+            title: string;
             backgroundColor: string;
             video: {
                 storagePath?: string | null | undefined;
@@ -7790,8 +7748,8 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: import(".").QuestionKeyType;
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -7885,8 +7843,8 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: import(".").QuestionKeyType;
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -7983,8 +7941,8 @@ export declare const logSchema: yup.Lazy<{
                 localFilePath: string;
                 remoteFilePath: string;
             };
-            title: string;
             type: "audio";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -8077,8 +8035,8 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "breathe";
+            title: string;
             backgroundColor: string;
             inFor: number;
             holdFor: number;
@@ -8173,8 +8131,8 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "day-review";
+            title: string;
             backgroundColor: string;
             forDay: NonNullable<"today" | "yesterday" | undefined>;
         } | {
@@ -8267,8 +8225,8 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "emotions";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -8360,8 +8318,8 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "link";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -8453,8 +8411,8 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "phone";
+            title: string;
             backgroundColor: string;
             supportGroupId: string;
             trigger: {};
@@ -8548,8 +8506,8 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "steps";
+            title: string;
             backgroundColor: string;
             steps: number;
         } | {
@@ -8642,8 +8600,8 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "task";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -8735,8 +8693,8 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "urge-surfing";
+            title: string;
             backgroundColor: string;
         } | {
             createdAt?: {
@@ -8828,8 +8786,8 @@ export declare const logSchema: yup.Lazy<{
             isAvailableForRecommendation?: boolean | null | undefined;
             numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
-            title: string;
             type: "video";
+            title: string;
             backgroundColor: string;
             video: {
                 storagePath?: string | null | undefined;

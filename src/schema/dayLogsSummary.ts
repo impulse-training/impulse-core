@@ -8,7 +8,11 @@ export type TacticSummaryValue = yup.InferType<typeof tacticDataSchema>;
 
 // And this is a summary of all the tactics for a given log entry
 const logSummarySchema = yup.object({
-  type: yup.mixed<'time' | 'impulse'>().oneOf(['time', 'impulse']).required(),
+  type: yup
+    .mixed<'time' | 'impulse'>()
+    .oneOf(['time', 'impulse'])
+    .required()
+    .nonNullable(),
   hour: yup.number().required(),
   minute: yup.number().required(),
   tacticDataById: objectOf(tacticDataSchema),

@@ -19,7 +19,6 @@ export const COLLECTIONS = [
   'mail',
   'mailTemplates',
   'notifications',
-  'patterns',
   'presses',
   'profiles',
   'strategies',

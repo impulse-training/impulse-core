@@ -11,7 +11,6 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    parentIssueIds?: string[] | undefined;
     activeImpulseId?: string | undefined;
     currentAppState?: import("react-native/types").AppStateStatus | undefined;
     lastActiveAt?: Date | undefined;
@@ -29,9 +28,10 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     androidPermissions?: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
+    parentIssueIds?: string[] | undefined;
     region?: string | null | undefined;
     scheduledNotificationIds?: string[] | undefined;
     seenRecommendedStrategyIds?: string[] | undefined;
     timezone: string;
     invitationCode: string;
-}, "timezone" | "invitationCode" | ("createdAt" | "updatedAt" | "parentIssueIds" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "isTourCompleted" | "defaultNickname" | "androidPermissions" | "region" | "scheduledNotificationIds" | "seenRecommendedStrategyIds")>;
+}, "timezone" | "invitationCode" | ("createdAt" | "updatedAt" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "isTourCompleted" | "defaultNickname" | "androidPermissions" | "parentIssueIds" | "region" | "scheduledNotificationIds" | "seenRecommendedStrategyIds")>;

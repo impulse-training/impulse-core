@@ -14,14 +14,10 @@ export const makeImpulseLogFactory = (TimestampKlass: typeof TimestampLike) =>
     isDisplayable: true,
     location: {},
     locationIsFetching: false,
-    patternId: 'abc123',
-    patternIds: ['abc123'],
-    patternsById: {},
     tacticIds: [],
     tacticsById: {},
     tacticData: {},
     strategiesPath: 'patterns/abc123/strategies',
-    debriefStrategiesPath: 'patterns/abc123/debriefStrategies',
   });
 
 export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>

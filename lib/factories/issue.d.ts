@@ -109,8 +109,8 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         isAvailableForRecommendation?: boolean | null | undefined;
         numberOfLikes?: number | null | undefined;
         isSuggested?: boolean | undefined;
-        title: string;
         type: import("../schema").QuestionKeyType;
+        title: string;
         backgroundColor: string;
     } | {
         createdAt?: {
@@ -204,8 +204,8 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         isAvailableForRecommendation?: boolean | null | undefined;
         numberOfLikes?: number | null | undefined;
         isSuggested?: boolean | undefined;
-        title: string;
         type: import("../schema").QuestionKeyType;
+        title: string;
         backgroundColor: string;
     };
     parentIds: string[];

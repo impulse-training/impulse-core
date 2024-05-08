@@ -103,8 +103,8 @@ export declare const issueSchema: yup.ObjectSchema<{
         isAvailableForRecommendation?: boolean | null | undefined;
         numberOfLikes?: number | null | undefined;
         isSuggested?: boolean | undefined;
-        title: string;
         type: import(".").QuestionKeyType;
+        title: string;
         backgroundColor: string;
     } | {
         createdAt?: {
@@ -198,8 +198,8 @@ export declare const issueSchema: yup.ObjectSchema<{
         isAvailableForRecommendation?: boolean | null | undefined;
         numberOfLikes?: number | null | undefined;
         isSuggested?: boolean | undefined;
-        title: string;
         type: import(".").QuestionKeyType;
+        title: string;
         backgroundColor: string;
     };
     setbackThreshold: number | undefined;

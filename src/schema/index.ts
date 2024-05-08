@@ -13,7 +13,6 @@ export * from './mailTemplate';
 export * from './message';
 export * from './notification';
 export * from './option';
-export * from './pattern';
 export * from './profile';
 export * from './profileLogsSummary';
 export * from './recording';
