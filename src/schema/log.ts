@@ -3,7 +3,7 @@
 import * as yup from 'yup';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 import { commentSchema } from './comment';
-import { tacticSchema } from './tactic';
+import { tacticsByIdSchema } from './tactic';
 import { optionalStringArray, requiredStringArray } from './utils/array';
 import { documentReferenceSchema } from './utils/firestore';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
@@ -55,7 +55,7 @@ const baseLogSchema = yup.object().shape({
 
   // TODO: These represent seen tactics, but this may need some clarification
   tacticIds: requiredStringArray,
-  tacticsById: objectOf(tacticSchema),
+  tacticsById: tacticsByIdSchema,
   tacticLikes: optionalObjectOf(yup.boolean().required()),
   tacticData: objectOf(tacticDataSchema),
   sharedWithSupportGroupIds: optionalStringArray,
