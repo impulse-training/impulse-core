@@ -27,6 +27,16 @@ export declare const tacticSchema: yup.Lazy<ValidatedTactic, yup.AnyObject, any>
 type ValidatedTactic = {
     [K in TacticValue['type']]: yup.InferType<(typeof tacticSchemas)[K]>;
 }[TacticValue['type']];
-export type WithTacticsById<T, TT = TacticValue> = Omit<T, 'tacticsById'> & {
-    tacticsById: Record<string, TT>;
+export declare const tacticsByIdSchema: yup.Lazy<{
+    [x: string]: {
+        tactic?: any;
+        path: string;
+    };
+}, yup.AnyObject, any>;
+export type TacticsById = Record<string, {
+    tactic: TacticValue;
+    path: string;
+}>;
+export type WithTacticsById<T> = Omit<T, 'tacticsById'> & {
+    tacticsById: TacticsById;
 };

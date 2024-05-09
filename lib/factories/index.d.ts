@@ -534,7 +534,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         title: string;
         backgroundColor: string;
     }, "type" | "title" | "backgroundColor" | ("createdAt" | "updatedAt" | "profileId" | "setbackThreshold" | "subtitle" | "description" | "image" | "optionsById" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested")>;
-    strategyFactory: import("factory.ts").Factory<import("..").StrategyValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "tacticIds" | "name" | "recommendedForIssueIds" | "ordinal" | "recommendedForIssueOrdinals">;
+    strategyFactory: import("factory.ts").Factory<import("..").StrategyValue, "type" | "tacticsById" | "tacticIds" | "name" | ("createdAt" | "updatedAt" | "profileId" | "recommendedForIssueIds" | "ordinal" | "recommendedForIssueOrdinals")>;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;

@@ -9,7 +9,12 @@ export declare const strategySchema: yup.ObjectSchema<{
         [x: string]: number;
     } | null | undefined;
     tacticIds: string[];
-    tacticsById: any;
+    tacticsById: {
+        [x: string]: {
+            tactic?: any;
+            path: string;
+        };
+    };
     profileId: string | undefined;
     createdAt: {
         seconds: number;
@@ -28,7 +33,7 @@ export declare const strategySchema: yup.ObjectSchema<{
     recommendedForIssueIds: "";
     recommendedForIssueOrdinals: undefined;
     tacticIds: "";
-    tacticsById: any;
+    tacticsById: undefined;
     profileId: undefined;
     createdAt: undefined;
     updatedAt: undefined;

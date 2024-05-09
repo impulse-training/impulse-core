@@ -1,7 +1,7 @@
 import * as yup from 'yup';
-import { WithTacticsById, tacticSchema } from '.';
+import { WithTacticsById, tacticsByIdSchema } from '.';
 import { optionalStringArray, requiredStringArray } from './utils/array';
-import { objectOf, optionalObjectOf } from './utils/objectOf';
+import { optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema } from './utils/timestamp';
 
 export const strategySchema = yup.object({
@@ -14,7 +14,7 @@ export const strategySchema = yup.object({
   recommendedForIssueIds: optionalStringArray,
   recommendedForIssueOrdinals: optionalObjectOf(yup.number().required()),
   tacticIds: requiredStringArray,
-  tacticsById: objectOf(tacticSchema) as any,
+  tacticsById: tacticsByIdSchema,
   profileId: yup.string(),
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
