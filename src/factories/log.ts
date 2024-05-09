@@ -17,7 +17,8 @@ export const makeImpulseLogFactory = (TimestampKlass: typeof TimestampLike) =>
     tacticIds: [],
     tacticsById: {},
     tacticData: {},
-    strategiesPath: 'patterns/abc123/strategies',
+    strategiesPath: 'profiles/abc123/strategies',
+    debriefStrategiesPath: 'profiles/abc123/debriefStrategies',
   });
 
 export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>
