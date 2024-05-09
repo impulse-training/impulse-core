@@ -25,6 +25,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     } | null | undefined;
     debriefTactic: {
         id: string;
+        path: string;
     } | undefined;
     debriefAfterMinutes: number | undefined;
     issueName: string | undefined;

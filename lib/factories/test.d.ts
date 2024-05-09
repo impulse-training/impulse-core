@@ -38,6 +38,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     setbackThreshold?: number | undefined;
     debriefTactic?: {
         id: string;
+        path: string;
     } | undefined;
     activeImpulseId?: string | undefined;
     currentAppState?: import("react-native/types").AppStateStatus | undefined;

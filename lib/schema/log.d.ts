@@ -2531,6 +2531,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     isDisplayable: NonNullable<boolean | undefined>;
     debriefTactic: {
         id: string;
+        path: string;
     } | undefined;
     debriefAfter: {
         seconds: number;
@@ -5180,6 +5181,7 @@ export declare const logSchema: yup.Lazy<{
     setAsActiveImpulse?: yup.Maybe<boolean | undefined>;
     debriefTactic?: {
         id: string;
+        path: string;
     } | undefined;
     debriefAfter?: {
         seconds: number;
