@@ -158,10 +158,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: Function;
         } | null | undefined;
         setbackThreshold?: number | undefined;
-        debriefTactic?: {
-            id: string;
-            path: string;
-        } | undefined;
+        debriefTactic?: import("../schema/utils/firestore").DocumentReferenceLike | undefined;
         activeImpulseId?: string | undefined;
         currentAppState?: import("react-native/types").AppStateStatus | undefined;
         lastActiveAt?: Date | undefined;

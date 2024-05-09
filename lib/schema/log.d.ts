@@ -2529,10 +2529,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     type: "impulse";
     setAsActiveImpulse: yup.Maybe<boolean | undefined>;
     isDisplayable: NonNullable<boolean | undefined>;
-    debriefTactic: {
-        id: string;
-        path: string;
-    } | undefined;
+    debriefTactic: import("./utils/firestore").DocumentReferenceLike | undefined;
     debriefAfter: {
         seconds: number;
         nanoseconds: number;
@@ -5179,10 +5176,7 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     sharedWithSupportGroupIds?: string[] | undefined;
     setAsActiveImpulse?: yup.Maybe<boolean | undefined>;
-    debriefTactic?: {
-        id: string;
-        path: string;
-    } | undefined;
+    debriefTactic?: import("./utils/firestore").DocumentReferenceLike | undefined;
     debriefAfter?: {
         seconds: number;
         nanoseconds: number;
