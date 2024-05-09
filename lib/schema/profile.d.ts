@@ -24,6 +24,8 @@ export declare const profileSchema: yup.ObjectSchema<{
         [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
     } | null | undefined;
     debriefTacticId: string | undefined;
+    issueName: string | undefined;
+    setbackThreshold: number | undefined;
     isTourCompleted: boolean | undefined;
     androidPermissions: {
         [x: string]: NonNullable<boolean | undefined>;
@@ -43,6 +45,8 @@ export declare const profileSchema: yup.ObjectSchema<{
     widgetInstalledAt: undefined;
     notificationPreferences: undefined;
     debriefTacticId: undefined;
+    issueName: undefined;
+    setbackThreshold: undefined;
     isTourCompleted: undefined;
     androidPermissions: undefined;
     parentIssueIds: "";
