@@ -126,7 +126,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         } | undefined;
         profileId: string;
     }, "profileId" | ("createdAt" | "updatedAt" | "tacticId" | "tacticTitle" | "text" | "recording" | "isEdited" | "avatar")>;
-    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "strategiesPath" | "tacticsById" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "tacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "setAsActiveImpulse" | "isDisplayable" | "debriefAfter" | "debriefReminderSentAt" | "debriefedAt">;
+    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "strategiesPath" | "tacticsById" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "tacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "setAsActiveImpulse" | "isDisplayable" | "debriefStrategiesPath" | "debriefAfter" | "debriefReminderSentAt" | "debriefedAt">;
     timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "strategiesPath" | "tacticsById" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "tacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable">;
     locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "strategiesPath" | "tacticsById" | "startTime" | "timezone" | "location" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "tacticIds" | "tacticLikes" | "tacticData" | "sharedWithSupportGroupIds" | "isDisplayable" | "locationId" | "locationName" | "locationMode">;
     locationFactory: import("factory.ts").Factory<{
@@ -171,6 +171,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
         } | null | undefined;
         debriefTacticId?: string | undefined;
+        debriefAfterMinutes?: number | undefined;
+        measureTacticId?: string | undefined;
         issueName?: string | undefined;
         isTourCompleted?: boolean | undefined;
         androidPermissions?: {
@@ -181,7 +183,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         scheduledNotificationIds?: string[] | undefined;
         timezone: string;
         invitationCode: string;
-    }, "timezone" | "invitationCode" | ("createdAt" | "updatedAt" | "setbackThreshold" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "debriefTacticId" | "issueName" | "isTourCompleted" | "androidPermissions" | "parentIssueIds" | "region" | "scheduledNotificationIds")>;
+    }, "timezone" | "invitationCode" | ("createdAt" | "updatedAt" | "setbackThreshold" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "debriefTacticId" | "debriefAfterMinutes" | "measureTacticId" | "issueName" | "isTourCompleted" | "androidPermissions" | "parentIssueIds" | "region" | "scheduledNotificationIds")>;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
         setbackThreshold?: number | undefined;

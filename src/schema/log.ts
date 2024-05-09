@@ -81,6 +81,7 @@ const impulseLogSchema = baseLogSchema.concat(
     type: yup.mixed<'impulse'>().oneOf(['impulse']).required(),
     setAsActiveImpulse: yup.boolean().notRequired(),
     isDisplayable: yup.boolean().oneOf([true]).required(),
+    debriefStrategiesPath: yup.string().required(),
     debriefAfter: optionalTimestampSchema,
     debriefReminderSentAt: optionalTimestampSchema,
     debriefedAt: optionalTimestampSchema,

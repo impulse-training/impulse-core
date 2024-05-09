@@ -25,6 +25,8 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
         [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
     } | null | undefined;
     debriefTacticId?: string | undefined;
+    debriefAfterMinutes?: number | undefined;
+    measureTacticId?: string | undefined;
     issueName?: string | undefined;
     isTourCompleted?: boolean | undefined;
     androidPermissions?: {
@@ -35,4 +37,4 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     scheduledNotificationIds?: string[] | undefined;
     timezone: string;
     invitationCode: string;
-}, "timezone" | "invitationCode" | ("createdAt" | "updatedAt" | "setbackThreshold" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "debriefTacticId" | "issueName" | "isTourCompleted" | "androidPermissions" | "parentIssueIds" | "region" | "scheduledNotificationIds")>;
+}, "timezone" | "invitationCode" | ("createdAt" | "updatedAt" | "setbackThreshold" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "debriefTacticId" | "debriefAfterMinutes" | "measureTacticId" | "issueName" | "isTourCompleted" | "androidPermissions" | "parentIssueIds" | "region" | "scheduledNotificationIds")>;
