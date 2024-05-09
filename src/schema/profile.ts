@@ -2,6 +2,7 @@ import { AppStateStatus } from 'react-native';
 import * as yup from 'yup';
 import { notificationOptionSchema } from './notification';
 import { optionalStringArray } from './utils/array';
+import { documentReferenceSchema } from './utils/firestore';
 import { optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema } from './utils/timestamp';
 
@@ -16,9 +17,8 @@ export const profileSchema = yup.object().shape({
   notificationPreferences: optionalObjectOf(
     yup.array().of(notificationOptionSchema)
   ),
-  debriefTacticId: yup.string(),
+  debriefTactic: documentReferenceSchema,
   debriefAfterMinutes: yup.number(),
-  measureTacticId: yup.string(),
   issueName: yup.string(),
   setbackThreshold: yup.number(),
   isTourCompleted: yup.boolean(),

@@ -5,6 +5,7 @@ import { TimestampLike } from '../utils/firestore/TimestampLike';
 import { commentSchema } from './comment';
 import { tacticSchema } from './tactic';
 import { optionalStringArray, requiredStringArray } from './utils/array';
+import { documentReferenceSchema } from './utils/firestore';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
 
@@ -81,7 +82,7 @@ const impulseLogSchema = baseLogSchema.concat(
     type: yup.mixed<'impulse'>().oneOf(['impulse']).required(),
     setAsActiveImpulse: yup.boolean().notRequired(),
     isDisplayable: yup.boolean().oneOf([true]).required(),
-    debriefStrategiesPath: yup.string().required(),
+    debriefTactic: documentReferenceSchema,
     debriefAfter: optionalTimestampSchema,
     debriefReminderSentAt: optionalTimestampSchema,
     debriefedAt: optionalTimestampSchema,
