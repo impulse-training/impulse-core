@@ -1,4 +1,8 @@
 import * as yup from 'yup';
+export declare const dayReviewForDayOptions: {
+    readonly today: "The current day";
+    readonly yesterday: "The previous day";
+};
 export declare const dayReviewTacticSchema: yup.ObjectSchema<{
     type: "day-review";
     profileId: string | null | undefined;
@@ -92,7 +96,7 @@ export declare const dayReviewTacticSchema: yup.ObjectSchema<{
     isAvailableForRecommendation: boolean | null | undefined;
     numberOfLikes: number | null | undefined;
     isSuggested: boolean | undefined;
-    forDay: NonNullable<"today" | "yesterday" | undefined>;
+    forDay: string;
 }, yup.AnyObject, {
     type: undefined;
     profileId: undefined;

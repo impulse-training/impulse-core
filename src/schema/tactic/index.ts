@@ -14,6 +14,7 @@ import { VideoTacticValue, videoTacticSchema } from './video';
 
 export * from './audio';
 export * from './breathe';
+export * from './dayReview';
 export * from './emotions';
 export * from './link';
 export * from './phone';
@@ -21,9 +22,8 @@ export * from './question';
 export * from './steps';
 export * from './task';
 export * from './urgeSurfing';
-export * from './video';
-
 export * from './utils';
+export * from './video';
 
 export type TacticValue =
   | PhoneTacticValue
