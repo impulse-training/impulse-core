@@ -44,7 +44,7 @@ const baseLogSchema = yup.object().shape({
   locationIsFetching: yup.boolean().required(),
   locationFormatted: yup.string().notRequired(),
   commentCount: yup.number().notRequired(),
-  commentsById: yup.object().notRequired(),
+  commentsById: objectOf(commentSchema),
   commentsByTacticId: optionalObjectOf(
     yup.object().shape({
       tacticTitle: yup.string().required(),
