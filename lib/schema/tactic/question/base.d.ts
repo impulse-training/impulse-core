@@ -15,6 +15,7 @@ export declare function questionTacticValueBaseSchema(type: QuestionKeyType): im
     title: string;
     subtitle: import("yup").Maybe<string | undefined>;
     description: string | null | undefined;
+    debriefAfterMinutes: number | null | undefined;
     image: {
         localFilePath?: import("yup").Maybe<string | undefined>;
         storagePath?: import("yup").Maybe<string | undefined>;
@@ -100,6 +101,7 @@ export declare function questionTacticValueBaseSchema(type: QuestionKeyType): im
     title: undefined;
     subtitle: undefined;
     description: undefined;
+    debriefAfterMinutes: undefined;
     image: {
         localFilePath: undefined;
         storagePath: undefined;

@@ -12,6 +12,7 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
         toDate: Function;
     } | null | undefined;
     setbackThreshold?: number | undefined;
+    debriefAfterMinutes?: number | undefined;
     debriefTactic?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
     activeImpulseId?: string | undefined;
     currentAppState?: import("react-native/types").AppStateStatus | undefined;
@@ -29,7 +30,6 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     notificationPreferences?: {
         [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
     } | null | undefined;
-    debriefAfterMinutes?: number | undefined;
     issueName?: string | undefined;
     isTourCompleted?: boolean | undefined;
     androidPermissions?: {
@@ -40,4 +40,4 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     scheduledNotificationIds?: string[] | undefined;
     timezone: string;
     invitationCode: string;
-}, "timezone" | "invitationCode" | ("createdAt" | "updatedAt" | "setbackThreshold" | "debriefTactic" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "debriefAfterMinutes" | "issueName" | "isTourCompleted" | "androidPermissions" | "parentIssueIds" | "region" | "scheduledNotificationIds")>;
+}, "timezone" | "invitationCode" | ("createdAt" | "updatedAt" | "setbackThreshold" | "debriefAfterMinutes" | "debriefTactic" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "issueName" | "isTourCompleted" | "androidPermissions" | "parentIssueIds" | "region" | "scheduledNotificationIds")>;

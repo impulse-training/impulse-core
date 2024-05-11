@@ -28,6 +28,7 @@ export declare const issueSchema: yup.ObjectSchema<{
         setbackThreshold?: number | null | undefined;
         subtitle?: yup.Maybe<string | undefined>;
         description?: string | null | undefined;
+        debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
             storagePath?: yup.Maybe<string | undefined>;
@@ -123,6 +124,7 @@ export declare const issueSchema: yup.ObjectSchema<{
         highEmoji?: yup.Maybe<string | undefined>;
         subtitle?: yup.Maybe<string | undefined>;
         description?: string | null | undefined;
+        debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
             storagePath?: yup.Maybe<string | undefined>;

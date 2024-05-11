@@ -34,6 +34,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         setbackThreshold?: number | null | undefined;
         subtitle?: import("yup").Maybe<string | undefined>;
         description?: string | null | undefined;
+        debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: import("yup").Maybe<string | undefined>;
             storagePath?: import("yup").Maybe<string | undefined>;
@@ -129,6 +130,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         highEmoji?: import("yup").Maybe<string | undefined>;
         subtitle?: import("yup").Maybe<string | undefined>;
         description?: string | null | undefined;
+        debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: import("yup").Maybe<string | undefined>;
             storagePath?: import("yup").Maybe<string | undefined>;

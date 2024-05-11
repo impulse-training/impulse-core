@@ -157,6 +157,7 @@ export declare const factories: {
             toDate: Function;
         } | null | undefined;
         setbackThreshold?: number | undefined;
+        debriefAfterMinutes?: number | undefined;
         debriefTactic?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         activeImpulseId?: string | undefined;
         currentAppState?: import("react-native/types").AppStateStatus | undefined;
@@ -174,7 +175,6 @@ export declare const factories: {
         notificationPreferences?: {
             [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
         } | null | undefined;
-        debriefAfterMinutes?: number | undefined;
         issueName?: string | undefined;
         isTourCompleted?: boolean | undefined;
         androidPermissions?: {
@@ -185,7 +185,7 @@ export declare const factories: {
         scheduledNotificationIds?: string[] | undefined;
         timezone: string;
         invitationCode: string;
-    }, "timezone" | "invitationCode" | ("createdAt" | "updatedAt" | "setbackThreshold" | "debriefTactic" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "debriefAfterMinutes" | "issueName" | "isTourCompleted" | "androidPermissions" | "parentIssueIds" | "region" | "scheduledNotificationIds")>;
+    }, "timezone" | "invitationCode" | ("createdAt" | "updatedAt" | "setbackThreshold" | "debriefAfterMinutes" | "debriefTactic" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "issueName" | "isTourCompleted" | "androidPermissions" | "parentIssueIds" | "region" | "scheduledNotificationIds")>;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
         setbackThreshold?: number | undefined;
@@ -220,6 +220,7 @@ export declare const factories: {
             setbackThreshold?: number | null | undefined;
             subtitle?: import("yup").Maybe<string | undefined>;
             description?: string | null | undefined;
+            debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 storagePath?: import("yup").Maybe<string | undefined>;
@@ -315,6 +316,7 @@ export declare const factories: {
             highEmoji?: import("yup").Maybe<string | undefined>;
             subtitle?: import("yup").Maybe<string | undefined>;
             description?: string | null | undefined;
+            debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 storagePath?: import("yup").Maybe<string | undefined>;
@@ -439,7 +441,7 @@ export declare const factories: {
         suggestedTacticIds: {};
     }, "thumbnailUrl" | "participantProfileIds" | "groupName" | "creatorProfileId" | "icon" | "unreadCounts" | "permissions" | "suggestedTacticIds" | ("createdAt" | "updatedAt" | "isTemplate" | "invitationCode" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "profileNicknames" | "lastMessagePreview" | "invitationUrl" | "lastMessageProfileId" | "isSharingDisabled")>;
     messageFactory: import("factory.ts").Factory<import("..").MessageValue, keyof import("..").MessageValue>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "title" | "subtitle" | "description" | "image" | "optionsById" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "title" | "subtitle" | "description" | "debriefAfterMinutes" | "image" | "optionsById" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
     questionTimeTacticFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -455,6 +457,7 @@ export declare const factories: {
         setbackThreshold?: number | null | undefined;
         subtitle?: import("yup").Maybe<string | undefined>;
         description?: string | null | undefined;
+        debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: import("yup").Maybe<string | undefined>;
             storagePath?: import("yup").Maybe<string | undefined>;
@@ -533,7 +536,7 @@ export declare const factories: {
         type: import("..").QuestionKeyType;
         title: string;
         backgroundColor: string;
-    }, "type" | "title" | "backgroundColor" | ("createdAt" | "updatedAt" | "profileId" | "setbackThreshold" | "subtitle" | "description" | "image" | "optionsById" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested")>;
+    }, "type" | "title" | "backgroundColor" | ("createdAt" | "updatedAt" | "profileId" | "setbackThreshold" | "subtitle" | "description" | "debriefAfterMinutes" | "image" | "optionsById" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested")>;
     strategyFactory: import("factory.ts").Factory<import("..").StrategyValue, "type" | "tacticsById" | "tacticIds" | "name" | ("createdAt" | "updatedAt" | "profileId" | "recommendedForIssueIds" | "ordinal" | "recommendedForIssueOrdinals")>;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {

@@ -15,6 +15,7 @@ export declare const audioTacticSchema: yup.ObjectSchema<{
     title: string;
     subtitle: yup.Maybe<string | undefined>;
     description: string | null | undefined;
+    debriefAfterMinutes: number | null | undefined;
     image: {
         localFilePath?: yup.Maybe<string | undefined>;
         storagePath?: yup.Maybe<string | undefined>;
@@ -105,6 +106,7 @@ export declare const audioTacticSchema: yup.ObjectSchema<{
     title: undefined;
     subtitle: undefined;
     description: undefined;
+    debriefAfterMinutes: undefined;
     image: {
         localFilePath: undefined;
         storagePath: undefined;

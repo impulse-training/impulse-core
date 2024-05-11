@@ -14,6 +14,7 @@ export function tacticValueBaseSchema<K extends string>(type: K) {
     title: yup.string().required('is required'),
     subtitle: yup.string().notRequired(),
     description: yup.string().nullable(),
+    debriefAfterMinutes: yup.number().nullable(),
     image: imageSchema.optional().nullable(),
     setbackThreshold: yup.number().nullable(),
     optionsById: optionalObjectOf(optionWithStrategiesPathSchema),
