@@ -15,7 +15,11 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     debriefTactic?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
     activeImpulseId?: string | undefined;
     currentAppState?: import("react-native/types").AppStateStatus | undefined;
-    lastActiveAt?: Date | undefined;
+    lastActiveAt?: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
     expoPushToken?: string | undefined;
     widgetInstalledAt?: {
         seconds: number;

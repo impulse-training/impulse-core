@@ -13,7 +13,11 @@ export declare const profileSchema: yup.ObjectSchema<{
     } | null | undefined;
     activeImpulseId: string | undefined;
     currentAppState: AppStateStatus | undefined;
-    lastActiveAt: Date | undefined;
+    lastActiveAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
     expoPushToken: string | undefined;
     widgetInstalledAt: {
         seconds: number;
