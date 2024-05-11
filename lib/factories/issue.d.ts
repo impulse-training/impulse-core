@@ -17,9 +17,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         nanoseconds: number;
         toDate: Function;
     };
-    name: string;
-    synonyms: string[];
-    measureTactic: {
+    debriefTactic: {
         createdAt?: {
             seconds: number;
             nanoseconds: number;
@@ -210,6 +208,8 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         title: string;
         backgroundColor: string;
     };
+    name: string;
+    synonyms: string[];
     parentIds: string[];
     parentNames: string[];
-}, "createdAt" | "updatedAt" | "name" | "synonyms" | "measureTactic" | "parentIds" | "parentNames" | ("path" | "setbackThreshold" | "parentId" | "strategiesCount" | "profileCount" | "isFeatured")>;
+}, "createdAt" | "updatedAt" | "debriefTactic" | "name" | "synonyms" | "parentIds" | "parentNames" | ("path" | "setbackThreshold" | "parentId" | "strategiesCount" | "profileCount" | "isFeatured")>;

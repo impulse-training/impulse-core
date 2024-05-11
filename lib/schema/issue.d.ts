@@ -13,7 +13,7 @@ export declare const issueSchema: yup.ObjectSchema<{
     parentId: string | null | undefined;
     name: string;
     synonyms: string[];
-    measureTactic: {
+    debriefTactic: {
         createdAt?: {
             seconds: number;
             nanoseconds: number;
@@ -225,7 +225,7 @@ export declare const issueSchema: yup.ObjectSchema<{
     parentId: undefined;
     name: undefined;
     synonyms: "";
-    measureTactic: undefined;
+    debriefTactic: undefined;
     setbackThreshold: undefined;
     path: undefined;
     parentIds: "";
