@@ -29,7 +29,6 @@ export const supportGroupSchema = yup.object().shape({
   isTemplate: yup.boolean().optional(),
   unreadCounts: objectOf(yup.number().required()),
   permissions: yup.mixed().required(), // You would replace this with the actual schema for SupportGroupPermissions
-  suggestedTacticIds: yup.object().required(),
 });
 
 export type SupportGroupValue = yup.InferType<typeof supportGroupSchema>;

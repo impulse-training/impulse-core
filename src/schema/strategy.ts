@@ -16,6 +16,14 @@ export const strategySchema = yup.object({
   tacticIds: requiredStringArray,
   tacticsById: tacticsByIdSchema,
   profileId: yup.string(),
+  supportGroup: yup
+    .object({
+      id: yup.string().required(),
+      name: yup.string().required(),
+      avatarUrl: yup.string().required(),
+    })
+    .notRequired()
+    .default(undefined),
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
 });

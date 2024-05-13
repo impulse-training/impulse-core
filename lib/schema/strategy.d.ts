@@ -16,6 +16,11 @@ export declare const strategySchema: yup.ObjectSchema<{
         };
     };
     profileId: string | undefined;
+    supportGroup: {
+        id: string;
+        name: string;
+        avatarUrl: string;
+    } | null | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -35,6 +40,7 @@ export declare const strategySchema: yup.ObjectSchema<{
     tacticIds: "";
     tacticsById: undefined;
     profileId: undefined;
+    supportGroup: undefined;
     createdAt: undefined;
     updatedAt: undefined;
 }, "">;

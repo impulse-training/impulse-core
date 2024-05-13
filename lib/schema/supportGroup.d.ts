@@ -38,7 +38,6 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
         [x: string]: number;
     };
     permissions: {};
-    suggestedTacticIds: {};
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
@@ -62,7 +61,6 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
     isTemplate: undefined;
     unreadCounts: undefined;
     permissions: undefined;
-    suggestedTacticIds: {};
 }, "">;
 export type SupportGroupValue = yup.InferType<typeof supportGroupSchema>;
 export type PermissionKey = keyof typeof CONVERSATION_PERMISSIONS;

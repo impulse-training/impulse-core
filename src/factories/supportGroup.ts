@@ -14,5 +14,4 @@ export const makeSupportGroupFactory = (TimestampKlass: typeof TimestampLike) =>
     profileNicknames: { abc123: 'Mooky' },
     creatorProfileId: 'abc123',
     icon: 'group',
-    suggestedTacticIds: {},
   });
