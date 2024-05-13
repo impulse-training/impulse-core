@@ -128,6 +128,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
         [x: string]: {
             tactic?: any;
             path: string;
+            strategyId: string;
         };
     };
     tacticLikes: {
@@ -287,6 +288,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         [x: string]: {
             tactic?: any;
             path: string;
+            strategyId: string;
         };
     };
     tacticLikes: {
@@ -468,6 +470,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
         [x: string]: {
             tactic?: any;
             path: string;
+            strategyId: string;
         };
     };
     tacticLikes: {
@@ -633,6 +636,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
         [x: string]: {
             tactic?: any;
             path: string;
+            strategyId: string;
         };
     };
     tacticLikes: {
@@ -766,6 +770,7 @@ export declare const logSchema: yup.Lazy<{
         [x: string]: {
             tactic?: any;
             path: string;
+            strategyId: string;
         };
     };
     startTime: {
@@ -889,6 +894,7 @@ export declare const logSchema: yup.Lazy<{
         [x: string]: {
             tactic?: any;
             path: string;
+            strategyId: string;
         };
     };
     startTime: {
@@ -1015,6 +1021,7 @@ export declare const logSchema: yup.Lazy<{
         [x: string]: {
             tactic?: any;
             path: string;
+            strategyId: string;
         };
     };
     startTime: {

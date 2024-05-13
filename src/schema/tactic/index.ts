@@ -85,6 +85,7 @@ type ValidatedTactic = {
 export const tacticsByIdSchema = objectOf(
   yup.object({
     path: yup.string().required(),
+    strategyId: yup.string().required(),
     tactic: tacticSchema as any, // This is overwritten by casting with the WithTacticsById type
   })
 );

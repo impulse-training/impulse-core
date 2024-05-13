@@ -13,6 +13,7 @@ export declare const strategySchema: yup.ObjectSchema<{
         [x: string]: {
             tactic?: any;
             path: string;
+            strategyId: string;
         };
     };
     profileId: string | undefined;

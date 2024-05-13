@@ -32,6 +32,7 @@ export declare const tacticsByIdSchema: yup.Lazy<{
     [x: string]: {
         tactic?: any;
         path: string;
+        strategyId: string;
     };
 }, yup.AnyObject, any>;
 export type TacticsById = Record<string, {
