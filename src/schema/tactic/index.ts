@@ -82,13 +82,13 @@ type ValidatedTactic = {
   [K in TacticValue['type']]: yup.InferType<(typeof tacticSchemas)[K]>;
 }[TacticValue['type']];
 
-export const tacticsByIdSchema = objectOf(
-  yup.object({
-    path: yup.string().required(),
-    strategyId: yup.string().required(),
-    tactic: tacticSchema as any, // This is overwritten by casting with the WithTacticsById type
-  })
-);
+export const tacticInfoSchema = yup.object({
+  path: yup.string().required(),
+  strategyId: yup.string().required(),
+  tactic: tacticSchema as any, // This is overwritten by casting with the WithTacticsById type
+});
+export type TacticInfo = yup.InferType<typeof tacticInfoSchema>;
+export const tacticsByIdSchema = objectOf(tacticInfoSchema);
 
 export type TacticsById = Record<string, { tactic: TacticValue; path: string }>;
 
