@@ -24,10 +24,7 @@ export * from './utils';
 export * from './video';
 export type TacticValue = PhoneTacticValue | AudioTacticValue | UrgeSurfingTacticValue | VideoTacticValue | QuestionTacticValue | TaskTacticValue | BreatheTacticValue | LinkTacticValue | StepsTacticValue | EmotionsTacticValue | DayReviewTacticValue;
 export declare const tacticSchemas: Record<TacticValue['type'], yup.ObjectSchema<TacticValue>>;
-export declare const tacticSchema: yup.Lazy<ValidatedTactic, yup.AnyObject, any>;
-type ValidatedTactic = {
-    [K in TacticValue['type']]: yup.InferType<(typeof tacticSchemas)[K]>;
-}[TacticValue['type']];
+export declare const tacticSchema: yup.Lazy<any, yup.AnyObject, any>;
 export declare const tacticInfoSchema: yup.ObjectSchema<{
     path: string;
     strategyId: string;

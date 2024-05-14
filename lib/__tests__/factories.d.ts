@@ -286,7 +286,7 @@ export declare const factories: {
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
-            href?: string | null | undefined;
+            linkUrl?: string | null | undefined;
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
@@ -382,7 +382,7 @@ export declare const factories: {
             } | null | undefined;
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
-            href?: string | null | undefined;
+            linkUrl?: string | null | undefined;
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
@@ -440,7 +440,7 @@ export declare const factories: {
         permissions: {};
     }, "thumbnailUrl" | "participantProfileIds" | "groupName" | "creatorProfileId" | "icon" | "unreadCounts" | "permissions" | ("createdAt" | "updatedAt" | "isTemplate" | "invitationCode" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "profileNicknames" | "lastMessagePreview" | "invitationUrl" | "lastMessageProfileId" | "isSharingDisabled")>;
     messageFactory: import("factory.ts").Factory<import("..").MessageValue, keyof import("..").MessageValue>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "title" | "subtitle" | "description" | "debriefAfterMinutes" | "image" | "optionsById" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
+    tacticFactory: import("factory.ts").Factory<any, string | number | symbol>;
     questionTimeTacticFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -524,7 +524,7 @@ export declare const factories: {
         } | null | undefined;
         isTemplate?: boolean | null | undefined;
         language?: string | null | undefined;
-        href?: string | null | undefined;
+        linkUrl?: string | null | undefined;
         categoryIds?: (string | undefined)[] | null | undefined;
         isShared?: boolean | null | undefined;
         isResponseRequired?: boolean | null | undefined;
@@ -535,7 +535,7 @@ export declare const factories: {
         type: import("..").QuestionKeyType;
         title: string;
         backgroundColor: string;
-    }, "type" | "title" | "backgroundColor" | ("createdAt" | "updatedAt" | "profileId" | "setbackThreshold" | "subtitle" | "description" | "debriefAfterMinutes" | "image" | "optionsById" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested")>;
+    }, "type" | "title" | "backgroundColor" | ("createdAt" | "updatedAt" | "profileId" | "setbackThreshold" | "subtitle" | "description" | "debriefAfterMinutes" | "image" | "optionsById" | "isTemplate" | "language" | "linkUrl" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested")>;
     strategyFactory: import("factory.ts").Factory<import("..").StrategyValue, "type" | "tacticsById" | "tacticIds" | "name" | ("createdAt" | "updatedAt" | "profileId" | "recommendedForIssueIds" | "ordinal" | "recommendedForIssueOrdinals" | "supportGroup")>;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {

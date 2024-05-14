@@ -1,7 +1,6 @@
 import * as Factory from 'factory.ts';
-import { TacticValue } from '../schema';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
-export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "title" | "subtitle" | "description" | "debriefAfterMinutes" | "image" | "optionsById" | "backgroundColor" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
+export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<any, string | number | symbol>;
 export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     createdAt?: {
         seconds: number;
@@ -85,7 +84,7 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
     } | null | undefined;
     isTemplate?: boolean | null | undefined;
     language?: string | null | undefined;
-    href?: string | null | undefined;
+    linkUrl?: string | null | undefined;
     categoryIds?: (string | undefined)[] | null | undefined;
     isShared?: boolean | null | undefined;
     isResponseRequired?: boolean | null | undefined;
@@ -96,4 +95,4 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
     type: import("../schema").QuestionKeyType;
     title: string;
     backgroundColor: string;
-}, "type" | "title" | "backgroundColor" | ("createdAt" | "updatedAt" | "profileId" | "setbackThreshold" | "subtitle" | "description" | "debriefAfterMinutes" | "image" | "optionsById" | "isTemplate" | "language" | "href" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested")>;
+}, "type" | "title" | "backgroundColor" | ("createdAt" | "updatedAt" | "profileId" | "setbackThreshold" | "subtitle" | "description" | "debriefAfterMinutes" | "image" | "optionsById" | "isTemplate" | "language" | "linkUrl" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested")>;

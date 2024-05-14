@@ -21,7 +21,7 @@ export function tacticValueBaseSchema<K extends string>(type: K) {
     backgroundColor: yup.string().required(),
     isTemplate: yup.boolean().nullable(),
     language: yup.string().nullable(),
-    href: yup.string().url().nullable(),
+    linkUrl: yup.string().url().nullable(),
     categoryIds: yup.array().of(yup.string()).nullable(),
     isShared: yup.boolean().nullable(),
     isResponseRequired: yup.boolean().nullable(),
