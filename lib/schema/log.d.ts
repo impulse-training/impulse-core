@@ -128,6 +128,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
         [x: string]: {
             tactic?: any;
             path: string;
+            id: string;
             strategyId: string;
         };
     };
@@ -288,6 +289,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         [x: string]: {
             tactic?: any;
             path: string;
+            id: string;
             strategyId: string;
         };
     };
@@ -470,6 +472,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
         [x: string]: {
             tactic?: any;
             path: string;
+            id: string;
             strategyId: string;
         };
     };
@@ -636,6 +639,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
         [x: string]: {
             tactic?: any;
             path: string;
+            id: string;
             strategyId: string;
         };
     };
@@ -770,6 +774,7 @@ export declare const logSchema: yup.Lazy<{
         [x: string]: {
             tactic?: any;
             path: string;
+            id: string;
             strategyId: string;
         };
     };
@@ -894,6 +899,7 @@ export declare const logSchema: yup.Lazy<{
         [x: string]: {
             tactic?: any;
             path: string;
+            id: string;
             strategyId: string;
         };
     };
@@ -1021,6 +1027,7 @@ export declare const logSchema: yup.Lazy<{
         [x: string]: {
             tactic?: any;
             path: string;
+            id: string;
             strategyId: string;
         };
     };

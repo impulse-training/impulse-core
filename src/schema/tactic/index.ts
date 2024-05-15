@@ -4,7 +4,6 @@ import { AudioTacticValue, audioTacticSchema } from './audio';
 import { BreatheTacticValue, breatheTacticSchema } from './breathe';
 import { DayReviewTacticValue, dayReviewTacticSchema } from './dayReview';
 import { EmotionsTacticValue, emotionsTacticSchema } from './emotions';
-import { LinkTacticValue, linkTacticSchema } from './link';
 import { PhoneTacticValue, phoneTacticSchema } from './phone';
 import { QuestionTacticValue, questionTacticSchemas } from './question';
 import { StepsTacticValue, stepsTacticSchema } from './steps';
@@ -16,7 +15,6 @@ export * from './audio';
 export * from './breathe';
 export * from './dayReview';
 export * from './emotions';
-export * from './link';
 export * from './phone';
 export * from './question';
 export * from './steps';
@@ -33,7 +31,6 @@ export type TacticValue =
   | QuestionTacticValue
   | TaskTacticValue
   | BreatheTacticValue
-  | LinkTacticValue
   | StepsTacticValue
   | EmotionsTacticValue
   | DayReviewTacticValue;
@@ -46,7 +43,6 @@ export const tacticSchemas: Record<
   phone: phoneTacticSchema,
   audio: audioTacticSchema,
   video: videoTacticSchema,
-  link: linkTacticSchema,
   ...questionTacticSchemas,
   breathe: breatheTacticSchema,
   steps: stepsTacticSchema,
@@ -83,6 +79,7 @@ type ValidatedTactic = {
 }[TacticValue['type']];
 
 export const tacticInfoSchema = yup.object({
+  id: yup.string().required(),
   path: yup.string().required(),
   strategyId: yup.string().required(),
   tactic: tacticSchema as any, // This is overwritten by casting with the WithTacticsById type
