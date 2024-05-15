@@ -5,7 +5,8 @@ import { DocumentSnapshotLike } from './firestore/DocumentSnapshotLike';
 export function tacticsById(
   tactics: DocumentSnapshotLike<TacticValue>[]
 ): TacticsById {
-  return mapValues(keyBy(tactics, 'id'), doc => ({
+  return mapValues(keyBy(tactics, 'id'), (doc, id) => ({
+    id,
     path: doc.ref.path,
     tactic: doc.data()!,
   }));

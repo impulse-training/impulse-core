@@ -3,7 +3,10 @@
 import * as yup from 'yup';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 import { commentSchema } from './comment';
-import { tacticsByIdSchema } from './tactic';
+import {
+  TacticsByIdWithStrategy,
+  tacticInfoWithStrategySchema,
+} from './tactic';
 import { optionalStringArray, requiredStringArray } from './utils/array';
 import { documentReferenceSchema } from './utils/firestore';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
@@ -55,7 +58,7 @@ const baseLogSchema = yup.object().shape({
 
   // TODO: These represent seen tactics, but this may need some clarification
   tacticIds: requiredStringArray,
-  tacticsById: tacticsByIdSchema,
+  tacticsById: tacticInfoWithStrategySchema,
   tacticLikes: optionalObjectOf(yup.boolean().required()),
   tacticData: objectOf(tacticDataSchema),
   sharedWithSupportGroupIds: optionalStringArray,
@@ -64,11 +67,12 @@ const baseLogSchema = yup.object().shape({
 
 type WithTypes<T extends yup.ISchema<unknown>> = Omit<
   yup.InferType<T>,
-  'createdAt' | 'updatedAt' | 'startTime'
+  'createdAt' | 'updatedAt' | 'startTime' | 'tacticsById'
 > & {
   createdAt: TimestampLike;
   updatedAt: TimestampLike;
   startTime: TimestampLike;
+  tacticsById: TacticsByIdWithStrategy;
 };
 
 export type ImpulseLogValue = WithTypes<typeof impulseLogSchema>;

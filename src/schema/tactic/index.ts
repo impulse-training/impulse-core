@@ -81,15 +81,26 @@ type ValidatedTactic = {
 export const tacticInfoSchema = yup.object({
   id: yup.string().required(),
   path: yup.string().required(),
-  strategyId: yup.string().required(),
   tactic: tacticSchema as any, // This is overwritten by casting with the WithTacticsById type
 });
-export type TacticInfo = yup.InferType<typeof tacticInfoSchema>;
+export type TacticInfo = Omit<
+  yup.InferType<typeof tacticInfoSchema>,
+  'tactic'
+> & { tactic: TacticValue };
 export const tacticsByIdSchema = objectOf(tacticInfoSchema);
-
-export type TacticsById = Record<string, { tactic: TacticValue; path: string }>;
+export type TacticsById = Record<string, TacticInfo>;
 
 // Export type guard functions for each tactic type (TT)
 export type WithTacticsById<T> = Omit<T, 'tacticsById'> & {
   tacticsById: TacticsById;
 };
+
+export const tacticInfoWithStrategySchema = tacticInfoSchema.shape({
+  strategyId: yup.string().required(),
+});
+export type TacticInfoWithStrategy = Omit<
+  yup.InferType<typeof tacticInfoWithStrategySchema>,
+  'tactic'
+> & { tactic: TacticValue };
+
+export type TacticsByIdWithStrategy = Record<string, TacticInfoWithStrategy>;

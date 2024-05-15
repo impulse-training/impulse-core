@@ -14,7 +14,6 @@ export declare const strategySchema: yup.ObjectSchema<{
             tactic?: any;
             path: string;
             id: string;
-            strategyId: string;
         };
     };
     profileId: string | undefined;

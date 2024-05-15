@@ -29,27 +29,38 @@ type ValidatedTactic = {
 export declare const tacticInfoSchema: yup.ObjectSchema<{
     id: string;
     path: string;
-    strategyId: string;
     tactic: any;
 }, yup.AnyObject, {
     id: undefined;
     path: undefined;
-    strategyId: undefined;
     tactic: any;
 }, "">;
-export type TacticInfo = yup.InferType<typeof tacticInfoSchema>;
+export type TacticInfo = Omit<yup.InferType<typeof tacticInfoSchema>, 'tactic'> & {
+    tactic: TacticValue;
+};
 export declare const tacticsByIdSchema: yup.Lazy<{
     [x: string]: {
         tactic?: any;
         path: string;
         id: string;
-        strategyId: string;
     };
 }, yup.AnyObject, any>;
-export type TacticsById = Record<string, {
-    tactic: TacticValue;
-    path: string;
-}>;
+export type TacticsById = Record<string, TacticInfo>;
 export type WithTacticsById<T> = Omit<T, 'tacticsById'> & {
     tacticsById: TacticsById;
 };
+export declare const tacticInfoWithStrategySchema: yup.ObjectSchema<{
+    id: string;
+    path: string;
+    tactic: any;
+    strategyId: string;
+}, yup.AnyObject, {
+    id: undefined;
+    path: undefined;
+    tactic: any;
+    strategyId: undefined;
+}, "">;
+export type TacticInfoWithStrategy = Omit<yup.InferType<typeof tacticInfoWithStrategySchema>, 'tactic'> & {
+    tactic: TacticValue;
+};
+export type TacticsByIdWithStrategy = Record<string, TacticInfoWithStrategy>;
