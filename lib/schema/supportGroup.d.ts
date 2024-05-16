@@ -29,8 +29,8 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
     icon: {};
     thumbnailUrl: string;
     lastMessagePreview: string | undefined;
-    invitationCode: string | undefined;
-    invitationUrl: string | undefined;
+    invitationCode: string;
+    invitationUrl: string;
     lastMessageProfileId: string | undefined;
     isSharingDisabled: boolean | undefined;
     isTemplate: boolean | undefined;

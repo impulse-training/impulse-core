@@ -14,4 +14,6 @@ export const makeSupportGroupFactory = (TimestampKlass: typeof TimestampLike) =>
     profileNicknames: { abc123: 'Mooky' },
     creatorProfileId: 'abc123',
     icon: 'group',
+    invitationCode: 'abc123',
+    invitationUrl: 'https://impulse.training/support?c=abc123',
   });

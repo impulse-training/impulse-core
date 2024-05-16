@@ -5,5 +5,6 @@ export * from './errors';
 export * from './firestore/TimestampLike';
 export * from './formatValue';
 export * from './routines';
+export * from './supportGroups';
 export * from './tactics';
 export * from './urls';

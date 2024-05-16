@@ -76,7 +76,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         toDate: Function;
     } | null | undefined;
     isTemplate?: boolean | undefined;
-    invitationCode?: string | undefined;
     slug?: string | undefined;
     templateId?: string | undefined;
     everythingPermissions?: boolean | undefined;
@@ -92,15 +91,16 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         [x: string]: string;
     } | null | undefined;
     lastMessagePreview?: string | undefined;
-    invitationUrl?: string | undefined;
     lastMessageProfileId?: string | undefined;
     isSharingDisabled?: boolean | undefined;
     thumbnailUrl: string;
+    invitationCode: string;
     participantProfileIds: string[];
     groupName: string;
     icon: {};
+    invitationUrl: string;
     unreadCounts: {
         [x: string]: number;
     };
     permissions: {};
-}, "thumbnailUrl" | "participantProfileIds" | "groupName" | "icon" | "unreadCounts" | "permissions" | ("createdAt" | "updatedAt" | "isTemplate" | "invitationCode" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "creatorProfileId" | "profileNicknames" | "lastMessagePreview" | "invitationUrl" | "lastMessageProfileId" | "isSharingDisabled")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "title" | "subtitle" | "description" | "debriefAfterMinutes" | "image" | "optionsById" | "backgroundColor" | "isTemplate" | "language" | "linkUrl" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
+}, "thumbnailUrl" | "invitationCode" | "participantProfileIds" | "groupName" | "icon" | "invitationUrl" | "unreadCounts" | "permissions" | ("createdAt" | "updatedAt" | "isTemplate" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "creatorProfileId" | "profileNicknames" | "lastMessagePreview" | "lastMessageProfileId" | "isSharingDisabled")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "title" | "subtitle" | "description" | "debriefAfterMinutes" | "image" | "optionsById" | "backgroundColor" | "isTemplate" | "language" | "linkUrl" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
