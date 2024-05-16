@@ -398,7 +398,8 @@ export declare const factories: {
         synonyms: string[];
         parentIds: string[];
         parentNames: string[];
-    }, "createdAt" | "updatedAt" | "debriefTactic" | "name" | "synonyms" | "parentIds" | "parentNames" | ("path" | "setbackThreshold" | "parentId" | "strategiesCount" | "profileCount" | "isFeatured")>;
+        therapistProfileIds: string[];
+    }, "createdAt" | "updatedAt" | "debriefTactic" | "name" | "synonyms" | "parentIds" | "parentNames" | "therapistProfileIds" | ("path" | "setbackThreshold" | "parentId" | "strategiesCount" | "profileCount" | "isFeatured")>;
     supportGroupFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;

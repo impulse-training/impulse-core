@@ -211,6 +211,7 @@ export declare const issueSchema: yup.ObjectSchema<{
     strategiesCount: number | null | undefined;
     profileCount: number | null | undefined;
     isFeatured: boolean | null | undefined;
+    therapistProfileIds: string[];
 }, yup.AnyObject, {
     createdAt: {
         seconds: undefined;
@@ -233,5 +234,6 @@ export declare const issueSchema: yup.ObjectSchema<{
     strategiesCount: undefined;
     profileCount: undefined;
     isFeatured: undefined;
+    therapistProfileIds: "";
 }, "">;
 export type IssueValue = yup.InferType<typeof issueSchema>;
