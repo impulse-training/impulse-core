@@ -10,4 +10,5 @@ export const makeProfileFactory = (TimestampKlass: typeof TimestampLike) =>
     timezone: 'America/Bogota',
     invitationCode: 'abc123',
     notificationPreferences: {},
+    uids: ['uid1', 'uid2'],
   });
