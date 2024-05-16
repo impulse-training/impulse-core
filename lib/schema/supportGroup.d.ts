@@ -22,7 +22,7 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
         [x: symbol]: string;
     } | undefined;
     groupDescription: string | undefined;
-    creatorProfileId: string;
+    creatorProfileId: string | undefined;
     profileNicknames: {
         [x: string]: string;
     } | null | undefined;

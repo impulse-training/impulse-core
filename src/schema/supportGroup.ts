@@ -17,7 +17,7 @@ export const supportGroupSchema = yup.object().shape({
     .lazy(obj => yup.object(mapValues(obj, () => yup.string().required())))
     .optional(),
   groupDescription: yup.string().optional(),
-  creatorProfileId: yup.string().required(),
+  creatorProfileId: yup.string(),
   profileNicknames: optionalObjectOf(yup.string().required()),
   icon: yup.mixed().oneOf(['bugs', 'team', 'group', 'tactics']).required(),
   thumbnailUrl: yup.string().url().required(),
