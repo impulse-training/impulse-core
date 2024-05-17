@@ -1,9 +1,10 @@
 import * as yup from 'yup';
-import { WithTacticsById } from '.';
-export declare const strategySchema: yup.ObjectSchema<{
+import { WithTacticsById } from '../tactic';
+export declare const dailyStrategySchema: yup.ObjectSchema<{
     ordinal: yup.Maybe<number | undefined>;
     name: string;
-    type: NonNullable<"time" | "impulse" | "debrief" | "daily" | undefined>;
+    type: "daily";
+    recommendedFor: "time" | "impulse" | undefined;
     recommendedForIssueIds: string[] | undefined;
     recommendedForIssueOrdinals: {
         [x: string]: number;
@@ -32,10 +33,12 @@ export declare const strategySchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    currentTacticIndex: number | undefined;
 }, yup.AnyObject, {
     ordinal: undefined;
     name: undefined;
     type: undefined;
+    recommendedFor: undefined;
     recommendedForIssueIds: "";
     recommendedForIssueOrdinals: undefined;
     tacticIds: "";
@@ -44,5 +47,6 @@ export declare const strategySchema: yup.ObjectSchema<{
     supportGroup: undefined;
     createdAt: undefined;
     updatedAt: undefined;
+    currentTacticIndex: undefined;
 }, "">;
-export type StrategyValue = WithTacticsById<yup.InferType<typeof strategySchema>>;
+export type DailyStrategyValue = WithTacticsById<yup.InferType<typeof dailyStrategySchema>>;

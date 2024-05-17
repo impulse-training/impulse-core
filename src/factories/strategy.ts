@@ -7,7 +7,7 @@ export const makeStrategyFactory = (TimestampKlass: typeof TimestampLike) =>
     name: 'Get moving',
     tacticIds: [],
     tacticsById: {},
-    type: 'impulse',
+    type: 'folder',
     ordinal: Factory.each(i => i),
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
