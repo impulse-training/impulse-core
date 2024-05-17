@@ -8,8 +8,8 @@ export const strategySchema = yup.object({
   ordinal: yup.number().notRequired(),
   name: yup.string().required(),
   type: yup
-    .mixed<'impulse' | 'time' | 'debrief'>()
-    .oneOf(['impulse', 'time', 'debrief'])
+    .mixed<'impulse' | 'time' | 'debrief' | 'daily'>()
+    .oneOf(['impulse', 'time', 'debrief', 'daily'])
     .required(),
   recommendedForIssueIds: optionalStringArray,
   recommendedForIssueOrdinals: optionalObjectOf(yup.number().required()),
