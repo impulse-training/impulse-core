@@ -18,6 +18,7 @@ export declare const dailyStrategySchema: yup.ObjectSchema<{
         };
     };
     profileId: string | undefined;
+    subscribeToAllTactics: boolean | undefined;
     supportGroup: {
         id: string;
         name: string;
@@ -33,7 +34,13 @@ export declare const dailyStrategySchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    currentTacticIndex: number | undefined;
+    currentTacticId: string | undefined;
+    image: {
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
+        uri?: yup.Maybe<string | undefined>;
+    } | undefined;
+    description: string;
 }, yup.AnyObject, {
     ordinal: undefined;
     name: undefined;
@@ -44,9 +51,16 @@ export declare const dailyStrategySchema: yup.ObjectSchema<{
     tacticIds: "";
     tacticsById: undefined;
     profileId: undefined;
+    subscribeToAllTactics: undefined;
     supportGroup: undefined;
     createdAt: undefined;
     updatedAt: undefined;
-    currentTacticIndex: undefined;
+    currentTacticId: undefined;
+    image: {
+        localFilePath: undefined;
+        storagePath: undefined;
+        uri: undefined;
+    };
+    description: undefined;
 }, "">;
 export type DailyStrategyValue = WithTacticsById<yup.InferType<typeof dailyStrategySchema>>;

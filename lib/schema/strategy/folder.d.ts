@@ -18,6 +18,7 @@ export declare const folderStrategySchema: yup.ObjectSchema<{
         };
     };
     profileId: string | undefined;
+    subscribeToAllTactics: boolean | undefined;
     supportGroup: {
         id: string;
         name: string;
@@ -43,6 +44,7 @@ export declare const folderStrategySchema: yup.ObjectSchema<{
     tacticIds: "";
     tacticsById: undefined;
     profileId: undefined;
+    subscribeToAllTactics: undefined;
     supportGroup: undefined;
     createdAt: undefined;
     updatedAt: undefined;

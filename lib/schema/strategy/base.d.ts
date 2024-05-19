@@ -17,6 +17,7 @@ export declare function strategyBaseSchema<K extends string>(type: K): yup.Objec
         };
     };
     profileId: string | undefined;
+    subscribeToAllTactics: boolean | undefined;
     supportGroup: {
         id: string;
         name: string;
@@ -42,6 +43,7 @@ export declare function strategyBaseSchema<K extends string>(type: K): yup.Objec
     tacticIds: "";
     tacticsById: undefined;
     profileId: undefined;
+    subscribeToAllTactics: undefined;
     supportGroup: undefined;
     createdAt: undefined;
     updatedAt: undefined;
