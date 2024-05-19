@@ -15,8 +15,8 @@ export declare const commentSchema: yup.ObjectSchema<{
     text: string | undefined;
     profileId: string;
     recording: {
+        localFilePath?: string | undefined;
         waveform?: string | null | undefined;
-        localFilePath: string;
         remoteFilePath: string;
     } | undefined;
     isEdited: boolean | undefined;

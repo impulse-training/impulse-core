@@ -15,8 +15,8 @@ export declare const makeCommentFactory: (TimestampKlass: typeof TimestampLike) 
     tacticTitle?: string | null | undefined;
     text?: string | undefined;
     recording?: {
+        localFilePath?: string | undefined;
         waveform?: string | null | undefined;
-        localFilePath: string;
         remoteFilePath: string;
     } | undefined;
     isEdited?: boolean | undefined;

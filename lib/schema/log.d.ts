@@ -76,8 +76,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
             tacticTitle?: string | null | undefined;
             text?: string | undefined;
             recording?: {
+                localFilePath?: string | undefined;
                 waveform?: string | null | undefined;
-                localFilePath: string;
                 remoteFilePath: string;
             } | undefined;
             isEdited?: boolean | undefined;
@@ -108,8 +108,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     tacticTitle?: string | null | undefined;
                     text?: string | undefined;
                     recording?: {
+                        localFilePath?: string | undefined;
                         waveform?: string | null | undefined;
-                        localFilePath: string;
                         remoteFilePath: string;
                     } | undefined;
                     isEdited?: boolean | undefined;
@@ -241,8 +241,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             tacticTitle?: string | null | undefined;
             text?: string | undefined;
             recording?: {
+                localFilePath?: string | undefined;
                 waveform?: string | null | undefined;
-                localFilePath: string;
                 remoteFilePath: string;
             } | undefined;
             isEdited?: boolean | undefined;
@@ -273,8 +273,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     tacticTitle?: string | null | undefined;
                     text?: string | undefined;
                     recording?: {
+                        localFilePath?: string | undefined;
                         waveform?: string | null | undefined;
-                        localFilePath: string;
                         remoteFilePath: string;
                     } | undefined;
                     isEdited?: boolean | undefined;
@@ -427,8 +427,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
             tacticTitle?: string | null | undefined;
             text?: string | undefined;
             recording?: {
+                localFilePath?: string | undefined;
                 waveform?: string | null | undefined;
-                localFilePath: string;
                 remoteFilePath: string;
             } | undefined;
             isEdited?: boolean | undefined;
@@ -459,8 +459,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     tacticTitle?: string | null | undefined;
                     text?: string | undefined;
                     recording?: {
+                        localFilePath?: string | undefined;
                         waveform?: string | null | undefined;
-                        localFilePath: string;
                         remoteFilePath: string;
                     } | undefined;
                     isEdited?: boolean | undefined;
@@ -597,8 +597,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
             tacticTitle?: string | null | undefined;
             text?: string | undefined;
             recording?: {
+                localFilePath?: string | undefined;
                 waveform?: string | null | undefined;
-                localFilePath: string;
                 remoteFilePath: string;
             } | undefined;
             isEdited?: boolean | undefined;
@@ -629,8 +629,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     tacticTitle?: string | null | undefined;
                     text?: string | undefined;
                     recording?: {
+                        localFilePath?: string | undefined;
                         waveform?: string | null | undefined;
-                        localFilePath: string;
                         remoteFilePath: string;
                     } | undefined;
                     isEdited?: boolean | undefined;
@@ -745,8 +745,8 @@ export declare const logSchema: yup.Lazy<{
                     tacticTitle?: string | null | undefined;
                     text?: string | undefined;
                     recording?: {
+                        localFilePath?: string | undefined;
                         waveform?: string | null | undefined;
-                        localFilePath: string;
                         remoteFilePath: string;
                     } | undefined;
                     isEdited?: boolean | undefined;
@@ -822,8 +822,8 @@ export declare const logSchema: yup.Lazy<{
             tacticTitle?: string | null | undefined;
             text?: string | undefined;
             recording?: {
+                localFilePath?: string | undefined;
                 waveform?: string | null | undefined;
-                localFilePath: string;
                 remoteFilePath: string;
             } | undefined;
             isEdited?: boolean | undefined;
@@ -885,8 +885,8 @@ export declare const logSchema: yup.Lazy<{
                     tacticTitle?: string | null | undefined;
                     text?: string | undefined;
                     recording?: {
+                        localFilePath?: string | undefined;
                         waveform?: string | null | undefined;
-                        localFilePath: string;
                         remoteFilePath: string;
                     } | undefined;
                     isEdited?: boolean | undefined;
@@ -945,8 +945,8 @@ export declare const logSchema: yup.Lazy<{
             tacticTitle?: string | null | undefined;
             text?: string | undefined;
             recording?: {
+                localFilePath?: string | undefined;
                 waveform?: string | null | undefined;
-                localFilePath: string;
                 remoteFilePath: string;
             } | undefined;
             isEdited?: boolean | undefined;
@@ -1011,8 +1011,8 @@ export declare const logSchema: yup.Lazy<{
                     tacticTitle?: string | null | undefined;
                     text?: string | undefined;
                     recording?: {
+                        localFilePath?: string | undefined;
                         waveform?: string | null | undefined;
-                        localFilePath: string;
                         remoteFilePath: string;
                     } | undefined;
                     isEdited?: boolean | undefined;
@@ -1071,8 +1071,8 @@ export declare const logSchema: yup.Lazy<{
             tacticTitle?: string | null | undefined;
             text?: string | undefined;
             recording?: {
+                localFilePath?: string | undefined;
                 waveform?: string | null | undefined;
-                localFilePath: string;
                 remoteFilePath: string;
             } | undefined;
             isEdited?: boolean | undefined;

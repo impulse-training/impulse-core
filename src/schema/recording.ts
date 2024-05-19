@@ -1,7 +1,7 @@
 import * as yup from 'yup';
 
 export const recordingSchema = yup.object({
-  localFilePath: yup.string().required("Your message hasn't been recorded!"),
+  localFilePath: yup.string(),
   remoteFilePath: yup
     .string()
     .required("Your message hasn't been uploaded yet!"),

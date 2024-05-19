@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 export declare const recordingSchema: yup.ObjectSchema<{
-    localFilePath: string;
+    localFilePath: string | undefined;
     remoteFilePath: string;
     waveform: string | null | undefined;
 }, yup.AnyObject, {

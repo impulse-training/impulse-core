@@ -94,8 +94,8 @@ export declare const audioTacticSchema: yup.ObjectSchema<{
     numberOfLikes: number | null | undefined;
     isSuggested: boolean | undefined;
     recording: {
+        localFilePath?: string | undefined;
         waveform?: string | null | undefined;
-        localFilePath: string;
         remoteFilePath: string;
     };
 }, yup.AnyObject, {
