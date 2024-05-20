@@ -23,17 +23,12 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
     } | undefined;
     groupDescription: string | undefined;
     creatorProfileId: string | undefined;
-    profileNicknames: {
-        [x: string]: string;
-    } | null | undefined;
-    icon: {};
     thumbnailUrl: string;
     lastMessagePreview: string | undefined;
     invitationCode: string;
     invitationUrl: string;
     lastMessageProfileId: string | undefined;
     isSharingDisabled: boolean | undefined;
-    isTemplate: boolean | undefined;
     unreadCounts: {
         [x: string]: number;
     };
@@ -50,15 +45,12 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
     groupNameAliases: undefined;
     groupDescription: undefined;
     creatorProfileId: undefined;
-    profileNicknames: undefined;
-    icon: undefined;
     thumbnailUrl: undefined;
     lastMessagePreview: undefined;
     invitationCode: undefined;
     invitationUrl: undefined;
     lastMessageProfileId: undefined;
     isSharingDisabled: undefined;
-    isTemplate: undefined;
     unreadCounts: undefined;
     permissions: undefined;
 }, "">;

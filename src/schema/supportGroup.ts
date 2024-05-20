@@ -1,7 +1,7 @@
 import { mapValues } from 'lodash';
 import * as yup from 'yup';
 import { requiredStringArray } from './utils/array';
-import { objectOf, optionalObjectOf } from './utils/objectOf';
+import { objectOf } from './utils/objectOf';
 import { optionalTimestampSchema } from './utils/timestamp';
 
 export const supportGroupSchema = yup.object().shape({
@@ -18,17 +18,14 @@ export const supportGroupSchema = yup.object().shape({
     .optional(),
   groupDescription: yup.string().optional(),
   creatorProfileId: yup.string(),
-  profileNicknames: optionalObjectOf(yup.string().required()),
-  icon: yup.mixed().oneOf(['bugs', 'team', 'group', 'tactics']).required(),
   thumbnailUrl: yup.string().url().required(),
   lastMessagePreview: yup.string().optional(),
   invitationCode: yup.string().required(),
   invitationUrl: yup.string().url().required(),
   lastMessageProfileId: yup.string().optional(),
   isSharingDisabled: yup.boolean().optional(),
-  isTemplate: yup.boolean().optional(),
   unreadCounts: objectOf(yup.number().required()),
-  permissions: yup.mixed().required(), // You would replace this with the actual schema for SupportGroupPermissions
+  permissions: yup.mixed().required(),
 });
 
 export type SupportGroupValue = yup.InferType<typeof supportGroupSchema>;

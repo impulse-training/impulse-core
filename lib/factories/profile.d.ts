@@ -40,5 +40,6 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     scheduledNotificationIds?: string[] | undefined;
     timezone: string;
     invitationCode: string;
+    supportGroups: (import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined)[];
     uids: string[];
-}, "timezone" | "invitationCode" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "debriefAfterMinutes" | "debriefTactic" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "issueName" | "isTourCompleted" | "androidPermissions" | "parentIssueIds" | "region" | "scheduledNotificationIds")>;
+}, "timezone" | "invitationCode" | "supportGroups" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "debriefAfterMinutes" | "debriefTactic" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "issueName" | "isTourCompleted" | "androidPermissions" | "parentIssueIds" | "region" | "scheduledNotificationIds")>;
