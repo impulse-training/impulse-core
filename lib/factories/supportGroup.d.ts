@@ -25,13 +25,26 @@ export declare const makeSupportGroupFactory: (TimestampKlass: typeof TimestampL
     lastMessagePreview?: string | undefined;
     lastMessageProfileId?: string | undefined;
     isSharingDisabled?: boolean | undefined;
-    thumbnailUrl: string;
+    tacticPreviewsById?: {
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        image?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | undefined;
+        backgroundColor?: string | undefined;
+        title: string;
+    }[] | undefined;
+    unreadCounts?: {
+        [x: string]: number;
+    } | null | undefined;
+    permissions?: {} | undefined;
     invitationCode: string;
     participantProfileIds: string[];
     groupName: string;
     invitationUrl: string;
-    unreadCounts: {
-        [x: string]: number;
-    };
-    permissions: {};
-}, "thumbnailUrl" | "invitationCode" | "participantProfileIds" | "groupName" | "invitationUrl" | "unreadCounts" | "permissions" | ("createdAt" | "updatedAt" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "creatorProfileId" | "lastMessagePreview" | "lastMessageProfileId" | "isSharingDisabled")>;
+}, "invitationCode" | "participantProfileIds" | "groupName" | "invitationUrl" | ("createdAt" | "updatedAt" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "creatorProfileId" | "lastMessagePreview" | "lastMessageProfileId" | "isSharingDisabled" | "tacticPreviewsById" | "unreadCounts" | "permissions")>;

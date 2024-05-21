@@ -1,4 +1,28 @@
 import * as yup from 'yup';
+export declare const tacticPreviewSchema: yup.ObjectSchema<{
+    title: string;
+    image: {
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
+        uri?: yup.Maybe<string | undefined>;
+    } | undefined;
+    backgroundColor: string | undefined;
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+}, yup.AnyObject, {
+    title: undefined;
+    image: {
+        localFilePath: undefined;
+        storagePath: undefined;
+        uri: undefined;
+    };
+    backgroundColor: undefined;
+    updatedAt: undefined;
+}, "">;
+export type TacticPreviewValue = yup.InferType<typeof tacticPreviewSchema>;
 export declare const supportGroupSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
@@ -23,16 +47,29 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
     } | undefined;
     groupDescription: string | undefined;
     creatorProfileId: string | undefined;
-    thumbnailUrl: string;
     lastMessagePreview: string | undefined;
     invitationCode: string;
     invitationUrl: string;
     lastMessageProfileId: string | undefined;
     isSharingDisabled: boolean | undefined;
+    tacticPreviewsById: {
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        image?: {
+            localFilePath?: yup.Maybe<string | undefined>;
+            storagePath?: yup.Maybe<string | undefined>;
+            uri?: yup.Maybe<string | undefined>;
+        } | undefined;
+        backgroundColor?: string | undefined;
+        title: string;
+    }[] | undefined;
     unreadCounts: {
         [x: string]: number;
-    };
-    permissions: {};
+    } | null | undefined;
+    permissions: {} | undefined;
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
@@ -45,14 +82,14 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
     groupNameAliases: undefined;
     groupDescription: undefined;
     creatorProfileId: undefined;
-    thumbnailUrl: undefined;
     lastMessagePreview: undefined;
     invitationCode: undefined;
     invitationUrl: undefined;
     lastMessageProfileId: undefined;
     isSharingDisabled: undefined;
+    tacticPreviewsById: "";
     unreadCounts: undefined;
-    permissions: undefined;
+    permissions: {};
 }, "">;
 export type SupportGroupValue = yup.InferType<typeof supportGroupSchema>;
 export type PermissionKey = keyof typeof CONVERSATION_PERMISSIONS;

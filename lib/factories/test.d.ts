@@ -64,7 +64,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     scheduledNotificationIds?: string[] | undefined;
     timezone: string;
     invitationCode: string;
-    supportGroups: (import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined)[];
+    supportGroups: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[];
     uids: string[];
 }, "timezone" | "invitationCode" | "supportGroups" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "debriefAfterMinutes" | "debriefTactic" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "issueName" | "isTourCompleted" | "androidPermissions" | "parentIssueIds" | "region" | "scheduledNotificationIds")>, supportGroupFactory: import("factory.ts").Factory<{
     createdAt?: {
@@ -91,13 +91,26 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     lastMessagePreview?: string | undefined;
     lastMessageProfileId?: string | undefined;
     isSharingDisabled?: boolean | undefined;
-    thumbnailUrl: string;
+    tacticPreviewsById?: {
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        image?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | undefined;
+        backgroundColor?: string | undefined;
+        title: string;
+    }[] | undefined;
+    unreadCounts?: {
+        [x: string]: number;
+    } | null | undefined;
+    permissions?: {} | undefined;
     invitationCode: string;
     participantProfileIds: string[];
     groupName: string;
     invitationUrl: string;
-    unreadCounts: {
-        [x: string]: number;
-    };
-    permissions: {};
-}, "thumbnailUrl" | "invitationCode" | "participantProfileIds" | "groupName" | "invitationUrl" | "unreadCounts" | "permissions" | ("createdAt" | "updatedAt" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "creatorProfileId" | "lastMessagePreview" | "lastMessageProfileId" | "isSharingDisabled")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "title" | "subtitle" | "description" | "debriefAfterMinutes" | "image" | "optionsById" | "backgroundColor" | "isTemplate" | "language" | "linkUrl" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
+}, "invitationCode" | "participantProfileIds" | "groupName" | "invitationUrl" | ("createdAt" | "updatedAt" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "creatorProfileId" | "lastMessagePreview" | "lastMessageProfileId" | "isSharingDisabled" | "tacticPreviewsById" | "unreadCounts" | "permissions")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "title" | "subtitle" | "description" | "debriefAfterMinutes" | "image" | "optionsById" | "backgroundColor" | "isTemplate" | "language" | "linkUrl" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;

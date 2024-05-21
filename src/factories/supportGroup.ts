@@ -6,7 +6,6 @@ export const makeSupportGroupFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<SupportGroupValue>({
     groupName: 'Cold Turkey Warriors',
     participantProfileIds: [],
-    thumbnailUrl: '',
     permissions: {},
     unreadCounts: {},
     createdAt: TimestampKlass.now(),

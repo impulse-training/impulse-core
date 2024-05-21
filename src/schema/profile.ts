@@ -27,7 +27,7 @@ export const profileSchema = yup.object().shape({
   region: yup.string().nullable().optional(),
   timezone: yup.string().required(),
   invitationCode: yup.string().required(),
-  supportGroups: yup.array().of(documentReferenceSchema).required(),
+  supportGroups: yup.array().of(documentReferenceSchema.required()).required(),
   scheduledNotificationIds: optionalStringArray,
   uids: requiredStringArray,
 });

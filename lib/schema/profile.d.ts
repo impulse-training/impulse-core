@@ -39,7 +39,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     region: string | null | undefined;
     timezone: string;
     invitationCode: string;
-    supportGroups: (import("./utils/firestore").DocumentReferenceLike<unknown> | undefined)[];
+    supportGroups: import("./utils/firestore").DocumentReferenceLike<unknown>[];
     scheduledNotificationIds: string[] | undefined;
     uids: string[];
 }, yup.AnyObject, {

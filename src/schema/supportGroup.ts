@@ -1,8 +1,17 @@
 import { mapValues } from 'lodash';
 import * as yup from 'yup';
 import { requiredStringArray } from './utils/array';
-import { objectOf } from './utils/objectOf';
+import { imageSchema } from './utils/image';
+import { optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema } from './utils/timestamp';
+
+export const tacticPreviewSchema = yup.object({
+  title: yup.string().required(),
+  image: imageSchema.optional(),
+  backgroundColor: yup.string().optional(),
+  updatedAt: optionalTimestampSchema,
+});
+export type TacticPreviewValue = yup.InferType<typeof tacticPreviewSchema>;
 
 export const supportGroupSchema = yup.object().shape({
   createdAt: optionalTimestampSchema,
@@ -18,14 +27,14 @@ export const supportGroupSchema = yup.object().shape({
     .optional(),
   groupDescription: yup.string().optional(),
   creatorProfileId: yup.string(),
-  thumbnailUrl: yup.string().url().required(),
   lastMessagePreview: yup.string().optional(),
   invitationCode: yup.string().required(),
   invitationUrl: yup.string().url().required(),
   lastMessageProfileId: yup.string().optional(),
   isSharingDisabled: yup.boolean().optional(),
-  unreadCounts: objectOf(yup.number().required()),
-  permissions: yup.mixed().required(),
+  tacticPreviewsById: yup.array().of(tacticPreviewSchema.required()),
+  unreadCounts: optionalObjectOf(yup.number().required()),
+  permissions: yup.object().optional(),
 });
 
 export type SupportGroupValue = yup.InferType<typeof supportGroupSchema>;
