@@ -123,7 +123,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
             };
         };
     } | null | undefined;
-    strategiesPath: string;
     tacticIds: string[];
     tacticsById: {
         tactic?: any;
@@ -150,7 +149,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
             formattedValue: string;
         };
     };
-    sharedWithSupportGroupIds: string[] | undefined;
+    supportGroups: import("./utils/firestore").DocumentReferenceLike<unknown>[];
 }, yup.AnyObject, {
     profileId: undefined;
     createdAt: undefined;
@@ -175,7 +174,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
     commentCount: undefined;
     commentsById: undefined;
     commentsByTacticId: undefined;
-    strategiesPath: undefined;
     tacticIds: "";
     tacticsById: {
         id: undefined;
@@ -185,7 +183,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
     };
     tacticLikes: undefined;
     tacticData: undefined;
-    sharedWithSupportGroupIds: "";
+    supportGroups: "";
 }, "">;
 type WithTypes<T extends yup.ISchema<unknown>> = Omit<yup.InferType<T>, 'createdAt' | 'updatedAt' | 'startTime' | 'tacticsById'> & {
     createdAt: TimestampLike;
@@ -288,7 +286,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             };
         };
     } | null | undefined;
-    strategiesPath: string;
     tacticIds: string[];
     tacticsById: {
         tactic?: any;
@@ -315,7 +312,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             formattedValue: string;
         };
     };
-    sharedWithSupportGroupIds: string[] | undefined;
+    supportGroups: import("./utils/firestore").DocumentReferenceLike<unknown>[];
 } & {
     type: "impulse";
     setAsActiveImpulse: yup.Maybe<boolean | undefined>;
@@ -360,7 +357,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     commentCount: undefined;
     commentsById: undefined;
     commentsByTacticId: undefined;
-    strategiesPath: undefined;
     tacticIds: "";
     tacticsById: {
         id: undefined;
@@ -370,7 +366,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     };
     tacticLikes: undefined;
     tacticData: undefined;
-    sharedWithSupportGroupIds: "";
+    supportGroups: "";
     type: undefined;
     setAsActiveImpulse: undefined;
     isDisplayable: undefined;
@@ -474,7 +470,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
             };
         };
     } | null | undefined;
-    strategiesPath: string;
     tacticIds: string[];
     tacticsById: {
         tactic?: any;
@@ -501,7 +496,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
             formattedValue: string;
         };
     };
-    sharedWithSupportGroupIds: string[] | undefined;
+    supportGroups: import("./utils/firestore").DocumentReferenceLike<unknown>[];
 } & {
     type: "location";
     locationId: string;
@@ -532,7 +527,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
     commentCount: undefined;
     commentsById: undefined;
     commentsByTacticId: undefined;
-    strategiesPath: undefined;
     tacticIds: "";
     tacticsById: {
         id: undefined;
@@ -542,7 +536,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
     };
     tacticLikes: undefined;
     tacticData: undefined;
-    sharedWithSupportGroupIds: "";
+    supportGroups: "";
     type: undefined;
     locationId: undefined;
     isDisplayable: undefined;
@@ -644,7 +638,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
             };
         };
     } | null | undefined;
-    strategiesPath: string;
     tacticIds: string[];
     tacticsById: {
         tactic?: any;
@@ -671,7 +664,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
             formattedValue: string;
         };
     };
-    sharedWithSupportGroupIds: string[] | undefined;
+    supportGroups: import("./utils/firestore").DocumentReferenceLike<unknown>[];
 } & {
     type: "time";
     isDisplayable: NonNullable<boolean | undefined>;
@@ -699,7 +692,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
     commentCount: undefined;
     commentsById: undefined;
     commentsByTacticId: undefined;
-    strategiesPath: undefined;
     tacticIds: "";
     tacticsById: {
         id: undefined;
@@ -709,7 +701,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
     };
     tacticLikes: undefined;
     tacticData: undefined;
-    sharedWithSupportGroupIds: "";
+    supportGroups: "";
     type: undefined;
     isDisplayable: undefined;
 }, "">;
@@ -763,7 +755,6 @@ export declare const logSchema: yup.Lazy<{
     tacticLikes?: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
-    sharedWithSupportGroupIds?: string[] | undefined;
     setAsActiveImpulse?: yup.Maybe<boolean | undefined>;
     debriefTactic?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
     debriefAfter?: {
@@ -783,7 +774,6 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     profileId: string;
     type: "impulse";
-    strategiesPath: string;
     tacticsById: {
         tactic?: any;
         path: string;
@@ -852,6 +842,7 @@ export declare const logSchema: yup.Lazy<{
             formattedValue: string;
         };
     };
+    supportGroups: import("./utils/firestore").DocumentReferenceLike<unknown>[];
     isDisplayable: NonNullable<boolean | undefined>;
 } | {
     createdAt?: {
@@ -903,10 +894,8 @@ export declare const logSchema: yup.Lazy<{
     tacticLikes?: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
-    sharedWithSupportGroupIds?: string[] | undefined;
     profileId: string;
     type: "location";
-    strategiesPath: string;
     tacticsById: {
         tactic?: any;
         path: string;
@@ -975,6 +964,7 @@ export declare const logSchema: yup.Lazy<{
             formattedValue: string;
         };
     };
+    supportGroups: import("./utils/firestore").DocumentReferenceLike<unknown>[];
     isDisplayable: NonNullable<boolean | undefined>;
     locationId: string;
     locationName: string;
@@ -1029,10 +1019,8 @@ export declare const logSchema: yup.Lazy<{
     tacticLikes?: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
-    sharedWithSupportGroupIds?: string[] | undefined;
     profileId: string;
     type: "time";
-    strategiesPath: string;
     tacticsById: {
         tactic?: any;
         path: string;
@@ -1101,6 +1089,7 @@ export declare const logSchema: yup.Lazy<{
             formattedValue: string;
         };
     };
+    supportGroups: import("./utils/firestore").DocumentReferenceLike<unknown>[];
     isDisplayable: NonNullable<boolean | undefined>;
 }, yup.AnyObject, any>;
 export type LogValue = ImpulseLogValue | LocationLogValue | TimeLogValue;

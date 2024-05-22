@@ -17,7 +17,7 @@ export const makeImpulseLogFactory = (TimestampKlass: typeof TimestampLike) =>
     tacticIds: [],
     tacticsById: {},
     tacticData: {},
-    strategiesPath: 'profiles/abc123/strategies',
+    supportGroups: [],
     commentsById: {},
   });
 
@@ -30,7 +30,7 @@ export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>
     startTime: TimestampKlass.now(),
     timezone: 'America/Bogota',
     isDisplayable: true,
-    strategiesPath: 'routines/abc123/strategies',
+    supportGroups: [],
     location: {},
     locationIsFetching: false,
     tacticIds: [],
@@ -51,7 +51,7 @@ export const makeLocationLogFactory = (TimestampKlass: typeof TimestampLike) =>
     locationId: 'abc123',
     locationMode: 'enter',
     locationName: 'Home',
-    strategiesPath: 'routines/abc123/strategies',
+    supportGroups: [],
     location: {},
     locationIsFetching: false,
     tacticIds: [],

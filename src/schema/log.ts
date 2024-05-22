@@ -7,7 +7,7 @@ import {
   TacticsByIdWithStrategy,
   tacticInfoWithStrategySchema,
 } from './tactic';
-import { optionalStringArray, requiredStringArray } from './utils/array';
+import { requiredStringArray } from './utils/array';
 import { documentReferenceSchema } from './utils/firestore';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
@@ -54,14 +54,12 @@ const baseLogSchema = yup.object().shape({
       commentsById: objectOf(commentSchema),
     })
   ),
-  strategiesPath: yup.string().required(),
-
   // TODO: These represent seen tactics, but this may need some clarification
   tacticIds: requiredStringArray,
   tacticsById: tacticInfoWithStrategySchema,
   tacticLikes: optionalObjectOf(yup.boolean().required()),
   tacticData: objectOf(tacticDataSchema),
-  sharedWithSupportGroupIds: optionalStringArray,
+  supportGroups: yup.array().of(documentReferenceSchema.required()).required(),
 });
 // This is important to prevent typescript generating a 40k line file :/
 

@@ -39,7 +39,7 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     region?: string | null | undefined;
     scheduledNotificationIds?: string[] | undefined;
     timezone: string;
-    invitationCode: string;
     supportGroups: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[];
+    invitationCode: string;
     uids: string[];
-}, "timezone" | "invitationCode" | "supportGroups" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "debriefAfterMinutes" | "debriefTactic" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "issueName" | "isTourCompleted" | "androidPermissions" | "parentIssueIds" | "region" | "scheduledNotificationIds")>;
+}, "timezone" | "supportGroups" | "invitationCode" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "debriefAfterMinutes" | "debriefTactic" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "issueName" | "isTourCompleted" | "androidPermissions" | "parentIssueIds" | "region" | "scheduledNotificationIds")>;
