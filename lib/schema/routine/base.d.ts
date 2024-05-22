@@ -5,7 +5,7 @@ export declare function routineBaseSchema<K extends string>(type: K): yup.Object
     type: yup.Defined<K>;
     profileId: string;
     name: string;
-    supportGroups: (import("../utils/firestore").DocumentReferenceLike<unknown> | undefined)[];
+    supportGroups: import("../utils/firestore").DocumentReferenceLike<unknown>[];
     createdAt: {
         seconds: number;
         nanoseconds: number;

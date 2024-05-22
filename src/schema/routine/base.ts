@@ -9,7 +9,10 @@ export function routineBaseSchema<K extends string>(type: K) {
     type: yup.mixed<K>().oneOf([type]).defined(),
     profileId: yup.string().required(),
     name: yup.string().required(),
-    supportGroups: yup.array().of(documentReferenceSchema).required(),
+    supportGroups: yup
+      .array()
+      .of(documentReferenceSchema.required())
+      .required(),
     createdAt: optionalTimestampSchema,
     updatedAt: optionalTimestampSchema,
   });

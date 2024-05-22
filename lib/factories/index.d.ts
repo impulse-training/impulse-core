@@ -562,7 +562,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         } | null | undefined;
         profileId: string;
         type: "time";
-        supportGroups: (import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined)[];
+        supportGroups: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[];
         hour: number;
         minute: number;
         name: string;
