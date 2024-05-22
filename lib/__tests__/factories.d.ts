@@ -561,9 +561,10 @@ export declare const factories: {
         } | null | undefined;
         profileId: string;
         type: "time";
+        supportGroups: (import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined)[];
         hour: number;
         minute: number;
         name: string;
         weekdays: number[];
-    }, "profileId" | "type" | "hour" | "minute" | "name" | "weekdays" | ("createdAt" | "updatedAt")>;
+    }, "profileId" | "type" | "supportGroups" | "hour" | "minute" | "name" | "weekdays" | ("createdAt" | "updatedAt")>;
 };
