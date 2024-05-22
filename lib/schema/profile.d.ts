@@ -27,7 +27,6 @@ export declare const profileSchema: yup.ObjectSchema<{
     notificationPreferences: {
         [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
     } | null | undefined;
-    debriefTactic: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
     debriefAfterMinutes: number | undefined;
     issueName: string | undefined;
     setbackThreshold: number | undefined;
@@ -51,7 +50,6 @@ export declare const profileSchema: yup.ObjectSchema<{
     expoPushToken: undefined;
     widgetInstalledAt: undefined;
     notificationPreferences: undefined;
-    debriefTactic: undefined;
     debriefAfterMinutes: undefined;
     issueName: undefined;
     setbackThreshold: undefined;

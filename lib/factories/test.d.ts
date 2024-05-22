@@ -37,7 +37,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     } | null | undefined;
     setbackThreshold?: number | undefined;
     debriefAfterMinutes?: number | undefined;
-    debriefTactic?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
     activeImpulseId?: string | undefined;
     currentAppState?: import("react-native/types").AppStateStatus | undefined;
     lastActiveAt?: {
@@ -66,7 +65,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     supportGroups: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[];
     invitationCode: string;
     uids: string[];
-}, "timezone" | "supportGroups" | "invitationCode" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "debriefAfterMinutes" | "debriefTactic" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "issueName" | "isTourCompleted" | "androidPermissions" | "parentIssueIds" | "region" | "scheduledNotificationIds")>, supportGroupFactory: import("factory.ts").Factory<{
+}, "timezone" | "supportGroups" | "invitationCode" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "debriefAfterMinutes" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "issueName" | "isTourCompleted" | "androidPermissions" | "parentIssueIds" | "region" | "scheduledNotificationIds")>, supportGroupFactory: import("factory.ts").Factory<{
     createdAt?: {
         seconds: number;
         nanoseconds: number;
