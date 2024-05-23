@@ -6,6 +6,7 @@ export * from './contact';
 export * from './dayLogsSummary';
 export * from './invitation';
 export * from './issue';
+export * from './like';
 export * from './location';
 export * from './log';
 export * from './mailTemplate';

@@ -288,6 +288,7 @@ export declare const factories: {
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             linkUrl?: string | null | undefined;
+            likesCount?: number | null | undefined;
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
@@ -384,6 +385,7 @@ export declare const factories: {
             isTemplate?: boolean | null | undefined;
             language?: string | null | undefined;
             linkUrl?: string | null | undefined;
+            likesCount?: number | null | undefined;
             categoryIds?: (string | undefined)[] | null | undefined;
             isShared?: boolean | null | undefined;
             isResponseRequired?: boolean | null | undefined;
@@ -450,7 +452,7 @@ export declare const factories: {
         invitationUrl: string;
     }, "invitationCode" | "participantProfileIds" | "groupName" | "invitationUrl" | ("createdAt" | "updatedAt" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "creatorProfileId" | "lastMessagePreview" | "lastMessageProfileId" | "isSharingDisabled" | "tacticPreviewsById" | "unreadCounts" | "permissions")>;
     messageFactory: import("factory.ts").Factory<import("..").MessageValue, keyof import("..").MessageValue>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "title" | "subtitle" | "description" | "debriefAfterMinutes" | "image" | "optionsById" | "backgroundColor" | "isTemplate" | "language" | "linkUrl" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "title" | "subtitle" | "description" | "debriefAfterMinutes" | "image" | "optionsById" | "backgroundColor" | "isTemplate" | "language" | "linkUrl" | "likesCount" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
     questionTimeTacticFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -535,6 +537,7 @@ export declare const factories: {
         isTemplate?: boolean | null | undefined;
         language?: string | null | undefined;
         linkUrl?: string | null | undefined;
+        likesCount?: number | null | undefined;
         categoryIds?: (string | undefined)[] | null | undefined;
         isShared?: boolean | null | undefined;
         isResponseRequired?: boolean | null | undefined;
@@ -545,7 +548,7 @@ export declare const factories: {
         type: import("..").QuestionKeyType;
         title: string;
         backgroundColor: string;
-    }, "type" | "title" | "backgroundColor" | ("createdAt" | "updatedAt" | "profileId" | "setbackThreshold" | "subtitle" | "description" | "debriefAfterMinutes" | "image" | "optionsById" | "isTemplate" | "language" | "linkUrl" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested")>;
+    }, "type" | "title" | "backgroundColor" | ("createdAt" | "updatedAt" | "profileId" | "setbackThreshold" | "subtitle" | "description" | "debriefAfterMinutes" | "image" | "optionsById" | "isTemplate" | "language" | "linkUrl" | "likesCount" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested")>;
     strategyFactory: import("factory.ts").Factory<import("..").StrategyValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "tacticIds" | "name" | "recommendedForIssueIds" | "ordinal" | "recommendedFor" | "recommendedForIssueOrdinals" | "subscribeToAllTactics" | "supportGroup">;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {

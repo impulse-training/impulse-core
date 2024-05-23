@@ -86,6 +86,7 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
     isTemplate: boolean | null | undefined;
     language: string | null | undefined;
     linkUrl: string | null | undefined;
+    likesCount: number | null | undefined;
     categoryIds: (string | undefined)[] | null | undefined;
     isShared: boolean | null | undefined;
     isResponseRequired: boolean | null | undefined;
@@ -113,6 +114,7 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
     isTemplate: undefined;
     language: undefined;
     linkUrl: undefined;
+    likesCount: undefined;
     categoryIds: "";
     isShared: undefined;
     isResponseRequired: undefined;
