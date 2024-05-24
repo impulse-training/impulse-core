@@ -19,6 +19,7 @@ export const makeImpulseLogFactory = (TimestampKlass: typeof TimestampLike) =>
     tacticData: {},
     supportGroups: [],
     commentsById: {},
+    questions: [],
   });
 
 export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>
@@ -37,6 +38,7 @@ export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>
     tacticsById: {},
     tacticData: {},
     commentsById: {},
+    questions: [],
   });
 
 export const makeLocationLogFactory = (TimestampKlass: typeof TimestampLike) =>
@@ -58,4 +60,5 @@ export const makeLocationLogFactory = (TimestampKlass: typeof TimestampLike) =>
     tacticsById: {},
     tacticData: {},
     commentsById: {},
+    questions: [],
   });

@@ -1,6 +1,16 @@
 import * as yup from 'yup';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 import { TacticsByIdWithStrategy } from './tactic';
+export declare const questionSchema: yup.ObjectSchema<{
+    prompt: string | undefined;
+    type: NonNullable<"time" | "slider" | "counter" | undefined>;
+    response: number | undefined;
+}, yup.AnyObject, {
+    prompt: undefined;
+    type: undefined;
+    response: undefined;
+}, "">;
+export type QuestionValue = yup.InferType<typeof questionSchema>;
 export declare const tacticDataSchema: yup.ObjectSchema<{
     value: number | undefined;
     unit: NonNullable<"time" | "custom" | undefined>;
@@ -57,6 +67,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
         heading?: number | undefined;
         speed?: number | undefined;
     };
+    questions: {
+        prompt?: string | undefined;
+        response?: number | undefined;
+        type: NonNullable<"time" | "slider" | "counter" | undefined>;
+    }[];
     locationIsFetching: NonNullable<boolean | undefined>;
     locationFormatted: yup.Maybe<string | undefined>;
     commentCount: yup.Maybe<number | undefined>;
@@ -169,6 +184,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
         heading: undefined;
         speed: undefined;
     };
+    questions: "";
     locationIsFetching: undefined;
     locationFormatted: undefined;
     commentCount: undefined;
@@ -220,6 +236,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         heading?: number | undefined;
         speed?: number | undefined;
     };
+    questions: {
+        prompt?: string | undefined;
+        response?: number | undefined;
+        type: NonNullable<"time" | "slider" | "counter" | undefined>;
+    }[];
     locationIsFetching: NonNullable<boolean | undefined>;
     locationFormatted: yup.Maybe<string | undefined>;
     commentCount: yup.Maybe<number | undefined>;
@@ -352,6 +373,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         heading: undefined;
         speed: undefined;
     };
+    questions: "";
     locationIsFetching: undefined;
     locationFormatted: undefined;
     commentCount: undefined;
@@ -404,6 +426,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
         heading?: number | undefined;
         speed?: number | undefined;
     };
+    questions: {
+        prompt?: string | undefined;
+        response?: number | undefined;
+        type: NonNullable<"time" | "slider" | "counter" | undefined>;
+    }[];
     locationIsFetching: NonNullable<boolean | undefined>;
     locationFormatted: yup.Maybe<string | undefined>;
     commentCount: yup.Maybe<number | undefined>;
@@ -522,6 +549,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
         heading: undefined;
         speed: undefined;
     };
+    questions: "";
     locationIsFetching: undefined;
     locationFormatted: undefined;
     commentCount: undefined;
@@ -572,6 +600,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
         heading?: number | undefined;
         speed?: number | undefined;
     };
+    questions: {
+        prompt?: string | undefined;
+        response?: number | undefined;
+        type: NonNullable<"time" | "slider" | "counter" | undefined>;
+    }[];
     locationIsFetching: NonNullable<boolean | undefined>;
     locationFormatted: yup.Maybe<string | undefined>;
     commentCount: yup.Maybe<number | undefined>;
@@ -687,6 +720,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
         heading: undefined;
         speed: undefined;
     };
+    questions: "";
     locationIsFetching: undefined;
     locationFormatted: undefined;
     commentCount: undefined;
@@ -795,6 +829,11 @@ export declare const logSchema: yup.Lazy<{
         heading?: number | undefined;
         speed?: number | undefined;
     };
+    questions: {
+        prompt?: string | undefined;
+        response?: number | undefined;
+        type: NonNullable<"time" | "slider" | "counter" | undefined>;
+    }[];
     locationIsFetching: NonNullable<boolean | undefined>;
     commentsById: {
         [x: string]: {
@@ -917,6 +956,11 @@ export declare const logSchema: yup.Lazy<{
         heading?: number | undefined;
         speed?: number | undefined;
     };
+    questions: {
+        prompt?: string | undefined;
+        response?: number | undefined;
+        type: NonNullable<"time" | "slider" | "counter" | undefined>;
+    }[];
     locationIsFetching: NonNullable<boolean | undefined>;
     commentsById: {
         [x: string]: {
@@ -1042,6 +1086,11 @@ export declare const logSchema: yup.Lazy<{
         heading?: number | undefined;
         speed?: number | undefined;
     };
+    questions: {
+        prompt?: string | undefined;
+        response?: number | undefined;
+        type: NonNullable<"time" | "slider" | "counter" | undefined>;
+    }[];
     locationIsFetching: NonNullable<boolean | undefined>;
     commentsById: {
         [x: string]: {

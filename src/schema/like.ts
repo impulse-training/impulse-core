@@ -7,4 +7,5 @@ export const likeSchema = yup.object({
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
 });
+
 export type LikeValue = yup.InferType<typeof likeSchema>;

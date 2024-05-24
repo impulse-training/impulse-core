@@ -12,6 +12,16 @@ import { documentReferenceSchema } from './utils/firestore';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
 
+export const questionSchema = yup.object({
+  prompt: yup.string(),
+  type: yup
+    .mixed<'slider' | 'time' | 'counter'>()
+    .oneOf(['slider', 'time', 'counter'])
+    .required(),
+  response: yup.number(),
+});
+export type QuestionValue = yup.InferType<typeof questionSchema>;
+
 export const tacticDataSchema = yup.object({
   value: yup.number(),
   unit: yup.mixed<'time' | 'custom'>().oneOf(['time', 'custom']).required(),
@@ -44,6 +54,7 @@ const baseLogSchema = yup.object().shape({
     heading: yup.number(),
     speed: yup.number(),
   }),
+  questions: yup.array().of(questionSchema.required()).required(),
   locationIsFetching: yup.boolean().required(),
   locationFormatted: yup.string().notRequired(),
   commentCount: yup.number().notRequired(),
