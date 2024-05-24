@@ -1,6 +1,6 @@
 import { ValidationError } from 'yup';
 
-type ErrorObject = {
+export type ErrorObject = {
   [field: string]: string[];
 };
 
