@@ -94,6 +94,7 @@ export declare const questionMultipleChoiceTacticSchema: yup.ObjectSchema<{
     isAvailableForRecommendation: boolean | null | undefined;
     numberOfLikes: number | null | undefined;
     isSuggested: boolean | undefined;
+    options: string[];
 }, yup.AnyObject, {
     type: undefined;
     profileId: undefined;
@@ -122,5 +123,6 @@ export declare const questionMultipleChoiceTacticSchema: yup.ObjectSchema<{
     isAvailableForRecommendation: undefined;
     numberOfLikes: undefined;
     isSuggested: undefined;
+    options: "";
 }, "">;
 export type QuestionMultipleChoiceTacticValue = yup.InferType<typeof questionMultipleChoiceTacticSchema>;
