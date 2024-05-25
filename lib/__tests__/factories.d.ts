@@ -217,6 +217,7 @@ export declare const factories: {
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
+            ordinal?: number | undefined;
             subtitle?: import("yup").Maybe<string | undefined>;
             description?: string | null | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -312,6 +313,7 @@ export declare const factories: {
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
+            ordinal?: number | undefined;
             subtitle?: import("yup").Maybe<string | undefined>;
             description?: string | null | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -410,6 +412,7 @@ export declare const factories: {
             setbackThreshold?: number | null | undefined;
             lowEmoji?: import("yup").Maybe<string | undefined>;
             highEmoji?: import("yup").Maybe<string | undefined>;
+            ordinal?: number | undefined;
             subtitle?: import("yup").Maybe<string | undefined>;
             description?: string | null | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -548,7 +551,7 @@ export declare const factories: {
         invitationUrl: string;
     }, "invitationCode" | "participantProfileIds" | "groupName" | "invitationUrl" | ("createdAt" | "updatedAt" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "creatorProfileId" | "lastMessagePreview" | "lastMessageProfileId" | "isSharingDisabled" | "tacticPreviewsById" | "unreadCounts" | "permissions")>;
     messageFactory: import("factory.ts").Factory<import("..").MessageValue, keyof import("..").MessageValue>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "title" | "subtitle" | "description" | "debriefAfterMinutes" | "image" | "optionsById" | "backgroundColor" | "isTemplate" | "language" | "linkUrl" | "likesCount" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "ordinal" | "title" | "subtitle" | "description" | "debriefAfterMinutes" | "image" | "optionsById" | "backgroundColor" | "isTemplate" | "language" | "linkUrl" | "likesCount" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
     questionTimeTacticFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -562,6 +565,7 @@ export declare const factories: {
         } | null | undefined;
         profileId?: string | null | undefined;
         setbackThreshold?: number | null | undefined;
+        ordinal?: number | undefined;
         subtitle?: import("yup").Maybe<string | undefined>;
         description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
@@ -644,8 +648,8 @@ export declare const factories: {
         type: import("..").QuestionKeyType;
         title: string;
         backgroundColor: string;
-    }, "type" | "title" | "backgroundColor" | ("createdAt" | "updatedAt" | "profileId" | "setbackThreshold" | "subtitle" | "description" | "debriefAfterMinutes" | "image" | "optionsById" | "isTemplate" | "language" | "linkUrl" | "likesCount" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested")>;
-    strategyFactory: import("factory.ts").Factory<import("..").StrategyValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "tacticIds" | "name" | "recommendedForIssueIds" | "ordinal" | "recommendedFor" | "recommendedForIssueOrdinals" | "subscribeToAllTactics" | "supportGroup">;
+    }, "type" | "title" | "backgroundColor" | ("createdAt" | "updatedAt" | "profileId" | "setbackThreshold" | "ordinal" | "subtitle" | "description" | "debriefAfterMinutes" | "image" | "optionsById" | "isTemplate" | "language" | "linkUrl" | "likesCount" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested")>;
+    strategyFactory: import("factory.ts").Factory<import("..").StrategyValue, "createdAt" | "updatedAt" | "profileId" | "type" | "ordinal" | "tacticsById" | "tacticIds" | "name" | "recommendedForIssueIds" | "recommendedFor" | "recommendedForIssueOrdinals" | "subscribeToAllTactics" | "supportGroup">;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;

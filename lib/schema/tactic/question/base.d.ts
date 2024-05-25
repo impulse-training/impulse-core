@@ -12,6 +12,7 @@ export declare function questionTacticValueBaseSchema(type: QuestionKeyType): im
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    ordinal: number | undefined;
     title: string;
     subtitle: import("yup").Maybe<string | undefined>;
     description: string | null | undefined;
@@ -99,6 +100,7 @@ export declare function questionTacticValueBaseSchema(type: QuestionKeyType): im
     profileId: undefined;
     createdAt: undefined;
     updatedAt: undefined;
+    ordinal: undefined;
     title: undefined;
     subtitle: undefined;
     description: undefined;

@@ -12,6 +12,7 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    ordinal: number | undefined;
     title: string;
     subtitle: yup.Maybe<string | undefined>;
     description: string | null | undefined;
@@ -99,6 +100,7 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
     profileId: undefined;
     createdAt: undefined;
     updatedAt: undefined;
+    ordinal: undefined;
     title: undefined;
     subtitle: undefined;
     description: undefined;

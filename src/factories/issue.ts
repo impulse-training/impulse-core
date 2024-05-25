@@ -10,6 +10,7 @@ export const makeIssueFactory = (TimestampKlass: typeof TimestampLike) =>
     updatedAt: TimestampKlass.now(),
     synonyms: ['Videos'],
     debriefTactic: {
+      ordinal: 0,
       type: 'question-time',
       title: 'How long did you spend?',
       backgroundColor: sample(tacticColors)!,

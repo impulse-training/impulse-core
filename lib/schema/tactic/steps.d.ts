@@ -12,6 +12,7 @@ export declare const stepsTacticSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    ordinal: number | undefined;
     title: string;
     subtitle: yup.Maybe<string | undefined>;
     description: string | null | undefined;
@@ -100,6 +101,7 @@ export declare const stepsTacticSchema: yup.ObjectSchema<{
     profileId: undefined;
     createdAt: undefined;
     updatedAt: undefined;
+    ordinal: undefined;
     title: undefined;
     subtitle: undefined;
     description: undefined;

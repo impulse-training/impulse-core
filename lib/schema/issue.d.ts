@@ -26,6 +26,7 @@ export declare const issueSchema: yup.ObjectSchema<{
         } | null | undefined;
         profileId?: string | null | undefined;
         setbackThreshold?: number | null | undefined;
+        ordinal?: number | undefined;
         subtitle?: yup.Maybe<string | undefined>;
         description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
@@ -121,6 +122,7 @@ export declare const issueSchema: yup.ObjectSchema<{
         } | null | undefined;
         profileId?: string | null | undefined;
         setbackThreshold?: number | null | undefined;
+        ordinal?: number | undefined;
         subtitle?: yup.Maybe<string | undefined>;
         description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
@@ -219,6 +221,7 @@ export declare const issueSchema: yup.ObjectSchema<{
         setbackThreshold?: number | null | undefined;
         lowEmoji?: yup.Maybe<string | undefined>;
         highEmoji?: yup.Maybe<string | undefined>;
+        ordinal?: number | undefined;
         subtitle?: yup.Maybe<string | undefined>;
         description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;

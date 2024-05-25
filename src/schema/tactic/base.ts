@@ -11,6 +11,7 @@ export function tacticValueBaseSchema<K extends string>(type: K) {
     profileId: yup.string().nullable(),
     createdAt: optionalTimestampSchema,
     updatedAt: optionalTimestampSchema,
+    ordinal: yup.number(),
     title: yup.string().required('is required'),
     subtitle: yup.string().notRequired(),
     description: yup.string().nullable(),
