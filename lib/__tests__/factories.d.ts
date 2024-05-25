@@ -125,9 +125,9 @@ export declare const factories: {
         } | undefined;
         profileId: string;
     }, "profileId" | ("createdAt" | "updatedAt" | "tacticId" | "tacticTitle" | "text" | "recording" | "isEdited" | "avatar")>;
-    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "location" | "questions" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "tacticIds" | "tacticLikes" | "tacticData" | "supportGroups" | "setAsActiveImpulse" | "isDisplayable" | "debriefTactic" | "debriefAfter" | "debriefReminderSentAt" | "debriefedAt">;
-    timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "location" | "questions" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "tacticIds" | "tacticLikes" | "tacticData" | "supportGroups" | "isDisplayable">;
-    locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "location" | "questions" | "locationIsFetching" | "locationFormatted" | "commentCount" | "commentsById" | "commentsByTacticId" | "tacticIds" | "tacticLikes" | "tacticData" | "supportGroups" | "isDisplayable" | "locationId" | "locationName" | "locationMode">;
+    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "tacticIds" | "tacticLikes" | "tacticData" | "supportGroups" | "debriefAfter" | "debriefReminderSentAt" | "debriefedAt">;
+    timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "tacticIds" | "tacticLikes" | "tacticData" | "supportGroups">;
+    locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "tacticIds" | "tacticLikes" | "tacticData" | "supportGroups" | "locationId" | "isDisplayable" | "locationName" | "locationMode">;
     locationFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -204,6 +204,8 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         };
+        name: string;
+        synonyms: string[];
         debriefTactic: {
             createdAt?: {
                 seconds: number;
@@ -496,12 +498,10 @@ export declare const factories: {
             title: string;
             backgroundColor: string;
         };
-        name: string;
-        synonyms: string[];
         parentIds: string[];
         parentNames: string[];
         therapistProfileIds: string[];
-    }, "createdAt" | "updatedAt" | "debriefTactic" | "name" | "synonyms" | "parentIds" | "parentNames" | "therapistProfileIds" | ("path" | "setbackThreshold" | "parentId" | "strategiesCount" | "profileCount" | "isFeatured")>;
+    }, "createdAt" | "updatedAt" | "name" | "synonyms" | "debriefTactic" | "parentIds" | "parentNames" | "therapistProfileIds" | ("path" | "setbackThreshold" | "parentId" | "strategiesCount" | "profileCount" | "isFeatured")>;
     supportGroupFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;

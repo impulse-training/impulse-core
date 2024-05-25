@@ -2,7 +2,6 @@
 // take)
 import * as yup from 'yup';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
-import { commentSchema } from './comment';
 import {
   TacticsByIdWithStrategy,
   tacticInfoWithStrategySchema,
@@ -45,26 +44,6 @@ const baseLogSchema = yup.object().shape({
   updatedAt: optionalTimestampSchema,
   startTime: timestampSchema,
   timezone: yup.string().required(),
-  location: yup.object().shape({
-    latitude: yup.number(),
-    longitude: yup.number(),
-    altitude: yup.number(),
-    accuracy: yup.number(),
-    altitudeAccuracy: yup.number(),
-    heading: yup.number(),
-    speed: yup.number(),
-  }),
-  questions: yup.array().of(questionSchema.required()).required(),
-  locationIsFetching: yup.boolean().required(),
-  locationFormatted: yup.string().notRequired(),
-  commentCount: yup.number().notRequired(),
-  commentsById: objectOf(commentSchema),
-  commentsByTacticId: optionalObjectOf(
-    yup.object().shape({
-      tacticTitle: yup.string().required(),
-      commentsById: objectOf(commentSchema),
-    })
-  ),
   // TODO: These represent seen tactics, but this may need some clarification
   tacticIds: requiredStringArray,
   tacticsById: tacticInfoWithStrategySchema,
@@ -93,9 +72,6 @@ export function logIsImpulseLog(log: LogValue): log is ImpulseLogValue {
 const impulseLogSchema = baseLogSchema.concat(
   yup.object().shape({
     type: yup.mixed<'impulse'>().oneOf(['impulse']).required(),
-    setAsActiveImpulse: yup.boolean().notRequired(),
-    isDisplayable: yup.boolean().oneOf([true]).required(),
-    debriefTactic: documentReferenceSchema,
     debriefAfter: optionalTimestampSchema,
     debriefReminderSentAt: optionalTimestampSchema,
     debriefedAt: optionalTimestampSchema,
@@ -123,7 +99,6 @@ export function logIsTimeLog(log: LogValue): log is TimeLogValue {
 const timeLogSchema = baseLogSchema.concat(
   yup.object().shape({
     type: yup.mixed<'time'>().oneOf(['time']).required(),
-    isDisplayable: yup.boolean().oneOf([true]).required(),
   })
 );
 

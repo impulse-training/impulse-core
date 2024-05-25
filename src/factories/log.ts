@@ -6,20 +6,14 @@ export const makeImpulseLogFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<ImpulseLogValue>({
     profileId: Factory.each(i => i.toString()),
     type: 'impulse',
-    setAsActiveImpulse: true,
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     startTime: TimestampKlass.now(),
     timezone: 'America/Bogota',
-    isDisplayable: true,
-    location: {},
-    locationIsFetching: false,
     tacticIds: [],
     tacticsById: {},
     tacticData: {},
     supportGroups: [],
-    commentsById: {},
-    questions: [],
   });
 
 export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>
@@ -30,15 +24,10 @@ export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>
     updatedAt: TimestampKlass.now(),
     startTime: TimestampKlass.now(),
     timezone: 'America/Bogota',
-    isDisplayable: true,
     supportGroups: [],
-    location: {},
-    locationIsFetching: false,
     tacticIds: [],
     tacticsById: {},
     tacticData: {},
-    commentsById: {},
-    questions: [],
   });
 
 export const makeLocationLogFactory = (TimestampKlass: typeof TimestampLike) =>
@@ -54,11 +43,7 @@ export const makeLocationLogFactory = (TimestampKlass: typeof TimestampLike) =>
     locationMode: 'enter',
     locationName: 'Home',
     supportGroups: [],
-    location: {},
-    locationIsFetching: false,
     tacticIds: [],
     tacticsById: {},
     tacticData: {},
-    commentsById: {},
-    questions: [],
   });
