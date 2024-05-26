@@ -31,8 +31,8 @@ export declare const makeSupportGroupFactory: (TimestampKlass: typeof TimestampL
         title: string;
     }[] | undefined;
     permissions?: {} | undefined;
+    name: string;
     invitationCode: string;
     participantProfileIds: string[];
-    groupName: string;
     invitationUrl: string;
-}, "invitationCode" | "participantProfileIds" | "groupName" | "invitationUrl" | ("createdAt" | "updatedAt" | "slug" | "everythingPermissions" | "creatorProfileId" | "lastMessagePreview" | "isSharingDisabled" | "tacticPreviewsById" | "permissions")>;
+}, "name" | "invitationCode" | "participantProfileIds" | "invitationUrl" | ("createdAt" | "updatedAt" | "slug" | "everythingPermissions" | "creatorProfileId" | "lastMessagePreview" | "isSharingDisabled" | "tacticPreviewsById" | "permissions")>;

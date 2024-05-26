@@ -37,7 +37,7 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
     slug: string | undefined;
     everythingPermissions: boolean | undefined;
     participantProfileIds: string[];
-    groupName: string;
+    name: string;
     creatorProfileId: string | undefined;
     lastMessagePreview: string | undefined;
     invitationCode: string;
@@ -64,7 +64,7 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
     slug: undefined;
     everythingPermissions: undefined;
     participantProfileIds: "";
-    groupName: undefined;
+    name: undefined;
     creatorProfileId: undefined;
     lastMessagePreview: undefined;
     invitationCode: undefined;

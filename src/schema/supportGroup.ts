@@ -17,7 +17,7 @@ export const supportGroupSchema = yup.object().shape({
   slug: yup.string(),
   everythingPermissions: yup.boolean().optional(),
   participantProfileIds: requiredStringArray,
-  groupName: yup.string().required(),
+  name: yup.string().required(),
   creatorProfileId: yup.string(),
   lastMessagePreview: yup.string().optional(),
   invitationCode: yup.string().required(),

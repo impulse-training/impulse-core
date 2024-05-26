@@ -4,7 +4,7 @@ import { TimestampLike } from '../utils/firestore/TimestampLike';
 
 export const makeSupportGroupFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<SupportGroupValue>({
-    groupName: 'Cold Turkey Warriors',
+    name: 'Movement',
     participantProfileIds: [],
     permissions: {},
     createdAt: TimestampKlass.now(),
