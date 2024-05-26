@@ -8,13 +8,10 @@ import {
   questionMultipleChoiceTacticSchema,
 } from './multipleChoice';
 import {
-  QuestionNoResponseValue,
-  questionNoResponseSchema,
-} from './noResponse';
-import {
   QuestionSliderTacticValue,
   questionSliderTacticSchema,
 } from './slider';
+import { QuestionTextValue, questionTextSchema } from './text';
 import { QuestionTimeTacticValue, questionTimeTacticSchema } from './time';
 
 export * from './counter';
@@ -26,7 +23,7 @@ export const questionTacticSchemas: Record<
   QuestionTacticValue['type'],
   yup.ObjectSchema<QuestionTacticValue>
 > = {
-  question: questionNoResponseSchema,
+  'question-text': questionTextSchema,
   'question-time': questionTimeTacticSchema,
   'question-counter': questionCounterTacticSchema,
   'question-slider': questionSliderTacticSchema,
@@ -58,7 +55,7 @@ type ValidatedQuestionTactic = {
 }[QuestionTacticValue['type']];
 
 export type QuestionTacticValue =
-  | QuestionNoResponseValue
+  | QuestionTextValue
   | QuestionSliderTacticValue
   | QuestionTimeTacticValue
   | QuestionCounterTacticValue

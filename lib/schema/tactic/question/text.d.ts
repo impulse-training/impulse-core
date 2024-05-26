@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-export declare const questionNoResponseSchema: yup.ObjectSchema<{
+export declare const questionTextSchema: yup.ObjectSchema<{
     type: import("../..").QuestionKeyType;
     profileId: string | null | undefined;
     createdAt: {
@@ -125,4 +125,4 @@ export declare const questionNoResponseSchema: yup.ObjectSchema<{
     numberOfLikes: undefined;
     isSuggested: undefined;
 }, "">;
-export type QuestionNoResponseValue = yup.InferType<typeof questionNoResponseSchema>;
+export type QuestionTextValue = yup.InferType<typeof questionTextSchema>;
