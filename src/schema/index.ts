@@ -10,7 +10,6 @@ export * from './issue';
 export * from './location';
 export * from './log';
 export * from './mailTemplate';
-export * from './message';
 export * from './notification';
 export * from './option';
 export * from './profile';

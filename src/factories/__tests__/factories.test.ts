@@ -61,7 +61,6 @@ const schemaMap: Record<keyof typeof factories, null | Schema | Lazy<unknown>> =
     profileFactory: null,
     issueFactory: null,
     supportGroupFactory: supportGroupSchema,
-    messageFactory: null,
     tacticFactory: tacticSchema,
     strategyFactory: strategySchema,
     questionTimeTacticFactory: tacticSchema,
