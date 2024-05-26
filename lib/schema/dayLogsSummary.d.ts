@@ -2,7 +2,7 @@ import * as yup from 'yup';
 import { tacticDataSchema } from './log';
 export type TacticSummaryValue = yup.InferType<typeof tacticDataSchema>;
 declare const logSummarySchema: yup.ObjectSchema<{
-    type: NonNullable<"time" | "impulse" | undefined>;
+    type: NonNullable<"impulse" | "time" | undefined>;
     hour: number;
     minute: number;
     tacticDataById: {
@@ -88,7 +88,7 @@ declare const logSummarySchema: yup.ObjectSchema<{
 export type LogSummaryValue = yup.InferType<typeof logSummarySchema>;
 export declare const dayLogsSummarySchema: yup.Lazy<{
     [x: string]: {
-        type: NonNullable<"time" | "impulse" | undefined>;
+        type: NonNullable<"impulse" | "time" | undefined>;
         optionsById: {
             [x: string]: {
                 createdAt?: {

@@ -11,5 +11,5 @@ export const makeProfileFactory = (TimestampKlass: typeof TimestampLike) =>
     invitationCode: 'abc123',
     notificationPreferences: {},
     uids: ['uid1', 'uid2'],
-    supportGroups: [],
+    favouriteSupportGroups: {},
   });

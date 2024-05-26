@@ -1,7 +1,7 @@
 import * as Factory from 'factory.ts';
 export declare const dayLogsSummaryFactory: Factory.Sync.Factory<{
     [x: string]: {
-        type: NonNullable<"time" | "impulse" | undefined>;
+        type: NonNullable<"impulse" | "time" | undefined>;
         optionsById: {
             [x: string]: {
                 createdAt?: {

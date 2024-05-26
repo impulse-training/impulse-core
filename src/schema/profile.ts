@@ -1,9 +1,9 @@
 import { AppStateStatus } from 'react-native';
 import * as yup from 'yup';
 import { notificationOptionSchema } from './notification';
+import { supportGroupSchema } from './supportGroup';
 import { optionalStringArray, requiredStringArray } from './utils/array';
-import { documentReferenceSchema } from './utils/firestore';
-import { optionalObjectOf } from './utils/objectOf';
+import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema } from './utils/timestamp';
 
 export const profileSchema = yup.object().shape({
@@ -26,7 +26,7 @@ export const profileSchema = yup.object().shape({
   region: yup.string().nullable().optional(),
   timezone: yup.string().required(),
   invitationCode: yup.string().required(),
-  supportGroups: yup.array().of(documentReferenceSchema.required()).required(),
+  favouriteSupportGroups: objectOf(supportGroupSchema),
   scheduledNotificationIds: optionalStringArray,
   uids: requiredStringArray,
 });

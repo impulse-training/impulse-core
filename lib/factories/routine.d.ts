@@ -12,10 +12,10 @@ export declare const makeTimeRoutineFactory: (TimestampKlass: typeof TimestampLi
         toDate: Function;
     } | null | undefined;
     profileId: string;
+    name: string;
     type: "time";
     supportGroups: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[];
     hour: number;
     minute: number;
-    name: string;
     weekdays: number[];
-}, "profileId" | "type" | "supportGroups" | "hour" | "minute" | "name" | "weekdays" | ("createdAt" | "updatedAt")>;
+}, "profileId" | "name" | "type" | "supportGroups" | "hour" | "minute" | "weekdays" | ("createdAt" | "updatedAt")>;

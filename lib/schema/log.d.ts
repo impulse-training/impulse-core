@@ -58,6 +58,43 @@ declare const baseLogSchema: yup.ObjectSchema<{
         toDate: Function;
     };
     timezone: string;
+    supportGroups: {
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        slug?: string | undefined;
+        creatorProfileId?: string | undefined;
+        tacticPreviewsById?: {
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | undefined;
+            backgroundColor?: string | undefined;
+            title: string;
+        }[] | undefined;
+        recommendedFor?: "impulse" | "time" | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        name: string;
+        invitationCode: string;
+        invitationUrl: string;
+    }[];
+    parentIssueIds: string[] | undefined;
     tacticIds: string[];
     tacticsById: {
         tactic?: any;
@@ -84,7 +121,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
             formattedValue: string;
         };
     };
-    supportGroups: import("./utils/firestore").DocumentReferenceLike<unknown>[];
 }, yup.AnyObject, {
     profileId: undefined;
     createdAt: undefined;
@@ -95,6 +131,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
         toDate: undefined;
     };
     timezone: undefined;
+    supportGroups: "";
+    parentIssueIds: "";
     tacticIds: "";
     tacticsById: {
         id: undefined;
@@ -104,7 +142,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
     };
     tacticLikes: undefined;
     tacticData: undefined;
-    supportGroups: "";
 }, "">;
 type WithTypes<T extends yup.ISchema<unknown>> = Omit<yup.InferType<T>, 'createdAt' | 'updatedAt' | 'startTime' | 'tacticsById'> & {
     createdAt: TimestampLike;
@@ -132,6 +169,43 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         toDate: Function;
     };
     timezone: string;
+    supportGroups: {
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        slug?: string | undefined;
+        creatorProfileId?: string | undefined;
+        tacticPreviewsById?: {
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | undefined;
+            backgroundColor?: string | undefined;
+            title: string;
+        }[] | undefined;
+        recommendedFor?: "impulse" | "time" | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        name: string;
+        invitationCode: string;
+        invitationUrl: string;
+    }[];
+    parentIssueIds: string[] | undefined;
     tacticIds: string[];
     tacticsById: {
         tactic?: any;
@@ -158,7 +232,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             formattedValue: string;
         };
     };
-    supportGroups: import("./utils/firestore").DocumentReferenceLike<unknown>[];
 } & {
     type: "impulse";
     debriefAfter: {
@@ -186,6 +259,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         toDate: undefined;
     };
     timezone: undefined;
+    supportGroups: "";
+    parentIssueIds: "";
     tacticIds: "";
     tacticsById: {
         id: undefined;
@@ -195,7 +270,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     };
     tacticLikes: undefined;
     tacticData: undefined;
-    supportGroups: "";
     type: undefined;
     debriefAfter: undefined;
     debriefReminderSentAt: undefined;
@@ -221,6 +295,43 @@ declare const locationLogSchema: yup.ObjectSchema<{
         toDate: Function;
     };
     timezone: string;
+    supportGroups: {
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        slug?: string | undefined;
+        creatorProfileId?: string | undefined;
+        tacticPreviewsById?: {
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | undefined;
+            backgroundColor?: string | undefined;
+            title: string;
+        }[] | undefined;
+        recommendedFor?: "impulse" | "time" | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        name: string;
+        invitationCode: string;
+        invitationUrl: string;
+    }[];
+    parentIssueIds: string[] | undefined;
     tacticIds: string[];
     tacticsById: {
         tactic?: any;
@@ -247,7 +358,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
             formattedValue: string;
         };
     };
-    supportGroups: import("./utils/firestore").DocumentReferenceLike<unknown>[];
 } & {
     type: "location";
     locationId: string;
@@ -264,6 +374,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
         toDate: undefined;
     };
     timezone: undefined;
+    supportGroups: "";
+    parentIssueIds: "";
     tacticIds: "";
     tacticsById: {
         id: undefined;
@@ -273,7 +385,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
     };
     tacticLikes: undefined;
     tacticData: undefined;
-    supportGroups: "";
     type: undefined;
     locationId: undefined;
     isDisplayable: undefined;
@@ -300,6 +411,43 @@ declare const timeLogSchema: yup.ObjectSchema<{
         toDate: Function;
     };
     timezone: string;
+    supportGroups: {
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        slug?: string | undefined;
+        creatorProfileId?: string | undefined;
+        tacticPreviewsById?: {
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | undefined;
+            backgroundColor?: string | undefined;
+            title: string;
+        }[] | undefined;
+        recommendedFor?: "impulse" | "time" | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        name: string;
+        invitationCode: string;
+        invitationUrl: string;
+    }[];
+    parentIssueIds: string[] | undefined;
     tacticIds: string[];
     tacticsById: {
         tactic?: any;
@@ -326,7 +474,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
             formattedValue: string;
         };
     };
-    supportGroups: import("./utils/firestore").DocumentReferenceLike<unknown>[];
 } & {
     type: "time";
 }, yup.AnyObject, {
@@ -339,6 +486,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
         toDate: undefined;
     };
     timezone: undefined;
+    supportGroups: "";
+    parentIssueIds: "";
     tacticIds: "";
     tacticsById: {
         id: undefined;
@@ -348,7 +497,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
     };
     tacticLikes: undefined;
     tacticData: undefined;
-    supportGroups: "";
     type: undefined;
 }, "">;
 export declare const logSchema: yup.Lazy<{
@@ -362,6 +510,7 @@ export declare const logSchema: yup.Lazy<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    parentIssueIds?: string[] | undefined;
     tacticLikes?: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
@@ -394,6 +543,42 @@ export declare const logSchema: yup.Lazy<{
         toDate: Function;
     };
     timezone: string;
+    supportGroups: {
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        slug?: string | undefined;
+        creatorProfileId?: string | undefined;
+        tacticPreviewsById?: {
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | undefined;
+            backgroundColor?: string | undefined;
+            title: string;
+        }[] | undefined;
+        recommendedFor?: "impulse" | "time" | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        name: string;
+        invitationCode: string;
+        invitationUrl: string;
+    }[];
     tacticIds: string[];
     tacticData: {
         [x: string]: {
@@ -411,7 +596,6 @@ export declare const logSchema: yup.Lazy<{
             formattedValue: string;
         };
     };
-    supportGroups: import("./utils/firestore").DocumentReferenceLike<unknown>[];
 } | {
     createdAt?: {
         seconds: number;
@@ -423,6 +607,7 @@ export declare const logSchema: yup.Lazy<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    parentIssueIds?: string[] | undefined;
     tacticLikes?: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
@@ -440,6 +625,42 @@ export declare const logSchema: yup.Lazy<{
         toDate: Function;
     };
     timezone: string;
+    supportGroups: {
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        slug?: string | undefined;
+        creatorProfileId?: string | undefined;
+        tacticPreviewsById?: {
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | undefined;
+            backgroundColor?: string | undefined;
+            title: string;
+        }[] | undefined;
+        recommendedFor?: "impulse" | "time" | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        name: string;
+        invitationCode: string;
+        invitationUrl: string;
+    }[];
     tacticIds: string[];
     tacticData: {
         [x: string]: {
@@ -457,7 +678,6 @@ export declare const logSchema: yup.Lazy<{
             formattedValue: string;
         };
     };
-    supportGroups: import("./utils/firestore").DocumentReferenceLike<unknown>[];
     locationId: string;
     isDisplayable: NonNullable<boolean | undefined>;
     locationName: string;
@@ -473,6 +693,7 @@ export declare const logSchema: yup.Lazy<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    parentIssueIds?: string[] | undefined;
     tacticLikes?: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
@@ -490,6 +711,42 @@ export declare const logSchema: yup.Lazy<{
         toDate: Function;
     };
     timezone: string;
+    supportGroups: {
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        slug?: string | undefined;
+        creatorProfileId?: string | undefined;
+        tacticPreviewsById?: {
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | undefined;
+            backgroundColor?: string | undefined;
+            title: string;
+        }[] | undefined;
+        recommendedFor?: "impulse" | "time" | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        name: string;
+        invitationCode: string;
+        invitationUrl: string;
+    }[];
     tacticIds: string[];
     tacticData: {
         [x: string]: {
@@ -507,7 +764,6 @@ export declare const logSchema: yup.Lazy<{
             formattedValue: string;
         };
     };
-    supportGroups: import("./utils/firestore").DocumentReferenceLike<unknown>[];
 }, yup.AnyObject, any>;
 export type LogValue = ImpulseLogValue | LocationLogValue | TimeLogValue;
 export {};

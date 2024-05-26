@@ -4,7 +4,7 @@ export declare const dailyStrategySchema: yup.ObjectSchema<{
     ordinal: yup.Maybe<number | undefined>;
     name: string;
     type: "daily";
-    recommendedFor: "time" | "impulse" | undefined;
+    recommendedFor: "impulse" | "time" | undefined;
     recommendedForIssueIds: string[] | undefined;
     recommendedForIssueOrdinals: {
         [x: string]: number;
@@ -20,8 +20,8 @@ export declare const dailyStrategySchema: yup.ObjectSchema<{
     profileId: string | undefined;
     subscribeToAllTactics: boolean | undefined;
     supportGroup: {
-        id: string;
         name: string;
+        id: string;
         avatarUrl: string;
     } | null | undefined;
     createdAt: {

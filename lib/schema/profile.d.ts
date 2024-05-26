@@ -38,7 +38,44 @@ export declare const profileSchema: yup.ObjectSchema<{
     region: string | null | undefined;
     timezone: string;
     invitationCode: string;
-    supportGroups: import("./utils/firestore").DocumentReferenceLike<unknown>[];
+    favouriteSupportGroups: {
+        [x: string]: {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            slug?: string | undefined;
+            creatorProfileId?: string | undefined;
+            tacticPreviewsById?: {
+                updatedAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                image?: {
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    storagePath?: yup.Maybe<string | undefined>;
+                    uri?: yup.Maybe<string | undefined>;
+                } | undefined;
+                backgroundColor?: string | undefined;
+                title: string;
+            }[] | undefined;
+            recommendedFor?: "impulse" | "time" | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            name: string;
+            invitationCode: string;
+            invitationUrl: string;
+        };
+    };
     scheduledNotificationIds: string[] | undefined;
     uids: string[];
 }, yup.AnyObject, {
@@ -59,7 +96,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     region: undefined;
     timezone: undefined;
     invitationCode: undefined;
-    supportGroups: "";
+    favouriteSupportGroups: undefined;
     scheduledNotificationIds: "";
     uids: "";
 }, "">;

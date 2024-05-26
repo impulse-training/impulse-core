@@ -11,11 +11,6 @@ export declare const makeSupportGroupFactory: (TimestampKlass: typeof TimestampL
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    recommendedForIssueIds?: string[] | undefined;
-    recommendedFor?: "time" | "impulse" | null | undefined;
-    recommendedForIssueOrdinals?: {
-        [x: string]: number;
-    } | null | undefined;
     slug?: string | undefined;
     creatorProfileId?: string | undefined;
     tacticPreviewsById?: {
@@ -32,7 +27,12 @@ export declare const makeSupportGroupFactory: (TimestampKlass: typeof TimestampL
         backgroundColor?: string | undefined;
         title: string;
     }[] | undefined;
+    recommendedFor?: "impulse" | "time" | null | undefined;
+    recommendedForIssueIds?: string[] | undefined;
+    recommendedForIssueOrdinals?: {
+        [x: string]: number;
+    } | null | undefined;
     name: string;
     invitationCode: string;
     invitationUrl: string;
-}, "name" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedFor" | "recommendedForIssueOrdinals" | "slug" | "creatorProfileId" | "tacticPreviewsById")>;
+}, "name" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "tacticPreviewsById" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>;

@@ -3,7 +3,7 @@ export declare function strategyBaseSchema<K extends string>(type: K): yup.Objec
     ordinal: yup.Maybe<number | undefined>;
     name: string;
     type: yup.Defined<K>;
-    recommendedFor: "time" | "impulse" | undefined;
+    recommendedFor: "impulse" | "time" | undefined;
     recommendedForIssueIds: string[] | undefined;
     recommendedForIssueOrdinals: {
         [x: string]: number;
@@ -19,8 +19,8 @@ export declare function strategyBaseSchema<K extends string>(type: K): yup.Objec
     profileId: string | undefined;
     subscribeToAllTactics: boolean | undefined;
     supportGroup: {
-        id: string;
         name: string;
+        id: string;
         avatarUrl: string;
     } | null | undefined;
     createdAt: {

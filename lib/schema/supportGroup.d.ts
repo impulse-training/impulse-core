@@ -53,7 +53,7 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
         backgroundColor?: string | undefined;
         title: string;
     }[] | undefined;
-    recommendedFor: "time" | "impulse" | null | undefined;
+    recommendedFor: "impulse" | "time" | null | undefined;
     recommendedForIssueIds: string[] | undefined;
     recommendedForIssueOrdinals: {
         [x: string]: number;

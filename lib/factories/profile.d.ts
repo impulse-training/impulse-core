@@ -13,6 +13,7 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     } | null | undefined;
     setbackThreshold?: number | undefined;
     debriefAfterMinutes?: number | undefined;
+    parentIssueIds?: string[] | undefined;
     activeImpulseId?: string | undefined;
     currentAppState?: import("react-native/types").AppStateStatus | undefined;
     lastActiveAt?: {
@@ -34,11 +35,47 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     androidPermissions?: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
-    parentIssueIds?: string[] | undefined;
     region?: string | null | undefined;
     scheduledNotificationIds?: string[] | undefined;
-    timezone: string;
-    supportGroups: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[];
     invitationCode: string;
+    timezone: string;
+    favouriteSupportGroups: {
+        [x: string]: {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            slug?: string | undefined;
+            creatorProfileId?: string | undefined;
+            tacticPreviewsById?: {
+                updatedAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                image?: {
+                    localFilePath?: import("yup").Maybe<string | undefined>;
+                    storagePath?: import("yup").Maybe<string | undefined>;
+                    uri?: import("yup").Maybe<string | undefined>;
+                } | undefined;
+                backgroundColor?: string | undefined;
+                title: string;
+            }[] | undefined;
+            recommendedFor?: "impulse" | "time" | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            name: string;
+            invitationCode: string;
+            invitationUrl: string;
+        };
+    };
     uids: string[];
-}, "timezone" | "supportGroups" | "invitationCode" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "debriefAfterMinutes" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "issueName" | "isTourCompleted" | "androidPermissions" | "parentIssueIds" | "region" | "scheduledNotificationIds")>;
+}, "invitationCode" | "timezone" | "favouriteSupportGroups" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "debriefAfterMinutes" | "parentIssueIds" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "issueName" | "isTourCompleted" | "androidPermissions" | "region" | "scheduledNotificationIds")>;

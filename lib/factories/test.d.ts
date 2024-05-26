@@ -24,7 +24,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         uri?: import("yup").Maybe<string | undefined>;
     } | undefined;
     profileId: string;
-}, "profileId" | ("createdAt" | "updatedAt" | "tacticId" | "tacticTitle" | "text" | "recording" | "isEdited" | "avatar")>, impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "tacticIds" | "tacticLikes" | "tacticData" | "supportGroups" | "debriefAfter" | "debriefReminderSentAt" | "debriefedAt">, timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "tacticIds" | "tacticLikes" | "tacticData" | "supportGroups">, profileFactory: import("factory.ts").Factory<{
+}, "profileId" | ("createdAt" | "updatedAt" | "tacticId" | "tacticTitle" | "text" | "recording" | "isEdited" | "avatar")>, impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "supportGroups" | "parentIssueIds" | "tacticIds" | "tacticLikes" | "tacticData" | "debriefAfter" | "debriefReminderSentAt" | "debriefedAt">, timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "supportGroups" | "parentIssueIds" | "tacticIds" | "tacticLikes" | "tacticData">, profileFactory: import("factory.ts").Factory<{
     createdAt?: {
         seconds: number;
         nanoseconds: number;
@@ -37,6 +37,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     } | null | undefined;
     setbackThreshold?: number | undefined;
     debriefAfterMinutes?: number | undefined;
+    parentIssueIds?: string[] | undefined;
     activeImpulseId?: string | undefined;
     currentAppState?: import("react-native/types").AppStateStatus | undefined;
     lastActiveAt?: {
@@ -58,14 +59,50 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     androidPermissions?: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
-    parentIssueIds?: string[] | undefined;
     region?: string | null | undefined;
     scheduledNotificationIds?: string[] | undefined;
-    timezone: string;
-    supportGroups: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[];
     invitationCode: string;
+    timezone: string;
+    favouriteSupportGroups: {
+        [x: string]: {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            slug?: string | undefined;
+            creatorProfileId?: string | undefined;
+            tacticPreviewsById?: {
+                updatedAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                image?: {
+                    localFilePath?: import("yup").Maybe<string | undefined>;
+                    storagePath?: import("yup").Maybe<string | undefined>;
+                    uri?: import("yup").Maybe<string | undefined>;
+                } | undefined;
+                backgroundColor?: string | undefined;
+                title: string;
+            }[] | undefined;
+            recommendedFor?: "impulse" | "time" | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            name: string;
+            invitationCode: string;
+            invitationUrl: string;
+        };
+    };
     uids: string[];
-}, "timezone" | "supportGroups" | "invitationCode" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "debriefAfterMinutes" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "issueName" | "isTourCompleted" | "androidPermissions" | "parentIssueIds" | "region" | "scheduledNotificationIds")>, supportGroupFactory: import("factory.ts").Factory<{
+}, "invitationCode" | "timezone" | "favouriteSupportGroups" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "debriefAfterMinutes" | "parentIssueIds" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "issueName" | "isTourCompleted" | "androidPermissions" | "region" | "scheduledNotificationIds")>, supportGroupFactory: import("factory.ts").Factory<{
     createdAt?: {
         seconds: number;
         nanoseconds: number;
@@ -75,11 +112,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         seconds: number;
         nanoseconds: number;
         toDate: Function;
-    } | null | undefined;
-    recommendedForIssueIds?: string[] | undefined;
-    recommendedFor?: "time" | "impulse" | null | undefined;
-    recommendedForIssueOrdinals?: {
-        [x: string]: number;
     } | null | undefined;
     slug?: string | undefined;
     creatorProfileId?: string | undefined;
@@ -97,7 +129,12 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         backgroundColor?: string | undefined;
         title: string;
     }[] | undefined;
+    recommendedFor?: "impulse" | "time" | null | undefined;
+    recommendedForIssueIds?: string[] | undefined;
+    recommendedForIssueOrdinals?: {
+        [x: string]: number;
+    } | null | undefined;
     name: string;
     invitationCode: string;
     invitationUrl: string;
-}, "name" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedFor" | "recommendedForIssueOrdinals" | "slug" | "creatorProfileId" | "tacticPreviewsById")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "ordinal" | "title" | "subtitle" | "description" | "debriefAfterMinutes" | "image" | "optionsById" | "backgroundColor" | "isTemplate" | "language" | "linkUrl" | "likesCount" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
+}, "name" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "tacticPreviewsById" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "title" | "image" | "backgroundColor" | "type" | "setbackThreshold" | "ordinal" | "subtitle" | "description" | "debriefAfterMinutes" | "optionsById" | "isTemplate" | "language" | "linkUrl" | "likesCount" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;

@@ -2,12 +2,12 @@
 // take)
 import * as yup from 'yup';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
+import { supportGroupSchema } from './supportGroup';
 import {
   TacticsByIdWithStrategy,
   tacticInfoWithStrategySchema,
 } from './tactic';
-import { requiredStringArray } from './utils/array';
-import { documentReferenceSchema } from './utils/firestore';
+import { optionalStringArray, requiredStringArray } from './utils/array';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
 
@@ -44,12 +44,14 @@ const baseLogSchema = yup.object().shape({
   updatedAt: optionalTimestampSchema,
   startTime: timestampSchema,
   timezone: yup.string().required(),
+  supportGroups: yup.array().of(supportGroupSchema).required(),
+  parentIssueIds: optionalStringArray,
+
   // TODO: These represent seen tactics, but this may need some clarification
   tacticIds: requiredStringArray,
   tacticsById: tacticInfoWithStrategySchema,
   tacticLikes: optionalObjectOf(yup.boolean().required()),
   tacticData: objectOf(tacticDataSchema),
-  supportGroups: yup.array().of(documentReferenceSchema.required()).required(),
 });
 // This is important to prevent typescript generating a 40k line file :/
 

@@ -30,15 +30,15 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
-        setbackThreshold?: number | null | undefined;
-        subtitle?: import("yup").Maybe<string | undefined>;
-        description?: string | null | undefined;
-        debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: import("yup").Maybe<string | undefined>;
             storagePath?: import("yup").Maybe<string | undefined>;
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
+        setbackThreshold?: number | null | undefined;
+        subtitle?: import("yup").Maybe<string | undefined>;
+        description?: string | null | undefined;
+        debriefAfterMinutes?: number | null | undefined;
         optionsById?: {
             [x: string]: {
                 createdAt?: {
@@ -110,10 +110,10 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         isAvailableForRecommendation?: boolean | null | undefined;
         numberOfLikes?: number | null | undefined;
         isSuggested?: boolean | undefined;
-        type: import("../schema").QuestionKeyType;
-        ordinal: number;
         title: string;
         backgroundColor: string;
+        type: import("../schema").QuestionKeyType;
+        ordinal: number;
     } | {
         createdAt?: {
             seconds: number;
@@ -126,15 +126,15 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
-        setbackThreshold?: number | null | undefined;
-        subtitle?: import("yup").Maybe<string | undefined>;
-        description?: string | null | undefined;
-        debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: import("yup").Maybe<string | undefined>;
             storagePath?: import("yup").Maybe<string | undefined>;
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
+        setbackThreshold?: number | null | undefined;
+        subtitle?: import("yup").Maybe<string | undefined>;
+        description?: string | null | undefined;
+        debriefAfterMinutes?: number | null | undefined;
         optionsById?: {
             [x: string]: {
                 createdAt?: {
@@ -206,10 +206,10 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         isAvailableForRecommendation?: boolean | null | undefined;
         numberOfLikes?: number | null | undefined;
         isSuggested?: boolean | undefined;
-        type: import("../schema").QuestionKeyType;
-        ordinal: number;
         title: string;
         backgroundColor: string;
+        type: import("../schema").QuestionKeyType;
+        ordinal: number;
         options: string[];
     } | {
         createdAt?: {
@@ -223,17 +223,17 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
+        image?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | null | undefined;
         setbackThreshold?: number | null | undefined;
         lowEmoji?: import("yup").Maybe<string | undefined>;
         highEmoji?: import("yup").Maybe<string | undefined>;
         subtitle?: import("yup").Maybe<string | undefined>;
         description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
-        image?: {
-            localFilePath?: import("yup").Maybe<string | undefined>;
-            storagePath?: import("yup").Maybe<string | undefined>;
-            uri?: import("yup").Maybe<string | undefined>;
-        } | null | undefined;
         optionsById?: {
             [x: string]: {
                 createdAt?: {
@@ -305,10 +305,10 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         isAvailableForRecommendation?: boolean | null | undefined;
         numberOfLikes?: number | null | undefined;
         isSuggested?: boolean | undefined;
-        type: import("../schema").QuestionKeyType;
-        ordinal: number;
         title: string;
         backgroundColor: string;
+        type: import("../schema").QuestionKeyType;
+        ordinal: number;
     };
     parentIds: string[];
     parentNames: string[];

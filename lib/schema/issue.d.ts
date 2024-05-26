@@ -25,15 +25,15 @@ export declare const issueSchema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
-        setbackThreshold?: number | null | undefined;
-        subtitle?: yup.Maybe<string | undefined>;
-        description?: string | null | undefined;
-        debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
             storagePath?: yup.Maybe<string | undefined>;
             uri?: yup.Maybe<string | undefined>;
         } | null | undefined;
+        setbackThreshold?: number | null | undefined;
+        subtitle?: yup.Maybe<string | undefined>;
+        description?: string | null | undefined;
+        debriefAfterMinutes?: number | null | undefined;
         optionsById?: {
             [x: string]: {
                 createdAt?: {
@@ -105,10 +105,10 @@ export declare const issueSchema: yup.ObjectSchema<{
         isAvailableForRecommendation?: boolean | null | undefined;
         numberOfLikes?: number | null | undefined;
         isSuggested?: boolean | undefined;
-        type: import(".").QuestionKeyType;
-        ordinal: number;
         title: string;
         backgroundColor: string;
+        type: import(".").QuestionKeyType;
+        ordinal: number;
     } | {
         createdAt?: {
             seconds: number;
@@ -121,15 +121,15 @@ export declare const issueSchema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
-        setbackThreshold?: number | null | undefined;
-        subtitle?: yup.Maybe<string | undefined>;
-        description?: string | null | undefined;
-        debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
             storagePath?: yup.Maybe<string | undefined>;
             uri?: yup.Maybe<string | undefined>;
         } | null | undefined;
+        setbackThreshold?: number | null | undefined;
+        subtitle?: yup.Maybe<string | undefined>;
+        description?: string | null | undefined;
+        debriefAfterMinutes?: number | null | undefined;
         optionsById?: {
             [x: string]: {
                 createdAt?: {
@@ -201,10 +201,10 @@ export declare const issueSchema: yup.ObjectSchema<{
         isAvailableForRecommendation?: boolean | null | undefined;
         numberOfLikes?: number | null | undefined;
         isSuggested?: boolean | undefined;
-        type: import(".").QuestionKeyType;
-        ordinal: number;
         title: string;
         backgroundColor: string;
+        type: import(".").QuestionKeyType;
+        ordinal: number;
         options: string[];
     } | {
         createdAt?: {
@@ -218,17 +218,17 @@ export declare const issueSchema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
+        image?: {
+            localFilePath?: yup.Maybe<string | undefined>;
+            storagePath?: yup.Maybe<string | undefined>;
+            uri?: yup.Maybe<string | undefined>;
+        } | null | undefined;
         setbackThreshold?: number | null | undefined;
         lowEmoji?: yup.Maybe<string | undefined>;
         highEmoji?: yup.Maybe<string | undefined>;
         subtitle?: yup.Maybe<string | undefined>;
         description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
-        image?: {
-            localFilePath?: yup.Maybe<string | undefined>;
-            storagePath?: yup.Maybe<string | undefined>;
-            uri?: yup.Maybe<string | undefined>;
-        } | null | undefined;
         optionsById?: {
             [x: string]: {
                 createdAt?: {
@@ -300,10 +300,10 @@ export declare const issueSchema: yup.ObjectSchema<{
         isAvailableForRecommendation?: boolean | null | undefined;
         numberOfLikes?: number | null | undefined;
         isSuggested?: boolean | undefined;
-        type: import(".").QuestionKeyType;
-        ordinal: number;
         title: string;
         backgroundColor: string;
+        type: import(".").QuestionKeyType;
+        ordinal: number;
     };
     setbackThreshold: number | undefined;
     path: string | null | undefined;
