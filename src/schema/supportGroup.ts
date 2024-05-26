@@ -1,6 +1,7 @@
 import * as yup from 'yup';
-import { requiredStringArray } from './utils/array';
+import { optionalStringArray } from './utils/array';
 import { imageSchema } from './utils/image';
+import { optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema } from './utils/timestamp';
 
 export const tacticPreviewSchema = yup.object({
@@ -15,16 +16,17 @@ export const supportGroupSchema = yup.object().shape({
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
   slug: yup.string(),
-  everythingPermissions: yup.boolean().optional(),
-  participantProfileIds: requiredStringArray,
   name: yup.string().required(),
   creatorProfileId: yup.string(),
-  lastMessagePreview: yup.string().optional(),
   invitationCode: yup.string().required(),
   invitationUrl: yup.string().url().required(),
-  isSharingDisabled: yup.boolean().optional(),
   tacticPreviewsById: yup.array().of(tacticPreviewSchema.required()),
-  permissions: yup.object().optional(),
+  recommendedFor: yup
+    .mixed<'impulse' | 'time'>()
+    .oneOf(['impulse', 'time'])
+    .nullable(),
+  recommendedForIssueIds: optionalStringArray,
+  recommendedForIssueOrdinals: optionalObjectOf(yup.number().required()),
 });
 
 export type SupportGroupValue = yup.InferType<typeof supportGroupSchema>;

@@ -35,14 +35,10 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
         toDate: Function;
     } | null | undefined;
     slug: string | undefined;
-    everythingPermissions: boolean | undefined;
-    participantProfileIds: string[];
     name: string;
     creatorProfileId: string | undefined;
-    lastMessagePreview: string | undefined;
     invitationCode: string;
     invitationUrl: string;
-    isSharingDisabled: boolean | undefined;
     tacticPreviewsById: {
         updatedAt?: {
             seconds: number;
@@ -57,21 +53,23 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
         backgroundColor?: string | undefined;
         title: string;
     }[] | undefined;
-    permissions: {} | undefined;
+    recommendedFor: "time" | "impulse" | null | undefined;
+    recommendedForIssueIds: string[] | undefined;
+    recommendedForIssueOrdinals: {
+        [x: string]: number;
+    } | null | undefined;
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
     slug: undefined;
-    everythingPermissions: undefined;
-    participantProfileIds: "";
     name: undefined;
     creatorProfileId: undefined;
-    lastMessagePreview: undefined;
     invitationCode: undefined;
     invitationUrl: undefined;
-    isSharingDisabled: undefined;
     tacticPreviewsById: "";
-    permissions: {};
+    recommendedFor: undefined;
+    recommendedForIssueIds: "";
+    recommendedForIssueOrdinals: undefined;
 }, "">;
 export type SupportGroupValue = yup.InferType<typeof supportGroupSchema>;
 export type PermissionKey = keyof typeof CONVERSATION_PERMISSIONS;

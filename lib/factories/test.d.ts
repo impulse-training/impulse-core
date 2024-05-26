@@ -76,11 +76,13 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    recommendedForIssueIds?: string[] | undefined;
+    recommendedFor?: "time" | "impulse" | null | undefined;
+    recommendedForIssueOrdinals?: {
+        [x: string]: number;
+    } | null | undefined;
     slug?: string | undefined;
-    everythingPermissions?: boolean | undefined;
     creatorProfileId?: string | undefined;
-    lastMessagePreview?: string | undefined;
-    isSharingDisabled?: boolean | undefined;
     tacticPreviewsById?: {
         updatedAt?: {
             seconds: number;
@@ -95,9 +97,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         backgroundColor?: string | undefined;
         title: string;
     }[] | undefined;
-    permissions?: {} | undefined;
     name: string;
     invitationCode: string;
-    participantProfileIds: string[];
     invitationUrl: string;
-}, "name" | "invitationCode" | "participantProfileIds" | "invitationUrl" | ("createdAt" | "updatedAt" | "slug" | "everythingPermissions" | "creatorProfileId" | "lastMessagePreview" | "isSharingDisabled" | "tacticPreviewsById" | "permissions")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "ordinal" | "title" | "subtitle" | "description" | "debriefAfterMinutes" | "image" | "optionsById" | "backgroundColor" | "isTemplate" | "language" | "linkUrl" | "likesCount" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
+}, "name" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedFor" | "recommendedForIssueOrdinals" | "slug" | "creatorProfileId" | "tacticPreviewsById")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "ordinal" | "title" | "subtitle" | "description" | "debriefAfterMinutes" | "image" | "optionsById" | "backgroundColor" | "isTemplate" | "language" | "linkUrl" | "likesCount" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;

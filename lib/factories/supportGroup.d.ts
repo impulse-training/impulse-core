@@ -11,11 +11,13 @@ export declare const makeSupportGroupFactory: (TimestampKlass: typeof TimestampL
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    recommendedForIssueIds?: string[] | undefined;
+    recommendedFor?: "time" | "impulse" | null | undefined;
+    recommendedForIssueOrdinals?: {
+        [x: string]: number;
+    } | null | undefined;
     slug?: string | undefined;
-    everythingPermissions?: boolean | undefined;
     creatorProfileId?: string | undefined;
-    lastMessagePreview?: string | undefined;
-    isSharingDisabled?: boolean | undefined;
     tacticPreviewsById?: {
         updatedAt?: {
             seconds: number;
@@ -30,9 +32,7 @@ export declare const makeSupportGroupFactory: (TimestampKlass: typeof TimestampL
         backgroundColor?: string | undefined;
         title: string;
     }[] | undefined;
-    permissions?: {} | undefined;
     name: string;
     invitationCode: string;
-    participantProfileIds: string[];
     invitationUrl: string;
-}, "name" | "invitationCode" | "participantProfileIds" | "invitationUrl" | ("createdAt" | "updatedAt" | "slug" | "everythingPermissions" | "creatorProfileId" | "lastMessagePreview" | "isSharingDisabled" | "tacticPreviewsById" | "permissions")>;
+}, "name" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedFor" | "recommendedForIssueOrdinals" | "slug" | "creatorProfileId" | "tacticPreviewsById")>;
