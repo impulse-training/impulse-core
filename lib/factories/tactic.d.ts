@@ -15,7 +15,6 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
     } | null | undefined;
     profileId?: string | null | undefined;
     setbackThreshold?: number | null | undefined;
-    ordinal?: number | undefined;
     subtitle?: import("yup").Maybe<string | undefined>;
     description?: string | null | undefined;
     debriefAfterMinutes?: number | null | undefined;
@@ -96,6 +95,7 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
     numberOfLikes?: number | null | undefined;
     isSuggested?: boolean | undefined;
     type: import("../schema").QuestionKeyType;
+    ordinal: number;
     title: string;
     backgroundColor: string;
-}, "type" | "title" | "backgroundColor" | ("createdAt" | "updatedAt" | "profileId" | "setbackThreshold" | "ordinal" | "subtitle" | "description" | "debriefAfterMinutes" | "image" | "optionsById" | "isTemplate" | "language" | "linkUrl" | "likesCount" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested")>;
+}, "type" | "ordinal" | "title" | "backgroundColor" | ("createdAt" | "updatedAt" | "profileId" | "setbackThreshold" | "subtitle" | "description" | "debriefAfterMinutes" | "image" | "optionsById" | "isTemplate" | "language" | "linkUrl" | "likesCount" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested")>;

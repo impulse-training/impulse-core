@@ -12,7 +12,7 @@ export declare const taskTacticSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    ordinal: number | undefined;
+    ordinal: number;
     title: string;
     subtitle: yup.Maybe<string | undefined>;
     description: string | null | undefined;

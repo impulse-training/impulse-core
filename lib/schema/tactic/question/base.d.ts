@@ -12,7 +12,7 @@ export declare function questionTacticValueBaseSchema(type: QuestionKeyType): im
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    ordinal: number | undefined;
+    ordinal: number;
     title: string;
     subtitle: import("yup").Maybe<string | undefined>;
     description: string | null | undefined;

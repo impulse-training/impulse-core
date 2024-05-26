@@ -12,7 +12,7 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    ordinal: number | undefined;
+    ordinal: number;
     title: string;
     subtitle: yup.Maybe<string | undefined>;
     description: string | null | undefined;

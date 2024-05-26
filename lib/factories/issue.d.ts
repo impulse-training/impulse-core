@@ -32,7 +32,6 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         } | null | undefined;
         profileId?: string | null | undefined;
         setbackThreshold?: number | null | undefined;
-        ordinal?: number | undefined;
         subtitle?: import("yup").Maybe<string | undefined>;
         description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
@@ -113,6 +112,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         numberOfLikes?: number | null | undefined;
         isSuggested?: boolean | undefined;
         type: import("../schema").QuestionKeyType;
+        ordinal: number;
         title: string;
         backgroundColor: string;
     } | {
@@ -128,7 +128,6 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         } | null | undefined;
         profileId?: string | null | undefined;
         setbackThreshold?: number | null | undefined;
-        ordinal?: number | undefined;
         subtitle?: import("yup").Maybe<string | undefined>;
         description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
@@ -209,6 +208,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         numberOfLikes?: number | null | undefined;
         isSuggested?: boolean | undefined;
         type: import("../schema").QuestionKeyType;
+        ordinal: number;
         title: string;
         backgroundColor: string;
         options: string[];
@@ -227,7 +227,6 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         setbackThreshold?: number | null | undefined;
         lowEmoji?: import("yup").Maybe<string | undefined>;
         highEmoji?: import("yup").Maybe<string | undefined>;
-        ordinal?: number | undefined;
         subtitle?: import("yup").Maybe<string | undefined>;
         description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
@@ -308,6 +307,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         numberOfLikes?: number | null | undefined;
         isSuggested?: boolean | undefined;
         type: import("../schema").QuestionKeyType;
+        ordinal: number;
         title: string;
         backgroundColor: string;
     };
