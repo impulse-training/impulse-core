@@ -53,7 +53,7 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
             } | null | undefined;
             slug?: string | undefined;
             creatorProfileId?: string | undefined;
-            tacticPreviewsById?: {
+            last3TacticPreviews?: {
                 updatedAt?: {
                     seconds: number;
                     nanoseconds: number;
@@ -75,6 +75,22 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
             name: string;
             invitationCode: string;
             invitationUrl: string;
+            tacticPreviewsById: {
+                [x: string]: {
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    image?: {
+                        localFilePath?: import("yup").Maybe<string | undefined>;
+                        storagePath?: import("yup").Maybe<string | undefined>;
+                        uri?: import("yup").Maybe<string | undefined>;
+                    } | undefined;
+                    backgroundColor?: string | undefined;
+                    title: string;
+                };
+            };
         };
     };
     uids: string[];

@@ -1,7 +1,7 @@
 import * as yup from 'yup';
 import { optionalStringArray } from './utils/array';
 import { imageSchema } from './utils/image';
-import { optionalObjectOf } from './utils/objectOf';
+import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema } from './utils/timestamp';
 
 export const tacticPreviewSchema = yup.object({
@@ -20,7 +20,8 @@ export const supportGroupSchema = yup.object().shape({
   creatorProfileId: yup.string(),
   invitationCode: yup.string().required(),
   invitationUrl: yup.string().url().required(),
-  tacticPreviewsById: yup.array().of(tacticPreviewSchema.required()),
+  tacticPreviewsById: objectOf(tacticPreviewSchema.required()),
+  last3TacticPreviews: yup.array().of(tacticPreviewSchema.required()),
   recommendedFor: yup
     .mixed<'impulse' | 'time'>()
     .oneOf(['impulse', 'time'])

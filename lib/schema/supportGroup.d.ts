@@ -40,6 +40,22 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
     invitationCode: string;
     invitationUrl: string;
     tacticPreviewsById: {
+        [x: string]: {
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            image?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | undefined;
+            backgroundColor?: string | undefined;
+            title: string;
+        };
+    };
+    last3TacticPreviews: {
         updatedAt?: {
             seconds: number;
             nanoseconds: number;
@@ -66,7 +82,8 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
     creatorProfileId: undefined;
     invitationCode: undefined;
     invitationUrl: undefined;
-    tacticPreviewsById: "";
+    tacticPreviewsById: undefined;
+    last3TacticPreviews: "";
     recommendedFor: undefined;
     recommendedForIssueIds: "";
     recommendedForIssueOrdinals: undefined;

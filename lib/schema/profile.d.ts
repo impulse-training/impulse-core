@@ -52,7 +52,7 @@ export declare const profileSchema: yup.ObjectSchema<{
             } | null | undefined;
             slug?: string | undefined;
             creatorProfileId?: string | undefined;
-            tacticPreviewsById?: {
+            last3TacticPreviews?: {
                 updatedAt?: {
                     seconds: number;
                     nanoseconds: number;
@@ -74,6 +74,22 @@ export declare const profileSchema: yup.ObjectSchema<{
             name: string;
             invitationCode: string;
             invitationUrl: string;
+            tacticPreviewsById: {
+                [x: string]: {
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    image?: {
+                        localFilePath?: yup.Maybe<string | undefined>;
+                        storagePath?: yup.Maybe<string | undefined>;
+                        uri?: yup.Maybe<string | undefined>;
+                    } | undefined;
+                    backgroundColor?: string | undefined;
+                    title: string;
+                };
+            };
         };
     };
     scheduledNotificationIds: string[] | undefined;

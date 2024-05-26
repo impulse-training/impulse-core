@@ -71,7 +71,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
         } | null | undefined;
         slug?: string | undefined;
         creatorProfileId?: string | undefined;
-        tacticPreviewsById?: {
+        last3TacticPreviews?: {
             updatedAt?: {
                 seconds: number;
                 nanoseconds: number;
@@ -93,6 +93,22 @@ declare const baseLogSchema: yup.ObjectSchema<{
         name: string;
         invitationCode: string;
         invitationUrl: string;
+        tacticPreviewsById: {
+            [x: string]: {
+                updatedAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                image?: {
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    storagePath?: yup.Maybe<string | undefined>;
+                    uri?: yup.Maybe<string | undefined>;
+                } | undefined;
+                backgroundColor?: string | undefined;
+                title: string;
+            };
+        };
     }[];
     parentIssueIds: string[] | undefined;
     tacticIds: string[];
@@ -182,7 +198,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | null | undefined;
         slug?: string | undefined;
         creatorProfileId?: string | undefined;
-        tacticPreviewsById?: {
+        last3TacticPreviews?: {
             updatedAt?: {
                 seconds: number;
                 nanoseconds: number;
@@ -204,6 +220,22 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         name: string;
         invitationCode: string;
         invitationUrl: string;
+        tacticPreviewsById: {
+            [x: string]: {
+                updatedAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                image?: {
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    storagePath?: yup.Maybe<string | undefined>;
+                    uri?: yup.Maybe<string | undefined>;
+                } | undefined;
+                backgroundColor?: string | undefined;
+                title: string;
+            };
+        };
     }[];
     parentIssueIds: string[] | undefined;
     tacticIds: string[];
@@ -308,7 +340,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | null | undefined;
         slug?: string | undefined;
         creatorProfileId?: string | undefined;
-        tacticPreviewsById?: {
+        last3TacticPreviews?: {
             updatedAt?: {
                 seconds: number;
                 nanoseconds: number;
@@ -330,6 +362,22 @@ declare const locationLogSchema: yup.ObjectSchema<{
         name: string;
         invitationCode: string;
         invitationUrl: string;
+        tacticPreviewsById: {
+            [x: string]: {
+                updatedAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                image?: {
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    storagePath?: yup.Maybe<string | undefined>;
+                    uri?: yup.Maybe<string | undefined>;
+                } | undefined;
+                backgroundColor?: string | undefined;
+                title: string;
+            };
+        };
     }[];
     parentIssueIds: string[] | undefined;
     tacticIds: string[];
@@ -424,7 +472,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | null | undefined;
         slug?: string | undefined;
         creatorProfileId?: string | undefined;
-        tacticPreviewsById?: {
+        last3TacticPreviews?: {
             updatedAt?: {
                 seconds: number;
                 nanoseconds: number;
@@ -446,6 +494,22 @@ declare const timeLogSchema: yup.ObjectSchema<{
         name: string;
         invitationCode: string;
         invitationUrl: string;
+        tacticPreviewsById: {
+            [x: string]: {
+                updatedAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                image?: {
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    storagePath?: yup.Maybe<string | undefined>;
+                    uri?: yup.Maybe<string | undefined>;
+                } | undefined;
+                backgroundColor?: string | undefined;
+                title: string;
+            };
+        };
     }[];
     parentIssueIds: string[] | undefined;
     tacticIds: string[];
@@ -556,7 +620,7 @@ export declare const logSchema: yup.Lazy<{
         } | null | undefined;
         slug?: string | undefined;
         creatorProfileId?: string | undefined;
-        tacticPreviewsById?: {
+        last3TacticPreviews?: {
             updatedAt?: {
                 seconds: number;
                 nanoseconds: number;
@@ -578,6 +642,22 @@ export declare const logSchema: yup.Lazy<{
         name: string;
         invitationCode: string;
         invitationUrl: string;
+        tacticPreviewsById: {
+            [x: string]: {
+                updatedAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                image?: {
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    storagePath?: yup.Maybe<string | undefined>;
+                    uri?: yup.Maybe<string | undefined>;
+                } | undefined;
+                backgroundColor?: string | undefined;
+                title: string;
+            };
+        };
     }[];
     tacticIds: string[];
     tacticData: {
@@ -638,7 +718,7 @@ export declare const logSchema: yup.Lazy<{
         } | null | undefined;
         slug?: string | undefined;
         creatorProfileId?: string | undefined;
-        tacticPreviewsById?: {
+        last3TacticPreviews?: {
             updatedAt?: {
                 seconds: number;
                 nanoseconds: number;
@@ -660,6 +740,22 @@ export declare const logSchema: yup.Lazy<{
         name: string;
         invitationCode: string;
         invitationUrl: string;
+        tacticPreviewsById: {
+            [x: string]: {
+                updatedAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                image?: {
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    storagePath?: yup.Maybe<string | undefined>;
+                    uri?: yup.Maybe<string | undefined>;
+                } | undefined;
+                backgroundColor?: string | undefined;
+                title: string;
+            };
+        };
     }[];
     tacticIds: string[];
     tacticData: {
@@ -724,7 +820,7 @@ export declare const logSchema: yup.Lazy<{
         } | null | undefined;
         slug?: string | undefined;
         creatorProfileId?: string | undefined;
-        tacticPreviewsById?: {
+        last3TacticPreviews?: {
             updatedAt?: {
                 seconds: number;
                 nanoseconds: number;
@@ -746,6 +842,22 @@ export declare const logSchema: yup.Lazy<{
         name: string;
         invitationCode: string;
         invitationUrl: string;
+        tacticPreviewsById: {
+            [x: string]: {
+                updatedAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                image?: {
+                    localFilePath?: yup.Maybe<string | undefined>;
+                    storagePath?: yup.Maybe<string | undefined>;
+                    uri?: yup.Maybe<string | undefined>;
+                } | undefined;
+                backgroundColor?: string | undefined;
+                title: string;
+            };
+        };
     }[];
     tacticIds: string[];
     tacticData: {

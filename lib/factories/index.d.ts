@@ -199,7 +199,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 } | null | undefined;
                 slug?: string | undefined;
                 creatorProfileId?: string | undefined;
-                tacticPreviewsById?: {
+                last3TacticPreviews?: {
                     updatedAt?: {
                         seconds: number;
                         nanoseconds: number;
@@ -221,6 +221,22 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 name: string;
                 invitationCode: string;
                 invitationUrl: string;
+                tacticPreviewsById: {
+                    [x: string]: {
+                        updatedAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        image?: {
+                            localFilePath?: import("yup").Maybe<string | undefined>;
+                            storagePath?: import("yup").Maybe<string | undefined>;
+                            uri?: import("yup").Maybe<string | undefined>;
+                        } | undefined;
+                        backgroundColor?: string | undefined;
+                        title: string;
+                    };
+                };
             };
         };
         uids: string[];
@@ -552,7 +568,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         } | null | undefined;
         slug?: string | undefined;
         creatorProfileId?: string | undefined;
-        tacticPreviewsById?: {
+        last3TacticPreviews?: {
             updatedAt?: {
                 seconds: number;
                 nanoseconds: number;
@@ -574,7 +590,23 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         name: string;
         invitationCode: string;
         invitationUrl: string;
-    }, "name" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "tacticPreviewsById" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>;
+        tacticPreviewsById: {
+            [x: string]: {
+                updatedAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                image?: {
+                    localFilePath?: import("yup").Maybe<string | undefined>;
+                    storagePath?: import("yup").Maybe<string | undefined>;
+                    uri?: import("yup").Maybe<string | undefined>;
+                } | undefined;
+                backgroundColor?: string | undefined;
+                title: string;
+            };
+        };
+    }, "name" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "last3TacticPreviews" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>;
     tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "title" | "image" | "backgroundColor" | "type" | "setbackThreshold" | "ordinal" | "subtitle" | "description" | "debriefAfterMinutes" | "optionsById" | "isTemplate" | "language" | "linkUrl" | "likesCount" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
     questionTimeTacticFactory: import("factory.ts").Factory<{
         createdAt?: {

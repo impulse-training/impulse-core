@@ -13,7 +13,7 @@ export declare const makeSupportGroupFactory: (TimestampKlass: typeof TimestampL
     } | null | undefined;
     slug?: string | undefined;
     creatorProfileId?: string | undefined;
-    tacticPreviewsById?: {
+    last3TacticPreviews?: {
         updatedAt?: {
             seconds: number;
             nanoseconds: number;
@@ -35,4 +35,20 @@ export declare const makeSupportGroupFactory: (TimestampKlass: typeof TimestampL
     name: string;
     invitationCode: string;
     invitationUrl: string;
-}, "name" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "tacticPreviewsById" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>;
+    tacticPreviewsById: {
+        [x: string]: {
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            image?: {
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
+            } | undefined;
+            backgroundColor?: string | undefined;
+            title: string;
+        };
+    };
+}, "name" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "last3TacticPreviews" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>;
