@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-export declare const likeSchema: yup.ObjectSchema<{
+export declare const tacticImpressionSchema: yup.ObjectSchema<{
     profileId: string;
     isLiked: NonNullable<boolean | undefined>;
     createdAt: {
@@ -18,4 +18,4 @@ export declare const likeSchema: yup.ObjectSchema<{
     createdAt: undefined;
     updatedAt: undefined;
 }, "">;
-export type LikeValue = yup.InferType<typeof likeSchema>;
+export type LikeValue = yup.InferType<typeof tacticImpressionSchema>;

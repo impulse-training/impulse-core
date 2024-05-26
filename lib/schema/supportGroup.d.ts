@@ -35,22 +35,13 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
         toDate: Function;
     } | null | undefined;
     slug: string | undefined;
-    templateId: string | undefined;
     everythingPermissions: boolean | undefined;
     participantProfileIds: string[];
-    memberTargetCount: number | undefined;
     groupName: string;
-    groupNameAliases: {
-        [x: string]: string;
-        [x: number]: string;
-        [x: symbol]: string;
-    } | undefined;
-    groupDescription: string | undefined;
     creatorProfileId: string | undefined;
     lastMessagePreview: string | undefined;
     invitationCode: string;
     invitationUrl: string;
-    lastMessageProfileId: string | undefined;
     isSharingDisabled: boolean | undefined;
     tacticPreviewsById: {
         updatedAt?: {
@@ -66,29 +57,20 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
         backgroundColor?: string | undefined;
         title: string;
     }[] | undefined;
-    unreadCounts: {
-        [x: string]: number;
-    } | null | undefined;
     permissions: {} | undefined;
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
     slug: undefined;
-    templateId: undefined;
     everythingPermissions: undefined;
     participantProfileIds: "";
-    memberTargetCount: undefined;
     groupName: undefined;
-    groupNameAliases: undefined;
-    groupDescription: undefined;
     creatorProfileId: undefined;
     lastMessagePreview: undefined;
     invitationCode: undefined;
     invitationUrl: undefined;
-    lastMessageProfileId: undefined;
     isSharingDisabled: undefined;
     tacticPreviewsById: "";
-    unreadCounts: undefined;
     permissions: {};
 }, "">;
 export type SupportGroupValue = yup.InferType<typeof supportGroupSchema>;

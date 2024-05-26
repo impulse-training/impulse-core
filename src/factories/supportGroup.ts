@@ -7,7 +7,6 @@ export const makeSupportGroupFactory = (TimestampKlass: typeof TimestampLike) =>
     groupName: 'Cold Turkey Warriors',
     participantProfileIds: [],
     permissions: {},
-    unreadCounts: {},
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     creatorProfileId: 'abc123',

@@ -7,7 +7,6 @@ export * from './contact';
 export * from './dayLogsSummary';
 export * from './invitation';
 export * from './issue';
-export * from './like';
 export * from './location';
 export * from './log';
 export * from './mailTemplate';
@@ -23,6 +22,7 @@ export * from './spotifyCredentials';
 export * from './strategy';
 export * from './supportGroup';
 export * from './tactic';
+export * from './tacticImpression';
 
 // Utils
 export * from './utils/image';

@@ -12,18 +12,9 @@ export declare const makeSupportGroupFactory: (TimestampKlass: typeof TimestampL
         toDate: Function;
     } | null | undefined;
     slug?: string | undefined;
-    templateId?: string | undefined;
     everythingPermissions?: boolean | undefined;
-    memberTargetCount?: number | undefined;
-    groupNameAliases?: {
-        [x: string]: string;
-        [x: number]: string;
-        [x: symbol]: string;
-    } | undefined;
-    groupDescription?: string | undefined;
     creatorProfileId?: string | undefined;
     lastMessagePreview?: string | undefined;
-    lastMessageProfileId?: string | undefined;
     isSharingDisabled?: boolean | undefined;
     tacticPreviewsById?: {
         updatedAt?: {
@@ -39,12 +30,9 @@ export declare const makeSupportGroupFactory: (TimestampKlass: typeof TimestampL
         backgroundColor?: string | undefined;
         title: string;
     }[] | undefined;
-    unreadCounts?: {
-        [x: string]: number;
-    } | null | undefined;
     permissions?: {} | undefined;
     invitationCode: string;
     participantProfileIds: string[];
     groupName: string;
     invitationUrl: string;
-}, "invitationCode" | "participantProfileIds" | "groupName" | "invitationUrl" | ("createdAt" | "updatedAt" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "creatorProfileId" | "lastMessagePreview" | "lastMessageProfileId" | "isSharingDisabled" | "tacticPreviewsById" | "unreadCounts" | "permissions")>;
+}, "invitationCode" | "participantProfileIds" | "groupName" | "invitationUrl" | ("createdAt" | "updatedAt" | "slug" | "everythingPermissions" | "creatorProfileId" | "lastMessagePreview" | "isSharingDisabled" | "tacticPreviewsById" | "permissions")>;

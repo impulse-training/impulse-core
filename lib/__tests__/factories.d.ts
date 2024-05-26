@@ -514,18 +514,9 @@ export declare const factories: {
             toDate: Function;
         } | null | undefined;
         slug?: string | undefined;
-        templateId?: string | undefined;
         everythingPermissions?: boolean | undefined;
-        memberTargetCount?: number | undefined;
-        groupNameAliases?: {
-            [x: string]: string;
-            [x: number]: string;
-            [x: symbol]: string;
-        } | undefined;
-        groupDescription?: string | undefined;
         creatorProfileId?: string | undefined;
         lastMessagePreview?: string | undefined;
-        lastMessageProfileId?: string | undefined;
         isSharingDisabled?: boolean | undefined;
         tacticPreviewsById?: {
             updatedAt?: {
@@ -541,15 +532,12 @@ export declare const factories: {
             backgroundColor?: string | undefined;
             title: string;
         }[] | undefined;
-        unreadCounts?: {
-            [x: string]: number;
-        } | null | undefined;
         permissions?: {} | undefined;
         invitationCode: string;
         participantProfileIds: string[];
         groupName: string;
         invitationUrl: string;
-    }, "invitationCode" | "participantProfileIds" | "groupName" | "invitationUrl" | ("createdAt" | "updatedAt" | "slug" | "templateId" | "everythingPermissions" | "memberTargetCount" | "groupNameAliases" | "groupDescription" | "creatorProfileId" | "lastMessagePreview" | "lastMessageProfileId" | "isSharingDisabled" | "tacticPreviewsById" | "unreadCounts" | "permissions")>;
+    }, "invitationCode" | "participantProfileIds" | "groupName" | "invitationUrl" | ("createdAt" | "updatedAt" | "slug" | "everythingPermissions" | "creatorProfileId" | "lastMessagePreview" | "isSharingDisabled" | "tacticPreviewsById" | "permissions")>;
     messageFactory: import("factory.ts").Factory<import("..").MessageValue, keyof import("..").MessageValue>;
     tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "ordinal" | "title" | "subtitle" | "description" | "debriefAfterMinutes" | "image" | "optionsById" | "backgroundColor" | "isTemplate" | "language" | "linkUrl" | "likesCount" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
     questionTimeTacticFactory: import("factory.ts").Factory<{
