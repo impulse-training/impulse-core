@@ -309,7 +309,6 @@ export declare const issueSchema: yup.ObjectSchema<{
     path: string | null | undefined;
     parentIds: string[];
     parentNames: string[];
-    strategiesCount: number | null | undefined;
     profileCount: number | null | undefined;
     isFeatured: boolean | null | undefined;
     therapistProfileIds: string[];
@@ -332,7 +331,6 @@ export declare const issueSchema: yup.ObjectSchema<{
     path: undefined;
     parentIds: "";
     parentNames: "";
-    strategiesCount: undefined;
     profileCount: undefined;
     isFeatured: undefined;
     therapistProfileIds: "";
