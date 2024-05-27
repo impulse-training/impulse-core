@@ -12,6 +12,7 @@ export declare const issueSchema: yup.ObjectSchema<{
     };
     parentId: string | null | undefined;
     name: string;
+    ordinal: number;
     synonyms: string[];
     debriefTactic: {
         createdAt?: {
@@ -325,6 +326,7 @@ export declare const issueSchema: yup.ObjectSchema<{
     };
     parentId: undefined;
     name: undefined;
+    ordinal: undefined;
     synonyms: "";
     debriefTactic: undefined;
     setbackThreshold: undefined;

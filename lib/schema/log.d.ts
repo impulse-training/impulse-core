@@ -58,6 +58,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
         toDate: Function;
     };
     timezone: string;
+    issueId: string | undefined;
     supportGroups: {
         createdAt?: {
             seconds: number;
@@ -147,6 +148,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
         toDate: undefined;
     };
     timezone: undefined;
+    issueId: undefined;
     supportGroups: "";
     parentIssueIds: "";
     tacticIds: "";
@@ -185,6 +187,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         toDate: Function;
     };
     timezone: string;
+    issueId: string | undefined;
     supportGroups: {
         createdAt?: {
             seconds: number;
@@ -291,6 +294,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         toDate: undefined;
     };
     timezone: undefined;
+    issueId: undefined;
     supportGroups: "";
     parentIssueIds: "";
     tacticIds: "";
@@ -327,6 +331,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
         toDate: Function;
     };
     timezone: string;
+    issueId: string | undefined;
     supportGroups: {
         createdAt?: {
             seconds: number;
@@ -422,6 +427,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
         toDate: undefined;
     };
     timezone: undefined;
+    issueId: undefined;
     supportGroups: "";
     parentIssueIds: "";
     tacticIds: "";
@@ -459,6 +465,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
         toDate: Function;
     };
     timezone: string;
+    issueId: string | undefined;
     supportGroups: {
         createdAt?: {
             seconds: number;
@@ -550,6 +557,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
         toDate: undefined;
     };
     timezone: undefined;
+    issueId: undefined;
     supportGroups: "";
     parentIssueIds: "";
     tacticIds: "";
@@ -574,6 +582,7 @@ export declare const logSchema: yup.Lazy<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    issueId?: string | undefined;
     parentIssueIds?: string[] | undefined;
     tacticLikes?: {
         [x: string]: NonNullable<boolean | undefined>;
@@ -687,6 +696,7 @@ export declare const logSchema: yup.Lazy<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    issueId?: string | undefined;
     parentIssueIds?: string[] | undefined;
     tacticLikes?: {
         [x: string]: NonNullable<boolean | undefined>;
@@ -789,6 +799,7 @@ export declare const logSchema: yup.Lazy<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    issueId?: string | undefined;
     parentIssueIds?: string[] | undefined;
     tacticLikes?: {
         [x: string]: NonNullable<boolean | undefined>;

@@ -8,6 +8,7 @@ export const issueSchema = yup.object().shape({
   updatedAt: timestampSchema.required(),
   parentId: yup.string().nullable(),
   name: yup.string().required(),
+  ordinal: yup.number().required(),
   synonyms: yup
     .array()
     .of(yup.string().required())

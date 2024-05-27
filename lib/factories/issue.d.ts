@@ -17,6 +17,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         toDate: Function;
     };
     name: string;
+    ordinal: number;
     synonyms: string[];
     debriefTactic: {
         createdAt?: {
@@ -313,4 +314,4 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
     parentIds: string[];
     parentNames: string[];
     therapistProfileIds: string[];
-}, "createdAt" | "updatedAt" | "name" | "synonyms" | "debriefTactic" | "parentIds" | "parentNames" | "therapistProfileIds" | ("path" | "setbackThreshold" | "parentId" | "profileCount" | "isFeatured")>;
+}, "createdAt" | "updatedAt" | "name" | "ordinal" | "synonyms" | "debriefTactic" | "parentIds" | "parentNames" | "therapistProfileIds" | ("path" | "setbackThreshold" | "parentId" | "profileCount" | "isFeatured")>;

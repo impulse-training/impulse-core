@@ -126,9 +126,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         } | undefined;
         profileId: string;
     }, "profileId" | ("createdAt" | "updatedAt" | "tacticId" | "tacticTitle" | "text" | "recording" | "isEdited" | "avatar")>;
-    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "supportGroups" | "parentIssueIds" | "tacticIds" | "tacticLikes" | "tacticData" | "debriefAfter" | "debriefReminderSentAt" | "debriefedAt">;
-    timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "supportGroups" | "parentIssueIds" | "tacticIds" | "tacticLikes" | "tacticData">;
-    locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "supportGroups" | "parentIssueIds" | "tacticIds" | "tacticLikes" | "tacticData" | "locationId" | "isDisplayable" | "locationName" | "locationMode">;
+    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "issueId" | "supportGroups" | "parentIssueIds" | "tacticIds" | "tacticLikes" | "tacticData" | "debriefAfter" | "debriefReminderSentAt" | "debriefedAt">;
+    timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "issueId" | "supportGroups" | "parentIssueIds" | "tacticIds" | "tacticLikes" | "tacticData">;
+    locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "issueId" | "supportGroups" | "parentIssueIds" | "tacticIds" | "tacticLikes" | "tacticData" | "locationId" | "isDisplayable" | "locationName" | "locationMode">;
     locationFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -258,6 +258,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: Function;
         };
         name: string;
+        ordinal: number;
         synonyms: string[];
         debriefTactic: {
             createdAt?: {
@@ -554,7 +555,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         parentIds: string[];
         parentNames: string[];
         therapistProfileIds: string[];
-    }, "createdAt" | "updatedAt" | "name" | "synonyms" | "debriefTactic" | "parentIds" | "parentNames" | "therapistProfileIds" | ("path" | "setbackThreshold" | "parentId" | "profileCount" | "isFeatured")>;
+    }, "createdAt" | "updatedAt" | "name" | "ordinal" | "synonyms" | "debriefTactic" | "parentIds" | "parentNames" | "therapistProfileIds" | ("path" | "setbackThreshold" | "parentId" | "profileCount" | "isFeatured")>;
     supportGroupFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
