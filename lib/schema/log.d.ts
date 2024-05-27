@@ -13,7 +13,7 @@ export declare const questionSchema: yup.ObjectSchema<{
 export type QuestionValue = yup.InferType<typeof questionSchema>;
 export declare const tacticDataSchema: yup.ObjectSchema<{
     value: number | undefined;
-    unit: NonNullable<"time" | "custom" | undefined>;
+    unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
     customUnit: string | undefined;
     optionId: string | null | undefined;
     optionLabel: string | undefined;
@@ -133,7 +133,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            unit: NonNullable<"time" | "custom" | undefined>;
+            unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
             formattedValue: string;
         };
     };
@@ -260,7 +260,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            unit: NonNullable<"time" | "custom" | undefined>;
+            unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
             formattedValue: string;
         };
     };
@@ -402,7 +402,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            unit: NonNullable<"time" | "custom" | undefined>;
+            unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
             formattedValue: string;
         };
     };
@@ -534,7 +534,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            unit: NonNullable<"time" | "custom" | undefined>;
+            unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
             formattedValue: string;
         };
     };
@@ -672,7 +672,7 @@ export declare const logSchema: yup.Lazy<{
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            unit: NonNullable<"time" | "custom" | undefined>;
+            unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
             formattedValue: string;
         };
     };
@@ -770,7 +770,7 @@ export declare const logSchema: yup.Lazy<{
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            unit: NonNullable<"time" | "custom" | undefined>;
+            unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
             formattedValue: string;
         };
     };
@@ -872,7 +872,7 @@ export declare const logSchema: yup.Lazy<{
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            unit: NonNullable<"time" | "custom" | undefined>;
+            unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
             formattedValue: string;
         };
     };

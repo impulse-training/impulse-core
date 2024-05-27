@@ -1,9 +1,9 @@
 import { compact } from 'lodash';
-import { formatSecondsInWords } from '../schema';
+import { TacticData, formatSecondsInWords } from '../schema';
 
 export function formatValue(
   value: number,
-  unit: 'time' | 'custom',
+  unit: TacticData['unit'],
   customUnit?: string
 ) {
   if (unit === 'time') return formatSecondsInWords(value || 0);

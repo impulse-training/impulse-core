@@ -23,7 +23,10 @@ export type QuestionValue = yup.InferType<typeof questionSchema>;
 
 export const tacticDataSchema = yup.object({
   value: yup.number(),
-  unit: yup.mixed<'time' | 'custom'>().oneOf(['time', 'custom']).required(),
+  unit: yup
+    .mixed<'time' | 'custom' | 'impulse'>()
+    .oneOf(['time', 'custom', 'impulse'])
+    .required(),
   customUnit: yup.string(),
   optionId: yup.string().nullable(),
   optionLabel: yup.string(),
