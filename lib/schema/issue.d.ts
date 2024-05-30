@@ -94,7 +94,7 @@ export declare const issueSchema: yup.ObjectSchema<{
                 strategiesPath: string;
             };
         } | null | undefined;
-        isTemplate?: boolean | null | undefined;
+        templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
         language?: string | null | undefined;
         linkUrl?: string | null | undefined;
         likesCount?: number | null | undefined;
@@ -184,7 +184,7 @@ export declare const issueSchema: yup.ObjectSchema<{
                 strategiesPath: string;
             };
         } | null | undefined;
-        isTemplate?: boolean | null | undefined;
+        templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
         language?: string | null | undefined;
         linkUrl?: string | null | undefined;
         likesCount?: number | null | undefined;
@@ -277,7 +277,7 @@ export declare const issueSchema: yup.ObjectSchema<{
                 strategiesPath: string;
             };
         } | null | undefined;
-        isTemplate?: boolean | null | undefined;
+        templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
         language?: string | null | undefined;
         linkUrl?: string | null | undefined;
         likesCount?: number | null | undefined;

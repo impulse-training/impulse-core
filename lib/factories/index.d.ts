@@ -158,7 +158,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: Function;
         } | null | undefined;
         setbackThreshold?: number | undefined;
-        debriefAfterMinutes?: number | undefined;
         parentIssueIds?: string[] | undefined;
         activeImpulseId?: string | undefined;
         currentAppState?: import("react-native/types").AppStateStatus | undefined;
@@ -240,7 +239,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             };
         };
         uids: string[];
-    }, "invitationCode" | "timezone" | "favouriteSupportGroups" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "debriefAfterMinutes" | "parentIssueIds" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "issueName" | "isTourCompleted" | "androidPermissions" | "region" | "scheduledNotificationIds")>;
+    }, "invitationCode" | "timezone" | "favouriteSupportGroups" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIssueIds" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "issueName" | "isTourCompleted" | "androidPermissions" | "region" | "scheduledNotificationIds")>;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
         setbackThreshold?: number | undefined;
@@ -340,7 +339,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     strategiesPath: string;
                 };
             } | null | undefined;
-            isTemplate?: boolean | null | undefined;
+            templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
             language?: string | null | undefined;
             linkUrl?: string | null | undefined;
             likesCount?: number | null | undefined;
@@ -430,7 +429,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     strategiesPath: string;
                 };
             } | null | undefined;
-            isTemplate?: boolean | null | undefined;
+            templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
             language?: string | null | undefined;
             linkUrl?: string | null | undefined;
             likesCount?: number | null | undefined;
@@ -523,7 +522,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     strategiesPath: string;
                 };
             } | null | undefined;
-            isTemplate?: boolean | null | undefined;
+            templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
             language?: string | null | undefined;
             linkUrl?: string | null | undefined;
             likesCount?: number | null | undefined;
@@ -590,7 +589,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             };
         };
     }, "name" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "last3TacticPreviews" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "title" | "image" | "backgroundColor" | "type" | "setbackThreshold" | "ordinal" | "description" | "debriefAfterMinutes" | "optionsById" | "isTemplate" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested">;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "title" | "image" | "backgroundColor" | "type" | "setbackThreshold" | "ordinal" | "description" | "debriefAfterMinutes" | "optionsById" | "templateFor" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested">;
     questionTimeTacticFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -671,7 +670,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 strategiesPath: string;
             };
         } | null | undefined;
-        isTemplate?: boolean | null | undefined;
+        templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
         language?: string | null | undefined;
         linkUrl?: string | null | undefined;
         likesCount?: number | null | undefined;
@@ -681,7 +680,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         backgroundColor: string;
         type: import("..").QuestionKeyType;
         ordinal: number;
-    }, "title" | "backgroundColor" | "type" | "ordinal" | ("createdAt" | "updatedAt" | "profileId" | "image" | "setbackThreshold" | "description" | "debriefAfterMinutes" | "optionsById" | "isTemplate" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested")>;
+    }, "title" | "backgroundColor" | "type" | "ordinal" | ("createdAt" | "updatedAt" | "profileId" | "image" | "setbackThreshold" | "description" | "debriefAfterMinutes" | "optionsById" | "templateFor" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested")>;
     strategyFactory: import("factory.ts").Factory<import("..").StrategyValue, "createdAt" | "updatedAt" | "profileId" | "name" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "type" | "ordinal" | "tacticsById" | "tacticIds" | "subscribeToAllTactics" | "supportGroup">;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {

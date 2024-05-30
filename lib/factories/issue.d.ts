@@ -99,7 +99,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
                 strategiesPath: string;
             };
         } | null | undefined;
-        isTemplate?: boolean | null | undefined;
+        templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
         language?: string | null | undefined;
         linkUrl?: string | null | undefined;
         likesCount?: number | null | undefined;
@@ -189,7 +189,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
                 strategiesPath: string;
             };
         } | null | undefined;
-        isTemplate?: boolean | null | undefined;
+        templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
         language?: string | null | undefined;
         linkUrl?: string | null | undefined;
         likesCount?: number | null | undefined;
@@ -282,7 +282,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
                 strategiesPath: string;
             };
         } | null | undefined;
-        isTemplate?: boolean | null | undefined;
+        templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
         language?: string | null | undefined;
         linkUrl?: string | null | undefined;
         likesCount?: number | null | undefined;

@@ -13,7 +13,6 @@ export const makeTacticFactory = (TimestampKlass: typeof TimestampLike) =>
     language: 'english',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
-    isTemplate: false,
     backgroundColor: '#FF0000',
   });
 
@@ -30,6 +29,5 @@ export const makeQuestionTimeTacticFactory = (
     language: 'english',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
-    isTemplate: false,
     backgroundColor: '#FF0000',
   });

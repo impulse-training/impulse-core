@@ -17,7 +17,6 @@ export const profileSchema = yup.object().shape({
   notificationPreferences: optionalObjectOf(
     yup.array().of(notificationOptionSchema)
   ),
-  debriefAfterMinutes: yup.number(),
   issueName: yup.string(),
   setbackThreshold: yup.number(),
   isTourCompleted: yup.boolean(),

@@ -27,7 +27,6 @@ export declare const profileSchema: yup.ObjectSchema<{
     notificationPreferences: {
         [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
     } | null | undefined;
-    debriefAfterMinutes: number | undefined;
     issueName: string | undefined;
     setbackThreshold: number | undefined;
     isTourCompleted: boolean | undefined;
@@ -103,7 +102,6 @@ export declare const profileSchema: yup.ObjectSchema<{
     expoPushToken: undefined;
     widgetInstalledAt: undefined;
     notificationPreferences: undefined;
-    debriefAfterMinutes: undefined;
     issueName: undefined;
     setbackThreshold: undefined;
     isTourCompleted: undefined;

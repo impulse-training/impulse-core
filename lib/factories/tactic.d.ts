@@ -1,7 +1,7 @@
 import * as Factory from 'factory.ts';
 import { TacticValue } from '../schema';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
-export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<TacticValue, "createdAt" | "updatedAt" | "profileId" | "title" | "image" | "backgroundColor" | "type" | "setbackThreshold" | "ordinal" | "description" | "debriefAfterMinutes" | "optionsById" | "isTemplate" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested">;
+export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<TacticValue, "createdAt" | "updatedAt" | "profileId" | "title" | "image" | "backgroundColor" | "type" | "setbackThreshold" | "ordinal" | "description" | "debriefAfterMinutes" | "optionsById" | "templateFor" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested">;
 export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     createdAt?: {
         seconds: number;
@@ -82,7 +82,7 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
             strategiesPath: string;
         };
     } | null | undefined;
-    isTemplate?: boolean | null | undefined;
+    templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
     language?: string | null | undefined;
     linkUrl?: string | null | undefined;
     likesCount?: number | null | undefined;
@@ -92,4 +92,4 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
     backgroundColor: string;
     type: import("../schema").QuestionKeyType;
     ordinal: number;
-}, "title" | "backgroundColor" | "type" | "ordinal" | ("createdAt" | "updatedAt" | "profileId" | "image" | "setbackThreshold" | "description" | "debriefAfterMinutes" | "optionsById" | "isTemplate" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested")>;
+}, "title" | "backgroundColor" | "type" | "ordinal" | ("createdAt" | "updatedAt" | "profileId" | "image" | "setbackThreshold" | "description" | "debriefAfterMinutes" | "optionsById" | "templateFor" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested")>;

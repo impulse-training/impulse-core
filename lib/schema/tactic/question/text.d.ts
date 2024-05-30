@@ -83,7 +83,7 @@ export declare const questionTextSchema: yup.ObjectSchema<{
         };
     } | null | undefined;
     backgroundColor: string;
-    isTemplate: boolean | null | undefined;
+    templateFor: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
     language: string | null | undefined;
     linkUrl: string | null | undefined;
     likesCount: number | null | undefined;
@@ -106,7 +106,7 @@ export declare const questionTextSchema: yup.ObjectSchema<{
     setbackThreshold: undefined;
     optionsById: undefined;
     backgroundColor: undefined;
-    isTemplate: undefined;
+    templateFor: undefined;
     language: undefined;
     linkUrl: undefined;
     likesCount: undefined;
