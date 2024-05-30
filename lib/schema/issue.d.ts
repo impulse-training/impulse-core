@@ -32,7 +32,6 @@ export declare const issueSchema: yup.ObjectSchema<{
             uri?: yup.Maybe<string | undefined>;
         } | null | undefined;
         setbackThreshold?: number | null | undefined;
-        subtitle?: yup.Maybe<string | undefined>;
         description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
         optionsById?: {
@@ -99,12 +98,7 @@ export declare const issueSchema: yup.ObjectSchema<{
         language?: string | null | undefined;
         linkUrl?: string | null | undefined;
         likesCount?: number | null | undefined;
-        categoryIds?: (string | undefined)[] | null | undefined;
-        isShared?: boolean | null | undefined;
-        isResponseRequired?: boolean | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
-        isAvailableForRecommendation?: boolean | null | undefined;
-        numberOfLikes?: number | null | undefined;
         isSuggested?: boolean | undefined;
         title: string;
         backgroundColor: string;
@@ -128,7 +122,6 @@ export declare const issueSchema: yup.ObjectSchema<{
             uri?: yup.Maybe<string | undefined>;
         } | null | undefined;
         setbackThreshold?: number | null | undefined;
-        subtitle?: yup.Maybe<string | undefined>;
         description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
         optionsById?: {
@@ -195,12 +188,7 @@ export declare const issueSchema: yup.ObjectSchema<{
         language?: string | null | undefined;
         linkUrl?: string | null | undefined;
         likesCount?: number | null | undefined;
-        categoryIds?: (string | undefined)[] | null | undefined;
-        isShared?: boolean | null | undefined;
-        isResponseRequired?: boolean | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
-        isAvailableForRecommendation?: boolean | null | undefined;
-        numberOfLikes?: number | null | undefined;
         isSuggested?: boolean | undefined;
         title: string;
         backgroundColor: string;
@@ -227,7 +215,6 @@ export declare const issueSchema: yup.ObjectSchema<{
         setbackThreshold?: number | null | undefined;
         lowEmoji?: yup.Maybe<string | undefined>;
         highEmoji?: yup.Maybe<string | undefined>;
-        subtitle?: yup.Maybe<string | undefined>;
         description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
         optionsById?: {
@@ -294,12 +281,7 @@ export declare const issueSchema: yup.ObjectSchema<{
         language?: string | null | undefined;
         linkUrl?: string | null | undefined;
         likesCount?: number | null | undefined;
-        categoryIds?: (string | undefined)[] | null | undefined;
-        isShared?: boolean | null | undefined;
-        isResponseRequired?: boolean | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
-        isAvailableForRecommendation?: boolean | null | undefined;
-        numberOfLikes?: number | null | undefined;
         isSuggested?: boolean | undefined;
         title: string;
         backgroundColor: string;

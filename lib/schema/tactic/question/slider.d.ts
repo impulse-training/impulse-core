@@ -14,7 +14,6 @@ export declare const questionSliderTacticSchema: yup.ObjectSchema<{
     } | null | undefined;
     ordinal: number;
     title: string;
-    subtitle: yup.Maybe<string | undefined>;
     description: string | null | undefined;
     debriefAfterMinutes: number | null | undefined;
     image: {
@@ -88,12 +87,7 @@ export declare const questionSliderTacticSchema: yup.ObjectSchema<{
     language: string | null | undefined;
     linkUrl: string | null | undefined;
     likesCount: number | null | undefined;
-    categoryIds: (string | undefined)[] | null | undefined;
-    isShared: boolean | null | undefined;
-    isResponseRequired: boolean | null | undefined;
     timerSeconds: yup.Maybe<number | undefined>;
-    isAvailableForRecommendation: boolean | null | undefined;
-    numberOfLikes: number | null | undefined;
     isSuggested: boolean | undefined;
     lowEmoji: yup.Maybe<string | undefined>;
     highEmoji: yup.Maybe<string | undefined>;
@@ -104,7 +98,6 @@ export declare const questionSliderTacticSchema: yup.ObjectSchema<{
     updatedAt: undefined;
     ordinal: undefined;
     title: undefined;
-    subtitle: undefined;
     description: undefined;
     debriefAfterMinutes: undefined;
     image: {
@@ -119,12 +112,7 @@ export declare const questionSliderTacticSchema: yup.ObjectSchema<{
     language: undefined;
     linkUrl: undefined;
     likesCount: undefined;
-    categoryIds: "";
-    isShared: undefined;
-    isResponseRequired: undefined;
     timerSeconds: undefined;
-    isAvailableForRecommendation: undefined;
-    numberOfLikes: undefined;
     isSuggested: undefined;
     lowEmoji: undefined;
     highEmoji: undefined;

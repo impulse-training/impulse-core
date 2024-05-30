@@ -278,7 +278,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             setbackThreshold?: number | null | undefined;
-            subtitle?: import("yup").Maybe<string | undefined>;
             description?: string | null | undefined;
             debriefAfterMinutes?: number | null | undefined;
             optionsById?: {
@@ -345,12 +344,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             language?: string | null | undefined;
             linkUrl?: string | null | undefined;
             likesCount?: number | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
             backgroundColor: string;
@@ -374,7 +368,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             setbackThreshold?: number | null | undefined;
-            subtitle?: import("yup").Maybe<string | undefined>;
             description?: string | null | undefined;
             debriefAfterMinutes?: number | null | undefined;
             optionsById?: {
@@ -441,12 +434,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             language?: string | null | undefined;
             linkUrl?: string | null | undefined;
             likesCount?: number | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
             backgroundColor: string;
@@ -473,7 +461,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             lowEmoji?: import("yup").Maybe<string | undefined>;
             highEmoji?: import("yup").Maybe<string | undefined>;
-            subtitle?: import("yup").Maybe<string | undefined>;
             description?: string | null | undefined;
             debriefAfterMinutes?: number | null | undefined;
             optionsById?: {
@@ -540,12 +527,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             language?: string | null | undefined;
             linkUrl?: string | null | undefined;
             likesCount?: number | null | undefined;
-            categoryIds?: (string | undefined)[] | null | undefined;
-            isShared?: boolean | null | undefined;
-            isResponseRequired?: boolean | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
-            isAvailableForRecommendation?: boolean | null | undefined;
-            numberOfLikes?: number | null | undefined;
             isSuggested?: boolean | undefined;
             title: string;
             backgroundColor: string;
@@ -608,7 +590,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             };
         };
     }, "name" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "last3TacticPreviews" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "title" | "image" | "backgroundColor" | "type" | "setbackThreshold" | "ordinal" | "subtitle" | "description" | "debriefAfterMinutes" | "optionsById" | "isTemplate" | "language" | "linkUrl" | "likesCount" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested">;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "title" | "image" | "backgroundColor" | "type" | "setbackThreshold" | "ordinal" | "description" | "debriefAfterMinutes" | "optionsById" | "isTemplate" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested">;
     questionTimeTacticFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -627,7 +609,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
         setbackThreshold?: number | null | undefined;
-        subtitle?: import("yup").Maybe<string | undefined>;
         description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
         optionsById?: {
@@ -694,18 +675,13 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         language?: string | null | undefined;
         linkUrl?: string | null | undefined;
         likesCount?: number | null | undefined;
-        categoryIds?: (string | undefined)[] | null | undefined;
-        isShared?: boolean | null | undefined;
-        isResponseRequired?: boolean | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
-        isAvailableForRecommendation?: boolean | null | undefined;
-        numberOfLikes?: number | null | undefined;
         isSuggested?: boolean | undefined;
         title: string;
         backgroundColor: string;
         type: import("..").QuestionKeyType;
         ordinal: number;
-    }, "title" | "backgroundColor" | "type" | "ordinal" | ("createdAt" | "updatedAt" | "profileId" | "image" | "setbackThreshold" | "subtitle" | "description" | "debriefAfterMinutes" | "optionsById" | "isTemplate" | "language" | "linkUrl" | "likesCount" | "categoryIds" | "isShared" | "isResponseRequired" | "timerSeconds" | "isAvailableForRecommendation" | "numberOfLikes" | "isSuggested")>;
+    }, "title" | "backgroundColor" | "type" | "ordinal" | ("createdAt" | "updatedAt" | "profileId" | "image" | "setbackThreshold" | "description" | "debriefAfterMinutes" | "optionsById" | "isTemplate" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested")>;
     strategyFactory: import("factory.ts").Factory<import("..").StrategyValue, "createdAt" | "updatedAt" | "profileId" | "name" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "type" | "ordinal" | "tacticsById" | "tacticIds" | "subscribeToAllTactics" | "supportGroup">;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {

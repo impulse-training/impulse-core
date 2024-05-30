@@ -13,7 +13,6 @@ export function tacticValueBaseSchema<K extends string>(type: K) {
     updatedAt: optionalTimestampSchema,
     ordinal: yup.number().required(),
     title: yup.string().required('is required'),
-    subtitle: yup.string().notRequired(),
     description: yup.string().nullable(),
     debriefAfterMinutes: yup.number().nullable(),
     image: imageSchema.optional().nullable(),
@@ -24,12 +23,7 @@ export function tacticValueBaseSchema<K extends string>(type: K) {
     language: yup.string().nullable(),
     linkUrl: yup.string().url().nullable(),
     likesCount: yup.number().nullable(),
-    categoryIds: yup.array().of(yup.string()).nullable(),
-    isShared: yup.boolean().nullable(),
-    isResponseRequired: yup.boolean().nullable(),
     timerSeconds: yup.number().notRequired(),
-    isAvailableForRecommendation: yup.boolean().nullable(),
-    numberOfLikes: yup.number().nullable(),
     isSuggested: yup.boolean(),
   });
 }

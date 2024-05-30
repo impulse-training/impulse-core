@@ -47,7 +47,7 @@ const baseLogSchema = yup.object().shape({
   updatedAt: optionalTimestampSchema,
   startTime: timestampSchema,
   timezone: yup.string().required(),
-  issueId: yup.string(),
+  issueId: yup.string().nullable(),
   supportGroups: yup.array().of(supportGroupSchema).required(),
   parentIssueIds: optionalStringArray,
 

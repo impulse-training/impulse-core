@@ -58,7 +58,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
         toDate: Function;
     };
     timezone: string;
-    issueId: string | undefined;
+    issueId: string | null | undefined;
     supportGroups: {
         createdAt?: {
             seconds: number;
@@ -187,7 +187,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         toDate: Function;
     };
     timezone: string;
-    issueId: string | undefined;
+    issueId: string | null | undefined;
     supportGroups: {
         createdAt?: {
             seconds: number;
@@ -331,7 +331,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
         toDate: Function;
     };
     timezone: string;
-    issueId: string | undefined;
+    issueId: string | null | undefined;
     supportGroups: {
         createdAt?: {
             seconds: number;
@@ -465,7 +465,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
         toDate: Function;
     };
     timezone: string;
-    issueId: string | undefined;
+    issueId: string | null | undefined;
     supportGroups: {
         createdAt?: {
             seconds: number;
@@ -582,7 +582,7 @@ export declare const logSchema: yup.Lazy<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    issueId?: string | undefined;
+    issueId?: string | null | undefined;
     parentIssueIds?: string[] | undefined;
     tacticLikes?: {
         [x: string]: NonNullable<boolean | undefined>;
@@ -696,7 +696,7 @@ export declare const logSchema: yup.Lazy<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    issueId?: string | undefined;
+    issueId?: string | null | undefined;
     parentIssueIds?: string[] | undefined;
     tacticLikes?: {
         [x: string]: NonNullable<boolean | undefined>;
@@ -799,7 +799,7 @@ export declare const logSchema: yup.Lazy<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    issueId?: string | undefined;
+    issueId?: string | null | undefined;
     parentIssueIds?: string[] | undefined;
     tacticLikes?: {
         [x: string]: NonNullable<boolean | undefined>;
