@@ -212,6 +212,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     backgroundColor?: string | undefined;
                     title: string;
                 }[] | undefined;
+                templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
                 recommendedFor?: "impulse" | "time" | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -339,7 +340,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     strategiesPath: string;
                 };
             } | null | undefined;
-            templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
             language?: string | null | undefined;
             linkUrl?: string | null | undefined;
             likesCount?: number | null | undefined;
@@ -429,7 +429,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     strategiesPath: string;
                 };
             } | null | undefined;
-            templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
             language?: string | null | undefined;
             linkUrl?: string | null | undefined;
             likesCount?: number | null | undefined;
@@ -522,7 +521,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     strategiesPath: string;
                 };
             } | null | undefined;
-            templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
             language?: string | null | undefined;
             linkUrl?: string | null | undefined;
             likesCount?: number | null | undefined;
@@ -564,6 +562,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             backgroundColor?: string | undefined;
             title: string;
         }[] | undefined;
+        templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
         recommendedFor?: "impulse" | "time" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
@@ -588,8 +587,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 title: string;
             };
         };
-    }, "name" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "last3TacticPreviews" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "title" | "image" | "backgroundColor" | "type" | "setbackThreshold" | "ordinal" | "description" | "debriefAfterMinutes" | "optionsById" | "templateFor" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested">;
+    }, "name" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "last3TacticPreviews" | "templateFor" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "title" | "image" | "backgroundColor" | "type" | "setbackThreshold" | "ordinal" | "description" | "debriefAfterMinutes" | "optionsById" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested">;
     questionTimeTacticFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -670,7 +669,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 strategiesPath: string;
             };
         } | null | undefined;
-        templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
         language?: string | null | undefined;
         linkUrl?: string | null | undefined;
         likesCount?: number | null | undefined;
@@ -680,7 +678,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         backgroundColor: string;
         type: import("..").QuestionKeyType;
         ordinal: number;
-    }, "title" | "backgroundColor" | "type" | "ordinal" | ("createdAt" | "updatedAt" | "profileId" | "image" | "setbackThreshold" | "description" | "debriefAfterMinutes" | "optionsById" | "templateFor" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested")>;
+    }, "title" | "backgroundColor" | "type" | "ordinal" | ("createdAt" | "updatedAt" | "profileId" | "image" | "setbackThreshold" | "description" | "debriefAfterMinutes" | "optionsById" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested")>;
     strategyFactory: import("factory.ts").Factory<import("..").StrategyValue, "createdAt" | "updatedAt" | "profileId" | "name" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "type" | "ordinal" | "tacticsById" | "tacticIds" | "subscribeToAllTactics" | "supportGroup">;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {

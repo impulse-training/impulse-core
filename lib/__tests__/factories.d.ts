@@ -211,6 +211,7 @@ export declare const factories: {
                     backgroundColor?: string | undefined;
                     title: string;
                 }[] | undefined;
+                templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
                 recommendedFor?: "impulse" | "time" | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -338,7 +339,6 @@ export declare const factories: {
                     strategiesPath: string;
                 };
             } | null | undefined;
-            templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
             language?: string | null | undefined;
             linkUrl?: string | null | undefined;
             likesCount?: number | null | undefined;
@@ -428,7 +428,6 @@ export declare const factories: {
                     strategiesPath: string;
                 };
             } | null | undefined;
-            templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
             language?: string | null | undefined;
             linkUrl?: string | null | undefined;
             likesCount?: number | null | undefined;
@@ -521,7 +520,6 @@ export declare const factories: {
                     strategiesPath: string;
                 };
             } | null | undefined;
-            templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
             language?: string | null | undefined;
             linkUrl?: string | null | undefined;
             likesCount?: number | null | undefined;
@@ -563,6 +561,7 @@ export declare const factories: {
             backgroundColor?: string | undefined;
             title: string;
         }[] | undefined;
+        templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
         recommendedFor?: "impulse" | "time" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
@@ -587,8 +586,8 @@ export declare const factories: {
                 title: string;
             };
         };
-    }, "name" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "last3TacticPreviews" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "title" | "image" | "backgroundColor" | "type" | "setbackThreshold" | "ordinal" | "description" | "debriefAfterMinutes" | "optionsById" | "templateFor" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested">;
+    }, "name" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "last3TacticPreviews" | "templateFor" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "title" | "image" | "backgroundColor" | "type" | "setbackThreshold" | "ordinal" | "description" | "debriefAfterMinutes" | "optionsById" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested">;
     questionTimeTacticFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -669,7 +668,6 @@ export declare const factories: {
                 strategiesPath: string;
             };
         } | null | undefined;
-        templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
         language?: string | null | undefined;
         linkUrl?: string | null | undefined;
         likesCount?: number | null | undefined;
@@ -679,7 +677,7 @@ export declare const factories: {
         backgroundColor: string;
         type: import("..").QuestionKeyType;
         ordinal: number;
-    }, "title" | "backgroundColor" | "type" | "ordinal" | ("createdAt" | "updatedAt" | "profileId" | "image" | "setbackThreshold" | "description" | "debriefAfterMinutes" | "optionsById" | "templateFor" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested")>;
+    }, "title" | "backgroundColor" | "type" | "ordinal" | ("createdAt" | "updatedAt" | "profileId" | "image" | "setbackThreshold" | "description" | "debriefAfterMinutes" | "optionsById" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested")>;
     strategyFactory: import("factory.ts").Factory<import("..").StrategyValue, "createdAt" | "updatedAt" | "profileId" | "name" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "type" | "ordinal" | "tacticsById" | "tacticIds" | "subscribeToAllTactics" | "supportGroup">;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {

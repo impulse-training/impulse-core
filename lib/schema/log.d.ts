@@ -86,6 +86,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
             backgroundColor?: string | undefined;
             title: string;
         }[] | undefined;
+        templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
         recommendedFor?: "impulse" | "time" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
@@ -215,6 +216,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             backgroundColor?: string | undefined;
             title: string;
         }[] | undefined;
+        templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
         recommendedFor?: "impulse" | "time" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
@@ -359,6 +361,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
             backgroundColor?: string | undefined;
             title: string;
         }[] | undefined;
+        templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
         recommendedFor?: "impulse" | "time" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
@@ -493,6 +496,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
             backgroundColor?: string | undefined;
             title: string;
         }[] | undefined;
+        templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
         recommendedFor?: "impulse" | "time" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
@@ -643,6 +647,7 @@ export declare const logSchema: yup.Lazy<{
             backgroundColor?: string | undefined;
             title: string;
         }[] | undefined;
+        templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
         recommendedFor?: "impulse" | "time" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
@@ -742,6 +747,7 @@ export declare const logSchema: yup.Lazy<{
             backgroundColor?: string | undefined;
             title: string;
         }[] | undefined;
+        templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
         recommendedFor?: "impulse" | "time" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
@@ -845,6 +851,7 @@ export declare const logSchema: yup.Lazy<{
             backgroundColor?: string | undefined;
             title: string;
         }[] | undefined;
+        templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
         recommendedFor?: "impulse" | "time" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {

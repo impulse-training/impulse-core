@@ -83,7 +83,6 @@ export declare const videoTacticSchema: yup.ObjectSchema<{
         };
     } | null | undefined;
     backgroundColor: string;
-    templateFor: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
     language: string | null | undefined;
     linkUrl: string | null | undefined;
     likesCount: number | null | undefined;
@@ -114,7 +113,6 @@ export declare const videoTacticSchema: yup.ObjectSchema<{
     setbackThreshold: undefined;
     optionsById: undefined;
     backgroundColor: undefined;
-    templateFor: undefined;
     language: undefined;
     linkUrl: undefined;
     likesCount: undefined;

@@ -90,6 +90,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 backgroundColor?: string | undefined;
                 title: string;
             }[] | undefined;
+            templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
             recommendedFor?: "impulse" | "time" | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
@@ -144,6 +145,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         backgroundColor?: string | undefined;
         title: string;
     }[] | undefined;
+    templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
     recommendedFor?: "impulse" | "time" | null | undefined;
     recommendedForIssueIds?: string[] | undefined;
     recommendedForIssueOrdinals?: {
@@ -168,4 +170,4 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             title: string;
         };
     };
-}, "name" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "last3TacticPreviews" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "title" | "image" | "backgroundColor" | "type" | "setbackThreshold" | "ordinal" | "description" | "debriefAfterMinutes" | "optionsById" | "templateFor" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested">;
+}, "name" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "last3TacticPreviews" | "templateFor" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "title" | "image" | "backgroundColor" | "type" | "setbackThreshold" | "ordinal" | "description" | "debriefAfterMinutes" | "optionsById" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested">;

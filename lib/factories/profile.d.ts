@@ -66,6 +66,7 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
                 backgroundColor?: string | undefined;
                 title: string;
             }[] | undefined;
+            templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
             recommendedFor?: "impulse" | "time" | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {

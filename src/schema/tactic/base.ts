@@ -19,9 +19,6 @@ export function tacticValueBaseSchema<K extends string>(type: K) {
     setbackThreshold: yup.number().nullable(),
     optionsById: optionalObjectOf(optionWithStrategiesPathSchema),
     backgroundColor: yup.string().required(),
-    templateFor: yup
-      .mixed<'trackTactics' | 'debriefTactics' | 'reflectionTactics'>()
-      .oneOf(['trackTactics', 'debriefTactics', 'reflectionTactics']),
     language: yup.string().nullable(),
     linkUrl: yup.string().url().nullable(),
     likesCount: yup.number().nullable(),

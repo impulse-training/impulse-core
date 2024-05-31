@@ -69,6 +69,7 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
         backgroundColor?: string | undefined;
         title: string;
     }[] | undefined;
+    templateFor: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
     recommendedFor: "impulse" | "time" | null | undefined;
     recommendedForIssueIds: string[] | undefined;
     recommendedForIssueOrdinals: {
@@ -84,6 +85,7 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
     invitationUrl: undefined;
     tacticPreviewsById: undefined;
     last3TacticPreviews: "";
+    templateFor: undefined;
     recommendedFor: undefined;
     recommendedForIssueIds: "";
     recommendedForIssueOrdinals: undefined;

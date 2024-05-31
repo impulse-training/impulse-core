@@ -22,6 +22,11 @@ export const supportGroupSchema = yup.object().shape({
   invitationUrl: yup.string().url().required(),
   tacticPreviewsById: objectOf(tacticPreviewSchema.required()),
   last3TacticPreviews: yup.array().of(tacticPreviewSchema.required()),
+  // Template support groups are used to populate user's data on signup
+  templateFor: yup
+    .mixed<'trackTactics' | 'debriefTactics' | 'reflectionTactics'>()
+    .oneOf(['trackTactics', 'debriefTactics', 'reflectionTactics']),
+  // And recommendations are suggested to users based on their issue (addiction, rumination, etc.)
   recommendedFor: yup
     .mixed<'impulse' | 'time'>()
     .oneOf(['impulse', 'time'])

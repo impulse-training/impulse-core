@@ -27,6 +27,7 @@ export declare const makeSupportGroupFactory: (TimestampKlass: typeof TimestampL
         backgroundColor?: string | undefined;
         title: string;
     }[] | undefined;
+    templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
     recommendedFor?: "impulse" | "time" | null | undefined;
     recommendedForIssueIds?: string[] | undefined;
     recommendedForIssueOrdinals?: {
@@ -51,4 +52,4 @@ export declare const makeSupportGroupFactory: (TimestampKlass: typeof TimestampL
             title: string;
         };
     };
-}, "name" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "last3TacticPreviews" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>;
+}, "name" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "last3TacticPreviews" | "templateFor" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>;
