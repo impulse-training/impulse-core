@@ -8,7 +8,6 @@ export const makeProfileFactory = (TimestampKlass: typeof TimestampLike) =>
     updatedAt: TimestampKlass.now(),
     region: 'US',
     timezone: 'America/Bogota',
-    invitationCode: 'abc123',
     notificationPreferences: {},
     uids: ['uid1', 'uid2'],
     favouriteSupportGroups: {},

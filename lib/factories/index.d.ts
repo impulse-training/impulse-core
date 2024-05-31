@@ -182,7 +182,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         } | null | undefined;
         region?: string | null | undefined;
         scheduledNotificationIds?: string[] | undefined;
-        invitationCode: string;
         timezone: string;
         favouriteSupportGroups: {
             [x: string]: {
@@ -240,7 +239,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             };
         };
         uids: string[];
-    }, "invitationCode" | "timezone" | "favouriteSupportGroups" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIssueIds" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "issueName" | "isTourCompleted" | "androidPermissions" | "region" | "scheduledNotificationIds")>;
+    }, "timezone" | "favouriteSupportGroups" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIssueIds" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "issueName" | "isTourCompleted" | "androidPermissions" | "region" | "scheduledNotificationIds")>;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
         setbackThreshold?: number | undefined;

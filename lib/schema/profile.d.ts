@@ -36,7 +36,6 @@ export declare const profileSchema: yup.ObjectSchema<{
     parentIssueIds: string[] | undefined;
     region: string | null | undefined;
     timezone: string;
-    invitationCode: string;
     favouriteSupportGroups: {
         [x: string]: {
             createdAt?: {
@@ -110,7 +109,6 @@ export declare const profileSchema: yup.ObjectSchema<{
     parentIssueIds: "";
     region: undefined;
     timezone: undefined;
-    invitationCode: undefined;
     favouriteSupportGroups: undefined;
     scheduledNotificationIds: "";
     uids: "";

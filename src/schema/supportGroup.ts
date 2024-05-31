@@ -10,6 +10,7 @@ export const tacticPreviewSchema = yup.object({
   backgroundColor: yup.string().optional(),
   updatedAt: optionalTimestampSchema,
 });
+
 export type TacticPreviewValue = yup.InferType<typeof tacticPreviewSchema>;
 
 export const supportGroupSchema = yup.object().shape({
