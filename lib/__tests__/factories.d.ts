@@ -183,63 +183,16 @@ export declare const factories: {
         scheduledNotificationIds?: string[] | undefined;
         timezone: string;
         issueId: string | null;
-        favouriteSupportGroups: {
-            [x: string]: {
-                createdAt?: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                slug?: string | undefined;
-                creatorProfileId?: string | undefined;
-                last3TacticPreviews?: {
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    image?: {
-                        localFilePath?: import("yup").Maybe<string | undefined>;
-                        storagePath?: import("yup").Maybe<string | undefined>;
-                        uri?: import("yup").Maybe<string | undefined>;
-                    } | undefined;
-                    backgroundColor?: string | undefined;
-                    title: string;
-                }[] | undefined;
-                templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
-                recommendedFor?: "impulse" | "time" | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                name: string;
-                invitationCode: string;
-                invitationUrl: string;
-                tacticPreviewsById: {
-                    [x: string]: {
-                        updatedAt?: {
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        image?: {
-                            localFilePath?: import("yup").Maybe<string | undefined>;
-                            storagePath?: import("yup").Maybe<string | undefined>;
-                            uri?: import("yup").Maybe<string | undefined>;
-                        } | undefined;
-                        backgroundColor?: string | undefined;
-                        title: string;
-                    };
-                };
-            };
+        supportGroups: {
+            seenTacticIds: string[];
+            docRefs: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[];
+        };
+        suggestedSupportGroups: {
+            seenTacticIds: string[];
+            docRefs: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[];
         };
         uids: string[];
-    }, "timezone" | "issueId" | "favouriteSupportGroups" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIssueIds" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "issueName" | "isTourCompleted" | "androidPermissions" | "region" | "scheduledNotificationIds")>;
+    }, "timezone" | "issueId" | "supportGroups" | "suggestedSupportGroups" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIssueIds" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "issueName" | "isTourCompleted" | "androidPermissions" | "region" | "scheduledNotificationIds")>;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
         setbackThreshold?: number | undefined;
