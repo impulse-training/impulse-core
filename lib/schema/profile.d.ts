@@ -27,13 +27,14 @@ export declare const profileSchema: yup.ObjectSchema<{
     notificationPreferences: {
         [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
     } | null | undefined;
+    issueId: string | null;
     issueName: string | undefined;
+    parentIssueIds: string[] | undefined;
     setbackThreshold: number | undefined;
     isTourCompleted: boolean | undefined;
     androidPermissions: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
-    parentIssueIds: string[] | undefined;
     region: string | null | undefined;
     timezone: string;
     favouriteSupportGroups: {
@@ -102,11 +103,12 @@ export declare const profileSchema: yup.ObjectSchema<{
     expoPushToken: undefined;
     widgetInstalledAt: undefined;
     notificationPreferences: undefined;
+    issueId: undefined;
     issueName: undefined;
+    parentIssueIds: "";
     setbackThreshold: undefined;
     isTourCompleted: undefined;
     androidPermissions: undefined;
-    parentIssueIds: "";
     region: undefined;
     timezone: undefined;
     favouriteSupportGroups: undefined;

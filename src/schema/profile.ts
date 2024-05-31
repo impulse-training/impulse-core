@@ -17,11 +17,12 @@ export const profileSchema = yup.object().shape({
   notificationPreferences: optionalObjectOf(
     yup.array().of(notificationOptionSchema)
   ),
+  issueId: yup.string().required().nullable(),
   issueName: yup.string(),
+  parentIssueIds: optionalStringArray,
   setbackThreshold: yup.number(),
   isTourCompleted: yup.boolean(),
   androidPermissions: optionalObjectOf(yup.boolean().required()),
-  parentIssueIds: optionalStringArray,
   region: yup.string().nullable().optional(),
   timezone: yup.string().required(),
   favouriteSupportGroups: objectOf(supportGroupSchema),

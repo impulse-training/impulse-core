@@ -9,6 +9,7 @@ export const makeProfileFactory = (TimestampKlass: typeof TimestampLike) =>
     region: 'US',
     timezone: 'America/Bogota',
     notificationPreferences: {},
+    issueId: null,
     uids: ['uid1', 'uid2'],
     favouriteSupportGroups: {},
   });

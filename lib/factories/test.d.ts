@@ -61,6 +61,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     region?: string | null | undefined;
     scheduledNotificationIds?: string[] | undefined;
     timezone: string;
+    issueId: string | null;
     favouriteSupportGroups: {
         [x: string]: {
             createdAt?: {
@@ -117,7 +118,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         };
     };
     uids: string[];
-}, "timezone" | "favouriteSupportGroups" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIssueIds" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "issueName" | "isTourCompleted" | "androidPermissions" | "region" | "scheduledNotificationIds")>, supportGroupFactory: import("factory.ts").Factory<{
+}, "timezone" | "issueId" | "favouriteSupportGroups" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIssueIds" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "issueName" | "isTourCompleted" | "androidPermissions" | "region" | "scheduledNotificationIds")>, supportGroupFactory: import("factory.ts").Factory<{
     createdAt?: {
         seconds: number;
         nanoseconds: number;
