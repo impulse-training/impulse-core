@@ -1,6 +1,6 @@
 import * as Factory from 'factory.ts';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
-export declare const makeSupportGroupFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
+export declare const makeStreamFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     createdAt?: {
         seconds: number;
         nanoseconds: number;
@@ -27,7 +27,7 @@ export declare const makeSupportGroupFactory: (TimestampKlass: typeof TimestampL
         backgroundColor?: string | undefined;
         title: string;
     }[] | undefined;
-    templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
+    defaultFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
     recommendedFor?: "impulse" | "time" | null | undefined;
     recommendedForIssueIds?: string[] | undefined;
     recommendedForIssueOrdinals?: {
@@ -52,4 +52,4 @@ export declare const makeSupportGroupFactory: (TimestampKlass: typeof TimestampL
             title: string;
         };
     };
-}, "name" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "last3TacticPreviews" | "templateFor" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>;
+}, "name" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "last3TacticPreviews" | "defaultFor" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>;

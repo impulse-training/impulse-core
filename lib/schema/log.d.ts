@@ -59,7 +59,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
     };
     timezone: string;
     issueId: string | null | undefined;
-    supportGroups: {
+    streams: {
         createdAt?: {
             seconds: number;
             nanoseconds: number;
@@ -86,7 +86,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
             backgroundColor?: string | undefined;
             title: string;
         }[] | undefined;
-        templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
+        defaultFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
         recommendedFor?: "impulse" | "time" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
@@ -150,7 +150,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
     };
     timezone: undefined;
     issueId: undefined;
-    supportGroups: "";
+    streams: "";
     parentIssueIds: "";
     tacticIds: "";
     tacticsById: {
@@ -189,7 +189,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     };
     timezone: string;
     issueId: string | null | undefined;
-    supportGroups: {
+    streams: {
         createdAt?: {
             seconds: number;
             nanoseconds: number;
@@ -216,7 +216,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             backgroundColor?: string | undefined;
             title: string;
         }[] | undefined;
-        templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
+        defaultFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
         recommendedFor?: "impulse" | "time" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
@@ -297,7 +297,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     };
     timezone: undefined;
     issueId: undefined;
-    supportGroups: "";
+    streams: "";
     parentIssueIds: "";
     tacticIds: "";
     tacticsById: {
@@ -334,7 +334,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
     };
     timezone: string;
     issueId: string | null | undefined;
-    supportGroups: {
+    streams: {
         createdAt?: {
             seconds: number;
             nanoseconds: number;
@@ -361,7 +361,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
             backgroundColor?: string | undefined;
             title: string;
         }[] | undefined;
-        templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
+        defaultFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
         recommendedFor?: "impulse" | "time" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
@@ -431,7 +431,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
     };
     timezone: undefined;
     issueId: undefined;
-    supportGroups: "";
+    streams: "";
     parentIssueIds: "";
     tacticIds: "";
     tacticsById: {
@@ -469,7 +469,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
     };
     timezone: string;
     issueId: string | null | undefined;
-    supportGroups: {
+    streams: {
         createdAt?: {
             seconds: number;
             nanoseconds: number;
@@ -496,7 +496,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
             backgroundColor?: string | undefined;
             title: string;
         }[] | undefined;
-        templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
+        defaultFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
         recommendedFor?: "impulse" | "time" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
@@ -562,7 +562,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
     };
     timezone: undefined;
     issueId: undefined;
-    supportGroups: "";
+    streams: "";
     parentIssueIds: "";
     tacticIds: "";
     tacticsById: {
@@ -620,7 +620,7 @@ export declare const logSchema: yup.Lazy<{
         toDate: Function;
     };
     timezone: string;
-    supportGroups: {
+    streams: {
         createdAt?: {
             seconds: number;
             nanoseconds: number;
@@ -647,7 +647,7 @@ export declare const logSchema: yup.Lazy<{
             backgroundColor?: string | undefined;
             title: string;
         }[] | undefined;
-        templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
+        defaultFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
         recommendedFor?: "impulse" | "time" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
@@ -720,7 +720,7 @@ export declare const logSchema: yup.Lazy<{
         toDate: Function;
     };
     timezone: string;
-    supportGroups: {
+    streams: {
         createdAt?: {
             seconds: number;
             nanoseconds: number;
@@ -747,7 +747,7 @@ export declare const logSchema: yup.Lazy<{
             backgroundColor?: string | undefined;
             title: string;
         }[] | undefined;
-        templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
+        defaultFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
         recommendedFor?: "impulse" | "time" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
@@ -824,7 +824,7 @@ export declare const logSchema: yup.Lazy<{
         toDate: Function;
     };
     timezone: string;
-    supportGroups: {
+    streams: {
         createdAt?: {
             seconds: number;
             nanoseconds: number;
@@ -851,7 +851,7 @@ export declare const logSchema: yup.Lazy<{
             backgroundColor?: string | undefined;
             title: string;
         }[] | undefined;
-        templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
+        defaultFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
         recommendedFor?: "impulse" | "time" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {

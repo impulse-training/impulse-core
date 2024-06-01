@@ -1,6 +1,6 @@
 import * as Factory from 'factory.ts';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
-export declare const makeProfileSupportGroupFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
+export declare const makeStreamFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     createdAt?: {
         seconds: number;
         nanoseconds: number;
@@ -15,7 +15,8 @@ export declare const makeProfileSupportGroupFactory: (TimestampKlass: typeof Tim
     tacticLikes: {
         [x: string]: NonNullable<boolean | undefined>;
     };
-    data: {
+    streamRef: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
+    streamData: {
         createdAt?: {
             seconds: number;
             nanoseconds: number;
@@ -42,7 +43,7 @@ export declare const makeProfileSupportGroupFactory: (TimestampKlass: typeof Tim
             backgroundColor?: string | undefined;
             title: string;
         }[] | undefined;
-        templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
+        defaultFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
         recommendedFor?: "impulse" | "time" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
@@ -74,4 +75,4 @@ export declare const makeProfileSupportGroupFactory: (TimestampKlass: typeof Tim
     tacticOrdinals: {
         [x: string]: number;
     };
-}, "ordinal" | "tacticLikes" | "data" | "seenTactics" | "tacticOrdinals" | ("createdAt" | "updatedAt")>;
+}, "ordinal" | "tacticLikes" | "streamRef" | "streamData" | "seenTactics" | "tacticOrdinals" | ("createdAt" | "updatedAt")>;

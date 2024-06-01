@@ -13,7 +13,7 @@ export const tacticPreviewSchema = yup.object({
 
 export type TacticPreviewValue = yup.InferType<typeof tacticPreviewSchema>;
 
-export const supportGroupSchema = yup.object().shape({
+export const streamSchema = yup.object().shape({
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
   slug: yup.string(),
@@ -24,7 +24,7 @@ export const supportGroupSchema = yup.object().shape({
   tacticPreviewsById: objectOf(tacticPreviewSchema.required()),
   last3TacticPreviews: yup.array().of(tacticPreviewSchema.required()),
   // Template support groups are used to populate user's data on signup
-  templateFor: yup
+  defaultFor: yup
     .mixed<'trackTactics' | 'debriefTactics' | 'reflectionTactics'>()
     .oneOf(['trackTactics', 'debriefTactics', 'reflectionTactics']),
   // And recommendations are suggested to users based on their issue (addiction, rumination, etc.)
@@ -36,18 +36,4 @@ export const supportGroupSchema = yup.object().shape({
   recommendedForIssueOrdinals: optionalObjectOf(yup.number().required()),
 });
 
-export type SupportGroupValue = yup.InferType<typeof supportGroupSchema>;
-
-export type PermissionKey = keyof typeof CONVERSATION_PERMISSIONS;
-export type SupportGroupPermissions = {
-  [profileId: string]: Partial<{
-    [key in PermissionKey]: boolean;
-  }>;
-};
-
-export const CONVERSATION_PERMISSIONS = {
-  logs: 'Show my logs',
-  tactics: 'Show my tactics',
-  editTactics: 'Allow to edit my tactics',
-  insights: 'Show my insights',
-};
+export type StreamValue = yup.InferType<typeof streamSchema>;

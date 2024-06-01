@@ -16,7 +16,7 @@ export function strategyBaseSchema<K extends string>(type: K) {
     tacticsById: tacticsByIdSchema,
     profileId: yup.string(),
     subscribeToAllTactics: yup.boolean(),
-    supportGroup: yup
+    stream: yup
       .object({
         id: yup.string().required(),
         name: yup.string().required(),

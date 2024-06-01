@@ -14,8 +14,8 @@ export declare const makeTimeRoutineFactory: (TimestampKlass: typeof TimestampLi
     profileId: string;
     name: string;
     type: "time";
-    supportGroups: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[];
+    streams: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[];
     hour: number;
     minute: number;
     weekdays: number[];
-}, "profileId" | "name" | "type" | "supportGroups" | "hour" | "minute" | "weekdays" | ("createdAt" | "updatedAt")>;
+}, "profileId" | "name" | "type" | "streams" | "hour" | "minute" | "weekdays" | ("createdAt" | "updatedAt")>;

@@ -1,4 +1,4 @@
-export function supportGroupInvitationCode() {
+export function streamInvitationCode() {
   return Math.random().toString(36).substr(2, 11);
 }
 

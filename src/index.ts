@@ -23,6 +23,6 @@ export const COLLECTIONS = [
   'profiles',
   'strategies',
   'reminders',
-  'supportGroups',
+  'streams',
   'tactics',
 ];

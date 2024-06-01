@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-export declare const profileSupportGroupSchema: yup.ObjectSchema<{
+export declare const streamMembershipSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -10,7 +10,8 @@ export declare const profileSupportGroupSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    data: {
+    streamRef: import("./utils/firestore").DocumentReferenceLike<unknown>;
+    streamData: {
         createdAt?: {
             seconds: number;
             nanoseconds: number;
@@ -37,7 +38,7 @@ export declare const profileSupportGroupSchema: yup.ObjectSchema<{
             backgroundColor?: string | undefined;
             title: string;
         }[] | undefined;
-        templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
+        defaultFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
         recommendedFor?: "impulse" | "time" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
@@ -76,7 +77,8 @@ export declare const profileSupportGroupSchema: yup.ObjectSchema<{
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
-    data: {
+    streamRef: undefined;
+    streamData: {
         createdAt: undefined;
         updatedAt: undefined;
         slug: undefined;
@@ -86,7 +88,7 @@ export declare const profileSupportGroupSchema: yup.ObjectSchema<{
         invitationUrl: undefined;
         tacticPreviewsById: undefined;
         last3TacticPreviews: "";
-        templateFor: undefined;
+        defaultFor: undefined;
         recommendedFor: undefined;
         recommendedForIssueIds: "";
         recommendedForIssueOrdinals: undefined;
@@ -96,4 +98,4 @@ export declare const profileSupportGroupSchema: yup.ObjectSchema<{
     tacticOrdinals: undefined;
     tacticLikes: undefined;
 }, "">;
-export type ProfileSupportGroupValue = yup.InferType<typeof profileSupportGroupSchema>;
+export type StreamMembershipValue = yup.InferType<typeof streamMembershipSchema>;

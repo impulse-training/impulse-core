@@ -23,7 +23,7 @@ export declare const tacticPreviewSchema: yup.ObjectSchema<{
     updatedAt: undefined;
 }, "">;
 export type TacticPreviewValue = yup.InferType<typeof tacticPreviewSchema>;
-export declare const supportGroupSchema: yup.ObjectSchema<{
+export declare const streamSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -69,7 +69,7 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
         backgroundColor?: string | undefined;
         title: string;
     }[] | undefined;
-    templateFor: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
+    defaultFor: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
     recommendedFor: "impulse" | "time" | null | undefined;
     recommendedForIssueIds: string[] | undefined;
     recommendedForIssueOrdinals: {
@@ -85,21 +85,9 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
     invitationUrl: undefined;
     tacticPreviewsById: undefined;
     last3TacticPreviews: "";
-    templateFor: undefined;
+    defaultFor: undefined;
     recommendedFor: undefined;
     recommendedForIssueIds: "";
     recommendedForIssueOrdinals: undefined;
 }, "">;
-export type SupportGroupValue = yup.InferType<typeof supportGroupSchema>;
-export type PermissionKey = keyof typeof CONVERSATION_PERMISSIONS;
-export type SupportGroupPermissions = {
-    [profileId: string]: Partial<{
-        [key in PermissionKey]: boolean;
-    }>;
-};
-export declare const CONVERSATION_PERMISSIONS: {
-    logs: string;
-    tactics: string;
-    editTactics: string;
-    insights: string;
-};
+export type StreamValue = yup.InferType<typeof streamSchema>;

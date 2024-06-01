@@ -126,9 +126,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         } | undefined;
         profileId: string;
     }, "profileId" | ("createdAt" | "updatedAt" | "tacticId" | "tacticTitle" | "text" | "recording" | "isEdited" | "avatar")>;
-    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "issueId" | "supportGroups" | "parentIssueIds" | "tacticIds" | "tacticLikes" | "tacticData" | "debriefAfter" | "debriefReminderSentAt" | "debriefedAt">;
-    timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "issueId" | "supportGroups" | "parentIssueIds" | "tacticIds" | "tacticLikes" | "tacticData">;
-    locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "issueId" | "supportGroups" | "parentIssueIds" | "tacticIds" | "tacticLikes" | "tacticData" | "locationId" | "isDisplayable" | "locationName" | "locationMode">;
+    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "issueId" | "streams" | "parentIssueIds" | "tacticIds" | "tacticLikes" | "tacticData" | "debriefAfter" | "debriefReminderSentAt" | "debriefedAt">;
+    timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "issueId" | "streams" | "parentIssueIds" | "tacticIds" | "tacticLikes" | "tacticData">;
+    locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "issueId" | "streams" | "parentIssueIds" | "tacticIds" | "tacticLikes" | "tacticData" | "locationId" | "isDisplayable" | "locationName" | "locationMode">;
     locationFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -186,7 +186,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         issueId: string | null;
         uids: string[];
     }, "timezone" | "issueId" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIssueIds" | "lastActiveAt" | "widgetInstalledAt" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "isTourCompleted" | "androidPermissions" | "region" | "scheduledNotificationIds")>;
-    profileSupportGroupFactory: import("factory.ts").Factory<{
+    streamMembershipFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
             nanoseconds: number;
@@ -197,24 +197,33 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        ordinal: number;
-        tacticLikes: {
-            [x: string]: NonNullable<boolean | undefined>;
-        };
-        data: {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
+        slug?: string | undefined;
+        creatorProfileId?: string | undefined;
+        last3TacticPreviews?: {
             updatedAt?: {
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            slug?: string | undefined;
-            creatorProfileId?: string | undefined;
-            last3TacticPreviews?: {
+            image?: {
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
+            } | undefined;
+            backgroundColor?: string | undefined;
+            title: string;
+        }[] | undefined;
+        defaultFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
+        recommendedFor?: "impulse" | "time" | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        name: string;
+        invitationCode: string;
+        invitationUrl: string;
+        tacticPreviewsById: {
+            [x: string]: {
                 updatedAt?: {
                     seconds: number;
                     nanoseconds: number;
@@ -227,40 +236,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 } | undefined;
                 backgroundColor?: string | undefined;
                 title: string;
-            }[] | undefined;
-            templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
-            recommendedFor?: "impulse" | "time" | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            name: string;
-            invitationCode: string;
-            invitationUrl: string;
-            tacticPreviewsById: {
-                [x: string]: {
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    image?: {
-                        localFilePath?: import("yup").Maybe<string | undefined>;
-                        storagePath?: import("yup").Maybe<string | undefined>;
-                        uri?: import("yup").Maybe<string | undefined>;
-                    } | undefined;
-                    backgroundColor?: string | undefined;
-                    title: string;
-                };
             };
         };
-        seenTactics: {
-            [x: string]: NonNullable<boolean | undefined>;
-        };
-        tacticOrdinals: {
-            [x: string]: number;
-        };
-    }, "ordinal" | "tacticLikes" | "data" | "seenTactics" | "tacticOrdinals" | ("createdAt" | "updatedAt")>;
+    }, "name" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "last3TacticPreviews" | "defaultFor" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
         setbackThreshold?: number | undefined;
@@ -555,7 +533,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         parentNames: string[];
         therapistProfileIds: string[];
     }, "createdAt" | "updatedAt" | "name" | "ordinal" | "synonyms" | "debriefTactic" | "parentIds" | "parentNames" | "therapistProfileIds" | ("path" | "setbackThreshold" | "parentId" | "profileCount" | "isFeatured")>;
-    supportGroupFactory: import("factory.ts").Factory<{
+    streamFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
             nanoseconds: number;
@@ -582,7 +560,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             backgroundColor?: string | undefined;
             title: string;
         }[] | undefined;
-        templateFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
+        defaultFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
         recommendedFor?: "impulse" | "time" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
@@ -607,7 +585,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 title: string;
             };
         };
-    }, "name" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "last3TacticPreviews" | "templateFor" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>;
+    }, "name" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "last3TacticPreviews" | "defaultFor" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>;
     tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "title" | "image" | "backgroundColor" | "type" | "setbackThreshold" | "ordinal" | "description" | "debriefAfterMinutes" | "optionsById" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested">;
     questionTimeTacticFactory: import("factory.ts").Factory<{
         createdAt?: {
@@ -699,7 +677,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         type: import("..").QuestionKeyType;
         ordinal: number;
     }, "title" | "backgroundColor" | "type" | "ordinal" | ("createdAt" | "updatedAt" | "profileId" | "image" | "setbackThreshold" | "description" | "debriefAfterMinutes" | "optionsById" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested")>;
-    strategyFactory: import("factory.ts").Factory<import("..").StrategyValue, "createdAt" | "updatedAt" | "profileId" | "name" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "type" | "ordinal" | "tacticsById" | "tacticIds" | "subscribeToAllTactics" | "supportGroup">;
+    strategyFactory: import("factory.ts").Factory<import("..").StrategyValue, "createdAt" | "updatedAt" | "profileId" | "name" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "type" | "ordinal" | "tacticsById" | "tacticIds" | "subscribeToAllTactics" | "stream">;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -714,9 +692,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         profileId: string;
         name: string;
         type: "time";
-        supportGroups: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[];
+        streams: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[];
         hour: number;
         minute: number;
         weekdays: number[];
-    }, "profileId" | "name" | "type" | "supportGroups" | "hour" | "minute" | "weekdays" | ("createdAt" | "updatedAt")>;
+    }, "profileId" | "name" | "type" | "streams" | "hour" | "minute" | "weekdays" | ("createdAt" | "updatedAt")>;
 };

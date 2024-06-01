@@ -1,12 +1,15 @@
 import * as Factory from 'factory.ts';
-import { ProfileSupportGroupValue } from '../schema';
+import { StreamMembershipValue } from '../schema';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 
-export const makeProfileSupportGroupFactory = (
-  TimestampKlass: typeof TimestampLike
-) =>
-  Factory.makeFactory<ProfileSupportGroupValue>({
-    data: {
+export const makeStreamFactory = (TimestampKlass: typeof TimestampLike) =>
+  Factory.makeFactory<StreamMembershipValue>({
+    streamRef: {
+      id: 'abc123',
+      path: 'streams/abc123',
+      get: async () => ({} as any),
+    },
+    streamData: {
       name: 'Movement',
       createdAt: TimestampKlass.now(),
       updatedAt: TimestampKlass.now(),

@@ -13,13 +13,13 @@ export * from './notification';
 export * from './option';
 export * from './profile';
 export * from './profileLogsSummary';
-export * from './profileSupportGroup';
 export * from './recording';
 export * from './recoveryCode';
 export * from './routine';
 export * from './spotifyCredentials';
 export * from './strategy';
-export * from './supportGroup';
+export * from './stream';
+export * from './streamMembership';
 export * from './tactic';
 export * from './tacticImpression';
 

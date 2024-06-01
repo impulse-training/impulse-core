@@ -19,7 +19,7 @@ export const schemaMap: Record<string, yup.Schema | yup.Lazy<unknown>> = {
   tactics: schemas.tacticSchema,
   strategies: schemas.strategySchema,
   logs: schemas.logSchema,
-  supportGroups: schemas.supportGroupSchema,
+  streams: schemas.streamSchema,
   comments: schemas.commentSchema,
   locations: schemas.locationSchema,
   profiles: schemas.profileSchema,

@@ -9,12 +9,11 @@ import {
   makeLocationLogFactory,
   makeTimeLogFactory,
 } from './log';
-import { makeProfileSupportGroupFactory } from './makeProfileSupportGroup';
 import { makeProfileFactory } from './profile';
 import { profileLogsSummaryFactory } from './profileLogsSummary';
 import { makeTimeRoutineFactory } from './routine';
 import { makeStrategyFactory } from './strategy';
-import { makeSupportGroupFactory } from './supportGroup';
+import { makeStreamFactory } from './stream';
 import { makeQuestionTimeTacticFactory, makeTacticFactory } from './tactic';
 
 // Our admin and client apps use the same factories, but the firebase-admin versus firebase client
@@ -31,9 +30,9 @@ export function makeFactories(TimestampKlass: typeof TimestampLike) {
     locationLogFactory: makeLocationLogFactory(TimestampKlass),
     locationFactory: makeLocationFactory(TimestampKlass),
     profileFactory: makeProfileFactory(TimestampKlass),
-    profileSupportGroupFactory: makeProfileSupportGroupFactory(TimestampKlass),
+    streamMembershipFactory: makeStreamFactory(TimestampKlass),
     issueFactory: makeIssueFactory(TimestampKlass),
-    supportGroupFactory: makeSupportGroupFactory(TimestampKlass),
+    streamFactory: makeStreamFactory(TimestampKlass),
     tacticFactory: makeTacticFactory(TimestampKlass),
     questionTimeTacticFactory: makeQuestionTimeTacticFactory(TimestampKlass),
     strategyFactory: makeStrategyFactory(TimestampKlass),

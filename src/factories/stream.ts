@@ -1,9 +1,9 @@
 import * as Factory from 'factory.ts';
-import { SupportGroupValue } from '../schema';
+import { StreamValue } from '../schema';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 
-export const makeSupportGroupFactory = (TimestampKlass: typeof TimestampLike) =>
-  Factory.makeFactory<SupportGroupValue>({
+export const makeStreamFactory = (TimestampKlass: typeof TimestampLike) =>
+  Factory.makeFactory<StreamValue>({
     name: 'Movement',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
