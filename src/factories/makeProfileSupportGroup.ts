@@ -8,6 +8,7 @@ export const makeStreamFactory = (TimestampKlass: typeof TimestampLike) =>
       id: 'abc123',
       path: 'streams/abc123',
       get: async () => ({} as any),
+      collection: () => ({} as any),
     },
     streamData: {
       name: 'Movement',

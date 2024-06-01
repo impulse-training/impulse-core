@@ -5,6 +5,7 @@ export interface DocumentReferenceLike<T> {
   id: string;
   path: string;
   get(): Promise<DocumentSnapshotLike<T>>;
+  collection: (collectionPath: string) => any; // any for now
 }
 
 export const documentReferenceSchema = yup

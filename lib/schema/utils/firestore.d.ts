@@ -4,6 +4,7 @@ export interface DocumentReferenceLike<T> {
     id: string;
     path: string;
     get(): Promise<DocumentSnapshotLike<T>>;
+    collection: (collectionPath: string) => any;
 }
 export declare const documentReferenceSchema: yup.MixedSchema<DocumentReferenceLike<unknown> | undefined, yup.AnyObject, undefined, "">;
 export declare const collectionReferenceSchema: yup.MixedSchema<{} | undefined, yup.AnyObject, undefined, "">;
