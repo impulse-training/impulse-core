@@ -6,6 +6,7 @@ import {
   dayLogsSummarySchema,
   logSchema,
   profileLogsSummarySchema,
+  profileSupportGroupSchema,
   strategySchema,
   supportGroupSchema,
   tacticSchema,
@@ -51,6 +52,7 @@ describe('factories', () => {
 const schemaMap: Record<keyof typeof factories, null | Schema | Lazy<unknown>> =
   {
     profileLogsSummaryFactory: profileLogsSummarySchema,
+    profileSupportGroupFactory: profileSupportGroupSchema,
     dayLogsSummaryFactory: dayLogsSummarySchema,
     applicationFactory: null,
     commentFactory: commentSchema,

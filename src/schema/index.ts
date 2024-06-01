@@ -13,6 +13,7 @@ export * from './notification';
 export * from './option';
 export * from './profile';
 export * from './profileLogsSummary';
+export * from './profileSupportGroup';
 export * from './recording';
 export * from './recoveryCode';
 export * from './routine';

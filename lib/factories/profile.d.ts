@@ -13,19 +13,19 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     } | null | undefined;
     setbackThreshold?: number | undefined;
     parentIssueIds?: string[] | undefined;
-    activeImpulseId?: string | undefined;
-    currentAppState?: import("react-native/types").AppStateStatus | undefined;
     lastActiveAt?: {
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    expoPushToken?: string | undefined;
     widgetInstalledAt?: {
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    activeImpulseId?: string | undefined;
+    currentAppState?: import("react-native/types").AppStateStatus | undefined;
+    expoPushToken?: string | undefined;
     notificationPreferences?: {
         [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
     } | null | undefined;
@@ -38,13 +38,5 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     scheduledNotificationIds?: string[] | undefined;
     timezone: string;
     issueId: string | null;
-    supportGroups: {
-        seenTacticIds: string[];
-        docRefs: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[];
-    };
-    suggestedSupportGroups: {
-        seenTacticIds: string[];
-        docRefs: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[];
-    };
     uids: string[];
-}, "timezone" | "issueId" | "supportGroups" | "suggestedSupportGroups" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIssueIds" | "activeImpulseId" | "currentAppState" | "lastActiveAt" | "expoPushToken" | "widgetInstalledAt" | "notificationPreferences" | "issueName" | "isTourCompleted" | "androidPermissions" | "region" | "scheduledNotificationIds")>;
+}, "timezone" | "issueId" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIssueIds" | "lastActiveAt" | "widgetInstalledAt" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "isTourCompleted" | "androidPermissions" | "region" | "scheduledNotificationIds")>;

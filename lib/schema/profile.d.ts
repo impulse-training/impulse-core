@@ -11,30 +11,22 @@ export declare const profileSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    activeImpulseId: string | undefined;
-    currentAppState: AppStateStatus | undefined;
     lastActiveAt: {
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    expoPushToken: string | undefined;
     widgetInstalledAt: {
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    activeImpulseId: string | undefined;
+    currentAppState: AppStateStatus | undefined;
+    expoPushToken: string | undefined;
     notificationPreferences: {
         [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
     } | null | undefined;
-    supportGroups: {
-        seenTacticIds: string[];
-        docRefs: import("./utils/firestore").DocumentReferenceLike<unknown>[];
-    };
-    suggestedSupportGroups: {
-        seenTacticIds: string[];
-        docRefs: import("./utils/firestore").DocumentReferenceLike<unknown>[];
-    };
     issueId: string | null;
     issueName: string | undefined;
     parentIssueIds: string[] | undefined;
@@ -50,20 +42,12 @@ export declare const profileSchema: yup.ObjectSchema<{
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
+    lastActiveAt: undefined;
+    widgetInstalledAt: undefined;
     activeImpulseId: undefined;
     currentAppState: undefined;
-    lastActiveAt: undefined;
     expoPushToken: undefined;
-    widgetInstalledAt: undefined;
     notificationPreferences: undefined;
-    supportGroups: {
-        seenTacticIds: "";
-        docRefs: "";
-    };
-    suggestedSupportGroups: {
-        seenTacticIds: "";
-        docRefs: "";
-    };
     issueId: undefined;
     issueName: undefined;
     parentIssueIds: "";

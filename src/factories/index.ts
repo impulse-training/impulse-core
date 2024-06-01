@@ -9,6 +9,7 @@ import {
   makeLocationLogFactory,
   makeTimeLogFactory,
 } from './log';
+import { makeProfileSupportGroupFactory } from './makeProfileSupportGroup';
 import { makeProfileFactory } from './profile';
 import { profileLogsSummaryFactory } from './profileLogsSummary';
 import { makeTimeRoutineFactory } from './routine';
@@ -30,6 +31,7 @@ export function makeFactories(TimestampKlass: typeof TimestampLike) {
     locationLogFactory: makeLocationLogFactory(TimestampKlass),
     locationFactory: makeLocationFactory(TimestampKlass),
     profileFactory: makeProfileFactory(TimestampKlass),
+    profileSupportGroupFactory: makeProfileSupportGroupFactory(TimestampKlass),
     issueFactory: makeIssueFactory(TimestampKlass),
     supportGroupFactory: makeSupportGroupFactory(TimestampKlass),
     tacticFactory: makeTacticFactory(TimestampKlass),
