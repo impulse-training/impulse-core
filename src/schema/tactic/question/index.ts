@@ -4,10 +4,6 @@ import {
   questionCounterTacticSchema,
 } from './counter';
 import {
-  QuestionImpulseTacticValue,
-  questionImpulseTacticSchema,
-} from './impulse';
-import {
   QuestionMultipleChoiceTacticValue,
   questionMultipleChoiceTacticSchema,
 } from './multipleChoice';
@@ -19,7 +15,6 @@ import { QuestionTextValue, questionTextSchema } from './text';
 import { QuestionTimeTacticValue, questionTimeTacticSchema } from './time';
 
 export * from './counter';
-export * from './impulse';
 export * from './multipleChoice';
 export * from './slider';
 export * from './time';
@@ -28,7 +23,6 @@ export const questionTacticSchemas: Record<
   QuestionTacticValue['type'],
   yup.ObjectSchema<QuestionTacticValue>
 > = {
-  'question-impulse': questionImpulseTacticSchema,
   'question-text': questionTextSchema,
   'question-time': questionTimeTacticSchema,
   'question-counter': questionCounterTacticSchema,
@@ -65,5 +59,4 @@ export type QuestionTacticValue =
   | QuestionSliderTacticValue
   | QuestionTimeTacticValue
   | QuestionCounterTacticValue
-  | QuestionMultipleChoiceTacticValue
-  | QuestionImpulseTacticValue;
+  | QuestionMultipleChoiceTacticValue;

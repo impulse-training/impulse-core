@@ -240,7 +240,6 @@ export declare const factories: {
     }, "name" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "last3TacticPreviews" | "defaultFor" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
-        setbackThreshold?: number | undefined;
         parentId?: string | null | undefined;
         profileCount?: number | null | undefined;
         isFeatured?: boolean | null | undefined;
@@ -257,281 +256,10 @@ export declare const factories: {
         name: string;
         ordinal: number;
         synonyms: string[];
-        debriefTactic: {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            image?: {
-                localFilePath?: import("yup").Maybe<string | undefined>;
-                storagePath?: import("yup").Maybe<string | undefined>;
-                uri?: import("yup").Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            description?: string | null | undefined;
-            debriefAfterMinutes?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                    strategiesPath: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                    strategiesPath: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                    strategiesPath: string;
-                };
-            } | null | undefined;
-            language?: string | null | undefined;
-            linkUrl?: string | null | undefined;
-            likesCount?: number | null | undefined;
-            timerSeconds?: import("yup").Maybe<number | undefined>;
-            isSuggested?: boolean | undefined;
-            title: string;
-            backgroundColor: string;
-            type: import("..").QuestionKeyType;
-            ordinal: number;
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            image?: {
-                localFilePath?: import("yup").Maybe<string | undefined>;
-                storagePath?: import("yup").Maybe<string | undefined>;
-                uri?: import("yup").Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            description?: string | null | undefined;
-            debriefAfterMinutes?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                    strategiesPath: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                    strategiesPath: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                    strategiesPath: string;
-                };
-            } | null | undefined;
-            language?: string | null | undefined;
-            linkUrl?: string | null | undefined;
-            likesCount?: number | null | undefined;
-            timerSeconds?: import("yup").Maybe<number | undefined>;
-            isSuggested?: boolean | undefined;
-            title: string;
-            backgroundColor: string;
-            type: import("..").QuestionKeyType;
-            ordinal: number;
-            options: string[];
-        } | {
-            createdAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | null | undefined;
-            image?: {
-                localFilePath?: import("yup").Maybe<string | undefined>;
-                storagePath?: import("yup").Maybe<string | undefined>;
-                uri?: import("yup").Maybe<string | undefined>;
-            } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            lowEmoji?: import("yup").Maybe<string | undefined>;
-            highEmoji?: import("yup").Maybe<string | undefined>;
-            description?: string | null | undefined;
-            debriefAfterMinutes?: number | null | undefined;
-            optionsById?: {
-                [x: string]: {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    text: string;
-                    type: "question-multiple-choice";
-                    color: string;
-                    textColor: string;
-                    strategiesPath: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-time";
-                    color: string;
-                    textColor: string;
-                    strategiesPath: string;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    greaterThan?: number | undefined;
-                    lessThanOrEqualTo?: number | undefined;
-                    text: string;
-                    type: "question-counter";
-                    color: string;
-                    textColor: string;
-                    strategiesPath: string;
-                };
-            } | null | undefined;
-            language?: string | null | undefined;
-            linkUrl?: string | null | undefined;
-            likesCount?: number | null | undefined;
-            timerSeconds?: import("yup").Maybe<number | undefined>;
-            isSuggested?: boolean | undefined;
-            title: string;
-            backgroundColor: string;
-            type: import("..").QuestionKeyType;
-            ordinal: number;
-        };
         parentIds: string[];
         parentNames: string[];
         therapistProfileIds: string[];
-    }, "createdAt" | "updatedAt" | "name" | "ordinal" | "synonyms" | "debriefTactic" | "parentIds" | "parentNames" | "therapistProfileIds" | ("path" | "setbackThreshold" | "parentId" | "profileCount" | "isFeatured")>;
+    }, "createdAt" | "updatedAt" | "name" | "ordinal" | "synonyms" | "parentIds" | "parentNames" | "therapistProfileIds" | ("path" | "parentId" | "profileCount" | "isFeatured")>;
     streamFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -585,7 +313,7 @@ export declare const factories: {
             };
         };
     }, "name" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "last3TacticPreviews" | "defaultFor" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "title" | "image" | "backgroundColor" | "type" | "setbackThreshold" | "ordinal" | "description" | "debriefAfterMinutes" | "optionsById" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested">;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "title" | "image" | "backgroundColor" | "type" | "setbackThreshold" | "ordinal" | "commentCount" | "description" | "debriefAfterMinutes" | "optionsById" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested">;
     questionTimeTacticFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -675,7 +403,8 @@ export declare const factories: {
         backgroundColor: string;
         type: import("..").QuestionKeyType;
         ordinal: number;
-    }, "title" | "backgroundColor" | "type" | "ordinal" | ("createdAt" | "updatedAt" | "profileId" | "image" | "setbackThreshold" | "description" | "debriefAfterMinutes" | "optionsById" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested")>;
+        commentCount: number;
+    }, "title" | "backgroundColor" | "type" | "ordinal" | "commentCount" | ("createdAt" | "updatedAt" | "profileId" | "image" | "setbackThreshold" | "description" | "debriefAfterMinutes" | "optionsById" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested")>;
     strategyFactory: import("factory.ts").Factory<import("..").StrategyValue, "createdAt" | "updatedAt" | "profileId" | "name" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "type" | "ordinal" | "tacticsById" | "tacticIds" | "subscribeToAllTactics" | "stream">;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {

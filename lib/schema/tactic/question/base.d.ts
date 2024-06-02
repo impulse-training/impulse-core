@@ -14,6 +14,7 @@ export declare function questionTacticValueBaseSchema(type: QuestionKeyType): im
     } | null | undefined;
     ordinal: number;
     title: string;
+    commentCount: number;
     description: string | null | undefined;
     debriefAfterMinutes: number | null | undefined;
     image: {
@@ -95,6 +96,7 @@ export declare function questionTacticValueBaseSchema(type: QuestionKeyType): im
     updatedAt: undefined;
     ordinal: undefined;
     title: undefined;
+    commentCount: undefined;
     description: undefined;
     debriefAfterMinutes: undefined;
     image: {

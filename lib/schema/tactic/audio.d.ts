@@ -14,6 +14,7 @@ export declare const audioTacticSchema: yup.ObjectSchema<{
     } | null | undefined;
     ordinal: number;
     title: string;
+    commentCount: number;
     description: string | null | undefined;
     debriefAfterMinutes: number | null | undefined;
     image: {
@@ -100,6 +101,7 @@ export declare const audioTacticSchema: yup.ObjectSchema<{
     updatedAt: undefined;
     ordinal: undefined;
     title: undefined;
+    commentCount: undefined;
     description: undefined;
     debriefAfterMinutes: undefined;
     image: {

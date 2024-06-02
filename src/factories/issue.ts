@@ -1,6 +1,5 @@
 import * as Factory from 'factory.ts';
-import { sample } from 'lodash';
-import { IssueValue, tacticColors } from '../schema';
+import { IssueValue } from '../schema';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 
 export const makeIssueFactory = (TimestampKlass: typeof TimestampLike) =>
@@ -10,12 +9,6 @@ export const makeIssueFactory = (TimestampKlass: typeof TimestampLike) =>
     updatedAt: TimestampKlass.now(),
     synonyms: ['Videos'],
     ordinal: 0,
-    debriefTactic: {
-      ordinal: 0,
-      type: 'question-time',
-      title: 'How long did you spend?',
-      backgroundColor: sample(tacticColors)!,
-    },
     parentIds: [],
     parentNames: [
       'Behavioral pattern',

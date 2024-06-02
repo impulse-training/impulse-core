@@ -1,5 +1,4 @@
 import * as yup from 'yup';
-import { questionTacticSchema } from './tactic';
 import { requiredStringArray } from './utils/array';
 import { timestampSchema } from './utils/timestamp';
 
@@ -16,8 +15,6 @@ export const issueSchema = yup.object().shape({
     .test('includes-name', 'Synonyms must include name', function (synonyms) {
       return synonyms.includes(this.parent.name);
     }),
-  debriefTactic: questionTacticSchema,
-  setbackThreshold: yup.number(),
   path: yup.string().nullable(),
   parentIds: requiredStringArray,
   parentNames: requiredStringArray,
