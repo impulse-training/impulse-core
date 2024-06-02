@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
-import { TacticsByIdWithStrategy } from './tactic';
+import { TacticsById } from './tactic';
 export declare const questionSchema: yup.ObjectSchema<{
     prompt: string | undefined;
     type: NonNullable<"time" | "slider" | "counter" | undefined>;
@@ -118,7 +118,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
         tactic?: any;
         path: string;
         id: string;
-        strategyId: string;
     };
     tacticLikes: {
         [x: string]: NonNullable<boolean | undefined>;
@@ -157,7 +156,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
         id: undefined;
         path: undefined;
         tactic: any;
-        strategyId: undefined;
     };
     tacticLikes: undefined;
     tacticData: undefined;
@@ -166,7 +164,7 @@ type WithTypes<T extends yup.ISchema<unknown>> = Omit<yup.InferType<T>, 'created
     createdAt: TimestampLike;
     updatedAt: TimestampLike;
     startTime: TimestampLike;
-    tacticsById: TacticsByIdWithStrategy;
+    tacticsById: TacticsById;
 };
 export type ImpulseLogValue = WithTypes<typeof impulseLogSchema>;
 export declare function logIsImpulseLog(log: LogValue): log is ImpulseLogValue;
@@ -248,7 +246,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         tactic?: any;
         path: string;
         id: string;
-        strategyId: string;
     };
     tacticLikes: {
         [x: string]: NonNullable<boolean | undefined>;
@@ -304,7 +301,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         id: undefined;
         path: undefined;
         tactic: any;
-        strategyId: undefined;
     };
     tacticLikes: undefined;
     tacticData: undefined;
@@ -393,7 +389,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         tactic?: any;
         path: string;
         id: string;
-        strategyId: string;
     };
     tacticLikes: {
         [x: string]: NonNullable<boolean | undefined>;
@@ -438,7 +433,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
         id: undefined;
         path: undefined;
         tactic: any;
-        strategyId: undefined;
     };
     tacticLikes: undefined;
     tacticData: undefined;
@@ -528,7 +522,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         tactic?: any;
         path: string;
         id: string;
-        strategyId: string;
     };
     tacticLikes: {
         [x: string]: NonNullable<boolean | undefined>;
@@ -569,7 +562,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
         id: undefined;
         path: undefined;
         tactic: any;
-        strategyId: undefined;
     };
     tacticLikes: undefined;
     tacticData: undefined;
@@ -612,7 +604,6 @@ export declare const logSchema: yup.Lazy<{
         tactic?: any;
         path: string;
         id: string;
-        strategyId: string;
     };
     startTime: {
         seconds: number;
@@ -712,7 +703,6 @@ export declare const logSchema: yup.Lazy<{
         tactic?: any;
         path: string;
         id: string;
-        strategyId: string;
     };
     startTime: {
         seconds: number;
@@ -816,7 +806,6 @@ export declare const logSchema: yup.Lazy<{
         tactic?: any;
         path: string;
         id: string;
-        strategyId: string;
     };
     startTime: {
         seconds: number;

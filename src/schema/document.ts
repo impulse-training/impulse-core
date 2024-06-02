@@ -17,7 +17,6 @@ export const documentSchema = yup.lazy(snap => {
 
 export const schemaMap: Record<string, yup.Schema | yup.Lazy<unknown>> = {
   tactics: schemas.tacticSchema,
-  strategies: schemas.strategySchema,
   logs: schemas.logSchema,
   streams: schemas.streamSchema,
   comments: schemas.commentSchema,

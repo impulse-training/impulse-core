@@ -6,7 +6,6 @@ import {
   dayLogsSummarySchema,
   logSchema,
   profileLogsSummarySchema,
-  strategySchema,
   streamMembershipSchema,
   streamSchema,
   tacticSchema,
@@ -64,7 +63,6 @@ const schemaMap: Record<keyof typeof factories, null | Schema | Lazy<unknown>> =
     issueFactory: null,
     streamFactory: streamSchema,
     tacticFactory: tacticSchema,
-    strategyFactory: strategySchema,
     questionTimeTacticFactory: tacticSchema,
     timeRoutineFactory: timeRoutineSchema,
   };

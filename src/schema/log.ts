@@ -3,10 +3,7 @@
 import * as yup from 'yup';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 import { streamSchema } from './stream';
-import {
-  TacticsByIdWithStrategy,
-  tacticInfoWithStrategySchema,
-} from './tactic';
+import { TacticsById, tacticInfoSchema } from './tactic';
 import { optionalStringArray, requiredStringArray } from './utils/array';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
@@ -53,7 +50,7 @@ const baseLogSchema = yup.object().shape({
 
   // TODO: These represent seen tactics, but this may need some clarification
   tacticIds: requiredStringArray,
-  tacticsById: tacticInfoWithStrategySchema,
+  tacticsById: tacticInfoSchema,
   tacticLikes: optionalObjectOf(yup.boolean().required()),
   tacticData: objectOf(tacticDataSchema),
 });
@@ -66,7 +63,7 @@ type WithTypes<T extends yup.ISchema<unknown>> = Omit<
   createdAt: TimestampLike;
   updatedAt: TimestampLike;
   startTime: TimestampLike;
-  tacticsById: TacticsByIdWithStrategy;
+  tacticsById: TacticsById;
 };
 
 export type ImpulseLogValue = WithTypes<typeof impulseLogSchema>;

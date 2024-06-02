@@ -16,7 +16,6 @@ export * from './recording';
 export * from './recoveryCode';
 export * from './routine';
 export * from './spotifyCredentials';
-export * from './strategy';
 export * from './stream';
 export * from './streamMembership';
 export * from './tactic';

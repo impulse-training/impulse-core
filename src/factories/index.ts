@@ -12,7 +12,6 @@ import {
 import { makeProfileFactory } from './profile';
 import { profileLogsSummaryFactory } from './profileLogsSummary';
 import { makeTimeRoutineFactory } from './routine';
-import { makeStrategyFactory } from './strategy';
 import { makeStreamFactory } from './stream';
 import { makeQuestionTimeTacticFactory, makeTacticFactory } from './tactic';
 
@@ -35,7 +34,6 @@ export function makeFactories(TimestampKlass: typeof TimestampLike) {
     streamFactory: makeStreamFactory(TimestampKlass),
     tacticFactory: makeTacticFactory(TimestampKlass),
     questionTimeTacticFactory: makeQuestionTimeTacticFactory(TimestampKlass),
-    strategyFactory: makeStrategyFactory(TimestampKlass),
     timeRoutineFactory: makeTimeRoutineFactory(TimestampKlass),
   };
 }

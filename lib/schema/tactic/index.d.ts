@@ -49,18 +49,3 @@ export type TacticsById = Record<string, TacticInfo>;
 export type WithTacticsById<T> = Omit<T, 'tacticsById'> & {
     tacticsById: TacticsById;
 };
-export declare const tacticInfoWithStrategySchema: yup.ObjectSchema<{
-    id: string;
-    path: string;
-    tactic: any;
-    strategyId: string;
-}, yup.AnyObject, {
-    id: undefined;
-    path: undefined;
-    tactic: any;
-    strategyId: undefined;
-}, "">;
-export type TacticInfoWithStrategy = Omit<yup.InferType<typeof tacticInfoWithStrategySchema>, 'tactic'> & {
-    tactic: TacticValue;
-};
-export type TacticsByIdWithStrategy = Record<string, TacticInfoWithStrategy>;
