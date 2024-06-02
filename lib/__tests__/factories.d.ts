@@ -331,6 +331,7 @@ export declare const factories: {
             storagePath?: import("yup").Maybe<string | undefined>;
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
+        backgroundColor?: string | undefined;
         setbackThreshold?: number | null | undefined;
         description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
@@ -400,11 +401,10 @@ export declare const factories: {
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
         title: string;
-        backgroundColor: string;
         type: import("..").QuestionKeyType;
         ordinal: number;
         commentCount: number;
-    }, "title" | "backgroundColor" | "type" | "ordinal" | "commentCount" | ("createdAt" | "updatedAt" | "profileId" | "image" | "setbackThreshold" | "description" | "debriefAfterMinutes" | "optionsById" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested")>;
+    }, "title" | "type" | "ordinal" | "commentCount" | ("createdAt" | "updatedAt" | "profileId" | "image" | "backgroundColor" | "setbackThreshold" | "description" | "debriefAfterMinutes" | "optionsById" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested")>;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;

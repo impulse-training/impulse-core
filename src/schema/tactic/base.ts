@@ -19,7 +19,7 @@ export function tacticValueBaseSchema<K extends string>(type: K) {
     image: imageSchema.optional().nullable(),
     setbackThreshold: yup.number().nullable(),
     optionsById: optionalObjectOf(optionWithStrategiesPathSchema),
-    backgroundColor: yup.string().required(),
+    backgroundColor: yup.string(),
     language: yup.string().nullable(),
     linkUrl: yup.string().url().nullable(),
     likesCount: yup.number().nullable(),

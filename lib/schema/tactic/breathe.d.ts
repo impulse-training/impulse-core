@@ -83,7 +83,7 @@ export declare const breatheTacticSchema: yup.ObjectSchema<{
             strategiesPath: string;
         };
     } | null | undefined;
-    backgroundColor: string;
+    backgroundColor: string | undefined;
     language: string | null | undefined;
     linkUrl: string | null | undefined;
     likesCount: number | null | undefined;

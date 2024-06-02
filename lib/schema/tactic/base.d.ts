@@ -83,7 +83,7 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
             strategiesPath: string;
         };
     } | null | undefined;
-    backgroundColor: string;
+    backgroundColor: string | undefined;
     language: string | null | undefined;
     linkUrl: string | null | undefined;
     likesCount: number | null | undefined;
