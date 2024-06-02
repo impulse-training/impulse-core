@@ -313,7 +313,7 @@ export declare const factories: {
             };
         };
     }, "name" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "last3TacticPreviews" | "defaultFor" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "title" | "image" | "backgroundColor" | "type" | "setbackThreshold" | "ordinal" | "commentCount" | "description" | "debriefAfterMinutes" | "optionsById" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested">;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "title" | "image" | "backgroundColor" | "type" | "setbackThreshold" | "ordinal" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "optionsById" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested">;
     questionTimeTacticFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -333,6 +333,7 @@ export declare const factories: {
         } | null | undefined;
         backgroundColor?: string | undefined;
         setbackThreshold?: number | null | undefined;
+        pastTenseTitle?: string | undefined;
         description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
         optionsById?: {
@@ -404,7 +405,7 @@ export declare const factories: {
         type: import("..").QuestionKeyType;
         ordinal: number;
         commentCount: number;
-    }, "title" | "type" | "ordinal" | "commentCount" | ("createdAt" | "updatedAt" | "profileId" | "image" | "backgroundColor" | "setbackThreshold" | "description" | "debriefAfterMinutes" | "optionsById" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested")>;
+    }, "title" | "type" | "ordinal" | "commentCount" | ("createdAt" | "updatedAt" | "profileId" | "image" | "backgroundColor" | "setbackThreshold" | "pastTenseTitle" | "description" | "debriefAfterMinutes" | "optionsById" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested")>;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;

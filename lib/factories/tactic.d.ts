@@ -1,7 +1,7 @@
 import * as Factory from 'factory.ts';
 import { TacticValue } from '../schema';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
-export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<TacticValue, "createdAt" | "updatedAt" | "profileId" | "title" | "image" | "backgroundColor" | "type" | "setbackThreshold" | "ordinal" | "commentCount" | "description" | "debriefAfterMinutes" | "optionsById" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested">;
+export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<TacticValue, "createdAt" | "updatedAt" | "profileId" | "title" | "image" | "backgroundColor" | "type" | "setbackThreshold" | "ordinal" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "optionsById" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested">;
 export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     createdAt?: {
         seconds: number;
@@ -21,6 +21,7 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
     } | null | undefined;
     backgroundColor?: string | undefined;
     setbackThreshold?: number | null | undefined;
+    pastTenseTitle?: string | undefined;
     description?: string | null | undefined;
     debriefAfterMinutes?: number | null | undefined;
     optionsById?: {
@@ -92,4 +93,4 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
     type: import("../schema").QuestionKeyType;
     ordinal: number;
     commentCount: number;
-}, "title" | "type" | "ordinal" | "commentCount" | ("createdAt" | "updatedAt" | "profileId" | "image" | "backgroundColor" | "setbackThreshold" | "description" | "debriefAfterMinutes" | "optionsById" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested")>;
+}, "title" | "type" | "ordinal" | "commentCount" | ("createdAt" | "updatedAt" | "profileId" | "image" | "backgroundColor" | "setbackThreshold" | "pastTenseTitle" | "description" | "debriefAfterMinutes" | "optionsById" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested")>;

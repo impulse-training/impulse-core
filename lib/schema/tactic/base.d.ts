@@ -14,6 +14,7 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
     } | null | undefined;
     ordinal: number;
     title: string;
+    pastTenseTitle: string | undefined;
     commentCount: number;
     description: string | null | undefined;
     debriefAfterMinutes: number | null | undefined;
@@ -96,6 +97,7 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
     updatedAt: undefined;
     ordinal: undefined;
     title: undefined;
+    pastTenseTitle: undefined;
     commentCount: undefined;
     description: undefined;
     debriefAfterMinutes: undefined;

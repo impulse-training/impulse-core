@@ -14,6 +14,7 @@ export declare const videoTacticSchema: yup.ObjectSchema<{
     } | null | undefined;
     ordinal: number;
     title: string;
+    pastTenseTitle: string | undefined;
     commentCount: number;
     description: string | null | undefined;
     debriefAfterMinutes: number | null | undefined;
@@ -104,6 +105,7 @@ export declare const videoTacticSchema: yup.ObjectSchema<{
     updatedAt: undefined;
     ordinal: undefined;
     title: undefined;
+    pastTenseTitle: undefined;
     commentCount: undefined;
     description: undefined;
     debriefAfterMinutes: undefined;
