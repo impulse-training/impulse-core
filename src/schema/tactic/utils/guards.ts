@@ -1,5 +1,6 @@
 import { keys } from 'lodash';
 import { TacticValue, questionTacticSchemas } from '..';
+import { recapTacticSchemas } from '../recap';
 
 export const isStepsTactic = ({ type }: TacticValue) => type === 'steps';
 export const isEmotionsTactic = ({ type }: TacticValue) => type === 'emotions';
@@ -17,3 +18,6 @@ export const isQuestionTimeTactic = ({ type }: TacticValue) =>
   type === 'question-time';
 export const isQuestionCounterTactic = ({ type }: TacticValue) =>
   type === 'question-counter';
+
+export const isRecapTactic = ({ type }: TacticValue) =>
+  keys(recapTacticSchemas).includes(type);

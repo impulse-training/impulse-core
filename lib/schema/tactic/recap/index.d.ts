@@ -1,30 +1,32 @@
 import * as yup from 'yup';
-export declare const questionMultipleChoiceTacticSchema: yup.ObjectSchema<{
-    type: import("./questionKeyType").QuestionKeyType;
-    profileId: string | null | undefined;
-    createdAt: {
+import { RecapActionTacticValue } from './recapAction';
+import { RecapTrackingTacticValue } from './recapTracking';
+export * from './recapAction';
+export * from './recapTracking';
+export declare const recapTacticSchemas: Record<RecapTacticValue['type'], yup.ObjectSchema<RecapTacticValue>>;
+export declare const recapTacticSchema: yup.Lazy<{
+    createdAt?: {
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    updatedAt: {
+    updatedAt?: {
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    ordinal: number;
-    title: string;
-    pastTenseTitle: string | undefined;
-    commentCount: number;
-    description: string | null | undefined;
-    debriefAfterMinutes: number | null | undefined;
-    image: {
+    profileId?: string | null | undefined;
+    image?: {
         localFilePath?: yup.Maybe<string | undefined>;
         storagePath?: yup.Maybe<string | undefined>;
         uri?: yup.Maybe<string | undefined>;
     } | null | undefined;
-    setbackThreshold: number | null | undefined;
-    optionsById: {
+    backgroundColor?: string | undefined;
+    setbackThreshold?: number | null | undefined;
+    pastTenseTitle?: string | undefined;
+    description?: string | null | undefined;
+    debriefAfterMinutes?: number | null | undefined;
+    optionsById?: {
         [x: string]: {
             createdAt?: {
                 seconds: number;
@@ -84,37 +86,19 @@ export declare const questionMultipleChoiceTacticSchema: yup.ObjectSchema<{
             strategiesPath: string;
         };
     } | null | undefined;
-    backgroundColor: string | undefined;
-    language: string | null | undefined;
-    linkUrl: string | null | undefined;
-    likesCount: number | null | undefined;
-    timerSeconds: yup.Maybe<number | undefined>;
-    isSuggested: boolean | undefined;
-    options: string[];
-}, yup.AnyObject, {
-    type: undefined;
-    profileId: undefined;
-    createdAt: undefined;
-    updatedAt: undefined;
-    ordinal: undefined;
-    title: undefined;
-    pastTenseTitle: undefined;
-    commentCount: undefined;
-    description: undefined;
-    debriefAfterMinutes: undefined;
-    image: {
-        localFilePath: undefined;
-        storagePath: undefined;
-        uri: undefined;
-    };
-    setbackThreshold: undefined;
-    optionsById: undefined;
-    backgroundColor: undefined;
-    language: undefined;
-    linkUrl: undefined;
-    likesCount: undefined;
-    timerSeconds: undefined;
-    isSuggested: undefined;
-    options: "";
-}, "">;
-export type QuestionMultipleChoiceTacticValue = yup.InferType<typeof questionMultipleChoiceTacticSchema>;
+    language?: string | null | undefined;
+    linkUrl?: string | null | undefined;
+    likesCount?: number | null | undefined;
+    timerSeconds?: yup.Maybe<number | undefined>;
+    isSuggested?: boolean | undefined;
+    confirmedAt?: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    title: string;
+    type: import("./recapKeyType").RecapKeyType;
+    ordinal: number;
+    commentCount: number;
+}, yup.AnyObject, any>;
+export type RecapTacticValue = RecapActionTacticValue | RecapTrackingTacticValue;

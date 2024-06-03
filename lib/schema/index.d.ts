@@ -20,6 +20,6 @@ export * from './stream';
 export * from './streamMembership';
 export * from './tactic';
 export * from './tacticImpression';
+export * from './tactic/question/questionKeyType';
 export * from './utils/image';
-export * from './utils/questionType';
 export * from './utils/time';

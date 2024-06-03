@@ -1,4 +1,4 @@
-import { QuestionKeyType } from '../../utils/questionType';
+import { QuestionKeyType } from './questionKeyType';
 export declare function questionTacticValueBaseSchema(type: QuestionKeyType): import("yup").ObjectSchema<{
     type: QuestionKeyType;
     profileId: string | null | undefined;

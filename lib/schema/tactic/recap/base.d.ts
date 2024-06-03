@@ -1,6 +1,6 @@
-import * as yup from 'yup';
-export declare const questionMultipleChoiceTacticSchema: yup.ObjectSchema<{
-    type: import("./questionKeyType").QuestionKeyType;
+import { RecapKeyType } from './recapKeyType';
+export declare function recapTacticValueBaseSchema(type: RecapKeyType): import("yup").ObjectSchema<{
+    type: RecapKeyType;
     profileId: string | null | undefined;
     createdAt: {
         seconds: number;
@@ -19,9 +19,9 @@ export declare const questionMultipleChoiceTacticSchema: yup.ObjectSchema<{
     description: string | null | undefined;
     debriefAfterMinutes: number | null | undefined;
     image: {
-        localFilePath?: yup.Maybe<string | undefined>;
-        storagePath?: yup.Maybe<string | undefined>;
-        uri?: yup.Maybe<string | undefined>;
+        localFilePath?: import("yup").Maybe<string | undefined>;
+        storagePath?: import("yup").Maybe<string | undefined>;
+        uri?: import("yup").Maybe<string | undefined>;
     } | null | undefined;
     setbackThreshold: number | null | undefined;
     optionsById: {
@@ -88,10 +88,14 @@ export declare const questionMultipleChoiceTacticSchema: yup.ObjectSchema<{
     language: string | null | undefined;
     linkUrl: string | null | undefined;
     likesCount: number | null | undefined;
-    timerSeconds: yup.Maybe<number | undefined>;
+    timerSeconds: import("yup").Maybe<number | undefined>;
     isSuggested: boolean | undefined;
-    options: string[];
-}, yup.AnyObject, {
+    confirmedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+}, import("yup").AnyObject, {
     type: undefined;
     profileId: undefined;
     createdAt: undefined;
@@ -115,6 +119,5 @@ export declare const questionMultipleChoiceTacticSchema: yup.ObjectSchema<{
     likesCount: undefined;
     timerSeconds: undefined;
     isSuggested: undefined;
-    options: "";
+    confirmedAt: undefined;
 }, "">;
-export type QuestionMultipleChoiceTacticValue = yup.InferType<typeof questionMultipleChoiceTacticSchema>;

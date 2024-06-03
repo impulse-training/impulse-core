@@ -10,3 +10,4 @@ export declare const isQuestionTactic: ({ type }: TacticValue) => boolean;
 export declare const isQuestionSliderTactic: ({ type }: TacticValue) => boolean;
 export declare const isQuestionTimeTactic: ({ type }: TacticValue) => boolean;
 export declare const isQuestionCounterTactic: ({ type }: TacticValue) => boolean;
+export declare const isRecapTactic: ({ type }: TacticValue) => boolean;

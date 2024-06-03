@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 export declare const questionTimeTacticSchema: yup.ObjectSchema<{
-    type: import("../..").QuestionKeyType;
+    type: import("./questionKeyType").QuestionKeyType;
     profileId: string | null | undefined;
     createdAt: {
         seconds: number;

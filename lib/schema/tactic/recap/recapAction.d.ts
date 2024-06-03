@@ -1,6 +1,6 @@
 import * as yup from 'yup';
-export declare const questionMultipleChoiceTacticSchema: yup.ObjectSchema<{
-    type: import("./questionKeyType").QuestionKeyType;
+export declare const recapActionTacticSchema: yup.ObjectSchema<{
+    type: import("./recapKeyType").RecapKeyType;
     profileId: string | null | undefined;
     createdAt: {
         seconds: number;
@@ -90,7 +90,11 @@ export declare const questionMultipleChoiceTacticSchema: yup.ObjectSchema<{
     likesCount: number | null | undefined;
     timerSeconds: yup.Maybe<number | undefined>;
     isSuggested: boolean | undefined;
-    options: string[];
+    confirmedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
 }, yup.AnyObject, {
     type: undefined;
     profileId: undefined;
@@ -115,6 +119,6 @@ export declare const questionMultipleChoiceTacticSchema: yup.ObjectSchema<{
     likesCount: undefined;
     timerSeconds: undefined;
     isSuggested: undefined;
-    options: "";
+    confirmedAt: undefined;
 }, "">;
-export type QuestionMultipleChoiceTacticValue = yup.InferType<typeof questionMultipleChoiceTacticSchema>;
+export type RecapActionTacticValue = yup.InferType<typeof recapActionTacticSchema>;

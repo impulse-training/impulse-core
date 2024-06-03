@@ -23,6 +23,6 @@ export * from './tactic';
 export * from './tacticImpression';
 
 // Utils
+export * from './tactic/question/questionKeyType';
 export * from './utils/image';
-export * from './utils/questionType';
 export * from './utils/time';

@@ -6,6 +6,7 @@ import { DayReviewTacticValue, dayReviewTacticSchema } from './dayReview';
 import { EmotionsTacticValue, emotionsTacticSchema } from './emotions';
 import { PhoneTacticValue, phoneTacticSchema } from './phone';
 import { QuestionTacticValue, questionTacticSchemas } from './question';
+import { RecapTacticValue, recapTacticSchemas } from './recap';
 import { StepsTacticValue, stepsTacticSchema } from './steps';
 import { TaskTacticValue, taskTacticSchema } from './task';
 import { UrgeSurfingTacticValue, urgeSurfingTacticSchema } from './urgeSurfing';
@@ -33,7 +34,8 @@ export type TacticValue =
   | BreatheTacticValue
   | StepsTacticValue
   | EmotionsTacticValue
-  | DayReviewTacticValue;
+  | DayReviewTacticValue
+  | RecapTacticValue;
 
 // Utility to dynamically select the correct schema based on the tactic type
 export const tacticSchemas: Record<
@@ -43,13 +45,14 @@ export const tacticSchemas: Record<
   phone: phoneTacticSchema,
   audio: audioTacticSchema,
   video: videoTacticSchema,
-  ...questionTacticSchemas,
   breathe: breatheTacticSchema,
   steps: stepsTacticSchema,
   task: taskTacticSchema,
   emotions: emotionsTacticSchema,
   'day-review': dayReviewTacticSchema,
   'urge-surfing': urgeSurfingTacticSchema,
+  ...questionTacticSchemas,
+  ...recapTacticSchemas,
 } as any;
 // We do highly value static typing, but the problem is that yup's generated types are bloated and
 // cause problems. Instead of exporting generated types for top-level types like tacticSchemas, we

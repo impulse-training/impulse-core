@@ -1,7 +1,7 @@
 import { compact, isUndefined } from 'lodash';
 import * as yup from 'yup';
 import { OptionValue } from '.';
-import { QuestionKeyType } from '../utils/questionType';
+import { QuestionKeyType } from '../tactic/question/questionKeyType';
 import { formatSecondsInWords } from '../utils/time';
 import { optionValueBaseSchema } from './base';
 
