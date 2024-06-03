@@ -10,7 +10,7 @@ import {
   makeTimeLogFactory,
 } from './log';
 import { makeProfileFactory } from './profile';
-import { profileLogsSummaryFactory } from './profileLogsSummary';
+import { makeProfileLogsSummaryFactory } from './profileLogsSummary';
 import { makeTimeRoutineFactory } from './routine';
 import { makeStreamFactory } from './stream';
 import { makeQuestionTimeTacticFactory, makeTacticFactory } from './tactic';
@@ -21,7 +21,7 @@ import { makeQuestionTimeTacticFactory, makeTacticFactory } from './tactic';
 export function makeFactories(TimestampKlass: typeof TimestampLike) {
   return {
     dayLogsSummaryFactory,
-    profileLogsSummaryFactory,
+    profileLogsSummaryFactory: makeProfileLogsSummaryFactory(TimestampKlass),
     applicationFactory: makeApplicationFactory(TimestampKlass),
     commentFactory: makeCommentFactory(TimestampKlass),
     impulseFactory: makeImpulseLogFactory(TimestampKlass),

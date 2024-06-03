@@ -1,5 +1,6 @@
 import * as Factory from 'factory.ts';
-export declare const profileLogsSummaryFactory: Factory.Sync.Factory<{
+import { TimestampLike } from '../utils';
+export declare const makeProfileLogsSummaryFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     [x: string]: {
         [x: string]: {
             value?: number | undefined;
@@ -12,6 +13,11 @@ export declare const profileLogsSummaryFactory: Factory.Sync.Factory<{
             nextStrategiesPath?: string | undefined;
             lowEmoji?: import("yup").Maybe<string | undefined>;
             highEmoji?: import("yup").Maybe<string | undefined>;
+            loggedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            };
             unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
             formattedValue: string;
         };

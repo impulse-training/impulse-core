@@ -1,10 +1,10 @@
 import * as yup from 'yup';
 import { requiredStringArray } from './utils/array';
-import { timestampSchema } from './utils/timestamp';
+import { optionalTimestampSchema } from './utils/timestamp';
 
 export const issueSchema = yup.object().shape({
-  createdAt: timestampSchema.required(),
-  updatedAt: timestampSchema.required(),
+  createdAt: optionalTimestampSchema,
+  updatedAt: optionalTimestampSchema,
   parentId: yup.string().nullable(),
   name: yup.string().required(),
   ordinal: yup.number().required(),

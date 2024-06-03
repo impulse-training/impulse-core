@@ -90,11 +90,6 @@ export declare const recapActionTacticSchema: yup.ObjectSchema<{
     likesCount: number | null | undefined;
     timerSeconds: yup.Maybe<number | undefined>;
     isSuggested: boolean | undefined;
-    confirmedAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    } | null | undefined;
 }, yup.AnyObject, {
     type: undefined;
     profileId: undefined;
@@ -119,6 +114,5 @@ export declare const recapActionTacticSchema: yup.ObjectSchema<{
     likesCount: undefined;
     timerSeconds: undefined;
     isSuggested: undefined;
-    confirmedAt: undefined;
 }, "">;
 export type RecapActionTacticValue = yup.InferType<typeof recapActionTacticSchema>;

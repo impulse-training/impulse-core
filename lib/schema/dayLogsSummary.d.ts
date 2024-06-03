@@ -17,6 +17,11 @@ declare const logSummarySchema: yup.ObjectSchema<{
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
+            loggedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            };
             unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
             formattedValue: string;
         };
@@ -160,6 +165,11 @@ export declare const dayLogsSummarySchema: yup.Lazy<{
                 nextStrategiesPath?: string | undefined;
                 lowEmoji?: yup.Maybe<string | undefined>;
                 highEmoji?: yup.Maybe<string | undefined>;
+                loggedAt: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                };
                 unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
                 formattedValue: string;
             };

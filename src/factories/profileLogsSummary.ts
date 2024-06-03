@@ -1,10 +1,14 @@
 import * as Factory from 'factory.ts';
 import { ProfileLogsSummaryValue } from '../schema';
+import { TimestampLike } from '../utils';
 
-export const profileLogsSummaryFactory =
+export const makeProfileLogsSummaryFactory = (
+  TimestampKlass: typeof TimestampLike
+) =>
   Factory.makeFactory<ProfileLogsSummaryValue>({
     '2024-01-01': {
       tactic1: {
+        loggedAt: TimestampKlass.now(),
         unit: 'time',
         value: 1,
         formattedValue: '1 minute',

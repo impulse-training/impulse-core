@@ -91,11 +91,6 @@ export declare const recapTacticSchema: yup.Lazy<{
     likesCount?: number | null | undefined;
     timerSeconds?: yup.Maybe<number | undefined>;
     isSuggested?: boolean | undefined;
-    confirmedAt?: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    } | null | undefined;
     title: string;
     type: import("./recapKeyType").RecapKeyType;
     ordinal: number;

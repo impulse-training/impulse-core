@@ -73,6 +73,11 @@ export declare const dayLogsSummaryFactory: Factory.Sync.Factory<{
                 nextStrategiesPath?: string | undefined;
                 lowEmoji?: import("yup").Maybe<string | undefined>;
                 highEmoji?: import("yup").Maybe<string | undefined>;
+                loggedAt: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                };
                 unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
                 formattedValue: string;
             };

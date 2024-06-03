@@ -12,6 +12,11 @@ export declare const questionSchema: yup.ObjectSchema<{
 }, "">;
 export type QuestionValue = yup.InferType<typeof questionSchema>;
 export declare const tacticDataSchema: yup.ObjectSchema<{
+    loggedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    };
     value: number | undefined;
     unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
     customUnit: string | undefined;
@@ -25,6 +30,11 @@ export declare const tacticDataSchema: yup.ObjectSchema<{
     lowEmoji: yup.Maybe<string | undefined>;
     highEmoji: yup.Maybe<string | undefined>;
 }, yup.AnyObject, {
+    loggedAt: {
+        seconds: undefined;
+        nanoseconds: undefined;
+        toDate: undefined;
+    };
     value: undefined;
     unit: undefined;
     customUnit: undefined;
@@ -134,6 +144,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
+            loggedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            };
             unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
             formattedValue: string;
         };
@@ -262,6 +277,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
+            loggedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            };
             unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
             formattedValue: string;
         };
@@ -405,6 +425,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
+            loggedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            };
             unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
             formattedValue: string;
         };
@@ -538,6 +563,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
+            loggedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            };
             unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
             formattedValue: string;
         };
@@ -677,6 +707,11 @@ export declare const logSchema: yup.Lazy<{
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
+            loggedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            };
             unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
             formattedValue: string;
         };
@@ -776,6 +811,11 @@ export declare const logSchema: yup.Lazy<{
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
+            loggedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            };
             unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
             formattedValue: string;
         };
@@ -879,6 +919,11 @@ export declare const logSchema: yup.Lazy<{
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
+            loggedAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            };
             unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
             formattedValue: string;
         };

@@ -90,11 +90,6 @@ export declare function recapTacticValueBaseSchema(type: RecapKeyType): import("
     likesCount: number | null | undefined;
     timerSeconds: import("yup").Maybe<number | undefined>;
     isSuggested: boolean | undefined;
-    confirmedAt: {
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    } | null | undefined;
 }, import("yup").AnyObject, {
     type: undefined;
     profileId: undefined;
@@ -119,5 +114,4 @@ export declare function recapTacticValueBaseSchema(type: RecapKeyType): import("
     likesCount: undefined;
     timerSeconds: undefined;
     isSuggested: undefined;
-    confirmedAt: undefined;
 }, "">;

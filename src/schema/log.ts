@@ -19,6 +19,7 @@ export const questionSchema = yup.object({
 export type QuestionValue = yup.InferType<typeof questionSchema>;
 
 export const tacticDataSchema = yup.object({
+  loggedAt: timestampSchema.required(),
   value: yup.number(),
   unit: yup
     .mixed<'time' | 'custom' | 'impulse'>()

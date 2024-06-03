@@ -4,12 +4,12 @@ export declare const issueSchema: yup.ObjectSchema<{
         seconds: number;
         nanoseconds: number;
         toDate: Function;
-    };
+    } | null | undefined;
     updatedAt: {
         seconds: number;
         nanoseconds: number;
         toDate: Function;
-    };
+    } | null | undefined;
     parentId: string | null | undefined;
     name: string;
     ordinal: number;
@@ -21,16 +21,8 @@ export declare const issueSchema: yup.ObjectSchema<{
     isFeatured: boolean | null | undefined;
     therapistProfileIds: string[];
 }, yup.AnyObject, {
-    createdAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
-    updatedAt: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        toDate: undefined;
-    };
+    createdAt: undefined;
+    updatedAt: undefined;
     parentId: undefined;
     name: undefined;
     ordinal: undefined;

@@ -74,6 +74,11 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     nextStrategiesPath?: string | undefined;
                     lowEmoji?: import("yup").Maybe<string | undefined>;
                     highEmoji?: import("yup").Maybe<string | undefined>;
+                    loggedAt: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    };
                     unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
                     formattedValue: string;
                 };
@@ -93,6 +98,11 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 nextStrategiesPath?: string | undefined;
                 lowEmoji?: import("yup").Maybe<string | undefined>;
                 highEmoji?: import("yup").Maybe<string | undefined>;
+                loggedAt: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                };
                 unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
                 formattedValue: string;
             };
@@ -241,26 +251,26 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
     }, "name" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "last3TacticPreviews" | "defaultFor" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
         parentId?: string | null | undefined;
         profileCount?: number | null | undefined;
         isFeatured?: boolean | null | undefined;
-        createdAt: {
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        };
-        updatedAt: {
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        };
         name: string;
         ordinal: number;
         synonyms: string[];
         parentIds: string[];
         parentNames: string[];
         therapistProfileIds: string[];
-    }, "createdAt" | "updatedAt" | "name" | "ordinal" | "synonyms" | "parentIds" | "parentNames" | "therapistProfileIds" | ("path" | "parentId" | "profileCount" | "isFeatured")>;
+    }, "name" | "ordinal" | "synonyms" | "parentIds" | "parentNames" | "therapistProfileIds" | ("path" | "createdAt" | "updatedAt" | "parentId" | "profileCount" | "isFeatured")>;
     streamFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
