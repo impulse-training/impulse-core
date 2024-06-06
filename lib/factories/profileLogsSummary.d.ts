@@ -13,11 +13,6 @@ export declare const makeProfileLogsSummaryFactory: (TimestampKlass: typeof Time
             nextStrategiesPath?: string | undefined;
             lowEmoji?: import("yup").Maybe<string | undefined>;
             highEmoji?: import("yup").Maybe<string | undefined>;
-            loggedAt: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            };
             unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
             formattedValue: string;
         };

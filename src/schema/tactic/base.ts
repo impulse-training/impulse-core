@@ -14,7 +14,7 @@ export function tacticValueBaseSchema<K extends string>(type: K) {
     ordinal: yup.number().required(),
     title: yup.string().required('is required'),
     pastTenseTitle: yup.string(),
-    commentCount: yup.number().required(),
+    commentCount: yup.number(),
     description: yup.string().nullable(),
     debriefAfterMinutes: yup.number().nullable(),
     image: imageSchema.optional().nullable(),

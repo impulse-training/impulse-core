@@ -1,5 +1,6 @@
+import * as yup from 'yup';
 import { QuestionKeyType } from './questionKeyType';
-export declare function questionTacticValueBaseSchema(type: QuestionKeyType): import("yup").ObjectSchema<{
+export declare function questionTacticValueBaseSchema(type: QuestionKeyType): yup.ObjectSchema<{
     type: QuestionKeyType;
     profileId: string | null | undefined;
     createdAt: {
@@ -15,13 +16,13 @@ export declare function questionTacticValueBaseSchema(type: QuestionKeyType): im
     ordinal: number;
     title: string;
     pastTenseTitle: string | undefined;
-    commentCount: number;
+    commentCount: number | undefined;
     description: string | null | undefined;
     debriefAfterMinutes: number | null | undefined;
     image: {
-        localFilePath?: import("yup").Maybe<string | undefined>;
-        storagePath?: import("yup").Maybe<string | undefined>;
-        uri?: import("yup").Maybe<string | undefined>;
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
+        uri?: yup.Maybe<string | undefined>;
     } | null | undefined;
     setbackThreshold: number | null | undefined;
     optionsById: {
@@ -88,9 +89,64 @@ export declare function questionTacticValueBaseSchema(type: QuestionKeyType): im
     language: string | null | undefined;
     linkUrl: string | null | undefined;
     likesCount: number | null | undefined;
-    timerSeconds: import("yup").Maybe<number | undefined>;
+    timerSeconds: yup.Maybe<number | undefined>;
     isSuggested: boolean | undefined;
-}, import("yup").AnyObject, {
+    options: ({
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        label?: string | undefined;
+        text: string;
+        type: "question-multiple-choice";
+        color: string;
+        textColor: string;
+    } | {
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        label?: string | undefined;
+        setbackThreshold?: number | undefined;
+        greaterThan?: number | undefined;
+        lessThanOrEqualTo?: number | undefined;
+        text: string;
+        type: "question-time";
+        color: string;
+        textColor: string;
+    } | {
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        label?: string | undefined;
+        setbackThreshold?: number | undefined;
+        greaterThan?: number | undefined;
+        lessThanOrEqualTo?: number | undefined;
+        text: string;
+        type: "question-counter";
+        color: string;
+        textColor: string;
+    })[] | undefined;
+}, yup.AnyObject, {
     type: undefined;
     profileId: undefined;
     createdAt: undefined;
@@ -114,4 +170,5 @@ export declare function questionTacticValueBaseSchema(type: QuestionKeyType): im
     likesCount: undefined;
     timerSeconds: undefined;
     isSuggested: undefined;
+    options: "";
 }, "">;

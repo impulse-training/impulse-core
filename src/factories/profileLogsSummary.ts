@@ -8,7 +8,6 @@ export const makeProfileLogsSummaryFactory = (
   Factory.makeFactory<ProfileLogsSummaryValue>({
     '2024-01-01': {
       tactic1: {
-        loggedAt: TimestampKlass.now(),
         unit: 'time',
         value: 1,
         formattedValue: '1 minute',

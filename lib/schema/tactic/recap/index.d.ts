@@ -24,6 +24,7 @@ export declare const recapTacticSchema: yup.Lazy<{
     backgroundColor?: string | undefined;
     setbackThreshold?: number | null | undefined;
     pastTenseTitle?: string | undefined;
+    commentCount?: number | undefined;
     description?: string | null | undefined;
     debriefAfterMinutes?: number | null | undefined;
     optionsById?: {
@@ -94,6 +95,5 @@ export declare const recapTacticSchema: yup.Lazy<{
     title: string;
     type: import("./recapKeyType").RecapKeyType;
     ordinal: number;
-    commentCount: number;
 }, yup.AnyObject, any>;
 export type RecapTacticValue = RecapActionTacticValue | RecapTrackingTacticValue;

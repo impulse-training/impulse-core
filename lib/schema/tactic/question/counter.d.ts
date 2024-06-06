@@ -15,7 +15,7 @@ export declare const questionCounterTacticSchema: yup.ObjectSchema<{
     ordinal: number;
     title: string;
     pastTenseTitle: string | undefined;
-    commentCount: number;
+    commentCount: number | undefined;
     description: string | null | undefined;
     debriefAfterMinutes: number | null | undefined;
     image: {
@@ -90,6 +90,61 @@ export declare const questionCounterTacticSchema: yup.ObjectSchema<{
     likesCount: number | null | undefined;
     timerSeconds: yup.Maybe<number | undefined>;
     isSuggested: boolean | undefined;
+    options: ({
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        label?: string | undefined;
+        text: string;
+        type: "question-multiple-choice";
+        color: string;
+        textColor: string;
+    } | {
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        label?: string | undefined;
+        setbackThreshold?: number | undefined;
+        greaterThan?: number | undefined;
+        lessThanOrEqualTo?: number | undefined;
+        text: string;
+        type: "question-time";
+        color: string;
+        textColor: string;
+    } | {
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        label?: string | undefined;
+        setbackThreshold?: number | undefined;
+        greaterThan?: number | undefined;
+        lessThanOrEqualTo?: number | undefined;
+        text: string;
+        type: "question-counter";
+        color: string;
+        textColor: string;
+    })[] | undefined;
 }, yup.AnyObject, {
     type: undefined;
     profileId: undefined;
@@ -114,5 +169,6 @@ export declare const questionCounterTacticSchema: yup.ObjectSchema<{
     likesCount: undefined;
     timerSeconds: undefined;
     isSuggested: undefined;
+    options: "";
 }, "">;
 export type QuestionCounterTacticValue = yup.InferType<typeof questionCounterTacticSchema>;

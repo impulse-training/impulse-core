@@ -15,7 +15,7 @@ export declare function recapTacticValueBaseSchema(type: RecapKeyType): import("
     ordinal: number;
     title: string;
     pastTenseTitle: string | undefined;
-    commentCount: number;
+    commentCount: number | undefined;
     description: string | null | undefined;
     debriefAfterMinutes: number | null | undefined;
     image: {

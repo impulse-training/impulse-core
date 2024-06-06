@@ -19,7 +19,7 @@ export declare const dayReviewTacticSchema: yup.ObjectSchema<{
     ordinal: number;
     title: string;
     pastTenseTitle: string | undefined;
-    commentCount: number;
+    commentCount: number | undefined;
     description: string | null | undefined;
     debriefAfterMinutes: number | null | undefined;
     image: {

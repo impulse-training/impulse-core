@@ -22,6 +22,7 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
     backgroundColor?: string | undefined;
     setbackThreshold?: number | null | undefined;
     pastTenseTitle?: string | undefined;
+    commentCount?: number | undefined;
     description?: string | null | undefined;
     debriefAfterMinutes?: number | null | undefined;
     optionsById?: {
@@ -89,8 +90,62 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
     likesCount?: number | null | undefined;
     timerSeconds?: import("yup").Maybe<number | undefined>;
     isSuggested?: boolean | undefined;
+    options?: ({
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        label?: string | undefined;
+        text: string;
+        type: "question-multiple-choice";
+        color: string;
+        textColor: string;
+    } | {
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        label?: string | undefined;
+        setbackThreshold?: number | undefined;
+        greaterThan?: number | undefined;
+        lessThanOrEqualTo?: number | undefined;
+        text: string;
+        type: "question-time";
+        color: string;
+        textColor: string;
+    } | {
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        label?: string | undefined;
+        setbackThreshold?: number | undefined;
+        greaterThan?: number | undefined;
+        lessThanOrEqualTo?: number | undefined;
+        text: string;
+        type: "question-counter";
+        color: string;
+        textColor: string;
+    })[] | undefined;
     title: string;
     type: import("../schema").QuestionKeyType;
     ordinal: number;
-    commentCount: number;
-}, "title" | "type" | "ordinal" | "commentCount" | ("createdAt" | "updatedAt" | "profileId" | "image" | "backgroundColor" | "setbackThreshold" | "pastTenseTitle" | "description" | "debriefAfterMinutes" | "optionsById" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested")>;
+}, "title" | "type" | "ordinal" | ("createdAt" | "updatedAt" | "profileId" | "image" | "backgroundColor" | "setbackThreshold" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "optionsById" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested" | "options")>;
