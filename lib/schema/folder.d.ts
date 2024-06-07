@@ -23,7 +23,7 @@ export declare const tacticPreviewSchema: yup.ObjectSchema<{
     updatedAt: undefined;
 }, "">;
 export type TacticPreviewValue = yup.InferType<typeof tacticPreviewSchema>;
-export declare const streamSchema: yup.ObjectSchema<{
+export declare const folderSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -90,4 +90,4 @@ export declare const streamSchema: yup.ObjectSchema<{
     recommendedForIssueIds: "";
     recommendedForIssueOrdinals: undefined;
 }, "">;
-export type StreamValue = yup.InferType<typeof streamSchema>;
+export type FolderValue = yup.InferType<typeof folderSchema>;

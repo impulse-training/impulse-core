@@ -1,9 +1,9 @@
 import * as Factory from 'factory.ts';
-import { StreamValue } from '../schema';
+import { FolderValue } from '../schema';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 
-export const makeStreamFactory = (TimestampKlass: typeof TimestampLike) =>
-  Factory.makeFactory<StreamValue>({
+export const makeFolderFactory = (TimestampKlass: typeof TimestampLike) =>
+  Factory.makeFactory<FolderValue>({
     name: 'Movement',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),

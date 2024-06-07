@@ -1,6 +1,6 @@
 import * as Factory from 'factory.ts';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
-export declare const makeStreamFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
+export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     createdAt?: {
         seconds: number;
         nanoseconds: number;

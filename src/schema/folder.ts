@@ -13,7 +13,7 @@ export const tacticPreviewSchema = yup.object({
 
 export type TacticPreviewValue = yup.InferType<typeof tacticPreviewSchema>;
 
-export const streamSchema = yup.object().shape({
+export const folderSchema = yup.object().shape({
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
   slug: yup.string(),
@@ -36,4 +36,4 @@ export const streamSchema = yup.object().shape({
   recommendedForIssueOrdinals: optionalObjectOf(yup.number().required()),
 });
 
-export type StreamValue = yup.InferType<typeof streamSchema>;
+export type FolderValue = yup.InferType<typeof folderSchema>;

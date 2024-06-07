@@ -19,5 +19,5 @@ export interface ApplicationValue {
   zipCode?: string;
   country?: string;
   shippingLabelUrl?: string;
-  streamId?: string;
+  folderId?: string;
 }

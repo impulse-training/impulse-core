@@ -1,16 +1,16 @@
 import * as Factory from 'factory.ts';
-import { StreamMembershipValue } from '../schema';
+import { FolderMembershipValue } from '../schema';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 
-export const makeStreamFactory = (TimestampKlass: typeof TimestampLike) =>
-  Factory.makeFactory<StreamMembershipValue>({
-    streamRef: {
+export const makeFolderFactory = (TimestampKlass: typeof TimestampLike) =>
+  Factory.makeFactory<FolderMembershipValue>({
+    folderRef: {
       id: 'abc123',
-      path: 'streams/abc123',
+      path: 'folders/abc123',
       get: async () => ({} as any),
       collection: () => ({} as any),
     },
-    streamData: {
+    folderData: {
       name: 'Movement',
       createdAt: TimestampKlass.now(),
       updatedAt: TimestampKlass.now(),

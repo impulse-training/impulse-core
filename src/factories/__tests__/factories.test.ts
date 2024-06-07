@@ -4,10 +4,10 @@ import { makeFactories } from '../../factories';
 import {
   commentSchema,
   dayLogsSummarySchema,
+  folderMembershipSchema,
+  folderSchema,
   logSchema,
   profileLogsSummarySchema,
-  streamMembershipSchema,
-  streamSchema,
   tacticSchema,
   timeRoutineSchema,
 } from '../../schema';
@@ -51,7 +51,7 @@ describe('factories', () => {
 const schemaMap: Record<keyof typeof factories, null | Schema | Lazy<unknown>> =
   {
     profileLogsSummaryFactory: profileLogsSummarySchema,
-    streamMembershipFactory: streamMembershipSchema,
+    folderMembershipFactory: folderMembershipSchema,
     dayLogsSummaryFactory: dayLogsSummarySchema,
     applicationFactory: null,
     commentFactory: commentSchema,
@@ -61,7 +61,7 @@ const schemaMap: Record<keyof typeof factories, null | Schema | Lazy<unknown>> =
     locationFactory: null,
     profileFactory: null,
     issueFactory: null,
-    streamFactory: streamSchema,
+    folderFactory: folderSchema,
     tacticFactory: tacticSchema,
     questionTimeTacticFactory: tacticSchema,
     timeRoutineFactory: timeRoutineSchema,

@@ -1,4 +1,4 @@
-export function streamInvitationCode() {
+export function folderInvitationCode() {
   return Math.random().toString(36).substr(2, 11);
 }
 

@@ -126,9 +126,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         } | undefined;
         profileId: string;
     }, "profileId" | ("createdAt" | "updatedAt" | "tacticId" | "tacticTitle" | "text" | "recording" | "isEdited" | "avatar")>;
-    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "issueId" | "streams" | "parentIssueIds" | "tacticIds" | "tacticLikes" | "tacticData" | "debriefAfter" | "debriefReminderSentAt" | "debriefedAt">;
-    timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "issueId" | "streams" | "parentIssueIds" | "tacticIds" | "tacticLikes" | "tacticData">;
-    locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "issueId" | "streams" | "parentIssueIds" | "tacticIds" | "tacticLikes" | "tacticData" | "locationId" | "isDisplayable" | "locationName" | "locationMode">;
+    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "issueId" | "folders" | "parentIssueIds" | "tacticIds" | "tacticLikes" | "tacticData" | "debriefAfter" | "debriefReminderSentAt" | "debriefedAt">;
+    timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "issueId" | "folders" | "parentIssueIds" | "tacticIds" | "tacticLikes" | "tacticData">;
+    locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "createdAt" | "updatedAt" | "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "issueId" | "folders" | "parentIssueIds" | "tacticIds" | "tacticLikes" | "tacticData" | "locationId" | "isDisplayable" | "locationName" | "locationMode">;
     locationFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -186,7 +186,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         issueId: string | null;
         uids: string[];
     }, "timezone" | "issueId" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIssueIds" | "lastActiveAt" | "widgetInstalledAt" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "isTourCompleted" | "androidPermissions" | "region" | "scheduledNotificationIds")>;
-    streamMembershipFactory: import("factory.ts").Factory<{
+    folderMembershipFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
             nanoseconds: number;
@@ -261,7 +261,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         parentNames: string[];
         therapistProfileIds: string[];
     }, "name" | "ordinal" | "synonyms" | "parentIds" | "parentNames" | "therapistProfileIds" | ("path" | "createdAt" | "updatedAt" | "parentId" | "profileCount" | "isFeatured")>;
-    streamFactory: import("factory.ts").Factory<{
+    folderFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
             nanoseconds: number;
@@ -476,9 +476,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         profileId: string;
         name: string;
         type: "time";
-        streams: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[];
+        folders: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[];
         hour: number;
         minute: number;
         weekdays: number[];
-    }, "profileId" | "name" | "type" | "streams" | "hour" | "minute" | "weekdays" | ("createdAt" | "updatedAt")>;
+    }, "profileId" | "name" | "type" | "folders" | "hour" | "minute" | "weekdays" | ("createdAt" | "updatedAt")>;
 };

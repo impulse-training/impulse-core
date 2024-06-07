@@ -90,7 +90,7 @@ export declare const phoneTacticSchema: yup.ObjectSchema<{
     likesCount: number | null | undefined;
     timerSeconds: yup.Maybe<number | undefined>;
     isSuggested: boolean | undefined;
-    streamId: string;
+    folderId: string;
     trigger: {};
 }, yup.AnyObject, {
     type: undefined;
@@ -116,7 +116,7 @@ export declare const phoneTacticSchema: yup.ObjectSchema<{
     likesCount: undefined;
     timerSeconds: undefined;
     isSuggested: undefined;
-    streamId: undefined;
+    folderId: undefined;
     trigger: undefined;
 }, "">;
 export type PhoneTacticValue = yup.InferType<typeof phoneTacticSchema>;

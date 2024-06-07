@@ -59,7 +59,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
     };
     timezone: string;
     issueId: string | null | undefined;
-    streams: {
+    folders: {
         createdAt?: {
             seconds: number;
             nanoseconds: number;
@@ -149,7 +149,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
     };
     timezone: undefined;
     issueId: undefined;
-    streams: "";
+    folders: "";
     parentIssueIds: "";
     tacticIds: "";
     tacticsById: {
@@ -187,7 +187,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     };
     timezone: string;
     issueId: string | null | undefined;
-    streams: {
+    folders: {
         createdAt?: {
             seconds: number;
             nanoseconds: number;
@@ -294,7 +294,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     };
     timezone: undefined;
     issueId: undefined;
-    streams: "";
+    folders: "";
     parentIssueIds: "";
     tacticIds: "";
     tacticsById: {
@@ -330,7 +330,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
     };
     timezone: string;
     issueId: string | null | undefined;
-    streams: {
+    folders: {
         createdAt?: {
             seconds: number;
             nanoseconds: number;
@@ -426,7 +426,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
     };
     timezone: undefined;
     issueId: undefined;
-    streams: "";
+    folders: "";
     parentIssueIds: "";
     tacticIds: "";
     tacticsById: {
@@ -463,7 +463,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
     };
     timezone: string;
     issueId: string | null | undefined;
-    streams: {
+    folders: {
         createdAt?: {
             seconds: number;
             nanoseconds: number;
@@ -555,7 +555,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
     };
     timezone: undefined;
     issueId: undefined;
-    streams: "";
+    folders: "";
     parentIssueIds: "";
     tacticIds: "";
     tacticsById: {
@@ -611,7 +611,7 @@ export declare const logSchema: yup.Lazy<{
         toDate: Function;
     };
     timezone: string;
-    streams: {
+    folders: {
         createdAt?: {
             seconds: number;
             nanoseconds: number;
@@ -710,7 +710,7 @@ export declare const logSchema: yup.Lazy<{
         toDate: Function;
     };
     timezone: string;
-    streams: {
+    folders: {
         createdAt?: {
             seconds: number;
             nanoseconds: number;
@@ -813,7 +813,7 @@ export declare const logSchema: yup.Lazy<{
         toDate: Function;
     };
     timezone: string;
-    streams: {
+    folders: {
         createdAt?: {
             seconds: number;
             nanoseconds: number;

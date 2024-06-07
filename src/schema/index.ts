@@ -4,6 +4,8 @@ export * from './application';
 export * from './comment';
 export * from './contact';
 export * from './dayLogsSummary';
+export * from './folder';
+export * from './folderMembership';
 export * from './invitation';
 export * from './issue';
 export * from './location';
@@ -17,8 +19,6 @@ export * from './recording';
 export * from './recoveryCode';
 export * from './routine';
 export * from './spotifyCredentials';
-export * from './stream';
-export * from './streamMembership';
 export * from './tactic';
 export * from './tacticImpression';
 

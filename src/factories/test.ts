@@ -8,6 +8,6 @@ export const {
   impulseFactory,
   timeLogFactory,
   profileFactory,
-  streamFactory,
+  folderFactory,
   tacticFactory,
 } = makeFactories(TimestampLike);

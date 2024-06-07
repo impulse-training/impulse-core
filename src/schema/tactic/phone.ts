@@ -2,7 +2,7 @@ import * as yup from 'yup';
 import { tacticValueBaseSchema } from './base';
 
 export const phoneTacticSchema = tacticValueBaseSchema('phone').shape({
-  streamId: yup.string().required(),
+  folderId: yup.string().required(),
   trigger: yup.mixed().oneOf(['automatic', 'manual']).required(),
 });
 export type PhoneTacticValue = yup.InferType<typeof phoneTacticSchema>;

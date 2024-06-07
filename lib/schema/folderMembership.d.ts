@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-export declare const streamMembershipSchema: yup.ObjectSchema<{
+export declare const folderMembershipSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -10,8 +10,8 @@ export declare const streamMembershipSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    streamRef: import("./utils/firestore").DocumentReferenceLike<unknown>;
-    streamData: {
+    folderRef: import("./utils/firestore").DocumentReferenceLike<unknown>;
+    folderData: {
         createdAt?: {
             seconds: number;
             nanoseconds: number;
@@ -77,8 +77,8 @@ export declare const streamMembershipSchema: yup.ObjectSchema<{
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
-    streamRef: undefined;
-    streamData: {
+    folderRef: undefined;
+    folderData: {
         createdAt: undefined;
         updatedAt: undefined;
         slug: undefined;
@@ -98,4 +98,4 @@ export declare const streamMembershipSchema: yup.ObjectSchema<{
     tacticOrdinals: undefined;
     tacticLikes: undefined;
 }, "">;
-export type StreamMembershipValue = yup.InferType<typeof streamMembershipSchema>;
+export type FolderMembershipValue = yup.InferType<typeof folderMembershipSchema>;

@@ -2143,7 +2143,7 @@ __metadata:
     execa: ^1.0.0
     hermes-profile-transformer: ^0.0.6
     ip: ^1.1.5
-    node-stream-zip: ^1.9.1
+    node-folder-zip: ^1.9.1
     ora: ^5.4.1
     prompts: ^2.4.0
     semver: ^6.3.0
@@ -2456,9 +2456,9 @@ __metadata:
     conventional-commits-filter: ^2.0.0
     conventional-commits-parser: ^3.2.3
     debug: ^4.0.0
-    get-stream: ^6.0.0
+    get-folder: ^6.0.0
     import-from: ^4.0.0
-    into-stream: ^6.0.0
+    into-folder: ^6.0.0
     lodash: ^4.17.4
     read-pkg-up: ^7.0.0
   peerDependencies:
@@ -2753,14 +2753,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"JSONStream@npm:^1.0.4":
+"JSONFolder@npm:^1.0.4":
   version: 1.3.5
-  resolution: "JSONStream@npm:1.3.5"
+  resolution: "JSONFolder@npm:1.3.5"
   dependencies:
     jsonparse: ^1.2.0
     through: ">=2.2.7 <3"
   bin:
-    JSONStream: ./bin.js
+    JSONFolder: ./bin.js
   checksum: 2605fa124260c61bad38bb65eba30d2f72216a78e94d0ab19b11b4e0327d572b8d530c0c9cc3b0764f727ad26d39e00bf7ebad57781ca6368394d73169c59e46
   languageName: node
   linkType: hard
@@ -2981,7 +2981,7 @@ __metadata:
   resolution: "are-we-there-yet@npm:3.0.1"
   dependencies:
     delegates: ^1.0.0
-    readable-stream: ^3.6.0
+    readable-folder: ^3.6.0
   checksum: 52590c24860fa7173bedeb69a4c05fb573473e860197f618b9a28432ee4379049336727ae3a1f9c4cb083114601c1140cee578376164d0e651217a9843f9fe83
   languageName: node
   linkType: hard
@@ -3360,7 +3360,7 @@ __metadata:
   dependencies:
     buffer: ^5.5.0
     inherits: ^2.0.4
-    readable-stream: ^3.4.0
+    readable-folder: ^3.4.0
   checksum: 9e8521fa7e83aa9427c6f8ccdcba6e8167ef30cc9a22df26effcc5ab682ef91d2cbc23a239f945d099289e4bbcfae7a192e9c28c84c6202e710a0dfec3722662
   languageName: node
   linkType: hard
@@ -3376,7 +3376,7 @@ __metadata:
   version: 0.1.1
   resolution: "bplist-creator@npm:0.1.1"
   dependencies:
-    stream-buffers: 2.2.x
+    folder-buffers: 2.2.x
   checksum: b0d40d1d1623f1afdbb575cfc8075d742d2c4f0eb458574be809e3857752d1042a39553b3943d2d7f505dde92bcd43e1d7bdac61c9cd44475d696deb79f897ce
   languageName: node
   linkType: hard
@@ -4100,7 +4100,7 @@ __metadata:
   version: 3.2.4
   resolution: "conventional-commits-parser@npm:3.2.4"
   dependencies:
-    JSONStream: ^1.0.4
+    JSONFolder: ^1.0.4
     is-text-path: ^1.0.1
     lodash: ^4.17.15
     meow: ^8.0.0
@@ -4533,7 +4533,7 @@ __metadata:
   version: 0.1.4
   resolution: "duplexer2@npm:0.1.4"
   dependencies:
-    readable-stream: ^2.0.2
+    readable-folder: ^2.0.2
   checksum: 744961f03c7f54313f90555ac20284a3fb7bf22fdff6538f041a86c22499560eb6eac9d30ab5768054137cb40e6b18b40f621094e0261d7d8c35a37b7a5ad241
   languageName: node
   linkType: hard
@@ -4582,9 +4582,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"end-of-stream@npm:^1.1.0":
+"end-of-folder@npm:^1.1.0":
   version: 1.4.4
-  resolution: "end-of-stream@npm:1.4.4"
+  resolution: "end-of-folder@npm:1.4.4"
   dependencies:
     once: ^1.4.0
   checksum: 530a5a5a1e517e962854a31693dbb5c0b2fc40b46dad2a56a2deec656ca040631124f4795823acc68238147805f8b021abbe221f4afed5ef3c8e8efc2024908b
@@ -4710,8 +4710,8 @@ __metadata:
   resolution: "execa@npm:1.0.0"
   dependencies:
     cross-spawn: ^6.0.0
-    get-stream: ^4.0.0
-    is-stream: ^1.1.0
+    get-folder: ^4.0.0
+    is-folder: ^1.1.0
     npm-run-path: ^2.0.0
     p-finally: ^1.0.0
     signal-exit: ^3.0.0
@@ -4725,10 +4725,10 @@ __metadata:
   resolution: "execa@npm:5.1.1"
   dependencies:
     cross-spawn: ^7.0.3
-    get-stream: ^6.0.0
+    get-folder: ^6.0.0
     human-signals: ^2.1.0
-    is-stream: ^2.0.0
-    merge-stream: ^2.0.0
+    is-folder: ^2.0.0
+    merge-folder: ^2.0.0
     npm-run-path: ^4.0.1
     onetime: ^5.1.2
     signal-exit: ^3.0.3
@@ -5124,7 +5124,7 @@ __metadata:
   resolution: "from2@npm:2.3.0"
   dependencies:
     inherits: ^2.0.1
-    readable-stream: ^2.0.0
+    readable-folder: ^2.0.0
   checksum: 6080eba0793dce32f475141fb3d54cc15f84ee52e420ee22ac3ab0ad639dc95a1875bc6eb9c0e1140e94972a36a89dc5542491b85f1ab8df0c126241e0f1a61b
   languageName: node
   linkType: hard
@@ -5249,18 +5249,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"get-stream@npm:^4.0.0":
+"get-folder@npm:^4.0.0":
   version: 4.1.0
-  resolution: "get-stream@npm:4.1.0"
+  resolution: "get-folder@npm:4.1.0"
   dependencies:
     pump: ^3.0.0
   checksum: 443e1914170c15bd52ff8ea6eff6dfc6d712b031303e36302d2778e3de2506af9ee964d6124010f7818736dcfde05c04ba7ca6cc26883106e084357a17ae7d73
   languageName: node
   linkType: hard
 
-"get-stream@npm:^6.0.0":
+"get-folder@npm:^6.0.0":
   version: 6.0.1
-  resolution: "get-stream@npm:6.0.1"
+  resolution: "get-folder@npm:6.0.1"
   checksum: e04ecece32c92eebf5b8c940f51468cd53554dcbb0ea725b2748be583c9523d00128137966afce410b9b051eb2ef16d657cd2b120ca8edafcf5a65e81af63cad
   languageName: node
   linkType: hard
@@ -5286,7 +5286,7 @@ __metadata:
     argv-formatter: ~1.0.0
     spawn-error-forwarder: ~1.0.0
     split2: ~1.0.0
-    stream-combiner2: ~1.1.1
+    folder-combiner2: ~1.1.1
     through2: ~2.0.0
     traverse: ~0.6.6
   checksum: 57294e72f91920d3262ff51fb0fd81dba1465c9e1b25961e19c757ae39bb38e72dd4a5da40649eeb368673b08be449a0844a2bafc0c0ded7375a8a56a6af8640
@@ -5836,7 +5836,7 @@ __metadata:
     external-editor: ^3.0.3
     figures: ^3.0.0
     lodash: ^4.17.21
-    mute-stream: 0.0.8
+    mute-folder: 0.0.8
     ora: ^5.4.1
     run-async: ^2.4.0
     rxjs: ^7.5.5
@@ -5848,9 +5848,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"into-stream@npm:^6.0.0":
+"into-folder@npm:^6.0.0":
   version: 6.0.0
-  resolution: "into-stream@npm:6.0.0"
+  resolution: "into-folder@npm:6.0.0"
   dependencies:
     from2: ^2.3.0
     p-is-promise: ^3.0.0
@@ -6112,16 +6112,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-stream@npm:^1.1.0":
+"is-folder@npm:^1.1.0":
   version: 1.1.0
-  resolution: "is-stream@npm:1.1.0"
+  resolution: "is-folder@npm:1.1.0"
   checksum: 063c6bec9d5647aa6d42108d4c59723d2bd4ae42135a2d4db6eadbd49b7ea05b750fd69d279e5c7c45cf9da753ad2c00d8978be354d65aa9f6bb434969c6a2ae
   languageName: node
   linkType: hard
 
-"is-stream@npm:^2.0.0":
+"is-folder@npm:^2.0.0":
   version: 2.0.1
-  resolution: "is-stream@npm:2.0.1"
+  resolution: "is-folder@npm:2.0.1"
   checksum: b8e05ccdf96ac330ea83c12450304d4a591f9958c11fd17bed240af8d5ffe08aedafa4c0f4cfccd4d28dc9d4d129daca1023633d5c11601a6cbc77521f6fae66
   languageName: node
   linkType: hard
@@ -6764,7 +6764,7 @@ __metadata:
   resolution: "jest-worker@npm:27.5.1"
   dependencies:
     "@types/node": "*"
-    merge-stream: ^2.0.0
+    merge-folder: ^2.0.0
     supports-color: ^8.0.0
   checksum: 98cd68b696781caed61c983a3ee30bf880b5bd021c01d98f47b143d4362b85d0737f8523761e2713d45e18b4f9a2b98af1eaee77afade4111bb65c77d6f7c980
   languageName: node
@@ -6776,7 +6776,7 @@ __metadata:
   dependencies:
     "@types/node": "*"
     jest-util: ^29.5.0
-    merge-stream: ^2.0.0
+    merge-folder: ^2.0.0
     supports-color: ^8.0.0
   checksum: 1151a1ae3602b1ea7c42a8f1efe2b5a7bf927039deaa0827bf978880169899b705744e288f80a63603fb3fc2985e0071234986af7dc2c21c7a64333d8777c7c9
   languageName: node
@@ -7532,9 +7532,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"merge-stream@npm:^2.0.0":
+"merge-folder@npm:^2.0.0":
   version: 2.0.0
-  resolution: "merge-stream@npm:2.0.0"
+  resolution: "merge-folder@npm:2.0.0"
   checksum: 6fa4dcc8d86629705cea944a4b88ef4cb0e07656ebf223fa287443256414283dd25d91c1cd84c77987f2aec5927af1a9db6085757cb43d90eb170ebf4b47f4f4
   languageName: node
   linkType: hard
@@ -8156,9 +8156,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minipass-json-stream@npm:^1.0.1":
+"minipass-json-folder@npm:^1.0.1":
   version: 1.0.1
-  resolution: "minipass-json-stream@npm:1.0.1"
+  resolution: "minipass-json-folder@npm:1.0.1"
   dependencies:
     jsonparse: ^1.3.1
     minipass: ^3.0.0
@@ -8279,9 +8279,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mute-stream@npm:0.0.8, mute-stream@npm:~0.0.4":
+"mute-folder@npm:0.0.8, mute-folder@npm:~0.0.4":
   version: 0.0.8
-  resolution: "mute-stream@npm:0.0.8"
+  resolution: "mute-folder@npm:0.0.8"
   checksum: ff48d251fc3f827e5b1206cda0ffdaec885e56057ee86a3155e1951bc940fd5f33531774b1cc8414d7668c10a8907f863f6561875ee6e8768931a62121a531a1
   languageName: node
   linkType: hard
@@ -8424,9 +8424,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-stream-zip@npm:^1.9.1":
+"node-folder-zip@npm:^1.9.1":
   version: 1.15.0
-  resolution: "node-stream-zip@npm:1.15.0"
+  resolution: "node-folder-zip@npm:1.15.0"
   checksum: 0b73ffbb09490e479c8f47038d7cba803e6242618fbc1b71c26782009d388742ed6fb5ce6e9d31f528b410249e7eb1c6e7534e9d3792a0cafd99813ac5a35107
   languageName: node
   linkType: hard
@@ -8597,7 +8597,7 @@ __metadata:
     make-fetch-happen: ^10.0.6
     minipass: ^3.1.6
     minipass-fetch: ^2.0.3
-    minipass-json-stream: ^1.0.1
+    minipass-json-folder: ^1.0.1
     minizlib: ^2.1.2
     npm-package-arg: ^9.0.1
     proc-log: ^2.0.0
@@ -9408,7 +9408,7 @@ __metadata:
   version: 3.0.0
   resolution: "pump@npm:3.0.0"
   dependencies:
-    end-of-stream: ^1.1.0
+    end-of-folder: ^1.1.0
     once: ^1.3.1
   checksum: e42e9229fba14732593a718b04cb5e1cfef8254544870997e0ecd9732b189a48e1256e4e5478148ecb47c8511dca2b09eae56b4d0aad8009e6fac8072923cfc9
   languageName: node
@@ -9650,14 +9650,14 @@ __metadata:
   version: 1.0.7
   resolution: "read@npm:1.0.7"
   dependencies:
-    mute-stream: ~0.0.4
+    mute-folder: ~0.0.4
   checksum: 2777c254e5732cac96f5d0a1c0f6b836c89ae23d8febd405b206f6f24d5de1873420f1a0795e0e3721066650d19adf802c7882c4027143ee0acf942a4f34f97b
   languageName: node
   linkType: hard
 
-"readable-stream@npm:3, readable-stream@npm:^3.0.0, readable-stream@npm:^3.4.0, readable-stream@npm:^3.6.0":
+"readable-folder@npm:3, readable-folder@npm:^3.0.0, readable-folder@npm:^3.4.0, readable-folder@npm:^3.6.0":
   version: 3.6.1
-  resolution: "readable-stream@npm:3.6.1"
+  resolution: "readable-folder@npm:3.6.1"
   dependencies:
     inherits: ^2.0.3
     string_decoder: ^1.1.1
@@ -9666,9 +9666,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"readable-stream@npm:^2.0.0, readable-stream@npm:^2.0.2, readable-stream@npm:~2.3.6":
+"readable-folder@npm:^2.0.0, readable-folder@npm:^2.0.2, readable-folder@npm:~2.3.6":
   version: 2.3.8
-  resolution: "readable-stream@npm:2.3.8"
+  resolution: "readable-folder@npm:2.3.8"
   dependencies:
     core-util-is: ~1.0.0
     inherits: ~2.0.3
@@ -10078,7 +10078,7 @@ __metadata:
     execa: ^5.0.0
     figures: ^3.0.0
     find-versions: ^4.0.0
-    get-stream: ^6.0.0
+    get-folder: ^6.0.0
     git-log-parser: ^1.2.0
     hook-std: ^2.0.0
     hosted-git-info: ^4.0.0
@@ -10510,7 +10510,7 @@ __metadata:
   version: 3.2.2
   resolution: "split2@npm:3.2.2"
   dependencies:
-    readable-stream: ^3.0.0
+    readable-folder: ^3.0.0
   checksum: 8127ddbedd0faf31f232c0e9192fede469913aa8982aa380752e0463b2e31c2359ef6962eb2d24c125bac59eeec76873678d723b1c7ff696216a1cd071e3994a
   languageName: node
   linkType: hard
@@ -10598,19 +10598,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stream-buffers@npm:2.2.x":
+"folder-buffers@npm:2.2.x":
   version: 2.2.0
-  resolution: "stream-buffers@npm:2.2.0"
+  resolution: "folder-buffers@npm:2.2.0"
   checksum: 4587d9e8f050d689fb38b4295e73408401b16de8edecc12026c6f4ae92956705ecfd995ae3845d7fa3ebf19502d5754df9143d91447fd881d86e518f43882c1c
   languageName: node
   linkType: hard
 
-"stream-combiner2@npm:~1.1.1":
+"folder-combiner2@npm:~1.1.1":
   version: 1.1.1
-  resolution: "stream-combiner2@npm:1.1.1"
+  resolution: "folder-combiner2@npm:1.1.1"
   dependencies:
     duplexer2: ~0.1.0
-    readable-stream: ^2.0.2
+    readable-folder: ^2.0.2
   checksum: dd32d179fa8926619c65471a7396fc638ec8866616c0b8747c4e05563ccdb0b694dd4e83cd799f1c52789c965a40a88195942b82b8cea2ee7a5536f1954060f9
   languageName: node
   linkType: hard
@@ -10844,7 +10844,7 @@ __metadata:
   resolution: "tempy@npm:1.0.1"
   dependencies:
     del: ^6.0.0
-    is-stream: ^2.0.0
+    is-folder: ^2.0.0
     temp-dir: ^2.0.0
     type-fest: ^0.16.0
     unique-string: ^2.0.0
@@ -10920,7 +10920,7 @@ __metadata:
   version: 2.0.5
   resolution: "through2@npm:2.0.5"
   dependencies:
-    readable-stream: ~2.3.6
+    readable-folder: ~2.3.6
     xtend: ~4.0.1
   checksum: beb0f338aa2931e5660ec7bf3ad949e6d2e068c31f4737b9525e5201b824ac40cac6a337224856b56bd1ddd866334bbfb92a9f57cd6f66bc3f18d3d86fc0fe50
   languageName: node
@@ -10930,7 +10930,7 @@ __metadata:
   version: 4.0.2
   resolution: "through2@npm:4.0.2"
   dependencies:
-    readable-stream: 3
+    readable-folder: 3
   checksum: ac7430bd54ccb7920fd094b1c7ff3e1ad6edd94202e5528331253e5fde0cc56ceaa690e8df9895de2e073148c52dfbe6c4db74cacae812477a35660090960cc0
   languageName: node
   linkType: hard

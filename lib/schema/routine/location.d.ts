@@ -3,7 +3,7 @@ export declare const locationRoutineSchema: yup.ObjectSchema<{
     type: "location";
     profileId: string;
     name: string;
-    streams: import("../utils/firestore").DocumentReferenceLike<unknown>[];
+    folders: import("../utils/firestore").DocumentReferenceLike<unknown>[];
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -20,7 +20,7 @@ export declare const locationRoutineSchema: yup.ObjectSchema<{
     type: undefined;
     profileId: undefined;
     name: undefined;
-    streams: "";
+    folders: "";
     createdAt: undefined;
     updatedAt: undefined;
     locationId: undefined;

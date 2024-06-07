@@ -1,6 +1,6 @@
 import * as Factory from 'factory.ts';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
-export declare const makeStreamFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
+export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     createdAt?: {
         seconds: number;
         nanoseconds: number;
@@ -15,8 +15,8 @@ export declare const makeStreamFactory: (TimestampKlass: typeof TimestampLike) =
     tacticLikes: {
         [x: string]: NonNullable<boolean | undefined>;
     };
-    streamRef: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
-    streamData: {
+    folderRef: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
+    folderData: {
         createdAt?: {
             seconds: number;
             nanoseconds: number;
@@ -75,4 +75,4 @@ export declare const makeStreamFactory: (TimestampKlass: typeof TimestampLike) =
     tacticOrdinals: {
         [x: string]: number;
     };
-}, "ordinal" | "tacticLikes" | "streamRef" | "streamData" | "seenTactics" | "tacticOrdinals" | ("createdAt" | "updatedAt")>;
+}, "ordinal" | "tacticLikes" | "folderRef" | "folderData" | "seenTactics" | "tacticOrdinals" | ("createdAt" | "updatedAt")>;

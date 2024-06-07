@@ -2,6 +2,7 @@ import { TimestampLike } from '../utils/firestore/TimestampLike';
 import { makeApplicationFactory } from './application';
 import { makeCommentFactory } from './comment';
 import { dayLogsSummaryFactory } from './dayLogsSummary';
+import { makeFolderFactory } from './folder';
 import { makeIssueFactory } from './issue';
 import { makeLocationFactory } from './location';
 import {
@@ -12,7 +13,6 @@ import {
 import { makeProfileFactory } from './profile';
 import { makeProfileLogsSummaryFactory } from './profileLogsSummary';
 import { makeTimeRoutineFactory } from './routine';
-import { makeStreamFactory } from './stream';
 import { makeQuestionTimeTacticFactory, makeTacticFactory } from './tactic';
 
 // Our admin and client apps use the same factories, but the firebase-admin versus firebase client
@@ -29,9 +29,9 @@ export function makeFactories(TimestampKlass: typeof TimestampLike) {
     locationLogFactory: makeLocationLogFactory(TimestampKlass),
     locationFactory: makeLocationFactory(TimestampKlass),
     profileFactory: makeProfileFactory(TimestampKlass),
-    streamMembershipFactory: makeStreamFactory(TimestampKlass),
+    folderMembershipFactory: makeFolderFactory(TimestampKlass),
     issueFactory: makeIssueFactory(TimestampKlass),
-    streamFactory: makeStreamFactory(TimestampKlass),
+    folderFactory: makeFolderFactory(TimestampKlass),
     tacticFactory: makeTacticFactory(TimestampKlass),
     questionTimeTacticFactory: makeQuestionTimeTacticFactory(TimestampKlass),
     timeRoutineFactory: makeTimeRoutineFactory(TimestampKlass),

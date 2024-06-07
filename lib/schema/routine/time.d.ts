@@ -3,7 +3,7 @@ export declare const timeRoutineSchema: yup.ObjectSchema<{
     type: "time";
     profileId: string;
     name: string;
-    streams: import("../utils/firestore").DocumentReferenceLike<unknown>[];
+    folders: import("../utils/firestore").DocumentReferenceLike<unknown>[];
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -21,7 +21,7 @@ export declare const timeRoutineSchema: yup.ObjectSchema<{
     type: undefined;
     profileId: undefined;
     name: undefined;
-    streams: "";
+    folders: "";
     createdAt: undefined;
     updatedAt: undefined;
     weekdays: "";

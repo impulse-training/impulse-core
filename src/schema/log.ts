@@ -2,7 +2,7 @@
 // take)
 import * as yup from 'yup';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
-import { streamSchema } from './stream';
+import { folderSchema } from './folder';
 import { TacticsById, tacticInfoSchema } from './tactic';
 import { optionalStringArray, requiredStringArray } from './utils/array';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
@@ -45,7 +45,7 @@ const baseLogSchema = yup.object().shape({
   startTime: timestampSchema,
   timezone: yup.string().required(),
   issueId: yup.string().nullable(),
-  streams: yup.array().of(streamSchema).required(),
+  folders: yup.array().of(folderSchema).required(),
   parentIssueIds: optionalStringArray,
 
   // TODO: These represent seen tactics, but this may need some clarification
