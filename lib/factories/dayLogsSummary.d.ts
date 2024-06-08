@@ -1,7 +1,7 @@
 import * as Factory from 'factory.ts';
 export declare const dayLogsSummaryFactory: Factory.Sync.Factory<{
     [x: string]: {
-        type: NonNullable<"impulse" | "time" | undefined>;
+        type: NonNullable<"time" | "impulse" | undefined>;
         optionsById: {
             [x: string]: {
                 createdAt?: {
@@ -73,7 +73,7 @@ export declare const dayLogsSummaryFactory: Factory.Sync.Factory<{
                 nextStrategiesPath?: string | undefined;
                 lowEmoji?: import("yup").Maybe<string | undefined>;
                 highEmoji?: import("yup").Maybe<string | undefined>;
-                unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
+                unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
                 formattedValue: string;
             };
         };

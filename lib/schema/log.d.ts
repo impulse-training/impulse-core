@@ -13,7 +13,7 @@ export declare const questionSchema: yup.ObjectSchema<{
 export type QuestionValue = yup.InferType<typeof questionSchema>;
 export declare const tacticDataSchema: yup.ObjectSchema<{
     value: number | undefined;
-    unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
+    unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
     customUnit: string | undefined;
     optionId: string | null | undefined;
     optionLabel: string | undefined;
@@ -82,12 +82,13 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
-            } | undefined;
+            } | null | undefined;
             backgroundColor?: string | undefined;
+            type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "day-review" | "emotions" | "phone" | import("./tactic/recap/recapKeyType").RecapKeyType | "steps" | "task" | "urge-surfing" | "video" | undefined>;
             title: string;
         }[] | undefined;
         defaultFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
-        recommendedFor?: "impulse" | "time" | null | undefined;
+        recommendedFor?: "time" | "impulse" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -106,8 +107,9 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     localFilePath?: yup.Maybe<string | undefined>;
                     storagePath?: yup.Maybe<string | undefined>;
                     uri?: yup.Maybe<string | undefined>;
-                } | undefined;
+                } | null | undefined;
                 backgroundColor?: string | undefined;
+                type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "day-review" | "emotions" | "phone" | import("./tactic/recap/recapKeyType").RecapKeyType | "steps" | "task" | "urge-surfing" | "video" | undefined>;
                 title: string;
             };
         };
@@ -134,7 +136,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
+            unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
             formattedValue: string;
         };
     };
@@ -210,12 +212,13 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
-            } | undefined;
+            } | null | undefined;
             backgroundColor?: string | undefined;
+            type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "day-review" | "emotions" | "phone" | import("./tactic/recap/recapKeyType").RecapKeyType | "steps" | "task" | "urge-surfing" | "video" | undefined>;
             title: string;
         }[] | undefined;
         defaultFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
-        recommendedFor?: "impulse" | "time" | null | undefined;
+        recommendedFor?: "time" | "impulse" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -234,8 +237,9 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     localFilePath?: yup.Maybe<string | undefined>;
                     storagePath?: yup.Maybe<string | undefined>;
                     uri?: yup.Maybe<string | undefined>;
-                } | undefined;
+                } | null | undefined;
                 backgroundColor?: string | undefined;
+                type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "day-review" | "emotions" | "phone" | import("./tactic/recap/recapKeyType").RecapKeyType | "steps" | "task" | "urge-surfing" | "video" | undefined>;
                 title: string;
             };
         };
@@ -262,7 +266,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
+            unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
             formattedValue: string;
         };
     };
@@ -353,12 +357,13 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
-            } | undefined;
+            } | null | undefined;
             backgroundColor?: string | undefined;
+            type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "day-review" | "emotions" | "phone" | import("./tactic/recap/recapKeyType").RecapKeyType | "steps" | "task" | "urge-surfing" | "video" | undefined>;
             title: string;
         }[] | undefined;
         defaultFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
-        recommendedFor?: "impulse" | "time" | null | undefined;
+        recommendedFor?: "time" | "impulse" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -377,8 +382,9 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     localFilePath?: yup.Maybe<string | undefined>;
                     storagePath?: yup.Maybe<string | undefined>;
                     uri?: yup.Maybe<string | undefined>;
-                } | undefined;
+                } | null | undefined;
                 backgroundColor?: string | undefined;
+                type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "day-review" | "emotions" | "phone" | import("./tactic/recap/recapKeyType").RecapKeyType | "steps" | "task" | "urge-surfing" | "video" | undefined>;
                 title: string;
             };
         };
@@ -405,7 +411,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
+            unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
             formattedValue: string;
         };
     };
@@ -486,12 +492,13 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
-            } | undefined;
+            } | null | undefined;
             backgroundColor?: string | undefined;
+            type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "day-review" | "emotions" | "phone" | import("./tactic/recap/recapKeyType").RecapKeyType | "steps" | "task" | "urge-surfing" | "video" | undefined>;
             title: string;
         }[] | undefined;
         defaultFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
-        recommendedFor?: "impulse" | "time" | null | undefined;
+        recommendedFor?: "time" | "impulse" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -510,8 +517,9 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     localFilePath?: yup.Maybe<string | undefined>;
                     storagePath?: yup.Maybe<string | undefined>;
                     uri?: yup.Maybe<string | undefined>;
-                } | undefined;
+                } | null | undefined;
                 backgroundColor?: string | undefined;
+                type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "day-review" | "emotions" | "phone" | import("./tactic/recap/recapKeyType").RecapKeyType | "steps" | "task" | "urge-surfing" | "video" | undefined>;
                 title: string;
             };
         };
@@ -538,7 +546,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
+            unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
             formattedValue: string;
         };
     };
@@ -634,12 +642,13 @@ export declare const logSchema: yup.Lazy<{
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
-            } | undefined;
+            } | null | undefined;
             backgroundColor?: string | undefined;
+            type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "day-review" | "emotions" | "phone" | import("./tactic/recap/recapKeyType").RecapKeyType | "steps" | "task" | "urge-surfing" | "video" | undefined>;
             title: string;
         }[] | undefined;
         defaultFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
-        recommendedFor?: "impulse" | "time" | null | undefined;
+        recommendedFor?: "time" | "impulse" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -658,8 +667,9 @@ export declare const logSchema: yup.Lazy<{
                     localFilePath?: yup.Maybe<string | undefined>;
                     storagePath?: yup.Maybe<string | undefined>;
                     uri?: yup.Maybe<string | undefined>;
-                } | undefined;
+                } | null | undefined;
                 backgroundColor?: string | undefined;
+                type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "day-review" | "emotions" | "phone" | import("./tactic/recap/recapKeyType").RecapKeyType | "steps" | "task" | "urge-surfing" | "video" | undefined>;
                 title: string;
             };
         };
@@ -677,7 +687,7 @@ export declare const logSchema: yup.Lazy<{
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
+            unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
             formattedValue: string;
         };
     };
@@ -733,12 +743,13 @@ export declare const logSchema: yup.Lazy<{
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
-            } | undefined;
+            } | null | undefined;
             backgroundColor?: string | undefined;
+            type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "day-review" | "emotions" | "phone" | import("./tactic/recap/recapKeyType").RecapKeyType | "steps" | "task" | "urge-surfing" | "video" | undefined>;
             title: string;
         }[] | undefined;
         defaultFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
-        recommendedFor?: "impulse" | "time" | null | undefined;
+        recommendedFor?: "time" | "impulse" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -757,8 +768,9 @@ export declare const logSchema: yup.Lazy<{
                     localFilePath?: yup.Maybe<string | undefined>;
                     storagePath?: yup.Maybe<string | undefined>;
                     uri?: yup.Maybe<string | undefined>;
-                } | undefined;
+                } | null | undefined;
                 backgroundColor?: string | undefined;
+                type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "day-review" | "emotions" | "phone" | import("./tactic/recap/recapKeyType").RecapKeyType | "steps" | "task" | "urge-surfing" | "video" | undefined>;
                 title: string;
             };
         };
@@ -776,7 +788,7 @@ export declare const logSchema: yup.Lazy<{
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
+            unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
             formattedValue: string;
         };
     };
@@ -836,12 +848,13 @@ export declare const logSchema: yup.Lazy<{
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
-            } | undefined;
+            } | null | undefined;
             backgroundColor?: string | undefined;
+            type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "day-review" | "emotions" | "phone" | import("./tactic/recap/recapKeyType").RecapKeyType | "steps" | "task" | "urge-surfing" | "video" | undefined>;
             title: string;
         }[] | undefined;
         defaultFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
-        recommendedFor?: "impulse" | "time" | null | undefined;
+        recommendedFor?: "time" | "impulse" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -860,8 +873,9 @@ export declare const logSchema: yup.Lazy<{
                     localFilePath?: yup.Maybe<string | undefined>;
                     storagePath?: yup.Maybe<string | undefined>;
                     uri?: yup.Maybe<string | undefined>;
-                } | undefined;
+                } | null | undefined;
                 backgroundColor?: string | undefined;
+                type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "day-review" | "emotions" | "phone" | import("./tactic/recap/recapKeyType").RecapKeyType | "steps" | "task" | "urge-surfing" | "video" | undefined>;
                 title: string;
             };
         };
@@ -879,7 +893,7 @@ export declare const logSchema: yup.Lazy<{
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
+            unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
             formattedValue: string;
         };
     };

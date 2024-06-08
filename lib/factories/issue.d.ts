@@ -15,10 +15,10 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
     parentId?: string | null | undefined;
     profileCount?: number | null | undefined;
     isFeatured?: boolean | null | undefined;
-    name: string;
     ordinal: number;
+    name: string;
     synonyms: string[];
     parentIds: string[];
     parentNames: string[];
     therapistProfileIds: string[];
-}, "name" | "ordinal" | "synonyms" | "parentIds" | "parentNames" | "therapistProfileIds" | ("path" | "createdAt" | "updatedAt" | "parentId" | "profileCount" | "isFeatured")>;
+}, "ordinal" | "name" | "synonyms" | "parentIds" | "parentNames" | "therapistProfileIds" | ("path" | "createdAt" | "updatedAt" | "parentId" | "profileCount" | "isFeatured")>;

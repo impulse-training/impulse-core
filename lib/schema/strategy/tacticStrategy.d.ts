@@ -24,17 +24,16 @@ export declare const tacticStrategySchema: import("yup").ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
-        image?: {
-            localFilePath?: import("yup").Maybe<string | undefined>;
-            storagePath?: import("yup").Maybe<string | undefined>;
-            uri?: import("yup").Maybe<string | undefined>;
-        } | null | undefined;
-        backgroundColor?: string | undefined;
         setbackThreshold?: number | null | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
         description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
+        image?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | null | undefined;
         optionsById?: {
             [x: string]: {
                 createdAt?: {
@@ -95,6 +94,7 @@ export declare const tacticStrategySchema: import("yup").ObjectSchema<{
                 strategiesPath: string;
             };
         } | null | undefined;
+        backgroundColor?: string | undefined;
         language?: string | null | undefined;
         linkUrl?: string | null | undefined;
         likesCount?: number | null | undefined;
@@ -155,9 +155,9 @@ export declare const tacticStrategySchema: import("yup").ObjectSchema<{
             color: string;
             textColor: string;
         })[] | undefined;
-        title: string;
         type: import("..").QuestionKeyType;
         ordinal: number;
+        title: string;
     } | {
         createdAt?: {
             seconds: number;
@@ -170,17 +170,16 @@ export declare const tacticStrategySchema: import("yup").ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
-        image?: {
-            localFilePath?: import("yup").Maybe<string | undefined>;
-            storagePath?: import("yup").Maybe<string | undefined>;
-            uri?: import("yup").Maybe<string | undefined>;
-        } | null | undefined;
-        backgroundColor?: string | undefined;
         setbackThreshold?: number | null | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
         description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
+        image?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | null | undefined;
         optionsById?: {
             [x: string]: {
                 createdAt?: {
@@ -241,14 +240,15 @@ export declare const tacticStrategySchema: import("yup").ObjectSchema<{
                 strategiesPath: string;
             };
         } | null | undefined;
+        backgroundColor?: string | undefined;
         language?: string | null | undefined;
         linkUrl?: string | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        title: string;
         type: import("..").QuestionKeyType;
         ordinal: number;
+        title: string;
         options: string[];
     } | {
         createdAt?: {
@@ -262,12 +262,6 @@ export declare const tacticStrategySchema: import("yup").ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
-        image?: {
-            localFilePath?: import("yup").Maybe<string | undefined>;
-            storagePath?: import("yup").Maybe<string | undefined>;
-            uri?: import("yup").Maybe<string | undefined>;
-        } | null | undefined;
-        backgroundColor?: string | undefined;
         setbackThreshold?: number | null | undefined;
         lowEmoji?: import("yup").Maybe<string | undefined>;
         highEmoji?: import("yup").Maybe<string | undefined>;
@@ -275,6 +269,11 @@ export declare const tacticStrategySchema: import("yup").ObjectSchema<{
         commentCount?: number | undefined;
         description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
+        image?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | null | undefined;
         optionsById?: {
             [x: string]: {
                 createdAt?: {
@@ -335,6 +334,7 @@ export declare const tacticStrategySchema: import("yup").ObjectSchema<{
                 strategiesPath: string;
             };
         } | null | undefined;
+        backgroundColor?: string | undefined;
         language?: string | null | undefined;
         linkUrl?: string | null | undefined;
         likesCount?: number | null | undefined;
@@ -395,9 +395,9 @@ export declare const tacticStrategySchema: import("yup").ObjectSchema<{
             color: string;
             textColor: string;
         })[] | undefined;
-        title: string;
         type: import("..").QuestionKeyType;
         ordinal: number;
+        title: string;
     } | {
         createdAt?: {
             seconds: number;
@@ -410,17 +410,16 @@ export declare const tacticStrategySchema: import("yup").ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
-        image?: {
-            localFilePath?: import("yup").Maybe<string | undefined>;
-            storagePath?: import("yup").Maybe<string | undefined>;
-            uri?: import("yup").Maybe<string | undefined>;
-        } | null | undefined;
-        backgroundColor?: string | undefined;
         setbackThreshold?: number | null | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
         description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
+        image?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | null | undefined;
         optionsById?: {
             [x: string]: {
                 createdAt?: {
@@ -481,14 +480,15 @@ export declare const tacticStrategySchema: import("yup").ObjectSchema<{
                 strategiesPath: string;
             };
         } | null | undefined;
+        backgroundColor?: string | undefined;
         language?: string | null | undefined;
         linkUrl?: string | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        title: string;
         type: import("../tactic/recap/recapKeyType").RecapKeyType;
         ordinal: number;
+        title: string;
     } | {
         createdAt?: {
             seconds: number;
@@ -501,17 +501,16 @@ export declare const tacticStrategySchema: import("yup").ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
-        image?: {
-            localFilePath?: import("yup").Maybe<string | undefined>;
-            storagePath?: import("yup").Maybe<string | undefined>;
-            uri?: import("yup").Maybe<string | undefined>;
-        } | null | undefined;
-        backgroundColor?: string | undefined;
         setbackThreshold?: number | null | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
         description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
+        image?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | null | undefined;
         optionsById?: {
             [x: string]: {
                 createdAt?: {
@@ -572,6 +571,7 @@ export declare const tacticStrategySchema: import("yup").ObjectSchema<{
                 strategiesPath: string;
             };
         } | null | undefined;
+        backgroundColor?: string | undefined;
         language?: string | null | undefined;
         linkUrl?: string | null | undefined;
         likesCount?: number | null | undefined;
@@ -582,9 +582,9 @@ export declare const tacticStrategySchema: import("yup").ObjectSchema<{
             waveform?: string | null | undefined;
             remoteFilePath: string;
         };
-        title: string;
         type: "audio";
         ordinal: number;
+        title: string;
     } | {
         createdAt?: {
             seconds: number;
@@ -597,18 +597,17 @@ export declare const tacticStrategySchema: import("yup").ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
-        image?: {
-            localFilePath?: import("yup").Maybe<string | undefined>;
-            storagePath?: import("yup").Maybe<string | undefined>;
-            uri?: import("yup").Maybe<string | undefined>;
-        } | null | undefined;
-        backgroundColor?: string | undefined;
         setbackThreshold?: number | null | undefined;
         repeat?: import("yup").Maybe<number | undefined>;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
         description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
+        image?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | null | undefined;
         optionsById?: {
             [x: string]: {
                 createdAt?: {
@@ -669,14 +668,15 @@ export declare const tacticStrategySchema: import("yup").ObjectSchema<{
                 strategiesPath: string;
             };
         } | null | undefined;
+        backgroundColor?: string | undefined;
         language?: string | null | undefined;
         linkUrl?: string | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        title: string;
         type: "breathe";
         ordinal: number;
+        title: string;
         inFor: number;
         holdFor: number;
         outFor: number;
@@ -692,17 +692,16 @@ export declare const tacticStrategySchema: import("yup").ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
-        image?: {
-            localFilePath?: import("yup").Maybe<string | undefined>;
-            storagePath?: import("yup").Maybe<string | undefined>;
-            uri?: import("yup").Maybe<string | undefined>;
-        } | null | undefined;
-        backgroundColor?: string | undefined;
         setbackThreshold?: number | null | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
         description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
+        image?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | null | undefined;
         optionsById?: {
             [x: string]: {
                 createdAt?: {
@@ -763,14 +762,15 @@ export declare const tacticStrategySchema: import("yup").ObjectSchema<{
                 strategiesPath: string;
             };
         } | null | undefined;
+        backgroundColor?: string | undefined;
         language?: string | null | undefined;
         linkUrl?: string | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        title: string;
         type: "day-review";
         ordinal: number;
+        title: string;
         forDay: string;
     } | {
         createdAt?: {
@@ -784,17 +784,16 @@ export declare const tacticStrategySchema: import("yup").ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
-        image?: {
-            localFilePath?: import("yup").Maybe<string | undefined>;
-            storagePath?: import("yup").Maybe<string | undefined>;
-            uri?: import("yup").Maybe<string | undefined>;
-        } | null | undefined;
-        backgroundColor?: string | undefined;
         setbackThreshold?: number | null | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
         description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
+        image?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | null | undefined;
         optionsById?: {
             [x: string]: {
                 createdAt?: {
@@ -855,14 +854,15 @@ export declare const tacticStrategySchema: import("yup").ObjectSchema<{
                 strategiesPath: string;
             };
         } | null | undefined;
+        backgroundColor?: string | undefined;
         language?: string | null | undefined;
         linkUrl?: string | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        title: string;
         type: "emotions";
         ordinal: number;
+        title: string;
     } | {
         createdAt?: {
             seconds: number;
@@ -875,17 +875,16 @@ export declare const tacticStrategySchema: import("yup").ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
-        image?: {
-            localFilePath?: import("yup").Maybe<string | undefined>;
-            storagePath?: import("yup").Maybe<string | undefined>;
-            uri?: import("yup").Maybe<string | undefined>;
-        } | null | undefined;
-        backgroundColor?: string | undefined;
         setbackThreshold?: number | null | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
         description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
+        image?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | null | undefined;
         optionsById?: {
             [x: string]: {
                 createdAt?: {
@@ -946,14 +945,15 @@ export declare const tacticStrategySchema: import("yup").ObjectSchema<{
                 strategiesPath: string;
             };
         } | null | undefined;
+        backgroundColor?: string | undefined;
         language?: string | null | undefined;
         linkUrl?: string | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        title: string;
         type: "phone";
         ordinal: number;
+        title: string;
         folderId: string;
         trigger: {};
     } | {
@@ -968,17 +968,16 @@ export declare const tacticStrategySchema: import("yup").ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
-        image?: {
-            localFilePath?: import("yup").Maybe<string | undefined>;
-            storagePath?: import("yup").Maybe<string | undefined>;
-            uri?: import("yup").Maybe<string | undefined>;
-        } | null | undefined;
-        backgroundColor?: string | undefined;
         setbackThreshold?: number | null | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
         description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
+        image?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | null | undefined;
         optionsById?: {
             [x: string]: {
                 createdAt?: {
@@ -1039,14 +1038,15 @@ export declare const tacticStrategySchema: import("yup").ObjectSchema<{
                 strategiesPath: string;
             };
         } | null | undefined;
+        backgroundColor?: string | undefined;
         language?: string | null | undefined;
         linkUrl?: string | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        title: string;
         type: "steps";
         ordinal: number;
+        title: string;
         steps: number;
     } | {
         createdAt?: {
@@ -1060,17 +1060,16 @@ export declare const tacticStrategySchema: import("yup").ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
-        image?: {
-            localFilePath?: import("yup").Maybe<string | undefined>;
-            storagePath?: import("yup").Maybe<string | undefined>;
-            uri?: import("yup").Maybe<string | undefined>;
-        } | null | undefined;
-        backgroundColor?: string | undefined;
         setbackThreshold?: number | null | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
         description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
+        image?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | null | undefined;
         optionsById?: {
             [x: string]: {
                 createdAt?: {
@@ -1131,14 +1130,15 @@ export declare const tacticStrategySchema: import("yup").ObjectSchema<{
                 strategiesPath: string;
             };
         } | null | undefined;
+        backgroundColor?: string | undefined;
         language?: string | null | undefined;
         linkUrl?: string | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        title: string;
         type: "task";
         ordinal: number;
+        title: string;
     } | {
         createdAt?: {
             seconds: number;
@@ -1151,17 +1151,16 @@ export declare const tacticStrategySchema: import("yup").ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
-        image?: {
-            localFilePath?: import("yup").Maybe<string | undefined>;
-            storagePath?: import("yup").Maybe<string | undefined>;
-            uri?: import("yup").Maybe<string | undefined>;
-        } | null | undefined;
-        backgroundColor?: string | undefined;
         setbackThreshold?: number | null | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
         description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
+        image?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | null | undefined;
         optionsById?: {
             [x: string]: {
                 createdAt?: {
@@ -1222,14 +1221,15 @@ export declare const tacticStrategySchema: import("yup").ObjectSchema<{
                 strategiesPath: string;
             };
         } | null | undefined;
+        backgroundColor?: string | undefined;
         language?: string | null | undefined;
         linkUrl?: string | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        title: string;
         type: "urge-surfing";
         ordinal: number;
+        title: string;
     } | {
         createdAt?: {
             seconds: number;
@@ -1242,17 +1242,16 @@ export declare const tacticStrategySchema: import("yup").ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
-        image?: {
-            localFilePath?: import("yup").Maybe<string | undefined>;
-            storagePath?: import("yup").Maybe<string | undefined>;
-            uri?: import("yup").Maybe<string | undefined>;
-        } | null | undefined;
-        backgroundColor?: string | undefined;
         setbackThreshold?: number | null | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
         description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
+        image?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | null | undefined;
         optionsById?: {
             [x: string]: {
                 createdAt?: {
@@ -1313,14 +1312,15 @@ export declare const tacticStrategySchema: import("yup").ObjectSchema<{
                 strategiesPath: string;
             };
         } | null | undefined;
+        backgroundColor?: string | undefined;
         language?: string | null | undefined;
         linkUrl?: string | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        title: string;
         type: "video";
         ordinal: number;
+        title: string;
         video: {
             storagePath?: string | null | undefined;
             url?: string | null | undefined;

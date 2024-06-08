@@ -1,7 +1,7 @@
 import * as Factory from 'factory.ts';
 import { TacticValue } from '../schema';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
-export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<TacticValue, "createdAt" | "updatedAt" | "profileId" | "title" | "image" | "backgroundColor" | "type" | "setbackThreshold" | "ordinal" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "optionsById" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested">;
+export declare const makeTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "ordinal" | "title" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "optionsById" | "backgroundColor" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested">;
 export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     createdAt?: {
         seconds: number;
@@ -14,17 +14,16 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
         toDate: Function;
     } | null | undefined;
     profileId?: string | null | undefined;
-    image?: {
-        localFilePath?: import("yup").Maybe<string | undefined>;
-        storagePath?: import("yup").Maybe<string | undefined>;
-        uri?: import("yup").Maybe<string | undefined>;
-    } | null | undefined;
-    backgroundColor?: string | undefined;
     setbackThreshold?: number | null | undefined;
     pastTenseTitle?: string | undefined;
     commentCount?: number | undefined;
     description?: string | null | undefined;
     debriefAfterMinutes?: number | null | undefined;
+    image?: {
+        localFilePath?: import("yup").Maybe<string | undefined>;
+        storagePath?: import("yup").Maybe<string | undefined>;
+        uri?: import("yup").Maybe<string | undefined>;
+    } | null | undefined;
     optionsById?: {
         [x: string]: {
             createdAt?: {
@@ -85,6 +84,7 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
             strategiesPath: string;
         };
     } | null | undefined;
+    backgroundColor?: string | undefined;
     language?: string | null | undefined;
     linkUrl?: string | null | undefined;
     likesCount?: number | null | undefined;
@@ -145,7 +145,7 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
         color: string;
         textColor: string;
     })[] | undefined;
-    title: string;
     type: import("../schema").QuestionKeyType;
     ordinal: number;
-}, "title" | "type" | "ordinal" | ("createdAt" | "updatedAt" | "profileId" | "image" | "backgroundColor" | "setbackThreshold" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "optionsById" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested" | "options")>;
+    title: string;
+}, "type" | "ordinal" | "title" | ("createdAt" | "updatedAt" | "profileId" | "setbackThreshold" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "optionsById" | "backgroundColor" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested" | "options")>;

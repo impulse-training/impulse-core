@@ -1,12 +1,18 @@
+import { keys } from 'lodash';
 import * as yup from 'yup';
+import { tacticSchemas } from './tactic';
 import { optionalStringArray } from './utils/array';
 import { imageSchema } from './utils/image';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema } from './utils/timestamp';
 
+type TacticType = keyof typeof tacticSchemas;
+const tacticType = keys(tacticSchemas) as Array<TacticType>;
+
 export const tacticPreviewSchema = yup.object({
   title: yup.string().required(),
-  image: imageSchema.optional(),
+  type: yup.mixed<TacticType>().oneOf(tacticType).required(),
+  image: imageSchema.optional().nullable(),
   backgroundColor: yup.string().optional(),
   updatedAt: optionalTimestampSchema,
 });

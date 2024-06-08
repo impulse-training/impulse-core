@@ -12,7 +12,7 @@ export declare const profileLogsSummarySchema: yup.Lazy<{
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
+            unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
             formattedValue: string;
         };
     };

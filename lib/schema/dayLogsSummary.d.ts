@@ -2,7 +2,7 @@ import * as yup from 'yup';
 import { tacticDataSchema } from './log';
 export type TacticSummaryValue = yup.InferType<typeof tacticDataSchema>;
 declare const logSummarySchema: yup.ObjectSchema<{
-    type: NonNullable<"impulse" | "time" | undefined>;
+    type: NonNullable<"time" | "impulse" | undefined>;
     hour: number;
     minute: number;
     tacticDataById: {
@@ -17,7 +17,7 @@ declare const logSummarySchema: yup.ObjectSchema<{
             nextStrategiesPath?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
-            unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
+            unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
             formattedValue: string;
         };
     };
@@ -88,7 +88,7 @@ declare const logSummarySchema: yup.ObjectSchema<{
 export type LogSummaryValue = yup.InferType<typeof logSummarySchema>;
 export declare const dayLogsSummarySchema: yup.Lazy<{
     [x: string]: {
-        type: NonNullable<"impulse" | "time" | undefined>;
+        type: NonNullable<"time" | "impulse" | undefined>;
         optionsById: {
             [x: string]: {
                 createdAt?: {
@@ -160,7 +160,7 @@ export declare const dayLogsSummarySchema: yup.Lazy<{
                 nextStrategiesPath?: string | undefined;
                 lowEmoji?: yup.Maybe<string | undefined>;
                 highEmoji?: yup.Maybe<string | undefined>;
-                unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
+                unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
                 formattedValue: string;
             };
         };

@@ -13,7 +13,7 @@ export declare const makeProfileLogsSummaryFactory: (TimestampKlass: typeof Time
             nextStrategiesPath?: string | undefined;
             lowEmoji?: import("yup").Maybe<string | undefined>;
             highEmoji?: import("yup").Maybe<string | undefined>;
-            unit: NonNullable<"impulse" | "time" | "custom" | undefined>;
+            unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
             formattedValue: string;
         };
     };

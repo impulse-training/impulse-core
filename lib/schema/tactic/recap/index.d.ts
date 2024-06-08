@@ -16,17 +16,16 @@ export declare const recapTacticSchema: yup.Lazy<{
         toDate: Function;
     } | null | undefined;
     profileId?: string | null | undefined;
-    image?: {
-        localFilePath?: yup.Maybe<string | undefined>;
-        storagePath?: yup.Maybe<string | undefined>;
-        uri?: yup.Maybe<string | undefined>;
-    } | null | undefined;
-    backgroundColor?: string | undefined;
     setbackThreshold?: number | null | undefined;
     pastTenseTitle?: string | undefined;
     commentCount?: number | undefined;
     description?: string | null | undefined;
     debriefAfterMinutes?: number | null | undefined;
+    image?: {
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
+        uri?: yup.Maybe<string | undefined>;
+    } | null | undefined;
     optionsById?: {
         [x: string]: {
             createdAt?: {
@@ -87,13 +86,14 @@ export declare const recapTacticSchema: yup.Lazy<{
             strategiesPath: string;
         };
     } | null | undefined;
+    backgroundColor?: string | undefined;
     language?: string | null | undefined;
     linkUrl?: string | null | undefined;
     likesCount?: number | null | undefined;
     timerSeconds?: yup.Maybe<number | undefined>;
     isSuggested?: boolean | undefined;
-    title: string;
     type: import("./recapKeyType").RecapKeyType;
     ordinal: number;
+    title: string;
 }, yup.AnyObject, any>;
 export type RecapTacticValue = RecapActionTacticValue | RecapTrackingTacticValue;

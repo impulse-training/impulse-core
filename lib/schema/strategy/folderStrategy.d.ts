@@ -35,12 +35,13 @@ export declare const folderStrategySchema: import("yup").ObjectSchema<{
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 storagePath?: import("yup").Maybe<string | undefined>;
                 uri?: import("yup").Maybe<string | undefined>;
-            } | undefined;
+            } | null | undefined;
             backgroundColor?: string | undefined;
+            type: NonNullable<import("..").QuestionKeyType | "audio" | "breathe" | "day-review" | "emotions" | "phone" | import("../tactic/recap/recapKeyType").RecapKeyType | "steps" | "task" | "urge-surfing" | "video" | undefined>;
             title: string;
         }[] | undefined;
         defaultFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
-        recommendedFor?: "impulse" | "time" | null | undefined;
+        recommendedFor?: "time" | "impulse" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -59,8 +60,9 @@ export declare const folderStrategySchema: import("yup").ObjectSchema<{
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     storagePath?: import("yup").Maybe<string | undefined>;
                     uri?: import("yup").Maybe<string | undefined>;
-                } | undefined;
+                } | null | undefined;
                 backgroundColor?: string | undefined;
+                type: NonNullable<import("..").QuestionKeyType | "audio" | "breathe" | "day-review" | "emotions" | "phone" | import("../tactic/recap/recapKeyType").RecapKeyType | "steps" | "task" | "urge-surfing" | "video" | undefined>;
                 title: string;
             };
         };

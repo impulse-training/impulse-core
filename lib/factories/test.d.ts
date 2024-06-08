@@ -86,12 +86,13 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             localFilePath?: import("yup").Maybe<string | undefined>;
             storagePath?: import("yup").Maybe<string | undefined>;
             uri?: import("yup").Maybe<string | undefined>;
-        } | undefined;
+        } | null | undefined;
         backgroundColor?: string | undefined;
+        type: NonNullable<import("..").QuestionKeyType | "audio" | "breathe" | "day-review" | "emotions" | "phone" | import("../schema/tactic/recap/recapKeyType").RecapKeyType | "steps" | "task" | "urge-surfing" | "video" | undefined>;
         title: string;
     }[] | undefined;
     defaultFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
-    recommendedFor?: "impulse" | "time" | null | undefined;
+    recommendedFor?: "time" | "impulse" | null | undefined;
     recommendedForIssueIds?: string[] | undefined;
     recommendedForIssueOrdinals?: {
         [x: string]: number;
@@ -110,9 +111,10 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 storagePath?: import("yup").Maybe<string | undefined>;
                 uri?: import("yup").Maybe<string | undefined>;
-            } | undefined;
+            } | null | undefined;
             backgroundColor?: string | undefined;
+            type: NonNullable<import("..").QuestionKeyType | "audio" | "breathe" | "day-review" | "emotions" | "phone" | import("../schema/tactic/recap/recapKeyType").RecapKeyType | "steps" | "task" | "urge-surfing" | "video" | undefined>;
             title: string;
         };
     };
-}, "name" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "last3TacticPreviews" | "defaultFor" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "title" | "image" | "backgroundColor" | "type" | "setbackThreshold" | "ordinal" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "optionsById" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested">;
+}, "name" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "last3TacticPreviews" | "defaultFor" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "ordinal" | "title" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "optionsById" | "backgroundColor" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested">;
