@@ -29,7 +29,7 @@ export function makeFactories(TimestampKlass: typeof TimestampLike) {
     locationLogFactory: makeLocationLogFactory(TimestampKlass),
     locationFactory: makeLocationFactory(TimestampKlass),
     profileFactory: makeProfileFactory(TimestampKlass),
-    folderMembershipFactory: makeFolderFactory(TimestampKlass),
+    strategyFactory: makeFolderFactory(TimestampKlass),
     issueFactory: makeIssueFactory(TimestampKlass),
     folderFactory: makeFolderFactory(TimestampKlass),
     tacticFactory: makeTacticFactory(TimestampKlass),

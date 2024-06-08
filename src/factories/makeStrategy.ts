@@ -1,16 +1,17 @@
 import * as Factory from 'factory.ts';
-import { FolderMembershipValue } from '../schema';
+import { StrategyValue } from '../schema';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 
-export const makeFolderFactory = (TimestampKlass: typeof TimestampLike) =>
-  Factory.makeFactory<FolderMembershipValue>({
-    folderRef: {
+export const makeStrategy = (TimestampKlass: typeof TimestampLike) =>
+  Factory.makeFactory<StrategyValue>({
+    type: 'folder',
+    docRef: {
       id: 'abc123',
       path: 'folders/abc123',
       get: async () => ({} as any),
       collection: () => ({} as any),
     },
-    folderData: {
+    docData: {
       name: 'Movement',
       createdAt: TimestampKlass.now(),
       updatedAt: TimestampKlass.now(),
@@ -20,9 +21,6 @@ export const makeFolderFactory = (TimestampKlass: typeof TimestampLike) =>
       last3TacticPreviews: [],
     },
     ordinal: 0,
-    seenTactics: {},
-    tacticOrdinals: {},
-    tacticLikes: {},
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
   });

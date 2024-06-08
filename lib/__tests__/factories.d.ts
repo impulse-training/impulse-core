@@ -185,7 +185,7 @@ export declare const factories: {
         issueId: string | null;
         uids: string[];
     }, "timezone" | "issueId" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIssueIds" | "lastActiveAt" | "widgetInstalledAt" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "isTourCompleted" | "androidPermissions" | "region" | "scheduledNotificationIds")>;
-    folderMembershipFactory: import("factory.ts").Factory<{
+    strategyFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
             nanoseconds: number;

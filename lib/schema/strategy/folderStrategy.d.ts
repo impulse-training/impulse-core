@@ -1,22 +1,18 @@
-import * as Factory from 'factory.ts';
-import { TimestampLike } from '../utils/firestore/TimestampLike';
-export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
-    createdAt?: {
+import { InferType } from 'yup';
+export declare const folderStrategySchema: import("yup").ObjectSchema<{
+    createdAt: {
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    updatedAt?: {
+    updatedAt: {
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    ordinal: number;
-    tacticLikes: {
-        [x: string]: NonNullable<boolean | undefined>;
-    };
-    folderRef: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
-    folderData: {
+    type: "folder";
+    docRef: import("../utils/firestore").DocumentReferenceLike<unknown>;
+    docData: {
         createdAt?: {
             seconds: number;
             nanoseconds: number;
@@ -69,10 +65,27 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             };
         };
     };
-    seenTactics: {
-        [x: string]: NonNullable<boolean | undefined>;
+    ordinal: number;
+}, import("yup").AnyObject, {
+    createdAt: undefined;
+    updatedAt: undefined;
+    type: undefined;
+    docRef: undefined;
+    docData: {
+        createdAt: undefined;
+        updatedAt: undefined;
+        slug: undefined;
+        name: undefined;
+        creatorProfileId: undefined;
+        invitationCode: undefined;
+        invitationUrl: undefined;
+        tacticPreviewsById: undefined;
+        last3TacticPreviews: "";
+        defaultFor: undefined;
+        recommendedFor: undefined;
+        recommendedForIssueIds: "";
+        recommendedForIssueOrdinals: undefined;
     };
-    tacticOrdinals: {
-        [x: string]: number;
-    };
-}, "ordinal" | "tacticLikes" | "folderRef" | "folderData" | "seenTactics" | "tacticOrdinals" | ("createdAt" | "updatedAt")>;
+    ordinal: undefined;
+}, "">;
+export type FolderStrategyValue = InferType<typeof folderStrategySchema>;
