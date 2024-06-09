@@ -97,6 +97,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     recommendedForIssueOrdinals?: {
         [x: string]: number;
     } | null | undefined;
+    type: "folder";
     name: string;
     invitationCode: string;
     invitationUrl: string;
@@ -117,4 +118,4 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             title: string;
         };
     };
-}, "name" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "last3TacticPreviews" | "defaultFor" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "ordinal" | "title" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "optionsById" | "backgroundColor" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested">;
+}, "type" | "name" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "last3TacticPreviews" | "defaultFor" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "ordinal" | "title" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "optionsById" | "backgroundColor" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested">;

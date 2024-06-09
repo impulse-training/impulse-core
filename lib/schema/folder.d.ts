@@ -36,6 +36,7 @@ export declare const folderSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    type: "folder";
     slug: string | undefined;
     name: string;
     creatorProfileId: string | undefined;
@@ -82,6 +83,7 @@ export declare const folderSchema: yup.ObjectSchema<{
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
+    type: undefined;
     slug: undefined;
     name: undefined;
     creatorProfileId: undefined;

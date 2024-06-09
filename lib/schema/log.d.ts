@@ -93,6 +93,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
+        type: "folder";
         name: string;
         invitationCode: string;
         invitationUrl: string;
@@ -223,6 +224,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
+        type: "folder";
         name: string;
         invitationCode: string;
         invitationUrl: string;
@@ -368,6 +370,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
+        type: "folder";
         name: string;
         invitationCode: string;
         invitationUrl: string;
@@ -503,6 +506,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
+        type: "folder";
         name: string;
         invitationCode: string;
         invitationUrl: string;
@@ -653,6 +657,7 @@ export declare const logSchema: yup.Lazy<{
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
+        type: "folder";
         name: string;
         invitationCode: string;
         invitationUrl: string;
@@ -754,6 +759,7 @@ export declare const logSchema: yup.Lazy<{
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
+        type: "folder";
         name: string;
         invitationCode: string;
         invitationUrl: string;
@@ -859,6 +865,7 @@ export declare const logSchema: yup.Lazy<{
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
+        type: "folder";
         name: string;
         invitationCode: string;
         invitationUrl: string;

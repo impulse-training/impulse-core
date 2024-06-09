@@ -22,6 +22,7 @@ export type TacticPreviewValue = yup.InferType<typeof tacticPreviewSchema>;
 export const folderSchema = yup.object().shape({
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
+  type: yup.mixed<'folder'>().oneOf(['folder']).required(),
   slug: yup.string(),
   name: yup.string().required(),
   creatorProfileId: yup.string(),

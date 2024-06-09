@@ -34,6 +34,7 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
     recommendedForIssueOrdinals?: {
         [x: string]: number;
     } | null | undefined;
+    type: "folder";
     name: string;
     invitationCode: string;
     invitationUrl: string;
@@ -54,4 +55,4 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             title: string;
         };
     };
-}, "name" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "last3TacticPreviews" | "defaultFor" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>;
+}, "type" | "name" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "last3TacticPreviews" | "defaultFor" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>;
