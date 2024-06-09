@@ -1,6 +1,6 @@
 import * as yup from 'yup';
-export declare const phoneTacticSchema: yup.ObjectSchema<{
-    type: "phone";
+export declare const contactsTacticSchema: yup.ObjectSchema<{
+    type: "contacts";
     profileId: string | null | undefined;
     createdAt: {
         seconds: number;
@@ -90,8 +90,7 @@ export declare const phoneTacticSchema: yup.ObjectSchema<{
     likesCount: number | null | undefined;
     timerSeconds: yup.Maybe<number | undefined>;
     isSuggested: boolean | undefined;
-    folderId: string;
-    trigger: {};
+    contactIds: string[];
 }, yup.AnyObject, {
     type: undefined;
     profileId: undefined;
@@ -116,7 +115,6 @@ export declare const phoneTacticSchema: yup.ObjectSchema<{
     likesCount: undefined;
     timerSeconds: undefined;
     isSuggested: undefined;
-    folderId: undefined;
-    trigger: undefined;
+    contactIds: "";
 }, "">;
-export type PhoneTacticValue = yup.InferType<typeof phoneTacticSchema>;
+export type ContactcsTacticValue = yup.InferType<typeof contactsTacticSchema>;

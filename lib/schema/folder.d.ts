@@ -1,7 +1,7 @@
 import * as yup from 'yup';
 export declare const tacticPreviewSchema: yup.ObjectSchema<{
     title: string;
-    type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "day-review" | "emotions" | "phone" | import("./tactic/recap/recapKeyType").RecapKeyType | "steps" | "task" | "urge-surfing" | "video" | undefined>;
+    type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
     image: {
         localFilePath?: yup.Maybe<string | undefined>;
         storagePath?: yup.Maybe<string | undefined>;
@@ -54,7 +54,7 @@ export declare const folderSchema: yup.ObjectSchema<{
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
-            type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "day-review" | "emotions" | "phone" | import("./tactic/recap/recapKeyType").RecapKeyType | "steps" | "task" | "urge-surfing" | "video" | undefined>;
+            type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
             title: string;
         };
     };
@@ -70,7 +70,7 @@ export declare const folderSchema: yup.ObjectSchema<{
             uri?: yup.Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
-        type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "day-review" | "emotions" | "phone" | import("./tactic/recap/recapKeyType").RecapKeyType | "steps" | "task" | "urge-surfing" | "video" | undefined>;
+        type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
         title: string;
     }[] | undefined;
     defaultFor: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;

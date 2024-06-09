@@ -88,7 +88,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
-        type: NonNullable<import("..").QuestionKeyType | "audio" | "breathe" | "day-review" | "emotions" | "phone" | import("../schema/tactic/recap/recapKeyType").RecapKeyType | "steps" | "task" | "urge-surfing" | "video" | undefined>;
+        type: NonNullable<import("..").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
         title: string;
     }[] | undefined;
     defaultFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
@@ -113,7 +113,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
-            type: NonNullable<import("..").QuestionKeyType | "audio" | "breathe" | "day-review" | "emotions" | "phone" | import("../schema/tactic/recap/recapKeyType").RecapKeyType | "steps" | "task" | "urge-surfing" | "video" | undefined>;
+            type: NonNullable<import("..").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
             title: string;
         };
     };

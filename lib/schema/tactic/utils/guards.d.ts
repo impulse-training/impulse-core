@@ -1,11 +1,10 @@
 import { TacticValue } from '..';
 export declare const isStepsTactic: ({ type }: TacticValue) => boolean;
-export declare const isEmotionsTactic: ({ type }: TacticValue) => boolean;
 export declare const isAudioTactic: ({ type }: TacticValue) => boolean;
 export declare const isVideoTactic: ({ type }: TacticValue) => boolean;
-export declare const isPhoneTacticValue: ({ type }: TacticValue) => boolean;
 export declare const isBreatheTactic: ({ type }: TacticValue) => boolean;
 export declare const isTaskTactic: ({ type }: TacticValue) => boolean;
+export declare const isContactsTactic: ({ type }: TacticValue) => boolean;
 export declare const isQuestionTactic: ({ type }: TacticValue) => boolean;
 export declare const isQuestionSliderTactic: ({ type }: TacticValue) => boolean;
 export declare const isQuestionTimeTactic: ({ type }: TacticValue) => boolean;

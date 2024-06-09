@@ -1,6 +1,6 @@
 import { nth, split } from 'lodash';
 import * as yup from 'yup';
-import * as schemas from '.';
+import * as schemas from './schema';
 
 // Can take any document snapshot from firestore, get its collection type, and return a schema for
 // validation.

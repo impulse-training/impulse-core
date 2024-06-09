@@ -3,12 +3,11 @@ import { TacticValue, questionTacticSchemas } from '..';
 import { recapTacticSchemas } from '../recap';
 
 export const isStepsTactic = ({ type }: TacticValue) => type === 'steps';
-export const isEmotionsTactic = ({ type }: TacticValue) => type === 'emotions';
 export const isAudioTactic = ({ type }: TacticValue) => type === 'audio';
 export const isVideoTactic = ({ type }: TacticValue) => type === 'video';
-export const isPhoneTacticValue = ({ type }: TacticValue) => type === 'phone';
 export const isBreatheTactic = ({ type }: TacticValue) => type === 'breathe';
 export const isTaskTactic = ({ type }: TacticValue) => type === 'task';
+export const isContactsTactic = ({ type }: TacticValue) => type === 'contacts';
 
 export const isQuestionTactic = ({ type }: TacticValue) =>
   keys(questionTacticSchemas).includes(type);

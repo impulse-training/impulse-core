@@ -13,6 +13,10 @@ import {
 import { makeProfileFactory } from './profile';
 import { makeProfileLogsSummaryFactory } from './profileLogsSummary';
 import { makeTimeRoutineFactory } from './routine';
+import {
+  makeFolderStrategyFactory,
+  makeTacticStrategyFactory,
+} from './strategy';
 import { makeQuestionTimeTacticFactory, makeTacticFactory } from './tactic';
 
 // Our admin and client apps use the same factories, but the firebase-admin versus firebase client
@@ -29,9 +33,10 @@ export function makeFactories(TimestampKlass: typeof TimestampLike) {
     locationLogFactory: makeLocationLogFactory(TimestampKlass),
     locationFactory: makeLocationFactory(TimestampKlass),
     profileFactory: makeProfileFactory(TimestampKlass),
-    strategyFactory: makeFolderFactory(TimestampKlass),
     issueFactory: makeIssueFactory(TimestampKlass),
     folderFactory: makeFolderFactory(TimestampKlass),
+    folderStrategyFactory: makeFolderStrategyFactory(TimestampKlass),
+    tacticStrategyFactory: makeTacticStrategyFactory(TimestampKlass),
     tacticFactory: makeTacticFactory(TimestampKlass),
     questionTimeTacticFactory: makeQuestionTimeTacticFactory(TimestampKlass),
     timeRoutineFactory: makeTimeRoutineFactory(TimestampKlass),

@@ -2,57 +2,50 @@ import * as yup from 'yup';
 import { objectOf } from '../utils/objectOf';
 import { AudioTacticValue, audioTacticSchema } from './audio';
 import { BreatheTacticValue, breatheTacticSchema } from './breathe';
-import { DayReviewTacticValue, dayReviewTacticSchema } from './dayReview';
-import { EmotionsTacticValue, emotionsTacticSchema } from './emotions';
-import { PhoneTacticValue, phoneTacticSchema } from './phone';
+import { ContactcsTacticValue, contactsTacticSchema } from './contacts';
 import { QuestionTacticValue, questionTacticSchemas } from './question';
-import { RecapTacticValue, recapTacticSchemas } from './recap';
-import { StepsTacticValue, stepsTacticSchema } from './steps';
+import { StepsTacticValue } from './steps';
 import { TaskTacticValue, taskTacticSchema } from './task';
-import { UrgeSurfingTacticValue, urgeSurfingTacticSchema } from './urgeSurfing';
 import { VideoTacticValue, videoTacticSchema } from './video';
 
 export * from './audio';
 export * from './breathe';
-export * from './dayReview';
-export * from './emotions';
-export * from './phone';
+export * from './contacts';
 export * from './question';
 export * from './steps';
 export * from './task';
-export * from './urgeSurfing';
 export * from './utils';
 export * from './video';
 
 export type TacticValue =
-  | PhoneTacticValue
   | AudioTacticValue
-  | UrgeSurfingTacticValue
-  | VideoTacticValue
-  | QuestionTacticValue
-  | TaskTacticValue
   | BreatheTacticValue
+  | ContactcsTacticValue
   | StepsTacticValue
-  | EmotionsTacticValue
-  | DayReviewTacticValue
-  | RecapTacticValue;
+  | TaskTacticValue
+  | VideoTacticValue
+  | QuestionTacticValue;
+// | UrgeSurfingTacticValue
+// | EmotionsTacticValue
+// | DayReviewTacticValue
+// | RecapTacticValue;
 
 // Utility to dynamically select the correct schema based on the tactic type
 export const tacticSchemas: Record<
   TacticValue['type'],
   yup.ObjectSchema<TacticValue>
 > = {
-  phone: phoneTacticSchema,
   audio: audioTacticSchema,
-  video: videoTacticSchema,
   breathe: breatheTacticSchema,
-  steps: stepsTacticSchema,
+  contacts: contactsTacticSchema,
   task: taskTacticSchema,
-  emotions: emotionsTacticSchema,
-  'day-review': dayReviewTacticSchema,
-  'urge-surfing': urgeSurfingTacticSchema,
+  video: videoTacticSchema,
   ...questionTacticSchemas,
-  ...recapTacticSchemas,
+  // steps: stepsTacticSchema,
+  // emotions: emotionsTacticSchema,
+  // 'day-review': dayReviewTacticSchema,
+  // 'urge-surfing': urgeSurfingTacticSchema,
+  // ...recapTacticSchemas,
 } as any;
 // We do highly value static typing, but the problem is that yup's generated types are bloated and
 // cause problems. Instead of exporting generated types for top-level types like tacticSchemas, we

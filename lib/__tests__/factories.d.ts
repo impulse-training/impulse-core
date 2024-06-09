@@ -185,61 +185,6 @@ export declare const factories: {
         issueId: string | null;
         uids: string[];
     }, "timezone" | "issueId" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIssueIds" | "lastActiveAt" | "widgetInstalledAt" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "isTourCompleted" | "androidPermissions" | "region" | "scheduledNotificationIds")>;
-    strategyFactory: import("factory.ts").Factory<{
-        createdAt?: {
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        slug?: string | undefined;
-        creatorProfileId?: string | undefined;
-        last3TacticPreviews?: {
-            updatedAt?: {
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            image?: {
-                localFilePath?: import("yup").Maybe<string | undefined>;
-                storagePath?: import("yup").Maybe<string | undefined>;
-                uri?: import("yup").Maybe<string | undefined>;
-            } | null | undefined;
-            backgroundColor?: string | undefined;
-            type: NonNullable<import("..").QuestionKeyType | "audio" | "breathe" | "day-review" | "emotions" | "phone" | import("../schema/tactic/recap/recapKeyType").RecapKeyType | "steps" | "task" | "urge-surfing" | "video" | undefined>;
-            title: string;
-        }[] | undefined;
-        defaultFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
-        recommendedFor?: "time" | "impulse" | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
-        name: string;
-        invitationCode: string;
-        invitationUrl: string;
-        tacticPreviewsById: {
-            [x: string]: {
-                updatedAt?: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                image?: {
-                    localFilePath?: import("yup").Maybe<string | undefined>;
-                    storagePath?: import("yup").Maybe<string | undefined>;
-                    uri?: import("yup").Maybe<string | undefined>;
-                } | null | undefined;
-                backgroundColor?: string | undefined;
-                type: NonNullable<import("..").QuestionKeyType | "audio" | "breathe" | "day-review" | "emotions" | "phone" | import("../schema/tactic/recap/recapKeyType").RecapKeyType | "steps" | "task" | "urge-surfing" | "video" | undefined>;
-                title: string;
-            };
-        };
-    }, "name" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "last3TacticPreviews" | "defaultFor" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
         createdAt?: {
@@ -287,7 +232,7 @@ export declare const factories: {
                 uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
-            type: NonNullable<import("..").QuestionKeyType | "audio" | "breathe" | "day-review" | "emotions" | "phone" | import("../schema/tactic/recap/recapKeyType").RecapKeyType | "steps" | "task" | "urge-surfing" | "video" | undefined>;
+            type: NonNullable<import("..").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
             title: string;
         }[] | undefined;
         defaultFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
@@ -312,11 +257,13 @@ export declare const factories: {
                     uri?: import("yup").Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
-                type: NonNullable<import("..").QuestionKeyType | "audio" | "breathe" | "day-review" | "emotions" | "phone" | import("../schema/tactic/recap/recapKeyType").RecapKeyType | "steps" | "task" | "urge-surfing" | "video" | undefined>;
+                type: NonNullable<import("..").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
                 title: string;
             };
         };
     }, "name" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "last3TacticPreviews" | "defaultFor" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>;
+    folderStrategyFactory: import("factory.ts").Factory<import("..").StrategyValue, "createdAt" | "updatedAt" | "type" | "ordinal" | "docData" | "docRef">;
+    tacticStrategyFactory: import("factory.ts").Factory<import("..").StrategyValue, "createdAt" | "updatedAt" | "type" | "ordinal" | "docData" | "docRef">;
     tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "ordinal" | "title" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "optionsById" | "backgroundColor" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested">;
     questionTimeTacticFactory: import("factory.ts").Factory<{
         createdAt?: {

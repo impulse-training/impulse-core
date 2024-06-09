@@ -5,10 +5,11 @@ import {
   commentSchema,
   dayLogsSummarySchema,
   folderSchema,
+  folderStrategySchema,
   logSchema,
   profileLogsSummarySchema,
-  strategySchema,
   tacticSchema,
+  tacticStrategySchema,
   timeRoutineSchema,
 } from '../../schema';
 import { TimestampLike } from '../../utils/firestore/TimestampLike';
@@ -51,7 +52,8 @@ describe('factories', () => {
 const schemaMap: Record<keyof typeof factories, null | Schema | Lazy<unknown>> =
   {
     profileLogsSummaryFactory: profileLogsSummarySchema,
-    strategyFactory: strategySchema,
+    folderStrategyFactory: folderStrategySchema,
+    tacticStrategyFactory: tacticStrategySchema,
     dayLogsSummaryFactory: dayLogsSummarySchema,
     applicationFactory: null,
     commentFactory: commentSchema,
