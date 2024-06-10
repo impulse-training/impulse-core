@@ -76,7 +76,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
         } | null | undefined;
         slug?: string | undefined;
         creatorProfileId?: string | undefined;
-        last3Tactics?: ({
+        next3Tactics?: ({
             createdAt?: {
                 seconds: number;
                 nanoseconds: number;
@@ -1036,7 +1036,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
         } | null | undefined;
         slug?: string | undefined;
         creatorProfileId?: string | undefined;
-        last3Tactics?: ({
+        next3Tactics?: ({
             createdAt?: {
                 seconds: number;
                 nanoseconds: number;
@@ -2011,7 +2011,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
         } | null | undefined;
         slug?: string | undefined;
         creatorProfileId?: string | undefined;
-        last3Tactics?: ({
+        next3Tactics?: ({
             createdAt?: {
                 seconds: number;
                 nanoseconds: number;
@@ -2976,7 +2976,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
         } | null | undefined;
         slug?: string | undefined;
         creatorProfileId?: string | undefined;
-        last3Tactics?: ({
+        next3Tactics?: ({
             createdAt?: {
                 seconds: number;
                 nanoseconds: number;
@@ -3956,7 +3956,7 @@ export declare const logSchema: yup.Lazy<{
         } | null | undefined;
         slug?: string | undefined;
         creatorProfileId?: string | undefined;
-        last3Tactics?: ({
+        next3Tactics?: ({
             createdAt?: {
                 seconds: number;
                 nanoseconds: number;
@@ -4887,7 +4887,7 @@ export declare const logSchema: yup.Lazy<{
         } | null | undefined;
         slug?: string | undefined;
         creatorProfileId?: string | undefined;
-        last3Tactics?: ({
+        next3Tactics?: ({
             createdAt?: {
                 seconds: number;
                 nanoseconds: number;
@@ -5822,7 +5822,7 @@ export declare const logSchema: yup.Lazy<{
         } | null | undefined;
         slug?: string | undefined;
         creatorProfileId?: string | undefined;
-        last3Tactics?: ({
+        next3Tactics?: ({
             createdAt?: {
                 seconds: number;
                 nanoseconds: number;

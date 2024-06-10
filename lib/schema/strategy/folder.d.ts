@@ -453,7 +453,7 @@ export declare const folderSchema: yup.ObjectSchema<{
             };
         };
     };
-    last3Tactics: ({
+    next3Tactics: ({
         createdAt?: {
             seconds: number;
             nanoseconds: number;
@@ -896,6 +896,6 @@ export declare const folderSchema: yup.ObjectSchema<{
     invitationCode: undefined;
     invitationUrl: undefined;
     tacticsById: undefined;
-    last3Tactics: "";
+    next3Tactics: "";
 }, "">;
 export type FolderValue = yup.InferType<typeof folderSchema>;

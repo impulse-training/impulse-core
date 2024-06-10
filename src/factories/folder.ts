@@ -12,5 +12,5 @@ export const makeFolderFactory = (TimestampKlass: typeof TimestampLike) =>
     invitationCode: 'abc123',
     invitationUrl: 'https://impulse.training/support?c=abc123',
     tacticsById: {},
-    last3Tactics: [],
+    next3Tactics: [],
   });

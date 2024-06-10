@@ -80,7 +80,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     } | null | undefined;
     slug?: string | undefined;
     creatorProfileId?: string | undefined;
-    last3Tactics?: ({
+    next3Tactics?: ({
         createdAt?: {
             seconds: number;
             nanoseconds: number;
@@ -947,4 +947,4 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     };
     invitationCode: string;
     invitationUrl: string;
-}, "ordinal" | "title" | "type" | "tacticsById" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "slug" | "creatorProfileId" | "last3Tactics")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "ordinal" | "title" | "type" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "backgroundColor" | "setbackThreshold" | "likesCount" | "timerSeconds" | "isSuggested">;
+}, "ordinal" | "title" | "type" | "tacticsById" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "slug" | "creatorProfileId" | "next3Tactics")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "ordinal" | "title" | "type" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "backgroundColor" | "setbackThreshold" | "likesCount" | "timerSeconds" | "isSuggested">;

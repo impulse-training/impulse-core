@@ -13,7 +13,7 @@ export const folderSchema = strategyBase().shape({
   invitationCode: yup.string().required(),
   invitationUrl: yup.string().url().required(),
   tacticsById: objectOf(tacticSchema),
-  last3Tactics: yup.array().of(tacticSchema),
+  next3Tactics: yup.array().of(tacticSchema),
 });
 
 export type FolderValue = yup.InferType<typeof folderSchema>;
