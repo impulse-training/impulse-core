@@ -1,6 +1,6 @@
 import * as yup from 'yup';
-import { FolderValue, folderSchema } from './folder';
-import { TacticValue, tacticSchemas } from './tactic';
+import { FolderValue, folderSchema } from './strategy/folder';
+import { TacticValue, tacticSchemas } from './strategy/tactic';
 
 export type StrategyValue = TacticValue | FolderValue;
 // A strategy is a tactic or a folder. We store them in the top-level strategies collection as well
@@ -13,9 +13,6 @@ export const strategySchemas: Record<
 > = {
   ...tacticSchemas,
   folder: folderSchema,
-  defaultFor: yup.mixed<'profile'>().oneOf(['profile']),
-  // And recommendations are suggested to users based on their issue (addiction, rumination, etc.)
-  recommendedFor: yup.mixed<'profile'>().oneOf(['profile']).nullable(),
 } as any;
 
 // The tacticSchema is what's used to validate tactics in our database. We set an explicit return

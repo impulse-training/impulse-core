@@ -4,7 +4,6 @@ export * from './application';
 export * from './comment';
 export * from './contact';
 export * from './dayLogsSummary';
-export * from './folder';
 export * from './invitation';
 export * from './issue';
 export * from './location';
@@ -19,10 +18,11 @@ export * from './recoveryCode';
 export * from './routine';
 export * from './spotifyCredentials';
 export * from './strategy';
-export * from './tactic';
+export * from './strategy/folder';
+export * from './strategy/tactic';
 export * from './tacticImpression';
 
 // Utils
-export * from './tactic/question/questionKeyType';
+export * from './strategy/tactic/question/questionKeyType';
 export * from './utils/image';
 export * from './utils/time';

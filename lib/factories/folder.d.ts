@@ -11,6 +11,10 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    recommendedForIssueIds?: string[] | undefined;
+    recommendedForIssueOrdinals?: {
+        [x: string]: number;
+    } | null | undefined;
     slug?: string | undefined;
     creatorProfileId?: string | undefined;
     last3TacticPreviews?: {
@@ -25,15 +29,12 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
-        type: NonNullable<import("../schema").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
         title: string;
+        type: NonNullable<"audio" | "breathe" | "contacts" | import("../schema").QuestionKeyType | "steps" | "task" | "video" | undefined>;
     }[] | undefined;
-    recommendedForIssueIds?: string[] | undefined;
-    recommendedForIssueOrdinals?: {
-        [x: string]: number;
-    } | null | undefined;
+    ordinal: number;
+    title: string;
     type: "folder";
-    name: string;
     invitationCode: string;
     invitationUrl: string;
     tacticPreviewsById: {
@@ -49,8 +50,8 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
                 uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
-            type: NonNullable<import("../schema").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
             title: string;
+            type: NonNullable<"audio" | "breathe" | "contacts" | import("../schema").QuestionKeyType | "steps" | "task" | "video" | undefined>;
         };
     };
-}, "type" | "name" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "last3TacticPreviews" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>;
+}, "ordinal" | "title" | "type" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "slug" | "creatorProfileId" | "last3TacticPreviews")>;

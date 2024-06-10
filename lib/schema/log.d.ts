@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
-import { TacticsById } from './tactic';
+import { TacticsById } from './strategy/tactic';
 export declare const questionSchema: yup.ObjectSchema<{
     prompt: string | undefined;
     type: NonNullable<"time" | "slider" | "counter" | undefined>;
@@ -70,6 +70,10 @@ declare const baseLogSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
         slug?: string | undefined;
         creatorProfileId?: string | undefined;
         last3TacticPreviews?: {
@@ -84,15 +88,12 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
-            type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
             title: string;
+            type: NonNullable<"audio" | "breathe" | "contacts" | import(".").QuestionKeyType | "steps" | "task" | "video" | undefined>;
         }[] | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
+        ordinal: number;
+        title: string;
         type: "folder";
-        name: string;
         invitationCode: string;
         invitationUrl: string;
         tacticPreviewsById: {
@@ -108,8 +109,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     uri?: yup.Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
-                type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
                 title: string;
+                type: NonNullable<"audio" | "breathe" | "contacts" | import(".").QuestionKeyType | "steps" | "task" | "video" | undefined>;
             };
         };
     }[];
@@ -199,6 +200,10 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
         slug?: string | undefined;
         creatorProfileId?: string | undefined;
         last3TacticPreviews?: {
@@ -213,15 +218,12 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
-            type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
             title: string;
+            type: NonNullable<"audio" | "breathe" | "contacts" | import(".").QuestionKeyType | "steps" | "task" | "video" | undefined>;
         }[] | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
+        ordinal: number;
+        title: string;
         type: "folder";
-        name: string;
         invitationCode: string;
         invitationUrl: string;
         tacticPreviewsById: {
@@ -237,8 +239,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     uri?: yup.Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
-                type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
                 title: string;
+                type: NonNullable<"audio" | "breathe" | "contacts" | import(".").QuestionKeyType | "steps" | "task" | "video" | undefined>;
             };
         };
     }[];
@@ -343,6 +345,10 @@ declare const locationLogSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
         slug?: string | undefined;
         creatorProfileId?: string | undefined;
         last3TacticPreviews?: {
@@ -357,15 +363,12 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
-            type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
             title: string;
+            type: NonNullable<"audio" | "breathe" | "contacts" | import(".").QuestionKeyType | "steps" | "task" | "video" | undefined>;
         }[] | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
+        ordinal: number;
+        title: string;
         type: "folder";
-        name: string;
         invitationCode: string;
         invitationUrl: string;
         tacticPreviewsById: {
@@ -381,8 +384,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     uri?: yup.Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
-                type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
                 title: string;
+                type: NonNullable<"audio" | "breathe" | "contacts" | import(".").QuestionKeyType | "steps" | "task" | "video" | undefined>;
             };
         };
     }[];
@@ -477,6 +480,10 @@ declare const timeLogSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
         slug?: string | undefined;
         creatorProfileId?: string | undefined;
         last3TacticPreviews?: {
@@ -491,15 +498,12 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
-            type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
             title: string;
+            type: NonNullable<"audio" | "breathe" | "contacts" | import(".").QuestionKeyType | "steps" | "task" | "video" | undefined>;
         }[] | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
+        ordinal: number;
+        title: string;
         type: "folder";
-        name: string;
         invitationCode: string;
         invitationUrl: string;
         tacticPreviewsById: {
@@ -515,8 +519,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     uri?: yup.Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
-                type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
                 title: string;
+                type: NonNullable<"audio" | "breathe" | "contacts" | import(".").QuestionKeyType | "steps" | "task" | "video" | undefined>;
             };
         };
     }[];
@@ -626,6 +630,10 @@ export declare const logSchema: yup.Lazy<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
         slug?: string | undefined;
         creatorProfileId?: string | undefined;
         last3TacticPreviews?: {
@@ -640,15 +648,12 @@ export declare const logSchema: yup.Lazy<{
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
-            type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
             title: string;
+            type: NonNullable<"audio" | "breathe" | "contacts" | import(".").QuestionKeyType | "steps" | "task" | "video" | undefined>;
         }[] | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
+        ordinal: number;
+        title: string;
         type: "folder";
-        name: string;
         invitationCode: string;
         invitationUrl: string;
         tacticPreviewsById: {
@@ -664,8 +669,8 @@ export declare const logSchema: yup.Lazy<{
                     uri?: yup.Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
-                type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
                 title: string;
+                type: NonNullable<"audio" | "breathe" | "contacts" | import(".").QuestionKeyType | "steps" | "task" | "video" | undefined>;
             };
         };
     }[];
@@ -726,6 +731,10 @@ export declare const logSchema: yup.Lazy<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
         slug?: string | undefined;
         creatorProfileId?: string | undefined;
         last3TacticPreviews?: {
@@ -740,15 +749,12 @@ export declare const logSchema: yup.Lazy<{
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
-            type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
             title: string;
+            type: NonNullable<"audio" | "breathe" | "contacts" | import(".").QuestionKeyType | "steps" | "task" | "video" | undefined>;
         }[] | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
+        ordinal: number;
+        title: string;
         type: "folder";
-        name: string;
         invitationCode: string;
         invitationUrl: string;
         tacticPreviewsById: {
@@ -764,8 +770,8 @@ export declare const logSchema: yup.Lazy<{
                     uri?: yup.Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
-                type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
                 title: string;
+                type: NonNullable<"audio" | "breathe" | "contacts" | import(".").QuestionKeyType | "steps" | "task" | "video" | undefined>;
             };
         };
     }[];
@@ -830,6 +836,10 @@ export declare const logSchema: yup.Lazy<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
         slug?: string | undefined;
         creatorProfileId?: string | undefined;
         last3TacticPreviews?: {
@@ -844,15 +854,12 @@ export declare const logSchema: yup.Lazy<{
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
-            type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
             title: string;
+            type: NonNullable<"audio" | "breathe" | "contacts" | import(".").QuestionKeyType | "steps" | "task" | "video" | undefined>;
         }[] | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
+        ordinal: number;
+        title: string;
         type: "folder";
-        name: string;
         invitationCode: string;
         invitationUrl: string;
         tacticPreviewsById: {
@@ -868,8 +875,8 @@ export declare const logSchema: yup.Lazy<{
                     uri?: yup.Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
-                type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
                 title: string;
+                type: NonNullable<"audio" | "breathe" | "contacts" | import(".").QuestionKeyType | "steps" | "task" | "video" | undefined>;
             };
         };
     }[];

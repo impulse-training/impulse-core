@@ -74,6 +74,10 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    recommendedForIssueIds?: string[] | undefined;
+    recommendedForIssueOrdinals?: {
+        [x: string]: number;
+    } | null | undefined;
     slug?: string | undefined;
     creatorProfileId?: string | undefined;
     last3TacticPreviews?: {
@@ -88,15 +92,12 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
-        type: NonNullable<import("..").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
         title: string;
+        type: NonNullable<"audio" | "breathe" | "contacts" | import("..").QuestionKeyType | "steps" | "task" | "video" | undefined>;
     }[] | undefined;
-    recommendedForIssueIds?: string[] | undefined;
-    recommendedForIssueOrdinals?: {
-        [x: string]: number;
-    } | null | undefined;
+    ordinal: number;
+    title: string;
     type: "folder";
-    name: string;
     invitationCode: string;
     invitationUrl: string;
     tacticPreviewsById: {
@@ -112,8 +113,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
-            type: NonNullable<import("..").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
             title: string;
+            type: NonNullable<"audio" | "breathe" | "contacts" | import("..").QuestionKeyType | "steps" | "task" | "video" | undefined>;
         };
     };
-}, "type" | "name" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "last3TacticPreviews" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "ordinal" | "title" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "optionsById" | "backgroundColor" | "language" | "linkUrl" | "likesCount" | "timerSeconds" | "isSuggested">;
+}, "ordinal" | "title" | "type" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "slug" | "creatorProfileId" | "last3TacticPreviews")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "ordinal" | "title" | "type" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "backgroundColor" | "setbackThreshold" | "likesCount" | "timerSeconds" | "isSuggested">;

@@ -44,15 +44,6 @@ export const optionSchema = yup.lazy(value => {
   });
 }) as yup.Lazy<ValidatedOption>;
 
-export const optionWithStrategiesPathSchema = yup.lazy(value => {
-  return optionSchemas[value.type as OptionValue['type']].shape({
-    strategiesPath: yup.string().required(),
-  });
-});
-export type OptionWithStrategiesPath = yup.InferType<
-  typeof optionWithStrategiesPathSchema
->;
-
 // / This type represents the union of all possible validated tactic objects
 type ValidatedOption = {
   [K in OptionValue['type']]: yup.InferType<(typeof optionSchemas)[K]>;

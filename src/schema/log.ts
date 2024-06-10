@@ -2,8 +2,8 @@
 // take)
 import * as yup from 'yup';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
-import { folderSchema } from './folder';
-import { TacticsById, tacticInfoSchema } from './tactic';
+import { folderSchema } from './strategy/folder';
+import { TacticsById, tacticInfoSchema } from './strategy/tactic';
 import { optionalStringArray, requiredStringArray } from './utils/array';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';

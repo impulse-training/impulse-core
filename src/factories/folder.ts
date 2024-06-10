@@ -5,7 +5,8 @@ import { TimestampLike } from '../utils/firestore/TimestampLike';
 export const makeFolderFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<FolderValue>({
     type: 'folder',
-    name: 'Movement',
+    title: 'Movement',
+    ordinal: 0,
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     invitationCode: 'abc123',

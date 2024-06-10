@@ -1,6 +1,6 @@
 import * as yup from 'yup';
-import { FolderValue } from './folder';
-import { TacticValue } from './tactic';
+import { FolderValue } from './strategy/folder';
+import { TacticValue } from './strategy/tactic';
 export type StrategyValue = TacticValue | FolderValue;
 export declare const strategySchemas: Record<StrategyValue['type'], yup.ObjectSchema<StrategyValue>>;
 export declare const strategySchema: yup.Lazy<ValidatedStrategy, yup.AnyObject, any>;
