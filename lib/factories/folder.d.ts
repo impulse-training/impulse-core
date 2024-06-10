@@ -28,8 +28,6 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         type: NonNullable<import("../schema").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
         title: string;
     }[] | undefined;
-    defaultFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
-    recommendedFor?: "time" | "impulse" | null | undefined;
     recommendedForIssueIds?: string[] | undefined;
     recommendedForIssueOrdinals?: {
         [x: string]: number;
@@ -55,4 +53,4 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             title: string;
         };
     };
-}, "type" | "name" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "last3TacticPreviews" | "defaultFor" | "recommendedFor" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>;
+}, "type" | "name" | "invitationCode" | "invitationUrl" | "tacticPreviewsById" | ("createdAt" | "updatedAt" | "slug" | "creatorProfileId" | "last3TacticPreviews" | "recommendedForIssueIds" | "recommendedForIssueOrdinals")>;

@@ -13,6 +13,9 @@ export const strategySchemas: Record<
 > = {
   ...tacticSchemas,
   folder: folderSchema,
+  defaultFor: yup.mixed<'profile'>().oneOf(['profile']),
+  // And recommendations are suggested to users based on their issue (addiction, rumination, etc.)
+  recommendedFor: yup.mixed<'profile'>().oneOf(['profile']).nullable(),
 } as any;
 
 // The tacticSchema is what's used to validate tactics in our database. We set an explicit return

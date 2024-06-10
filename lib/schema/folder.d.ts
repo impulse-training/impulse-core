@@ -74,8 +74,6 @@ export declare const folderSchema: yup.ObjectSchema<{
         type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
         title: string;
     }[] | undefined;
-    defaultFor: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
-    recommendedFor: "time" | "impulse" | null | undefined;
     recommendedForIssueIds: string[] | undefined;
     recommendedForIssueOrdinals: {
         [x: string]: number;
@@ -91,8 +89,6 @@ export declare const folderSchema: yup.ObjectSchema<{
     invitationUrl: undefined;
     tacticPreviewsById: undefined;
     last3TacticPreviews: "";
-    defaultFor: undefined;
-    recommendedFor: undefined;
     recommendedForIssueIds: "";
     recommendedForIssueOrdinals: undefined;
 }, "">;

@@ -87,8 +87,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
             type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
             title: string;
         }[] | undefined;
-        defaultFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
-        recommendedFor?: "time" | "impulse" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -218,8 +216,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
             title: string;
         }[] | undefined;
-        defaultFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
-        recommendedFor?: "time" | "impulse" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -364,8 +360,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
             type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
             title: string;
         }[] | undefined;
-        defaultFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
-        recommendedFor?: "time" | "impulse" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -500,8 +494,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
             type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
             title: string;
         }[] | undefined;
-        defaultFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
-        recommendedFor?: "time" | "impulse" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -651,8 +643,6 @@ export declare const logSchema: yup.Lazy<{
             type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
             title: string;
         }[] | undefined;
-        defaultFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
-        recommendedFor?: "time" | "impulse" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -753,8 +743,6 @@ export declare const logSchema: yup.Lazy<{
             type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
             title: string;
         }[] | undefined;
-        defaultFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
-        recommendedFor?: "time" | "impulse" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -859,8 +847,6 @@ export declare const logSchema: yup.Lazy<{
             type: NonNullable<import(".").QuestionKeyType | "audio" | "breathe" | "contacts" | "steps" | "task" | "video" | undefined>;
             title: string;
         }[] | undefined;
-        defaultFor?: "trackTactics" | "debriefTactics" | "reflectionTactics" | undefined;
-        recommendedFor?: "time" | "impulse" | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;

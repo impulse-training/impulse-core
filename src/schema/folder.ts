@@ -31,14 +31,6 @@ export const folderSchema = yup.object().shape({
   tacticPreviewsById: objectOf(tacticPreviewSchema.required()),
   last3TacticPreviews: yup.array().of(tacticPreviewSchema.required()),
   // Template support groups are used to populate user's data on signup
-  defaultFor: yup
-    .mixed<'trackTactics' | 'debriefTactics' | 'reflectionTactics'>()
-    .oneOf(['trackTactics', 'debriefTactics', 'reflectionTactics']),
-  // And recommendations are suggested to users based on their issue (addiction, rumination, etc.)
-  recommendedFor: yup
-    .mixed<'impulse' | 'time'>()
-    .oneOf(['impulse', 'time'])
-    .nullable(),
   recommendedForIssueIds: optionalStringArray,
   recommendedForIssueOrdinals: optionalObjectOf(yup.number().required()),
 });
