@@ -24,16 +24,14 @@ export const tacticDataSchema = yup.object({
     .mixed<'time' | 'custom' | 'impulse'>()
     .oneOf(['time', 'custom', 'impulse'])
     .required(),
+  setAt: timestampSchema,
   customUnit: yup.string(),
   optionId: yup.string().nullable(),
   optionLabel: yup.string(),
   optionColor: yup.string(),
   optionTextColor: yup.string(),
   isCompleted: yup.boolean(),
-  nextStrategiesPath: yup.string(),
   formattedValue: yup.string().required(),
-  lowEmoji: yup.string().notRequired(),
-  highEmoji: yup.string().notRequired(),
 });
 export type TacticData = yup.InferType<typeof tacticDataSchema>;
 

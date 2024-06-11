@@ -9,9 +9,11 @@ export declare const profileLogsSummarySchema: yup.Lazy<{
             optionColor?: string | undefined;
             optionTextColor?: string | undefined;
             isCompleted?: boolean | undefined;
-            nextStrategiesPath?: string | undefined;
-            lowEmoji?: yup.Maybe<string | undefined>;
-            highEmoji?: yup.Maybe<string | undefined>;
+            setAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            };
             unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
             formattedValue: string;
         };

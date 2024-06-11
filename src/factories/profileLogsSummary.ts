@@ -10,6 +10,7 @@ export const makeProfileLogsSummaryFactory = (
       tactic1: {
         unit: 'time',
         value: 1,
+        setAt: TimestampKlass.now(),
         formattedValue: '1 minute',
         optionId: 'tactic1',
         optionColor: 'blue',

@@ -169,8 +169,6 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        lowEmoji?: import("yup").Maybe<string | undefined>;
-        highEmoji?: import("yup").Maybe<string | undefined>;
         options?: ({
             createdAt?: {
                 seconds: number;
@@ -226,6 +224,8 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             color: string;
             textColor: string;
         })[] | undefined;
+        lowEmoji?: import("yup").Maybe<string | undefined>;
+        highEmoji?: import("yup").Maybe<string | undefined>;
         ordinal: number;
         title: string;
         type: import("../schema").QuestionKeyType;
@@ -603,8 +603,6 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            lowEmoji?: import("yup").Maybe<string | undefined>;
-            highEmoji?: import("yup").Maybe<string | undefined>;
             options?: ({
                 createdAt?: {
                     seconds: number;
@@ -660,6 +658,8 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
                 color: string;
                 textColor: string;
             })[] | undefined;
+            lowEmoji?: import("yup").Maybe<string | undefined>;
+            highEmoji?: import("yup").Maybe<string | undefined>;
             ordinal: number;
             title: string;
             type: import("../schema").QuestionKeyType;

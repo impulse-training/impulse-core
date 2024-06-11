@@ -174,8 +174,6 @@ export declare const folderSchema: yup.ObjectSchema<{
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            lowEmoji?: yup.Maybe<string | undefined>;
-            highEmoji?: yup.Maybe<string | undefined>;
             options?: ({
                 createdAt?: {
                     seconds: number;
@@ -231,6 +229,8 @@ export declare const folderSchema: yup.ObjectSchema<{
                 color: string;
                 textColor: string;
             })[] | undefined;
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             ordinal: number;
             title: string;
             type: import("..").QuestionKeyType;
@@ -605,8 +605,6 @@ export declare const folderSchema: yup.ObjectSchema<{
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        lowEmoji?: yup.Maybe<string | undefined>;
-        highEmoji?: yup.Maybe<string | undefined>;
         options?: ({
             createdAt?: {
                 seconds: number;
@@ -662,6 +660,8 @@ export declare const folderSchema: yup.ObjectSchema<{
             color: string;
             textColor: string;
         })[] | undefined;
+        lowEmoji?: yup.Maybe<string | undefined>;
+        highEmoji?: yup.Maybe<string | undefined>;
         ordinal: number;
         title: string;
         type: import("..").QuestionKeyType;

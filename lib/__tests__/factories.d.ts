@@ -13,9 +13,11 @@ export declare const factories: {
                     optionColor?: string | undefined;
                     optionTextColor?: string | undefined;
                     isCompleted?: boolean | undefined;
-                    nextStrategiesPath?: string | undefined;
-                    lowEmoji?: import("yup").Maybe<string | undefined>;
-                    highEmoji?: import("yup").Maybe<string | undefined>;
+                    setAt: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    };
                     unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
                     formattedValue: string;
                 };
@@ -89,9 +91,11 @@ export declare const factories: {
                 optionColor?: string | undefined;
                 optionTextColor?: string | undefined;
                 isCompleted?: boolean | undefined;
-                nextStrategiesPath?: string | undefined;
-                lowEmoji?: import("yup").Maybe<string | undefined>;
-                highEmoji?: import("yup").Maybe<string | undefined>;
+                setAt: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                };
                 unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
                 formattedValue: string;
             };
@@ -376,8 +380,6 @@ export declare const factories: {
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            lowEmoji?: import("yup").Maybe<string | undefined>;
-            highEmoji?: import("yup").Maybe<string | undefined>;
             options?: ({
                 createdAt?: {
                     seconds: number;
@@ -433,6 +435,8 @@ export declare const factories: {
                 color: string;
                 textColor: string;
             })[] | undefined;
+            lowEmoji?: import("yup").Maybe<string | undefined>;
+            highEmoji?: import("yup").Maybe<string | undefined>;
             ordinal: number;
             title: string;
             type: import("..").QuestionKeyType;
@@ -810,8 +814,6 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                lowEmoji?: import("yup").Maybe<string | undefined>;
-                highEmoji?: import("yup").Maybe<string | undefined>;
                 options?: ({
                     createdAt?: {
                         seconds: number;
@@ -867,6 +869,8 @@ export declare const factories: {
                     color: string;
                     textColor: string;
                 })[] | undefined;
+                lowEmoji?: import("yup").Maybe<string | undefined>;
+                highEmoji?: import("yup").Maybe<string | undefined>;
                 ordinal: number;
                 title: string;
                 type: import("..").QuestionKeyType;

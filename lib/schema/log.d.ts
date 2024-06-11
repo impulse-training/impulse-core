@@ -14,29 +14,33 @@ export type QuestionValue = yup.InferType<typeof questionSchema>;
 export declare const tacticDataSchema: yup.ObjectSchema<{
     value: number | undefined;
     unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
+    setAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    };
     customUnit: string | undefined;
     optionId: string | null | undefined;
     optionLabel: string | undefined;
     optionColor: string | undefined;
     optionTextColor: string | undefined;
     isCompleted: boolean | undefined;
-    nextStrategiesPath: string | undefined;
     formattedValue: string;
-    lowEmoji: yup.Maybe<string | undefined>;
-    highEmoji: yup.Maybe<string | undefined>;
 }, yup.AnyObject, {
     value: undefined;
     unit: undefined;
+    setAt: {
+        seconds: undefined;
+        nanoseconds: undefined;
+        toDate: undefined;
+    };
     customUnit: undefined;
     optionId: undefined;
     optionLabel: undefined;
     optionColor: undefined;
     optionTextColor: undefined;
     isCompleted: undefined;
-    nextStrategiesPath: undefined;
     formattedValue: undefined;
-    lowEmoji: undefined;
-    highEmoji: undefined;
 }, "">;
 export type TacticData = yup.InferType<typeof tacticDataSchema>;
 export type BaseLogValue = WithTypes<typeof baseLogSchema>;
@@ -228,8 +232,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            lowEmoji?: yup.Maybe<string | undefined>;
-            highEmoji?: yup.Maybe<string | undefined>;
             options?: ({
                 createdAt?: {
                     seconds: number;
@@ -285,6 +287,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 color: string;
                 textColor: string;
             })[] | undefined;
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             ordinal: number;
             title: string;
             type: import(".").QuestionKeyType;
@@ -662,8 +666,6 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                lowEmoji?: yup.Maybe<string | undefined>;
-                highEmoji?: yup.Maybe<string | undefined>;
                 options?: ({
                     createdAt?: {
                         seconds: number;
@@ -719,6 +721,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
                     color: string;
                     textColor: string;
                 })[] | undefined;
+                lowEmoji?: yup.Maybe<string | undefined>;
+                highEmoji?: yup.Maybe<string | undefined>;
                 ordinal: number;
                 title: string;
                 type: import(".").QuestionKeyType;
@@ -963,9 +967,11 @@ declare const baseLogSchema: yup.ObjectSchema<{
             optionColor?: string | undefined;
             optionTextColor?: string | undefined;
             isCompleted?: boolean | undefined;
-            nextStrategiesPath?: string | undefined;
-            lowEmoji?: yup.Maybe<string | undefined>;
-            highEmoji?: yup.Maybe<string | undefined>;
+            setAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            };
             unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
             formattedValue: string;
         };
@@ -1188,8 +1194,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            lowEmoji?: yup.Maybe<string | undefined>;
-            highEmoji?: yup.Maybe<string | undefined>;
             options?: ({
                 createdAt?: {
                     seconds: number;
@@ -1245,6 +1249,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 color: string;
                 textColor: string;
             })[] | undefined;
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             ordinal: number;
             title: string;
             type: import(".").QuestionKeyType;
@@ -1622,8 +1628,6 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                lowEmoji?: yup.Maybe<string | undefined>;
-                highEmoji?: yup.Maybe<string | undefined>;
                 options?: ({
                     createdAt?: {
                         seconds: number;
@@ -1679,6 +1683,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                     color: string;
                     textColor: string;
                 })[] | undefined;
+                lowEmoji?: yup.Maybe<string | undefined>;
+                highEmoji?: yup.Maybe<string | undefined>;
                 ordinal: number;
                 title: string;
                 type: import(".").QuestionKeyType;
@@ -1923,9 +1929,11 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             optionColor?: string | undefined;
             optionTextColor?: string | undefined;
             isCompleted?: boolean | undefined;
-            nextStrategiesPath?: string | undefined;
-            lowEmoji?: yup.Maybe<string | undefined>;
-            highEmoji?: yup.Maybe<string | undefined>;
+            setAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            };
             unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
             formattedValue: string;
         };
@@ -2163,8 +2171,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            lowEmoji?: yup.Maybe<string | undefined>;
-            highEmoji?: yup.Maybe<string | undefined>;
             options?: ({
                 createdAt?: {
                     seconds: number;
@@ -2220,6 +2226,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 color: string;
                 textColor: string;
             })[] | undefined;
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             ordinal: number;
             title: string;
             type: import(".").QuestionKeyType;
@@ -2597,8 +2605,6 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                lowEmoji?: yup.Maybe<string | undefined>;
-                highEmoji?: yup.Maybe<string | undefined>;
                 options?: ({
                     createdAt?: {
                         seconds: number;
@@ -2654,6 +2660,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
                     color: string;
                     textColor: string;
                 })[] | undefined;
+                lowEmoji?: yup.Maybe<string | undefined>;
+                highEmoji?: yup.Maybe<string | undefined>;
                 ordinal: number;
                 title: string;
                 type: import(".").QuestionKeyType;
@@ -2898,9 +2906,11 @@ declare const locationLogSchema: yup.ObjectSchema<{
             optionColor?: string | undefined;
             optionTextColor?: string | undefined;
             isCompleted?: boolean | undefined;
-            nextStrategiesPath?: string | undefined;
-            lowEmoji?: yup.Maybe<string | undefined>;
-            highEmoji?: yup.Maybe<string | undefined>;
+            setAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            };
             unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
             formattedValue: string;
         };
@@ -3128,8 +3138,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            lowEmoji?: yup.Maybe<string | undefined>;
-            highEmoji?: yup.Maybe<string | undefined>;
             options?: ({
                 createdAt?: {
                     seconds: number;
@@ -3185,6 +3193,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 color: string;
                 textColor: string;
             })[] | undefined;
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             ordinal: number;
             title: string;
             type: import(".").QuestionKeyType;
@@ -3562,8 +3572,6 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                lowEmoji?: yup.Maybe<string | undefined>;
-                highEmoji?: yup.Maybe<string | undefined>;
                 options?: ({
                     createdAt?: {
                         seconds: number;
@@ -3619,6 +3627,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
                     color: string;
                     textColor: string;
                 })[] | undefined;
+                lowEmoji?: yup.Maybe<string | undefined>;
+                highEmoji?: yup.Maybe<string | undefined>;
                 ordinal: number;
                 title: string;
                 type: import(".").QuestionKeyType;
@@ -3863,9 +3873,11 @@ declare const timeLogSchema: yup.ObjectSchema<{
             optionColor?: string | undefined;
             optionTextColor?: string | undefined;
             isCompleted?: boolean | undefined;
-            nextStrategiesPath?: string | undefined;
-            lowEmoji?: yup.Maybe<string | undefined>;
-            highEmoji?: yup.Maybe<string | undefined>;
+            setAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            };
             unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
             formattedValue: string;
         };
@@ -4108,8 +4120,6 @@ export declare const logSchema: yup.Lazy<{
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            lowEmoji?: yup.Maybe<string | undefined>;
-            highEmoji?: yup.Maybe<string | undefined>;
             options?: ({
                 createdAt?: {
                     seconds: number;
@@ -4165,6 +4175,8 @@ export declare const logSchema: yup.Lazy<{
                 color: string;
                 textColor: string;
             })[] | undefined;
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             ordinal: number;
             title: string;
             type: import(".").QuestionKeyType;
@@ -4542,8 +4554,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                lowEmoji?: yup.Maybe<string | undefined>;
-                highEmoji?: yup.Maybe<string | undefined>;
                 options?: ({
                     createdAt?: {
                         seconds: number;
@@ -4599,6 +4609,8 @@ export declare const logSchema: yup.Lazy<{
                     color: string;
                     textColor: string;
                 })[] | undefined;
+                lowEmoji?: yup.Maybe<string | undefined>;
+                highEmoji?: yup.Maybe<string | undefined>;
                 ordinal: number;
                 title: string;
                 type: import(".").QuestionKeyType;
@@ -4834,9 +4846,11 @@ export declare const logSchema: yup.Lazy<{
             optionColor?: string | undefined;
             optionTextColor?: string | undefined;
             isCompleted?: boolean | undefined;
-            nextStrategiesPath?: string | undefined;
-            lowEmoji?: yup.Maybe<string | undefined>;
-            highEmoji?: yup.Maybe<string | undefined>;
+            setAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            };
             unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
             formattedValue: string;
         };
@@ -5039,8 +5053,6 @@ export declare const logSchema: yup.Lazy<{
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            lowEmoji?: yup.Maybe<string | undefined>;
-            highEmoji?: yup.Maybe<string | undefined>;
             options?: ({
                 createdAt?: {
                     seconds: number;
@@ -5096,6 +5108,8 @@ export declare const logSchema: yup.Lazy<{
                 color: string;
                 textColor: string;
             })[] | undefined;
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             ordinal: number;
             title: string;
             type: import(".").QuestionKeyType;
@@ -5473,8 +5487,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                lowEmoji?: yup.Maybe<string | undefined>;
-                highEmoji?: yup.Maybe<string | undefined>;
                 options?: ({
                     createdAt?: {
                         seconds: number;
@@ -5530,6 +5542,8 @@ export declare const logSchema: yup.Lazy<{
                     color: string;
                     textColor: string;
                 })[] | undefined;
+                lowEmoji?: yup.Maybe<string | undefined>;
+                highEmoji?: yup.Maybe<string | undefined>;
                 ordinal: number;
                 title: string;
                 type: import(".").QuestionKeyType;
@@ -5765,9 +5779,11 @@ export declare const logSchema: yup.Lazy<{
             optionColor?: string | undefined;
             optionTextColor?: string | undefined;
             isCompleted?: boolean | undefined;
-            nextStrategiesPath?: string | undefined;
-            lowEmoji?: yup.Maybe<string | undefined>;
-            highEmoji?: yup.Maybe<string | undefined>;
+            setAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            };
             unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
             formattedValue: string;
         };
@@ -5974,8 +5990,6 @@ export declare const logSchema: yup.Lazy<{
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            lowEmoji?: yup.Maybe<string | undefined>;
-            highEmoji?: yup.Maybe<string | undefined>;
             options?: ({
                 createdAt?: {
                     seconds: number;
@@ -6031,6 +6045,8 @@ export declare const logSchema: yup.Lazy<{
                 color: string;
                 textColor: string;
             })[] | undefined;
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             ordinal: number;
             title: string;
             type: import(".").QuestionKeyType;
@@ -6408,8 +6424,6 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                lowEmoji?: yup.Maybe<string | undefined>;
-                highEmoji?: yup.Maybe<string | undefined>;
                 options?: ({
                     createdAt?: {
                         seconds: number;
@@ -6465,6 +6479,8 @@ export declare const logSchema: yup.Lazy<{
                     color: string;
                     textColor: string;
                 })[] | undefined;
+                lowEmoji?: yup.Maybe<string | undefined>;
+                highEmoji?: yup.Maybe<string | undefined>;
                 ordinal: number;
                 title: string;
                 type: import(".").QuestionKeyType;
@@ -6700,9 +6716,11 @@ export declare const logSchema: yup.Lazy<{
             optionColor?: string | undefined;
             optionTextColor?: string | undefined;
             isCompleted?: boolean | undefined;
-            nextStrategiesPath?: string | undefined;
-            lowEmoji?: yup.Maybe<string | undefined>;
-            highEmoji?: yup.Maybe<string | undefined>;
+            setAt: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            };
             unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
             formattedValue: string;
         };

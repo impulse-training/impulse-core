@@ -13,9 +13,11 @@ export declare const dayLogsSummaryFactory: Factory.Sync.Factory<{
                 optionColor?: string | undefined;
                 optionTextColor?: string | undefined;
                 isCompleted?: boolean | undefined;
-                nextStrategiesPath?: string | undefined;
-                lowEmoji?: import("yup").Maybe<string | undefined>;
-                highEmoji?: import("yup").Maybe<string | undefined>;
+                setAt: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                };
                 unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
                 formattedValue: string;
             };
