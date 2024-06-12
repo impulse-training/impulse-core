@@ -19,7 +19,7 @@ declare const logSummarySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             };
-            unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
+            unit: NonNullable<"text" | "time" | "custom" | undefined>;
             formattedValue: string;
         };
     };
@@ -107,7 +107,7 @@ export declare const dayLogsSummarySchema: yup.Lazy<{
                     nanoseconds: number;
                     toDate: Function;
                 };
-                unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
+                unit: NonNullable<"text" | "time" | "custom" | undefined>;
                 formattedValue: string;
             };
         };

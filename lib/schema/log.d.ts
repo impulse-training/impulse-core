@@ -13,7 +13,7 @@ export declare const questionSchema: yup.ObjectSchema<{
 export type QuestionValue = yup.InferType<typeof questionSchema>;
 export declare const tacticDataSchema: yup.ObjectSchema<{
     value: number | undefined;
-    unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
+    unit: NonNullable<"text" | "time" | "custom" | undefined>;
     setAt: {
         seconds: number;
         nanoseconds: number;
@@ -972,7 +972,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             };
-            unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
+            unit: NonNullable<"text" | "time" | "custom" | undefined>;
             formattedValue: string;
         };
     };
@@ -1934,7 +1934,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             };
-            unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
+            unit: NonNullable<"text" | "time" | "custom" | undefined>;
             formattedValue: string;
         };
     };
@@ -2911,7 +2911,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             };
-            unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
+            unit: NonNullable<"text" | "time" | "custom" | undefined>;
             formattedValue: string;
         };
     };
@@ -3878,7 +3878,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             };
-            unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
+            unit: NonNullable<"text" | "time" | "custom" | undefined>;
             formattedValue: string;
         };
     };
@@ -4851,7 +4851,7 @@ export declare const logSchema: yup.Lazy<{
                 nanoseconds: number;
                 toDate: Function;
             };
-            unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
+            unit: NonNullable<"text" | "time" | "custom" | undefined>;
             formattedValue: string;
         };
     };
@@ -5784,7 +5784,7 @@ export declare const logSchema: yup.Lazy<{
                 nanoseconds: number;
                 toDate: Function;
             };
-            unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
+            unit: NonNullable<"text" | "time" | "custom" | undefined>;
             formattedValue: string;
         };
     };
@@ -6721,7 +6721,7 @@ export declare const logSchema: yup.Lazy<{
                 nanoseconds: number;
                 toDate: Function;
             };
-            unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
+            unit: NonNullable<"text" | "time" | "custom" | undefined>;
             formattedValue: string;
         };
     };

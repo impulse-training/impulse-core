@@ -14,7 +14,7 @@ export declare const profileLogsSummarySchema: yup.Lazy<{
                 nanoseconds: number;
                 toDate: Function;
             };
-            unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
+            unit: NonNullable<"text" | "time" | "custom" | undefined>;
             formattedValue: string;
         };
     };

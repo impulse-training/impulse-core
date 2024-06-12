@@ -18,7 +18,7 @@ export declare const dayLogsSummaryFactory: Factory.Sync.Factory<{
                     nanoseconds: number;
                     toDate: Function;
                 };
-                unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
+                unit: NonNullable<"text" | "time" | "custom" | undefined>;
                 formattedValue: string;
             };
         };

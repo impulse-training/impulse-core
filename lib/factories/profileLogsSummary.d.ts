@@ -15,7 +15,7 @@ export declare const makeProfileLogsSummaryFactory: (TimestampKlass: typeof Time
                 nanoseconds: number;
                 toDate: Function;
             };
-            unit: NonNullable<"time" | "custom" | "impulse" | undefined>;
+            unit: NonNullable<"text" | "time" | "custom" | undefined>;
             formattedValue: string;
         };
     };
