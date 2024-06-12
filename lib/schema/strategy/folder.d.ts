@@ -140,10 +140,10 @@ export declare const folderSchema: yup.ObjectSchema<{
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            options?: string[] | undefined;
             ordinal: number;
             title: string;
             type: import("..").QuestionKeyType;
-            options: string[];
         } | {
             createdAt?: {
                 seconds: number;
@@ -571,10 +571,10 @@ export declare const folderSchema: yup.ObjectSchema<{
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
+        options?: string[] | undefined;
         ordinal: number;
         title: string;
         type: import("..").QuestionKeyType;
-        options: string[];
     } | {
         createdAt?: {
             seconds: number;

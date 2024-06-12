@@ -197,10 +197,10 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            options?: string[] | undefined;
             ordinal: number;
             title: string;
             type: import("..").QuestionKeyType;
-            options: string[];
         } | {
             createdAt?: {
                 seconds: number;
@@ -630,10 +630,10 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
+        options?: string[] | undefined;
         ordinal: number;
         title: string;
         type: import("..").QuestionKeyType;
-        options: string[];
     } | {
         createdAt?: {
             seconds: number;

@@ -32,7 +32,7 @@ export declare const questionMultipleChoiceTacticSchema: yup.ObjectSchema<{
     likesCount: number | null | undefined;
     timerSeconds: yup.Maybe<number | undefined>;
     isSuggested: boolean | undefined;
-    options: string[];
+    options: string[] | undefined;
 }, yup.AnyObject, {
     recommendedForIssueIds: "";
     recommendedForIssueOrdinals: undefined;

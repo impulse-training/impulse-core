@@ -134,10 +134,10 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            options?: string[] | undefined;
             ordinal: number;
             title: string;
             type: import("../schema").QuestionKeyType;
-            options: string[];
         } | {
             createdAt?: {
                 seconds: number;
@@ -567,10 +567,10 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
+        options?: string[] | undefined;
         ordinal: number;
         title: string;
         type: import("../schema").QuestionKeyType;
-        options: string[];
     } | {
         createdAt?: {
             seconds: number;

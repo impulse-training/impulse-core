@@ -197,10 +197,10 @@ declare const baseLogSchema: yup.ObjectSchema<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
+                options?: string[] | undefined;
                 ordinal: number;
                 title: string;
                 type: import(".").QuestionKeyType;
-                options: string[];
             } | {
                 createdAt?: {
                     seconds: number;
@@ -630,10 +630,10 @@ declare const baseLogSchema: yup.ObjectSchema<{
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            options?: string[] | undefined;
             ordinal: number;
             title: string;
             type: import(".").QuestionKeyType;
-            options: string[];
         } | {
             createdAt?: {
                 seconds: number;
@@ -1159,10 +1159,10 @@ declare const impulseLogSchema: yup.ObjectSchema<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
+                options?: string[] | undefined;
                 ordinal: number;
                 title: string;
                 type: import(".").QuestionKeyType;
-                options: string[];
             } | {
                 createdAt?: {
                     seconds: number;
@@ -1592,10 +1592,10 @@ declare const impulseLogSchema: yup.ObjectSchema<{
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            options?: string[] | undefined;
             ordinal: number;
             title: string;
             type: import(".").QuestionKeyType;
-            options: string[];
         } | {
             createdAt?: {
                 seconds: number;
@@ -2136,10 +2136,10 @@ declare const locationLogSchema: yup.ObjectSchema<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
+                options?: string[] | undefined;
                 ordinal: number;
                 title: string;
                 type: import(".").QuestionKeyType;
-                options: string[];
             } | {
                 createdAt?: {
                     seconds: number;
@@ -2569,10 +2569,10 @@ declare const locationLogSchema: yup.ObjectSchema<{
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            options?: string[] | undefined;
             ordinal: number;
             title: string;
             type: import(".").QuestionKeyType;
-            options: string[];
         } | {
             createdAt?: {
                 seconds: number;
@@ -3103,10 +3103,10 @@ declare const timeLogSchema: yup.ObjectSchema<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
+                options?: string[] | undefined;
                 ordinal: number;
                 title: string;
                 type: import(".").QuestionKeyType;
-                options: string[];
             } | {
                 createdAt?: {
                     seconds: number;
@@ -3536,10 +3536,10 @@ declare const timeLogSchema: yup.ObjectSchema<{
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            options?: string[] | undefined;
             ordinal: number;
             title: string;
             type: import(".").QuestionKeyType;
-            options: string[];
         } | {
             createdAt?: {
                 seconds: number;
@@ -4085,10 +4085,10 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
+                options?: string[] | undefined;
                 ordinal: number;
                 title: string;
                 type: import(".").QuestionKeyType;
-                options: string[];
             } | {
                 createdAt?: {
                     seconds: number;
@@ -4518,10 +4518,10 @@ export declare const logSchema: yup.Lazy<{
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            options?: string[] | undefined;
             ordinal: number;
             title: string;
             type: import(".").QuestionKeyType;
-            options: string[];
         } | {
             createdAt?: {
                 seconds: number;
@@ -5018,10 +5018,10 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
+                options?: string[] | undefined;
                 ordinal: number;
                 title: string;
                 type: import(".").QuestionKeyType;
-                options: string[];
             } | {
                 createdAt?: {
                     seconds: number;
@@ -5451,10 +5451,10 @@ export declare const logSchema: yup.Lazy<{
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            options?: string[] | undefined;
             ordinal: number;
             title: string;
             type: import(".").QuestionKeyType;
-            options: string[];
         } | {
             createdAt?: {
                 seconds: number;
@@ -5955,10 +5955,10 @@ export declare const logSchema: yup.Lazy<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
+                options?: string[] | undefined;
                 ordinal: number;
                 title: string;
                 type: import(".").QuestionKeyType;
-                options: string[];
             } | {
                 createdAt?: {
                     seconds: number;
@@ -6388,10 +6388,10 @@ export declare const logSchema: yup.Lazy<{
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            options?: string[] | undefined;
             ordinal: number;
             title: string;
             type: import(".").QuestionKeyType;
-            options: string[];
         } | {
             createdAt?: {
                 seconds: number;
