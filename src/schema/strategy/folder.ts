@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-import { objectOf } from '../utils/objectOf';
+import { optionalObjectOf } from '../utils/objectOf';
 import { optionalTimestampSchema } from '../utils/timestamp';
 import strategyBase from './base';
 import { tacticSchema } from './tactic';
@@ -12,7 +12,7 @@ export const folderSchema = strategyBase().shape({
   creatorProfileId: yup.string(),
   invitationCode: yup.string().required(),
   invitationUrl: yup.string().url().required(),
-  tacticsById: objectOf(tacticSchema),
+  tacticsById: optionalObjectOf(tacticSchema),
   next3Tactics: yup.array().of(tacticSchema),
 });
 

@@ -452,7 +452,7 @@ export declare const folderSchema: yup.ObjectSchema<{
                 duration: number;
             };
         };
-    };
+    } | null | undefined;
     next3Tactics: ({
         createdAt?: {
             seconds: number;
