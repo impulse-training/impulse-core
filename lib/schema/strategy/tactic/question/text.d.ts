@@ -112,4 +112,4 @@ export declare const questionTextSchema: yup.ObjectSchema<{
     isSuggested: undefined;
     options: "";
 }, "">;
-export type QuestionTextValue = yup.InferType<typeof questionTextSchema>;
+export type QuestionTextTacticValue = yup.InferType<typeof questionTextSchema>;

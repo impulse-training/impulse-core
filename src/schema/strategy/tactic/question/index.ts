@@ -11,7 +11,7 @@ import {
   QuestionSliderTacticValue,
   questionSliderTacticSchema,
 } from './slider';
-import { QuestionTextValue, questionTextSchema } from './text';
+import { QuestionTextTacticValue, questionTextSchema } from './text';
 import { QuestionTimeTacticValue, questionTimeTacticSchema } from './time';
 
 export * from './counter';
@@ -55,7 +55,7 @@ type ValidatedQuestionTactic = {
 }[QuestionTacticValue['type']];
 
 export type QuestionTacticValue =
-  | QuestionTextValue
+  | QuestionTextTacticValue
   | QuestionSliderTacticValue
   | QuestionTimeTacticValue
   | QuestionCounterTacticValue

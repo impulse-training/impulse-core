@@ -2,7 +2,7 @@ import * as yup from 'yup';
 import { QuestionCounterTacticValue } from './counter';
 import { QuestionMultipleChoiceTacticValue } from './multipleChoice';
 import { QuestionSliderTacticValue } from './slider';
-import { QuestionTextValue } from './text';
+import { QuestionTextTacticValue } from './text';
 import { QuestionTimeTacticValue } from './time';
 export * from './counter';
 export * from './multipleChoice';
@@ -13,4 +13,4 @@ export declare const questionTacticSchema: yup.Lazy<ValidatedQuestionTactic, yup
 type ValidatedQuestionTactic = {
     [K in QuestionTacticValue['type']]: yup.InferType<(typeof questionTacticSchemas)[K]>;
 }[QuestionTacticValue['type']];
-export type QuestionTacticValue = QuestionTextValue | QuestionSliderTacticValue | QuestionTimeTacticValue | QuestionCounterTacticValue | QuestionMultipleChoiceTacticValue;
+export type QuestionTacticValue = QuestionTextTacticValue | QuestionSliderTacticValue | QuestionTimeTacticValue | QuestionCounterTacticValue | QuestionMultipleChoiceTacticValue;

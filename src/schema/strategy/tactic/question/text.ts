@@ -4,4 +4,4 @@ import { questionTacticValueBaseSchema } from './base';
 export const questionTextSchema =
   questionTacticValueBaseSchema('question-text');
 
-export type QuestionTextValue = yup.InferType<typeof questionTextSchema>;
+export type QuestionTextTacticValue = yup.InferType<typeof questionTextSchema>;
