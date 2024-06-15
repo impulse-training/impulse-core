@@ -6,16 +6,6 @@ import { optionalStringArray, requiredStringArray } from './utils/array';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
 
-export const questionSchema = yup.object({
-  prompt: yup.string(),
-  type: yup
-    .mixed<'slider' | 'time' | 'counter'>()
-    .oneOf(['slider', 'time', 'counter'])
-    .required(),
-  response: yup.number(),
-});
-export type QuestionValue = yup.InferType<typeof questionSchema>;
-
 export const tacticDataSchema = yup.object({
   value: yup.number(),
   unit: yup
@@ -33,6 +23,15 @@ export const tacticDataSchema = yup.object({
 });
 export type TacticData = yup.InferType<typeof tacticDataSchema>;
 
+const messageSchema = yup.object({
+  content: yup.string().required(),
+  role: yup
+    .mixed<'system' | 'user' | 'assistant'>()
+    .oneOf(['system', 'user', 'assistant'])
+    .required(),
+});
+export type MessageValue = yup.InferType<typeof messageSchema>;
+
 export type BaseLogValue = WithTypes<typeof baseLogSchema>;
 const baseLogSchema = yup.object().shape({
   profileId: yup.string().required(),
@@ -42,6 +41,7 @@ const baseLogSchema = yup.object().shape({
   timezone: yup.string().required(),
   issueId: yup.string().nullable(),
   parentIssueIds: optionalStringArray,
+  messages: yup.array().of(messageSchema),
 
   // TODO: These represent seen tactics, but this may need some clarification
   tacticIds: requiredStringArray,

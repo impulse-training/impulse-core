@@ -23,7 +23,6 @@ export const makeTimeLogFactory = (TimestampKlass: typeof TimestampLike) =>
     updatedAt: TimestampKlass.now(),
     startTime: TimestampKlass.now(),
     timezone: 'America/Bogota',
-
     tacticIds: [],
     tacticsById: {},
     tacticData: {},

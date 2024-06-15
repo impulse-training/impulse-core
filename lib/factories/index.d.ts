@@ -130,9 +130,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         } | undefined;
         profileId: string;
     }, "profileId" | ("createdAt" | "updatedAt" | "tacticId" | "tacticTitle" | "text" | "recording" | "isEdited" | "avatar")>;
-    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "tacticIds" | "tacticData" | ("createdAt" | "updatedAt" | "issueId" | "parentIssueIds" | "tacticLikes" | "debriefAfter" | "debriefReminderSentAt" | "debriefedAt")>;
-    timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "tacticIds" | "tacticData" | ("createdAt" | "updatedAt" | "issueId" | "parentIssueIds" | "tacticLikes")>;
-    locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "tacticIds" | "tacticData" | "locationId" | "isDisplayable" | "locationName" | "locationMode" | ("createdAt" | "updatedAt" | "issueId" | "parentIssueIds" | "tacticLikes")>;
+    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "tacticIds" | "tacticData" | ("createdAt" | "updatedAt" | "issueId" | "parentIssueIds" | "messages" | "tacticLikes" | "debriefAfter" | "debriefReminderSentAt" | "debriefedAt")>;
+    timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "tacticIds" | "tacticData" | ("createdAt" | "updatedAt" | "issueId" | "parentIssueIds" | "messages" | "tacticLikes")>;
+    locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "tacticIds" | "tacticData" | "locationId" | "isDisplayable" | "locationName" | "locationMode" | ("createdAt" | "updatedAt" | "issueId" | "parentIssueIds" | "messages" | "tacticLikes")>;
     locationFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
