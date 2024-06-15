@@ -10,7 +10,6 @@ export const makeTimeRoutineFactory = (TimestampKlass: typeof TimestampLike) =>
     hour: 9,
     minute: 0,
     weekdays: [1, 2, 3, 4, 5, 6, 7],
-
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
   });

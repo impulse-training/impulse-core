@@ -1,5 +1,4 @@
 import * as yup from 'yup';
-import { TimestampLike } from '../utils/firestore/TimestampLike';
 import { TacticsById } from './strategy/tactic';
 export declare const questionSchema: yup.ObjectSchema<{
     prompt: string | undefined;
@@ -112,10 +111,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
     tacticLikes: undefined;
     tacticData: undefined;
 }, "">;
-type WithTypes<T extends yup.ISchema<unknown>> = Omit<yup.InferType<T>, 'createdAt' | 'updatedAt' | 'startTime' | 'tacticsById'> & {
-    createdAt: TimestampLike;
-    updatedAt: TimestampLike;
-    startTime: TimestampLike;
+type WithTypes<T extends yup.ISchema<unknown>> = Omit<yup.InferType<T>, 'tacticsById'> & {
     tacticsById: TacticsById;
 };
 export type ImpulseLogValue = WithTypes<typeof impulseLogSchema>;

@@ -1,7 +1,6 @@
 // Logs are records of either impulses (cravings or urges), or applied tactics (actions that we
 // take)
 import * as yup from 'yup';
-import { TimestampLike } from '../utils/firestore/TimestampLike';
 import { TacticsById, tacticInfoSchema } from './strategy/tactic';
 import { optionalStringArray, requiredStringArray } from './utils/array';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
@@ -54,11 +53,8 @@ const baseLogSchema = yup.object().shape({
 
 type WithTypes<T extends yup.ISchema<unknown>> = Omit<
   yup.InferType<T>,
-  'createdAt' | 'updatedAt' | 'startTime' | 'tacticsById'
+  'tacticsById'
 > & {
-  createdAt: TimestampLike;
-  updatedAt: TimestampLike;
-  startTime: TimestampLike;
   tacticsById: TacticsById;
 };
 

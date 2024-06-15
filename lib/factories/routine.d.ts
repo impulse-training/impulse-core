@@ -16,6 +16,5 @@ export declare const makeTimeRoutineFactory: (TimestampKlass: typeof TimestampLi
     hour: number;
     minute: number;
     name: string;
-    folders: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[];
     weekdays: number[];
-}, "profileId" | "type" | "hour" | "minute" | "name" | "folders" | "weekdays" | ("createdAt" | "updatedAt")>;
+}, "profileId" | "type" | "hour" | "minute" | "name" | "weekdays" | ("createdAt" | "updatedAt")>;

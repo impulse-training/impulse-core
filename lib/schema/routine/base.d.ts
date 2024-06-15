@@ -5,7 +5,6 @@ export declare function routineBaseSchema<K extends string>(type: K): yup.Object
     type: yup.Defined<K>;
     profileId: string;
     name: string;
-    folders: import("../utils/firestore").DocumentReferenceLike<unknown>[];
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -20,7 +19,6 @@ export declare function routineBaseSchema<K extends string>(type: K): yup.Object
     type: undefined;
     profileId: undefined;
     name: undefined;
-    folders: "";
     createdAt: undefined;
     updatedAt: undefined;
 }, "">;
