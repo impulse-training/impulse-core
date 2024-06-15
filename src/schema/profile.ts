@@ -19,6 +19,7 @@ export const profileSchema = yup.object().shape({
   issueId: yup.string().required().nullable(),
   issueName: yup.string(),
   parentIssueIds: optionalStringArray,
+  hashedPhoneNumber: yup.string(),
   setbackThreshold: yup.number(),
   isTourCompleted: yup.boolean(),
   androidPermissions: optionalObjectOf(yup.boolean().required()),
