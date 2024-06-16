@@ -34,7 +34,7 @@ export declare const tacticDataSchema: yup.ObjectSchema<{
 export type TacticData = yup.InferType<typeof tacticDataSchema>;
 declare const messageSchema: yup.ObjectSchema<{
     content: string;
-    role: NonNullable<"system" | "user" | "assistant" | undefined>;
+    role: "system" | "user" | "assistant" | undefined;
 }, yup.AnyObject, {
     content: undefined;
     role: undefined;
@@ -63,8 +63,8 @@ declare const baseLogSchema: yup.ObjectSchema<{
     parentIssueIds: string[] | undefined;
     encryptedPhoneNumber: string | undefined;
     messages: {
+        role?: "system" | "user" | "assistant" | undefined;
         content: string;
-        role: NonNullable<"system" | "user" | "assistant" | undefined>;
     }[] | undefined;
     tacticIds: string[];
     tacticsById: {
@@ -143,8 +143,8 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     parentIssueIds: string[] | undefined;
     encryptedPhoneNumber: string | undefined;
     messages: {
+        role?: "system" | "user" | "assistant" | undefined;
         content: string;
-        role: NonNullable<"system" | "user" | "assistant" | undefined>;
     }[] | undefined;
     tacticIds: string[];
     tacticsById: {
@@ -241,8 +241,8 @@ declare const locationLogSchema: yup.ObjectSchema<{
     parentIssueIds: string[] | undefined;
     encryptedPhoneNumber: string | undefined;
     messages: {
+        role?: "system" | "user" | "assistant" | undefined;
         content: string;
-        role: NonNullable<"system" | "user" | "assistant" | undefined>;
     }[] | undefined;
     tacticIds: string[];
     tacticsById: {
@@ -329,8 +329,8 @@ declare const timeLogSchema: yup.ObjectSchema<{
     parentIssueIds: string[] | undefined;
     encryptedPhoneNumber: string | undefined;
     messages: {
+        role?: "system" | "user" | "assistant" | undefined;
         content: string;
-        role: NonNullable<"system" | "user" | "assistant" | undefined>;
     }[] | undefined;
     tacticIds: string[];
     tacticsById: {
@@ -400,8 +400,8 @@ export declare const logSchema: yup.Lazy<{
     parentIssueIds?: string[] | undefined;
     encryptedPhoneNumber?: string | undefined;
     messages?: {
+        role?: "system" | "user" | "assistant" | undefined;
         content: string;
-        role: NonNullable<"system" | "user" | "assistant" | undefined>;
     }[] | undefined;
     tacticLikes?: {
         [x: string]: NonNullable<boolean | undefined>;
@@ -468,8 +468,8 @@ export declare const logSchema: yup.Lazy<{
     parentIssueIds?: string[] | undefined;
     encryptedPhoneNumber?: string | undefined;
     messages?: {
+        role?: "system" | "user" | "assistant" | undefined;
         content: string;
-        role: NonNullable<"system" | "user" | "assistant" | undefined>;
     }[] | undefined;
     tacticLikes?: {
         [x: string]: NonNullable<boolean | undefined>;
@@ -525,8 +525,8 @@ export declare const logSchema: yup.Lazy<{
     parentIssueIds?: string[] | undefined;
     encryptedPhoneNumber?: string | undefined;
     messages?: {
+        role?: "system" | "user" | "assistant" | undefined;
         content: string;
-        role: NonNullable<"system" | "user" | "assistant" | undefined>;
     }[] | undefined;
     tacticLikes?: {
         [x: string]: NonNullable<boolean | undefined>;

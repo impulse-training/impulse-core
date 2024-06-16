@@ -60,6 +60,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
     } | null | undefined;
     issueName?: string | undefined;
+    hashedPhoneNumber?: string | undefined;
     isTourCompleted?: boolean | undefined;
     androidPermissions?: {
         [x: string]: NonNullable<boolean | undefined>;
@@ -69,7 +70,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     timezone: string;
     issueId: string | null;
     uids: string[];
-}, "timezone" | "issueId" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIssueIds" | "encryptedPhoneNumber" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "isTourCompleted" | "androidPermissions" | "region" | "scheduledNotificationIds")>, folderFactory: import("factory.ts").Factory<{
+}, "timezone" | "issueId" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIssueIds" | "encryptedPhoneNumber" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "hashedPhoneNumber" | "isTourCompleted" | "androidPermissions" | "region" | "scheduledNotificationIds")>, folderFactory: import("factory.ts").Factory<{
     createdAt?: {
         seconds: number;
         nanoseconds: number;

@@ -27,8 +27,7 @@ const messageSchema = yup.object({
   content: yup.string().required(),
   role: yup
     .mixed<'system' | 'user' | 'assistant'>()
-    .oneOf(['system', 'user', 'assistant'])
-    .required(),
+    .oneOf(['system', 'user', 'assistant']),
 });
 export type MessageValue = yup.InferType<typeof messageSchema>;
 
