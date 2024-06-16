@@ -47,6 +47,11 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    widgetLastPressedAt?: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
     activeImpulseId?: string | undefined;
     currentAppState?: import("react-native/types").AppStateStatus | undefined;
     expoPushToken?: string | undefined;
@@ -64,7 +69,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     timezone: string;
     issueId: string | null;
     uids: string[];
-}, "timezone" | "issueId" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIssueIds" | "lastActiveAt" | "widgetInstalledAt" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "hashedPhoneNumber" | "isTourCompleted" | "androidPermissions" | "region" | "scheduledNotificationIds")>, folderFactory: import("factory.ts").Factory<{
+}, "timezone" | "issueId" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIssueIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "hashedPhoneNumber" | "isTourCompleted" | "androidPermissions" | "region" | "scheduledNotificationIds")>, folderFactory: import("factory.ts").Factory<{
     createdAt?: {
         seconds: number;
         nanoseconds: number;

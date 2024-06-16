@@ -10,6 +10,7 @@ export const profileSchema = yup.object().shape({
   updatedAt: optionalTimestampSchema,
   lastActiveAt: optionalTimestampSchema,
   widgetInstalledAt: optionalTimestampSchema,
+  widgetLastPressedAt: optionalTimestampSchema,
   activeImpulseId: yup.string().optional(),
   currentAppState: yup.mixed<AppStateStatus>().optional(), // Define validation for AppStateStatus if needed
   expoPushToken: yup.string().optional(),

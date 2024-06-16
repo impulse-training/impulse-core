@@ -172,6 +172,11 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        widgetLastPressedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
         activeImpulseId?: string | undefined;
         currentAppState?: import("react-native/types").AppStateStatus | undefined;
         expoPushToken?: string | undefined;
@@ -189,7 +194,7 @@ export declare const factories: {
         timezone: string;
         issueId: string | null;
         uids: string[];
-    }, "timezone" | "issueId" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIssueIds" | "lastActiveAt" | "widgetInstalledAt" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "hashedPhoneNumber" | "isTourCompleted" | "androidPermissions" | "region" | "scheduledNotificationIds")>;
+    }, "timezone" | "issueId" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIssueIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "hashedPhoneNumber" | "isTourCompleted" | "androidPermissions" | "region" | "scheduledNotificationIds")>;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
         createdAt?: {
