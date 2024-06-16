@@ -41,6 +41,7 @@ const baseLogSchema = yup.object().shape({
   timezone: yup.string().required(),
   issueId: yup.string().nullable(),
   parentIssueIds: optionalStringArray,
+  encryptedPhoneNumber: yup.string(),
   messages: yup.array().of(messageSchema),
 
   // TODO: These represent seen tactics, but this may need some clarification

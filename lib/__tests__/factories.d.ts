@@ -129,9 +129,9 @@ export declare const factories: {
         } | undefined;
         profileId: string;
     }, "profileId" | ("createdAt" | "updatedAt" | "tacticId" | "tacticTitle" | "text" | "recording" | "isEdited" | "avatar")>;
-    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "tacticIds" | "tacticData" | ("createdAt" | "updatedAt" | "issueId" | "parentIssueIds" | "messages" | "tacticLikes" | "debriefAfter" | "debriefReminderSentAt" | "debriefedAt")>;
-    timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "tacticIds" | "tacticData" | ("createdAt" | "updatedAt" | "issueId" | "parentIssueIds" | "messages" | "tacticLikes")>;
-    locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "tacticIds" | "tacticData" | "locationId" | "isDisplayable" | "locationName" | "locationMode" | ("createdAt" | "updatedAt" | "issueId" | "parentIssueIds" | "messages" | "tacticLikes")>;
+    impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "tacticIds" | "tacticData" | ("createdAt" | "updatedAt" | "issueId" | "parentIssueIds" | "encryptedPhoneNumber" | "messages" | "tacticLikes" | "debriefAfter" | "debriefReminderSentAt" | "debriefedAt")>;
+    timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "tacticIds" | "tacticData" | ("createdAt" | "updatedAt" | "issueId" | "parentIssueIds" | "encryptedPhoneNumber" | "messages" | "tacticLikes")>;
+    locationLogFactory: import("factory.ts").Factory<import("..").LocationLogValue, "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "tacticIds" | "tacticData" | "locationId" | "isDisplayable" | "locationName" | "locationMode" | ("createdAt" | "updatedAt" | "issueId" | "parentIssueIds" | "encryptedPhoneNumber" | "messages" | "tacticLikes")>;
     locationFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -162,6 +162,7 @@ export declare const factories: {
         } | null | undefined;
         setbackThreshold?: number | undefined;
         parentIssueIds?: string[] | undefined;
+        encryptedPhoneNumber?: string | undefined;
         lastActiveAt?: {
             seconds: number;
             nanoseconds: number;
@@ -184,7 +185,6 @@ export declare const factories: {
             [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
         } | null | undefined;
         issueName?: string | undefined;
-        hashedPhoneNumber?: string | undefined;
         isTourCompleted?: boolean | undefined;
         androidPermissions?: {
             [x: string]: NonNullable<boolean | undefined>;
@@ -194,7 +194,7 @@ export declare const factories: {
         timezone: string;
         issueId: string | null;
         uids: string[];
-    }, "timezone" | "issueId" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIssueIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "hashedPhoneNumber" | "isTourCompleted" | "androidPermissions" | "region" | "scheduledNotificationIds")>;
+    }, "timezone" | "issueId" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIssueIds" | "encryptedPhoneNumber" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "isTourCompleted" | "androidPermissions" | "region" | "scheduledNotificationIds")>;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
         createdAt?: {

@@ -35,7 +35,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     issueId: string | null;
     issueName: string | undefined;
     parentIssueIds: string[] | undefined;
-    hashedPhoneNumber: string | undefined;
+    encryptedPhoneNumber: string | undefined;
     setbackThreshold: number | undefined;
     isTourCompleted: boolean | undefined;
     androidPermissions: {
@@ -58,7 +58,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     issueId: undefined;
     issueName: undefined;
     parentIssueIds: "";
-    hashedPhoneNumber: undefined;
+    encryptedPhoneNumber: undefined;
     setbackThreshold: undefined;
     isTourCompleted: undefined;
     androidPermissions: undefined;

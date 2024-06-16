@@ -61,6 +61,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
     timezone: string;
     issueId: string | null | undefined;
     parentIssueIds: string[] | undefined;
+    encryptedPhoneNumber: string | undefined;
     messages: {
         content: string;
         role: NonNullable<"system" | "user" | "assistant" | undefined>;
@@ -104,6 +105,7 @@ declare const baseLogSchema: yup.ObjectSchema<{
     timezone: undefined;
     issueId: undefined;
     parentIssueIds: "";
+    encryptedPhoneNumber: undefined;
     messages: "";
     tacticIds: "";
     tacticsById: {
@@ -139,6 +141,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     timezone: string;
     issueId: string | null | undefined;
     parentIssueIds: string[] | undefined;
+    encryptedPhoneNumber: string | undefined;
     messages: {
         content: string;
         role: NonNullable<"system" | "user" | "assistant" | undefined>;
@@ -199,6 +202,7 @@ declare const impulseLogSchema: yup.ObjectSchema<{
     timezone: undefined;
     issueId: undefined;
     parentIssueIds: "";
+    encryptedPhoneNumber: undefined;
     messages: "";
     tacticIds: "";
     tacticsById: {
@@ -235,6 +239,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
     timezone: string;
     issueId: string | null | undefined;
     parentIssueIds: string[] | undefined;
+    encryptedPhoneNumber: string | undefined;
     messages: {
         content: string;
         role: NonNullable<"system" | "user" | "assistant" | undefined>;
@@ -284,6 +289,7 @@ declare const locationLogSchema: yup.ObjectSchema<{
     timezone: undefined;
     issueId: undefined;
     parentIssueIds: "";
+    encryptedPhoneNumber: undefined;
     messages: "";
     tacticIds: "";
     tacticsById: {
@@ -321,6 +327,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
     timezone: string;
     issueId: string | null | undefined;
     parentIssueIds: string[] | undefined;
+    encryptedPhoneNumber: string | undefined;
     messages: {
         content: string;
         role: NonNullable<"system" | "user" | "assistant" | undefined>;
@@ -366,6 +373,7 @@ declare const timeLogSchema: yup.ObjectSchema<{
     timezone: undefined;
     issueId: undefined;
     parentIssueIds: "";
+    encryptedPhoneNumber: undefined;
     messages: "";
     tacticIds: "";
     tacticsById: {
@@ -390,6 +398,7 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     issueId?: string | null | undefined;
     parentIssueIds?: string[] | undefined;
+    encryptedPhoneNumber?: string | undefined;
     messages?: {
         content: string;
         role: NonNullable<"system" | "user" | "assistant" | undefined>;
@@ -457,6 +466,7 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     issueId?: string | null | undefined;
     parentIssueIds?: string[] | undefined;
+    encryptedPhoneNumber?: string | undefined;
     messages?: {
         content: string;
         role: NonNullable<"system" | "user" | "assistant" | undefined>;
@@ -513,6 +523,7 @@ export declare const logSchema: yup.Lazy<{
     } | null | undefined;
     issueId?: string | null | undefined;
     parentIssueIds?: string[] | undefined;
+    encryptedPhoneNumber?: string | undefined;
     messages?: {
         content: string;
         role: NonNullable<"system" | "user" | "assistant" | undefined>;
