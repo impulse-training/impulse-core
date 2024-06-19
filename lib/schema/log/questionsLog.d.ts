@@ -20,6 +20,7 @@ export declare const questionDataSchema: yup.ObjectSchema<{
 }, "">;
 export type QuestionDataValue = yup.InferType<typeof questionDataSchema>;
 export declare const questionsLogSchema: yup.ObjectSchema<{
+    openAiChoiceResponse: {} | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -31,16 +32,16 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
         toDate: Function;
     } | null | undefined;
     type: "questions";
-    systemMessage: string;
     date: {
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     };
     profileId: string;
-    text: string | undefined;
-    role: {};
-    openAiChoiceResponse: {} | undefined;
+    gptPayload: {
+        role: NonNullable<"system" | "user" | "assistant" | undefined>;
+        content: string;
+    };
     questionsById: {
         [x: string]: {
             createdAt?: {
@@ -116,6 +117,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            setbackThreshold?: number | undefined;
             options?: ({
                 createdAt?: {
                     seconds: number;
@@ -156,6 +158,56 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
             highEmoji?: yup.Maybe<string | undefined>;
             type: import("..").QuestionKeyType;
             prompt: string;
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            setbackThreshold?: number | undefined;
+            options?: ({
+                createdAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                label?: string | undefined;
+                setbackThreshold?: number | undefined;
+                greaterThan?: number | undefined;
+                lessThanOrEqualTo?: number | undefined;
+                text: string;
+                type: "numeric";
+                color: string;
+                textColor: string;
+            } | {
+                createdAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                label?: string | undefined;
+                text: string;
+                type: "string";
+                color: string;
+                textColor: string;
+            })[] | undefined;
+            type: import("..").QuestionKeyType;
+            prompt: string;
         };
     };
     questionData: {
@@ -171,19 +223,20 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
         };
     };
 }, yup.AnyObject, {
+    openAiChoiceResponse: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     type: undefined;
-    systemMessage: undefined;
     date: {
         seconds: undefined;
         nanoseconds: undefined;
         toDate: undefined;
     };
     profileId: undefined;
-    text: undefined;
-    role: undefined;
-    openAiChoiceResponse: undefined;
+    gptPayload: {
+        role: undefined;
+        content: undefined;
+    };
     questionsById: undefined;
     questionData: undefined;
 }, "">;

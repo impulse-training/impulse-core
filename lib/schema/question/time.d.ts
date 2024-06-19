@@ -48,11 +48,13 @@ export declare const questionTimeSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    setbackThreshold: number | undefined;
 }, yup.AnyObject, {
     prompt: undefined;
     type: undefined;
     options: "";
     createdAt: undefined;
     updatedAt: undefined;
+    setbackThreshold: undefined;
 }, "">;
 export type QuestionTimeValue = yup.InferType<typeof questionTimeSchema>;

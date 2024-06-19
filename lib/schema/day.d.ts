@@ -29,6 +29,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            openAiChoiceResponse?: {} | undefined;
             profileId: string;
             date: {
                 seconds: number;
@@ -36,7 +37,10 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             };
             type: "impulse";
-            systemMessage: string;
+            gptPayload: {
+                role: NonNullable<"system" | "user" | "assistant" | undefined>;
+                content: string;
+            };
             issueName: string;
             parentIssueIds: string[];
         } | {
@@ -50,6 +54,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            openAiChoiceResponse?: {} | undefined;
             text: string;
             profileId: string;
             date: {
@@ -58,7 +63,10 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             };
             type: "message";
-            systemMessage: string;
+            gptPayload: {
+                role: NonNullable<"system" | "user" | "assistant" | undefined>;
+                content: string;
+            };
         } | {
             createdAt?: {
                 seconds: number;
@@ -70,7 +78,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            text?: string | undefined;
             openAiChoiceResponse?: {} | undefined;
             profileId: string;
             date: {
@@ -79,7 +86,10 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             };
             type: "questions";
-            systemMessage: string;
+            gptPayload: {
+                role: NonNullable<"system" | "user" | "assistant" | undefined>;
+                content: string;
+            };
             questionsById: {
                 [x: string]: {
                     createdAt?: {
@@ -155,6 +165,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    setbackThreshold?: number | undefined;
                     options?: ({
                         createdAt?: {
                             seconds: number;
@@ -195,6 +206,56 @@ export declare const daySchema: yup.ObjectSchema<{
                     highEmoji?: yup.Maybe<string | undefined>;
                     type: import(".").QuestionKeyType;
                     prompt: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    setbackThreshold?: number | undefined;
+                    options?: ({
+                        createdAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        label?: string | undefined;
+                        setbackThreshold?: number | undefined;
+                        greaterThan?: number | undefined;
+                        lessThanOrEqualTo?: number | undefined;
+                        text: string;
+                        type: "numeric";
+                        color: string;
+                        textColor: string;
+                    } | {
+                        createdAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        label?: string | undefined;
+                        text: string;
+                        type: "string";
+                        color: string;
+                        textColor: string;
+                    })[] | undefined;
+                    type: import(".").QuestionKeyType;
+                    prompt: string;
                 };
             };
             questionData: {
@@ -209,7 +270,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     unit: string;
                 };
             };
-            role: {};
         } | {
             createdAt?: {
                 seconds: number;
@@ -221,7 +281,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            text?: string | undefined;
             openAiChoiceResponse?: {} | undefined;
             tactic?: ({
                 createdAt?: {
@@ -448,8 +507,10 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             };
             type: "tactic";
-            systemMessage: string;
-            role: {};
+            gptPayload: {
+                role: NonNullable<"system" | "user" | "assistant" | undefined>;
+                content: string;
+            };
         };
     };
     isProcessing: boolean;

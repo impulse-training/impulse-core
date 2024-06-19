@@ -48,6 +48,7 @@ export declare const questionScaleOfOneToTenSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    setbackThreshold: number | undefined;
     lowEmoji: yup.Maybe<string | undefined>;
     highEmoji: yup.Maybe<string | undefined>;
 }, yup.AnyObject, {
@@ -56,6 +57,7 @@ export declare const questionScaleOfOneToTenSchema: yup.ObjectSchema<{
     options: "";
     createdAt: undefined;
     updatedAt: undefined;
+    setbackThreshold: undefined;
     lowEmoji: undefined;
     highEmoji: undefined;
 }, "">;

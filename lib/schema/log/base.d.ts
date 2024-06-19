@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSchema<{
+    openAiChoiceResponse: {} | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -11,22 +12,29 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         toDate: Function;
     } | null | undefined;
     type: yup.Defined<K>;
-    systemMessage: string;
     date: {
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     };
     profileId: string;
+    gptPayload: {
+        role: NonNullable<"system" | "user" | "assistant" | undefined>;
+        content: string;
+    };
 }, yup.AnyObject, {
+    openAiChoiceResponse: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     type: undefined;
-    systemMessage: undefined;
     date: {
         seconds: undefined;
         nanoseconds: undefined;
         toDate: undefined;
     };
     profileId: undefined;
+    gptPayload: {
+        role: undefined;
+        content: undefined;
+    };
 }, "">;

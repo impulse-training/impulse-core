@@ -11,6 +11,7 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    setbackThreshold?: number | undefined;
     options?: ({
         createdAt?: {
             seconds: number;
@@ -49,4 +50,4 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
     })[] | undefined;
     type: import("..").QuestionKeyType;
     prompt: string;
-}, "type" | "prompt" | ("createdAt" | "updatedAt" | "options")>;
+}, "type" | "prompt" | ("createdAt" | "updatedAt" | "setbackThreshold" | "options")>;

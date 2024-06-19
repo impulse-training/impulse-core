@@ -500,6 +500,7 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        openAiChoiceResponse?: {} | undefined;
         profileId: string;
         date: {
             seconds: number;
@@ -507,10 +508,13 @@ export declare const factories: {
             toDate: Function;
         };
         type: "impulse";
-        systemMessage: string;
+        gptPayload: {
+            role: NonNullable<"system" | "user" | "assistant" | undefined>;
+            content: string;
+        };
         issueName: string;
         parentIssueIds: string[];
-    }, "profileId" | "date" | "type" | "systemMessage" | "issueName" | "parentIssueIds" | ("createdAt" | "updatedAt")>;
+    }, "profileId" | "date" | "type" | "gptPayload" | "issueName" | "parentIssueIds" | ("createdAt" | "updatedAt" | "openAiChoiceResponse")>;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
         createdAt?: {
@@ -622,6 +626,7 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        setbackThreshold?: number | undefined;
         options?: ({
             createdAt?: {
                 seconds: number;
@@ -660,7 +665,7 @@ export declare const factories: {
         })[] | undefined;
         type: import("..").QuestionKeyType;
         prompt: string;
-    }, "type" | "prompt" | ("createdAt" | "updatedAt" | "options")>;
+    }, "type" | "prompt" | ("createdAt" | "updatedAt" | "setbackThreshold" | "options")>;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;

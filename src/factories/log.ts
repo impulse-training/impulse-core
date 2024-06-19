@@ -11,5 +11,8 @@ export const makeImpulseLogFactory = (TimestampKlass: typeof TimestampLike) =>
     date: TimestampKlass.now(),
     issueName: 'YouTube',
     parentIssueIds: [],
-    systemMessage: "I'm having an impulse!",
+    gptPayload: {
+      role: 'user',
+      content: "I'm having an impulse!",
+    },
   });

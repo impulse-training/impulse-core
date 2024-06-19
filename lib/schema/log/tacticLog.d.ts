@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 export declare const tacticLogSchema: yup.ObjectSchema<{
+    openAiChoiceResponse: {} | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -11,16 +12,16 @@ export declare const tacticLogSchema: yup.ObjectSchema<{
         toDate: Function;
     } | null | undefined;
     type: "tactic";
-    systemMessage: string;
     date: {
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     };
     profileId: string;
-    text: string | undefined;
-    role: {};
-    openAiChoiceResponse: {} | undefined;
+    gptPayload: {
+        role: NonNullable<"system" | "user" | "assistant" | undefined>;
+        content: string;
+    };
     tactic: ({
         createdAt?: {
             seconds: number;
@@ -240,19 +241,20 @@ export declare const tacticLogSchema: yup.ObjectSchema<{
         };
     }) | undefined;
 }, yup.AnyObject, {
+    openAiChoiceResponse: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     type: undefined;
-    systemMessage: undefined;
     date: {
         seconds: undefined;
         nanoseconds: undefined;
         toDate: undefined;
     };
     profileId: undefined;
-    text: undefined;
-    role: undefined;
-    openAiChoiceResponse: undefined;
+    gptPayload: {
+        role: undefined;
+        content: undefined;
+    };
     tactic: undefined;
 }, "">;
 export type TacticLogValue = yup.InferType<typeof tacticLogSchema>;
