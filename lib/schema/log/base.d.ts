@@ -17,7 +17,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         nanoseconds: number;
         toDate: Function;
     };
-    profileId: string;
+    senderProfileId: string | null | undefined;
     gptPayload: {
         role: NonNullable<"system" | "user" | "assistant" | undefined>;
         content: string;
@@ -32,7 +32,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         nanoseconds: undefined;
         toDate: undefined;
     };
-    profileId: undefined;
+    senderProfileId: undefined;
     gptPayload: {
         role: undefined;
         content: undefined;

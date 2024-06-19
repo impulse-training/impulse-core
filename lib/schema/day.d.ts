@@ -29,8 +29,8 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            senderProfileId?: string | null | undefined;
             openAiChoiceResponse?: {} | undefined;
-            profileId: string;
             date: {
                 seconds: number;
                 nanoseconds: number;
@@ -54,9 +54,9 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            senderProfileId?: string | null | undefined;
             openAiChoiceResponse?: {} | undefined;
             text: string;
-            profileId: string;
             date: {
                 seconds: number;
                 nanoseconds: number;
@@ -78,8 +78,8 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            senderProfileId?: string | null | undefined;
             openAiChoiceResponse?: {} | undefined;
-            profileId: string;
             date: {
                 seconds: number;
                 nanoseconds: number;
@@ -281,6 +281,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            senderProfileId?: string | null | undefined;
             openAiChoiceResponse?: {} | undefined;
             tactic?: ({
                 createdAt?: {
@@ -500,7 +501,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     duration: number;
                 };
             }) | undefined;
-            profileId: string;
             date: {
                 seconds: number;
                 nanoseconds: number;

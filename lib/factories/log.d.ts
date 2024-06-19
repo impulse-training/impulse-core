@@ -11,8 +11,8 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    senderProfileId?: string | null | undefined;
     openAiChoiceResponse?: {} | undefined;
-    profileId: string;
     date: {
         seconds: number;
         nanoseconds: number;
@@ -25,4 +25,4 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
     };
     issueName: string;
     parentIssueIds: string[];
-}, "profileId" | "date" | "type" | "gptPayload" | "issueName" | "parentIssueIds" | ("createdAt" | "updatedAt" | "openAiChoiceResponse")>;
+}, "date" | "type" | "gptPayload" | "issueName" | "parentIssueIds" | ("createdAt" | "updatedAt" | "senderProfileId" | "openAiChoiceResponse")>;

@@ -8,7 +8,7 @@ export function logBaseSchema<K extends string>(type: K) {
     updatedAt: optionalTimestampSchema,
     type: yup.mixed<K>().oneOf([type]).defined(),
     date: timestampSchema,
-    profileId: yup.string().required(),
+    senderProfileId: yup.string().nullable(),
     gptPayload: yup
       .object({
         role: yup

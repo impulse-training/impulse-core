@@ -17,7 +17,7 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     };
-    profileId: string;
+    senderProfileId: string | null | undefined;
     gptPayload: {
         role: NonNullable<"system" | "user" | "assistant" | undefined>;
         content: string;
@@ -34,7 +34,7 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
         nanoseconds: undefined;
         toDate: undefined;
     };
-    profileId: undefined;
+    senderProfileId: undefined;
     gptPayload: {
         role: undefined;
         content: undefined;

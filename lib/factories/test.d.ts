@@ -35,8 +35,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    senderProfileId?: string | null | undefined;
     openAiChoiceResponse?: {} | undefined;
-    profileId: string;
     date: {
         seconds: number;
         nanoseconds: number;
@@ -49,7 +49,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     };
     issueName: string;
     parentIssueIds: string[];
-}, "profileId" | "date" | "type" | "gptPayload" | "issueName" | "parentIssueIds" | ("createdAt" | "updatedAt" | "openAiChoiceResponse")>, profileFactory: import("factory.ts").Factory<{
+}, "date" | "type" | "gptPayload" | "issueName" | "parentIssueIds" | ("createdAt" | "updatedAt" | "senderProfileId" | "openAiChoiceResponse")>, profileFactory: import("factory.ts").Factory<{
     createdAt?: {
         seconds: number;
         nanoseconds: number;

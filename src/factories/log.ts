@@ -4,7 +4,7 @@ import { TimestampLike } from '../utils/firestore/TimestampLike';
 
 export const makeImpulseLogFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<ImpulseLogValue>({
-    profileId: Factory.each(i => i.toString()),
+    senderProfileId: Factory.each(i => i.toString()),
     type: 'impulse',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
