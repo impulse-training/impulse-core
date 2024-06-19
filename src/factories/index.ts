@@ -12,8 +12,9 @@ import {
 } from './log';
 import { makeProfileFactory } from './profile';
 import { makeProfileLogsSummaryFactory } from './profileLogsSummary';
+import { makeQuestionTimeTacticFactory } from './question';
 import { makeTimeRoutineFactory } from './routine';
-import { makeQuestionTimeTacticFactory, makeTacticFactory } from './tactic';
+import { makeTacticFactory } from './tactic';
 
 // Our admin and client apps use the same factories, but the firebase-admin versus firebase client
 // libraries respectively. These use different Timestamp classes, so we pass in the class as an
@@ -32,7 +33,7 @@ export function makeFactories(TimestampKlass: typeof TimestampLike) {
     issueFactory: makeIssueFactory(TimestampKlass),
     folderFactory: makeFolderFactory(TimestampKlass),
     tacticFactory: makeTacticFactory(TimestampKlass),
-    questionTimeTacticFactory: makeQuestionTimeTacticFactory(TimestampKlass),
+    questionTimeFactory: makeQuestionTimeTacticFactory(TimestampKlass),
     timeRoutineFactory: makeTimeRoutineFactory(TimestampKlass),
   };
 }

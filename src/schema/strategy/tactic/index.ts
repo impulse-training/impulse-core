@@ -3,7 +3,6 @@ import { objectOf } from '../../utils/objectOf';
 import { AudioTacticValue, audioTacticSchema } from './audio';
 import { BreatheTacticValue, breatheTacticSchema } from './breathe';
 import { ContactcsTacticValue, contactsTacticSchema } from './contacts';
-import { QuestionTacticValue, questionTacticSchemas } from './question';
 import { StepsTacticValue } from './steps';
 import { TaskTacticValue, taskTacticSchema } from './task';
 import { VideoTacticValue, videoTacticSchema } from './video';
@@ -11,7 +10,6 @@ import { VideoTacticValue, videoTacticSchema } from './video';
 export * from './audio';
 export * from './breathe';
 export * from './contacts';
-export * from './question';
 export * from './steps';
 export * from './task';
 export * from './utils';
@@ -23,8 +21,7 @@ export type TacticValue =
   | ContactcsTacticValue
   | StepsTacticValue
   | TaskTacticValue
-  | VideoTacticValue
-  | QuestionTacticValue;
+  | VideoTacticValue;
 // | UrgeSurfingTacticValue
 // | EmotionsTacticValue
 // | DayReviewTacticValue
@@ -40,7 +37,6 @@ export const tacticSchemas: Record<
   contacts: contactsTacticSchema,
   task: taskTacticSchema,
   video: videoTacticSchema,
-  ...questionTacticSchemas,
   // steps: stepsTacticSchema,
   // emotions: emotionsTacticSchema,
   // 'day-review': dayReviewTacticSchema,

@@ -15,6 +15,7 @@ export * from './notification';
 export * from './option';
 export * from './profile';
 export * from './profileLogsSummary';
+export * from './question';
 export * from './recording';
 export * from './recoveryCode';
 export * from './routine';
@@ -25,6 +26,6 @@ export * from './strategy/tactic';
 export * from './tacticImpression';
 
 // Utils
-export * from './strategy/tactic/question/questionKeyType';
+export * from './question/utils/questionKeyType';
 export * from './utils/image';
 export * from './utils/time';

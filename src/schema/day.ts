@@ -7,6 +7,7 @@ import { timestampSchema } from './utils/timestamp';
 const day = yup.object({
   date: timestampSchema,
   profileId: yup.string().required(),
+  issueName: yup.string(),
   logsById: objectOf(log2Schema),
   isProcessing: yup.boolean().default(false),
 });

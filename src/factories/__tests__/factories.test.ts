@@ -10,6 +10,7 @@ import {
   tacticSchema,
   timeRoutineSchema,
 } from '../../schema';
+import { questionTimeSchema } from '../../schema/question';
 import { TimestampLike } from '../../utils/firestore/TimestampLike';
 
 const factories = makeFactories(TimestampLike);
@@ -61,6 +62,6 @@ const schemaMap: Record<keyof typeof factories, null | Schema | Lazy<unknown>> =
     issueFactory: null,
     folderFactory: folderSchema,
     tacticFactory: tacticSchema,
-    questionTimeTacticFactory: tacticSchema,
+    questionTimeFactory: questionTimeSchema,
     timeRoutineFactory: timeRoutineSchema,
   };
