@@ -1,15 +1,11 @@
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 import { makeApplicationFactory } from './application';
 import { makeCommentFactory } from './comment';
-import { dayLogsSummaryFactory } from './dayLogsSummary';
+import { makeDayFactory } from './day';
 import { makeFolderFactory } from './folder';
 import { makeIssueFactory } from './issue';
 import { makeLocationFactory } from './location';
-import {
-  makeImpulseLogFactory,
-  makeLocationLogFactory,
-  makeTimeLogFactory,
-} from './log';
+import { makeImpulseLogFactory } from './log';
 import { makeProfileFactory } from './profile';
 import { makeProfileLogsSummaryFactory } from './profileLogsSummary';
 import { makeQuestionTimeTacticFactory } from './question';
@@ -21,19 +17,17 @@ import { makeTacticFactory } from './tactic';
 // injected dependency
 export function makeFactories(TimestampKlass: typeof TimestampLike) {
   return {
-    dayLogsSummaryFactory,
-    profileLogsSummaryFactory: makeProfileLogsSummaryFactory(TimestampKlass),
     applicationFactory: makeApplicationFactory(TimestampKlass),
     commentFactory: makeCommentFactory(TimestampKlass),
-    impulseFactory: makeImpulseLogFactory(TimestampKlass),
-    timeLogFactory: makeTimeLogFactory(TimestampKlass),
-    locationLogFactory: makeLocationLogFactory(TimestampKlass),
-    locationFactory: makeLocationFactory(TimestampKlass),
-    profileFactory: makeProfileFactory(TimestampKlass),
-    issueFactory: makeIssueFactory(TimestampKlass),
+    dayFactory: makeDayFactory(TimestampKlass),
     folderFactory: makeFolderFactory(TimestampKlass),
-    tacticFactory: makeTacticFactory(TimestampKlass),
+    impulseFactory: makeImpulseLogFactory(TimestampKlass),
+    issueFactory: makeIssueFactory(TimestampKlass),
+    locationFactory: makeLocationFactory(TimestampKlass),
+    profileLogsSummaryFactory: makeProfileLogsSummaryFactory(TimestampKlass),
+    profileFactory: makeProfileFactory(TimestampKlass),
     questionTimeFactory: makeQuestionTimeTacticFactory(TimestampKlass),
     timeRoutineFactory: makeTimeRoutineFactory(TimestampKlass),
+    tacticFactory: makeTacticFactory(TimestampKlass),
   };
 }

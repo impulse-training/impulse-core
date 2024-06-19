@@ -2,20 +2,14 @@ import * as yup from 'yup';
 export declare const profileLogsSummarySchema: yup.Lazy<{
     [x: string]: {
         [x: string]: {
-            value?: number | undefined;
-            customUnit?: string | undefined;
-            optionId?: string | null | undefined;
-            optionLabel?: string | undefined;
-            optionColor?: string | undefined;
-            optionTextColor?: string | undefined;
-            isCompleted?: boolean | undefined;
+            numericValue?: number | undefined;
             setAt: {
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             };
-            unit: NonNullable<"text" | "time" | "custom" | undefined>;
-            formattedValue: string;
+            stringValue: string;
+            unit: string;
         };
     };
 }, yup.AnyObject, any>;

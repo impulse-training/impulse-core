@@ -6,7 +6,6 @@ export const {
   applicationFactory,
   commentFactory,
   impulseFactory,
-  timeLogFactory,
   profileFactory,
   folderFactory,
   tacticFactory,

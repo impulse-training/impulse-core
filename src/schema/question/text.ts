@@ -1,6 +1,6 @@
 import * as yup from 'yup';
-import { questionValueBaseSchema } from './base';
+import { questionBaseSchema } from './base';
 
-export const questionTextSchema = questionValueBaseSchema('question-text');
+export const questionTextSchema = questionBaseSchema('text');
 
 export type QuestionTextValue = yup.InferType<typeof questionTextSchema>;

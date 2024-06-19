@@ -1,15 +1,18 @@
 import * as yup from 'yup';
-import { log2Schema } from './log2';
+import { LogValue, logSchema } from './log';
 import { objectOf } from './utils/objectOf';
-import { timestampSchema } from './utils/timestamp';
+import { optionalTimestampSchema, timestampSchema } from './utils/timestamp';
 
 // And this is a summary of all the tactics for a given log entry
-const day = yup.object({
+export const daySchema = yup.object({
   date: timestampSchema,
+  createdAt: optionalTimestampSchema,
+  updatedAt: optionalTimestampSchema,
   profileId: yup.string().required(),
-  issueName: yup.string(),
-  logsById: objectOf(log2Schema),
+  logsById: objectOf(logSchema),
   isProcessing: yup.boolean().default(false),
 });
 
-export type DayValue = yup.InferType<typeof day>;
+export type DayValue = Omit<yup.InferType<typeof daySchema>, 'logsById'> & {
+  logsById: Record<string, LogValue>;
+};

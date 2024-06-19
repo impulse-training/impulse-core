@@ -4,7 +4,7 @@ import {
   QuestionMultipleChoiceValue,
   questionMultipleChoiceSchema,
 } from './multipleChoice';
-import { QuestionSliderValue, questionSliderSchema } from './slider';
+import { QuestionSliderValue, questionScaleOfOneToTenSchema } from './slider';
 import { QuestionTextValue, questionTextSchema } from './text';
 import { QuestionTimeValue, questionTimeSchema } from './time';
 
@@ -18,11 +18,11 @@ export const questionSchemas: Record<
   QuestionValue['type'],
   yup.ObjectSchema<QuestionValue>
 > = {
-  'question-text': questionTextSchema,
-  'question-time': questionTimeSchema,
-  'question-counter': questionCounterSchema,
-  'question-slider': questionSliderSchema,
-  'question-multiple-choice': questionMultipleChoiceSchema,
+  text: questionTextSchema,
+  time: questionTimeSchema,
+  counter: questionCounterSchema,
+  scaleOf1To10: questionScaleOfOneToTenSchema,
+  multipleChoice: questionMultipleChoiceSchema,
 } as any;
 
 export const questionSchema = yup.lazy(value => {

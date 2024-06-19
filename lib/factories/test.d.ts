@@ -24,7 +24,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         uri?: import("yup").Maybe<string | undefined>;
     } | undefined;
     profileId: string;
-}, "profileId" | ("createdAt" | "updatedAt" | "tacticId" | "tacticTitle" | "text" | "recording" | "isEdited" | "avatar")>, impulseFactory: import("factory.ts").Factory<import("..").ImpulseLogValue, "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "tacticIds" | "tacticData" | ("createdAt" | "updatedAt" | "issueId" | "parentIssueIds" | "encryptedPhoneNumber" | "messages" | "tacticLikes" | "debriefAfter" | "debriefReminderSentAt" | "debriefedAt")>, timeLogFactory: import("factory.ts").Factory<import("..").TimeLogValue, "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "tacticIds" | "tacticData" | ("createdAt" | "updatedAt" | "issueId" | "parentIssueIds" | "encryptedPhoneNumber" | "messages" | "tacticLikes")>, profileFactory: import("factory.ts").Factory<{
+}, "profileId" | ("createdAt" | "updatedAt" | "tacticId" | "tacticTitle" | "text" | "recording" | "isEdited" | "avatar")>, impulseFactory: import("factory.ts").Factory<{
     createdAt?: {
         seconds: number;
         nanoseconds: number;
@@ -35,10 +35,30 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    setbackThreshold?: number | undefined;
-    parentIssueIds?: string[] | undefined;
-    encryptedPhoneNumber?: string | undefined;
+    profileId: string;
+    date: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    };
+    type: "impulse";
+    systemMessage: string;
+    issueName: string;
+    parentIssueIds: string[];
+}, "profileId" | "date" | "type" | "systemMessage" | "issueName" | "parentIssueIds" | ("createdAt" | "updatedAt")>, profileFactory: import("factory.ts").Factory<{
+    createdAt?: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    updatedAt?: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
     issueName?: string | undefined;
+    parentIssueIds?: string[] | undefined;
+    setbackThreshold?: number | undefined;
     lastActiveAt?: {
         seconds: number;
         nanoseconds: number;
@@ -60,6 +80,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     notificationPreferences?: {
         [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
     } | null | undefined;
+    encryptedPhoneNumber?: string | undefined;
     hashedPhoneNumber?: string | undefined;
     isTourCompleted?: boolean | undefined;
     androidPermissions?: {
@@ -67,10 +88,10 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     } | null | undefined;
     region?: string | null | undefined;
     scheduledNotificationIds?: string[] | undefined;
-    timezone: string;
     issueId: string | null;
+    timezone: string;
     uids: string[];
-}, "timezone" | "issueId" | "uids" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIssueIds" | "encryptedPhoneNumber" | "issueName" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "hashedPhoneNumber" | "isTourCompleted" | "androidPermissions" | "region" | "scheduledNotificationIds")>, folderFactory: import("factory.ts").Factory<{
+}, "issueId" | "timezone" | "uids" | ("createdAt" | "updatedAt" | "issueName" | "parentIssueIds" | "setbackThreshold" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "encryptedPhoneNumber" | "hashedPhoneNumber" | "isTourCompleted" | "androidPermissions" | "region" | "scheduledNotificationIds")>, folderFactory: import("factory.ts").Factory<{
     createdAt?: {
         seconds: number;
         nanoseconds: number;
@@ -98,6 +119,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -112,7 +134,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
-            setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
@@ -121,9 +142,9 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 waveform?: string | null | undefined;
                 remoteFilePath: string;
             };
+            type: "audio";
             ordinal: number;
             title: string;
-            type: "audio";
         } | {
             createdAt?: {
                 seconds: number;
@@ -136,6 +157,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            repeat?: import("yup").Maybe<number | undefined>;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -150,14 +173,12 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
-            setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            repeat?: import("yup").Maybe<number | undefined>;
+            type: "breathe";
             ordinal: number;
             title: string;
-            type: "breathe";
             inFor: number;
             holdFor: number;
             outFor: number;
@@ -173,6 +194,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -187,13 +209,12 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
-            setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            type: "contacts";
             ordinal: number;
             title: string;
-            type: "contacts";
             contactIds: string[];
         } | {
             createdAt?: {
@@ -207,6 +228,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -221,13 +243,12 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
-            setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            type: "steps";
             ordinal: number;
             title: string;
-            type: "steps";
             steps: number;
         } | {
             createdAt?: {
@@ -241,6 +262,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -255,13 +277,12 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
-            setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            type: "task";
             ordinal: number;
             title: string;
-            type: "task";
         } | {
             createdAt?: {
                 seconds: number;
@@ -274,6 +295,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -288,13 +310,12 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
-            setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            type: "video";
             ordinal: number;
             title: string;
-            type: "video";
             video: {
                 storagePath?: string | null | undefined;
                 url?: string | null | undefined;
@@ -319,6 +340,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
+        setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -333,7 +355,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
-        setbackThreshold?: number | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
@@ -342,9 +363,9 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             waveform?: string | null | undefined;
             remoteFilePath: string;
         };
+        type: "audio";
         ordinal: number;
         title: string;
-        type: "audio";
     } | {
         createdAt?: {
             seconds: number;
@@ -357,6 +378,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
+        setbackThreshold?: number | null | undefined;
+        repeat?: import("yup").Maybe<number | undefined>;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -371,14 +394,12 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
-        setbackThreshold?: number | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        repeat?: import("yup").Maybe<number | undefined>;
+        type: "breathe";
         ordinal: number;
         title: string;
-        type: "breathe";
         inFor: number;
         holdFor: number;
         outFor: number;
@@ -394,6 +415,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
+        setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -408,13 +430,12 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
-        setbackThreshold?: number | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
+        type: "contacts";
         ordinal: number;
         title: string;
-        type: "contacts";
         contactIds: string[];
     } | {
         createdAt?: {
@@ -428,6 +449,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
+        setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -442,13 +464,12 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
-        setbackThreshold?: number | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
+        type: "steps";
         ordinal: number;
         title: string;
-        type: "steps";
         steps: number;
     } | {
         createdAt?: {
@@ -462,6 +483,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
+        setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -476,13 +498,12 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
-        setbackThreshold?: number | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
+        type: "task";
         ordinal: number;
         title: string;
-        type: "task";
     } | {
         createdAt?: {
             seconds: number;
@@ -495,6 +516,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
+        setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -509,13 +531,12 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
-        setbackThreshold?: number | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
+        type: "video";
         ordinal: number;
         title: string;
-        type: "video";
         video: {
             storagePath?: string | null | undefined;
             url?: string | null | undefined;
@@ -525,9 +546,9 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             duration: number;
         };
     })[] | undefined;
+    type: "folder";
     ordinal: number;
     title: string;
-    type: "folder";
     invitationCode: string;
     invitationUrl: string;
-}, "ordinal" | "title" | "type" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "ordinal" | "title" | "type" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "backgroundColor" | "setbackThreshold" | "likesCount" | "timerSeconds" | "isSuggested">;
+}, "type" | "ordinal" | "title" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "ordinal" | "title" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;

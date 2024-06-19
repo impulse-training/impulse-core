@@ -1,8 +1,7 @@
 import { QuestionValue } from '..';
 
 export const isQuestionSlider = ({ type }: QuestionValue) =>
-  type === 'question-slider';
-export const isQuestionTime = ({ type }: QuestionValue) =>
-  type === 'question-time';
+  type === 'scaleOf1To10';
+export const isQuestionTime = ({ type }: QuestionValue) => type === 'time';
 export const isQuestionCounter = ({ type }: QuestionValue) =>
-  type === 'question-counter';
+  type === 'counter';

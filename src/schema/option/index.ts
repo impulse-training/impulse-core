@@ -1,32 +1,27 @@
 import { findKey, isUndefined, sortBy } from 'lodash';
 import * as yup from 'yup';
-import { TacticData } from '../log';
+import { QuestionDataValue } from '../log';
 import {
-  MultipleChoiceOptionValue,
-  multipleChoiceOptionSchema,
-  optionIsMultipleChoiceOption,
-} from './multipleChoice';
-import {
-  CounterOptionValue,
   NumericOptionValue,
-  TimeOptionValue,
-  counterOptionSchema,
+  numericOptionSchema,
   numericOptionText,
-  optionIsCounterOption,
-  optionIsTimeOption,
-  timeOptionSchema,
+  optionIsNumericOption,
 } from './numeric';
+import {
+  StringOptionValue,
+  optionIsStringOption,
+  stringOptionSchema,
+} from './string';
 
-export * from './multipleChoice';
 export * from './numeric';
+export * from './string';
 
 export const optionSchemas: Record<
   OptionValue['type'],
   yup.ObjectSchema<OptionValue>
 > = {
-  'question-time': timeOptionSchema,
-  'question-counter': counterOptionSchema,
-  'question-multiple-choice': multipleChoiceOptionSchema,
+  string: stringOptionSchema,
+  numeric: numericOptionSchema,
 };
 
 export const optionSchema = yup.lazy(value => {
@@ -49,10 +44,7 @@ type ValidatedOption = {
   [K in OptionValue['type']]: yup.InferType<(typeof optionSchemas)[K]>;
 }[OptionValue['type']];
 
-export type OptionValue =
-  | TimeOptionValue
-  | CounterOptionValue
-  | MultipleChoiceOptionValue;
+export type OptionValue = NumericOptionValue | StringOptionValue;
 
 // For display purposes, we sort by lessThanOrEqualTo ascending, then by greaterThan ascending
 // This function returns a tuple to sort the objects.
@@ -90,7 +82,7 @@ function optionSortValueForMatching(option: OptionValue) {
 
 export function findBestMatchingOption(
   optionsById: Record<string, OptionValue>,
-  data: TacticData
+  data: QuestionDataValue
 ) {
   const optionsArray = Object.keys(optionsById).map(id => ({
     id,
@@ -104,25 +96,26 @@ export function findBestMatchingOption(
   );
 }
 
-export function optionMatches(option: OptionValue, data: TacticData) {
-  if (optionIsMultipleChoiceOption(option))
-    return option.text === data.formattedValue;
+export function optionMatches(option: OptionValue, data: QuestionDataValue) {
+  if (optionIsStringOption(option)) return option.text === data.stringValue;
 
   if (option.greaterThan != null)
-    return typeof data.value === 'number' && data.value > option.greaterThan;
+    return (
+      typeof data.numericValue === 'number' &&
+      data.numericValue > option.greaterThan
+    );
 
   if (option.lessThanOrEqualTo != null)
     return (
-      typeof data.value === 'number' && data.value <= option.lessThanOrEqualTo
+      typeof data.numericValue === 'number' &&
+      data.numericValue <= option.lessThanOrEqualTo
     );
 
   return false;
 }
 
 export function optionText(option: OptionValue) {
-  if (optionIsTimeOption(option) || optionIsCounterOption(option)) {
-    return numericOptionText(option);
-  }
-  if (optionIsMultipleChoiceOption(option)) return option.text;
+  if (optionIsNumericOption(option)) return numericOptionText(option);
+  if (optionIsStringOption(option)) return option.text;
   return '';
 }

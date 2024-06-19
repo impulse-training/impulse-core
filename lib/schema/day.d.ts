@@ -1,15 +1,228 @@
 import * as yup from 'yup';
-declare const day: yup.ObjectSchema<{
+import { LogValue } from './log';
+export declare const daySchema: yup.ObjectSchema<{
     date: {
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     };
+    createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
     profileId: string;
-    issueName: string | undefined;
     logsById: {
         [x: string]: {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId: string;
+            date: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            };
+            type: "impulse";
+            systemMessage: string;
+            issueName: string;
+            parentIssueIds: string[];
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            text: string;
+            profileId: string;
+            date: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            };
+            type: "message";
+            systemMessage: string;
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
             text?: string | undefined;
+            openAiChoiceResponse?: {} | undefined;
+            profileId: string;
+            date: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            };
+            type: "questions";
+            systemMessage: string;
+            questionsById: {
+                [x: string]: {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    options?: ({
+                        createdAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        label?: string | undefined;
+                        setbackThreshold?: number | undefined;
+                        greaterThan?: number | undefined;
+                        lessThanOrEqualTo?: number | undefined;
+                        text: string;
+                        type: "numeric";
+                        color: string;
+                        textColor: string;
+                    } | {
+                        createdAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        label?: string | undefined;
+                        text: string;
+                        type: "string";
+                        color: string;
+                        textColor: string;
+                    })[] | undefined;
+                    type: import(".").QuestionKeyType;
+                    prompt: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    options?: string[] | undefined;
+                    type: import(".").QuestionKeyType;
+                    prompt: string;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    options?: ({
+                        createdAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        label?: string | undefined;
+                        setbackThreshold?: number | undefined;
+                        greaterThan?: number | undefined;
+                        lessThanOrEqualTo?: number | undefined;
+                        text: string;
+                        type: "numeric";
+                        color: string;
+                        textColor: string;
+                    } | {
+                        createdAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        label?: string | undefined;
+                        text: string;
+                        type: "string";
+                        color: string;
+                        textColor: string;
+                    })[] | undefined;
+                    lowEmoji?: yup.Maybe<string | undefined>;
+                    highEmoji?: yup.Maybe<string | undefined>;
+                    type: import(".").QuestionKeyType;
+                    prompt: string;
+                };
+            };
+            questionData: {
+                [x: string]: {
+                    numericValue?: number | undefined;
+                    setAt: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    };
+                    stringValue: string;
+                    unit: string;
+                };
+            };
+            role: {};
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            text?: string | undefined;
+            openAiChoiceResponse?: {} | undefined;
             tactic?: ({
                 createdAt?: {
                     seconds: number;
@@ -22,6 +235,7 @@ declare const day: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 profileId?: string | null | undefined;
+                setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -36,7 +250,6 @@ declare const day: yup.ObjectSchema<{
                     uri?: yup.Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
-                setbackThreshold?: number | null | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
@@ -45,9 +258,9 @@ declare const day: yup.ObjectSchema<{
                     waveform?: string | null | undefined;
                     remoteFilePath: string;
                 };
+                type: "audio";
                 ordinal: number;
                 title: string;
-                type: "audio";
             } | {
                 createdAt?: {
                     seconds: number;
@@ -60,6 +273,8 @@ declare const day: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 profileId?: string | null | undefined;
+                setbackThreshold?: number | null | undefined;
+                repeat?: yup.Maybe<number | undefined>;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -74,14 +289,12 @@ declare const day: yup.ObjectSchema<{
                     uri?: yup.Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
-                setbackThreshold?: number | null | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                repeat?: yup.Maybe<number | undefined>;
+                type: "breathe";
                 ordinal: number;
                 title: string;
-                type: "breathe";
                 inFor: number;
                 holdFor: number;
                 outFor: number;
@@ -97,6 +310,7 @@ declare const day: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 profileId?: string | null | undefined;
+                setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -111,13 +325,12 @@ declare const day: yup.ObjectSchema<{
                     uri?: yup.Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
-                setbackThreshold?: number | null | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
+                type: "contacts";
                 ordinal: number;
                 title: string;
-                type: "contacts";
                 contactIds: string[];
             } | {
                 createdAt?: {
@@ -131,6 +344,7 @@ declare const day: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 profileId?: string | null | undefined;
+                setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -145,13 +359,12 @@ declare const day: yup.ObjectSchema<{
                     uri?: yup.Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
-                setbackThreshold?: number | null | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
+                type: "steps";
                 ordinal: number;
                 title: string;
-                type: "steps";
                 steps: number;
             } | {
                 createdAt?: {
@@ -165,6 +378,7 @@ declare const day: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 profileId?: string | null | undefined;
+                setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -179,13 +393,12 @@ declare const day: yup.ObjectSchema<{
                     uri?: yup.Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
-                setbackThreshold?: number | null | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
+                type: "task";
                 ordinal: number;
                 title: string;
-                type: "task";
             } | {
                 createdAt?: {
                     seconds: number;
@@ -198,6 +411,7 @@ declare const day: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 profileId?: string | null | undefined;
+                setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -212,13 +426,12 @@ declare const day: yup.ObjectSchema<{
                     uri?: yup.Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
-                setbackThreshold?: number | null | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
+                type: "video";
                 ordinal: number;
                 title: string;
-                type: "video";
                 video: {
                     storagePath?: string | null | undefined;
                     url?: string | null | undefined;
@@ -228,30 +441,15 @@ declare const day: yup.ObjectSchema<{
                     duration: number;
                 };
             }) | undefined;
-            openAiChoiceResponse?: {} | undefined;
-            data?: {
-                value?: number | undefined;
-                customUnit?: string | undefined;
-                optionId?: string | null | undefined;
-                optionLabel?: string | undefined;
-                optionColor?: string | undefined;
-                optionTextColor?: string | undefined;
-                isCompleted?: boolean | undefined;
-                setAt: {
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                };
-                unit: NonNullable<"text" | "time" | "custom" | undefined>;
-                formattedValue: string;
-            } | undefined;
-            createdAt: {
+            profileId: string;
+            date: {
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             };
-            profileId: string;
-            role: NonNullable<"system" | "user" | "assistant" | undefined>;
+            type: "tactic";
+            systemMessage: string;
+            role: {};
         };
     };
     isProcessing: boolean;
@@ -261,10 +459,12 @@ declare const day: yup.ObjectSchema<{
         nanoseconds: undefined;
         toDate: undefined;
     };
+    createdAt: undefined;
+    updatedAt: undefined;
     profileId: undefined;
-    issueName: undefined;
     logsById: undefined;
     isProcessing: false;
 }, "">;
-export type DayValue = yup.InferType<typeof day>;
-export {};
+export type DayValue = Omit<yup.InferType<typeof daySchema>, 'logsById'> & {
+    logsById: Record<string, LogValue>;
+};

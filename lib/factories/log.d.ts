@@ -1,6 +1,24 @@
 import * as Factory from 'factory.ts';
-import { ImpulseLogValue, LocationLogValue, TimeLogValue } from '../schema/log';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
-export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<ImpulseLogValue, "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "tacticIds" | "tacticData" | ("createdAt" | "updatedAt" | "issueId" | "parentIssueIds" | "encryptedPhoneNumber" | "messages" | "tacticLikes" | "debriefAfter" | "debriefReminderSentAt" | "debriefedAt")>;
-export declare const makeTimeLogFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<TimeLogValue, "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "tacticIds" | "tacticData" | ("createdAt" | "updatedAt" | "issueId" | "parentIssueIds" | "encryptedPhoneNumber" | "messages" | "tacticLikes")>;
-export declare const makeLocationLogFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<LocationLogValue, "profileId" | "type" | "tacticsById" | "startTime" | "timezone" | "tacticIds" | "tacticData" | "locationId" | "isDisplayable" | "locationName" | "locationMode" | ("createdAt" | "updatedAt" | "issueId" | "parentIssueIds" | "encryptedPhoneNumber" | "messages" | "tacticLikes")>;
+export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
+    createdAt?: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    updatedAt?: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    profileId: string;
+    date: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    };
+    type: "impulse";
+    systemMessage: string;
+    issueName: string;
+    parentIssueIds: string[];
+}, "profileId" | "date" | "type" | "systemMessage" | "issueName" | "parentIssueIds" | ("createdAt" | "updatedAt")>;

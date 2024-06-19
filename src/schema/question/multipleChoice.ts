@@ -1,9 +1,9 @@
 import * as yup from 'yup';
 import { optionalStringArray } from '../utils/array';
-import { questionValueBaseSchema } from './base';
+import { questionBaseSchema } from './base';
 
-export const questionMultipleChoiceSchema = questionValueBaseSchema(
-  'question-multiple-choice'
+export const questionMultipleChoiceSchema = questionBaseSchema(
+  'multipleChoice'
 ).shape({
   options: optionalStringArray,
 });

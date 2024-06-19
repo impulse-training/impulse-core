@@ -34,6 +34,7 @@ export declare const folderSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -48,7 +49,6 @@ export declare const folderSchema: yup.ObjectSchema<{
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
-            setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
@@ -57,9 +57,9 @@ export declare const folderSchema: yup.ObjectSchema<{
                 waveform?: string | null | undefined;
                 remoteFilePath: string;
             };
+            type: "audio";
             ordinal: number;
             title: string;
-            type: "audio";
         } | {
             createdAt?: {
                 seconds: number;
@@ -72,6 +72,8 @@ export declare const folderSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
+            repeat?: yup.Maybe<number | undefined>;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -86,14 +88,12 @@ export declare const folderSchema: yup.ObjectSchema<{
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
-            setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            repeat?: yup.Maybe<number | undefined>;
+            type: "breathe";
             ordinal: number;
             title: string;
-            type: "breathe";
             inFor: number;
             holdFor: number;
             outFor: number;
@@ -109,6 +109,7 @@ export declare const folderSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -123,13 +124,12 @@ export declare const folderSchema: yup.ObjectSchema<{
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
-            setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            type: "contacts";
             ordinal: number;
             title: string;
-            type: "contacts";
             contactIds: string[];
         } | {
             createdAt?: {
@@ -143,6 +143,7 @@ export declare const folderSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -157,13 +158,12 @@ export declare const folderSchema: yup.ObjectSchema<{
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
-            setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            type: "steps";
             ordinal: number;
             title: string;
-            type: "steps";
             steps: number;
         } | {
             createdAt?: {
@@ -177,6 +177,7 @@ export declare const folderSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -191,13 +192,12 @@ export declare const folderSchema: yup.ObjectSchema<{
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
-            setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            type: "task";
             ordinal: number;
             title: string;
-            type: "task";
         } | {
             createdAt?: {
                 seconds: number;
@@ -210,6 +210,7 @@ export declare const folderSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -224,13 +225,12 @@ export declare const folderSchema: yup.ObjectSchema<{
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
-            setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            type: "video";
             ordinal: number;
             title: string;
-            type: "video";
             video: {
                 storagePath?: string | null | undefined;
                 url?: string | null | undefined;
@@ -253,6 +253,7 @@ export declare const folderSchema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
+        setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -267,7 +268,6 @@ export declare const folderSchema: yup.ObjectSchema<{
             uri?: yup.Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
-        setbackThreshold?: number | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
@@ -276,9 +276,9 @@ export declare const folderSchema: yup.ObjectSchema<{
             waveform?: string | null | undefined;
             remoteFilePath: string;
         };
+        type: "audio";
         ordinal: number;
         title: string;
-        type: "audio";
     } | {
         createdAt?: {
             seconds: number;
@@ -291,6 +291,8 @@ export declare const folderSchema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
+        setbackThreshold?: number | null | undefined;
+        repeat?: yup.Maybe<number | undefined>;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -305,14 +307,12 @@ export declare const folderSchema: yup.ObjectSchema<{
             uri?: yup.Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
-        setbackThreshold?: number | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        repeat?: yup.Maybe<number | undefined>;
+        type: "breathe";
         ordinal: number;
         title: string;
-        type: "breathe";
         inFor: number;
         holdFor: number;
         outFor: number;
@@ -328,6 +328,7 @@ export declare const folderSchema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
+        setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -342,13 +343,12 @@ export declare const folderSchema: yup.ObjectSchema<{
             uri?: yup.Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
-        setbackThreshold?: number | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
+        type: "contacts";
         ordinal: number;
         title: string;
-        type: "contacts";
         contactIds: string[];
     } | {
         createdAt?: {
@@ -362,6 +362,7 @@ export declare const folderSchema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
+        setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -376,13 +377,12 @@ export declare const folderSchema: yup.ObjectSchema<{
             uri?: yup.Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
-        setbackThreshold?: number | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
+        type: "steps";
         ordinal: number;
         title: string;
-        type: "steps";
         steps: number;
     } | {
         createdAt?: {
@@ -396,6 +396,7 @@ export declare const folderSchema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
+        setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -410,13 +411,12 @@ export declare const folderSchema: yup.ObjectSchema<{
             uri?: yup.Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
-        setbackThreshold?: number | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
+        type: "task";
         ordinal: number;
         title: string;
-        type: "task";
     } | {
         createdAt?: {
             seconds: number;
@@ -429,6 +429,7 @@ export declare const folderSchema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
+        setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -443,13 +444,12 @@ export declare const folderSchema: yup.ObjectSchema<{
             uri?: yup.Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
-        setbackThreshold?: number | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
+        type: "video";
         ordinal: number;
         title: string;
-        type: "video";
         video: {
             storagePath?: string | null | undefined;
             url?: string | null | undefined;

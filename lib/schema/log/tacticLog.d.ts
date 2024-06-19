@@ -1,12 +1,26 @@
 import * as yup from 'yup';
-export declare const log2Schema: yup.ObjectSchema<{
+export declare const tacticLogSchema: yup.ObjectSchema<{
     createdAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    updatedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    type: "tactic";
+    systemMessage: string;
+    date: {
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     };
     profileId: string;
-    role: NonNullable<"system" | "user" | "assistant" | undefined>;
+    text: string | undefined;
+    role: {};
+    openAiChoiceResponse: {} | undefined;
     tactic: ({
         createdAt?: {
             seconds: number;
@@ -19,6 +33,7 @@ export declare const log2Schema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
+        setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -33,7 +48,6 @@ export declare const log2Schema: yup.ObjectSchema<{
             uri?: yup.Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
-        setbackThreshold?: number | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
@@ -42,9 +56,9 @@ export declare const log2Schema: yup.ObjectSchema<{
             waveform?: string | null | undefined;
             remoteFilePath: string;
         };
+        type: "audio";
         ordinal: number;
         title: string;
-        type: "audio";
     } | {
         createdAt?: {
             seconds: number;
@@ -57,6 +71,8 @@ export declare const log2Schema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
+        setbackThreshold?: number | null | undefined;
+        repeat?: yup.Maybe<number | undefined>;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -71,14 +87,12 @@ export declare const log2Schema: yup.ObjectSchema<{
             uri?: yup.Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
-        setbackThreshold?: number | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        repeat?: yup.Maybe<number | undefined>;
+        type: "breathe";
         ordinal: number;
         title: string;
-        type: "breathe";
         inFor: number;
         holdFor: number;
         outFor: number;
@@ -94,6 +108,7 @@ export declare const log2Schema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
+        setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -108,13 +123,12 @@ export declare const log2Schema: yup.ObjectSchema<{
             uri?: yup.Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
-        setbackThreshold?: number | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
+        type: "contacts";
         ordinal: number;
         title: string;
-        type: "contacts";
         contactIds: string[];
     } | {
         createdAt?: {
@@ -128,6 +142,7 @@ export declare const log2Schema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
+        setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -142,13 +157,12 @@ export declare const log2Schema: yup.ObjectSchema<{
             uri?: yup.Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
-        setbackThreshold?: number | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
+        type: "steps";
         ordinal: number;
         title: string;
-        type: "steps";
         steps: number;
     } | {
         createdAt?: {
@@ -162,6 +176,7 @@ export declare const log2Schema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
+        setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -176,13 +191,12 @@ export declare const log2Schema: yup.ObjectSchema<{
             uri?: yup.Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
-        setbackThreshold?: number | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
+        type: "task";
         ordinal: number;
         title: string;
-        type: "task";
     } | {
         createdAt?: {
             seconds: number;
@@ -195,6 +209,7 @@ export declare const log2Schema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
+        setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -209,13 +224,12 @@ export declare const log2Schema: yup.ObjectSchema<{
             uri?: yup.Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
-        setbackThreshold?: number | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
+        type: "video";
         ordinal: number;
         title: string;
-        type: "video";
         video: {
             storagePath?: string | null | undefined;
             url?: string | null | undefined;
@@ -225,35 +239,20 @@ export declare const log2Schema: yup.ObjectSchema<{
             duration: number;
         };
     }) | undefined;
-    text: string | undefined;
-    openAiChoiceResponse: {} | undefined;
-    data: {
-        value?: number | undefined;
-        customUnit?: string | undefined;
-        optionId?: string | null | undefined;
-        optionLabel?: string | undefined;
-        optionColor?: string | undefined;
-        optionTextColor?: string | undefined;
-        isCompleted?: boolean | undefined;
-        setAt: {
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        };
-        unit: NonNullable<"text" | "time" | "custom" | undefined>;
-        formattedValue: string;
-    } | undefined;
 }, yup.AnyObject, {
-    createdAt: {
+    createdAt: undefined;
+    updatedAt: undefined;
+    type: undefined;
+    systemMessage: undefined;
+    date: {
         seconds: undefined;
         nanoseconds: undefined;
         toDate: undefined;
     };
     profileId: undefined;
-    role: undefined;
-    tactic: undefined;
     text: undefined;
+    role: undefined;
     openAiChoiceResponse: undefined;
-    data: undefined;
+    tactic: undefined;
 }, "">;
-export type Log2Value = yup.InferType<typeof log2Schema>;
+export type TacticLogValue = yup.InferType<typeof tacticLogSchema>;

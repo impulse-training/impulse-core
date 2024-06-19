@@ -1,6 +1,5 @@
 import * as yup from 'yup';
-import { questionValueBaseSchema } from './base';
+import { questionBaseSchema } from './base';
 
-export const questionCounterSchema =
-  questionValueBaseSchema('question-counter');
+export const questionCounterSchema = questionBaseSchema('counter');
 export type QuestionCounterValue = yup.InferType<typeof questionCounterSchema>;

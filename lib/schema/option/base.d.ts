@@ -1,6 +1,5 @@
 import * as yup from 'yup';
-import { QuestionKeyType } from '../question/utils/questionKeyType';
-export declare function optionValueBaseSchema<K extends QuestionKeyType>(type: K): yup.ObjectSchema<{
+export declare function optionValueBaseSchema<K extends string>(type: K): yup.ObjectSchema<{
     type: yup.Defined<K>;
     createdAt: {
         seconds: number;

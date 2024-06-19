@@ -9,13 +9,13 @@ export const makeProfileLogsSummaryFactory = (
     '2024-01-01': {
       tactic1: {
         unit: 'time',
-        value: 1,
+        numericValue: 1,
         setAt: TimestampKlass.now(),
-        formattedValue: '1 minute',
-        optionId: 'tactic1',
-        optionColor: 'blue',
-        optionLabel: 'Tactic 1',
-        optionTextColor: 'white',
+        stringValue: '1 minute',
+        // optionId: 'tactic1',
+        // optionColor: 'blue',
+        // optionLabel: 'Tactic 1',
+        // optionTextColor: 'white',
       },
     },
   });

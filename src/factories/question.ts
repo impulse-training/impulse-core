@@ -6,12 +6,8 @@ export const makeQuestionTimeTacticFactory = (
   TimestampKlass: typeof TimestampLike
 ) =>
   Factory.makeFactory<QuestionTimeValue>({
-    ordinal: 0,
-    profileId: Factory.each(i => i.toString()),
-    type: 'question-time',
-    commentCount: 0,
-    title: 'How long did you spend?',
+    prompt: 'How long did you spend?',
+    type: 'time',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
-    backgroundColor: '#FF0000',
   });
