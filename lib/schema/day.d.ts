@@ -83,6 +83,11 @@ export declare const daySchema: yup.ObjectSchema<{
                 content: string;
             }[] | undefined;
             openAiChoiceResponse?: {} | undefined;
+            submittedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
             date: {
                 seconds: number;
                 nanoseconds: number;

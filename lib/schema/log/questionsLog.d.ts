@@ -222,6 +222,11 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
             unit: string;
         };
     };
+    submittedAt: {
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
 }, yup.AnyObject, {
     openAiChoiceResponse: undefined;
     createdAt: undefined;
@@ -236,5 +241,6 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
     gptPayload: "";
     questionsById: undefined;
     questionData: undefined;
+    submittedAt: undefined;
 }, "">;
 export type QuestionsLogValue = yup.InferType<typeof questionsLogSchema>;
