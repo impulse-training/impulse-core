@@ -288,12 +288,13 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             };
-            type: "tactics";
+            type: "strategies";
             gptPayload: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;
             };
-            tacticsById: {
+            strategyIds: string[];
+            strategiesById: {
                 [x: string]: {
                     createdAt?: {
                         seconds: number;
