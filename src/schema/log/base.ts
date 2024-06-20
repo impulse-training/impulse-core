@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 import { optionalTimestampSchema, timestampSchema } from '../utils/timestamp';
-import { gptGeneratedMixin } from './utils/generated';
+import { gptMessageSchema, gptResponseMixin } from './utils/gpt';
 
 export function logBaseSchema<K extends string>(type: K) {
   return yup.object({
@@ -9,15 +9,7 @@ export function logBaseSchema<K extends string>(type: K) {
     type: yup.mixed<K>().oneOf([type]).defined(),
     date: timestampSchema,
     senderProfileId: yup.string().nullable(),
-    gptPayload: yup
-      .object({
-        role: yup
-          .mixed<'system' | 'user' | 'assistant'>()
-          .oneOf(['assistant', 'system', 'user'])
-          .required(),
-        content: yup.string().required(),
-      })
-      .required(),
-    ...gptGeneratedMixin,
+    gptPayload: yup.array().of(gptMessageSchema),
+    ...gptResponseMixin,
   });
 }

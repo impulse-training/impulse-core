@@ -29,6 +29,10 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             senderProfileId?: string | null | undefined;
+            gptPayload?: {
+                role: NonNullable<"system" | "user" | "assistant" | undefined>;
+                content: string;
+            }[] | undefined;
             openAiChoiceResponse?: {} | undefined;
             date: {
                 seconds: number;
@@ -36,10 +40,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             };
             type: "impulse";
-            gptPayload: {
-                role: NonNullable<"system" | "user" | "assistant" | undefined>;
-                content: string;
-            };
             issueName: string;
             parentIssueIds: string[];
         } | {
@@ -54,6 +54,10 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             senderProfileId?: string | null | undefined;
+            gptPayload?: {
+                role: NonNullable<"system" | "user" | "assistant" | undefined>;
+                content: string;
+            }[] | undefined;
             openAiChoiceResponse?: {} | undefined;
             text: string;
             date: {
@@ -62,10 +66,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             };
             type: "message";
-            gptPayload: {
-                role: NonNullable<"system" | "user" | "assistant" | undefined>;
-                content: string;
-            };
         } | {
             createdAt?: {
                 seconds: number;
@@ -78,6 +78,10 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             senderProfileId?: string | null | undefined;
+            gptPayload?: {
+                role: NonNullable<"system" | "user" | "assistant" | undefined>;
+                content: string;
+            }[] | undefined;
             openAiChoiceResponse?: {} | undefined;
             date: {
                 seconds: number;
@@ -85,10 +89,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             };
             type: "questions";
-            gptPayload: {
-                role: NonNullable<"system" | "user" | "assistant" | undefined>;
-                content: string;
-            };
             questionsById: {
                 [x: string]: {
                     createdAt?: {
@@ -281,6 +281,10 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             senderProfileId?: string | null | undefined;
+            gptPayload?: {
+                role: NonNullable<"system" | "user" | "assistant" | undefined>;
+                content: string;
+            }[] | undefined;
             openAiChoiceResponse?: {} | undefined;
             date: {
                 seconds: number;
@@ -288,10 +292,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             };
             type: "strategies";
-            gptPayload: {
-                role: NonNullable<"system" | "user" | "assistant" | undefined>;
-                content: string;
-            };
             strategyIds: string[];
             strategiesById: {
                 [x: string]: {

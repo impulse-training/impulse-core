@@ -21,7 +21,7 @@ export declare const messageLogSchema: yup.ObjectSchema<{
     gptPayload: {
         role: NonNullable<"system" | "user" | "assistant" | undefined>;
         content: string;
-    };
+    }[] | undefined;
     text: string;
 }, yup.AnyObject, {
     openAiChoiceResponse: undefined;
@@ -34,10 +34,7 @@ export declare const messageLogSchema: yup.ObjectSchema<{
         toDate: undefined;
     };
     senderProfileId: undefined;
-    gptPayload: {
-        role: undefined;
-        content: undefined;
-    };
+    gptPayload: "";
     text: undefined;
 }, "">;
 export type MessageLogValue = yup.InferType<typeof messageLogSchema>;

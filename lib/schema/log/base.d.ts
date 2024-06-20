@@ -21,7 +21,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
     gptPayload: {
         role: NonNullable<"system" | "user" | "assistant" | undefined>;
         content: string;
-    };
+    }[] | undefined;
 }, yup.AnyObject, {
     openAiChoiceResponse: undefined;
     createdAt: undefined;
@@ -33,8 +33,5 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         toDate: undefined;
     };
     senderProfileId: undefined;
-    gptPayload: {
-        role: undefined;
-        content: undefined;
-    };
+    gptPayload: "";
 }, "">;

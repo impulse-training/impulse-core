@@ -36,6 +36,10 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         toDate: Function;
     } | null | undefined;
     senderProfileId?: string | null | undefined;
+    gptPayload?: {
+        role: NonNullable<"system" | "user" | "assistant" | undefined>;
+        content: string;
+    }[] | undefined;
     openAiChoiceResponse?: {} | undefined;
     date: {
         seconds: number;
@@ -43,13 +47,9 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         toDate: Function;
     };
     type: "impulse";
-    gptPayload: {
-        role: NonNullable<"system" | "user" | "assistant" | undefined>;
-        content: string;
-    };
     issueName: string;
     parentIssueIds: string[];
-}, "date" | "type" | "gptPayload" | "issueName" | "parentIssueIds" | ("createdAt" | "updatedAt" | "senderProfileId" | "openAiChoiceResponse")>, profileFactory: import("factory.ts").Factory<{
+}, "date" | "type" | "issueName" | "parentIssueIds" | ("createdAt" | "updatedAt" | "senderProfileId" | "gptPayload" | "openAiChoiceResponse")>, profileFactory: import("factory.ts").Factory<{
     createdAt?: {
         seconds: number;
         nanoseconds: number;

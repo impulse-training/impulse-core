@@ -41,7 +41,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
     gptPayload: {
         role: NonNullable<"system" | "user" | "assistant" | undefined>;
         content: string;
-    };
+    }[] | undefined;
     questionsById: {
         [x: string]: {
             createdAt?: {
@@ -233,10 +233,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
         toDate: undefined;
     };
     senderProfileId: undefined;
-    gptPayload: {
-        role: undefined;
-        content: undefined;
-    };
+    gptPayload: "";
     questionsById: undefined;
     questionData: undefined;
 }, "">;

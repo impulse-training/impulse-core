@@ -21,7 +21,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
     gptPayload: {
         role: NonNullable<"system" | "user" | "assistant" | undefined>;
         content: string;
-    };
+    }[] | undefined;
     strategyIds: string[];
     strategiesById: {
         [x: string]: {
@@ -255,10 +255,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
         toDate: undefined;
     };
     senderProfileId: undefined;
-    gptPayload: {
-        role: undefined;
-        content: undefined;
-    };
+    gptPayload: "";
     strategyIds: "";
     strategiesById: undefined;
     completedTacticIds: "";
