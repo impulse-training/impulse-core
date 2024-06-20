@@ -39,6 +39,7 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
         color: string;
         textColor: string;
     })[] | undefined;
+    ordinal: number;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -53,6 +54,7 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
     prompt: undefined;
     type: undefined;
     options: "";
+    ordinal: undefined;
     createdAt: undefined;
     updatedAt: undefined;
 }, "">;

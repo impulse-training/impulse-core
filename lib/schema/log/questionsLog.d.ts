@@ -92,6 +92,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
             })[] | undefined;
             type: import("..").QuestionKeyType;
             prompt: string;
+            ordinal: number;
         } | {
             createdAt?: {
                 seconds: number;
@@ -106,6 +107,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
             options?: string[] | undefined;
             type: import("..").QuestionKeyType;
             prompt: string;
+            ordinal: number;
         } | {
             createdAt?: {
                 seconds: number;
@@ -158,6 +160,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
             highEmoji?: yup.Maybe<string | undefined>;
             type: import("..").QuestionKeyType;
             prompt: string;
+            ordinal: number;
         } | {
             createdAt?: {
                 seconds: number;
@@ -208,6 +211,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
             })[] | undefined;
             type: import("..").QuestionKeyType;
             prompt: string;
+            ordinal: number;
         };
     };
     questionData: {

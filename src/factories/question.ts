@@ -8,6 +8,7 @@ export const makeQuestionTimeTacticFactory = (
   Factory.makeFactory<QuestionTimeValue>({
     prompt: 'How long did you spend?',
     type: 'time',
+    ordinal: 0,
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
   });

@@ -8,6 +8,7 @@ export function questionBaseSchema(type: QuestionKeyType) {
     prompt: yup.string().required(),
     type: yup.mixed<QuestionKeyType>().oneOf([type]).defined(),
     options: yup.array().of(optionSchema),
+    ordinal: yup.number().required(),
     createdAt: optionalTimestampSchema,
     updatedAt: optionalTimestampSchema,
   });

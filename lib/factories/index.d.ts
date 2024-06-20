@@ -666,7 +666,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         })[] | undefined;
         type: import("..").QuestionKeyType;
         prompt: string;
-    }, "type" | "prompt" | ("createdAt" | "updatedAt" | "setbackThreshold" | "options")>;
+        ordinal: number;
+    }, "type" | "prompt" | "ordinal" | ("createdAt" | "updatedAt" | "setbackThreshold" | "options")>;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -685,5 +686,5 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         hour: number;
         minute: number;
     }, "profileId" | "type" | "name" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "ordinal" | "title" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "ordinal" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "title" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
 };

@@ -3,6 +3,7 @@ export declare const questionMultipleChoiceSchema: yup.ObjectSchema<{
     prompt: string;
     type: import("..").QuestionKeyType;
     options: string[] | undefined;
+    ordinal: number;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -17,6 +18,7 @@ export declare const questionMultipleChoiceSchema: yup.ObjectSchema<{
     prompt: undefined;
     type: undefined;
     options: "";
+    ordinal: undefined;
     createdAt: undefined;
     updatedAt: undefined;
 }, "">;

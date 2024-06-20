@@ -38,6 +38,7 @@ export declare const questionCounterSchema: yup.ObjectSchema<{
         color: string;
         textColor: string;
     })[] | undefined;
+    ordinal: number;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -52,6 +53,7 @@ export declare const questionCounterSchema: yup.ObjectSchema<{
     prompt: undefined;
     type: undefined;
     options: "";
+    ordinal: undefined;
     createdAt: undefined;
     updatedAt: undefined;
 }, "">;

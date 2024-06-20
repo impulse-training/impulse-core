@@ -50,4 +50,5 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
     })[] | undefined;
     type: import("..").QuestionKeyType;
     prompt: string;
-}, "type" | "prompt" | ("createdAt" | "updatedAt" | "setbackThreshold" | "options")>;
+    ordinal: number;
+}, "type" | "prompt" | "ordinal" | ("createdAt" | "updatedAt" | "setbackThreshold" | "options")>;

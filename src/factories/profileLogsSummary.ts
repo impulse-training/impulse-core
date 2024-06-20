@@ -7,7 +7,7 @@ export const makeProfileLogsSummaryFactory = (
 ) =>
   Factory.makeFactory<ProfileLogsSummaryValue>({
     '2024-01-01': {
-      tactic1: {
+      question1: {
         unit: 'time',
         numericValue: 1,
         setAt: TimestampKlass.now(),
