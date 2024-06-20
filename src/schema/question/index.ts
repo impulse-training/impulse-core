@@ -4,13 +4,16 @@ import {
   QuestionMultipleChoiceValue,
   questionMultipleChoiceSchema,
 } from './multipleChoice';
-import { QuestionSliderValue, questionScaleOfOneToTenSchema } from './slider';
+import {
+  QuestionScaleOf1To10Value,
+  questionScaleOf1To10Schema,
+} from './scaleOf1To10';
 import { QuestionTextValue, questionTextSchema } from './text';
 import { QuestionTimeValue, questionTimeSchema } from './time';
 
 export * from './counter';
 export * from './multipleChoice';
-export * from './slider';
+export * from './scaleOf1To10';
 export * from './time';
 export * from './utils/guards';
 
@@ -21,7 +24,7 @@ export const questionSchemas: Record<
   text: questionTextSchema,
   time: questionTimeSchema,
   counter: questionCounterSchema,
-  scaleOf1To10: questionScaleOfOneToTenSchema,
+  scaleOf1To10: questionScaleOf1To10Schema,
   multipleChoice: questionMultipleChoiceSchema,
 } as any;
 
@@ -47,7 +50,7 @@ type ValidatedQuestion = {
 
 export type QuestionValue =
   | QuestionTextValue
-  | QuestionSliderValue
+  | QuestionScaleOf1To10Value
   | QuestionTimeValue
   | QuestionCounterValue
   | QuestionMultipleChoiceValue;

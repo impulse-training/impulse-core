@@ -16,7 +16,6 @@ export declare const daySchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    profileId: string;
     logsById: {
         [x: string]: {
             createdAt?: {
@@ -526,7 +525,6 @@ export declare const daySchema: yup.ObjectSchema<{
     };
     createdAt: undefined;
     updatedAt: undefined;
-    profileId: undefined;
     logsById: undefined;
     isProcessing: false;
 }, "">;

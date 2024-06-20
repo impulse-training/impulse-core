@@ -2,7 +2,7 @@ import * as yup from 'yup';
 import { questionBaseSchema } from './base';
 import { setbackThresholdMixin } from './utils/setbackThreshold';
 
-export const questionScaleOfOneToTenSchema = questionBaseSchema(
+export const questionScaleOf1To10Schema = questionBaseSchema(
   'scaleOf1To10'
 ).shape({
   lowEmoji: yup.string().notRequired(),
@@ -10,6 +10,6 @@ export const questionScaleOfOneToTenSchema = questionBaseSchema(
   ...setbackThresholdMixin,
 });
 
-export type QuestionSliderValue = yup.InferType<
-  typeof questionScaleOfOneToTenSchema
+export type QuestionScaleOf1To10Value = yup.InferType<
+  typeof questionScaleOf1To10Schema
 >;

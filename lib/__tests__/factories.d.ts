@@ -27,7 +27,7 @@ export declare const factories: {
         } | undefined;
         profileId: string;
     }, "profileId" | ("createdAt" | "updatedAt" | "tacticId" | "tacticTitle" | "text" | "recording" | "isEdited" | "avatar")>;
-    dayFactory: import("factory.ts").Factory<import("..").DayValue, "profileId" | "date" | "logsById" | "isProcessing" | ("createdAt" | "updatedAt")>;
+    dayFactory: import("factory.ts").Factory<import("..").DayValue, "date" | "logsById" | "isProcessing" | ("createdAt" | "updatedAt")>;
     folderFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;

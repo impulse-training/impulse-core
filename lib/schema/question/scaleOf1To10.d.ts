@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-export declare const questionScaleOfOneToTenSchema: yup.ObjectSchema<{
+export declare const questionScaleOf1To10Schema: yup.ObjectSchema<{
     prompt: string;
     type: import("..").QuestionKeyType;
     options: ({
@@ -61,4 +61,4 @@ export declare const questionScaleOfOneToTenSchema: yup.ObjectSchema<{
     lowEmoji: undefined;
     highEmoji: undefined;
 }, "">;
-export type QuestionSliderValue = yup.InferType<typeof questionScaleOfOneToTenSchema>;
+export type QuestionScaleOf1To10Value = yup.InferType<typeof questionScaleOf1To10Schema>;
