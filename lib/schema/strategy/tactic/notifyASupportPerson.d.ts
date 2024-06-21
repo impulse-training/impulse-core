@@ -1,12 +1,12 @@
 import * as yup from 'yup';
-export declare const contactsTacticSchema: yup.ObjectSchema<{
+export declare const notifyASupportPersonTacticSchema: yup.ObjectSchema<{
     recommendedForIssueIds: string[] | undefined;
     recommendedForIssueOrdinals: {
         [x: string]: number;
     } | null | undefined;
     ordinal: number;
     title: string;
-    type: "contacts";
+    type: "notifyASupportPerson";
     profileId: string | null | undefined;
     createdAt: {
         seconds: number;
@@ -58,4 +58,4 @@ export declare const contactsTacticSchema: yup.ObjectSchema<{
     isSuggested: undefined;
     contactIds: "";
 }, "">;
-export type ContactcsTacticValue = yup.InferType<typeof contactsTacticSchema>;
+export type NotifyASupportPersonTacticValue = yup.InferType<typeof notifyASupportPersonTacticSchema>;

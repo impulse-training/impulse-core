@@ -28,7 +28,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         } | undefined;
         profileId: string;
     }, "profileId" | ("createdAt" | "updatedAt" | "tacticId" | "tacticTitle" | "text" | "recording" | "isEdited" | "avatar")>;
-    dayFactory: import("factory.ts").Factory<import("..").DayValue, "date" | "logsById" | "isProcessing" | ("createdAt" | "updatedAt")>;
+    dayFactory: import("factory.ts").Factory<import("..").DayValue, "date" | "issueName" | "logsById" | "isProcessing" | ("createdAt" | "updatedAt")>;
     folderFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -114,7 +114,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                type: "breathe";
+                type: "breathingExercise";
                 ordinal: number;
                 title: string;
                 inFor: number;
@@ -150,7 +150,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                type: "contacts";
+                type: "notifyASupportPerson";
                 ordinal: number;
                 title: string;
                 contactIds: string[];
@@ -335,7 +335,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "breathe";
+            type: "breathingExercise";
             ordinal: number;
             title: string;
             inFor: number;
@@ -371,7 +371,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "contacts";
+            type: "notifyASupportPerson";
             ordinal: number;
             title: string;
             contactIds: string[];

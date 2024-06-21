@@ -180,7 +180,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "breathe";
+            type: "breathingExercise";
             ordinal: number;
             title: string;
             inFor: number;
@@ -216,7 +216,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "contacts";
+            type: "notifyASupportPerson";
             ordinal: number;
             title: string;
             contactIds: string[];
@@ -401,7 +401,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        type: "breathe";
+        type: "breathingExercise";
         ordinal: number;
         title: string;
         inFor: number;
@@ -437,7 +437,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        type: "contacts";
+        type: "notifyASupportPerson";
         ordinal: number;
         title: string;
         contactIds: string[];

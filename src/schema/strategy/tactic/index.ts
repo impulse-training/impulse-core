@@ -1,15 +1,21 @@
 import * as yup from 'yup';
 import { objectOf } from '../../utils/objectOf';
 import { AudioTacticValue, audioTacticSchema } from './audio';
-import { BreatheTacticValue, breatheTacticSchema } from './breathe';
-import { ContactcsTacticValue, contactsTacticSchema } from './contacts';
+import {
+  BreatheTacticValue,
+  breathingExerciseTacticSchema,
+} from './breathingExercise';
+import {
+  NotifyASupportPersonTacticValue,
+  notifyASupportPersonTacticSchema,
+} from './notifyASupportPerson';
 import { StepsTacticValue } from './steps';
 import { TaskTacticValue, taskTacticSchema } from './task';
 import { VideoTacticValue, videoTacticSchema } from './video';
 
 export * from './audio';
-export * from './breathe';
-export * from './contacts';
+export * from './breathingExercise';
+export * from './notifyASupportPerson';
 export * from './steps';
 export * from './task';
 export * from './utils';
@@ -18,7 +24,7 @@ export * from './video';
 export type TacticValue =
   | AudioTacticValue
   | BreatheTacticValue
-  | ContactcsTacticValue
+  | NotifyASupportPersonTacticValue
   | StepsTacticValue
   | TaskTacticValue
   | VideoTacticValue;
@@ -33,8 +39,8 @@ export const tacticSchemas: Record<
   yup.ObjectSchema<TacticValue>
 > = {
   audio: audioTacticSchema,
-  breathe: breatheTacticSchema,
-  contacts: contactsTacticSchema,
+  breathingExercise: breathingExerciseTacticSchema,
+  notifyASupportPerson: notifyASupportPersonTacticSchema,
   task: taskTacticSchema,
   video: videoTacticSchema,
   // steps: stepsTacticSchema,

@@ -8,6 +8,7 @@ export const daySchema = yup.object({
   date: timestampSchema,
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
+  issueName: yup.string().required(),
   logsById: objectOf(logSchema),
   isProcessing: yup.boolean().default(false),
 });

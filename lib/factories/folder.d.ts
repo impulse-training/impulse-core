@@ -85,7 +85,7 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "breathe";
+            type: "breathingExercise";
             ordinal: number;
             title: string;
             inFor: number;
@@ -121,7 +121,7 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "contacts";
+            type: "notifyASupportPerson";
             ordinal: number;
             title: string;
             contactIds: string[];
@@ -306,7 +306,7 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        type: "breathe";
+        type: "breathingExercise";
         ordinal: number;
         title: string;
         inFor: number;
@@ -342,7 +342,7 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        type: "contacts";
+        type: "notifyASupportPerson";
         ordinal: number;
         title: string;
         contactIds: string[];

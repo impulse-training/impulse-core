@@ -1,12 +1,12 @@
 import * as yup from 'yup';
-export declare const breatheTacticSchema: yup.ObjectSchema<{
+export declare const breathingExerciseTacticSchema: yup.ObjectSchema<{
     recommendedForIssueIds: string[] | undefined;
     recommendedForIssueOrdinals: {
         [x: string]: number;
     } | null | undefined;
     ordinal: number;
     title: string;
-    type: "breathe";
+    type: "breathingExercise";
     profileId: string | null | undefined;
     createdAt: {
         seconds: number;
@@ -64,4 +64,4 @@ export declare const breatheTacticSchema: yup.ObjectSchema<{
     outFor: undefined;
     repeat: undefined;
 }, "">;
-export type BreatheTacticValue = yup.InferType<typeof breatheTacticSchema>;
+export type BreatheTacticValue = yup.InferType<typeof breathingExerciseTacticSchema>;

@@ -16,6 +16,7 @@ export declare const daySchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    issueName: string;
     logsById: {
         [x: string]: {
             createdAt?: {
@@ -372,7 +373,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    type: "breathe";
+                    type: "breathingExercise";
                     ordinal: number;
                     title: string;
                     inFor: number;
@@ -408,7 +409,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    type: "contacts";
+                    type: "notifyASupportPerson";
                     ordinal: number;
                     title: string;
                     contactIds: string[];
@@ -534,6 +535,7 @@ export declare const daySchema: yup.ObjectSchema<{
     };
     createdAt: undefined;
     updatedAt: undefined;
+    issueName: undefined;
     logsById: undefined;
     isProcessing: false;
 }, "">;
