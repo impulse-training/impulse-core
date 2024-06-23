@@ -716,6 +716,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
         };
     };
     completedTacticIds: string[];
+    followedUpTacticIds: string[];
 }, yup.AnyObject, {
     openAiChoiceResponse: undefined;
     createdAt: undefined;
@@ -732,5 +733,6 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
     strategyIds: "";
     strategiesById: undefined;
     completedTacticIds: "";
+    followedUpTacticIds: "";
 }, "">;
 export type StrategiesLogValue = yup.InferType<typeof strategiesLogSchema>;

@@ -1032,6 +1032,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 };
             };
             completedTacticIds: string[];
+            followedUpTacticIds: string[];
         };
     };
     isProcessing: boolean;
