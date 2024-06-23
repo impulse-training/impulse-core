@@ -18,6 +18,18 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         toDate: Function;
     };
     senderProfileId: string | null | undefined;
+    views: {
+        openTime: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        };
+        closeTime: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        };
+    }[] | undefined;
     gptPayload: {
         role: NonNullable<"system" | "user" | "assistant" | undefined>;
         content: string;
@@ -33,5 +45,6 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         toDate: undefined;
     };
     senderProfileId: undefined;
+    views: "";
     gptPayload: "";
 }, "">;

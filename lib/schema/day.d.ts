@@ -30,6 +30,18 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             senderProfileId?: string | null | undefined;
+            views?: {
+                openTime: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                };
+                closeTime: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                };
+            }[] | undefined;
             gptPayload?: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;
@@ -55,6 +67,18 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             senderProfileId?: string | null | undefined;
+            views?: {
+                openTime: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                };
+                closeTime: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                };
+            }[] | undefined;
             gptPayload?: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;
@@ -79,6 +103,18 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             senderProfileId?: string | null | undefined;
+            views?: {
+                openTime: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                };
+                closeTime: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                };
+            }[] | undefined;
             gptPayload?: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;
@@ -291,6 +327,18 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             senderProfileId?: string | null | undefined;
+            views?: {
+                openTime: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                };
+                closeTime: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                };
+            }[] | undefined;
             gptPayload?: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;

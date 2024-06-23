@@ -12,6 +12,18 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
         toDate: Function;
     } | null | undefined;
     senderProfileId?: string | null | undefined;
+    views?: {
+        openTime: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        };
+        closeTime: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        };
+    }[] | undefined;
     gptPayload?: {
         role: NonNullable<"system" | "user" | "assistant" | undefined>;
         content: string;
@@ -25,4 +37,4 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
     type: "impulse";
     issueName: string;
     parentIssueIds: string[];
-}, "date" | "type" | "issueName" | "parentIssueIds" | ("createdAt" | "updatedAt" | "senderProfileId" | "gptPayload" | "openAiChoiceResponse")>;
+}, "date" | "type" | "issueName" | "parentIssueIds" | ("createdAt" | "updatedAt" | "senderProfileId" | "views" | "gptPayload" | "openAiChoiceResponse")>;

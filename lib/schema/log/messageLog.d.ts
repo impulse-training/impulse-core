@@ -18,6 +18,18 @@ export declare const messageLogSchema: yup.ObjectSchema<{
         toDate: Function;
     };
     senderProfileId: string | null | undefined;
+    views: {
+        openTime: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        };
+        closeTime: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        };
+    }[] | undefined;
     gptPayload: {
         role: NonNullable<"system" | "user" | "assistant" | undefined>;
         content: string;
@@ -34,6 +46,7 @@ export declare const messageLogSchema: yup.ObjectSchema<{
         toDate: undefined;
     };
     senderProfileId: undefined;
+    views: "";
     gptPayload: "";
     text: undefined;
 }, "">;
