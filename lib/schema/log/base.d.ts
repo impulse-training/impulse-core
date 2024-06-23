@@ -11,6 +11,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    text: string | undefined;
     type: yup.Defined<K>;
     date: {
         seconds: number;
@@ -38,6 +39,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
     openAiChoiceResponse: undefined;
     createdAt: undefined;
     updatedAt: undefined;
+    text: undefined;
     type: undefined;
     date: {
         seconds: undefined;

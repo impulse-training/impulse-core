@@ -11,6 +11,7 @@ export declare const messageLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    text: string;
     type: "message";
     date: {
         seconds: number;
@@ -34,11 +35,11 @@ export declare const messageLogSchema: yup.ObjectSchema<{
         role: NonNullable<"system" | "user" | "assistant" | undefined>;
         content: string;
     }[] | undefined;
-    text: string;
 }, yup.AnyObject, {
     openAiChoiceResponse: undefined;
     createdAt: undefined;
     updatedAt: undefined;
+    text: undefined;
     type: undefined;
     date: {
         seconds: undefined;
@@ -48,6 +49,5 @@ export declare const messageLogSchema: yup.ObjectSchema<{
     senderProfileId: undefined;
     views: "";
     gptPayload: "";
-    text: undefined;
 }, "">;
 export type MessageLogValue = yup.InferType<typeof messageLogSchema>;

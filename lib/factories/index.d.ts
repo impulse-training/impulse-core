@@ -501,6 +501,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        text?: string | undefined;
         senderProfileId?: string | null | undefined;
         views?: {
             openTime: {
@@ -527,7 +528,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         type: "impulse";
         issueName: string;
         parentIssueIds: string[];
-    }, "date" | "type" | "issueName" | "parentIssueIds" | ("createdAt" | "updatedAt" | "senderProfileId" | "views" | "gptPayload" | "openAiChoiceResponse")>;
+    }, "date" | "type" | "issueName" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "senderProfileId" | "views" | "gptPayload" | "openAiChoiceResponse")>;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
         createdAt?: {

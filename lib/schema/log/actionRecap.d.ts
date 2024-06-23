@@ -11,6 +11,7 @@ export declare const actionRecapLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    text: string | undefined;
     type: "actionRecap";
     date: {
         seconds: number;
@@ -39,6 +40,7 @@ export declare const actionRecapLogSchema: yup.ObjectSchema<{
     openAiChoiceResponse: undefined;
     createdAt: undefined;
     updatedAt: undefined;
+    text: undefined;
     type: undefined;
     date: {
         seconds: undefined;

@@ -11,6 +11,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    text: string | undefined;
     type: "strategies";
     date: {
         seconds: number;
@@ -721,6 +722,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
     openAiChoiceResponse: undefined;
     createdAt: undefined;
     updatedAt: undefined;
+    text: undefined;
     type: undefined;
     date: {
         seconds: undefined;

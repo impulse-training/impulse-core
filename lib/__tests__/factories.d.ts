@@ -500,6 +500,7 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        text?: string | undefined;
         senderProfileId?: string | null | undefined;
         views?: {
             openTime: {
@@ -526,7 +527,7 @@ export declare const factories: {
         type: "impulse";
         issueName: string;
         parentIssueIds: string[];
-    }, "date" | "type" | "issueName" | "parentIssueIds" | ("createdAt" | "updatedAt" | "senderProfileId" | "views" | "gptPayload" | "openAiChoiceResponse")>;
+    }, "date" | "type" | "issueName" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "senderProfileId" | "views" | "gptPayload" | "openAiChoiceResponse")>;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
         createdAt?: {

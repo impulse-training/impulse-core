@@ -11,6 +11,7 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    text: string | undefined;
     type: "impulse";
     date: {
         seconds: number;
@@ -40,6 +41,7 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
     openAiChoiceResponse: undefined;
     createdAt: undefined;
     updatedAt: undefined;
+    text: undefined;
     type: undefined;
     date: {
         seconds: undefined;
