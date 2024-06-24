@@ -5,7 +5,7 @@ export declare const stepsTacticSchema: yup.ObjectSchema<{
         [x: string]: number;
     } | null | undefined;
     ordinal: number;
-    title: string;
+    prompt: string | undefined;
     type: "steps";
     profileId: string | null | undefined;
     createdAt: {
@@ -37,7 +37,7 @@ export declare const stepsTacticSchema: yup.ObjectSchema<{
     recommendedForIssueIds: "";
     recommendedForIssueOrdinals: undefined;
     ordinal: undefined;
-    title: undefined;
+    prompt: undefined;
     type: undefined;
     profileId: undefined;
     createdAt: undefined;

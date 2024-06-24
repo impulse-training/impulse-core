@@ -5,7 +5,7 @@ export declare const taskTacticSchema: yup.ObjectSchema<{
         [x: string]: number;
     } | null | undefined;
     ordinal: number;
-    title: string;
+    prompt: string | undefined;
     type: "task";
     profileId: string | null | undefined;
     createdAt: {
@@ -36,7 +36,7 @@ export declare const taskTacticSchema: yup.ObjectSchema<{
     recommendedForIssueIds: "";
     recommendedForIssueOrdinals: undefined;
     ordinal: undefined;
-    title: undefined;
+    prompt: undefined;
     type: undefined;
     profileId: undefined;
     createdAt: undefined;

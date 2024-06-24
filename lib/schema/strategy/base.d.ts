@@ -5,10 +5,10 @@ export default function strategyBase(): yup.ObjectSchema<{
         [x: string]: number;
     } | null | undefined;
     ordinal: number;
-    title: string;
+    prompt: string;
 }, yup.AnyObject, {
     recommendedForIssueIds: "";
     recommendedForIssueOrdinals: undefined;
     ordinal: undefined;
-    title: undefined;
+    prompt: undefined;
 }, "">;

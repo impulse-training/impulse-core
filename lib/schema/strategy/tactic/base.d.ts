@@ -5,7 +5,7 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
         [x: string]: number;
     } | null | undefined;
     ordinal: number;
-    title: string;
+    prompt: string | undefined;
     type: yup.Defined<K>;
     profileId: string | null | undefined;
     createdAt: {
@@ -36,7 +36,7 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
     recommendedForIssueIds: "";
     recommendedForIssueOrdinals: undefined;
     ordinal: undefined;
-    title: undefined;
+    prompt: undefined;
     type: undefined;
     profileId: undefined;
     createdAt: undefined;

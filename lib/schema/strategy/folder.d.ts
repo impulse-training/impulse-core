@@ -5,7 +5,7 @@ export declare const folderSchema: yup.ObjectSchema<{
         [x: string]: number;
     } | null | undefined;
     ordinal: number;
-    title: string;
+    prompt: string;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -35,6 +35,7 @@ export declare const folderSchema: yup.ObjectSchema<{
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
+            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -59,7 +60,6 @@ export declare const folderSchema: yup.ObjectSchema<{
             };
             type: "audio";
             ordinal: number;
-            title: string;
         } | {
             createdAt?: {
                 seconds: number;
@@ -74,6 +74,7 @@ export declare const folderSchema: yup.ObjectSchema<{
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
             repeat?: yup.Maybe<number | undefined>;
+            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -93,7 +94,6 @@ export declare const folderSchema: yup.ObjectSchema<{
             isSuggested?: boolean | undefined;
             type: "breathingExercise";
             ordinal: number;
-            title: string;
             inFor: number;
             holdFor: number;
             outFor: number;
@@ -110,6 +110,7 @@ export declare const folderSchema: yup.ObjectSchema<{
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
+            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -129,7 +130,6 @@ export declare const folderSchema: yup.ObjectSchema<{
             isSuggested?: boolean | undefined;
             type: "notifyASupportPerson";
             ordinal: number;
-            title: string;
             contactIds: string[];
         } | {
             createdAt?: {
@@ -144,6 +144,7 @@ export declare const folderSchema: yup.ObjectSchema<{
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
+            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -163,7 +164,6 @@ export declare const folderSchema: yup.ObjectSchema<{
             isSuggested?: boolean | undefined;
             type: "steps";
             ordinal: number;
-            title: string;
             steps: number;
         } | {
             createdAt?: {
@@ -178,6 +178,7 @@ export declare const folderSchema: yup.ObjectSchema<{
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
+            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -197,7 +198,6 @@ export declare const folderSchema: yup.ObjectSchema<{
             isSuggested?: boolean | undefined;
             type: "task";
             ordinal: number;
-            title: string;
         } | {
             createdAt?: {
                 seconds: number;
@@ -211,6 +211,7 @@ export declare const folderSchema: yup.ObjectSchema<{
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
+            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -230,12 +231,11 @@ export declare const folderSchema: yup.ObjectSchema<{
             isSuggested?: boolean | undefined;
             type: "video";
             ordinal: number;
-            title: string;
             video: {
                 storagePath?: string | null | undefined;
                 url?: string | null | undefined;
-                title: string;
                 description: string;
+                title: string;
                 thumbnailUrl: string;
                 duration: number;
             };
@@ -254,6 +254,7 @@ export declare const folderSchema: yup.ObjectSchema<{
         } | null | undefined;
         profileId?: string | null | undefined;
         setbackThreshold?: number | null | undefined;
+        prompt?: string | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -278,7 +279,6 @@ export declare const folderSchema: yup.ObjectSchema<{
         };
         type: "audio";
         ordinal: number;
-        title: string;
     } | {
         createdAt?: {
             seconds: number;
@@ -293,6 +293,7 @@ export declare const folderSchema: yup.ObjectSchema<{
         profileId?: string | null | undefined;
         setbackThreshold?: number | null | undefined;
         repeat?: yup.Maybe<number | undefined>;
+        prompt?: string | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -312,7 +313,6 @@ export declare const folderSchema: yup.ObjectSchema<{
         isSuggested?: boolean | undefined;
         type: "breathingExercise";
         ordinal: number;
-        title: string;
         inFor: number;
         holdFor: number;
         outFor: number;
@@ -329,6 +329,7 @@ export declare const folderSchema: yup.ObjectSchema<{
         } | null | undefined;
         profileId?: string | null | undefined;
         setbackThreshold?: number | null | undefined;
+        prompt?: string | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -348,7 +349,6 @@ export declare const folderSchema: yup.ObjectSchema<{
         isSuggested?: boolean | undefined;
         type: "notifyASupportPerson";
         ordinal: number;
-        title: string;
         contactIds: string[];
     } | {
         createdAt?: {
@@ -363,6 +363,7 @@ export declare const folderSchema: yup.ObjectSchema<{
         } | null | undefined;
         profileId?: string | null | undefined;
         setbackThreshold?: number | null | undefined;
+        prompt?: string | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -382,7 +383,6 @@ export declare const folderSchema: yup.ObjectSchema<{
         isSuggested?: boolean | undefined;
         type: "steps";
         ordinal: number;
-        title: string;
         steps: number;
     } | {
         createdAt?: {
@@ -397,6 +397,7 @@ export declare const folderSchema: yup.ObjectSchema<{
         } | null | undefined;
         profileId?: string | null | undefined;
         setbackThreshold?: number | null | undefined;
+        prompt?: string | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -416,7 +417,6 @@ export declare const folderSchema: yup.ObjectSchema<{
         isSuggested?: boolean | undefined;
         type: "task";
         ordinal: number;
-        title: string;
     } | {
         createdAt?: {
             seconds: number;
@@ -430,6 +430,7 @@ export declare const folderSchema: yup.ObjectSchema<{
         } | null | undefined;
         profileId?: string | null | undefined;
         setbackThreshold?: number | null | undefined;
+        prompt?: string | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -449,12 +450,11 @@ export declare const folderSchema: yup.ObjectSchema<{
         isSuggested?: boolean | undefined;
         type: "video";
         ordinal: number;
-        title: string;
         video: {
             storagePath?: string | null | undefined;
             url?: string | null | undefined;
-            title: string;
             description: string;
+            title: string;
             thumbnailUrl: string;
             duration: number;
         };
@@ -463,7 +463,7 @@ export declare const folderSchema: yup.ObjectSchema<{
     recommendedForIssueIds: "";
     recommendedForIssueOrdinals: undefined;
     ordinal: undefined;
-    title: undefined;
+    prompt: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     type: undefined;

@@ -5,7 +5,7 @@ export declare const videoTacticSchema: yup.ObjectSchema<{
         [x: string]: number;
     } | null | undefined;
     ordinal: number;
-    title: string;
+    prompt: string | undefined;
     type: "video";
     profileId: string | null | undefined;
     createdAt: {
@@ -35,8 +35,8 @@ export declare const videoTacticSchema: yup.ObjectSchema<{
     video: {
         storagePath?: string | null | undefined;
         url?: string | null | undefined;
-        title: string;
         description: string;
+        title: string;
         thumbnailUrl: string;
         duration: number;
     };
@@ -44,7 +44,7 @@ export declare const videoTacticSchema: yup.ObjectSchema<{
     recommendedForIssueIds: "";
     recommendedForIssueOrdinals: undefined;
     ordinal: undefined;
-    title: undefined;
+    prompt: undefined;
     type: undefined;
     profileId: undefined;
     createdAt: undefined;

@@ -17,6 +17,7 @@ export function tacticValueBaseSchema<K extends string>(type: K) {
     image: imageSchema.optional().nullable(),
     backgroundColor: yup.string(),
     setbackThreshold: yup.number().nullable(),
+    prompt: yup.string(),
     likesCount: yup.number().nullable(),
     timerSeconds: yup.number().notRequired(),
     isSuggested: yup.boolean(),

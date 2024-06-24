@@ -17,6 +17,7 @@ export declare const recapTacticSchema: yup.Lazy<{
     } | null | undefined;
     profileId?: string | null | undefined;
     setbackThreshold?: number | null | undefined;
+    prompt?: string | undefined;
     recommendedForIssueIds?: string[] | undefined;
     recommendedForIssueOrdinals?: {
         [x: string]: number;
@@ -36,6 +37,5 @@ export declare const recapTacticSchema: yup.Lazy<{
     isSuggested?: boolean | undefined;
     type: import("./recapKeyType").RecapKeyType;
     ordinal: number;
-    title: string;
 }, yup.AnyObject, any>;
 export type RecapTacticValue = RecapActionTacticValue | RecapTrackingTacticValue;

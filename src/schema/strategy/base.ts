@@ -7,6 +7,6 @@ export default function strategyBase() {
     recommendedForIssueIds: optionalStringArray,
     recommendedForIssueOrdinals: optionalObjectOf(yup.number().required()),
     ordinal: yup.number().required(),
-    title: yup.string().required('is required'),
+    prompt: yup.string().required('is required'),
   });
 }

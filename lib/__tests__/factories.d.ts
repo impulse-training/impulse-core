@@ -57,6 +57,7 @@ export declare const factories: {
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -81,7 +82,6 @@ export declare const factories: {
                 };
                 type: "audio";
                 ordinal: number;
-                title: string;
             } | {
                 createdAt?: {
                     seconds: number;
@@ -96,6 +96,7 @@ export declare const factories: {
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
                 repeat?: import("yup").Maybe<number | undefined>;
+                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -115,7 +116,6 @@ export declare const factories: {
                 isSuggested?: boolean | undefined;
                 type: "breathingExercise";
                 ordinal: number;
-                title: string;
                 inFor: number;
                 holdFor: number;
                 outFor: number;
@@ -132,6 +132,7 @@ export declare const factories: {
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -151,7 +152,6 @@ export declare const factories: {
                 isSuggested?: boolean | undefined;
                 type: "notifyASupportPerson";
                 ordinal: number;
-                title: string;
                 contactIds: string[];
             } | {
                 createdAt?: {
@@ -166,6 +166,7 @@ export declare const factories: {
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -185,7 +186,6 @@ export declare const factories: {
                 isSuggested?: boolean | undefined;
                 type: "steps";
                 ordinal: number;
-                title: string;
                 steps: number;
             } | {
                 createdAt?: {
@@ -200,6 +200,7 @@ export declare const factories: {
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -219,7 +220,6 @@ export declare const factories: {
                 isSuggested?: boolean | undefined;
                 type: "task";
                 ordinal: number;
-                title: string;
             } | {
                 createdAt?: {
                     seconds: number;
@@ -233,6 +233,7 @@ export declare const factories: {
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -252,12 +253,11 @@ export declare const factories: {
                 isSuggested?: boolean | undefined;
                 type: "video";
                 ordinal: number;
-                title: string;
                 video: {
                     storagePath?: string | null | undefined;
                     url?: string | null | undefined;
-                    title: string;
                     description: string;
+                    title: string;
                     thumbnailUrl: string;
                     duration: number;
                 };
@@ -278,6 +278,7 @@ export declare const factories: {
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
+            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -302,7 +303,6 @@ export declare const factories: {
             };
             type: "audio";
             ordinal: number;
-            title: string;
         } | {
             createdAt?: {
                 seconds: number;
@@ -317,6 +317,7 @@ export declare const factories: {
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
             repeat?: import("yup").Maybe<number | undefined>;
+            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -336,7 +337,6 @@ export declare const factories: {
             isSuggested?: boolean | undefined;
             type: "breathingExercise";
             ordinal: number;
-            title: string;
             inFor: number;
             holdFor: number;
             outFor: number;
@@ -353,6 +353,7 @@ export declare const factories: {
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
+            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -372,7 +373,6 @@ export declare const factories: {
             isSuggested?: boolean | undefined;
             type: "notifyASupportPerson";
             ordinal: number;
-            title: string;
             contactIds: string[];
         } | {
             createdAt?: {
@@ -387,6 +387,7 @@ export declare const factories: {
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
+            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -406,7 +407,6 @@ export declare const factories: {
             isSuggested?: boolean | undefined;
             type: "steps";
             ordinal: number;
-            title: string;
             steps: number;
         } | {
             createdAt?: {
@@ -421,6 +421,7 @@ export declare const factories: {
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
+            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -440,7 +441,6 @@ export declare const factories: {
             isSuggested?: boolean | undefined;
             type: "task";
             ordinal: number;
-            title: string;
         } | {
             createdAt?: {
                 seconds: number;
@@ -454,6 +454,7 @@ export declare const factories: {
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
+            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -473,22 +474,21 @@ export declare const factories: {
             isSuggested?: boolean | undefined;
             type: "video";
             ordinal: number;
-            title: string;
             video: {
                 storagePath?: string | null | undefined;
                 url?: string | null | undefined;
-                title: string;
                 description: string;
+                title: string;
                 thumbnailUrl: string;
                 duration: number;
             };
         })[] | undefined;
         type: "folder";
+        prompt: string;
         ordinal: number;
-        title: string;
         invitationCode: string;
         invitationUrl: string;
-    }, "type" | "ordinal" | "title" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics")>;
+    }, "type" | "prompt" | "ordinal" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics")>;
     impulseFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -698,5 +698,5 @@ export declare const factories: {
         hour: number;
         minute: number;
     }, "profileId" | "type" | "name" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "ordinal" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "title" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "prompt" | "ordinal" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
 };
