@@ -4,4 +4,5 @@ export type QuestionKeyType =
   | 'time'
   | 'counter'
   | 'multipleChoice'
-  | 'scaleOf1To10';
+  | 'scaleOf1To10'
+  | 'issue';

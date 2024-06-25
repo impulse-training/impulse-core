@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 import { QuestionCounterValue, questionCounterSchema } from './counter';
+import { QuestionIssueValue, questionIssueSchema } from './issue';
 import {
   QuestionMultipleChoiceValue,
   questionMultipleChoiceSchema,
@@ -12,6 +13,7 @@ import { QuestionTextValue, questionTextSchema } from './text';
 import { QuestionTimeValue, questionTimeSchema } from './time';
 
 export * from './counter';
+export * from './issue';
 export * from './multipleChoice';
 export * from './scaleOf1To10';
 export * from './time';
@@ -24,6 +26,7 @@ export const questionSchemas: Record<
   text: questionTextSchema,
   time: questionTimeSchema,
   counter: questionCounterSchema,
+  issue: questionIssueSchema,
   scaleOf1To10: questionScaleOf1To10Schema,
   multipleChoice: questionMultipleChoiceSchema,
 } as any;
@@ -53,4 +56,5 @@ export type QuestionValue =
   | QuestionScaleOf1To10Value
   | QuestionTimeValue
   | QuestionCounterValue
-  | QuestionMultipleChoiceValue;
+  | QuestionMultipleChoiceValue
+  | QuestionIssueValue;
