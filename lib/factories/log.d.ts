@@ -25,17 +25,18 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
             toDate: Function;
         };
     }[] | undefined;
+    agent?: import("..").AgentName | undefined;
     gptPayload?: {
         role: NonNullable<"system" | "user" | "assistant" | undefined>;
         content: string;
     }[] | undefined;
     openAiChoiceResponse?: {} | undefined;
+    issueName: string;
+    parentIssueIds: string[];
     date: {
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     };
     type: "impulse";
-    issueName: string;
-    parentIssueIds: string[];
-}, "date" | "type" | "issueName" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "senderProfileId" | "views" | "gptPayload" | "openAiChoiceResponse")>;
+}, "issueName" | "parentIssueIds" | "date" | "type" | ("createdAt" | "updatedAt" | "text" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse")>;

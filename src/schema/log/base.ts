@@ -1,4 +1,6 @@
+import { keys } from 'lodash';
 import * as yup from 'yup';
+import { AgentName, agents } from '../../agents';
 import { optionalTimestampSchema, timestampSchema } from '../utils/timestamp';
 import { gptMessageSchema, gptResponseMixin } from './utils/gpt';
 
@@ -16,6 +18,7 @@ export function logBaseSchema<K extends string>(type: K) {
     date: timestampSchema,
     senderProfileId: yup.string().nullable(),
     views: yup.array().of(logViewSchema),
+    agent: yup.mixed<AgentName>().oneOf(keys(agents) as AgentName[]),
     gptPayload: yup.array().of(gptMessageSchema),
     ...gptResponseMixin,
   });

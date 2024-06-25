@@ -11,9 +11,6 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    issueName?: string | undefined;
-    parentIssueIds?: string[] | undefined;
-    setbackThreshold?: number | undefined;
     lastActiveAt?: {
         seconds: number;
         nanoseconds: number;
@@ -35,15 +32,18 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     notificationPreferences?: {
         [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
     } | null | undefined;
+    issueName?: string | undefined;
+    parentIssueIds?: string[] | undefined;
     encryptedPhoneNumber?: string | undefined;
     hashedPhoneNumber?: string | undefined;
-    isTourCompleted?: boolean | undefined;
+    setbackThreshold?: number | undefined;
     androidPermissions?: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
     region?: string | null | undefined;
     scheduledNotificationIds?: string[] | undefined;
     issueId: string | null;
+    currentAgent: import("..").AgentName;
     timezone: string;
     uids: string[];
-}, "issueId" | "timezone" | "uids" | ("createdAt" | "updatedAt" | "issueName" | "parentIssueIds" | "setbackThreshold" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "encryptedPhoneNumber" | "hashedPhoneNumber" | "isTourCompleted" | "androidPermissions" | "region" | "scheduledNotificationIds")>;
+}, "issueId" | "currentAgent" | "timezone" | "uids" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "parentIssueIds" | "encryptedPhoneNumber" | "hashedPhoneNumber" | "setbackThreshold" | "androidPermissions" | "region" | "scheduledNotificationIds")>;

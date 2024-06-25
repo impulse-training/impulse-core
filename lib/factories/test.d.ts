@@ -49,20 +49,21 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             toDate: Function;
         };
     }[] | undefined;
+    agent?: import("..").AgentName | undefined;
     gptPayload?: {
         role: NonNullable<"system" | "user" | "assistant" | undefined>;
         content: string;
     }[] | undefined;
     openAiChoiceResponse?: {} | undefined;
+    issueName: string;
+    parentIssueIds: string[];
     date: {
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     };
     type: "impulse";
-    issueName: string;
-    parentIssueIds: string[];
-}, "date" | "type" | "issueName" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "senderProfileId" | "views" | "gptPayload" | "openAiChoiceResponse")>, profileFactory: import("factory.ts").Factory<{
+}, "issueName" | "parentIssueIds" | "date" | "type" | ("createdAt" | "updatedAt" | "text" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse")>, profileFactory: import("factory.ts").Factory<{
     createdAt?: {
         seconds: number;
         nanoseconds: number;
@@ -73,9 +74,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    issueName?: string | undefined;
-    parentIssueIds?: string[] | undefined;
-    setbackThreshold?: number | undefined;
     lastActiveAt?: {
         seconds: number;
         nanoseconds: number;
@@ -97,18 +95,21 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     notificationPreferences?: {
         [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
     } | null | undefined;
+    issueName?: string | undefined;
+    parentIssueIds?: string[] | undefined;
     encryptedPhoneNumber?: string | undefined;
     hashedPhoneNumber?: string | undefined;
-    isTourCompleted?: boolean | undefined;
+    setbackThreshold?: number | undefined;
     androidPermissions?: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
     region?: string | null | undefined;
     scheduledNotificationIds?: string[] | undefined;
     issueId: string | null;
+    currentAgent: import("..").AgentName;
     timezone: string;
     uids: string[];
-}, "issueId" | "timezone" | "uids" | ("createdAt" | "updatedAt" | "issueName" | "parentIssueIds" | "setbackThreshold" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "encryptedPhoneNumber" | "hashedPhoneNumber" | "isTourCompleted" | "androidPermissions" | "region" | "scheduledNotificationIds")>, folderFactory: import("factory.ts").Factory<{
+}, "issueId" | "currentAgent" | "timezone" | "uids" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "parentIssueIds" | "encryptedPhoneNumber" | "hashedPhoneNumber" | "setbackThreshold" | "androidPermissions" | "region" | "scheduledNotificationIds")>, folderFactory: import("factory.ts").Factory<{
     createdAt?: {
         seconds: number;
         nanoseconds: number;
@@ -568,4 +569,4 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     ordinal: number;
     invitationCode: string;
     invitationUrl: string;
-}, "type" | "prompt" | "ordinal" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "prompt" | "ordinal" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+}, "type" | "prompt" | "ordinal" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "setbackThreshold" | "type" | "prompt" | "ordinal" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;

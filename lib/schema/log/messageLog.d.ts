@@ -31,6 +31,7 @@ export declare const messageLogSchema: yup.ObjectSchema<{
             toDate: Function;
         };
     }[] | undefined;
+    agent: import("../..").AgentName | undefined;
     gptPayload: {
         role: NonNullable<"system" | "user" | "assistant" | undefined>;
         content: string;
@@ -48,6 +49,7 @@ export declare const messageLogSchema: yup.ObjectSchema<{
     };
     senderProfileId: undefined;
     views: "";
+    agent: undefined;
     gptPayload: "";
 }, "">;
 export type MessageLogValue = yup.InferType<typeof messageLogSchema>;

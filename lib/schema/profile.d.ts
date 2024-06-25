@@ -1,5 +1,6 @@
 import { AppStateStatus } from 'react-native';
 import * as yup from 'yup';
+import { AgentName } from '../agents';
 export declare const profileSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
@@ -38,7 +39,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     encryptedPhoneNumber: string | undefined;
     hashedPhoneNumber: string | undefined;
     setbackThreshold: number | undefined;
-    isTourCompleted: boolean | undefined;
+    currentAgent: AgentName;
     androidPermissions: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
@@ -62,7 +63,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     encryptedPhoneNumber: undefined;
     hashedPhoneNumber: undefined;
     setbackThreshold: undefined;
-    isTourCompleted: undefined;
+    currentAgent: "onboarding";
     androidPermissions: undefined;
     region: undefined;
     timezone: undefined;

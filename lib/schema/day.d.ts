@@ -43,6 +43,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
+            agent?: import("..").AgentName | undefined;
             gptPayload?: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;
@@ -80,19 +81,20 @@ export declare const daySchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
+            agent?: import("..").AgentName | undefined;
             gptPayload?: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;
             }[] | undefined;
             openAiChoiceResponse?: {} | undefined;
+            issueName: string;
+            parentIssueIds: string[];
             date: {
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             };
             type: "impulse";
-            issueName: string;
-            parentIssueIds: string[];
         } | {
             createdAt?: {
                 seconds: number;
@@ -117,6 +119,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
+            agent?: import("..").AgentName | undefined;
             gptPayload?: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;
@@ -154,6 +157,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
+            agent?: import("..").AgentName | undefined;
             gptPayload?: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;
@@ -379,6 +383,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
+            agent?: import("..").AgentName | undefined;
             gptPayload?: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;

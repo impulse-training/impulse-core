@@ -6,6 +6,7 @@ export const makeProfileFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<ProfileValue>({
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
+    currentAgent: 'onboarding',
     region: 'US',
     timezone: 'America/Bogota',
     notificationPreferences: {},

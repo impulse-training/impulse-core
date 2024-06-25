@@ -1,4 +1,5 @@
 import * as yup from 'yup';
+import { AgentName } from '../../agents';
 export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSchema<{
     openAiChoiceResponse: {} | undefined;
     createdAt: {
@@ -31,6 +32,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
             toDate: Function;
         };
     }[] | undefined;
+    agent: AgentName | undefined;
     gptPayload: {
         role: NonNullable<"system" | "user" | "assistant" | undefined>;
         content: string;
@@ -48,5 +50,6 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
     };
     senderProfileId: undefined;
     views: "";
+    agent: undefined;
     gptPayload: "";
 }, "">;

@@ -1,5 +1,6 @@
 import { AppStateStatus } from 'react-native';
 import * as yup from 'yup';
+import { AgentName } from '../agents';
 import { notificationOptionSchema } from './notification';
 import { optionalStringArray, requiredStringArray } from './utils/array';
 import { optionalObjectOf } from './utils/objectOf';
@@ -23,7 +24,7 @@ export const profileSchema = yup.object().shape({
   encryptedPhoneNumber: yup.string(),
   hashedPhoneNumber: yup.string(),
   setbackThreshold: yup.number(),
-  isTourCompleted: yup.boolean(),
+  currentAgent: yup.mixed<AgentName>().default('onboarding'),
   androidPermissions: optionalObjectOf(yup.boolean().required()),
   region: yup.string().nullable().optional(),
   timezone: yup.string().required(),

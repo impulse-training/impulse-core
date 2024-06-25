@@ -51,6 +51,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
             toDate: Function;
         };
     }[] | undefined;
+    agent: import("../..").AgentName | undefined;
     gptPayload: {
         role: NonNullable<"system" | "user" | "assistant" | undefined>;
         content: string;
@@ -257,6 +258,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
     };
     senderProfileId: undefined;
     views: "";
+    agent: undefined;
     gptPayload: "";
     questionsById: undefined;
     questionData: undefined;

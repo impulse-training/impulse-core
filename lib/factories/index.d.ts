@@ -28,7 +28,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         } | undefined;
         profileId: string;
     }, "profileId" | ("createdAt" | "updatedAt" | "tacticId" | "tacticTitle" | "text" | "recording" | "isEdited" | "avatar")>;
-    dayFactory: import("factory.ts").Factory<import("..").DayValue, "date" | "issueName" | "logsById" | "isProcessing" | ("createdAt" | "updatedAt")>;
+    dayFactory: import("factory.ts").Factory<import("..").DayValue, "issueName" | "date" | "logsById" | "isProcessing" | ("createdAt" | "updatedAt")>;
     folderFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -515,20 +515,21 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 toDate: Function;
             };
         }[] | undefined;
+        agent?: import("..").AgentName | undefined;
         gptPayload?: {
             role: NonNullable<"system" | "user" | "assistant" | undefined>;
             content: string;
         }[] | undefined;
         openAiChoiceResponse?: {} | undefined;
+        issueName: string;
+        parentIssueIds: string[];
         date: {
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         };
         type: "impulse";
-        issueName: string;
-        parentIssueIds: string[];
-    }, "date" | "type" | "issueName" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "senderProfileId" | "views" | "gptPayload" | "openAiChoiceResponse")>;
+    }, "issueName" | "parentIssueIds" | "date" | "type" | ("createdAt" | "updatedAt" | "text" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse")>;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
         createdAt?: {
@@ -593,9 +594,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        issueName?: string | undefined;
-        parentIssueIds?: string[] | undefined;
-        setbackThreshold?: number | undefined;
         lastActiveAt?: {
             seconds: number;
             nanoseconds: number;
@@ -617,18 +615,21 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         notificationPreferences?: {
             [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
         } | null | undefined;
+        issueName?: string | undefined;
+        parentIssueIds?: string[] | undefined;
         encryptedPhoneNumber?: string | undefined;
         hashedPhoneNumber?: string | undefined;
-        isTourCompleted?: boolean | undefined;
+        setbackThreshold?: number | undefined;
         androidPermissions?: {
             [x: string]: NonNullable<boolean | undefined>;
         } | null | undefined;
         region?: string | null | undefined;
         scheduledNotificationIds?: string[] | undefined;
         issueId: string | null;
+        currentAgent: import("..").AgentName;
         timezone: string;
         uids: string[];
-    }, "issueId" | "timezone" | "uids" | ("createdAt" | "updatedAt" | "issueName" | "parentIssueIds" | "setbackThreshold" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "encryptedPhoneNumber" | "hashedPhoneNumber" | "isTourCompleted" | "androidPermissions" | "region" | "scheduledNotificationIds")>;
+    }, "issueId" | "currentAgent" | "timezone" | "uids" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "parentIssueIds" | "encryptedPhoneNumber" | "hashedPhoneNumber" | "setbackThreshold" | "androidPermissions" | "region" | "scheduledNotificationIds")>;
     questionTimeFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -699,5 +700,5 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         hour: number;
         minute: number;
     }, "profileId" | "type" | "name" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "prompt" | "ordinal" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "setbackThreshold" | "type" | "prompt" | "ordinal" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
 };
