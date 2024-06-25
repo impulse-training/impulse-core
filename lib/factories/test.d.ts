@@ -103,13 +103,16 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     androidPermissions?: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
+    longTermMemory?: {
+        [x: string]: {} | null | undefined;
+    } | null | undefined;
     region?: string | null | undefined;
     scheduledNotificationIds?: string[] | undefined;
     issueId: string | null;
     currentAgent: import("..").AgentName;
     timezone: string;
     uids: string[];
-}, "issueId" | "currentAgent" | "timezone" | "uids" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "parentIssueIds" | "encryptedPhoneNumber" | "hashedPhoneNumber" | "setbackThreshold" | "androidPermissions" | "region" | "scheduledNotificationIds")>, folderFactory: import("factory.ts").Factory<{
+}, "issueId" | "currentAgent" | "timezone" | "uids" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "parentIssueIds" | "encryptedPhoneNumber" | "hashedPhoneNumber" | "setbackThreshold" | "androidPermissions" | "longTermMemory" | "region" | "scheduledNotificationIds")>, folderFactory: import("factory.ts").Factory<{
     createdAt?: {
         seconds: number;
         nanoseconds: number;

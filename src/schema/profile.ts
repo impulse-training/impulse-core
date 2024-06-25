@@ -26,6 +26,7 @@ export const profileSchema = yup.object().shape({
   setbackThreshold: yup.number(),
   currentAgent: yup.mixed<AgentName>().default('onboarding'),
   androidPermissions: optionalObjectOf(yup.boolean().required()),
+  longTermMemory: optionalObjectOf(yup.mixed().nullable()),
   region: yup.string().nullable().optional(),
   timezone: yup.string().required(),
   scheduledNotificationIds: optionalStringArray,

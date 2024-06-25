@@ -43,6 +43,9 @@ export declare const profileSchema: yup.ObjectSchema<{
     androidPermissions: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
+    longTermMemory: {
+        [x: string]: {} | null | undefined;
+    } | null | undefined;
     region: string | null | undefined;
     timezone: string;
     scheduledNotificationIds: string[] | undefined;
@@ -65,6 +68,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     setbackThreshold: undefined;
     currentAgent: "onboarding";
     androidPermissions: undefined;
+    longTermMemory: undefined;
     region: undefined;
     timezone: undefined;
     scheduledNotificationIds: "";

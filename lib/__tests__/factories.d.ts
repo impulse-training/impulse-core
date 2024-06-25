@@ -622,13 +622,16 @@ export declare const factories: {
         androidPermissions?: {
             [x: string]: NonNullable<boolean | undefined>;
         } | null | undefined;
+        longTermMemory?: {
+            [x: string]: {} | null | undefined;
+        } | null | undefined;
         region?: string | null | undefined;
         scheduledNotificationIds?: string[] | undefined;
         issueId: string | null;
         currentAgent: import("..").AgentName;
         timezone: string;
         uids: string[];
-    }, "issueId" | "currentAgent" | "timezone" | "uids" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "parentIssueIds" | "encryptedPhoneNumber" | "hashedPhoneNumber" | "setbackThreshold" | "androidPermissions" | "region" | "scheduledNotificationIds")>;
+    }, "issueId" | "currentAgent" | "timezone" | "uids" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "parentIssueIds" | "encryptedPhoneNumber" | "hashedPhoneNumber" | "setbackThreshold" | "androidPermissions" | "longTermMemory" | "region" | "scheduledNotificationIds")>;
     questionTimeFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
