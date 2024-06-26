@@ -1,5 +1,4 @@
 import * as yup from 'yup';
-import { objectOf } from '../../utils/objectOf';
 import { AudioTacticValue, audioTacticSchema } from './audio';
 import {
   BreatheTacticValue,
@@ -76,17 +75,7 @@ type ValidatedTactic = {
   [K in TacticValue['type']]: yup.InferType<(typeof tacticSchemas)[K]>;
 }[TacticValue['type']];
 
-export const tacticInfoSchema = yup.object({
-  id: yup.string().required(),
-  path: yup.string().required(),
-  tactic: tacticSchema as any, // This is overwritten by casting with the WithTacticsById type
-});
-export type TacticInfo = Omit<
-  yup.InferType<typeof tacticInfoSchema>,
-  'tactic'
-> & { tactic: TacticValue };
-export const tacticsByIdSchema = objectOf(tacticInfoSchema);
-export type TacticsById = Record<string, TacticInfo>;
+export type TacticsById = Record<string, TacticValue>;
 
 // Export type guard functions for each tactic type (TT)
 export type WithTacticsById<T> = Omit<T, 'tacticsById'> & {
