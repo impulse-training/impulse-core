@@ -616,6 +616,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
         } | null | undefined;
         issueName?: string | undefined;
+        isOnboardingComplete?: boolean | undefined;
         parentIssueIds?: string[] | undefined;
         encryptedPhoneNumber?: string | undefined;
         hashedPhoneNumber?: string | undefined;
@@ -632,7 +633,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         currentAgent: import("..").AgentName;
         timezone: string;
         uids: string[];
-    }, "issueId" | "currentAgent" | "timezone" | "uids" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "parentIssueIds" | "encryptedPhoneNumber" | "hashedPhoneNumber" | "setbackThreshold" | "androidPermissions" | "longTermMemory" | "region" | "scheduledNotificationIds")>;
+    }, "issueId" | "currentAgent" | "timezone" | "uids" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "isOnboardingComplete" | "parentIssueIds" | "encryptedPhoneNumber" | "hashedPhoneNumber" | "setbackThreshold" | "androidPermissions" | "longTermMemory" | "region" | "scheduledNotificationIds")>;
     questionTimeFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;

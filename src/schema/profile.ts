@@ -20,6 +20,7 @@ export const profileSchema = yup.object().shape({
   ),
   issueId: yup.string().required().nullable(),
   issueName: yup.string(),
+  isOnboardingComplete: yup.boolean(),
   parentIssueIds: optionalStringArray,
   encryptedPhoneNumber: yup.string(),
   hashedPhoneNumber: yup.string(),

@@ -35,6 +35,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     } | null | undefined;
     issueId: string | null;
     issueName: string | undefined;
+    isOnboardingComplete: boolean | undefined;
     parentIssueIds: string[] | undefined;
     encryptedPhoneNumber: string | undefined;
     hashedPhoneNumber: string | undefined;
@@ -62,6 +63,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     notificationPreferences: undefined;
     issueId: undefined;
     issueName: undefined;
+    isOnboardingComplete: undefined;
     parentIssueIds: "";
     encryptedPhoneNumber: undefined;
     hashedPhoneNumber: undefined;
