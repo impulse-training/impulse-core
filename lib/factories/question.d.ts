@@ -48,8 +48,9 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
         color: string;
         textColor: string;
     })[] | undefined;
+    templateFor?: "onboarding" | undefined;
     writeAnswerToMemoryKey?: string | undefined;
     type: import("..").QuestionKeyType;
     prompt: string;
     ordinal: number;
-}, "type" | "prompt" | "ordinal" | ("createdAt" | "updatedAt" | "setbackThreshold" | "options" | "writeAnswerToMemoryKey")>;
+}, "type" | "prompt" | "ordinal" | ("createdAt" | "updatedAt" | "setbackThreshold" | "options" | "templateFor" | "writeAnswerToMemoryKey")>;

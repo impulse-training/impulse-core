@@ -681,11 +681,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             color: string;
             textColor: string;
         })[] | undefined;
+        templateFor?: "onboarding" | undefined;
         writeAnswerToMemoryKey?: string | undefined;
         type: import("..").QuestionKeyType;
         prompt: string;
         ordinal: number;
-    }, "type" | "prompt" | "ordinal" | ("createdAt" | "updatedAt" | "setbackThreshold" | "options" | "writeAnswerToMemoryKey")>;
+    }, "type" | "prompt" | "ordinal" | ("createdAt" | "updatedAt" | "setbackThreshold" | "options" | "templateFor" | "writeAnswerToMemoryKey")>;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;

@@ -39,6 +39,7 @@ export declare const questionCounterSchema: yup.ObjectSchema<{
         textColor: string;
     })[] | undefined;
     ordinal: number;
+    templateFor: "onboarding" | undefined;
     writeAnswerToMemoryKey: string | undefined;
     createdAt: {
         seconds: number;
@@ -55,6 +56,7 @@ export declare const questionCounterSchema: yup.ObjectSchema<{
     type: undefined;
     options: "";
     ordinal: undefined;
+    templateFor: undefined;
     writeAnswerToMemoryKey: undefined;
     createdAt: undefined;
     updatedAt: undefined;

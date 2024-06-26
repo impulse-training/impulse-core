@@ -104,6 +104,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 color: string;
                 textColor: string;
             })[] | undefined;
+            templateFor?: "onboarding" | undefined;
             writeAnswerToMemoryKey?: string | undefined;
             type: import("..").QuestionKeyType;
             prompt: string;
@@ -120,6 +121,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             options?: string[] | undefined;
+            templateFor?: "onboarding" | undefined;
             writeAnswerToMemoryKey?: string | undefined;
             type: import("..").QuestionKeyType;
             prompt: string;
@@ -172,6 +174,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 color: string;
                 textColor: string;
             })[] | undefined;
+            templateFor?: "onboarding" | undefined;
             writeAnswerToMemoryKey?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
@@ -226,6 +229,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 color: string;
                 textColor: string;
             })[] | undefined;
+            templateFor?: "onboarding" | undefined;
             writeAnswerToMemoryKey?: string | undefined;
             type: import("..").QuestionKeyType;
             prompt: string;

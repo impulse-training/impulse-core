@@ -40,6 +40,7 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
         textColor: string;
     })[] | undefined;
     ordinal: number;
+    templateFor: "onboarding" | undefined;
     writeAnswerToMemoryKey: string | undefined;
     createdAt: {
         seconds: number;
@@ -56,6 +57,7 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
     type: undefined;
     options: "";
     ordinal: undefined;
+    templateFor: undefined;
     writeAnswerToMemoryKey: undefined;
     createdAt: undefined;
     updatedAt: undefined;

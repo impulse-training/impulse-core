@@ -4,6 +4,7 @@ export declare const questionMultipleChoiceSchema: yup.ObjectSchema<{
     type: import("..").QuestionKeyType;
     options: string[] | undefined;
     ordinal: number;
+    templateFor: "onboarding" | undefined;
     writeAnswerToMemoryKey: string | undefined;
     createdAt: {
         seconds: number;
@@ -20,6 +21,7 @@ export declare const questionMultipleChoiceSchema: yup.ObjectSchema<{
     type: undefined;
     options: "";
     ordinal: undefined;
+    templateFor: undefined;
     writeAnswerToMemoryKey: undefined;
     createdAt: undefined;
     updatedAt: undefined;
