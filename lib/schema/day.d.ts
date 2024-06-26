@@ -87,6 +87,43 @@ export declare const daySchema: yup.ObjectSchema<{
                 content: string;
             }[] | undefined;
             openAiChoiceResponse?: {} | undefined;
+            date: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            };
+            type: "hidden";
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            text?: string | undefined;
+            senderProfileId?: string | null | undefined;
+            views?: {
+                openTime: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                };
+                closeTime: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                };
+            }[] | undefined;
+            agent?: import("..").AgentName | undefined;
+            gptPayload?: {
+                role: NonNullable<"system" | "user" | "assistant" | undefined>;
+                content: string;
+            }[] | undefined;
+            openAiChoiceResponse?: {} | undefined;
             issueName: string;
             parentIssueIds: string[];
             date: {

@@ -1,11 +1,13 @@
 import * as yup from 'yup';
 import { ActionRecapLogValue, actionRecapLogSchema } from './actionRecap';
+import { HiddenLogValue, hiddenLogSchema } from './hiddenLog';
 import { ImpulseLogValue, impulseLogSchema } from './impulseLog';
 import { MessageLogValue, messageLogSchema } from './messageLog';
 import { QuestionsLogValue, questionsLogSchema } from './questionsLog';
 import { StrategiesLogValue, strategiesLogSchema } from './strategiesLog';
 
 export * from './actionRecap';
+export * from './hiddenLog';
 export * from './impulseLog';
 export * from './messageLog';
 export * from './questionsLog';
@@ -22,6 +24,7 @@ export const logSchemas: Record<
   question: questionsLogSchema,
   strategies: strategiesLogSchema,
   actionRecap: actionRecapLogSchema,
+  hidden: hiddenLogSchema,
 } as any;
 
 export const logSchema = yup.lazy(value => {
@@ -49,4 +52,5 @@ export type LogValue =
   | MessageLogValue
   | QuestionsLogValue
   | ActionRecapLogValue
-  | StrategiesLogValue;
+  | StrategiesLogValue
+  | HiddenLogValue;
