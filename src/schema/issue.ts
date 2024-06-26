@@ -20,6 +20,5 @@ export const issueSchema = yup.object().shape({
   parentNames: requiredStringArray,
   profileCount: yup.number().nullable(),
   isFeatured: yup.boolean().nullable(),
-  therapistProfileIds: requiredStringArray,
 });
 export type IssueValue = yup.InferType<typeof issueSchema>;

@@ -550,8 +550,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         synonyms: string[];
         parentIds: string[];
         parentNames: string[];
-        therapistProfileIds: string[];
-    }, "ordinal" | "name" | "synonyms" | "parentIds" | "parentNames" | "therapistProfileIds" | ("path" | "createdAt" | "updatedAt" | "parentId" | "profileCount" | "isFeatured")>;
+    }, "ordinal" | "name" | "synonyms" | "parentIds" | "parentNames" | ("path" | "createdAt" | "updatedAt" | "parentId" | "profileCount" | "isFeatured")>;
     locationFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
