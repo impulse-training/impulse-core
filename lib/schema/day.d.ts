@@ -356,6 +356,7 @@ export declare const daySchema: yup.ObjectSchema<{
             };
             questionData: {
                 [x: string]: {
+                    idValue?: string | undefined;
                     numericValue?: number | undefined;
                     setAt: {
                         seconds: number;

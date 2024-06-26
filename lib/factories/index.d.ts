@@ -571,6 +571,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
     profileLogsSummaryFactory: import("factory.ts").Factory<{
         [x: string]: {
             [x: string]: {
+                idValue?: string | undefined;
                 numericValue?: number | undefined;
                 setAt: {
                     seconds: number;

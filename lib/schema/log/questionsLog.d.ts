@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 export declare const questionDataSchema: yup.ObjectSchema<{
+    idValue: string | undefined;
     numericValue: number | undefined;
     stringValue: string;
     unit: string;
@@ -9,6 +10,7 @@ export declare const questionDataSchema: yup.ObjectSchema<{
         toDate: Function;
     };
 }, yup.AnyObject, {
+    idValue: undefined;
     numericValue: undefined;
     stringValue: undefined;
     unit: undefined;
@@ -238,6 +240,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
     };
     questionData: {
         [x: string]: {
+            idValue?: string | undefined;
             numericValue?: number | undefined;
             setAt: {
                 seconds: number;
