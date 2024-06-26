@@ -680,10 +680,11 @@ export declare const factories: {
             color: string;
             textColor: string;
         })[] | undefined;
+        writeAnswerToMemoryKey?: string | undefined;
         type: import("..").QuestionKeyType;
         prompt: string;
         ordinal: number;
-    }, "type" | "prompt" | "ordinal" | ("createdAt" | "updatedAt" | "setbackThreshold" | "options")>;
+    }, "type" | "prompt" | "ordinal" | ("createdAt" | "updatedAt" | "setbackThreshold" | "options" | "writeAnswerToMemoryKey")>;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;

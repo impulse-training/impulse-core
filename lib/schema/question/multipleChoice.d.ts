@@ -4,6 +4,7 @@ export declare const questionMultipleChoiceSchema: yup.ObjectSchema<{
     type: import("..").QuestionKeyType;
     options: string[] | undefined;
     ordinal: number;
+    writeAnswerToMemoryKey: string | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -19,6 +20,7 @@ export declare const questionMultipleChoiceSchema: yup.ObjectSchema<{
     type: undefined;
     options: "";
     ordinal: undefined;
+    writeAnswerToMemoryKey: undefined;
     createdAt: undefined;
     updatedAt: undefined;
 }, "">;

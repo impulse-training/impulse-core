@@ -9,6 +9,7 @@ export function questionBaseSchema(type: QuestionKeyType) {
     type: yup.mixed<QuestionKeyType>().oneOf([type]).defined(),
     options: yup.array().of(optionSchema),
     ordinal: yup.number().required(),
+    writeAnswerToMemoryKey: yup.string(),
     createdAt: optionalTimestampSchema,
     updatedAt: optionalTimestampSchema,
   });

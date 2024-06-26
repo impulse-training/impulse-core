@@ -39,6 +39,7 @@ export declare const questionScaleOf1To10Schema: yup.ObjectSchema<{
         textColor: string;
     })[] | undefined;
     ordinal: number;
+    writeAnswerToMemoryKey: string | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -57,6 +58,7 @@ export declare const questionScaleOf1To10Schema: yup.ObjectSchema<{
     type: undefined;
     options: "";
     ordinal: undefined;
+    writeAnswerToMemoryKey: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     setbackThreshold: undefined;

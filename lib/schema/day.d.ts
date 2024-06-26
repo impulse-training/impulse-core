@@ -222,6 +222,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         color: string;
                         textColor: string;
                     })[] | undefined;
+                    writeAnswerToMemoryKey?: string | undefined;
                     type: import(".").QuestionKeyType;
                     prompt: string;
                     ordinal: number;
@@ -237,6 +238,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     options?: string[] | undefined;
+                    writeAnswerToMemoryKey?: string | undefined;
                     type: import(".").QuestionKeyType;
                     prompt: string;
                     ordinal: number;
@@ -288,6 +290,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         color: string;
                         textColor: string;
                     })[] | undefined;
+                    writeAnswerToMemoryKey?: string | undefined;
                     lowEmoji?: yup.Maybe<string | undefined>;
                     highEmoji?: yup.Maybe<string | undefined>;
                     type: import(".").QuestionKeyType;
@@ -341,6 +344,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         color: string;
                         textColor: string;
                     })[] | undefined;
+                    writeAnswerToMemoryKey?: string | undefined;
                     type: import(".").QuestionKeyType;
                     prompt: string;
                     ordinal: number;

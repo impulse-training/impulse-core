@@ -40,6 +40,7 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
         textColor: string;
     })[] | undefined;
     ordinal: number;
+    writeAnswerToMemoryKey: string | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -55,6 +56,7 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
     type: undefined;
     options: "";
     ordinal: undefined;
+    writeAnswerToMemoryKey: undefined;
     createdAt: undefined;
     updatedAt: undefined;
 }, "">;

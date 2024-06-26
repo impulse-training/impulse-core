@@ -39,6 +39,7 @@ export declare const questionTextSchema: yup.ObjectSchema<{
         textColor: string;
     })[] | undefined;
     ordinal: number;
+    writeAnswerToMemoryKey: string | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -54,6 +55,7 @@ export declare const questionTextSchema: yup.ObjectSchema<{
     type: undefined;
     options: "";
     ordinal: undefined;
+    writeAnswerToMemoryKey: undefined;
     createdAt: undefined;
     updatedAt: undefined;
 }, "">;
