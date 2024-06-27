@@ -11,6 +11,7 @@ export function questionBaseSchema(type: QuestionKeyType) {
     ordinal: yup.number().required(),
     templateFor: yup.mixed<'onboarding'>().oneOf(['onboarding']),
     writeAnswerToMemoryKey: yup.string(),
+    followUpQuestionId: yup.string(),
     createdAt: optionalTimestampSchema,
     updatedAt: optionalTimestampSchema,
   });

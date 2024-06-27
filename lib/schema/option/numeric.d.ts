@@ -12,7 +12,7 @@ export declare const numericOptionSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    nextQuestionId: string | undefined;
+    followUpQuestionId: string | undefined;
     text: string;
     color: string | undefined;
     textColor: string | undefined;
@@ -24,7 +24,7 @@ export declare const numericOptionSchema: yup.ObjectSchema<{
     type: undefined;
     createdAt: undefined;
     updatedAt: undefined;
-    nextQuestionId: undefined;
+    followUpQuestionId: undefined;
     text: undefined;
     color: undefined;
     textColor: undefined;

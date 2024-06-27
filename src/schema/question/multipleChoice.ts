@@ -1,11 +1,12 @@
 import * as yup from 'yup';
-import { optionalStringArray } from '../utils/array';
+import { optionSchema } from '../option';
 import { questionBaseSchema } from './base';
 
 export const questionMultipleChoiceSchema = questionBaseSchema(
   'multipleChoice'
 ).shape({
-  options: optionalStringArray,
+  options: yup.array().of(optionSchema).required(),
+  canAddNewOptions: yup.boolean().required().default(false),
 });
 
 export type QuestionMultipleChoiceValue = yup.InferType<

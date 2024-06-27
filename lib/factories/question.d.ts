@@ -12,6 +12,7 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
         toDate: Function;
     } | null | undefined;
     setbackThreshold?: number | undefined;
+    followUpQuestionId?: string | undefined;
     options?: ({
         createdAt?: {
             seconds: number;
@@ -25,7 +26,7 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
         } | null | undefined;
         label?: string | undefined;
         setbackThreshold?: number | undefined;
-        nextQuestionId?: string | undefined;
+        followUpQuestionId?: string | undefined;
         color?: string | undefined;
         textColor?: string | undefined;
         greaterThan?: number | undefined;
@@ -44,7 +45,7 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
             toDate: Function;
         } | null | undefined;
         label?: string | undefined;
-        nextQuestionId?: string | undefined;
+        followUpQuestionId?: string | undefined;
         color?: string | undefined;
         textColor?: string | undefined;
         text: string;
@@ -55,4 +56,4 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
     type: import("..").QuestionKeyType;
     prompt: string;
     ordinal: number;
-}, "type" | "prompt" | "ordinal" | ("createdAt" | "updatedAt" | "setbackThreshold" | "options" | "templateFor" | "writeAnswerToMemoryKey")>;
+}, "type" | "prompt" | "ordinal" | ("createdAt" | "updatedAt" | "setbackThreshold" | "followUpQuestionId" | "options" | "templateFor" | "writeAnswerToMemoryKey")>;

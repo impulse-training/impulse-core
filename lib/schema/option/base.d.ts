@@ -11,7 +11,7 @@ export declare function optionValueBaseSchema<K extends string>(type: K): yup.Ob
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    nextQuestionId: string | undefined;
+    followUpQuestionId: string | undefined;
     text: string;
     color: string | undefined;
     textColor: string | undefined;
@@ -20,7 +20,7 @@ export declare function optionValueBaseSchema<K extends string>(type: K): yup.Ob
     type: undefined;
     createdAt: undefined;
     updatedAt: undefined;
-    nextQuestionId: undefined;
+    followUpQuestionId: undefined;
     text: undefined;
     color: undefined;
     textColor: undefined;

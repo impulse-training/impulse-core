@@ -205,6 +205,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            followUpQuestionIds?: string[] | undefined;
             date: {
                 seconds: number;
                 nanoseconds: number;
@@ -223,6 +224,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    followUpQuestionId?: string | undefined;
                     options?: ({
                         createdAt?: {
                             seconds: number;
@@ -236,7 +238,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         } | null | undefined;
                         label?: string | undefined;
                         setbackThreshold?: number | undefined;
-                        nextQuestionId?: string | undefined;
+                        followUpQuestionId?: string | undefined;
                         color?: string | undefined;
                         textColor?: string | undefined;
                         greaterThan?: number | undefined;
@@ -255,7 +257,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             toDate: Function;
                         } | null | undefined;
                         label?: string | undefined;
-                        nextQuestionId?: string | undefined;
+                        followUpQuestionId?: string | undefined;
                         color?: string | undefined;
                         textColor?: string | undefined;
                         text: string;
@@ -277,25 +279,12 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    options?: string[] | undefined;
+                    followUpQuestionId?: string | undefined;
                     templateFor?: "onboarding" | undefined;
                     writeAnswerToMemoryKey?: string | undefined;
                     type: import(".").QuestionKeyType;
                     prompt: string;
-                    ordinal: number;
-                } | {
-                    createdAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    setbackThreshold?: number | undefined;
-                    options?: ({
+                    options: ({
                         createdAt?: {
                             seconds: number;
                             nanoseconds: number;
@@ -308,7 +297,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         } | null | undefined;
                         label?: string | undefined;
                         setbackThreshold?: number | undefined;
-                        nextQuestionId?: string | undefined;
+                        followUpQuestionId?: string | undefined;
                         color?: string | undefined;
                         textColor?: string | undefined;
                         greaterThan?: number | undefined;
@@ -327,7 +316,60 @@ export declare const daySchema: yup.ObjectSchema<{
                             toDate: Function;
                         } | null | undefined;
                         label?: string | undefined;
-                        nextQuestionId?: string | undefined;
+                        followUpQuestionId?: string | undefined;
+                        color?: string | undefined;
+                        textColor?: string | undefined;
+                        text: string;
+                        type: "string";
+                    })[];
+                    ordinal: number;
+                    canAddNewOptions: NonNullable<boolean | undefined>;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    setbackThreshold?: number | undefined;
+                    followUpQuestionId?: string | undefined;
+                    options?: ({
+                        createdAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        label?: string | undefined;
+                        setbackThreshold?: number | undefined;
+                        followUpQuestionId?: string | undefined;
+                        color?: string | undefined;
+                        textColor?: string | undefined;
+                        greaterThan?: number | undefined;
+                        lessThanOrEqualTo?: number | undefined;
+                        text: string;
+                        type: "numeric";
+                    } | {
+                        createdAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        label?: string | undefined;
+                        followUpQuestionId?: string | undefined;
                         color?: string | undefined;
                         textColor?: string | undefined;
                         text: string;
@@ -352,6 +394,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     setbackThreshold?: number | undefined;
+                    followUpQuestionId?: string | undefined;
                     options?: ({
                         createdAt?: {
                             seconds: number;
@@ -365,7 +408,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         } | null | undefined;
                         label?: string | undefined;
                         setbackThreshold?: number | undefined;
-                        nextQuestionId?: string | undefined;
+                        followUpQuestionId?: string | undefined;
                         color?: string | undefined;
                         textColor?: string | undefined;
                         greaterThan?: number | undefined;
@@ -384,7 +427,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             toDate: Function;
                         } | null | undefined;
                         label?: string | undefined;
-                        nextQuestionId?: string | undefined;
+                        followUpQuestionId?: string | undefined;
                         color?: string | undefined;
                         textColor?: string | undefined;
                         text: string;

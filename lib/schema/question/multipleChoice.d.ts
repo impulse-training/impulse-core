@@ -2,10 +2,48 @@ import * as yup from 'yup';
 export declare const questionMultipleChoiceSchema: yup.ObjectSchema<{
     prompt: string;
     type: import("..").QuestionKeyType;
-    options: string[] | undefined;
+    options: ({
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        label?: string | undefined;
+        setbackThreshold?: number | undefined;
+        followUpQuestionId?: string | undefined;
+        color?: string | undefined;
+        textColor?: string | undefined;
+        greaterThan?: number | undefined;
+        lessThanOrEqualTo?: number | undefined;
+        text: string;
+        type: "numeric";
+    } | {
+        createdAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        label?: string | undefined;
+        followUpQuestionId?: string | undefined;
+        color?: string | undefined;
+        textColor?: string | undefined;
+        text: string;
+        type: "string";
+    })[];
     ordinal: number;
     templateFor: "onboarding" | undefined;
     writeAnswerToMemoryKey: string | undefined;
+    followUpQuestionId: string | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -16,6 +54,7 @@ export declare const questionMultipleChoiceSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    canAddNewOptions: NonNullable<boolean | undefined>;
 }, yup.AnyObject, {
     prompt: undefined;
     type: undefined;
@@ -23,7 +62,9 @@ export declare const questionMultipleChoiceSchema: yup.ObjectSchema<{
     ordinal: undefined;
     templateFor: undefined;
     writeAnswerToMemoryKey: undefined;
+    followUpQuestionId: undefined;
     createdAt: undefined;
     updatedAt: undefined;
+    canAddNewOptions: false;
 }, "">;
 export type QuestionMultipleChoiceValue = yup.InferType<typeof questionMultipleChoiceSchema>;

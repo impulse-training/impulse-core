@@ -646,6 +646,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: Function;
         } | null | undefined;
         setbackThreshold?: number | undefined;
+        followUpQuestionId?: string | undefined;
         options?: ({
             createdAt?: {
                 seconds: number;
@@ -659,7 +660,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             } | null | undefined;
             label?: string | undefined;
             setbackThreshold?: number | undefined;
-            nextQuestionId?: string | undefined;
+            followUpQuestionId?: string | undefined;
             color?: string | undefined;
             textColor?: string | undefined;
             greaterThan?: number | undefined;
@@ -678,7 +679,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 toDate: Function;
             } | null | undefined;
             label?: string | undefined;
-            nextQuestionId?: string | undefined;
+            followUpQuestionId?: string | undefined;
             color?: string | undefined;
             textColor?: string | undefined;
             text: string;
@@ -689,7 +690,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         type: import("..").QuestionKeyType;
         prompt: string;
         ordinal: number;
-    }, "type" | "prompt" | "ordinal" | ("createdAt" | "updatedAt" | "setbackThreshold" | "options" | "templateFor" | "writeAnswerToMemoryKey")>;
+    }, "type" | "prompt" | "ordinal" | ("createdAt" | "updatedAt" | "setbackThreshold" | "followUpQuestionId" | "options" | "templateFor" | "writeAnswerToMemoryKey")>;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;

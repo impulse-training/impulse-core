@@ -15,7 +15,7 @@ export declare const questionIssueSchema: yup.ObjectSchema<{
         } | null | undefined;
         label?: string | undefined;
         setbackThreshold?: number | undefined;
-        nextQuestionId?: string | undefined;
+        followUpQuestionId?: string | undefined;
         color?: string | undefined;
         textColor?: string | undefined;
         greaterThan?: number | undefined;
@@ -34,7 +34,7 @@ export declare const questionIssueSchema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         label?: string | undefined;
-        nextQuestionId?: string | undefined;
+        followUpQuestionId?: string | undefined;
         color?: string | undefined;
         textColor?: string | undefined;
         text: string;
@@ -43,6 +43,7 @@ export declare const questionIssueSchema: yup.ObjectSchema<{
     ordinal: number;
     templateFor: "onboarding" | undefined;
     writeAnswerToMemoryKey: string | undefined;
+    followUpQuestionId: string | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -60,6 +61,7 @@ export declare const questionIssueSchema: yup.ObjectSchema<{
     ordinal: undefined;
     templateFor: undefined;
     writeAnswerToMemoryKey: undefined;
+    followUpQuestionId: undefined;
     createdAt: undefined;
     updatedAt: undefined;
 }, "">;

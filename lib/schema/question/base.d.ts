@@ -16,7 +16,7 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
         } | null | undefined;
         label?: string | undefined;
         setbackThreshold?: number | undefined;
-        nextQuestionId?: string | undefined;
+        followUpQuestionId?: string | undefined;
         color?: string | undefined;
         textColor?: string | undefined;
         greaterThan?: number | undefined;
@@ -35,7 +35,7 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
             toDate: Function;
         } | null | undefined;
         label?: string | undefined;
-        nextQuestionId?: string | undefined;
+        followUpQuestionId?: string | undefined;
         color?: string | undefined;
         textColor?: string | undefined;
         text: string;
@@ -44,6 +44,7 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
     ordinal: number;
     templateFor: "onboarding" | undefined;
     writeAnswerToMemoryKey: string | undefined;
+    followUpQuestionId: string | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -61,6 +62,7 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
     ordinal: undefined;
     templateFor: undefined;
     writeAnswerToMemoryKey: undefined;
+    followUpQuestionId: undefined;
     createdAt: undefined;
     updatedAt: undefined;
 }, "">;
