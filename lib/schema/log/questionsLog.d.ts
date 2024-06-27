@@ -109,8 +109,8 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
             templateFor?: "onboarding" | undefined;
             writeAnswerToMemoryKey?: string | undefined;
             type: import("..").QuestionKeyType;
-            prompt: string;
             ordinal: number;
+            prompt: string;
         } | {
             createdAt?: {
                 seconds: number;
@@ -126,8 +126,8 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
             templateFor?: "onboarding" | undefined;
             writeAnswerToMemoryKey?: string | undefined;
             type: import("..").QuestionKeyType;
-            prompt: string;
             ordinal: number;
+            prompt: string;
         } | {
             createdAt?: {
                 seconds: number;
@@ -181,8 +181,8 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
             type: import("..").QuestionKeyType;
-            prompt: string;
             ordinal: number;
+            prompt: string;
         } | {
             createdAt?: {
                 seconds: number;
@@ -234,8 +234,8 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
             templateFor?: "onboarding" | undefined;
             writeAnswerToMemoryKey?: string | undefined;
             type: import("..").QuestionKeyType;
-            prompt: string;
             ordinal: number;
+            prompt: string;
         };
     };
     questionData: {

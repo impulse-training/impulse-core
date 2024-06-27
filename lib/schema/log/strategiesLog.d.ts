@@ -51,11 +51,11 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
-            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -89,12 +89,11 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
-            repeat?: yup.Maybe<number | undefined>;
-            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -108,6 +107,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            repeat?: yup.Maybe<number | undefined>;
             type: "breathingExercise";
             ordinal: number;
             inFor: number;
@@ -126,11 +126,11 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
-            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -160,11 +160,11 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
-            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -194,11 +194,11 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
-            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -227,11 +227,11 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
-            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -284,11 +284,11 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     profileId?: string | null | undefined;
                     setbackThreshold?: number | null | undefined;
-                    prompt?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    prompt?: string | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -322,12 +322,11 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     profileId?: string | null | undefined;
                     setbackThreshold?: number | null | undefined;
-                    repeat?: yup.Maybe<number | undefined>;
-                    prompt?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    prompt?: string | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -341,6 +340,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
+                    repeat?: yup.Maybe<number | undefined>;
                     type: "breathingExercise";
                     ordinal: number;
                     inFor: number;
@@ -359,11 +359,11 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     profileId?: string | null | undefined;
                     setbackThreshold?: number | null | undefined;
-                    prompt?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    prompt?: string | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -393,11 +393,11 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     profileId?: string | null | undefined;
                     setbackThreshold?: number | null | undefined;
-                    prompt?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    prompt?: string | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -427,11 +427,11 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     profileId?: string | null | undefined;
                     setbackThreshold?: number | null | undefined;
-                    prompt?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    prompt?: string | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -460,11 +460,11 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     profileId?: string | null | undefined;
                     setbackThreshold?: number | null | undefined;
-                    prompt?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    prompt?: string | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -505,11 +505,11 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
-                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -543,12 +543,11 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
-                repeat?: yup.Maybe<number | undefined>;
-                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -562,6 +561,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
+                repeat?: yup.Maybe<number | undefined>;
                 type: "breathingExercise";
                 ordinal: number;
                 inFor: number;
@@ -580,11 +580,11 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
-                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -614,11 +614,11 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
-                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -648,11 +648,11 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
-                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -681,11 +681,11 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
-                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -710,9 +710,18 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     duration: number;
                 };
             })[] | undefined;
+            conditions?: {
+                label?: string | undefined;
+                description?: string | undefined;
+                greaterThan?: number | undefined;
+                lessThanOrEqualTo?: number | undefined;
+                color?: string | undefined;
+                strategyIds: string[];
+                questionId: string;
+            }[] | undefined;
             type: "folder";
-            prompt: string;
             ordinal: number;
+            prompt: string;
             invitationCode: string;
             invitationUrl: string;
         };

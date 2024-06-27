@@ -92,6 +92,514 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             };
+            type: "folder";
+            folder: {
+                createdAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                tacticsById?: {
+                    [x: string]: {
+                        createdAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        profileId?: string | null | undefined;
+                        setbackThreshold?: number | null | undefined;
+                        recommendedForIssueIds?: string[] | undefined;
+                        recommendedForIssueOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        prompt?: string | undefined;
+                        pastTenseTitle?: string | undefined;
+                        commentCount?: number | undefined;
+                        description?: string | null | undefined;
+                        debriefAfterMinutes?: number | null | undefined;
+                        image?: {
+                            localFilePath?: yup.Maybe<string | undefined>;
+                            storagePath?: yup.Maybe<string | undefined>;
+                            uri?: yup.Maybe<string | undefined>;
+                        } | null | undefined;
+                        backgroundColor?: string | undefined;
+                        likesCount?: number | null | undefined;
+                        timerSeconds?: yup.Maybe<number | undefined>;
+                        isSuggested?: boolean | undefined;
+                        recording: {
+                            localFilePath?: string | undefined;
+                            waveform?: string | null | undefined;
+                            remoteFilePath: string;
+                        };
+                        type: "audio";
+                        ordinal: number;
+                    } | {
+                        createdAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        profileId?: string | null | undefined;
+                        setbackThreshold?: number | null | undefined;
+                        recommendedForIssueIds?: string[] | undefined;
+                        recommendedForIssueOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        prompt?: string | undefined;
+                        pastTenseTitle?: string | undefined;
+                        commentCount?: number | undefined;
+                        description?: string | null | undefined;
+                        debriefAfterMinutes?: number | null | undefined;
+                        image?: {
+                            localFilePath?: yup.Maybe<string | undefined>;
+                            storagePath?: yup.Maybe<string | undefined>;
+                            uri?: yup.Maybe<string | undefined>;
+                        } | null | undefined;
+                        backgroundColor?: string | undefined;
+                        likesCount?: number | null | undefined;
+                        timerSeconds?: yup.Maybe<number | undefined>;
+                        isSuggested?: boolean | undefined;
+                        repeat?: yup.Maybe<number | undefined>;
+                        type: "breathingExercise";
+                        ordinal: number;
+                        inFor: number;
+                        holdFor: number;
+                        outFor: number;
+                    } | {
+                        createdAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        profileId?: string | null | undefined;
+                        setbackThreshold?: number | null | undefined;
+                        recommendedForIssueIds?: string[] | undefined;
+                        recommendedForIssueOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        prompt?: string | undefined;
+                        pastTenseTitle?: string | undefined;
+                        commentCount?: number | undefined;
+                        description?: string | null | undefined;
+                        debriefAfterMinutes?: number | null | undefined;
+                        image?: {
+                            localFilePath?: yup.Maybe<string | undefined>;
+                            storagePath?: yup.Maybe<string | undefined>;
+                            uri?: yup.Maybe<string | undefined>;
+                        } | null | undefined;
+                        backgroundColor?: string | undefined;
+                        likesCount?: number | null | undefined;
+                        timerSeconds?: yup.Maybe<number | undefined>;
+                        isSuggested?: boolean | undefined;
+                        type: "notifyASupportPerson";
+                        ordinal: number;
+                        contactIds: string[];
+                    } | {
+                        createdAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        profileId?: string | null | undefined;
+                        setbackThreshold?: number | null | undefined;
+                        recommendedForIssueIds?: string[] | undefined;
+                        recommendedForIssueOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        prompt?: string | undefined;
+                        pastTenseTitle?: string | undefined;
+                        commentCount?: number | undefined;
+                        description?: string | null | undefined;
+                        debriefAfterMinutes?: number | null | undefined;
+                        image?: {
+                            localFilePath?: yup.Maybe<string | undefined>;
+                            storagePath?: yup.Maybe<string | undefined>;
+                            uri?: yup.Maybe<string | undefined>;
+                        } | null | undefined;
+                        backgroundColor?: string | undefined;
+                        likesCount?: number | null | undefined;
+                        timerSeconds?: yup.Maybe<number | undefined>;
+                        isSuggested?: boolean | undefined;
+                        type: "steps";
+                        ordinal: number;
+                        steps: number;
+                    } | {
+                        createdAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        profileId?: string | null | undefined;
+                        setbackThreshold?: number | null | undefined;
+                        recommendedForIssueIds?: string[] | undefined;
+                        recommendedForIssueOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        prompt?: string | undefined;
+                        pastTenseTitle?: string | undefined;
+                        commentCount?: number | undefined;
+                        description?: string | null | undefined;
+                        debriefAfterMinutes?: number | null | undefined;
+                        image?: {
+                            localFilePath?: yup.Maybe<string | undefined>;
+                            storagePath?: yup.Maybe<string | undefined>;
+                            uri?: yup.Maybe<string | undefined>;
+                        } | null | undefined;
+                        backgroundColor?: string | undefined;
+                        likesCount?: number | null | undefined;
+                        timerSeconds?: yup.Maybe<number | undefined>;
+                        isSuggested?: boolean | undefined;
+                        type: "task";
+                        ordinal: number;
+                    } | {
+                        createdAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        updatedAt?: {
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        } | null | undefined;
+                        profileId?: string | null | undefined;
+                        setbackThreshold?: number | null | undefined;
+                        recommendedForIssueIds?: string[] | undefined;
+                        recommendedForIssueOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        prompt?: string | undefined;
+                        pastTenseTitle?: string | undefined;
+                        commentCount?: number | undefined;
+                        description?: string | null | undefined;
+                        debriefAfterMinutes?: number | null | undefined;
+                        image?: {
+                            localFilePath?: yup.Maybe<string | undefined>;
+                            storagePath?: yup.Maybe<string | undefined>;
+                            uri?: yup.Maybe<string | undefined>;
+                        } | null | undefined;
+                        backgroundColor?: string | undefined;
+                        likesCount?: number | null | undefined;
+                        timerSeconds?: yup.Maybe<number | undefined>;
+                        isSuggested?: boolean | undefined;
+                        type: "video";
+                        ordinal: number;
+                        video: {
+                            storagePath?: string | null | undefined;
+                            url?: string | null | undefined;
+                            description: string;
+                            title: string;
+                            thumbnailUrl: string;
+                            duration: number;
+                        };
+                    };
+                } | null | undefined;
+                slug?: string | undefined;
+                creatorProfileId?: string | undefined;
+                next3Tactics?: ({
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    profileId?: string | null | undefined;
+                    setbackThreshold?: number | null | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    prompt?: string | undefined;
+                    pastTenseTitle?: string | undefined;
+                    commentCount?: number | undefined;
+                    description?: string | null | undefined;
+                    debriefAfterMinutes?: number | null | undefined;
+                    image?: {
+                        localFilePath?: yup.Maybe<string | undefined>;
+                        storagePath?: yup.Maybe<string | undefined>;
+                        uri?: yup.Maybe<string | undefined>;
+                    } | null | undefined;
+                    backgroundColor?: string | undefined;
+                    likesCount?: number | null | undefined;
+                    timerSeconds?: yup.Maybe<number | undefined>;
+                    isSuggested?: boolean | undefined;
+                    recording: {
+                        localFilePath?: string | undefined;
+                        waveform?: string | null | undefined;
+                        remoteFilePath: string;
+                    };
+                    type: "audio";
+                    ordinal: number;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    profileId?: string | null | undefined;
+                    setbackThreshold?: number | null | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    prompt?: string | undefined;
+                    pastTenseTitle?: string | undefined;
+                    commentCount?: number | undefined;
+                    description?: string | null | undefined;
+                    debriefAfterMinutes?: number | null | undefined;
+                    image?: {
+                        localFilePath?: yup.Maybe<string | undefined>;
+                        storagePath?: yup.Maybe<string | undefined>;
+                        uri?: yup.Maybe<string | undefined>;
+                    } | null | undefined;
+                    backgroundColor?: string | undefined;
+                    likesCount?: number | null | undefined;
+                    timerSeconds?: yup.Maybe<number | undefined>;
+                    isSuggested?: boolean | undefined;
+                    repeat?: yup.Maybe<number | undefined>;
+                    type: "breathingExercise";
+                    ordinal: number;
+                    inFor: number;
+                    holdFor: number;
+                    outFor: number;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    profileId?: string | null | undefined;
+                    setbackThreshold?: number | null | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    prompt?: string | undefined;
+                    pastTenseTitle?: string | undefined;
+                    commentCount?: number | undefined;
+                    description?: string | null | undefined;
+                    debriefAfterMinutes?: number | null | undefined;
+                    image?: {
+                        localFilePath?: yup.Maybe<string | undefined>;
+                        storagePath?: yup.Maybe<string | undefined>;
+                        uri?: yup.Maybe<string | undefined>;
+                    } | null | undefined;
+                    backgroundColor?: string | undefined;
+                    likesCount?: number | null | undefined;
+                    timerSeconds?: yup.Maybe<number | undefined>;
+                    isSuggested?: boolean | undefined;
+                    type: "notifyASupportPerson";
+                    ordinal: number;
+                    contactIds: string[];
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    profileId?: string | null | undefined;
+                    setbackThreshold?: number | null | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    prompt?: string | undefined;
+                    pastTenseTitle?: string | undefined;
+                    commentCount?: number | undefined;
+                    description?: string | null | undefined;
+                    debriefAfterMinutes?: number | null | undefined;
+                    image?: {
+                        localFilePath?: yup.Maybe<string | undefined>;
+                        storagePath?: yup.Maybe<string | undefined>;
+                        uri?: yup.Maybe<string | undefined>;
+                    } | null | undefined;
+                    backgroundColor?: string | undefined;
+                    likesCount?: number | null | undefined;
+                    timerSeconds?: yup.Maybe<number | undefined>;
+                    isSuggested?: boolean | undefined;
+                    type: "steps";
+                    ordinal: number;
+                    steps: number;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    profileId?: string | null | undefined;
+                    setbackThreshold?: number | null | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    prompt?: string | undefined;
+                    pastTenseTitle?: string | undefined;
+                    commentCount?: number | undefined;
+                    description?: string | null | undefined;
+                    debriefAfterMinutes?: number | null | undefined;
+                    image?: {
+                        localFilePath?: yup.Maybe<string | undefined>;
+                        storagePath?: yup.Maybe<string | undefined>;
+                        uri?: yup.Maybe<string | undefined>;
+                    } | null | undefined;
+                    backgroundColor?: string | undefined;
+                    likesCount?: number | null | undefined;
+                    timerSeconds?: yup.Maybe<number | undefined>;
+                    isSuggested?: boolean | undefined;
+                    type: "task";
+                    ordinal: number;
+                } | {
+                    createdAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    profileId?: string | null | undefined;
+                    setbackThreshold?: number | null | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    prompt?: string | undefined;
+                    pastTenseTitle?: string | undefined;
+                    commentCount?: number | undefined;
+                    description?: string | null | undefined;
+                    debriefAfterMinutes?: number | null | undefined;
+                    image?: {
+                        localFilePath?: yup.Maybe<string | undefined>;
+                        storagePath?: yup.Maybe<string | undefined>;
+                        uri?: yup.Maybe<string | undefined>;
+                    } | null | undefined;
+                    backgroundColor?: string | undefined;
+                    likesCount?: number | null | undefined;
+                    timerSeconds?: yup.Maybe<number | undefined>;
+                    isSuggested?: boolean | undefined;
+                    type: "video";
+                    ordinal: number;
+                    video: {
+                        storagePath?: string | null | undefined;
+                        url?: string | null | undefined;
+                        description: string;
+                        title: string;
+                        thumbnailUrl: string;
+                        duration: number;
+                    };
+                })[] | undefined;
+                conditions?: {
+                    label?: string | undefined;
+                    description?: string | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    color?: string | undefined;
+                    strategyIds: string[];
+                    questionId: string;
+                }[] | undefined;
+                type: "folder";
+                ordinal: number;
+                prompt: string;
+                invitationCode: string;
+                invitationUrl: string;
+            };
+            id: string;
+        } | {
+            createdAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            text?: string | undefined;
+            senderProfileId?: string | null | undefined;
+            views?: {
+                openTime: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                };
+                closeTime: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                };
+            }[] | undefined;
+            agent?: import("..").AgentName | undefined;
+            gptPayload?: {
+                role: NonNullable<"system" | "user" | "assistant" | undefined>;
+                content: string;
+            }[] | undefined;
+            openAiChoiceResponse?: {} | undefined;
+            date: {
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            };
             type: "hidden";
         } | {
             createdAt?: {
@@ -262,8 +770,8 @@ export declare const daySchema: yup.ObjectSchema<{
                     templateFor?: "onboarding" | undefined;
                     writeAnswerToMemoryKey?: string | undefined;
                     type: import(".").QuestionKeyType;
-                    prompt: string;
                     ordinal: number;
+                    prompt: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -279,8 +787,8 @@ export declare const daySchema: yup.ObjectSchema<{
                     templateFor?: "onboarding" | undefined;
                     writeAnswerToMemoryKey?: string | undefined;
                     type: import(".").QuestionKeyType;
-                    prompt: string;
                     ordinal: number;
+                    prompt: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -334,8 +842,8 @@ export declare const daySchema: yup.ObjectSchema<{
                     lowEmoji?: yup.Maybe<string | undefined>;
                     highEmoji?: yup.Maybe<string | undefined>;
                     type: import(".").QuestionKeyType;
-                    prompt: string;
                     ordinal: number;
+                    prompt: string;
                 } | {
                     createdAt?: {
                         seconds: number;
@@ -387,8 +895,8 @@ export declare const daySchema: yup.ObjectSchema<{
                     templateFor?: "onboarding" | undefined;
                     writeAnswerToMemoryKey?: string | undefined;
                     type: import(".").QuestionKeyType;
-                    prompt: string;
                     ordinal: number;
+                    prompt: string;
                 };
             };
             questionData: {
@@ -456,11 +964,11 @@ export declare const daySchema: yup.ObjectSchema<{
                     } | null | undefined;
                     profileId?: string | null | undefined;
                     setbackThreshold?: number | null | undefined;
-                    prompt?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    prompt?: string | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -494,12 +1002,11 @@ export declare const daySchema: yup.ObjectSchema<{
                     } | null | undefined;
                     profileId?: string | null | undefined;
                     setbackThreshold?: number | null | undefined;
-                    repeat?: yup.Maybe<number | undefined>;
-                    prompt?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    prompt?: string | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -513,6 +1020,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
+                    repeat?: yup.Maybe<number | undefined>;
                     type: "breathingExercise";
                     ordinal: number;
                     inFor: number;
@@ -531,11 +1039,11 @@ export declare const daySchema: yup.ObjectSchema<{
                     } | null | undefined;
                     profileId?: string | null | undefined;
                     setbackThreshold?: number | null | undefined;
-                    prompt?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    prompt?: string | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -565,11 +1073,11 @@ export declare const daySchema: yup.ObjectSchema<{
                     } | null | undefined;
                     profileId?: string | null | undefined;
                     setbackThreshold?: number | null | undefined;
-                    prompt?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    prompt?: string | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -599,11 +1107,11 @@ export declare const daySchema: yup.ObjectSchema<{
                     } | null | undefined;
                     profileId?: string | null | undefined;
                     setbackThreshold?: number | null | undefined;
-                    prompt?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    prompt?: string | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -632,11 +1140,11 @@ export declare const daySchema: yup.ObjectSchema<{
                     } | null | undefined;
                     profileId?: string | null | undefined;
                     setbackThreshold?: number | null | undefined;
-                    prompt?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    prompt?: string | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -689,11 +1197,11 @@ export declare const daySchema: yup.ObjectSchema<{
                             } | null | undefined;
                             profileId?: string | null | undefined;
                             setbackThreshold?: number | null | undefined;
-                            prompt?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
                             recommendedForIssueOrdinals?: {
                                 [x: string]: number;
                             } | null | undefined;
+                            prompt?: string | undefined;
                             pastTenseTitle?: string | undefined;
                             commentCount?: number | undefined;
                             description?: string | null | undefined;
@@ -727,12 +1235,11 @@ export declare const daySchema: yup.ObjectSchema<{
                             } | null | undefined;
                             profileId?: string | null | undefined;
                             setbackThreshold?: number | null | undefined;
-                            repeat?: yup.Maybe<number | undefined>;
-                            prompt?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
                             recommendedForIssueOrdinals?: {
                                 [x: string]: number;
                             } | null | undefined;
+                            prompt?: string | undefined;
                             pastTenseTitle?: string | undefined;
                             commentCount?: number | undefined;
                             description?: string | null | undefined;
@@ -746,6 +1253,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             likesCount?: number | null | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
+                            repeat?: yup.Maybe<number | undefined>;
                             type: "breathingExercise";
                             ordinal: number;
                             inFor: number;
@@ -764,11 +1272,11 @@ export declare const daySchema: yup.ObjectSchema<{
                             } | null | undefined;
                             profileId?: string | null | undefined;
                             setbackThreshold?: number | null | undefined;
-                            prompt?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
                             recommendedForIssueOrdinals?: {
                                 [x: string]: number;
                             } | null | undefined;
+                            prompt?: string | undefined;
                             pastTenseTitle?: string | undefined;
                             commentCount?: number | undefined;
                             description?: string | null | undefined;
@@ -798,11 +1306,11 @@ export declare const daySchema: yup.ObjectSchema<{
                             } | null | undefined;
                             profileId?: string | null | undefined;
                             setbackThreshold?: number | null | undefined;
-                            prompt?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
                             recommendedForIssueOrdinals?: {
                                 [x: string]: number;
                             } | null | undefined;
+                            prompt?: string | undefined;
                             pastTenseTitle?: string | undefined;
                             commentCount?: number | undefined;
                             description?: string | null | undefined;
@@ -832,11 +1340,11 @@ export declare const daySchema: yup.ObjectSchema<{
                             } | null | undefined;
                             profileId?: string | null | undefined;
                             setbackThreshold?: number | null | undefined;
-                            prompt?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
                             recommendedForIssueOrdinals?: {
                                 [x: string]: number;
                             } | null | undefined;
+                            prompt?: string | undefined;
                             pastTenseTitle?: string | undefined;
                             commentCount?: number | undefined;
                             description?: string | null | undefined;
@@ -865,11 +1373,11 @@ export declare const daySchema: yup.ObjectSchema<{
                             } | null | undefined;
                             profileId?: string | null | undefined;
                             setbackThreshold?: number | null | undefined;
-                            prompt?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
                             recommendedForIssueOrdinals?: {
                                 [x: string]: number;
                             } | null | undefined;
+                            prompt?: string | undefined;
                             pastTenseTitle?: string | undefined;
                             commentCount?: number | undefined;
                             description?: string | null | undefined;
@@ -910,11 +1418,11 @@ export declare const daySchema: yup.ObjectSchema<{
                         } | null | undefined;
                         profileId?: string | null | undefined;
                         setbackThreshold?: number | null | undefined;
-                        prompt?: string | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
+                        prompt?: string | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
                         description?: string | null | undefined;
@@ -948,12 +1456,11 @@ export declare const daySchema: yup.ObjectSchema<{
                         } | null | undefined;
                         profileId?: string | null | undefined;
                         setbackThreshold?: number | null | undefined;
-                        repeat?: yup.Maybe<number | undefined>;
-                        prompt?: string | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
+                        prompt?: string | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
                         description?: string | null | undefined;
@@ -967,6 +1474,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         likesCount?: number | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isSuggested?: boolean | undefined;
+                        repeat?: yup.Maybe<number | undefined>;
                         type: "breathingExercise";
                         ordinal: number;
                         inFor: number;
@@ -985,11 +1493,11 @@ export declare const daySchema: yup.ObjectSchema<{
                         } | null | undefined;
                         profileId?: string | null | undefined;
                         setbackThreshold?: number | null | undefined;
-                        prompt?: string | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
+                        prompt?: string | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
                         description?: string | null | undefined;
@@ -1019,11 +1527,11 @@ export declare const daySchema: yup.ObjectSchema<{
                         } | null | undefined;
                         profileId?: string | null | undefined;
                         setbackThreshold?: number | null | undefined;
-                        prompt?: string | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
+                        prompt?: string | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
                         description?: string | null | undefined;
@@ -1053,11 +1561,11 @@ export declare const daySchema: yup.ObjectSchema<{
                         } | null | undefined;
                         profileId?: string | null | undefined;
                         setbackThreshold?: number | null | undefined;
-                        prompt?: string | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
+                        prompt?: string | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
                         description?: string | null | undefined;
@@ -1086,11 +1594,11 @@ export declare const daySchema: yup.ObjectSchema<{
                         } | null | undefined;
                         profileId?: string | null | undefined;
                         setbackThreshold?: number | null | undefined;
-                        prompt?: string | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
+                        prompt?: string | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
                         description?: string | null | undefined;
@@ -1115,9 +1623,18 @@ export declare const daySchema: yup.ObjectSchema<{
                             duration: number;
                         };
                     })[] | undefined;
+                    conditions?: {
+                        label?: string | undefined;
+                        description?: string | undefined;
+                        greaterThan?: number | undefined;
+                        lessThanOrEqualTo?: number | undefined;
+                        color?: string | undefined;
+                        strategyIds: string[];
+                        questionId: string;
+                    }[] | undefined;
                     type: "folder";
-                    prompt: string;
                     ordinal: number;
+                    prompt: string;
                     invitationCode: string;
                     invitationUrl: string;
                 };

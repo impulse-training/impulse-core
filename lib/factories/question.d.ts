@@ -51,6 +51,6 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
     templateFor?: "onboarding" | undefined;
     writeAnswerToMemoryKey?: string | undefined;
     type: import("..").QuestionKeyType;
-    prompt: string;
     ordinal: number;
-}, "type" | "prompt" | "ordinal" | ("createdAt" | "updatedAt" | "setbackThreshold" | "options" | "templateFor" | "writeAnswerToMemoryKey")>;
+    prompt: string;
+}, "type" | "ordinal" | "prompt" | ("createdAt" | "updatedAt" | "setbackThreshold" | "options" | "templateFor" | "writeAnswerToMemoryKey")>;
