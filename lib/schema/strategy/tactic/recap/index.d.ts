@@ -17,11 +17,11 @@ export declare const recapTacticSchema: yup.Lazy<{
     } | null | undefined;
     profileId?: string | null | undefined;
     setbackThreshold?: number | null | undefined;
+    prompt?: string | undefined;
     recommendedForIssueIds?: string[] | undefined;
     recommendedForIssueOrdinals?: {
         [x: string]: number;
     } | null | undefined;
-    prompt?: string | undefined;
     pastTenseTitle?: string | undefined;
     commentCount?: number | undefined;
     description?: string | null | undefined;

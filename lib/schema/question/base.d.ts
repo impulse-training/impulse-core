@@ -16,12 +16,13 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
         } | null | undefined;
         label?: string | undefined;
         setbackThreshold?: number | undefined;
+        nextQuestionId?: string | undefined;
+        color?: string | undefined;
+        textColor?: string | undefined;
         greaterThan?: number | undefined;
         lessThanOrEqualTo?: number | undefined;
         text: string;
         type: "numeric";
-        color: string;
-        textColor: string;
     } | {
         createdAt?: {
             seconds: number;
@@ -34,10 +35,11 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
             toDate: Function;
         } | null | undefined;
         label?: string | undefined;
+        nextQuestionId?: string | undefined;
+        color?: string | undefined;
+        textColor?: string | undefined;
         text: string;
         type: "string";
-        color: string;
-        textColor: string;
     })[] | undefined;
     ordinal: number;
     templateFor: "onboarding" | undefined;

@@ -83,12 +83,13 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 } | null | undefined;
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
+                nextQuestionId?: string | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
                 greaterThan?: number | undefined;
                 lessThanOrEqualTo?: number | undefined;
                 text: string;
                 type: "numeric";
-                color: string;
-                textColor: string;
             } | {
                 createdAt?: {
                     seconds: number;
@@ -101,16 +102,17 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 label?: string | undefined;
+                nextQuestionId?: string | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
                 text: string;
                 type: "string";
-                color: string;
-                textColor: string;
             })[] | undefined;
             templateFor?: "onboarding" | undefined;
             writeAnswerToMemoryKey?: string | undefined;
             type: import("..").QuestionKeyType;
-            ordinal: number;
             prompt: string;
+            ordinal: number;
         } | {
             createdAt?: {
                 seconds: number;
@@ -126,8 +128,8 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
             templateFor?: "onboarding" | undefined;
             writeAnswerToMemoryKey?: string | undefined;
             type: import("..").QuestionKeyType;
-            ordinal: number;
             prompt: string;
+            ordinal: number;
         } | {
             createdAt?: {
                 seconds: number;
@@ -153,12 +155,13 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 } | null | undefined;
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
+                nextQuestionId?: string | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
                 greaterThan?: number | undefined;
                 lessThanOrEqualTo?: number | undefined;
                 text: string;
                 type: "numeric";
-                color: string;
-                textColor: string;
             } | {
                 createdAt?: {
                     seconds: number;
@@ -171,18 +174,19 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 label?: string | undefined;
+                nextQuestionId?: string | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
                 text: string;
                 type: "string";
-                color: string;
-                textColor: string;
             })[] | undefined;
             templateFor?: "onboarding" | undefined;
             writeAnswerToMemoryKey?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
             type: import("..").QuestionKeyType;
-            ordinal: number;
             prompt: string;
+            ordinal: number;
         } | {
             createdAt?: {
                 seconds: number;
@@ -208,12 +212,13 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 } | null | undefined;
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
+                nextQuestionId?: string | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
                 greaterThan?: number | undefined;
                 lessThanOrEqualTo?: number | undefined;
                 text: string;
                 type: "numeric";
-                color: string;
-                textColor: string;
             } | {
                 createdAt?: {
                     seconds: number;
@@ -226,16 +231,17 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 label?: string | undefined;
+                nextQuestionId?: string | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
                 text: string;
                 type: "string";
-                color: string;
-                textColor: string;
             })[] | undefined;
             templateFor?: "onboarding" | undefined;
             writeAnswerToMemoryKey?: string | undefined;
             type: import("..").QuestionKeyType;
-            ordinal: number;
             prompt: string;
+            ordinal: number;
         };
     };
     questionData: {

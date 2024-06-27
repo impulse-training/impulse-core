@@ -1,6 +1,5 @@
 import * as yup from 'yup';
 import { ActionRecapLogValue, actionRecapLogSchema } from './actionRecap';
-import { FolderLogValue, folderLogSchema } from './folderLog';
 import { HiddenLogValue, hiddenLogSchema } from './hiddenLog';
 import { ImpulseLogValue, impulseLogSchema } from './impulseLog';
 import { MessageLogValue, messageLogSchema } from './messageLog';
@@ -8,7 +7,6 @@ import { QuestionsLogValue, questionsLogSchema } from './questionsLog';
 import { StrategiesLogValue, strategiesLogSchema } from './strategiesLog';
 
 export * from './actionRecap';
-export * from './folderLog';
 export * from './hiddenLog';
 export * from './impulseLog';
 export * from './messageLog';
@@ -26,7 +24,6 @@ export const logSchemas: Record<
   question: questionsLogSchema,
   strategies: strategiesLogSchema,
   actionRecap: actionRecapLogSchema,
-  folder: folderLogSchema,
   hidden: hiddenLogSchema,
 } as any;
 
@@ -56,5 +53,4 @@ export type LogValue =
   | QuestionsLogValue
   | ActionRecapLogValue
   | StrategiesLogValue
-  | HiddenLogValue
-  | FolderLogValue;
+  | HiddenLogValue;

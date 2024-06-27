@@ -11,14 +11,16 @@ export declare function optionValueBaseSchema<K extends string>(type: K): yup.Ob
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    nextQuestionId: string | undefined;
     text: string;
-    color: string;
-    textColor: string;
+    color: string | undefined;
+    textColor: string | undefined;
     label: string | undefined;
 }, yup.AnyObject, {
     type: undefined;
     createdAt: undefined;
     updatedAt: undefined;
+    nextQuestionId: undefined;
     text: undefined;
     color: undefined;
     textColor: undefined;

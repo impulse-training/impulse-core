@@ -57,11 +57,11 @@ export declare const factories: {
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -95,11 +95,12 @@ export declare const factories: {
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                repeat?: import("yup").Maybe<number | undefined>;
+                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -113,7 +114,6 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                repeat?: import("yup").Maybe<number | undefined>;
                 type: "breathingExercise";
                 ordinal: number;
                 inFor: number;
@@ -132,11 +132,11 @@ export declare const factories: {
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -166,11 +166,11 @@ export declare const factories: {
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -200,11 +200,11 @@ export declare const factories: {
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -233,11 +233,11 @@ export declare const factories: {
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -278,11 +278,11 @@ export declare const factories: {
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
+            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -316,11 +316,12 @@ export declare const factories: {
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
+            repeat?: import("yup").Maybe<number | undefined>;
+            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -334,7 +335,6 @@ export declare const factories: {
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            repeat?: import("yup").Maybe<number | undefined>;
             type: "breathingExercise";
             ordinal: number;
             inFor: number;
@@ -353,11 +353,11 @@ export declare const factories: {
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
+            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -387,11 +387,11 @@ export declare const factories: {
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
+            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -421,11 +421,11 @@ export declare const factories: {
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
+            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -454,11 +454,11 @@ export declare const factories: {
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
+            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -483,21 +483,12 @@ export declare const factories: {
                 duration: number;
             };
         })[] | undefined;
-        conditions?: {
-            label?: string | undefined;
-            description?: string | undefined;
-            greaterThan?: number | undefined;
-            lessThanOrEqualTo?: number | undefined;
-            color?: string | undefined;
-            strategyIds: string[];
-            questionId: string;
-        }[] | undefined;
         type: "folder";
-        ordinal: number;
         prompt: string;
+        ordinal: number;
         invitationCode: string;
         invitationUrl: string;
-    }, "type" | "ordinal" | "prompt" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics" | "conditions")>;
+    }, "type" | "prompt" | "ordinal" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics")>;
     impulseFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -667,12 +658,13 @@ export declare const factories: {
             } | null | undefined;
             label?: string | undefined;
             setbackThreshold?: number | undefined;
+            nextQuestionId?: string | undefined;
+            color?: string | undefined;
+            textColor?: string | undefined;
             greaterThan?: number | undefined;
             lessThanOrEqualTo?: number | undefined;
             text: string;
             type: "numeric";
-            color: string;
-            textColor: string;
         } | {
             createdAt?: {
                 seconds: number;
@@ -685,17 +677,18 @@ export declare const factories: {
                 toDate: Function;
             } | null | undefined;
             label?: string | undefined;
+            nextQuestionId?: string | undefined;
+            color?: string | undefined;
+            textColor?: string | undefined;
             text: string;
             type: "string";
-            color: string;
-            textColor: string;
         })[] | undefined;
         templateFor?: "onboarding" | undefined;
         writeAnswerToMemoryKey?: string | undefined;
         type: import("..").QuestionKeyType;
-        ordinal: number;
         prompt: string;
-    }, "type" | "ordinal" | "prompt" | ("createdAt" | "updatedAt" | "setbackThreshold" | "options" | "templateFor" | "writeAnswerToMemoryKey")>;
+        ordinal: number;
+    }, "type" | "prompt" | "ordinal" | ("createdAt" | "updatedAt" | "setbackThreshold" | "options" | "templateFor" | "writeAnswerToMemoryKey")>;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -714,5 +707,5 @@ export declare const factories: {
         hour: number;
         minute: number;
     }, "profileId" | "type" | "name" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "setbackThreshold" | "type" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "ordinal" | "prompt" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "setbackThreshold" | "type" | "prompt" | "ordinal" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
 };

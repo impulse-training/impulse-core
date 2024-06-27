@@ -15,12 +15,13 @@ export declare const questionTimeSchema: yup.ObjectSchema<{
         } | null | undefined;
         label?: string | undefined;
         setbackThreshold?: number | undefined;
+        nextQuestionId?: string | undefined;
+        color?: string | undefined;
+        textColor?: string | undefined;
         greaterThan?: number | undefined;
         lessThanOrEqualTo?: number | undefined;
         text: string;
         type: "numeric";
-        color: string;
-        textColor: string;
     } | {
         createdAt?: {
             seconds: number;
@@ -33,10 +34,11 @@ export declare const questionTimeSchema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         label?: string | undefined;
+        nextQuestionId?: string | undefined;
+        color?: string | undefined;
+        textColor?: string | undefined;
         text: string;
         type: "string";
-        color: string;
-        textColor: string;
     })[] | undefined;
     ordinal: number;
     templateFor: "onboarding" | undefined;
