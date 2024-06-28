@@ -708,11 +708,11 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             type: "string";
         })[] | undefined;
         templateFor?: "onboarding" | undefined;
-        writeAnswerToMemoryKey?: string | undefined;
+        writeAnswerToProfileMemoryKey?: string | undefined;
         type: import("..").QuestionKeyType;
         prompt: string;
         ordinal: number;
-    }, "type" | "prompt" | "ordinal" | ("createdAt" | "updatedAt" | "setbackThreshold" | "followUp" | "options" | "templateFor" | "writeAnswerToMemoryKey")>;
+    }, "type" | "prompt" | "ordinal" | ("createdAt" | "updatedAt" | "setbackThreshold" | "followUp" | "options" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;

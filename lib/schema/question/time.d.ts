@@ -56,7 +56,7 @@ export declare const questionTimeSchema: yup.ObjectSchema<{
     })[] | undefined;
     ordinal: number;
     templateFor: "onboarding" | undefined;
-    writeAnswerToMemoryKey: string | undefined;
+    writeAnswerToProfileMemoryKey: string | undefined;
     followUp: ({
         type: "profileData";
         profileKey: string;
@@ -82,7 +82,7 @@ export declare const questionTimeSchema: yup.ObjectSchema<{
     options: "";
     ordinal: undefined;
     templateFor: undefined;
-    writeAnswerToMemoryKey: undefined;
+    writeAnswerToProfileMemoryKey: undefined;
     followUp: undefined;
     createdAt: undefined;
     updatedAt: undefined;

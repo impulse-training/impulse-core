@@ -131,7 +131,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 type: "string";
             })[] | undefined;
             templateFor?: "onboarding" | undefined;
-            writeAnswerToMemoryKey?: string | undefined;
+            writeAnswerToProfileMemoryKey?: string | undefined;
             type: import("..").QuestionKeyType;
             prompt: string;
             ordinal: number;
@@ -155,7 +155,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 questionId: string;
             }) | undefined;
             templateFor?: "onboarding" | undefined;
-            writeAnswerToMemoryKey?: string | undefined;
+            writeAnswerToProfileMemoryKey?: string | undefined;
             type: import("..").QuestionKeyType;
             prompt: string;
             options: ({
@@ -285,7 +285,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 type: "string";
             })[] | undefined;
             templateFor?: "onboarding" | undefined;
-            writeAnswerToMemoryKey?: string | undefined;
+            writeAnswerToProfileMemoryKey?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
             type: import("..").QuestionKeyType;
@@ -364,7 +364,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 type: "string";
             })[] | undefined;
             templateFor?: "onboarding" | undefined;
-            writeAnswerToMemoryKey?: string | undefined;
+            writeAnswerToProfileMemoryKey?: string | undefined;
             type: import("..").QuestionKeyType;
             prompt: string;
             ordinal: number;
@@ -388,6 +388,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    followedUpQuestionIds: string[] | undefined;
 }, yup.AnyObject, {
     openAiChoiceResponse: undefined;
     createdAt: undefined;
@@ -406,5 +407,6 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
     questionsById: undefined;
     questionData: undefined;
     submittedAt: undefined;
+    followedUpQuestionIds: "";
 }, "">;
 export type QuestionsLogValue = yup.InferType<typeof questionsLogSchema>;

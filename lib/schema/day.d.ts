@@ -205,6 +205,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            followedUpQuestionIds?: string[] | undefined;
             date: {
                 seconds: number;
                 nanoseconds: number;
@@ -284,7 +285,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         type: "string";
                     })[] | undefined;
                     templateFor?: "onboarding" | undefined;
-                    writeAnswerToMemoryKey?: string | undefined;
+                    writeAnswerToProfileMemoryKey?: string | undefined;
                     type: import(".").QuestionKeyType;
                     prompt: string;
                     ordinal: number;
@@ -308,7 +309,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         questionId: string;
                     }) | undefined;
                     templateFor?: "onboarding" | undefined;
-                    writeAnswerToMemoryKey?: string | undefined;
+                    writeAnswerToProfileMemoryKey?: string | undefined;
                     type: import(".").QuestionKeyType;
                     prompt: string;
                     options: ({
@@ -438,7 +439,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         type: "string";
                     })[] | undefined;
                     templateFor?: "onboarding" | undefined;
-                    writeAnswerToMemoryKey?: string | undefined;
+                    writeAnswerToProfileMemoryKey?: string | undefined;
                     lowEmoji?: yup.Maybe<string | undefined>;
                     highEmoji?: yup.Maybe<string | undefined>;
                     type: import(".").QuestionKeyType;
@@ -517,7 +518,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         type: "string";
                     })[] | undefined;
                     templateFor?: "onboarding" | undefined;
-                    writeAnswerToMemoryKey?: string | undefined;
+                    writeAnswerToProfileMemoryKey?: string | undefined;
                     type: import(".").QuestionKeyType;
                     prompt: string;
                     ordinal: number;
