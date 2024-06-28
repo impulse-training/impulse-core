@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 import { optionSchema } from '../option';
+import { followUpSchema } from '../option/followUp';
 import { optionalTimestampSchema } from '../utils/timestamp';
 import { QuestionKeyType } from './utils/questionKeyType';
 
@@ -11,7 +12,7 @@ export function questionBaseSchema(type: QuestionKeyType) {
     ordinal: yup.number().required(),
     templateFor: yup.mixed<'onboarding'>().oneOf(['onboarding']),
     writeAnswerToMemoryKey: yup.string(),
-    followUpQuestionId: yup.string(),
+    followUp: followUpSchema.optional(),
     createdAt: optionalTimestampSchema,
     updatedAt: optionalTimestampSchema,
   });

@@ -2,6 +2,7 @@ import * as yup from 'yup';
 import { QuestionDataValue } from '../log';
 import { NumericOptionValue } from './numeric';
 import { StringOptionValue } from './string';
+export * from './followUp';
 export * from './numeric';
 export * from './string';
 export declare const optionSchemas: Record<OptionValue['type'], yup.ObjectSchema<OptionValue>>;

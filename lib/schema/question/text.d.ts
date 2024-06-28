@@ -15,7 +15,14 @@ export declare const questionTextSchema: yup.ObjectSchema<{
         } | null | undefined;
         label?: string | undefined;
         setbackThreshold?: number | undefined;
-        followUpQuestionId?: string | undefined;
+        followUp?: ({
+            type: "profileData";
+            profileKey: string;
+            profileValue: {};
+        } | {
+            type: "question";
+            questionId: string;
+        }) | undefined;
         color?: string | undefined;
         textColor?: string | undefined;
         greaterThan?: number | undefined;
@@ -34,7 +41,14 @@ export declare const questionTextSchema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         label?: string | undefined;
-        followUpQuestionId?: string | undefined;
+        followUp?: ({
+            type: "profileData";
+            profileKey: string;
+            profileValue: {};
+        } | {
+            type: "question";
+            questionId: string;
+        }) | undefined;
         color?: string | undefined;
         textColor?: string | undefined;
         text: string;
@@ -43,7 +57,14 @@ export declare const questionTextSchema: yup.ObjectSchema<{
     ordinal: number;
     templateFor: "onboarding" | undefined;
     writeAnswerToMemoryKey: string | undefined;
-    followUpQuestionId: string | undefined;
+    followUp: ({
+        type: "profileData";
+        profileKey: string;
+        profileValue: {};
+    } | {
+        type: "question";
+        questionId: string;
+    }) | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -61,7 +82,7 @@ export declare const questionTextSchema: yup.ObjectSchema<{
     ordinal: undefined;
     templateFor: undefined;
     writeAnswerToMemoryKey: undefined;
-    followUpQuestionId: undefined;
+    followUp: undefined;
     createdAt: undefined;
     updatedAt: undefined;
 }, "">;

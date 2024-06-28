@@ -12,7 +12,14 @@ export declare const stringOptionSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    followUpQuestionId: string | undefined;
+    followUp: ({
+        type: "profileData";
+        profileKey: string;
+        profileValue: {};
+    } | {
+        type: "question";
+        questionId: string;
+    }) | undefined;
     text: string;
     color: string | undefined;
     textColor: string | undefined;
@@ -21,7 +28,7 @@ export declare const stringOptionSchema: yup.ObjectSchema<{
     type: undefined;
     createdAt: undefined;
     updatedAt: undefined;
-    followUpQuestionId: undefined;
+    followUp: undefined;
     text: undefined;
     color: undefined;
     textColor: undefined;

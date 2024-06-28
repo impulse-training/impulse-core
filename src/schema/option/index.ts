@@ -13,6 +13,7 @@ import {
   stringOptionSchema,
 } from './string';
 
+export * from './followUp';
 export * from './numeric';
 export * from './string';
 

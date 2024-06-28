@@ -70,7 +70,14 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            followUpQuestionId?: string | undefined;
+            followUp?: ({
+                type: "profileData";
+                profileKey: string;
+                profileValue: {};
+            } | {
+                type: "question";
+                questionId: string;
+            }) | undefined;
             options?: ({
                 createdAt?: {
                     seconds: number;
@@ -84,7 +91,14 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 } | null | undefined;
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
-                followUpQuestionId?: string | undefined;
+                followUp?: ({
+                    type: "profileData";
+                    profileKey: string;
+                    profileValue: {};
+                } | {
+                    type: "question";
+                    questionId: string;
+                }) | undefined;
                 color?: string | undefined;
                 textColor?: string | undefined;
                 greaterThan?: number | undefined;
@@ -103,7 +117,14 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 label?: string | undefined;
-                followUpQuestionId?: string | undefined;
+                followUp?: ({
+                    type: "profileData";
+                    profileKey: string;
+                    profileValue: {};
+                } | {
+                    type: "question";
+                    questionId: string;
+                }) | undefined;
                 color?: string | undefined;
                 textColor?: string | undefined;
                 text: string;
@@ -125,7 +146,14 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            followUpQuestionId?: string | undefined;
+            followUp?: ({
+                type: "profileData";
+                profileKey: string;
+                profileValue: {};
+            } | {
+                type: "question";
+                questionId: string;
+            }) | undefined;
             templateFor?: "onboarding" | undefined;
             writeAnswerToMemoryKey?: string | undefined;
             type: import("..").QuestionKeyType;
@@ -143,7 +171,14 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 } | null | undefined;
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
-                followUpQuestionId?: string | undefined;
+                followUp?: ({
+                    type: "profileData";
+                    profileKey: string;
+                    profileValue: {};
+                } | {
+                    type: "question";
+                    questionId: string;
+                }) | undefined;
                 color?: string | undefined;
                 textColor?: string | undefined;
                 greaterThan?: number | undefined;
@@ -162,7 +197,14 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 label?: string | undefined;
-                followUpQuestionId?: string | undefined;
+                followUp?: ({
+                    type: "profileData";
+                    profileKey: string;
+                    profileValue: {};
+                } | {
+                    type: "question";
+                    questionId: string;
+                }) | undefined;
                 color?: string | undefined;
                 textColor?: string | undefined;
                 text: string;
@@ -182,7 +224,14 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             setbackThreshold?: number | undefined;
-            followUpQuestionId?: string | undefined;
+            followUp?: ({
+                type: "profileData";
+                profileKey: string;
+                profileValue: {};
+            } | {
+                type: "question";
+                questionId: string;
+            }) | undefined;
             options?: ({
                 createdAt?: {
                     seconds: number;
@@ -196,7 +245,14 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 } | null | undefined;
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
-                followUpQuestionId?: string | undefined;
+                followUp?: ({
+                    type: "profileData";
+                    profileKey: string;
+                    profileValue: {};
+                } | {
+                    type: "question";
+                    questionId: string;
+                }) | undefined;
                 color?: string | undefined;
                 textColor?: string | undefined;
                 greaterThan?: number | undefined;
@@ -215,7 +271,14 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 label?: string | undefined;
-                followUpQuestionId?: string | undefined;
+                followUp?: ({
+                    type: "profileData";
+                    profileKey: string;
+                    profileValue: {};
+                } | {
+                    type: "question";
+                    questionId: string;
+                }) | undefined;
                 color?: string | undefined;
                 textColor?: string | undefined;
                 text: string;
@@ -240,7 +303,14 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             setbackThreshold?: number | undefined;
-            followUpQuestionId?: string | undefined;
+            followUp?: ({
+                type: "profileData";
+                profileKey: string;
+                profileValue: {};
+            } | {
+                type: "question";
+                questionId: string;
+            }) | undefined;
             options?: ({
                 createdAt?: {
                     seconds: number;
@@ -254,7 +324,14 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 } | null | undefined;
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
-                followUpQuestionId?: string | undefined;
+                followUp?: ({
+                    type: "profileData";
+                    profileKey: string;
+                    profileValue: {};
+                } | {
+                    type: "question";
+                    questionId: string;
+                }) | undefined;
                 color?: string | undefined;
                 textColor?: string | undefined;
                 greaterThan?: number | undefined;
@@ -273,7 +350,14 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 label?: string | undefined;
-                followUpQuestionId?: string | undefined;
+                followUp?: ({
+                    type: "profileData";
+                    profileKey: string;
+                    profileValue: {};
+                } | {
+                    type: "question";
+                    questionId: string;
+                }) | undefined;
                 color?: string | undefined;
                 textColor?: string | undefined;
                 text: string;
