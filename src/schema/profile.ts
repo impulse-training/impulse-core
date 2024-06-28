@@ -1,6 +1,7 @@
 import { AppStateStatus } from 'react-native';
 import * as yup from 'yup';
 import { AgentName } from '../agents';
+import { questionDataSchema } from './log';
 import { notificationOptionSchema } from './notification';
 import { optionalStringArray, requiredStringArray } from './utils/array';
 import { optionalObjectOf } from './utils/objectOf';
@@ -28,7 +29,7 @@ export const profileSchema = yup.object({
   setbackThreshold: yup.number(),
   currentAgent: yup.mixed<AgentName>().default('onboarding'),
   androidPermissions: optionalObjectOf(yup.boolean().required()),
-  longTermMemory: optionalObjectOf(yup.mixed().nullable()),
+  longTermMemory: optionalObjectOf(questionDataSchema),
   region: yup.string().nullable().optional(),
   timezone: yup.string().required(),
   scheduledNotificationIds: optionalStringArray,

@@ -626,7 +626,17 @@ export declare const factories: {
             [x: string]: NonNullable<boolean | undefined>;
         } | null | undefined;
         longTermMemory?: {
-            [x: string]: {} | null | undefined;
+            [x: string]: {
+                idValue?: string | undefined;
+                numericValue?: number | undefined;
+                setAt: {
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                };
+                stringValue: string;
+                unit: string;
+            };
         } | null | undefined;
         region?: string | null | undefined;
         uids: string[];
