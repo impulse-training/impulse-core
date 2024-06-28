@@ -26,6 +26,8 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    parentIssueIds?: string[] | undefined;
+    scheduledNotificationIds?: string[] | undefined;
     activeImpulseId?: string | undefined;
     currentAppState?: import("react-native/types").AppStateStatus | undefined;
     expoPushToken?: string | undefined;
@@ -33,8 +35,8 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
         [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
     } | null | undefined;
     issueName?: string | undefined;
+    isReadyForTour?: boolean | undefined;
     isOnboardingComplete?: boolean | undefined;
-    parentIssueIds?: string[] | undefined;
     encryptedPhoneNumber?: string | undefined;
     hashedPhoneNumber?: string | undefined;
     setbackThreshold?: number | undefined;
@@ -45,9 +47,8 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
         [x: string]: {} | null | undefined;
     } | null | undefined;
     region?: string | null | undefined;
-    scheduledNotificationIds?: string[] | undefined;
+    uids: string[];
     issueId: string | null;
     currentAgent: import("..").AgentName;
     timezone: string;
-    uids: string[];
-}, "issueId" | "currentAgent" | "timezone" | "uids" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "isOnboardingComplete" | "parentIssueIds" | "encryptedPhoneNumber" | "hashedPhoneNumber" | "setbackThreshold" | "androidPermissions" | "longTermMemory" | "region" | "scheduledNotificationIds")>;
+}, "uids" | "issueId" | "currentAgent" | "timezone" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "parentIssueIds" | "scheduledNotificationIds" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "isReadyForTour" | "isOnboardingComplete" | "encryptedPhoneNumber" | "hashedPhoneNumber" | "setbackThreshold" | "androidPermissions" | "longTermMemory" | "region")>;

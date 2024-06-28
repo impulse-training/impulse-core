@@ -55,15 +55,15 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         content: string;
     }[] | undefined;
     openAiChoiceResponse?: {} | undefined;
-    issueName: string;
     parentIssueIds: string[];
+    issueName: string;
     date: {
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     };
     type: "impulse";
-}, "issueName" | "parentIssueIds" | "date" | "type" | ("createdAt" | "updatedAt" | "text" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse")>, profileFactory: import("factory.ts").Factory<{
+}, "parentIssueIds" | "issueName" | "date" | "type" | ("createdAt" | "updatedAt" | "text" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse")>, profileFactory: import("factory.ts").Factory<{
     createdAt?: {
         seconds: number;
         nanoseconds: number;
@@ -89,6 +89,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    parentIssueIds?: string[] | undefined;
+    scheduledNotificationIds?: string[] | undefined;
     activeImpulseId?: string | undefined;
     currentAppState?: import("react-native/types").AppStateStatus | undefined;
     expoPushToken?: string | undefined;
@@ -96,8 +98,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
     } | null | undefined;
     issueName?: string | undefined;
+    isReadyForTour?: boolean | undefined;
     isOnboardingComplete?: boolean | undefined;
-    parentIssueIds?: string[] | undefined;
     encryptedPhoneNumber?: string | undefined;
     hashedPhoneNumber?: string | undefined;
     setbackThreshold?: number | undefined;
@@ -108,12 +110,11 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         [x: string]: {} | null | undefined;
     } | null | undefined;
     region?: string | null | undefined;
-    scheduledNotificationIds?: string[] | undefined;
+    uids: string[];
     issueId: string | null;
     currentAgent: import("..").AgentName;
     timezone: string;
-    uids: string[];
-}, "issueId" | "currentAgent" | "timezone" | "uids" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "isOnboardingComplete" | "parentIssueIds" | "encryptedPhoneNumber" | "hashedPhoneNumber" | "setbackThreshold" | "androidPermissions" | "longTermMemory" | "region" | "scheduledNotificationIds")>, folderFactory: import("factory.ts").Factory<{
+}, "uids" | "issueId" | "currentAgent" | "timezone" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "parentIssueIds" | "scheduledNotificationIds" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "isReadyForTour" | "isOnboardingComplete" | "encryptedPhoneNumber" | "hashedPhoneNumber" | "setbackThreshold" | "androidPermissions" | "longTermMemory" | "region")>, folderFactory: import("factory.ts").Factory<{
     createdAt?: {
         seconds: number;
         nanoseconds: number;

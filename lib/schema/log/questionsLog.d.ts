@@ -304,7 +304,6 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    followUpQuestionIds: string[] | undefined;
 }, yup.AnyObject, {
     openAiChoiceResponse: undefined;
     createdAt: undefined;
@@ -323,6 +322,5 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
     questionsById: undefined;
     questionData: undefined;
     submittedAt: undefined;
-    followUpQuestionIds: "";
 }, "">;
 export type QuestionsLogValue = yup.InferType<typeof questionsLogSchema>;

@@ -31,12 +31,12 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
         content: string;
     }[] | undefined;
     openAiChoiceResponse?: {} | undefined;
-    issueName: string;
     parentIssueIds: string[];
+    issueName: string;
     date: {
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     };
     type: "impulse";
-}, "issueName" | "parentIssueIds" | "date" | "type" | ("createdAt" | "updatedAt" | "text" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse")>;
+}, "parentIssueIds" | "issueName" | "date" | "type" | ("createdAt" | "updatedAt" | "text" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse")>;

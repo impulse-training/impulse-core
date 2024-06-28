@@ -6,7 +6,7 @@ import { optionalStringArray, requiredStringArray } from './utils/array';
 import { optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema } from './utils/timestamp';
 
-export const profileSchema = yup.object().shape({
+export const profileSchema = yup.object({
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
   lastActiveAt: optionalTimestampSchema,
@@ -20,6 +20,7 @@ export const profileSchema = yup.object().shape({
   ),
   issueId: yup.string().required().nullable(),
   issueName: yup.string(),
+  isReadyForTour: yup.boolean(),
   isOnboardingComplete: yup.boolean(),
   parentIssueIds: optionalStringArray,
   encryptedPhoneNumber: yup.string(),

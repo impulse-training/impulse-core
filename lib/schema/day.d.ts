@@ -124,8 +124,8 @@ export declare const daySchema: yup.ObjectSchema<{
                 content: string;
             }[] | undefined;
             openAiChoiceResponse?: {} | undefined;
-            issueName: string;
             parentIssueIds: string[];
+            issueName: string;
             date: {
                 seconds: number;
                 nanoseconds: number;
@@ -205,7 +205,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            followUpQuestionIds?: string[] | undefined;
             date: {
                 seconds: number;
                 nanoseconds: number;
