@@ -4,6 +4,7 @@ export declare const taskTacticSchema: yup.ObjectSchema<{
     recommendedForIssueOrdinals: {
         [x: string]: number;
     } | null | undefined;
+    isInGameplan: boolean | undefined;
     ordinal: number;
     prompt: string | undefined;
     type: "task";
@@ -35,6 +36,7 @@ export declare const taskTacticSchema: yup.ObjectSchema<{
 }, yup.AnyObject, {
     recommendedForIssueIds: "";
     recommendedForIssueOrdinals: undefined;
+    isInGameplan: undefined;
     ordinal: undefined;
     prompt: undefined;
     type: undefined;

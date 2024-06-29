@@ -56,6 +56,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isInGameplan?: boolean | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -95,6 +96,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isInGameplan?: boolean | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -131,6 +133,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isInGameplan?: boolean | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -165,6 +168,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isInGameplan?: boolean | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -199,6 +203,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isInGameplan?: boolean | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -232,6 +237,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isInGameplan?: boolean | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -270,6 +276,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isInGameplan?: boolean | undefined;
             tacticsById?: {
                 [x: string]: {
                     createdAt?: {
@@ -289,6 +296,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    isInGameplan?: boolean | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -328,6 +336,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    isInGameplan?: boolean | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -364,6 +373,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    isInGameplan?: boolean | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -398,6 +408,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    isInGameplan?: boolean | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -432,6 +443,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    isInGameplan?: boolean | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -465,6 +477,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    isInGameplan?: boolean | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -510,6 +523,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isInGameplan?: boolean | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -549,6 +563,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isInGameplan?: boolean | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -585,6 +600,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isInGameplan?: boolean | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -619,6 +635,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isInGameplan?: boolean | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -653,6 +670,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isInGameplan?: boolean | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -686,6 +704,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isInGameplan?: boolean | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;

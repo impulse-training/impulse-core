@@ -44,6 +44,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
+        isInGameplan?: boolean | undefined;
         tacticsById?: {
             [x: string]: {
                 createdAt?: {
@@ -63,6 +64,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isInGameplan?: boolean | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -102,6 +104,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isInGameplan?: boolean | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -138,6 +141,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isInGameplan?: boolean | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -172,6 +176,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isInGameplan?: boolean | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -206,6 +211,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isInGameplan?: boolean | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -239,6 +245,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isInGameplan?: boolean | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -284,6 +291,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isInGameplan?: boolean | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -323,6 +331,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isInGameplan?: boolean | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -359,6 +368,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isInGameplan?: boolean | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -393,6 +403,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isInGameplan?: boolean | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -427,6 +438,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isInGameplan?: boolean | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -460,6 +472,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isInGameplan?: boolean | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -489,7 +502,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         ordinal: number;
         invitationCode: string;
         invitationUrl: string;
-    }, "type" | "prompt" | "ordinal" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics")>;
+    }, "type" | "prompt" | "ordinal" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics")>;
     impulseFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -741,5 +754,5 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         hour: number;
         minute: number;
     }, "profileId" | "type" | "name" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "setbackThreshold" | "type" | "prompt" | "ordinal" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "setbackThreshold" | "type" | "prompt" | "ordinal" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
 };

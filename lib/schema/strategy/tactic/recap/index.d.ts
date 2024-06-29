@@ -22,6 +22,7 @@ export declare const recapTacticSchema: yup.Lazy<{
     recommendedForIssueOrdinals?: {
         [x: string]: number;
     } | null | undefined;
+    isInGameplan?: boolean | undefined;
     pastTenseTitle?: string | undefined;
     commentCount?: number | undefined;
     description?: string | null | undefined;
