@@ -13,10 +13,12 @@ export declare const numericOptionSchema: yup.ObjectSchema<{
         toDate: Function;
     } | null | undefined;
     followUp: ({
+        message?: string | undefined;
         type: "profileData";
         profileKey: string;
         profileValue: {};
     } | {
+        message?: string | undefined;
         type: "question";
         questionId: string;
     }) | undefined;

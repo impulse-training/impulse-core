@@ -17,10 +17,12 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
         label?: string | undefined;
         setbackThreshold?: number | undefined;
         followUp?: ({
+            message?: string | undefined;
             type: "profileData";
             profileKey: string;
             profileValue: {};
         } | {
+            message?: string | undefined;
             type: "question";
             questionId: string;
         }) | undefined;
@@ -43,10 +45,12 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
         } | null | undefined;
         label?: string | undefined;
         followUp?: ({
+            message?: string | undefined;
             type: "profileData";
             profileKey: string;
             profileValue: {};
         } | {
+            message?: string | undefined;
             type: "question";
             questionId: string;
         }) | undefined;
@@ -59,10 +63,12 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
     templateFor: "onboarding" | undefined;
     writeAnswerToProfileMemoryKey: string | undefined;
     followUp: ({
+        message?: string | undefined;
         type: "profileData";
         profileKey: string;
         profileValue: {};
     } | {
+        message?: string | undefined;
         type: "question";
         questionId: string;
     }) | undefined;

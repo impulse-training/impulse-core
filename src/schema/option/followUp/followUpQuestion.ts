@@ -1,9 +1,10 @@
 import * as yup from 'yup';
+import { followUpBaseSchema } from './base';
 
-export const followUpQuestionSchema = yup.object({
-  type: yup.mixed<'question'>().oneOf(['question']).defined(),
+export const followUpQuestionSchema = followUpBaseSchema('question').shape({
   questionId: yup.string().required(),
 });
+
 export type FollowUpQuestionValue = yup.InferType<
   typeof followUpQuestionSchema
 >;

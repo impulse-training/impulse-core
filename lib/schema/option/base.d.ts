@@ -12,10 +12,12 @@ export declare function optionValueBaseSchema<K extends string>(type: K): yup.Ob
         toDate: Function;
     } | null | undefined;
     followUp: ({
+        message?: string | undefined;
         type: "profileData";
         profileKey: string;
         profileValue: {};
     } | {
+        message?: string | undefined;
         type: "question";
         questionId: string;
     }) | undefined;

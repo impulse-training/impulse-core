@@ -670,10 +670,12 @@ export declare const factories: {
         } | null | undefined;
         setbackThreshold?: number | undefined;
         followUp?: ({
+            message?: string | undefined;
             type: "profileData";
             profileKey: string;
             profileValue: {};
         } | {
+            message?: string | undefined;
             type: "question";
             questionId: string;
         }) | undefined;
@@ -691,10 +693,12 @@ export declare const factories: {
             label?: string | undefined;
             setbackThreshold?: number | undefined;
             followUp?: ({
+                message?: string | undefined;
                 type: "profileData";
                 profileKey: string;
                 profileValue: {};
             } | {
+                message?: string | undefined;
                 type: "question";
                 questionId: string;
             }) | undefined;
@@ -717,10 +721,12 @@ export declare const factories: {
             } | null | undefined;
             label?: string | undefined;
             followUp?: ({
+                message?: string | undefined;
                 type: "profileData";
                 profileKey: string;
                 profileValue: {};
             } | {
+                message?: string | undefined;
                 type: "question";
                 questionId: string;
             }) | undefined;

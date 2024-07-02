@@ -13,10 +13,12 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
     } | null | undefined;
     setbackThreshold?: number | undefined;
     followUp?: ({
+        message?: string | undefined;
         type: "profileData";
         profileKey: string;
         profileValue: {};
     } | {
+        message?: string | undefined;
         type: "question";
         questionId: string;
     }) | undefined;
@@ -34,10 +36,12 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
         label?: string | undefined;
         setbackThreshold?: number | undefined;
         followUp?: ({
+            message?: string | undefined;
             type: "profileData";
             profileKey: string;
             profileValue: {};
         } | {
+            message?: string | undefined;
             type: "question";
             questionId: string;
         }) | undefined;
@@ -60,10 +64,12 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
         } | null | undefined;
         label?: string | undefined;
         followUp?: ({
+            message?: string | undefined;
             type: "profileData";
             profileKey: string;
             profileValue: {};
         } | {
+            message?: string | undefined;
             type: "question";
             questionId: string;
         }) | undefined;

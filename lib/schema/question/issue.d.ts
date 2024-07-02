@@ -16,10 +16,12 @@ export declare const questionIssueSchema: yup.ObjectSchema<{
         label?: string | undefined;
         setbackThreshold?: number | undefined;
         followUp?: ({
+            message?: string | undefined;
             type: "profileData";
             profileKey: string;
             profileValue: {};
         } | {
+            message?: string | undefined;
             type: "question";
             questionId: string;
         }) | undefined;
@@ -42,10 +44,12 @@ export declare const questionIssueSchema: yup.ObjectSchema<{
         } | null | undefined;
         label?: string | undefined;
         followUp?: ({
+            message?: string | undefined;
             type: "profileData";
             profileKey: string;
             profileValue: {};
         } | {
+            message?: string | undefined;
             type: "question";
             questionId: string;
         }) | undefined;
@@ -58,10 +62,12 @@ export declare const questionIssueSchema: yup.ObjectSchema<{
     templateFor: "onboarding" | undefined;
     writeAnswerToProfileMemoryKey: string | undefined;
     followUp: ({
+        message?: string | undefined;
         type: "profileData";
         profileKey: string;
         profileValue: {};
     } | {
+        message?: string | undefined;
         type: "question";
         questionId: string;
     }) | undefined;
