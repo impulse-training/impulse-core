@@ -36,7 +36,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
         role: NonNullable<"system" | "user" | "assistant" | undefined>;
         content: string;
     }[] | undefined;
-    strategyIds: string[];
+    suggestedStrategyIds: string[] | undefined;
     strategiesById: {
         [x: string]: {
             createdAt?: {
@@ -753,7 +753,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
     views: "";
     agent: undefined;
     gptPayload: "";
-    strategyIds: "";
+    suggestedStrategyIds: "";
     strategiesById: undefined;
     completedTacticIds: "";
     followedUpTacticIds: "";

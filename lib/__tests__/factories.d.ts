@@ -557,12 +557,13 @@ export declare const factories: {
         parentId?: string | null | undefined;
         profileCount?: number | null | undefined;
         isFeatured?: boolean | null | undefined;
+        measurementQuestionType?: import("..").QuestionKeyType | undefined;
         ordinal: number;
         name: string;
         synonyms: string[];
         parentIds: string[];
         parentNames: string[];
-    }, "ordinal" | "name" | "synonyms" | "parentIds" | "parentNames" | ("path" | "createdAt" | "updatedAt" | "parentId" | "profileCount" | "isFeatured")>;
+    }, "ordinal" | "name" | "synonyms" | "parentIds" | "parentNames" | ("path" | "createdAt" | "updatedAt" | "parentId" | "profileCount" | "isFeatured" | "measurementQuestionType")>;
     locationFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;

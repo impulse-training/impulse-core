@@ -1,4 +1,5 @@
 import * as yup from 'yup';
+import { QuestionKeyType } from './question/utils/questionKeyType';
 export declare const issueSchema: yup.ObjectSchema<{
     createdAt: {
         seconds: number;
@@ -19,6 +20,7 @@ export declare const issueSchema: yup.ObjectSchema<{
     parentNames: string[];
     profileCount: number | null | undefined;
     isFeatured: boolean | null | undefined;
+    measurementQuestionType: QuestionKeyType | undefined;
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
@@ -31,5 +33,6 @@ export declare const issueSchema: yup.ObjectSchema<{
     parentNames: "";
     profileCount: undefined;
     isFeatured: undefined;
+    measurementQuestionType: undefined;
 }, "">;
 export type IssueValue = yup.InferType<typeof issueSchema>;

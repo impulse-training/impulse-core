@@ -592,13 +592,13 @@ export declare const daySchema: yup.ObjectSchema<{
                 content: string;
             }[] | undefined;
             openAiChoiceResponse?: {} | undefined;
+            suggestedStrategyIds?: string[] | undefined;
             date: {
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             };
             type: "strategies";
-            strategyIds: string[];
             strategiesById: {
                 [x: string]: {
                     createdAt?: {
