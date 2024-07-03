@@ -38,13 +38,12 @@ export declare const profileSchema: yup.ObjectSchema<{
     isReadyForTour: boolean | undefined;
     isOnboardingComplete: boolean | undefined;
     parentIssueIds: string[] | undefined;
-    encryptedPhoneNumber: string | undefined;
-    hashedPhoneNumber: string | undefined;
     setbackThreshold: number | undefined;
     currentAgent: AgentName;
     androidPermissions: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
+    nextQuestionIds: string[];
     longTermMemory: {
         [x: string]: {
             idValue?: string | undefined;
@@ -77,11 +76,10 @@ export declare const profileSchema: yup.ObjectSchema<{
     isReadyForTour: undefined;
     isOnboardingComplete: undefined;
     parentIssueIds: "";
-    encryptedPhoneNumber: undefined;
-    hashedPhoneNumber: undefined;
     setbackThreshold: undefined;
     currentAgent: "onboarding";
     androidPermissions: undefined;
+    nextQuestionIds: "";
     longTermMemory: undefined;
     region: undefined;
     timezone: undefined;

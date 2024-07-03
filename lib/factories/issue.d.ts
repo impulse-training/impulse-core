@@ -15,10 +15,10 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
     parentId?: string | null | undefined;
     profileCount?: number | null | undefined;
     isFeatured?: boolean | null | undefined;
-    measurementQuestionType?: import("../schema").QuestionKeyType | undefined;
     ordinal: number;
     name: string;
     synonyms: string[];
+    questionIds: string[];
     parentIds: string[];
     parentNames: string[];
-}, "ordinal" | "name" | "synonyms" | "parentIds" | "parentNames" | ("path" | "createdAt" | "updatedAt" | "parentId" | "profileCount" | "isFeatured" | "measurementQuestionType")>;
+}, "ordinal" | "name" | "synonyms" | "questionIds" | "parentIds" | "parentNames" | ("path" | "createdAt" | "updatedAt" | "parentId" | "profileCount" | "isFeatured")>;

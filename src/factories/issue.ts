@@ -9,6 +9,7 @@ export const makeIssueFactory = (TimestampKlass: typeof TimestampLike) =>
     updatedAt: TimestampKlass.now(),
     synonyms: ['Videos'],
     ordinal: 0,
+    questionIds: [],
     parentIds: [],
     parentNames: [
       'Behavioral pattern',

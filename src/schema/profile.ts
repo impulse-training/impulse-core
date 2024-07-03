@@ -24,11 +24,12 @@ export const profileSchema = yup.object({
   isReadyForTour: yup.boolean(),
   isOnboardingComplete: yup.boolean(),
   parentIssueIds: optionalStringArray,
-  encryptedPhoneNumber: yup.string(),
-  hashedPhoneNumber: yup.string(),
   setbackThreshold: yup.number(),
   currentAgent: yup.mixed<AgentName>().default('onboarding'),
   androidPermissions: optionalObjectOf(yup.boolean().required()),
+
+  nextQuestionIds: requiredStringArray,
+  // This is a record of question data, that may be accessed by the LLM
   longTermMemory: optionalObjectOf(questionDataSchema),
   region: yup.string().nullable().optional(),
   timezone: yup.string().required(),

@@ -12,5 +12,6 @@ export const makeProfileFactory = (TimestampKlass: typeof TimestampLike) =>
     notificationPreferences: {},
     issueId: null,
     uids: ['uid1', 'uid2'],
+    nextQuestionIds: [],
     longTermMemory: {},
   });

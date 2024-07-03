@@ -20,11 +20,11 @@ export const issueSchema = yup.object().shape({
     .test('includes-name', 'Synonyms must include name', function (synonyms) {
       return synonyms.includes(this.parent.name);
     }),
+  questionIds: requiredStringArray,
   path: yup.string().nullable(),
   parentIds: requiredStringArray,
   parentNames: requiredStringArray,
   profileCount: yup.number().nullable(),
   isFeatured: yup.boolean().nullable(),
-  measurementQuestionType: yup.mixed<QuestionKeyType>().oneOf(questionTypes),
 });
 export type IssueValue = yup.InferType<typeof issueSchema>;
