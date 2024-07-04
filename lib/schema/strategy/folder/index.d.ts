@@ -36,12 +36,12 @@ export declare const folderSchema: yup.ObjectSchema<{
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
-            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -75,13 +75,12 @@ export declare const folderSchema: yup.ObjectSchema<{
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
-            repeat?: yup.Maybe<number | undefined>;
-            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -95,6 +94,7 @@ export declare const folderSchema: yup.ObjectSchema<{
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            repeat?: yup.Maybe<number | undefined>;
             type: "breathingExercise";
             ordinal: number;
             inFor: number;
@@ -113,12 +113,12 @@ export declare const folderSchema: yup.ObjectSchema<{
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
-            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -148,12 +148,12 @@ export declare const folderSchema: yup.ObjectSchema<{
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
-            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -183,12 +183,12 @@ export declare const folderSchema: yup.ObjectSchema<{
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
-            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -217,12 +217,12 @@ export declare const folderSchema: yup.ObjectSchema<{
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
-            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -261,12 +261,12 @@ export declare const folderSchema: yup.ObjectSchema<{
         } | null | undefined;
         profileId?: string | null | undefined;
         setbackThreshold?: number | null | undefined;
-        prompt?: string | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
         isInGameplan?: boolean | undefined;
+        prompt?: string | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
         description?: string | null | undefined;
@@ -300,13 +300,12 @@ export declare const folderSchema: yup.ObjectSchema<{
         } | null | undefined;
         profileId?: string | null | undefined;
         setbackThreshold?: number | null | undefined;
-        repeat?: yup.Maybe<number | undefined>;
-        prompt?: string | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
         isInGameplan?: boolean | undefined;
+        prompt?: string | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
         description?: string | null | undefined;
@@ -320,6 +319,7 @@ export declare const folderSchema: yup.ObjectSchema<{
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
+        repeat?: yup.Maybe<number | undefined>;
         type: "breathingExercise";
         ordinal: number;
         inFor: number;
@@ -338,12 +338,12 @@ export declare const folderSchema: yup.ObjectSchema<{
         } | null | undefined;
         profileId?: string | null | undefined;
         setbackThreshold?: number | null | undefined;
-        prompt?: string | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
         isInGameplan?: boolean | undefined;
+        prompt?: string | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
         description?: string | null | undefined;
@@ -373,12 +373,12 @@ export declare const folderSchema: yup.ObjectSchema<{
         } | null | undefined;
         profileId?: string | null | undefined;
         setbackThreshold?: number | null | undefined;
-        prompt?: string | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
         isInGameplan?: boolean | undefined;
+        prompt?: string | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
         description?: string | null | undefined;
@@ -408,12 +408,12 @@ export declare const folderSchema: yup.ObjectSchema<{
         } | null | undefined;
         profileId?: string | null | undefined;
         setbackThreshold?: number | null | undefined;
-        prompt?: string | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
         isInGameplan?: boolean | undefined;
+        prompt?: string | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
         description?: string | null | undefined;
@@ -442,12 +442,12 @@ export declare const folderSchema: yup.ObjectSchema<{
         } | null | undefined;
         profileId?: string | null | undefined;
         setbackThreshold?: number | null | undefined;
-        prompt?: string | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
         isInGameplan?: boolean | undefined;
+        prompt?: string | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
         description?: string | null | undefined;

@@ -30,12 +30,12 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
-            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -69,13 +69,12 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
-            repeat?: import("yup").Maybe<number | undefined>;
-            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -89,6 +88,7 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            repeat?: import("yup").Maybe<number | undefined>;
             type: "breathingExercise";
             ordinal: number;
             inFor: number;
@@ -107,12 +107,12 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
-            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -142,12 +142,12 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
-            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -177,12 +177,12 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
-            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -211,12 +211,12 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
-            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -257,12 +257,12 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         } | null | undefined;
         profileId?: string | null | undefined;
         setbackThreshold?: number | null | undefined;
-        prompt?: string | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
         isInGameplan?: boolean | undefined;
+        prompt?: string | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
         description?: string | null | undefined;
@@ -296,13 +296,12 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         } | null | undefined;
         profileId?: string | null | undefined;
         setbackThreshold?: number | null | undefined;
-        repeat?: import("yup").Maybe<number | undefined>;
-        prompt?: string | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
         isInGameplan?: boolean | undefined;
+        prompt?: string | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
         description?: string | null | undefined;
@@ -316,6 +315,7 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
+        repeat?: import("yup").Maybe<number | undefined>;
         type: "breathingExercise";
         ordinal: number;
         inFor: number;
@@ -334,12 +334,12 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         } | null | undefined;
         profileId?: string | null | undefined;
         setbackThreshold?: number | null | undefined;
-        prompt?: string | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
         isInGameplan?: boolean | undefined;
+        prompt?: string | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
         description?: string | null | undefined;
@@ -369,12 +369,12 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         } | null | undefined;
         profileId?: string | null | undefined;
         setbackThreshold?: number | null | undefined;
-        prompt?: string | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
         isInGameplan?: boolean | undefined;
+        prompt?: string | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
         description?: string | null | undefined;
@@ -404,12 +404,12 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         } | null | undefined;
         profileId?: string | null | undefined;
         setbackThreshold?: number | null | undefined;
-        prompt?: string | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
         isInGameplan?: boolean | undefined;
+        prompt?: string | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
         description?: string | null | undefined;
@@ -438,12 +438,12 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         } | null | undefined;
         profileId?: string | null | undefined;
         setbackThreshold?: number | null | undefined;
-        prompt?: string | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
         isInGameplan?: boolean | undefined;
+        prompt?: string | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
         description?: string | null | undefined;
@@ -469,8 +469,8 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         };
     })[] | undefined;
     type: "folder";
-    prompt: string;
     ordinal: number;
+    prompt: string;
     invitationCode: string;
     invitationUrl: string;
-}, "type" | "prompt" | "ordinal" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics")>;
+}, "type" | "ordinal" | "prompt" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics")>;
