@@ -18,7 +18,6 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
     ordinal: number;
     name: string;
     synonyms: string[];
-    questionIds: string[];
     parentIds: string[];
     parentNames: string[];
-}, "ordinal" | "name" | "synonyms" | "questionIds" | "parentIds" | "parentNames" | ("path" | "createdAt" | "updatedAt" | "parentId" | "profileCount" | "isFeatured")>;
+}, "ordinal" | "name" | "synonyms" | "parentIds" | "parentNames" | ("path" | "createdAt" | "updatedAt" | "parentId" | "profileCount" | "isFeatured")>;

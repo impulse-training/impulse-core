@@ -12,7 +12,7 @@ export function questionBaseSchema(type: QuestionKeyType) {
     ordinal: yup.number().required(),
     templateFor: yup.mixed<'onboarding'>().oneOf(['onboarding']),
     writeAnswerToProfileMemoryKey: yup.string(),
-    followUp: followUpSchema.optional(),
+    followUps: yup.array().of(followUpSchema),
     createdAt: optionalTimestampSchema,
     updatedAt: optionalTimestampSchema,
   });

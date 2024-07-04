@@ -12,16 +12,20 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
         toDate: Function;
     } | null | undefined;
     setbackThreshold?: number | undefined;
-    followUp?: ({
+    followUps?: ({
         message?: string | undefined;
-        type: "profileData";
-        profileKey: string;
-        profileValue: {};
+        type: "askAnotherQuestion";
+        questionId: string;
     } | {
         message?: string | undefined;
-        type: "question";
-        questionId: string;
-    }) | undefined;
+        type: "writeAnswerToProfile";
+        profileKey: string;
+    } | {
+        message?: string | undefined;
+        type: "writeValueToProfile";
+        profileKey: string;
+        value: {};
+    })[] | undefined;
     options?: ({
         createdAt?: {
             seconds: number;
@@ -35,16 +39,20 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
         } | null | undefined;
         label?: string | undefined;
         setbackThreshold?: number | undefined;
-        followUp?: ({
+        followUps?: ({
             message?: string | undefined;
-            type: "profileData";
-            profileKey: string;
-            profileValue: {};
+            type: "askAnotherQuestion";
+            questionId: string;
         } | {
             message?: string | undefined;
-            type: "question";
-            questionId: string;
-        }) | undefined;
+            type: "writeAnswerToProfile";
+            profileKey: string;
+        } | {
+            message?: string | undefined;
+            type: "writeValueToProfile";
+            profileKey: string;
+            value: {};
+        })[] | undefined;
         color?: string | undefined;
         textColor?: string | undefined;
         greaterThan?: number | undefined;
@@ -63,16 +71,20 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
             toDate: Function;
         } | null | undefined;
         label?: string | undefined;
-        followUp?: ({
+        followUps?: ({
             message?: string | undefined;
-            type: "profileData";
-            profileKey: string;
-            profileValue: {};
+            type: "askAnotherQuestion";
+            questionId: string;
         } | {
             message?: string | undefined;
-            type: "question";
-            questionId: string;
-        }) | undefined;
+            type: "writeAnswerToProfile";
+            profileKey: string;
+        } | {
+            message?: string | undefined;
+            type: "writeValueToProfile";
+            profileKey: string;
+            value: {};
+        })[] | undefined;
         color?: string | undefined;
         textColor?: string | undefined;
         text: string;
@@ -83,4 +95,4 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
     type: import("..").QuestionKeyType;
     prompt: string;
     ordinal: number;
-}, "type" | "prompt" | "ordinal" | ("createdAt" | "updatedAt" | "setbackThreshold" | "followUp" | "options" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+}, "type" | "prompt" | "ordinal" | ("createdAt" | "updatedAt" | "setbackThreshold" | "followUps" | "options" | "templateFor" | "writeAnswerToProfileMemoryKey")>;

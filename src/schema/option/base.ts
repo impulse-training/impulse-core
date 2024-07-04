@@ -8,7 +8,7 @@ export function optionValueBaseSchema<K extends string>(type: K) {
     type: yup.mixed<K>().oneOf([type]).defined(),
     createdAt: optionalTimestampSchema,
     updatedAt: optionalTimestampSchema,
-    followUp: followUpSchema.optional(),
+    followUps: yup.array().of(followUpSchema),
     text: yup.string().required(),
     color: yup.string(),
     textColor: yup.string(),

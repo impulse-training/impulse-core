@@ -1,6 +1,6 @@
 import * as yup from 'yup';
-export declare const followUpQuestionSchema: yup.ObjectSchema<{
-    type: "question";
+export declare const askAnotherQuestionSchema: yup.ObjectSchema<{
+    type: "askAnotherQuestion";
     message: string | undefined;
     questionId: string;
 }, yup.AnyObject, {
@@ -8,4 +8,4 @@ export declare const followUpQuestionSchema: yup.ObjectSchema<{
     message: undefined;
     questionId: undefined;
 }, "">;
-export type FollowUpQuestionValue = yup.InferType<typeof followUpQuestionSchema>;
+export type FollowUpQuestionValue = yup.InferType<typeof askAnotherQuestionSchema>;

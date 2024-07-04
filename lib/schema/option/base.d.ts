@@ -11,16 +11,20 @@ export declare function optionValueBaseSchema<K extends string>(type: K): yup.Ob
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    followUp: ({
+    followUps: ({
         message?: string | undefined;
-        type: "profileData";
-        profileKey: string;
-        profileValue: {};
+        type: "askAnotherQuestion";
+        questionId: string;
     } | {
         message?: string | undefined;
-        type: "question";
-        questionId: string;
-    }) | undefined;
+        type: "writeAnswerToProfile";
+        profileKey: string;
+    } | {
+        message?: string | undefined;
+        type: "writeValueToProfile";
+        profileKey: string;
+        value: {};
+    })[] | undefined;
     text: string;
     color: string | undefined;
     textColor: string | undefined;
@@ -29,7 +33,7 @@ export declare function optionValueBaseSchema<K extends string>(type: K): yup.Ob
     type: undefined;
     createdAt: undefined;
     updatedAt: undefined;
-    followUp: undefined;
+    followUps: "";
     text: undefined;
     color: undefined;
     textColor: undefined;

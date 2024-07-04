@@ -224,16 +224,20 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    followUp?: ({
+                    followUps?: ({
                         message?: string | undefined;
-                        type: "profileData";
-                        profileKey: string;
-                        profileValue: {};
+                        type: "askAnotherQuestion";
+                        questionId: string;
                     } | {
                         message?: string | undefined;
-                        type: "question";
-                        questionId: string;
-                    }) | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
                     options?: ({
                         createdAt?: {
                             seconds: number;
@@ -247,16 +251,20 @@ export declare const daySchema: yup.ObjectSchema<{
                         } | null | undefined;
                         label?: string | undefined;
                         setbackThreshold?: number | undefined;
-                        followUp?: ({
+                        followUps?: ({
                             message?: string | undefined;
-                            type: "profileData";
-                            profileKey: string;
-                            profileValue: {};
+                            type: "askAnotherQuestion";
+                            questionId: string;
                         } | {
                             message?: string | undefined;
-                            type: "question";
-                            questionId: string;
-                        }) | undefined;
+                            type: "writeAnswerToProfile";
+                            profileKey: string;
+                        } | {
+                            message?: string | undefined;
+                            type: "writeValueToProfile";
+                            profileKey: string;
+                            value: {};
+                        })[] | undefined;
                         color?: string | undefined;
                         textColor?: string | undefined;
                         greaterThan?: number | undefined;
@@ -275,16 +283,20 @@ export declare const daySchema: yup.ObjectSchema<{
                             toDate: Function;
                         } | null | undefined;
                         label?: string | undefined;
-                        followUp?: ({
+                        followUps?: ({
                             message?: string | undefined;
-                            type: "profileData";
-                            profileKey: string;
-                            profileValue: {};
+                            type: "askAnotherQuestion";
+                            questionId: string;
                         } | {
                             message?: string | undefined;
-                            type: "question";
-                            questionId: string;
-                        }) | undefined;
+                            type: "writeAnswerToProfile";
+                            profileKey: string;
+                        } | {
+                            message?: string | undefined;
+                            type: "writeValueToProfile";
+                            profileKey: string;
+                            value: {};
+                        })[] | undefined;
                         color?: string | undefined;
                         textColor?: string | undefined;
                         text: string;
@@ -306,16 +318,20 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    followUp?: ({
+                    followUps?: ({
                         message?: string | undefined;
-                        type: "profileData";
-                        profileKey: string;
-                        profileValue: {};
+                        type: "askAnotherQuestion";
+                        questionId: string;
                     } | {
                         message?: string | undefined;
-                        type: "question";
-                        questionId: string;
-                    }) | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
                     templateFor?: "onboarding" | undefined;
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     type: import(".").QuestionKeyType;
@@ -333,16 +349,20 @@ export declare const daySchema: yup.ObjectSchema<{
                         } | null | undefined;
                         label?: string | undefined;
                         setbackThreshold?: number | undefined;
-                        followUp?: ({
+                        followUps?: ({
                             message?: string | undefined;
-                            type: "profileData";
-                            profileKey: string;
-                            profileValue: {};
+                            type: "askAnotherQuestion";
+                            questionId: string;
                         } | {
                             message?: string | undefined;
-                            type: "question";
-                            questionId: string;
-                        }) | undefined;
+                            type: "writeAnswerToProfile";
+                            profileKey: string;
+                        } | {
+                            message?: string | undefined;
+                            type: "writeValueToProfile";
+                            profileKey: string;
+                            value: {};
+                        })[] | undefined;
                         color?: string | undefined;
                         textColor?: string | undefined;
                         greaterThan?: number | undefined;
@@ -361,16 +381,20 @@ export declare const daySchema: yup.ObjectSchema<{
                             toDate: Function;
                         } | null | undefined;
                         label?: string | undefined;
-                        followUp?: ({
+                        followUps?: ({
                             message?: string | undefined;
-                            type: "profileData";
-                            profileKey: string;
-                            profileValue: {};
+                            type: "askAnotherQuestion";
+                            questionId: string;
                         } | {
                             message?: string | undefined;
-                            type: "question";
-                            questionId: string;
-                        }) | undefined;
+                            type: "writeAnswerToProfile";
+                            profileKey: string;
+                        } | {
+                            message?: string | undefined;
+                            type: "writeValueToProfile";
+                            profileKey: string;
+                            value: {};
+                        })[] | undefined;
                         color?: string | undefined;
                         textColor?: string | undefined;
                         text: string;
@@ -390,16 +414,20 @@ export declare const daySchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     setbackThreshold?: number | undefined;
-                    followUp?: ({
+                    followUps?: ({
                         message?: string | undefined;
-                        type: "profileData";
-                        profileKey: string;
-                        profileValue: {};
+                        type: "askAnotherQuestion";
+                        questionId: string;
                     } | {
                         message?: string | undefined;
-                        type: "question";
-                        questionId: string;
-                    }) | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
                     options?: ({
                         createdAt?: {
                             seconds: number;
@@ -413,16 +441,20 @@ export declare const daySchema: yup.ObjectSchema<{
                         } | null | undefined;
                         label?: string | undefined;
                         setbackThreshold?: number | undefined;
-                        followUp?: ({
+                        followUps?: ({
                             message?: string | undefined;
-                            type: "profileData";
-                            profileKey: string;
-                            profileValue: {};
+                            type: "askAnotherQuestion";
+                            questionId: string;
                         } | {
                             message?: string | undefined;
-                            type: "question";
-                            questionId: string;
-                        }) | undefined;
+                            type: "writeAnswerToProfile";
+                            profileKey: string;
+                        } | {
+                            message?: string | undefined;
+                            type: "writeValueToProfile";
+                            profileKey: string;
+                            value: {};
+                        })[] | undefined;
                         color?: string | undefined;
                         textColor?: string | undefined;
                         greaterThan?: number | undefined;
@@ -441,16 +473,20 @@ export declare const daySchema: yup.ObjectSchema<{
                             toDate: Function;
                         } | null | undefined;
                         label?: string | undefined;
-                        followUp?: ({
+                        followUps?: ({
                             message?: string | undefined;
-                            type: "profileData";
-                            profileKey: string;
-                            profileValue: {};
+                            type: "askAnotherQuestion";
+                            questionId: string;
                         } | {
                             message?: string | undefined;
-                            type: "question";
-                            questionId: string;
-                        }) | undefined;
+                            type: "writeAnswerToProfile";
+                            profileKey: string;
+                        } | {
+                            message?: string | undefined;
+                            type: "writeValueToProfile";
+                            profileKey: string;
+                            value: {};
+                        })[] | undefined;
                         color?: string | undefined;
                         textColor?: string | undefined;
                         text: string;
@@ -475,16 +511,20 @@ export declare const daySchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     setbackThreshold?: number | undefined;
-                    followUp?: ({
+                    followUps?: ({
                         message?: string | undefined;
-                        type: "profileData";
-                        profileKey: string;
-                        profileValue: {};
+                        type: "askAnotherQuestion";
+                        questionId: string;
                     } | {
                         message?: string | undefined;
-                        type: "question";
-                        questionId: string;
-                    }) | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
                     options?: ({
                         createdAt?: {
                             seconds: number;
@@ -498,16 +538,20 @@ export declare const daySchema: yup.ObjectSchema<{
                         } | null | undefined;
                         label?: string | undefined;
                         setbackThreshold?: number | undefined;
-                        followUp?: ({
+                        followUps?: ({
                             message?: string | undefined;
-                            type: "profileData";
-                            profileKey: string;
-                            profileValue: {};
+                            type: "askAnotherQuestion";
+                            questionId: string;
                         } | {
                             message?: string | undefined;
-                            type: "question";
-                            questionId: string;
-                        }) | undefined;
+                            type: "writeAnswerToProfile";
+                            profileKey: string;
+                        } | {
+                            message?: string | undefined;
+                            type: "writeValueToProfile";
+                            profileKey: string;
+                            value: {};
+                        })[] | undefined;
                         color?: string | undefined;
                         textColor?: string | undefined;
                         greaterThan?: number | undefined;
@@ -526,16 +570,20 @@ export declare const daySchema: yup.ObjectSchema<{
                             toDate: Function;
                         } | null | undefined;
                         label?: string | undefined;
-                        followUp?: ({
+                        followUps?: ({
                             message?: string | undefined;
-                            type: "profileData";
-                            profileKey: string;
-                            profileValue: {};
+                            type: "askAnotherQuestion";
+                            questionId: string;
                         } | {
                             message?: string | undefined;
-                            type: "question";
-                            questionId: string;
-                        }) | undefined;
+                            type: "writeAnswerToProfile";
+                            profileKey: string;
+                        } | {
+                            message?: string | undefined;
+                            type: "writeValueToProfile";
+                            profileKey: string;
+                            value: {};
+                        })[] | undefined;
                         color?: string | undefined;
                         textColor?: string | undefined;
                         text: string;

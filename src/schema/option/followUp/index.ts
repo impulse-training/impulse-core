@@ -1,22 +1,28 @@
 import * as yup from 'yup';
 import {
-  FollowUpProfileDataValue,
-  followUpProfileDataSchema,
-} from './followUpProfileData';
-import {
   FollowUpQuestionValue,
-  followUpQuestionSchema,
-} from './followUpQuestion';
+  askAnotherQuestionSchema,
+} from './askAnotherQuestion';
+import {
+  WriteAnswerToProfileValue,
+  writeAnswerToProfileSchema,
+} from './writeAnswerToProfile';
+import {
+  WriteValueToProfileValue,
+  writeValueToProfileSchema,
+} from './writeValueToProfile';
 
-export * from './followUpProfileData';
-export * from './followUpQuestion';
+export * from './askAnotherQuestion';
+export * from './writeAnswerToProfile';
+export * from './writeValueToProfile';
 
 export const followUpSchemas: Record<
   FollowUpValue['type'],
   yup.ObjectSchema<FollowUpValue>
 > = {
-  question: followUpQuestionSchema,
-  profileData: followUpProfileDataSchema,
+  askAnotherQuestion: askAnotherQuestionSchema,
+  writeAnswerToProfile: writeAnswerToProfileSchema,
+  writeValueToProfile: writeValueToProfileSchema,
 } as any;
 
 export const followUpSchema = yup.lazy(value => {
@@ -38,4 +44,7 @@ type ValidatedFollowUp = {
   [K in FollowUpValue['type']]: yup.InferType<(typeof followUpSchemas)[K]>;
 }[FollowUpValue['type']];
 
-export type FollowUpValue = FollowUpQuestionValue | FollowUpProfileDataValue;
+export type FollowUpValue =
+  | FollowUpQuestionValue
+  | WriteAnswerToProfileValue
+  | WriteValueToProfileValue;

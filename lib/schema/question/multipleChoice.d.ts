@@ -15,16 +15,20 @@ export declare const questionMultipleChoiceSchema: yup.ObjectSchema<{
         } | null | undefined;
         label?: string | undefined;
         setbackThreshold?: number | undefined;
-        followUp?: ({
+        followUps?: ({
             message?: string | undefined;
-            type: "profileData";
-            profileKey: string;
-            profileValue: {};
+            type: "askAnotherQuestion";
+            questionId: string;
         } | {
             message?: string | undefined;
-            type: "question";
-            questionId: string;
-        }) | undefined;
+            type: "writeAnswerToProfile";
+            profileKey: string;
+        } | {
+            message?: string | undefined;
+            type: "writeValueToProfile";
+            profileKey: string;
+            value: {};
+        })[] | undefined;
         color?: string | undefined;
         textColor?: string | undefined;
         greaterThan?: number | undefined;
@@ -43,16 +47,20 @@ export declare const questionMultipleChoiceSchema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         label?: string | undefined;
-        followUp?: ({
+        followUps?: ({
             message?: string | undefined;
-            type: "profileData";
-            profileKey: string;
-            profileValue: {};
+            type: "askAnotherQuestion";
+            questionId: string;
         } | {
             message?: string | undefined;
-            type: "question";
-            questionId: string;
-        }) | undefined;
+            type: "writeAnswerToProfile";
+            profileKey: string;
+        } | {
+            message?: string | undefined;
+            type: "writeValueToProfile";
+            profileKey: string;
+            value: {};
+        })[] | undefined;
         color?: string | undefined;
         textColor?: string | undefined;
         text: string;
@@ -61,16 +69,20 @@ export declare const questionMultipleChoiceSchema: yup.ObjectSchema<{
     ordinal: number;
     templateFor: "onboarding" | undefined;
     writeAnswerToProfileMemoryKey: string | undefined;
-    followUp: ({
+    followUps: ({
         message?: string | undefined;
-        type: "profileData";
-        profileKey: string;
-        profileValue: {};
+        type: "askAnotherQuestion";
+        questionId: string;
     } | {
         message?: string | undefined;
-        type: "question";
-        questionId: string;
-    }) | undefined;
+        type: "writeAnswerToProfile";
+        profileKey: string;
+    } | {
+        message?: string | undefined;
+        type: "writeValueToProfile";
+        profileKey: string;
+        value: {};
+    })[] | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -89,7 +101,7 @@ export declare const questionMultipleChoiceSchema: yup.ObjectSchema<{
     ordinal: undefined;
     templateFor: undefined;
     writeAnswerToProfileMemoryKey: undefined;
-    followUp: undefined;
+    followUps: "";
     createdAt: undefined;
     updatedAt: undefined;
     canAddNewOptions: false;

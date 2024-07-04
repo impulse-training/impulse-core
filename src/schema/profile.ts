@@ -27,8 +27,6 @@ export const profileSchema = yup.object({
   setbackThreshold: yup.number(),
   currentAgent: yup.mixed<AgentName>().default('onboarding'),
   androidPermissions: optionalObjectOf(yup.boolean().required()),
-
-  nextQuestionIds: requiredStringArray,
   // This is a record of question data, that may be accessed by the LLM
   longTermMemory: optionalObjectOf(questionDataSchema),
   region: yup.string().nullable().optional(),

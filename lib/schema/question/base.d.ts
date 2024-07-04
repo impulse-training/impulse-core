@@ -16,16 +16,20 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
         } | null | undefined;
         label?: string | undefined;
         setbackThreshold?: number | undefined;
-        followUp?: ({
+        followUps?: ({
             message?: string | undefined;
-            type: "profileData";
-            profileKey: string;
-            profileValue: {};
+            type: "askAnotherQuestion";
+            questionId: string;
         } | {
             message?: string | undefined;
-            type: "question";
-            questionId: string;
-        }) | undefined;
+            type: "writeAnswerToProfile";
+            profileKey: string;
+        } | {
+            message?: string | undefined;
+            type: "writeValueToProfile";
+            profileKey: string;
+            value: {};
+        })[] | undefined;
         color?: string | undefined;
         textColor?: string | undefined;
         greaterThan?: number | undefined;
@@ -44,16 +48,20 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
             toDate: Function;
         } | null | undefined;
         label?: string | undefined;
-        followUp?: ({
+        followUps?: ({
             message?: string | undefined;
-            type: "profileData";
-            profileKey: string;
-            profileValue: {};
+            type: "askAnotherQuestion";
+            questionId: string;
         } | {
             message?: string | undefined;
-            type: "question";
-            questionId: string;
-        }) | undefined;
+            type: "writeAnswerToProfile";
+            profileKey: string;
+        } | {
+            message?: string | undefined;
+            type: "writeValueToProfile";
+            profileKey: string;
+            value: {};
+        })[] | undefined;
         color?: string | undefined;
         textColor?: string | undefined;
         text: string;
@@ -62,16 +70,20 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
     ordinal: number;
     templateFor: "onboarding" | undefined;
     writeAnswerToProfileMemoryKey: string | undefined;
-    followUp: ({
+    followUps: ({
         message?: string | undefined;
-        type: "profileData";
-        profileKey: string;
-        profileValue: {};
+        type: "askAnotherQuestion";
+        questionId: string;
     } | {
         message?: string | undefined;
-        type: "question";
-        questionId: string;
-    }) | undefined;
+        type: "writeAnswerToProfile";
+        profileKey: string;
+    } | {
+        message?: string | undefined;
+        type: "writeValueToProfile";
+        profileKey: string;
+        value: {};
+    })[] | undefined;
     createdAt: {
         seconds: number;
         nanoseconds: number;
@@ -89,7 +101,7 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
     ordinal: undefined;
     templateFor: undefined;
     writeAnswerToProfileMemoryKey: undefined;
-    followUp: undefined;
+    followUps: "";
     createdAt: undefined;
     updatedAt: undefined;
 }, "">;

@@ -560,10 +560,9 @@ export declare const factories: {
         ordinal: number;
         name: string;
         synonyms: string[];
-        questionIds: string[];
         parentIds: string[];
         parentNames: string[];
-    }, "ordinal" | "name" | "synonyms" | "questionIds" | "parentIds" | "parentNames" | ("path" | "createdAt" | "updatedAt" | "parentId" | "profileCount" | "isFeatured")>;
+    }, "ordinal" | "name" | "synonyms" | "parentIds" | "parentNames" | ("path" | "createdAt" | "updatedAt" | "parentId" | "profileCount" | "isFeatured")>;
     locationFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -651,12 +650,11 @@ export declare const factories: {
             };
         } | null | undefined;
         region?: string | null | undefined;
-        nextQuestionIds: string[];
         uids: string[];
         issueId: string | null;
         currentAgent: import("..").AgentName;
         timezone: string;
-    }, "nextQuestionIds" | "uids" | "issueId" | "currentAgent" | "timezone" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "parentIssueIds" | "scheduledNotificationIds" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "isReadyForTour" | "isOnboardingComplete" | "setbackThreshold" | "androidPermissions" | "longTermMemory" | "region")>;
+    }, "uids" | "issueId" | "currentAgent" | "timezone" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "parentIssueIds" | "scheduledNotificationIds" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "isReadyForTour" | "isOnboardingComplete" | "setbackThreshold" | "androidPermissions" | "longTermMemory" | "region")>;
     questionTimeFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -669,16 +667,20 @@ export declare const factories: {
             toDate: Function;
         } | null | undefined;
         setbackThreshold?: number | undefined;
-        followUp?: ({
+        followUps?: ({
             message?: string | undefined;
-            type: "profileData";
-            profileKey: string;
-            profileValue: {};
+            type: "askAnotherQuestion";
+            questionId: string;
         } | {
             message?: string | undefined;
-            type: "question";
-            questionId: string;
-        }) | undefined;
+            type: "writeAnswerToProfile";
+            profileKey: string;
+        } | {
+            message?: string | undefined;
+            type: "writeValueToProfile";
+            profileKey: string;
+            value: {};
+        })[] | undefined;
         options?: ({
             createdAt?: {
                 seconds: number;
@@ -692,16 +694,20 @@ export declare const factories: {
             } | null | undefined;
             label?: string | undefined;
             setbackThreshold?: number | undefined;
-            followUp?: ({
+            followUps?: ({
                 message?: string | undefined;
-                type: "profileData";
-                profileKey: string;
-                profileValue: {};
+                type: "askAnotherQuestion";
+                questionId: string;
             } | {
                 message?: string | undefined;
-                type: "question";
-                questionId: string;
-            }) | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
             color?: string | undefined;
             textColor?: string | undefined;
             greaterThan?: number | undefined;
@@ -720,16 +726,20 @@ export declare const factories: {
                 toDate: Function;
             } | null | undefined;
             label?: string | undefined;
-            followUp?: ({
+            followUps?: ({
                 message?: string | undefined;
-                type: "profileData";
-                profileKey: string;
-                profileValue: {};
+                type: "askAnotherQuestion";
+                questionId: string;
             } | {
                 message?: string | undefined;
-                type: "question";
-                questionId: string;
-            }) | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
             color?: string | undefined;
             textColor?: string | undefined;
             text: string;
@@ -740,7 +750,7 @@ export declare const factories: {
         type: import("..").QuestionKeyType;
         prompt: string;
         ordinal: number;
-    }, "type" | "prompt" | "ordinal" | ("createdAt" | "updatedAt" | "setbackThreshold" | "followUp" | "options" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+    }, "type" | "prompt" | "ordinal" | ("createdAt" | "updatedAt" | "setbackThreshold" | "followUps" | "options" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;

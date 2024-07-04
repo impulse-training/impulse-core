@@ -1,11 +1,13 @@
 import * as yup from 'yup';
-import { FollowUpProfileDataValue } from './followUpProfileData';
-import { FollowUpQuestionValue } from './followUpQuestion';
-export * from './followUpProfileData';
-export * from './followUpQuestion';
+import { FollowUpQuestionValue } from './askAnotherQuestion';
+import { WriteAnswerToProfileValue } from './writeAnswerToProfile';
+import { WriteValueToProfileValue } from './writeValueToProfile';
+export * from './askAnotherQuestion';
+export * from './writeAnswerToProfile';
+export * from './writeValueToProfile';
 export declare const followUpSchemas: Record<FollowUpValue['type'], yup.ObjectSchema<FollowUpValue>>;
 export declare const followUpSchema: yup.Lazy<ValidatedFollowUp, yup.AnyObject, any>;
 type ValidatedFollowUp = {
     [K in FollowUpValue['type']]: yup.InferType<(typeof followUpSchemas)[K]>;
 }[FollowUpValue['type']];
-export type FollowUpValue = FollowUpQuestionValue | FollowUpProfileDataValue;
+export type FollowUpValue = FollowUpQuestionValue | WriteAnswerToProfileValue | WriteValueToProfileValue;

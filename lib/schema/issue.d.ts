@@ -14,7 +14,6 @@ export declare const issueSchema: yup.ObjectSchema<{
     name: string;
     ordinal: number;
     synonyms: string[];
-    questionIds: string[];
     path: string | null | undefined;
     parentIds: string[];
     parentNames: string[];
@@ -27,7 +26,6 @@ export declare const issueSchema: yup.ObjectSchema<{
     name: undefined;
     ordinal: undefined;
     synonyms: "";
-    questionIds: "";
     path: undefined;
     parentIds: "";
     parentNames: "";
