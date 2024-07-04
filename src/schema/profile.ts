@@ -4,6 +4,7 @@ import { AgentName } from '../agents';
 import { questionDataSchema } from './log';
 import { notificationOptionSchema } from './notification';
 import { optionalStringArray, requiredStringArray } from './utils/array';
+import { documentReferenceSchema } from './utils/firestore';
 import { optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema } from './utils/timestamp';
 
@@ -13,7 +14,7 @@ export const profileSchema = yup.object({
   lastActiveAt: optionalTimestampSchema,
   widgetInstalledAt: optionalTimestampSchema,
   widgetLastPressedAt: optionalTimestampSchema,
-  activeImpulseId: yup.string().optional(),
+  activeImpulseDoc: documentReferenceSchema,
   currentAppState: yup.mixed<AppStateStatus>().optional(), // Define validation for AppStateStatus if needed
   expoPushToken: yup.string().optional(),
   notificationPreferences: optionalObjectOf(

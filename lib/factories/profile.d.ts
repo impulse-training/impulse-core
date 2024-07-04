@@ -26,9 +26,9 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    activeImpulseDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
     parentIssueIds?: string[] | undefined;
     scheduledNotificationIds?: string[] | undefined;
-    activeImpulseId?: string | undefined;
     currentAppState?: import("react-native/types").AppStateStatus | undefined;
     expoPushToken?: string | undefined;
     notificationPreferences?: {
@@ -59,4 +59,4 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     issueId: string | null;
     currentAgent: import("..").AgentName;
     timezone: string;
-}, "uids" | "issueId" | "currentAgent" | "timezone" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "parentIssueIds" | "scheduledNotificationIds" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "isReadyForTour" | "isOnboardingComplete" | "setbackThreshold" | "androidPermissions" | "longTermMemory" | "region")>;
+}, "uids" | "issueId" | "currentAgent" | "timezone" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "parentIssueIds" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "isReadyForTour" | "isOnboardingComplete" | "setbackThreshold" | "androidPermissions" | "longTermMemory" | "region")>;

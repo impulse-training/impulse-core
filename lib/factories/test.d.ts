@@ -789,9 +789,9 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    activeImpulseDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
     parentIssueIds?: string[] | undefined;
     scheduledNotificationIds?: string[] | undefined;
-    activeImpulseId?: string | undefined;
     currentAppState?: import("react-native/types").AppStateStatus | undefined;
     expoPushToken?: string | undefined;
     notificationPreferences?: {
@@ -822,7 +822,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     issueId: string | null;
     currentAgent: import("..").AgentName;
     timezone: string;
-}, "uids" | "issueId" | "currentAgent" | "timezone" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "parentIssueIds" | "scheduledNotificationIds" | "activeImpulseId" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "isReadyForTour" | "isOnboardingComplete" | "setbackThreshold" | "androidPermissions" | "longTermMemory" | "region")>, folderFactory: import("factory.ts").Factory<{
+}, "uids" | "issueId" | "currentAgent" | "timezone" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "parentIssueIds" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "isReadyForTour" | "isOnboardingComplete" | "setbackThreshold" | "androidPermissions" | "longTermMemory" | "region")>, folderFactory: import("factory.ts").Factory<{
     createdAt?: {
         seconds: number;
         nanoseconds: number;
