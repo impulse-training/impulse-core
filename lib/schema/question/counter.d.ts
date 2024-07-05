@@ -93,6 +93,7 @@ export declare const questionCounterSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    setbackThreshold: number | undefined;
 }, yup.AnyObject, {
     prompt: undefined;
     type: undefined;
@@ -103,5 +104,6 @@ export declare const questionCounterSchema: yup.ObjectSchema<{
     followUps: "";
     createdAt: undefined;
     updatedAt: undefined;
+    setbackThreshold: undefined;
 }, "">;
 export type QuestionCounterValue = yup.InferType<typeof questionCounterSchema>;
