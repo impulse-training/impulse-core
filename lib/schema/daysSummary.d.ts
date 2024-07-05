@@ -1,6 +1,5 @@
-import * as Factory from 'factory.ts';
-import { TimestampLike } from '../utils';
-export declare const makeProfileLogsSummaryFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
+import * as yup from 'yup';
+export declare const daysSummarySchema: yup.Lazy<{
     [x: string]: {
         [x: string]: {
             label?: string | undefined;
@@ -16,4 +15,5 @@ export declare const makeProfileLogsSummaryFactory: (TimestampKlass: typeof Time
             unit: string;
         };
     };
-}, string | number>;
+}, yup.AnyObject, any>;
+export type DaysSummaryValue = yup.InferType<typeof daysSummarySchema>;

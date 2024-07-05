@@ -2,12 +2,12 @@ import { TimestampLike } from '../utils/firestore/TimestampLike';
 import { makeApplicationFactory } from './application';
 import { makeCommentFactory } from './comment';
 import { makeDayFactory } from './day';
+import { makeDaysSummaryFactory } from './daysSummary';
 import { makeFolderFactory } from './folder';
 import { makeIssueFactory } from './issue';
 import { makeLocationFactory } from './location';
-import { makeImpulseLogFactory } from './log';
+import { makeImpulseLogFactory, makeQuestionsLogFactory } from './log';
 import { makeProfileFactory } from './profile';
-import { makeProfileLogsSummaryFactory } from './profileLogsSummary';
 import { makeQuestionTimeTacticFactory } from './question';
 import { makeTimeRoutineFactory } from './routine';
 import { makeTacticFactory } from './tactic';
@@ -24,10 +24,12 @@ export function makeFactories(TimestampKlass: typeof TimestampLike) {
     impulseFactory: makeImpulseLogFactory(TimestampKlass),
     issueFactory: makeIssueFactory(TimestampKlass),
     locationFactory: makeLocationFactory(TimestampKlass),
-    profileLogsSummaryFactory: makeProfileLogsSummaryFactory(TimestampKlass),
+    daysSummaryFactory: makeDaysSummaryFactory(TimestampKlass),
     profileFactory: makeProfileFactory(TimestampKlass),
     questionTimeFactory: makeQuestionTimeTacticFactory(TimestampKlass),
     timeRoutineFactory: makeTimeRoutineFactory(TimestampKlass),
+    impulseLogFactory: makeImpulseLogFactory(TimestampKlass),
+    questionsLogFactory: makeQuestionsLogFactory(TimestampKlass),
     tacticFactory: makeTacticFactory(TimestampKlass),
   };
 }

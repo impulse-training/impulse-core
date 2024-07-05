@@ -6,9 +6,9 @@ import { objectOf } from './utils/objectOf';
 // {
 //   howManyCigarettes: { data: 2, formattedValue: "2 cigarettes" }
 // }
-const tacticTotalDataByIdSchema = objectOf(questionDataSchema);
+const questionTotalDataByIdSchema = objectOf(questionDataSchema);
 
-// A profile logs summary document is an object of tactic day summaries, keyed by date. Think of it
+// A days summary document is an object of tactic day summaries, keyed by date. Think of it
 // as:
 // {
 //   "2024-01-30": {
@@ -18,8 +18,6 @@ const tacticTotalDataByIdSchema = objectOf(questionDataSchema);
 //     howManyCigarettes: { data: 3, formattedValue: "3 cigarettes" }
 //   }
 // }
-export const profileLogsSummarySchema = objectOf(tacticTotalDataByIdSchema);
+export const daysSummarySchema = objectOf(questionTotalDataByIdSchema);
 
-export type ProfileLogsSummaryValue = yup.InferType<
-  typeof profileLogsSummarySchema
->;
+export type DaysSummaryValue = yup.InferType<typeof daysSummarySchema>;

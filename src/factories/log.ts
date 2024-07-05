@@ -1,5 +1,5 @@
 import * as Factory from 'factory.ts';
-import { ImpulseLogValue } from '../schema/log';
+import { ImpulseLogValue, QuestionsLogValue } from '../schema/log';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 
 export const makeImpulseLogFactory = (TimestampKlass: typeof TimestampLike) =>
@@ -20,4 +20,16 @@ export const makeImpulseLogFactory = (TimestampKlass: typeof TimestampLike) =>
         content: "I'm having an impulse!",
       },
     ],
+  });
+
+export const makeQuestionsLogFactory = (TimestampKlass: typeof TimestampLike) =>
+  Factory.makeFactory<QuestionsLogValue>({
+    senderProfileId: Factory.each(i => i.toString()),
+    type: 'questions',
+    createdAt: TimestampKlass.now(),
+    updatedAt: TimestampKlass.now(),
+    date: TimestampKlass.now(),
+    gptPayload: [],
+    questionsById: {},
+    questionData: {},
   });
