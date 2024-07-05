@@ -3,6 +3,8 @@ export declare const questionDataSchema: yup.ObjectSchema<{
     idValue: string | undefined;
     numericValue: number | undefined;
     stringValue: string;
+    label: string | undefined;
+    labelColor: string | undefined;
     unit: string;
     setAt: {
         seconds: number;
@@ -13,6 +15,8 @@ export declare const questionDataSchema: yup.ObjectSchema<{
     idValue: undefined;
     numericValue: undefined;
     stringValue: undefined;
+    label: undefined;
+    labelColor: undefined;
     unit: undefined;
     setAt: {
         seconds: undefined;
@@ -539,8 +543,10 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
     };
     questionData: {
         [x: string]: {
+            label?: string | undefined;
             idValue?: string | undefined;
             numericValue?: number | undefined;
+            labelColor?: string | undefined;
             setAt: {
                 seconds: number;
                 nanoseconds: number;

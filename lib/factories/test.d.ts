@@ -806,8 +806,10 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     } | null | undefined;
     longTermMemory?: {
         [x: string]: {
+            label?: string | undefined;
             idValue?: string | undefined;
             numericValue?: number | undefined;
+            labelColor?: string | undefined;
             setAt: {
                 seconds: number;
                 nanoseconds: number;

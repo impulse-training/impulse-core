@@ -1393,8 +1393,10 @@ export declare const daySchema: yup.ObjectSchema<{
             };
             questionData: {
                 [x: string]: {
+                    label?: string | undefined;
                     idValue?: string | undefined;
                     numericValue?: number | undefined;
+                    labelColor?: string | undefined;
                     setAt: {
                         seconds: number;
                         nanoseconds: number;

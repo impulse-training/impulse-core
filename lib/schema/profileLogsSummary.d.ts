@@ -2,8 +2,10 @@ import * as yup from 'yup';
 export declare const profileLogsSummarySchema: yup.Lazy<{
     [x: string]: {
         [x: string]: {
+            label?: string | undefined;
             idValue?: string | undefined;
             numericValue?: number | undefined;
+            labelColor?: string | undefined;
             setAt: {
                 seconds: number;
                 nanoseconds: number;

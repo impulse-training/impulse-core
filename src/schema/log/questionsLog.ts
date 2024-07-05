@@ -10,6 +10,8 @@ export const questionDataSchema = yup.object({
   idValue: yup.string(), // This is if the answer is an id
   numericValue: yup.number(), // ... or a number
   stringValue: yup.string().required(), // This is a string representation of the value
+  label: yup.string(),
+  labelColor: yup.string(),
   unit: yup.string().required(),
   setAt: timestampSchema,
 });

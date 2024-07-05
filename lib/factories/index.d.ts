@@ -1284,8 +1284,10 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
     profileLogsSummaryFactory: import("factory.ts").Factory<{
         [x: string]: {
             [x: string]: {
+                label?: string | undefined;
                 idValue?: string | undefined;
                 numericValue?: number | undefined;
+                labelColor?: string | undefined;
                 setAt: {
                     seconds: number;
                     nanoseconds: number;
@@ -1339,8 +1341,10 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         } | null | undefined;
         longTermMemory?: {
             [x: string]: {
+                label?: string | undefined;
                 idValue?: string | undefined;
                 numericValue?: number | undefined;
+                labelColor?: string | undefined;
                 setAt: {
                     seconds: number;
                     nanoseconds: number;
