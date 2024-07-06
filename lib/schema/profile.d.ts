@@ -46,9 +46,10 @@ export declare const profileSchema: yup.ObjectSchema<{
     longTermMemory: {
         [x: string]: {
             label?: string | undefined;
+            setbackThreshold?: number | undefined;
             idValue?: string | undefined;
             numericValue?: number | undefined;
-            labelColor?: string | undefined;
+            color?: string | undefined;
             setAt: {
                 seconds: number;
                 nanoseconds: number;

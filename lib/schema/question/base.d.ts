@@ -16,6 +16,7 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
         } | null | undefined;
         label?: string | undefined;
         setbackThreshold?: number | undefined;
+        color?: string | undefined;
         followUps?: ({
             message?: string | undefined;
             type: "askAnotherQuestion";
@@ -30,7 +31,6 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
             profileKey: string;
             value: {};
         })[] | undefined;
-        color?: string | undefined;
         textColor?: string | undefined;
         greaterThan?: number | undefined;
         lessThanOrEqualTo?: number | undefined;
@@ -48,6 +48,7 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
             toDate: Function;
         } | null | undefined;
         label?: string | undefined;
+        color?: string | undefined;
         followUps?: ({
             message?: string | undefined;
             type: "askAnotherQuestion";
@@ -62,7 +63,6 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
             profileKey: string;
             value: {};
         })[] | undefined;
-        color?: string | undefined;
         textColor?: string | undefined;
         text: string;
         type: "string";

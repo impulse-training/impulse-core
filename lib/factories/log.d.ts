@@ -822,6 +822,7 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                 } | null | undefined;
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
+                color?: string | undefined;
                 followUps?: ({
                     message?: string | undefined;
                     type: "askAnotherQuestion";
@@ -836,7 +837,6 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                color?: string | undefined;
                 textColor?: string | undefined;
                 greaterThan?: number | undefined;
                 lessThanOrEqualTo?: number | undefined;
@@ -854,6 +854,7 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                     toDate: Function;
                 } | null | undefined;
                 label?: string | undefined;
+                color?: string | undefined;
                 followUps?: ({
                     message?: string | undefined;
                     type: "askAnotherQuestion";
@@ -868,7 +869,6 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                color?: string | undefined;
                 textColor?: string | undefined;
                 text: string;
                 type: "string";
@@ -917,6 +917,7 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                 } | null | undefined;
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
+                color?: string | undefined;
                 followUps?: ({
                     message?: string | undefined;
                     type: "askAnotherQuestion";
@@ -931,7 +932,6 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                color?: string | undefined;
                 textColor?: string | undefined;
                 greaterThan?: number | undefined;
                 lessThanOrEqualTo?: number | undefined;
@@ -949,6 +949,7 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                     toDate: Function;
                 } | null | undefined;
                 label?: string | undefined;
+                color?: string | undefined;
                 followUps?: ({
                     message?: string | undefined;
                     type: "askAnotherQuestion";
@@ -963,7 +964,6 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                color?: string | undefined;
                 textColor?: string | undefined;
                 text: string;
                 type: "string";
@@ -1016,6 +1016,7 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                 } | null | undefined;
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
+                color?: string | undefined;
                 followUps?: ({
                     message?: string | undefined;
                     type: "askAnotherQuestion";
@@ -1030,7 +1031,6 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                color?: string | undefined;
                 textColor?: string | undefined;
                 greaterThan?: number | undefined;
                 lessThanOrEqualTo?: number | undefined;
@@ -1048,6 +1048,7 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                     toDate: Function;
                 } | null | undefined;
                 label?: string | undefined;
+                color?: string | undefined;
                 followUps?: ({
                     message?: string | undefined;
                     type: "askAnotherQuestion";
@@ -1062,7 +1063,6 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                color?: string | undefined;
                 textColor?: string | undefined;
                 text: string;
                 type: "string";
@@ -1107,6 +1107,7 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                 } | null | undefined;
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
+                color?: string | undefined;
                 followUps?: ({
                     message?: string | undefined;
                     type: "askAnotherQuestion";
@@ -1121,7 +1122,6 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                color?: string | undefined;
                 textColor?: string | undefined;
                 greaterThan?: number | undefined;
                 lessThanOrEqualTo?: number | undefined;
@@ -1139,6 +1139,7 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                     toDate: Function;
                 } | null | undefined;
                 label?: string | undefined;
+                color?: string | undefined;
                 followUps?: ({
                     message?: string | undefined;
                     type: "askAnotherQuestion";
@@ -1153,7 +1154,6 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                color?: string | undefined;
                 textColor?: string | undefined;
                 text: string;
                 type: "string";
@@ -1204,6 +1204,7 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                 } | null | undefined;
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
+                color?: string | undefined;
                 followUps?: ({
                     message?: string | undefined;
                     type: "askAnotherQuestion";
@@ -1218,7 +1219,6 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                color?: string | undefined;
                 textColor?: string | undefined;
                 greaterThan?: number | undefined;
                 lessThanOrEqualTo?: number | undefined;
@@ -1236,6 +1236,7 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                     toDate: Function;
                 } | null | undefined;
                 label?: string | undefined;
+                color?: string | undefined;
                 followUps?: ({
                     message?: string | undefined;
                     type: "askAnotherQuestion";
@@ -1250,7 +1251,6 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                color?: string | undefined;
                 textColor?: string | undefined;
                 text: string;
                 type: "string";
@@ -1265,9 +1265,10 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
     questionData: {
         [x: string]: {
             label?: string | undefined;
+            setbackThreshold?: number | undefined;
             idValue?: string | undefined;
             numericValue?: number | undefined;
-            labelColor?: string | undefined;
+            color?: string | undefined;
             setAt: {
                 seconds: number;
                 nanoseconds: number;

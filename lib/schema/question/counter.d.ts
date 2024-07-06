@@ -15,6 +15,7 @@ export declare const questionCounterSchema: yup.ObjectSchema<{
         } | null | undefined;
         label?: string | undefined;
         setbackThreshold?: number | undefined;
+        color?: string | undefined;
         followUps?: ({
             message?: string | undefined;
             type: "askAnotherQuestion";
@@ -29,7 +30,6 @@ export declare const questionCounterSchema: yup.ObjectSchema<{
             profileKey: string;
             value: {};
         })[] | undefined;
-        color?: string | undefined;
         textColor?: string | undefined;
         greaterThan?: number | undefined;
         lessThanOrEqualTo?: number | undefined;
@@ -47,6 +47,7 @@ export declare const questionCounterSchema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         label?: string | undefined;
+        color?: string | undefined;
         followUps?: ({
             message?: string | undefined;
             type: "askAnotherQuestion";
@@ -61,7 +62,6 @@ export declare const questionCounterSchema: yup.ObjectSchema<{
             profileKey: string;
             value: {};
         })[] | undefined;
-        color?: string | undefined;
         textColor?: string | undefined;
         text: string;
         type: "string";

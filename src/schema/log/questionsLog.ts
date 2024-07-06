@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 import { questionSchema } from '../question';
+import { setbackThresholdMixin } from '../question/utils/setbackThreshold';
 import { optionalStringArray } from '../utils/array';
 import { objectOf } from '../utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from '../utils/timestamp';
@@ -11,9 +12,10 @@ export const questionDataSchema = yup.object({
   numericValue: yup.number(), // ... or a number
   stringValue: yup.string().required(), // This is a string representation of the value
   label: yup.string(),
-  labelColor: yup.string(),
+  color: yup.string(),
   unit: yup.string().required(),
   setAt: timestampSchema,
+  ...setbackThresholdMixin,
 });
 export type QuestionDataValue = yup.InferType<typeof questionDataSchema>;
 

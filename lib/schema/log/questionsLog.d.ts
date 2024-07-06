@@ -1,10 +1,11 @@
 import * as yup from 'yup';
 export declare const questionDataSchema: yup.ObjectSchema<{
+    setbackThreshold: number | undefined;
     idValue: string | undefined;
     numericValue: number | undefined;
     stringValue: string;
     label: string | undefined;
-    labelColor: string | undefined;
+    color: string | undefined;
     unit: string;
     setAt: {
         seconds: number;
@@ -12,11 +13,12 @@ export declare const questionDataSchema: yup.ObjectSchema<{
         toDate: Function;
     };
 }, yup.AnyObject, {
+    setbackThreshold: undefined;
     idValue: undefined;
     numericValue: undefined;
     stringValue: undefined;
     label: undefined;
-    labelColor: undefined;
+    color: undefined;
     unit: undefined;
     setAt: {
         seconds: undefined;
@@ -101,6 +103,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 } | null | undefined;
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
+                color?: string | undefined;
                 followUps?: ({
                     message?: string | undefined;
                     type: "askAnotherQuestion";
@@ -115,7 +118,6 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                color?: string | undefined;
                 textColor?: string | undefined;
                 greaterThan?: number | undefined;
                 lessThanOrEqualTo?: number | undefined;
@@ -133,6 +135,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 label?: string | undefined;
+                color?: string | undefined;
                 followUps?: ({
                     message?: string | undefined;
                     type: "askAnotherQuestion";
@@ -147,7 +150,6 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                color?: string | undefined;
                 textColor?: string | undefined;
                 text: string;
                 type: "string";
@@ -196,6 +198,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 } | null | undefined;
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
+                color?: string | undefined;
                 followUps?: ({
                     message?: string | undefined;
                     type: "askAnotherQuestion";
@@ -210,7 +213,6 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                color?: string | undefined;
                 textColor?: string | undefined;
                 greaterThan?: number | undefined;
                 lessThanOrEqualTo?: number | undefined;
@@ -228,6 +230,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 label?: string | undefined;
+                color?: string | undefined;
                 followUps?: ({
                     message?: string | undefined;
                     type: "askAnotherQuestion";
@@ -242,7 +245,6 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                color?: string | undefined;
                 textColor?: string | undefined;
                 text: string;
                 type: "string";
@@ -295,6 +297,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 } | null | undefined;
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
+                color?: string | undefined;
                 followUps?: ({
                     message?: string | undefined;
                     type: "askAnotherQuestion";
@@ -309,7 +312,6 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                color?: string | undefined;
                 textColor?: string | undefined;
                 greaterThan?: number | undefined;
                 lessThanOrEqualTo?: number | undefined;
@@ -327,6 +329,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 label?: string | undefined;
+                color?: string | undefined;
                 followUps?: ({
                     message?: string | undefined;
                     type: "askAnotherQuestion";
@@ -341,7 +344,6 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                color?: string | undefined;
                 textColor?: string | undefined;
                 text: string;
                 type: "string";
@@ -386,6 +388,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 } | null | undefined;
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
+                color?: string | undefined;
                 followUps?: ({
                     message?: string | undefined;
                     type: "askAnotherQuestion";
@@ -400,7 +403,6 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                color?: string | undefined;
                 textColor?: string | undefined;
                 greaterThan?: number | undefined;
                 lessThanOrEqualTo?: number | undefined;
@@ -418,6 +420,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 label?: string | undefined;
+                color?: string | undefined;
                 followUps?: ({
                     message?: string | undefined;
                     type: "askAnotherQuestion";
@@ -432,7 +435,6 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                color?: string | undefined;
                 textColor?: string | undefined;
                 text: string;
                 type: "string";
@@ -483,6 +485,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 } | null | undefined;
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
+                color?: string | undefined;
                 followUps?: ({
                     message?: string | undefined;
                     type: "askAnotherQuestion";
@@ -497,7 +500,6 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                color?: string | undefined;
                 textColor?: string | undefined;
                 greaterThan?: number | undefined;
                 lessThanOrEqualTo?: number | undefined;
@@ -515,6 +517,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 label?: string | undefined;
+                color?: string | undefined;
                 followUps?: ({
                     message?: string | undefined;
                     type: "askAnotherQuestion";
@@ -529,7 +532,6 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                color?: string | undefined;
                 textColor?: string | undefined;
                 text: string;
                 type: "string";
@@ -544,9 +546,10 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
     questionData: {
         [x: string]: {
             label?: string | undefined;
+            setbackThreshold?: number | undefined;
             idValue?: string | undefined;
             numericValue?: number | undefined;
-            labelColor?: string | undefined;
+            color?: string | undefined;
             setAt: {
                 seconds: number;
                 nanoseconds: number;
