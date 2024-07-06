@@ -1337,6 +1337,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         isReadyForTour?: boolean | undefined;
         isOnboardingComplete?: boolean | undefined;
         setbackThreshold?: number | undefined;
+        gameplanStrategies?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
         androidPermissions?: {
             [x: string]: NonNullable<boolean | undefined>;
         } | null | undefined;
@@ -1361,7 +1362,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         issueId: string | null;
         currentAgent: import("..").AgentName;
         timezone: string;
-    }, "uids" | "issueId" | "currentAgent" | "timezone" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "parentIssueIds" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "isReadyForTour" | "isOnboardingComplete" | "setbackThreshold" | "androidPermissions" | "longTermMemory" | "region")>;
+    }, "uids" | "issueId" | "currentAgent" | "timezone" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "parentIssueIds" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "isReadyForTour" | "isOnboardingComplete" | "setbackThreshold" | "gameplanStrategies" | "androidPermissions" | "longTermMemory" | "region")>;
     questionTimeFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;

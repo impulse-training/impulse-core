@@ -39,6 +39,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     isOnboardingComplete: boolean | undefined;
     parentIssueIds: string[] | undefined;
     setbackThreshold: number | undefined;
+    gameplanStrategies: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
     currentAgent: AgentName;
     androidPermissions: {
         [x: string]: NonNullable<boolean | undefined>;
@@ -79,6 +80,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     isOnboardingComplete: undefined;
     parentIssueIds: "";
     setbackThreshold: undefined;
+    gameplanStrategies: "";
     currentAgent: "onboarding";
     androidPermissions: undefined;
     longTermMemory: undefined;

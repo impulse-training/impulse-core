@@ -801,6 +801,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     isReadyForTour?: boolean | undefined;
     isOnboardingComplete?: boolean | undefined;
     setbackThreshold?: number | undefined;
+    gameplanStrategies?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
     androidPermissions?: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
@@ -825,7 +826,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     issueId: string | null;
     currentAgent: import("..").AgentName;
     timezone: string;
-}, "uids" | "issueId" | "currentAgent" | "timezone" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "parentIssueIds" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "isReadyForTour" | "isOnboardingComplete" | "setbackThreshold" | "androidPermissions" | "longTermMemory" | "region")>, folderFactory: import("factory.ts").Factory<{
+}, "uids" | "issueId" | "currentAgent" | "timezone" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "parentIssueIds" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "isReadyForTour" | "isOnboardingComplete" | "setbackThreshold" | "gameplanStrategies" | "androidPermissions" | "longTermMemory" | "region")>, folderFactory: import("factory.ts").Factory<{
     createdAt?: {
         seconds: number;
         nanoseconds: number;

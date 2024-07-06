@@ -26,6 +26,7 @@ export const profileSchema = yup.object({
   isOnboardingComplete: yup.boolean(),
   parentIssueIds: optionalStringArray,
   setbackThreshold: yup.number(),
+  gameplanStrategies: yup.array().of(documentReferenceSchema.required()),
   currentAgent: yup.mixed<AgentName>().default('onboarding'),
   androidPermissions: optionalObjectOf(yup.boolean().required()),
   // This is a record of question data, that may be accessed by the LLM
