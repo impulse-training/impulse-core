@@ -9,22 +9,6 @@ export declare const daySchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     };
-    createdAt: {
-        isEqual?: any;
-        toMillis?: any;
-        toJSON?: any;
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    } | null | undefined;
-    updatedAt: {
-        isEqual?: any;
-        toMillis?: any;
-        toJSON?: any;
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    } | null | undefined;
     issueName: string;
     logsById: {
         [x: string]: {
@@ -2587,8 +2571,6 @@ export declare const daySchema: yup.ObjectSchema<{
         toJSON: undefined;
         toDate: undefined;
     };
-    createdAt: undefined;
-    updatedAt: undefined;
     issueName: undefined;
     logsById: undefined;
     isProcessing: false;
