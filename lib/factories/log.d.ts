@@ -12,6 +12,7 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
         toDate: Function;
     } | null | undefined;
     text?: string | undefined;
+    activeImpulseId?: string | null | undefined;
     senderProfileId?: string | null | undefined;
     views?: {
         openTime: {
@@ -739,7 +740,7 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
         };
     };
     completedTacticIds: string[];
-}, "parentIssueIds" | "issueName" | "date" | "type" | "strategiesById" | "completedTacticIds" | ("createdAt" | "updatedAt" | "text" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse")>;
+}, "parentIssueIds" | "issueName" | "date" | "type" | "strategiesById" | "completedTacticIds" | ("createdAt" | "updatedAt" | "text" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse")>;
 export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     createdAt?: {
         seconds: number;
@@ -752,6 +753,7 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
         toDate: Function;
     } | null | undefined;
     text?: string | undefined;
+    activeImpulseId?: string | null | undefined;
     senderProfileId?: string | null | undefined;
     views?: {
         openTime: {
@@ -1278,4 +1280,4 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
             unit: string;
         };
     };
-}, "date" | "type" | "questionsById" | "questionData" | ("createdAt" | "updatedAt" | "text" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "submittedAt" | "followedUpQuestionIds")>;
+}, "date" | "type" | "questionsById" | "questionData" | ("createdAt" | "updatedAt" | "text" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "submittedAt" | "followedUpQuestionIds")>;

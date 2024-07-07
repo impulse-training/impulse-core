@@ -30,6 +30,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             text?: string | undefined;
+            activeImpulseId?: string | null | undefined;
             senderProfileId?: string | null | undefined;
             views?: {
                 openTime: {
@@ -68,6 +69,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             text?: string | undefined;
+            activeImpulseId?: string | null | undefined;
             senderProfileId?: string | null | undefined;
             views?: {
                 openTime: {
@@ -105,6 +107,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             text?: string | undefined;
+            activeImpulseId?: string | null | undefined;
             senderProfileId?: string | null | undefined;
             views?: {
                 openTime: {
@@ -843,6 +846,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            activeImpulseId?: string | null | undefined;
             senderProfileId?: string | null | undefined;
             views?: {
                 openTime: {
@@ -881,6 +885,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             text?: string | undefined;
+            activeImpulseId?: string | null | undefined;
             senderProfileId?: string | null | undefined;
             views?: {
                 openTime: {
@@ -1419,6 +1424,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             text?: string | undefined;
+            activeImpulseId?: string | null | undefined;
             senderProfileId?: string | null | undefined;
             views?: {
                 openTime: {

@@ -46,6 +46,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     };
+    activeImpulseId: string | null | undefined;
     senderProfileId: string | null | undefined;
     views: {
         openTime: {
@@ -576,6 +577,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
         nanoseconds: undefined;
         toDate: undefined;
     };
+    activeImpulseId: undefined;
     senderProfileId: undefined;
     views: "";
     agent: undefined;

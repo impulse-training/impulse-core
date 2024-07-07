@@ -515,6 +515,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: Function;
         } | null | undefined;
         text?: string | undefined;
+        activeImpulseId?: string | null | undefined;
         senderProfileId?: string | null | undefined;
         views?: {
             openTime: {
@@ -1242,7 +1243,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             };
         };
         completedTacticIds: string[];
-    }, "parentIssueIds" | "issueName" | "date" | "type" | "strategiesById" | "completedTacticIds" | ("createdAt" | "updatedAt" | "text" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse")>;
+    }, "parentIssueIds" | "issueName" | "date" | "type" | "strategiesById" | "completedTacticIds" | ("createdAt" | "updatedAt" | "text" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse")>;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
         createdAt?: {
@@ -1489,6 +1490,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: Function;
         } | null | undefined;
         text?: string | undefined;
+        activeImpulseId?: string | null | undefined;
         senderProfileId?: string | null | undefined;
         views?: {
             openTime: {
@@ -2216,7 +2218,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             };
         };
         completedTacticIds: string[];
-    }, "parentIssueIds" | "issueName" | "date" | "type" | "strategiesById" | "completedTacticIds" | ("createdAt" | "updatedAt" | "text" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse")>;
+    }, "parentIssueIds" | "issueName" | "date" | "type" | "strategiesById" | "completedTacticIds" | ("createdAt" | "updatedAt" | "text" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse")>;
     questionsLogFactory: import("factory.ts").Factory<{
         createdAt?: {
             seconds: number;
@@ -2229,6 +2231,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: Function;
         } | null | undefined;
         text?: string | undefined;
+        activeImpulseId?: string | null | undefined;
         senderProfileId?: string | null | undefined;
         views?: {
             openTime: {
@@ -2755,6 +2758,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 unit: string;
             };
         };
-    }, "date" | "type" | "questionsById" | "questionData" | ("createdAt" | "updatedAt" | "text" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "submittedAt" | "followedUpQuestionIds")>;
+    }, "date" | "type" | "questionsById" | "questionData" | ("createdAt" | "updatedAt" | "text" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "submittedAt" | "followedUpQuestionIds")>;
     tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "setbackThreshold" | "type" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "ordinal" | "prompt" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
 };

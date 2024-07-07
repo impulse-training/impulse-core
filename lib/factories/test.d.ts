@@ -36,6 +36,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         toDate: Function;
     } | null | undefined;
     text?: string | undefined;
+    activeImpulseId?: string | null | undefined;
     senderProfileId?: string | null | undefined;
     views?: {
         openTime: {
@@ -763,7 +764,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         };
     };
     completedTacticIds: string[];
-}, "parentIssueIds" | "issueName" | "date" | "type" | "strategiesById" | "completedTacticIds" | ("createdAt" | "updatedAt" | "text" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse")>, profileFactory: import("factory.ts").Factory<{
+}, "parentIssueIds" | "issueName" | "date" | "type" | "strategiesById" | "completedTacticIds" | ("createdAt" | "updatedAt" | "text" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse")>, profileFactory: import("factory.ts").Factory<{
     createdAt?: {
         seconds: number;
         nanoseconds: number;
