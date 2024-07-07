@@ -3,11 +3,17 @@ import { OptionValue } from '.';
 export declare const stringOptionSchema: yup.ObjectSchema<{
     type: "string";
     createdAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
     updatedAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;

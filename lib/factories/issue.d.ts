@@ -3,11 +3,17 @@ import { TimestampLike } from '../utils/firestore/TimestampLike';
 export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     path?: string | null | undefined;
     createdAt?: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
     updatedAt?: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;

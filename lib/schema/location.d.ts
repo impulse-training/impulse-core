@@ -2,11 +2,17 @@ import * as yup from 'yup';
 export declare const locationSchema: yup.ObjectSchema<{
     profileId: string;
     createdAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
     updatedAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;

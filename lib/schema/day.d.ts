@@ -2,16 +2,25 @@ import * as yup from 'yup';
 import { LogValue } from './log';
 export declare const daySchema: yup.ObjectSchema<{
     date: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     };
     createdAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
     updatedAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -20,11 +29,17 @@ export declare const daySchema: yup.ObjectSchema<{
     logsById: {
         [x: string]: {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -34,11 +49,17 @@ export declare const daySchema: yup.ObjectSchema<{
             senderProfileId?: string | null | undefined;
             views?: {
                 openTime: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 };
                 closeTime: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -52,6 +73,9 @@ export declare const daySchema: yup.ObjectSchema<{
             openAiChoiceResponse?: {} | undefined;
             choice?: "moreStrategies" | "debrief" | undefined;
             date: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -59,11 +83,17 @@ export declare const daySchema: yup.ObjectSchema<{
             type: "actionRecap";
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -73,11 +103,17 @@ export declare const daySchema: yup.ObjectSchema<{
             senderProfileId?: string | null | undefined;
             views?: {
                 openTime: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 };
                 closeTime: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -90,6 +126,9 @@ export declare const daySchema: yup.ObjectSchema<{
             }[] | undefined;
             openAiChoiceResponse?: {} | undefined;
             date: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -97,11 +136,17 @@ export declare const daySchema: yup.ObjectSchema<{
             type: "hidden";
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -111,11 +156,17 @@ export declare const daySchema: yup.ObjectSchema<{
             senderProfileId?: string | null | undefined;
             views?: {
                 openTime: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 };
                 closeTime: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -130,6 +181,9 @@ export declare const daySchema: yup.ObjectSchema<{
             parentIssueIds: string[];
             issueName: string;
             date: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -138,11 +192,17 @@ export declare const daySchema: yup.ObjectSchema<{
             strategiesById: {
                 [x: string]: {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -177,11 +237,17 @@ export declare const daySchema: yup.ObjectSchema<{
                     ordinal: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -215,11 +281,17 @@ export declare const daySchema: yup.ObjectSchema<{
                     outFor: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -250,11 +322,17 @@ export declare const daySchema: yup.ObjectSchema<{
                     contactIds: string[];
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -285,11 +363,17 @@ export declare const daySchema: yup.ObjectSchema<{
                     steps: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -319,11 +403,17 @@ export declare const daySchema: yup.ObjectSchema<{
                     ordinal: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -361,11 +451,17 @@ export declare const daySchema: yup.ObjectSchema<{
                     };
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -378,11 +474,17 @@ export declare const daySchema: yup.ObjectSchema<{
                     tacticsById?: {
                         [x: string]: {
                             createdAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
                             updatedAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
@@ -417,11 +519,17 @@ export declare const daySchema: yup.ObjectSchema<{
                             ordinal: number;
                         } | {
                             createdAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
                             updatedAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
@@ -455,11 +563,17 @@ export declare const daySchema: yup.ObjectSchema<{
                             outFor: number;
                         } | {
                             createdAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
                             updatedAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
@@ -490,11 +604,17 @@ export declare const daySchema: yup.ObjectSchema<{
                             contactIds: string[];
                         } | {
                             createdAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
                             updatedAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
@@ -525,11 +645,17 @@ export declare const daySchema: yup.ObjectSchema<{
                             steps: number;
                         } | {
                             createdAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
                             updatedAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
@@ -559,11 +685,17 @@ export declare const daySchema: yup.ObjectSchema<{
                             ordinal: number;
                         } | {
                             createdAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
                             updatedAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
@@ -605,11 +737,17 @@ export declare const daySchema: yup.ObjectSchema<{
                     creatorProfileId?: string | undefined;
                     next3Tactics?: ({
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -644,11 +782,17 @@ export declare const daySchema: yup.ObjectSchema<{
                         ordinal: number;
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -682,11 +826,17 @@ export declare const daySchema: yup.ObjectSchema<{
                         outFor: number;
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -717,11 +867,17 @@ export declare const daySchema: yup.ObjectSchema<{
                         contactIds: string[];
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -752,11 +908,17 @@ export declare const daySchema: yup.ObjectSchema<{
                         steps: number;
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -786,11 +948,17 @@ export declare const daySchema: yup.ObjectSchema<{
                         ordinal: number;
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -837,11 +1005,17 @@ export declare const daySchema: yup.ObjectSchema<{
             completedTacticIds: string[];
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -850,11 +1024,17 @@ export declare const daySchema: yup.ObjectSchema<{
             senderProfileId?: string | null | undefined;
             views?: {
                 openTime: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 };
                 closeTime: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -868,6 +1048,9 @@ export declare const daySchema: yup.ObjectSchema<{
             openAiChoiceResponse?: {} | undefined;
             text: string;
             date: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -875,11 +1058,17 @@ export declare const daySchema: yup.ObjectSchema<{
             type: "message";
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -889,11 +1078,17 @@ export declare const daySchema: yup.ObjectSchema<{
             senderProfileId?: string | null | undefined;
             views?: {
                 openTime: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 };
                 closeTime: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -906,12 +1101,18 @@ export declare const daySchema: yup.ObjectSchema<{
             }[] | undefined;
             openAiChoiceResponse?: {} | undefined;
             submittedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             followedUpQuestionIds?: string[] | undefined;
             date: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -920,11 +1121,17 @@ export declare const daySchema: yup.ObjectSchema<{
             questionsById: {
                 [x: string]: {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -945,11 +1152,17 @@ export declare const daySchema: yup.ObjectSchema<{
                     })[] | undefined;
                     options?: ({
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -978,11 +1191,17 @@ export declare const daySchema: yup.ObjectSchema<{
                         type: "numeric";
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1014,11 +1233,17 @@ export declare const daySchema: yup.ObjectSchema<{
                     prompt: string;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1040,11 +1265,17 @@ export declare const daySchema: yup.ObjectSchema<{
                     })[] | undefined;
                     options?: ({
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1073,11 +1304,17 @@ export declare const daySchema: yup.ObjectSchema<{
                         type: "numeric";
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1109,11 +1346,17 @@ export declare const daySchema: yup.ObjectSchema<{
                     prompt: string;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1139,11 +1382,17 @@ export declare const daySchema: yup.ObjectSchema<{
                     prompt: string;
                     options: ({
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1172,11 +1421,17 @@ export declare const daySchema: yup.ObjectSchema<{
                         type: "numeric";
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1204,11 +1459,17 @@ export declare const daySchema: yup.ObjectSchema<{
                     canAddNewOptions: NonNullable<boolean | undefined>;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1230,11 +1491,17 @@ export declare const daySchema: yup.ObjectSchema<{
                     })[] | undefined;
                     options?: ({
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1263,11 +1530,17 @@ export declare const daySchema: yup.ObjectSchema<{
                         type: "numeric";
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1301,11 +1574,17 @@ export declare const daySchema: yup.ObjectSchema<{
                     prompt: string;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1327,11 +1606,17 @@ export declare const daySchema: yup.ObjectSchema<{
                     })[] | undefined;
                     options?: ({
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1360,11 +1645,17 @@ export declare const daySchema: yup.ObjectSchema<{
                         type: "numeric";
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1404,6 +1695,9 @@ export declare const daySchema: yup.ObjectSchema<{
                     numericValue?: number | undefined;
                     color?: string | undefined;
                     setAt: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1414,11 +1708,17 @@ export declare const daySchema: yup.ObjectSchema<{
             };
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1428,11 +1728,17 @@ export declare const daySchema: yup.ObjectSchema<{
             senderProfileId?: string | null | undefined;
             views?: {
                 openTime: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 };
                 closeTime: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1446,6 +1752,9 @@ export declare const daySchema: yup.ObjectSchema<{
             openAiChoiceResponse?: {} | undefined;
             suggestedStrategyIds?: string[] | undefined;
             date: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1454,11 +1763,17 @@ export declare const daySchema: yup.ObjectSchema<{
             strategiesById: {
                 [x: string]: {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1493,11 +1808,17 @@ export declare const daySchema: yup.ObjectSchema<{
                     ordinal: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1531,11 +1852,17 @@ export declare const daySchema: yup.ObjectSchema<{
                     outFor: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1566,11 +1893,17 @@ export declare const daySchema: yup.ObjectSchema<{
                     contactIds: string[];
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1601,11 +1934,17 @@ export declare const daySchema: yup.ObjectSchema<{
                     steps: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1635,11 +1974,17 @@ export declare const daySchema: yup.ObjectSchema<{
                     ordinal: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1677,11 +2022,17 @@ export declare const daySchema: yup.ObjectSchema<{
                     };
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1694,11 +2045,17 @@ export declare const daySchema: yup.ObjectSchema<{
                     tacticsById?: {
                         [x: string]: {
                             createdAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
                             updatedAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
@@ -1733,11 +2090,17 @@ export declare const daySchema: yup.ObjectSchema<{
                             ordinal: number;
                         } | {
                             createdAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
                             updatedAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
@@ -1771,11 +2134,17 @@ export declare const daySchema: yup.ObjectSchema<{
                             outFor: number;
                         } | {
                             createdAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
                             updatedAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
@@ -1806,11 +2175,17 @@ export declare const daySchema: yup.ObjectSchema<{
                             contactIds: string[];
                         } | {
                             createdAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
                             updatedAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
@@ -1841,11 +2216,17 @@ export declare const daySchema: yup.ObjectSchema<{
                             steps: number;
                         } | {
                             createdAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
                             updatedAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
@@ -1875,11 +2256,17 @@ export declare const daySchema: yup.ObjectSchema<{
                             ordinal: number;
                         } | {
                             createdAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
                             updatedAt?: {
+                                isEqual?: any;
+                                toMillis?: any;
+                                toJSON?: any;
                                 seconds: number;
                                 nanoseconds: number;
                                 toDate: Function;
@@ -1921,11 +2308,17 @@ export declare const daySchema: yup.ObjectSchema<{
                     creatorProfileId?: string | undefined;
                     next3Tactics?: ({
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1960,11 +2353,17 @@ export declare const daySchema: yup.ObjectSchema<{
                         ordinal: number;
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1998,11 +2397,17 @@ export declare const daySchema: yup.ObjectSchema<{
                         outFor: number;
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -2033,11 +2438,17 @@ export declare const daySchema: yup.ObjectSchema<{
                         contactIds: string[];
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -2068,11 +2479,17 @@ export declare const daySchema: yup.ObjectSchema<{
                         steps: number;
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -2102,11 +2519,17 @@ export declare const daySchema: yup.ObjectSchema<{
                         ordinal: number;
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -2159,6 +2582,9 @@ export declare const daySchema: yup.ObjectSchema<{
     date: {
         seconds: undefined;
         nanoseconds: undefined;
+        isEqual: undefined;
+        toMillis: undefined;
+        toJSON: undefined;
         toDate: undefined;
     };
     createdAt: undefined;

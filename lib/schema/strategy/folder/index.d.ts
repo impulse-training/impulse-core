@@ -8,11 +8,17 @@ export declare const folderSchema: yup.ObjectSchema<{
     ordinal: number;
     prompt: string;
     createdAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
     updatedAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -25,11 +31,17 @@ export declare const folderSchema: yup.ObjectSchema<{
     tacticsById: {
         [x: string]: {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -64,11 +76,17 @@ export declare const folderSchema: yup.ObjectSchema<{
             ordinal: number;
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -102,11 +120,17 @@ export declare const folderSchema: yup.ObjectSchema<{
             outFor: number;
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -137,11 +161,17 @@ export declare const folderSchema: yup.ObjectSchema<{
             contactIds: string[];
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -172,11 +202,17 @@ export declare const folderSchema: yup.ObjectSchema<{
             steps: number;
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -206,11 +242,17 @@ export declare const folderSchema: yup.ObjectSchema<{
             ordinal: number;
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -250,11 +292,17 @@ export declare const folderSchema: yup.ObjectSchema<{
     } | null | undefined;
     next3Tactics: ({
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -289,11 +337,17 @@ export declare const folderSchema: yup.ObjectSchema<{
         ordinal: number;
     } | {
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -327,11 +381,17 @@ export declare const folderSchema: yup.ObjectSchema<{
         outFor: number;
     } | {
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -362,11 +422,17 @@ export declare const folderSchema: yup.ObjectSchema<{
         contactIds: string[];
     } | {
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -397,11 +463,17 @@ export declare const folderSchema: yup.ObjectSchema<{
         steps: number;
     } | {
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -431,11 +503,17 @@ export declare const folderSchema: yup.ObjectSchema<{
         ordinal: number;
     } | {
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;

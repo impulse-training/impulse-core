@@ -2,11 +2,17 @@ import * as Factory from 'factory.ts';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     createdAt?: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
     updatedAt?: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -28,11 +34,17 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
     })[] | undefined;
     options?: ({
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -61,11 +73,17 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
         type: "numeric";
     } | {
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;

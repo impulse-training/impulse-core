@@ -14,11 +14,17 @@ export declare const dayReviewTacticSchema: yup.ObjectSchema<{
     type: "day-review";
     profileId: string | null | undefined;
     createdAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
     updatedAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;

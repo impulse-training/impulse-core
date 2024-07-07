@@ -1,10 +1,16 @@
 export declare const applicationFactory: import("factory.ts").Factory<import("..").ApplicationValue, keyof import("..").ApplicationValue>, commentFactory: import("factory.ts").Factory<{
     createdAt?: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
     updatedAt?: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -26,11 +32,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     profileId: string;
 }, "profileId" | ("createdAt" | "updatedAt" | "tacticId" | "tacticTitle" | "text" | "recording" | "isEdited" | "avatar")>, impulseFactory: import("factory.ts").Factory<{
     createdAt?: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
     updatedAt?: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -40,11 +52,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     senderProfileId?: string | null | undefined;
     views?: {
         openTime: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         };
         closeTime: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -59,6 +77,9 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     parentIssueIds: string[];
     issueName: string;
     date: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -67,11 +88,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     strategiesById: {
         [x: string]: {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -106,11 +133,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             ordinal: number;
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -144,11 +177,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             outFor: number;
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -179,11 +218,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             contactIds: string[];
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -214,11 +259,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             steps: number;
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -248,11 +299,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             ordinal: number;
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -290,11 +347,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             };
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -307,11 +370,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             tacticsById?: {
                 [x: string]: {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -346,11 +415,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     ordinal: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -384,11 +459,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     outFor: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -419,11 +500,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     contactIds: string[];
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -454,11 +541,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     steps: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -488,11 +581,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     ordinal: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -534,11 +633,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             creatorProfileId?: string | undefined;
             next3Tactics?: ({
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -573,11 +678,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 ordinal: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -611,11 +722,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 outFor: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -646,11 +763,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 contactIds: string[];
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -681,11 +804,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 steps: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -715,11 +844,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 ordinal: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -766,26 +901,41 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     completedTacticIds: string[];
 }, "parentIssueIds" | "issueName" | "date" | "type" | "strategiesById" | "completedTacticIds" | ("createdAt" | "updatedAt" | "text" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse")>, profileFactory: import("factory.ts").Factory<{
     createdAt?: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
     updatedAt?: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
     lastActiveAt?: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
     widgetInstalledAt?: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
     widgetLastPressedAt?: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -814,6 +964,9 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             numericValue?: number | undefined;
             color?: string | undefined;
             setAt: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -829,11 +982,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     timezone: string;
 }, "uids" | "issueId" | "currentAgent" | "timezone" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "parentIssueIds" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "isReadyForTour" | "isOnboardingComplete" | "setbackThreshold" | "gameplanStrategies" | "androidPermissions" | "longTermMemory" | "region")>, folderFactory: import("factory.ts").Factory<{
     createdAt?: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
     updatedAt?: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -846,11 +1005,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     tacticsById?: {
         [x: string]: {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -885,11 +1050,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             ordinal: number;
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -923,11 +1094,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             outFor: number;
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -958,11 +1135,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             contactIds: string[];
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -993,11 +1176,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             steps: number;
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1027,11 +1216,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             ordinal: number;
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1073,11 +1268,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     creatorProfileId?: string | undefined;
     next3Tactics?: ({
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1112,11 +1313,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         ordinal: number;
     } | {
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1150,11 +1357,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         outFor: number;
     } | {
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1185,11 +1398,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         contactIds: string[];
     } | {
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1220,11 +1439,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         steps: number;
     } | {
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1254,11 +1479,17 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         ordinal: number;
     } | {
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;

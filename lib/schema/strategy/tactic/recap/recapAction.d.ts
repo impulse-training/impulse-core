@@ -10,11 +10,17 @@ export declare const recapActionTacticSchema: yup.ObjectSchema<{
     type: import("./recapKeyType").RecapKeyType;
     profileId: string | null | undefined;
     createdAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
     updatedAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;

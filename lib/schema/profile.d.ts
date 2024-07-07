@@ -3,26 +3,41 @@ import * as yup from 'yup';
 import { AgentName } from '../agents';
 export declare const profileSchema: yup.ObjectSchema<{
     createdAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
     updatedAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
     lastActiveAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
     widgetInstalledAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
     widgetLastPressedAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -52,6 +67,9 @@ export declare const profileSchema: yup.ObjectSchema<{
             numericValue?: number | undefined;
             color?: string | undefined;
             setAt: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;

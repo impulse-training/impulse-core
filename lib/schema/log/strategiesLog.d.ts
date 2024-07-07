@@ -2,11 +2,17 @@ import * as yup from 'yup';
 export declare const strategiesLogSchema: yup.ObjectSchema<{
     openAiChoiceResponse: {} | undefined;
     createdAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
     updatedAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -14,6 +20,9 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
     text: string | undefined;
     type: "strategies";
     date: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -22,11 +31,17 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
     senderProfileId: string | null | undefined;
     views: {
         openTime: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         };
         closeTime: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -41,11 +56,17 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
     strategiesById: {
         [x: string]: {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -80,11 +101,17 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
             ordinal: number;
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -118,11 +145,17 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
             outFor: number;
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -153,11 +186,17 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
             contactIds: string[];
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -188,11 +227,17 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
             steps: number;
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -222,11 +267,17 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
             ordinal: number;
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -264,11 +315,17 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
             };
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -281,11 +338,17 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
             tacticsById?: {
                 [x: string]: {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -320,11 +383,17 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     ordinal: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -358,11 +427,17 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     outFor: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -393,11 +468,17 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     contactIds: string[];
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -428,11 +509,17 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     steps: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -462,11 +549,17 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     ordinal: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -508,11 +601,17 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
             creatorProfileId?: string | undefined;
             next3Tactics?: ({
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -547,11 +646,17 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 ordinal: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -585,11 +690,17 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 outFor: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -620,11 +731,17 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 contactIds: string[];
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -655,11 +772,17 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 steps: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -689,11 +812,17 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 ordinal: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -748,6 +877,9 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
     date: {
         seconds: undefined;
         nanoseconds: undefined;
+        isEqual: undefined;
+        toMillis: undefined;
+        toJSON: undefined;
         toDate: undefined;
     };
     activeImpulseId: undefined;

@@ -2,11 +2,17 @@ import * as Factory from 'factory.ts';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     createdAt?: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
     updatedAt?: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -19,11 +25,17 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
     tacticsById?: {
         [x: string]: {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -58,11 +70,17 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             ordinal: number;
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -96,11 +114,17 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             outFor: number;
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -131,11 +155,17 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             contactIds: string[];
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -166,11 +196,17 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             steps: number;
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -200,11 +236,17 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             ordinal: number;
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -246,11 +288,17 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
     creatorProfileId?: string | undefined;
     next3Tactics?: ({
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -285,11 +333,17 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         ordinal: number;
     } | {
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -323,11 +377,17 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         outFor: number;
     } | {
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -358,11 +418,17 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         contactIds: string[];
     } | {
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -393,11 +459,17 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         steps: number;
     } | {
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -427,11 +499,17 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         ordinal: number;
     } | {
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;

@@ -2,11 +2,17 @@ import * as yup from 'yup';
 export declare const hiddenLogSchema: yup.ObjectSchema<{
     openAiChoiceResponse: {} | undefined;
     createdAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
     updatedAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -14,6 +20,9 @@ export declare const hiddenLogSchema: yup.ObjectSchema<{
     text: string | undefined;
     type: "hidden";
     date: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -22,11 +31,17 @@ export declare const hiddenLogSchema: yup.ObjectSchema<{
     senderProfileId: string | null | undefined;
     views: {
         openTime: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         };
         closeTime: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -46,6 +61,9 @@ export declare const hiddenLogSchema: yup.ObjectSchema<{
     date: {
         seconds: undefined;
         nanoseconds: undefined;
+        isEqual: undefined;
+        toMillis: undefined;
+        toJSON: undefined;
         toDate: undefined;
     };
     activeImpulseId: undefined;

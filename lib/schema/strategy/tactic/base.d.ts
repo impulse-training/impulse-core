@@ -10,11 +10,17 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
     type: yup.Defined<K>;
     profileId: string | null | undefined;
     createdAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
     updatedAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;

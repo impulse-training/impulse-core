@@ -2,11 +2,17 @@ export declare const factories: {
     applicationFactory: import("factory.ts").Factory<import("..").ApplicationValue, keyof import("..").ApplicationValue>;
     commentFactory: import("factory.ts").Factory<{
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -30,11 +36,17 @@ export declare const factories: {
     dayFactory: import("factory.ts").Factory<import("..").DayValue, "issueName" | "date" | "logsById" | "isProcessing" | ("createdAt" | "updatedAt")>;
     folderFactory: import("factory.ts").Factory<{
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -47,11 +59,17 @@ export declare const factories: {
         tacticsById?: {
             [x: string]: {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -86,11 +104,17 @@ export declare const factories: {
                 ordinal: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -124,11 +148,17 @@ export declare const factories: {
                 outFor: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -159,11 +189,17 @@ export declare const factories: {
                 contactIds: string[];
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -194,11 +230,17 @@ export declare const factories: {
                 steps: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -228,11 +270,17 @@ export declare const factories: {
                 ordinal: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -274,11 +322,17 @@ export declare const factories: {
         creatorProfileId?: string | undefined;
         next3Tactics?: ({
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -313,11 +367,17 @@ export declare const factories: {
             ordinal: number;
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -351,11 +411,17 @@ export declare const factories: {
             outFor: number;
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -386,11 +452,17 @@ export declare const factories: {
             contactIds: string[];
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -421,11 +493,17 @@ export declare const factories: {
             steps: number;
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -455,11 +533,17 @@ export declare const factories: {
             ordinal: number;
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -504,11 +588,17 @@ export declare const factories: {
     }, "type" | "ordinal" | "prompt" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics")>;
     impulseFactory: import("factory.ts").Factory<{
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -518,11 +608,17 @@ export declare const factories: {
         senderProfileId?: string | null | undefined;
         views?: {
             openTime: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             };
             closeTime: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -537,6 +633,9 @@ export declare const factories: {
         parentIssueIds: string[];
         issueName: string;
         date: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -545,11 +644,17 @@ export declare const factories: {
         strategiesById: {
             [x: string]: {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -584,11 +689,17 @@ export declare const factories: {
                 ordinal: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -622,11 +733,17 @@ export declare const factories: {
                 outFor: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -657,11 +774,17 @@ export declare const factories: {
                 contactIds: string[];
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -692,11 +815,17 @@ export declare const factories: {
                 steps: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -726,11 +855,17 @@ export declare const factories: {
                 ordinal: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -768,11 +903,17 @@ export declare const factories: {
                 };
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -785,11 +926,17 @@ export declare const factories: {
                 tacticsById?: {
                     [x: string]: {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -824,11 +971,17 @@ export declare const factories: {
                         ordinal: number;
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -862,11 +1015,17 @@ export declare const factories: {
                         outFor: number;
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -897,11 +1056,17 @@ export declare const factories: {
                         contactIds: string[];
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -932,11 +1097,17 @@ export declare const factories: {
                         steps: number;
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -966,11 +1137,17 @@ export declare const factories: {
                         ordinal: number;
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1012,11 +1189,17 @@ export declare const factories: {
                 creatorProfileId?: string | undefined;
                 next3Tactics?: ({
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1051,11 +1234,17 @@ export declare const factories: {
                     ordinal: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1089,11 +1278,17 @@ export declare const factories: {
                     outFor: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1124,11 +1319,17 @@ export declare const factories: {
                     contactIds: string[];
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1159,11 +1360,17 @@ export declare const factories: {
                     steps: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1193,11 +1400,17 @@ export declare const factories: {
                     ordinal: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1246,11 +1459,17 @@ export declare const factories: {
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1266,11 +1485,17 @@ export declare const factories: {
     }, "ordinal" | "name" | "synonyms" | "parentIds" | "parentNames" | ("path" | "createdAt" | "updatedAt" | "parentId" | "profileCount" | "isFeatured")>;
     locationFactory: import("factory.ts").Factory<{
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1290,6 +1515,9 @@ export declare const factories: {
                 numericValue?: number | undefined;
                 color?: string | undefined;
                 setAt: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1301,26 +1529,41 @@ export declare const factories: {
     }, string | number>;
     profileFactory: import("factory.ts").Factory<{
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         lastActiveAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         widgetInstalledAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         widgetLastPressedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1349,6 +1592,9 @@ export declare const factories: {
                 numericValue?: number | undefined;
                 color?: string | undefined;
                 setAt: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1365,11 +1611,17 @@ export declare const factories: {
     }, "uids" | "issueId" | "currentAgent" | "timezone" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "parentIssueIds" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "isReadyForTour" | "isOnboardingComplete" | "setbackThreshold" | "gameplanStrategies" | "androidPermissions" | "longTermMemory" | "region")>;
     questionTimeFactory: import("factory.ts").Factory<{
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1391,11 +1643,17 @@ export declare const factories: {
         })[] | undefined;
         options?: ({
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1424,11 +1682,17 @@ export declare const factories: {
             type: "numeric";
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1461,11 +1725,17 @@ export declare const factories: {
     }, "type" | "ordinal" | "prompt" | ("createdAt" | "updatedAt" | "setbackThreshold" | "followUps" | "options" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1479,11 +1749,17 @@ export declare const factories: {
     }, "profileId" | "type" | "name" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;
     impulseLogFactory: import("factory.ts").Factory<{
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1493,11 +1769,17 @@ export declare const factories: {
         senderProfileId?: string | null | undefined;
         views?: {
             openTime: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             };
             closeTime: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1512,6 +1794,9 @@ export declare const factories: {
         parentIssueIds: string[];
         issueName: string;
         date: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1520,11 +1805,17 @@ export declare const factories: {
         strategiesById: {
             [x: string]: {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1559,11 +1850,17 @@ export declare const factories: {
                 ordinal: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1597,11 +1894,17 @@ export declare const factories: {
                 outFor: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1632,11 +1935,17 @@ export declare const factories: {
                 contactIds: string[];
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1667,11 +1976,17 @@ export declare const factories: {
                 steps: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1701,11 +2016,17 @@ export declare const factories: {
                 ordinal: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1743,11 +2064,17 @@ export declare const factories: {
                 };
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1760,11 +2087,17 @@ export declare const factories: {
                 tacticsById?: {
                     [x: string]: {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1799,11 +2132,17 @@ export declare const factories: {
                         ordinal: number;
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1837,11 +2176,17 @@ export declare const factories: {
                         outFor: number;
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1872,11 +2217,17 @@ export declare const factories: {
                         contactIds: string[];
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1907,11 +2258,17 @@ export declare const factories: {
                         steps: number;
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1941,11 +2298,17 @@ export declare const factories: {
                         ordinal: number;
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1987,11 +2350,17 @@ export declare const factories: {
                 creatorProfileId?: string | undefined;
                 next3Tactics?: ({
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2026,11 +2395,17 @@ export declare const factories: {
                     ordinal: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2064,11 +2439,17 @@ export declare const factories: {
                     outFor: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2099,11 +2480,17 @@ export declare const factories: {
                     contactIds: string[];
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2134,11 +2521,17 @@ export declare const factories: {
                     steps: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2168,11 +2561,17 @@ export declare const factories: {
                     ordinal: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2220,11 +2619,17 @@ export declare const factories: {
     }, "parentIssueIds" | "issueName" | "date" | "type" | "strategiesById" | "completedTacticIds" | ("createdAt" | "updatedAt" | "text" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse")>;
     questionsLogFactory: import("factory.ts").Factory<{
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -2234,11 +2639,17 @@ export declare const factories: {
         senderProfileId?: string | null | undefined;
         views?: {
             openTime: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             };
             closeTime: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -2251,12 +2662,18 @@ export declare const factories: {
         }[] | undefined;
         openAiChoiceResponse?: {} | undefined;
         submittedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         followedUpQuestionIds?: string[] | undefined;
         date: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -2265,11 +2682,17 @@ export declare const factories: {
         questionsById: {
             [x: string]: {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -2290,11 +2713,17 @@ export declare const factories: {
                 })[] | undefined;
                 options?: ({
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2323,11 +2752,17 @@ export declare const factories: {
                     type: "numeric";
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2359,11 +2794,17 @@ export declare const factories: {
                 prompt: string;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -2385,11 +2826,17 @@ export declare const factories: {
                 })[] | undefined;
                 options?: ({
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2418,11 +2865,17 @@ export declare const factories: {
                     type: "numeric";
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2454,11 +2907,17 @@ export declare const factories: {
                 prompt: string;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -2484,11 +2943,17 @@ export declare const factories: {
                 prompt: string;
                 options: ({
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2517,11 +2982,17 @@ export declare const factories: {
                     type: "numeric";
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2549,11 +3020,17 @@ export declare const factories: {
                 canAddNewOptions: NonNullable<boolean | undefined>;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -2575,11 +3052,17 @@ export declare const factories: {
                 })[] | undefined;
                 options?: ({
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2608,11 +3091,17 @@ export declare const factories: {
                     type: "numeric";
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2646,11 +3135,17 @@ export declare const factories: {
                 prompt: string;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -2672,11 +3167,17 @@ export declare const factories: {
                 })[] | undefined;
                 options?: ({
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2705,11 +3206,17 @@ export declare const factories: {
                     type: "numeric";
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2749,6 +3256,9 @@ export declare const factories: {
                 numericValue?: number | undefined;
                 color?: string | undefined;
                 setAt: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;

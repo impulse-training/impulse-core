@@ -2,11 +2,17 @@ import * as yup from 'yup';
 export declare const impulseLogSchema: yup.ObjectSchema<{
     openAiChoiceResponse: {} | undefined;
     createdAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
     updatedAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -14,6 +20,9 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
     text: string | undefined;
     type: "impulse";
     date: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
@@ -22,11 +31,17 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
     senderProfileId: string | null | undefined;
     views: {
         openTime: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         };
         closeTime: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -42,11 +57,17 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
     strategiesById: {
         [x: string]: {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -81,11 +102,17 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
             ordinal: number;
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -119,11 +146,17 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
             outFor: number;
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -154,11 +187,17 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
             contactIds: string[];
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -189,11 +228,17 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
             steps: number;
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -223,11 +268,17 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
             ordinal: number;
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -265,11 +316,17 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
             };
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -282,11 +339,17 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
             tacticsById?: {
                 [x: string]: {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -321,11 +384,17 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                     ordinal: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -359,11 +428,17 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                     outFor: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -394,11 +469,17 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                     contactIds: string[];
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -429,11 +510,17 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                     steps: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -463,11 +550,17 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                     ordinal: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -509,11 +602,17 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
             creatorProfileId?: string | undefined;
             next3Tactics?: ({
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -548,11 +647,17 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                 ordinal: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -586,11 +691,17 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                 outFor: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -621,11 +732,17 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                 contactIds: string[];
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -656,11 +773,17 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                 steps: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -690,11 +813,17 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                 ordinal: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -748,6 +877,9 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
     date: {
         seconds: undefined;
         nanoseconds: undefined;
+        isEqual: undefined;
+        toMillis: undefined;
+        toJSON: undefined;
         toDate: undefined;
     };
     activeImpulseId: undefined;

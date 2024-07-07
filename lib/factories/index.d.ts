@@ -3,11 +3,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
     applicationFactory: import("factory.ts").Factory<import("..").ApplicationValue, keyof import("..").ApplicationValue>;
     commentFactory: import("factory.ts").Factory<{
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -31,11 +37,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
     dayFactory: import("factory.ts").Factory<import("..").DayValue, "issueName" | "date" | "logsById" | "isProcessing" | ("createdAt" | "updatedAt")>;
     folderFactory: import("factory.ts").Factory<{
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -48,11 +60,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         tacticsById?: {
             [x: string]: {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -87,11 +105,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 ordinal: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -125,11 +149,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 outFor: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -160,11 +190,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 contactIds: string[];
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -195,11 +231,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 steps: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -229,11 +271,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 ordinal: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -275,11 +323,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         creatorProfileId?: string | undefined;
         next3Tactics?: ({
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -314,11 +368,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             ordinal: number;
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -352,11 +412,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             outFor: number;
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -387,11 +453,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             contactIds: string[];
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -422,11 +494,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             steps: number;
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -456,11 +534,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             ordinal: number;
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -505,11 +589,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
     }, "type" | "ordinal" | "prompt" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics")>;
     impulseFactory: import("factory.ts").Factory<{
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -519,11 +609,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         senderProfileId?: string | null | undefined;
         views?: {
             openTime: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             };
             closeTime: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -538,6 +634,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         parentIssueIds: string[];
         issueName: string;
         date: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -546,11 +645,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         strategiesById: {
             [x: string]: {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -585,11 +690,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 ordinal: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -623,11 +734,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 outFor: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -658,11 +775,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 contactIds: string[];
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -693,11 +816,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 steps: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -727,11 +856,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 ordinal: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -769,11 +904,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 };
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -786,11 +927,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 tacticsById?: {
                     [x: string]: {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -825,11 +972,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         ordinal: number;
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -863,11 +1016,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         outFor: number;
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -898,11 +1057,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         contactIds: string[];
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -933,11 +1098,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         steps: number;
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -967,11 +1138,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         ordinal: number;
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1013,11 +1190,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 creatorProfileId?: string | undefined;
                 next3Tactics?: ({
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1052,11 +1235,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     ordinal: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1090,11 +1279,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     outFor: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1125,11 +1320,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     contactIds: string[];
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1160,11 +1361,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     steps: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1194,11 +1401,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     ordinal: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -1247,11 +1460,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1267,11 +1486,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
     }, "ordinal" | "name" | "synonyms" | "parentIds" | "parentNames" | ("path" | "createdAt" | "updatedAt" | "parentId" | "profileCount" | "isFeatured")>;
     locationFactory: import("factory.ts").Factory<{
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1291,6 +1516,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 numericValue?: number | undefined;
                 color?: string | undefined;
                 setAt: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1302,26 +1530,41 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
     }, string | number>;
     profileFactory: import("factory.ts").Factory<{
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         lastActiveAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         widgetInstalledAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         widgetLastPressedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1350,6 +1593,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 numericValue?: number | undefined;
                 color?: string | undefined;
                 setAt: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1366,11 +1612,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
     }, "uids" | "issueId" | "currentAgent" | "timezone" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "parentIssueIds" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "isReadyForTour" | "isOnboardingComplete" | "setbackThreshold" | "gameplanStrategies" | "androidPermissions" | "longTermMemory" | "region")>;
     questionTimeFactory: import("factory.ts").Factory<{
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1392,11 +1644,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         })[] | undefined;
         options?: ({
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1425,11 +1683,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             type: "numeric";
         } | {
             createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
             updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1462,11 +1726,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
     }, "type" | "ordinal" | "prompt" | ("createdAt" | "updatedAt" | "setbackThreshold" | "followUps" | "options" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1480,11 +1750,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
     }, "profileId" | "type" | "name" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;
     impulseLogFactory: import("factory.ts").Factory<{
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1494,11 +1770,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         senderProfileId?: string | null | undefined;
         views?: {
             openTime: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             };
             closeTime: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -1513,6 +1795,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         parentIssueIds: string[];
         issueName: string;
         date: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -1521,11 +1806,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         strategiesById: {
             [x: string]: {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1560,11 +1851,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 ordinal: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1598,11 +1895,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 outFor: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1633,11 +1936,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 contactIds: string[];
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1668,11 +1977,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 steps: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1702,11 +2017,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 ordinal: number;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1744,11 +2065,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 };
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -1761,11 +2088,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 tacticsById?: {
                     [x: string]: {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1800,11 +2133,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         ordinal: number;
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1838,11 +2177,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         outFor: number;
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1873,11 +2218,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         contactIds: string[];
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1908,11 +2259,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         steps: number;
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1942,11 +2299,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         ordinal: number;
                     } | {
                         createdAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
                         updatedAt?: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
                             seconds: number;
                             nanoseconds: number;
                             toDate: Function;
@@ -1988,11 +2351,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 creatorProfileId?: string | undefined;
                 next3Tactics?: ({
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2027,11 +2396,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     ordinal: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2065,11 +2440,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     outFor: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2100,11 +2481,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     contactIds: string[];
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2135,11 +2522,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     steps: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2169,11 +2562,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     ordinal: number;
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2221,11 +2620,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
     }, "parentIssueIds" | "issueName" | "date" | "type" | "strategiesById" | "completedTacticIds" | ("createdAt" | "updatedAt" | "text" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse")>;
     questionsLogFactory: import("factory.ts").Factory<{
         createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -2235,11 +2640,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         senderProfileId?: string | null | undefined;
         views?: {
             openTime: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
             };
             closeTime: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;
@@ -2252,12 +2663,18 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         }[] | undefined;
         openAiChoiceResponse?: {} | undefined;
         submittedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
         followedUpQuestionIds?: string[] | undefined;
         date: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
             seconds: number;
             nanoseconds: number;
             toDate: Function;
@@ -2266,11 +2683,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         questionsById: {
             [x: string]: {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -2291,11 +2714,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 })[] | undefined;
                 options?: ({
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2324,11 +2753,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     type: "numeric";
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2360,11 +2795,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 prompt: string;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -2386,11 +2827,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 })[] | undefined;
                 options?: ({
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2419,11 +2866,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     type: "numeric";
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2455,11 +2908,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 prompt: string;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -2485,11 +2944,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 prompt: string;
                 options: ({
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2518,11 +2983,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     type: "numeric";
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2550,11 +3021,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 canAddNewOptions: NonNullable<boolean | undefined>;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -2576,11 +3053,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 })[] | undefined;
                 options?: ({
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2609,11 +3092,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     type: "numeric";
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2647,11 +3136,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 prompt: string;
             } | {
                 createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
                 updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;
@@ -2673,11 +3168,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 })[] | undefined;
                 options?: ({
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2706,11 +3207,17 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     type: "numeric";
                 } | {
                     createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
                     updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
                         seconds: number;
                         nanoseconds: number;
                         toDate: Function;
@@ -2750,6 +3257,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 numericValue?: number | undefined;
                 color?: string | undefined;
                 setAt: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
                     seconds: number;
                     nanoseconds: number;
                     toDate: Function;

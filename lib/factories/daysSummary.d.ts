@@ -9,6 +9,9 @@ export declare const makeDaysSummaryFactory: (TimestampKlass: typeof TimestampLi
             numericValue?: number | undefined;
             color?: string | undefined;
             setAt: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
                 seconds: number;
                 nanoseconds: number;
                 toDate: Function;

@@ -3,11 +3,17 @@ import { OptionValue } from '.';
 export declare const numericOptionSchema: yup.ObjectSchema<{
     type: "numeric";
     createdAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
     updatedAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
         seconds: number;
         nanoseconds: number;
         toDate: Function;
