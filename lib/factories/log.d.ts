@@ -923,6 +923,7 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    isDebrief?: boolean | undefined;
     followedUpQuestionIds?: string[] | undefined;
     date: {
         isEqual?: any;
@@ -1521,4 +1522,4 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
             unit: string;
         };
     };
-}, "date" | "type" | "questionsById" | "questionData" | ("createdAt" | "updatedAt" | "text" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "submittedAt" | "followedUpQuestionIds")>;
+}, "date" | "type" | "questionsById" | "questionData" | ("createdAt" | "updatedAt" | "text" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "submittedAt" | "isDebrief" | "followedUpQuestionIds")>;

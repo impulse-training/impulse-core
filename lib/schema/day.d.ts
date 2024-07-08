@@ -1093,6 +1093,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            isDebrief?: boolean | undefined;
             followedUpQuestionIds?: string[] | undefined;
             date: {
                 isEqual?: any;

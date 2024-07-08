@@ -2673,6 +2673,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        isDebrief?: boolean | undefined;
         followedUpQuestionIds?: string[] | undefined;
         date: {
             isEqual?: any;
@@ -3271,6 +3272,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 unit: string;
             };
         };
-    }, "date" | "type" | "questionsById" | "questionData" | ("createdAt" | "updatedAt" | "text" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "submittedAt" | "followedUpQuestionIds")>;
+    }, "date" | "type" | "questionsById" | "questionData" | ("createdAt" | "updatedAt" | "text" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "submittedAt" | "isDebrief" | "followedUpQuestionIds")>;
     tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "setbackThreshold" | "type" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "ordinal" | "prompt" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
 };
