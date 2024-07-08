@@ -859,6 +859,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     duration: number;
                 };
             })[] | undefined;
+            nextTacticId?: string | undefined;
             type: "folder";
             ordinal: number;
             prompt: string;

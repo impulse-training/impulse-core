@@ -14,6 +14,7 @@ export const folderSchema = strategyBase().shape({
   invitationUrl: yup.string().url().required(),
   tacticsById: optionalObjectOf(tacticSchema),
   next3Tactics: yup.array().of(tacticSchema),
+  nextTacticId: yup.string(),
 });
 
 export type FolderValue = yup.InferType<typeof folderSchema>;

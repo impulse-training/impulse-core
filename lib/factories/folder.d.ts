@@ -546,9 +546,10 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             duration: number;
         };
     })[] | undefined;
+    nextTacticId?: string | undefined;
     type: "folder";
     ordinal: number;
     prompt: string;
     invitationCode: string;
     invitationUrl: string;
-}, "type" | "ordinal" | "prompt" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics")>;
+}, "type" | "ordinal" | "prompt" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics" | "nextTacticId")>;

@@ -861,6 +861,7 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                     duration: number;
                 };
             })[] | undefined;
+            nextTacticId?: string | undefined;
             type: "folder";
             ordinal: number;
             prompt: string;

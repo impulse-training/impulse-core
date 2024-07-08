@@ -891,6 +891,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     duration: number;
                 };
             })[] | undefined;
+            nextTacticId?: string | undefined;
             type: "folder";
             ordinal: number;
             prompt: string;
@@ -1526,9 +1527,10 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             duration: number;
         };
     })[] | undefined;
+    nextTacticId?: string | undefined;
     type: "folder";
     ordinal: number;
     prompt: string;
     invitationCode: string;
     invitationUrl: string;
-}, "type" | "ordinal" | "prompt" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "setbackThreshold" | "type" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "ordinal" | "prompt" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+}, "type" | "ordinal" | "prompt" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics" | "nextTacticId")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "setbackThreshold" | "type" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "ordinal" | "prompt" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;

@@ -550,6 +550,7 @@ export declare const folderSchema: yup.ObjectSchema<{
             duration: number;
         };
     })[] | undefined;
+    nextTacticId: string | undefined;
 }, yup.AnyObject, {
     recommendedForIssueIds: "";
     recommendedForIssueOrdinals: undefined;
@@ -565,5 +566,6 @@ export declare const folderSchema: yup.ObjectSchema<{
     invitationUrl: undefined;
     tacticsById: undefined;
     next3Tactics: "";
+    nextTacticId: undefined;
 }, "">;
 export type FolderValue = yup.InferType<typeof folderSchema>;
