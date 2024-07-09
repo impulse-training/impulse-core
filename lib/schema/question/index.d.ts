@@ -5,6 +5,7 @@ import { QuestionMultipleChoiceValue } from './multipleChoice';
 import { QuestionScaleOf1To10Value } from './scaleOf1To10';
 import { QuestionTextValue } from './text';
 import { QuestionTimeValue } from './time';
+export * from './base';
 export * from './counter';
 export * from './issue';
 export * from './multipleChoice';

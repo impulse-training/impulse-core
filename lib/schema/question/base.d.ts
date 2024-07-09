@@ -1,6 +1,15 @@
 import * as yup from 'yup';
 import { QuestionKeyType } from './utils/questionKeyType';
+export declare const QUESTION_CATEGORIES: {
+    readonly general: "General";
+    readonly debriefing: "Debriefing";
+    readonly dailyReview: "Daily review";
+    readonly afterSuccess: "After a success";
+    readonly afterSetback: "After a setback";
+};
+export type QuestionCategory = keyof typeof QUESTION_CATEGORIES;
 export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSchema<{
+    categories: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
     prompt: string;
     type: QuestionKeyType;
     options: ({
@@ -113,6 +122,7 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
         toDate: Function;
     } | null | undefined;
 }, yup.AnyObject, {
+    categories: "";
     prompt: undefined;
     type: undefined;
     options: "";

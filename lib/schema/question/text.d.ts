@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 export declare const questionTextSchema: yup.ObjectSchema<{
+    categories: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
     prompt: string;
     type: import("..").QuestionKeyType;
     options: ({
@@ -112,6 +113,7 @@ export declare const questionTextSchema: yup.ObjectSchema<{
         toDate: Function;
     } | null | undefined;
 }, yup.AnyObject, {
+    categories: "";
     prompt: undefined;
     type: undefined;
     options: "";

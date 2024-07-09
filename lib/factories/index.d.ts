@@ -1644,6 +1644,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             profileKey: string;
             value: {};
         })[] | undefined;
+        categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
         options?: ({
             createdAt?: {
                 isEqual?: any;
@@ -1725,7 +1726,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         type: import("..").QuestionKeyType;
         ordinal: number;
         prompt: string;
-    }, "type" | "ordinal" | "prompt" | ("createdAt" | "updatedAt" | "setbackThreshold" | "followUps" | "options" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+    }, "type" | "ordinal" | "prompt" | ("createdAt" | "updatedAt" | "setbackThreshold" | "followUps" | "categories" | "options" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -2716,6 +2717,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
+                categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     createdAt?: {
                         isEqual?: any;
@@ -2829,6 +2831,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
+                categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     createdAt?: {
                         isEqual?: any;
@@ -2941,6 +2944,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
+                categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: import("..").QuestionKeyType;
@@ -3055,6 +3059,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
+                categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     createdAt?: {
                         isEqual?: any;
@@ -3170,6 +3175,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
+                categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     createdAt?: {
                         isEqual?: any;

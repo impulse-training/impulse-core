@@ -966,6 +966,7 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                 profileKey: string;
                 value: {};
             })[] | undefined;
+            categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
             options?: ({
                 createdAt?: {
                     isEqual?: any;
@@ -1079,6 +1080,7 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                 profileKey: string;
                 value: {};
             })[] | undefined;
+            categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
             options?: ({
                 createdAt?: {
                     isEqual?: any;
@@ -1191,6 +1193,7 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                 profileKey: string;
                 value: {};
             })[] | undefined;
+            categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
             templateFor?: "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
             type: import("..").QuestionKeyType;
@@ -1305,6 +1308,7 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                 profileKey: string;
                 value: {};
             })[] | undefined;
+            categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
             options?: ({
                 createdAt?: {
                     isEqual?: any;
@@ -1420,6 +1424,7 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                 profileKey: string;
                 value: {};
             })[] | undefined;
+            categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
             options?: ({
                 createdAt?: {
                     isEqual?: any;

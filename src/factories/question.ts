@@ -6,6 +6,7 @@ export const makeQuestionTimeTacticFactory = (
   TimestampKlass: typeof TimestampLike
 ) =>
   Factory.makeFactory<QuestionTimeValue>({
+    categories: ['debriefing'],
     prompt: 'How long did you spend?',
     type: 'time',
     ordinal: 0,

@@ -1643,6 +1643,7 @@ export declare const factories: {
             profileKey: string;
             value: {};
         })[] | undefined;
+        categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
         options?: ({
             createdAt?: {
                 isEqual?: any;
@@ -1724,7 +1725,7 @@ export declare const factories: {
         type: import("..").QuestionKeyType;
         ordinal: number;
         prompt: string;
-    }, "type" | "ordinal" | "prompt" | ("createdAt" | "updatedAt" | "setbackThreshold" | "followUps" | "options" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+    }, "type" | "ordinal" | "prompt" | ("createdAt" | "updatedAt" | "setbackThreshold" | "followUps" | "categories" | "options" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -2715,6 +2716,7 @@ export declare const factories: {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
+                categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     createdAt?: {
                         isEqual?: any;
@@ -2828,6 +2830,7 @@ export declare const factories: {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
+                categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     createdAt?: {
                         isEqual?: any;
@@ -2940,6 +2943,7 @@ export declare const factories: {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
+                categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: import("..").QuestionKeyType;
@@ -3054,6 +3058,7 @@ export declare const factories: {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
+                categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     createdAt?: {
                         isEqual?: any;
@@ -3169,6 +3174,7 @@ export declare const factories: {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
+                categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     createdAt?: {
                         isEqual?: any;

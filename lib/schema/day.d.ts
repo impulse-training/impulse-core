@@ -1136,6 +1136,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         profileKey: string;
                         value: {};
                     })[] | undefined;
+                    categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                     options?: ({
                         createdAt?: {
                             isEqual?: any;
@@ -1249,6 +1250,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         profileKey: string;
                         value: {};
                     })[] | undefined;
+                    categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                     options?: ({
                         createdAt?: {
                             isEqual?: any;
@@ -1361,6 +1363,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         profileKey: string;
                         value: {};
                     })[] | undefined;
+                    categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                     templateFor?: "onboarding" | undefined;
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     type: import(".").QuestionKeyType;
@@ -1475,6 +1478,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         profileKey: string;
                         value: {};
                     })[] | undefined;
+                    categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                     options?: ({
                         createdAt?: {
                             isEqual?: any;
@@ -1590,6 +1594,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         profileKey: string;
                         value: {};
                     })[] | undefined;
+                    categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                     options?: ({
                         createdAt?: {
                             isEqual?: any;

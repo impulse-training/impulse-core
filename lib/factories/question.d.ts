@@ -32,6 +32,7 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
         profileKey: string;
         value: {};
     })[] | undefined;
+    categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
     options?: ({
         createdAt?: {
             isEqual?: any;
@@ -113,4 +114,4 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
     type: import("..").QuestionKeyType;
     ordinal: number;
     prompt: string;
-}, "type" | "ordinal" | "prompt" | ("createdAt" | "updatedAt" | "setbackThreshold" | "followUps" | "options" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+}, "type" | "ordinal" | "prompt" | ("createdAt" | "updatedAt" | "setbackThreshold" | "followUps" | "categories" | "options" | "templateFor" | "writeAnswerToProfileMemoryKey")>;

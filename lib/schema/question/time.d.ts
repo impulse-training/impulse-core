@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 export declare const questionTimeSchema: yup.ObjectSchema<{
+    categories: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
     prompt: string;
     type: import("..").QuestionKeyType;
     options: ({
@@ -113,6 +114,7 @@ export declare const questionTimeSchema: yup.ObjectSchema<{
     } | null | undefined;
     setbackThreshold: number | undefined;
 }, yup.AnyObject, {
+    categories: "";
     prompt: undefined;
     type: undefined;
     options: "";

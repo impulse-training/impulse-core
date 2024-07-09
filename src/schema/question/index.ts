@@ -12,6 +12,7 @@ import {
 import { QuestionTextValue, questionTextSchema } from './text';
 import { QuestionTimeValue, questionTimeSchema } from './time';
 
+export * from './base';
 export * from './counter';
 export * from './issue';
 export * from './multipleChoice';

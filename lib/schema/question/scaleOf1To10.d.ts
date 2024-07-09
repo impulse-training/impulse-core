@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 export declare const questionScaleOf1To10Schema: yup.ObjectSchema<{
+    categories: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
     prompt: string;
     type: import("..").QuestionKeyType;
     options: ({
@@ -115,6 +116,7 @@ export declare const questionScaleOf1To10Schema: yup.ObjectSchema<{
     lowEmoji: yup.Maybe<string | undefined>;
     highEmoji: yup.Maybe<string | undefined>;
 }, yup.AnyObject, {
+    categories: "";
     prompt: undefined;
     type: undefined;
     options: "";
