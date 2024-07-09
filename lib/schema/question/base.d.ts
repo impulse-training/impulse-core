@@ -4,8 +4,8 @@ export declare const QUESTION_CATEGORIES: {
     readonly general: "General";
     readonly debriefing: "Debriefing";
     readonly dailyReview: "Daily review";
-    readonly afterSuccess: "After a success";
-    readonly afterSetback: "After a setback";
+    readonly afterSuccess: "Successes";
+    readonly afterSetback: "Setbacks";
 };
 export type QuestionCategory = keyof typeof QUESTION_CATEGORIES;
 export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSchema<{

@@ -8,8 +8,8 @@ export const QUESTION_CATEGORIES = {
   general: 'General',
   debriefing: 'Debriefing',
   dailyReview: 'Daily review',
-  afterSuccess: 'After a success',
-  afterSetback: 'After a setback',
+  afterSuccess: 'Successes',
+  afterSetback: 'Setbacks',
 } as const;
 
 export type QuestionCategory = keyof typeof QUESTION_CATEGORIES;
