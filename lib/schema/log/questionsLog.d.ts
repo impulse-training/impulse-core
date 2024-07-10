@@ -120,22 +120,6 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
             })[] | undefined;
             categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
             options?: ({
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
                 color?: string | undefined;
@@ -159,22 +143,6 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 text: string;
                 type: "numeric";
             } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
                 label?: string | undefined;
                 color?: string | undefined;
                 followUps?: ({
@@ -234,22 +202,6 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
             })[] | undefined;
             categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
             options?: ({
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
                 color?: string | undefined;
@@ -273,22 +225,6 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 text: string;
                 type: "numeric";
             } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
                 label?: string | undefined;
                 color?: string | undefined;
                 followUps?: ({
@@ -352,22 +288,6 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
             ordinal: number;
             prompt: string;
             options: ({
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
                 color?: string | undefined;
@@ -391,22 +311,6 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 text: string;
                 type: "numeric";
             } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
                 label?: string | undefined;
                 color?: string | undefined;
                 followUps?: ({
@@ -462,22 +366,6 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
             })[] | undefined;
             categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
             options?: ({
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
                 color?: string | undefined;
@@ -501,22 +389,6 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 text: string;
                 type: "numeric";
             } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
                 label?: string | undefined;
                 color?: string | undefined;
                 followUps?: ({
@@ -578,22 +450,6 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
             })[] | undefined;
             categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
             options?: ({
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
                 color?: string | undefined;
@@ -617,22 +473,6 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 text: string;
                 type: "numeric";
             } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
                 label?: string | undefined;
                 color?: string | undefined;
                 followUps?: ({
@@ -678,7 +518,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
             stringValue: string;
             unit: string;
         };
-    };
+    } | null | undefined;
     submittedAt: {
         isEqual?: any;
         toMillis?: any;

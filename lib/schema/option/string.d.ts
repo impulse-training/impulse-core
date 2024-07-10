@@ -2,22 +2,6 @@ import * as yup from 'yup';
 import { OptionValue } from '.';
 export declare const stringOptionSchema: yup.ObjectSchema<{
     type: "string";
-    createdAt: {
-        isEqual?: any;
-        toMillis?: any;
-        toJSON?: any;
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    } | null | undefined;
-    updatedAt: {
-        isEqual?: any;
-        toMillis?: any;
-        toJSON?: any;
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    } | null | undefined;
     followUps: ({
         message?: string | undefined;
         type: "askAnotherQuestion";
@@ -38,8 +22,6 @@ export declare const stringOptionSchema: yup.ObjectSchema<{
     label: string | undefined;
 }, yup.AnyObject, {
     type: undefined;
-    createdAt: undefined;
-    updatedAt: undefined;
     followUps: "";
     text: undefined;
     color: undefined;

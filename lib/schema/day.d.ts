@@ -1085,6 +1085,25 @@ export declare const daySchema: yup.ObjectSchema<{
                 content: string;
             }[] | undefined;
             openAiChoiceResponse?: {} | undefined;
+            questionData?: {
+                [x: string]: {
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    idValue?: string | undefined;
+                    numericValue?: number | undefined;
+                    color?: string | undefined;
+                    setAt: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    };
+                    stringValue: string;
+                    unit: string;
+                };
+            } | null | undefined;
             submittedAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1138,22 +1157,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     })[] | undefined;
                     categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                     options?: ({
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
                         label?: string | undefined;
                         setbackThreshold?: number | undefined;
                         color?: string | undefined;
@@ -1177,22 +1180,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         text: string;
                         type: "numeric";
                     } | {
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
                         label?: string | undefined;
                         color?: string | undefined;
                         followUps?: ({
@@ -1252,22 +1239,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     })[] | undefined;
                     categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                     options?: ({
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
                         label?: string | undefined;
                         setbackThreshold?: number | undefined;
                         color?: string | undefined;
@@ -1291,22 +1262,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         text: string;
                         type: "numeric";
                     } | {
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
                         label?: string | undefined;
                         color?: string | undefined;
                         followUps?: ({
@@ -1370,22 +1325,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     ordinal: number;
                     prompt: string;
                     options: ({
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
                         label?: string | undefined;
                         setbackThreshold?: number | undefined;
                         color?: string | undefined;
@@ -1409,22 +1348,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         text: string;
                         type: "numeric";
                     } | {
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
                         label?: string | undefined;
                         color?: string | undefined;
                         followUps?: ({
@@ -1480,22 +1403,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     })[] | undefined;
                     categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                     options?: ({
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
                         label?: string | undefined;
                         setbackThreshold?: number | undefined;
                         color?: string | undefined;
@@ -1519,22 +1426,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         text: string;
                         type: "numeric";
                     } | {
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
                         label?: string | undefined;
                         color?: string | undefined;
                         followUps?: ({
@@ -1596,22 +1487,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     })[] | undefined;
                     categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                     options?: ({
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
                         label?: string | undefined;
                         setbackThreshold?: number | undefined;
                         color?: string | undefined;
@@ -1635,22 +1510,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         text: string;
                         type: "numeric";
                     } | {
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
                         label?: string | undefined;
                         color?: string | undefined;
                         followUps?: ({
@@ -1676,25 +1535,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     type: import(".").QuestionKeyType;
                     ordinal: number;
                     prompt: string;
-                };
-            };
-            questionData: {
-                [x: string]: {
-                    label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    idValue?: string | undefined;
-                    numericValue?: number | undefined;
-                    color?: string | undefined;
-                    setAt: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    };
-                    stringValue: string;
-                    unit: string;
                 };
             };
         } | {

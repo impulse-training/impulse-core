@@ -13,22 +13,6 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
     prompt: string;
     type: QuestionKeyType;
     options: ({
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            toJSON?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            toJSON?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
         label?: string | undefined;
         setbackThreshold?: number | undefined;
         color?: string | undefined;
@@ -52,22 +36,6 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
         text: string;
         type: "numeric";
     } | {
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            toJSON?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            toJSON?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
         label?: string | undefined;
         color?: string | undefined;
         followUps?: ({

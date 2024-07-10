@@ -31,5 +31,4 @@ export const makeQuestionsLogFactory = (TimestampKlass: typeof TimestampLike) =>
     date: TimestampKlass.now(),
     gptPayload: [],
     questionsById: {},
-    questionData: {},
   });

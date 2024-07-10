@@ -915,6 +915,25 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
         content: string;
     }[] | undefined;
     openAiChoiceResponse?: {} | undefined;
+    questionData?: {
+        [x: string]: {
+            label?: string | undefined;
+            setbackThreshold?: number | undefined;
+            idValue?: string | undefined;
+            numericValue?: number | undefined;
+            color?: string | undefined;
+            setAt: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            };
+            stringValue: string;
+            unit: string;
+        };
+    } | null | undefined;
     submittedAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -968,22 +987,6 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
             })[] | undefined;
             categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
             options?: ({
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
                 color?: string | undefined;
@@ -1007,22 +1010,6 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                 text: string;
                 type: "numeric";
             } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
                 label?: string | undefined;
                 color?: string | undefined;
                 followUps?: ({
@@ -1082,22 +1069,6 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
             })[] | undefined;
             categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
             options?: ({
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
                 color?: string | undefined;
@@ -1121,22 +1092,6 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                 text: string;
                 type: "numeric";
             } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
                 label?: string | undefined;
                 color?: string | undefined;
                 followUps?: ({
@@ -1200,22 +1155,6 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
             ordinal: number;
             prompt: string;
             options: ({
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
                 color?: string | undefined;
@@ -1239,22 +1178,6 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                 text: string;
                 type: "numeric";
             } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
                 label?: string | undefined;
                 color?: string | undefined;
                 followUps?: ({
@@ -1310,22 +1233,6 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
             })[] | undefined;
             categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
             options?: ({
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
                 color?: string | undefined;
@@ -1349,22 +1256,6 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                 text: string;
                 type: "numeric";
             } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
                 label?: string | undefined;
                 color?: string | undefined;
                 followUps?: ({
@@ -1426,22 +1317,6 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
             })[] | undefined;
             categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
             options?: ({
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
                 color?: string | undefined;
@@ -1465,22 +1340,6 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                 text: string;
                 type: "numeric";
             } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
                 label?: string | undefined;
                 color?: string | undefined;
                 followUps?: ({
@@ -1508,23 +1367,4 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
             prompt: string;
         };
     };
-    questionData: {
-        [x: string]: {
-            label?: string | undefined;
-            setbackThreshold?: number | undefined;
-            idValue?: string | undefined;
-            numericValue?: number | undefined;
-            color?: string | undefined;
-            setAt: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            };
-            stringValue: string;
-            unit: string;
-        };
-    };
-}, "date" | "type" | "questionsById" | "questionData" | ("createdAt" | "updatedAt" | "text" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "submittedAt" | "isDebrief" | "followedUpQuestionIds")>;
+}, "date" | "type" | "questionsById" | ("createdAt" | "updatedAt" | "text" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "questionData" | "submittedAt" | "isDebrief" | "followedUpQuestionIds")>;

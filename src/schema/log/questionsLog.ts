@@ -2,7 +2,7 @@ import * as yup from 'yup';
 import { questionSchema } from '../question';
 import { setbackThresholdMixin } from '../question/utils/setbackThreshold';
 import { optionalStringArray } from '../utils/array';
-import { objectOf } from '../utils/objectOf';
+import { objectOf, optionalObjectOf } from '../utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from '../utils/timestamp';
 import { logBaseSchema } from './base';
 import { gptResponseMixin } from './utils/gpt';
@@ -21,7 +21,7 @@ export type QuestionDataValue = yup.InferType<typeof questionDataSchema>;
 
 export const questionsLogSchema = logBaseSchema('questions').shape({
   questionsById: objectOf(questionSchema),
-  questionData: objectOf(questionDataSchema),
+  questionData: optionalObjectOf(questionDataSchema),
   submittedAt: optionalTimestampSchema,
   isDebrief: yup.boolean(),
   followedUpQuestionIds: optionalStringArray,

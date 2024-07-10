@@ -2,22 +2,6 @@ import * as yup from 'yup';
 import { OptionValue } from '.';
 export declare const numericOptionSchema: yup.ObjectSchema<{
     type: "numeric";
-    createdAt: {
-        isEqual?: any;
-        toMillis?: any;
-        toJSON?: any;
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    } | null | undefined;
-    updatedAt: {
-        isEqual?: any;
-        toMillis?: any;
-        toJSON?: any;
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    } | null | undefined;
     followUps: ({
         message?: string | undefined;
         type: "askAnotherQuestion";
@@ -41,8 +25,6 @@ export declare const numericOptionSchema: yup.ObjectSchema<{
     lessThanOrEqualTo: number | undefined;
 }, yup.AnyObject, {
     type: undefined;
-    createdAt: undefined;
-    updatedAt: undefined;
     followUps: "";
     text: undefined;
     color: undefined;

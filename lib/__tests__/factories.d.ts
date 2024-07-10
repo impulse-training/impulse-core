@@ -1645,22 +1645,6 @@ export declare const factories: {
         })[] | undefined;
         categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
         options?: ({
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
             label?: string | undefined;
             setbackThreshold?: number | undefined;
             color?: string | undefined;
@@ -1684,22 +1668,6 @@ export declare const factories: {
             text: string;
             type: "numeric";
         } | {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
             label?: string | undefined;
             color?: string | undefined;
             followUps?: ({
@@ -1726,6 +1694,89 @@ export declare const factories: {
         ordinal: number;
         prompt: string;
     }, "type" | "ordinal" | "prompt" | ("createdAt" | "updatedAt" | "setbackThreshold" | "followUps" | "categories" | "options" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+    questionMultipleChoiceFactory: import("factory.ts").Factory<{
+        createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        followUps?: ({
+            message?: string | undefined;
+            type: "askAnotherQuestion";
+            questionId: string;
+        } | {
+            message?: string | undefined;
+            type: "writeAnswerToProfile";
+            profileKey: string;
+        } | {
+            message?: string | undefined;
+            type: "writeValueToProfile";
+            profileKey: string;
+            value: {};
+        })[] | undefined;
+        categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+        templateFor?: "onboarding" | undefined;
+        writeAnswerToProfileMemoryKey?: string | undefined;
+        type: import("..").QuestionKeyType;
+        ordinal: number;
+        prompt: string;
+        options: ({
+            label?: string | undefined;
+            setbackThreshold?: number | undefined;
+            color?: string | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
+            textColor?: string | undefined;
+            greaterThan?: number | undefined;
+            lessThanOrEqualTo?: number | undefined;
+            text: string;
+            type: "numeric";
+        } | {
+            label?: string | undefined;
+            color?: string | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
+            textColor?: string | undefined;
+            text: string;
+            type: "string";
+        })[];
+        canAddNewOptions: NonNullable<boolean | undefined>;
+    }, "type" | "ordinal" | "prompt" | "options" | "canAddNewOptions" | ("createdAt" | "updatedAt" | "followUps" | "categories" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -2665,6 +2716,25 @@ export declare const factories: {
             content: string;
         }[] | undefined;
         openAiChoiceResponse?: {} | undefined;
+        questionData?: {
+            [x: string]: {
+                label?: string | undefined;
+                setbackThreshold?: number | undefined;
+                idValue?: string | undefined;
+                numericValue?: number | undefined;
+                color?: string | undefined;
+                setAt: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                };
+                stringValue: string;
+                unit: string;
+            };
+        } | null | undefined;
         submittedAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -2718,22 +2788,6 @@ export declare const factories: {
                 })[] | undefined;
                 categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
@@ -2757,22 +2811,6 @@ export declare const factories: {
                     text: string;
                     type: "numeric";
                 } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     label?: string | undefined;
                     color?: string | undefined;
                     followUps?: ({
@@ -2832,22 +2870,6 @@ export declare const factories: {
                 })[] | undefined;
                 categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
@@ -2871,22 +2893,6 @@ export declare const factories: {
                     text: string;
                     type: "numeric";
                 } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     label?: string | undefined;
                     color?: string | undefined;
                     followUps?: ({
@@ -2950,22 +2956,6 @@ export declare const factories: {
                 ordinal: number;
                 prompt: string;
                 options: ({
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
@@ -2989,22 +2979,6 @@ export declare const factories: {
                     text: string;
                     type: "numeric";
                 } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     label?: string | undefined;
                     color?: string | undefined;
                     followUps?: ({
@@ -3060,22 +3034,6 @@ export declare const factories: {
                 })[] | undefined;
                 categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
@@ -3099,22 +3057,6 @@ export declare const factories: {
                     text: string;
                     type: "numeric";
                 } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     label?: string | undefined;
                     color?: string | undefined;
                     followUps?: ({
@@ -3176,22 +3118,6 @@ export declare const factories: {
                 })[] | undefined;
                 categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
                     color?: string | undefined;
@@ -3215,22 +3141,6 @@ export declare const factories: {
                     text: string;
                     type: "numeric";
                 } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
                     label?: string | undefined;
                     color?: string | undefined;
                     followUps?: ({
@@ -3258,25 +3168,6 @@ export declare const factories: {
                 prompt: string;
             };
         };
-        questionData: {
-            [x: string]: {
-                label?: string | undefined;
-                setbackThreshold?: number | undefined;
-                idValue?: string | undefined;
-                numericValue?: number | undefined;
-                color?: string | undefined;
-                setAt: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                };
-                stringValue: string;
-                unit: string;
-            };
-        };
-    }, "date" | "type" | "questionsById" | "questionData" | ("createdAt" | "updatedAt" | "text" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "submittedAt" | "isDebrief" | "followedUpQuestionIds")>;
+    }, "date" | "type" | "questionsById" | ("createdAt" | "updatedAt" | "text" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "questionData" | "submittedAt" | "isDebrief" | "followedUpQuestionIds")>;
     tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "setbackThreshold" | "type" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "ordinal" | "prompt" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
 };

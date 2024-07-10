@@ -4,22 +4,6 @@ export declare const questionMultipleChoiceSchema: yup.ObjectSchema<{
     prompt: string;
     type: import("..").QuestionKeyType;
     options: ({
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            toJSON?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            toJSON?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
         label?: string | undefined;
         setbackThreshold?: number | undefined;
         color?: string | undefined;
@@ -43,22 +27,6 @@ export declare const questionMultipleChoiceSchema: yup.ObjectSchema<{
         text: string;
         type: "numeric";
     } | {
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            toJSON?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            toJSON?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
         label?: string | undefined;
         color?: string | undefined;
         followUps?: ({

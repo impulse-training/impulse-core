@@ -8,7 +8,10 @@ import { makeIssueFactory } from './issue';
 import { makeLocationFactory } from './location';
 import { makeImpulseLogFactory, makeQuestionsLogFactory } from './log';
 import { makeProfileFactory } from './profile';
-import { makeQuestionTimeTacticFactory } from './question';
+import {
+  makeQuestionMultipleChoiceTacticFactory,
+  makeQuestionTimeTacticFactory,
+} from './question';
 import { makeTimeRoutineFactory } from './routine';
 import { makeTacticFactory } from './tactic';
 
@@ -27,6 +30,8 @@ export function makeFactories(TimestampKlass: typeof TimestampLike) {
     daysSummaryFactory: makeDaysSummaryFactory(TimestampKlass),
     profileFactory: makeProfileFactory(TimestampKlass),
     questionTimeFactory: makeQuestionTimeTacticFactory(TimestampKlass),
+    questionMultipleChoiceFactory:
+      makeQuestionMultipleChoiceTacticFactory(TimestampKlass),
     timeRoutineFactory: makeTimeRoutineFactory(TimestampKlass),
     impulseLogFactory: makeImpulseLogFactory(TimestampKlass),
     questionsLogFactory: makeQuestionsLogFactory(TimestampKlass),
