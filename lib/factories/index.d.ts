@@ -77,12 +77,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
-                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -122,12 +122,13 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                repeat?: import("yup").Maybe<number | undefined>;
+                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
-                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -141,7 +142,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                repeat?: import("yup").Maybe<number | undefined>;
                 type: "breathingExercise";
                 ordinal: number;
                 inFor: number;
@@ -166,12 +166,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
-                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -207,12 +207,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
-                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -248,12 +248,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
-                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -288,12 +288,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
-                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -340,12 +340,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
+            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
-            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -385,12 +385,13 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
+            repeat?: import("yup").Maybe<number | undefined>;
+            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
-            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -404,7 +405,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            repeat?: import("yup").Maybe<number | undefined>;
             type: "breathingExercise";
             ordinal: number;
             inFor: number;
@@ -429,12 +429,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
+            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
-            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -470,12 +470,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
+            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
-            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -511,12 +511,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
+            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
-            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -551,12 +551,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
+            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
-            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -583,11 +583,11 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         })[] | undefined;
         nextTacticId?: string | undefined;
         type: "folder";
-        ordinal: number;
         prompt: string;
+        ordinal: number;
         invitationCode: string;
         invitationUrl: string;
-    }, "type" | "ordinal" | "prompt" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics" | "nextTacticId")>;
+    }, "type" | "prompt" | "ordinal" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics" | "nextTacticId")>;
     impulseFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -632,6 +632,37 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             content: string;
         }[] | undefined;
         openAiChoiceResponse?: {} | undefined;
+        questionData?: {
+            [x: string]: {
+                label?: string | undefined;
+                setbackThreshold?: number | undefined;
+                idValue?: string | undefined;
+                numericValue?: number | undefined;
+                color?: string | undefined;
+                setAt: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                };
+                stringValue: string;
+                unit: string;
+            };
+        } | null | undefined;
+        submittedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        trackingQuestionIds?: string[] | undefined;
+        debriefingQuestionIds?: string[] | undefined;
+        isDebrief?: boolean | undefined;
+        followedUpQuestionIds?: string[] | undefined;
         parentIssueIds: string[];
         issueName: string;
         date: {
@@ -643,6 +674,420 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: Function;
         };
         type: "impulse";
+        questionsById: {
+            [x: string]: {
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+                options?: ({
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    color?: string | undefined;
+                    followUps?: ({
+                        message?: string | undefined;
+                        type: "askAnotherQuestion";
+                        questionId: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
+                    textColor?: string | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "numeric";
+                } | {
+                    label?: string | undefined;
+                    color?: string | undefined;
+                    followUps?: ({
+                        message?: string | undefined;
+                        type: "askAnotherQuestion";
+                        questionId: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
+                    textColor?: string | undefined;
+                    text: string;
+                    type: "string";
+                })[] | undefined;
+                templateFor?: "onboarding" | undefined;
+                writeAnswerToProfileMemoryKey?: string | undefined;
+                type: import("..").QuestionKeyType;
+                prompt: string;
+                ordinal: number;
+            } | {
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                setbackThreshold?: number | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+                options?: ({
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    color?: string | undefined;
+                    followUps?: ({
+                        message?: string | undefined;
+                        type: "askAnotherQuestion";
+                        questionId: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
+                    textColor?: string | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "numeric";
+                } | {
+                    label?: string | undefined;
+                    color?: string | undefined;
+                    followUps?: ({
+                        message?: string | undefined;
+                        type: "askAnotherQuestion";
+                        questionId: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
+                    textColor?: string | undefined;
+                    text: string;
+                    type: "string";
+                })[] | undefined;
+                templateFor?: "onboarding" | undefined;
+                writeAnswerToProfileMemoryKey?: string | undefined;
+                type: import("..").QuestionKeyType;
+                prompt: string;
+                ordinal: number;
+            } | {
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+                templateFor?: "onboarding" | undefined;
+                writeAnswerToProfileMemoryKey?: string | undefined;
+                type: import("..").QuestionKeyType;
+                prompt: string;
+                options: ({
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    color?: string | undefined;
+                    followUps?: ({
+                        message?: string | undefined;
+                        type: "askAnotherQuestion";
+                        questionId: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
+                    textColor?: string | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "numeric";
+                } | {
+                    label?: string | undefined;
+                    color?: string | undefined;
+                    followUps?: ({
+                        message?: string | undefined;
+                        type: "askAnotherQuestion";
+                        questionId: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
+                    textColor?: string | undefined;
+                    text: string;
+                    type: "string";
+                })[];
+                ordinal: number;
+                canAddNewOptions: NonNullable<boolean | undefined>;
+            } | {
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                setbackThreshold?: number | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+                options?: ({
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    color?: string | undefined;
+                    followUps?: ({
+                        message?: string | undefined;
+                        type: "askAnotherQuestion";
+                        questionId: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
+                    textColor?: string | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "numeric";
+                } | {
+                    label?: string | undefined;
+                    color?: string | undefined;
+                    followUps?: ({
+                        message?: string | undefined;
+                        type: "askAnotherQuestion";
+                        questionId: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
+                    textColor?: string | undefined;
+                    text: string;
+                    type: "string";
+                })[] | undefined;
+                templateFor?: "onboarding" | undefined;
+                writeAnswerToProfileMemoryKey?: string | undefined;
+                lowEmoji?: import("yup").Maybe<string | undefined>;
+                highEmoji?: import("yup").Maybe<string | undefined>;
+                type: import("..").QuestionKeyType;
+                prompt: string;
+                ordinal: number;
+            } | {
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                setbackThreshold?: number | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+                options?: ({
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    color?: string | undefined;
+                    followUps?: ({
+                        message?: string | undefined;
+                        type: "askAnotherQuestion";
+                        questionId: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
+                    textColor?: string | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "numeric";
+                } | {
+                    label?: string | undefined;
+                    color?: string | undefined;
+                    followUps?: ({
+                        message?: string | undefined;
+                        type: "askAnotherQuestion";
+                        questionId: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
+                    textColor?: string | undefined;
+                    text: string;
+                    type: "string";
+                })[] | undefined;
+                templateFor?: "onboarding" | undefined;
+                writeAnswerToProfileMemoryKey?: string | undefined;
+                type: import("..").QuestionKeyType;
+                prompt: string;
+                ordinal: number;
+            };
+        };
         strategiesById: {
             [x: string]: {
                 createdAt?: {
@@ -663,12 +1108,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
-                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -708,12 +1153,13 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                repeat?: import("yup").Maybe<number | undefined>;
+                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
-                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -727,7 +1173,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                repeat?: import("yup").Maybe<number | undefined>;
                 type: "breathingExercise";
                 ordinal: number;
                 inFor: number;
@@ -752,12 +1197,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
-                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -793,12 +1238,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
-                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -834,12 +1279,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
-                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -874,12 +1319,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
-                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -945,12 +1390,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         } | null | undefined;
                         profileId?: string | null | undefined;
                         setbackThreshold?: number | null | undefined;
+                        prompt?: string | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
                         isInGameplan?: boolean | undefined;
-                        prompt?: string | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
                         description?: string | null | undefined;
@@ -990,12 +1435,13 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         } | null | undefined;
                         profileId?: string | null | undefined;
                         setbackThreshold?: number | null | undefined;
+                        repeat?: import("yup").Maybe<number | undefined>;
+                        prompt?: string | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
                         isInGameplan?: boolean | undefined;
-                        prompt?: string | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
                         description?: string | null | undefined;
@@ -1009,7 +1455,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         likesCount?: number | null | undefined;
                         timerSeconds?: import("yup").Maybe<number | undefined>;
                         isSuggested?: boolean | undefined;
-                        repeat?: import("yup").Maybe<number | undefined>;
                         type: "breathingExercise";
                         ordinal: number;
                         inFor: number;
@@ -1034,12 +1479,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         } | null | undefined;
                         profileId?: string | null | undefined;
                         setbackThreshold?: number | null | undefined;
+                        prompt?: string | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
                         isInGameplan?: boolean | undefined;
-                        prompt?: string | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
                         description?: string | null | undefined;
@@ -1075,12 +1520,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         } | null | undefined;
                         profileId?: string | null | undefined;
                         setbackThreshold?: number | null | undefined;
+                        prompt?: string | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
                         isInGameplan?: boolean | undefined;
-                        prompt?: string | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
                         description?: string | null | undefined;
@@ -1116,12 +1561,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         } | null | undefined;
                         profileId?: string | null | undefined;
                         setbackThreshold?: number | null | undefined;
+                        prompt?: string | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
                         isInGameplan?: boolean | undefined;
-                        prompt?: string | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
                         description?: string | null | undefined;
@@ -1156,12 +1601,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         } | null | undefined;
                         profileId?: string | null | undefined;
                         setbackThreshold?: number | null | undefined;
+                        prompt?: string | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
                         isInGameplan?: boolean | undefined;
-                        prompt?: string | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
                         description?: string | null | undefined;
@@ -1208,12 +1653,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     } | null | undefined;
                     profileId?: string | null | undefined;
                     setbackThreshold?: number | null | undefined;
+                    prompt?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
-                    prompt?: string | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -1253,12 +1698,13 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     } | null | undefined;
                     profileId?: string | null | undefined;
                     setbackThreshold?: number | null | undefined;
+                    repeat?: import("yup").Maybe<number | undefined>;
+                    prompt?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
-                    prompt?: string | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -1272,7 +1718,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    repeat?: import("yup").Maybe<number | undefined>;
                     type: "breathingExercise";
                     ordinal: number;
                     inFor: number;
@@ -1297,12 +1742,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     } | null | undefined;
                     profileId?: string | null | undefined;
                     setbackThreshold?: number | null | undefined;
+                    prompt?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
-                    prompt?: string | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -1338,12 +1783,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     } | null | undefined;
                     profileId?: string | null | undefined;
                     setbackThreshold?: number | null | undefined;
+                    prompt?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
-                    prompt?: string | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -1379,12 +1824,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     } | null | undefined;
                     profileId?: string | null | undefined;
                     setbackThreshold?: number | null | undefined;
+                    prompt?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
-                    prompt?: string | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -1419,12 +1864,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     } | null | undefined;
                     profileId?: string | null | undefined;
                     setbackThreshold?: number | null | undefined;
+                    prompt?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
-                    prompt?: string | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -1451,14 +1896,14 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 })[] | undefined;
                 nextTacticId?: string | undefined;
                 type: "folder";
-                ordinal: number;
                 prompt: string;
+                ordinal: number;
                 invitationCode: string;
                 invitationUrl: string;
             };
         };
         completedTacticIds: string[];
-    }, "parentIssueIds" | "issueName" | "date" | "type" | "strategiesById" | "completedTacticIds" | ("createdAt" | "updatedAt" | "text" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse")>;
+    }, "parentIssueIds" | "issueName" | "date" | "type" | "questionsById" | "strategiesById" | "completedTacticIds" | ("createdAt" | "updatedAt" | "text" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "questionData" | "submittedAt" | "trackingQuestionIds" | "debriefingQuestionIds" | "isDebrief" | "followedUpQuestionIds")>;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
         createdAt?: {
@@ -1644,7 +2089,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             profileKey: string;
             value: {};
         })[] | undefined;
-        categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+        categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
         options?: ({
             label?: string | undefined;
             setbackThreshold?: number | undefined;
@@ -1692,9 +2137,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         templateFor?: "onboarding" | undefined;
         writeAnswerToProfileMemoryKey?: string | undefined;
         type: import("..").QuestionKeyType;
-        ordinal: number;
         prompt: string;
-    }, "type" | "ordinal" | "prompt" | ("createdAt" | "updatedAt" | "setbackThreshold" | "followUps" | "categories" | "options" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+        ordinal: number;
+    }, "type" | "prompt" | "ordinal" | ("createdAt" | "updatedAt" | "setbackThreshold" | "followUps" | "categories" | "options" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     questionMultipleChoiceFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -1726,11 +2171,10 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             profileKey: string;
             value: {};
         })[] | undefined;
-        categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+        categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
         templateFor?: "onboarding" | undefined;
         writeAnswerToProfileMemoryKey?: string | undefined;
         type: import("..").QuestionKeyType;
-        ordinal: number;
         prompt: string;
         options: ({
             label?: string | undefined;
@@ -1776,8 +2220,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             text: string;
             type: "string";
         })[];
+        ordinal: number;
         canAddNewOptions: NonNullable<boolean | undefined>;
-    }, "type" | "ordinal" | "prompt" | "options" | "canAddNewOptions" | ("createdAt" | "updatedAt" | "followUps" | "categories" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+    }, "type" | "prompt" | "options" | "ordinal" | "canAddNewOptions" | ("createdAt" | "updatedAt" | "followUps" | "categories" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -1846,6 +2291,37 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             content: string;
         }[] | undefined;
         openAiChoiceResponse?: {} | undefined;
+        questionData?: {
+            [x: string]: {
+                label?: string | undefined;
+                setbackThreshold?: number | undefined;
+                idValue?: string | undefined;
+                numericValue?: number | undefined;
+                color?: string | undefined;
+                setAt: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                };
+                stringValue: string;
+                unit: string;
+            };
+        } | null | undefined;
+        submittedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        trackingQuestionIds?: string[] | undefined;
+        debriefingQuestionIds?: string[] | undefined;
+        isDebrief?: boolean | undefined;
+        followedUpQuestionIds?: string[] | undefined;
         parentIssueIds: string[];
         issueName: string;
         date: {
@@ -1857,6 +2333,420 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: Function;
         };
         type: "impulse";
+        questionsById: {
+            [x: string]: {
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+                options?: ({
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    color?: string | undefined;
+                    followUps?: ({
+                        message?: string | undefined;
+                        type: "askAnotherQuestion";
+                        questionId: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
+                    textColor?: string | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "numeric";
+                } | {
+                    label?: string | undefined;
+                    color?: string | undefined;
+                    followUps?: ({
+                        message?: string | undefined;
+                        type: "askAnotherQuestion";
+                        questionId: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
+                    textColor?: string | undefined;
+                    text: string;
+                    type: "string";
+                })[] | undefined;
+                templateFor?: "onboarding" | undefined;
+                writeAnswerToProfileMemoryKey?: string | undefined;
+                type: import("..").QuestionKeyType;
+                prompt: string;
+                ordinal: number;
+            } | {
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                setbackThreshold?: number | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+                options?: ({
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    color?: string | undefined;
+                    followUps?: ({
+                        message?: string | undefined;
+                        type: "askAnotherQuestion";
+                        questionId: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
+                    textColor?: string | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "numeric";
+                } | {
+                    label?: string | undefined;
+                    color?: string | undefined;
+                    followUps?: ({
+                        message?: string | undefined;
+                        type: "askAnotherQuestion";
+                        questionId: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
+                    textColor?: string | undefined;
+                    text: string;
+                    type: "string";
+                })[] | undefined;
+                templateFor?: "onboarding" | undefined;
+                writeAnswerToProfileMemoryKey?: string | undefined;
+                type: import("..").QuestionKeyType;
+                prompt: string;
+                ordinal: number;
+            } | {
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+                templateFor?: "onboarding" | undefined;
+                writeAnswerToProfileMemoryKey?: string | undefined;
+                type: import("..").QuestionKeyType;
+                prompt: string;
+                options: ({
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    color?: string | undefined;
+                    followUps?: ({
+                        message?: string | undefined;
+                        type: "askAnotherQuestion";
+                        questionId: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
+                    textColor?: string | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "numeric";
+                } | {
+                    label?: string | undefined;
+                    color?: string | undefined;
+                    followUps?: ({
+                        message?: string | undefined;
+                        type: "askAnotherQuestion";
+                        questionId: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
+                    textColor?: string | undefined;
+                    text: string;
+                    type: "string";
+                })[];
+                ordinal: number;
+                canAddNewOptions: NonNullable<boolean | undefined>;
+            } | {
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                setbackThreshold?: number | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+                options?: ({
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    color?: string | undefined;
+                    followUps?: ({
+                        message?: string | undefined;
+                        type: "askAnotherQuestion";
+                        questionId: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
+                    textColor?: string | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "numeric";
+                } | {
+                    label?: string | undefined;
+                    color?: string | undefined;
+                    followUps?: ({
+                        message?: string | undefined;
+                        type: "askAnotherQuestion";
+                        questionId: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
+                    textColor?: string | undefined;
+                    text: string;
+                    type: "string";
+                })[] | undefined;
+                templateFor?: "onboarding" | undefined;
+                writeAnswerToProfileMemoryKey?: string | undefined;
+                lowEmoji?: import("yup").Maybe<string | undefined>;
+                highEmoji?: import("yup").Maybe<string | undefined>;
+                type: import("..").QuestionKeyType;
+                prompt: string;
+                ordinal: number;
+            } | {
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                setbackThreshold?: number | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+                options?: ({
+                    label?: string | undefined;
+                    setbackThreshold?: number | undefined;
+                    color?: string | undefined;
+                    followUps?: ({
+                        message?: string | undefined;
+                        type: "askAnotherQuestion";
+                        questionId: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
+                    textColor?: string | undefined;
+                    greaterThan?: number | undefined;
+                    lessThanOrEqualTo?: number | undefined;
+                    text: string;
+                    type: "numeric";
+                } | {
+                    label?: string | undefined;
+                    color?: string | undefined;
+                    followUps?: ({
+                        message?: string | undefined;
+                        type: "askAnotherQuestion";
+                        questionId: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
+                    textColor?: string | undefined;
+                    text: string;
+                    type: "string";
+                })[] | undefined;
+                templateFor?: "onboarding" | undefined;
+                writeAnswerToProfileMemoryKey?: string | undefined;
+                type: import("..").QuestionKeyType;
+                prompt: string;
+                ordinal: number;
+            };
+        };
         strategiesById: {
             [x: string]: {
                 createdAt?: {
@@ -1877,12 +2767,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
-                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -1922,12 +2812,13 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                repeat?: import("yup").Maybe<number | undefined>;
+                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
-                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -1941,7 +2832,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                repeat?: import("yup").Maybe<number | undefined>;
                 type: "breathingExercise";
                 ordinal: number;
                 inFor: number;
@@ -1966,12 +2856,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
-                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -2007,12 +2897,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
-                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -2048,12 +2938,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
-                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -2088,12 +2978,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
-                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -2159,12 +3049,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         } | null | undefined;
                         profileId?: string | null | undefined;
                         setbackThreshold?: number | null | undefined;
+                        prompt?: string | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
                         isInGameplan?: boolean | undefined;
-                        prompt?: string | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
                         description?: string | null | undefined;
@@ -2204,12 +3094,13 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         } | null | undefined;
                         profileId?: string | null | undefined;
                         setbackThreshold?: number | null | undefined;
+                        repeat?: import("yup").Maybe<number | undefined>;
+                        prompt?: string | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
                         isInGameplan?: boolean | undefined;
-                        prompt?: string | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
                         description?: string | null | undefined;
@@ -2223,7 +3114,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         likesCount?: number | null | undefined;
                         timerSeconds?: import("yup").Maybe<number | undefined>;
                         isSuggested?: boolean | undefined;
-                        repeat?: import("yup").Maybe<number | undefined>;
                         type: "breathingExercise";
                         ordinal: number;
                         inFor: number;
@@ -2248,12 +3138,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         } | null | undefined;
                         profileId?: string | null | undefined;
                         setbackThreshold?: number | null | undefined;
+                        prompt?: string | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
                         isInGameplan?: boolean | undefined;
-                        prompt?: string | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
                         description?: string | null | undefined;
@@ -2289,12 +3179,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         } | null | undefined;
                         profileId?: string | null | undefined;
                         setbackThreshold?: number | null | undefined;
+                        prompt?: string | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
                         isInGameplan?: boolean | undefined;
-                        prompt?: string | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
                         description?: string | null | undefined;
@@ -2330,12 +3220,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         } | null | undefined;
                         profileId?: string | null | undefined;
                         setbackThreshold?: number | null | undefined;
+                        prompt?: string | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
                         isInGameplan?: boolean | undefined;
-                        prompt?: string | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
                         description?: string | null | undefined;
@@ -2370,12 +3260,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         } | null | undefined;
                         profileId?: string | null | undefined;
                         setbackThreshold?: number | null | undefined;
+                        prompt?: string | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
                         isInGameplan?: boolean | undefined;
-                        prompt?: string | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
                         description?: string | null | undefined;
@@ -2422,12 +3312,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     } | null | undefined;
                     profileId?: string | null | undefined;
                     setbackThreshold?: number | null | undefined;
+                    prompt?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
-                    prompt?: string | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -2467,12 +3357,13 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     } | null | undefined;
                     profileId?: string | null | undefined;
                     setbackThreshold?: number | null | undefined;
+                    repeat?: import("yup").Maybe<number | undefined>;
+                    prompt?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
-                    prompt?: string | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -2486,7 +3377,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    repeat?: import("yup").Maybe<number | undefined>;
                     type: "breathingExercise";
                     ordinal: number;
                     inFor: number;
@@ -2511,12 +3401,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     } | null | undefined;
                     profileId?: string | null | undefined;
                     setbackThreshold?: number | null | undefined;
+                    prompt?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
-                    prompt?: string | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -2552,12 +3442,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     } | null | undefined;
                     profileId?: string | null | undefined;
                     setbackThreshold?: number | null | undefined;
+                    prompt?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
-                    prompt?: string | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -2593,12 +3483,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     } | null | undefined;
                     profileId?: string | null | undefined;
                     setbackThreshold?: number | null | undefined;
+                    prompt?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
-                    prompt?: string | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -2633,12 +3523,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     } | null | undefined;
                     profileId?: string | null | undefined;
                     setbackThreshold?: number | null | undefined;
+                    prompt?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
-                    prompt?: string | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -2665,14 +3555,14 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 })[] | undefined;
                 nextTacticId?: string | undefined;
                 type: "folder";
-                ordinal: number;
                 prompt: string;
+                ordinal: number;
                 invitationCode: string;
                 invitationUrl: string;
             };
         };
         completedTacticIds: string[];
-    }, "parentIssueIds" | "issueName" | "date" | "type" | "strategiesById" | "completedTacticIds" | ("createdAt" | "updatedAt" | "text" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse")>;
+    }, "parentIssueIds" | "issueName" | "date" | "type" | "questionsById" | "strategiesById" | "completedTacticIds" | ("createdAt" | "updatedAt" | "text" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "questionData" | "submittedAt" | "trackingQuestionIds" | "debriefingQuestionIds" | "isDebrief" | "followedUpQuestionIds")>;
     questionsLogFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -2744,6 +3634,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        trackingQuestionIds?: string[] | undefined;
+        debriefingQuestionIds?: string[] | undefined;
         isDebrief?: boolean | undefined;
         followedUpQuestionIds?: string[] | undefined;
         date: {
@@ -2787,7 +3679,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+                categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
@@ -2835,8 +3727,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: import("..").QuestionKeyType;
-                ordinal: number;
                 prompt: string;
+                ordinal: number;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -2869,7 +3761,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+                categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
@@ -2917,8 +3809,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: import("..").QuestionKeyType;
-                ordinal: number;
                 prompt: string;
+                ordinal: number;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -2950,11 +3842,10 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+                categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: import("..").QuestionKeyType;
-                ordinal: number;
                 prompt: string;
                 options: ({
                     label?: string | undefined;
@@ -3000,6 +3891,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     text: string;
                     type: "string";
                 })[];
+                ordinal: number;
                 canAddNewOptions: NonNullable<boolean | undefined>;
             } | {
                 createdAt?: {
@@ -3033,7 +3925,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+                categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
@@ -3083,8 +3975,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 lowEmoji?: import("yup").Maybe<string | undefined>;
                 highEmoji?: import("yup").Maybe<string | undefined>;
                 type: import("..").QuestionKeyType;
-                ordinal: number;
                 prompt: string;
+                ordinal: number;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -3117,7 +4009,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+                categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
@@ -3165,10 +4057,10 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: import("..").QuestionKeyType;
-                ordinal: number;
                 prompt: string;
+                ordinal: number;
             };
         };
-    }, "date" | "type" | "questionsById" | ("createdAt" | "updatedAt" | "text" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "questionData" | "submittedAt" | "isDebrief" | "followedUpQuestionIds")>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "setbackThreshold" | "type" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "ordinal" | "prompt" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+    }, "date" | "type" | "questionsById" | ("createdAt" | "updatedAt" | "text" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "questionData" | "submittedAt" | "trackingQuestionIds" | "debriefingQuestionIds" | "isDebrief" | "followedUpQuestionIds")>;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "setbackThreshold" | "type" | "prompt" | "ordinal" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
 };

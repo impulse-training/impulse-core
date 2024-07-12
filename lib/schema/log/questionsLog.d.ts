@@ -118,7 +118,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 profileKey: string;
                 value: {};
             })[] | undefined;
-            categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
             options?: ({
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
@@ -166,8 +166,8 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
             templateFor?: "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
             type: import("..").QuestionKeyType;
-            ordinal: number;
             prompt: string;
+            ordinal: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -200,7 +200,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 profileKey: string;
                 value: {};
             })[] | undefined;
-            categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
             options?: ({
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
@@ -248,8 +248,8 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
             templateFor?: "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
             type: import("..").QuestionKeyType;
-            ordinal: number;
             prompt: string;
+            ordinal: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -281,11 +281,10 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 profileKey: string;
                 value: {};
             })[] | undefined;
-            categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
             templateFor?: "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
             type: import("..").QuestionKeyType;
-            ordinal: number;
             prompt: string;
             options: ({
                 label?: string | undefined;
@@ -331,6 +330,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 text: string;
                 type: "string";
             })[];
+            ordinal: number;
             canAddNewOptions: NonNullable<boolean | undefined>;
         } | {
             createdAt?: {
@@ -364,7 +364,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 profileKey: string;
                 value: {};
             })[] | undefined;
-            categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
             options?: ({
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
@@ -414,8 +414,8 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
             type: import("..").QuestionKeyType;
-            ordinal: number;
             prompt: string;
+            ordinal: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -448,7 +448,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 profileKey: string;
                 value: {};
             })[] | undefined;
-            categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
             options?: ({
                 label?: string | undefined;
                 setbackThreshold?: number | undefined;
@@ -496,8 +496,8 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
             templateFor?: "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
             type: import("..").QuestionKeyType;
-            ordinal: number;
             prompt: string;
+            ordinal: number;
         };
     };
     questionData: {
@@ -527,6 +527,8 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    trackingQuestionIds: string[] | undefined;
+    debriefingQuestionIds: string[] | undefined;
     isDebrief: boolean | undefined;
     followedUpQuestionIds: string[] | undefined;
 }, yup.AnyObject, {
@@ -551,6 +553,8 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
     questionsById: undefined;
     questionData: undefined;
     submittedAt: undefined;
+    trackingQuestionIds: "";
+    debriefingQuestionIds: "";
     isDebrief: undefined;
     followedUpQuestionIds: "";
 }, "">;

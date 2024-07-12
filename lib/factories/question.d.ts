@@ -32,7 +32,7 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
         profileKey: string;
         value: {};
     })[] | undefined;
-    categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+    categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
     options?: ({
         label?: string | undefined;
         setbackThreshold?: number | undefined;
@@ -80,9 +80,9 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
     templateFor?: "onboarding" | undefined;
     writeAnswerToProfileMemoryKey?: string | undefined;
     type: import("..").QuestionKeyType;
-    ordinal: number;
     prompt: string;
-}, "type" | "ordinal" | "prompt" | ("createdAt" | "updatedAt" | "setbackThreshold" | "followUps" | "categories" | "options" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+    ordinal: number;
+}, "type" | "prompt" | "ordinal" | ("createdAt" | "updatedAt" | "setbackThreshold" | "followUps" | "categories" | "options" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
 export declare const makeQuestionMultipleChoiceTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     createdAt?: {
         isEqual?: any;
@@ -114,11 +114,10 @@ export declare const makeQuestionMultipleChoiceTacticFactory: (TimestampKlass: t
         profileKey: string;
         value: {};
     })[] | undefined;
-    categories?: ("general" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+    categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
     templateFor?: "onboarding" | undefined;
     writeAnswerToProfileMemoryKey?: string | undefined;
     type: import("..").QuestionKeyType;
-    ordinal: number;
     prompt: string;
     options: ({
         label?: string | undefined;
@@ -164,5 +163,6 @@ export declare const makeQuestionMultipleChoiceTacticFactory: (TimestampKlass: t
         text: string;
         type: "string";
     })[];
+    ordinal: number;
     canAddNewOptions: NonNullable<boolean | undefined>;
-}, "type" | "ordinal" | "prompt" | "options" | "canAddNewOptions" | ("createdAt" | "updatedAt" | "followUps" | "categories" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+}, "type" | "prompt" | "options" | "ordinal" | "canAddNewOptions" | ("createdAt" | "updatedAt" | "followUps" | "categories" | "templateFor" | "writeAnswerToProfileMemoryKey")>;

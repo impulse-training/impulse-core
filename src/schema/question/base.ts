@@ -6,6 +6,7 @@ import { QuestionKeyType } from './utils/questionKeyType';
 
 export const QUESTION_CATEGORIES = {
   general: 'General',
+  impulses: 'Impulses',
   debriefing: 'Debriefing',
   dailyReview: 'Daily review',
   afterSuccess: 'Successes',
