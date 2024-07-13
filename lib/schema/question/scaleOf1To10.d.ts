@@ -47,7 +47,9 @@ export declare const questionScaleOf1To10Schema: yup.ObjectSchema<{
         text: string;
         type: "string";
     })[] | undefined;
-    ordinal: number;
+    ordinals: {
+        [x: string]: number;
+    } | null | undefined;
     templateFor: "onboarding" | undefined;
     writeAnswerToProfileMemoryKey: string | undefined;
     followUps: ({
@@ -88,7 +90,7 @@ export declare const questionScaleOf1To10Schema: yup.ObjectSchema<{
     prompt: undefined;
     type: undefined;
     options: "";
-    ordinal: undefined;
+    ordinals: undefined;
     templateFor: undefined;
     writeAnswerToProfileMemoryKey: undefined;
     followUps: "";

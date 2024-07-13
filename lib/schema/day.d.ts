@@ -270,11 +270,13 @@ export declare const daySchema: yup.ObjectSchema<{
                         profileKey: string;
                         value: {};
                     })[] | undefined;
+                    ordinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
                     templateFor?: "onboarding" | undefined;
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     prompt: string;
                     type: import(".").QuestionKeyType;
-                    ordinal: number;
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -352,13 +354,15 @@ export declare const daySchema: yup.ObjectSchema<{
                         value: {};
                     })[] | undefined;
                     setbackThreshold?: number | undefined;
+                    ordinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
                     templateFor?: "onboarding" | undefined;
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     lowEmoji?: yup.Maybe<string | undefined>;
                     highEmoji?: yup.Maybe<string | undefined>;
                     prompt: string;
                     type: import(".").QuestionKeyType;
-                    ordinal: number;
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -436,11 +440,13 @@ export declare const daySchema: yup.ObjectSchema<{
                         value: {};
                     })[] | undefined;
                     setbackThreshold?: number | undefined;
+                    ordinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
                     templateFor?: "onboarding" | undefined;
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     prompt: string;
                     type: import(".").QuestionKeyType;
-                    ordinal: number;
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -518,11 +524,13 @@ export declare const daySchema: yup.ObjectSchema<{
                         value: {};
                     })[] | undefined;
                     setbackThreshold?: number | undefined;
+                    ordinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
                     templateFor?: "onboarding" | undefined;
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     prompt: string;
                     type: import(".").QuestionKeyType;
-                    ordinal: number;
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -555,6 +563,9 @@ export declare const daySchema: yup.ObjectSchema<{
                         profileKey: string;
                         value: {};
                     })[] | undefined;
+                    ordinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
                     templateFor?: "onboarding" | undefined;
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     prompt: string;
@@ -603,7 +614,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         text: string;
                         type: "string";
                     })[];
-                    ordinal: number;
                     canAddNewOptions: NonNullable<boolean | undefined>;
                 };
             };
@@ -767,11 +777,13 @@ export declare const daySchema: yup.ObjectSchema<{
                         profileKey: string;
                         value: {};
                     })[] | undefined;
+                    ordinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
                     templateFor?: "onboarding" | undefined;
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     prompt: string;
                     type: import(".").QuestionKeyType;
-                    ordinal: number;
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -849,13 +861,15 @@ export declare const daySchema: yup.ObjectSchema<{
                         value: {};
                     })[] | undefined;
                     setbackThreshold?: number | undefined;
+                    ordinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
                     templateFor?: "onboarding" | undefined;
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     lowEmoji?: yup.Maybe<string | undefined>;
                     highEmoji?: yup.Maybe<string | undefined>;
                     prompt: string;
                     type: import(".").QuestionKeyType;
-                    ordinal: number;
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -933,11 +947,13 @@ export declare const daySchema: yup.ObjectSchema<{
                         value: {};
                     })[] | undefined;
                     setbackThreshold?: number | undefined;
+                    ordinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
                     templateFor?: "onboarding" | undefined;
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     prompt: string;
                     type: import(".").QuestionKeyType;
-                    ordinal: number;
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -1015,11 +1031,13 @@ export declare const daySchema: yup.ObjectSchema<{
                         value: {};
                     })[] | undefined;
                     setbackThreshold?: number | undefined;
+                    ordinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
                     templateFor?: "onboarding" | undefined;
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     prompt: string;
                     type: import(".").QuestionKeyType;
-                    ordinal: number;
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -1052,6 +1070,9 @@ export declare const daySchema: yup.ObjectSchema<{
                         profileKey: string;
                         value: {};
                     })[] | undefined;
+                    ordinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
                     templateFor?: "onboarding" | undefined;
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     prompt: string;
@@ -1100,7 +1121,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         text: string;
                         type: "string";
                     })[];
-                    ordinal: number;
                     canAddNewOptions: NonNullable<boolean | undefined>;
                 };
             };

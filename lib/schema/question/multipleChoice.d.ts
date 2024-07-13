@@ -47,7 +47,9 @@ export declare const questionMultipleChoiceSchema: yup.ObjectSchema<{
         text: string;
         type: "string";
     })[];
-    ordinal: number;
+    ordinals: {
+        [x: string]: number;
+    } | null | undefined;
     templateFor: "onboarding" | undefined;
     writeAnswerToProfileMemoryKey: string | undefined;
     followUps: ({
@@ -86,7 +88,7 @@ export declare const questionMultipleChoiceSchema: yup.ObjectSchema<{
     prompt: undefined;
     type: undefined;
     options: "";
-    ordinal: undefined;
+    ordinals: undefined;
     templateFor: undefined;
     writeAnswerToProfileMemoryKey: undefined;
     followUps: "";

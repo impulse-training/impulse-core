@@ -738,11 +738,13 @@ export declare const factories: {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
+                ordinals?: {
+                    [x: string]: number;
+                } | null | undefined;
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 prompt: string;
                 type: import("..").QuestionKeyType;
-                ordinal: number;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -820,13 +822,15 @@ export declare const factories: {
                     value: {};
                 })[] | undefined;
                 setbackThreshold?: number | undefined;
+                ordinals?: {
+                    [x: string]: number;
+                } | null | undefined;
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 lowEmoji?: import("yup").Maybe<string | undefined>;
                 highEmoji?: import("yup").Maybe<string | undefined>;
                 prompt: string;
                 type: import("..").QuestionKeyType;
-                ordinal: number;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -904,11 +908,13 @@ export declare const factories: {
                     value: {};
                 })[] | undefined;
                 setbackThreshold?: number | undefined;
+                ordinals?: {
+                    [x: string]: number;
+                } | null | undefined;
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 prompt: string;
                 type: import("..").QuestionKeyType;
-                ordinal: number;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -986,11 +992,13 @@ export declare const factories: {
                     value: {};
                 })[] | undefined;
                 setbackThreshold?: number | undefined;
+                ordinals?: {
+                    [x: string]: number;
+                } | null | undefined;
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 prompt: string;
                 type: import("..").QuestionKeyType;
-                ordinal: number;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -1023,6 +1031,9 @@ export declare const factories: {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
+                ordinals?: {
+                    [x: string]: number;
+                } | null | undefined;
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 prompt: string;
@@ -1071,7 +1082,6 @@ export declare const factories: {
                     text: string;
                     type: "string";
                 })[];
-                ordinal: number;
                 canAddNewOptions: NonNullable<boolean | undefined>;
             };
         };
@@ -2127,11 +2137,13 @@ export declare const factories: {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
+                ordinals?: {
+                    [x: string]: number;
+                } | null | undefined;
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 prompt: string;
                 type: import("..").QuestionKeyType;
-                ordinal: number;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -2209,13 +2221,15 @@ export declare const factories: {
                     value: {};
                 })[] | undefined;
                 setbackThreshold?: number | undefined;
+                ordinals?: {
+                    [x: string]: number;
+                } | null | undefined;
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 lowEmoji?: import("yup").Maybe<string | undefined>;
                 highEmoji?: import("yup").Maybe<string | undefined>;
                 prompt: string;
                 type: import("..").QuestionKeyType;
-                ordinal: number;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -2293,11 +2307,13 @@ export declare const factories: {
                     value: {};
                 })[] | undefined;
                 setbackThreshold?: number | undefined;
+                ordinals?: {
+                    [x: string]: number;
+                } | null | undefined;
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 prompt: string;
                 type: import("..").QuestionKeyType;
-                ordinal: number;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -2375,11 +2391,13 @@ export declare const factories: {
                     value: {};
                 })[] | undefined;
                 setbackThreshold?: number | undefined;
+                ordinals?: {
+                    [x: string]: number;
+                } | null | undefined;
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 prompt: string;
                 type: import("..").QuestionKeyType;
-                ordinal: number;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -2412,6 +2430,9 @@ export declare const factories: {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
+                ordinals?: {
+                    [x: string]: number;
+                } | null | undefined;
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 prompt: string;
@@ -2460,7 +2481,6 @@ export declare const factories: {
                     text: string;
                     type: "string";
                 })[];
-                ordinal: number;
                 canAddNewOptions: NonNullable<boolean | undefined>;
             };
         };
@@ -2545,12 +2565,14 @@ export declare const factories: {
             value: {};
         })[] | undefined;
         setbackThreshold?: number | undefined;
+        ordinals?: {
+            [x: string]: number;
+        } | null | undefined;
         templateFor?: "onboarding" | undefined;
         writeAnswerToProfileMemoryKey?: string | undefined;
         prompt: string;
         type: import("..").QuestionKeyType;
-        ordinal: number;
-    }, "prompt" | "type" | "ordinal" | ("createdAt" | "updatedAt" | "categories" | "options" | "followUps" | "setbackThreshold" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+    }, "prompt" | "type" | ("createdAt" | "updatedAt" | "categories" | "options" | "followUps" | "setbackThreshold" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     questionMultipleChoiceFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -2583,6 +2605,9 @@ export declare const factories: {
             profileKey: string;
             value: {};
         })[] | undefined;
+        ordinals?: {
+            [x: string]: number;
+        } | null | undefined;
         templateFor?: "onboarding" | undefined;
         writeAnswerToProfileMemoryKey?: string | undefined;
         prompt: string;
@@ -2631,9 +2656,8 @@ export declare const factories: {
             text: string;
             type: "string";
         })[];
-        ordinal: number;
         canAddNewOptions: NonNullable<boolean | undefined>;
-    }, "prompt" | "type" | "options" | "ordinal" | "canAddNewOptions" | ("createdAt" | "updatedAt" | "categories" | "followUps" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+    }, "prompt" | "type" | "options" | "canAddNewOptions" | ("createdAt" | "updatedAt" | "categories" | "followUps" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -2809,11 +2833,13 @@ export declare const factories: {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
+                ordinals?: {
+                    [x: string]: number;
+                } | null | undefined;
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 prompt: string;
                 type: import("..").QuestionKeyType;
-                ordinal: number;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -2891,13 +2917,15 @@ export declare const factories: {
                     value: {};
                 })[] | undefined;
                 setbackThreshold?: number | undefined;
+                ordinals?: {
+                    [x: string]: number;
+                } | null | undefined;
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 lowEmoji?: import("yup").Maybe<string | undefined>;
                 highEmoji?: import("yup").Maybe<string | undefined>;
                 prompt: string;
                 type: import("..").QuestionKeyType;
-                ordinal: number;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -2975,11 +3003,13 @@ export declare const factories: {
                     value: {};
                 })[] | undefined;
                 setbackThreshold?: number | undefined;
+                ordinals?: {
+                    [x: string]: number;
+                } | null | undefined;
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 prompt: string;
                 type: import("..").QuestionKeyType;
-                ordinal: number;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -3057,11 +3087,13 @@ export declare const factories: {
                     value: {};
                 })[] | undefined;
                 setbackThreshold?: number | undefined;
+                ordinals?: {
+                    [x: string]: number;
+                } | null | undefined;
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 prompt: string;
                 type: import("..").QuestionKeyType;
-                ordinal: number;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -3094,6 +3126,9 @@ export declare const factories: {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
+                ordinals?: {
+                    [x: string]: number;
+                } | null | undefined;
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 prompt: string;
@@ -3142,7 +3177,6 @@ export declare const factories: {
                     text: string;
                     type: "string";
                 })[];
-                ordinal: number;
                 canAddNewOptions: NonNullable<boolean | undefined>;
             };
         };
@@ -4124,11 +4158,13 @@ export declare const factories: {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
+                ordinals?: {
+                    [x: string]: number;
+                } | null | undefined;
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 prompt: string;
                 type: import("..").QuestionKeyType;
-                ordinal: number;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -4206,13 +4242,15 @@ export declare const factories: {
                     value: {};
                 })[] | undefined;
                 setbackThreshold?: number | undefined;
+                ordinals?: {
+                    [x: string]: number;
+                } | null | undefined;
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 lowEmoji?: import("yup").Maybe<string | undefined>;
                 highEmoji?: import("yup").Maybe<string | undefined>;
                 prompt: string;
                 type: import("..").QuestionKeyType;
-                ordinal: number;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -4290,11 +4328,13 @@ export declare const factories: {
                     value: {};
                 })[] | undefined;
                 setbackThreshold?: number | undefined;
+                ordinals?: {
+                    [x: string]: number;
+                } | null | undefined;
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 prompt: string;
                 type: import("..").QuestionKeyType;
-                ordinal: number;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -4372,11 +4412,13 @@ export declare const factories: {
                     value: {};
                 })[] | undefined;
                 setbackThreshold?: number | undefined;
+                ordinals?: {
+                    [x: string]: number;
+                } | null | undefined;
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 prompt: string;
                 type: import("..").QuestionKeyType;
-                ordinal: number;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -4409,6 +4451,9 @@ export declare const factories: {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
+                ordinals?: {
+                    [x: string]: number;
+                } | null | undefined;
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 prompt: string;
@@ -4457,7 +4502,6 @@ export declare const factories: {
                     text: string;
                     type: "string";
                 })[];
-                ordinal: number;
                 canAddNewOptions: NonNullable<boolean | undefined>;
             };
         };
@@ -4471,5 +4515,5 @@ export declare const factories: {
             toDate: Function;
         };
     }, "questionsById" | "type" | "date" | ("createdAt" | "updatedAt" | "text" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "questionData" | "submittedAt" | "trackingQuestionIds" | "debriefingQuestionIds" | "isDebrief" | "followedUpQuestionIds")>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "prompt" | "type" | "setbackThreshold" | "ordinal" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "prompt" | "type" | "setbackThreshold" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "ordinal" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
 };

@@ -155,11 +155,13 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
                 profileKey: string;
                 value: {};
             })[] | undefined;
+            ordinals?: {
+                [x: string]: number;
+            } | null | undefined;
             templateFor?: "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
             prompt: string;
             type: import("../schema").QuestionKeyType;
-            ordinal: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -237,13 +239,15 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
                 value: {};
             })[] | undefined;
             setbackThreshold?: number | undefined;
+            ordinals?: {
+                [x: string]: number;
+            } | null | undefined;
             templateFor?: "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
             lowEmoji?: import("yup").Maybe<string | undefined>;
             highEmoji?: import("yup").Maybe<string | undefined>;
             prompt: string;
             type: import("../schema").QuestionKeyType;
-            ordinal: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -321,11 +325,13 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
                 value: {};
             })[] | undefined;
             setbackThreshold?: number | undefined;
+            ordinals?: {
+                [x: string]: number;
+            } | null | undefined;
             templateFor?: "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
             prompt: string;
             type: import("../schema").QuestionKeyType;
-            ordinal: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -403,11 +409,13 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
                 value: {};
             })[] | undefined;
             setbackThreshold?: number | undefined;
+            ordinals?: {
+                [x: string]: number;
+            } | null | undefined;
             templateFor?: "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
             prompt: string;
             type: import("../schema").QuestionKeyType;
-            ordinal: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -440,6 +448,9 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
                 profileKey: string;
                 value: {};
             })[] | undefined;
+            ordinals?: {
+                [x: string]: number;
+            } | null | undefined;
             templateFor?: "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
             prompt: string;
@@ -488,7 +499,6 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
                 text: string;
                 type: "string";
             })[];
-            ordinal: number;
             canAddNewOptions: NonNullable<boolean | undefined>;
         };
     };

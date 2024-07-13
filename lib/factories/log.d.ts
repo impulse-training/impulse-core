@@ -151,11 +151,13 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                 profileKey: string;
                 value: {};
             })[] | undefined;
+            ordinals?: {
+                [x: string]: number;
+            } | null | undefined;
             templateFor?: "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
             prompt: string;
             type: import("..").QuestionKeyType;
-            ordinal: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -233,13 +235,15 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                 value: {};
             })[] | undefined;
             setbackThreshold?: number | undefined;
+            ordinals?: {
+                [x: string]: number;
+            } | null | undefined;
             templateFor?: "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
             lowEmoji?: import("yup").Maybe<string | undefined>;
             highEmoji?: import("yup").Maybe<string | undefined>;
             prompt: string;
             type: import("..").QuestionKeyType;
-            ordinal: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -317,11 +321,13 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                 value: {};
             })[] | undefined;
             setbackThreshold?: number | undefined;
+            ordinals?: {
+                [x: string]: number;
+            } | null | undefined;
             templateFor?: "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
             prompt: string;
             type: import("..").QuestionKeyType;
-            ordinal: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -399,11 +405,13 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                 value: {};
             })[] | undefined;
             setbackThreshold?: number | undefined;
+            ordinals?: {
+                [x: string]: number;
+            } | null | undefined;
             templateFor?: "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
             prompt: string;
             type: import("..").QuestionKeyType;
-            ordinal: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -436,6 +444,9 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                 profileKey: string;
                 value: {};
             })[] | undefined;
+            ordinals?: {
+                [x: string]: number;
+            } | null | undefined;
             templateFor?: "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
             prompt: string;
@@ -484,7 +495,6 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                 text: string;
                 type: "string";
             })[];
-            ordinal: number;
             canAddNewOptions: NonNullable<boolean | undefined>;
         };
     };
@@ -1466,11 +1476,13 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                 profileKey: string;
                 value: {};
             })[] | undefined;
+            ordinals?: {
+                [x: string]: number;
+            } | null | undefined;
             templateFor?: "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
             prompt: string;
             type: import("..").QuestionKeyType;
-            ordinal: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -1548,13 +1560,15 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                 value: {};
             })[] | undefined;
             setbackThreshold?: number | undefined;
+            ordinals?: {
+                [x: string]: number;
+            } | null | undefined;
             templateFor?: "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
             lowEmoji?: import("yup").Maybe<string | undefined>;
             highEmoji?: import("yup").Maybe<string | undefined>;
             prompt: string;
             type: import("..").QuestionKeyType;
-            ordinal: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -1632,11 +1646,13 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                 value: {};
             })[] | undefined;
             setbackThreshold?: number | undefined;
+            ordinals?: {
+                [x: string]: number;
+            } | null | undefined;
             templateFor?: "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
             prompt: string;
             type: import("..").QuestionKeyType;
-            ordinal: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -1714,11 +1730,13 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                 value: {};
             })[] | undefined;
             setbackThreshold?: number | undefined;
+            ordinals?: {
+                [x: string]: number;
+            } | null | undefined;
             templateFor?: "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
             prompt: string;
             type: import("..").QuestionKeyType;
-            ordinal: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -1751,6 +1769,9 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                 profileKey: string;
                 value: {};
             })[] | undefined;
+            ordinals?: {
+                [x: string]: number;
+            } | null | undefined;
             templateFor?: "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
             prompt: string;
@@ -1799,7 +1820,6 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                 text: string;
                 type: "string";
             })[];
-            ordinal: number;
             canAddNewOptions: NonNullable<boolean | undefined>;
         };
     };

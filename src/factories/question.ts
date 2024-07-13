@@ -12,7 +12,6 @@ export const makeQuestionTimeTacticFactory = (
     categories: ['debriefing'],
     prompt: 'How long did you spend?',
     type: 'time',
-    ordinal: 0,
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
   });
@@ -24,7 +23,6 @@ export const makeQuestionMultipleChoiceTacticFactory = (
     categories: ['debriefing'],
     prompt: 'How are you feeling?',
     type: 'time',
-    ordinal: 0,
     canAddNewOptions: false,
     options: [
       {

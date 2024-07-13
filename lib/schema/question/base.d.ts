@@ -57,7 +57,9 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
         text: string;
         type: "string";
     })[] | undefined;
-    ordinal: number;
+    ordinals: {
+        [x: string]: number;
+    } | null | undefined;
     templateFor: "onboarding" | undefined;
     writeAnswerToProfileMemoryKey: string | undefined;
     followUps: ({
@@ -95,7 +97,7 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
     prompt: undefined;
     type: undefined;
     options: "";
-    ordinal: undefined;
+    ordinals: undefined;
     templateFor: undefined;
     writeAnswerToProfileMemoryKey: undefined;
     followUps: "";

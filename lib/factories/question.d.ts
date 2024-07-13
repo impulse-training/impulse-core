@@ -77,12 +77,14 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
         value: {};
     })[] | undefined;
     setbackThreshold?: number | undefined;
+    ordinals?: {
+        [x: string]: number;
+    } | null | undefined;
     templateFor?: "onboarding" | undefined;
     writeAnswerToProfileMemoryKey?: string | undefined;
     prompt: string;
     type: import("..").QuestionKeyType;
-    ordinal: number;
-}, "prompt" | "type" | "ordinal" | ("createdAt" | "updatedAt" | "categories" | "options" | "followUps" | "setbackThreshold" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+}, "prompt" | "type" | ("createdAt" | "updatedAt" | "categories" | "options" | "followUps" | "setbackThreshold" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
 export declare const makeQuestionMultipleChoiceTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     createdAt?: {
         isEqual?: any;
@@ -115,6 +117,9 @@ export declare const makeQuestionMultipleChoiceTacticFactory: (TimestampKlass: t
         profileKey: string;
         value: {};
     })[] | undefined;
+    ordinals?: {
+        [x: string]: number;
+    } | null | undefined;
     templateFor?: "onboarding" | undefined;
     writeAnswerToProfileMemoryKey?: string | undefined;
     prompt: string;
@@ -163,6 +168,5 @@ export declare const makeQuestionMultipleChoiceTacticFactory: (TimestampKlass: t
         text: string;
         type: "string";
     })[];
-    ordinal: number;
     canAddNewOptions: NonNullable<boolean | undefined>;
-}, "prompt" | "type" | "options" | "ordinal" | "canAddNewOptions" | ("createdAt" | "updatedAt" | "categories" | "followUps" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+}, "prompt" | "type" | "options" | "canAddNewOptions" | ("createdAt" | "updatedAt" | "categories" | "followUps" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
