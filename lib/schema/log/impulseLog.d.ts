@@ -54,6 +54,7 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
     }[] | undefined;
     issueName: string | undefined;
     parentIssueIds: string[];
+    gameplanStrategyIds: string[];
     strategiesById: {
         [x: string]: {
             createdAt?: {
@@ -120,7 +121,6 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
             profileId?: string | null | undefined;
             prompt?: string | undefined;
             setbackThreshold?: number | null | undefined;
-            repeat?: yup.Maybe<number | undefined>;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -139,6 +139,7 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            repeat?: yup.Maybe<number | undefined>;
             type: "breathingExercise";
             ordinal: number;
             inFor: number;
@@ -336,6 +337,8 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            slug?: string | undefined;
+            creatorProfileId?: string | undefined;
             tacticsById?: {
                 [x: string]: {
                     createdAt?: {
@@ -402,7 +405,6 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                     profileId?: string | null | undefined;
                     prompt?: string | undefined;
                     setbackThreshold?: number | null | undefined;
-                    repeat?: yup.Maybe<number | undefined>;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -421,6 +423,7 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
+                    repeat?: yup.Maybe<number | undefined>;
                     type: "breathingExercise";
                     ordinal: number;
                     inFor: number;
@@ -598,8 +601,6 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                     };
                 };
             } | null | undefined;
-            slug?: string | undefined;
-            creatorProfileId?: string | undefined;
             next3Tactics?: ({
                 createdAt?: {
                     isEqual?: any;
@@ -665,7 +666,6 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                 profileId?: string | null | undefined;
                 prompt?: string | undefined;
                 setbackThreshold?: number | null | undefined;
-                repeat?: yup.Maybe<number | undefined>;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -684,6 +684,7 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
+                repeat?: yup.Maybe<number | undefined>;
                 type: "breathingExercise";
                 ordinal: number;
                 inFor: number;
@@ -1343,6 +1344,7 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
     gptPayload: "";
     issueName: undefined;
     parentIssueIds: "";
+    gameplanStrategyIds: "";
     strategiesById: undefined;
     completedTacticIds: "";
     questionsById: undefined;

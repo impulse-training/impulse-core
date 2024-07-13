@@ -11,6 +11,7 @@ export const makeImpulseLogFactory = (TimestampKlass: typeof TimestampLike) =>
     date: TimestampKlass.now(),
     issueName: 'YouTube',
     followedUpQuestionIds: [],
+    gameplanStrategyIds: [],
     questionsById: {},
     strategiesById: {},
     // These are the tactics that the user has completed

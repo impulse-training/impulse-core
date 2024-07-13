@@ -14,4 +14,5 @@ export const makeProfileFactory = (TimestampKlass: typeof TimestampLike) =>
     uids: ['uid1', 'uid2'],
     longTermMemory: {},
     questionsById: {},
+    strategiesById: {},
   });

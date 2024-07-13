@@ -499,15 +499,6 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
         };
     };
     type: "impulse";
-    date: {
-        isEqual?: any;
-        toMillis?: any;
-        toJSON?: any;
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    };
-    followedUpQuestionIds: string[];
     strategiesById: {
         [x: string]: {
             createdAt?: {
@@ -574,7 +565,6 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
             profileId?: string | null | undefined;
             prompt?: string | undefined;
             setbackThreshold?: number | null | undefined;
-            repeat?: import("yup").Maybe<number | undefined>;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -593,6 +583,7 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            repeat?: import("yup").Maybe<number | undefined>;
             type: "breathingExercise";
             ordinal: number;
             inFor: number;
@@ -790,6 +781,8 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            slug?: string | undefined;
+            creatorProfileId?: string | undefined;
             tacticsById?: {
                 [x: string]: {
                     createdAt?: {
@@ -856,7 +849,6 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                     profileId?: string | null | undefined;
                     prompt?: string | undefined;
                     setbackThreshold?: number | null | undefined;
-                    repeat?: import("yup").Maybe<number | undefined>;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -875,6 +867,7 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
+                    repeat?: import("yup").Maybe<number | undefined>;
                     type: "breathingExercise";
                     ordinal: number;
                     inFor: number;
@@ -1052,8 +1045,6 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                     };
                 };
             } | null | undefined;
-            slug?: string | undefined;
-            creatorProfileId?: string | undefined;
             next3Tactics?: ({
                 createdAt?: {
                     isEqual?: any;
@@ -1119,7 +1110,6 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                 profileId?: string | null | undefined;
                 prompt?: string | undefined;
                 setbackThreshold?: number | null | undefined;
-                repeat?: import("yup").Maybe<number | undefined>;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -1138,6 +1128,7 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
+                repeat?: import("yup").Maybe<number | undefined>;
                 type: "breathingExercise";
                 ordinal: number;
                 inFor: number;
@@ -1322,8 +1313,18 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
             invitationUrl: string;
         };
     };
+    date: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    };
+    followedUpQuestionIds: string[];
+    gameplanStrategyIds: string[];
     completedTacticIds: string[];
-}, "parentIssueIds" | "questionsById" | "type" | "date" | "followedUpQuestionIds" | "strategiesById" | "completedTacticIds" | ("createdAt" | "updatedAt" | "text" | "issueName" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "questionData" | "submittedAt" | "isDebrief")>;
+}, "parentIssueIds" | "questionsById" | "type" | "strategiesById" | "date" | "followedUpQuestionIds" | "gameplanStrategyIds" | "completedTacticIds" | ("createdAt" | "updatedAt" | "text" | "issueName" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "questionData" | "submittedAt" | "isDebrief")>;
 export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     createdAt?: {
         isEqual?: any;

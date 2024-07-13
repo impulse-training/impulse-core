@@ -1125,15 +1125,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 };
             };
             type: "impulse";
-            date: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            };
-            followedUpQuestionIds: string[];
             strategiesById: {
                 [x: string]: {
                     createdAt?: {
@@ -1200,7 +1191,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     profileId?: string | null | undefined;
                     prompt?: string | undefined;
                     setbackThreshold?: number | null | undefined;
-                    repeat?: yup.Maybe<number | undefined>;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -1219,6 +1209,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
+                    repeat?: yup.Maybe<number | undefined>;
                     type: "breathingExercise";
                     ordinal: number;
                     inFor: number;
@@ -1416,6 +1407,8 @@ export declare const daySchema: yup.ObjectSchema<{
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
+                    slug?: string | undefined;
+                    creatorProfileId?: string | undefined;
                     tacticsById?: {
                         [x: string]: {
                             createdAt?: {
@@ -1482,7 +1475,6 @@ export declare const daySchema: yup.ObjectSchema<{
                             profileId?: string | null | undefined;
                             prompt?: string | undefined;
                             setbackThreshold?: number | null | undefined;
-                            repeat?: yup.Maybe<number | undefined>;
                             recommendedForIssueIds?: string[] | undefined;
                             recommendedForIssueOrdinals?: {
                                 [x: string]: number;
@@ -1501,6 +1493,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             likesCount?: number | null | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
+                            repeat?: yup.Maybe<number | undefined>;
                             type: "breathingExercise";
                             ordinal: number;
                             inFor: number;
@@ -1678,8 +1671,6 @@ export declare const daySchema: yup.ObjectSchema<{
                             };
                         };
                     } | null | undefined;
-                    slug?: string | undefined;
-                    creatorProfileId?: string | undefined;
                     next3Tactics?: ({
                         createdAt?: {
                             isEqual?: any;
@@ -1745,7 +1736,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         profileId?: string | null | undefined;
                         prompt?: string | undefined;
                         setbackThreshold?: number | null | undefined;
-                        repeat?: yup.Maybe<number | undefined>;
                         recommendedForIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
@@ -1764,6 +1754,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         likesCount?: number | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isSuggested?: boolean | undefined;
+                        repeat?: yup.Maybe<number | undefined>;
                         type: "breathingExercise";
                         ordinal: number;
                         inFor: number;
@@ -1948,6 +1939,16 @@ export declare const daySchema: yup.ObjectSchema<{
                     invitationUrl: string;
                 };
             };
+            date: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            };
+            followedUpQuestionIds: string[];
+            gameplanStrategyIds: string[];
             completedTacticIds: string[];
         } | {
             createdAt?: {
@@ -2048,14 +2049,6 @@ export declare const daySchema: yup.ObjectSchema<{
             openAiChoiceResponse?: {} | undefined;
             suggestedStrategyIds?: string[] | undefined;
             type: "strategies";
-            date: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            };
             strategiesById: {
                 [x: string]: {
                     createdAt?: {
@@ -2122,7 +2115,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     profileId?: string | null | undefined;
                     prompt?: string | undefined;
                     setbackThreshold?: number | null | undefined;
-                    repeat?: yup.Maybe<number | undefined>;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -2141,6 +2133,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
+                    repeat?: yup.Maybe<number | undefined>;
                     type: "breathingExercise";
                     ordinal: number;
                     inFor: number;
@@ -2338,6 +2331,8 @@ export declare const daySchema: yup.ObjectSchema<{
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
+                    slug?: string | undefined;
+                    creatorProfileId?: string | undefined;
                     tacticsById?: {
                         [x: string]: {
                             createdAt?: {
@@ -2404,7 +2399,6 @@ export declare const daySchema: yup.ObjectSchema<{
                             profileId?: string | null | undefined;
                             prompt?: string | undefined;
                             setbackThreshold?: number | null | undefined;
-                            repeat?: yup.Maybe<number | undefined>;
                             recommendedForIssueIds?: string[] | undefined;
                             recommendedForIssueOrdinals?: {
                                 [x: string]: number;
@@ -2423,6 +2417,7 @@ export declare const daySchema: yup.ObjectSchema<{
                             likesCount?: number | null | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
+                            repeat?: yup.Maybe<number | undefined>;
                             type: "breathingExercise";
                             ordinal: number;
                             inFor: number;
@@ -2600,8 +2595,6 @@ export declare const daySchema: yup.ObjectSchema<{
                             };
                         };
                     } | null | undefined;
-                    slug?: string | undefined;
-                    creatorProfileId?: string | undefined;
                     next3Tactics?: ({
                         createdAt?: {
                             isEqual?: any;
@@ -2667,7 +2660,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         profileId?: string | null | undefined;
                         prompt?: string | undefined;
                         setbackThreshold?: number | null | undefined;
-                        repeat?: yup.Maybe<number | undefined>;
                         recommendedForIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
@@ -2686,6 +2678,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         likesCount?: number | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isSuggested?: boolean | undefined;
+                        repeat?: yup.Maybe<number | undefined>;
                         type: "breathingExercise";
                         ordinal: number;
                         inFor: number;
@@ -2869,6 +2862,14 @@ export declare const daySchema: yup.ObjectSchema<{
                     invitationCode: string;
                     invitationUrl: string;
                 };
+            };
+            date: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
             };
             completedTacticIds: string[];
             followedUpTacticIds: string[];

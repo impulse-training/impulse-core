@@ -119,7 +119,6 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
             profileId?: string | null | undefined;
             prompt?: string | undefined;
             setbackThreshold?: number | null | undefined;
-            repeat?: yup.Maybe<number | undefined>;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -138,6 +137,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            repeat?: yup.Maybe<number | undefined>;
             type: "breathingExercise";
             ordinal: number;
             inFor: number;
@@ -335,6 +335,8 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            slug?: string | undefined;
+            creatorProfileId?: string | undefined;
             tacticsById?: {
                 [x: string]: {
                     createdAt?: {
@@ -401,7 +403,6 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     profileId?: string | null | undefined;
                     prompt?: string | undefined;
                     setbackThreshold?: number | null | undefined;
-                    repeat?: yup.Maybe<number | undefined>;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -420,6 +421,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
+                    repeat?: yup.Maybe<number | undefined>;
                     type: "breathingExercise";
                     ordinal: number;
                     inFor: number;
@@ -597,8 +599,6 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     };
                 };
             } | null | undefined;
-            slug?: string | undefined;
-            creatorProfileId?: string | undefined;
             next3Tactics?: ({
                 createdAt?: {
                     isEqual?: any;
@@ -664,7 +664,6 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 profileId?: string | null | undefined;
                 prompt?: string | undefined;
                 setbackThreshold?: number | null | undefined;
-                repeat?: yup.Maybe<number | undefined>;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -683,6 +682,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
+                repeat?: yup.Maybe<number | undefined>;
                 type: "breathingExercise";
                 ordinal: number;
                 inFor: number;

@@ -4,6 +4,7 @@ import { AgentName } from '../agents';
 import { questionDataSchema } from './log';
 import { notificationOptionSchema } from './notification';
 import { questionSchema } from './question';
+import { strategySchema } from './strategy';
 import { optionalStringArray, requiredStringArray } from './utils/array';
 import { documentReferenceSchema } from './utils/firestore';
 import { objectOf, optionalObjectOf } from './utils/objectOf';
@@ -31,6 +32,7 @@ export const profileSchema = yup.object({
   parentIssueIds: optionalStringArray,
   setbackThreshold: yup.number(),
   gameplanStrategies: yup.array().of(documentReferenceSchema.required()),
+  strategiesById: objectOf(strategySchema),
   currentAgent: yup.mixed<AgentName>().default('onboarding'),
   androidPermissions: optionalObjectOf(yup.boolean().required()),
   // This is a record of question data, that may be accessed by the LLM

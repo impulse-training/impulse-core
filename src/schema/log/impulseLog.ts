@@ -10,6 +10,7 @@ import { questionDataSchema } from './questionsLog';
 export const impulseLogSchema = logBaseSchema('impulse').shape({
   issueName: yup.string(),
   parentIssueIds: requiredStringArray,
+  gameplanStrategyIds: requiredStringArray,
   strategiesById: objectOf(strategySchema),
   // These are the tactics that the user has completed
   completedTacticIds: requiredStringArray,

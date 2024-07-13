@@ -94,7 +94,6 @@ export declare const folderSchema: yup.ObjectSchema<{
             profileId?: string | null | undefined;
             prompt?: string | undefined;
             setbackThreshold?: number | null | undefined;
-            repeat?: yup.Maybe<number | undefined>;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -113,6 +112,7 @@ export declare const folderSchema: yup.ObjectSchema<{
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            repeat?: yup.Maybe<number | undefined>;
             type: "breathingExercise";
             ordinal: number;
             inFor: number;
@@ -355,7 +355,6 @@ export declare const folderSchema: yup.ObjectSchema<{
         profileId?: string | null | undefined;
         prompt?: string | undefined;
         setbackThreshold?: number | null | undefined;
-        repeat?: yup.Maybe<number | undefined>;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -374,6 +373,7 @@ export declare const folderSchema: yup.ObjectSchema<{
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
+        repeat?: yup.Maybe<number | undefined>;
         type: "breathingExercise";
         ordinal: number;
         inFor: number;
