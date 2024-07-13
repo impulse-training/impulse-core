@@ -52,7 +52,7 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
         role: NonNullable<"system" | "user" | "assistant" | undefined>;
         content: string;
     }[] | undefined;
-    issueName: string;
+    issueName: string | undefined;
     parentIssueIds: string[];
     strategiesById: {
         [x: string]: {

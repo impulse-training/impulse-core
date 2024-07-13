@@ -634,6 +634,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             text?: string | undefined;
+            issueName?: string | undefined;
             activeImpulseId?: string | null | undefined;
             senderProfileId?: string | null | undefined;
             views?: {
@@ -1104,7 +1105,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 };
             };
             type: "impulse";
-            issueName: string;
             date: {
                 isEqual?: any;
                 toMillis?: any;
