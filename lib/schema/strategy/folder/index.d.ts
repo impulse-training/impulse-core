@@ -47,8 +47,8 @@ export declare const folderSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            setbackThreshold?: number | null | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -92,9 +92,9 @@ export declare const folderSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            prompt?: string | undefined;
             setbackThreshold?: number | null | undefined;
             repeat?: yup.Maybe<number | undefined>;
-            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -136,8 +136,8 @@ export declare const folderSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            setbackThreshold?: number | null | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -177,8 +177,8 @@ export declare const folderSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            setbackThreshold?: number | null | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -218,8 +218,8 @@ export declare const folderSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            setbackThreshold?: number | null | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -258,8 +258,8 @@ export declare const folderSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            setbackThreshold?: number | null | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -308,8 +308,8 @@ export declare const folderSchema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
-        setbackThreshold?: number | null | undefined;
         prompt?: string | undefined;
+        setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -353,9 +353,9 @@ export declare const folderSchema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
+        prompt?: string | undefined;
         setbackThreshold?: number | null | undefined;
         repeat?: yup.Maybe<number | undefined>;
-        prompt?: string | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -397,8 +397,8 @@ export declare const folderSchema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
-        setbackThreshold?: number | null | undefined;
         prompt?: string | undefined;
+        setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -438,8 +438,8 @@ export declare const folderSchema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
-        setbackThreshold?: number | null | undefined;
         prompt?: string | undefined;
+        setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -479,8 +479,8 @@ export declare const folderSchema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
-        setbackThreshold?: number | null | undefined;
         prompt?: string | undefined;
+        setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -519,8 +519,8 @@ export declare const folderSchema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
-        setbackThreshold?: number | null | undefined;
         prompt?: string | undefined;
+        setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;

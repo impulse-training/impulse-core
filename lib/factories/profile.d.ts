@@ -49,10 +49,10 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     notificationPreferences?: {
         [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
     } | null | undefined;
+    setbackThreshold?: number | undefined;
     issueName?: string | undefined;
     isReadyForTour?: boolean | undefined;
     isOnboardingComplete?: boolean | undefined;
-    setbackThreshold?: number | undefined;
     gameplanStrategies?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
     androidPermissions?: {
         [x: string]: NonNullable<boolean | undefined>;
@@ -60,10 +60,10 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     longTermMemory?: {
         [x: string]: {
             label?: string | undefined;
+            color?: string | undefined;
             setbackThreshold?: number | undefined;
             idValue?: string | undefined;
             numericValue?: number | undefined;
-            color?: string | undefined;
             setAt: {
                 isEqual?: any;
                 toMillis?: any;
@@ -78,7 +78,421 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     } | null | undefined;
     region?: string | null | undefined;
     uids: string[];
+    questionsById: {
+        [x: string]: {
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            options?: ({
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                setbackThreshold?: number | undefined;
+                greaterThan?: number | undefined;
+                lessThanOrEqualTo?: number | undefined;
+                text: string;
+                type: "numeric";
+            } | {
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                text: string;
+                type: "string";
+            })[] | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
+            templateFor?: "onboarding" | undefined;
+            writeAnswerToProfileMemoryKey?: string | undefined;
+            prompt: string;
+            type: import("../schema").QuestionKeyType;
+            ordinal: number;
+        } | {
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            options?: ({
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                setbackThreshold?: number | undefined;
+                greaterThan?: number | undefined;
+                lessThanOrEqualTo?: number | undefined;
+                text: string;
+                type: "numeric";
+            } | {
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                text: string;
+                type: "string";
+            })[] | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
+            setbackThreshold?: number | undefined;
+            templateFor?: "onboarding" | undefined;
+            writeAnswerToProfileMemoryKey?: string | undefined;
+            lowEmoji?: import("yup").Maybe<string | undefined>;
+            highEmoji?: import("yup").Maybe<string | undefined>;
+            prompt: string;
+            type: import("../schema").QuestionKeyType;
+            ordinal: number;
+        } | {
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            options?: ({
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                setbackThreshold?: number | undefined;
+                greaterThan?: number | undefined;
+                lessThanOrEqualTo?: number | undefined;
+                text: string;
+                type: "numeric";
+            } | {
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                text: string;
+                type: "string";
+            })[] | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
+            setbackThreshold?: number | undefined;
+            templateFor?: "onboarding" | undefined;
+            writeAnswerToProfileMemoryKey?: string | undefined;
+            prompt: string;
+            type: import("../schema").QuestionKeyType;
+            ordinal: number;
+        } | {
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            options?: ({
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                setbackThreshold?: number | undefined;
+                greaterThan?: number | undefined;
+                lessThanOrEqualTo?: number | undefined;
+                text: string;
+                type: "numeric";
+            } | {
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                text: string;
+                type: "string";
+            })[] | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
+            setbackThreshold?: number | undefined;
+            templateFor?: "onboarding" | undefined;
+            writeAnswerToProfileMemoryKey?: string | undefined;
+            prompt: string;
+            type: import("../schema").QuestionKeyType;
+            ordinal: number;
+        } | {
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
+            templateFor?: "onboarding" | undefined;
+            writeAnswerToProfileMemoryKey?: string | undefined;
+            prompt: string;
+            type: import("../schema").QuestionKeyType;
+            options: ({
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                setbackThreshold?: number | undefined;
+                greaterThan?: number | undefined;
+                lessThanOrEqualTo?: number | undefined;
+                text: string;
+                type: "numeric";
+            } | {
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                text: string;
+                type: "string";
+            })[];
+            ordinal: number;
+            canAddNewOptions: NonNullable<boolean | undefined>;
+        };
+    };
     issueId: string | null;
     currentAgent: import("..").AgentName;
     timezone: string;
-}, "uids" | "issueId" | "currentAgent" | "timezone" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "parentIssueIds" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "issueName" | "isReadyForTour" | "isOnboardingComplete" | "setbackThreshold" | "gameplanStrategies" | "androidPermissions" | "longTermMemory" | "region")>;
+}, "uids" | "questionsById" | "issueId" | "currentAgent" | "timezone" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "parentIssueIds" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "setbackThreshold" | "issueName" | "isReadyForTour" | "isOnboardingComplete" | "gameplanStrategies" | "androidPermissions" | "longTermMemory" | "region")>;

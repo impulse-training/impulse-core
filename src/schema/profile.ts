@@ -3,9 +3,10 @@ import * as yup from 'yup';
 import { AgentName } from '../agents';
 import { questionDataSchema } from './log';
 import { notificationOptionSchema } from './notification';
+import { questionSchema } from './question';
 import { optionalStringArray, requiredStringArray } from './utils/array';
 import { documentReferenceSchema } from './utils/firestore';
-import { optionalObjectOf } from './utils/objectOf';
+import { objectOf, optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema } from './utils/timestamp';
 
 export const profileSchema = yup.object({
@@ -20,6 +21,9 @@ export const profileSchema = yup.object({
   notificationPreferences: optionalObjectOf(
     yup.array().of(notificationOptionSchema)
   ),
+  // For now at least, we copy questions data to the profile
+  questionsById: objectOf(questionSchema),
+
   issueId: yup.string().required().nullable(),
   issueName: yup.string(),
   isReadyForTour: yup.boolean(),

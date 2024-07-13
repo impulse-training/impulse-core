@@ -17,7 +17,51 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    setbackThreshold?: number | undefined;
+    categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+    options?: ({
+        label?: string | undefined;
+        followUps?: ({
+            message?: string | undefined;
+            type: "askAnotherQuestion";
+            questionId: string;
+        } | {
+            message?: string | undefined;
+            type: "writeAnswerToProfile";
+            profileKey: string;
+        } | {
+            message?: string | undefined;
+            type: "writeValueToProfile";
+            profileKey: string;
+            value: {};
+        })[] | undefined;
+        color?: string | undefined;
+        textColor?: string | undefined;
+        setbackThreshold?: number | undefined;
+        greaterThan?: number | undefined;
+        lessThanOrEqualTo?: number | undefined;
+        text: string;
+        type: "numeric";
+    } | {
+        label?: string | undefined;
+        followUps?: ({
+            message?: string | undefined;
+            type: "askAnotherQuestion";
+            questionId: string;
+        } | {
+            message?: string | undefined;
+            type: "writeAnswerToProfile";
+            profileKey: string;
+        } | {
+            message?: string | undefined;
+            type: "writeValueToProfile";
+            profileKey: string;
+            value: {};
+        })[] | undefined;
+        color?: string | undefined;
+        textColor?: string | undefined;
+        text: string;
+        type: "string";
+    })[] | undefined;
     followUps?: ({
         message?: string | undefined;
         type: "askAnotherQuestion";
@@ -32,57 +76,13 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
         profileKey: string;
         value: {};
     })[] | undefined;
-    categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
-    options?: ({
-        label?: string | undefined;
-        setbackThreshold?: number | undefined;
-        color?: string | undefined;
-        followUps?: ({
-            message?: string | undefined;
-            type: "askAnotherQuestion";
-            questionId: string;
-        } | {
-            message?: string | undefined;
-            type: "writeAnswerToProfile";
-            profileKey: string;
-        } | {
-            message?: string | undefined;
-            type: "writeValueToProfile";
-            profileKey: string;
-            value: {};
-        })[] | undefined;
-        textColor?: string | undefined;
-        greaterThan?: number | undefined;
-        lessThanOrEqualTo?: number | undefined;
-        text: string;
-        type: "numeric";
-    } | {
-        label?: string | undefined;
-        color?: string | undefined;
-        followUps?: ({
-            message?: string | undefined;
-            type: "askAnotherQuestion";
-            questionId: string;
-        } | {
-            message?: string | undefined;
-            type: "writeAnswerToProfile";
-            profileKey: string;
-        } | {
-            message?: string | undefined;
-            type: "writeValueToProfile";
-            profileKey: string;
-            value: {};
-        })[] | undefined;
-        textColor?: string | undefined;
-        text: string;
-        type: "string";
-    })[] | undefined;
+    setbackThreshold?: number | undefined;
     templateFor?: "onboarding" | undefined;
     writeAnswerToProfileMemoryKey?: string | undefined;
-    type: import("..").QuestionKeyType;
     prompt: string;
+    type: import("..").QuestionKeyType;
     ordinal: number;
-}, "type" | "prompt" | "ordinal" | ("createdAt" | "updatedAt" | "setbackThreshold" | "followUps" | "categories" | "options" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+}, "prompt" | "type" | "ordinal" | ("createdAt" | "updatedAt" | "categories" | "options" | "followUps" | "setbackThreshold" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
 export declare const makeQuestionMultipleChoiceTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     createdAt?: {
         isEqual?: any;
@@ -100,6 +100,7 @@ export declare const makeQuestionMultipleChoiceTacticFactory: (TimestampKlass: t
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
     followUps?: ({
         message?: string | undefined;
         type: "askAnotherQuestion";
@@ -114,15 +115,12 @@ export declare const makeQuestionMultipleChoiceTacticFactory: (TimestampKlass: t
         profileKey: string;
         value: {};
     })[] | undefined;
-    categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
     templateFor?: "onboarding" | undefined;
     writeAnswerToProfileMemoryKey?: string | undefined;
-    type: import("..").QuestionKeyType;
     prompt: string;
+    type: import("..").QuestionKeyType;
     options: ({
         label?: string | undefined;
-        setbackThreshold?: number | undefined;
-        color?: string | undefined;
         followUps?: ({
             message?: string | undefined;
             type: "askAnotherQuestion";
@@ -137,14 +135,15 @@ export declare const makeQuestionMultipleChoiceTacticFactory: (TimestampKlass: t
             profileKey: string;
             value: {};
         })[] | undefined;
+        color?: string | undefined;
         textColor?: string | undefined;
+        setbackThreshold?: number | undefined;
         greaterThan?: number | undefined;
         lessThanOrEqualTo?: number | undefined;
         text: string;
         type: "numeric";
     } | {
         label?: string | undefined;
-        color?: string | undefined;
         followUps?: ({
             message?: string | undefined;
             type: "askAnotherQuestion";
@@ -159,10 +158,11 @@ export declare const makeQuestionMultipleChoiceTacticFactory: (TimestampKlass: t
             profileKey: string;
             value: {};
         })[] | undefined;
+        color?: string | undefined;
         textColor?: string | undefined;
         text: string;
         type: "string";
     })[];
     ordinal: number;
     canAddNewOptions: NonNullable<boolean | undefined>;
-}, "type" | "prompt" | "options" | "ordinal" | "canAddNewOptions" | ("createdAt" | "updatedAt" | "followUps" | "categories" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+}, "prompt" | "type" | "options" | "ordinal" | "canAddNewOptions" | ("createdAt" | "updatedAt" | "categories" | "followUps" | "templateFor" | "writeAnswerToProfileMemoryKey")>;

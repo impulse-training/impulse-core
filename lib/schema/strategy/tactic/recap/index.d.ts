@@ -22,8 +22,8 @@ export declare const recapTacticSchema: yup.Lazy<{
         toDate: Function;
     } | null | undefined;
     profileId?: string | null | undefined;
-    setbackThreshold?: number | null | undefined;
     prompt?: string | undefined;
+    setbackThreshold?: number | null | undefined;
     recommendedForIssueIds?: string[] | undefined;
     recommendedForIssueOrdinals?: {
         [x: string]: number;

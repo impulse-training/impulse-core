@@ -47,10 +47,10 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
     questionData?: {
         [x: string]: {
             label?: string | undefined;
+            color?: string | undefined;
             setbackThreshold?: number | undefined;
             idValue?: string | undefined;
             numericValue?: number | undefined;
-            color?: string | undefined;
             setAt: {
                 isEqual?: any;
                 toMillis?: any;
@@ -71,21 +71,8 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    trackingQuestionIds?: string[] | undefined;
-    debriefingQuestionIds?: string[] | undefined;
     isDebrief?: boolean | undefined;
-    followedUpQuestionIds?: string[] | undefined;
     parentIssueIds: string[];
-    issueName: string;
-    date: {
-        isEqual?: any;
-        toMillis?: any;
-        toJSON?: any;
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    };
-    type: "impulse";
     questionsById: {
         [x: string]: {
             createdAt?: {
@@ -104,6 +91,51 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            options?: ({
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                setbackThreshold?: number | undefined;
+                greaterThan?: number | undefined;
+                lessThanOrEqualTo?: number | undefined;
+                text: string;
+                type: "numeric";
+            } | {
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                text: string;
+                type: "string";
+            })[] | undefined;
             followUps?: ({
                 message?: string | undefined;
                 type: "askAnotherQuestion";
@@ -118,55 +150,10 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                 profileKey: string;
                 value: {};
             })[] | undefined;
-            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
-            options?: ({
-                label?: string | undefined;
-                setbackThreshold?: number | undefined;
-                color?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                textColor?: string | undefined;
-                greaterThan?: number | undefined;
-                lessThanOrEqualTo?: number | undefined;
-                text: string;
-                type: "numeric";
-            } | {
-                label?: string | undefined;
-                color?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                textColor?: string | undefined;
-                text: string;
-                type: "string";
-            })[] | undefined;
             templateFor?: "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
-            type: import("..").QuestionKeyType;
             prompt: string;
+            type: import("..").QuestionKeyType;
             ordinal: number;
         } | {
             createdAt?: {
@@ -185,70 +172,72 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            options?: ({
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                setbackThreshold?: number | undefined;
+                greaterThan?: number | undefined;
+                lessThanOrEqualTo?: number | undefined;
+                text: string;
+                type: "numeric";
+            } | {
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                text: string;
+                type: "string";
+            })[] | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
             setbackThreshold?: number | undefined;
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            })[] | undefined;
-            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
-            options?: ({
-                label?: string | undefined;
-                setbackThreshold?: number | undefined;
-                color?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                textColor?: string | undefined;
-                greaterThan?: number | undefined;
-                lessThanOrEqualTo?: number | undefined;
-                text: string;
-                type: "numeric";
-            } | {
-                label?: string | undefined;
-                color?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                textColor?: string | undefined;
-                text: string;
-                type: "string";
-            })[] | undefined;
             templateFor?: "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
-            type: import("..").QuestionKeyType;
+            lowEmoji?: import("yup").Maybe<string | undefined>;
+            highEmoji?: import("yup").Maybe<string | undefined>;
             prompt: string;
+            type: import("..").QuestionKeyType;
             ordinal: number;
         } | {
             createdAt?: {
@@ -267,6 +256,51 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            options?: ({
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                setbackThreshold?: number | undefined;
+                greaterThan?: number | undefined;
+                lessThanOrEqualTo?: number | undefined;
+                text: string;
+                type: "numeric";
+            } | {
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                text: string;
+                type: "string";
+            })[] | undefined;
             followUps?: ({
                 message?: string | undefined;
                 type: "askAnotherQuestion";
@@ -281,15 +315,132 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                 profileKey: string;
                 value: {};
             })[] | undefined;
-            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            setbackThreshold?: number | undefined;
             templateFor?: "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
-            type: import("..").QuestionKeyType;
             prompt: string;
+            type: import("..").QuestionKeyType;
+            ordinal: number;
+        } | {
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            options?: ({
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                setbackThreshold?: number | undefined;
+                greaterThan?: number | undefined;
+                lessThanOrEqualTo?: number | undefined;
+                text: string;
+                type: "numeric";
+            } | {
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                text: string;
+                type: "string";
+            })[] | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
+            setbackThreshold?: number | undefined;
+            templateFor?: "onboarding" | undefined;
+            writeAnswerToProfileMemoryKey?: string | undefined;
+            prompt: string;
+            type: import("..").QuestionKeyType;
+            ordinal: number;
+        } | {
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
+            templateFor?: "onboarding" | undefined;
+            writeAnswerToProfileMemoryKey?: string | undefined;
+            prompt: string;
+            type: import("..").QuestionKeyType;
             options: ({
                 label?: string | undefined;
-                setbackThreshold?: number | undefined;
-                color?: string | undefined;
                 followUps?: ({
                     message?: string | undefined;
                     type: "askAnotherQuestion";
@@ -304,14 +455,15 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                     profileKey: string;
                     value: {};
                 })[] | undefined;
+                color?: string | undefined;
                 textColor?: string | undefined;
+                setbackThreshold?: number | undefined;
                 greaterThan?: number | undefined;
                 lessThanOrEqualTo?: number | undefined;
                 text: string;
                 type: "numeric";
             } | {
                 label?: string | undefined;
-                color?: string | undefined;
                 followUps?: ({
                     message?: string | undefined;
                     type: "askAnotherQuestion";
@@ -326,180 +478,26 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                     profileKey: string;
                     value: {};
                 })[] | undefined;
+                color?: string | undefined;
                 textColor?: string | undefined;
                 text: string;
                 type: "string";
             })[];
             ordinal: number;
             canAddNewOptions: NonNullable<boolean | undefined>;
-        } | {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            setbackThreshold?: number | undefined;
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            })[] | undefined;
-            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
-            options?: ({
-                label?: string | undefined;
-                setbackThreshold?: number | undefined;
-                color?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                textColor?: string | undefined;
-                greaterThan?: number | undefined;
-                lessThanOrEqualTo?: number | undefined;
-                text: string;
-                type: "numeric";
-            } | {
-                label?: string | undefined;
-                color?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                textColor?: string | undefined;
-                text: string;
-                type: "string";
-            })[] | undefined;
-            templateFor?: "onboarding" | undefined;
-            writeAnswerToProfileMemoryKey?: string | undefined;
-            lowEmoji?: import("yup").Maybe<string | undefined>;
-            highEmoji?: import("yup").Maybe<string | undefined>;
-            type: import("..").QuestionKeyType;
-            prompt: string;
-            ordinal: number;
-        } | {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            setbackThreshold?: number | undefined;
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            })[] | undefined;
-            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
-            options?: ({
-                label?: string | undefined;
-                setbackThreshold?: number | undefined;
-                color?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                textColor?: string | undefined;
-                greaterThan?: number | undefined;
-                lessThanOrEqualTo?: number | undefined;
-                text: string;
-                type: "numeric";
-            } | {
-                label?: string | undefined;
-                color?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                textColor?: string | undefined;
-                text: string;
-                type: "string";
-            })[] | undefined;
-            templateFor?: "onboarding" | undefined;
-            writeAnswerToProfileMemoryKey?: string | undefined;
-            type: import("..").QuestionKeyType;
-            prompt: string;
-            ordinal: number;
         };
     };
+    type: "impulse";
+    issueName: string;
+    date: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    };
+    followedUpQuestionIds: string[];
     strategiesById: {
         [x: string]: {
             createdAt?: {
@@ -519,8 +517,8 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            setbackThreshold?: number | null | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -564,9 +562,9 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            prompt?: string | undefined;
             setbackThreshold?: number | null | undefined;
             repeat?: import("yup").Maybe<number | undefined>;
-            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -608,8 +606,8 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            setbackThreshold?: number | null | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -649,8 +647,8 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            setbackThreshold?: number | null | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -690,8 +688,8 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            setbackThreshold?: number | null | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -730,8 +728,8 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            setbackThreshold?: number | null | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -801,8 +799,8 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                         toDate: Function;
                     } | null | undefined;
                     profileId?: string | null | undefined;
-                    setbackThreshold?: number | null | undefined;
                     prompt?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -846,9 +844,9 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                         toDate: Function;
                     } | null | undefined;
                     profileId?: string | null | undefined;
+                    prompt?: string | undefined;
                     setbackThreshold?: number | null | undefined;
                     repeat?: import("yup").Maybe<number | undefined>;
-                    prompt?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -890,8 +888,8 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                         toDate: Function;
                     } | null | undefined;
                     profileId?: string | null | undefined;
-                    setbackThreshold?: number | null | undefined;
                     prompt?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -931,8 +929,8 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                         toDate: Function;
                     } | null | undefined;
                     profileId?: string | null | undefined;
-                    setbackThreshold?: number | null | undefined;
                     prompt?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -972,8 +970,8 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                         toDate: Function;
                     } | null | undefined;
                     profileId?: string | null | undefined;
-                    setbackThreshold?: number | null | undefined;
                     prompt?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -1012,8 +1010,8 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                         toDate: Function;
                     } | null | undefined;
                     profileId?: string | null | undefined;
-                    setbackThreshold?: number | null | undefined;
                     prompt?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -1064,8 +1062,8 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                     toDate: Function;
                 } | null | undefined;
                 profileId?: string | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 prompt?: string | undefined;
+                setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -1109,9 +1107,9 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                     toDate: Function;
                 } | null | undefined;
                 profileId?: string | null | undefined;
+                prompt?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 repeat?: import("yup").Maybe<number | undefined>;
-                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -1153,8 +1151,8 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                     toDate: Function;
                 } | null | undefined;
                 profileId?: string | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 prompt?: string | undefined;
+                setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -1194,8 +1192,8 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                     toDate: Function;
                 } | null | undefined;
                 profileId?: string | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 prompt?: string | undefined;
+                setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -1235,8 +1233,8 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                     toDate: Function;
                 } | null | undefined;
                 profileId?: string | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 prompt?: string | undefined;
+                setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -1275,8 +1273,8 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                     toDate: Function;
                 } | null | undefined;
                 profileId?: string | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 prompt?: string | undefined;
+                setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -1307,15 +1305,15 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                 };
             })[] | undefined;
             nextTacticId?: string | undefined;
-            type: "folder";
             prompt: string;
+            type: "folder";
             ordinal: number;
             invitationCode: string;
             invitationUrl: string;
         };
     };
     completedTacticIds: string[];
-}, "parentIssueIds" | "issueName" | "date" | "type" | "questionsById" | "strategiesById" | "completedTacticIds" | ("createdAt" | "updatedAt" | "text" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "questionData" | "submittedAt" | "trackingQuestionIds" | "debriefingQuestionIds" | "isDebrief" | "followedUpQuestionIds")>;
+}, "parentIssueIds" | "questionsById" | "type" | "issueName" | "date" | "followedUpQuestionIds" | "strategiesById" | "completedTacticIds" | ("createdAt" | "updatedAt" | "text" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "questionData" | "submittedAt" | "isDebrief")>;
 export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     createdAt?: {
         isEqual?: any;
@@ -1363,10 +1361,10 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
     questionData?: {
         [x: string]: {
             label?: string | undefined;
+            color?: string | undefined;
             setbackThreshold?: number | undefined;
             idValue?: string | undefined;
             numericValue?: number | undefined;
-            color?: string | undefined;
             setAt: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1391,15 +1389,6 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
     debriefingQuestionIds?: string[] | undefined;
     isDebrief?: boolean | undefined;
     followedUpQuestionIds?: string[] | undefined;
-    date: {
-        isEqual?: any;
-        toMillis?: any;
-        toJSON?: any;
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    };
-    type: "questions";
     questionsById: {
         [x: string]: {
             createdAt?: {
@@ -1418,6 +1407,51 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            options?: ({
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                setbackThreshold?: number | undefined;
+                greaterThan?: number | undefined;
+                lessThanOrEqualTo?: number | undefined;
+                text: string;
+                type: "numeric";
+            } | {
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                text: string;
+                type: "string";
+            })[] | undefined;
             followUps?: ({
                 message?: string | undefined;
                 type: "askAnotherQuestion";
@@ -1432,55 +1466,10 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                 profileKey: string;
                 value: {};
             })[] | undefined;
-            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
-            options?: ({
-                label?: string | undefined;
-                setbackThreshold?: number | undefined;
-                color?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                textColor?: string | undefined;
-                greaterThan?: number | undefined;
-                lessThanOrEqualTo?: number | undefined;
-                text: string;
-                type: "numeric";
-            } | {
-                label?: string | undefined;
-                color?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                textColor?: string | undefined;
-                text: string;
-                type: "string";
-            })[] | undefined;
             templateFor?: "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
-            type: import("..").QuestionKeyType;
             prompt: string;
+            type: import("..").QuestionKeyType;
             ordinal: number;
         } | {
             createdAt?: {
@@ -1499,70 +1488,72 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            options?: ({
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                setbackThreshold?: number | undefined;
+                greaterThan?: number | undefined;
+                lessThanOrEqualTo?: number | undefined;
+                text: string;
+                type: "numeric";
+            } | {
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                text: string;
+                type: "string";
+            })[] | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
             setbackThreshold?: number | undefined;
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            })[] | undefined;
-            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
-            options?: ({
-                label?: string | undefined;
-                setbackThreshold?: number | undefined;
-                color?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                textColor?: string | undefined;
-                greaterThan?: number | undefined;
-                lessThanOrEqualTo?: number | undefined;
-                text: string;
-                type: "numeric";
-            } | {
-                label?: string | undefined;
-                color?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                textColor?: string | undefined;
-                text: string;
-                type: "string";
-            })[] | undefined;
             templateFor?: "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
-            type: import("..").QuestionKeyType;
+            lowEmoji?: import("yup").Maybe<string | undefined>;
+            highEmoji?: import("yup").Maybe<string | undefined>;
             prompt: string;
+            type: import("..").QuestionKeyType;
             ordinal: number;
         } | {
             createdAt?: {
@@ -1581,6 +1572,51 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            options?: ({
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                setbackThreshold?: number | undefined;
+                greaterThan?: number | undefined;
+                lessThanOrEqualTo?: number | undefined;
+                text: string;
+                type: "numeric";
+            } | {
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                text: string;
+                type: "string";
+            })[] | undefined;
             followUps?: ({
                 message?: string | undefined;
                 type: "askAnotherQuestion";
@@ -1595,15 +1631,132 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                 profileKey: string;
                 value: {};
             })[] | undefined;
-            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            setbackThreshold?: number | undefined;
             templateFor?: "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
-            type: import("..").QuestionKeyType;
             prompt: string;
+            type: import("..").QuestionKeyType;
+            ordinal: number;
+        } | {
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            options?: ({
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                setbackThreshold?: number | undefined;
+                greaterThan?: number | undefined;
+                lessThanOrEqualTo?: number | undefined;
+                text: string;
+                type: "numeric";
+            } | {
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                text: string;
+                type: "string";
+            })[] | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
+            setbackThreshold?: number | undefined;
+            templateFor?: "onboarding" | undefined;
+            writeAnswerToProfileMemoryKey?: string | undefined;
+            prompt: string;
+            type: import("..").QuestionKeyType;
+            ordinal: number;
+        } | {
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
+            templateFor?: "onboarding" | undefined;
+            writeAnswerToProfileMemoryKey?: string | undefined;
+            prompt: string;
+            type: import("..").QuestionKeyType;
             options: ({
                 label?: string | undefined;
-                setbackThreshold?: number | undefined;
-                color?: string | undefined;
                 followUps?: ({
                     message?: string | undefined;
                     type: "askAnotherQuestion";
@@ -1618,14 +1771,15 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                     profileKey: string;
                     value: {};
                 })[] | undefined;
+                color?: string | undefined;
                 textColor?: string | undefined;
+                setbackThreshold?: number | undefined;
                 greaterThan?: number | undefined;
                 lessThanOrEqualTo?: number | undefined;
                 text: string;
                 type: "numeric";
             } | {
                 label?: string | undefined;
-                color?: string | undefined;
                 followUps?: ({
                     message?: string | undefined;
                     type: "askAnotherQuestion";
@@ -1640,178 +1794,22 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                     profileKey: string;
                     value: {};
                 })[] | undefined;
+                color?: string | undefined;
                 textColor?: string | undefined;
                 text: string;
                 type: "string";
             })[];
             ordinal: number;
             canAddNewOptions: NonNullable<boolean | undefined>;
-        } | {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            setbackThreshold?: number | undefined;
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            })[] | undefined;
-            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
-            options?: ({
-                label?: string | undefined;
-                setbackThreshold?: number | undefined;
-                color?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                textColor?: string | undefined;
-                greaterThan?: number | undefined;
-                lessThanOrEqualTo?: number | undefined;
-                text: string;
-                type: "numeric";
-            } | {
-                label?: string | undefined;
-                color?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                textColor?: string | undefined;
-                text: string;
-                type: "string";
-            })[] | undefined;
-            templateFor?: "onboarding" | undefined;
-            writeAnswerToProfileMemoryKey?: string | undefined;
-            lowEmoji?: import("yup").Maybe<string | undefined>;
-            highEmoji?: import("yup").Maybe<string | undefined>;
-            type: import("..").QuestionKeyType;
-            prompt: string;
-            ordinal: number;
-        } | {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            setbackThreshold?: number | undefined;
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            })[] | undefined;
-            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
-            options?: ({
-                label?: string | undefined;
-                setbackThreshold?: number | undefined;
-                color?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                textColor?: string | undefined;
-                greaterThan?: number | undefined;
-                lessThanOrEqualTo?: number | undefined;
-                text: string;
-                type: "numeric";
-            } | {
-                label?: string | undefined;
-                color?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                textColor?: string | undefined;
-                text: string;
-                type: "string";
-            })[] | undefined;
-            templateFor?: "onboarding" | undefined;
-            writeAnswerToProfileMemoryKey?: string | undefined;
-            type: import("..").QuestionKeyType;
-            prompt: string;
-            ordinal: number;
         };
     };
-}, "date" | "type" | "questionsById" | ("createdAt" | "updatedAt" | "text" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "questionData" | "submittedAt" | "trackingQuestionIds" | "debriefingQuestionIds" | "isDebrief" | "followedUpQuestionIds")>;
+    type: "questions";
+    date: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    };
+}, "questionsById" | "type" | "date" | ("createdAt" | "updatedAt" | "text" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "questionData" | "submittedAt" | "trackingQuestionIds" | "debriefingQuestionIds" | "isDebrief" | "followedUpQuestionIds")>;

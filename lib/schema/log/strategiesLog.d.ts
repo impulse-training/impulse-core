@@ -72,8 +72,8 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            setbackThreshold?: number | null | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -117,9 +117,9 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            prompt?: string | undefined;
             setbackThreshold?: number | null | undefined;
             repeat?: yup.Maybe<number | undefined>;
-            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -161,8 +161,8 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            setbackThreshold?: number | null | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -202,8 +202,8 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            setbackThreshold?: number | null | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -243,8 +243,8 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            setbackThreshold?: number | null | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -283,8 +283,8 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            setbackThreshold?: number | null | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -354,8 +354,8 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     profileId?: string | null | undefined;
-                    setbackThreshold?: number | null | undefined;
                     prompt?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -399,9 +399,9 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     profileId?: string | null | undefined;
+                    prompt?: string | undefined;
                     setbackThreshold?: number | null | undefined;
                     repeat?: yup.Maybe<number | undefined>;
-                    prompt?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -443,8 +443,8 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     profileId?: string | null | undefined;
-                    setbackThreshold?: number | null | undefined;
                     prompt?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -484,8 +484,8 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     profileId?: string | null | undefined;
-                    setbackThreshold?: number | null | undefined;
                     prompt?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -525,8 +525,8 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     profileId?: string | null | undefined;
-                    setbackThreshold?: number | null | undefined;
                     prompt?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -565,8 +565,8 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     profileId?: string | null | undefined;
-                    setbackThreshold?: number | null | undefined;
                     prompt?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -617,8 +617,8 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 profileId?: string | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 prompt?: string | undefined;
+                setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -662,9 +662,9 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 profileId?: string | null | undefined;
+                prompt?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 repeat?: yup.Maybe<number | undefined>;
-                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -706,8 +706,8 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 profileId?: string | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 prompt?: string | undefined;
+                setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -747,8 +747,8 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 profileId?: string | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 prompt?: string | undefined;
+                setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -788,8 +788,8 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 profileId?: string | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 prompt?: string | undefined;
+                setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -828,8 +828,8 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 profileId?: string | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 prompt?: string | undefined;
+                setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -860,8 +860,8 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 };
             })[] | undefined;
             nextTacticId?: string | undefined;
-            type: "folder";
             prompt: string;
+            type: "folder";
             ordinal: number;
             invitationCode: string;
             invitationUrl: string;

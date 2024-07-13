@@ -73,8 +73,8 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            setbackThreshold?: number | null | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -118,9 +118,9 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            prompt?: string | undefined;
             setbackThreshold?: number | null | undefined;
             repeat?: yup.Maybe<number | undefined>;
-            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -162,8 +162,8 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            setbackThreshold?: number | null | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -203,8 +203,8 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            setbackThreshold?: number | null | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -244,8 +244,8 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            setbackThreshold?: number | null | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -284,8 +284,8 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            setbackThreshold?: number | null | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -355,8 +355,8 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     profileId?: string | null | undefined;
-                    setbackThreshold?: number | null | undefined;
                     prompt?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -400,9 +400,9 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     profileId?: string | null | undefined;
+                    prompt?: string | undefined;
                     setbackThreshold?: number | null | undefined;
                     repeat?: yup.Maybe<number | undefined>;
-                    prompt?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -444,8 +444,8 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     profileId?: string | null | undefined;
-                    setbackThreshold?: number | null | undefined;
                     prompt?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -485,8 +485,8 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     profileId?: string | null | undefined;
-                    setbackThreshold?: number | null | undefined;
                     prompt?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -526,8 +526,8 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     profileId?: string | null | undefined;
-                    setbackThreshold?: number | null | undefined;
                     prompt?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -566,8 +566,8 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     profileId?: string | null | undefined;
-                    setbackThreshold?: number | null | undefined;
                     prompt?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -618,8 +618,8 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 profileId?: string | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 prompt?: string | undefined;
+                setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -663,9 +663,9 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 profileId?: string | null | undefined;
+                prompt?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 repeat?: yup.Maybe<number | undefined>;
-                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -707,8 +707,8 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 profileId?: string | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 prompt?: string | undefined;
+                setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -748,8 +748,8 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 profileId?: string | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 prompt?: string | undefined;
+                setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -789,8 +789,8 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 profileId?: string | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 prompt?: string | undefined;
+                setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -829,8 +829,8 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 profileId?: string | null | undefined;
-                setbackThreshold?: number | null | undefined;
                 prompt?: string | undefined;
+                setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -861,16 +861,14 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                 };
             })[] | undefined;
             nextTacticId?: string | undefined;
-            type: "folder";
             prompt: string;
+            type: "folder";
             ordinal: number;
             invitationCode: string;
             invitationUrl: string;
         };
     };
     completedTacticIds: string[];
-    trackingQuestionIds: string[] | undefined;
-    debriefingQuestionIds: string[] | undefined;
     questionsById: {
         [x: string]: {
             createdAt?: {
@@ -889,6 +887,51 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            options?: ({
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                setbackThreshold?: number | undefined;
+                greaterThan?: number | undefined;
+                lessThanOrEqualTo?: number | undefined;
+                text: string;
+                type: "numeric";
+            } | {
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                text: string;
+                type: "string";
+            })[] | undefined;
             followUps?: ({
                 message?: string | undefined;
                 type: "askAnotherQuestion";
@@ -903,55 +946,10 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                 profileKey: string;
                 value: {};
             })[] | undefined;
-            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
-            options?: ({
-                label?: string | undefined;
-                setbackThreshold?: number | undefined;
-                color?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                textColor?: string | undefined;
-                greaterThan?: number | undefined;
-                lessThanOrEqualTo?: number | undefined;
-                text: string;
-                type: "numeric";
-            } | {
-                label?: string | undefined;
-                color?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                textColor?: string | undefined;
-                text: string;
-                type: "string";
-            })[] | undefined;
             templateFor?: "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
-            type: import("..").QuestionKeyType;
             prompt: string;
+            type: import("..").QuestionKeyType;
             ordinal: number;
         } | {
             createdAt?: {
@@ -970,70 +968,72 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            options?: ({
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                setbackThreshold?: number | undefined;
+                greaterThan?: number | undefined;
+                lessThanOrEqualTo?: number | undefined;
+                text: string;
+                type: "numeric";
+            } | {
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                text: string;
+                type: "string";
+            })[] | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
             setbackThreshold?: number | undefined;
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            })[] | undefined;
-            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
-            options?: ({
-                label?: string | undefined;
-                setbackThreshold?: number | undefined;
-                color?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                textColor?: string | undefined;
-                greaterThan?: number | undefined;
-                lessThanOrEqualTo?: number | undefined;
-                text: string;
-                type: "numeric";
-            } | {
-                label?: string | undefined;
-                color?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                textColor?: string | undefined;
-                text: string;
-                type: "string";
-            })[] | undefined;
             templateFor?: "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
-            type: import("..").QuestionKeyType;
+            lowEmoji?: yup.Maybe<string | undefined>;
+            highEmoji?: yup.Maybe<string | undefined>;
             prompt: string;
+            type: import("..").QuestionKeyType;
             ordinal: number;
         } | {
             createdAt?: {
@@ -1052,6 +1052,51 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            options?: ({
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                setbackThreshold?: number | undefined;
+                greaterThan?: number | undefined;
+                lessThanOrEqualTo?: number | undefined;
+                text: string;
+                type: "numeric";
+            } | {
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                text: string;
+                type: "string";
+            })[] | undefined;
             followUps?: ({
                 message?: string | undefined;
                 type: "askAnotherQuestion";
@@ -1066,15 +1111,132 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                 profileKey: string;
                 value: {};
             })[] | undefined;
-            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            setbackThreshold?: number | undefined;
             templateFor?: "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
-            type: import("..").QuestionKeyType;
             prompt: string;
+            type: import("..").QuestionKeyType;
+            ordinal: number;
+        } | {
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            options?: ({
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                setbackThreshold?: number | undefined;
+                greaterThan?: number | undefined;
+                lessThanOrEqualTo?: number | undefined;
+                text: string;
+                type: "numeric";
+            } | {
+                label?: string | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                color?: string | undefined;
+                textColor?: string | undefined;
+                text: string;
+                type: "string";
+            })[] | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
+            setbackThreshold?: number | undefined;
+            templateFor?: "onboarding" | undefined;
+            writeAnswerToProfileMemoryKey?: string | undefined;
+            prompt: string;
+            type: import("..").QuestionKeyType;
+            ordinal: number;
+        } | {
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
+            templateFor?: "onboarding" | undefined;
+            writeAnswerToProfileMemoryKey?: string | undefined;
+            prompt: string;
+            type: import("..").QuestionKeyType;
             options: ({
                 label?: string | undefined;
-                setbackThreshold?: number | undefined;
-                color?: string | undefined;
                 followUps?: ({
                     message?: string | undefined;
                     type: "askAnotherQuestion";
@@ -1089,14 +1251,15 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                     profileKey: string;
                     value: {};
                 })[] | undefined;
+                color?: string | undefined;
                 textColor?: string | undefined;
+                setbackThreshold?: number | undefined;
                 greaterThan?: number | undefined;
                 lessThanOrEqualTo?: number | undefined;
                 text: string;
                 type: "numeric";
             } | {
                 label?: string | undefined;
-                color?: string | undefined;
                 followUps?: ({
                     message?: string | undefined;
                     type: "askAnotherQuestion";
@@ -1111,187 +1274,22 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
                     profileKey: string;
                     value: {};
                 })[] | undefined;
+                color?: string | undefined;
                 textColor?: string | undefined;
                 text: string;
                 type: "string";
             })[];
             ordinal: number;
             canAddNewOptions: NonNullable<boolean | undefined>;
-        } | {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            setbackThreshold?: number | undefined;
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            })[] | undefined;
-            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
-            options?: ({
-                label?: string | undefined;
-                setbackThreshold?: number | undefined;
-                color?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                textColor?: string | undefined;
-                greaterThan?: number | undefined;
-                lessThanOrEqualTo?: number | undefined;
-                text: string;
-                type: "numeric";
-            } | {
-                label?: string | undefined;
-                color?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                textColor?: string | undefined;
-                text: string;
-                type: "string";
-            })[] | undefined;
-            templateFor?: "onboarding" | undefined;
-            writeAnswerToProfileMemoryKey?: string | undefined;
-            lowEmoji?: yup.Maybe<string | undefined>;
-            highEmoji?: yup.Maybe<string | undefined>;
-            type: import("..").QuestionKeyType;
-            prompt: string;
-            ordinal: number;
-        } | {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            setbackThreshold?: number | undefined;
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            })[] | undefined;
-            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
-            options?: ({
-                label?: string | undefined;
-                setbackThreshold?: number | undefined;
-                color?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                textColor?: string | undefined;
-                greaterThan?: number | undefined;
-                lessThanOrEqualTo?: number | undefined;
-                text: string;
-                type: "numeric";
-            } | {
-                label?: string | undefined;
-                color?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                textColor?: string | undefined;
-                text: string;
-                type: "string";
-            })[] | undefined;
-            templateFor?: "onboarding" | undefined;
-            writeAnswerToProfileMemoryKey?: string | undefined;
-            type: import("..").QuestionKeyType;
-            prompt: string;
-            ordinal: number;
         };
     };
     questionData: {
         [x: string]: {
             label?: string | undefined;
+            color?: string | undefined;
             setbackThreshold?: number | undefined;
             idValue?: string | undefined;
             numericValue?: number | undefined;
-            color?: string | undefined;
             setAt: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1313,7 +1311,7 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
         toDate: Function;
     } | null | undefined;
     isDebrief: boolean | undefined;
-    followedUpQuestionIds: string[] | undefined;
+    followedUpQuestionIds: string[];
 }, yup.AnyObject, {
     openAiChoiceResponse: undefined;
     createdAt: undefined;
@@ -1337,8 +1335,6 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
     parentIssueIds: "";
     strategiesById: undefined;
     completedTacticIds: "";
-    trackingQuestionIds: "";
-    debriefingQuestionIds: "";
     questionsById: undefined;
     questionData: undefined;
     submittedAt: undefined;

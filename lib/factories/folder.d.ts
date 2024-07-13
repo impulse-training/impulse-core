@@ -41,8 +41,8 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            setbackThreshold?: number | null | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -86,9 +86,9 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            prompt?: string | undefined;
             setbackThreshold?: number | null | undefined;
             repeat?: import("yup").Maybe<number | undefined>;
-            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -130,8 +130,8 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            setbackThreshold?: number | null | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -171,8 +171,8 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            setbackThreshold?: number | null | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -212,8 +212,8 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            setbackThreshold?: number | null | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -252,8 +252,8 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            setbackThreshold?: number | null | undefined;
             prompt?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -304,8 +304,8 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
-        setbackThreshold?: number | null | undefined;
         prompt?: string | undefined;
+        setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -349,9 +349,9 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
+        prompt?: string | undefined;
         setbackThreshold?: number | null | undefined;
         repeat?: import("yup").Maybe<number | undefined>;
-        prompt?: string | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -393,8 +393,8 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
-        setbackThreshold?: number | null | undefined;
         prompt?: string | undefined;
+        setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -434,8 +434,8 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
-        setbackThreshold?: number | null | undefined;
         prompt?: string | undefined;
+        setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -475,8 +475,8 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
-        setbackThreshold?: number | null | undefined;
         prompt?: string | undefined;
+        setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -515,8 +515,8 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
-        setbackThreshold?: number | null | undefined;
         prompt?: string | undefined;
+        setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -547,9 +547,9 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         };
     })[] | undefined;
     nextTacticId?: string | undefined;
-    type: "folder";
     prompt: string;
+    type: "folder";
     ordinal: number;
     invitationCode: string;
     invitationUrl: string;
-}, "type" | "prompt" | "ordinal" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics" | "nextTacticId")>;
+}, "prompt" | "type" | "ordinal" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics" | "nextTacticId")>;
