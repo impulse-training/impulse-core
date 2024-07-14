@@ -23,7 +23,8 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
     isFeatured?: boolean | null | undefined;
     ordinal: number;
     name: string;
+    debriefQuestionPrompt: string;
     synonyms: string[];
     parentIds: string[];
     parentNames: string[];
-}, "ordinal" | "name" | "synonyms" | "parentIds" | "parentNames" | ("path" | "createdAt" | "updatedAt" | "parentId" | "profileCount" | "isFeatured")>;
+}, "ordinal" | "name" | "debriefQuestionPrompt" | "synonyms" | "parentIds" | "parentNames" | ("path" | "createdAt" | "updatedAt" | "parentId" | "profileCount" | "isFeatured")>;

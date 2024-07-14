@@ -13,6 +13,7 @@ export const issueSchema = yup.object().shape({
   parentId: yup.string().nullable(),
   name: yup.string().required(),
   ordinal: yup.number().required(),
+  debriefQuestionPrompt: yup.string().required(),
   synonyms: yup
     .array()
     .of(yup.string().required())

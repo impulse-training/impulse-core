@@ -474,6 +474,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     };
     issueId: string | null;
     issueName: string | undefined;
+    issueDebriefQuestionPrompt: string | undefined;
     isReadyForTour: boolean | undefined;
     isOnboardingComplete: boolean | undefined;
     parentIssueIds: string[] | undefined;
@@ -1333,6 +1334,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     questionsById: undefined;
     issueId: undefined;
     issueName: undefined;
+    issueDebriefQuestionPrompt: undefined;
     isReadyForTour: undefined;
     isOnboardingComplete: undefined;
     parentIssueIds: "";

@@ -10,6 +10,7 @@ export const makeIssueFactory = (TimestampKlass: typeof TimestampLike) =>
     synonyms: ['Videos'],
     ordinal: 0,
     parentIds: [],
+    debriefQuestionPrompt: 'How long did you watch?',
     parentNames: [
       'Behavioral pattern',
       'Addiction',

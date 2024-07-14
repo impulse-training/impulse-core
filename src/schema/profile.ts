@@ -27,6 +27,7 @@ export const profileSchema = yup.object({
 
   issueId: yup.string().required().nullable(),
   issueName: yup.string(),
+  issueDebriefQuestionPrompt: yup.string(),
   isReadyForTour: yup.boolean(),
   isOnboardingComplete: yup.boolean(),
   parentIssueIds: optionalStringArray,
