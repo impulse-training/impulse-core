@@ -6,7 +6,7 @@ export declare const videoTacticSchema: yup.ObjectSchema<{
     } | null | undefined;
     isInGameplan: boolean | undefined;
     ordinal: number;
-    prompt: string | undefined;
+    prompt: string;
     type: "video";
     profileId: string | null | undefined;
     createdAt: {

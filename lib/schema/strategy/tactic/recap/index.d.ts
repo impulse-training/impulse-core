@@ -22,7 +22,6 @@ export declare const recapTacticSchema: yup.Lazy<{
         toDate: Function;
     } | null | undefined;
     profileId?: string | null | undefined;
-    prompt?: string | undefined;
     setbackThreshold?: number | null | undefined;
     recommendedForIssueIds?: string[] | undefined;
     recommendedForIssueOrdinals?: {
@@ -42,6 +41,7 @@ export declare const recapTacticSchema: yup.Lazy<{
     likesCount?: number | null | undefined;
     timerSeconds?: yup.Maybe<number | undefined>;
     isSuggested?: boolean | undefined;
+    prompt: string;
     type: import("./recapKeyType").RecapKeyType;
     ordinal: number;
 }, yup.AnyObject, any>;

@@ -6,7 +6,7 @@ export declare const breathingExerciseTacticSchema: yup.ObjectSchema<{
     } | null | undefined;
     isInGameplan: boolean | undefined;
     ordinal: number;
-    prompt: string | undefined;
+    prompt: string;
     type: "breathingExercise";
     profileId: string | null | undefined;
     createdAt: {

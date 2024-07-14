@@ -6,7 +6,7 @@ export declare const recapActionTacticSchema: yup.ObjectSchema<{
     } | null | undefined;
     isInGameplan: boolean | undefined;
     ordinal: number;
-    prompt: string | undefined;
+    prompt: string;
     type: import("./recapKeyType").RecapKeyType;
     profileId: string | null | undefined;
     createdAt: {

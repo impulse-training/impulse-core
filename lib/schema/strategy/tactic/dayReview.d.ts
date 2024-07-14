@@ -10,7 +10,7 @@ export declare const dayReviewTacticSchema: yup.ObjectSchema<{
     } | null | undefined;
     isInGameplan: boolean | undefined;
     ordinal: number;
-    prompt: string | undefined;
+    prompt: string;
     type: "day-review";
     profileId: string | null | undefined;
     createdAt: {
