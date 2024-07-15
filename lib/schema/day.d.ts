@@ -699,6 +699,14 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             isDebrief?: boolean | undefined;
+            debriefAfter?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
             parentIssueIds: string[];
             questionsById: {
                 [x: string]: {

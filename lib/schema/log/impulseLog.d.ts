@@ -53,6 +53,14 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
         content: string;
     }[] | undefined;
     issueName: string | undefined;
+    debriefAfter: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
     parentIssueIds: string[];
     gameplanStrategyIds: string[];
     strategiesById: {
@@ -1343,6 +1351,7 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
     agent: undefined;
     gptPayload: "";
     issueName: undefined;
+    debriefAfter: undefined;
     parentIssueIds: "";
     gameplanStrategyIds: "";
     strategiesById: undefined;

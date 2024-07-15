@@ -9,6 +9,7 @@ import { questionDataSchema } from './questionsLog';
 
 export const impulseLogSchema = logBaseSchema('impulse').shape({
   issueName: yup.string(),
+  debriefAfter: optionalTimestampSchema,
   parentIssueIds: requiredStringArray,
   gameplanStrategyIds: requiredStringArray,
   strategiesById: objectOf(strategySchema),

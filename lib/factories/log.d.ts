@@ -73,6 +73,14 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
         toDate: Function;
     } | null | undefined;
     isDebrief?: boolean | undefined;
+    debriefAfter?: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
     parentIssueIds: string[];
     questionsById: {
         [x: string]: {
@@ -1324,7 +1332,7 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
     followedUpQuestionIds: string[];
     gameplanStrategyIds: string[];
     completedTacticIds: string[];
-}, "parentIssueIds" | "questionsById" | "type" | "strategiesById" | "date" | "followedUpQuestionIds" | "gameplanStrategyIds" | "completedTacticIds" | ("createdAt" | "updatedAt" | "text" | "issueName" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "questionData" | "submittedAt" | "isDebrief")>;
+}, "parentIssueIds" | "questionsById" | "type" | "strategiesById" | "date" | "followedUpQuestionIds" | "gameplanStrategyIds" | "completedTacticIds" | ("createdAt" | "updatedAt" | "text" | "issueName" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "questionData" | "submittedAt" | "isDebrief" | "debriefAfter")>;
 export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     createdAt?: {
         isEqual?: any;
