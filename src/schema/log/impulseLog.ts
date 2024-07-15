@@ -10,6 +10,7 @@ import { questionDataSchema } from './questionsLog';
 export const impulseLogSchema = logBaseSchema('impulse').shape({
   issueName: yup.string(),
   debriefAfter: optionalTimestampSchema,
+  submittedAt: optionalTimestampSchema,
   parentIssueIds: requiredStringArray,
   gameplanStrategyIds: requiredStringArray,
   strategiesById: objectOf(strategySchema),
@@ -17,7 +18,6 @@ export const impulseLogSchema = logBaseSchema('impulse').shape({
   completedTacticIds: requiredStringArray,
   questionsById: objectOf(questionSchema),
   questionData: optionalObjectOf(questionDataSchema),
-  submittedAt: optionalTimestampSchema,
   isDebrief: yup.boolean(),
   followedUpQuestionIds: requiredStringArray,
 });

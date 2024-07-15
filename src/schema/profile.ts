@@ -25,6 +25,10 @@ export const profileSchema = yup.object({
   // For now at least, we copy questions data to the profile
   questionsById: objectOf(questionSchema),
 
+  // Can impulse add and remove and change questions and strategies?
+  impulseCanManageQuestions: yup.boolean(),
+  impulseCanManageGameplan: yup.boolean(),
+
   issueId: yup.string().required().nullable(),
   issueName: yup.string(),
   issueDebriefQuestionPrompt: yup.string(),

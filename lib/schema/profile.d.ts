@@ -472,6 +472,8 @@ export declare const profileSchema: yup.ObjectSchema<{
             canAddNewOptions: NonNullable<boolean | undefined>;
         };
     };
+    impulseCanManageQuestions: boolean | undefined;
+    impulseCanManageGameplan: boolean | undefined;
     issueId: string | null;
     issueName: string | undefined;
     issueDebriefQuestionPrompt: string | undefined;
@@ -1332,6 +1334,8 @@ export declare const profileSchema: yup.ObjectSchema<{
     expoPushToken: undefined;
     notificationPreferences: undefined;
     questionsById: undefined;
+    impulseCanManageQuestions: undefined;
+    impulseCanManageGameplan: undefined;
     issueId: undefined;
     issueName: undefined;
     issueDebriefQuestionPrompt: undefined;

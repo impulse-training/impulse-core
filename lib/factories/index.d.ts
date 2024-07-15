@@ -2043,6 +2043,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
         } | null | undefined;
         setbackThreshold?: number | undefined;
+        impulseCanManageQuestions?: boolean | undefined;
+        impulseCanManageGameplan?: boolean | undefined;
         issueName?: string | undefined;
         issueDebriefQuestionPrompt?: string | undefined;
         isReadyForTour?: boolean | undefined;
@@ -3313,7 +3315,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         };
         currentAgent: import("..").AgentName;
         timezone: string;
-    }, "uids" | "questionsById" | "issueId" | "strategiesById" | "currentAgent" | "timezone" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "parentIssueIds" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "setbackThreshold" | "issueName" | "issueDebriefQuestionPrompt" | "isReadyForTour" | "isOnboardingComplete" | "gameplanStrategies" | "androidPermissions" | "longTermMemory" | "region")>;
+    }, "uids" | "questionsById" | "issueId" | "strategiesById" | "currentAgent" | "timezone" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "parentIssueIds" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "setbackThreshold" | "impulseCanManageQuestions" | "impulseCanManageGameplan" | "issueName" | "issueDebriefQuestionPrompt" | "isReadyForTour" | "isOnboardingComplete" | "gameplanStrategies" | "androidPermissions" | "longTermMemory" | "region")>;
     questionTimeFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;

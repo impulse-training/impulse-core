@@ -61,6 +61,14 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    submittedAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
     parentIssueIds: string[];
     gameplanStrategyIds: string[];
     strategiesById: {
@@ -1321,14 +1329,6 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
             unit: string;
         };
     } | null | undefined;
-    submittedAt: {
-        isEqual?: any;
-        toMillis?: any;
-        toJSON?: any;
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    } | null | undefined;
     isDebrief: boolean | undefined;
     followedUpQuestionIds: string[];
 }, yup.AnyObject, {
@@ -1352,13 +1352,13 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
     gptPayload: "";
     issueName: undefined;
     debriefAfter: undefined;
+    submittedAt: undefined;
     parentIssueIds: "";
     gameplanStrategyIds: "";
     strategiesById: undefined;
     completedTacticIds: "";
     questionsById: undefined;
     questionData: undefined;
-    submittedAt: undefined;
     isDebrief: undefined;
     followedUpQuestionIds: "";
 }, "">;
