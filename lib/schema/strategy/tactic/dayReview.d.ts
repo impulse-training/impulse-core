@@ -4,6 +4,7 @@ export declare const dayReviewForDayOptions: {
     readonly yesterday: "The previous day";
 };
 export declare const dayReviewTacticSchema: yup.ObjectSchema<{
+    profileId: string | null | undefined;
     recommendedForIssueIds: string[] | undefined;
     recommendedForIssueOrdinals: {
         [x: string]: number;
@@ -12,7 +13,6 @@ export declare const dayReviewTacticSchema: yup.ObjectSchema<{
     ordinal: number;
     prompt: string;
     type: "day-review";
-    profileId: string | null | undefined;
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -45,13 +45,13 @@ export declare const dayReviewTacticSchema: yup.ObjectSchema<{
     isSuggested: boolean | undefined;
     forDay: string;
 }, yup.AnyObject, {
+    profileId: undefined;
     recommendedForIssueIds: "";
     recommendedForIssueOrdinals: undefined;
     isInGameplan: undefined;
     ordinal: undefined;
     prompt: undefined;
     type: undefined;
-    profileId: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     pastTenseTitle: undefined;

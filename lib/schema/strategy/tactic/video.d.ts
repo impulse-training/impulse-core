@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 export declare const videoTacticSchema: yup.ObjectSchema<{
+    profileId: string | null | undefined;
     recommendedForIssueIds: string[] | undefined;
     recommendedForIssueOrdinals: {
         [x: string]: number;
@@ -8,7 +9,6 @@ export declare const videoTacticSchema: yup.ObjectSchema<{
     ordinal: number;
     prompt: string;
     type: "video";
-    profileId: string | null | undefined;
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -48,13 +48,13 @@ export declare const videoTacticSchema: yup.ObjectSchema<{
         duration: number;
     };
 }, yup.AnyObject, {
+    profileId: undefined;
     recommendedForIssueIds: "";
     recommendedForIssueOrdinals: undefined;
     isInGameplan: undefined;
     ordinal: undefined;
     prompt: undefined;
     type: undefined;
-    profileId: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     pastTenseTitle: undefined;

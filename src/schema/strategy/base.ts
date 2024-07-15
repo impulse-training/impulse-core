@@ -4,7 +4,11 @@ import { optionalObjectOf } from '../utils/objectOf';
 
 export default function strategyBase() {
   return yup.object({
-    recommendedForIssueIds: optionalStringArray,
+    profileId: yup.string(),
+    recommendedForIssueIds: optionalStringArray.max(
+      10,
+      "can't be more than 10"
+    ),
     recommendedForIssueOrdinals: optionalObjectOf(yup.number().required()),
     isInGameplan: yup.boolean(),
     ordinal: yup.number().required(),

@@ -1,5 +1,6 @@
 import { RecapKeyType } from './recapKeyType';
 export declare function recapTacticValueBaseSchema(type: RecapKeyType): import("yup").ObjectSchema<{
+    profileId: string | null | undefined;
     recommendedForIssueIds: string[] | undefined;
     recommendedForIssueOrdinals: {
         [x: string]: number;
@@ -8,7 +9,6 @@ export declare function recapTacticValueBaseSchema(type: RecapKeyType): import("
     ordinal: number;
     prompt: string;
     type: RecapKeyType;
-    profileId: string | null | undefined;
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -40,13 +40,13 @@ export declare function recapTacticValueBaseSchema(type: RecapKeyType): import("
     timerSeconds: import("yup").Maybe<number | undefined>;
     isSuggested: boolean | undefined;
 }, import("yup").AnyObject, {
+    profileId: undefined;
     recommendedForIssueIds: "";
     recommendedForIssueOrdinals: undefined;
     isInGameplan: undefined;
     ordinal: undefined;
     prompt: undefined;
     type: undefined;
-    profileId: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     pastTenseTitle: undefined;

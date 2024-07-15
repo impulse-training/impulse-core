@@ -784,6 +784,7 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            profileId?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;

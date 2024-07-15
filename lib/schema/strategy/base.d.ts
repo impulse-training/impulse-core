@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 export default function strategyBase(): yup.ObjectSchema<{
+    profileId: string | undefined;
     recommendedForIssueIds: string[] | undefined;
     recommendedForIssueOrdinals: {
         [x: string]: number;
@@ -8,6 +9,7 @@ export default function strategyBase(): yup.ObjectSchema<{
     ordinal: number;
     prompt: string;
 }, yup.AnyObject, {
+    profileId: undefined;
     recommendedForIssueIds: "";
     recommendedForIssueOrdinals: undefined;
     isInGameplan: undefined;

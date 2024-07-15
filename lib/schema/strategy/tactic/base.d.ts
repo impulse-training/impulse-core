@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 export declare function tacticValueBaseSchema<K extends string>(type: K): yup.ObjectSchema<{
+    profileId: string | null | undefined;
     recommendedForIssueIds: string[] | undefined;
     recommendedForIssueOrdinals: {
         [x: string]: number;
@@ -8,7 +9,6 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
     ordinal: number;
     prompt: string;
     type: yup.Defined<K>;
-    profileId: string | null | undefined;
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -40,13 +40,13 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
     timerSeconds: yup.Maybe<number | undefined>;
     isSuggested: boolean | undefined;
 }, yup.AnyObject, {
+    profileId: undefined;
     recommendedForIssueIds: "";
     recommendedForIssueOrdinals: undefined;
     isInGameplan: undefined;
     ordinal: undefined;
     prompt: undefined;
     type: undefined;
-    profileId: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     pastTenseTitle: undefined;

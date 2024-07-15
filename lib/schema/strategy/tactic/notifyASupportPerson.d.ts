@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 export declare const notifyASupportPersonTacticSchema: yup.ObjectSchema<{
+    profileId: string | null | undefined;
     recommendedForIssueIds: string[] | undefined;
     recommendedForIssueOrdinals: {
         [x: string]: number;
@@ -8,7 +9,6 @@ export declare const notifyASupportPersonTacticSchema: yup.ObjectSchema<{
     ordinal: number;
     prompt: string;
     type: "notifyASupportPerson";
-    profileId: string | null | undefined;
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -41,13 +41,13 @@ export declare const notifyASupportPersonTacticSchema: yup.ObjectSchema<{
     isSuggested: boolean | undefined;
     contactIds: string[];
 }, yup.AnyObject, {
+    profileId: undefined;
     recommendedForIssueIds: "";
     recommendedForIssueOrdinals: undefined;
     isInGameplan: undefined;
     ordinal: undefined;
     prompt: undefined;
     type: undefined;
-    profileId: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     pastTenseTitle: undefined;

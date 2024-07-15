@@ -51,6 +51,7 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        profileId?: string | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -586,7 +587,7 @@ export declare const factories: {
         ordinal: number;
         invitationCode: string;
         invitationUrl: string;
-    }, "prompt" | "type" | "ordinal" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "slug" | "creatorProfileId" | "tacticsById" | "next3Tactics" | "nextTacticId")>;
+    }, "prompt" | "type" | "ordinal" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "slug" | "creatorProfileId" | "tacticsById" | "next3Tactics" | "nextTacticId")>;
     impulseFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -1371,6 +1372,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -2775,6 +2777,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -4293,6 +4296,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;

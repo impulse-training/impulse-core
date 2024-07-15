@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 export declare const folderSchema: yup.ObjectSchema<{
+    profileId: string | undefined;
     recommendedForIssueIds: string[] | undefined;
     recommendedForIssueOrdinals: {
         [x: string]: number;
@@ -552,6 +553,7 @@ export declare const folderSchema: yup.ObjectSchema<{
     })[] | undefined;
     nextTacticId: string | undefined;
 }, yup.AnyObject, {
+    profileId: undefined;
     recommendedForIssueIds: "";
     recommendedForIssueOrdinals: undefined;
     isInGameplan: undefined;

@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 export declare const audioTacticSchema: yup.ObjectSchema<{
+    profileId: string | null | undefined;
     recommendedForIssueIds: string[] | undefined;
     recommendedForIssueOrdinals: {
         [x: string]: number;
@@ -8,7 +9,6 @@ export declare const audioTacticSchema: yup.ObjectSchema<{
     ordinal: number;
     prompt: string | undefined;
     type: "audio";
-    profileId: string | null | undefined;
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -45,13 +45,13 @@ export declare const audioTacticSchema: yup.ObjectSchema<{
         remoteFilePath: string;
     };
 }, yup.AnyObject, {
+    profileId: undefined;
     recommendedForIssueIds: "";
     recommendedForIssueOrdinals: undefined;
     isInGameplan: undefined;
     ordinal: undefined;
     prompt: undefined;
     type: undefined;
-    profileId: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     pastTenseTitle: undefined;
