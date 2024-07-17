@@ -9,7 +9,7 @@ export const makeQuestionTimeTacticFactory = (
   TimestampKlass: typeof TimestampLike
 ) =>
   Factory.makeFactory<QuestionTimeValue>({
-    categories: ['debriefing'],
+    categories: ['impulses'],
     prompt: 'How long did you spend?',
     type: 'time',
     createdAt: TimestampKlass.now(),
@@ -20,7 +20,7 @@ export const makeQuestionMultipleChoiceTacticFactory = (
   TimestampKlass: typeof TimestampLike
 ) =>
   Factory.makeFactory<QuestionMultipleChoiceValue>({
-    categories: ['debriefing'],
+    categories: ['emotions'],
     prompt: 'How are you feeling?',
     type: 'time',
     canAddNewOptions: false,

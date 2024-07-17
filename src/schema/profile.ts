@@ -25,6 +25,19 @@ export const profileSchema = yup.object({
   // For now at least, we copy questions data to the profile
   questionsById: objectOf(questionSchema),
 
+  dailyReview: yup
+    .mixed<'morning' | 'evening'>()
+    .oneOf(['morning', 'evening'])
+    .nullable()
+    .defined(),
+  // dailyDebriefHour: yup
+  //   .object({
+  //     hour: yup.number().required(),
+  //     minute: yup.number().required(),
+  //   })
+  //   .optional()
+  //   .default(undefined),
+
   // Can impulse add and remove and change questions and strategies?
   impulseCanManageQuestions: yup.boolean(),
   impulseCanManageGameplan: yup.boolean(),

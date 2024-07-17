@@ -2500,6 +2500,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 canAddNewOptions: NonNullable<boolean | undefined>;
             };
         };
+        dailyReview: "morning" | "evening" | null;
         issueId: string | null;
         strategiesById: {
             [x: string]: {
@@ -3318,7 +3319,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         };
         currentAgent: import("..").AgentName;
         timezone: string;
-    }, "uids" | "questionsById" | "issueId" | "strategiesById" | "currentAgent" | "timezone" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "parentIssueIds" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "setbackThreshold" | "impulseCanManageQuestions" | "impulseCanManageGameplan" | "issueName" | "issueDebriefQuestionPrompt" | "isReadyForTour" | "isOnboardingComplete" | "gameplanStrategies" | "androidPermissions" | "longTermMemory" | "region")>;
+    }, "uids" | "questionsById" | "dailyReview" | "issueId" | "strategiesById" | "currentAgent" | "timezone" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "parentIssueIds" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "setbackThreshold" | "impulseCanManageQuestions" | "impulseCanManageGameplan" | "issueName" | "issueDebriefQuestionPrompt" | "isReadyForTour" | "isOnboardingComplete" | "gameplanStrategies" | "androidPermissions" | "longTermMemory" | "region")>;
     questionTimeFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;

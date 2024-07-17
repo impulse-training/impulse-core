@@ -1868,6 +1868,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             canAddNewOptions: NonNullable<boolean | undefined>;
         };
     };
+    dailyReview: "morning" | "evening" | null;
     issueId: string | null;
     strategiesById: {
         [x: string]: {
@@ -2686,7 +2687,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     };
     currentAgent: import("..").AgentName;
     timezone: string;
-}, "uids" | "questionsById" | "issueId" | "strategiesById" | "currentAgent" | "timezone" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "parentIssueIds" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "setbackThreshold" | "impulseCanManageQuestions" | "impulseCanManageGameplan" | "issueName" | "issueDebriefQuestionPrompt" | "isReadyForTour" | "isOnboardingComplete" | "gameplanStrategies" | "androidPermissions" | "longTermMemory" | "region")>, folderFactory: import("factory.ts").Factory<{
+}, "uids" | "questionsById" | "dailyReview" | "issueId" | "strategiesById" | "currentAgent" | "timezone" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "parentIssueIds" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "setbackThreshold" | "impulseCanManageQuestions" | "impulseCanManageGameplan" | "issueName" | "issueDebriefQuestionPrompt" | "isReadyForTour" | "isOnboardingComplete" | "gameplanStrategies" | "androidPermissions" | "longTermMemory" | "region")>, folderFactory: import("factory.ts").Factory<{
     createdAt?: {
         isEqual?: any;
         toMillis?: any;

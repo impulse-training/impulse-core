@@ -15,4 +15,5 @@ export const makeProfileFactory = (TimestampKlass: typeof TimestampLike) =>
     longTermMemory: {},
     questionsById: {},
     strategiesById: {},
+    dailyReview: null,
   });

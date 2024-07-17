@@ -472,6 +472,7 @@ export declare const profileSchema: yup.ObjectSchema<{
             canAddNewOptions: NonNullable<boolean | undefined>;
         };
     };
+    dailyReview: "morning" | "evening" | null;
     impulseCanManageQuestions: boolean | undefined;
     impulseCanManageGameplan: boolean | undefined;
     issueId: string | null;
@@ -1335,6 +1336,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     expoPushToken: undefined;
     notificationPreferences: undefined;
     questionsById: undefined;
+    dailyReview: undefined;
     impulseCanManageQuestions: undefined;
     impulseCanManageGameplan: undefined;
     issueId: undefined;
