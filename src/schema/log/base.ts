@@ -16,7 +16,6 @@ export function logBaseSchema<K extends string>(type: K) {
     text: yup.string(),
     type: yup.mixed<K>().oneOf([type]).defined(),
     date: timestampSchema,
-    activeImpulseId: yup.string().nullable(),
     senderProfileId: yup.string().nullable(),
     views: yup.array().of(logViewSchema),
     agent: yup.mixed<AgentName>().oneOf(keys(agents) as AgentName[]),

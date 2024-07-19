@@ -49,7 +49,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     } | null | undefined;
     text?: string | undefined;
     issueName?: string | undefined;
-    activeImpulseId?: string | null | undefined;
     senderProfileId?: string | null | undefined;
     views?: {
         openTime: {
@@ -1363,7 +1362,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     followedUpQuestionIds: string[];
     gameplanStrategyIds: string[];
     completedTacticIds: string[];
-}, "parentIssueIds" | "questionsById" | "type" | "strategiesById" | "date" | "followedUpQuestionIds" | "gameplanStrategyIds" | "completedTacticIds" | ("createdAt" | "updatedAt" | "text" | "issueName" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "questionData" | "submittedAt" | "isDebrief" | "debriefAfter")>, profileFactory: import("factory.ts").Factory<{
+}, "parentIssueIds" | "questionsById" | "type" | "strategiesById" | "date" | "followedUpQuestionIds" | "gameplanStrategyIds" | "completedTacticIds" | ("createdAt" | "updatedAt" | "text" | "issueName" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "questionData" | "submittedAt" | "isDebrief" | "debriefAfter")>, profileFactory: import("factory.ts").Factory<{
     createdAt?: {
         isEqual?: any;
         toMillis?: any;

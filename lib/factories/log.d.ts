@@ -19,7 +19,6 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
     } | null | undefined;
     text?: string | undefined;
     issueName?: string | undefined;
-    activeImpulseId?: string | null | undefined;
     senderProfileId?: string | null | undefined;
     views?: {
         openTime: {
@@ -1333,7 +1332,7 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
     followedUpQuestionIds: string[];
     gameplanStrategyIds: string[];
     completedTacticIds: string[];
-}, "parentIssueIds" | "questionsById" | "type" | "strategiesById" | "date" | "followedUpQuestionIds" | "gameplanStrategyIds" | "completedTacticIds" | ("createdAt" | "updatedAt" | "text" | "issueName" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "questionData" | "submittedAt" | "isDebrief" | "debriefAfter")>;
+}, "parentIssueIds" | "questionsById" | "type" | "strategiesById" | "date" | "followedUpQuestionIds" | "gameplanStrategyIds" | "completedTacticIds" | ("createdAt" | "updatedAt" | "text" | "issueName" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "questionData" | "submittedAt" | "isDebrief" | "debriefAfter")>;
 export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     createdAt?: {
         isEqual?: any;
@@ -1352,7 +1351,6 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
         toDate: Function;
     } | null | undefined;
     text?: string | undefined;
-    activeImpulseId?: string | null | undefined;
     senderProfileId?: string | null | undefined;
     views?: {
         openTime: {
@@ -1842,4 +1840,4 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
         nanoseconds: number;
         toDate: Function;
     };
-}, "questionsById" | "type" | "date" | ("createdAt" | "updatedAt" | "text" | "activeImpulseId" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "questionData" | "submittedAt" | "trackingQuestionIds" | "debriefingQuestionIds" | "isDebrief" | "followedUpQuestionIds")>;
+}, "questionsById" | "type" | "date" | ("createdAt" | "updatedAt" | "text" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "questionData" | "submittedAt" | "trackingQuestionIds" | "debriefingQuestionIds" | "isDebrief" | "followedUpQuestionIds")>;

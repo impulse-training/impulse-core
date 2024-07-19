@@ -28,7 +28,6 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         nanoseconds: number;
         toDate: Function;
     };
-    activeImpulseId: string | null | undefined;
     senderProfileId: string | null | undefined;
     views: {
         openTime: {
@@ -67,7 +66,6 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         toJSON: undefined;
         toDate: undefined;
     };
-    activeImpulseId: undefined;
     senderProfileId: undefined;
     views: "";
     agent: undefined;

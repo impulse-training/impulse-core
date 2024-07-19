@@ -23,6 +23,7 @@ export * from './strategy';
 export * from './strategy/folder';
 export * from './strategy/tactic';
 export * from './tacticImpression';
+export * from './thread';
 
 // Utils
 export * from './question/utils/questionKeyType';

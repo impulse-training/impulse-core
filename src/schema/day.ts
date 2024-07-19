@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 import { LogValue, logSchema } from './log';
+import { threadSchema } from './thread';
 import { objectOf } from './utils/objectOf';
 import { timestampSchema } from './utils/timestamp';
 
@@ -8,7 +9,7 @@ export const daySchema = yup.object({
   date: timestampSchema,
   issueName: yup.string().required(),
   logsById: objectOf(logSchema),
-  isProcessing: yup.boolean().default(false),
+  threadsById: objectOf(threadSchema),
 });
 
 export type DayValue = Omit<yup.InferType<typeof daySchema>, 'logsById'> & {

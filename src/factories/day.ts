@@ -7,5 +7,5 @@ export const makeDayFactory = (TimestampKlass: typeof TimestampLike) =>
     date: TimestampKlass.now(),
     issueName: 'YouTube addiction',
     logsById: {},
-    isProcessing: false,
+    threadsById: {},
   });
