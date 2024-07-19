@@ -1,16 +1,16 @@
 import * as yup from 'yup';
 import { QuestionKeyType } from './utils/questionKeyType';
 export declare const QUESTION_CATEGORIES: {
-    readonly general: "General";
+    readonly emotions: "Emotions";
     readonly impulses: "Impulses";
-    readonly debriefing: "Debriefing";
+    readonly other: "Other";
     readonly dailyReview: "Daily review";
     readonly afterSuccess: "Successes";
     readonly afterSetback: "Setbacks";
 };
 export type QuestionCategory = keyof typeof QUESTION_CATEGORIES;
 export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSchema<{
-    categories: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+    categories: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
     prompt: string;
     type: QuestionKeyType;
     options: ({

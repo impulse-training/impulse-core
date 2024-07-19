@@ -104,7 +104,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
             options?: ({
                 label?: string | undefined;
                 followUps?: ({
@@ -187,7 +187,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
             options?: ({
                 label?: string | undefined;
                 followUps?: ({
@@ -273,7 +273,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
             options?: ({
                 label?: string | undefined;
                 followUps?: ({
@@ -357,7 +357,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
             options?: ({
                 label?: string | undefined;
                 followUps?: ({
@@ -441,7 +441,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
             followUps?: ({
                 message?: string | undefined;
                 type: "askAnotherQuestion";

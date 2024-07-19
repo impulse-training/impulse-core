@@ -6,9 +6,9 @@ import { optionalTimestampSchema } from '../utils/timestamp';
 import { QuestionKeyType } from './utils/questionKeyType';
 
 export const QUESTION_CATEGORIES = {
-  general: 'General',
+  emotions: 'Emotions',
   impulses: 'Impulses',
-  debriefing: 'Debriefing',
+  other: 'Other',
   dailyReview: 'Daily review',
   afterSuccess: 'Successes',
   afterSetback: 'Setbacks',

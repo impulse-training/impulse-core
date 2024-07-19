@@ -100,7 +100,7 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
             options?: ({
                 label?: string | undefined;
                 followUps?: ({
@@ -183,7 +183,7 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
             options?: ({
                 label?: string | undefined;
                 followUps?: ({
@@ -269,7 +269,7 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
             options?: ({
                 label?: string | undefined;
                 followUps?: ({
@@ -353,7 +353,7 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
             options?: ({
                 label?: string | undefined;
                 followUps?: ({
@@ -437,7 +437,7 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
             followUps?: ({
                 message?: string | undefined;
                 type: "askAnotherQuestion";
@@ -1427,7 +1427,7 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
             options?: ({
                 label?: string | undefined;
                 followUps?: ({
@@ -1510,7 +1510,7 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
             options?: ({
                 label?: string | undefined;
                 followUps?: ({
@@ -1596,7 +1596,7 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
             options?: ({
                 label?: string | undefined;
                 followUps?: ({
@@ -1680,7 +1680,7 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
             options?: ({
                 label?: string | undefined;
                 followUps?: ({
@@ -1764,7 +1764,7 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            categories?: ("general" | "impulses" | "debriefing" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+            categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
             followUps?: ({
                 message?: string | undefined;
                 type: "askAnotherQuestion";
