@@ -2,6 +2,8 @@ import * as yup from 'yup';
 export declare const threadSchema: yup.ObjectSchema<{
     firstLogId: string | undefined;
     profileId: string;
+    isProcessing: boolean | undefined;
+    title: string | undefined;
     logsById: {
         [x: string]: {
             createdAt?: {
@@ -1628,6 +1630,8 @@ export declare const threadSchema: yup.ObjectSchema<{
 }, yup.AnyObject, {
     firstLogId: undefined;
     profileId: undefined;
+    isProcessing: undefined;
+    title: undefined;
     logsById: undefined;
     createdAt: undefined;
     updatedAt: undefined;

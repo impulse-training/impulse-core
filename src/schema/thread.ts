@@ -6,6 +6,8 @@ import { optionalTimestampSchema } from './utils/timestamp';
 export const threadSchema = yup.object({
   firstLogId: yup.string(),
   profileId: yup.string().required(),
+  isProcessing: yup.boolean(),
+  title: yup.string(),
   logsById: objectOf(logSchema),
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,

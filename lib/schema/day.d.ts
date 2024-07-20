@@ -1635,7 +1635,9 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            title?: string | undefined;
             firstLogId?: string | undefined;
+            isProcessing?: boolean | undefined;
             profileId: string;
             logsById: {
                 [x: string]: {
