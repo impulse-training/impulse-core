@@ -199,8 +199,8 @@ export declare const folderSchema: yup.ObjectSchema<{
             isSuggested?: boolean | undefined;
             prompt: string;
             type: "steps";
-            ordinal: number;
             steps: number;
+            ordinal: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -284,8 +284,8 @@ export declare const folderSchema: yup.ObjectSchema<{
             video: {
                 storagePath?: string | null | undefined;
                 url?: string | null | undefined;
-                description: string;
                 title: string;
+                description: string;
                 thumbnailUrl: string;
                 duration: number;
             };
@@ -460,8 +460,8 @@ export declare const folderSchema: yup.ObjectSchema<{
         isSuggested?: boolean | undefined;
         prompt: string;
         type: "steps";
-        ordinal: number;
         steps: number;
+        ordinal: number;
     } | {
         createdAt?: {
             isEqual?: any;
@@ -545,8 +545,8 @@ export declare const folderSchema: yup.ObjectSchema<{
         video: {
             storagePath?: string | null | undefined;
             url?: string | null | undefined;
-            description: string;
             title: string;
+            description: string;
             thumbnailUrl: string;
             duration: number;
         };

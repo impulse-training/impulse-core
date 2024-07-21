@@ -3,6 +3,7 @@ import {
   FollowUpQuestionValue,
   askAnotherQuestionSchema,
 } from './askAnotherQuestion';
+import { ShowTourFollowUpValue, showTourFollowUpSchema } from './showTour';
 import {
   WriteAnswerToProfileValue,
   writeAnswerToProfileSchema,
@@ -13,6 +14,7 @@ import {
 } from './writeValueToProfile';
 
 export * from './askAnotherQuestion';
+export * from './showTour';
 export * from './writeAnswerToProfile';
 export * from './writeValueToProfile';
 
@@ -23,6 +25,7 @@ export const followUpSchemas: Record<
   askAnotherQuestion: askAnotherQuestionSchema,
   writeAnswerToProfile: writeAnswerToProfileSchema,
   writeValueToProfile: writeValueToProfileSchema,
+  showTour: showTourFollowUpSchema,
 } as any;
 
 export const followUpSchema = yup.lazy(value => {
@@ -47,4 +50,5 @@ type ValidatedFollowUp = {
 export type FollowUpValue =
   | FollowUpQuestionValue
   | WriteAnswerToProfileValue
-  | WriteValueToProfileValue;
+  | WriteValueToProfileValue
+  | ShowTourFollowUpValue;

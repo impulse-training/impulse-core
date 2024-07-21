@@ -340,6 +340,15 @@ export declare const threadSchema: yup.ObjectSchema<{
                             type: "writeValueToProfile";
                             profileKey: string;
                             value: {};
+                        } | {
+                            message?: string | undefined;
+                            type: "showTour";
+                            steps: {
+                                message: string;
+                                elementRefName: string;
+                                title: string;
+                                confirmButtonLabel: string;
+                            }[];
                         })[] | undefined;
                         color?: string | undefined;
                         textColor?: string | undefined;
@@ -363,6 +372,15 @@ export declare const threadSchema: yup.ObjectSchema<{
                             type: "writeValueToProfile";
                             profileKey: string;
                             value: {};
+                        } | {
+                            message?: string | undefined;
+                            type: "showTour";
+                            steps: {
+                                message: string;
+                                elementRefName: string;
+                                title: string;
+                                confirmButtonLabel: string;
+                            }[];
                         })[] | undefined;
                         color?: string | undefined;
                         textColor?: string | undefined;
@@ -382,6 +400,15 @@ export declare const threadSchema: yup.ObjectSchema<{
                         type: "writeValueToProfile";
                         profileKey: string;
                         value: {};
+                    } | {
+                        message?: string | undefined;
+                        type: "showTour";
+                        steps: {
+                            message: string;
+                            elementRefName: string;
+                            title: string;
+                            confirmButtonLabel: string;
+                        }[];
                     })[] | undefined;
                     ordinals?: {
                         [x: string]: number;
@@ -423,6 +450,15 @@ export declare const threadSchema: yup.ObjectSchema<{
                             type: "writeValueToProfile";
                             profileKey: string;
                             value: {};
+                        } | {
+                            message?: string | undefined;
+                            type: "showTour";
+                            steps: {
+                                message: string;
+                                elementRefName: string;
+                                title: string;
+                                confirmButtonLabel: string;
+                            }[];
                         })[] | undefined;
                         color?: string | undefined;
                         textColor?: string | undefined;
@@ -446,6 +482,15 @@ export declare const threadSchema: yup.ObjectSchema<{
                             type: "writeValueToProfile";
                             profileKey: string;
                             value: {};
+                        } | {
+                            message?: string | undefined;
+                            type: "showTour";
+                            steps: {
+                                message: string;
+                                elementRefName: string;
+                                title: string;
+                                confirmButtonLabel: string;
+                            }[];
                         })[] | undefined;
                         color?: string | undefined;
                         textColor?: string | undefined;
@@ -465,6 +510,15 @@ export declare const threadSchema: yup.ObjectSchema<{
                         type: "writeValueToProfile";
                         profileKey: string;
                         value: {};
+                    } | {
+                        message?: string | undefined;
+                        type: "showTour";
+                        steps: {
+                            message: string;
+                            elementRefName: string;
+                            title: string;
+                            confirmButtonLabel: string;
+                        }[];
                     })[] | undefined;
                     setbackThreshold?: number | undefined;
                     ordinals?: {
@@ -509,6 +563,15 @@ export declare const threadSchema: yup.ObjectSchema<{
                             type: "writeValueToProfile";
                             profileKey: string;
                             value: {};
+                        } | {
+                            message?: string | undefined;
+                            type: "showTour";
+                            steps: {
+                                message: string;
+                                elementRefName: string;
+                                title: string;
+                                confirmButtonLabel: string;
+                            }[];
                         })[] | undefined;
                         color?: string | undefined;
                         textColor?: string | undefined;
@@ -532,6 +595,15 @@ export declare const threadSchema: yup.ObjectSchema<{
                             type: "writeValueToProfile";
                             profileKey: string;
                             value: {};
+                        } | {
+                            message?: string | undefined;
+                            type: "showTour";
+                            steps: {
+                                message: string;
+                                elementRefName: string;
+                                title: string;
+                                confirmButtonLabel: string;
+                            }[];
                         })[] | undefined;
                         color?: string | undefined;
                         textColor?: string | undefined;
@@ -551,6 +623,15 @@ export declare const threadSchema: yup.ObjectSchema<{
                         type: "writeValueToProfile";
                         profileKey: string;
                         value: {};
+                    } | {
+                        message?: string | undefined;
+                        type: "showTour";
+                        steps: {
+                            message: string;
+                            elementRefName: string;
+                            title: string;
+                            confirmButtonLabel: string;
+                        }[];
                     })[] | undefined;
                     setbackThreshold?: number | undefined;
                     ordinals?: {
@@ -593,6 +674,15 @@ export declare const threadSchema: yup.ObjectSchema<{
                             type: "writeValueToProfile";
                             profileKey: string;
                             value: {};
+                        } | {
+                            message?: string | undefined;
+                            type: "showTour";
+                            steps: {
+                                message: string;
+                                elementRefName: string;
+                                title: string;
+                                confirmButtonLabel: string;
+                            }[];
                         })[] | undefined;
                         color?: string | undefined;
                         textColor?: string | undefined;
@@ -616,6 +706,15 @@ export declare const threadSchema: yup.ObjectSchema<{
                             type: "writeValueToProfile";
                             profileKey: string;
                             value: {};
+                        } | {
+                            message?: string | undefined;
+                            type: "showTour";
+                            steps: {
+                                message: string;
+                                elementRefName: string;
+                                title: string;
+                                confirmButtonLabel: string;
+                            }[];
                         })[] | undefined;
                         color?: string | undefined;
                         textColor?: string | undefined;
@@ -635,6 +734,15 @@ export declare const threadSchema: yup.ObjectSchema<{
                         type: "writeValueToProfile";
                         profileKey: string;
                         value: {};
+                    } | {
+                        message?: string | undefined;
+                        type: "showTour";
+                        steps: {
+                            message: string;
+                            elementRefName: string;
+                            title: string;
+                            confirmButtonLabel: string;
+                        }[];
                     })[] | undefined;
                     setbackThreshold?: number | undefined;
                     ordinals?: {
@@ -675,6 +783,15 @@ export declare const threadSchema: yup.ObjectSchema<{
                         type: "writeValueToProfile";
                         profileKey: string;
                         value: {};
+                    } | {
+                        message?: string | undefined;
+                        type: "showTour";
+                        steps: {
+                            message: string;
+                            elementRefName: string;
+                            title: string;
+                            confirmButtonLabel: string;
+                        }[];
                     })[] | undefined;
                     ordinals?: {
                         [x: string]: number;
@@ -698,6 +815,15 @@ export declare const threadSchema: yup.ObjectSchema<{
                             type: "writeValueToProfile";
                             profileKey: string;
                             value: {};
+                        } | {
+                            message?: string | undefined;
+                            type: "showTour";
+                            steps: {
+                                message: string;
+                                elementRefName: string;
+                                title: string;
+                                confirmButtonLabel: string;
+                            }[];
                         })[] | undefined;
                         color?: string | undefined;
                         textColor?: string | undefined;
@@ -721,6 +847,15 @@ export declare const threadSchema: yup.ObjectSchema<{
                             type: "writeValueToProfile";
                             profileKey: string;
                             value: {};
+                        } | {
+                            message?: string | undefined;
+                            type: "showTour";
+                            steps: {
+                                message: string;
+                                elementRefName: string;
+                                title: string;
+                                confirmButtonLabel: string;
+                            }[];
                         })[] | undefined;
                         color?: string | undefined;
                         textColor?: string | undefined;
@@ -731,6 +866,64 @@ export declare const threadSchema: yup.ObjectSchema<{
                 };
             };
             type: "questions";
+            date: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            };
+        } | {
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            text?: string | undefined;
+            senderProfileId?: string | null | undefined;
+            views?: {
+                openTime: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                };
+                closeTime: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                };
+            }[] | undefined;
+            agent?: import("..").AgentName | undefined;
+            gptPayload?: {
+                role: NonNullable<"system" | "user" | "assistant" | undefined>;
+                content: string;
+            }[] | undefined;
+            openAiChoiceResponse?: {} | undefined;
+            type: "showTour";
+            steps: {
+                message: string;
+                elementRefName: string;
+                title: string;
+                confirmButtonLabel: string;
+            }[];
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -954,8 +1147,8 @@ export declare const threadSchema: yup.ObjectSchema<{
                     isSuggested?: boolean | undefined;
                     prompt: string;
                     type: "steps";
-                    ordinal: number;
                     steps: number;
+                    ordinal: number;
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -1039,8 +1232,8 @@ export declare const threadSchema: yup.ObjectSchema<{
                     video: {
                         storagePath?: string | null | undefined;
                         url?: string | null | undefined;
-                        description: string;
                         title: string;
+                        description: string;
                         thumbnailUrl: string;
                         duration: number;
                     };
@@ -1239,8 +1432,8 @@ export declare const threadSchema: yup.ObjectSchema<{
                             isSuggested?: boolean | undefined;
                             prompt: string;
                             type: "steps";
-                            ordinal: number;
                             steps: number;
+                            ordinal: number;
                         } | {
                             createdAt?: {
                                 isEqual?: any;
@@ -1324,8 +1517,8 @@ export declare const threadSchema: yup.ObjectSchema<{
                             video: {
                                 storagePath?: string | null | undefined;
                                 url?: string | null | undefined;
-                                description: string;
                                 title: string;
+                                description: string;
                                 thumbnailUrl: string;
                                 duration: number;
                             };
@@ -1500,8 +1693,8 @@ export declare const threadSchema: yup.ObjectSchema<{
                         isSuggested?: boolean | undefined;
                         prompt: string;
                         type: "steps";
-                        ordinal: number;
                         steps: number;
+                        ordinal: number;
                     } | {
                         createdAt?: {
                             isEqual?: any;
@@ -1585,8 +1778,8 @@ export declare const threadSchema: yup.ObjectSchema<{
                         video: {
                             storagePath?: string | null | undefined;
                             url?: string | null | undefined;
-                            description: string;
                             title: string;
+                            description: string;
                             thumbnailUrl: string;
                             duration: number;
                         };

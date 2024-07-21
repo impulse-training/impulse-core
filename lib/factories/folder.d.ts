@@ -195,8 +195,8 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             isSuggested?: boolean | undefined;
             prompt: string;
             type: "steps";
-            ordinal: number;
             steps: number;
+            ordinal: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -280,8 +280,8 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             video: {
                 storagePath?: string | null | undefined;
                 url?: string | null | undefined;
-                description: string;
                 title: string;
+                description: string;
                 thumbnailUrl: string;
                 duration: number;
             };
@@ -456,8 +456,8 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         isSuggested?: boolean | undefined;
         prompt: string;
         type: "steps";
-        ordinal: number;
         steps: number;
+        ordinal: number;
     } | {
         createdAt?: {
             isEqual?: any;
@@ -541,8 +541,8 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         video: {
             storagePath?: string | null | undefined;
             url?: string | null | undefined;
-            description: string;
             title: string;
+            description: string;
             thumbnailUrl: string;
             duration: number;
         };

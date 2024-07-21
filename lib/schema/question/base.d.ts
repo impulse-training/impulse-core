@@ -28,6 +28,15 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
             type: "writeValueToProfile";
             profileKey: string;
             value: {};
+        } | {
+            message?: string | undefined;
+            type: "showTour";
+            steps: {
+                message: string;
+                elementRefName: string;
+                title: string;
+                confirmButtonLabel: string;
+            }[];
         })[] | undefined;
         color?: string | undefined;
         textColor?: string | undefined;
@@ -51,6 +60,15 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
             type: "writeValueToProfile";
             profileKey: string;
             value: {};
+        } | {
+            message?: string | undefined;
+            type: "showTour";
+            steps: {
+                message: string;
+                elementRefName: string;
+                title: string;
+                confirmButtonLabel: string;
+            }[];
         })[] | undefined;
         color?: string | undefined;
         textColor?: string | undefined;
@@ -75,6 +93,15 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
         type: "writeValueToProfile";
         profileKey: string;
         value: {};
+    } | {
+        message?: string | undefined;
+        type: "showTour";
+        steps: {
+            message: string;
+            elementRefName: string;
+            title: string;
+            confirmButtonLabel: string;
+        }[];
     })[] | undefined;
     createdAt: {
         isEqual?: any;

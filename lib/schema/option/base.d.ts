@@ -14,6 +14,15 @@ export declare function optionValueBaseSchema<K extends string>(type: K): yup.Ob
         type: "writeValueToProfile";
         profileKey: string;
         value: {};
+    } | {
+        message?: string | undefined;
+        type: "showTour";
+        steps: {
+            message: string;
+            elementRefName: string;
+            title: string;
+            confirmButtonLabel: string;
+        }[];
     })[] | undefined;
     text: string;
     color: string | undefined;

@@ -4,6 +4,7 @@ import { HiddenLogValue, hiddenLogSchema } from './hiddenLog';
 import { ImpulseLogValue, impulseLogSchema } from './impulseLog';
 import { MessageLogValue, messageLogSchema } from './messageLog';
 import { QuestionsLogValue, questionsLogSchema } from './questionsLog';
+import { ShowTourLogValue, showTourLogSchema } from './showTourLog';
 import { StrategiesLogValue, strategiesLogSchema } from './strategiesLog';
 
 export * from './actionRecap';
@@ -11,6 +12,7 @@ export * from './hiddenLog';
 export * from './impulseLog';
 export * from './messageLog';
 export * from './questionsLog';
+export * from './showTourLog';
 export * from './strategiesLog';
 
 export * from './utils/guards';
@@ -24,6 +26,7 @@ export const logSchemas: Record<
   question: questionsLogSchema,
   strategies: strategiesLogSchema,
   actionRecap: actionRecapLogSchema,
+  showTour: showTourLogSchema,
   hidden: hiddenLogSchema,
 } as any;
 
@@ -53,4 +56,5 @@ export type LogValue =
   | QuestionsLogValue
   | ActionRecapLogValue
   | StrategiesLogValue
-  | HiddenLogValue;
+  | HiddenLogValue
+  | ShowTourLogValue;

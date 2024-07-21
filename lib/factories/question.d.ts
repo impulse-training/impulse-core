@@ -33,6 +33,15 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
             type: "writeValueToProfile";
             profileKey: string;
             value: {};
+        } | {
+            message?: string | undefined;
+            type: "showTour";
+            steps: {
+                message: string;
+                elementRefName: string;
+                title: string;
+                confirmButtonLabel: string;
+            }[];
         })[] | undefined;
         color?: string | undefined;
         textColor?: string | undefined;
@@ -56,6 +65,15 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
             type: "writeValueToProfile";
             profileKey: string;
             value: {};
+        } | {
+            message?: string | undefined;
+            type: "showTour";
+            steps: {
+                message: string;
+                elementRefName: string;
+                title: string;
+                confirmButtonLabel: string;
+            }[];
         })[] | undefined;
         color?: string | undefined;
         textColor?: string | undefined;
@@ -75,6 +93,15 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
         type: "writeValueToProfile";
         profileKey: string;
         value: {};
+    } | {
+        message?: string | undefined;
+        type: "showTour";
+        steps: {
+            message: string;
+            elementRefName: string;
+            title: string;
+            confirmButtonLabel: string;
+        }[];
     })[] | undefined;
     setbackThreshold?: number | undefined;
     ordinals?: {
@@ -116,6 +143,15 @@ export declare const makeQuestionMultipleChoiceTacticFactory: (TimestampKlass: t
         type: "writeValueToProfile";
         profileKey: string;
         value: {};
+    } | {
+        message?: string | undefined;
+        type: "showTour";
+        steps: {
+            message: string;
+            elementRefName: string;
+            title: string;
+            confirmButtonLabel: string;
+        }[];
     })[] | undefined;
     ordinals?: {
         [x: string]: number;
@@ -139,6 +175,15 @@ export declare const makeQuestionMultipleChoiceTacticFactory: (TimestampKlass: t
             type: "writeValueToProfile";
             profileKey: string;
             value: {};
+        } | {
+            message?: string | undefined;
+            type: "showTour";
+            steps: {
+                message: string;
+                elementRefName: string;
+                title: string;
+                confirmButtonLabel: string;
+            }[];
         })[] | undefined;
         color?: string | undefined;
         textColor?: string | undefined;
@@ -162,6 +207,15 @@ export declare const makeQuestionMultipleChoiceTacticFactory: (TimestampKlass: t
             type: "writeValueToProfile";
             profileKey: string;
             value: {};
+        } | {
+            message?: string | undefined;
+            type: "showTour";
+            steps: {
+                message: string;
+                elementRefName: string;
+                title: string;
+                confirmButtonLabel: string;
+            }[];
         })[] | undefined;
         color?: string | undefined;
         textColor?: string | undefined;

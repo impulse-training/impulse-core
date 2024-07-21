@@ -215,6 +215,15 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     type: "writeValueToProfile";
                     profileKey: string;
                     value: {};
+                } | {
+                    message?: string | undefined;
+                    type: "showTour";
+                    steps: {
+                        message: string;
+                        elementRefName: string;
+                        title: string;
+                        confirmButtonLabel: string;
+                    }[];
                 })[] | undefined;
                 color?: string | undefined;
                 textColor?: string | undefined;
@@ -238,6 +247,15 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     type: "writeValueToProfile";
                     profileKey: string;
                     value: {};
+                } | {
+                    message?: string | undefined;
+                    type: "showTour";
+                    steps: {
+                        message: string;
+                        elementRefName: string;
+                        title: string;
+                        confirmButtonLabel: string;
+                    }[];
                 })[] | undefined;
                 color?: string | undefined;
                 textColor?: string | undefined;
@@ -257,6 +275,15 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 type: "writeValueToProfile";
                 profileKey: string;
                 value: {};
+            } | {
+                message?: string | undefined;
+                type: "showTour";
+                steps: {
+                    message: string;
+                    elementRefName: string;
+                    title: string;
+                    confirmButtonLabel: string;
+                }[];
             })[] | undefined;
             ordinals?: {
                 [x: string]: number;
@@ -298,6 +325,15 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     type: "writeValueToProfile";
                     profileKey: string;
                     value: {};
+                } | {
+                    message?: string | undefined;
+                    type: "showTour";
+                    steps: {
+                        message: string;
+                        elementRefName: string;
+                        title: string;
+                        confirmButtonLabel: string;
+                    }[];
                 })[] | undefined;
                 color?: string | undefined;
                 textColor?: string | undefined;
@@ -321,6 +357,15 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     type: "writeValueToProfile";
                     profileKey: string;
                     value: {};
+                } | {
+                    message?: string | undefined;
+                    type: "showTour";
+                    steps: {
+                        message: string;
+                        elementRefName: string;
+                        title: string;
+                        confirmButtonLabel: string;
+                    }[];
                 })[] | undefined;
                 color?: string | undefined;
                 textColor?: string | undefined;
@@ -340,6 +385,15 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 type: "writeValueToProfile";
                 profileKey: string;
                 value: {};
+            } | {
+                message?: string | undefined;
+                type: "showTour";
+                steps: {
+                    message: string;
+                    elementRefName: string;
+                    title: string;
+                    confirmButtonLabel: string;
+                }[];
             })[] | undefined;
             setbackThreshold?: number | undefined;
             ordinals?: {
@@ -384,6 +438,15 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     type: "writeValueToProfile";
                     profileKey: string;
                     value: {};
+                } | {
+                    message?: string | undefined;
+                    type: "showTour";
+                    steps: {
+                        message: string;
+                        elementRefName: string;
+                        title: string;
+                        confirmButtonLabel: string;
+                    }[];
                 })[] | undefined;
                 color?: string | undefined;
                 textColor?: string | undefined;
@@ -407,6 +470,15 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     type: "writeValueToProfile";
                     profileKey: string;
                     value: {};
+                } | {
+                    message?: string | undefined;
+                    type: "showTour";
+                    steps: {
+                        message: string;
+                        elementRefName: string;
+                        title: string;
+                        confirmButtonLabel: string;
+                    }[];
                 })[] | undefined;
                 color?: string | undefined;
                 textColor?: string | undefined;
@@ -426,6 +498,15 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 type: "writeValueToProfile";
                 profileKey: string;
                 value: {};
+            } | {
+                message?: string | undefined;
+                type: "showTour";
+                steps: {
+                    message: string;
+                    elementRefName: string;
+                    title: string;
+                    confirmButtonLabel: string;
+                }[];
             })[] | undefined;
             setbackThreshold?: number | undefined;
             ordinals?: {
@@ -468,6 +549,15 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     type: "writeValueToProfile";
                     profileKey: string;
                     value: {};
+                } | {
+                    message?: string | undefined;
+                    type: "showTour";
+                    steps: {
+                        message: string;
+                        elementRefName: string;
+                        title: string;
+                        confirmButtonLabel: string;
+                    }[];
                 })[] | undefined;
                 color?: string | undefined;
                 textColor?: string | undefined;
@@ -491,6 +581,15 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     type: "writeValueToProfile";
                     profileKey: string;
                     value: {};
+                } | {
+                    message?: string | undefined;
+                    type: "showTour";
+                    steps: {
+                        message: string;
+                        elementRefName: string;
+                        title: string;
+                        confirmButtonLabel: string;
+                    }[];
                 })[] | undefined;
                 color?: string | undefined;
                 textColor?: string | undefined;
@@ -510,6 +609,15 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 type: "writeValueToProfile";
                 profileKey: string;
                 value: {};
+            } | {
+                message?: string | undefined;
+                type: "showTour";
+                steps: {
+                    message: string;
+                    elementRefName: string;
+                    title: string;
+                    confirmButtonLabel: string;
+                }[];
             })[] | undefined;
             setbackThreshold?: number | undefined;
             ordinals?: {
@@ -550,6 +658,15 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 type: "writeValueToProfile";
                 profileKey: string;
                 value: {};
+            } | {
+                message?: string | undefined;
+                type: "showTour";
+                steps: {
+                    message: string;
+                    elementRefName: string;
+                    title: string;
+                    confirmButtonLabel: string;
+                }[];
             })[] | undefined;
             ordinals?: {
                 [x: string]: number;
@@ -573,6 +690,15 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     type: "writeValueToProfile";
                     profileKey: string;
                     value: {};
+                } | {
+                    message?: string | undefined;
+                    type: "showTour";
+                    steps: {
+                        message: string;
+                        elementRefName: string;
+                        title: string;
+                        confirmButtonLabel: string;
+                    }[];
                 })[] | undefined;
                 color?: string | undefined;
                 textColor?: string | undefined;
@@ -596,6 +722,15 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     type: "writeValueToProfile";
                     profileKey: string;
                     value: {};
+                } | {
+                    message?: string | undefined;
+                    type: "showTour";
+                    steps: {
+                        message: string;
+                        elementRefName: string;
+                        title: string;
+                        confirmButtonLabel: string;
+                    }[];
                 })[] | undefined;
                 color?: string | undefined;
                 textColor?: string | undefined;
@@ -777,8 +912,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             isSuggested?: boolean | undefined;
             prompt: string;
             type: "steps";
-            ordinal: number;
             steps: number;
+            ordinal: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -862,8 +997,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             video: {
                 storagePath?: string | null | undefined;
                 url?: string | null | undefined;
-                description: string;
                 title: string;
+                description: string;
                 thumbnailUrl: string;
                 duration: number;
             };
@@ -1062,8 +1197,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     isSuggested?: boolean | undefined;
                     prompt: string;
                     type: "steps";
-                    ordinal: number;
                     steps: number;
+                    ordinal: number;
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -1147,8 +1282,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     video: {
                         storagePath?: string | null | undefined;
                         url?: string | null | undefined;
-                        description: string;
                         title: string;
+                        description: string;
                         thumbnailUrl: string;
                         duration: number;
                     };
@@ -1323,8 +1458,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 isSuggested?: boolean | undefined;
                 prompt: string;
                 type: "steps";
-                ordinal: number;
                 steps: number;
+                ordinal: number;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -1408,8 +1543,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 video: {
                     storagePath?: string | null | undefined;
                     url?: string | null | undefined;
-                    description: string;
                     title: string;
+                    description: string;
                     thumbnailUrl: string;
                     duration: number;
                 };
@@ -1619,8 +1754,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             isSuggested?: boolean | undefined;
             prompt: string;
             type: "steps";
-            ordinal: number;
             steps: number;
+            ordinal: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -1704,8 +1839,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             video: {
                 storagePath?: string | null | undefined;
                 url?: string | null | undefined;
-                description: string;
                 title: string;
+                description: string;
                 thumbnailUrl: string;
                 duration: number;
             };
@@ -1880,8 +2015,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         isSuggested?: boolean | undefined;
         prompt: string;
         type: "steps";
-        ordinal: number;
         steps: number;
+        ordinal: number;
     } | {
         createdAt?: {
             isEqual?: any;
@@ -1965,8 +2100,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         video: {
             storagePath?: string | null | undefined;
             url?: string | null | undefined;
-            description: string;
             title: string;
+            description: string;
             thumbnailUrl: string;
             duration: number;
         };
