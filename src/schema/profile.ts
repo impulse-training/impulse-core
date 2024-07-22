@@ -17,6 +17,7 @@ export const profileSchema = yup.object({
   widgetInstalledAt: optionalTimestampSchema,
   widgetLastPressedAt: optionalTimestampSchema,
   activeImpulseDoc: documentReferenceSchema,
+  activeThreadDoc: documentReferenceSchema,
   currentAppState: yup.mixed<AppStateStatus>().optional(), // Define validation for AppStateStatus if needed
   expoPushToken: yup.string().optional(),
   notificationPreferences: optionalObjectOf(
