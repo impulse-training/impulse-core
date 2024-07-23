@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-export declare const hiddenLogSchema: yup.ObjectSchema<{
+export declare const dayReviewLogSchema: yup.ObjectSchema<{
     openAiChoiceResponse: {} | undefined;
     createdAt: {
         isEqual?: any;
@@ -18,7 +18,7 @@ export declare const hiddenLogSchema: yup.ObjectSchema<{
         toDate: Function;
     } | null | undefined;
     text: string | undefined;
-    type: "hidden";
+    type: "dayReview";
     date: {
         isEqual?: any;
         toMillis?: any;
@@ -51,6 +51,7 @@ export declare const hiddenLogSchema: yup.ObjectSchema<{
         role: NonNullable<"system" | "user" | "assistant" | undefined>;
         content: string;
     }[] | undefined;
+    dayDoc: import("../utils/firestore").DocumentReferenceLike<unknown>;
 }, yup.AnyObject, {
     openAiChoiceResponse: undefined;
     createdAt: undefined;
@@ -69,5 +70,6 @@ export declare const hiddenLogSchema: yup.ObjectSchema<{
     views: "";
     agent: undefined;
     gptPayload: "";
+    dayDoc: undefined;
 }, "">;
-export type HiddenLogValue = yup.InferType<typeof hiddenLogSchema>;
+export type DayReviewLogValue = yup.InferType<typeof dayReviewLogSchema>;

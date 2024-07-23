@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 import { ActionRecapLogValue, actionRecapLogSchema } from './actionRecap';
-import { HiddenLogValue, hiddenLogSchema } from './hiddenLog';
+import { DayReviewLogValue, dayReviewLogSchema } from './dayReview';
 import { ImpulseLogValue, impulseLogSchema } from './impulseLog';
 import { MessageLogValue, messageLogSchema } from './messageLog';
 import { QuestionsLogValue, questionsLogSchema } from './questionsLog';
@@ -8,7 +8,7 @@ import { ShowTourLogValue, showTourLogSchema } from './showTourLog';
 import { StrategiesLogValue, strategiesLogSchema } from './strategiesLog';
 
 export * from './actionRecap';
-export * from './hiddenLog';
+export * from './dayReview';
 export * from './impulseLog';
 export * from './messageLog';
 export * from './questionsLog';
@@ -27,7 +27,7 @@ export const logSchemas: Record<
   strategies: strategiesLogSchema,
   actionRecap: actionRecapLogSchema,
   showTour: showTourLogSchema,
-  hidden: hiddenLogSchema,
+  dayReview: dayReviewLogSchema,
 } as any;
 
 export const logSchema = yup.lazy(value => {
@@ -56,5 +56,5 @@ export type LogValue =
   | QuestionsLogValue
   | ActionRecapLogValue
   | StrategiesLogValue
-  | HiddenLogValue
-  | ShowTourLogValue;
+  | ShowTourLogValue
+  | DayReviewLogValue;

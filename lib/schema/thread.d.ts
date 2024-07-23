@@ -101,7 +101,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                 content: string;
             }[] | undefined;
             openAiChoiceResponse?: {} | undefined;
-            type: "hidden";
+            type: "dayReview";
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -110,6 +110,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             };
+            dayDoc: import("./utils/firestore").DocumentReferenceLike<unknown>;
         } | {
             createdAt?: {
                 isEqual?: any;

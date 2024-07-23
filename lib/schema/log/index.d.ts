@@ -1,13 +1,13 @@
 import * as yup from 'yup';
 import { ActionRecapLogValue } from './actionRecap';
-import { HiddenLogValue } from './hiddenLog';
+import { DayReviewLogValue } from './dayReview';
 import { ImpulseLogValue } from './impulseLog';
 import { MessageLogValue } from './messageLog';
 import { QuestionsLogValue } from './questionsLog';
 import { ShowTourLogValue } from './showTourLog';
 import { StrategiesLogValue } from './strategiesLog';
 export * from './actionRecap';
-export * from './hiddenLog';
+export * from './dayReview';
 export * from './impulseLog';
 export * from './messageLog';
 export * from './questionsLog';
@@ -19,4 +19,4 @@ export declare const logSchema: yup.Lazy<ValidatedQuestion, yup.AnyObject, any>;
 type ValidatedQuestion = {
     [K in LogValue['type']]: yup.InferType<(typeof logSchemas)[K]>;
 }[LogValue['type']];
-export type LogValue = ImpulseLogValue | MessageLogValue | QuestionsLogValue | ActionRecapLogValue | StrategiesLogValue | HiddenLogValue | ShowTourLogValue;
+export type LogValue = ImpulseLogValue | MessageLogValue | QuestionsLogValue | ActionRecapLogValue | StrategiesLogValue | ShowTourLogValue | DayReviewLogValue;
