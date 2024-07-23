@@ -33,7 +33,7 @@ export declare const factories: {
         } | undefined;
         profileId: string;
     }, "profileId" | ("createdAt" | "updatedAt" | "tacticId" | "tacticTitle" | "text" | "recording" | "isEdited" | "avatar")>;
-    dayFactory: import("factory.ts").Factory<import("..").DayValue, "issueName" | "date" | "logsById" | "threadsById">;
+    dayFactory: import("factory.ts").Factory<import("..").DayValue, "questionsById" | "issueName" | "date" | "logsById" | "threadsById">;
     folderFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;

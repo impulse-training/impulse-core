@@ -8,4 +8,5 @@ export const makeDayFactory = (TimestampKlass: typeof TimestampLike) =>
     issueName: 'YouTube addiction',
     logsById: {},
     threadsById: {},
+    questionsById: {},
   });
