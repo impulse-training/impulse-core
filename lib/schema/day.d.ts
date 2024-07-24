@@ -1833,6 +1833,7 @@ export declare const daySchema: yup.ObjectSchema<{
             firstLogId?: string | undefined;
             isProcessing?: boolean | undefined;
             profileId: string;
+            dateString: string;
             logsById: {
                 [x: string]: {
                     createdAt?: {

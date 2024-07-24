@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 export declare const threadSchema: yup.ObjectSchema<{
+    dateString: string;
     firstLogId: string | undefined;
     profileId: string;
     isProcessing: boolean | undefined;
@@ -1822,6 +1823,7 @@ export declare const threadSchema: yup.ObjectSchema<{
         toDate: Function;
     } | null | undefined;
 }, yup.AnyObject, {
+    dateString: undefined;
     firstLogId: undefined;
     profileId: undefined;
     isProcessing: undefined;

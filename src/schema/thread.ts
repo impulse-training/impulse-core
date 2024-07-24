@@ -4,6 +4,7 @@ import { objectOf } from './utils/objectOf';
 import { optionalTimestampSchema } from './utils/timestamp';
 
 export const threadSchema = yup.object({
+  dateString: yup.string().required(),
   firstLogId: yup.string(),
   profileId: yup.string().required(),
   isProcessing: yup.boolean(),
