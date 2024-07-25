@@ -3,5 +3,9 @@ export function folderInvitationCode() {
 }
 
 export function getInvitationUrl(invitationCode: string | undefined) {
-  return 'https://impulse.training/support?c=' + invitationCode;
+  // TODO: maybe we should do URL-encoding using encodeURIComponent rather than hard-coding it
+  return (
+    'https://wa.me/18783488606?text=Contribute%20to%20support%20group%20' +
+    invitationCode
+  );
 }
