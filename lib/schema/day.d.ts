@@ -1874,6 +1874,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             };
+            strategyPath: string;
         };
     };
     threadsById: {
@@ -3764,6 +3765,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     };
+                    strategyPath: string;
                 };
             };
         };

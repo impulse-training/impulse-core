@@ -1870,6 +1870,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             };
+            strategyPath: string;
         };
     };
     createdAt: {

@@ -56,6 +56,7 @@ export declare const whatsappMessageLogSchema: yup.ObjectSchema<{
         storagePath?: yup.Maybe<string | undefined>;
         uri?: yup.Maybe<string | undefined>;
     }[] | undefined>;
+    strategyPath: string;
 }, yup.AnyObject, {
     openAiChoiceResponse: undefined;
     createdAt: undefined;
@@ -75,5 +76,6 @@ export declare const whatsappMessageLogSchema: yup.ObjectSchema<{
     agent: undefined;
     gptPayload: "";
     files: "";
+    strategyPath: undefined;
 }, "">;
 export type WhatsappMessageLogValue = yup.InferType<typeof whatsappMessageLogSchema>;
