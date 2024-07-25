@@ -1817,6 +1817,58 @@ export declare const daySchema: yup.ObjectSchema<{
             };
             completedTacticIds: string[];
             followedUpTacticIds: string[];
+        } | {
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            text?: string | undefined;
+            senderProfileId?: string | null | undefined;
+            views?: {
+                openTime: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                };
+                closeTime: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                };
+            }[] | undefined;
+            agent?: import("..").AgentName | undefined;
+            gptPayload?: {
+                role: NonNullable<"system" | "user" | "assistant" | undefined>;
+                content: string;
+            }[] | undefined;
+            openAiChoiceResponse?: {} | undefined;
+            type: "whatsappMessage";
+            date: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            };
         };
     };
     threadsById: {
@@ -3650,6 +3702,58 @@ export declare const daySchema: yup.ObjectSchema<{
                     };
                     completedTacticIds: string[];
                     followedUpTacticIds: string[];
+                } | {
+                    createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    text?: string | undefined;
+                    senderProfileId?: string | null | undefined;
+                    views?: {
+                        openTime: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        };
+                        closeTime: {
+                            isEqual?: any;
+                            toMillis?: any;
+                            toJSON?: any;
+                            seconds: number;
+                            nanoseconds: number;
+                            toDate: Function;
+                        };
+                    }[] | undefined;
+                    agent?: import("..").AgentName | undefined;
+                    gptPayload?: {
+                        role: NonNullable<"system" | "user" | "assistant" | undefined>;
+                        content: string;
+                    }[] | undefined;
+                    openAiChoiceResponse?: {} | undefined;
+                    type: "whatsappMessage";
+                    date: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    };
                 };
             };
         };

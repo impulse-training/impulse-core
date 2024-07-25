@@ -6,6 +6,10 @@ import { MessageLogValue, messageLogSchema } from './messageLog';
 import { QuestionsLogValue, questionsLogSchema } from './questionsLog';
 import { ShowTourLogValue, showTourLogSchema } from './showTourLog';
 import { StrategiesLogValue, strategiesLogSchema } from './strategiesLog';
+import {
+  WhatsappMessageLogValue,
+  whatsappMessageLogSchema,
+} from './whatsappMessageLog';
 
 export * from './actionRecap';
 export * from './dayReview';
@@ -14,6 +18,7 @@ export * from './messageLog';
 export * from './questionsLog';
 export * from './showTourLog';
 export * from './strategiesLog';
+export * from './whatsappMessageLog';
 
 export * from './utils/guards';
 
@@ -28,9 +33,10 @@ export const logSchemas: Record<
   actionRecap: actionRecapLogSchema,
   showTour: showTourLogSchema,
   dayReview: dayReviewLogSchema,
+  whatsappMessage: whatsappMessageLogSchema,
 } as any;
 
-export const logSchema = yup.lazy(value => {
+export const logSchema = yup.lazy((value: any) => {
   if (!value) return yup.mixed().required();
 
   if (typeof value.type === 'string' && value.type in logSchemas) {
@@ -43,10 +49,10 @@ export const logSchema = yup.lazy(value => {
       .oneOf(Object.keys(logSchemas) as LogValue['type'][])
       .required(),
   });
-}) as yup.Lazy<ValidatedQuestion>;
+}) as yup.Lazy<ValidatedLog>;
 
 // / This type represents the union of all possible validated tactic objects
-type ValidatedQuestion = {
+type ValidatedLog = {
   [K in LogValue['type']]: yup.InferType<(typeof logSchemas)[K]>;
 }[LogValue['type']];
 
@@ -57,4 +63,5 @@ export type LogValue =
   | ActionRecapLogValue
   | StrategiesLogValue
   | ShowTourLogValue
-  | DayReviewLogValue;
+  | DayReviewLogValue
+  | WhatsappMessageLogValue;

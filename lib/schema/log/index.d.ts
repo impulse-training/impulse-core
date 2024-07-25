@@ -6,6 +6,7 @@ import { MessageLogValue } from './messageLog';
 import { QuestionsLogValue } from './questionsLog';
 import { ShowTourLogValue } from './showTourLog';
 import { StrategiesLogValue } from './strategiesLog';
+import { WhatsappMessageLogValue } from './whatsappMessageLog';
 export * from './actionRecap';
 export * from './dayReview';
 export * from './impulseLog';
@@ -13,10 +14,11 @@ export * from './messageLog';
 export * from './questionsLog';
 export * from './showTourLog';
 export * from './strategiesLog';
+export * from './whatsappMessageLog';
 export * from './utils/guards';
 export declare const logSchemas: Record<LogValue['type'], yup.ObjectSchema<LogValue>>;
-export declare const logSchema: yup.Lazy<ValidatedQuestion, yup.AnyObject, any>;
-type ValidatedQuestion = {
+export declare const logSchema: yup.Lazy<ValidatedLog, yup.AnyObject, any>;
+type ValidatedLog = {
     [K in LogValue['type']]: yup.InferType<(typeof logSchemas)[K]>;
 }[LogValue['type']];
-export type LogValue = ImpulseLogValue | MessageLogValue | QuestionsLogValue | ActionRecapLogValue | StrategiesLogValue | ShowTourLogValue | DayReviewLogValue;
+export type LogValue = ImpulseLogValue | MessageLogValue | QuestionsLogValue | ActionRecapLogValue | StrategiesLogValue | ShowTourLogValue | DayReviewLogValue | WhatsappMessageLogValue;
