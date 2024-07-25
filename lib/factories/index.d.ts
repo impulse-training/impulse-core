@@ -777,6 +777,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         activeThreadDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         parentIssueIds?: string[] | undefined;
         scheduledNotificationIds?: string[] | undefined;
+        whatsappFolderDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         currentAppState?: import("react-native/types").AppStateStatus | undefined;
         expoPushToken?: string | undefined;
         notificationPreferences?: {
@@ -2191,7 +2192,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             };
         };
         timezone: string;
-    }, "uids" | "questionsById" | "dailyReview" | "issueId" | "strategiesById" | "timezone" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "parentIssueIds" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "setbackThreshold" | "impulseCanManageQuestions" | "impulseCanManageGameplan" | "issueName" | "issueDebriefQuestionPrompt" | "isReadyForTour" | "isOnboardingComplete" | "gameplanStrategies" | "androidPermissions" | "longTermMemory" | "region")>;
+    }, "uids" | "questionsById" | "dailyReview" | "issueId" | "strategiesById" | "timezone" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "parentIssueIds" | "scheduledNotificationIds" | "whatsappFolderDoc" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "setbackThreshold" | "impulseCanManageQuestions" | "impulseCanManageGameplan" | "issueName" | "issueDebriefQuestionPrompt" | "isReadyForTour" | "isOnboardingComplete" | "gameplanStrategies" | "androidPermissions" | "longTermMemory" | "region")>;
     questionTimeFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
