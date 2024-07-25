@@ -51,6 +51,11 @@ export declare const whatsappMessageLogSchema: yup.ObjectSchema<{
         role: NonNullable<"system" | "user" | "assistant" | undefined>;
         content: string;
     }[] | undefined;
+    files: yup.Maybe<{
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
+        uri?: yup.Maybe<string | undefined>;
+    }[] | undefined>;
 }, yup.AnyObject, {
     openAiChoiceResponse: undefined;
     createdAt: undefined;
@@ -69,5 +74,6 @@ export declare const whatsappMessageLogSchema: yup.ObjectSchema<{
     views: "";
     agent: undefined;
     gptPayload: "";
+    files: "";
 }, "">;
 export type WhatsappMessageLogValue = yup.InferType<typeof whatsappMessageLogSchema>;

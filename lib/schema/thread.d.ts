@@ -1856,6 +1856,11 @@ export declare const threadSchema: yup.ObjectSchema<{
                 content: string;
             }[] | undefined;
             openAiChoiceResponse?: {} | undefined;
+            files?: yup.Maybe<{
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            }[] | undefined>;
             type: "whatsappMessage";
             date: {
                 isEqual?: any;

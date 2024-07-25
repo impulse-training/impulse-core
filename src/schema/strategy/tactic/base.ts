@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-import { imageSchema } from '../../utils/image';
+import { fileSchema } from '../../utils/image';
 import { optionalTimestampSchema } from '../../utils/timestamp';
 import strategyBase from '../base';
 
@@ -14,7 +14,7 @@ export function tacticValueBaseSchema<K extends string>(type: K) {
     commentCount: yup.number(),
     description: yup.string().nullable(),
     debriefAfterMinutes: yup.number().nullable(),
-    image: imageSchema.optional().nullable(),
+    image: fileSchema.optional().nullable(),
     backgroundColor: yup.string(),
     setbackThreshold: yup.number().nullable(),
     likesCount: yup.number().nullable(),
