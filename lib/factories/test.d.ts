@@ -1558,9 +1558,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             invitationUrl: string;
         };
     };
-    currentAgent: import("..").AgentName;
     timezone: string;
-}, "uids" | "questionsById" | "dailyReview" | "issueId" | "strategiesById" | "currentAgent" | "timezone" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "parentIssueIds" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "setbackThreshold" | "impulseCanManageQuestions" | "impulseCanManageGameplan" | "issueName" | "issueDebriefQuestionPrompt" | "isReadyForTour" | "isOnboardingComplete" | "gameplanStrategies" | "androidPermissions" | "longTermMemory" | "region")>, folderFactory: import("factory.ts").Factory<{
+}, "uids" | "questionsById" | "dailyReview" | "issueId" | "strategiesById" | "timezone" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "parentIssueIds" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "setbackThreshold" | "impulseCanManageQuestions" | "impulseCanManageGameplan" | "issueName" | "issueDebriefQuestionPrompt" | "isReadyForTour" | "isOnboardingComplete" | "gameplanStrategies" | "androidPermissions" | "longTermMemory" | "region")>, folderFactory: import("factory.ts").Factory<{
     createdAt?: {
         isEqual?: any;
         toMillis?: any;

@@ -1458,6 +1458,5 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
             invitationUrl: string;
         };
     };
-    currentAgent: import("..").AgentName;
     timezone: string;
-}, "uids" | "questionsById" | "dailyReview" | "issueId" | "strategiesById" | "currentAgent" | "timezone" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "parentIssueIds" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "setbackThreshold" | "impulseCanManageQuestions" | "impulseCanManageGameplan" | "issueName" | "issueDebriefQuestionPrompt" | "isReadyForTour" | "isOnboardingComplete" | "gameplanStrategies" | "androidPermissions" | "longTermMemory" | "region")>;
+}, "uids" | "questionsById" | "dailyReview" | "issueId" | "strategiesById" | "timezone" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "parentIssueIds" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "setbackThreshold" | "impulseCanManageQuestions" | "impulseCanManageGameplan" | "issueName" | "issueDebriefQuestionPrompt" | "isReadyForTour" | "isOnboardingComplete" | "gameplanStrategies" | "androidPermissions" | "longTermMemory" | "region")>;

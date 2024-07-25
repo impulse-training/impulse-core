@@ -1,6 +1,5 @@
 import { AppStateStatus } from 'react-native';
 import * as yup from 'yup';
-import { AgentName } from '../agents';
 import { questionDataSchema } from './log';
 import { notificationOptionSchema } from './notification';
 import { questionSchema } from './question';
@@ -52,7 +51,6 @@ export const profileSchema = yup.object({
   setbackThreshold: yup.number(),
   gameplanStrategies: yup.array().of(documentReferenceSchema.required()),
   strategiesById: objectOf(strategySchema),
-  currentAgent: yup.mixed<AgentName>().default('onboarding'),
   androidPermissions: optionalObjectOf(yup.boolean().required()),
   // This is a record of question data, that may be accessed by the LLM
   longTermMemory: optionalObjectOf(questionDataSchema),

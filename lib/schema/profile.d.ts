@@ -1,6 +1,5 @@
 import { AppStateStatus } from 'react-native';
 import * as yup from 'yup';
-import { AgentName } from '../agents';
 export declare const profileSchema: yup.ObjectSchema<{
     createdAt: {
         isEqual?: any;
@@ -1434,7 +1433,6 @@ export declare const profileSchema: yup.ObjectSchema<{
             invitationUrl: string;
         };
     };
-    currentAgent: AgentName;
     androidPermissions: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
@@ -1485,7 +1483,6 @@ export declare const profileSchema: yup.ObjectSchema<{
     setbackThreshold: undefined;
     gameplanStrategies: "";
     strategiesById: undefined;
-    currentAgent: "onboarding";
     androidPermissions: undefined;
     longTermMemory: undefined;
     region: undefined;
