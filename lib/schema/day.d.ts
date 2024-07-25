@@ -107,6 +107,14 @@ export declare const daySchema: yup.ObjectSchema<{
                 content: string;
             }[] | undefined;
             openAiChoiceResponse?: {} | undefined;
+            confirmedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
             type: "dayReview";
             date: {
                 isEqual?: any;
@@ -1932,6 +1940,14 @@ export declare const daySchema: yup.ObjectSchema<{
                         content: string;
                     }[] | undefined;
                     openAiChoiceResponse?: {} | undefined;
+                    confirmedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
                     type: "dayReview";
                     date: {
                         isEqual?: any;

@@ -52,6 +52,14 @@ export declare const dayReviewLogSchema: yup.ObjectSchema<{
         content: string;
     }[] | undefined;
     dayDoc: import("../utils/firestore").DocumentReferenceLike<unknown>;
+    confirmedAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
 }, yup.AnyObject, {
     openAiChoiceResponse: undefined;
     createdAt: undefined;
@@ -71,5 +79,6 @@ export declare const dayReviewLogSchema: yup.ObjectSchema<{
     agent: undefined;
     gptPayload: "";
     dayDoc: undefined;
+    confirmedAt: undefined;
 }, "">;
 export type DayReviewLogValue = yup.InferType<typeof dayReviewLogSchema>;
