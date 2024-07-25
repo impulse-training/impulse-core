@@ -4,6 +4,7 @@ export declare const threadSchema: yup.ObjectSchema<{
     firstLogId: string | undefined;
     profileId: string;
     isProcessing: boolean | undefined;
+    isVisible: NonNullable<boolean | undefined>;
     title: string | undefined;
     logsById: {
         [x: string]: {
@@ -1827,6 +1828,7 @@ export declare const threadSchema: yup.ObjectSchema<{
     firstLogId: undefined;
     profileId: undefined;
     isProcessing: undefined;
+    isVisible: undefined;
     title: undefined;
     logsById: undefined;
     createdAt: undefined;

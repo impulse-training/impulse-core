@@ -1834,6 +1834,7 @@ export declare const daySchema: yup.ObjectSchema<{
             isProcessing?: boolean | undefined;
             profileId: string;
             dateString: string;
+            isVisible: NonNullable<boolean | undefined>;
             logsById: {
                 [x: string]: {
                     createdAt?: {

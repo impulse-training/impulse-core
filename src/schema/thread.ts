@@ -8,6 +8,7 @@ export const threadSchema = yup.object({
   firstLogId: yup.string(),
   profileId: yup.string().required(),
   isProcessing: yup.boolean(),
+  isVisible: yup.boolean().required(),
   title: yup.string(),
   logsById: objectOf(logSchema),
   createdAt: optionalTimestampSchema,
