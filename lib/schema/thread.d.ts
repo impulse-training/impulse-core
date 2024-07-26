@@ -1873,6 +1873,7 @@ export declare const threadSchema: yup.ObjectSchema<{
             strategyPath: string;
         };
     };
+    whatsappFolderDoc: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -1897,6 +1898,7 @@ export declare const threadSchema: yup.ObjectSchema<{
     isVisible: undefined;
     title: undefined;
     logsById: undefined;
+    whatsappFolderDoc: undefined;
     createdAt: undefined;
     updatedAt: undefined;
 }, "">;

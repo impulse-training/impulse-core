@@ -1895,6 +1895,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            whatsappFolderDoc?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
             title?: string | undefined;
             firstLogId?: string | undefined;
             isProcessing?: boolean | undefined;
