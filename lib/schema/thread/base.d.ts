@@ -1,15 +1,12 @@
 import * as yup from 'yup';
-import { LogValue } from './log';
-export declare const daySchema: yup.ObjectSchema<{
-    date: {
-        isEqual?: any;
-        toMillis?: any;
-        toJSON?: any;
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    };
-    issueName: string;
+export default function threadBase<T extends string>(type: T): yup.ObjectSchema<{
+    type: T & {};
+    dateString: string;
+    firstLogId: string | undefined;
+    profileId: string;
+    isProcessing: boolean | undefined;
+    isVisible: NonNullable<boolean | undefined>;
+    title: string | undefined;
     logsById: {
         [x: string]: {
             createdAt?: {
@@ -48,7 +45,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
-            agent?: import("..").AgentName | undefined;
+            agent?: import("../..").AgentName | undefined;
             gptPayload?: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;
@@ -101,7 +98,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
-            agent?: import("..").AgentName | undefined;
+            agent?: import("../..").AgentName | undefined;
             gptPayload?: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;
@@ -124,7 +121,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             };
-            dayDoc: import("./utils/firestore").DocumentReferenceLike<unknown>;
+            dayDoc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -163,7 +160,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
-            agent?: import("..").AgentName | undefined;
+            agent?: import("../..").AgentName | undefined;
             gptPayload?: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;
@@ -231,7 +228,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
-            agent?: import("..").AgentName | undefined;
+            agent?: import("../..").AgentName | undefined;
             gptPayload?: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;
@@ -284,7 +281,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
-            agent?: import("..").AgentName | undefined;
+            agent?: import("../..").AgentName | undefined;
             gptPayload?: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;
@@ -431,7 +428,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     templateFor?: "onboarding" | undefined;
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     prompt: string;
-                    type: import(".").QuestionKeyType;
+                    type: import("..").QuestionKeyType;
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -544,7 +541,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     lowEmoji?: yup.Maybe<string | undefined>;
                     highEmoji?: yup.Maybe<string | undefined>;
                     prompt: string;
-                    type: import(".").QuestionKeyType;
+                    type: import("..").QuestionKeyType;
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -655,7 +652,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     templateFor?: "onboarding" | undefined;
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     prompt: string;
-                    type: import(".").QuestionKeyType;
+                    type: import("..").QuestionKeyType;
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -766,7 +763,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     templateFor?: "onboarding" | undefined;
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     prompt: string;
-                    type: import(".").QuestionKeyType;
+                    type: import("..").QuestionKeyType;
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -814,7 +811,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     templateFor?: "onboarding" | undefined;
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     prompt: string;
-                    type: import(".").QuestionKeyType;
+                    type: import("..").QuestionKeyType;
                     options: ({
                         label?: string | undefined;
                         followUps?: ({
@@ -926,7 +923,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
-            agent?: import("..").AgentName | undefined;
+            agent?: import("../..").AgentName | undefined;
             gptPayload?: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;
@@ -984,7 +981,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
-            agent?: import("..").AgentName | undefined;
+            agent?: import("../..").AgentName | undefined;
             gptPayload?: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;
@@ -1854,7 +1851,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
-            agent?: import("..").AgentName | undefined;
+            agent?: import("../..").AgentName | undefined;
             gptPayload?: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;
@@ -1877,582 +1874,33 @@ export declare const daySchema: yup.ObjectSchema<{
             strategyPath: string;
         };
     };
-    threadsById: {
-        [x: string]: import("./thread").ThreadValue;
-    };
-    questionsById: {
-        [x: string]: {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
-            options?: ({
-                label?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                } | {
-                    message?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        message: string;
-                        elementRefName: string;
-                        title: string;
-                        confirmButtonLabel: string;
-                    }[];
-                })[] | undefined;
-                color?: string | undefined;
-                textColor?: string | undefined;
-                setbackThreshold?: number | undefined;
-                greaterThan?: number | undefined;
-                lessThanOrEqualTo?: number | undefined;
-                text: string;
-                type: "numeric";
-            } | {
-                label?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                } | {
-                    message?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        message: string;
-                        elementRefName: string;
-                        title: string;
-                        confirmButtonLabel: string;
-                    }[];
-                })[] | undefined;
-                color?: string | undefined;
-                textColor?: string | undefined;
-                text: string;
-                type: "string";
-            })[] | undefined;
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            } | {
-                message?: string | undefined;
-                type: "showTour";
-                steps: {
-                    message: string;
-                    elementRefName: string;
-                    title: string;
-                    confirmButtonLabel: string;
-                }[];
-            })[] | undefined;
-            ordinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            templateFor?: "onboarding" | undefined;
-            writeAnswerToProfileMemoryKey?: string | undefined;
-            prompt: string;
-            type: import(".").QuestionKeyType;
-        } | {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
-            options?: ({
-                label?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                } | {
-                    message?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        message: string;
-                        elementRefName: string;
-                        title: string;
-                        confirmButtonLabel: string;
-                    }[];
-                })[] | undefined;
-                color?: string | undefined;
-                textColor?: string | undefined;
-                setbackThreshold?: number | undefined;
-                greaterThan?: number | undefined;
-                lessThanOrEqualTo?: number | undefined;
-                text: string;
-                type: "numeric";
-            } | {
-                label?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                } | {
-                    message?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        message: string;
-                        elementRefName: string;
-                        title: string;
-                        confirmButtonLabel: string;
-                    }[];
-                })[] | undefined;
-                color?: string | undefined;
-                textColor?: string | undefined;
-                text: string;
-                type: "string";
-            })[] | undefined;
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            } | {
-                message?: string | undefined;
-                type: "showTour";
-                steps: {
-                    message: string;
-                    elementRefName: string;
-                    title: string;
-                    confirmButtonLabel: string;
-                }[];
-            })[] | undefined;
-            setbackThreshold?: number | undefined;
-            ordinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            templateFor?: "onboarding" | undefined;
-            writeAnswerToProfileMemoryKey?: string | undefined;
-            lowEmoji?: yup.Maybe<string | undefined>;
-            highEmoji?: yup.Maybe<string | undefined>;
-            prompt: string;
-            type: import(".").QuestionKeyType;
-        } | {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
-            options?: ({
-                label?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                } | {
-                    message?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        message: string;
-                        elementRefName: string;
-                        title: string;
-                        confirmButtonLabel: string;
-                    }[];
-                })[] | undefined;
-                color?: string | undefined;
-                textColor?: string | undefined;
-                setbackThreshold?: number | undefined;
-                greaterThan?: number | undefined;
-                lessThanOrEqualTo?: number | undefined;
-                text: string;
-                type: "numeric";
-            } | {
-                label?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                } | {
-                    message?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        message: string;
-                        elementRefName: string;
-                        title: string;
-                        confirmButtonLabel: string;
-                    }[];
-                })[] | undefined;
-                color?: string | undefined;
-                textColor?: string | undefined;
-                text: string;
-                type: "string";
-            })[] | undefined;
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            } | {
-                message?: string | undefined;
-                type: "showTour";
-                steps: {
-                    message: string;
-                    elementRefName: string;
-                    title: string;
-                    confirmButtonLabel: string;
-                }[];
-            })[] | undefined;
-            setbackThreshold?: number | undefined;
-            ordinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            templateFor?: "onboarding" | undefined;
-            writeAnswerToProfileMemoryKey?: string | undefined;
-            prompt: string;
-            type: import(".").QuestionKeyType;
-        } | {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
-            options?: ({
-                label?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                } | {
-                    message?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        message: string;
-                        elementRefName: string;
-                        title: string;
-                        confirmButtonLabel: string;
-                    }[];
-                })[] | undefined;
-                color?: string | undefined;
-                textColor?: string | undefined;
-                setbackThreshold?: number | undefined;
-                greaterThan?: number | undefined;
-                lessThanOrEqualTo?: number | undefined;
-                text: string;
-                type: "numeric";
-            } | {
-                label?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                } | {
-                    message?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        message: string;
-                        elementRefName: string;
-                        title: string;
-                        confirmButtonLabel: string;
-                    }[];
-                })[] | undefined;
-                color?: string | undefined;
-                textColor?: string | undefined;
-                text: string;
-                type: "string";
-            })[] | undefined;
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            } | {
-                message?: string | undefined;
-                type: "showTour";
-                steps: {
-                    message: string;
-                    elementRefName: string;
-                    title: string;
-                    confirmButtonLabel: string;
-                }[];
-            })[] | undefined;
-            setbackThreshold?: number | undefined;
-            ordinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            templateFor?: "onboarding" | undefined;
-            writeAnswerToProfileMemoryKey?: string | undefined;
-            prompt: string;
-            type: import(".").QuestionKeyType;
-        } | {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            } | {
-                message?: string | undefined;
-                type: "showTour";
-                steps: {
-                    message: string;
-                    elementRefName: string;
-                    title: string;
-                    confirmButtonLabel: string;
-                }[];
-            })[] | undefined;
-            ordinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            templateFor?: "onboarding" | undefined;
-            writeAnswerToProfileMemoryKey?: string | undefined;
-            prompt: string;
-            type: import(".").QuestionKeyType;
-            options: ({
-                label?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                } | {
-                    message?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        message: string;
-                        elementRefName: string;
-                        title: string;
-                        confirmButtonLabel: string;
-                    }[];
-                })[] | undefined;
-                color?: string | undefined;
-                textColor?: string | undefined;
-                setbackThreshold?: number | undefined;
-                greaterThan?: number | undefined;
-                lessThanOrEqualTo?: number | undefined;
-                text: string;
-                type: "numeric";
-            } | {
-                label?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                } | {
-                    message?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        message: string;
-                        elementRefName: string;
-                        title: string;
-                        confirmButtonLabel: string;
-                    }[];
-                })[] | undefined;
-                color?: string | undefined;
-                textColor?: string | undefined;
-                text: string;
-                type: "string";
-            })[];
-            canAddNewOptions: NonNullable<boolean | undefined>;
-        };
-    };
+    createdAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    updatedAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    whatsappFolderDoc: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
 }, yup.AnyObject, {
-    date: {
-        seconds: undefined;
-        nanoseconds: undefined;
-        isEqual: undefined;
-        toMillis: undefined;
-        toJSON: undefined;
-        toDate: undefined;
-    };
-    issueName: undefined;
+    type: undefined;
+    dateString: undefined;
+    firstLogId: undefined;
+    profileId: undefined;
+    isProcessing: undefined;
+    isVisible: undefined;
+    title: undefined;
     logsById: undefined;
-    threadsById: undefined;
-    questionsById: undefined;
+    createdAt: undefined;
+    updatedAt: undefined;
+    whatsappFolderDoc: undefined;
 }, "">;
-export type DayValue = Omit<yup.InferType<typeof daySchema>, 'logsById'> & {
-    logsById: Record<string, LogValue>;
-};

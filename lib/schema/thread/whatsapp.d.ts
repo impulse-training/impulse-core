@@ -1,5 +1,6 @@
 import * as yup from 'yup';
-export declare const threadSchema: yup.ObjectSchema<{
+export declare const whatsappThreadSchema: yup.ObjectSchema<{
+    type: "whatsapp";
     dateString: string;
     firstLogId: string | undefined;
     profileId: string;
@@ -44,7 +45,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
-            agent?: import("..").AgentName | undefined;
+            agent?: import("../..").AgentName | undefined;
             gptPayload?: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;
@@ -97,7 +98,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
-            agent?: import("..").AgentName | undefined;
+            agent?: import("../..").AgentName | undefined;
             gptPayload?: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;
@@ -120,7 +121,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             };
-            dayDoc: import("./utils/firestore").DocumentReferenceLike<unknown>;
+            dayDoc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -159,7 +160,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
-            agent?: import("..").AgentName | undefined;
+            agent?: import("../..").AgentName | undefined;
             gptPayload?: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;
@@ -227,7 +228,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
-            agent?: import("..").AgentName | undefined;
+            agent?: import("../..").AgentName | undefined;
             gptPayload?: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;
@@ -280,7 +281,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
-            agent?: import("..").AgentName | undefined;
+            agent?: import("../..").AgentName | undefined;
             gptPayload?: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;
@@ -427,7 +428,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                     templateFor?: "onboarding" | undefined;
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     prompt: string;
-                    type: import(".").QuestionKeyType;
+                    type: import("..").QuestionKeyType;
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -540,7 +541,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                     lowEmoji?: yup.Maybe<string | undefined>;
                     highEmoji?: yup.Maybe<string | undefined>;
                     prompt: string;
-                    type: import(".").QuestionKeyType;
+                    type: import("..").QuestionKeyType;
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -651,7 +652,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                     templateFor?: "onboarding" | undefined;
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     prompt: string;
-                    type: import(".").QuestionKeyType;
+                    type: import("..").QuestionKeyType;
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -762,7 +763,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                     templateFor?: "onboarding" | undefined;
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     prompt: string;
-                    type: import(".").QuestionKeyType;
+                    type: import("..").QuestionKeyType;
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -810,7 +811,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                     templateFor?: "onboarding" | undefined;
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     prompt: string;
-                    type: import(".").QuestionKeyType;
+                    type: import("..").QuestionKeyType;
                     options: ({
                         label?: string | undefined;
                         followUps?: ({
@@ -922,7 +923,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
-            agent?: import("..").AgentName | undefined;
+            agent?: import("../..").AgentName | undefined;
             gptPayload?: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;
@@ -980,7 +981,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
-            agent?: import("..").AgentName | undefined;
+            agent?: import("../..").AgentName | undefined;
             gptPayload?: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;
@@ -1850,7 +1851,7 @@ export declare const threadSchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
-            agent?: import("..").AgentName | undefined;
+            agent?: import("../..").AgentName | undefined;
             gptPayload?: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;
@@ -1873,7 +1874,6 @@ export declare const threadSchema: yup.ObjectSchema<{
             strategyPath: string;
         };
     };
-    whatsappFolderDoc: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -1890,7 +1890,10 @@ export declare const threadSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    whatsappFolderDoc: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
+    folderDoc: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
 }, yup.AnyObject, {
+    type: undefined;
     dateString: undefined;
     firstLogId: undefined;
     profileId: undefined;
@@ -1898,8 +1901,9 @@ export declare const threadSchema: yup.ObjectSchema<{
     isVisible: undefined;
     title: undefined;
     logsById: undefined;
-    whatsappFolderDoc: undefined;
     createdAt: undefined;
     updatedAt: undefined;
+    whatsappFolderDoc: undefined;
+    folderDoc: undefined;
 }, "">;
-export type ThreadValue = yup.InferType<typeof threadSchema>;
+export type WhatsappThreadValue = yup.InferType<typeof whatsappThreadSchema>;
