@@ -51,13 +51,13 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     notificationPreferences?: {
         [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
     } | null | undefined;
-    setbackThreshold?: number | undefined;
     impulseCanManageQuestions?: boolean | undefined;
     impulseCanManageGameplan?: boolean | undefined;
     issueName?: string | undefined;
     issueDebriefQuestionPrompt?: string | undefined;
     isReadyForTour?: boolean | undefined;
     isOnboardingComplete?: boolean | undefined;
+    setbackThreshold?: number | undefined;
     gameplanStrategies?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
     androidPermissions?: {
         [x: string]: NonNullable<boolean | undefined>;
@@ -65,10 +65,10 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     longTermMemory?: {
         [x: string]: {
             label?: string | undefined;
-            color?: string | undefined;
             setbackThreshold?: number | undefined;
             idValue?: string | undefined;
             numericValue?: number | undefined;
+            color?: string | undefined;
             setAt: {
                 isEqual?: any;
                 toMillis?: any;
@@ -83,565 +83,6 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     } | null | undefined;
     region?: string | null | undefined;
     uids: string[];
-    questionsById: {
-        [x: string]: {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
-            options?: ({
-                label?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                } | {
-                    message?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        message: string;
-                        elementRefName: string;
-                        title: string;
-                        confirmButtonLabel: string;
-                    }[];
-                })[] | undefined;
-                color?: string | undefined;
-                textColor?: string | undefined;
-                setbackThreshold?: number | undefined;
-                greaterThan?: number | undefined;
-                lessThanOrEqualTo?: number | undefined;
-                text: string;
-                type: "numeric";
-            } | {
-                label?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                } | {
-                    message?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        message: string;
-                        elementRefName: string;
-                        title: string;
-                        confirmButtonLabel: string;
-                    }[];
-                })[] | undefined;
-                color?: string | undefined;
-                textColor?: string | undefined;
-                text: string;
-                type: "string";
-            })[] | undefined;
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            } | {
-                message?: string | undefined;
-                type: "showTour";
-                steps: {
-                    message: string;
-                    elementRefName: string;
-                    title: string;
-                    confirmButtonLabel: string;
-                }[];
-            })[] | undefined;
-            ordinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            templateFor?: "onboarding" | undefined;
-            writeAnswerToProfileMemoryKey?: string | undefined;
-            prompt: string;
-            type: import("../schema").QuestionKeyType;
-        } | {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
-            options?: ({
-                label?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                } | {
-                    message?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        message: string;
-                        elementRefName: string;
-                        title: string;
-                        confirmButtonLabel: string;
-                    }[];
-                })[] | undefined;
-                color?: string | undefined;
-                textColor?: string | undefined;
-                setbackThreshold?: number | undefined;
-                greaterThan?: number | undefined;
-                lessThanOrEqualTo?: number | undefined;
-                text: string;
-                type: "numeric";
-            } | {
-                label?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                } | {
-                    message?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        message: string;
-                        elementRefName: string;
-                        title: string;
-                        confirmButtonLabel: string;
-                    }[];
-                })[] | undefined;
-                color?: string | undefined;
-                textColor?: string | undefined;
-                text: string;
-                type: "string";
-            })[] | undefined;
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            } | {
-                message?: string | undefined;
-                type: "showTour";
-                steps: {
-                    message: string;
-                    elementRefName: string;
-                    title: string;
-                    confirmButtonLabel: string;
-                }[];
-            })[] | undefined;
-            setbackThreshold?: number | undefined;
-            ordinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            templateFor?: "onboarding" | undefined;
-            writeAnswerToProfileMemoryKey?: string | undefined;
-            lowEmoji?: import("yup").Maybe<string | undefined>;
-            highEmoji?: import("yup").Maybe<string | undefined>;
-            prompt: string;
-            type: import("../schema").QuestionKeyType;
-        } | {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
-            options?: ({
-                label?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                } | {
-                    message?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        message: string;
-                        elementRefName: string;
-                        title: string;
-                        confirmButtonLabel: string;
-                    }[];
-                })[] | undefined;
-                color?: string | undefined;
-                textColor?: string | undefined;
-                setbackThreshold?: number | undefined;
-                greaterThan?: number | undefined;
-                lessThanOrEqualTo?: number | undefined;
-                text: string;
-                type: "numeric";
-            } | {
-                label?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                } | {
-                    message?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        message: string;
-                        elementRefName: string;
-                        title: string;
-                        confirmButtonLabel: string;
-                    }[];
-                })[] | undefined;
-                color?: string | undefined;
-                textColor?: string | undefined;
-                text: string;
-                type: "string";
-            })[] | undefined;
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            } | {
-                message?: string | undefined;
-                type: "showTour";
-                steps: {
-                    message: string;
-                    elementRefName: string;
-                    title: string;
-                    confirmButtonLabel: string;
-                }[];
-            })[] | undefined;
-            setbackThreshold?: number | undefined;
-            ordinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            templateFor?: "onboarding" | undefined;
-            writeAnswerToProfileMemoryKey?: string | undefined;
-            prompt: string;
-            type: import("../schema").QuestionKeyType;
-        } | {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
-            options?: ({
-                label?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                } | {
-                    message?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        message: string;
-                        elementRefName: string;
-                        title: string;
-                        confirmButtonLabel: string;
-                    }[];
-                })[] | undefined;
-                color?: string | undefined;
-                textColor?: string | undefined;
-                setbackThreshold?: number | undefined;
-                greaterThan?: number | undefined;
-                lessThanOrEqualTo?: number | undefined;
-                text: string;
-                type: "numeric";
-            } | {
-                label?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                } | {
-                    message?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        message: string;
-                        elementRefName: string;
-                        title: string;
-                        confirmButtonLabel: string;
-                    }[];
-                })[] | undefined;
-                color?: string | undefined;
-                textColor?: string | undefined;
-                text: string;
-                type: "string";
-            })[] | undefined;
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            } | {
-                message?: string | undefined;
-                type: "showTour";
-                steps: {
-                    message: string;
-                    elementRefName: string;
-                    title: string;
-                    confirmButtonLabel: string;
-                }[];
-            })[] | undefined;
-            setbackThreshold?: number | undefined;
-            ordinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            templateFor?: "onboarding" | undefined;
-            writeAnswerToProfileMemoryKey?: string | undefined;
-            prompt: string;
-            type: import("../schema").QuestionKeyType;
-        } | {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            } | {
-                message?: string | undefined;
-                type: "showTour";
-                steps: {
-                    message: string;
-                    elementRefName: string;
-                    title: string;
-                    confirmButtonLabel: string;
-                }[];
-            })[] | undefined;
-            ordinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            templateFor?: "onboarding" | undefined;
-            writeAnswerToProfileMemoryKey?: string | undefined;
-            prompt: string;
-            type: import("../schema").QuestionKeyType;
-            options: ({
-                label?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                } | {
-                    message?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        message: string;
-                        elementRefName: string;
-                        title: string;
-                        confirmButtonLabel: string;
-                    }[];
-                })[] | undefined;
-                color?: string | undefined;
-                textColor?: string | undefined;
-                setbackThreshold?: number | undefined;
-                greaterThan?: number | undefined;
-                lessThanOrEqualTo?: number | undefined;
-                text: string;
-                type: "numeric";
-            } | {
-                label?: string | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                } | {
-                    message?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        message: string;
-                        elementRefName: string;
-                        title: string;
-                        confirmButtonLabel: string;
-                    }[];
-                })[] | undefined;
-                color?: string | undefined;
-                textColor?: string | undefined;
-                text: string;
-                type: "string";
-            })[];
-            canAddNewOptions: NonNullable<boolean | undefined>;
-        };
-    };
     dailyReview: "morning" | "evening" | null;
     issueId: string | null;
     strategiesById: {
@@ -663,13 +104,13 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            prompt?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -688,8 +129,8 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
                 waveform?: string | null | undefined;
                 remoteFilePath: string;
             };
-            type: "audio";
             ordinal: number;
+            type: "audio";
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -728,9 +169,9 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
             repeat?: import("yup").Maybe<number | undefined>;
+            ordinal: number;
             prompt: string;
             type: "breathingExercise";
-            ordinal: number;
             inFor: number;
             holdFor: number;
             outFor: number;
@@ -771,9 +212,9 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            ordinal: number;
             prompt: string;
             type: "notifyASupportPerson";
-            ordinal: number;
             contactIds: string[];
         } | {
             createdAt?: {
@@ -812,10 +253,10 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            ordinal: number;
             prompt: string;
             type: "steps";
             steps: number;
-            ordinal: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -853,9 +294,9 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            ordinal: number;
             prompt: string;
             type: "task";
-            ordinal: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -893,14 +334,14 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            ordinal: number;
             prompt: string;
             type: "video";
-            ordinal: number;
             video: {
                 storagePath?: string | null | undefined;
                 url?: string | null | undefined;
-                title: string;
                 description: string;
+                title: string;
                 thumbnailUrl: string;
                 duration: number;
             };
@@ -948,13 +389,13 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
                         toDate: Function;
                     } | null | undefined;
                     profileId?: string | null | undefined;
-                    prompt?: string | undefined;
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
+                    prompt?: string | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -973,8 +414,8 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
                         waveform?: string | null | undefined;
                         remoteFilePath: string;
                     };
-                    type: "audio";
                     ordinal: number;
+                    type: "audio";
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -1013,9 +454,9 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
                     repeat?: import("yup").Maybe<number | undefined>;
+                    ordinal: number;
                     prompt: string;
                     type: "breathingExercise";
-                    ordinal: number;
                     inFor: number;
                     holdFor: number;
                     outFor: number;
@@ -1056,9 +497,9 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
+                    ordinal: number;
                     prompt: string;
                     type: "notifyASupportPerson";
-                    ordinal: number;
                     contactIds: string[];
                 } | {
                     createdAt?: {
@@ -1097,10 +538,10 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
+                    ordinal: number;
                     prompt: string;
                     type: "steps";
                     steps: number;
-                    ordinal: number;
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -1138,9 +579,9 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
+                    ordinal: number;
                     prompt: string;
                     type: "task";
-                    ordinal: number;
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -1178,14 +619,14 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
+                    ordinal: number;
                     prompt: string;
                     type: "video";
-                    ordinal: number;
                     video: {
                         storagePath?: string | null | undefined;
                         url?: string | null | undefined;
-                        title: string;
                         description: string;
+                        title: string;
                         thumbnailUrl: string;
                         duration: number;
                     };
@@ -1209,13 +650,13 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
                     toDate: Function;
                 } | null | undefined;
                 profileId?: string | null | undefined;
-                prompt?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
+                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -1234,8 +675,8 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
                     waveform?: string | null | undefined;
                     remoteFilePath: string;
                 };
-                type: "audio";
                 ordinal: number;
+                type: "audio";
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -1274,9 +715,9 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 repeat?: import("yup").Maybe<number | undefined>;
+                ordinal: number;
                 prompt: string;
                 type: "breathingExercise";
-                ordinal: number;
                 inFor: number;
                 holdFor: number;
                 outFor: number;
@@ -1317,9 +758,9 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
+                ordinal: number;
                 prompt: string;
                 type: "notifyASupportPerson";
-                ordinal: number;
                 contactIds: string[];
             } | {
                 createdAt?: {
@@ -1358,10 +799,10 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
+                ordinal: number;
                 prompt: string;
                 type: "steps";
                 steps: number;
-                ordinal: number;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -1399,9 +840,9 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
+                ordinal: number;
                 prompt: string;
                 type: "task";
-                ordinal: number;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -1439,25 +880,25 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
+                ordinal: number;
                 prompt: string;
                 type: "video";
-                ordinal: number;
                 video: {
                     storagePath?: string | null | undefined;
                     url?: string | null | undefined;
-                    title: string;
                     description: string;
+                    title: string;
                     thumbnailUrl: string;
                     duration: number;
                 };
             })[] | undefined;
             nextTacticId?: string | undefined;
+            ordinal: number;
             prompt: string;
             type: "folder";
-            ordinal: number;
             invitationCode: string;
             invitationUrl: string;
         };
     };
     timezone: string;
-}, "uids" | "questionsById" | "dailyReview" | "issueId" | "strategiesById" | "timezone" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "parentIssueIds" | "scheduledNotificationIds" | "whatsappFolderDoc" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "setbackThreshold" | "impulseCanManageQuestions" | "impulseCanManageGameplan" | "issueName" | "issueDebriefQuestionPrompt" | "isReadyForTour" | "isOnboardingComplete" | "gameplanStrategies" | "androidPermissions" | "longTermMemory" | "region")>;
+}, "uids" | "dailyReview" | "issueId" | "strategiesById" | "timezone" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "parentIssueIds" | "scheduledNotificationIds" | "whatsappFolderDoc" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "impulseCanManageQuestions" | "impulseCanManageGameplan" | "issueName" | "issueDebriefQuestionPrompt" | "isReadyForTour" | "isOnboardingComplete" | "setbackThreshold" | "gameplanStrategies" | "androidPermissions" | "longTermMemory" | "region")>;

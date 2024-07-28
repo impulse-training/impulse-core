@@ -52,9 +52,9 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         content: string;
     }[] | undefined;
     steps: {
+        title: string;
         message: string;
         elementRefName: string;
-        title: string;
         confirmButtonLabel: string;
     }[];
 }, yup.AnyObject, {

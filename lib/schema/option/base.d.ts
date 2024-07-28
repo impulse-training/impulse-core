@@ -7,6 +7,15 @@ export declare function optionValueBaseSchema<K extends string>(type: K): yup.Ob
         questionId: string;
     } | {
         message?: string | undefined;
+        type: "showTour";
+        steps: {
+            title: string;
+            message: string;
+            elementRefName: string;
+            confirmButtonLabel: string;
+        }[];
+    } | {
+        message?: string | undefined;
         type: "writeAnswerToProfile";
         profileKey: string;
     } | {
@@ -14,15 +23,6 @@ export declare function optionValueBaseSchema<K extends string>(type: K): yup.Ob
         type: "writeValueToProfile";
         profileKey: string;
         value: {};
-    } | {
-        message?: string | undefined;
-        type: "showTour";
-        steps: {
-            message: string;
-            elementRefName: string;
-            title: string;
-            confirmButtonLabel: string;
-        }[];
     })[] | undefined;
     text: string;
     color: string | undefined;

@@ -2,7 +2,6 @@ import { AppStateStatus } from 'react-native';
 import * as yup from 'yup';
 import { questionDataSchema } from './log';
 import { notificationOptionSchema } from './notification';
-import { questionSchema } from './question';
 import { strategySchema } from './strategy';
 import { optionalStringArray, requiredStringArray } from './utils/array';
 import { documentReferenceSchema } from './utils/firestore';
@@ -22,9 +21,6 @@ export const profileSchema = yup.object({
   notificationPreferences: optionalObjectOf(
     yup.array().of(notificationOptionSchema)
   ),
-  // For now at least, we copy questions data to the profile
-  questionsById: objectOf(questionSchema),
-
   dailyReview: yup
     .mixed<'morning' | 'evening'>()
     .oneOf(['morning', 'evening'])

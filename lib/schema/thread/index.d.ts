@@ -1,6 +1,7 @@
 import * as yup from 'yup';
 import { RegularThreadValue } from './regular';
 import { WhatsappThreadValue } from './whatsapp';
+export * from './impulse';
 export * from './regular';
 export * from './whatsapp';
 export type ThreadValue = WhatsappThreadValue | RegularThreadValue;

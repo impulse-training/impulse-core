@@ -1,7 +1,9 @@
 import * as yup from 'yup';
+import { impulseThreadSchema } from './impulse';
 import { regularThreadSchema, RegularThreadValue } from './regular';
 import { whatsappThreadSchema, WhatsappThreadValue } from './whatsapp';
 
+export * from './impulse';
 export * from './regular';
 export * from './whatsapp';
 
@@ -13,6 +15,7 @@ export const threadSchemas: Record<
 > = {
   whatsapp: whatsappThreadSchema,
   regular: regularThreadSchema,
+  impulse: impulseThreadSchema,
 } as any;
 
 export const threadSchema = yup.lazy(value => {

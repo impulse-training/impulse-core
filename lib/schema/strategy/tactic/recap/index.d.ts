@@ -41,8 +41,8 @@ export declare const recapTacticSchema: yup.Lazy<{
     likesCount?: number | null | undefined;
     timerSeconds?: yup.Maybe<number | undefined>;
     isSuggested?: boolean | undefined;
+    ordinal: number;
     prompt: string;
     type: import("./recapKeyType").RecapKeyType;
-    ordinal: number;
 }, yup.AnyObject, any>;
 export type RecapTacticValue = RecapActionTacticValue | RecapTrackingTacticValue;

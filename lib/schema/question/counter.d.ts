@@ -1,14 +1,25 @@
 import * as yup from 'yup';
 export declare const questionCounterSchema: yup.ObjectSchema<{
-    categories: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+    categories: ("dailyReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
     prompt: string;
     type: import("..").QuestionKeyType;
     options: ({
         label?: string | undefined;
+        setbackThreshold?: number | undefined;
+        color?: string | undefined;
         followUps?: ({
             message?: string | undefined;
             type: "askAnotherQuestion";
             questionId: string;
+        } | {
+            message?: string | undefined;
+            type: "showTour";
+            steps: {
+                title: string;
+                message: string;
+                elementRefName: string;
+                confirmButtonLabel: string;
+            }[];
         } | {
             message?: string | undefined;
             type: "writeAnswerToProfile";
@@ -18,29 +29,28 @@ export declare const questionCounterSchema: yup.ObjectSchema<{
             type: "writeValueToProfile";
             profileKey: string;
             value: {};
-        } | {
-            message?: string | undefined;
-            type: "showTour";
-            steps: {
-                message: string;
-                elementRefName: string;
-                title: string;
-                confirmButtonLabel: string;
-            }[];
         })[] | undefined;
-        color?: string | undefined;
         textColor?: string | undefined;
-        setbackThreshold?: number | undefined;
         greaterThan?: number | undefined;
         lessThanOrEqualTo?: number | undefined;
         text: string;
         type: "numeric";
     } | {
         label?: string | undefined;
+        color?: string | undefined;
         followUps?: ({
             message?: string | undefined;
             type: "askAnotherQuestion";
             questionId: string;
+        } | {
+            message?: string | undefined;
+            type: "showTour";
+            steps: {
+                title: string;
+                message: string;
+                elementRefName: string;
+                confirmButtonLabel: string;
+            }[];
         } | {
             message?: string | undefined;
             type: "writeAnswerToProfile";
@@ -50,17 +60,7 @@ export declare const questionCounterSchema: yup.ObjectSchema<{
             type: "writeValueToProfile";
             profileKey: string;
             value: {};
-        } | {
-            message?: string | undefined;
-            type: "showTour";
-            steps: {
-                message: string;
-                elementRefName: string;
-                title: string;
-                confirmButtonLabel: string;
-            }[];
         })[] | undefined;
-        color?: string | undefined;
         textColor?: string | undefined;
         text: string;
         type: "string";
@@ -76,6 +76,15 @@ export declare const questionCounterSchema: yup.ObjectSchema<{
         questionId: string;
     } | {
         message?: string | undefined;
+        type: "showTour";
+        steps: {
+            title: string;
+            message: string;
+            elementRefName: string;
+            confirmButtonLabel: string;
+        }[];
+    } | {
+        message?: string | undefined;
         type: "writeAnswerToProfile";
         profileKey: string;
     } | {
@@ -83,15 +92,6 @@ export declare const questionCounterSchema: yup.ObjectSchema<{
         type: "writeValueToProfile";
         profileKey: string;
         value: {};
-    } | {
-        message?: string | undefined;
-        type: "showTour";
-        steps: {
-            message: string;
-            elementRefName: string;
-            title: string;
-            confirmButtonLabel: string;
-        }[];
     })[] | undefined;
     createdAt: {
         isEqual?: any;

@@ -1,6 +1,6 @@
 import * as yup from 'yup';
-export declare const regularThreadSchema: yup.ObjectSchema<{
-    type: "regular";
+export declare const impulseThreadSchema: yup.ObjectSchema<{
+    type: "impulse";
     dateString: string;
     firstLogId: string | undefined;
     profileId: string;
@@ -1904,4 +1904,4 @@ export declare const regularThreadSchema: yup.ObjectSchema<{
     updatedAt: undefined;
     whatsappFolderDoc: undefined;
 }, "">;
-export type RegularThreadValue = yup.InferType<typeof regularThreadSchema>;
+export type ImpulseThreadValue = yup.InferType<typeof impulseThreadSchema>;

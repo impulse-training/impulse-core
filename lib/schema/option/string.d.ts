@@ -8,6 +8,15 @@ export declare const stringOptionSchema: yup.ObjectSchema<{
         questionId: string;
     } | {
         message?: string | undefined;
+        type: "showTour";
+        steps: {
+            title: string;
+            message: string;
+            elementRefName: string;
+            confirmButtonLabel: string;
+        }[];
+    } | {
+        message?: string | undefined;
         type: "writeAnswerToProfile";
         profileKey: string;
     } | {
@@ -15,15 +24,6 @@ export declare const stringOptionSchema: yup.ObjectSchema<{
         type: "writeValueToProfile";
         profileKey: string;
         value: {};
-    } | {
-        message?: string | undefined;
-        type: "showTour";
-        steps: {
-            message: string;
-            elementRefName: string;
-            title: string;
-            confirmButtonLabel: string;
-        }[];
     })[] | undefined;
     text: string;
     color: string | undefined;

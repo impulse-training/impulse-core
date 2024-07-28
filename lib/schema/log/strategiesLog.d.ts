@@ -71,13 +71,13 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
-            prompt?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -96,8 +96,8 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 waveform?: string | null | undefined;
                 remoteFilePath: string;
             };
-            type: "audio";
             ordinal: number;
+            type: "audio";
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -136,9 +136,9 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
             repeat?: yup.Maybe<number | undefined>;
+            ordinal: number;
             prompt: string;
             type: "breathingExercise";
-            ordinal: number;
             inFor: number;
             holdFor: number;
             outFor: number;
@@ -179,9 +179,9 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            ordinal: number;
             prompt: string;
             type: "notifyASupportPerson";
-            ordinal: number;
             contactIds: string[];
         } | {
             createdAt?: {
@@ -220,10 +220,10 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            ordinal: number;
             prompt: string;
             type: "steps";
             steps: number;
-            ordinal: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -261,9 +261,9 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            ordinal: number;
             prompt: string;
             type: "task";
-            ordinal: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -301,14 +301,14 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            ordinal: number;
             prompt: string;
             type: "video";
-            ordinal: number;
             video: {
                 storagePath?: string | null | undefined;
                 url?: string | null | undefined;
-                title: string;
                 description: string;
+                title: string;
                 thumbnailUrl: string;
                 duration: number;
             };
@@ -356,13 +356,13 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     profileId?: string | null | undefined;
-                    prompt?: string | undefined;
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
+                    prompt?: string | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -381,8 +381,8 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                         waveform?: string | null | undefined;
                         remoteFilePath: string;
                     };
-                    type: "audio";
                     ordinal: number;
+                    type: "audio";
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -421,9 +421,9 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     timerSeconds?: yup.Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
                     repeat?: yup.Maybe<number | undefined>;
+                    ordinal: number;
                     prompt: string;
                     type: "breathingExercise";
-                    ordinal: number;
                     inFor: number;
                     holdFor: number;
                     outFor: number;
@@ -464,9 +464,9 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
+                    ordinal: number;
                     prompt: string;
                     type: "notifyASupportPerson";
-                    ordinal: number;
                     contactIds: string[];
                 } | {
                     createdAt?: {
@@ -505,10 +505,10 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
+                    ordinal: number;
                     prompt: string;
                     type: "steps";
                     steps: number;
-                    ordinal: number;
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -546,9 +546,9 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
+                    ordinal: number;
                     prompt: string;
                     type: "task";
-                    ordinal: number;
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -586,14 +586,14 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
+                    ordinal: number;
                     prompt: string;
                     type: "video";
-                    ordinal: number;
                     video: {
                         storagePath?: string | null | undefined;
                         url?: string | null | undefined;
-                        title: string;
                         description: string;
+                        title: string;
                         thumbnailUrl: string;
                         duration: number;
                     };
@@ -617,13 +617,13 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 profileId?: string | null | undefined;
-                prompt?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
+                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -642,8 +642,8 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                     waveform?: string | null | undefined;
                     remoteFilePath: string;
                 };
-                type: "audio";
                 ordinal: number;
+                type: "audio";
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -682,9 +682,9 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 repeat?: yup.Maybe<number | undefined>;
+                ordinal: number;
                 prompt: string;
                 type: "breathingExercise";
-                ordinal: number;
                 inFor: number;
                 holdFor: number;
                 outFor: number;
@@ -725,9 +725,9 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
+                ordinal: number;
                 prompt: string;
                 type: "notifyASupportPerson";
-                ordinal: number;
                 contactIds: string[];
             } | {
                 createdAt?: {
@@ -766,10 +766,10 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
+                ordinal: number;
                 prompt: string;
                 type: "steps";
                 steps: number;
-                ordinal: number;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -807,9 +807,9 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
+                ordinal: number;
                 prompt: string;
                 type: "task";
-                ordinal: number;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -847,22 +847,22 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
                 likesCount?: number | null | undefined;
                 timerSeconds?: yup.Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
+                ordinal: number;
                 prompt: string;
                 type: "video";
-                ordinal: number;
                 video: {
                     storagePath?: string | null | undefined;
                     url?: string | null | undefined;
-                    title: string;
                     description: string;
+                    title: string;
                     thumbnailUrl: string;
                     duration: number;
                 };
             })[] | undefined;
             nextTacticId?: string | undefined;
+            ordinal: number;
             prompt: string;
             type: "folder";
-            ordinal: number;
             invitationCode: string;
             invitationUrl: string;
         };
