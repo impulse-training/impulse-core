@@ -1,20 +1,23 @@
 import * as yup from 'yup';
-import { impulseThreadSchema } from './impulse';
-import { regularThreadSchema, RegularThreadValue } from './regular';
+import { defaultThreadSchema, DefaultThreadValue } from './default';
+import { impulseThreadSchema, ImpulseThreadValue } from './impulse';
 import { whatsappThreadSchema, WhatsappThreadValue } from './whatsapp';
 
+export * from './default';
 export * from './impulse';
-export * from './regular';
 export * from './whatsapp';
 
-export type ThreadValue = WhatsappThreadValue | RegularThreadValue;
+export type ThreadValue =
+  | DefaultThreadValue
+  | WhatsappThreadValue
+  | ImpulseThreadValue;
 
 export const threadSchemas: Record<
   ThreadValue['type'],
   yup.ObjectSchema<ThreadValue>
 > = {
   whatsapp: whatsappThreadSchema,
-  regular: regularThreadSchema,
+  default: defaultThreadSchema,
   impulse: impulseThreadSchema,
 } as any;
 

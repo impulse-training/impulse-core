@@ -10,9 +10,9 @@ export declare const numericOptionSchema: yup.ObjectSchema<{
         message?: string | undefined;
         type: "showTour";
         steps: {
-            title: string;
             message: string;
             elementRefName: string;
+            title: string;
             confirmButtonLabel: string;
         }[];
     } | {

@@ -46,15 +46,14 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             toDate: Function;
         };
     }[] | undefined;
-    agent: import("../..").AgentName | undefined;
     gptPayload: {
         role: NonNullable<"system" | "user" | "assistant" | undefined>;
         content: string;
     }[] | undefined;
     steps: {
-        title: string;
         message: string;
         elementRefName: string;
+        title: string;
         confirmButtonLabel: string;
     }[];
 }, yup.AnyObject, {
@@ -73,7 +72,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
     };
     senderProfileId: undefined;
     views: "";
-    agent: undefined;
     gptPayload: "";
     steps: "";
 }, "">;

@@ -34,7 +34,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         } | undefined;
         profileId: string;
     }, "profileId" | ("createdAt" | "updatedAt" | "tacticId" | "tacticTitle" | "text" | "recording" | "isEdited" | "avatar")>;
-    dayFactory: import("factory.ts").Factory<import("..").DayValue, "issueName" | "date" | "questionsById" | "logsById" | "threadsById">;
+    dayFactory: import("factory.ts").Factory<import("..").DayValue, "date" | "issueName" | "questionsById" | "logsById" | "threadsById">;
     folderFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -58,8 +58,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             [x: string]: number;
         } | null | undefined;
         isInGameplan?: boolean | undefined;
-        slug?: string | undefined;
-        creatorProfileId?: string | undefined;
         tacticsById?: {
             [x: string]: {
                 createdAt?: {
@@ -80,12 +78,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
-                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -104,8 +102,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     waveform?: string | null | undefined;
                     remoteFilePath: string;
                 };
-                ordinal: number;
                 type: "audio";
+                ordinal: number;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -124,6 +122,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     toDate: Function;
                 } | null | undefined;
                 profileId?: string | null | undefined;
+                repeat?: import("yup").Maybe<number | undefined>;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -143,10 +142,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                repeat?: import("yup").Maybe<number | undefined>;
-                ordinal: number;
-                prompt: string;
                 type: "breathingExercise";
+                prompt: string;
+                ordinal: number;
                 inFor: number;
                 holdFor: number;
                 outFor: number;
@@ -187,9 +185,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
-                prompt: string;
                 type: "notifyASupportPerson";
+                prompt: string;
+                ordinal: number;
                 contactIds: string[];
             } | {
                 createdAt?: {
@@ -228,10 +226,10 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
-                prompt: string;
                 type: "steps";
                 steps: number;
+                prompt: string;
+                ordinal: number;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -269,9 +267,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
-                prompt: string;
                 type: "task";
+                prompt: string;
+                ordinal: number;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -309,19 +307,21 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
-                prompt: string;
                 type: "video";
+                prompt: string;
+                ordinal: number;
                 video: {
                     storagePath?: string | null | undefined;
                     url?: string | null | undefined;
-                    description: string;
                     title: string;
+                    description: string;
                     thumbnailUrl: string;
                     duration: number;
                 };
             };
         } | null | undefined;
+        slug?: string | undefined;
+        creatorProfileId?: string | undefined;
         next3Tactics?: ({
             createdAt?: {
                 isEqual?: any;
@@ -341,12 +341,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
+            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
-            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -365,8 +365,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 waveform?: string | null | undefined;
                 remoteFilePath: string;
             };
-            ordinal: number;
             type: "audio";
+            ordinal: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -385,6 +385,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            repeat?: import("yup").Maybe<number | undefined>;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
@@ -404,10 +405,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            repeat?: import("yup").Maybe<number | undefined>;
-            ordinal: number;
-            prompt: string;
             type: "breathingExercise";
+            prompt: string;
+            ordinal: number;
             inFor: number;
             holdFor: number;
             outFor: number;
@@ -448,9 +448,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            ordinal: number;
-            prompt: string;
             type: "notifyASupportPerson";
+            prompt: string;
+            ordinal: number;
             contactIds: string[];
         } | {
             createdAt?: {
@@ -489,10 +489,10 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            ordinal: number;
-            prompt: string;
             type: "steps";
             steps: number;
+            prompt: string;
+            ordinal: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -530,9 +530,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            ordinal: number;
-            prompt: string;
             type: "task";
+            prompt: string;
+            ordinal: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -570,25 +570,25 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            ordinal: number;
-            prompt: string;
             type: "video";
+            prompt: string;
+            ordinal: number;
             video: {
                 storagePath?: string | null | undefined;
                 url?: string | null | undefined;
-                description: string;
                 title: string;
+                description: string;
                 thumbnailUrl: string;
                 duration: number;
             };
         })[] | undefined;
         nextTacticId?: string | undefined;
-        ordinal: number;
-        prompt: string;
         type: "folder";
+        prompt: string;
+        ordinal: number;
         invitationCode: string;
         invitationUrl: string;
-    }, "ordinal" | "prompt" | "type" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "slug" | "creatorProfileId" | "tacticsById" | "next3Tactics" | "nextTacticId")>;
+    }, "type" | "prompt" | "ordinal" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics" | "nextTacticId")>;
     impulseFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -607,7 +607,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: Function;
         } | null | undefined;
         text?: string | undefined;
-        issueName?: string | undefined;
         senderProfileId?: string | null | undefined;
         views?: {
             openTime: {
@@ -627,12 +626,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 toDate: Function;
             };
         }[] | undefined;
-        agent?: import("..").AgentName | undefined;
         gptPayload?: {
             role: NonNullable<"system" | "user" | "assistant" | undefined>;
             content: string;
         }[] | undefined;
         openAiChoiceResponse?: {} | undefined;
+        issueName?: string | undefined;
         debriefAfter?: {
             isEqual?: any;
             toMillis?: any;
@@ -649,8 +648,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        parentIssueIds: string[];
-        type: "impulse";
         date: {
             isEqual?: any;
             toMillis?: any;
@@ -659,7 +656,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             nanoseconds: number;
             toDate: Function;
         };
-    }, "parentIssueIds" | "type" | "date" | ("createdAt" | "updatedAt" | "text" | "issueName" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "debriefAfter" | "submittedAt")>;
+        type: "impulse";
+        parentIssueIds: string[];
+    }, "date" | "type" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "senderProfileId" | "views" | "gptPayload" | "openAiChoiceResponse" | "issueName" | "debriefAfter" | "submittedAt")>;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
         createdAt?: {
@@ -715,10 +714,10 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         [x: string]: {
             [x: string]: {
                 label?: string | undefined;
+                color?: string | undefined;
                 setbackThreshold?: number | undefined;
                 idValue?: string | undefined;
                 numericValue?: number | undefined;
-                color?: string | undefined;
                 setAt: {
                     isEqual?: any;
                     toMillis?: any;
@@ -749,6 +748,10 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        issueName?: string | undefined;
+        parentIssueIds?: string[] | undefined;
+        setbackThreshold?: number | undefined;
+        whatsappFolderDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         lastActiveAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -775,9 +778,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         } | null | undefined;
         activeImpulseDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         activeThreadDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
-        parentIssueIds?: string[] | undefined;
         scheduledNotificationIds?: string[] | undefined;
-        whatsappFolderDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         currentAppState?: import("react-native/types").AppStateStatus | undefined;
         expoPushToken?: string | undefined;
         notificationPreferences?: {
@@ -785,11 +786,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         } | null | undefined;
         impulseCanManageQuestions?: boolean | undefined;
         impulseCanManageGameplan?: boolean | undefined;
-        issueName?: string | undefined;
         issueDebriefQuestionPrompt?: string | undefined;
         isReadyForTour?: boolean | undefined;
         isOnboardingComplete?: boolean | undefined;
-        setbackThreshold?: number | undefined;
         gameplanStrategies?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
         androidPermissions?: {
             [x: string]: NonNullable<boolean | undefined>;
@@ -797,10 +796,10 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         longTermMemory?: {
             [x: string]: {
                 label?: string | undefined;
+                color?: string | undefined;
                 setbackThreshold?: number | undefined;
                 idValue?: string | undefined;
                 numericValue?: number | undefined;
-                color?: string | undefined;
                 setAt: {
                     isEqual?: any;
                     toMillis?: any;
@@ -814,9 +813,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             };
         } | null | undefined;
         region?: string | null | undefined;
-        uids: string[];
         dailyReview: "morning" | "evening" | null;
-        issueId: string | null;
         strategiesById: {
             [x: string]: {
                 createdAt?: {
@@ -837,12 +834,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 } | null | undefined;
                 profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
-                prompt?: string | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
                 description?: string | null | undefined;
@@ -861,8 +858,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     waveform?: string | null | undefined;
                     remoteFilePath: string;
                 };
-                ordinal: number;
                 type: "audio";
+                ordinal: number;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -881,6 +878,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     toDate: Function;
                 } | null | undefined;
                 profileId?: string | null | undefined;
+                repeat?: import("yup").Maybe<number | undefined>;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -900,10 +898,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                repeat?: import("yup").Maybe<number | undefined>;
-                ordinal: number;
-                prompt: string;
                 type: "breathingExercise";
+                prompt: string;
+                ordinal: number;
                 inFor: number;
                 holdFor: number;
                 outFor: number;
@@ -944,9 +941,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
-                prompt: string;
                 type: "notifyASupportPerson";
+                prompt: string;
+                ordinal: number;
                 contactIds: string[];
             } | {
                 createdAt?: {
@@ -985,10 +982,10 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
-                prompt: string;
                 type: "steps";
                 steps: number;
+                prompt: string;
+                ordinal: number;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -1026,9 +1023,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
-                prompt: string;
                 type: "task";
+                prompt: string;
+                ordinal: number;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -1066,14 +1063,14 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                ordinal: number;
-                prompt: string;
                 type: "video";
+                prompt: string;
+                ordinal: number;
                 video: {
                     storagePath?: string | null | undefined;
                     url?: string | null | undefined;
-                    description: string;
                     title: string;
+                    description: string;
                     thumbnailUrl: string;
                     duration: number;
                 };
@@ -1100,8 +1097,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
-                slug?: string | undefined;
-                creatorProfileId?: string | undefined;
                 tacticsById?: {
                     [x: string]: {
                         createdAt?: {
@@ -1122,12 +1117,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         } | null | undefined;
                         profileId?: string | null | undefined;
                         setbackThreshold?: number | null | undefined;
+                        prompt?: string | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
                         isInGameplan?: boolean | undefined;
-                        prompt?: string | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
                         description?: string | null | undefined;
@@ -1146,8 +1141,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                             waveform?: string | null | undefined;
                             remoteFilePath: string;
                         };
-                        ordinal: number;
                         type: "audio";
+                        ordinal: number;
                     } | {
                         createdAt?: {
                             isEqual?: any;
@@ -1166,6 +1161,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                             toDate: Function;
                         } | null | undefined;
                         profileId?: string | null | undefined;
+                        repeat?: import("yup").Maybe<number | undefined>;
                         setbackThreshold?: number | null | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
@@ -1185,10 +1181,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         likesCount?: number | null | undefined;
                         timerSeconds?: import("yup").Maybe<number | undefined>;
                         isSuggested?: boolean | undefined;
-                        repeat?: import("yup").Maybe<number | undefined>;
-                        ordinal: number;
-                        prompt: string;
                         type: "breathingExercise";
+                        prompt: string;
+                        ordinal: number;
                         inFor: number;
                         holdFor: number;
                         outFor: number;
@@ -1229,9 +1224,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         likesCount?: number | null | undefined;
                         timerSeconds?: import("yup").Maybe<number | undefined>;
                         isSuggested?: boolean | undefined;
-                        ordinal: number;
-                        prompt: string;
                         type: "notifyASupportPerson";
+                        prompt: string;
+                        ordinal: number;
                         contactIds: string[];
                     } | {
                         createdAt?: {
@@ -1270,10 +1265,10 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         likesCount?: number | null | undefined;
                         timerSeconds?: import("yup").Maybe<number | undefined>;
                         isSuggested?: boolean | undefined;
-                        ordinal: number;
-                        prompt: string;
                         type: "steps";
                         steps: number;
+                        prompt: string;
+                        ordinal: number;
                     } | {
                         createdAt?: {
                             isEqual?: any;
@@ -1311,9 +1306,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         likesCount?: number | null | undefined;
                         timerSeconds?: import("yup").Maybe<number | undefined>;
                         isSuggested?: boolean | undefined;
-                        ordinal: number;
-                        prompt: string;
                         type: "task";
+                        prompt: string;
+                        ordinal: number;
                     } | {
                         createdAt?: {
                             isEqual?: any;
@@ -1351,19 +1346,21 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         likesCount?: number | null | undefined;
                         timerSeconds?: import("yup").Maybe<number | undefined>;
                         isSuggested?: boolean | undefined;
-                        ordinal: number;
-                        prompt: string;
                         type: "video";
+                        prompt: string;
+                        ordinal: number;
                         video: {
                             storagePath?: string | null | undefined;
                             url?: string | null | undefined;
-                            description: string;
                             title: string;
+                            description: string;
                             thumbnailUrl: string;
                             duration: number;
                         };
                     };
                 } | null | undefined;
+                slug?: string | undefined;
+                creatorProfileId?: string | undefined;
                 next3Tactics?: ({
                     createdAt?: {
                         isEqual?: any;
@@ -1383,12 +1380,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     } | null | undefined;
                     profileId?: string | null | undefined;
                     setbackThreshold?: number | null | undefined;
+                    prompt?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
-                    prompt?: string | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -1407,8 +1404,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         waveform?: string | null | undefined;
                         remoteFilePath: string;
                     };
-                    ordinal: number;
                     type: "audio";
+                    ordinal: number;
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -1427,6 +1424,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         toDate: Function;
                     } | null | undefined;
                     profileId?: string | null | undefined;
+                    repeat?: import("yup").Maybe<number | undefined>;
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
@@ -1446,10 +1444,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    repeat?: import("yup").Maybe<number | undefined>;
-                    ordinal: number;
-                    prompt: string;
                     type: "breathingExercise";
+                    prompt: string;
+                    ordinal: number;
                     inFor: number;
                     holdFor: number;
                     outFor: number;
@@ -1490,9 +1487,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    ordinal: number;
-                    prompt: string;
                     type: "notifyASupportPerson";
+                    prompt: string;
+                    ordinal: number;
                     contactIds: string[];
                 } | {
                     createdAt?: {
@@ -1531,10 +1528,10 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    ordinal: number;
-                    prompt: string;
                     type: "steps";
                     steps: number;
+                    prompt: string;
+                    ordinal: number;
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -1572,9 +1569,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    ordinal: number;
-                    prompt: string;
                     type: "task";
+                    prompt: string;
+                    ordinal: number;
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -1612,28 +1609,30 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    ordinal: number;
-                    prompt: string;
                     type: "video";
+                    prompt: string;
+                    ordinal: number;
                     video: {
                         storagePath?: string | null | undefined;
                         url?: string | null | undefined;
-                        description: string;
                         title: string;
+                        description: string;
                         thumbnailUrl: string;
                         duration: number;
                     };
                 })[] | undefined;
                 nextTacticId?: string | undefined;
-                ordinal: number;
-                prompt: string;
                 type: "folder";
+                prompt: string;
+                ordinal: number;
                 invitationCode: string;
                 invitationUrl: string;
             };
         };
+        uids: string[];
+        issueId: string | null;
         timezone: string;
-    }, "uids" | "dailyReview" | "issueId" | "strategiesById" | "timezone" | ("createdAt" | "updatedAt" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "parentIssueIds" | "scheduledNotificationIds" | "whatsappFolderDoc" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "impulseCanManageQuestions" | "impulseCanManageGameplan" | "issueName" | "issueDebriefQuestionPrompt" | "isReadyForTour" | "isOnboardingComplete" | "setbackThreshold" | "gameplanStrategies" | "androidPermissions" | "longTermMemory" | "region")>;
+    }, "dailyReview" | "strategiesById" | "uids" | "issueId" | "timezone" | ("createdAt" | "updatedAt" | "issueName" | "parentIssueIds" | "setbackThreshold" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "impulseCanManageQuestions" | "impulseCanManageGameplan" | "issueDebriefQuestionPrompt" | "isReadyForTour" | "isOnboardingComplete" | "gameplanStrategies" | "androidPermissions" | "longTermMemory" | "region")>;
     questionTimeFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -1651,7 +1650,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        setbackThreshold?: number | undefined;
         followUps?: ({
             message?: string | undefined;
             type: "askAnotherQuestion";
@@ -1660,9 +1658,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             message?: string | undefined;
             type: "showTour";
             steps: {
-                title: string;
                 message: string;
                 elementRefName: string;
+                title: string;
                 confirmButtonLabel: string;
             }[];
         } | {
@@ -1675,11 +1673,10 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             profileKey: string;
             value: {};
         })[] | undefined;
-        categories?: ("dailyReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
+        setbackThreshold?: number | undefined;
+        categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
         options?: ({
             label?: string | undefined;
-            setbackThreshold?: number | undefined;
-            color?: string | undefined;
             followUps?: ({
                 message?: string | undefined;
                 type: "askAnotherQuestion";
@@ -1688,9 +1685,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 message?: string | undefined;
                 type: "showTour";
                 steps: {
-                    title: string;
                     message: string;
                     elementRefName: string;
+                    title: string;
                     confirmButtonLabel: string;
                 }[];
             } | {
@@ -1703,14 +1700,15 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 profileKey: string;
                 value: {};
             })[] | undefined;
+            color?: string | undefined;
             textColor?: string | undefined;
+            setbackThreshold?: number | undefined;
             greaterThan?: number | undefined;
             lessThanOrEqualTo?: number | undefined;
             text: string;
             type: "numeric";
         } | {
             label?: string | undefined;
-            color?: string | undefined;
             followUps?: ({
                 message?: string | undefined;
                 type: "askAnotherQuestion";
@@ -1719,9 +1717,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 message?: string | undefined;
                 type: "showTour";
                 steps: {
-                    title: string;
                     message: string;
                     elementRefName: string;
+                    title: string;
                     confirmButtonLabel: string;
                 }[];
             } | {
@@ -1734,6 +1732,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 profileKey: string;
                 value: {};
             })[] | undefined;
+            color?: string | undefined;
             textColor?: string | undefined;
             text: string;
             type: "string";
@@ -1743,9 +1742,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         } | null | undefined;
         templateFor?: "onboarding" | undefined;
         writeAnswerToProfileMemoryKey?: string | undefined;
-        prompt: string;
         type: import("..").QuestionKeyType;
-    }, "prompt" | "type" | ("createdAt" | "updatedAt" | "setbackThreshold" | "followUps" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+        prompt: string;
+    }, "type" | "prompt" | ("createdAt" | "updatedAt" | "followUps" | "setbackThreshold" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     questionMultipleChoiceFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -1771,9 +1770,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             message?: string | undefined;
             type: "showTour";
             steps: {
-                title: string;
                 message: string;
                 elementRefName: string;
+                title: string;
                 confirmButtonLabel: string;
             }[];
         } | {
@@ -1786,18 +1785,16 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             profileKey: string;
             value: {};
         })[] | undefined;
-        categories?: ("dailyReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
+        categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
         ordinals?: {
             [x: string]: number;
         } | null | undefined;
         templateFor?: "onboarding" | undefined;
         writeAnswerToProfileMemoryKey?: string | undefined;
-        prompt: string;
         type: import("..").QuestionKeyType;
+        prompt: string;
         options: ({
             label?: string | undefined;
-            setbackThreshold?: number | undefined;
-            color?: string | undefined;
             followUps?: ({
                 message?: string | undefined;
                 type: "askAnotherQuestion";
@@ -1806,9 +1803,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 message?: string | undefined;
                 type: "showTour";
                 steps: {
-                    title: string;
                     message: string;
                     elementRefName: string;
+                    title: string;
                     confirmButtonLabel: string;
                 }[];
             } | {
@@ -1821,14 +1818,15 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 profileKey: string;
                 value: {};
             })[] | undefined;
+            color?: string | undefined;
             textColor?: string | undefined;
+            setbackThreshold?: number | undefined;
             greaterThan?: number | undefined;
             lessThanOrEqualTo?: number | undefined;
             text: string;
             type: "numeric";
         } | {
             label?: string | undefined;
-            color?: string | undefined;
             followUps?: ({
                 message?: string | undefined;
                 type: "askAnotherQuestion";
@@ -1837,9 +1835,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 message?: string | undefined;
                 type: "showTour";
                 steps: {
-                    title: string;
                     message: string;
                     elementRefName: string;
+                    title: string;
                     confirmButtonLabel: string;
                 }[];
             } | {
@@ -1852,12 +1850,13 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 profileKey: string;
                 value: {};
             })[] | undefined;
+            color?: string | undefined;
             textColor?: string | undefined;
             text: string;
             type: "string";
         })[];
         canAddNewOptions: NonNullable<boolean | undefined>;
-    }, "prompt" | "type" | "options" | "canAddNewOptions" | ("createdAt" | "updatedAt" | "followUps" | "categories" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+    }, "type" | "prompt" | "options" | "canAddNewOptions" | ("createdAt" | "updatedAt" | "followUps" | "categories" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -1900,7 +1899,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: Function;
         } | null | undefined;
         text?: string | undefined;
-        issueName?: string | undefined;
         senderProfileId?: string | null | undefined;
         views?: {
             openTime: {
@@ -1920,12 +1918,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 toDate: Function;
             };
         }[] | undefined;
-        agent?: import("..").AgentName | undefined;
         gptPayload?: {
             role: NonNullable<"system" | "user" | "assistant" | undefined>;
             content: string;
         }[] | undefined;
         openAiChoiceResponse?: {} | undefined;
+        issueName?: string | undefined;
         debriefAfter?: {
             isEqual?: any;
             toMillis?: any;
@@ -1942,8 +1940,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        parentIssueIds: string[];
-        type: "impulse";
         date: {
             isEqual?: any;
             toMillis?: any;
@@ -1952,7 +1948,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             nanoseconds: number;
             toDate: Function;
         };
-    }, "parentIssueIds" | "type" | "date" | ("createdAt" | "updatedAt" | "text" | "issueName" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "debriefAfter" | "submittedAt")>;
+        type: "impulse";
+        parentIssueIds: string[];
+    }, "date" | "type" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "senderProfileId" | "views" | "gptPayload" | "openAiChoiceResponse" | "issueName" | "debriefAfter" | "submittedAt")>;
     questionsLogFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -1990,7 +1988,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 toDate: Function;
             };
         }[] | undefined;
-        agent?: import("..").AgentName | undefined;
         gptPayload?: {
             role: NonNullable<"system" | "user" | "assistant" | undefined>;
             content: string;
@@ -2007,10 +2004,10 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         questionData?: {
             [x: string]: {
                 label?: string | undefined;
+                color?: string | undefined;
                 setbackThreshold?: number | undefined;
                 idValue?: string | undefined;
                 numericValue?: number | undefined;
-                color?: string | undefined;
                 setAt: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2027,7 +2024,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         debriefingQuestionIds?: string[] | undefined;
         isDebrief?: boolean | undefined;
         followedUpQuestionIds?: string[] | undefined;
-        type: "questions";
         date: {
             isEqual?: any;
             toMillis?: any;
@@ -2036,6 +2032,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             nanoseconds: number;
             toDate: Function;
         };
+        type: "questions";
         questionsById: {
             [x: string]: {
                 createdAt?: {
@@ -2062,9 +2059,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     message?: string | undefined;
                     type: "showTour";
                     steps: {
-                        title: string;
                         message: string;
                         elementRefName: string;
+                        title: string;
                         confirmButtonLabel: string;
                     }[];
                 } | {
@@ -2077,11 +2074,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                categories?: ("dailyReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
+                categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     followUps?: ({
                         message?: string | undefined;
                         type: "askAnotherQuestion";
@@ -2090,9 +2085,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         message?: string | undefined;
                         type: "showTour";
                         steps: {
-                            title: string;
                             message: string;
                             elementRefName: string;
+                            title: string;
                             confirmButtonLabel: string;
                         }[];
                     } | {
@@ -2105,14 +2100,15 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         profileKey: string;
                         value: {};
                     })[] | undefined;
+                    color?: string | undefined;
                     textColor?: string | undefined;
+                    setbackThreshold?: number | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "numeric";
                 } | {
                     label?: string | undefined;
-                    color?: string | undefined;
                     followUps?: ({
                         message?: string | undefined;
                         type: "askAnotherQuestion";
@@ -2121,9 +2117,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         message?: string | undefined;
                         type: "showTour";
                         steps: {
-                            title: string;
                             message: string;
                             elementRefName: string;
+                            title: string;
                             confirmButtonLabel: string;
                         }[];
                     } | {
@@ -2136,6 +2132,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         profileKey: string;
                         value: {};
                     })[] | undefined;
+                    color?: string | undefined;
                     textColor?: string | undefined;
                     text: string;
                     type: "string";
@@ -2145,8 +2142,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 } | null | undefined;
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
-                prompt: string;
                 type: import("..").QuestionKeyType;
+                prompt: string;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -2164,35 +2161,33 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "showTour";
+                    steps: {
+                        message: string;
+                        elementRefName: string;
+                        title: string;
+                        confirmButtonLabel: string;
+                    }[];
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
                 setbackThreshold?: number | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        title: string;
-                        message: string;
-                        elementRefName: string;
-                        confirmButtonLabel: string;
-                    }[];
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                categories?: ("dailyReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
+                categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     followUps?: ({
                         message?: string | undefined;
                         type: "askAnotherQuestion";
@@ -2201,9 +2196,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         message?: string | undefined;
                         type: "showTour";
                         steps: {
-                            title: string;
                             message: string;
                             elementRefName: string;
+                            title: string;
                             confirmButtonLabel: string;
                         }[];
                     } | {
@@ -2216,14 +2211,15 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         profileKey: string;
                         value: {};
                     })[] | undefined;
+                    color?: string | undefined;
                     textColor?: string | undefined;
+                    setbackThreshold?: number | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "numeric";
                 } | {
                     label?: string | undefined;
-                    color?: string | undefined;
                     followUps?: ({
                         message?: string | undefined;
                         type: "askAnotherQuestion";
@@ -2232,9 +2228,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         message?: string | undefined;
                         type: "showTour";
                         steps: {
-                            title: string;
                             message: string;
                             elementRefName: string;
+                            title: string;
                             confirmButtonLabel: string;
                         }[];
                     } | {
@@ -2247,6 +2243,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         profileKey: string;
                         value: {};
                     })[] | undefined;
+                    color?: string | undefined;
                     textColor?: string | undefined;
                     text: string;
                     type: "string";
@@ -2256,8 +2253,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 } | null | undefined;
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
-                prompt: string;
                 type: import("..").QuestionKeyType;
+                prompt: string;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -2283,9 +2280,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     message?: string | undefined;
                     type: "showTour";
                     steps: {
-                        title: string;
                         message: string;
                         elementRefName: string;
+                        title: string;
                         confirmButtonLabel: string;
                     }[];
                 } | {
@@ -2298,18 +2295,16 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                categories?: ("dailyReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
+                categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
-                prompt: string;
                 type: import("..").QuestionKeyType;
+                prompt: string;
                 options: ({
                     label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     followUps?: ({
                         message?: string | undefined;
                         type: "askAnotherQuestion";
@@ -2318,9 +2313,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         message?: string | undefined;
                         type: "showTour";
                         steps: {
-                            title: string;
                             message: string;
                             elementRefName: string;
+                            title: string;
                             confirmButtonLabel: string;
                         }[];
                     } | {
@@ -2333,14 +2328,15 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         profileKey: string;
                         value: {};
                     })[] | undefined;
+                    color?: string | undefined;
                     textColor?: string | undefined;
+                    setbackThreshold?: number | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "numeric";
                 } | {
                     label?: string | undefined;
-                    color?: string | undefined;
                     followUps?: ({
                         message?: string | undefined;
                         type: "askAnotherQuestion";
@@ -2349,9 +2345,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         message?: string | undefined;
                         type: "showTour";
                         steps: {
-                            title: string;
                             message: string;
                             elementRefName: string;
+                            title: string;
                             confirmButtonLabel: string;
                         }[];
                     } | {
@@ -2364,6 +2360,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         profileKey: string;
                         value: {};
                     })[] | undefined;
+                    color?: string | undefined;
                     textColor?: string | undefined;
                     text: string;
                     type: "string";
@@ -2386,7 +2383,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | undefined;
                 followUps?: ({
                     message?: string | undefined;
                     type: "askAnotherQuestion";
@@ -2395,9 +2391,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     message?: string | undefined;
                     type: "showTour";
                     steps: {
-                        title: string;
                         message: string;
                         elementRefName: string;
+                        title: string;
                         confirmButtonLabel: string;
                     }[];
                 } | {
@@ -2410,11 +2406,10 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                categories?: ("dailyReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
+                setbackThreshold?: number | undefined;
+                categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     followUps?: ({
                         message?: string | undefined;
                         type: "askAnotherQuestion";
@@ -2423,9 +2418,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         message?: string | undefined;
                         type: "showTour";
                         steps: {
-                            title: string;
                             message: string;
                             elementRefName: string;
+                            title: string;
                             confirmButtonLabel: string;
                         }[];
                     } | {
@@ -2438,14 +2433,15 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         profileKey: string;
                         value: {};
                     })[] | undefined;
+                    color?: string | undefined;
                     textColor?: string | undefined;
+                    setbackThreshold?: number | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "numeric";
                 } | {
                     label?: string | undefined;
-                    color?: string | undefined;
                     followUps?: ({
                         message?: string | undefined;
                         type: "askAnotherQuestion";
@@ -2454,9 +2450,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         message?: string | undefined;
                         type: "showTour";
                         steps: {
-                            title: string;
                             message: string;
                             elementRefName: string;
+                            title: string;
                             confirmButtonLabel: string;
                         }[];
                     } | {
@@ -2469,6 +2465,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         profileKey: string;
                         value: {};
                     })[] | undefined;
+                    color?: string | undefined;
                     textColor?: string | undefined;
                     text: string;
                     type: "string";
@@ -2480,8 +2477,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 lowEmoji?: import("yup").Maybe<string | undefined>;
                 highEmoji?: import("yup").Maybe<string | undefined>;
-                prompt: string;
                 type: import("..").QuestionKeyType;
+                prompt: string;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -2499,7 +2496,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | undefined;
                 followUps?: ({
                     message?: string | undefined;
                     type: "askAnotherQuestion";
@@ -2508,9 +2504,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     message?: string | undefined;
                     type: "showTour";
                     steps: {
-                        title: string;
                         message: string;
                         elementRefName: string;
+                        title: string;
                         confirmButtonLabel: string;
                     }[];
                 } | {
@@ -2523,11 +2519,10 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                categories?: ("dailyReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
+                setbackThreshold?: number | undefined;
+                categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     label?: string | undefined;
-                    setbackThreshold?: number | undefined;
-                    color?: string | undefined;
                     followUps?: ({
                         message?: string | undefined;
                         type: "askAnotherQuestion";
@@ -2536,9 +2531,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         message?: string | undefined;
                         type: "showTour";
                         steps: {
-                            title: string;
                             message: string;
                             elementRefName: string;
+                            title: string;
                             confirmButtonLabel: string;
                         }[];
                     } | {
@@ -2551,14 +2546,15 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         profileKey: string;
                         value: {};
                     })[] | undefined;
+                    color?: string | undefined;
                     textColor?: string | undefined;
+                    setbackThreshold?: number | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
                     text: string;
                     type: "numeric";
                 } | {
                     label?: string | undefined;
-                    color?: string | undefined;
                     followUps?: ({
                         message?: string | undefined;
                         type: "askAnotherQuestion";
@@ -2567,9 +2563,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         message?: string | undefined;
                         type: "showTour";
                         steps: {
-                            title: string;
                             message: string;
                             elementRefName: string;
+                            title: string;
                             confirmButtonLabel: string;
                         }[];
                     } | {
@@ -2582,6 +2578,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         profileKey: string;
                         value: {};
                     })[] | undefined;
+                    color?: string | undefined;
                     textColor?: string | undefined;
                     text: string;
                     type: "string";
@@ -2591,10 +2588,10 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 } | null | undefined;
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
-                prompt: string;
                 type: import("..").QuestionKeyType;
+                prompt: string;
             };
         };
-    }, "type" | "date" | "questionsById" | ("createdAt" | "updatedAt" | "text" | "senderProfileId" | "views" | "agent" | "gptPayload" | "openAiChoiceResponse" | "submittedAt" | "questionData" | "trackingQuestionIds" | "debriefingQuestionIds" | "isDebrief" | "followedUpQuestionIds")>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "setbackThreshold" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "ordinal" | "prompt" | "type" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+    }, "date" | "type" | "questionsById" | ("createdAt" | "updatedAt" | "text" | "senderProfileId" | "views" | "gptPayload" | "openAiChoiceResponse" | "submittedAt" | "questionData" | "trackingQuestionIds" | "debriefingQuestionIds" | "isDebrief" | "followedUpQuestionIds")>;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "prompt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "ordinal" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
 };

@@ -17,7 +17,6 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    setbackThreshold?: number | undefined;
     followUps?: ({
         message?: string | undefined;
         type: "askAnotherQuestion";
@@ -26,9 +25,9 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
         message?: string | undefined;
         type: "showTour";
         steps: {
-            title: string;
             message: string;
             elementRefName: string;
+            title: string;
             confirmButtonLabel: string;
         }[];
     } | {
@@ -41,11 +40,10 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
         profileKey: string;
         value: {};
     })[] | undefined;
-    categories?: ("dailyReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
+    setbackThreshold?: number | undefined;
+    categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
     options?: ({
         label?: string | undefined;
-        setbackThreshold?: number | undefined;
-        color?: string | undefined;
         followUps?: ({
             message?: string | undefined;
             type: "askAnotherQuestion";
@@ -54,9 +52,9 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
             message?: string | undefined;
             type: "showTour";
             steps: {
-                title: string;
                 message: string;
                 elementRefName: string;
+                title: string;
                 confirmButtonLabel: string;
             }[];
         } | {
@@ -69,14 +67,15 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
             profileKey: string;
             value: {};
         })[] | undefined;
+        color?: string | undefined;
         textColor?: string | undefined;
+        setbackThreshold?: number | undefined;
         greaterThan?: number | undefined;
         lessThanOrEqualTo?: number | undefined;
         text: string;
         type: "numeric";
     } | {
         label?: string | undefined;
-        color?: string | undefined;
         followUps?: ({
             message?: string | undefined;
             type: "askAnotherQuestion";
@@ -85,9 +84,9 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
             message?: string | undefined;
             type: "showTour";
             steps: {
-                title: string;
                 message: string;
                 elementRefName: string;
+                title: string;
                 confirmButtonLabel: string;
             }[];
         } | {
@@ -100,6 +99,7 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
             profileKey: string;
             value: {};
         })[] | undefined;
+        color?: string | undefined;
         textColor?: string | undefined;
         text: string;
         type: "string";
@@ -109,9 +109,9 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
     } | null | undefined;
     templateFor?: "onboarding" | undefined;
     writeAnswerToProfileMemoryKey?: string | undefined;
-    prompt: string;
     type: import("..").QuestionKeyType;
-}, "prompt" | "type" | ("createdAt" | "updatedAt" | "setbackThreshold" | "followUps" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+    prompt: string;
+}, "type" | "prompt" | ("createdAt" | "updatedAt" | "followUps" | "setbackThreshold" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
 export declare const makeQuestionMultipleChoiceTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     createdAt?: {
         isEqual?: any;
@@ -137,9 +137,9 @@ export declare const makeQuestionMultipleChoiceTacticFactory: (TimestampKlass: t
         message?: string | undefined;
         type: "showTour";
         steps: {
-            title: string;
             message: string;
             elementRefName: string;
+            title: string;
             confirmButtonLabel: string;
         }[];
     } | {
@@ -152,18 +152,16 @@ export declare const makeQuestionMultipleChoiceTacticFactory: (TimestampKlass: t
         profileKey: string;
         value: {};
     })[] | undefined;
-    categories?: ("dailyReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
+    categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
     ordinals?: {
         [x: string]: number;
     } | null | undefined;
     templateFor?: "onboarding" | undefined;
     writeAnswerToProfileMemoryKey?: string | undefined;
-    prompt: string;
     type: import("..").QuestionKeyType;
+    prompt: string;
     options: ({
         label?: string | undefined;
-        setbackThreshold?: number | undefined;
-        color?: string | undefined;
         followUps?: ({
             message?: string | undefined;
             type: "askAnotherQuestion";
@@ -172,9 +170,9 @@ export declare const makeQuestionMultipleChoiceTacticFactory: (TimestampKlass: t
             message?: string | undefined;
             type: "showTour";
             steps: {
-                title: string;
                 message: string;
                 elementRefName: string;
+                title: string;
                 confirmButtonLabel: string;
             }[];
         } | {
@@ -187,14 +185,15 @@ export declare const makeQuestionMultipleChoiceTacticFactory: (TimestampKlass: t
             profileKey: string;
             value: {};
         })[] | undefined;
+        color?: string | undefined;
         textColor?: string | undefined;
+        setbackThreshold?: number | undefined;
         greaterThan?: number | undefined;
         lessThanOrEqualTo?: number | undefined;
         text: string;
         type: "numeric";
     } | {
         label?: string | undefined;
-        color?: string | undefined;
         followUps?: ({
             message?: string | undefined;
             type: "askAnotherQuestion";
@@ -203,9 +202,9 @@ export declare const makeQuestionMultipleChoiceTacticFactory: (TimestampKlass: t
             message?: string | undefined;
             type: "showTour";
             steps: {
-                title: string;
                 message: string;
                 elementRefName: string;
+                title: string;
                 confirmButtonLabel: string;
             }[];
         } | {
@@ -218,9 +217,10 @@ export declare const makeQuestionMultipleChoiceTacticFactory: (TimestampKlass: t
             profileKey: string;
             value: {};
         })[] | undefined;
+        color?: string | undefined;
         textColor?: string | undefined;
         text: string;
         type: "string";
     })[];
     canAddNewOptions: NonNullable<boolean | undefined>;
-}, "prompt" | "type" | "options" | "canAddNewOptions" | ("createdAt" | "updatedAt" | "followUps" | "categories" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+}, "type" | "prompt" | "options" | "canAddNewOptions" | ("createdAt" | "updatedAt" | "followUps" | "categories" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;

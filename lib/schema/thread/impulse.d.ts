@@ -45,14 +45,12 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
-            agent?: import("../..").AgentName | undefined;
             gptPayload?: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;
             }[] | undefined;
             openAiChoiceResponse?: {} | undefined;
             choice?: "moreStrategies" | "debrief" | undefined;
-            type: "actionRecap";
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -61,6 +59,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             };
+            type: "actionRecap";
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -98,7 +97,6 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
-            agent?: import("../..").AgentName | undefined;
             gptPayload?: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;
@@ -112,7 +110,6 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            type: "dayReview";
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -121,6 +118,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             };
+            type: "dayReview";
             dayDoc: import("../utils/firestore").DocumentReferenceLike<unknown>;
         } | {
             createdAt?: {
@@ -140,7 +138,6 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             text?: string | undefined;
-            issueName?: string | undefined;
             senderProfileId?: string | null | undefined;
             views?: {
                 openTime: {
@@ -160,12 +157,12 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
-            agent?: import("../..").AgentName | undefined;
             gptPayload?: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;
             }[] | undefined;
             openAiChoiceResponse?: {} | undefined;
+            issueName?: string | undefined;
             debriefAfter?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -182,8 +179,6 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            parentIssueIds: string[];
-            type: "impulse";
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -192,6 +187,8 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             };
+            type: "impulse";
+            parentIssueIds: string[];
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -228,14 +225,12 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
-            agent?: import("../..").AgentName | undefined;
             gptPayload?: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;
             }[] | undefined;
             openAiChoiceResponse?: {} | undefined;
             text: string;
-            type: "message";
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -244,6 +239,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             };
+            type: "message";
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -281,7 +277,6 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
-            agent?: import("../..").AgentName | undefined;
             gptPayload?: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;
@@ -298,10 +293,10 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
             questionData?: {
                 [x: string]: {
                     label?: string | undefined;
+                    color?: string | undefined;
                     setbackThreshold?: number | undefined;
                     idValue?: string | undefined;
                     numericValue?: number | undefined;
-                    color?: string | undefined;
                     setAt: {
                         isEqual?: any;
                         toMillis?: any;
@@ -318,7 +313,6 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
             debriefingQuestionIds?: string[] | undefined;
             isDebrief?: boolean | undefined;
             followedUpQuestionIds?: string[] | undefined;
-            type: "questions";
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -327,6 +321,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             };
+            type: "questions";
             questionsById: {
                 [x: string]: {
                     createdAt?: {
@@ -353,9 +348,9 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                         message?: string | undefined;
                         type: "showTour";
                         steps: {
-                            title: string;
                             message: string;
                             elementRefName: string;
+                            title: string;
                             confirmButtonLabel: string;
                         }[];
                     } | {
@@ -368,11 +363,9 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                         profileKey: string;
                         value: {};
                     })[] | undefined;
-                    categories?: ("dailyReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
+                    categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                     options?: ({
                         label?: string | undefined;
-                        setbackThreshold?: number | undefined;
-                        color?: string | undefined;
                         followUps?: ({
                             message?: string | undefined;
                             type: "askAnotherQuestion";
@@ -381,9 +374,9 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                             message?: string | undefined;
                             type: "showTour";
                             steps: {
-                                title: string;
                                 message: string;
                                 elementRefName: string;
+                                title: string;
                                 confirmButtonLabel: string;
                             }[];
                         } | {
@@ -396,14 +389,15 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                             profileKey: string;
                             value: {};
                         })[] | undefined;
+                        color?: string | undefined;
                         textColor?: string | undefined;
+                        setbackThreshold?: number | undefined;
                         greaterThan?: number | undefined;
                         lessThanOrEqualTo?: number | undefined;
                         text: string;
                         type: "numeric";
                     } | {
                         label?: string | undefined;
-                        color?: string | undefined;
                         followUps?: ({
                             message?: string | undefined;
                             type: "askAnotherQuestion";
@@ -412,9 +406,9 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                             message?: string | undefined;
                             type: "showTour";
                             steps: {
-                                title: string;
                                 message: string;
                                 elementRefName: string;
+                                title: string;
                                 confirmButtonLabel: string;
                             }[];
                         } | {
@@ -427,6 +421,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                             profileKey: string;
                             value: {};
                         })[] | undefined;
+                        color?: string | undefined;
                         textColor?: string | undefined;
                         text: string;
                         type: "string";
@@ -436,8 +431,8 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     templateFor?: "onboarding" | undefined;
                     writeAnswerToProfileMemoryKey?: string | undefined;
-                    prompt: string;
                     type: import("..").QuestionKeyType;
+                    prompt: string;
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -455,35 +450,33 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    followUps?: ({
+                        message?: string | undefined;
+                        type: "askAnotherQuestion";
+                        questionId: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "showTour";
+                        steps: {
+                            message: string;
+                            elementRefName: string;
+                            title: string;
+                            confirmButtonLabel: string;
+                        }[];
+                    } | {
+                        message?: string | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
                     setbackThreshold?: number | undefined;
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "showTour";
-                        steps: {
-                            title: string;
-                            message: string;
-                            elementRefName: string;
-                            confirmButtonLabel: string;
-                        }[];
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    categories?: ("dailyReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
+                    categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                     options?: ({
                         label?: string | undefined;
-                        setbackThreshold?: number | undefined;
-                        color?: string | undefined;
                         followUps?: ({
                             message?: string | undefined;
                             type: "askAnotherQuestion";
@@ -492,9 +485,9 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                             message?: string | undefined;
                             type: "showTour";
                             steps: {
-                                title: string;
                                 message: string;
                                 elementRefName: string;
+                                title: string;
                                 confirmButtonLabel: string;
                             }[];
                         } | {
@@ -507,14 +500,15 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                             profileKey: string;
                             value: {};
                         })[] | undefined;
+                        color?: string | undefined;
                         textColor?: string | undefined;
+                        setbackThreshold?: number | undefined;
                         greaterThan?: number | undefined;
                         lessThanOrEqualTo?: number | undefined;
                         text: string;
                         type: "numeric";
                     } | {
                         label?: string | undefined;
-                        color?: string | undefined;
                         followUps?: ({
                             message?: string | undefined;
                             type: "askAnotherQuestion";
@@ -523,9 +517,9 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                             message?: string | undefined;
                             type: "showTour";
                             steps: {
-                                title: string;
                                 message: string;
                                 elementRefName: string;
+                                title: string;
                                 confirmButtonLabel: string;
                             }[];
                         } | {
@@ -538,6 +532,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                             profileKey: string;
                             value: {};
                         })[] | undefined;
+                        color?: string | undefined;
                         textColor?: string | undefined;
                         text: string;
                         type: "string";
@@ -547,8 +542,8 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     templateFor?: "onboarding" | undefined;
                     writeAnswerToProfileMemoryKey?: string | undefined;
-                    prompt: string;
                     type: import("..").QuestionKeyType;
+                    prompt: string;
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -574,9 +569,9 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                         message?: string | undefined;
                         type: "showTour";
                         steps: {
-                            title: string;
                             message: string;
                             elementRefName: string;
+                            title: string;
                             confirmButtonLabel: string;
                         }[];
                     } | {
@@ -589,18 +584,16 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                         profileKey: string;
                         value: {};
                     })[] | undefined;
-                    categories?: ("dailyReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
+                    categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                     ordinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     templateFor?: "onboarding" | undefined;
                     writeAnswerToProfileMemoryKey?: string | undefined;
-                    prompt: string;
                     type: import("..").QuestionKeyType;
+                    prompt: string;
                     options: ({
                         label?: string | undefined;
-                        setbackThreshold?: number | undefined;
-                        color?: string | undefined;
                         followUps?: ({
                             message?: string | undefined;
                             type: "askAnotherQuestion";
@@ -609,9 +602,9 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                             message?: string | undefined;
                             type: "showTour";
                             steps: {
-                                title: string;
                                 message: string;
                                 elementRefName: string;
+                                title: string;
                                 confirmButtonLabel: string;
                             }[];
                         } | {
@@ -624,14 +617,15 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                             profileKey: string;
                             value: {};
                         })[] | undefined;
+                        color?: string | undefined;
                         textColor?: string | undefined;
+                        setbackThreshold?: number | undefined;
                         greaterThan?: number | undefined;
                         lessThanOrEqualTo?: number | undefined;
                         text: string;
                         type: "numeric";
                     } | {
                         label?: string | undefined;
-                        color?: string | undefined;
                         followUps?: ({
                             message?: string | undefined;
                             type: "askAnotherQuestion";
@@ -640,9 +634,9 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                             message?: string | undefined;
                             type: "showTour";
                             steps: {
-                                title: string;
                                 message: string;
                                 elementRefName: string;
+                                title: string;
                                 confirmButtonLabel: string;
                             }[];
                         } | {
@@ -655,6 +649,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                             profileKey: string;
                             value: {};
                         })[] | undefined;
+                        color?: string | undefined;
                         textColor?: string | undefined;
                         text: string;
                         type: "string";
@@ -677,7 +672,6 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    setbackThreshold?: number | undefined;
                     followUps?: ({
                         message?: string | undefined;
                         type: "askAnotherQuestion";
@@ -686,9 +680,9 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                         message?: string | undefined;
                         type: "showTour";
                         steps: {
-                            title: string;
                             message: string;
                             elementRefName: string;
+                            title: string;
                             confirmButtonLabel: string;
                         }[];
                     } | {
@@ -701,11 +695,10 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                         profileKey: string;
                         value: {};
                     })[] | undefined;
-                    categories?: ("dailyReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
+                    setbackThreshold?: number | undefined;
+                    categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                     options?: ({
                         label?: string | undefined;
-                        setbackThreshold?: number | undefined;
-                        color?: string | undefined;
                         followUps?: ({
                             message?: string | undefined;
                             type: "askAnotherQuestion";
@@ -714,9 +707,9 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                             message?: string | undefined;
                             type: "showTour";
                             steps: {
-                                title: string;
                                 message: string;
                                 elementRefName: string;
+                                title: string;
                                 confirmButtonLabel: string;
                             }[];
                         } | {
@@ -729,14 +722,15 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                             profileKey: string;
                             value: {};
                         })[] | undefined;
+                        color?: string | undefined;
                         textColor?: string | undefined;
+                        setbackThreshold?: number | undefined;
                         greaterThan?: number | undefined;
                         lessThanOrEqualTo?: number | undefined;
                         text: string;
                         type: "numeric";
                     } | {
                         label?: string | undefined;
-                        color?: string | undefined;
                         followUps?: ({
                             message?: string | undefined;
                             type: "askAnotherQuestion";
@@ -745,9 +739,9 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                             message?: string | undefined;
                             type: "showTour";
                             steps: {
-                                title: string;
                                 message: string;
                                 elementRefName: string;
+                                title: string;
                                 confirmButtonLabel: string;
                             }[];
                         } | {
@@ -760,6 +754,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                             profileKey: string;
                             value: {};
                         })[] | undefined;
+                        color?: string | undefined;
                         textColor?: string | undefined;
                         text: string;
                         type: "string";
@@ -771,8 +766,8 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     lowEmoji?: yup.Maybe<string | undefined>;
                     highEmoji?: yup.Maybe<string | undefined>;
-                    prompt: string;
                     type: import("..").QuestionKeyType;
+                    prompt: string;
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -790,7 +785,6 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    setbackThreshold?: number | undefined;
                     followUps?: ({
                         message?: string | undefined;
                         type: "askAnotherQuestion";
@@ -799,9 +793,9 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                         message?: string | undefined;
                         type: "showTour";
                         steps: {
-                            title: string;
                             message: string;
                             elementRefName: string;
+                            title: string;
                             confirmButtonLabel: string;
                         }[];
                     } | {
@@ -814,11 +808,10 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                         profileKey: string;
                         value: {};
                     })[] | undefined;
-                    categories?: ("dailyReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
+                    setbackThreshold?: number | undefined;
+                    categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                     options?: ({
                         label?: string | undefined;
-                        setbackThreshold?: number | undefined;
-                        color?: string | undefined;
                         followUps?: ({
                             message?: string | undefined;
                             type: "askAnotherQuestion";
@@ -827,9 +820,9 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                             message?: string | undefined;
                             type: "showTour";
                             steps: {
-                                title: string;
                                 message: string;
                                 elementRefName: string;
+                                title: string;
                                 confirmButtonLabel: string;
                             }[];
                         } | {
@@ -842,14 +835,15 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                             profileKey: string;
                             value: {};
                         })[] | undefined;
+                        color?: string | undefined;
                         textColor?: string | undefined;
+                        setbackThreshold?: number | undefined;
                         greaterThan?: number | undefined;
                         lessThanOrEqualTo?: number | undefined;
                         text: string;
                         type: "numeric";
                     } | {
                         label?: string | undefined;
-                        color?: string | undefined;
                         followUps?: ({
                             message?: string | undefined;
                             type: "askAnotherQuestion";
@@ -858,9 +852,9 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                             message?: string | undefined;
                             type: "showTour";
                             steps: {
-                                title: string;
                                 message: string;
                                 elementRefName: string;
+                                title: string;
                                 confirmButtonLabel: string;
                             }[];
                         } | {
@@ -873,6 +867,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                             profileKey: string;
                             value: {};
                         })[] | undefined;
+                        color?: string | undefined;
                         textColor?: string | undefined;
                         text: string;
                         type: "string";
@@ -882,8 +877,8 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     templateFor?: "onboarding" | undefined;
                     writeAnswerToProfileMemoryKey?: string | undefined;
-                    prompt: string;
                     type: import("..").QuestionKeyType;
+                    prompt: string;
                 };
             };
         } | {
@@ -923,19 +918,11 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
-            agent?: import("../..").AgentName | undefined;
             gptPayload?: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;
             }[] | undefined;
             openAiChoiceResponse?: {} | undefined;
-            type: "showTour";
-            steps: {
-                title: string;
-                message: string;
-                elementRefName: string;
-                confirmButtonLabel: string;
-            }[];
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -944,6 +931,13 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             };
+            type: "showTour";
+            steps: {
+                message: string;
+                elementRefName: string;
+                title: string;
+                confirmButtonLabel: string;
+            }[];
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -981,13 +975,21 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
-            agent?: import("../..").AgentName | undefined;
             gptPayload?: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;
             }[] | undefined;
             openAiChoiceResponse?: {} | undefined;
             suggestedStrategyIds?: string[] | undefined;
+            date: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            };
+            type: "strategies";
             strategiesById: {
                 [x: string]: {
                     createdAt?: {
@@ -1008,12 +1010,12 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                     } | null | undefined;
                     profileId?: string | null | undefined;
                     setbackThreshold?: number | null | undefined;
+                    prompt?: string | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
-                    prompt?: string | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
                     description?: string | null | undefined;
@@ -1032,8 +1034,8 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                         waveform?: string | null | undefined;
                         remoteFilePath: string;
                     };
-                    ordinal: number;
                     type: "audio";
+                    ordinal: number;
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -1052,6 +1054,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     profileId?: string | null | undefined;
+                    repeat?: yup.Maybe<number | undefined>;
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
@@ -1071,10 +1074,9 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    repeat?: yup.Maybe<number | undefined>;
-                    ordinal: number;
-                    prompt: string;
                     type: "breathingExercise";
+                    prompt: string;
+                    ordinal: number;
                     inFor: number;
                     holdFor: number;
                     outFor: number;
@@ -1115,9 +1117,9 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    ordinal: number;
-                    prompt: string;
                     type: "notifyASupportPerson";
+                    prompt: string;
+                    ordinal: number;
                     contactIds: string[];
                 } | {
                     createdAt?: {
@@ -1156,10 +1158,10 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    ordinal: number;
-                    prompt: string;
                     type: "steps";
                     steps: number;
+                    prompt: string;
+                    ordinal: number;
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -1197,9 +1199,9 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    ordinal: number;
-                    prompt: string;
                     type: "task";
+                    prompt: string;
+                    ordinal: number;
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -1237,14 +1239,14 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                     likesCount?: number | null | undefined;
                     timerSeconds?: yup.Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    ordinal: number;
-                    prompt: string;
                     type: "video";
+                    prompt: string;
+                    ordinal: number;
                     video: {
                         storagePath?: string | null | undefined;
                         url?: string | null | undefined;
-                        description: string;
                         title: string;
+                        description: string;
                         thumbnailUrl: string;
                         duration: number;
                     };
@@ -1271,8 +1273,6 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
-                    slug?: string | undefined;
-                    creatorProfileId?: string | undefined;
                     tacticsById?: {
                         [x: string]: {
                             createdAt?: {
@@ -1293,12 +1293,12 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                             } | null | undefined;
                             profileId?: string | null | undefined;
                             setbackThreshold?: number | null | undefined;
+                            prompt?: string | undefined;
                             recommendedForIssueIds?: string[] | undefined;
                             recommendedForIssueOrdinals?: {
                                 [x: string]: number;
                             } | null | undefined;
                             isInGameplan?: boolean | undefined;
-                            prompt?: string | undefined;
                             pastTenseTitle?: string | undefined;
                             commentCount?: number | undefined;
                             description?: string | null | undefined;
@@ -1317,8 +1317,8 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                                 waveform?: string | null | undefined;
                                 remoteFilePath: string;
                             };
-                            ordinal: number;
                             type: "audio";
+                            ordinal: number;
                         } | {
                             createdAt?: {
                                 isEqual?: any;
@@ -1337,6 +1337,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                                 toDate: Function;
                             } | null | undefined;
                             profileId?: string | null | undefined;
+                            repeat?: yup.Maybe<number | undefined>;
                             setbackThreshold?: number | null | undefined;
                             recommendedForIssueIds?: string[] | undefined;
                             recommendedForIssueOrdinals?: {
@@ -1356,10 +1357,9 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                             likesCount?: number | null | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
-                            repeat?: yup.Maybe<number | undefined>;
-                            ordinal: number;
-                            prompt: string;
                             type: "breathingExercise";
+                            prompt: string;
+                            ordinal: number;
                             inFor: number;
                             holdFor: number;
                             outFor: number;
@@ -1400,9 +1400,9 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                             likesCount?: number | null | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
-                            ordinal: number;
-                            prompt: string;
                             type: "notifyASupportPerson";
+                            prompt: string;
+                            ordinal: number;
                             contactIds: string[];
                         } | {
                             createdAt?: {
@@ -1441,10 +1441,10 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                             likesCount?: number | null | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
-                            ordinal: number;
-                            prompt: string;
                             type: "steps";
                             steps: number;
+                            prompt: string;
+                            ordinal: number;
                         } | {
                             createdAt?: {
                                 isEqual?: any;
@@ -1482,9 +1482,9 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                             likesCount?: number | null | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
-                            ordinal: number;
-                            prompt: string;
                             type: "task";
+                            prompt: string;
+                            ordinal: number;
                         } | {
                             createdAt?: {
                                 isEqual?: any;
@@ -1522,19 +1522,21 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                             likesCount?: number | null | undefined;
                             timerSeconds?: yup.Maybe<number | undefined>;
                             isSuggested?: boolean | undefined;
-                            ordinal: number;
-                            prompt: string;
                             type: "video";
+                            prompt: string;
+                            ordinal: number;
                             video: {
                                 storagePath?: string | null | undefined;
                                 url?: string | null | undefined;
-                                description: string;
                                 title: string;
+                                description: string;
                                 thumbnailUrl: string;
                                 duration: number;
                             };
                         };
                     } | null | undefined;
+                    slug?: string | undefined;
+                    creatorProfileId?: string | undefined;
                     next3Tactics?: ({
                         createdAt?: {
                             isEqual?: any;
@@ -1554,12 +1556,12 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                         } | null | undefined;
                         profileId?: string | null | undefined;
                         setbackThreshold?: number | null | undefined;
+                        prompt?: string | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
                         isInGameplan?: boolean | undefined;
-                        prompt?: string | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
                         description?: string | null | undefined;
@@ -1578,8 +1580,8 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                             waveform?: string | null | undefined;
                             remoteFilePath: string;
                         };
-                        ordinal: number;
                         type: "audio";
+                        ordinal: number;
                     } | {
                         createdAt?: {
                             isEqual?: any;
@@ -1598,6 +1600,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                             toDate: Function;
                         } | null | undefined;
                         profileId?: string | null | undefined;
+                        repeat?: yup.Maybe<number | undefined>;
                         setbackThreshold?: number | null | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
@@ -1617,10 +1620,9 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                         likesCount?: number | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isSuggested?: boolean | undefined;
-                        repeat?: yup.Maybe<number | undefined>;
-                        ordinal: number;
-                        prompt: string;
                         type: "breathingExercise";
+                        prompt: string;
+                        ordinal: number;
                         inFor: number;
                         holdFor: number;
                         outFor: number;
@@ -1661,9 +1663,9 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                         likesCount?: number | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isSuggested?: boolean | undefined;
-                        ordinal: number;
-                        prompt: string;
                         type: "notifyASupportPerson";
+                        prompt: string;
+                        ordinal: number;
                         contactIds: string[];
                     } | {
                         createdAt?: {
@@ -1702,10 +1704,10 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                         likesCount?: number | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isSuggested?: boolean | undefined;
-                        ordinal: number;
-                        prompt: string;
                         type: "steps";
                         steps: number;
+                        prompt: string;
+                        ordinal: number;
                     } | {
                         createdAt?: {
                             isEqual?: any;
@@ -1743,9 +1745,9 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                         likesCount?: number | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isSuggested?: boolean | undefined;
-                        ordinal: number;
-                        prompt: string;
                         type: "task";
+                        prompt: string;
+                        ordinal: number;
                     } | {
                         createdAt?: {
                             isEqual?: any;
@@ -1783,34 +1785,25 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                         likesCount?: number | null | undefined;
                         timerSeconds?: yup.Maybe<number | undefined>;
                         isSuggested?: boolean | undefined;
-                        ordinal: number;
-                        prompt: string;
                         type: "video";
+                        prompt: string;
+                        ordinal: number;
                         video: {
                             storagePath?: string | null | undefined;
                             url?: string | null | undefined;
-                            description: string;
                             title: string;
+                            description: string;
                             thumbnailUrl: string;
                             duration: number;
                         };
                     })[] | undefined;
                     nextTacticId?: string | undefined;
-                    ordinal: number;
-                    prompt: string;
                     type: "folder";
+                    prompt: string;
+                    ordinal: number;
                     invitationCode: string;
                     invitationUrl: string;
                 };
-            };
-            type: "strategies";
-            date: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
             };
             completedTacticIds: string[];
             followedUpTacticIds: string[];
@@ -1851,7 +1844,6 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
-            agent?: import("../..").AgentName | undefined;
             gptPayload?: {
                 role: NonNullable<"system" | "user" | "assistant" | undefined>;
                 content: string;
@@ -1862,7 +1854,6 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             }[] | undefined>;
-            type: "whatsappMessage";
             date: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1871,6 +1862,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             };
+            type: "whatsappMessage";
             strategyPath: string;
         };
     };

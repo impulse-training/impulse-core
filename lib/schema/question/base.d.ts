@@ -10,13 +10,11 @@ export declare const QUESTION_CATEGORIES: {
 };
 export type QuestionCategory = keyof typeof QUESTION_CATEGORIES;
 export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSchema<{
-    categories: ("dailyReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
+    categories: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
     prompt: string;
     type: QuestionKeyType;
     options: ({
         label?: string | undefined;
-        setbackThreshold?: number | undefined;
-        color?: string | undefined;
         followUps?: ({
             message?: string | undefined;
             type: "askAnotherQuestion";
@@ -25,9 +23,9 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
             message?: string | undefined;
             type: "showTour";
             steps: {
-                title: string;
                 message: string;
                 elementRefName: string;
+                title: string;
                 confirmButtonLabel: string;
             }[];
         } | {
@@ -40,14 +38,15 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
             profileKey: string;
             value: {};
         })[] | undefined;
+        color?: string | undefined;
         textColor?: string | undefined;
+        setbackThreshold?: number | undefined;
         greaterThan?: number | undefined;
         lessThanOrEqualTo?: number | undefined;
         text: string;
         type: "numeric";
     } | {
         label?: string | undefined;
-        color?: string | undefined;
         followUps?: ({
             message?: string | undefined;
             type: "askAnotherQuestion";
@@ -56,9 +55,9 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
             message?: string | undefined;
             type: "showTour";
             steps: {
-                title: string;
                 message: string;
                 elementRefName: string;
+                title: string;
                 confirmButtonLabel: string;
             }[];
         } | {
@@ -71,6 +70,7 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
             profileKey: string;
             value: {};
         })[] | undefined;
+        color?: string | undefined;
         textColor?: string | undefined;
         text: string;
         type: "string";
@@ -88,9 +88,9 @@ export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSch
         message?: string | undefined;
         type: "showTour";
         steps: {
-            title: string;
             message: string;
             elementRefName: string;
+            title: string;
             confirmButtonLabel: string;
         }[];
     } | {

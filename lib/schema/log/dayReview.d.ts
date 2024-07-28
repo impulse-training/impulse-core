@@ -46,7 +46,6 @@ export declare const dayReviewLogSchema: yup.ObjectSchema<{
             toDate: Function;
         };
     }[] | undefined;
-    agent: import("../..").AgentName | undefined;
     gptPayload: {
         role: NonNullable<"system" | "user" | "assistant" | undefined>;
         content: string;
@@ -76,7 +75,6 @@ export declare const dayReviewLogSchema: yup.ObjectSchema<{
     };
     senderProfileId: undefined;
     views: "";
-    agent: undefined;
     gptPayload: "";
     dayDoc: undefined;
     confirmedAt: undefined;

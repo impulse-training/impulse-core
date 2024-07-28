@@ -9,9 +9,9 @@ export declare function optionValueBaseSchema<K extends string>(type: K): yup.Ob
         message?: string | undefined;
         type: "showTour";
         steps: {
-            title: string;
             message: string;
             elementRefName: string;
+            title: string;
             confirmButtonLabel: string;
         }[];
     } | {

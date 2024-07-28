@@ -23,8 +23,6 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         [x: string]: number;
     } | null | undefined;
     isInGameplan?: boolean | undefined;
-    slug?: string | undefined;
-    creatorProfileId?: string | undefined;
     tacticsById?: {
         [x: string]: {
             createdAt?: {
@@ -45,12 +43,12 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
+            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
-            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -69,8 +67,8 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
                 waveform?: string | null | undefined;
                 remoteFilePath: string;
             };
-            ordinal: number;
             type: "audio";
+            ordinal: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -89,6 +87,7 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            repeat?: import("yup").Maybe<number | undefined>;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
@@ -108,10 +107,9 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            repeat?: import("yup").Maybe<number | undefined>;
-            ordinal: number;
-            prompt: string;
             type: "breathingExercise";
+            prompt: string;
+            ordinal: number;
             inFor: number;
             holdFor: number;
             outFor: number;
@@ -152,9 +150,9 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            ordinal: number;
-            prompt: string;
             type: "notifyASupportPerson";
+            prompt: string;
+            ordinal: number;
             contactIds: string[];
         } | {
             createdAt?: {
@@ -193,10 +191,10 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            ordinal: number;
-            prompt: string;
             type: "steps";
             steps: number;
+            prompt: string;
+            ordinal: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -234,9 +232,9 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            ordinal: number;
-            prompt: string;
             type: "task";
+            prompt: string;
+            ordinal: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -274,19 +272,21 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            ordinal: number;
-            prompt: string;
             type: "video";
+            prompt: string;
+            ordinal: number;
             video: {
                 storagePath?: string | null | undefined;
                 url?: string | null | undefined;
-                description: string;
                 title: string;
+                description: string;
                 thumbnailUrl: string;
                 duration: number;
             };
         };
     } | null | undefined;
+    slug?: string | undefined;
+    creatorProfileId?: string | undefined;
     next3Tactics?: ({
         createdAt?: {
             isEqual?: any;
@@ -306,12 +306,12 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         } | null | undefined;
         profileId?: string | null | undefined;
         setbackThreshold?: number | null | undefined;
+        prompt?: string | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
         isInGameplan?: boolean | undefined;
-        prompt?: string | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
         description?: string | null | undefined;
@@ -330,8 +330,8 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             waveform?: string | null | undefined;
             remoteFilePath: string;
         };
-        ordinal: number;
         type: "audio";
+        ordinal: number;
     } | {
         createdAt?: {
             isEqual?: any;
@@ -350,6 +350,7 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
+        repeat?: import("yup").Maybe<number | undefined>;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
@@ -369,10 +370,9 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        repeat?: import("yup").Maybe<number | undefined>;
-        ordinal: number;
-        prompt: string;
         type: "breathingExercise";
+        prompt: string;
+        ordinal: number;
         inFor: number;
         holdFor: number;
         outFor: number;
@@ -413,9 +413,9 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        ordinal: number;
-        prompt: string;
         type: "notifyASupportPerson";
+        prompt: string;
+        ordinal: number;
         contactIds: string[];
     } | {
         createdAt?: {
@@ -454,10 +454,10 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        ordinal: number;
-        prompt: string;
         type: "steps";
         steps: number;
+        prompt: string;
+        ordinal: number;
     } | {
         createdAt?: {
             isEqual?: any;
@@ -495,9 +495,9 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        ordinal: number;
-        prompt: string;
         type: "task";
+        prompt: string;
+        ordinal: number;
     } | {
         createdAt?: {
             isEqual?: any;
@@ -535,22 +535,22 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        ordinal: number;
-        prompt: string;
         type: "video";
+        prompt: string;
+        ordinal: number;
         video: {
             storagePath?: string | null | undefined;
             url?: string | null | undefined;
-            description: string;
             title: string;
+            description: string;
             thumbnailUrl: string;
             duration: number;
         };
     })[] | undefined;
     nextTacticId?: string | undefined;
-    ordinal: number;
-    prompt: string;
     type: "folder";
+    prompt: string;
+    ordinal: number;
     invitationCode: string;
     invitationUrl: string;
-}, "ordinal" | "prompt" | "type" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "slug" | "creatorProfileId" | "tacticsById" | "next3Tactics" | "nextTacticId")>;
+}, "type" | "prompt" | "ordinal" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics" | "nextTacticId")>;

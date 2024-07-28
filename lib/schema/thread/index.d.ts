@@ -1,9 +1,10 @@
 import * as yup from 'yup';
-import { RegularThreadValue } from './regular';
+import { DefaultThreadValue } from './default';
+import { ImpulseThreadValue } from './impulse';
 import { WhatsappThreadValue } from './whatsapp';
+export * from './default';
 export * from './impulse';
-export * from './regular';
 export * from './whatsapp';
-export type ThreadValue = WhatsappThreadValue | RegularThreadValue;
+export type ThreadValue = DefaultThreadValue | WhatsappThreadValue | ImpulseThreadValue;
 export declare const threadSchemas: Record<ThreadValue['type'], yup.ObjectSchema<ThreadValue>>;
 export declare const threadSchema: yup.Lazy<ThreadValue, yup.AnyObject, any>;

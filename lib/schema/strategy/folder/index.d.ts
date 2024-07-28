@@ -49,12 +49,12 @@ export declare const folderSchema: yup.ObjectSchema<{
             } | null | undefined;
             profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
+            prompt?: string | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
-            prompt?: string | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
             description?: string | null | undefined;
@@ -73,8 +73,8 @@ export declare const folderSchema: yup.ObjectSchema<{
                 waveform?: string | null | undefined;
                 remoteFilePath: string;
             };
-            ordinal: number;
             type: "audio";
+            ordinal: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -93,6 +93,7 @@ export declare const folderSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             profileId?: string | null | undefined;
+            repeat?: yup.Maybe<number | undefined>;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
@@ -112,10 +113,9 @@ export declare const folderSchema: yup.ObjectSchema<{
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            repeat?: yup.Maybe<number | undefined>;
-            ordinal: number;
-            prompt: string;
             type: "breathingExercise";
+            prompt: string;
+            ordinal: number;
             inFor: number;
             holdFor: number;
             outFor: number;
@@ -156,9 +156,9 @@ export declare const folderSchema: yup.ObjectSchema<{
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            ordinal: number;
-            prompt: string;
             type: "notifyASupportPerson";
+            prompt: string;
+            ordinal: number;
             contactIds: string[];
         } | {
             createdAt?: {
@@ -197,10 +197,10 @@ export declare const folderSchema: yup.ObjectSchema<{
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            ordinal: number;
-            prompt: string;
             type: "steps";
             steps: number;
+            prompt: string;
+            ordinal: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -238,9 +238,9 @@ export declare const folderSchema: yup.ObjectSchema<{
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            ordinal: number;
-            prompt: string;
             type: "task";
+            prompt: string;
+            ordinal: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -278,14 +278,14 @@ export declare const folderSchema: yup.ObjectSchema<{
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            ordinal: number;
-            prompt: string;
             type: "video";
+            prompt: string;
+            ordinal: number;
             video: {
                 storagePath?: string | null | undefined;
                 url?: string | null | undefined;
-                description: string;
                 title: string;
+                description: string;
                 thumbnailUrl: string;
                 duration: number;
             };
@@ -310,12 +310,12 @@ export declare const folderSchema: yup.ObjectSchema<{
         } | null | undefined;
         profileId?: string | null | undefined;
         setbackThreshold?: number | null | undefined;
+        prompt?: string | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
         isInGameplan?: boolean | undefined;
-        prompt?: string | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
         description?: string | null | undefined;
@@ -334,8 +334,8 @@ export declare const folderSchema: yup.ObjectSchema<{
             waveform?: string | null | undefined;
             remoteFilePath: string;
         };
-        ordinal: number;
         type: "audio";
+        ordinal: number;
     } | {
         createdAt?: {
             isEqual?: any;
@@ -354,6 +354,7 @@ export declare const folderSchema: yup.ObjectSchema<{
             toDate: Function;
         } | null | undefined;
         profileId?: string | null | undefined;
+        repeat?: yup.Maybe<number | undefined>;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
@@ -373,10 +374,9 @@ export declare const folderSchema: yup.ObjectSchema<{
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        repeat?: yup.Maybe<number | undefined>;
-        ordinal: number;
-        prompt: string;
         type: "breathingExercise";
+        prompt: string;
+        ordinal: number;
         inFor: number;
         holdFor: number;
         outFor: number;
@@ -417,9 +417,9 @@ export declare const folderSchema: yup.ObjectSchema<{
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        ordinal: number;
-        prompt: string;
         type: "notifyASupportPerson";
+        prompt: string;
+        ordinal: number;
         contactIds: string[];
     } | {
         createdAt?: {
@@ -458,10 +458,10 @@ export declare const folderSchema: yup.ObjectSchema<{
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        ordinal: number;
-        prompt: string;
         type: "steps";
         steps: number;
+        prompt: string;
+        ordinal: number;
     } | {
         createdAt?: {
             isEqual?: any;
@@ -499,9 +499,9 @@ export declare const folderSchema: yup.ObjectSchema<{
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        ordinal: number;
-        prompt: string;
         type: "task";
+        prompt: string;
+        ordinal: number;
     } | {
         createdAt?: {
             isEqual?: any;
@@ -539,14 +539,14 @@ export declare const folderSchema: yup.ObjectSchema<{
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        ordinal: number;
-        prompt: string;
         type: "video";
+        prompt: string;
+        ordinal: number;
         video: {
             storagePath?: string | null | undefined;
             url?: string | null | undefined;
-            description: string;
             title: string;
+            description: string;
             thumbnailUrl: string;
             duration: number;
         };
