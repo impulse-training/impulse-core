@@ -2,10 +2,9 @@ import { AppStateStatus } from 'react-native';
 import * as yup from 'yup';
 import { questionDataSchema } from './log';
 import { notificationOptionSchema } from './notification';
-import { strategySchema } from './strategy';
 import { optionalStringArray, requiredStringArray } from './utils/array';
 import { documentReferenceSchema } from './utils/firestore';
-import { objectOf, optionalObjectOf } from './utils/objectOf';
+import { optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema } from './utils/timestamp';
 
 export const profileSchema = yup.object({
@@ -46,7 +45,6 @@ export const profileSchema = yup.object({
   parentIssueIds: optionalStringArray,
   setbackThreshold: yup.number(),
   gameplanStrategies: yup.array().of(documentReferenceSchema.required()),
-  strategiesById: objectOf(strategySchema),
   androidPermissions: optionalObjectOf(yup.boolean().required()),
   // This is a record of question data, that may be accessed by the LLM
   longTermMemory: optionalObjectOf(questionDataSchema),
