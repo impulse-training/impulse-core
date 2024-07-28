@@ -62,6 +62,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     androidPermissions: {
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
+    impulseContext: string | null | undefined;
     longTermMemory: {
         [x: string]: {
             label?: string | undefined;
@@ -109,6 +110,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     setbackThreshold: undefined;
     gameplanStrategies: "";
     androidPermissions: undefined;
+    impulseContext: undefined;
     longTermMemory: undefined;
     region: undefined;
     timezone: undefined;

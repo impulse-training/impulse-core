@@ -46,6 +46,7 @@ export const profileSchema = yup.object({
   setbackThreshold: yup.number(),
   gameplanStrategies: yup.array().of(documentReferenceSchema.required()),
   androidPermissions: optionalObjectOf(yup.boolean().required()),
+  impulseContext: yup.string().nullable(),
   // This is a record of question data, that may be accessed by the LLM
   longTermMemory: optionalObjectOf(questionDataSchema),
   region: yup.string().nullable().optional(),
