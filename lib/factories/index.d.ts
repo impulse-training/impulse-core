@@ -2458,6 +2458,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: Function;
         } | null | undefined;
         parentId?: string | null | undefined;
+        shouldGenerateStrategies?: boolean | undefined;
         profileCount?: number | null | undefined;
         isFeatured?: boolean | null | undefined;
         ordinal: number;
@@ -2466,7 +2467,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         synonyms: string[];
         parentIds: string[];
         parentNames: string[];
-    }, "ordinal" | "name" | "debriefQuestionPrompt" | "synonyms" | "parentIds" | "parentNames" | ("path" | "createdAt" | "updatedAt" | "parentId" | "profileCount" | "isFeatured")>;
+    }, "ordinal" | "name" | "debriefQuestionPrompt" | "synonyms" | "parentIds" | "parentNames" | ("path" | "createdAt" | "updatedAt" | "parentId" | "shouldGenerateStrategies" | "profileCount" | "isFeatured")>;
     locationFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;

@@ -21,6 +21,7 @@ export declare const issueSchema: yup.ObjectSchema<{
     ordinal: number;
     debriefQuestionPrompt: string;
     synonyms: string[];
+    shouldGenerateStrategies: boolean | undefined;
     path: string | null | undefined;
     parentIds: string[];
     parentNames: string[];
@@ -34,6 +35,7 @@ export declare const issueSchema: yup.ObjectSchema<{
     ordinal: undefined;
     debriefQuestionPrompt: undefined;
     synonyms: "";
+    shouldGenerateStrategies: undefined;
     path: undefined;
     parentIds: "";
     parentNames: "";

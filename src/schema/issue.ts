@@ -16,6 +16,7 @@ export const issueSchema = yup.object().shape({
     .test('includes-name', 'Synonyms must include name', function (synonyms) {
       return synonyms.includes(this.parent.name);
     }),
+  shouldGenerateStrategies: yup.boolean(),
   path: yup.string().nullable(),
   parentIds: requiredStringArray,
   parentNames: requiredStringArray,

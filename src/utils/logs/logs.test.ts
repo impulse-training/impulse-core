@@ -32,6 +32,9 @@ describe(logGptPayload, () => {
           question2: {
             prompt: 'How strong is the urge right now?',
           },
+          question3: {
+            prompt: 'How many cigarettes did you smoke?',
+          },
         },
         questionData: {
           question1: {
@@ -39,6 +42,10 @@ describe(logGptPayload, () => {
           },
           question2: {
             stringValue: '8/10',
+          },
+          question3: {
+            stringValue: '3',
+            label: 'Setback',
           },
         },
       });
@@ -51,6 +58,14 @@ describe(logGptPayload, () => {
         {
           role: 'user',
           content: 'For more than 6 years',
+        },
+        {
+          role: 'assistant',
+          content: 'How strong is the urge right now?',
+        },
+        {
+          role: 'user',
+          content: '8/10',
         },
         {
           role: 'assistant',
