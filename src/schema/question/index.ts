@@ -9,7 +9,6 @@ import {
   QuestionScaleOf1To10Value,
   questionScaleOf1To10Schema,
 } from './scaleOf1To10';
-import { QuestionTextValue, questionTextSchema } from './text';
 import { QuestionTimeValue, questionTimeSchema } from './time';
 
 export * from './base';
@@ -24,7 +23,6 @@ export const questionSchemas: Record<
   QuestionValue['type'],
   yup.ObjectSchema<QuestionValue>
 > = {
-  text: questionTextSchema,
   time: questionTimeSchema,
   counter: questionCounterSchema,
   issue: questionIssueSchema,
@@ -53,7 +51,6 @@ type ValidatedQuestion = {
 }[QuestionValue['type']];
 
 export type QuestionValue =
-  | QuestionTextValue
   | QuestionScaleOf1To10Value
   | QuestionTimeValue
   | QuestionCounterValue
