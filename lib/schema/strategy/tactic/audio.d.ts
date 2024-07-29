@@ -8,6 +8,7 @@ export declare const audioTacticSchema: yup.ObjectSchema<{
     isInGameplan: boolean | undefined;
     ordinal: number;
     prompt: string | undefined;
+    description: string | null | undefined;
     type: "audio";
     createdAt: {
         isEqual?: any;
@@ -27,7 +28,6 @@ export declare const audioTacticSchema: yup.ObjectSchema<{
     } | null | undefined;
     pastTenseTitle: string | undefined;
     commentCount: number | undefined;
-    description: string | null | undefined;
     debriefAfterMinutes: number | null | undefined;
     image: {
         localFilePath?: yup.Maybe<string | undefined>;
@@ -51,12 +51,12 @@ export declare const audioTacticSchema: yup.ObjectSchema<{
     isInGameplan: undefined;
     ordinal: undefined;
     prompt: undefined;
+    description: undefined;
     type: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     pastTenseTitle: undefined;
     commentCount: undefined;
-    description: undefined;
     debriefAfterMinutes: undefined;
     image: {
         localFilePath: undefined;

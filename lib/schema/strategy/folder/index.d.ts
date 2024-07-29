@@ -8,6 +8,7 @@ export declare const folderSchema: yup.ObjectSchema<{
     isInGameplan: boolean | undefined;
     ordinal: number;
     prompt: string;
+    description: string | null | undefined;
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -55,9 +56,9 @@ export declare const folderSchema: yup.ObjectSchema<{
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
-            description?: string | null | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -100,9 +101,9 @@ export declare const folderSchema: yup.ObjectSchema<{
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
-            description?: string | null | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -143,9 +144,9 @@ export declare const folderSchema: yup.ObjectSchema<{
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
-            description?: string | null | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -184,9 +185,9 @@ export declare const folderSchema: yup.ObjectSchema<{
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
-            description?: string | null | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -225,9 +226,9 @@ export declare const folderSchema: yup.ObjectSchema<{
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
-            description?: string | null | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -265,9 +266,9 @@ export declare const folderSchema: yup.ObjectSchema<{
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
-            description?: string | null | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
@@ -316,9 +317,9 @@ export declare const folderSchema: yup.ObjectSchema<{
             [x: string]: number;
         } | null | undefined;
         isInGameplan?: boolean | undefined;
+        description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
-        description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
@@ -361,9 +362,9 @@ export declare const folderSchema: yup.ObjectSchema<{
             [x: string]: number;
         } | null | undefined;
         isInGameplan?: boolean | undefined;
+        description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
-        description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
@@ -404,9 +405,9 @@ export declare const folderSchema: yup.ObjectSchema<{
             [x: string]: number;
         } | null | undefined;
         isInGameplan?: boolean | undefined;
+        description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
-        description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
@@ -445,9 +446,9 @@ export declare const folderSchema: yup.ObjectSchema<{
             [x: string]: number;
         } | null | undefined;
         isInGameplan?: boolean | undefined;
+        description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
-        description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
@@ -486,9 +487,9 @@ export declare const folderSchema: yup.ObjectSchema<{
             [x: string]: number;
         } | null | undefined;
         isInGameplan?: boolean | undefined;
+        description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
-        description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
@@ -526,9 +527,9 @@ export declare const folderSchema: yup.ObjectSchema<{
             [x: string]: number;
         } | null | undefined;
         isInGameplan?: boolean | undefined;
+        description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
-        description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
@@ -559,6 +560,7 @@ export declare const folderSchema: yup.ObjectSchema<{
     isInGameplan: undefined;
     ordinal: undefined;
     prompt: undefined;
+    description: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     type: undefined;

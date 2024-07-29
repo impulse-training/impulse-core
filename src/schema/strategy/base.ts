@@ -13,5 +13,6 @@ export default function strategyBase() {
     isInGameplan: yup.boolean(),
     ordinal: yup.number().required(),
     prompt: yup.string().required('is required'),
+    description: yup.string().nullable(),
   });
 }

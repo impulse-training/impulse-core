@@ -20,8 +20,6 @@ export * from './recoveryCode';
 export * from './routine';
 export * from './spotifyCredentials';
 export * from './strategy';
-export * from './strategy/folder';
-export * from './strategy/tactic';
 export * from './tacticImpression';
 export * from './thread';
 

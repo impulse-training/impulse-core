@@ -8,6 +8,7 @@ export default function strategyBase(): yup.ObjectSchema<{
     isInGameplan: boolean | undefined;
     ordinal: number;
     prompt: string;
+    description: string | null | undefined;
 }, yup.AnyObject, {
     profileId: undefined;
     recommendedForIssueIds: "";
@@ -15,4 +16,5 @@ export default function strategyBase(): yup.ObjectSchema<{
     isInGameplan: undefined;
     ordinal: undefined;
     prompt: undefined;
+    description: undefined;
 }, "">;

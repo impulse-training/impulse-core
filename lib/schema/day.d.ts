@@ -1005,9 +1005,9 @@ export declare const daySchema: yup.ObjectSchema<{
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
+                    description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
-                    description?: string | null | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: yup.Maybe<string | undefined>;
@@ -1050,9 +1050,9 @@ export declare const daySchema: yup.ObjectSchema<{
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
+                    description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
-                    description?: string | null | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: yup.Maybe<string | undefined>;
@@ -1093,9 +1093,9 @@ export declare const daySchema: yup.ObjectSchema<{
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
+                    description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
-                    description?: string | null | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: yup.Maybe<string | undefined>;
@@ -1134,9 +1134,9 @@ export declare const daySchema: yup.ObjectSchema<{
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
+                    description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
-                    description?: string | null | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: yup.Maybe<string | undefined>;
@@ -1175,9 +1175,9 @@ export declare const daySchema: yup.ObjectSchema<{
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
+                    description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
-                    description?: string | null | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: yup.Maybe<string | undefined>;
@@ -1215,9 +1215,9 @@ export declare const daySchema: yup.ObjectSchema<{
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
+                    description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
-                    description?: string | null | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: yup.Maybe<string | undefined>;
@@ -1262,6 +1262,7 @@ export declare const daySchema: yup.ObjectSchema<{
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
+                    description?: string | null | undefined;
                     tacticsById?: {
                         [x: string]: {
                             createdAt?: {
@@ -1288,9 +1289,9 @@ export declare const daySchema: yup.ObjectSchema<{
                                 [x: string]: number;
                             } | null | undefined;
                             isInGameplan?: boolean | undefined;
+                            description?: string | null | undefined;
                             pastTenseTitle?: string | undefined;
                             commentCount?: number | undefined;
-                            description?: string | null | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
                                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1333,9 +1334,9 @@ export declare const daySchema: yup.ObjectSchema<{
                                 [x: string]: number;
                             } | null | undefined;
                             isInGameplan?: boolean | undefined;
+                            description?: string | null | undefined;
                             pastTenseTitle?: string | undefined;
                             commentCount?: number | undefined;
-                            description?: string | null | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
                                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1376,9 +1377,9 @@ export declare const daySchema: yup.ObjectSchema<{
                                 [x: string]: number;
                             } | null | undefined;
                             isInGameplan?: boolean | undefined;
+                            description?: string | null | undefined;
                             pastTenseTitle?: string | undefined;
                             commentCount?: number | undefined;
-                            description?: string | null | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
                                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1417,9 +1418,9 @@ export declare const daySchema: yup.ObjectSchema<{
                                 [x: string]: number;
                             } | null | undefined;
                             isInGameplan?: boolean | undefined;
+                            description?: string | null | undefined;
                             pastTenseTitle?: string | undefined;
                             commentCount?: number | undefined;
-                            description?: string | null | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
                                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1458,9 +1459,9 @@ export declare const daySchema: yup.ObjectSchema<{
                                 [x: string]: number;
                             } | null | undefined;
                             isInGameplan?: boolean | undefined;
+                            description?: string | null | undefined;
                             pastTenseTitle?: string | undefined;
                             commentCount?: number | undefined;
-                            description?: string | null | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
                                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1498,9 +1499,9 @@ export declare const daySchema: yup.ObjectSchema<{
                                 [x: string]: number;
                             } | null | undefined;
                             isInGameplan?: boolean | undefined;
+                            description?: string | null | undefined;
                             pastTenseTitle?: string | undefined;
                             commentCount?: number | undefined;
-                            description?: string | null | undefined;
                             debriefAfterMinutes?: number | null | undefined;
                             image?: {
                                 localFilePath?: yup.Maybe<string | undefined>;
@@ -1551,9 +1552,9 @@ export declare const daySchema: yup.ObjectSchema<{
                             [x: string]: number;
                         } | null | undefined;
                         isInGameplan?: boolean | undefined;
+                        description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
-                        description?: string | null | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
                             localFilePath?: yup.Maybe<string | undefined>;
@@ -1596,9 +1597,9 @@ export declare const daySchema: yup.ObjectSchema<{
                             [x: string]: number;
                         } | null | undefined;
                         isInGameplan?: boolean | undefined;
+                        description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
-                        description?: string | null | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
                             localFilePath?: yup.Maybe<string | undefined>;
@@ -1639,9 +1640,9 @@ export declare const daySchema: yup.ObjectSchema<{
                             [x: string]: number;
                         } | null | undefined;
                         isInGameplan?: boolean | undefined;
+                        description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
-                        description?: string | null | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
                             localFilePath?: yup.Maybe<string | undefined>;
@@ -1680,9 +1681,9 @@ export declare const daySchema: yup.ObjectSchema<{
                             [x: string]: number;
                         } | null | undefined;
                         isInGameplan?: boolean | undefined;
+                        description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
-                        description?: string | null | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
                             localFilePath?: yup.Maybe<string | undefined>;
@@ -1721,9 +1722,9 @@ export declare const daySchema: yup.ObjectSchema<{
                             [x: string]: number;
                         } | null | undefined;
                         isInGameplan?: boolean | undefined;
+                        description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
-                        description?: string | null | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
                             localFilePath?: yup.Maybe<string | undefined>;
@@ -1761,9 +1762,9 @@ export declare const daySchema: yup.ObjectSchema<{
                             [x: string]: number;
                         } | null | undefined;
                         isInGameplan?: boolean | undefined;
+                        description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
-                        description?: string | null | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
                             localFilePath?: yup.Maybe<string | undefined>;

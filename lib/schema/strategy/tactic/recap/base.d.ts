@@ -8,6 +8,7 @@ export declare function recapTacticValueBaseSchema(type: RecapKeyType): import("
     isInGameplan: boolean | undefined;
     ordinal: number;
     prompt: string;
+    description: string | null | undefined;
     type: RecapKeyType;
     createdAt: {
         isEqual?: any;
@@ -27,7 +28,6 @@ export declare function recapTacticValueBaseSchema(type: RecapKeyType): import("
     } | null | undefined;
     pastTenseTitle: string | undefined;
     commentCount: number | undefined;
-    description: string | null | undefined;
     debriefAfterMinutes: number | null | undefined;
     image: {
         localFilePath?: import("yup").Maybe<string | undefined>;
@@ -46,12 +46,12 @@ export declare function recapTacticValueBaseSchema(type: RecapKeyType): import("
     isInGameplan: undefined;
     ordinal: undefined;
     prompt: undefined;
+    description: undefined;
     type: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     pastTenseTitle: undefined;
     commentCount: undefined;
-    description: undefined;
     debriefAfterMinutes: undefined;
     image: {
         localFilePath: undefined;

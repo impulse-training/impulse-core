@@ -835,9 +835,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
-                description?: string | null | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
@@ -880,9 +880,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
-                description?: string | null | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
@@ -923,9 +923,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
-                description?: string | null | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
@@ -964,9 +964,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
-                description?: string | null | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1005,9 +1005,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
-                description?: string | null | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1045,9 +1045,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
-                description?: string | null | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1092,6 +1092,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
+                description?: string | null | undefined;
                 tacticsById?: {
                     [x: string]: {
                         createdAt?: {
@@ -1118,9 +1119,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                             [x: string]: number;
                         } | null | undefined;
                         isInGameplan?: boolean | undefined;
+                        description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
-                        description?: string | null | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
                             localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1163,9 +1164,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                             [x: string]: number;
                         } | null | undefined;
                         isInGameplan?: boolean | undefined;
+                        description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
-                        description?: string | null | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
                             localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1206,9 +1207,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                             [x: string]: number;
                         } | null | undefined;
                         isInGameplan?: boolean | undefined;
+                        description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
-                        description?: string | null | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
                             localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1247,9 +1248,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                             [x: string]: number;
                         } | null | undefined;
                         isInGameplan?: boolean | undefined;
+                        description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
-                        description?: string | null | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
                             localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1288,9 +1289,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                             [x: string]: number;
                         } | null | undefined;
                         isInGameplan?: boolean | undefined;
+                        description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
-                        description?: string | null | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
                             localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1328,9 +1329,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                             [x: string]: number;
                         } | null | undefined;
                         isInGameplan?: boolean | undefined;
+                        description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
-                        description?: string | null | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
                             localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1381,9 +1382,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
+                    description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
-                    description?: string | null | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1426,9 +1427,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
+                    description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
-                    description?: string | null | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1469,9 +1470,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
+                    description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
-                    description?: string | null | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1510,9 +1511,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
+                    description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
-                    description?: string | null | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1551,9 +1552,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
+                    description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
-                    description?: string | null | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1591,9 +1592,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
+                    description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
-                    description?: string | null | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;

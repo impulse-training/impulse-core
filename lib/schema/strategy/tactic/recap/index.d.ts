@@ -28,9 +28,9 @@ export declare const recapTacticSchema: yup.Lazy<{
         [x: string]: number;
     } | null | undefined;
     isInGameplan?: boolean | undefined;
+    description?: string | null | undefined;
     pastTenseTitle?: string | undefined;
     commentCount?: number | undefined;
-    description?: string | null | undefined;
     debriefAfterMinutes?: number | null | undefined;
     image?: {
         localFilePath?: yup.Maybe<string | undefined>;

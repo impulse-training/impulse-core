@@ -23,6 +23,7 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         [x: string]: number;
     } | null | undefined;
     isInGameplan?: boolean | undefined;
+    description?: string | null | undefined;
     tacticsById?: {
         [x: string]: {
             createdAt?: {
@@ -49,9 +50,9 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
-            description?: string | null | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
@@ -94,9 +95,9 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
-            description?: string | null | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
@@ -137,9 +138,9 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
-            description?: string | null | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
@@ -178,9 +179,9 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
-            description?: string | null | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
@@ -219,9 +220,9 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
-            description?: string | null | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
@@ -259,9 +260,9 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
-            description?: string | null | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
@@ -312,9 +313,9 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             [x: string]: number;
         } | null | undefined;
         isInGameplan?: boolean | undefined;
+        description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
-        description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: import("yup").Maybe<string | undefined>;
@@ -357,9 +358,9 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             [x: string]: number;
         } | null | undefined;
         isInGameplan?: boolean | undefined;
+        description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
-        description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: import("yup").Maybe<string | undefined>;
@@ -400,9 +401,9 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             [x: string]: number;
         } | null | undefined;
         isInGameplan?: boolean | undefined;
+        description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
-        description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: import("yup").Maybe<string | undefined>;
@@ -441,9 +442,9 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             [x: string]: number;
         } | null | undefined;
         isInGameplan?: boolean | undefined;
+        description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
-        description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: import("yup").Maybe<string | undefined>;
@@ -482,9 +483,9 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             [x: string]: number;
         } | null | undefined;
         isInGameplan?: boolean | undefined;
+        description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
-        description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: import("yup").Maybe<string | undefined>;
@@ -522,9 +523,9 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             [x: string]: number;
         } | null | undefined;
         isInGameplan?: boolean | undefined;
+        description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         commentCount?: number | undefined;
-        description?: string | null | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: import("yup").Maybe<string | undefined>;
@@ -553,4 +554,4 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
     ordinal: number;
     invitationCode: string;
     invitationUrl: string;
-}, "type" | "prompt" | "ordinal" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics" | "nextTacticId")>;
+}, "type" | "prompt" | "ordinal" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "description" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics" | "nextTacticId")>;

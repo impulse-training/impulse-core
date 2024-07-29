@@ -1,6 +1,9 @@
 import * as yup from 'yup';
-import { FolderValue, folderSchema } from './strategy/folder';
-import { TacticValue, tacticSchemas } from './strategy/tactic';
+import { FolderValue, folderSchema } from './folder';
+import { TacticValue, tacticSchemas } from './tactic';
+
+export * from './folder';
+export * from './tactic';
 
 export type StrategyValue = TacticValue | FolderValue;
 // A strategy is a tactic or a folder. We store them in the top-level strategies collection as well

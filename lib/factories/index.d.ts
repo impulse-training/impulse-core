@@ -834,9 +834,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
-                description?: string | null | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
@@ -879,9 +879,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
-                description?: string | null | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
@@ -922,9 +922,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
-                description?: string | null | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
@@ -963,9 +963,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
-                description?: string | null | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1004,9 +1004,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
-                description?: string | null | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1044,9 +1044,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
-                description?: string | null | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1091,6 +1091,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
+                description?: string | null | undefined;
                 tacticsById?: {
                     [x: string]: {
                         createdAt?: {
@@ -1117,9 +1118,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                             [x: string]: number;
                         } | null | undefined;
                         isInGameplan?: boolean | undefined;
+                        description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
-                        description?: string | null | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
                             localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1162,9 +1163,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                             [x: string]: number;
                         } | null | undefined;
                         isInGameplan?: boolean | undefined;
+                        description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
-                        description?: string | null | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
                             localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1205,9 +1206,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                             [x: string]: number;
                         } | null | undefined;
                         isInGameplan?: boolean | undefined;
+                        description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
-                        description?: string | null | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
                             localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1246,9 +1247,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                             [x: string]: number;
                         } | null | undefined;
                         isInGameplan?: boolean | undefined;
+                        description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
-                        description?: string | null | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
                             localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1287,9 +1288,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                             [x: string]: number;
                         } | null | undefined;
                         isInGameplan?: boolean | undefined;
+                        description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
-                        description?: string | null | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
                             localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1327,9 +1328,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                             [x: string]: number;
                         } | null | undefined;
                         isInGameplan?: boolean | undefined;
+                        description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
                         commentCount?: number | undefined;
-                        description?: string | null | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
                             localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1380,9 +1381,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
+                    description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
-                    description?: string | null | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1425,9 +1426,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
+                    description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
-                    description?: string | null | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1468,9 +1469,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
+                    description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
-                    description?: string | null | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1509,9 +1510,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
+                    description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
-                    description?: string | null | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1550,9 +1551,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
+                    description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
-                    description?: string | null | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1590,9 +1591,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         [x: string]: number;
                     } | null | undefined;
                     isInGameplan?: boolean | undefined;
+                    description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     commentCount?: number | undefined;
-                    description?: string | null | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1908,6 +1909,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             [x: string]: number;
         } | null | undefined;
         isInGameplan?: boolean | undefined;
+        description?: string | null | undefined;
         tacticsById?: {
             [x: string]: {
                 createdAt?: {
@@ -1934,9 +1936,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
-                description?: string | null | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1979,9 +1981,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
-                description?: string | null | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
@@ -2022,9 +2024,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
-                description?: string | null | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
@@ -2063,9 +2065,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
-                description?: string | null | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
@@ -2104,9 +2106,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
-                description?: string | null | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
@@ -2144,9 +2146,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     [x: string]: number;
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 commentCount?: number | undefined;
-                description?: string | null | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
@@ -2197,9 +2199,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
-            description?: string | null | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
@@ -2242,9 +2244,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
-            description?: string | null | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
@@ -2285,9 +2287,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
-            description?: string | null | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
@@ -2326,9 +2328,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
-            description?: string | null | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
@@ -2367,9 +2369,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
-            description?: string | null | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
@@ -2407,9 +2409,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 [x: string]: number;
             } | null | undefined;
             isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             commentCount?: number | undefined;
-            description?: string | null | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
@@ -2438,7 +2440,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         ordinal: number;
         invitationCode: string;
         invitationUrl: string;
-    }, "type" | "prompt" | "ordinal" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics" | "nextTacticId")>;
+    }, "type" | "prompt" | "ordinal" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "description" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics" | "nextTacticId")>;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
         createdAt?: {
@@ -2624,5 +2626,5 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         hour: number;
         minute: number;
     }, "profileId" | "type" | "name" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "prompt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "ordinal" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "prompt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "ordinal" | "description" | "pastTenseTitle" | "commentCount" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
 };
