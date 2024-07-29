@@ -2,12 +2,15 @@
 // wrap them in a class that has a toGptInput method. We actually used to use converters, but it was
 
 import { compact, flatMap, map } from 'lodash';
+import OpenAI from 'openai';
 import { LogValue } from '../../schema';
 
 const SEPARATOR = '|';
 
+type Message = OpenAI.Chat.Completions.ChatCompletionMessageParam;
+
 // half-hearted, and added complexity without much benefit. We should revisit this.
-export function logGptPayload(log: LogValue) {
+export function logGptPayload(log: LogValue): Message[] | null {
   switch (log.type) {
     case 'message':
       return [
@@ -17,26 +20,33 @@ export function logGptPayload(log: LogValue) {
         },
       ];
     case 'questions':
-      return flatMap(log.questionsById, (question, questionId) => [
-        {
-          role: 'assistant',
-          content: question.prompt,
-        },
-        {
-          role: 'user',
-          content: log.questionData?.[questionId].stringValue,
-        },
-      ]);
+      return compact(
+        flatMap(log.questionsById, (question, questionId) => {
+          const prompt = question.prompt;
+          const userAnswer = log.questionData?.[questionId].stringValue;
+          if (!userAnswer) return null;
+          return [
+            {
+              role: 'assistant',
+              content: prompt,
+            },
+            {
+              role: 'user',
+              content: userAnswer,
+            },
+          ];
+        })
+      );
     case 'strategies':
       const suggestedStrategies = map(
         log.strategiesById,
         strategy => strategy.prompt
       ).join(SEPARATOR);
-      const assistantMessage = {
+      const assistantMessage: Message = {
         role: 'assistant',
         content: `SUGGESTED ACTIONS: ${suggestedStrategies}`,
       };
-      const userMessage = log.completedTacticIds?.length
+      const userMessage: Message | null = log.completedTacticIds?.length
         ? {
             role: 'user',
             content: `I'VE COMPLETED: ${map(

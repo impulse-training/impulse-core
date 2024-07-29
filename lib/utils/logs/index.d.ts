@@ -1,5 +1,5 @@
+import OpenAI from 'openai';
 import { LogValue } from '../../schema';
-export declare function logGptPayload(log: LogValue): {
-    role: string;
-    content: string | undefined;
-}[] | null;
+type Message = OpenAI.Chat.Completions.ChatCompletionMessageParam;
+export declare function logGptPayload(log: LogValue): Message[] | null;
+export {};
