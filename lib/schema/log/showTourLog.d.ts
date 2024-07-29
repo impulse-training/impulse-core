@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 export declare const showTourLogSchema: yup.ObjectSchema<{
+    openAiRequestPayload: string | undefined;
     openAiChoiceResponse: {} | undefined;
     createdAt: {
         isEqual?: any;
@@ -27,6 +28,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     };
+    isGptSender: boolean | undefined;
     senderProfileId: string | null | undefined;
     views: {
         openTime: {
@@ -46,10 +48,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             toDate: Function;
         };
     }[] | undefined;
-    gptPayload: {
-        role: NonNullable<"system" | "user" | "assistant" | undefined>;
-        content: string;
-    }[] | undefined;
     steps: {
         message: string;
         elementRefName: string;
@@ -57,6 +55,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         confirmButtonLabel: string;
     }[];
 }, yup.AnyObject, {
+    openAiRequestPayload: undefined;
     openAiChoiceResponse: undefined;
     createdAt: undefined;
     updatedAt: undefined;
@@ -70,9 +69,9 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         toJSON: undefined;
         toDate: undefined;
     };
+    isGptSender: undefined;
     senderProfileId: undefined;
     views: "";
-    gptPayload: "";
     steps: "";
 }, "">;
 export type ShowTourLogValue = yup.InferType<typeof showTourLogSchema>;

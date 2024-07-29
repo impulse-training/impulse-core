@@ -26,6 +26,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             text?: string | undefined;
+            isGptSender?: boolean | undefined;
             senderProfileId?: string | null | undefined;
             views?: {
                 openTime: {
@@ -45,10 +46,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
-            gptPayload?: {
-                role: NonNullable<"system" | "user" | "assistant" | undefined>;
-                content: string;
-            }[] | undefined;
+            openAiRequestPayload?: string | undefined;
             openAiChoiceResponse?: {} | undefined;
             choice?: "moreStrategies" | "debrief" | undefined;
             date: {
@@ -78,6 +76,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             text?: string | undefined;
+            isGptSender?: boolean | undefined;
             senderProfileId?: string | null | undefined;
             views?: {
                 openTime: {
@@ -97,10 +96,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
-            gptPayload?: {
-                role: NonNullable<"system" | "user" | "assistant" | undefined>;
-                content: string;
-            }[] | undefined;
+            openAiRequestPayload?: string | undefined;
             openAiChoiceResponse?: {} | undefined;
             confirmedAt?: {
                 isEqual?: any;
@@ -138,6 +134,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             text?: string | undefined;
+            isGptSender?: boolean | undefined;
             senderProfileId?: string | null | undefined;
             views?: {
                 openTime: {
@@ -157,10 +154,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
-            gptPayload?: {
-                role: NonNullable<"system" | "user" | "assistant" | undefined>;
-                content: string;
-            }[] | undefined;
+            openAiRequestPayload?: string | undefined;
             openAiChoiceResponse?: {} | undefined;
             issueName?: string | undefined;
             debriefAfter?: {
@@ -206,6 +200,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            isGptSender?: boolean | undefined;
             senderProfileId?: string | null | undefined;
             views?: {
                 openTime: {
@@ -225,10 +220,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
-            gptPayload?: {
-                role: NonNullable<"system" | "user" | "assistant" | undefined>;
-                content: string;
-            }[] | undefined;
+            openAiRequestPayload?: string | undefined;
             openAiChoiceResponse?: {} | undefined;
             text: string;
             date: {
@@ -258,6 +250,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             text?: string | undefined;
+            isGptSender?: boolean | undefined;
             senderProfileId?: string | null | undefined;
             views?: {
                 openTime: {
@@ -277,10 +270,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
-            gptPayload?: {
-                role: NonNullable<"system" | "user" | "assistant" | undefined>;
-                content: string;
-            }[] | undefined;
+            openAiRequestPayload?: string | undefined;
             openAiChoiceResponse?: {} | undefined;
             submittedAt?: {
                 isEqual?: any;
@@ -899,6 +889,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             text?: string | undefined;
+            isGptSender?: boolean | undefined;
             senderProfileId?: string | null | undefined;
             views?: {
                 openTime: {
@@ -918,10 +909,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
-            gptPayload?: {
-                role: NonNullable<"system" | "user" | "assistant" | undefined>;
-                content: string;
-            }[] | undefined;
+            openAiRequestPayload?: string | undefined;
             openAiChoiceResponse?: {} | undefined;
             date: {
                 isEqual?: any;
@@ -956,6 +944,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             text?: string | undefined;
+            isGptSender?: boolean | undefined;
             senderProfileId?: string | null | undefined;
             views?: {
                 openTime: {
@@ -975,10 +964,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
-            gptPayload?: {
-                role: NonNullable<"system" | "user" | "assistant" | undefined>;
-                content: string;
-            }[] | undefined;
+            openAiRequestPayload?: string | undefined;
             openAiChoiceResponse?: {} | undefined;
             suggestedStrategyIds?: string[] | undefined;
             date: {
@@ -1825,6 +1811,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             text?: string | undefined;
+            isGptSender?: boolean | undefined;
             senderProfileId?: string | null | undefined;
             views?: {
                 openTime: {
@@ -1844,10 +1831,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                     toDate: Function;
                 };
             }[] | undefined;
-            gptPayload?: {
-                role: NonNullable<"system" | "user" | "assistant" | undefined>;
-                content: string;
-            }[] | undefined;
+            openAiRequestPayload?: string | undefined;
             openAiChoiceResponse?: {} | undefined;
             files?: yup.Maybe<{
                 localFilePath?: yup.Maybe<string | undefined>;

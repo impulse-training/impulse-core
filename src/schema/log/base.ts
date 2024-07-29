@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 import { optionalTimestampSchema, timestampSchema } from '../utils/timestamp';
-import { gptMessageSchema, gptResponseMixin } from './utils/gpt';
+import { gptResponseMixin } from './utils/gpt';
 
 const logViewSchema = yup.object({
   openTime: timestampSchema,
@@ -14,9 +14,10 @@ export function logBaseSchema<K extends string>(type: K) {
     text: yup.string(),
     type: yup.mixed<K>().oneOf([type]).defined(),
     date: timestampSchema,
+    // For now, put this boolean flag here to indicate if the sender is GPT
+    isGptSender: yup.boolean(),
     senderProfileId: yup.string().nullable(),
     views: yup.array().of(logViewSchema),
-    gptPayload: yup.array().of(gptMessageSchema),
     ...gptResponseMixin,
   });
 }

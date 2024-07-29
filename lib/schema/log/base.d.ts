@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSchema<{
+    openAiRequestPayload: string | undefined;
     openAiChoiceResponse: {} | undefined;
     createdAt: {
         isEqual?: any;
@@ -27,6 +28,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         nanoseconds: number;
         toDate: Function;
     };
+    isGptSender: boolean | undefined;
     senderProfileId: string | null | undefined;
     views: {
         openTime: {
@@ -46,11 +48,8 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
             toDate: Function;
         };
     }[] | undefined;
-    gptPayload: {
-        role: NonNullable<"system" | "user" | "assistant" | undefined>;
-        content: string;
-    }[] | undefined;
 }, yup.AnyObject, {
+    openAiRequestPayload: undefined;
     openAiChoiceResponse: undefined;
     createdAt: undefined;
     updatedAt: undefined;
@@ -64,7 +63,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         toJSON: undefined;
         toDate: undefined;
     };
+    isGptSender: undefined;
     senderProfileId: undefined;
     views: "";
-    gptPayload: "";
 }, "">;

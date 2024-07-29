@@ -48,6 +48,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         toDate: Function;
     } | null | undefined;
     text?: string | undefined;
+    isGptSender?: boolean | undefined;
     senderProfileId?: string | null | undefined;
     views?: {
         openTime: {
@@ -67,10 +68,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             toDate: Function;
         };
     }[] | undefined;
-    gptPayload?: {
-        role: NonNullable<"system" | "user" | "assistant" | undefined>;
-        content: string;
-    }[] | undefined;
+    openAiRequestPayload?: string | undefined;
     openAiChoiceResponse?: {} | undefined;
     issueName?: string | undefined;
     debriefAfter?: {
@@ -99,7 +97,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     };
     type: "impulse";
     parentIssueIds: string[];
-}, "date" | "type" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "senderProfileId" | "views" | "gptPayload" | "openAiChoiceResponse" | "issueName" | "debriefAfter" | "submittedAt")>, profileFactory: import("factory.ts").Factory<{
+}, "date" | "type" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueName" | "debriefAfter" | "submittedAt")>, profileFactory: import("factory.ts").Factory<{
     createdAt?: {
         isEqual?: any;
         toMillis?: any;

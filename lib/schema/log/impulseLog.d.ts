@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 export declare const impulseLogSchema: yup.ObjectSchema<{
+    openAiRequestPayload: string | undefined;
     openAiChoiceResponse: {} | undefined;
     createdAt: {
         isEqual?: any;
@@ -27,6 +28,7 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     };
+    isGptSender: boolean | undefined;
     senderProfileId: string | null | undefined;
     views: {
         openTime: {
@@ -45,10 +47,6 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         };
-    }[] | undefined;
-    gptPayload: {
-        role: NonNullable<"system" | "user" | "assistant" | undefined>;
-        content: string;
     }[] | undefined;
     issueName: string | undefined;
     debriefAfter: {
@@ -69,6 +67,7 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
     } | null | undefined;
     parentIssueIds: string[];
 }, yup.AnyObject, {
+    openAiRequestPayload: undefined;
     openAiChoiceResponse: undefined;
     createdAt: undefined;
     updatedAt: undefined;
@@ -82,9 +81,9 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
         toJSON: undefined;
         toDate: undefined;
     };
+    isGptSender: undefined;
     senderProfileId: undefined;
     views: "";
-    gptPayload: "";
     issueName: undefined;
     debriefAfter: undefined;
     submittedAt: undefined;

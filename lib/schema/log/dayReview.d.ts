@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 export declare const dayReviewLogSchema: yup.ObjectSchema<{
+    openAiRequestPayload: string | undefined;
     openAiChoiceResponse: {} | undefined;
     createdAt: {
         isEqual?: any;
@@ -27,6 +28,7 @@ export declare const dayReviewLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     };
+    isGptSender: boolean | undefined;
     senderProfileId: string | null | undefined;
     views: {
         openTime: {
@@ -46,10 +48,6 @@ export declare const dayReviewLogSchema: yup.ObjectSchema<{
             toDate: Function;
         };
     }[] | undefined;
-    gptPayload: {
-        role: NonNullable<"system" | "user" | "assistant" | undefined>;
-        content: string;
-    }[] | undefined;
     dayDoc: import("../utils/firestore").DocumentReferenceLike<unknown>;
     confirmedAt: {
         isEqual?: any;
@@ -60,6 +58,7 @@ export declare const dayReviewLogSchema: yup.ObjectSchema<{
         toDate: Function;
     } | null | undefined;
 }, yup.AnyObject, {
+    openAiRequestPayload: undefined;
     openAiChoiceResponse: undefined;
     createdAt: undefined;
     updatedAt: undefined;
@@ -73,9 +72,9 @@ export declare const dayReviewLogSchema: yup.ObjectSchema<{
         toJSON: undefined;
         toDate: undefined;
     };
+    isGptSender: undefined;
     senderProfileId: undefined;
     views: "";
-    gptPayload: "";
     dayDoc: undefined;
     confirmedAt: undefined;
 }, "">;

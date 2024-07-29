@@ -34,6 +34,7 @@ export declare const questionDataSchema: yup.ObjectSchema<{
 }, "">;
 export type QuestionDataValue = yup.InferType<typeof questionDataSchema>;
 export declare const questionsLogSchema: yup.ObjectSchema<{
+    openAiRequestPayload: string | undefined;
     openAiChoiceResponse: {} | undefined;
     createdAt: {
         isEqual?: any;
@@ -61,6 +62,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     };
+    isGptSender: boolean | undefined;
     senderProfileId: string | null | undefined;
     views: {
         openTime: {
@@ -79,10 +81,6 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         };
-    }[] | undefined;
-    gptPayload: {
-        role: NonNullable<"system" | "user" | "assistant" | undefined>;
-        content: string;
     }[] | undefined;
     questionsById: {
         [x: string]: {
@@ -675,6 +673,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
     isDebrief: boolean | undefined;
     followedUpQuestionIds: string[] | undefined;
 }, yup.AnyObject, {
+    openAiRequestPayload: undefined;
     openAiChoiceResponse: undefined;
     createdAt: undefined;
     updatedAt: undefined;
@@ -688,9 +687,9 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
         toJSON: undefined;
         toDate: undefined;
     };
+    isGptSender: undefined;
     senderProfileId: undefined;
     views: "";
-    gptPayload: "";
     questionsById: undefined;
     questionData: undefined;
     submittedAt: undefined;

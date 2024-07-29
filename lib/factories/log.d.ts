@@ -18,6 +18,7 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
         toDate: Function;
     } | null | undefined;
     text?: string | undefined;
+    isGptSender?: boolean | undefined;
     senderProfileId?: string | null | undefined;
     views?: {
         openTime: {
@@ -37,10 +38,7 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
             toDate: Function;
         };
     }[] | undefined;
-    gptPayload?: {
-        role: NonNullable<"system" | "user" | "assistant" | undefined>;
-        content: string;
-    }[] | undefined;
+    openAiRequestPayload?: string | undefined;
     openAiChoiceResponse?: {} | undefined;
     issueName?: string | undefined;
     debriefAfter?: {
@@ -69,7 +67,7 @@ export declare const makeImpulseLogFactory: (TimestampKlass: typeof TimestampLik
     };
     type: "impulse";
     parentIssueIds: string[];
-}, "date" | "type" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "senderProfileId" | "views" | "gptPayload" | "openAiChoiceResponse" | "issueName" | "debriefAfter" | "submittedAt")>;
+}, "date" | "type" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueName" | "debriefAfter" | "submittedAt")>;
 export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     createdAt?: {
         isEqual?: any;
@@ -88,6 +86,7 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
         toDate: Function;
     } | null | undefined;
     text?: string | undefined;
+    isGptSender?: boolean | undefined;
     senderProfileId?: string | null | undefined;
     views?: {
         openTime: {
@@ -107,10 +106,7 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
             toDate: Function;
         };
     }[] | undefined;
-    gptPayload?: {
-        role: NonNullable<"system" | "user" | "assistant" | undefined>;
-        content: string;
-    }[] | undefined;
+    openAiRequestPayload?: string | undefined;
     openAiChoiceResponse?: {} | undefined;
     submittedAt?: {
         isEqual?: any;
@@ -711,4 +707,4 @@ export declare const makeQuestionsLogFactory: (TimestampKlass: typeof TimestampL
             prompt: string;
         };
     };
-}, "date" | "type" | "questionsById" | ("createdAt" | "updatedAt" | "text" | "senderProfileId" | "views" | "gptPayload" | "openAiChoiceResponse" | "submittedAt" | "questionData" | "trackingQuestionIds" | "debriefingQuestionIds" | "isDebrief" | "followedUpQuestionIds")>;
+}, "date" | "type" | "questionsById" | ("createdAt" | "updatedAt" | "text" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "submittedAt" | "questionData" | "trackingQuestionIds" | "debriefingQuestionIds" | "isDebrief" | "followedUpQuestionIds")>;

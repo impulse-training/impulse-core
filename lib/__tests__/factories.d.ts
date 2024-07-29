@@ -606,6 +606,7 @@ export declare const factories: {
             toDate: Function;
         } | null | undefined;
         text?: string | undefined;
+        isGptSender?: boolean | undefined;
         senderProfileId?: string | null | undefined;
         views?: {
             openTime: {
@@ -625,10 +626,7 @@ export declare const factories: {
                 toDate: Function;
             };
         }[] | undefined;
-        gptPayload?: {
-            role: NonNullable<"system" | "user" | "assistant" | undefined>;
-            content: string;
-        }[] | undefined;
+        openAiRequestPayload?: string | undefined;
         openAiChoiceResponse?: {} | undefined;
         issueName?: string | undefined;
         debriefAfter?: {
@@ -657,7 +655,7 @@ export declare const factories: {
         };
         type: "impulse";
         parentIssueIds: string[];
-    }, "date" | "type" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "senderProfileId" | "views" | "gptPayload" | "openAiChoiceResponse" | "issueName" | "debriefAfter" | "submittedAt")>;
+    }, "date" | "type" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueName" | "debriefAfter" | "submittedAt")>;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
         createdAt?: {
@@ -1084,6 +1082,7 @@ export declare const factories: {
             toDate: Function;
         } | null | undefined;
         text?: string | undefined;
+        isGptSender?: boolean | undefined;
         senderProfileId?: string | null | undefined;
         views?: {
             openTime: {
@@ -1103,10 +1102,7 @@ export declare const factories: {
                 toDate: Function;
             };
         }[] | undefined;
-        gptPayload?: {
-            role: NonNullable<"system" | "user" | "assistant" | undefined>;
-            content: string;
-        }[] | undefined;
+        openAiRequestPayload?: string | undefined;
         openAiChoiceResponse?: {} | undefined;
         issueName?: string | undefined;
         debriefAfter?: {
@@ -1135,7 +1131,7 @@ export declare const factories: {
         };
         type: "impulse";
         parentIssueIds: string[];
-    }, "date" | "type" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "senderProfileId" | "views" | "gptPayload" | "openAiChoiceResponse" | "issueName" | "debriefAfter" | "submittedAt")>;
+    }, "date" | "type" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueName" | "debriefAfter" | "submittedAt")>;
     questionsLogFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -1154,6 +1150,7 @@ export declare const factories: {
             toDate: Function;
         } | null | undefined;
         text?: string | undefined;
+        isGptSender?: boolean | undefined;
         senderProfileId?: string | null | undefined;
         views?: {
             openTime: {
@@ -1173,10 +1170,7 @@ export declare const factories: {
                 toDate: Function;
             };
         }[] | undefined;
-        gptPayload?: {
-            role: NonNullable<"system" | "user" | "assistant" | undefined>;
-            content: string;
-        }[] | undefined;
+        openAiRequestPayload?: string | undefined;
         openAiChoiceResponse?: {} | undefined;
         submittedAt?: {
             isEqual?: any;
@@ -1777,6 +1771,6 @@ export declare const factories: {
                 prompt: string;
             };
         };
-    }, "date" | "type" | "questionsById" | ("createdAt" | "updatedAt" | "text" | "senderProfileId" | "views" | "gptPayload" | "openAiChoiceResponse" | "submittedAt" | "questionData" | "trackingQuestionIds" | "debriefingQuestionIds" | "isDebrief" | "followedUpQuestionIds")>;
+    }, "date" | "type" | "questionsById" | ("createdAt" | "updatedAt" | "text" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "submittedAt" | "questionData" | "trackingQuestionIds" | "debriefingQuestionIds" | "isDebrief" | "followedUpQuestionIds")>;
     tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "prompt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "ordinal" | "pastTenseTitle" | "commentCount" | "description" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
 };

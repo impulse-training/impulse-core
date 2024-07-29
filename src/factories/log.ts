@@ -11,12 +11,6 @@ export const makeImpulseLogFactory = (TimestampKlass: typeof TimestampLike) =>
     date: TimestampKlass.now(),
     issueName: 'YouTube',
     parentIssueIds: [],
-    gptPayload: [
-      {
-        role: 'user',
-        content: "I'm having an impulse!",
-      },
-    ],
   });
 
 export const makeQuestionsLogFactory = (TimestampKlass: typeof TimestampLike) =>
@@ -26,6 +20,5 @@ export const makeQuestionsLogFactory = (TimestampKlass: typeof TimestampLike) =>
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     date: TimestampKlass.now(),
-    gptPayload: [],
     questionsById: {},
   });

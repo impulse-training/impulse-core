@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 export declare const actionRecapLogSchema: yup.ObjectSchema<{
+    openAiRequestPayload: string | undefined;
     openAiChoiceResponse: {} | undefined;
     createdAt: {
         isEqual?: any;
@@ -27,6 +28,7 @@ export declare const actionRecapLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     };
+    isGptSender: boolean | undefined;
     senderProfileId: string | null | undefined;
     views: {
         openTime: {
@@ -46,12 +48,9 @@ export declare const actionRecapLogSchema: yup.ObjectSchema<{
             toDate: Function;
         };
     }[] | undefined;
-    gptPayload: {
-        role: NonNullable<"system" | "user" | "assistant" | undefined>;
-        content: string;
-    }[] | undefined;
     choice: "moreStrategies" | "debrief" | undefined;
 }, yup.AnyObject, {
+    openAiRequestPayload: undefined;
     openAiChoiceResponse: undefined;
     createdAt: undefined;
     updatedAt: undefined;
@@ -65,9 +64,9 @@ export declare const actionRecapLogSchema: yup.ObjectSchema<{
         toJSON: undefined;
         toDate: undefined;
     };
+    isGptSender: undefined;
     senderProfileId: undefined;
     views: "";
-    gptPayload: "";
     choice: undefined;
 }, "">;
 export type ActionRecapLogValue = yup.InferType<typeof actionRecapLogSchema>;
