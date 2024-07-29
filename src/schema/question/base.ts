@@ -3,7 +3,6 @@ import { optionSchema } from '../option';
 import { followUpSchema } from '../option/followUp';
 import { optionalObjectOf } from '../utils/objectOf';
 import { optionalTimestampSchema } from '../utils/timestamp';
-import { QuestionKeyType } from './utils/questionKeyType';
 
 export const QUESTION_CATEGORIES = {
   emotions: 'Emotions',
@@ -22,11 +21,11 @@ const questionCategorySchema = yup
   .mixed<QuestionCategory>()
   .oneOf(categoryKeys);
 
-export function questionBaseSchema(type: QuestionKeyType) {
+export function questionBaseSchema<T extends string>(type: T) {
   return yup.object({
     categories: yup.array().of(questionCategorySchema.defined()),
     prompt: yup.string().required(),
-    type: yup.mixed<QuestionKeyType>().oneOf([type]).defined(),
+    type: yup.mixed<T>().oneOf([type]).defined(),
     options: yup.array().of(optionSchema),
     ordinals: optionalObjectOf(yup.number().required()),
     templateFor: yup.mixed<'onboarding'>().oneOf(['onboarding']),

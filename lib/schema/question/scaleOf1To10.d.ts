@@ -1,8 +1,8 @@
 import * as yup from 'yup';
-export declare const questionScaleOf1To10Schema: yup.ObjectSchema<{
+export declare const scaleOf1To10QuestionSchema: yup.ObjectSchema<{
     categories: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
     prompt: string;
-    type: import("..").QuestionKeyType;
+    type: "scaleOf1To10";
     options: ({
         label?: string | undefined;
         followUps?: ({
@@ -127,4 +127,4 @@ export declare const questionScaleOf1To10Schema: yup.ObjectSchema<{
     lowEmoji: undefined;
     highEmoji: undefined;
 }, "">;
-export type QuestionScaleOf1To10Value = yup.InferType<typeof questionScaleOf1To10Schema>;
+export type ScaleOf1To10QuestionValue = yup.InferType<typeof scaleOf1To10QuestionSchema>;

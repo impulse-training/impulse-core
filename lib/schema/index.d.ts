@@ -23,6 +23,5 @@ export * from './strategy/folder';
 export * from './strategy/tactic';
 export * from './tacticImpression';
 export * from './thread';
-export * from './question/utils/questionKeyType';
 export * from './utils/image';
 export * from './utils/time';

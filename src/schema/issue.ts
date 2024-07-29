@@ -1,11 +1,6 @@
-import { keys } from 'lodash';
 import * as yup from 'yup';
-import { questionSchemas } from './question';
-import { QuestionKeyType } from './question/utils/questionKeyType';
 import { requiredStringArray } from './utils/array';
 import { optionalTimestampSchema } from './utils/timestamp';
-
-const questionTypes = keys(questionSchemas) as QuestionKeyType[];
 
 export const issueSchema = yup.object().shape({
   createdAt: optionalTimestampSchema,

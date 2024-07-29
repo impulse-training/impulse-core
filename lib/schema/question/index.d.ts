@@ -1,9 +1,9 @@
 import * as yup from 'yup';
-import { QuestionCounterValue } from './counter';
-import { QuestionIssueValue } from './issue';
-import { QuestionMultipleChoiceValue } from './multipleChoice';
-import { QuestionScaleOf1To10Value } from './scaleOf1To10';
-import { QuestionTimeValue } from './time';
+import { CounterQuestionValue } from './counter';
+import { IssueQuestionValue } from './issue';
+import { MultipleChoiceQuestionValue } from './multipleChoice';
+import { ScaleOf1To10QuestionValue } from './scaleOf1To10';
+import { TimeQuestionValue } from './time';
 export * from './base';
 export * from './counter';
 export * from './issue';
@@ -16,4 +16,5 @@ export declare const questionSchema: yup.Lazy<ValidatedQuestion, yup.AnyObject, 
 type ValidatedQuestion = {
     [K in QuestionValue['type']]: yup.InferType<(typeof questionSchemas)[K]>;
 }[QuestionValue['type']];
-export type QuestionValue = QuestionScaleOf1To10Value | QuestionTimeValue | QuestionCounterValue | QuestionMultipleChoiceValue | QuestionIssueValue;
+export type QuestionValue = ScaleOf1To10QuestionValue | TimeQuestionValue | CounterQuestionValue | MultipleChoiceQuestionValue | IssueQuestionValue;
+export type QuestionKeyType = QuestionValue['type'];

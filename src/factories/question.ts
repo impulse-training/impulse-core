@@ -1,14 +1,14 @@
 import * as Factory from 'factory.ts';
 import {
-  QuestionMultipleChoiceValue,
-  QuestionTimeValue,
+  MultipleChoiceQuestionValue,
+  TimeQuestionValue,
 } from '../schema/question';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 
 export const makeQuestionTimeTacticFactory = (
   TimestampKlass: typeof TimestampLike
 ) =>
-  Factory.makeFactory<QuestionTimeValue>({
+  Factory.makeFactory<TimeQuestionValue>({
     categories: ['impulses'],
     prompt: 'How long did you spend?',
     type: 'time',
@@ -19,10 +19,10 @@ export const makeQuestionTimeTacticFactory = (
 export const makeQuestionMultipleChoiceTacticFactory = (
   TimestampKlass: typeof TimestampLike
 ) =>
-  Factory.makeFactory<QuestionMultipleChoiceValue>({
+  Factory.makeFactory<MultipleChoiceQuestionValue>({
     categories: ['emotions'],
     prompt: 'How are you feeling?',
-    type: 'time',
+    type: 'multipleChoice',
     canAddNewOptions: false,
     options: [
       {

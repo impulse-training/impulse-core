@@ -1,8 +1,8 @@
 import * as yup from 'yup';
-export declare const questionIssueSchema: yup.ObjectSchema<{
+export declare const issueQuestionSchema: yup.ObjectSchema<{
     categories: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
     prompt: string;
-    type: import("..").QuestionKeyType;
+    type: "issue";
     options: ({
         label?: string | undefined;
         followUps?: ({
@@ -121,4 +121,4 @@ export declare const questionIssueSchema: yup.ObjectSchema<{
     createdAt: undefined;
     updatedAt: undefined;
 }, "">;
-export type QuestionIssueValue = yup.InferType<typeof questionIssueSchema>;
+export type IssueQuestionValue = yup.InferType<typeof issueQuestionSchema>;

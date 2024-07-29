@@ -1,8 +1,8 @@
 import * as yup from 'yup';
-export declare const questionTimeSchema: yup.ObjectSchema<{
+export declare const timeQuestionSchema: yup.ObjectSchema<{
     categories: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
     prompt: string;
-    type: import("..").QuestionKeyType;
+    type: "time";
     options: ({
         label?: string | undefined;
         followUps?: ({
@@ -123,4 +123,4 @@ export declare const questionTimeSchema: yup.ObjectSchema<{
     updatedAt: undefined;
     setbackThreshold: undefined;
 }, "">;
-export type QuestionTimeValue = yup.InferType<typeof questionTimeSchema>;
+export type TimeQuestionValue = yup.InferType<typeof timeQuestionSchema>;

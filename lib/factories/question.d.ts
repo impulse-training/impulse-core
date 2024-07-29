@@ -109,7 +109,7 @@ export declare const makeQuestionTimeTacticFactory: (TimestampKlass: typeof Time
     } | null | undefined;
     templateFor?: "onboarding" | undefined;
     writeAnswerToProfileMemoryKey?: string | undefined;
-    type: import("..").QuestionKeyType;
+    type: "time";
     prompt: string;
 }, "type" | "prompt" | ("createdAt" | "updatedAt" | "followUps" | "setbackThreshold" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
 export declare const makeQuestionMultipleChoiceTacticFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
@@ -158,7 +158,7 @@ export declare const makeQuestionMultipleChoiceTacticFactory: (TimestampKlass: t
     } | null | undefined;
     templateFor?: "onboarding" | undefined;
     writeAnswerToProfileMemoryKey?: string | undefined;
-    type: import("..").QuestionKeyType;
+    type: "multipleChoice";
     prompt: string;
     options: ({
         label?: string | undefined;

@@ -1,8 +1,8 @@
 import * as yup from 'yup';
-export declare const questionMultipleChoiceSchema: yup.ObjectSchema<{
+export declare const multipleChoiceQuestionSchema: yup.ObjectSchema<{
     categories: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
     prompt: string;
-    type: import("..").QuestionKeyType;
+    type: "multipleChoice";
     options: ({
         label?: string | undefined;
         followUps?: ({
@@ -123,4 +123,4 @@ export declare const questionMultipleChoiceSchema: yup.ObjectSchema<{
     updatedAt: undefined;
     canAddNewOptions: false;
 }, "">;
-export type QuestionMultipleChoiceValue = yup.InferType<typeof questionMultipleChoiceSchema>;
+export type MultipleChoiceQuestionValue = yup.InferType<typeof multipleChoiceQuestionSchema>;

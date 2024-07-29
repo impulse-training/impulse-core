@@ -26,6 +26,5 @@ export * from './tacticImpression';
 export * from './thread';
 
 // Utils
-export * from './question/utils/questionKeyType';
 export * from './utils/image';
 export * from './utils/time';

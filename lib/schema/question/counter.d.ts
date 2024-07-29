@@ -1,8 +1,8 @@
 import * as yup from 'yup';
-export declare const questionCounterSchema: yup.ObjectSchema<{
+export declare const counterQuestionSchema: yup.ObjectSchema<{
     categories: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
     prompt: string;
-    type: import("..").QuestionKeyType;
+    type: "counter";
     options: ({
         label?: string | undefined;
         followUps?: ({
@@ -123,4 +123,4 @@ export declare const questionCounterSchema: yup.ObjectSchema<{
     updatedAt: undefined;
     setbackThreshold: undefined;
 }, "">;
-export type QuestionCounterValue = yup.InferType<typeof questionCounterSchema>;
+export type CounterQuestionValue = yup.InferType<typeof counterQuestionSchema>;

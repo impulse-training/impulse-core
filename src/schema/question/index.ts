@@ -1,15 +1,15 @@
 import * as yup from 'yup';
-import { QuestionCounterValue, questionCounterSchema } from './counter';
-import { QuestionIssueValue, questionIssueSchema } from './issue';
+import { CounterQuestionValue, counterQuestionSchema } from './counter';
+import { IssueQuestionValue, issueQuestionSchema } from './issue';
 import {
-  QuestionMultipleChoiceValue,
-  questionMultipleChoiceSchema,
+  MultipleChoiceQuestionValue,
+  multipleChoiceQuestionSchema,
 } from './multipleChoice';
 import {
-  QuestionScaleOf1To10Value,
-  questionScaleOf1To10Schema,
+  ScaleOf1To10QuestionValue,
+  scaleOf1To10QuestionSchema,
 } from './scaleOf1To10';
-import { QuestionTimeValue, questionTimeSchema } from './time';
+import { TimeQuestionValue, timeQuestionSchema } from './time';
 
 export * from './base';
 export * from './counter';
@@ -23,11 +23,11 @@ export const questionSchemas: Record<
   QuestionValue['type'],
   yup.ObjectSchema<QuestionValue>
 > = {
-  time: questionTimeSchema,
-  counter: questionCounterSchema,
-  issue: questionIssueSchema,
-  scaleOf1To10: questionScaleOf1To10Schema,
-  multipleChoice: questionMultipleChoiceSchema,
+  time: timeQuestionSchema,
+  counter: counterQuestionSchema,
+  issue: issueQuestionSchema,
+  scaleOf1To10: scaleOf1To10QuestionSchema,
+  multipleChoice: multipleChoiceQuestionSchema,
 } as any;
 
 export const questionSchema = yup.lazy(value => {
@@ -51,8 +51,10 @@ type ValidatedQuestion = {
 }[QuestionValue['type']];
 
 export type QuestionValue =
-  | QuestionScaleOf1To10Value
-  | QuestionTimeValue
-  | QuestionCounterValue
-  | QuestionMultipleChoiceValue
-  | QuestionIssueValue;
+  | ScaleOf1To10QuestionValue
+  | TimeQuestionValue
+  | CounterQuestionValue
+  | MultipleChoiceQuestionValue
+  | IssueQuestionValue;
+
+export type QuestionKeyType = QuestionValue['type'];

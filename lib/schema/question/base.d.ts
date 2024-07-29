@@ -1,5 +1,4 @@
 import * as yup from 'yup';
-import { QuestionKeyType } from './utils/questionKeyType';
 export declare const QUESTION_CATEGORIES: {
     readonly emotions: "Emotions";
     readonly impulses: "Impulses";
@@ -9,10 +8,10 @@ export declare const QUESTION_CATEGORIES: {
     readonly afterSetback: "Setbacks";
 };
 export type QuestionCategory = keyof typeof QUESTION_CATEGORIES;
-export declare function questionBaseSchema(type: QuestionKeyType): yup.ObjectSchema<{
+export declare function questionBaseSchema<T extends string>(type: T): yup.ObjectSchema<{
     categories: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
     prompt: string;
-    type: QuestionKeyType;
+    type: yup.Defined<T>;
     options: ({
         label?: string | undefined;
         followUps?: ({
