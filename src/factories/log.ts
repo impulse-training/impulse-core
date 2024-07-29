@@ -1,9 +1,14 @@
 import * as Factory from 'factory.ts';
-import { ImpulseLogValue, QuestionsLogValue } from '../schema/log';
+import {
+  ImpulseLogValue,
+  MessageLogValue,
+  QuestionsLogValue,
+  StrategiesLogValue,
+} from '../schema/log';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 
-export const makeImpulseLogFactory = (TimestampKlass: typeof TimestampLike) =>
-  Factory.makeFactory<ImpulseLogValue>({
+export const makeLogFactories = (TimestampKlass: typeof TimestampLike) => ({
+  impulseLogFactory: Factory.makeFactory<ImpulseLogValue>({
     senderProfileId: Factory.each(i => i.toString()),
     type: 'impulse',
     createdAt: TimestampKlass.now(),
@@ -11,14 +16,32 @@ export const makeImpulseLogFactory = (TimestampKlass: typeof TimestampLike) =>
     date: TimestampKlass.now(),
     issueName: 'YouTube',
     parentIssueIds: [],
-  });
-
-export const makeQuestionsLogFactory = (TimestampKlass: typeof TimestampLike) =>
-  Factory.makeFactory<QuestionsLogValue>({
+  }),
+  messageLogFactory: Factory.makeFactory<MessageLogValue>({
+    senderProfileId: Factory.each(i => i.toString()),
+    type: 'message',
+    createdAt: TimestampKlass.now(),
+    updatedAt: TimestampKlass.now(),
+    date: TimestampKlass.now(),
+    text: 'Hello, World!',
+  }),
+  questionsLogFactory: Factory.makeFactory<QuestionsLogValue>({
     senderProfileId: Factory.each(i => i.toString()),
     type: 'questions',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     date: TimestampKlass.now(),
     questionsById: {},
-  });
+  }),
+  strategiesLogFactory: Factory.makeFactory<StrategiesLogValue>({
+    senderProfileId: Factory.each(i => i.toString()),
+    type: 'strategies',
+    createdAt: TimestampKlass.now(),
+    updatedAt: TimestampKlass.now(),
+    date: TimestampKlass.now(),
+    strategiesById: {},
+    suggestedStrategyIds: [],
+    completedTacticIds: [],
+    followedUpTacticIds: [],
+  }),
+});

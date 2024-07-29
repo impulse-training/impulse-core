@@ -6,12 +6,9 @@ import { makeDaysSummaryFactory } from './daysSummary';
 import { makeFolderFactory } from './folder';
 import { makeIssueFactory } from './issue';
 import { makeLocationFactory } from './location';
-import { makeImpulseLogFactory, makeQuestionsLogFactory } from './log';
+import { makeLogFactories } from './log';
 import { makeProfileFactory } from './profile';
-import {
-  makeQuestionMultipleChoiceTacticFactory,
-  makeQuestionTimeTacticFactory,
-} from './question';
+import { makeQuestionLogFactories } from './question';
 import { makeTimeRoutineFactory } from './routine';
 import { makeTacticFactory } from './tactic';
 
@@ -24,17 +21,13 @@ export function makeFactories(TimestampKlass: typeof TimestampLike) {
     commentFactory: makeCommentFactory(TimestampKlass),
     dayFactory: makeDayFactory(TimestampKlass),
     folderFactory: makeFolderFactory(TimestampKlass),
-    impulseFactory: makeImpulseLogFactory(TimestampKlass),
     issueFactory: makeIssueFactory(TimestampKlass),
     locationFactory: makeLocationFactory(TimestampKlass),
     daysSummaryFactory: makeDaysSummaryFactory(TimestampKlass),
     profileFactory: makeProfileFactory(TimestampKlass),
-    questionTimeFactory: makeQuestionTimeTacticFactory(TimestampKlass),
-    questionMultipleChoiceFactory:
-      makeQuestionMultipleChoiceTacticFactory(TimestampKlass),
     timeRoutineFactory: makeTimeRoutineFactory(TimestampKlass),
-    impulseLogFactory: makeImpulseLogFactory(TimestampKlass),
-    questionsLogFactory: makeQuestionsLogFactory(TimestampKlass),
     tacticFactory: makeTacticFactory(TimestampKlass),
+    ...makeQuestionLogFactories(TimestampKlass),
+    ...makeLogFactories(TimestampKlass),
   };
 }

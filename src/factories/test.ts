@@ -5,7 +5,7 @@ import { TimestampLike } from '../utils/firestore/TimestampLike';
 export const {
   applicationFactory,
   commentFactory,
-  impulseFactory,
+  impulseLogFactory,
   profileFactory,
   folderFactory,
   tacticFactory,
