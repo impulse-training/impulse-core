@@ -6,6 +6,7 @@ export * from './errors';
 export * from './firestore/TimestampLike';
 export * from './folders';
 export * from './formatValue';
+export * from './logs';
 export * from './questions';
 export * from './routines';
 export * from './strings';
