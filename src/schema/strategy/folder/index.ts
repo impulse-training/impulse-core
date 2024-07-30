@@ -9,6 +9,7 @@ export const folderSchema = strategyBase().shape({
   updatedAt: optionalTimestampSchema,
   type: yup.mixed<'folder'>().oneOf(['folder']).required(),
   slug: yup.string(),
+  isShared: yup.boolean().required().default(false),
   creatorProfileId: yup.string(),
   invitationCode: yup.string().required(),
   invitationUrl: yup.string().url().required(),

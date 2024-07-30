@@ -27,6 +27,7 @@ export declare const folderSchema: yup.ObjectSchema<{
     } | null | undefined;
     type: "folder";
     slug: string | undefined;
+    isShared: NonNullable<boolean | undefined>;
     creatorProfileId: string | undefined;
     invitationCode: string;
     invitationUrl: string;
@@ -565,6 +566,7 @@ export declare const folderSchema: yup.ObjectSchema<{
     updatedAt: undefined;
     type: undefined;
     slug: undefined;
+    isShared: false;
     creatorProfileId: undefined;
     invitationCode: undefined;
     invitationUrl: undefined;

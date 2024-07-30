@@ -1620,6 +1620,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 type: "folder";
                 prompt: string;
                 ordinal: number;
+                isShared: NonNullable<boolean | undefined>;
                 invitationCode: string;
                 invitationUrl: string;
             };
@@ -2438,9 +2439,10 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         type: "folder";
         prompt: string;
         ordinal: number;
+        isShared: NonNullable<boolean | undefined>;
         invitationCode: string;
         invitationUrl: string;
-    }, "type" | "prompt" | "ordinal" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "description" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics" | "nextTacticId")>;
+    }, "type" | "prompt" | "ordinal" | "isShared" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "description" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics" | "nextTacticId")>;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
         createdAt?: {

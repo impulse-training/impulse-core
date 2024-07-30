@@ -1621,6 +1621,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 type: "folder";
                 prompt: string;
                 ordinal: number;
+                isShared: NonNullable<boolean | undefined>;
                 invitationCode: string;
                 invitationUrl: string;
             };

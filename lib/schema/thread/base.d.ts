@@ -1788,6 +1788,7 @@ export default function threadBase<T extends string>(type: T): yup.ObjectSchema<
                     type: "folder";
                     prompt: string;
                     ordinal: number;
+                    isShared: NonNullable<boolean | undefined>;
                     invitationCode: string;
                     invitationUrl: string;
                 };

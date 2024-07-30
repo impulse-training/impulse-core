@@ -9,6 +9,7 @@ export const makeFolderFactory = (TimestampKlass: typeof TimestampLike) =>
     ordinal: 0,
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
+    isShared: false,
     invitationCode: 'abc123',
     invitationUrl: 'https://impulse.training/support?c=abc123',
     tacticsById: {},

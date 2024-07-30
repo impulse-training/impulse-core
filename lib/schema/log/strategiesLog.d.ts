@@ -861,6 +861,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
             type: "folder";
             prompt: string;
             ordinal: number;
+            isShared: NonNullable<boolean | undefined>;
             invitationCode: string;
             invitationUrl: string;
         };
