@@ -27,7 +27,6 @@ export declare const breathingExerciseTacticSchema: yup.ObjectSchema<{
         toDate: Function;
     } | null | undefined;
     pastTenseTitle: string | undefined;
-    commentCount: number | undefined;
     debriefAfterMinutes: number | null | undefined;
     image: {
         localFilePath?: yup.Maybe<string | undefined>;
@@ -55,7 +54,6 @@ export declare const breathingExerciseTacticSchema: yup.ObjectSchema<{
     createdAt: undefined;
     updatedAt: undefined;
     pastTenseTitle: undefined;
-    commentCount: undefined;
     debriefAfterMinutes: undefined;
     image: {
         localFilePath: undefined;

@@ -1,7 +1,6 @@
 export const DATE_FORMAT = 'yyyy-MM-dd';
 
 export * from './application';
-export * from './comment';
 export * from './contact';
 export * from './day';
 export * from './daysSummary';

@@ -2,7 +2,6 @@ import { forEach } from 'lodash';
 import { Lazy, Schema, ValidationError } from 'yup';
 import { makeFactories } from '../../factories';
 import {
-  commentSchema,
   daySchema,
   daysSummarySchema,
   folderSchema,
@@ -60,7 +59,6 @@ const schemaMap: Record<keyof typeof factories, null | Schema | Lazy<unknown>> =
     messageLogFactory: logSchema,
     strategiesLogFactory: logSchema,
     questionsLogFactory: logSchema,
-    commentFactory: commentSchema,
     locationFactory: null,
     profileFactory: null,
     issueFactory: null,

@@ -106,7 +106,6 @@ export declare const factories: {
         }[] | undefined;
         openAiRequestPayload?: string | undefined;
         openAiChoiceResponse?: {} | undefined;
-        text: string;
         date: {
             isEqual?: any;
             toMillis?: any;
@@ -115,8 +114,9 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         };
+        text: string;
         type: "message";
-    }, "text" | "date" | "type" | ("createdAt" | "updatedAt" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse")>;
+    }, "date" | "text" | "type" | ("createdAt" | "updatedAt" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse")>;
     questionsLogFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -825,9 +825,9 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
                 prompt?: string | undefined;
+                profileId?: string | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -835,7 +835,6 @@ export declare const factories: {
                 isInGameplan?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
-                commentCount?: number | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
@@ -846,13 +845,13 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
+                type: "audio";
+                ordinal: number;
                 recording: {
                     localFilePath?: string | undefined;
                     waveform?: string | null | undefined;
                     remoteFilePath: string;
                 };
-                type: "audio";
-                ordinal: number;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -870,9 +869,9 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | null | undefined;
                 repeat?: import("yup").Maybe<number | undefined>;
                 setbackThreshold?: number | null | undefined;
+                profileId?: string | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -880,7 +879,6 @@ export declare const factories: {
                 isInGameplan?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
-                commentCount?: number | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
@@ -914,8 +912,8 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                profileId?: string | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -923,7 +921,6 @@ export declare const factories: {
                 isInGameplan?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
-                commentCount?: number | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
@@ -955,8 +952,8 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                profileId?: string | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -964,7 +961,6 @@ export declare const factories: {
                 isInGameplan?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
-                commentCount?: number | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
@@ -996,8 +992,8 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                profileId?: string | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -1005,7 +1001,6 @@ export declare const factories: {
                 isInGameplan?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
-                commentCount?: number | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1036,8 +1031,8 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                profileId?: string | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -1045,7 +1040,6 @@ export declare const factories: {
                 isInGameplan?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
-                commentCount?: number | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1109,9 +1103,9 @@ export declare const factories: {
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        profileId?: string | null | undefined;
                         setbackThreshold?: number | null | undefined;
                         prompt?: string | undefined;
+                        profileId?: string | null | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
@@ -1119,7 +1113,6 @@ export declare const factories: {
                         isInGameplan?: boolean | undefined;
                         description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
-                        commentCount?: number | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
                             localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1130,13 +1123,13 @@ export declare const factories: {
                         likesCount?: number | null | undefined;
                         timerSeconds?: import("yup").Maybe<number | undefined>;
                         isSuggested?: boolean | undefined;
+                        type: "audio";
+                        ordinal: number;
                         recording: {
                             localFilePath?: string | undefined;
                             waveform?: string | null | undefined;
                             remoteFilePath: string;
                         };
-                        type: "audio";
-                        ordinal: number;
                     } | {
                         createdAt?: {
                             isEqual?: any;
@@ -1154,9 +1147,9 @@ export declare const factories: {
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        profileId?: string | null | undefined;
                         repeat?: import("yup").Maybe<number | undefined>;
                         setbackThreshold?: number | null | undefined;
+                        profileId?: string | null | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
@@ -1164,7 +1157,6 @@ export declare const factories: {
                         isInGameplan?: boolean | undefined;
                         description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
-                        commentCount?: number | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
                             localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1198,8 +1190,8 @@ export declare const factories: {
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        profileId?: string | null | undefined;
                         setbackThreshold?: number | null | undefined;
+                        profileId?: string | null | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
@@ -1207,7 +1199,6 @@ export declare const factories: {
                         isInGameplan?: boolean | undefined;
                         description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
-                        commentCount?: number | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
                             localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1239,8 +1230,8 @@ export declare const factories: {
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        profileId?: string | null | undefined;
                         setbackThreshold?: number | null | undefined;
+                        profileId?: string | null | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
@@ -1248,7 +1239,6 @@ export declare const factories: {
                         isInGameplan?: boolean | undefined;
                         description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
-                        commentCount?: number | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
                             localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1280,8 +1270,8 @@ export declare const factories: {
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        profileId?: string | null | undefined;
                         setbackThreshold?: number | null | undefined;
+                        profileId?: string | null | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
@@ -1289,7 +1279,6 @@ export declare const factories: {
                         isInGameplan?: boolean | undefined;
                         description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
-                        commentCount?: number | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
                             localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1320,8 +1309,8 @@ export declare const factories: {
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        profileId?: string | null | undefined;
                         setbackThreshold?: number | null | undefined;
+                        profileId?: string | null | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
@@ -1329,7 +1318,6 @@ export declare const factories: {
                         isInGameplan?: boolean | undefined;
                         description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
-                        commentCount?: number | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
                             localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1372,9 +1360,9 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    profileId?: string | null | undefined;
                     setbackThreshold?: number | null | undefined;
                     prompt?: string | undefined;
+                    profileId?: string | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -1382,7 +1370,6 @@ export declare const factories: {
                     isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
-                    commentCount?: number | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1393,13 +1380,13 @@ export declare const factories: {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
+                    type: "audio";
+                    ordinal: number;
                     recording: {
                         localFilePath?: string | undefined;
                         waveform?: string | null | undefined;
                         remoteFilePath: string;
                     };
-                    type: "audio";
-                    ordinal: number;
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -1417,9 +1404,9 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    profileId?: string | null | undefined;
                     repeat?: import("yup").Maybe<number | undefined>;
                     setbackThreshold?: number | null | undefined;
+                    profileId?: string | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -1427,7 +1414,6 @@ export declare const factories: {
                     isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
-                    commentCount?: number | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1461,8 +1447,8 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    profileId?: string | null | undefined;
                     setbackThreshold?: number | null | undefined;
+                    profileId?: string | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -1470,7 +1456,6 @@ export declare const factories: {
                     isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
-                    commentCount?: number | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1502,8 +1487,8 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    profileId?: string | null | undefined;
                     setbackThreshold?: number | null | undefined;
+                    profileId?: string | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -1511,7 +1496,6 @@ export declare const factories: {
                     isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
-                    commentCount?: number | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1543,8 +1527,8 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    profileId?: string | null | undefined;
                     setbackThreshold?: number | null | undefined;
+                    profileId?: string | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -1552,7 +1536,6 @@ export declare const factories: {
                     isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
-                    commentCount?: number | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1583,8 +1566,8 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    profileId?: string | null | undefined;
                     setbackThreshold?: number | null | undefined;
+                    profileId?: string | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -1592,7 +1575,6 @@ export declare const factories: {
                     isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
-                    commentCount?: number | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1852,39 +1834,6 @@ export declare const factories: {
         canAddNewOptions: NonNullable<boolean | undefined>;
     }, "type" | "prompt" | "options" | "canAddNewOptions" | ("createdAt" | "updatedAt" | "followUps" | "categories" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     applicationFactory: import("factory.ts").Factory<import("..").ApplicationValue, keyof import("..").ApplicationValue>;
-    commentFactory: import("factory.ts").Factory<{
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            toJSON?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            toJSON?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        tacticId?: string | null | undefined;
-        tacticTitle?: string | null | undefined;
-        text?: string | undefined;
-        recording?: {
-            localFilePath?: string | undefined;
-            waveform?: string | null | undefined;
-            remoteFilePath: string;
-        } | undefined;
-        isEdited?: boolean | undefined;
-        avatar?: {
-            localFilePath?: import("yup").Maybe<string | undefined>;
-            storagePath?: import("yup").Maybe<string | undefined>;
-            uri?: import("yup").Maybe<string | undefined>;
-        } | undefined;
-        profileId: string;
-    }, "profileId" | ("createdAt" | "updatedAt" | "tacticId" | "tacticTitle" | "text" | "recording" | "isEdited" | "avatar")>;
     dayFactory: import("factory.ts").Factory<import("..").DayValue, "date" | "issueName" | "questionsById" | "logsById" | "threadsById">;
     folderFactory: import("factory.ts").Factory<{
         createdAt?: {
@@ -1928,9 +1877,9 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
                 prompt?: string | undefined;
+                profileId?: string | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -1938,7 +1887,6 @@ export declare const factories: {
                 isInGameplan?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
-                commentCount?: number | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
@@ -1949,13 +1897,13 @@ export declare const factories: {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
+                type: "audio";
+                ordinal: number;
                 recording: {
                     localFilePath?: string | undefined;
                     waveform?: string | null | undefined;
                     remoteFilePath: string;
                 };
-                type: "audio";
-                ordinal: number;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -1973,9 +1921,9 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | null | undefined;
                 repeat?: import("yup").Maybe<number | undefined>;
                 setbackThreshold?: number | null | undefined;
+                profileId?: string | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -1983,7 +1931,6 @@ export declare const factories: {
                 isInGameplan?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
-                commentCount?: number | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
@@ -2017,8 +1964,8 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                profileId?: string | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -2026,7 +1973,6 @@ export declare const factories: {
                 isInGameplan?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
-                commentCount?: number | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
@@ -2058,8 +2004,8 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                profileId?: string | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -2067,7 +2013,6 @@ export declare const factories: {
                 isInGameplan?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
-                commentCount?: number | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
@@ -2099,8 +2044,8 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                profileId?: string | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -2108,7 +2053,6 @@ export declare const factories: {
                 isInGameplan?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
-                commentCount?: number | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
@@ -2139,8 +2083,8 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | null | undefined;
                 setbackThreshold?: number | null | undefined;
+                profileId?: string | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -2148,7 +2092,6 @@ export declare const factories: {
                 isInGameplan?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
-                commentCount?: number | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
@@ -2191,9 +2134,9 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
             prompt?: string | undefined;
+            profileId?: string | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -2201,7 +2144,6 @@ export declare const factories: {
             isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
-            commentCount?: number | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
@@ -2212,13 +2154,13 @@ export declare const factories: {
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            type: "audio";
+            ordinal: number;
             recording: {
                 localFilePath?: string | undefined;
                 waveform?: string | null | undefined;
                 remoteFilePath: string;
             };
-            type: "audio";
-            ordinal: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -2236,9 +2178,9 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | null | undefined;
             repeat?: import("yup").Maybe<number | undefined>;
             setbackThreshold?: number | null | undefined;
+            profileId?: string | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -2246,7 +2188,6 @@ export declare const factories: {
             isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
-            commentCount?: number | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
@@ -2280,8 +2221,8 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
+            profileId?: string | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -2289,7 +2230,6 @@ export declare const factories: {
             isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
-            commentCount?: number | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
@@ -2321,8 +2261,8 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
+            profileId?: string | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -2330,7 +2270,6 @@ export declare const factories: {
             isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
-            commentCount?: number | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
@@ -2362,8 +2301,8 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
+            profileId?: string | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -2371,7 +2310,6 @@ export declare const factories: {
             isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
-            commentCount?: number | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
@@ -2402,8 +2340,8 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | null | undefined;
             setbackThreshold?: number | null | undefined;
+            profileId?: string | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -2411,7 +2349,6 @@ export declare const factories: {
             isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
-            commentCount?: number | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
@@ -2620,12 +2557,12 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId: string;
         type: "time";
+        profileId: string;
         name: string;
         weekdays: number[];
         hour: number;
         minute: number;
-    }, "profileId" | "type" | "name" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "type" | "setbackThreshold" | "prompt" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "ordinal" | "description" | "pastTenseTitle" | "commentCount" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+    }, "type" | "profileId" | "name" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "type" | "setbackThreshold" | "prompt" | "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "ordinal" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
 };

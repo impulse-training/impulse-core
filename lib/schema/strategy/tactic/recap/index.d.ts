@@ -21,8 +21,8 @@ export declare const recapTacticSchema: yup.Lazy<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    profileId?: string | null | undefined;
     setbackThreshold?: number | null | undefined;
+    profileId?: string | null | undefined;
     recommendedForIssueIds?: string[] | undefined;
     recommendedForIssueOrdinals?: {
         [x: string]: number;
@@ -30,7 +30,6 @@ export declare const recapTacticSchema: yup.Lazy<{
     isInGameplan?: boolean | undefined;
     description?: string | null | undefined;
     pastTenseTitle?: string | undefined;
-    commentCount?: number | undefined;
     debriefAfterMinutes?: number | null | undefined;
     image?: {
         localFilePath?: yup.Maybe<string | undefined>;

@@ -1,6 +1,5 @@
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 import { makeApplicationFactory } from './application';
-import { makeCommentFactory } from './comment';
 import { makeDayFactory } from './day';
 import { makeDaysSummaryFactory } from './daysSummary';
 import { makeFolderFactory } from './folder';
@@ -18,7 +17,6 @@ import { makeTacticFactory } from './tactic';
 export function makeFactories(TimestampKlass: typeof TimestampLike) {
   return {
     applicationFactory: makeApplicationFactory(TimestampKlass),
-    commentFactory: makeCommentFactory(TimestampKlass),
     dayFactory: makeDayFactory(TimestampKlass),
     folderFactory: makeFolderFactory(TimestampKlass),
     issueFactory: makeIssueFactory(TimestampKlass),

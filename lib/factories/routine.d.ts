@@ -17,10 +17,10 @@ export declare const makeTimeRoutineFactory: (TimestampKlass: typeof TimestampLi
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    profileId: string;
     type: "time";
+    profileId: string;
     name: string;
     weekdays: number[];
     hour: number;
     minute: number;
-}, "profileId" | "type" | "name" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;
+}, "type" | "profileId" | "name" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;

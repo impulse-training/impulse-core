@@ -4,7 +4,6 @@ import { TimestampLike } from '../utils/firestore/TimestampLike';
 
 export const {
   applicationFactory,
-  commentFactory,
   impulseLogFactory,
   profileFactory,
   folderFactory,
