@@ -966,7 +966,7 @@ export default function threadBase<T extends string>(type: T): yup.ObjectSchema<
             }[] | undefined;
             openAiRequestPayload?: string | undefined;
             openAiChoiceResponse?: {} | undefined;
-            suggestedStrategyIds?: string[] | undefined;
+            suggestedStrategyDocPaths?: string[] | undefined;
             date: {
                 isEqual?: any;
                 toMillis?: any;

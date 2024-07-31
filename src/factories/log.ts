@@ -40,7 +40,7 @@ export const makeLogFactories = (TimestampKlass: typeof TimestampLike) => ({
     updatedAt: TimestampKlass.now(),
     date: TimestampKlass.now(),
     strategiesById: {},
-    suggestedStrategyIds: [],
+    suggestedStrategyDocPaths: [],
     completedTacticIds: [],
     followedUpTacticIds: [],
   }),

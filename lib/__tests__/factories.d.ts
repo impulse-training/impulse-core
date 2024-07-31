@@ -797,7 +797,7 @@ export declare const factories: {
         }[] | undefined;
         openAiRequestPayload?: string | undefined;
         openAiChoiceResponse?: {} | undefined;
-        suggestedStrategyIds?: string[] | undefined;
+        suggestedStrategyDocPaths?: string[] | undefined;
         date: {
             isEqual?: any;
             toMillis?: any;
@@ -1626,7 +1626,7 @@ export declare const factories: {
         };
         completedTacticIds: string[];
         followedUpTacticIds: string[];
-    }, "date" | "type" | "strategiesById" | "completedTacticIds" | "followedUpTacticIds" | ("createdAt" | "updatedAt" | "text" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "suggestedStrategyIds")>;
+    }, "date" | "type" | "strategiesById" | "completedTacticIds" | "followedUpTacticIds" | ("createdAt" | "updatedAt" | "text" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "suggestedStrategyDocPaths")>;
     questionTimeFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;

@@ -48,7 +48,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
             toDate: Function;
         };
     }[] | undefined;
-    suggestedStrategyIds: string[] | undefined;
+    suggestedStrategyDocPaths: string[] | undefined;
     strategiesById: {
         [x: string]: {
             createdAt?: {
@@ -886,7 +886,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
     isGptSender: undefined;
     senderProfileId: undefined;
     views: "";
-    suggestedStrategyIds: "";
+    suggestedStrategyDocPaths: "";
     strategiesById: undefined;
     completedTacticIds: "";
     followedUpTacticIds: "";

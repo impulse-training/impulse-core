@@ -8,7 +8,7 @@ import { gptResponseMixin } from './utils/gpt';
 export const strategiesLogSchema = logBaseSchema('strategies').shape({
   // A strategies log can have a list of suggested strategies, or it can just be a record of
   // completed strategies
-  suggestedStrategyIds: optionalStringArray,
+  suggestedStrategyDocPaths: optionalStringArray,
   strategiesById: objectOf(strategySchema),
   // These are the tactics that the user has completed
   completedTacticIds: requiredStringArray,
