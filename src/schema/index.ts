@@ -23,5 +23,5 @@ export * from './tacticImpression';
 export * from './thread';
 
 // Utils
-export * from './utils/image';
+export * from './utils/file';
 export * from './utils/time';

@@ -6,4 +6,4 @@ export const fileSchema = yup.object({
   uri: yup.string().notRequired(),
 });
 
-export type ImageType = yup.InferType<typeof fileSchema>;
+export type FileValue = yup.InferType<typeof fileSchema>;

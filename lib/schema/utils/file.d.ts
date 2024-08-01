@@ -8,4 +8,4 @@ export declare const fileSchema: yup.ObjectSchema<{
     storagePath: undefined;
     uri: undefined;
 }, "">;
-export type ImageType = yup.InferType<typeof fileSchema>;
+export type FileValue = yup.InferType<typeof fileSchema>;

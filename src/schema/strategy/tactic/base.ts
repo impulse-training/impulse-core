@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-import { fileSchema } from '../../utils/image';
+import { fileSchema } from '../../utils/file';
 import { optionalTimestampSchema } from '../../utils/timestamp';
 import strategyBase from '../base';
 

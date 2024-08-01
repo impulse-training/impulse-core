@@ -20,5 +20,5 @@ export * from './spotifyCredentials';
 export * from './strategy';
 export * from './tacticImpression';
 export * from './thread';
-export * from './utils/image';
+export * from './utils/file';
 export * from './utils/time';
