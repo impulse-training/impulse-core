@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 import { logSchema } from '../log';
+import { optionalStringArray } from '../utils/array';
 import { documentReferenceSchema } from '../utils/firestore';
 import { objectOf } from '../utils/objectOf';
 import { optionalTimestampSchema } from '../utils/timestamp';
@@ -13,6 +14,7 @@ export default function threadBase<T extends string>(type: T) {
     isProcessing: yup.boolean(),
     isVisible: yup.boolean().required(),
     title: yup.string(),
+    tacticsWithCommentsIds: optionalStringArray,
     logsById: objectOf(logSchema),
     createdAt: optionalTimestampSchema,
     updatedAt: optionalTimestampSchema,

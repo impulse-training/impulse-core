@@ -7,6 +7,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
     isProcessing: boolean | undefined;
     isVisible: NonNullable<boolean | undefined>;
     title: string | undefined;
+    tacticsWithCommentsIds: string[] | undefined;
     logsById: {
         [x: string]: {
             createdAt?: {
@@ -1859,6 +1860,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
     isProcessing: undefined;
     isVisible: undefined;
     title: undefined;
+    tacticsWithCommentsIds: "";
     logsById: undefined;
     createdAt: undefined;
     updatedAt: undefined;
