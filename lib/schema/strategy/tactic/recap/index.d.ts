@@ -5,6 +5,13 @@ export * from './recapAction';
 export * from './recapTracking';
 export declare const recapTacticSchemas: Record<RecapTacticValue['type'], yup.ObjectSchema<RecapTacticValue>>;
 export declare const recapTacticSchema: yup.Lazy<{
+    profileId?: string | null | undefined;
+    recommendedForIssueIds?: string[] | undefined;
+    recommendedForIssueOrdinals?: {
+        [x: string]: number;
+    } | null | undefined;
+    isInGameplan?: boolean | undefined;
+    description?: string | null | undefined;
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -21,14 +28,6 @@ export declare const recapTacticSchema: yup.Lazy<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    setbackThreshold?: number | null | undefined;
-    profileId?: string | null | undefined;
-    recommendedForIssueIds?: string[] | undefined;
-    recommendedForIssueOrdinals?: {
-        [x: string]: number;
-    } | null | undefined;
-    isInGameplan?: boolean | undefined;
-    description?: string | null | undefined;
     pastTenseTitle?: string | undefined;
     debriefAfterMinutes?: number | null | undefined;
     image?: {
@@ -37,11 +36,12 @@ export declare const recapTacticSchema: yup.Lazy<{
         uri?: yup.Maybe<string | undefined>;
     } | null | undefined;
     backgroundColor?: string | undefined;
+    setbackThreshold?: number | null | undefined;
     likesCount?: number | null | undefined;
     timerSeconds?: yup.Maybe<number | undefined>;
     isSuggested?: boolean | undefined;
-    type: import("./recapKeyType").RecapKeyType;
-    prompt: string;
     ordinal: number;
+    prompt: string;
+    type: import("./recapKeyType").RecapKeyType;
 }, yup.AnyObject, any>;
 export type RecapTacticValue = RecapActionTacticValue | RecapTrackingTacticValue;

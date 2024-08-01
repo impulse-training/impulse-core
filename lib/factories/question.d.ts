@@ -18,6 +18,7 @@ export declare const makeQuestionLogFactories: (TimestampKlass: typeof Timestamp
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        setbackThreshold?: number | undefined;
         followUps?: ({
             message?: string | undefined;
             type: "askAnotherQuestion";
@@ -26,9 +27,9 @@ export declare const makeQuestionLogFactories: (TimestampKlass: typeof Timestamp
             message?: string | undefined;
             type: "showTour";
             steps: {
+                title: string;
                 message: string;
                 elementRefName: string;
-                title: string;
                 confirmButtonLabel: string;
             }[];
         } | {
@@ -41,10 +42,10 @@ export declare const makeQuestionLogFactories: (TimestampKlass: typeof Timestamp
             profileKey: string;
             value: {};
         })[] | undefined;
-        setbackThreshold?: number | undefined;
         categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
         options?: ({
             label?: string | undefined;
+            setbackThreshold?: number | undefined;
             followUps?: ({
                 message?: string | undefined;
                 type: "askAnotherQuestion";
@@ -53,9 +54,9 @@ export declare const makeQuestionLogFactories: (TimestampKlass: typeof Timestamp
                 message?: string | undefined;
                 type: "showTour";
                 steps: {
+                    title: string;
                     message: string;
                     elementRefName: string;
-                    title: string;
                     confirmButtonLabel: string;
                 }[];
             } | {
@@ -70,11 +71,10 @@ export declare const makeQuestionLogFactories: (TimestampKlass: typeof Timestamp
             })[] | undefined;
             color?: string | undefined;
             textColor?: string | undefined;
-            setbackThreshold?: number | undefined;
             greaterThan?: number | undefined;
             lessThanOrEqualTo?: number | undefined;
-            text: string;
             type: "numeric";
+            text: string;
         } | {
             label?: string | undefined;
             followUps?: ({
@@ -85,9 +85,9 @@ export declare const makeQuestionLogFactories: (TimestampKlass: typeof Timestamp
                 message?: string | undefined;
                 type: "showTour";
                 steps: {
+                    title: string;
                     message: string;
                     elementRefName: string;
-                    title: string;
                     confirmButtonLabel: string;
                 }[];
             } | {
@@ -102,17 +102,17 @@ export declare const makeQuestionLogFactories: (TimestampKlass: typeof Timestamp
             })[] | undefined;
             color?: string | undefined;
             textColor?: string | undefined;
-            text: string;
             type: "string";
+            text: string;
         })[] | undefined;
         ordinals?: {
             [x: string]: number;
         } | null | undefined;
         templateFor?: "onboarding" | undefined;
         writeAnswerToProfileMemoryKey?: string | undefined;
-        type: "time";
         prompt: string;
-    }, "type" | "prompt" | ("createdAt" | "updatedAt" | "followUps" | "setbackThreshold" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+        type: "time";
+    }, "prompt" | "type" | ("createdAt" | "updatedAt" | "setbackThreshold" | "followUps" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     questionMultipleChoiceFactory: Factory.Sync.Factory<{
         createdAt?: {
             isEqual?: any;
@@ -138,9 +138,9 @@ export declare const makeQuestionLogFactories: (TimestampKlass: typeof Timestamp
             message?: string | undefined;
             type: "showTour";
             steps: {
+                title: string;
                 message: string;
                 elementRefName: string;
-                title: string;
                 confirmButtonLabel: string;
             }[];
         } | {
@@ -159,10 +159,11 @@ export declare const makeQuestionLogFactories: (TimestampKlass: typeof Timestamp
         } | null | undefined;
         templateFor?: "onboarding" | undefined;
         writeAnswerToProfileMemoryKey?: string | undefined;
-        type: "multipleChoice";
         prompt: string;
+        type: "multipleChoice";
         options: ({
             label?: string | undefined;
+            setbackThreshold?: number | undefined;
             followUps?: ({
                 message?: string | undefined;
                 type: "askAnotherQuestion";
@@ -171,9 +172,9 @@ export declare const makeQuestionLogFactories: (TimestampKlass: typeof Timestamp
                 message?: string | undefined;
                 type: "showTour";
                 steps: {
+                    title: string;
                     message: string;
                     elementRefName: string;
-                    title: string;
                     confirmButtonLabel: string;
                 }[];
             } | {
@@ -188,11 +189,10 @@ export declare const makeQuestionLogFactories: (TimestampKlass: typeof Timestamp
             })[] | undefined;
             color?: string | undefined;
             textColor?: string | undefined;
-            setbackThreshold?: number | undefined;
             greaterThan?: number | undefined;
             lessThanOrEqualTo?: number | undefined;
-            text: string;
             type: "numeric";
+            text: string;
         } | {
             label?: string | undefined;
             followUps?: ({
@@ -203,9 +203,9 @@ export declare const makeQuestionLogFactories: (TimestampKlass: typeof Timestamp
                 message?: string | undefined;
                 type: "showTour";
                 steps: {
+                    title: string;
                     message: string;
                     elementRefName: string;
-                    title: string;
                     confirmButtonLabel: string;
                 }[];
             } | {
@@ -220,9 +220,9 @@ export declare const makeQuestionLogFactories: (TimestampKlass: typeof Timestamp
             })[] | undefined;
             color?: string | undefined;
             textColor?: string | undefined;
-            text: string;
             type: "string";
+            text: string;
         })[];
         canAddNewOptions: NonNullable<boolean | undefined>;
-    }, "type" | "prompt" | "options" | "canAddNewOptions" | ("createdAt" | "updatedAt" | "followUps" | "categories" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+    }, "prompt" | "type" | "options" | "canAddNewOptions" | ("createdAt" | "updatedAt" | "followUps" | "categories" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
 };

@@ -3,9 +3,9 @@ export declare const showTourFollowUpSchema: yup.ObjectSchema<{
     type: "showTour";
     message: string | undefined;
     steps: {
+        title: string;
         message: string;
         elementRefName: string;
-        title: string;
         confirmButtonLabel: string;
     }[];
 }, yup.AnyObject, {

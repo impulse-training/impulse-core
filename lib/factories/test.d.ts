@@ -17,6 +17,260 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     } | null | undefined;
     text?: string | undefined;
     tacticId?: string | null | undefined;
+    tactic?: ({
+        profileId?: string | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        isInGameplan?: boolean | undefined;
+        prompt?: string | undefined;
+        description?: string | null | undefined;
+        createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        pastTenseTitle?: string | undefined;
+        debriefAfterMinutes?: number | null | undefined;
+        image?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | null | undefined;
+        backgroundColor?: string | undefined;
+        setbackThreshold?: number | null | undefined;
+        likesCount?: number | null | undefined;
+        timerSeconds?: import("yup").Maybe<number | undefined>;
+        isSuggested?: boolean | undefined;
+        ordinal: number;
+        type: "audio";
+        recording: {
+            localFilePath?: string | undefined;
+            waveform?: string | null | undefined;
+            remoteFilePath: string;
+        };
+    } | {
+        profileId?: string | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        isInGameplan?: boolean | undefined;
+        description?: string | null | undefined;
+        createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        pastTenseTitle?: string | undefined;
+        debriefAfterMinutes?: number | null | undefined;
+        image?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | null | undefined;
+        backgroundColor?: string | undefined;
+        setbackThreshold?: number | null | undefined;
+        likesCount?: number | null | undefined;
+        timerSeconds?: import("yup").Maybe<number | undefined>;
+        isSuggested?: boolean | undefined;
+        repeat?: import("yup").Maybe<number | undefined>;
+        ordinal: number;
+        prompt: string;
+        type: "breathingExercise";
+        inFor: number;
+        holdFor: number;
+        outFor: number;
+    } | {
+        profileId?: string | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        isInGameplan?: boolean | undefined;
+        description?: string | null | undefined;
+        createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        pastTenseTitle?: string | undefined;
+        debriefAfterMinutes?: number | null | undefined;
+        image?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | null | undefined;
+        backgroundColor?: string | undefined;
+        setbackThreshold?: number | null | undefined;
+        likesCount?: number | null | undefined;
+        timerSeconds?: import("yup").Maybe<number | undefined>;
+        isSuggested?: boolean | undefined;
+        ordinal: number;
+        prompt: string;
+        type: "notifyASupportPerson";
+        contactIds: string[];
+    } | {
+        profileId?: string | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        isInGameplan?: boolean | undefined;
+        description?: string | null | undefined;
+        createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        pastTenseTitle?: string | undefined;
+        debriefAfterMinutes?: number | null | undefined;
+        image?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | null | undefined;
+        backgroundColor?: string | undefined;
+        setbackThreshold?: number | null | undefined;
+        likesCount?: number | null | undefined;
+        timerSeconds?: import("yup").Maybe<number | undefined>;
+        isSuggested?: boolean | undefined;
+        ordinal: number;
+        prompt: string;
+        type: "steps";
+        steps: number;
+    } | {
+        profileId?: string | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        isInGameplan?: boolean | undefined;
+        description?: string | null | undefined;
+        createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        pastTenseTitle?: string | undefined;
+        debriefAfterMinutes?: number | null | undefined;
+        image?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | null | undefined;
+        backgroundColor?: string | undefined;
+        setbackThreshold?: number | null | undefined;
+        likesCount?: number | null | undefined;
+        timerSeconds?: import("yup").Maybe<number | undefined>;
+        isSuggested?: boolean | undefined;
+        ordinal: number;
+        prompt: string;
+        type: "task";
+    } | {
+        profileId?: string | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        isInGameplan?: boolean | undefined;
+        description?: string | null | undefined;
+        createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        pastTenseTitle?: string | undefined;
+        debriefAfterMinutes?: number | null | undefined;
+        image?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | null | undefined;
+        backgroundColor?: string | undefined;
+        setbackThreshold?: number | null | undefined;
+        likesCount?: number | null | undefined;
+        timerSeconds?: import("yup").Maybe<number | undefined>;
+        isSuggested?: boolean | undefined;
+        ordinal: number;
+        prompt: string;
+        type: "video";
+        video: {
+            storagePath?: string | null | undefined;
+            url?: string | null | undefined;
+            description: string;
+            title: string;
+            thumbnailUrl: string;
+            duration: number;
+        };
+    }) | import("yup").Maybe<{} | undefined>;
     isGptSender?: boolean | undefined;
     senderProfileId?: string | null | undefined;
     views?: {
@@ -56,6 +310,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    type: "impulse";
     date: {
         isEqual?: any;
         toMillis?: any;
@@ -64,9 +319,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         nanoseconds: number;
         toDate: Function;
     };
-    type: "impulse";
     parentIssueIds: string[];
-}, "date" | "type" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueName" | "debriefAfter" | "submittedAt")>, profileFactory: import("factory.ts").Factory<{
+}, "type" | "date" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "tactic" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueName" | "debriefAfter" | "submittedAt")>, profileFactory: import("factory.ts").Factory<{
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -83,9 +337,9 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    setbackThreshold?: number | undefined;
     issueName?: string | undefined;
     parentIssueIds?: string[] | undefined;
-    setbackThreshold?: number | undefined;
     whatsappFolderDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
     lastActiveAt?: {
         isEqual?: any;
@@ -132,8 +386,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     longTermMemory?: {
         [x: string]: {
             label?: string | undefined;
-            color?: string | undefined;
             setbackThreshold?: number | undefined;
+            color?: string | undefined;
             idValue?: string | undefined;
             numericValue?: number | undefined;
             setAt: {
@@ -153,7 +407,14 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     uids: string[];
     issueId: string | null;
     timezone: string;
-}, "dailyReview" | "uids" | "issueId" | "timezone" | ("createdAt" | "updatedAt" | "issueName" | "parentIssueIds" | "setbackThreshold" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "impulseCanManageQuestions" | "impulseCanManageGameplan" | "issueDebriefQuestionPrompt" | "isReadyForTour" | "isOnboardingComplete" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "longTermMemory" | "region")>, folderFactory: import("factory.ts").Factory<{
+}, "dailyReview" | "uids" | "issueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "issueName" | "parentIssueIds" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "impulseCanManageQuestions" | "impulseCanManageGameplan" | "issueDebriefQuestionPrompt" | "isReadyForTour" | "isOnboardingComplete" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "longTermMemory" | "region")>, folderFactory: import("factory.ts").Factory<{
+    profileId?: string | undefined;
+    recommendedForIssueIds?: string[] | undefined;
+    recommendedForIssueOrdinals?: {
+        [x: string]: number;
+    } | null | undefined;
+    isInGameplan?: boolean | undefined;
+    description?: string | null | undefined;
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -170,15 +431,16 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    profileId?: string | undefined;
-    recommendedForIssueIds?: string[] | undefined;
-    recommendedForIssueOrdinals?: {
-        [x: string]: number;
-    } | null | undefined;
-    isInGameplan?: boolean | undefined;
-    description?: string | null | undefined;
     tacticsById?: {
         [x: string]: {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            prompt?: string | undefined;
+            description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -195,15 +457,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            prompt?: string | undefined;
-            profileId?: string | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            isInGameplan?: boolean | undefined;
-            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
@@ -212,17 +465,25 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "audio";
             ordinal: number;
+            type: "audio";
             recording: {
                 localFilePath?: string | undefined;
                 waveform?: string | null | undefined;
                 remoteFilePath: string;
             };
         } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -239,15 +500,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            repeat?: import("yup").Maybe<number | undefined>;
-            setbackThreshold?: number | null | undefined;
-            profileId?: string | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            isInGameplan?: boolean | undefined;
-            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
@@ -256,16 +508,25 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "breathingExercise";
-            prompt: string;
+            repeat?: import("yup").Maybe<number | undefined>;
             ordinal: number;
+            prompt: string;
+            type: "breathingExercise";
             inFor: number;
             holdFor: number;
             outFor: number;
         } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -282,14 +543,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            profileId?: string | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            isInGameplan?: boolean | undefined;
-            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
@@ -298,14 +551,22 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "notifyASupportPerson";
-            prompt: string;
             ordinal: number;
+            prompt: string;
+            type: "notifyASupportPerson";
             contactIds: string[];
         } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -322,14 +583,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            profileId?: string | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            isInGameplan?: boolean | undefined;
-            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
@@ -338,14 +591,22 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            ordinal: number;
+            prompt: string;
             type: "steps";
             steps: number;
-            prompt: string;
-            ordinal: number;
         } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -362,14 +623,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            profileId?: string | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            isInGameplan?: boolean | undefined;
-            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
@@ -378,13 +631,21 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            ordinal: number;
+            prompt: string;
             type: "task";
-            prompt: string;
-            ordinal: number;
         } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -401,14 +662,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            profileId?: string | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            isInGameplan?: boolean | undefined;
-            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
@@ -417,17 +670,18 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "video";
-            prompt: string;
             ordinal: number;
+            prompt: string;
+            type: "video";
             video: {
                 storagePath?: string | null | undefined;
                 url?: string | null | undefined;
-                title: string;
                 description: string;
+                title: string;
                 thumbnailUrl: string;
                 duration: number;
             };
@@ -436,6 +690,14 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     slug?: string | undefined;
     creatorProfileId?: string | undefined;
     next3Tactics?: ({
+        profileId?: string | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        isInGameplan?: boolean | undefined;
+        prompt?: string | undefined;
+        description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -452,15 +714,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        setbackThreshold?: number | null | undefined;
-        prompt?: string | undefined;
-        profileId?: string | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
-        isInGameplan?: boolean | undefined;
-        description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
@@ -469,17 +722,25 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
+        setbackThreshold?: number | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        type: "audio";
         ordinal: number;
+        type: "audio";
         recording: {
             localFilePath?: string | undefined;
             waveform?: string | null | undefined;
             remoteFilePath: string;
         };
     } | {
+        profileId?: string | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        isInGameplan?: boolean | undefined;
+        description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -496,15 +757,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        repeat?: import("yup").Maybe<number | undefined>;
-        setbackThreshold?: number | null | undefined;
-        profileId?: string | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
-        isInGameplan?: boolean | undefined;
-        description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
@@ -513,16 +765,25 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
+        setbackThreshold?: number | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        type: "breathingExercise";
-        prompt: string;
+        repeat?: import("yup").Maybe<number | undefined>;
         ordinal: number;
+        prompt: string;
+        type: "breathingExercise";
         inFor: number;
         holdFor: number;
         outFor: number;
     } | {
+        profileId?: string | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        isInGameplan?: boolean | undefined;
+        description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -539,14 +800,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        setbackThreshold?: number | null | undefined;
-        profileId?: string | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
-        isInGameplan?: boolean | undefined;
-        description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
@@ -555,14 +808,22 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
+        setbackThreshold?: number | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        type: "notifyASupportPerson";
-        prompt: string;
         ordinal: number;
+        prompt: string;
+        type: "notifyASupportPerson";
         contactIds: string[];
     } | {
+        profileId?: string | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        isInGameplan?: boolean | undefined;
+        description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -579,14 +840,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        setbackThreshold?: number | null | undefined;
-        profileId?: string | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
-        isInGameplan?: boolean | undefined;
-        description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
@@ -595,14 +848,22 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
+        setbackThreshold?: number | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
+        ordinal: number;
+        prompt: string;
         type: "steps";
         steps: number;
-        prompt: string;
-        ordinal: number;
     } | {
+        profileId?: string | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        isInGameplan?: boolean | undefined;
+        description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -619,14 +880,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        setbackThreshold?: number | null | undefined;
-        profileId?: string | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
-        isInGameplan?: boolean | undefined;
-        description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
@@ -635,13 +888,21 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
+        setbackThreshold?: number | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
+        ordinal: number;
+        prompt: string;
         type: "task";
-        prompt: string;
-        ordinal: number;
     } | {
+        profileId?: string | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        isInGameplan?: boolean | undefined;
+        description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -658,14 +919,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        setbackThreshold?: number | null | undefined;
-        profileId?: string | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
-        isInGameplan?: boolean | undefined;
-        description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
@@ -674,26 +927,27 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             uri?: import("yup").Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
+        setbackThreshold?: number | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        type: "video";
-        prompt: string;
         ordinal: number;
+        prompt: string;
+        type: "video";
         video: {
             storagePath?: string | null | undefined;
             url?: string | null | undefined;
-            title: string;
             description: string;
+            title: string;
             thumbnailUrl: string;
             duration: number;
         };
     })[] | undefined;
     nextTacticId?: string | undefined;
-    type: "folder";
-    prompt: string;
     ordinal: number;
+    prompt: string;
+    type: "folder";
     isShared: NonNullable<boolean | undefined>;
     invitationCode: string;
     invitationUrl: string;
-}, "type" | "prompt" | "ordinal" | "isShared" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "description" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics" | "nextTacticId")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "type" | "setbackThreshold" | "prompt" | "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "ordinal" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+}, "ordinal" | "prompt" | "type" | "isShared" | "invitationCode" | "invitationUrl" | ("profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "description" | "createdAt" | "updatedAt" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics" | "nextTacticId")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "ordinal" | "prompt" | "description" | "type" | "createdAt" | "updatedAt" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "setbackThreshold" | "likesCount" | "timerSeconds" | "isSuggested">;

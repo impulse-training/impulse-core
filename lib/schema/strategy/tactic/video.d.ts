@@ -41,8 +41,8 @@ export declare const videoTacticSchema: yup.ObjectSchema<{
     video: {
         storagePath?: string | null | undefined;
         url?: string | null | undefined;
-        title: string;
         description: string;
+        title: string;
         thumbnailUrl: string;
         duration: number;
     };

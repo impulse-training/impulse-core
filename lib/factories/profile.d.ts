@@ -17,9 +17,9 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    setbackThreshold?: number | undefined;
     issueName?: string | undefined;
     parentIssueIds?: string[] | undefined;
-    setbackThreshold?: number | undefined;
     whatsappFolderDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
     lastActiveAt?: {
         isEqual?: any;
@@ -66,8 +66,8 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     longTermMemory?: {
         [x: string]: {
             label?: string | undefined;
-            color?: string | undefined;
             setbackThreshold?: number | undefined;
+            color?: string | undefined;
             idValue?: string | undefined;
             numericValue?: number | undefined;
             setAt: {
@@ -87,4 +87,4 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     uids: string[];
     issueId: string | null;
     timezone: string;
-}, "dailyReview" | "uids" | "issueId" | "timezone" | ("createdAt" | "updatedAt" | "issueName" | "parentIssueIds" | "setbackThreshold" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "impulseCanManageQuestions" | "impulseCanManageGameplan" | "issueDebriefQuestionPrompt" | "isReadyForTour" | "isOnboardingComplete" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "longTermMemory" | "region")>;
+}, "dailyReview" | "uids" | "issueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "issueName" | "parentIssueIds" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "impulseCanManageQuestions" | "impulseCanManageGameplan" | "issueDebriefQuestionPrompt" | "isReadyForTour" | "isOnboardingComplete" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "longTermMemory" | "region")>;

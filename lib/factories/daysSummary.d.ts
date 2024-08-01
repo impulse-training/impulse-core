@@ -4,8 +4,8 @@ export declare const makeDaysSummaryFactory: (TimestampKlass: typeof TimestampLi
     [x: string]: {
         [x: string]: {
             label?: string | undefined;
-            color?: string | undefined;
             setbackThreshold?: number | undefined;
+            color?: string | undefined;
             idValue?: string | undefined;
             numericValue?: number | undefined;
             setAt: {

@@ -18,6 +18,260 @@ export declare const factories: {
         } | null | undefined;
         text?: string | undefined;
         tacticId?: string | null | undefined;
+        tactic?: ({
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            prompt?: string | undefined;
+            description?: string | null | undefined;
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            pastTenseTitle?: string | undefined;
+            debriefAfterMinutes?: number | null | undefined;
+            image?: {
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            likesCount?: number | null | undefined;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
+            isSuggested?: boolean | undefined;
+            ordinal: number;
+            type: "audio";
+            recording: {
+                localFilePath?: string | undefined;
+                waveform?: string | null | undefined;
+                remoteFilePath: string;
+            };
+        } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            pastTenseTitle?: string | undefined;
+            debriefAfterMinutes?: number | null | undefined;
+            image?: {
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            likesCount?: number | null | undefined;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
+            isSuggested?: boolean | undefined;
+            repeat?: import("yup").Maybe<number | undefined>;
+            ordinal: number;
+            prompt: string;
+            type: "breathingExercise";
+            inFor: number;
+            holdFor: number;
+            outFor: number;
+        } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            pastTenseTitle?: string | undefined;
+            debriefAfterMinutes?: number | null | undefined;
+            image?: {
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            likesCount?: number | null | undefined;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
+            isSuggested?: boolean | undefined;
+            ordinal: number;
+            prompt: string;
+            type: "notifyASupportPerson";
+            contactIds: string[];
+        } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            pastTenseTitle?: string | undefined;
+            debriefAfterMinutes?: number | null | undefined;
+            image?: {
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            likesCount?: number | null | undefined;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
+            isSuggested?: boolean | undefined;
+            ordinal: number;
+            prompt: string;
+            type: "steps";
+            steps: number;
+        } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            pastTenseTitle?: string | undefined;
+            debriefAfterMinutes?: number | null | undefined;
+            image?: {
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            likesCount?: number | null | undefined;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
+            isSuggested?: boolean | undefined;
+            ordinal: number;
+            prompt: string;
+            type: "task";
+        } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            pastTenseTitle?: string | undefined;
+            debriefAfterMinutes?: number | null | undefined;
+            image?: {
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            likesCount?: number | null | undefined;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
+            isSuggested?: boolean | undefined;
+            ordinal: number;
+            prompt: string;
+            type: "video";
+            video: {
+                storagePath?: string | null | undefined;
+                url?: string | null | undefined;
+                description: string;
+                title: string;
+                thumbnailUrl: string;
+                duration: number;
+            };
+        }) | import("yup").Maybe<{} | undefined>;
         isGptSender?: boolean | undefined;
         senderProfileId?: string | null | undefined;
         views?: {
@@ -57,6 +311,7 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        type: "impulse";
         date: {
             isEqual?: any;
             toMillis?: any;
@@ -65,9 +320,8 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         };
-        type: "impulse";
         parentIssueIds: string[];
-    }, "date" | "type" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueName" | "debriefAfter" | "submittedAt")>;
+    }, "type" | "date" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "tactic" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueName" | "debriefAfter" | "submittedAt")>;
     messageLogFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -85,7 +339,266 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        recording?: {
+            localFilePath?: string | undefined;
+            waveform?: string | null | undefined;
+            remoteFilePath: string;
+        } | null | undefined;
         tacticId?: string | null | undefined;
+        tactic?: ({
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            prompt?: string | undefined;
+            description?: string | null | undefined;
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            pastTenseTitle?: string | undefined;
+            debriefAfterMinutes?: number | null | undefined;
+            image?: {
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            likesCount?: number | null | undefined;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
+            isSuggested?: boolean | undefined;
+            ordinal: number;
+            type: "audio";
+            recording: {
+                localFilePath?: string | undefined;
+                waveform?: string | null | undefined;
+                remoteFilePath: string;
+            };
+        } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            pastTenseTitle?: string | undefined;
+            debriefAfterMinutes?: number | null | undefined;
+            image?: {
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            likesCount?: number | null | undefined;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
+            isSuggested?: boolean | undefined;
+            repeat?: import("yup").Maybe<number | undefined>;
+            ordinal: number;
+            prompt: string;
+            type: "breathingExercise";
+            inFor: number;
+            holdFor: number;
+            outFor: number;
+        } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            pastTenseTitle?: string | undefined;
+            debriefAfterMinutes?: number | null | undefined;
+            image?: {
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            likesCount?: number | null | undefined;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
+            isSuggested?: boolean | undefined;
+            ordinal: number;
+            prompt: string;
+            type: "notifyASupportPerson";
+            contactIds: string[];
+        } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            pastTenseTitle?: string | undefined;
+            debriefAfterMinutes?: number | null | undefined;
+            image?: {
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            likesCount?: number | null | undefined;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
+            isSuggested?: boolean | undefined;
+            ordinal: number;
+            prompt: string;
+            type: "steps";
+            steps: number;
+        } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            pastTenseTitle?: string | undefined;
+            debriefAfterMinutes?: number | null | undefined;
+            image?: {
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            likesCount?: number | null | undefined;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
+            isSuggested?: boolean | undefined;
+            ordinal: number;
+            prompt: string;
+            type: "task";
+        } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            pastTenseTitle?: string | undefined;
+            debriefAfterMinutes?: number | null | undefined;
+            image?: {
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            likesCount?: number | null | undefined;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
+            isSuggested?: boolean | undefined;
+            ordinal: number;
+            prompt: string;
+            type: "video";
+            video: {
+                storagePath?: string | null | undefined;
+                url?: string | null | undefined;
+                description: string;
+                title: string;
+                thumbnailUrl: string;
+                duration: number;
+            };
+        }) | import("yup").Maybe<{} | undefined>;
         isGptSender?: boolean | undefined;
         senderProfileId?: string | null | undefined;
         views?: {
@@ -108,6 +621,7 @@ export declare const factories: {
         }[] | undefined;
         openAiRequestPayload?: string | undefined;
         openAiChoiceResponse?: {} | undefined;
+        type: "message";
         date: {
             isEqual?: any;
             toMillis?: any;
@@ -117,8 +631,7 @@ export declare const factories: {
             toDate: Function;
         };
         text: string;
-        type: "message";
-    }, "date" | "text" | "type" | ("createdAt" | "updatedAt" | "tacticId" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse")>;
+    }, "type" | "date" | "text" | ("createdAt" | "updatedAt" | "recording" | "tacticId" | "tactic" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse")>;
     questionsLogFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -138,6 +651,260 @@ export declare const factories: {
         } | null | undefined;
         text?: string | undefined;
         tacticId?: string | null | undefined;
+        tactic?: ({
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            prompt?: string | undefined;
+            description?: string | null | undefined;
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            pastTenseTitle?: string | undefined;
+            debriefAfterMinutes?: number | null | undefined;
+            image?: {
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            likesCount?: number | null | undefined;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
+            isSuggested?: boolean | undefined;
+            ordinal: number;
+            type: "audio";
+            recording: {
+                localFilePath?: string | undefined;
+                waveform?: string | null | undefined;
+                remoteFilePath: string;
+            };
+        } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            pastTenseTitle?: string | undefined;
+            debriefAfterMinutes?: number | null | undefined;
+            image?: {
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            likesCount?: number | null | undefined;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
+            isSuggested?: boolean | undefined;
+            repeat?: import("yup").Maybe<number | undefined>;
+            ordinal: number;
+            prompt: string;
+            type: "breathingExercise";
+            inFor: number;
+            holdFor: number;
+            outFor: number;
+        } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            pastTenseTitle?: string | undefined;
+            debriefAfterMinutes?: number | null | undefined;
+            image?: {
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            likesCount?: number | null | undefined;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
+            isSuggested?: boolean | undefined;
+            ordinal: number;
+            prompt: string;
+            type: "notifyASupportPerson";
+            contactIds: string[];
+        } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            pastTenseTitle?: string | undefined;
+            debriefAfterMinutes?: number | null | undefined;
+            image?: {
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            likesCount?: number | null | undefined;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
+            isSuggested?: boolean | undefined;
+            ordinal: number;
+            prompt: string;
+            type: "steps";
+            steps: number;
+        } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            pastTenseTitle?: string | undefined;
+            debriefAfterMinutes?: number | null | undefined;
+            image?: {
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            likesCount?: number | null | undefined;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
+            isSuggested?: boolean | undefined;
+            ordinal: number;
+            prompt: string;
+            type: "task";
+        } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            pastTenseTitle?: string | undefined;
+            debriefAfterMinutes?: number | null | undefined;
+            image?: {
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            likesCount?: number | null | undefined;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
+            isSuggested?: boolean | undefined;
+            ordinal: number;
+            prompt: string;
+            type: "video";
+            video: {
+                storagePath?: string | null | undefined;
+                url?: string | null | undefined;
+                description: string;
+                title: string;
+                thumbnailUrl: string;
+                duration: number;
+            };
+        }) | import("yup").Maybe<{} | undefined>;
         isGptSender?: boolean | undefined;
         senderProfileId?: string | null | undefined;
         views?: {
@@ -171,8 +938,8 @@ export declare const factories: {
         questionData?: {
             [x: string]: {
                 label?: string | undefined;
-                color?: string | undefined;
                 setbackThreshold?: number | undefined;
+                color?: string | undefined;
                 idValue?: string | undefined;
                 numericValue?: number | undefined;
                 setAt: {
@@ -191,6 +958,7 @@ export declare const factories: {
         debriefingQuestionIds?: string[] | undefined;
         isDebrief?: boolean | undefined;
         followedUpQuestionIds?: string[] | undefined;
+        type: "questions";
         date: {
             isEqual?: any;
             toMillis?: any;
@@ -199,7 +967,6 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         };
-        type: "questions";
         questionsById: {
             [x: string]: {
                 createdAt?: {
@@ -218,33 +985,34 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        message: string;
-                        elementRefName: string;
-                        title: string;
-                        confirmButtonLabel: string;
-                    }[];
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
                 setbackThreshold?: number | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "showTour";
+                    steps: {
+                        title: string;
+                        message: string;
+                        elementRefName: string;
+                        confirmButtonLabel: string;
+                    }[];
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
                 categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     label?: string | undefined;
+                    setbackThreshold?: number | undefined;
                     followUps?: ({
                         message?: string | undefined;
                         type: "askAnotherQuestion";
@@ -253,9 +1021,9 @@ export declare const factories: {
                         message?: string | undefined;
                         type: "showTour";
                         steps: {
+                            title: string;
                             message: string;
                             elementRefName: string;
-                            title: string;
                             confirmButtonLabel: string;
                         }[];
                     } | {
@@ -270,11 +1038,10 @@ export declare const factories: {
                     })[] | undefined;
                     color?: string | undefined;
                     textColor?: string | undefined;
-                    setbackThreshold?: number | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
-                    text: string;
                     type: "numeric";
+                    text: string;
                 } | {
                     label?: string | undefined;
                     followUps?: ({
@@ -285,9 +1052,9 @@ export declare const factories: {
                         message?: string | undefined;
                         type: "showTour";
                         steps: {
+                            title: string;
                             message: string;
                             elementRefName: string;
-                            title: string;
                             confirmButtonLabel: string;
                         }[];
                     } | {
@@ -302,16 +1069,16 @@ export declare const factories: {
                     })[] | undefined;
                     color?: string | undefined;
                     textColor?: string | undefined;
-                    text: string;
                     type: "string";
+                    text: string;
                 })[] | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
+                prompt: string;
                 type: "counter";
-                prompt: string;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -337,9 +1104,9 @@ export declare const factories: {
                     message?: string | undefined;
                     type: "showTour";
                     steps: {
+                        title: string;
                         message: string;
                         elementRefName: string;
-                        title: string;
                         confirmButtonLabel: string;
                     }[];
                 } | {
@@ -355,6 +1122,7 @@ export declare const factories: {
                 categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     label?: string | undefined;
+                    setbackThreshold?: number | undefined;
                     followUps?: ({
                         message?: string | undefined;
                         type: "askAnotherQuestion";
@@ -363,9 +1131,9 @@ export declare const factories: {
                         message?: string | undefined;
                         type: "showTour";
                         steps: {
+                            title: string;
                             message: string;
                             elementRefName: string;
-                            title: string;
                             confirmButtonLabel: string;
                         }[];
                     } | {
@@ -380,11 +1148,10 @@ export declare const factories: {
                     })[] | undefined;
                     color?: string | undefined;
                     textColor?: string | undefined;
-                    setbackThreshold?: number | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
-                    text: string;
                     type: "numeric";
+                    text: string;
                 } | {
                     label?: string | undefined;
                     followUps?: ({
@@ -395,9 +1162,9 @@ export declare const factories: {
                         message?: string | undefined;
                         type: "showTour";
                         steps: {
+                            title: string;
                             message: string;
                             elementRefName: string;
-                            title: string;
                             confirmButtonLabel: string;
                         }[];
                     } | {
@@ -412,16 +1179,16 @@ export declare const factories: {
                     })[] | undefined;
                     color?: string | undefined;
                     textColor?: string | undefined;
-                    text: string;
                     type: "string";
+                    text: string;
                 })[] | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
-                type: "issue";
                 prompt: string;
+                type: "issue";
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -447,9 +1214,9 @@ export declare const factories: {
                     message?: string | undefined;
                     type: "showTour";
                     steps: {
+                        title: string;
                         message: string;
                         elementRefName: string;
-                        title: string;
                         confirmButtonLabel: string;
                     }[];
                 } | {
@@ -468,10 +1235,11 @@ export declare const factories: {
                 } | null | undefined;
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
-                type: "multipleChoice";
                 prompt: string;
+                type: "multipleChoice";
                 options: ({
                     label?: string | undefined;
+                    setbackThreshold?: number | undefined;
                     followUps?: ({
                         message?: string | undefined;
                         type: "askAnotherQuestion";
@@ -480,9 +1248,9 @@ export declare const factories: {
                         message?: string | undefined;
                         type: "showTour";
                         steps: {
+                            title: string;
                             message: string;
                             elementRefName: string;
-                            title: string;
                             confirmButtonLabel: string;
                         }[];
                     } | {
@@ -497,11 +1265,10 @@ export declare const factories: {
                     })[] | undefined;
                     color?: string | undefined;
                     textColor?: string | undefined;
-                    setbackThreshold?: number | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
-                    text: string;
                     type: "numeric";
+                    text: string;
                 } | {
                     label?: string | undefined;
                     followUps?: ({
@@ -512,9 +1279,9 @@ export declare const factories: {
                         message?: string | undefined;
                         type: "showTour";
                         steps: {
+                            title: string;
                             message: string;
                             elementRefName: string;
-                            title: string;
                             confirmButtonLabel: string;
                         }[];
                     } | {
@@ -529,8 +1296,8 @@ export declare const factories: {
                     })[] | undefined;
                     color?: string | undefined;
                     textColor?: string | undefined;
-                    text: string;
                     type: "string";
+                    text: string;
                 })[];
                 canAddNewOptions: NonNullable<boolean | undefined>;
             } | {
@@ -550,6 +1317,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                setbackThreshold?: number | undefined;
                 followUps?: ({
                     message?: string | undefined;
                     type: "askAnotherQuestion";
@@ -558,9 +1326,9 @@ export declare const factories: {
                     message?: string | undefined;
                     type: "showTour";
                     steps: {
+                        title: string;
                         message: string;
                         elementRefName: string;
-                        title: string;
                         confirmButtonLabel: string;
                     }[];
                 } | {
@@ -573,10 +1341,10 @@ export declare const factories: {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                setbackThreshold?: number | undefined;
                 categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     label?: string | undefined;
+                    setbackThreshold?: number | undefined;
                     followUps?: ({
                         message?: string | undefined;
                         type: "askAnotherQuestion";
@@ -585,9 +1353,9 @@ export declare const factories: {
                         message?: string | undefined;
                         type: "showTour";
                         steps: {
+                            title: string;
                             message: string;
                             elementRefName: string;
-                            title: string;
                             confirmButtonLabel: string;
                         }[];
                     } | {
@@ -602,11 +1370,10 @@ export declare const factories: {
                     })[] | undefined;
                     color?: string | undefined;
                     textColor?: string | undefined;
-                    setbackThreshold?: number | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
-                    text: string;
                     type: "numeric";
+                    text: string;
                 } | {
                     label?: string | undefined;
                     followUps?: ({
@@ -617,9 +1384,9 @@ export declare const factories: {
                         message?: string | undefined;
                         type: "showTour";
                         steps: {
+                            title: string;
                             message: string;
                             elementRefName: string;
-                            title: string;
                             confirmButtonLabel: string;
                         }[];
                     } | {
@@ -634,8 +1401,8 @@ export declare const factories: {
                     })[] | undefined;
                     color?: string | undefined;
                     textColor?: string | undefined;
-                    text: string;
                     type: "string";
+                    text: string;
                 })[] | undefined;
                 ordinals?: {
                     [x: string]: number;
@@ -644,8 +1411,8 @@ export declare const factories: {
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 lowEmoji?: import("yup").Maybe<string | undefined>;
                 highEmoji?: import("yup").Maybe<string | undefined>;
-                type: "scaleOf1To10";
                 prompt: string;
+                type: "scaleOf1To10";
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -663,6 +1430,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                setbackThreshold?: number | undefined;
                 followUps?: ({
                     message?: string | undefined;
                     type: "askAnotherQuestion";
@@ -671,9 +1439,9 @@ export declare const factories: {
                     message?: string | undefined;
                     type: "showTour";
                     steps: {
+                        title: string;
                         message: string;
                         elementRefName: string;
-                        title: string;
                         confirmButtonLabel: string;
                     }[];
                 } | {
@@ -686,10 +1454,10 @@ export declare const factories: {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                setbackThreshold?: number | undefined;
                 categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     label?: string | undefined;
+                    setbackThreshold?: number | undefined;
                     followUps?: ({
                         message?: string | undefined;
                         type: "askAnotherQuestion";
@@ -698,9 +1466,9 @@ export declare const factories: {
                         message?: string | undefined;
                         type: "showTour";
                         steps: {
+                            title: string;
                             message: string;
                             elementRefName: string;
-                            title: string;
                             confirmButtonLabel: string;
                         }[];
                     } | {
@@ -715,11 +1483,10 @@ export declare const factories: {
                     })[] | undefined;
                     color?: string | undefined;
                     textColor?: string | undefined;
-                    setbackThreshold?: number | undefined;
                     greaterThan?: number | undefined;
                     lessThanOrEqualTo?: number | undefined;
-                    text: string;
                     type: "numeric";
+                    text: string;
                 } | {
                     label?: string | undefined;
                     followUps?: ({
@@ -730,9 +1497,9 @@ export declare const factories: {
                         message?: string | undefined;
                         type: "showTour";
                         steps: {
+                            title: string;
                             message: string;
                             elementRefName: string;
-                            title: string;
                             confirmButtonLabel: string;
                         }[];
                     } | {
@@ -747,19 +1514,19 @@ export declare const factories: {
                     })[] | undefined;
                     color?: string | undefined;
                     textColor?: string | undefined;
-                    text: string;
                     type: "string";
+                    text: string;
                 })[] | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 templateFor?: "onboarding" | undefined;
                 writeAnswerToProfileMemoryKey?: string | undefined;
-                type: "time";
                 prompt: string;
+                type: "time";
             };
         };
-    }, "date" | "type" | "questionsById" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "submittedAt" | "questionData" | "trackingQuestionIds" | "debriefingQuestionIds" | "isDebrief" | "followedUpQuestionIds")>;
+    }, "type" | "date" | "questionsById" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "tactic" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "submittedAt" | "questionData" | "trackingQuestionIds" | "debriefingQuestionIds" | "isDebrief" | "followedUpQuestionIds")>;
     strategiesLogFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -779,6 +1546,260 @@ export declare const factories: {
         } | null | undefined;
         text?: string | undefined;
         tacticId?: string | null | undefined;
+        tactic?: ({
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            prompt?: string | undefined;
+            description?: string | null | undefined;
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            pastTenseTitle?: string | undefined;
+            debriefAfterMinutes?: number | null | undefined;
+            image?: {
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            likesCount?: number | null | undefined;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
+            isSuggested?: boolean | undefined;
+            ordinal: number;
+            type: "audio";
+            recording: {
+                localFilePath?: string | undefined;
+                waveform?: string | null | undefined;
+                remoteFilePath: string;
+            };
+        } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            pastTenseTitle?: string | undefined;
+            debriefAfterMinutes?: number | null | undefined;
+            image?: {
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            likesCount?: number | null | undefined;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
+            isSuggested?: boolean | undefined;
+            repeat?: import("yup").Maybe<number | undefined>;
+            ordinal: number;
+            prompt: string;
+            type: "breathingExercise";
+            inFor: number;
+            holdFor: number;
+            outFor: number;
+        } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            pastTenseTitle?: string | undefined;
+            debriefAfterMinutes?: number | null | undefined;
+            image?: {
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            likesCount?: number | null | undefined;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
+            isSuggested?: boolean | undefined;
+            ordinal: number;
+            prompt: string;
+            type: "notifyASupportPerson";
+            contactIds: string[];
+        } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            pastTenseTitle?: string | undefined;
+            debriefAfterMinutes?: number | null | undefined;
+            image?: {
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            likesCount?: number | null | undefined;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
+            isSuggested?: boolean | undefined;
+            ordinal: number;
+            prompt: string;
+            type: "steps";
+            steps: number;
+        } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            pastTenseTitle?: string | undefined;
+            debriefAfterMinutes?: number | null | undefined;
+            image?: {
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            likesCount?: number | null | undefined;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
+            isSuggested?: boolean | undefined;
+            ordinal: number;
+            prompt: string;
+            type: "task";
+        } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            pastTenseTitle?: string | undefined;
+            debriefAfterMinutes?: number | null | undefined;
+            image?: {
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            likesCount?: number | null | undefined;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
+            isSuggested?: boolean | undefined;
+            ordinal: number;
+            prompt: string;
+            type: "video";
+            video: {
+                storagePath?: string | null | undefined;
+                url?: string | null | undefined;
+                description: string;
+                title: string;
+                thumbnailUrl: string;
+                duration: number;
+            };
+        }) | import("yup").Maybe<{} | undefined>;
         isGptSender?: boolean | undefined;
         senderProfileId?: string | null | undefined;
         views?: {
@@ -802,6 +1823,7 @@ export declare const factories: {
         openAiRequestPayload?: string | undefined;
         openAiChoiceResponse?: {} | undefined;
         suggestedStrategyDocPaths?: string[] | undefined;
+        type: "strategies";
         date: {
             isEqual?: any;
             toMillis?: any;
@@ -810,9 +1832,16 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         };
-        type: "strategies";
         strategiesById: {
             [x: string]: {
+                profileId?: string | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                isInGameplan?: boolean | undefined;
+                prompt?: string | undefined;
+                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -829,15 +1858,6 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
-                prompt?: string | undefined;
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                isInGameplan?: boolean | undefined;
-                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -846,17 +1866,25 @@ export declare const factories: {
                     uri?: import("yup").Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
+                setbackThreshold?: number | null | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                type: "audio";
                 ordinal: number;
+                type: "audio";
                 recording: {
                     localFilePath?: string | undefined;
                     waveform?: string | null | undefined;
                     remoteFilePath: string;
                 };
             } | {
+                profileId?: string | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                isInGameplan?: boolean | undefined;
+                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -873,15 +1901,6 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                repeat?: import("yup").Maybe<number | undefined>;
-                setbackThreshold?: number | null | undefined;
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                isInGameplan?: boolean | undefined;
-                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -890,16 +1909,25 @@ export declare const factories: {
                     uri?: import("yup").Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
+                setbackThreshold?: number | null | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                type: "breathingExercise";
-                prompt: string;
+                repeat?: import("yup").Maybe<number | undefined>;
                 ordinal: number;
+                prompt: string;
+                type: "breathingExercise";
                 inFor: number;
                 holdFor: number;
                 outFor: number;
             } | {
+                profileId?: string | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                isInGameplan?: boolean | undefined;
+                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -916,14 +1944,6 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                isInGameplan?: boolean | undefined;
-                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -932,14 +1952,22 @@ export declare const factories: {
                     uri?: import("yup").Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
+                setbackThreshold?: number | null | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                type: "notifyASupportPerson";
-                prompt: string;
                 ordinal: number;
+                prompt: string;
+                type: "notifyASupportPerson";
                 contactIds: string[];
             } | {
+                profileId?: string | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                isInGameplan?: boolean | undefined;
+                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -956,14 +1984,6 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                isInGameplan?: boolean | undefined;
-                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -972,14 +1992,22 @@ export declare const factories: {
                     uri?: import("yup").Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
+                setbackThreshold?: number | null | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
+                ordinal: number;
+                prompt: string;
                 type: "steps";
                 steps: number;
-                prompt: string;
-                ordinal: number;
             } | {
+                profileId?: string | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                isInGameplan?: boolean | undefined;
+                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -996,14 +2024,6 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                isInGameplan?: boolean | undefined;
-                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -1012,13 +2032,21 @@ export declare const factories: {
                     uri?: import("yup").Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
+                setbackThreshold?: number | null | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
+                ordinal: number;
+                prompt: string;
                 type: "task";
-                prompt: string;
-                ordinal: number;
             } | {
+                profileId?: string | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                isInGameplan?: boolean | undefined;
+                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1035,14 +2063,6 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                isInGameplan?: boolean | undefined;
-                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -1051,37 +2071,22 @@ export declare const factories: {
                     uri?: import("yup").Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
+                setbackThreshold?: number | null | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                type: "video";
-                prompt: string;
                 ordinal: number;
+                prompt: string;
+                type: "video";
                 video: {
                     storagePath?: string | null | undefined;
                     url?: string | null | undefined;
-                    title: string;
                     description: string;
+                    title: string;
                     thumbnailUrl: string;
                     duration: number;
                 };
             } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
                 profileId?: string | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
@@ -1089,8 +2094,32 @@ export declare const factories: {
                 } | null | undefined;
                 isInGameplan?: boolean | undefined;
                 description?: string | null | undefined;
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
                 tacticsById?: {
                     [x: string]: {
+                        profileId?: string | null | undefined;
+                        recommendedForIssueIds?: string[] | undefined;
+                        recommendedForIssueOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        isInGameplan?: boolean | undefined;
+                        prompt?: string | undefined;
+                        description?: string | null | undefined;
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
@@ -1107,15 +2136,6 @@ export declare const factories: {
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        setbackThreshold?: number | null | undefined;
-                        prompt?: string | undefined;
-                        profileId?: string | null | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
-                        recommendedForIssueOrdinals?: {
-                            [x: string]: number;
-                        } | null | undefined;
-                        isInGameplan?: boolean | undefined;
-                        description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
@@ -1124,17 +2144,25 @@ export declare const factories: {
                             uri?: import("yup").Maybe<string | undefined>;
                         } | null | undefined;
                         backgroundColor?: string | undefined;
+                        setbackThreshold?: number | null | undefined;
                         likesCount?: number | null | undefined;
                         timerSeconds?: import("yup").Maybe<number | undefined>;
                         isSuggested?: boolean | undefined;
-                        type: "audio";
                         ordinal: number;
+                        type: "audio";
                         recording: {
                             localFilePath?: string | undefined;
                             waveform?: string | null | undefined;
                             remoteFilePath: string;
                         };
                     } | {
+                        profileId?: string | null | undefined;
+                        recommendedForIssueIds?: string[] | undefined;
+                        recommendedForIssueOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        isInGameplan?: boolean | undefined;
+                        description?: string | null | undefined;
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
@@ -1151,15 +2179,6 @@ export declare const factories: {
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        repeat?: import("yup").Maybe<number | undefined>;
-                        setbackThreshold?: number | null | undefined;
-                        profileId?: string | null | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
-                        recommendedForIssueOrdinals?: {
-                            [x: string]: number;
-                        } | null | undefined;
-                        isInGameplan?: boolean | undefined;
-                        description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
@@ -1168,16 +2187,25 @@ export declare const factories: {
                             uri?: import("yup").Maybe<string | undefined>;
                         } | null | undefined;
                         backgroundColor?: string | undefined;
+                        setbackThreshold?: number | null | undefined;
                         likesCount?: number | null | undefined;
                         timerSeconds?: import("yup").Maybe<number | undefined>;
                         isSuggested?: boolean | undefined;
-                        type: "breathingExercise";
-                        prompt: string;
+                        repeat?: import("yup").Maybe<number | undefined>;
                         ordinal: number;
+                        prompt: string;
+                        type: "breathingExercise";
                         inFor: number;
                         holdFor: number;
                         outFor: number;
                     } | {
+                        profileId?: string | null | undefined;
+                        recommendedForIssueIds?: string[] | undefined;
+                        recommendedForIssueOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        isInGameplan?: boolean | undefined;
+                        description?: string | null | undefined;
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
@@ -1194,14 +2222,6 @@ export declare const factories: {
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        setbackThreshold?: number | null | undefined;
-                        profileId?: string | null | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
-                        recommendedForIssueOrdinals?: {
-                            [x: string]: number;
-                        } | null | undefined;
-                        isInGameplan?: boolean | undefined;
-                        description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
@@ -1210,14 +2230,22 @@ export declare const factories: {
                             uri?: import("yup").Maybe<string | undefined>;
                         } | null | undefined;
                         backgroundColor?: string | undefined;
+                        setbackThreshold?: number | null | undefined;
                         likesCount?: number | null | undefined;
                         timerSeconds?: import("yup").Maybe<number | undefined>;
                         isSuggested?: boolean | undefined;
-                        type: "notifyASupportPerson";
-                        prompt: string;
                         ordinal: number;
+                        prompt: string;
+                        type: "notifyASupportPerson";
                         contactIds: string[];
                     } | {
+                        profileId?: string | null | undefined;
+                        recommendedForIssueIds?: string[] | undefined;
+                        recommendedForIssueOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        isInGameplan?: boolean | undefined;
+                        description?: string | null | undefined;
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
@@ -1234,14 +2262,6 @@ export declare const factories: {
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        setbackThreshold?: number | null | undefined;
-                        profileId?: string | null | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
-                        recommendedForIssueOrdinals?: {
-                            [x: string]: number;
-                        } | null | undefined;
-                        isInGameplan?: boolean | undefined;
-                        description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
@@ -1250,14 +2270,22 @@ export declare const factories: {
                             uri?: import("yup").Maybe<string | undefined>;
                         } | null | undefined;
                         backgroundColor?: string | undefined;
+                        setbackThreshold?: number | null | undefined;
                         likesCount?: number | null | undefined;
                         timerSeconds?: import("yup").Maybe<number | undefined>;
                         isSuggested?: boolean | undefined;
+                        ordinal: number;
+                        prompt: string;
                         type: "steps";
                         steps: number;
-                        prompt: string;
-                        ordinal: number;
                     } | {
+                        profileId?: string | null | undefined;
+                        recommendedForIssueIds?: string[] | undefined;
+                        recommendedForIssueOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        isInGameplan?: boolean | undefined;
+                        description?: string | null | undefined;
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
@@ -1274,14 +2302,6 @@ export declare const factories: {
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        setbackThreshold?: number | null | undefined;
-                        profileId?: string | null | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
-                        recommendedForIssueOrdinals?: {
-                            [x: string]: number;
-                        } | null | undefined;
-                        isInGameplan?: boolean | undefined;
-                        description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
@@ -1290,13 +2310,21 @@ export declare const factories: {
                             uri?: import("yup").Maybe<string | undefined>;
                         } | null | undefined;
                         backgroundColor?: string | undefined;
+                        setbackThreshold?: number | null | undefined;
                         likesCount?: number | null | undefined;
                         timerSeconds?: import("yup").Maybe<number | undefined>;
                         isSuggested?: boolean | undefined;
+                        ordinal: number;
+                        prompt: string;
                         type: "task";
-                        prompt: string;
-                        ordinal: number;
                     } | {
+                        profileId?: string | null | undefined;
+                        recommendedForIssueIds?: string[] | undefined;
+                        recommendedForIssueOrdinals?: {
+                            [x: string]: number;
+                        } | null | undefined;
+                        isInGameplan?: boolean | undefined;
+                        description?: string | null | undefined;
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
@@ -1313,14 +2341,6 @@ export declare const factories: {
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        setbackThreshold?: number | null | undefined;
-                        profileId?: string | null | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
-                        recommendedForIssueOrdinals?: {
-                            [x: string]: number;
-                        } | null | undefined;
-                        isInGameplan?: boolean | undefined;
-                        description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
                         debriefAfterMinutes?: number | null | undefined;
                         image?: {
@@ -1329,17 +2349,18 @@ export declare const factories: {
                             uri?: import("yup").Maybe<string | undefined>;
                         } | null | undefined;
                         backgroundColor?: string | undefined;
+                        setbackThreshold?: number | null | undefined;
                         likesCount?: number | null | undefined;
                         timerSeconds?: import("yup").Maybe<number | undefined>;
                         isSuggested?: boolean | undefined;
-                        type: "video";
-                        prompt: string;
                         ordinal: number;
+                        prompt: string;
+                        type: "video";
                         video: {
                             storagePath?: string | null | undefined;
                             url?: string | null | undefined;
-                            title: string;
                             description: string;
+                            title: string;
                             thumbnailUrl: string;
                             duration: number;
                         };
@@ -1348,6 +2369,14 @@ export declare const factories: {
                 slug?: string | undefined;
                 creatorProfileId?: string | undefined;
                 next3Tactics?: ({
+                    profileId?: string | null | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    isInGameplan?: boolean | undefined;
+                    prompt?: string | undefined;
+                    description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -1364,15 +2393,6 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    setbackThreshold?: number | null | undefined;
-                    prompt?: string | undefined;
-                    profileId?: string | null | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    isInGameplan?: boolean | undefined;
-                    description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
@@ -1381,17 +2401,25 @@ export declare const factories: {
                         uri?: import("yup").Maybe<string | undefined>;
                     } | null | undefined;
                     backgroundColor?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    type: "audio";
                     ordinal: number;
+                    type: "audio";
                     recording: {
                         localFilePath?: string | undefined;
                         waveform?: string | null | undefined;
                         remoteFilePath: string;
                     };
                 } | {
+                    profileId?: string | null | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    isInGameplan?: boolean | undefined;
+                    description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -1408,15 +2436,6 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    repeat?: import("yup").Maybe<number | undefined>;
-                    setbackThreshold?: number | null | undefined;
-                    profileId?: string | null | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    isInGameplan?: boolean | undefined;
-                    description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
@@ -1425,16 +2444,25 @@ export declare const factories: {
                         uri?: import("yup").Maybe<string | undefined>;
                     } | null | undefined;
                     backgroundColor?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    type: "breathingExercise";
-                    prompt: string;
+                    repeat?: import("yup").Maybe<number | undefined>;
                     ordinal: number;
+                    prompt: string;
+                    type: "breathingExercise";
                     inFor: number;
                     holdFor: number;
                     outFor: number;
                 } | {
+                    profileId?: string | null | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    isInGameplan?: boolean | undefined;
+                    description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -1451,14 +2479,6 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    setbackThreshold?: number | null | undefined;
-                    profileId?: string | null | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    isInGameplan?: boolean | undefined;
-                    description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
@@ -1467,14 +2487,22 @@ export declare const factories: {
                         uri?: import("yup").Maybe<string | undefined>;
                     } | null | undefined;
                     backgroundColor?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    type: "notifyASupportPerson";
-                    prompt: string;
                     ordinal: number;
+                    prompt: string;
+                    type: "notifyASupportPerson";
                     contactIds: string[];
                 } | {
+                    profileId?: string | null | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    isInGameplan?: boolean | undefined;
+                    description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -1491,14 +2519,6 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    setbackThreshold?: number | null | undefined;
-                    profileId?: string | null | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    isInGameplan?: boolean | undefined;
-                    description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
@@ -1507,14 +2527,22 @@ export declare const factories: {
                         uri?: import("yup").Maybe<string | undefined>;
                     } | null | undefined;
                     backgroundColor?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
+                    ordinal: number;
+                    prompt: string;
                     type: "steps";
                     steps: number;
-                    prompt: string;
-                    ordinal: number;
                 } | {
+                    profileId?: string | null | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    isInGameplan?: boolean | undefined;
+                    description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -1531,14 +2559,6 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    setbackThreshold?: number | null | undefined;
-                    profileId?: string | null | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    isInGameplan?: boolean | undefined;
-                    description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
@@ -1547,13 +2567,21 @@ export declare const factories: {
                         uri?: import("yup").Maybe<string | undefined>;
                     } | null | undefined;
                     backgroundColor?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
+                    ordinal: number;
+                    prompt: string;
                     type: "task";
-                    prompt: string;
-                    ordinal: number;
                 } | {
+                    profileId?: string | null | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    isInGameplan?: boolean | undefined;
+                    description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -1570,14 +2598,6 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    setbackThreshold?: number | null | undefined;
-                    profileId?: string | null | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    isInGameplan?: boolean | undefined;
-                    description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
@@ -1586,25 +2606,26 @@ export declare const factories: {
                         uri?: import("yup").Maybe<string | undefined>;
                     } | null | undefined;
                     backgroundColor?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
-                    type: "video";
-                    prompt: string;
                     ordinal: number;
+                    prompt: string;
+                    type: "video";
                     video: {
                         storagePath?: string | null | undefined;
                         url?: string | null | undefined;
-                        title: string;
                         description: string;
+                        title: string;
                         thumbnailUrl: string;
                         duration: number;
                     };
                 })[] | undefined;
                 nextTacticId?: string | undefined;
-                type: "folder";
-                prompt: string;
                 ordinal: number;
+                prompt: string;
+                type: "folder";
                 isShared: NonNullable<boolean | undefined>;
                 invitationCode: string;
                 invitationUrl: string;
@@ -1612,7 +2633,7 @@ export declare const factories: {
         };
         completedTacticIds: string[];
         followedUpTacticIds: string[];
-    }, "date" | "type" | "strategiesById" | "completedTacticIds" | "followedUpTacticIds" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "suggestedStrategyDocPaths")>;
+    }, "type" | "date" | "strategiesById" | "completedTacticIds" | "followedUpTacticIds" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "tactic" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "suggestedStrategyDocPaths")>;
     questionTimeFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -1630,6 +2651,7 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        setbackThreshold?: number | undefined;
         followUps?: ({
             message?: string | undefined;
             type: "askAnotherQuestion";
@@ -1638,9 +2660,9 @@ export declare const factories: {
             message?: string | undefined;
             type: "showTour";
             steps: {
+                title: string;
                 message: string;
                 elementRefName: string;
-                title: string;
                 confirmButtonLabel: string;
             }[];
         } | {
@@ -1653,10 +2675,10 @@ export declare const factories: {
             profileKey: string;
             value: {};
         })[] | undefined;
-        setbackThreshold?: number | undefined;
         categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
         options?: ({
             label?: string | undefined;
+            setbackThreshold?: number | undefined;
             followUps?: ({
                 message?: string | undefined;
                 type: "askAnotherQuestion";
@@ -1665,9 +2687,9 @@ export declare const factories: {
                 message?: string | undefined;
                 type: "showTour";
                 steps: {
+                    title: string;
                     message: string;
                     elementRefName: string;
-                    title: string;
                     confirmButtonLabel: string;
                 }[];
             } | {
@@ -1682,11 +2704,10 @@ export declare const factories: {
             })[] | undefined;
             color?: string | undefined;
             textColor?: string | undefined;
-            setbackThreshold?: number | undefined;
             greaterThan?: number | undefined;
             lessThanOrEqualTo?: number | undefined;
-            text: string;
             type: "numeric";
+            text: string;
         } | {
             label?: string | undefined;
             followUps?: ({
@@ -1697,9 +2718,9 @@ export declare const factories: {
                 message?: string | undefined;
                 type: "showTour";
                 steps: {
+                    title: string;
                     message: string;
                     elementRefName: string;
-                    title: string;
                     confirmButtonLabel: string;
                 }[];
             } | {
@@ -1714,17 +2735,17 @@ export declare const factories: {
             })[] | undefined;
             color?: string | undefined;
             textColor?: string | undefined;
-            text: string;
             type: "string";
+            text: string;
         })[] | undefined;
         ordinals?: {
             [x: string]: number;
         } | null | undefined;
         templateFor?: "onboarding" | undefined;
         writeAnswerToProfileMemoryKey?: string | undefined;
-        type: "time";
         prompt: string;
-    }, "type" | "prompt" | ("createdAt" | "updatedAt" | "followUps" | "setbackThreshold" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+        type: "time";
+    }, "prompt" | "type" | ("createdAt" | "updatedAt" | "setbackThreshold" | "followUps" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     questionMultipleChoiceFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -1750,9 +2771,9 @@ export declare const factories: {
             message?: string | undefined;
             type: "showTour";
             steps: {
+                title: string;
                 message: string;
                 elementRefName: string;
-                title: string;
                 confirmButtonLabel: string;
             }[];
         } | {
@@ -1771,10 +2792,11 @@ export declare const factories: {
         } | null | undefined;
         templateFor?: "onboarding" | undefined;
         writeAnswerToProfileMemoryKey?: string | undefined;
-        type: "multipleChoice";
         prompt: string;
+        type: "multipleChoice";
         options: ({
             label?: string | undefined;
+            setbackThreshold?: number | undefined;
             followUps?: ({
                 message?: string | undefined;
                 type: "askAnotherQuestion";
@@ -1783,9 +2805,9 @@ export declare const factories: {
                 message?: string | undefined;
                 type: "showTour";
                 steps: {
+                    title: string;
                     message: string;
                     elementRefName: string;
-                    title: string;
                     confirmButtonLabel: string;
                 }[];
             } | {
@@ -1800,11 +2822,10 @@ export declare const factories: {
             })[] | undefined;
             color?: string | undefined;
             textColor?: string | undefined;
-            setbackThreshold?: number | undefined;
             greaterThan?: number | undefined;
             lessThanOrEqualTo?: number | undefined;
-            text: string;
             type: "numeric";
+            text: string;
         } | {
             label?: string | undefined;
             followUps?: ({
@@ -1815,9 +2836,9 @@ export declare const factories: {
                 message?: string | undefined;
                 type: "showTour";
                 steps: {
+                    title: string;
                     message: string;
                     elementRefName: string;
-                    title: string;
                     confirmButtonLabel: string;
                 }[];
             } | {
@@ -1832,14 +2853,21 @@ export declare const factories: {
             })[] | undefined;
             color?: string | undefined;
             textColor?: string | undefined;
-            text: string;
             type: "string";
+            text: string;
         })[];
         canAddNewOptions: NonNullable<boolean | undefined>;
-    }, "type" | "prompt" | "options" | "canAddNewOptions" | ("createdAt" | "updatedAt" | "followUps" | "categories" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+    }, "prompt" | "type" | "options" | "canAddNewOptions" | ("createdAt" | "updatedAt" | "followUps" | "categories" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     applicationFactory: import("factory.ts").Factory<import("..").ApplicationValue, keyof import("..").ApplicationValue>;
     dayFactory: import("factory.ts").Factory<import("..").DayValue, "date" | "issueName" | "questionsById" | "logsById" | "threadsById">;
     folderFactory: import("factory.ts").Factory<{
+        profileId?: string | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        isInGameplan?: boolean | undefined;
+        description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -1856,15 +2884,16 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
-        isInGameplan?: boolean | undefined;
-        description?: string | null | undefined;
         tacticsById?: {
             [x: string]: {
+                profileId?: string | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                isInGameplan?: boolean | undefined;
+                prompt?: string | undefined;
+                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1881,15 +2910,6 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
-                prompt?: string | undefined;
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                isInGameplan?: boolean | undefined;
-                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -1898,17 +2918,25 @@ export declare const factories: {
                     uri?: import("yup").Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
+                setbackThreshold?: number | null | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                type: "audio";
                 ordinal: number;
+                type: "audio";
                 recording: {
                     localFilePath?: string | undefined;
                     waveform?: string | null | undefined;
                     remoteFilePath: string;
                 };
             } | {
+                profileId?: string | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                isInGameplan?: boolean | undefined;
+                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1925,15 +2953,6 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                repeat?: import("yup").Maybe<number | undefined>;
-                setbackThreshold?: number | null | undefined;
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                isInGameplan?: boolean | undefined;
-                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -1942,16 +2961,25 @@ export declare const factories: {
                     uri?: import("yup").Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
+                setbackThreshold?: number | null | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                type: "breathingExercise";
-                prompt: string;
+                repeat?: import("yup").Maybe<number | undefined>;
                 ordinal: number;
+                prompt: string;
+                type: "breathingExercise";
                 inFor: number;
                 holdFor: number;
                 outFor: number;
             } | {
+                profileId?: string | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                isInGameplan?: boolean | undefined;
+                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1968,14 +2996,6 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                isInGameplan?: boolean | undefined;
-                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -1984,14 +3004,22 @@ export declare const factories: {
                     uri?: import("yup").Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
+                setbackThreshold?: number | null | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                type: "notifyASupportPerson";
-                prompt: string;
                 ordinal: number;
+                prompt: string;
+                type: "notifyASupportPerson";
                 contactIds: string[];
             } | {
+                profileId?: string | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                isInGameplan?: boolean | undefined;
+                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2008,14 +3036,6 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                isInGameplan?: boolean | undefined;
-                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -2024,14 +3044,22 @@ export declare const factories: {
                     uri?: import("yup").Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
+                setbackThreshold?: number | null | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
+                ordinal: number;
+                prompt: string;
                 type: "steps";
                 steps: number;
-                prompt: string;
-                ordinal: number;
             } | {
+                profileId?: string | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                isInGameplan?: boolean | undefined;
+                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2048,14 +3076,6 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                isInGameplan?: boolean | undefined;
-                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -2064,13 +3084,21 @@ export declare const factories: {
                     uri?: import("yup").Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
+                setbackThreshold?: number | null | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
+                ordinal: number;
+                prompt: string;
                 type: "task";
-                prompt: string;
-                ordinal: number;
             } | {
+                profileId?: string | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                isInGameplan?: boolean | undefined;
+                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2087,14 +3115,6 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                setbackThreshold?: number | null | undefined;
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                isInGameplan?: boolean | undefined;
-                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -2103,17 +3123,18 @@ export declare const factories: {
                     uri?: import("yup").Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
+                setbackThreshold?: number | null | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                type: "video";
-                prompt: string;
                 ordinal: number;
+                prompt: string;
+                type: "video";
                 video: {
                     storagePath?: string | null | undefined;
                     url?: string | null | undefined;
-                    title: string;
                     description: string;
+                    title: string;
                     thumbnailUrl: string;
                     duration: number;
                 };
@@ -2122,6 +3143,14 @@ export declare const factories: {
         slug?: string | undefined;
         creatorProfileId?: string | undefined;
         next3Tactics?: ({
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            prompt?: string | undefined;
+            description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -2138,15 +3167,6 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            prompt?: string | undefined;
-            profileId?: string | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            isInGameplan?: boolean | undefined;
-            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
@@ -2155,17 +3175,25 @@ export declare const factories: {
                 uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "audio";
             ordinal: number;
+            type: "audio";
             recording: {
                 localFilePath?: string | undefined;
                 waveform?: string | null | undefined;
                 remoteFilePath: string;
             };
         } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -2182,15 +3210,6 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            repeat?: import("yup").Maybe<number | undefined>;
-            setbackThreshold?: number | null | undefined;
-            profileId?: string | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            isInGameplan?: boolean | undefined;
-            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
@@ -2199,16 +3218,25 @@ export declare const factories: {
                 uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "breathingExercise";
-            prompt: string;
+            repeat?: import("yup").Maybe<number | undefined>;
             ordinal: number;
+            prompt: string;
+            type: "breathingExercise";
             inFor: number;
             holdFor: number;
             outFor: number;
         } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -2225,14 +3253,6 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            profileId?: string | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            isInGameplan?: boolean | undefined;
-            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
@@ -2241,14 +3261,22 @@ export declare const factories: {
                 uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "notifyASupportPerson";
-            prompt: string;
             ordinal: number;
+            prompt: string;
+            type: "notifyASupportPerson";
             contactIds: string[];
         } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -2265,14 +3293,6 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            profileId?: string | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            isInGameplan?: boolean | undefined;
-            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
@@ -2281,14 +3301,22 @@ export declare const factories: {
                 uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            ordinal: number;
+            prompt: string;
             type: "steps";
             steps: number;
-            prompt: string;
-            ordinal: number;
         } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -2305,14 +3333,6 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            profileId?: string | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            isInGameplan?: boolean | undefined;
-            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
@@ -2321,13 +3341,21 @@ export declare const factories: {
                 uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            ordinal: number;
+            prompt: string;
             type: "task";
-            prompt: string;
-            ordinal: number;
         } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -2344,14 +3372,6 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            profileId?: string | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            isInGameplan?: boolean | undefined;
-            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
@@ -2360,29 +3380,30 @@ export declare const factories: {
                 uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "video";
-            prompt: string;
             ordinal: number;
+            prompt: string;
+            type: "video";
             video: {
                 storagePath?: string | null | undefined;
                 url?: string | null | undefined;
-                title: string;
                 description: string;
+                title: string;
                 thumbnailUrl: string;
                 duration: number;
             };
         })[] | undefined;
         nextTacticId?: string | undefined;
-        type: "folder";
-        prompt: string;
         ordinal: number;
+        prompt: string;
+        type: "folder";
         isShared: NonNullable<boolean | undefined>;
         invitationCode: string;
         invitationUrl: string;
-    }, "type" | "prompt" | "ordinal" | "isShared" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "description" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics" | "nextTacticId")>;
+    }, "ordinal" | "prompt" | "type" | "isShared" | "invitationCode" | "invitationUrl" | ("profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "description" | "createdAt" | "updatedAt" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics" | "nextTacticId")>;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
         createdAt?: {
@@ -2439,8 +3460,8 @@ export declare const factories: {
         [x: string]: {
             [x: string]: {
                 label?: string | undefined;
-                color?: string | undefined;
                 setbackThreshold?: number | undefined;
+                color?: string | undefined;
                 idValue?: string | undefined;
                 numericValue?: number | undefined;
                 setAt: {
@@ -2473,9 +3494,9 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        setbackThreshold?: number | undefined;
         issueName?: string | undefined;
         parentIssueIds?: string[] | undefined;
-        setbackThreshold?: number | undefined;
         whatsappFolderDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         lastActiveAt?: {
             isEqual?: any;
@@ -2522,8 +3543,8 @@ export declare const factories: {
         longTermMemory?: {
             [x: string]: {
                 label?: string | undefined;
-                color?: string | undefined;
                 setbackThreshold?: number | undefined;
+                color?: string | undefined;
                 idValue?: string | undefined;
                 numericValue?: number | undefined;
                 setAt: {
@@ -2543,7 +3564,7 @@ export declare const factories: {
         uids: string[];
         issueId: string | null;
         timezone: string;
-    }, "dailyReview" | "uids" | "issueId" | "timezone" | ("createdAt" | "updatedAt" | "issueName" | "parentIssueIds" | "setbackThreshold" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "impulseCanManageQuestions" | "impulseCanManageGameplan" | "issueDebriefQuestionPrompt" | "isReadyForTour" | "isOnboardingComplete" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "longTermMemory" | "region")>;
+    }, "dailyReview" | "uids" | "issueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "issueName" | "parentIssueIds" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "impulseCanManageQuestions" | "impulseCanManageGameplan" | "issueDebriefQuestionPrompt" | "isReadyForTour" | "isOnboardingComplete" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "longTermMemory" | "region")>;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -2561,12 +3582,12 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        type: "time";
         profileId: string;
+        type: "time";
         name: string;
         weekdays: number[];
         hour: number;
         minute: number;
-    }, "type" | "profileId" | "name" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "type" | "setbackThreshold" | "prompt" | "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "ordinal" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+    }, "profileId" | "type" | "name" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "ordinal" | "prompt" | "description" | "type" | "createdAt" | "updatedAt" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "setbackThreshold" | "likesCount" | "timerSeconds" | "isSuggested">;
 };

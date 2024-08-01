@@ -14,6 +14,7 @@ export declare function questionBaseSchema<T extends string>(type: T): yup.Objec
     type: yup.Defined<T>;
     options: ({
         label?: string | undefined;
+        setbackThreshold?: number | undefined;
         followUps?: ({
             message?: string | undefined;
             type: "askAnotherQuestion";
@@ -22,9 +23,9 @@ export declare function questionBaseSchema<T extends string>(type: T): yup.Objec
             message?: string | undefined;
             type: "showTour";
             steps: {
+                title: string;
                 message: string;
                 elementRefName: string;
-                title: string;
                 confirmButtonLabel: string;
             }[];
         } | {
@@ -39,11 +40,10 @@ export declare function questionBaseSchema<T extends string>(type: T): yup.Objec
         })[] | undefined;
         color?: string | undefined;
         textColor?: string | undefined;
-        setbackThreshold?: number | undefined;
         greaterThan?: number | undefined;
         lessThanOrEqualTo?: number | undefined;
-        text: string;
         type: "numeric";
+        text: string;
     } | {
         label?: string | undefined;
         followUps?: ({
@@ -54,9 +54,9 @@ export declare function questionBaseSchema<T extends string>(type: T): yup.Objec
             message?: string | undefined;
             type: "showTour";
             steps: {
+                title: string;
                 message: string;
                 elementRefName: string;
-                title: string;
                 confirmButtonLabel: string;
             }[];
         } | {
@@ -71,8 +71,8 @@ export declare function questionBaseSchema<T extends string>(type: T): yup.Objec
         })[] | undefined;
         color?: string | undefined;
         textColor?: string | undefined;
-        text: string;
         type: "string";
+        text: string;
     })[] | undefined;
     ordinals: {
         [x: string]: number;
@@ -87,9 +87,9 @@ export declare function questionBaseSchema<T extends string>(type: T): yup.Objec
         message?: string | undefined;
         type: "showTour";
         steps: {
+            title: string;
             message: string;
             elementRefName: string;
-            title: string;
             confirmButtonLabel: string;
         }[];
     } | {

@@ -33,6 +33,14 @@ export declare const folderSchema: yup.ObjectSchema<{
     invitationUrl: string;
     tacticsById: {
         [x: string]: {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            prompt?: string | undefined;
+            description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -49,15 +57,6 @@ export declare const folderSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            prompt?: string | undefined;
-            profileId?: string | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            isInGameplan?: boolean | undefined;
-            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
@@ -66,17 +65,25 @@ export declare const folderSchema: yup.ObjectSchema<{
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "audio";
             ordinal: number;
+            type: "audio";
             recording: {
                 localFilePath?: string | undefined;
                 waveform?: string | null | undefined;
                 remoteFilePath: string;
             };
         } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -93,15 +100,6 @@ export declare const folderSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            repeat?: yup.Maybe<number | undefined>;
-            setbackThreshold?: number | null | undefined;
-            profileId?: string | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            isInGameplan?: boolean | undefined;
-            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
@@ -110,16 +108,25 @@ export declare const folderSchema: yup.ObjectSchema<{
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "breathingExercise";
-            prompt: string;
+            repeat?: yup.Maybe<number | undefined>;
             ordinal: number;
+            prompt: string;
+            type: "breathingExercise";
             inFor: number;
             holdFor: number;
             outFor: number;
         } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -136,14 +143,6 @@ export declare const folderSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            profileId?: string | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            isInGameplan?: boolean | undefined;
-            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
@@ -152,14 +151,22 @@ export declare const folderSchema: yup.ObjectSchema<{
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "notifyASupportPerson";
-            prompt: string;
             ordinal: number;
+            prompt: string;
+            type: "notifyASupportPerson";
             contactIds: string[];
         } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -176,14 +183,6 @@ export declare const folderSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            profileId?: string | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            isInGameplan?: boolean | undefined;
-            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
@@ -192,14 +191,22 @@ export declare const folderSchema: yup.ObjectSchema<{
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            ordinal: number;
+            prompt: string;
             type: "steps";
             steps: number;
-            prompt: string;
-            ordinal: number;
         } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -216,14 +223,6 @@ export declare const folderSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            profileId?: string | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            isInGameplan?: boolean | undefined;
-            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
@@ -232,13 +231,21 @@ export declare const folderSchema: yup.ObjectSchema<{
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            ordinal: number;
+            prompt: string;
             type: "task";
-            prompt: string;
-            ordinal: number;
         } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            isInGameplan?: boolean | undefined;
+            description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -255,14 +262,6 @@ export declare const folderSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            setbackThreshold?: number | null | undefined;
-            profileId?: string | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            isInGameplan?: boolean | undefined;
-            description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
@@ -271,23 +270,32 @@ export declare const folderSchema: yup.ObjectSchema<{
                 uri?: yup.Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            type: "video";
-            prompt: string;
             ordinal: number;
+            prompt: string;
+            type: "video";
             video: {
                 storagePath?: string | null | undefined;
                 url?: string | null | undefined;
-                title: string;
                 description: string;
+                title: string;
                 thumbnailUrl: string;
                 duration: number;
             };
         };
     } | null | undefined;
     next3Tactics: ({
+        profileId?: string | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        isInGameplan?: boolean | undefined;
+        prompt?: string | undefined;
+        description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -304,15 +312,6 @@ export declare const folderSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        setbackThreshold?: number | null | undefined;
-        prompt?: string | undefined;
-        profileId?: string | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
-        isInGameplan?: boolean | undefined;
-        description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
@@ -321,17 +320,25 @@ export declare const folderSchema: yup.ObjectSchema<{
             uri?: yup.Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
+        setbackThreshold?: number | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        type: "audio";
         ordinal: number;
+        type: "audio";
         recording: {
             localFilePath?: string | undefined;
             waveform?: string | null | undefined;
             remoteFilePath: string;
         };
     } | {
+        profileId?: string | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        isInGameplan?: boolean | undefined;
+        description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -348,15 +355,6 @@ export declare const folderSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        repeat?: yup.Maybe<number | undefined>;
-        setbackThreshold?: number | null | undefined;
-        profileId?: string | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
-        isInGameplan?: boolean | undefined;
-        description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
@@ -365,16 +363,25 @@ export declare const folderSchema: yup.ObjectSchema<{
             uri?: yup.Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
+        setbackThreshold?: number | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        type: "breathingExercise";
-        prompt: string;
+        repeat?: yup.Maybe<number | undefined>;
         ordinal: number;
+        prompt: string;
+        type: "breathingExercise";
         inFor: number;
         holdFor: number;
         outFor: number;
     } | {
+        profileId?: string | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        isInGameplan?: boolean | undefined;
+        description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -391,14 +398,6 @@ export declare const folderSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        setbackThreshold?: number | null | undefined;
-        profileId?: string | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
-        isInGameplan?: boolean | undefined;
-        description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
@@ -407,14 +406,22 @@ export declare const folderSchema: yup.ObjectSchema<{
             uri?: yup.Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
+        setbackThreshold?: number | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        type: "notifyASupportPerson";
-        prompt: string;
         ordinal: number;
+        prompt: string;
+        type: "notifyASupportPerson";
         contactIds: string[];
     } | {
+        profileId?: string | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        isInGameplan?: boolean | undefined;
+        description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -431,14 +438,6 @@ export declare const folderSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        setbackThreshold?: number | null | undefined;
-        profileId?: string | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
-        isInGameplan?: boolean | undefined;
-        description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
@@ -447,14 +446,22 @@ export declare const folderSchema: yup.ObjectSchema<{
             uri?: yup.Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
+        setbackThreshold?: number | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
+        ordinal: number;
+        prompt: string;
         type: "steps";
         steps: number;
-        prompt: string;
-        ordinal: number;
     } | {
+        profileId?: string | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        isInGameplan?: boolean | undefined;
+        description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -471,14 +478,6 @@ export declare const folderSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        setbackThreshold?: number | null | undefined;
-        profileId?: string | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
-        isInGameplan?: boolean | undefined;
-        description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
@@ -487,13 +486,21 @@ export declare const folderSchema: yup.ObjectSchema<{
             uri?: yup.Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
+        setbackThreshold?: number | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
+        ordinal: number;
+        prompt: string;
         type: "task";
-        prompt: string;
-        ordinal: number;
     } | {
+        profileId?: string | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        isInGameplan?: boolean | undefined;
+        description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -510,14 +517,6 @@ export declare const folderSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        setbackThreshold?: number | null | undefined;
-        profileId?: string | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
-        isInGameplan?: boolean | undefined;
-        description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
@@ -526,17 +525,18 @@ export declare const folderSchema: yup.ObjectSchema<{
             uri?: yup.Maybe<string | undefined>;
         } | null | undefined;
         backgroundColor?: string | undefined;
+        setbackThreshold?: number | null | undefined;
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
-        type: "video";
-        prompt: string;
         ordinal: number;
+        prompt: string;
+        type: "video";
         video: {
             storagePath?: string | null | undefined;
             url?: string | null | undefined;
-            title: string;
             description: string;
+            title: string;
             thumbnailUrl: string;
             duration: number;
         };
