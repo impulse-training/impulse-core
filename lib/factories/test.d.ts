@@ -16,6 +16,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         toDate: Function;
     } | null | undefined;
     text?: string | undefined;
+    tacticId?: string | null | undefined;
     isGptSender?: boolean | undefined;
     senderProfileId?: string | null | undefined;
     views?: {
@@ -65,7 +66,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     };
     type: "impulse";
     parentIssueIds: string[];
-}, "date" | "type" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueName" | "debriefAfter" | "submittedAt")>, profileFactory: import("factory.ts").Factory<{
+}, "date" | "type" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueName" | "debriefAfter" | "submittedAt")>, profileFactory: import("factory.ts").Factory<{
     createdAt?: {
         isEqual?: any;
         toMillis?: any;

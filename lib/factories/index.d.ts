@@ -18,6 +18,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: Function;
         } | null | undefined;
         text?: string | undefined;
+        tacticId?: string | null | undefined;
         isGptSender?: boolean | undefined;
         senderProfileId?: string | null | undefined;
         views?: {
@@ -67,7 +68,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         };
         type: "impulse";
         parentIssueIds: string[];
-    }, "date" | "type" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueName" | "debriefAfter" | "submittedAt")>;
+    }, "date" | "type" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueName" | "debriefAfter" | "submittedAt")>;
     messageLogFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -85,6 +86,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        tacticId?: string | null | undefined;
         isGptSender?: boolean | undefined;
         senderProfileId?: string | null | undefined;
         views?: {
@@ -117,7 +119,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         };
         text: string;
         type: "message";
-    }, "date" | "text" | "type" | ("createdAt" | "updatedAt" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse")>;
+    }, "date" | "text" | "type" | ("createdAt" | "updatedAt" | "tacticId" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse")>;
     questionsLogFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -136,6 +138,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: Function;
         } | null | undefined;
         text?: string | undefined;
+        tacticId?: string | null | undefined;
         isGptSender?: boolean | undefined;
         senderProfileId?: string | null | undefined;
         views?: {
@@ -757,7 +760,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 prompt: string;
             };
         };
-    }, "date" | "type" | "questionsById" | ("createdAt" | "updatedAt" | "text" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "submittedAt" | "questionData" | "trackingQuestionIds" | "debriefingQuestionIds" | "isDebrief" | "followedUpQuestionIds")>;
+    }, "date" | "type" | "questionsById" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "submittedAt" | "questionData" | "trackingQuestionIds" | "debriefingQuestionIds" | "isDebrief" | "followedUpQuestionIds")>;
     strategiesLogFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -776,6 +779,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: Function;
         } | null | undefined;
         text?: string | undefined;
+        tacticId?: string | null | undefined;
         isGptSender?: boolean | undefined;
         senderProfileId?: string | null | undefined;
         views?: {
@@ -1609,7 +1613,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         };
         completedTacticIds: string[];
         followedUpTacticIds: string[];
-    }, "date" | "type" | "strategiesById" | "completedTacticIds" | "followedUpTacticIds" | ("createdAt" | "updatedAt" | "text" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "suggestedStrategyDocPaths")>;
+    }, "date" | "type" | "strategiesById" | "completedTacticIds" | "followedUpTacticIds" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "suggestedStrategyDocPaths")>;
     questionTimeFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;

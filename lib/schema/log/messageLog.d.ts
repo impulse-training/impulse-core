@@ -28,6 +28,7 @@ export declare const messageLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     };
+    tacticId: string | null | undefined;
     isGptSender: boolean | undefined;
     senderProfileId: string | null | undefined;
     views: {
@@ -63,6 +64,7 @@ export declare const messageLogSchema: yup.ObjectSchema<{
         toJSON: undefined;
         toDate: undefined;
     };
+    tacticId: undefined;
     isGptSender: undefined;
     senderProfileId: undefined;
     views: "";

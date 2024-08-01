@@ -28,6 +28,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         nanoseconds: number;
         toDate: Function;
     };
+    tacticId: string | null | undefined;
     isGptSender: boolean | undefined;
     senderProfileId: string | null | undefined;
     views: {
@@ -63,6 +64,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         toJSON: undefined;
         toDate: undefined;
     };
+    tacticId: undefined;
     isGptSender: undefined;
     senderProfileId: undefined;
     views: "";

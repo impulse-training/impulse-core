@@ -14,6 +14,7 @@ export function logBaseSchema<K extends string>(type: K) {
     text: yup.string(),
     type: yup.mixed<K>().oneOf([type]).defined(),
     date: timestampSchema,
+    tacticId: yup.string().nullable(),
     // For now, put this boolean flag here to indicate if the sender is GPT
     isGptSender: yup.boolean(),
     senderProfileId: yup.string().nullable(),

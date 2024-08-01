@@ -27,6 +27,7 @@ export default function threadBase<T extends string>(type: T): yup.ObjectSchema<
                 toDate: Function;
             } | null | undefined;
             text?: string | undefined;
+            tacticId?: string | null | undefined;
             isGptSender?: boolean | undefined;
             senderProfileId?: string | null | undefined;
             views?: {
@@ -77,6 +78,7 @@ export default function threadBase<T extends string>(type: T): yup.ObjectSchema<
                 toDate: Function;
             } | null | undefined;
             text?: string | undefined;
+            tacticId?: string | null | undefined;
             isGptSender?: boolean | undefined;
             senderProfileId?: string | null | undefined;
             views?: {
@@ -135,6 +137,7 @@ export default function threadBase<T extends string>(type: T): yup.ObjectSchema<
                 toDate: Function;
             } | null | undefined;
             text?: string | undefined;
+            tacticId?: string | null | undefined;
             isGptSender?: boolean | undefined;
             senderProfileId?: string | null | undefined;
             views?: {
@@ -201,6 +204,7 @@ export default function threadBase<T extends string>(type: T): yup.ObjectSchema<
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            tacticId?: string | null | undefined;
             isGptSender?: boolean | undefined;
             senderProfileId?: string | null | undefined;
             views?: {
@@ -251,6 +255,7 @@ export default function threadBase<T extends string>(type: T): yup.ObjectSchema<
                 toDate: Function;
             } | null | undefined;
             text?: string | undefined;
+            tacticId?: string | null | undefined;
             isGptSender?: boolean | undefined;
             senderProfileId?: string | null | undefined;
             views?: {
@@ -890,6 +895,7 @@ export default function threadBase<T extends string>(type: T): yup.ObjectSchema<
                 toDate: Function;
             } | null | undefined;
             text?: string | undefined;
+            tacticId?: string | null | undefined;
             isGptSender?: boolean | undefined;
             senderProfileId?: string | null | undefined;
             views?: {
@@ -945,6 +951,7 @@ export default function threadBase<T extends string>(type: T): yup.ObjectSchema<
                 toDate: Function;
             } | null | undefined;
             text?: string | undefined;
+            tacticId?: string | null | undefined;
             isGptSender?: boolean | undefined;
             senderProfileId?: string | null | undefined;
             views?: {
@@ -1796,6 +1803,7 @@ export default function threadBase<T extends string>(type: T): yup.ObjectSchema<
                 toDate: Function;
             } | null | undefined;
             text?: string | undefined;
+            tacticId?: string | null | undefined;
             isGptSender?: boolean | undefined;
             senderProfileId?: string | null | undefined;
             views?: {
