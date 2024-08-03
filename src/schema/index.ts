@@ -14,7 +14,6 @@ export * from './notification';
 export * from './option';
 export * from './profile';
 export * from './question';
-export * from './recording';
 export * from './recoveryCode';
 export * from './routine';
 export * from './spotifyCredentials';

@@ -1,10 +1,10 @@
 import * as yup from 'yup';
-import { recordingSchema } from '../recording';
+import { fileSchema } from '../utils/file';
 import { logBaseSchema } from './base';
 
 export const messageLogSchema = logBaseSchema('message').shape({
   text: yup.string().required(),
-  recording: recordingSchema.notRequired(),
+  file: fileSchema.notRequired(),
 });
 
 export type MessageLogValue = yup.InferType<typeof messageLogSchema>;

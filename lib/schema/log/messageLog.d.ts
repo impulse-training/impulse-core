@@ -66,12 +66,13 @@ export declare const messageLogSchema: yup.ObjectSchema<{
         likesCount?: number | null | undefined;
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
+        waveForm?: string | null | undefined;
         ordinal: number;
         type: "audio";
         recording: {
-            localFilePath?: string | undefined;
-            waveform?: string | null | undefined;
-            remoteFilePath: string;
+            localFilePath?: yup.Maybe<string | undefined>;
+            storagePath?: yup.Maybe<string | undefined>;
+            uri?: yup.Maybe<string | undefined>;
         };
     } | {
         profileId?: string | null | undefined;
@@ -303,10 +304,10 @@ export declare const messageLogSchema: yup.ObjectSchema<{
             toDate: Function;
         };
     }[] | undefined;
-    recording: {
-        localFilePath?: string | undefined;
-        waveform?: string | null | undefined;
-        remoteFilePath: string;
+    file: {
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
+        uri?: yup.Maybe<string | undefined>;
     } | null | undefined;
 }, yup.AnyObject, {
     openAiRequestPayload: undefined;
@@ -328,10 +329,10 @@ export declare const messageLogSchema: yup.ObjectSchema<{
     isGptSender: undefined;
     senderProfileId: undefined;
     views: "";
-    recording: {
+    file: {
         localFilePath: undefined;
-        remoteFilePath: undefined;
-        waveform: undefined;
+        storagePath: undefined;
+        uri: undefined;
     };
 }, "">;
 export type MessageLogValue = yup.InferType<typeof messageLogSchema>;

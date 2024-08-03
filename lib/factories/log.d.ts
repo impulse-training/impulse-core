@@ -57,12 +57,13 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            waveForm?: string | null | undefined;
             ordinal: number;
             type: "audio";
             recording: {
-                localFilePath?: string | undefined;
-                waveform?: string | null | undefined;
-                remoteFilePath: string;
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
             };
         } | {
             profileId?: string | null | undefined;
@@ -341,11 +342,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        recording?: {
-            localFilePath?: string | undefined;
-            waveform?: string | null | undefined;
-            remoteFilePath: string;
-        } | null | undefined;
         tacticId?: string | null | undefined;
         tactic?: ({
             profileId?: string | null | undefined;
@@ -384,12 +380,13 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            waveForm?: string | null | undefined;
             ordinal: number;
             type: "audio";
             recording: {
-                localFilePath?: string | undefined;
-                waveform?: string | null | undefined;
-                remoteFilePath: string;
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
             };
         } | {
             profileId?: string | null | undefined;
@@ -623,6 +620,11 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
         }[] | undefined;
         openAiRequestPayload?: string | undefined;
         openAiChoiceResponse?: {} | undefined;
+        file?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | null | undefined;
         type: "message";
         date: {
             isEqual?: any;
@@ -633,7 +635,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             toDate: Function;
         };
         text: string;
-    }, "type" | "date" | "text" | ("createdAt" | "updatedAt" | "recording" | "tacticId" | "tactic" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse")>;
+    }, "type" | "date" | "text" | ("createdAt" | "updatedAt" | "tacticId" | "tactic" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "file")>;
     questionsLogFactory: Factory.Sync.Factory<{
         createdAt?: {
             isEqual?: any;
@@ -690,12 +692,13 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            waveForm?: string | null | undefined;
             ordinal: number;
             type: "audio";
             recording: {
-                localFilePath?: string | undefined;
-                waveform?: string | null | undefined;
-                remoteFilePath: string;
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
             };
         } | {
             profileId?: string | null | undefined;
@@ -1585,12 +1588,13 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            waveForm?: string | null | undefined;
             ordinal: number;
             type: "audio";
             recording: {
-                localFilePath?: string | undefined;
-                waveform?: string | null | undefined;
-                remoteFilePath: string;
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
             };
         } | {
             profileId?: string | null | undefined;
@@ -1872,12 +1876,13 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
+                waveForm?: string | null | undefined;
                 ordinal: number;
                 type: "audio";
                 recording: {
-                    localFilePath?: string | undefined;
-                    waveform?: string | null | undefined;
-                    remoteFilePath: string;
+                    localFilePath?: import("yup").Maybe<string | undefined>;
+                    storagePath?: import("yup").Maybe<string | undefined>;
+                    uri?: import("yup").Maybe<string | undefined>;
                 };
             } | {
                 profileId?: string | null | undefined;
@@ -2150,12 +2155,13 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         likesCount?: number | null | undefined;
                         timerSeconds?: import("yup").Maybe<number | undefined>;
                         isSuggested?: boolean | undefined;
+                        waveForm?: string | null | undefined;
                         ordinal: number;
                         type: "audio";
                         recording: {
-                            localFilePath?: string | undefined;
-                            waveform?: string | null | undefined;
-                            remoteFilePath: string;
+                            localFilePath?: import("yup").Maybe<string | undefined>;
+                            storagePath?: import("yup").Maybe<string | undefined>;
+                            uri?: import("yup").Maybe<string | undefined>;
                         };
                     } | {
                         profileId?: string | null | undefined;
@@ -2407,12 +2413,13 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
+                    waveForm?: string | null | undefined;
                     ordinal: number;
                     type: "audio";
                     recording: {
-                        localFilePath?: string | undefined;
-                        waveform?: string | null | undefined;
-                        remoteFilePath: string;
+                        localFilePath?: import("yup").Maybe<string | undefined>;
+                        storagePath?: import("yup").Maybe<string | undefined>;
+                        uri?: import("yup").Maybe<string | undefined>;
                     };
                 } | {
                     profileId?: string | null | undefined;

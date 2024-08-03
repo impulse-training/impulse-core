@@ -54,12 +54,13 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
+        waveForm?: string | null | undefined;
         ordinal: number;
         type: "audio";
         recording: {
-            localFilePath?: string | undefined;
-            waveform?: string | null | undefined;
-            remoteFilePath: string;
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
         };
     } | {
         profileId?: string | null | undefined;
@@ -469,12 +470,13 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            waveForm?: string | null | undefined;
             ordinal: number;
             type: "audio";
             recording: {
-                localFilePath?: string | undefined;
-                waveform?: string | null | undefined;
-                remoteFilePath: string;
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
             };
         } | {
             profileId?: string | null | undefined;
@@ -726,12 +728,13 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         likesCount?: number | null | undefined;
         timerSeconds?: import("yup").Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
+        waveForm?: string | null | undefined;
         ordinal: number;
         type: "audio";
         recording: {
-            localFilePath?: string | undefined;
-            waveform?: string | null | undefined;
-            remoteFilePath: string;
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
         };
     } | {
         profileId?: string | null | undefined;

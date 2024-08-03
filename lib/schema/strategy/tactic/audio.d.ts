@@ -39,10 +39,11 @@ export declare const audioTacticSchema: yup.ObjectSchema<{
     timerSeconds: yup.Maybe<number | undefined>;
     isSuggested: boolean | undefined;
     recording: {
-        localFilePath?: string | undefined;
-        waveform?: string | null | undefined;
-        remoteFilePath: string;
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
+        uri?: yup.Maybe<string | undefined>;
     };
+    waveForm: string | null | undefined;
 }, yup.AnyObject, {
     profileId: undefined;
     recommendedForIssueIds: "";
@@ -68,8 +69,9 @@ export declare const audioTacticSchema: yup.ObjectSchema<{
     isSuggested: undefined;
     recording: {
         localFilePath: undefined;
-        remoteFilePath: undefined;
-        waveform: undefined;
+        storagePath: undefined;
+        uri: undefined;
     };
+    waveForm: undefined;
 }, "">;
 export type AudioTacticValue = yup.InferType<typeof audioTacticSchema>;
