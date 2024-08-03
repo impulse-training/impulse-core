@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-export declare const messageLogSchema: yup.ObjectSchema<{
+export declare const audioLogSchema: yup.ObjectSchema<{
     openAiRequestPayload: string | undefined;
     openAiChoiceResponse: {} | undefined;
     createdAt: {
@@ -18,8 +18,8 @@ export declare const messageLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    text: string;
-    type: "message";
+    text: string | undefined;
+    type: "audio";
     date: {
         isEqual?: any;
         toMillis?: any;
@@ -304,6 +304,11 @@ export declare const messageLogSchema: yup.ObjectSchema<{
             toDate: Function;
         };
     }[] | undefined;
+    file: {
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
+        uri?: yup.Maybe<string | undefined>;
+    };
 }, yup.AnyObject, {
     openAiRequestPayload: undefined;
     openAiChoiceResponse: undefined;
@@ -324,5 +329,10 @@ export declare const messageLogSchema: yup.ObjectSchema<{
     isGptSender: undefined;
     senderProfileId: undefined;
     views: "";
+    file: {
+        localFilePath: undefined;
+        storagePath: undefined;
+        uri: undefined;
+    };
 }, "">;
-export type MessageLogValue = yup.InferType<typeof messageLogSchema>;
+export type AudioLogValue = yup.InferType<typeof audioLogSchema>;
