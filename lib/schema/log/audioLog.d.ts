@@ -309,6 +309,7 @@ export declare const audioLogSchema: yup.ObjectSchema<{
         storagePath?: yup.Maybe<string | undefined>;
         uri?: yup.Maybe<string | undefined>;
     };
+    durationSeconds: number;
 }, yup.AnyObject, {
     openAiRequestPayload: undefined;
     openAiChoiceResponse: undefined;
@@ -334,5 +335,6 @@ export declare const audioLogSchema: yup.ObjectSchema<{
         storagePath: undefined;
         uri: undefined;
     };
+    durationSeconds: undefined;
 }, "">;
 export type AudioLogValue = yup.InferType<typeof audioLogSchema>;

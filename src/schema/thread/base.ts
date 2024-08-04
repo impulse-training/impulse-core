@@ -15,6 +15,7 @@ export default function threadBase<T extends string>(type: T) {
     isVisible: yup.boolean().required(),
     title: yup.string(),
     tacticsWithCommentsIds: optionalStringArray,
+    sharedWithFolderIds: optionalStringArray,
     logsById: objectOf(logSchema),
     createdAt: optionalTimestampSchema,
     updatedAt: optionalTimestampSchema,

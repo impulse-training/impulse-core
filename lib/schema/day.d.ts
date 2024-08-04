@@ -627,6 +627,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             };
+            durationSeconds: number;
         } | {
             createdAt?: {
                 isEqual?: any;

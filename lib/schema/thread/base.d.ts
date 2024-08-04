@@ -8,6 +8,7 @@ export default function threadBase<T extends string>(type: T): yup.ObjectSchema<
     isVisible: NonNullable<boolean | undefined>;
     title: string | undefined;
     tacticsWithCommentsIds: string[] | undefined;
+    sharedWithFolderIds: string[] | undefined;
     logsById: {
         [x: string]: {
             createdAt?: {
@@ -625,6 +626,7 @@ export default function threadBase<T extends string>(type: T): yup.ObjectSchema<
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             };
+            durationSeconds: number;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -4222,6 +4224,7 @@ export default function threadBase<T extends string>(type: T): yup.ObjectSchema<
     isVisible: undefined;
     title: undefined;
     tacticsWithCommentsIds: "";
+    sharedWithFolderIds: "";
     logsById: undefined;
     createdAt: undefined;
     updatedAt: undefined;
