@@ -18,6 +18,7 @@ export declare const messageLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    profileId: string;
     text: string;
     type: "message";
     date: {
@@ -309,6 +310,7 @@ export declare const messageLogSchema: yup.ObjectSchema<{
     openAiChoiceResponse: undefined;
     createdAt: undefined;
     updatedAt: undefined;
+    profileId: undefined;
     text: undefined;
     type: undefined;
     date: {

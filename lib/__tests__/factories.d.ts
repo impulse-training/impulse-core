@@ -312,6 +312,7 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        profileId: string;
         type: "impulse";
         date: {
             isEqual?: any;
@@ -322,7 +323,7 @@ export declare const factories: {
             toDate: Function;
         };
         parentIssueIds: string[];
-    }, "type" | "date" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "tactic" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueName" | "debriefAfter" | "submittedAt")>;
+    }, "profileId" | "type" | "date" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "tactic" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueName" | "debriefAfter" | "submittedAt")>;
     messageLogFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -618,6 +619,7 @@ export declare const factories: {
         }[] | undefined;
         openAiRequestPayload?: string | undefined;
         openAiChoiceResponse?: {} | undefined;
+        profileId: string;
         type: "message";
         date: {
             isEqual?: any;
@@ -628,7 +630,7 @@ export declare const factories: {
             toDate: Function;
         };
         text: string;
-    }, "type" | "date" | "text" | ("createdAt" | "updatedAt" | "tacticId" | "tactic" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse")>;
+    }, "profileId" | "type" | "date" | "text" | ("createdAt" | "updatedAt" | "tacticId" | "tactic" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse")>;
     questionsLogFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -956,6 +958,7 @@ export declare const factories: {
         debriefingQuestionIds?: string[] | undefined;
         isDebrief?: boolean | undefined;
         followedUpQuestionIds?: string[] | undefined;
+        profileId: string;
         type: "questions";
         date: {
             isEqual?: any;
@@ -1524,7 +1527,7 @@ export declare const factories: {
                 type: "time";
             };
         };
-    }, "type" | "date" | "questionsById" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "tactic" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "submittedAt" | "questionData" | "trackingQuestionIds" | "debriefingQuestionIds" | "isDebrief" | "followedUpQuestionIds")>;
+    }, "profileId" | "type" | "date" | "questionsById" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "tactic" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "submittedAt" | "questionData" | "trackingQuestionIds" | "debriefingQuestionIds" | "isDebrief" | "followedUpQuestionIds")>;
     strategiesLogFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -1822,6 +1825,7 @@ export declare const factories: {
         openAiRequestPayload?: string | undefined;
         openAiChoiceResponse?: {} | undefined;
         suggestedStrategyDocPaths?: string[] | undefined;
+        profileId: string;
         type: "strategies";
         date: {
             isEqual?: any;
@@ -2635,7 +2639,7 @@ export declare const factories: {
         };
         completedTacticIds: string[];
         followedUpTacticIds: string[];
-    }, "type" | "date" | "strategiesById" | "completedTacticIds" | "followedUpTacticIds" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "tactic" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "suggestedStrategyDocPaths")>;
+    }, "profileId" | "type" | "date" | "strategiesById" | "completedTacticIds" | "followedUpTacticIds" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "tactic" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "suggestedStrategyDocPaths")>;
     questionTimeFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;

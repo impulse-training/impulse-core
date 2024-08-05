@@ -18,6 +18,7 @@ export declare const audioLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    profileId: string;
     text: string | undefined;
     type: "audio";
     date: {
@@ -315,6 +316,7 @@ export declare const audioLogSchema: yup.ObjectSchema<{
     openAiChoiceResponse: undefined;
     createdAt: undefined;
     updatedAt: undefined;
+    profileId: undefined;
     text: undefined;
     type: undefined;
     date: {

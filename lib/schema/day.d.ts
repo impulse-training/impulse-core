@@ -308,6 +308,7 @@ export declare const daySchema: yup.ObjectSchema<{
             openAiRequestPayload?: string | undefined;
             openAiChoiceResponse?: {} | undefined;
             choice?: "moreStrategies" | "debrief" | undefined;
+            profileId: string;
             type: "actionRecap";
             date: {
                 isEqual?: any;
@@ -613,6 +614,7 @@ export declare const daySchema: yup.ObjectSchema<{
             }[] | undefined;
             openAiRequestPayload?: string | undefined;
             openAiChoiceResponse?: {} | undefined;
+            profileId: string;
             type: "audio";
             date: {
                 isEqual?: any;
@@ -932,6 +934,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            profileId: string;
             type: "dayReview";
             date: {
                 isEqual?: any;
@@ -1255,6 +1258,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            profileId: string;
             type: "impulse";
             date: {
                 isEqual?: any;
@@ -1560,6 +1564,7 @@ export declare const daySchema: yup.ObjectSchema<{
             }[] | undefined;
             openAiRequestPayload?: string | undefined;
             openAiChoiceResponse?: {} | undefined;
+            profileId: string;
             type: "message";
             date: {
                 isEqual?: any;
@@ -1897,6 +1902,7 @@ export declare const daySchema: yup.ObjectSchema<{
             debriefingQuestionIds?: string[] | undefined;
             isDebrief?: boolean | undefined;
             followedUpQuestionIds?: string[] | undefined;
+            profileId: string;
             type: "questions";
             date: {
                 isEqual?: any;
@@ -2761,6 +2767,7 @@ export declare const daySchema: yup.ObjectSchema<{
             }[] | undefined;
             openAiRequestPayload?: string | undefined;
             openAiChoiceResponse?: {} | undefined;
+            profileId: string;
             type: "showTour";
             steps: {
                 title: string;
@@ -3073,6 +3080,7 @@ export declare const daySchema: yup.ObjectSchema<{
             openAiRequestPayload?: string | undefined;
             openAiChoiceResponse?: {} | undefined;
             suggestedStrategyDocPaths?: string[] | undefined;
+            profileId: string;
             type: "strategies";
             date: {
                 isEqual?: any;
@@ -4187,6 +4195,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
             }[] | undefined>;
+            profileId: string;
             type: "whatsappMessage";
             date: {
                 isEqual?: any;

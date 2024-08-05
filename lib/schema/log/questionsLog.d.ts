@@ -52,6 +52,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    profileId: string;
     text: string | undefined;
     type: "questions";
     date: {
@@ -933,6 +934,7 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
     openAiChoiceResponse: undefined;
     createdAt: undefined;
     updatedAt: undefined;
+    profileId: undefined;
     text: undefined;
     type: undefined;
     date: {

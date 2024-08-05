@@ -12,6 +12,7 @@ export function logBaseSchema<K extends string>(type: K) {
   return yup.object({
     createdAt: optionalTimestampSchema,
     updatedAt: optionalTimestampSchema,
+    profileId: yup.string().required(),
     text: yup.string(),
     type: yup.mixed<K>().oneOf([type]).defined(),
     date: timestampSchema,

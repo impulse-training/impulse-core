@@ -18,6 +18,7 @@ export declare const whatsappMessageLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    profileId: string;
     text: string | undefined;
     type: "whatsappMessage";
     date: {
@@ -315,6 +316,7 @@ export declare const whatsappMessageLogSchema: yup.ObjectSchema<{
     openAiChoiceResponse: undefined;
     createdAt: undefined;
     updatedAt: undefined;
+    profileId: undefined;
     text: undefined;
     type: undefined;
     date: {
