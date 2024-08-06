@@ -48,7 +48,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     notificationPreferences: {
         [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
     } | null | undefined;
-    dailyReview: "morning" | "evening" | null;
+    dayReview: "morning" | "evening" | null;
     impulseCanManageQuestions: boolean | undefined;
     impulseCanManageGameplan: boolean | undefined;
     issueId: string | null;
@@ -98,7 +98,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     currentAppState: undefined;
     expoPushToken: undefined;
     notificationPreferences: undefined;
-    dailyReview: undefined;
+    dayReview: undefined;
     impulseCanManageQuestions: undefined;
     impulseCanManageGameplan: undefined;
     issueId: undefined;

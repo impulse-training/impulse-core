@@ -1959,7 +1959,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                         profileKey: string;
                         value: {};
                     })[] | undefined;
-                    categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+                    categories?: ("dayReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
                     options?: ({
                         label?: string | undefined;
                         setbackThreshold?: number | undefined;
@@ -2069,7 +2069,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                         profileKey: string;
                         value: {};
                     })[] | undefined;
-                    categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+                    categories?: ("dayReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
                     options?: ({
                         label?: string | undefined;
                         setbackThreshold?: number | undefined;
@@ -2179,7 +2179,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                         profileKey: string;
                         value: {};
                     })[] | undefined;
-                    categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+                    categories?: ("dayReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
                     ordinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -2291,7 +2291,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                         profileKey: string;
                         value: {};
                     })[] | undefined;
-                    categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+                    categories?: ("dayReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
                     options?: ({
                         label?: string | undefined;
                         setbackThreshold?: number | undefined;
@@ -2403,7 +2403,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                         profileKey: string;
                         value: {};
                     })[] | undefined;
-                    categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+                    categories?: ("dayReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
                     options?: ({
                         label?: string | undefined;
                         setbackThreshold?: number | undefined;
@@ -2514,7 +2514,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                         profileKey: string;
                         value: {};
                     })[] | undefined;
-                    categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+                    categories?: ("dayReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
                     options?: ({
                         label?: string | undefined;
                         setbackThreshold?: number | undefined;

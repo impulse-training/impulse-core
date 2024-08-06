@@ -1013,7 +1013,7 @@ export declare const factories: {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+                categories?: ("dayReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
@@ -1123,7 +1123,7 @@ export declare const factories: {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+                categories?: ("dayReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
@@ -1233,7 +1233,7 @@ export declare const factories: {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+                categories?: ("dayReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1345,7 +1345,7 @@ export declare const factories: {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+                categories?: ("dayReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
@@ -1457,7 +1457,7 @@ export declare const factories: {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+                categories?: ("dayReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
@@ -1568,7 +1568,7 @@ export declare const factories: {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+                categories?: ("dayReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
@@ -2795,7 +2795,7 @@ export declare const factories: {
             profileKey: string;
             value: {};
         })[] | undefined;
-        categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+        categories?: ("dayReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
         options?: ({
             label?: string | undefined;
             setbackThreshold?: number | undefined;
@@ -2906,7 +2906,7 @@ export declare const factories: {
             profileKey: string;
             value: {};
         })[] | undefined;
-        categories?: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+        categories?: ("dayReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
         ordinals?: {
             [x: string]: number;
         } | null | undefined;
@@ -3682,11 +3682,11 @@ export declare const factories: {
             };
         } | null | undefined;
         region?: string | null | undefined;
-        dailyReview: "morning" | "evening" | null;
+        dayReview: "morning" | "evening" | null;
         uids: string[];
         issueId: string | null;
         timezone: string;
-    }, "dailyReview" | "uids" | "issueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "issueName" | "parentIssueIds" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "impulseCanManageQuestions" | "impulseCanManageGameplan" | "issueDebriefQuestionPrompt" | "isReadyForTour" | "isOnboardingComplete" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "longTermMemory" | "region")>;
+    }, "dayReview" | "uids" | "issueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "issueName" | "parentIssueIds" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "impulseCanManageQuestions" | "impulseCanManageGameplan" | "issueDebriefQuestionPrompt" | "isReadyForTour" | "isOnboardingComplete" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "longTermMemory" | "region")>;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;

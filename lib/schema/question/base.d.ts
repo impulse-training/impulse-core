@@ -3,13 +3,13 @@ export declare const QUESTION_CATEGORIES: {
     readonly emotions: "Emotions";
     readonly impulses: "Impulses";
     readonly other: "Other";
-    readonly dailyReview: "Daily review";
+    readonly dayReview: "Daily review";
     readonly afterSuccess: "Successes";
     readonly afterSetback: "Setbacks";
 };
 export type QuestionCategory = keyof typeof QUESTION_CATEGORIES;
 export declare function questionBaseSchema<T extends string>(type: T): yup.ObjectSchema<{
-    categories: ("emotions" | "impulses" | "other" | "dailyReview" | "afterSuccess" | "afterSetback")[] | undefined;
+    categories: ("dayReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
     prompt: string;
     type: yup.Defined<T>;
     options: ({

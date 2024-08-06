@@ -8,7 +8,7 @@ export const QUESTION_CATEGORIES = {
   emotions: 'Emotions',
   impulses: 'Impulses',
   other: 'Other',
-  dailyReview: 'Daily review',
+  dayReview: 'Daily review',
   afterSuccess: 'Successes',
   afterSetback: 'Setbacks',
 } as const;

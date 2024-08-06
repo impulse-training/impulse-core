@@ -20,7 +20,7 @@ export const profileSchema = yup.object({
   notificationPreferences: optionalObjectOf(
     yup.array().of(notificationOptionSchema)
   ),
-  dailyReview: yup
+  dayReview: yup
     .mixed<'morning' | 'evening'>()
     .oneOf(['morning', 'evening'])
     .nullable()
