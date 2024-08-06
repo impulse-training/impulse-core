@@ -9,6 +9,7 @@ import {
   ScaleOf1To10QuestionValue,
   scaleOf1To10QuestionSchema,
 } from './scaleOf1To10';
+import { TextQuestionValue, textQuestionSchema } from './text';
 import { TimeQuestionValue, timeQuestionSchema } from './time';
 
 export * from './base';
@@ -25,6 +26,7 @@ export const questionSchemas: Record<
 > = {
   time: timeQuestionSchema,
   counter: counterQuestionSchema,
+  text: textQuestionSchema,
   issue: issueQuestionSchema,
   scaleOf1To10: scaleOf1To10QuestionSchema,
   multipleChoice: multipleChoiceQuestionSchema,
@@ -53,6 +55,7 @@ type ValidatedQuestion = {
 export type QuestionValue =
   | ScaleOf1To10QuestionValue
   | TimeQuestionValue
+  | TextQuestionValue
   | CounterQuestionValue
   | MultipleChoiceQuestionValue
   | IssueQuestionValue;
