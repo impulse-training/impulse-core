@@ -29,6 +29,7 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     };
+    dateString: string;
     tacticId: string | null | undefined;
     tactic: ({
         profileId?: string | null | undefined;
@@ -339,6 +340,7 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
         toJSON: undefined;
         toDate: undefined;
     };
+    dateString: undefined;
     tacticId: undefined;
     tactic: undefined;
     isGptSender: undefined;

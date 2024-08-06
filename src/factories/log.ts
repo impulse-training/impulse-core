@@ -15,6 +15,7 @@ export const makeLogFactories = (TimestampKlass: typeof TimestampLike) => ({
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     date: TimestampKlass.now(),
+    dateString: '2024-01-01',
     issueName: 'YouTube',
     parentIssueIds: [],
   }),
@@ -25,6 +26,7 @@ export const makeLogFactories = (TimestampKlass: typeof TimestampLike) => ({
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     date: TimestampKlass.now(),
+    dateString: '2024-01-01',
     text: 'Hello, World!',
   }),
   questionsLogFactory: Factory.makeFactory<QuestionsLogValue>({
@@ -34,6 +36,7 @@ export const makeLogFactories = (TimestampKlass: typeof TimestampLike) => ({
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     date: TimestampKlass.now(),
+    dateString: '2024-01-01',
     questionsById: {},
   }),
   strategiesLogFactory: Factory.makeFactory<StrategiesLogValue>({
@@ -43,6 +46,7 @@ export const makeLogFactories = (TimestampKlass: typeof TimestampLike) => ({
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     date: TimestampKlass.now(),
+    dateString: '2024-01-01',
     strategiesById: {},
     suggestedStrategyDocPaths: [],
     completedTacticIds: [],

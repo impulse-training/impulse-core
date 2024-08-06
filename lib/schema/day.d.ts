@@ -318,6 +318,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             };
+            dateString: string;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -624,6 +625,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             };
+            dateString: string;
             file: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
@@ -944,6 +946,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             };
+            dateString: string;
             dayDoc: import("./utils/firestore").DocumentReferenceLike<unknown>;
         } | {
             createdAt?: {
@@ -1268,6 +1271,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             };
+            dateString: string;
             parentIssueIds: string[];
         } | {
             createdAt?: {
@@ -1575,6 +1579,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             };
             text: string;
+            dateString: string;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -1912,6 +1917,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             };
+            dateString: string;
             questionsById: {
                 [x: string]: {
                     createdAt?: {
@@ -2893,6 +2899,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             };
+            dateString: string;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -3200,6 +3207,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             };
+            dateString: string;
             strategiesById: {
                 [x: string]: {
                     profileId?: string | null | undefined;
@@ -4315,6 +4323,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             };
+            dateString: string;
             strategyPath: string;
         };
     };

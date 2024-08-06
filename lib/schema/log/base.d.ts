@@ -29,6 +29,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         nanoseconds: number;
         toDate: Function;
     };
+    dateString: string;
     tacticId: string | null | undefined;
     tactic: ({
         profileId?: string | null | undefined;
@@ -321,6 +322,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         toJSON: undefined;
         toDate: undefined;
     };
+    dateString: undefined;
     tacticId: undefined;
     tactic: undefined;
     isGptSender: undefined;
