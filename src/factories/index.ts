@@ -7,7 +7,7 @@ import { makeIssueFactory } from './issue';
 import { makeLocationFactory } from './location';
 import { makeLogFactories } from './log';
 import { makeProfileFactory } from './profile';
-import { makeQuestionLogFactories } from './question';
+import { makeQuestionFactories } from './question';
 import { makeTimeRoutineFactory } from './routine';
 import { makeTacticFactory } from './tactic';
 import { makeThreadFactories } from './thread';
@@ -26,7 +26,7 @@ export function makeFactories(TimestampKlass: typeof TimestampLike) {
     profileFactory: makeProfileFactory(TimestampKlass),
     timeRoutineFactory: makeTimeRoutineFactory(TimestampKlass),
     tacticFactory: makeTacticFactory(TimestampKlass),
-    ...makeQuestionLogFactories(TimestampKlass),
+    ...makeQuestionFactories(TimestampKlass),
     ...makeLogFactories(TimestampKlass),
     ...makeThreadFactories(TimestampKlass),
   };

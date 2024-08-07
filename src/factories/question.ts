@@ -3,19 +3,26 @@ import {
   MultipleChoiceQuestionValue,
   TimeQuestionValue,
 } from '../schema/question';
+import { TextQuestionValue } from '../schema/question/text';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 
-export const makeQuestionLogFactories = (
+export const makeQuestionFactories = (
   TimestampKlass: typeof TimestampLike
 ) => ({
-  questionTimeFactory: Factory.makeFactory<TimeQuestionValue>({
+  textQuestionFactory: Factory.makeFactory<TextQuestionValue>({
+    type: 'text',
+    prompt: 'What did you do?',
+    createdAt: TimestampKlass.now(),
+    updatedAt: TimestampKlass.now(),
+  }),
+  timeQuestionFactory: Factory.makeFactory<TimeQuestionValue>({
     categories: ['impulses'],
     prompt: 'How long did you spend?',
     type: 'time',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
   }),
-  questionMultipleChoiceFactory:
+  multipleChoiceQuestionFactory:
     Factory.makeFactory<MultipleChoiceQuestionValue>({
       categories: ['emotions'],
       prompt: 'How are you feeling?',

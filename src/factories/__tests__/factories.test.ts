@@ -66,7 +66,7 @@ const schemaMap: Record<keyof typeof factories, null | Schema | Lazy<unknown>> =
     dayReviewThreadFactory: threadSchema,
     folderFactory: folderSchema,
     tacticFactory: tacticSchema,
-    questionTimeFactory: timeQuestionSchema,
-    questionMultipleChoiceFactory: multipleChoiceQuestionSchema,
+    timeQuestionFactory: timeQuestionSchema,
+    multipleChoiceQuestionFactory: multipleChoiceQuestionSchema,
     timeRoutineFactory: timeRoutineSchema,
   };
