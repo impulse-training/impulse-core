@@ -2,6 +2,14 @@ import * as yup from 'yup';
 export declare const whatsappThreadSchema: yup.ObjectSchema<{
     type: "whatsapp";
     dateString: string;
+    date: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    };
     firstLogId: string | undefined;
     profileId: string;
     isProcessing: boolean | undefined;
@@ -4347,6 +4355,14 @@ export declare const whatsappThreadSchema: yup.ObjectSchema<{
 }, yup.AnyObject, {
     type: undefined;
     dateString: undefined;
+    date: {
+        seconds: undefined;
+        nanoseconds: undefined;
+        isEqual: undefined;
+        toMillis: undefined;
+        toJSON: undefined;
+        toDate: undefined;
+    };
     firstLogId: undefined;
     profileId: undefined;
     isProcessing: undefined;

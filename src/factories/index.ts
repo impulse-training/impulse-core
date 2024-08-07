@@ -10,6 +10,7 @@ import { makeProfileFactory } from './profile';
 import { makeQuestionLogFactories } from './question';
 import { makeTimeRoutineFactory } from './routine';
 import { makeTacticFactory } from './tactic';
+import { makeThreadFactories } from './thread';
 
 // Our admin and client apps use the same factories, but the firebase-admin versus firebase client
 // libraries respectively. These use different Timestamp classes, so we pass in the class as an
@@ -27,5 +28,6 @@ export function makeFactories(TimestampKlass: typeof TimestampLike) {
     tacticFactory: makeTacticFactory(TimestampKlass),
     ...makeQuestionLogFactories(TimestampKlass),
     ...makeLogFactories(TimestampKlass),
+    ...makeThreadFactories(TimestampKlass),
   };
 }

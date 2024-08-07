@@ -3,12 +3,13 @@ import { logSchema } from '../log';
 import { optionalStringArray } from '../utils/array';
 import { documentReferenceSchema } from '../utils/firestore';
 import { objectOf } from '../utils/objectOf';
-import { optionalTimestampSchema } from '../utils/timestamp';
+import { optionalTimestampSchema, timestampSchema } from '../utils/timestamp';
 
 export default function threadBase<T extends string>(type: T) {
   return yup.object({
     type: yup.mixed<T>().oneOf([type]).required(),
     dateString: yup.string().required(),
+    date: timestampSchema,
     firstLogId: yup.string(),
     profileId: yup.string().required(),
     isProcessing: yup.boolean(),

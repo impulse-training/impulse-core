@@ -7,6 +7,7 @@ import {
   folderSchema,
   logSchema,
   tacticSchema,
+  threadSchema,
   timeRoutineSchema,
 } from '../../schema';
 import {
@@ -62,6 +63,7 @@ const schemaMap: Record<keyof typeof factories, null | Schema | Lazy<unknown>> =
     locationFactory: null,
     profileFactory: null,
     issueFactory: null,
+    dayReviewThreadFactory: threadSchema,
     folderFactory: folderSchema,
     tacticFactory: tacticSchema,
     questionTimeFactory: timeQuestionSchema,
