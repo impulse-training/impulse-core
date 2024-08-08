@@ -22,6 +22,7 @@ export declare const factories: {
         whatsappFolderDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         firstLogId?: string | undefined;
         isProcessing?: boolean | undefined;
+        gptSystemMessage?: string | undefined;
         profileId: string;
         type: "dayReview";
         date: {
@@ -4351,7 +4352,7 @@ export declare const factories: {
                 strategyPath: string;
             };
         };
-    }, "profileId" | "type" | "date" | "dateString" | "isVisible" | "logsById" | ("createdAt" | "updatedAt" | "title" | "tacticsWithCommentsIds" | "sharedWithFolderIds" | "whatsappFolderDoc" | "firstLogId" | "isProcessing")>;
+    }, "profileId" | "type" | "date" | "dateString" | "isVisible" | "logsById" | ("createdAt" | "updatedAt" | "title" | "tacticsWithCommentsIds" | "sharedWithFolderIds" | "whatsappFolderDoc" | "firstLogId" | "isProcessing" | "gptSystemMessage")>;
     impulseLogFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;

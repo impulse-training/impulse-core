@@ -15,6 +15,7 @@ export declare const dayReviewThreadSchema: yup.ObjectSchema<{
     isProcessing: boolean | undefined;
     isVisible: NonNullable<boolean | undefined>;
     title: string | undefined;
+    gptSystemMessage: string | undefined;
     tacticsWithCommentsIds: string[] | undefined;
     sharedWithFolderIds: string[] | undefined;
     logsById: {
@@ -4367,6 +4368,7 @@ export declare const dayReviewThreadSchema: yup.ObjectSchema<{
     isProcessing: undefined;
     isVisible: undefined;
     title: undefined;
+    gptSystemMessage: undefined;
     tacticsWithCommentsIds: "";
     sharedWithFolderIds: "";
     logsById: undefined;

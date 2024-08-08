@@ -15,6 +15,7 @@ export default function threadBase<T extends string>(type: T) {
     isProcessing: yup.boolean(),
     isVisible: yup.boolean().required(),
     title: yup.string(),
+    gptSystemMessage: yup.string(),
     tacticsWithCommentsIds: optionalStringArray,
     sharedWithFolderIds: optionalStringArray,
     logsById: objectOf(logSchema),
