@@ -5,8 +5,12 @@ import {
   daySchema,
   daysSummarySchema,
   folderSchema,
+  issueSchema,
+  locationSchema,
   logSchema,
+  profileSchema,
   roadmapSchema,
+  suggestionSchema,
   tacticSchema,
   threadSchema,
   timeRoutineSchema,
@@ -51,16 +55,19 @@ describe('factories', () => {
 
 const schemaMap: Record<keyof typeof factories, null | Schema | Lazy<unknown>> =
   {
+    // TODO: this doesn't yet have a schema
+    applicationFactory: null,
+
+    locationFactory: locationSchema,
     daysSummaryFactory: daysSummarySchema,
     dayFactory: daySchema,
-    applicationFactory: null,
     impulseLogFactory: logSchema,
     messageLogFactory: logSchema,
     strategiesLogFactory: logSchema,
     questionsLogFactory: logSchema,
-    locationFactory: null,
-    profileFactory: null,
-    issueFactory: null,
+    profileFactory: profileSchema,
+    issueFactory: issueSchema,
+    suggestionFactory: suggestionSchema,
     dayReviewThreadFactory: threadSchema,
     roadmapFactory: roadmapSchema,
     folderFactory: folderSchema,

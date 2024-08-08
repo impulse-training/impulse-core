@@ -19,6 +19,7 @@ export * from './roadmap';
 export * from './routine';
 export * from './spotifyCredentials';
 export * from './strategy';
+export * from './suggestion';
 export * from './tacticImpression';
 export * from './thread';
 

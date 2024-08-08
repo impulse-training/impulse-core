@@ -8078,4 +8078,26 @@ export declare const factories: {
             };
         }[];
     }, "name" | "stages" | ("recommendedForIssueIds" | "recommendedForIssueOrdinals" | "createdAt" | "updatedAt")>;
+    suggestionFactory: import("factory.ts").Factory<{
+        createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        stages?: number[] | undefined;
+        strategyDocs?: (import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined)[] | undefined;
+        name: string;
+        gptContext: string;
+    }, "name" | "gptContext" | ("createdAt" | "updatedAt" | "stages" | "strategyDocs")>;
 };
