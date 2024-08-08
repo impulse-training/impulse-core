@@ -6,7 +6,6 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
     recommendedForIssueOrdinals?: {
         [x: string]: number;
     } | null | undefined;
-    isInGameplan?: boolean | undefined;
     description?: string | null | undefined;
     createdAt?: {
         isEqual?: any;
@@ -31,7 +30,6 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             prompt?: string | undefined;
             description?: string | null | undefined;
             createdAt?: {
@@ -76,7 +74,6 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -119,7 +116,6 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -159,7 +155,6 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -199,7 +194,6 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -238,7 +232,6 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -289,7 +282,6 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
-        isInGameplan?: boolean | undefined;
         prompt?: string | undefined;
         description?: string | null | undefined;
         createdAt?: {
@@ -334,7 +326,6 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
-        isInGameplan?: boolean | undefined;
         description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
@@ -377,7 +368,6 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
-        isInGameplan?: boolean | undefined;
         description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
@@ -417,7 +407,6 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
-        isInGameplan?: boolean | undefined;
         description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
@@ -457,7 +446,6 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
-        isInGameplan?: boolean | undefined;
         description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
@@ -496,7 +484,6 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
-        isInGameplan?: boolean | undefined;
         description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
@@ -545,4 +532,4 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
     isShared: NonNullable<boolean | undefined>;
     invitationCode: string;
     invitationUrl: string;
-}, "ordinal" | "prompt" | "type" | "isShared" | "invitationCode" | "invitationUrl" | ("profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "description" | "createdAt" | "updatedAt" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics" | "nextTacticId")>;
+}, "ordinal" | "prompt" | "type" | "isShared" | "invitationCode" | "invitationUrl" | ("profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "description" | "createdAt" | "updatedAt" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics" | "nextTacticId")>;

@@ -5,7 +5,6 @@ export declare function recapTacticValueBaseSchema(type: RecapKeyType): import("
     recommendedForIssueOrdinals: {
         [x: string]: number;
     } | null | undefined;
-    isInGameplan: boolean | undefined;
     ordinal: number;
     prompt: string;
     description: string | null | undefined;
@@ -42,7 +41,6 @@ export declare function recapTacticValueBaseSchema(type: RecapKeyType): import("
     profileId: undefined;
     recommendedForIssueIds: "";
     recommendedForIssueOrdinals: undefined;
-    isInGameplan: undefined;
     ordinal: undefined;
     prompt: undefined;
     description: undefined;

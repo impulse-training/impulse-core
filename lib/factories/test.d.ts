@@ -23,7 +23,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
-        isInGameplan?: boolean | undefined;
         prompt?: string | undefined;
         description?: string | null | undefined;
         createdAt?: {
@@ -68,7 +67,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
-        isInGameplan?: boolean | undefined;
         description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
@@ -111,7 +109,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
-        isInGameplan?: boolean | undefined;
         description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
@@ -151,7 +148,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
-        isInGameplan?: boolean | undefined;
         description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
@@ -191,7 +187,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
-        isInGameplan?: boolean | undefined;
         description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
@@ -230,7 +225,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
-        isInGameplan?: boolean | undefined;
         description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
@@ -416,7 +410,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     recommendedForIssueOrdinals?: {
         [x: string]: number;
     } | null | undefined;
-    isInGameplan?: boolean | undefined;
     description?: string | null | undefined;
     createdAt?: {
         isEqual?: any;
@@ -441,7 +434,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             prompt?: string | undefined;
             description?: string | null | undefined;
             createdAt?: {
@@ -486,7 +478,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -529,7 +520,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -569,7 +559,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -609,7 +598,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -648,7 +636,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -699,7 +686,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
-        isInGameplan?: boolean | undefined;
         prompt?: string | undefined;
         description?: string | null | undefined;
         createdAt?: {
@@ -744,7 +730,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
-        isInGameplan?: boolean | undefined;
         description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
@@ -787,7 +772,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
-        isInGameplan?: boolean | undefined;
         description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
@@ -827,7 +811,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
-        isInGameplan?: boolean | undefined;
         description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
@@ -867,7 +850,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
-        isInGameplan?: boolean | undefined;
         description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
@@ -906,7 +888,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
-        isInGameplan?: boolean | undefined;
         description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
@@ -955,4 +936,4 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     isShared: NonNullable<boolean | undefined>;
     invitationCode: string;
     invitationUrl: string;
-}, "ordinal" | "prompt" | "type" | "isShared" | "invitationCode" | "invitationUrl" | ("profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "description" | "createdAt" | "updatedAt" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics" | "nextTacticId")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "ordinal" | "prompt" | "description" | "type" | "createdAt" | "updatedAt" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "setbackThreshold" | "likesCount" | "timerSeconds" | "isSuggested">;
+}, "ordinal" | "prompt" | "type" | "isShared" | "invitationCode" | "invitationUrl" | ("profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "description" | "createdAt" | "updatedAt" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics" | "nextTacticId")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "ordinal" | "prompt" | "description" | "type" | "createdAt" | "updatedAt" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "setbackThreshold" | "likesCount" | "timerSeconds" | "isSuggested">;

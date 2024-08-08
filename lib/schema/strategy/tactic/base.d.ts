@@ -5,7 +5,6 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
     recommendedForIssueOrdinals: {
         [x: string]: number;
     } | null | undefined;
-    isInGameplan: boolean | undefined;
     ordinal: number;
     prompt: string;
     description: string | null | undefined;
@@ -42,7 +41,6 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
     profileId: undefined;
     recommendedForIssueIds: "";
     recommendedForIssueOrdinals: undefined;
-    isInGameplan: undefined;
     ordinal: undefined;
     prompt: undefined;
     description: undefined;

@@ -61,7 +61,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     prompt?: string | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
@@ -106,7 +105,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -149,7 +147,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -189,7 +186,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -229,7 +225,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -268,7 +263,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -369,7 +363,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     prompt?: string | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
@@ -414,7 +407,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -457,7 +449,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -497,7 +488,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -537,7 +527,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -576,7 +565,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -682,7 +670,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     prompt?: string | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
@@ -727,7 +714,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -770,7 +756,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -810,7 +795,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -850,7 +834,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -889,7 +872,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -998,7 +980,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     prompt?: string | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
@@ -1043,7 +1024,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -1086,7 +1066,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -1126,7 +1105,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -1166,7 +1144,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -1205,7 +1182,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -1322,7 +1298,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     prompt?: string | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
@@ -1367,7 +1342,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -1410,7 +1384,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -1450,7 +1423,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -1490,7 +1462,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -1529,7 +1500,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -1630,7 +1600,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     prompt?: string | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
@@ -1675,7 +1644,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -1718,7 +1686,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -1758,7 +1725,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -1798,7 +1764,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -1837,7 +1802,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -2637,7 +2601,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     prompt?: string | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
@@ -2682,7 +2645,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -2725,7 +2687,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -2765,7 +2726,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -2805,7 +2765,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -2844,7 +2803,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -2950,7 +2908,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     prompt?: string | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
@@ -2995,7 +2952,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -3038,7 +2994,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -3078,7 +3033,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -3118,7 +3072,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -3157,7 +3110,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -3240,7 +3192,6 @@ export declare const factories: {
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
-                        isInGameplan?: boolean | undefined;
                         prompt?: string | undefined;
                         description?: string | null | undefined;
                         createdAt?: {
@@ -3285,7 +3236,6 @@ export declare const factories: {
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
-                        isInGameplan?: boolean | undefined;
                         description?: string | null | undefined;
                         createdAt?: {
                             isEqual?: any;
@@ -3328,7 +3278,6 @@ export declare const factories: {
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
-                        isInGameplan?: boolean | undefined;
                         description?: string | null | undefined;
                         createdAt?: {
                             isEqual?: any;
@@ -3368,7 +3317,6 @@ export declare const factories: {
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
-                        isInGameplan?: boolean | undefined;
                         description?: string | null | undefined;
                         createdAt?: {
                             isEqual?: any;
@@ -3408,7 +3356,6 @@ export declare const factories: {
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
-                        isInGameplan?: boolean | undefined;
                         description?: string | null | undefined;
                         createdAt?: {
                             isEqual?: any;
@@ -3447,7 +3394,6 @@ export declare const factories: {
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
-                        isInGameplan?: boolean | undefined;
                         description?: string | null | undefined;
                         createdAt?: {
                             isEqual?: any;
@@ -3494,7 +3440,6 @@ export declare const factories: {
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
-                        isInGameplan?: boolean | undefined;
                         description?: string | null | undefined;
                         createdAt?: {
                             isEqual?: any;
@@ -3519,7 +3464,6 @@ export declare const factories: {
                                 recommendedForIssueOrdinals?: {
                                     [x: string]: number;
                                 } | null | undefined;
-                                isInGameplan?: boolean | undefined;
                                 prompt?: string | undefined;
                                 description?: string | null | undefined;
                                 createdAt?: {
@@ -3564,7 +3508,6 @@ export declare const factories: {
                                 recommendedForIssueOrdinals?: {
                                     [x: string]: number;
                                 } | null | undefined;
-                                isInGameplan?: boolean | undefined;
                                 description?: string | null | undefined;
                                 createdAt?: {
                                     isEqual?: any;
@@ -3607,7 +3550,6 @@ export declare const factories: {
                                 recommendedForIssueOrdinals?: {
                                     [x: string]: number;
                                 } | null | undefined;
-                                isInGameplan?: boolean | undefined;
                                 description?: string | null | undefined;
                                 createdAt?: {
                                     isEqual?: any;
@@ -3647,7 +3589,6 @@ export declare const factories: {
                                 recommendedForIssueOrdinals?: {
                                     [x: string]: number;
                                 } | null | undefined;
-                                isInGameplan?: boolean | undefined;
                                 description?: string | null | undefined;
                                 createdAt?: {
                                     isEqual?: any;
@@ -3687,7 +3628,6 @@ export declare const factories: {
                                 recommendedForIssueOrdinals?: {
                                     [x: string]: number;
                                 } | null | undefined;
-                                isInGameplan?: boolean | undefined;
                                 description?: string | null | undefined;
                                 createdAt?: {
                                     isEqual?: any;
@@ -3726,7 +3666,6 @@ export declare const factories: {
                                 recommendedForIssueOrdinals?: {
                                     [x: string]: number;
                                 } | null | undefined;
-                                isInGameplan?: boolean | undefined;
                                 description?: string | null | undefined;
                                 createdAt?: {
                                     isEqual?: any;
@@ -3777,7 +3716,6 @@ export declare const factories: {
                             recommendedForIssueOrdinals?: {
                                 [x: string]: number;
                             } | null | undefined;
-                            isInGameplan?: boolean | undefined;
                             prompt?: string | undefined;
                             description?: string | null | undefined;
                             createdAt?: {
@@ -3822,7 +3760,6 @@ export declare const factories: {
                             recommendedForIssueOrdinals?: {
                                 [x: string]: number;
                             } | null | undefined;
-                            isInGameplan?: boolean | undefined;
                             description?: string | null | undefined;
                             createdAt?: {
                                 isEqual?: any;
@@ -3865,7 +3802,6 @@ export declare const factories: {
                             recommendedForIssueOrdinals?: {
                                 [x: string]: number;
                             } | null | undefined;
-                            isInGameplan?: boolean | undefined;
                             description?: string | null | undefined;
                             createdAt?: {
                                 isEqual?: any;
@@ -3905,7 +3841,6 @@ export declare const factories: {
                             recommendedForIssueOrdinals?: {
                                 [x: string]: number;
                             } | null | undefined;
-                            isInGameplan?: boolean | undefined;
                             description?: string | null | undefined;
                             createdAt?: {
                                 isEqual?: any;
@@ -3945,7 +3880,6 @@ export declare const factories: {
                             recommendedForIssueOrdinals?: {
                                 [x: string]: number;
                             } | null | undefined;
-                            isInGameplan?: boolean | undefined;
                             description?: string | null | undefined;
                             createdAt?: {
                                 isEqual?: any;
@@ -3984,7 +3918,6 @@ export declare const factories: {
                             recommendedForIssueOrdinals?: {
                                 [x: string]: number;
                             } | null | undefined;
-                            isInGameplan?: boolean | undefined;
                             description?: string | null | undefined;
                             createdAt?: {
                                 isEqual?: any;
@@ -4062,7 +3995,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     prompt?: string | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
@@ -4107,7 +4039,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -4150,7 +4081,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -4190,7 +4120,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -4230,7 +4159,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -4269,7 +4197,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -4378,7 +4305,6 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             prompt?: string | undefined;
             description?: string | null | undefined;
             createdAt?: {
@@ -4423,7 +4349,6 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -4466,7 +4391,6 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -4506,7 +4430,6 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -4546,7 +4469,6 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -4585,7 +4507,6 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -4703,7 +4624,6 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             prompt?: string | undefined;
             description?: string | null | undefined;
             createdAt?: {
@@ -4748,7 +4668,6 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -4791,7 +4710,6 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -4831,7 +4749,6 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -4871,7 +4788,6 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -4910,7 +4826,6 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -5012,7 +4927,6 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             prompt?: string | undefined;
             description?: string | null | undefined;
             createdAt?: {
@@ -5057,7 +4971,6 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -5100,7 +5013,6 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -5140,7 +5052,6 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -5180,7 +5091,6 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -5219,7 +5129,6 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -6020,7 +5929,6 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             prompt?: string | undefined;
             description?: string | null | undefined;
             createdAt?: {
@@ -6065,7 +5973,6 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -6108,7 +6015,6 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -6148,7 +6054,6 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -6188,7 +6093,6 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -6227,7 +6131,6 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -6310,7 +6213,6 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                isInGameplan?: boolean | undefined;
                 prompt?: string | undefined;
                 description?: string | null | undefined;
                 createdAt?: {
@@ -6355,7 +6257,6 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                isInGameplan?: boolean | undefined;
                 description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
@@ -6398,7 +6299,6 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                isInGameplan?: boolean | undefined;
                 description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
@@ -6438,7 +6338,6 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                isInGameplan?: boolean | undefined;
                 description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
@@ -6478,7 +6377,6 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                isInGameplan?: boolean | undefined;
                 description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
@@ -6517,7 +6415,6 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                isInGameplan?: boolean | undefined;
                 description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
@@ -6564,7 +6461,6 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                isInGameplan?: boolean | undefined;
                 description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
@@ -6589,7 +6485,6 @@ export declare const factories: {
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
-                        isInGameplan?: boolean | undefined;
                         prompt?: string | undefined;
                         description?: string | null | undefined;
                         createdAt?: {
@@ -6634,7 +6529,6 @@ export declare const factories: {
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
-                        isInGameplan?: boolean | undefined;
                         description?: string | null | undefined;
                         createdAt?: {
                             isEqual?: any;
@@ -6677,7 +6571,6 @@ export declare const factories: {
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
-                        isInGameplan?: boolean | undefined;
                         description?: string | null | undefined;
                         createdAt?: {
                             isEqual?: any;
@@ -6717,7 +6610,6 @@ export declare const factories: {
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
-                        isInGameplan?: boolean | undefined;
                         description?: string | null | undefined;
                         createdAt?: {
                             isEqual?: any;
@@ -6757,7 +6649,6 @@ export declare const factories: {
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
-                        isInGameplan?: boolean | undefined;
                         description?: string | null | undefined;
                         createdAt?: {
                             isEqual?: any;
@@ -6796,7 +6687,6 @@ export declare const factories: {
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
-                        isInGameplan?: boolean | undefined;
                         description?: string | null | undefined;
                         createdAt?: {
                             isEqual?: any;
@@ -6847,7 +6737,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     prompt?: string | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
@@ -6892,7 +6781,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -6935,7 +6823,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -6975,7 +6862,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -7015,7 +6901,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -7054,7 +6939,6 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -7451,7 +7335,6 @@ export declare const factories: {
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
-        isInGameplan?: boolean | undefined;
         description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
@@ -7476,7 +7359,6 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                isInGameplan?: boolean | undefined;
                 prompt?: string | undefined;
                 description?: string | null | undefined;
                 createdAt?: {
@@ -7521,7 +7403,6 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                isInGameplan?: boolean | undefined;
                 description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
@@ -7564,7 +7445,6 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                isInGameplan?: boolean | undefined;
                 description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
@@ -7604,7 +7484,6 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                isInGameplan?: boolean | undefined;
                 description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
@@ -7644,7 +7523,6 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                isInGameplan?: boolean | undefined;
                 description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
@@ -7683,7 +7561,6 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                isInGameplan?: boolean | undefined;
                 description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
@@ -7734,7 +7611,6 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             prompt?: string | undefined;
             description?: string | null | undefined;
             createdAt?: {
@@ -7779,7 +7655,6 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -7822,7 +7697,6 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -7862,7 +7736,6 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -7902,7 +7775,6 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -7941,7 +7813,6 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -7990,7 +7861,7 @@ export declare const factories: {
         isShared: NonNullable<boolean | undefined>;
         invitationCode: string;
         invitationUrl: string;
-    }, "ordinal" | "prompt" | "type" | "isShared" | "invitationCode" | "invitationUrl" | ("profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "description" | "createdAt" | "updatedAt" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics" | "nextTacticId")>;
+    }, "ordinal" | "prompt" | "type" | "isShared" | "invitationCode" | "invitationUrl" | ("profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "description" | "createdAt" | "updatedAt" | "tacticsById" | "slug" | "creatorProfileId" | "next3Tactics" | "nextTacticId")>;
     issueFactory: import("factory.ts").Factory<{
         path?: string | null | undefined;
         createdAt?: {
@@ -8176,5 +8047,35 @@ export declare const factories: {
         hour: number;
         minute: number;
     }, "profileId" | "type" | "name" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "isInGameplan" | "ordinal" | "prompt" | "description" | "type" | "createdAt" | "updatedAt" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "setbackThreshold" | "likesCount" | "timerSeconds" | "isSuggested">;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "ordinal" | "prompt" | "description" | "type" | "createdAt" | "updatedAt" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "setbackThreshold" | "likesCount" | "timerSeconds" | "isSuggested">;
+    roadmapFactory: import("factory.ts").Factory<{
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        name: string;
+        stages: {
+            name: string;
+            graduationCriteria: {
+                requiredWinRate: number;
+                requiredWinRateDays: number;
+            };
+        }[];
+    }, "name" | "stages" | ("recommendedForIssueIds" | "recommendedForIssueOrdinals" | "createdAt" | "updatedAt")>;
 };

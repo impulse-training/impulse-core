@@ -26,7 +26,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             prompt?: string | undefined;
             description?: string | null | undefined;
             createdAt?: {
@@ -71,7 +70,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -114,7 +112,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -154,7 +151,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -194,7 +190,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -233,7 +228,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -351,7 +345,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             prompt?: string | undefined;
             description?: string | null | undefined;
             createdAt?: {
@@ -396,7 +389,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -439,7 +431,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -479,7 +470,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -519,7 +509,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -558,7 +547,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -660,7 +648,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             prompt?: string | undefined;
             description?: string | null | undefined;
             createdAt?: {
@@ -705,7 +692,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -748,7 +734,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -788,7 +773,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -828,7 +812,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -867,7 +850,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -1668,7 +1650,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             prompt?: string | undefined;
             description?: string | null | undefined;
             createdAt?: {
@@ -1713,7 +1694,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -1756,7 +1736,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -1796,7 +1775,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -1836,7 +1814,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -1875,7 +1852,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -1958,7 +1934,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                isInGameplan?: boolean | undefined;
                 prompt?: string | undefined;
                 description?: string | null | undefined;
                 createdAt?: {
@@ -2003,7 +1978,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                isInGameplan?: boolean | undefined;
                 description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
@@ -2046,7 +2020,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                isInGameplan?: boolean | undefined;
                 description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
@@ -2086,7 +2059,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                isInGameplan?: boolean | undefined;
                 description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
@@ -2126,7 +2098,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                isInGameplan?: boolean | undefined;
                 description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
@@ -2165,7 +2136,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                isInGameplan?: boolean | undefined;
                 description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
@@ -2212,7 +2182,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
-                isInGameplan?: boolean | undefined;
                 description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
@@ -2237,7 +2206,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
-                        isInGameplan?: boolean | undefined;
                         prompt?: string | undefined;
                         description?: string | null | undefined;
                         createdAt?: {
@@ -2282,7 +2250,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
-                        isInGameplan?: boolean | undefined;
                         description?: string | null | undefined;
                         createdAt?: {
                             isEqual?: any;
@@ -2325,7 +2292,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
-                        isInGameplan?: boolean | undefined;
                         description?: string | null | undefined;
                         createdAt?: {
                             isEqual?: any;
@@ -2365,7 +2331,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
-                        isInGameplan?: boolean | undefined;
                         description?: string | null | undefined;
                         createdAt?: {
                             isEqual?: any;
@@ -2405,7 +2370,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
-                        isInGameplan?: boolean | undefined;
                         description?: string | null | undefined;
                         createdAt?: {
                             isEqual?: any;
@@ -2444,7 +2408,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
-                        isInGameplan?: boolean | undefined;
                         description?: string | null | undefined;
                         createdAt?: {
                             isEqual?: any;
@@ -2495,7 +2458,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     prompt?: string | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
@@ -2540,7 +2502,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -2583,7 +2544,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -2623,7 +2583,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -2663,7 +2622,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
@@ -2702,7 +2660,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    isInGameplan?: boolean | undefined;
                     description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;

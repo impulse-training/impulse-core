@@ -5,7 +5,6 @@ export declare const notifyASupportPersonTacticSchema: yup.ObjectSchema<{
     recommendedForIssueOrdinals: {
         [x: string]: number;
     } | null | undefined;
-    isInGameplan: boolean | undefined;
     ordinal: number;
     prompt: string;
     description: string | null | undefined;
@@ -43,7 +42,6 @@ export declare const notifyASupportPersonTacticSchema: yup.ObjectSchema<{
     profileId: undefined;
     recommendedForIssueIds: "";
     recommendedForIssueOrdinals: undefined;
-    isInGameplan: undefined;
     ordinal: undefined;
     prompt: undefined;
     description: undefined;

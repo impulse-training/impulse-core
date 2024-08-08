@@ -5,7 +5,6 @@ export declare const audioTacticSchema: yup.ObjectSchema<{
     recommendedForIssueOrdinals: {
         [x: string]: number;
     } | null | undefined;
-    isInGameplan: boolean | undefined;
     ordinal: number;
     prompt: string | undefined;
     description: string | null | undefined;
@@ -48,7 +47,6 @@ export declare const audioTacticSchema: yup.ObjectSchema<{
     profileId: undefined;
     recommendedForIssueIds: "";
     recommendedForIssueOrdinals: undefined;
-    isInGameplan: undefined;
     ordinal: undefined;
     prompt: undefined;
     description: undefined;

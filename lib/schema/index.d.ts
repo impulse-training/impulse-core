@@ -14,6 +14,7 @@ export * from './option';
 export * from './profile';
 export * from './question';
 export * from './recoveryCode';
+export * from './roadmap';
 export * from './routine';
 export * from './spotifyCredentials';
 export * from './strategy';

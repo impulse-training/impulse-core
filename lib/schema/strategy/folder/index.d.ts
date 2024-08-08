@@ -5,7 +5,6 @@ export declare const folderSchema: yup.ObjectSchema<{
     recommendedForIssueOrdinals: {
         [x: string]: number;
     } | null | undefined;
-    isInGameplan: boolean | undefined;
     ordinal: number;
     prompt: string;
     description: string | null | undefined;
@@ -38,7 +37,6 @@ export declare const folderSchema: yup.ObjectSchema<{
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             prompt?: string | undefined;
             description?: string | null | undefined;
             createdAt?: {
@@ -83,7 +81,6 @@ export declare const folderSchema: yup.ObjectSchema<{
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -126,7 +123,6 @@ export declare const folderSchema: yup.ObjectSchema<{
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -166,7 +162,6 @@ export declare const folderSchema: yup.ObjectSchema<{
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -206,7 +201,6 @@ export declare const folderSchema: yup.ObjectSchema<{
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -245,7 +239,6 @@ export declare const folderSchema: yup.ObjectSchema<{
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
-            isInGameplan?: boolean | undefined;
             description?: string | null | undefined;
             createdAt?: {
                 isEqual?: any;
@@ -294,7 +287,6 @@ export declare const folderSchema: yup.ObjectSchema<{
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
-        isInGameplan?: boolean | undefined;
         prompt?: string | undefined;
         description?: string | null | undefined;
         createdAt?: {
@@ -339,7 +331,6 @@ export declare const folderSchema: yup.ObjectSchema<{
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
-        isInGameplan?: boolean | undefined;
         description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
@@ -382,7 +373,6 @@ export declare const folderSchema: yup.ObjectSchema<{
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
-        isInGameplan?: boolean | undefined;
         description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
@@ -422,7 +412,6 @@ export declare const folderSchema: yup.ObjectSchema<{
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
-        isInGameplan?: boolean | undefined;
         description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
@@ -462,7 +451,6 @@ export declare const folderSchema: yup.ObjectSchema<{
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
-        isInGameplan?: boolean | undefined;
         description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
@@ -501,7 +489,6 @@ export declare const folderSchema: yup.ObjectSchema<{
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
-        isInGameplan?: boolean | undefined;
         description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
@@ -548,7 +535,6 @@ export declare const folderSchema: yup.ObjectSchema<{
     profileId: undefined;
     recommendedForIssueIds: "";
     recommendedForIssueOrdinals: undefined;
-    isInGameplan: undefined;
     ordinal: undefined;
     prompt: undefined;
     description: undefined;

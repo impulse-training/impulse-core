@@ -10,7 +10,6 @@ export default function strategyBase() {
       "can't be more than 10"
     ),
     recommendedForIssueOrdinals: optionalObjectOf(yup.number().required()),
-    isInGameplan: yup.boolean(),
     ordinal: yup.number().required(),
     prompt: yup.string().required('is required'),
     description: yup.string().nullable(),
