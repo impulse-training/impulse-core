@@ -20,6 +20,7 @@ export const profileSchema = yup.object({
   notificationPreferences: optionalObjectOf(
     yup.array().of(notificationOptionSchema)
   ),
+  roadmap: documentReferenceSchema,
   dayReview: yup
     .mixed<'morning' | 'evening'>()
     .oneOf(['morning', 'evening'])
