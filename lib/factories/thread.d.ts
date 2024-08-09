@@ -3175,6 +3175,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                 }[] | undefined;
                 openAiRequestPayload?: string | undefined;
                 openAiChoiceResponse?: {} | undefined;
+                sourceSuggestion?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 suggestedStrategyDocPaths?: string[] | undefined;
                 profileId: string;
                 type: "strategies";

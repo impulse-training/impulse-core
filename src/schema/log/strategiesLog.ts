@@ -1,13 +1,15 @@
 import * as yup from 'yup';
 import { strategySchema } from '../strategy';
 import { optionalStringArray, requiredStringArray } from '../utils/array';
+import { documentReferenceSchema } from '../utils/firestore';
 import { objectOf } from '../utils/objectOf';
 import { logBaseSchema } from './base';
 import { gptResponseMixin } from './utils/gpt';
 
 export const strategiesLogSchema = logBaseSchema('strategies').shape({
-  // A strategies log can have a list of suggested strategies, or it can just be a record of
-  // completed strategies
+  // Optionally, a strategies log can link to a suggestion, which was it's source
+  sourceSuggestion: documentReferenceSchema,
+
   suggestedStrategyDocPaths: optionalStringArray,
   strategiesById: objectOf(strategySchema),
   // These are the tactics that the user has completed

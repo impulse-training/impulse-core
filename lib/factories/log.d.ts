@@ -1915,6 +1915,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
         }[] | undefined;
         openAiRequestPayload?: string | undefined;
         openAiChoiceResponse?: {} | undefined;
+        sourceSuggestion?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         suggestedStrategyDocPaths?: string[] | undefined;
         profileId: string;
         type: "strategies";
@@ -2712,5 +2713,5 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
         };
         completedTacticIds: string[];
         followedUpTacticIds: string[];
-    }, "profileId" | "type" | "date" | "dateString" | "strategiesById" | "completedTacticIds" | "followedUpTacticIds" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "tactic" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "suggestedStrategyDocPaths")>;
+    }, "profileId" | "type" | "date" | "dateString" | "strategiesById" | "completedTacticIds" | "followedUpTacticIds" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "tactic" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "sourceSuggestion" | "suggestedStrategyDocPaths")>;
 };

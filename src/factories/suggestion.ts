@@ -4,8 +4,8 @@ import { TimestampLike } from '../utils';
 
 export const makeSuggestionFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<SuggestionValue>({
-    name: 'Impulse default roadmap',
-    gptContext: "Let's start with a distraction!",
+    title: "Let's start with a distraction!",
+    gptContext: '',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     stages: [0],

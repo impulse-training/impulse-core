@@ -3173,6 +3173,7 @@ export declare const factories: {
                 }[] | undefined;
                 openAiRequestPayload?: string | undefined;
                 openAiChoiceResponse?: {} | undefined;
+                sourceSuggestion?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 suggestedStrategyDocPaths?: string[] | undefined;
                 profileId: string;
                 type: "strategies";
@@ -6194,6 +6195,7 @@ export declare const factories: {
         }[] | undefined;
         openAiRequestPayload?: string | undefined;
         openAiChoiceResponse?: {} | undefined;
+        sourceSuggestion?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         suggestedStrategyDocPaths?: string[] | undefined;
         profileId: string;
         type: "strategies";
@@ -6991,7 +6993,7 @@ export declare const factories: {
         };
         completedTacticIds: string[];
         followedUpTacticIds: string[];
-    }, "profileId" | "type" | "date" | "dateString" | "strategiesById" | "completedTacticIds" | "followedUpTacticIds" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "tactic" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "suggestedStrategyDocPaths")>;
+    }, "profileId" | "type" | "date" | "dateString" | "strategiesById" | "completedTacticIds" | "followedUpTacticIds" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "tactic" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "sourceSuggestion" | "suggestedStrategyDocPaths")>;
     textQuestionFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -8097,8 +8099,8 @@ export declare const factories: {
             toDate: Function;
         } | null | undefined;
         stages?: number[] | undefined;
-        strategyDocs?: (import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined)[] | undefined;
-        name: string;
+        strategyDocs?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
+        title: string;
         gptContext: string;
-    }, "name" | "gptContext" | ("createdAt" | "updatedAt" | "stages" | "strategyDocs")>;
+    }, "title" | "gptContext" | ("createdAt" | "updatedAt" | "stages" | "strategyDocs")>;
 };

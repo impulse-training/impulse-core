@@ -2,17 +2,21 @@ import * as yup from 'yup';
 import { dayReviewThreadSchema, DayReviewThreadValue } from './dayReview';
 import { defaultThreadSchema, DefaultThreadValue } from './default';
 import { impulseThreadSchema, ImpulseThreadValue } from './impulse';
+import { SuggestionThreadValue } from './suggestion';
 import { whatsappThreadSchema, WhatsappThreadValue } from './whatsapp';
 
+export * from './dayReview';
 export * from './default';
 export * from './impulse';
+export * from './suggestion';
 export * from './whatsapp';
 
 export type ThreadValue =
   | DefaultThreadValue
   | WhatsappThreadValue
   | ImpulseThreadValue
-  | DayReviewThreadValue;
+  | DayReviewThreadValue
+  | SuggestionThreadValue;
 
 export const threadSchemas: Record<
   ThreadValue['type'],

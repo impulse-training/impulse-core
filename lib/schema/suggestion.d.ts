@@ -16,14 +16,14 @@ export declare const suggestionSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    name: string;
+    title: string;
     gptContext: string;
-    strategyDocs: (import("./utils/firestore").DocumentReferenceLike<unknown> | undefined)[] | undefined;
+    strategyDocs: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
     stages: number[] | undefined;
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
-    name: undefined;
+    title: undefined;
     gptContext: undefined;
     strategyDocs: "";
     stages: "";

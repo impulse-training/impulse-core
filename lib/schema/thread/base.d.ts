@@ -3156,6 +3156,7 @@ export default function threadBase<T extends string>(type: T): yup.ObjectSchema<
             }[] | undefined;
             openAiRequestPayload?: string | undefined;
             openAiChoiceResponse?: {} | undefined;
+            sourceSuggestion?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
             suggestedStrategyDocPaths?: string[] | undefined;
             profileId: string;
             type: "strategies";

@@ -5,9 +5,10 @@ import { optionalTimestampSchema } from './utils/timestamp';
 export const suggestionSchema = yup.object({
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
-  name: yup.string().required(),
+  title: yup.string().required(),
   gptContext: yup.string().required(),
-  strategyDocs: yup.array().of(documentReferenceSchema),
+  strategyDocs: yup.array().of(documentReferenceSchema.required()),
+  // This is a bit of a placeholder
   stages: yup.array().of(yup.number().required()),
 });
 
