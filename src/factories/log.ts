@@ -42,6 +42,7 @@ export const makeLogFactories = (TimestampKlass: typeof TimestampLike) => ({
   strategiesLogFactory: Factory.makeFactory<StrategiesLogValue>({
     profileId: '1',
     senderProfileId: Factory.each(i => i.toString()),
+    title: 'Suggestions',
     type: 'strategies',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),

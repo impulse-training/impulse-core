@@ -7,6 +7,7 @@ import { logBaseSchema } from './base';
 import { gptResponseMixin } from './utils/gpt';
 
 export const strategiesLogSchema = logBaseSchema('strategies').shape({
+  title: yup.string(),
   // Optionally, a strategies log can link to a suggestion, which was it's source
   sourceSuggestion: documentReferenceSchema,
 

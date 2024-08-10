@@ -2902,6 +2902,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                title?: string | undefined;
                 text?: string | undefined;
                 tacticId?: string | null | undefined;
                 tactic?: ({

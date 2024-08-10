@@ -1642,6 +1642,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        title?: string | undefined;
         text?: string | undefined;
         tacticId?: string | null | undefined;
         tactic?: ({
@@ -2713,5 +2714,5 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
         };
         completedTacticIds: string[];
         followedUpTacticIds: string[];
-    }, "profileId" | "type" | "date" | "dateString" | "strategiesById" | "completedTacticIds" | "followedUpTacticIds" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "tactic" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "sourceSuggestion" | "suggestedStrategyDocPaths")>;
+    }, "profileId" | "type" | "date" | "dateString" | "strategiesById" | "completedTacticIds" | "followedUpTacticIds" | ("createdAt" | "updatedAt" | "title" | "text" | "tacticId" | "tactic" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "sourceSuggestion" | "suggestedStrategyDocPaths")>;
 };

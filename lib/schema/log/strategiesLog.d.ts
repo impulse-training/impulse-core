@@ -300,6 +300,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
             toDate: Function;
         };
     }[] | undefined;
+    title: string | undefined;
     sourceSuggestion: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
     suggestedStrategyDocPaths: string[] | undefined;
     strategiesById: {
@@ -1109,6 +1110,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
     isGptSender: undefined;
     senderProfileId: undefined;
     views: "";
+    title: undefined;
     sourceSuggestion: undefined;
     suggestedStrategyDocPaths: "";
     strategiesById: undefined;

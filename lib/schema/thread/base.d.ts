@@ -2883,6 +2883,7 @@ export default function threadBase<T extends string>(type: T): yup.ObjectSchema<
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            title?: string | undefined;
             text?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
