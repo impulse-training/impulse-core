@@ -28,7 +28,9 @@ export function questionBaseSchema<T extends string>(type: T) {
     type: yup.mixed<T>().oneOf([type]).defined(),
     options: yup.array().of(optionSchema),
     ordinals: optionalObjectOf(yup.number().required()),
-    templateFor: yup.mixed<'onboarding'>().oneOf(['onboarding']),
+    templateFor: yup
+      .mixed<'onboarding' | 'afterSuccess' | 'afterSetback'>()
+      .oneOf(['onboarding', 'afterSetback', 'afterSuccess']),
     writeAnswerToProfileMemoryKey: yup.string(),
     followUps: yup.array().of(followUpSchema),
     createdAt: optionalTimestampSchema,

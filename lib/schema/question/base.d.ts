@@ -77,7 +77,7 @@ export declare function questionBaseSchema<T extends string>(type: T): yup.Objec
     ordinals: {
         [x: string]: number;
     } | null | undefined;
-    templateFor: "onboarding" | undefined;
+    templateFor: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
     writeAnswerToProfileMemoryKey: string | undefined;
     followUps: ({
         message?: string | undefined;

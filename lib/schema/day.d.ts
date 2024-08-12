@@ -1990,7 +1990,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     ordinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    templateFor?: "onboarding" | undefined;
+                    templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     prompt: string;
                     type: "counter";
@@ -2100,7 +2100,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     ordinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    templateFor?: "onboarding" | undefined;
+                    templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     prompt: string;
                     type: "issue";
@@ -2148,7 +2148,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     ordinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    templateFor?: "onboarding" | undefined;
+                    templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     prompt: string;
                     type: "multipleChoice";
@@ -2322,7 +2322,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     ordinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    templateFor?: "onboarding" | undefined;
+                    templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     lowEmoji?: yup.Maybe<string | undefined>;
                     highEmoji?: yup.Maybe<string | undefined>;
@@ -2434,7 +2434,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     ordinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    templateFor?: "onboarding" | undefined;
+                    templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     prompt: string;
                     type: "text";
@@ -2545,7 +2545,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     ordinals?: {
                         [x: string]: number;
                     } | null | undefined;
-                    templateFor?: "onboarding" | undefined;
+                    templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     prompt: string;
                     type: "time";
@@ -4367,7 +4367,7 @@ export declare const daySchema: yup.ObjectSchema<{
             ordinals?: {
                 [x: string]: number;
             } | null | undefined;
-            templateFor?: "onboarding" | undefined;
+            templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
             prompt: string;
             type: "counter";
@@ -4477,7 +4477,7 @@ export declare const daySchema: yup.ObjectSchema<{
             ordinals?: {
                 [x: string]: number;
             } | null | undefined;
-            templateFor?: "onboarding" | undefined;
+            templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
             prompt: string;
             type: "issue";
@@ -4525,7 +4525,7 @@ export declare const daySchema: yup.ObjectSchema<{
             ordinals?: {
                 [x: string]: number;
             } | null | undefined;
-            templateFor?: "onboarding" | undefined;
+            templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
             prompt: string;
             type: "multipleChoice";
@@ -4699,7 +4699,7 @@ export declare const daySchema: yup.ObjectSchema<{
             ordinals?: {
                 [x: string]: number;
             } | null | undefined;
-            templateFor?: "onboarding" | undefined;
+            templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
             lowEmoji?: yup.Maybe<string | undefined>;
             highEmoji?: yup.Maybe<string | undefined>;
@@ -4811,7 +4811,7 @@ export declare const daySchema: yup.ObjectSchema<{
             ordinals?: {
                 [x: string]: number;
             } | null | undefined;
-            templateFor?: "onboarding" | undefined;
+            templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
             prompt: string;
             type: "text";
@@ -4922,7 +4922,7 @@ export declare const daySchema: yup.ObjectSchema<{
             ordinals?: {
                 [x: string]: number;
             } | null | undefined;
-            templateFor?: "onboarding" | undefined;
+            templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
             writeAnswerToProfileMemoryKey?: string | undefined;
             prompt: string;
             type: "time";

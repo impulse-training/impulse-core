@@ -68,7 +68,7 @@ export declare const timeQuestionSchema: yup.ObjectSchema<{
     ordinals: {
         [x: string]: number;
     } | null | undefined;
-    templateFor: "onboarding" | undefined;
+    templateFor: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
     writeAnswerToProfileMemoryKey: string | undefined;
     followUps: ({
         message?: string | undefined;

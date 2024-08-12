@@ -107,7 +107,7 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
         ordinals?: {
             [x: string]: number;
         } | null | undefined;
-        templateFor?: "onboarding" | undefined;
+        templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
         writeAnswerToProfileMemoryKey?: string | undefined;
         prompt: string;
         type: "text";
@@ -219,7 +219,7 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
         ordinals?: {
             [x: string]: number;
         } | null | undefined;
-        templateFor?: "onboarding" | undefined;
+        templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
         writeAnswerToProfileMemoryKey?: string | undefined;
         prompt: string;
         type: "time";
@@ -268,7 +268,7 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
         ordinals?: {
             [x: string]: number;
         } | null | undefined;
-        templateFor?: "onboarding" | undefined;
+        templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
         writeAnswerToProfileMemoryKey?: string | undefined;
         prompt: string;
         type: "multipleChoice";

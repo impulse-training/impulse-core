@@ -2017,7 +2017,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                         ordinals?: {
                             [x: string]: number;
                         } | null | undefined;
-                        templateFor?: "onboarding" | undefined;
+                        templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
                         writeAnswerToProfileMemoryKey?: string | undefined;
                         prompt: string;
                         type: "counter";
@@ -2127,7 +2127,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                         ordinals?: {
                             [x: string]: number;
                         } | null | undefined;
-                        templateFor?: "onboarding" | undefined;
+                        templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
                         writeAnswerToProfileMemoryKey?: string | undefined;
                         prompt: string;
                         type: "issue";
@@ -2175,7 +2175,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                         ordinals?: {
                             [x: string]: number;
                         } | null | undefined;
-                        templateFor?: "onboarding" | undefined;
+                        templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
                         writeAnswerToProfileMemoryKey?: string | undefined;
                         prompt: string;
                         type: "multipleChoice";
@@ -2349,7 +2349,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                         ordinals?: {
                             [x: string]: number;
                         } | null | undefined;
-                        templateFor?: "onboarding" | undefined;
+                        templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
                         writeAnswerToProfileMemoryKey?: string | undefined;
                         lowEmoji?: import("yup").Maybe<string | undefined>;
                         highEmoji?: import("yup").Maybe<string | undefined>;
@@ -2461,7 +2461,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                         ordinals?: {
                             [x: string]: number;
                         } | null | undefined;
-                        templateFor?: "onboarding" | undefined;
+                        templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
                         writeAnswerToProfileMemoryKey?: string | undefined;
                         prompt: string;
                         type: "text";
@@ -2572,7 +2572,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                         ordinals?: {
                             [x: string]: number;
                         } | null | undefined;
-                        templateFor?: "onboarding" | undefined;
+                        templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
                         writeAnswerToProfileMemoryKey?: string | undefined;
                         prompt: string;
                         type: "time";
