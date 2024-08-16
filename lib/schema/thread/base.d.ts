@@ -1229,7 +1229,23 @@ export default function threadBase<T extends string>(type: T): yup.ObjectSchema<
             openAiRequestPayload?: string | undefined;
             openAiChoiceResponse?: {} | undefined;
             issueName?: string | undefined;
+            debriefedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
             debriefAfter?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            debriefReminderSentAt?: {
                 isEqual?: any;
                 toMillis?: any;
                 toJSON?: any;

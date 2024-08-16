@@ -301,7 +301,23 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
         };
     }[] | undefined;
     issueName: string | undefined;
+    debriefedAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
     debriefAfter: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    debriefReminderSentAt: {
         isEqual?: any;
         toMillis?: any;
         toJSON?: any;
@@ -341,7 +357,9 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
     senderProfileId: undefined;
     views: "";
     issueName: undefined;
+    debriefedAt: undefined;
     debriefAfter: undefined;
+    debriefReminderSentAt: undefined;
     submittedAt: undefined;
     parentIssueIds: "";
 }, "">;

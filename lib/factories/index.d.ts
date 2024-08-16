@@ -1247,7 +1247,23 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 openAiRequestPayload?: string | undefined;
                 openAiChoiceResponse?: {} | undefined;
                 issueName?: string | undefined;
+                debriefedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
                 debriefAfter?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                debriefReminderSentAt?: {
                     isEqual?: any;
                     toMillis?: any;
                     toJSON?: any;
@@ -4574,7 +4590,23 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         openAiRequestPayload?: string | undefined;
         openAiChoiceResponse?: {} | undefined;
         issueName?: string | undefined;
+        debriefedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
         debriefAfter?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        debriefReminderSentAt?: {
             isEqual?: any;
             toMillis?: any;
             toJSON?: any;
@@ -4602,7 +4634,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         };
         dateString: string;
         parentIssueIds: string[];
-    }, "profileId" | "type" | "date" | "dateString" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "tactic" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueName" | "debriefAfter" | "submittedAt")>;
+    }, "profileId" | "type" | "date" | "dateString" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "tactic" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueName" | "debriefedAt" | "debriefAfter" | "debriefReminderSentAt" | "submittedAt")>;
     messageLogFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;

@@ -1,6 +1,6 @@
-import { logGptPayload } from '.';
-import { makeFactories } from '../../factories';
-import { TimestampLike } from '../firestore/TimestampLike';
+import { logGptPayload } from '..';
+import { makeFactories } from '../../../factories';
+import { TimestampLike } from '../../firestore/TimestampLike';
 
 const { messageLogFactory, questionsLogFactory, strategiesLogFactory } =
   makeFactories(TimestampLike);

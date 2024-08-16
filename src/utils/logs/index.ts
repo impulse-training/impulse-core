@@ -23,16 +23,19 @@ export function logGptPayload(log: LogValue): Message[] | null {
       return compact(
         flatMap(log.questionsById, (question, questionId) => {
           const prompt = question.prompt;
-          const userAnswer = log.questionData?.[questionId].stringValue;
+          const userAnswer = log.questionData?.[questionId];
+          const goalText = userAnswer?.setbackThreshold
+            ? ` (Reminder: your goal is ${userAnswer.setbackThreshold} or less)`
+            : '';
           if (!userAnswer) return null;
           return [
             {
               role: 'assistant',
-              content: prompt,
+              content: prompt + goalText,
             },
             {
               role: 'user',
-              content: userAnswer,
+              content: userAnswer.stringValue,
             },
           ];
         })

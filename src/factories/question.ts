@@ -17,7 +17,7 @@ export const makeQuestionFactories = (
   }),
   timeQuestionFactory: Factory.makeFactory<TimeQuestionValue>({
     categories: ['impulses'],
-    prompt: 'How long did you spend?',
+    prompt: 'How long did you spend watching youtube?',
     type: 'time',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
