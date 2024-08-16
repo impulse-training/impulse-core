@@ -45,6 +45,7 @@ export const profileSchema = yup.object({
   isOnboardingComplete: yup.boolean(),
   parentIssueIds: optionalStringArray,
   setbackThreshold: yup.number(),
+  sendDebriefRemindersAfterMinutes: yup.number(),
   gameplanStrategies: yup.array().of(documentReferenceSchema.required()),
   androidPermissions: optionalObjectOf(yup.boolean().required()),
   impulseContext: yup.string().nullable(),

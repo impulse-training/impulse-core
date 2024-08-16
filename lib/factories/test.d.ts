@@ -368,6 +368,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     issueDebriefQuestionPrompt?: string | undefined;
     isReadyForTour?: boolean | undefined;
     isOnboardingComplete?: boolean | undefined;
+    sendDebriefRemindersAfterMinutes?: number | undefined;
     gameplanStrategies?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
     androidPermissions?: {
         [x: string]: NonNullable<boolean | undefined>;
@@ -397,7 +398,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     uids: string[];
     issueId: string | null;
     timezone: string;
-}, "dayReview" | "uids" | "issueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "issueName" | "parentIssueIds" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "roadmap" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "impulseCanManageQuestions" | "impulseCanManageGameplan" | "issueDebriefQuestionPrompt" | "isReadyForTour" | "isOnboardingComplete" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "longTermMemory" | "region")>, folderFactory: import("factory.ts").Factory<{
+}, "dayReview" | "uids" | "issueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "issueName" | "parentIssueIds" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "roadmap" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "impulseCanManageQuestions" | "impulseCanManageGameplan" | "issueDebriefQuestionPrompt" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "longTermMemory" | "region")>, folderFactory: import("factory.ts").Factory<{
     profileId?: string | undefined;
     recommendedForIssueIds?: string[] | undefined;
     recommendedForIssueOrdinals?: {

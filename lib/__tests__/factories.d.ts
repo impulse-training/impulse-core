@@ -8006,6 +8006,7 @@ export declare const factories: {
         issueDebriefQuestionPrompt?: string | undefined;
         isReadyForTour?: boolean | undefined;
         isOnboardingComplete?: boolean | undefined;
+        sendDebriefRemindersAfterMinutes?: number | undefined;
         gameplanStrategies?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
         androidPermissions?: {
             [x: string]: NonNullable<boolean | undefined>;
@@ -8035,7 +8036,7 @@ export declare const factories: {
         uids: string[];
         issueId: string | null;
         timezone: string;
-    }, "dayReview" | "uids" | "issueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "issueName" | "parentIssueIds" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "roadmap" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "impulseCanManageQuestions" | "impulseCanManageGameplan" | "issueDebriefQuestionPrompt" | "isReadyForTour" | "isOnboardingComplete" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "longTermMemory" | "region")>;
+    }, "dayReview" | "uids" | "issueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "issueName" | "parentIssueIds" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "roadmap" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "impulseCanManageQuestions" | "impulseCanManageGameplan" | "issueDebriefQuestionPrompt" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "longTermMemory" | "region")>;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
