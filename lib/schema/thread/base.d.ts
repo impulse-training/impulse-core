@@ -1229,30 +1229,6 @@ export default function threadBase<T extends string>(type: T): yup.ObjectSchema<
             openAiRequestPayload?: string | undefined;
             openAiChoiceResponse?: {} | undefined;
             issueName?: string | undefined;
-            debriefedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            debriefAfter?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            debriefReminderSentAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
             submittedAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -4296,6 +4272,30 @@ export default function threadBase<T extends string>(type: T): yup.ObjectSchema<
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    debriefedAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    debriefAfter: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    debriefReminderSentAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
     whatsappFolderDoc: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
 }, yup.AnyObject, {
     type: undefined;
@@ -4319,5 +4319,8 @@ export default function threadBase<T extends string>(type: T): yup.ObjectSchema<
     logsById: undefined;
     createdAt: undefined;
     updatedAt: undefined;
+    debriefedAt: undefined;
+    debriefAfter: undefined;
+    debriefReminderSentAt: undefined;
     whatsappFolderDoc: undefined;
 }, "">;

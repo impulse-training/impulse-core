@@ -1229,30 +1229,6 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
             openAiRequestPayload?: string | undefined;
             openAiChoiceResponse?: {} | undefined;
             issueName?: string | undefined;
-            debriefedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            debriefAfter?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            debriefReminderSentAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
             submittedAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -4296,6 +4272,30 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    debriefedAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    debriefAfter: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    debriefReminderSentAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
     whatsappFolderDoc: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
 }, yup.AnyObject, {
     type: undefined;
@@ -4319,6 +4319,9 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
     logsById: undefined;
     createdAt: undefined;
     updatedAt: undefined;
+    debriefedAt: undefined;
+    debriefAfter: undefined;
+    debriefReminderSentAt: undefined;
     whatsappFolderDoc: undefined;
 }, "">;
 export type ImpulseThreadValue = yup.InferType<typeof impulseThreadSchema>;

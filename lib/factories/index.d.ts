@@ -20,6 +20,30 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         title?: string | undefined;
         tacticsWithCommentsIds?: string[] | undefined;
         sharedWithFolderIds?: string[] | undefined;
+        debriefedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        debriefAfter?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        debriefReminderSentAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
         whatsappFolderDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         firstLogId?: string | undefined;
         isProcessing?: boolean | undefined;
@@ -1247,30 +1271,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 openAiRequestPayload?: string | undefined;
                 openAiChoiceResponse?: {} | undefined;
                 issueName?: string | undefined;
-                debriefedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                debriefAfter?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                debriefReminderSentAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
                 submittedAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -4298,7 +4298,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 strategyPath: string;
             };
         };
-    }, "profileId" | "type" | "date" | "dateString" | "isVisible" | "logsById" | ("createdAt" | "updatedAt" | "title" | "tacticsWithCommentsIds" | "sharedWithFolderIds" | "whatsappFolderDoc" | "firstLogId" | "isProcessing" | "gptSystemMessage")>;
+    }, "profileId" | "type" | "date" | "dateString" | "isVisible" | "logsById" | ("createdAt" | "updatedAt" | "title" | "tacticsWithCommentsIds" | "sharedWithFolderIds" | "debriefedAt" | "debriefAfter" | "debriefReminderSentAt" | "whatsappFolderDoc" | "firstLogId" | "isProcessing" | "gptSystemMessage")>;
     impulseLogFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -4590,30 +4590,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         openAiRequestPayload?: string | undefined;
         openAiChoiceResponse?: {} | undefined;
         issueName?: string | undefined;
-        debriefedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            toJSON?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        debriefAfter?: {
-            isEqual?: any;
-            toMillis?: any;
-            toJSON?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        debriefReminderSentAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            toJSON?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
         submittedAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -4634,7 +4610,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         };
         dateString: string;
         parentIssueIds: string[];
-    }, "profileId" | "type" | "date" | "dateString" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "tactic" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueName" | "debriefedAt" | "debriefAfter" | "debriefReminderSentAt" | "submittedAt")>;
+    }, "profileId" | "type" | "date" | "dateString" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "tactic" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueName" | "submittedAt")>;
     messageLogFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;

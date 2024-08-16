@@ -5,9 +5,6 @@ import { logBaseSchema } from './base';
 
 export const impulseLogSchema = logBaseSchema('impulse').shape({
   issueName: yup.string(),
-  debriefedAt: optionalTimestampSchema,
-  debriefAfter: optionalTimestampSchema,
-  debriefReminderSentAt: optionalTimestampSchema,
   submittedAt: optionalTimestampSchema,
   parentIssueIds: requiredStringArray,
 });

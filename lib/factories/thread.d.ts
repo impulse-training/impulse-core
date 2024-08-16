@@ -21,6 +21,30 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
         title?: string | undefined;
         tacticsWithCommentsIds?: string[] | undefined;
         sharedWithFolderIds?: string[] | undefined;
+        debriefedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        debriefAfter?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        debriefReminderSentAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
         whatsappFolderDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         firstLogId?: string | undefined;
         isProcessing?: boolean | undefined;
@@ -1248,30 +1272,6 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                 openAiRequestPayload?: string | undefined;
                 openAiChoiceResponse?: {} | undefined;
                 issueName?: string | undefined;
-                debriefedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                debriefAfter?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                debriefReminderSentAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
                 submittedAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -4299,5 +4299,5 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                 strategyPath: string;
             };
         };
-    }, "profileId" | "type" | "date" | "dateString" | "isVisible" | "logsById" | ("createdAt" | "updatedAt" | "title" | "tacticsWithCommentsIds" | "sharedWithFolderIds" | "whatsappFolderDoc" | "firstLogId" | "isProcessing" | "gptSystemMessage")>;
+    }, "profileId" | "type" | "date" | "dateString" | "isVisible" | "logsById" | ("createdAt" | "updatedAt" | "title" | "tacticsWithCommentsIds" | "sharedWithFolderIds" | "debriefedAt" | "debriefAfter" | "debriefReminderSentAt" | "whatsappFolderDoc" | "firstLogId" | "isProcessing" | "gptSystemMessage")>;
 };
