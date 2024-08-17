@@ -3142,6 +3142,7 @@ export declare const daySchema: yup.ObjectSchema<{
             openAiRequestPayload?: string | undefined;
             openAiChoiceResponse?: {} | undefined;
             sourceSuggestion?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
+            isAddToGameplanMode?: boolean | undefined;
             suggestedStrategyDocPaths?: string[] | undefined;
             profileId: string;
             type: "strategies";

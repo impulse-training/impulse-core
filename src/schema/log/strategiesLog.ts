@@ -11,6 +11,9 @@ export const strategiesLogSchema = logBaseSchema('strategies').shape({
   // Optionally, a strategies log can link to a suggestion, which was it's source
   sourceSuggestion: documentReferenceSchema,
 
+  // This flag can be set to true when the user is browsing and adding strategies
+  isAddToGameplanMode: yup.boolean(),
+
   suggestedStrategyDocPaths: optionalStringArray,
   strategiesById: objectOf(strategySchema),
   // These are the tactics that the user has completed

@@ -302,6 +302,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
     }[] | undefined;
     title: string | undefined;
     sourceSuggestion: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
+    isAddToGameplanMode: boolean | undefined;
     suggestedStrategyDocPaths: string[] | undefined;
     strategiesById: {
         [x: string]: {
@@ -1112,6 +1113,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
     views: "";
     title: undefined;
     sourceSuggestion: undefined;
+    isAddToGameplanMode: undefined;
     suggestedStrategyDocPaths: "";
     strategiesById: undefined;
     completedTacticIds: "";

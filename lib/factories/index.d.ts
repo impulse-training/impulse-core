@@ -3192,6 +3192,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 openAiRequestPayload?: string | undefined;
                 openAiChoiceResponse?: {} | undefined;
                 sourceSuggestion?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                isAddToGameplanMode?: boolean | undefined;
                 suggestedStrategyDocPaths?: string[] | undefined;
                 profileId: string;
                 type: "strategies";
@@ -6207,6 +6208,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         openAiRequestPayload?: string | undefined;
         openAiChoiceResponse?: {} | undefined;
         sourceSuggestion?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+        isAddToGameplanMode?: boolean | undefined;
         suggestedStrategyDocPaths?: string[] | undefined;
         profileId: string;
         type: "strategies";
@@ -7004,7 +7006,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         };
         completedTacticIds: string[];
         followedUpTacticIds: string[];
-    }, "profileId" | "type" | "date" | "dateString" | "strategiesById" | "completedTacticIds" | "followedUpTacticIds" | ("createdAt" | "updatedAt" | "title" | "text" | "tacticId" | "tactic" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "sourceSuggestion" | "suggestedStrategyDocPaths")>;
+    }, "profileId" | "type" | "date" | "dateString" | "strategiesById" | "completedTacticIds" | "followedUpTacticIds" | ("createdAt" | "updatedAt" | "title" | "text" | "tacticId" | "tactic" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "sourceSuggestion" | "isAddToGameplanMode" | "suggestedStrategyDocPaths")>;
     textQuestionFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;

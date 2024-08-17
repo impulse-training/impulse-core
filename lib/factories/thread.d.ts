@@ -3193,6 +3193,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                 openAiRequestPayload?: string | undefined;
                 openAiChoiceResponse?: {} | undefined;
                 sourceSuggestion?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+                isAddToGameplanMode?: boolean | undefined;
                 suggestedStrategyDocPaths?: string[] | undefined;
                 profileId: string;
                 type: "strategies";
