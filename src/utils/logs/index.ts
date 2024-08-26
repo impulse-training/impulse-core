@@ -60,6 +60,13 @@ export function logGptPayload(log: LogValue): Message[] | null {
         : null;
       return compact([assistantMessage, userMessage]);
     default:
+      if (log.text)
+        return [
+          {
+            role: 'user',
+            content: log.text,
+          },
+        ];
       return null;
   }
 }
