@@ -1876,6 +1876,7 @@ export declare const daySchema: yup.ObjectSchema<{
             dateString: string;
             questionsById: {
                 [x: string]: {
+                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -1987,6 +1988,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     prompt: string;
                     type: "counter";
                 } | {
+                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -2097,6 +2099,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     prompt: string;
                     type: "issue";
                 } | {
+                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -2208,6 +2211,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     })[];
                     canAddNewOptions: NonNullable<boolean | undefined>;
                 } | {
+                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -2321,6 +2325,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     prompt: string;
                     type: "scaleOf1To10";
                 } | {
+                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -2431,6 +2436,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     prompt: string;
                     type: "text";
                 } | {
+                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -4254,6 +4260,7 @@ export declare const daySchema: yup.ObjectSchema<{
     };
     questionsById: {
         [x: string]: {
+            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -4365,6 +4372,7 @@ export declare const daySchema: yup.ObjectSchema<{
             prompt: string;
             type: "counter";
         } | {
+            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -4475,6 +4483,7 @@ export declare const daySchema: yup.ObjectSchema<{
             prompt: string;
             type: "issue";
         } | {
+            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -4586,6 +4595,7 @@ export declare const daySchema: yup.ObjectSchema<{
             })[];
             canAddNewOptions: NonNullable<boolean | undefined>;
         } | {
+            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -4699,6 +4709,7 @@ export declare const daySchema: yup.ObjectSchema<{
             prompt: string;
             type: "scaleOf1To10";
         } | {
+            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -4809,6 +4820,7 @@ export declare const daySchema: yup.ObjectSchema<{
             prompt: string;
             type: "text";
         } | {
+            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;

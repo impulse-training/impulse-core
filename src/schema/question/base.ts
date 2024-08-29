@@ -1,6 +1,7 @@
 import * as yup from 'yup';
 import { optionSchema } from '../option';
 import { followUpSchema } from '../option/followUp';
+import { optionalStringArray } from '../utils/array';
 import { optionalObjectOf } from '../utils/objectOf';
 import { optionalTimestampSchema } from '../utils/timestamp';
 
@@ -32,6 +33,7 @@ export function questionBaseSchema<T extends string>(type: T) {
       .mixed<'onboarding' | 'afterSuccess' | 'afterSetback'>()
       .oneOf(['onboarding', 'afterSetback', 'afterSuccess']),
     writeAnswerToProfileMemoryKey: yup.string(),
+    recommendedForIssueIds: optionalStringArray,
     followUps: yup.array().of(followUpSchema),
     createdAt: optionalTimestampSchema,
     updatedAt: optionalTimestampSchema,

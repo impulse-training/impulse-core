@@ -1884,6 +1884,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
             dateString: string;
             questionsById: {
                 [x: string]: {
+                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -1995,6 +1996,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                     prompt: string;
                     type: "counter";
                 } | {
+                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -2105,6 +2107,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                     prompt: string;
                     type: "issue";
                 } | {
+                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -2216,6 +2219,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                     })[];
                     canAddNewOptions: NonNullable<boolean | undefined>;
                 } | {
+                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -2329,6 +2333,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                     prompt: string;
                     type: "scaleOf1To10";
                 } | {
+                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -2439,6 +2444,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
                     prompt: string;
                     type: "text";
                 } | {
+                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;

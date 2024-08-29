@@ -949,6 +949,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
         dateString: string;
         questionsById: {
             [x: string]: {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1060,6 +1061,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 prompt: string;
                 type: "counter";
             } | {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1170,6 +1172,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 prompt: string;
                 type: "issue";
             } | {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1281,6 +1284,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 })[];
                 canAddNewOptions: NonNullable<boolean | undefined>;
             } | {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1394,6 +1398,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 prompt: string;
                 type: "scaleOf1To10";
             } | {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1504,6 +1509,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 prompt: string;
                 type: "text";
             } | {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;

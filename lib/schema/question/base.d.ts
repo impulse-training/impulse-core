@@ -79,6 +79,7 @@ export declare function questionBaseSchema<T extends string>(type: T): yup.Objec
     } | null | undefined;
     templateFor: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
     writeAnswerToProfileMemoryKey: string | undefined;
+    recommendedForIssueIds: string[] | undefined;
     followUps: ({
         message?: string | undefined;
         type: "askAnotherQuestion";
@@ -126,6 +127,7 @@ export declare function questionBaseSchema<T extends string>(type: T): yup.Objec
     ordinals: undefined;
     templateFor: undefined;
     writeAnswerToProfileMemoryKey: undefined;
+    recommendedForIssueIds: "";
     followUps: "";
     createdAt: undefined;
     updatedAt: undefined;

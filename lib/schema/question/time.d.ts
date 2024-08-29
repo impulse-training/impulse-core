@@ -70,6 +70,7 @@ export declare const timeQuestionSchema: yup.ObjectSchema<{
     } | null | undefined;
     templateFor: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
     writeAnswerToProfileMemoryKey: string | undefined;
+    recommendedForIssueIds: string[] | undefined;
     followUps: ({
         message?: string | undefined;
         type: "askAnotherQuestion";
@@ -118,6 +119,7 @@ export declare const timeQuestionSchema: yup.ObjectSchema<{
     ordinals: undefined;
     templateFor: undefined;
     writeAnswerToProfileMemoryKey: undefined;
+    recommendedForIssueIds: "";
     followUps: "";
     createdAt: undefined;
     updatedAt: undefined;

@@ -1926,6 +1926,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 dateString: string;
                 questionsById: {
                     [x: string]: {
+                        recommendedForIssueIds?: string[] | undefined;
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
@@ -2037,6 +2038,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         prompt: string;
                         type: "counter";
                     } | {
+                        recommendedForIssueIds?: string[] | undefined;
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
@@ -2147,6 +2149,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         prompt: string;
                         type: "issue";
                     } | {
+                        recommendedForIssueIds?: string[] | undefined;
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
@@ -2258,6 +2261,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         })[];
                         canAddNewOptions: NonNullable<boolean | undefined>;
                     } | {
+                        recommendedForIssueIds?: string[] | undefined;
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
@@ -2371,6 +2375,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         prompt: string;
                         type: "scaleOf1To10";
                     } | {
+                        recommendedForIssueIds?: string[] | undefined;
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
@@ -2481,6 +2486,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         prompt: string;
                         type: "text";
                     } | {
+                        recommendedForIssueIds?: string[] | undefined;
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
@@ -5248,6 +5254,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         dateString: string;
         questionsById: {
             [x: string]: {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -5359,6 +5366,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 prompt: string;
                 type: "counter";
             } | {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -5469,6 +5477,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 prompt: string;
                 type: "issue";
             } | {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -5580,6 +5589,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 })[];
                 canAddNewOptions: NonNullable<boolean | undefined>;
             } | {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -5693,6 +5703,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 prompt: string;
                 type: "scaleOf1To10";
             } | {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -5803,6 +5814,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 prompt: string;
                 type: "text";
             } | {
+                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -7008,6 +7020,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         followedUpTacticIds: string[];
     }, "profileId" | "type" | "date" | "dateString" | "strategiesById" | "completedTacticIds" | "followedUpTacticIds" | ("createdAt" | "updatedAt" | "title" | "text" | "tacticId" | "tactic" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "sourceSuggestion" | "isAddToGameplanMode" | "suggestedStrategyDocPaths")>;
     textQuestionFactory: import("factory.ts").Factory<{
+        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -7117,8 +7130,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         writeAnswerToProfileMemoryKey?: string | undefined;
         prompt: string;
         type: "text";
-    }, "prompt" | "type" | ("createdAt" | "updatedAt" | "followUps" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+    }, "prompt" | "type" | ("recommendedForIssueIds" | "createdAt" | "updatedAt" | "followUps" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     timeQuestionFactory: import("factory.ts").Factory<{
+        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -7229,8 +7243,9 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         writeAnswerToProfileMemoryKey?: string | undefined;
         prompt: string;
         type: "time";
-    }, "prompt" | "type" | ("createdAt" | "updatedAt" | "setbackThreshold" | "followUps" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+    }, "prompt" | "type" | ("recommendedForIssueIds" | "createdAt" | "updatedAt" | "setbackThreshold" | "followUps" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     multipleChoiceQuestionFactory: import("factory.ts").Factory<{
+        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -7341,7 +7356,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             text: string;
         })[];
         canAddNewOptions: NonNullable<boolean | undefined>;
-    }, "prompt" | "type" | "options" | "canAddNewOptions" | ("createdAt" | "updatedAt" | "followUps" | "categories" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+    }, "prompt" | "type" | "options" | "canAddNewOptions" | ("recommendedForIssueIds" | "createdAt" | "updatedAt" | "followUps" | "categories" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     applicationFactory: import("factory.ts").Factory<import("..").ApplicationValue, keyof import("..").ApplicationValue>;
     dayFactory: import("factory.ts").Factory<import("..").DayValue, "date" | "issueName" | "questionsById" | "logsById" | "threadsById">;
     folderFactory: import("factory.ts").Factory<{
