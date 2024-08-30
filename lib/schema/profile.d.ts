@@ -48,10 +48,8 @@ export declare const profileSchema: yup.ObjectSchema<{
     notificationPreferences: {
         [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
     } | null | undefined;
-    roadmap: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
+    answeredQuestionsCount: number | undefined;
     dayReview: "morning" | "evening" | null;
-    impulseCanManageQuestions: boolean | undefined;
-    impulseCanManageGameplan: boolean | undefined;
     issueId: string | null;
     issueName: string | undefined;
     issueDebriefQuestionPrompt: string | undefined;
@@ -100,10 +98,8 @@ export declare const profileSchema: yup.ObjectSchema<{
     currentAppState: undefined;
     expoPushToken: undefined;
     notificationPreferences: undefined;
-    roadmap: undefined;
+    answeredQuestionsCount: undefined;
     dayReview: undefined;
-    impulseCanManageQuestions: undefined;
-    impulseCanManageGameplan: undefined;
     issueId: undefined;
     issueName: undefined;
     issueDebriefQuestionPrompt: undefined;
