@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 import { ActionRecapLogValue, actionRecapLogSchema } from './actionRecap';
+import { AnimationLogValue, animationLogSchema } from './animationLog';
 import { AudioLogValue, audioLogSchema } from './audioLog';
 import { DayReviewLogValue, dayReviewLogSchema } from './dayReview';
 import { ImpulseLogValue, impulseLogSchema } from './impulseLog';
@@ -13,6 +14,7 @@ import {
 } from './whatsappMessageLog';
 
 export * from './actionRecap';
+export * from './animationLog';
 export * from './audioLog';
 export * from './dayReview';
 export * from './impulseLog';
@@ -29,6 +31,7 @@ export const logSchemas: Record<
   yup.ObjectSchema<LogValue>
 > = {
   audio: audioLogSchema,
+  animation: animationLogSchema,
   impulse: impulseLogSchema,
   message: messageLogSchema,
   question: questionsLogSchema,
@@ -60,6 +63,7 @@ type ValidatedLog = {
 }[LogValue['type']];
 
 export type LogValue =
+  | AnimationLogValue
   | AudioLogValue
   | ImpulseLogValue
   | MessageLogValue
