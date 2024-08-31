@@ -1,15 +1,40 @@
 import * as yup from 'yup';
+import { DocumentSnapshotLike } from '../../utils/firestore/DocumentSnapshotLike';
 export declare const QUESTION_CATEGORIES: {
-    readonly emotions: "Emotions";
-    readonly impulses: "Impulses";
-    readonly other: "Other";
-    readonly dayReview: "Daily review";
-    readonly afterSuccess: "Successes";
-    readonly afterSetback: "Setbacks";
+    readonly impulses: {
+        readonly label: "Impulse moments";
+        readonly order: 0;
+        readonly hint: "Answer these questions when you have an impulse moment.";
+        readonly isVisible: () => boolean;
+    };
+    readonly debriefing: {
+        readonly label: "Debriefing";
+        readonly order: 1;
+        readonly hint: "Answer these questions after an impulse moment, when it's time to reflect.";
+        readonly isVisible: () => boolean;
+    };
+    readonly afterSuccess: {
+        readonly label: "After a success";
+        readonly order: 2;
+        readonly hint: "Ask questions after an impulse moment when you achieve your goal.";
+        readonly isVisible: (questions: DocumentSnapshotLike<any>) => boolean;
+    };
+    readonly afterSetback: {
+        readonly label: "After a setback";
+        readonly order: 3;
+        readonly hint: "Ask questions after an impulse moment when you don't achieve your goal.";
+        readonly isVisible: (questions: DocumentSnapshotLike<any>) => boolean;
+    };
+    readonly dayReview: {
+        readonly label: "Daily review";
+        readonly order: 4;
+        readonly hint: "Answer these questions at a scheduled time of day, to reflect on the day gone by.";
+        readonly isVisible: () => boolean;
+    };
 };
 export type QuestionCategory = keyof typeof QUESTION_CATEGORIES;
 export declare function questionBaseSchema<T extends string>(type: T): yup.ObjectSchema<{
-    categories: ("dayReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
+    categories: ("dayReview" | "impulses" | "debriefing" | "afterSuccess" | "afterSetback")[] | undefined;
     prompt: string;
     type: yup.Defined<T>;
     options: ({

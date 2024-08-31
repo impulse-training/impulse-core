@@ -2,13 +2,16 @@ import * as yup from 'yup';
 import { dayReviewThreadSchema, DayReviewThreadValue } from './dayReview';
 import { defaultThreadSchema, DefaultThreadValue } from './default';
 import { impulseThreadSchema, ImpulseThreadValue } from './impulse';
-import { SuggestionThreadValue } from './suggestion';
+import {
+  questionOfTheDayThreadSchema,
+  QuestionOfTheDayThreadValue,
+} from './questionOfTheDay';
 import { whatsappThreadSchema, WhatsappThreadValue } from './whatsapp';
 
 export * from './dayReview';
 export * from './default';
 export * from './impulse';
-export * from './suggestion';
+export * from './questionOfTheDay';
 export * from './whatsapp';
 
 export type ThreadValue =
@@ -16,7 +19,7 @@ export type ThreadValue =
   | WhatsappThreadValue
   | ImpulseThreadValue
   | DayReviewThreadValue
-  | SuggestionThreadValue;
+  | QuestionOfTheDayThreadValue;
 
 export const threadSchemas: Record<
   ThreadValue['type'],
@@ -26,6 +29,7 @@ export const threadSchemas: Record<
   dayReview: dayReviewThreadSchema,
   default: defaultThreadSchema,
   impulse: impulseThreadSchema,
+  questionOfTheDay: questionOfTheDayThreadSchema,
 } as any;
 
 export const threadSchema = yup.lazy(value => {

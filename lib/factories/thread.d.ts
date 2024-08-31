@@ -2270,7 +2270,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                             profileKey: string;
                             value: {};
                         })[] | undefined;
-                        categories?: ("dayReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
+                        categories?: ("dayReview" | "impulses" | "debriefing" | "afterSuccess" | "afterSetback")[] | undefined;
                         options?: ({
                             label?: string | undefined;
                             setbackThreshold?: number | undefined;
@@ -2381,7 +2381,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                             profileKey: string;
                             value: {};
                         })[] | undefined;
-                        categories?: ("dayReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
+                        categories?: ("dayReview" | "impulses" | "debriefing" | "afterSuccess" | "afterSetback")[] | undefined;
                         options?: ({
                             label?: string | undefined;
                             setbackThreshold?: number | undefined;
@@ -2492,7 +2492,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                             profileKey: string;
                             value: {};
                         })[] | undefined;
-                        categories?: ("dayReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
+                        categories?: ("dayReview" | "impulses" | "debriefing" | "afterSuccess" | "afterSetback")[] | undefined;
                         ordinals?: {
                             [x: string]: number;
                         } | null | undefined;
@@ -2605,7 +2605,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                             profileKey: string;
                             value: {};
                         })[] | undefined;
-                        categories?: ("dayReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
+                        categories?: ("dayReview" | "impulses" | "debriefing" | "afterSuccess" | "afterSetback")[] | undefined;
                         options?: ({
                             label?: string | undefined;
                             setbackThreshold?: number | undefined;
@@ -2718,7 +2718,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                             profileKey: string;
                             value: {};
                         })[] | undefined;
-                        categories?: ("dayReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
+                        categories?: ("dayReview" | "impulses" | "debriefing" | "afterSuccess" | "afterSetback")[] | undefined;
                         options?: ({
                             label?: string | undefined;
                             setbackThreshold?: number | undefined;
@@ -2830,7 +2830,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                             profileKey: string;
                             value: {};
                         })[] | undefined;
-                        categories?: ("dayReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
+                        categories?: ("dayReview" | "impulses" | "debriefing" | "afterSuccess" | "afterSetback")[] | undefined;
                         options?: ({
                             label?: string | undefined;
                             setbackThreshold?: number | undefined;

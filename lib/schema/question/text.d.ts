@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 export declare const textQuestionSchema: yup.ObjectSchema<{
-    categories: ("dayReview" | "emotions" | "impulses" | "other" | "afterSuccess" | "afterSetback")[] | undefined;
+    categories: ("dayReview" | "impulses" | "debriefing" | "afterSuccess" | "afterSetback")[] | undefined;
     prompt: string;
     type: "text";
     options: ({
