@@ -4,6 +4,8 @@ import { tourStepSchema } from './tourStep';
 
 export const showTourFollowUpSchema = followUpBaseSchema('showTour').shape({
   steps: yup.array().of(tourStepSchema).required(),
+  animationFileName: yup.string(),
+  lowerMessage: yup.string(),
 });
 
 export type ShowTourFollowUpValue = yup.InferType<

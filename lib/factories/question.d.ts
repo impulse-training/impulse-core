@@ -25,6 +25,8 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
             questionId: string;
         } | {
             message?: string | undefined;
+            animationFileName?: string | undefined;
+            lowerMessage?: string | undefined;
             type: "showTour";
             steps: {
                 title: string;
@@ -52,6 +54,8 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
                 questionId: string;
             } | {
                 message?: string | undefined;
+                animationFileName?: string | undefined;
+                lowerMessage?: string | undefined;
                 type: "showTour";
                 steps: {
                     title: string;
@@ -83,6 +87,8 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
                 questionId: string;
             } | {
                 message?: string | undefined;
+                animationFileName?: string | undefined;
+                lowerMessage?: string | undefined;
                 type: "showTour";
                 steps: {
                     title: string;
@@ -138,6 +144,8 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
             questionId: string;
         } | {
             message?: string | undefined;
+            animationFileName?: string | undefined;
+            lowerMessage?: string | undefined;
             type: "showTour";
             steps: {
                 title: string;
@@ -165,6 +173,8 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
                 questionId: string;
             } | {
                 message?: string | undefined;
+                animationFileName?: string | undefined;
+                lowerMessage?: string | undefined;
                 type: "showTour";
                 steps: {
                     title: string;
@@ -196,6 +206,8 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
                 questionId: string;
             } | {
                 message?: string | undefined;
+                animationFileName?: string | undefined;
+                lowerMessage?: string | undefined;
                 type: "showTour";
                 steps: {
                     title: string;
@@ -250,6 +262,8 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
             questionId: string;
         } | {
             message?: string | undefined;
+            animationFileName?: string | undefined;
+            lowerMessage?: string | undefined;
             type: "showTour";
             steps: {
                 title: string;
@@ -284,6 +298,8 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
                 questionId: string;
             } | {
                 message?: string | undefined;
+                animationFileName?: string | undefined;
+                lowerMessage?: string | undefined;
                 type: "showTour";
                 steps: {
                     title: string;
@@ -315,6 +331,8 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
                 questionId: string;
             } | {
                 message?: string | undefined;
+                animationFileName?: string | undefined;
+                lowerMessage?: string | undefined;
                 type: "showTour";
                 steps: {
                     title: string;

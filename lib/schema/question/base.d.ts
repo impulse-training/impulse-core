@@ -46,6 +46,8 @@ export declare function questionBaseSchema<T extends string>(type: T): yup.Objec
             questionId: string;
         } | {
             message?: string | undefined;
+            animationFileName?: string | undefined;
+            lowerMessage?: string | undefined;
             type: "showTour";
             steps: {
                 title: string;
@@ -77,6 +79,8 @@ export declare function questionBaseSchema<T extends string>(type: T): yup.Objec
             questionId: string;
         } | {
             message?: string | undefined;
+            animationFileName?: string | undefined;
+            lowerMessage?: string | undefined;
             type: "showTour";
             steps: {
                 title: string;
@@ -111,6 +115,8 @@ export declare function questionBaseSchema<T extends string>(type: T): yup.Objec
         questionId: string;
     } | {
         message?: string | undefined;
+        animationFileName?: string | undefined;
+        lowerMessage?: string | undefined;
         type: "showTour";
         steps: {
             title: string;

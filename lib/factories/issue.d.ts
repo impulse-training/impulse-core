@@ -19,13 +19,12 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         toDate: Function;
     } | null | undefined;
     parentId?: string | null | undefined;
-    shouldGenerateStrategies?: boolean | undefined;
+    hasDebriefQuestion?: boolean | undefined;
     profileCount?: number | null | undefined;
     isFeatured?: boolean | null | undefined;
     ordinal: number;
     name: string;
-    debriefQuestionPrompt: string;
     synonyms: string[];
     parentIds: string[];
     parentNames: string[];
-}, "ordinal" | "name" | "debriefQuestionPrompt" | "synonyms" | "parentIds" | "parentNames" | ("path" | "createdAt" | "updatedAt" | "parentId" | "shouldGenerateStrategies" | "profileCount" | "isFeatured")>;
+}, "ordinal" | "name" | "synonyms" | "parentIds" | "parentNames" | ("path" | "createdAt" | "updatedAt" | "parentId" | "hasDebriefQuestion" | "profileCount" | "isFeatured")>;

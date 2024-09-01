@@ -973,6 +973,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -1000,6 +1002,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         questionId: string;
                     } | {
                         message?: string | undefined;
+                        animationFileName?: string | undefined;
+                        lowerMessage?: string | undefined;
                         type: "showTour";
                         steps: {
                             title: string;
@@ -1031,6 +1035,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         questionId: string;
                     } | {
                         message?: string | undefined;
+                        animationFileName?: string | undefined;
+                        lowerMessage?: string | undefined;
                         type: "showTour";
                         steps: {
                             title: string;
@@ -1084,6 +1090,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -1111,6 +1119,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         questionId: string;
                     } | {
                         message?: string | undefined;
+                        animationFileName?: string | undefined;
+                        lowerMessage?: string | undefined;
                         type: "showTour";
                         steps: {
                             title: string;
@@ -1142,6 +1152,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         questionId: string;
                     } | {
                         message?: string | undefined;
+                        animationFileName?: string | undefined;
+                        lowerMessage?: string | undefined;
                         type: "showTour";
                         steps: {
                             title: string;
@@ -1195,6 +1207,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -1229,6 +1243,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         questionId: string;
                     } | {
                         message?: string | undefined;
+                        animationFileName?: string | undefined;
+                        lowerMessage?: string | undefined;
                         type: "showTour";
                         steps: {
                             title: string;
@@ -1260,6 +1276,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         questionId: string;
                     } | {
                         message?: string | undefined;
+                        animationFileName?: string | undefined;
+                        lowerMessage?: string | undefined;
                         type: "showTour";
                         steps: {
                             title: string;
@@ -1308,6 +1326,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -1335,6 +1355,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         questionId: string;
                     } | {
                         message?: string | undefined;
+                        animationFileName?: string | undefined;
+                        lowerMessage?: string | undefined;
                         type: "showTour";
                         steps: {
                             title: string;
@@ -1366,6 +1388,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         questionId: string;
                     } | {
                         message?: string | undefined;
+                        animationFileName?: string | undefined;
+                        lowerMessage?: string | undefined;
                         type: "showTour";
                         steps: {
                             title: string;
@@ -1421,6 +1445,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -1448,6 +1474,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         questionId: string;
                     } | {
                         message?: string | undefined;
+                        animationFileName?: string | undefined;
+                        lowerMessage?: string | undefined;
                         type: "showTour";
                         steps: {
                             title: string;
@@ -1479,6 +1507,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         questionId: string;
                     } | {
                         message?: string | undefined;
+                        animationFileName?: string | undefined;
+                        lowerMessage?: string | undefined;
                         type: "showTour";
                         steps: {
                             title: string;
@@ -1533,6 +1563,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -1560,6 +1592,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         questionId: string;
                     } | {
                         message?: string | undefined;
+                        animationFileName?: string | undefined;
+                        lowerMessage?: string | undefined;
                         type: "showTour";
                         steps: {
                             title: string;
@@ -1591,6 +1625,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         questionId: string;
                     } | {
                         message?: string | undefined;
+                        animationFileName?: string | undefined;
+                        lowerMessage?: string | undefined;
                         type: "showTour";
                         steps: {
                             title: string;

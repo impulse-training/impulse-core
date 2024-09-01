@@ -8,9 +8,13 @@ export declare const showTourFollowUpSchema: yup.ObjectSchema<{
         elementRefName: string;
         confirmButtonLabel: string;
     }[];
+    animationFileName: string | undefined;
+    lowerMessage: string | undefined;
 }, yup.AnyObject, {
     type: undefined;
     message: undefined;
     steps: "";
+    animationFileName: undefined;
+    lowerMessage: undefined;
 }, "">;
 export type ShowTourFollowUpValue = yup.InferType<typeof showTourFollowUpSchema>;

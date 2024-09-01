@@ -360,6 +360,8 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 questionId: string;
             } | {
                 message?: string | undefined;
+                animationFileName?: string | undefined;
+                lowerMessage?: string | undefined;
                 type: "showTour";
                 steps: {
                     title: string;
@@ -387,6 +389,8 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -418,6 +422,8 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -471,6 +477,8 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 questionId: string;
             } | {
                 message?: string | undefined;
+                animationFileName?: string | undefined;
+                lowerMessage?: string | undefined;
                 type: "showTour";
                 steps: {
                     title: string;
@@ -498,6 +506,8 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -529,6 +539,8 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -582,6 +594,8 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 questionId: string;
             } | {
                 message?: string | undefined;
+                animationFileName?: string | undefined;
+                lowerMessage?: string | undefined;
                 type: "showTour";
                 steps: {
                     title: string;
@@ -616,6 +630,8 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -647,6 +663,8 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -695,6 +713,8 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 questionId: string;
             } | {
                 message?: string | undefined;
+                animationFileName?: string | undefined;
+                lowerMessage?: string | undefined;
                 type: "showTour";
                 steps: {
                     title: string;
@@ -722,6 +742,8 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -753,6 +775,8 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -808,6 +832,8 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 questionId: string;
             } | {
                 message?: string | undefined;
+                animationFileName?: string | undefined;
+                lowerMessage?: string | undefined;
                 type: "showTour";
                 steps: {
                     title: string;
@@ -835,6 +861,8 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -866,6 +894,8 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -920,6 +950,8 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                 questionId: string;
             } | {
                 message?: string | undefined;
+                animationFileName?: string | undefined;
+                lowerMessage?: string | undefined;
                 type: "showTour";
                 steps: {
                     title: string;
@@ -947,6 +979,8 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -978,6 +1012,8 @@ export declare const questionsLogSchema: yup.ObjectSchema<{
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;

@@ -2253,6 +2253,8 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                             questionId: string;
                         } | {
                             message?: string | undefined;
+                            animationFileName?: string | undefined;
+                            lowerMessage?: string | undefined;
                             type: "showTour";
                             steps: {
                                 title: string;
@@ -2280,6 +2282,8 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                                 questionId: string;
                             } | {
                                 message?: string | undefined;
+                                animationFileName?: string | undefined;
+                                lowerMessage?: string | undefined;
                                 type: "showTour";
                                 steps: {
                                     title: string;
@@ -2311,6 +2315,8 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                                 questionId: string;
                             } | {
                                 message?: string | undefined;
+                                animationFileName?: string | undefined;
+                                lowerMessage?: string | undefined;
                                 type: "showTour";
                                 steps: {
                                     title: string;
@@ -2364,6 +2370,8 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                             questionId: string;
                         } | {
                             message?: string | undefined;
+                            animationFileName?: string | undefined;
+                            lowerMessage?: string | undefined;
                             type: "showTour";
                             steps: {
                                 title: string;
@@ -2391,6 +2399,8 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                                 questionId: string;
                             } | {
                                 message?: string | undefined;
+                                animationFileName?: string | undefined;
+                                lowerMessage?: string | undefined;
                                 type: "showTour";
                                 steps: {
                                     title: string;
@@ -2422,6 +2432,8 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                                 questionId: string;
                             } | {
                                 message?: string | undefined;
+                                animationFileName?: string | undefined;
+                                lowerMessage?: string | undefined;
                                 type: "showTour";
                                 steps: {
                                     title: string;
@@ -2475,6 +2487,8 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                             questionId: string;
                         } | {
                             message?: string | undefined;
+                            animationFileName?: string | undefined;
+                            lowerMessage?: string | undefined;
                             type: "showTour";
                             steps: {
                                 title: string;
@@ -2509,6 +2523,8 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                                 questionId: string;
                             } | {
                                 message?: string | undefined;
+                                animationFileName?: string | undefined;
+                                lowerMessage?: string | undefined;
                                 type: "showTour";
                                 steps: {
                                     title: string;
@@ -2540,6 +2556,8 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                                 questionId: string;
                             } | {
                                 message?: string | undefined;
+                                animationFileName?: string | undefined;
+                                lowerMessage?: string | undefined;
                                 type: "showTour";
                                 steps: {
                                     title: string;
@@ -2588,6 +2606,8 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                             questionId: string;
                         } | {
                             message?: string | undefined;
+                            animationFileName?: string | undefined;
+                            lowerMessage?: string | undefined;
                             type: "showTour";
                             steps: {
                                 title: string;
@@ -2615,6 +2635,8 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                                 questionId: string;
                             } | {
                                 message?: string | undefined;
+                                animationFileName?: string | undefined;
+                                lowerMessage?: string | undefined;
                                 type: "showTour";
                                 steps: {
                                     title: string;
@@ -2646,6 +2668,8 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                                 questionId: string;
                             } | {
                                 message?: string | undefined;
+                                animationFileName?: string | undefined;
+                                lowerMessage?: string | undefined;
                                 type: "showTour";
                                 steps: {
                                     title: string;
@@ -2701,6 +2725,8 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                             questionId: string;
                         } | {
                             message?: string | undefined;
+                            animationFileName?: string | undefined;
+                            lowerMessage?: string | undefined;
                             type: "showTour";
                             steps: {
                                 title: string;
@@ -2728,6 +2754,8 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                                 questionId: string;
                             } | {
                                 message?: string | undefined;
+                                animationFileName?: string | undefined;
+                                lowerMessage?: string | undefined;
                                 type: "showTour";
                                 steps: {
                                     title: string;
@@ -2759,6 +2787,8 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                                 questionId: string;
                             } | {
                                 message?: string | undefined;
+                                animationFileName?: string | undefined;
+                                lowerMessage?: string | undefined;
                                 type: "showTour";
                                 steps: {
                                     title: string;
@@ -2813,6 +2843,8 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                             questionId: string;
                         } | {
                             message?: string | undefined;
+                            animationFileName?: string | undefined;
+                            lowerMessage?: string | undefined;
                             type: "showTour";
                             steps: {
                                 title: string;
@@ -2840,6 +2872,8 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                                 questionId: string;
                             } | {
                                 message?: string | undefined;
+                                animationFileName?: string | undefined;
+                                lowerMessage?: string | undefined;
                                 type: "showTour";
                                 steps: {
                                     title: string;
@@ -2871,6 +2905,8 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                                 questionId: string;
                             } | {
                                 message?: string | undefined;
+                                animationFileName?: string | undefined;
+                                lowerMessage?: string | undefined;
                                 type: "showTour";
                                 steps: {
                                     title: string;
@@ -3192,6 +3228,8 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                 }[] | undefined;
                 openAiRequestPayload?: string | undefined;
                 openAiChoiceResponse?: {} | undefined;
+                animationFileName?: string | undefined;
+                lowerMessage?: string | undefined;
                 profileId: string;
                 type: "showTour";
                 steps: {

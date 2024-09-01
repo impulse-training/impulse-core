@@ -24,7 +24,7 @@ export const makeQuestionFactories = (
   }),
   multipleChoiceQuestionFactory:
     Factory.makeFactory<MultipleChoiceQuestionValue>({
-      categories: ['feelings'],
+      categories: ['debriefing'],
       prompt: 'How are you feeling?',
       type: 'multipleChoice',
       canAddNewOptions: false,

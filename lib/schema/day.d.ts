@@ -2202,6 +2202,8 @@ export declare const daySchema: yup.ObjectSchema<{
                         questionId: string;
                     } | {
                         message?: string | undefined;
+                        animationFileName?: string | undefined;
+                        lowerMessage?: string | undefined;
                         type: "showTour";
                         steps: {
                             title: string;
@@ -2229,6 +2231,8 @@ export declare const daySchema: yup.ObjectSchema<{
                             questionId: string;
                         } | {
                             message?: string | undefined;
+                            animationFileName?: string | undefined;
+                            lowerMessage?: string | undefined;
                             type: "showTour";
                             steps: {
                                 title: string;
@@ -2260,6 +2264,8 @@ export declare const daySchema: yup.ObjectSchema<{
                             questionId: string;
                         } | {
                             message?: string | undefined;
+                            animationFileName?: string | undefined;
+                            lowerMessage?: string | undefined;
                             type: "showTour";
                             steps: {
                                 title: string;
@@ -2313,6 +2319,8 @@ export declare const daySchema: yup.ObjectSchema<{
                         questionId: string;
                     } | {
                         message?: string | undefined;
+                        animationFileName?: string | undefined;
+                        lowerMessage?: string | undefined;
                         type: "showTour";
                         steps: {
                             title: string;
@@ -2340,6 +2348,8 @@ export declare const daySchema: yup.ObjectSchema<{
                             questionId: string;
                         } | {
                             message?: string | undefined;
+                            animationFileName?: string | undefined;
+                            lowerMessage?: string | undefined;
                             type: "showTour";
                             steps: {
                                 title: string;
@@ -2371,6 +2381,8 @@ export declare const daySchema: yup.ObjectSchema<{
                             questionId: string;
                         } | {
                             message?: string | undefined;
+                            animationFileName?: string | undefined;
+                            lowerMessage?: string | undefined;
                             type: "showTour";
                             steps: {
                                 title: string;
@@ -2424,6 +2436,8 @@ export declare const daySchema: yup.ObjectSchema<{
                         questionId: string;
                     } | {
                         message?: string | undefined;
+                        animationFileName?: string | undefined;
+                        lowerMessage?: string | undefined;
                         type: "showTour";
                         steps: {
                             title: string;
@@ -2458,6 +2472,8 @@ export declare const daySchema: yup.ObjectSchema<{
                             questionId: string;
                         } | {
                             message?: string | undefined;
+                            animationFileName?: string | undefined;
+                            lowerMessage?: string | undefined;
                             type: "showTour";
                             steps: {
                                 title: string;
@@ -2489,6 +2505,8 @@ export declare const daySchema: yup.ObjectSchema<{
                             questionId: string;
                         } | {
                             message?: string | undefined;
+                            animationFileName?: string | undefined;
+                            lowerMessage?: string | undefined;
                             type: "showTour";
                             steps: {
                                 title: string;
@@ -2537,6 +2555,8 @@ export declare const daySchema: yup.ObjectSchema<{
                         questionId: string;
                     } | {
                         message?: string | undefined;
+                        animationFileName?: string | undefined;
+                        lowerMessage?: string | undefined;
                         type: "showTour";
                         steps: {
                             title: string;
@@ -2564,6 +2584,8 @@ export declare const daySchema: yup.ObjectSchema<{
                             questionId: string;
                         } | {
                             message?: string | undefined;
+                            animationFileName?: string | undefined;
+                            lowerMessage?: string | undefined;
                             type: "showTour";
                             steps: {
                                 title: string;
@@ -2595,6 +2617,8 @@ export declare const daySchema: yup.ObjectSchema<{
                             questionId: string;
                         } | {
                             message?: string | undefined;
+                            animationFileName?: string | undefined;
+                            lowerMessage?: string | undefined;
                             type: "showTour";
                             steps: {
                                 title: string;
@@ -2650,6 +2674,8 @@ export declare const daySchema: yup.ObjectSchema<{
                         questionId: string;
                     } | {
                         message?: string | undefined;
+                        animationFileName?: string | undefined;
+                        lowerMessage?: string | undefined;
                         type: "showTour";
                         steps: {
                             title: string;
@@ -2677,6 +2703,8 @@ export declare const daySchema: yup.ObjectSchema<{
                             questionId: string;
                         } | {
                             message?: string | undefined;
+                            animationFileName?: string | undefined;
+                            lowerMessage?: string | undefined;
                             type: "showTour";
                             steps: {
                                 title: string;
@@ -2708,6 +2736,8 @@ export declare const daySchema: yup.ObjectSchema<{
                             questionId: string;
                         } | {
                             message?: string | undefined;
+                            animationFileName?: string | undefined;
+                            lowerMessage?: string | undefined;
                             type: "showTour";
                             steps: {
                                 title: string;
@@ -2762,6 +2792,8 @@ export declare const daySchema: yup.ObjectSchema<{
                         questionId: string;
                     } | {
                         message?: string | undefined;
+                        animationFileName?: string | undefined;
+                        lowerMessage?: string | undefined;
                         type: "showTour";
                         steps: {
                             title: string;
@@ -2789,6 +2821,8 @@ export declare const daySchema: yup.ObjectSchema<{
                             questionId: string;
                         } | {
                             message?: string | undefined;
+                            animationFileName?: string | undefined;
+                            lowerMessage?: string | undefined;
                             type: "showTour";
                             steps: {
                                 title: string;
@@ -2820,6 +2854,8 @@ export declare const daySchema: yup.ObjectSchema<{
                             questionId: string;
                         } | {
                             message?: string | undefined;
+                            animationFileName?: string | undefined;
+                            lowerMessage?: string | undefined;
                             type: "showTour";
                             steps: {
                                 title: string;
@@ -3141,6 +3177,8 @@ export declare const daySchema: yup.ObjectSchema<{
             }[] | undefined;
             openAiRequestPayload?: string | undefined;
             openAiChoiceResponse?: {} | undefined;
+            animationFileName?: string | undefined;
+            lowerMessage?: string | undefined;
             profileId: string;
             type: "showTour";
             steps: {
@@ -4586,6 +4624,8 @@ export declare const daySchema: yup.ObjectSchema<{
                 questionId: string;
             } | {
                 message?: string | undefined;
+                animationFileName?: string | undefined;
+                lowerMessage?: string | undefined;
                 type: "showTour";
                 steps: {
                     title: string;
@@ -4613,6 +4653,8 @@ export declare const daySchema: yup.ObjectSchema<{
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -4644,6 +4686,8 @@ export declare const daySchema: yup.ObjectSchema<{
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -4697,6 +4741,8 @@ export declare const daySchema: yup.ObjectSchema<{
                 questionId: string;
             } | {
                 message?: string | undefined;
+                animationFileName?: string | undefined;
+                lowerMessage?: string | undefined;
                 type: "showTour";
                 steps: {
                     title: string;
@@ -4724,6 +4770,8 @@ export declare const daySchema: yup.ObjectSchema<{
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -4755,6 +4803,8 @@ export declare const daySchema: yup.ObjectSchema<{
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -4808,6 +4858,8 @@ export declare const daySchema: yup.ObjectSchema<{
                 questionId: string;
             } | {
                 message?: string | undefined;
+                animationFileName?: string | undefined;
+                lowerMessage?: string | undefined;
                 type: "showTour";
                 steps: {
                     title: string;
@@ -4842,6 +4894,8 @@ export declare const daySchema: yup.ObjectSchema<{
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -4873,6 +4927,8 @@ export declare const daySchema: yup.ObjectSchema<{
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -4921,6 +4977,8 @@ export declare const daySchema: yup.ObjectSchema<{
                 questionId: string;
             } | {
                 message?: string | undefined;
+                animationFileName?: string | undefined;
+                lowerMessage?: string | undefined;
                 type: "showTour";
                 steps: {
                     title: string;
@@ -4948,6 +5006,8 @@ export declare const daySchema: yup.ObjectSchema<{
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -4979,6 +5039,8 @@ export declare const daySchema: yup.ObjectSchema<{
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -5034,6 +5096,8 @@ export declare const daySchema: yup.ObjectSchema<{
                 questionId: string;
             } | {
                 message?: string | undefined;
+                animationFileName?: string | undefined;
+                lowerMessage?: string | undefined;
                 type: "showTour";
                 steps: {
                     title: string;
@@ -5061,6 +5125,8 @@ export declare const daySchema: yup.ObjectSchema<{
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -5092,6 +5158,8 @@ export declare const daySchema: yup.ObjectSchema<{
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -5146,6 +5214,8 @@ export declare const daySchema: yup.ObjectSchema<{
                 questionId: string;
             } | {
                 message?: string | undefined;
+                animationFileName?: string | undefined;
+                lowerMessage?: string | undefined;
                 type: "showTour";
                 steps: {
                     title: string;
@@ -5173,6 +5243,8 @@ export declare const daySchema: yup.ObjectSchema<{
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -5204,6 +5276,8 @@ export declare const daySchema: yup.ObjectSchema<{
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;

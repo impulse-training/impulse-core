@@ -306,6 +306,8 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         elementRefName: string;
         confirmButtonLabel: string;
     }[];
+    animationFileName: string | undefined;
+    lowerMessage: string | undefined;
 }, yup.AnyObject, {
     openAiRequestPayload: undefined;
     openAiChoiceResponse: undefined;
@@ -329,5 +331,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
     senderProfileId: undefined;
     views: "";
     steps: "";
+    animationFileName: undefined;
+    lowerMessage: undefined;
 }, "">;
 export type ShowTourLogValue = yup.InferType<typeof showTourLogSchema>;

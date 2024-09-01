@@ -2252,6 +2252,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                             questionId: string;
                         } | {
                             message?: string | undefined;
+                            animationFileName?: string | undefined;
+                            lowerMessage?: string | undefined;
                             type: "showTour";
                             steps: {
                                 title: string;
@@ -2279,6 +2281,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                 questionId: string;
                             } | {
                                 message?: string | undefined;
+                                animationFileName?: string | undefined;
+                                lowerMessage?: string | undefined;
                                 type: "showTour";
                                 steps: {
                                     title: string;
@@ -2310,6 +2314,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                 questionId: string;
                             } | {
                                 message?: string | undefined;
+                                animationFileName?: string | undefined;
+                                lowerMessage?: string | undefined;
                                 type: "showTour";
                                 steps: {
                                     title: string;
@@ -2363,6 +2369,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                             questionId: string;
                         } | {
                             message?: string | undefined;
+                            animationFileName?: string | undefined;
+                            lowerMessage?: string | undefined;
                             type: "showTour";
                             steps: {
                                 title: string;
@@ -2390,6 +2398,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                 questionId: string;
                             } | {
                                 message?: string | undefined;
+                                animationFileName?: string | undefined;
+                                lowerMessage?: string | undefined;
                                 type: "showTour";
                                 steps: {
                                     title: string;
@@ -2421,6 +2431,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                 questionId: string;
                             } | {
                                 message?: string | undefined;
+                                animationFileName?: string | undefined;
+                                lowerMessage?: string | undefined;
                                 type: "showTour";
                                 steps: {
                                     title: string;
@@ -2474,6 +2486,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                             questionId: string;
                         } | {
                             message?: string | undefined;
+                            animationFileName?: string | undefined;
+                            lowerMessage?: string | undefined;
                             type: "showTour";
                             steps: {
                                 title: string;
@@ -2508,6 +2522,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                 questionId: string;
                             } | {
                                 message?: string | undefined;
+                                animationFileName?: string | undefined;
+                                lowerMessage?: string | undefined;
                                 type: "showTour";
                                 steps: {
                                     title: string;
@@ -2539,6 +2555,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                 questionId: string;
                             } | {
                                 message?: string | undefined;
+                                animationFileName?: string | undefined;
+                                lowerMessage?: string | undefined;
                                 type: "showTour";
                                 steps: {
                                     title: string;
@@ -2587,6 +2605,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                             questionId: string;
                         } | {
                             message?: string | undefined;
+                            animationFileName?: string | undefined;
+                            lowerMessage?: string | undefined;
                             type: "showTour";
                             steps: {
                                 title: string;
@@ -2614,6 +2634,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                 questionId: string;
                             } | {
                                 message?: string | undefined;
+                                animationFileName?: string | undefined;
+                                lowerMessage?: string | undefined;
                                 type: "showTour";
                                 steps: {
                                     title: string;
@@ -2645,6 +2667,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                 questionId: string;
                             } | {
                                 message?: string | undefined;
+                                animationFileName?: string | undefined;
+                                lowerMessage?: string | undefined;
                                 type: "showTour";
                                 steps: {
                                     title: string;
@@ -2700,6 +2724,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                             questionId: string;
                         } | {
                             message?: string | undefined;
+                            animationFileName?: string | undefined;
+                            lowerMessage?: string | undefined;
                             type: "showTour";
                             steps: {
                                 title: string;
@@ -2727,6 +2753,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                 questionId: string;
                             } | {
                                 message?: string | undefined;
+                                animationFileName?: string | undefined;
+                                lowerMessage?: string | undefined;
                                 type: "showTour";
                                 steps: {
                                     title: string;
@@ -2758,6 +2786,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                 questionId: string;
                             } | {
                                 message?: string | undefined;
+                                animationFileName?: string | undefined;
+                                lowerMessage?: string | undefined;
                                 type: "showTour";
                                 steps: {
                                     title: string;
@@ -2812,6 +2842,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                             questionId: string;
                         } | {
                             message?: string | undefined;
+                            animationFileName?: string | undefined;
+                            lowerMessage?: string | undefined;
                             type: "showTour";
                             steps: {
                                 title: string;
@@ -2839,6 +2871,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                 questionId: string;
                             } | {
                                 message?: string | undefined;
+                                animationFileName?: string | undefined;
+                                lowerMessage?: string | undefined;
                                 type: "showTour";
                                 steps: {
                                     title: string;
@@ -2870,6 +2904,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                 questionId: string;
                             } | {
                                 message?: string | undefined;
+                                animationFileName?: string | undefined;
+                                lowerMessage?: string | undefined;
                                 type: "showTour";
                                 steps: {
                                     title: string;
@@ -3191,6 +3227,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 }[] | undefined;
                 openAiRequestPayload?: string | undefined;
                 openAiChoiceResponse?: {} | undefined;
+                animationFileName?: string | undefined;
+                lowerMessage?: string | undefined;
                 profileId: string;
                 type: "showTour";
                 steps: {
@@ -5580,6 +5618,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -5607,6 +5647,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         questionId: string;
                     } | {
                         message?: string | undefined;
+                        animationFileName?: string | undefined;
+                        lowerMessage?: string | undefined;
                         type: "showTour";
                         steps: {
                             title: string;
@@ -5638,6 +5680,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         questionId: string;
                     } | {
                         message?: string | undefined;
+                        animationFileName?: string | undefined;
+                        lowerMessage?: string | undefined;
                         type: "showTour";
                         steps: {
                             title: string;
@@ -5691,6 +5735,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -5718,6 +5764,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         questionId: string;
                     } | {
                         message?: string | undefined;
+                        animationFileName?: string | undefined;
+                        lowerMessage?: string | undefined;
                         type: "showTour";
                         steps: {
                             title: string;
@@ -5749,6 +5797,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         questionId: string;
                     } | {
                         message?: string | undefined;
+                        animationFileName?: string | undefined;
+                        lowerMessage?: string | undefined;
                         type: "showTour";
                         steps: {
                             title: string;
@@ -5802,6 +5852,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -5836,6 +5888,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         questionId: string;
                     } | {
                         message?: string | undefined;
+                        animationFileName?: string | undefined;
+                        lowerMessage?: string | undefined;
                         type: "showTour";
                         steps: {
                             title: string;
@@ -5867,6 +5921,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         questionId: string;
                     } | {
                         message?: string | undefined;
+                        animationFileName?: string | undefined;
+                        lowerMessage?: string | undefined;
                         type: "showTour";
                         steps: {
                             title: string;
@@ -5915,6 +5971,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -5942,6 +6000,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         questionId: string;
                     } | {
                         message?: string | undefined;
+                        animationFileName?: string | undefined;
+                        lowerMessage?: string | undefined;
                         type: "showTour";
                         steps: {
                             title: string;
@@ -5973,6 +6033,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         questionId: string;
                     } | {
                         message?: string | undefined;
+                        animationFileName?: string | undefined;
+                        lowerMessage?: string | undefined;
                         type: "showTour";
                         steps: {
                             title: string;
@@ -6028,6 +6090,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -6055,6 +6119,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         questionId: string;
                     } | {
                         message?: string | undefined;
+                        animationFileName?: string | undefined;
+                        lowerMessage?: string | undefined;
                         type: "showTour";
                         steps: {
                             title: string;
@@ -6086,6 +6152,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         questionId: string;
                     } | {
                         message?: string | undefined;
+                        animationFileName?: string | undefined;
+                        lowerMessage?: string | undefined;
                         type: "showTour";
                         steps: {
                             title: string;
@@ -6140,6 +6208,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     questionId: string;
                 } | {
                     message?: string | undefined;
+                    animationFileName?: string | undefined;
+                    lowerMessage?: string | undefined;
                     type: "showTour";
                     steps: {
                         title: string;
@@ -6167,6 +6237,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         questionId: string;
                     } | {
                         message?: string | undefined;
+                        animationFileName?: string | undefined;
+                        lowerMessage?: string | undefined;
                         type: "showTour";
                         steps: {
                             title: string;
@@ -6198,6 +6270,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         questionId: string;
                     } | {
                         message?: string | undefined;
+                        animationFileName?: string | undefined;
+                        lowerMessage?: string | undefined;
                         type: "showTour";
                         steps: {
                             title: string;
@@ -7345,6 +7419,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             questionId: string;
         } | {
             message?: string | undefined;
+            animationFileName?: string | undefined;
+            lowerMessage?: string | undefined;
             type: "showTour";
             steps: {
                 title: string;
@@ -7372,6 +7448,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 questionId: string;
             } | {
                 message?: string | undefined;
+                animationFileName?: string | undefined;
+                lowerMessage?: string | undefined;
                 type: "showTour";
                 steps: {
                     title: string;
@@ -7403,6 +7481,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 questionId: string;
             } | {
                 message?: string | undefined;
+                animationFileName?: string | undefined;
+                lowerMessage?: string | undefined;
                 type: "showTour";
                 steps: {
                     title: string;
@@ -7458,6 +7538,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             questionId: string;
         } | {
             message?: string | undefined;
+            animationFileName?: string | undefined;
+            lowerMessage?: string | undefined;
             type: "showTour";
             steps: {
                 title: string;
@@ -7485,6 +7567,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 questionId: string;
             } | {
                 message?: string | undefined;
+                animationFileName?: string | undefined;
+                lowerMessage?: string | undefined;
                 type: "showTour";
                 steps: {
                     title: string;
@@ -7516,6 +7600,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 questionId: string;
             } | {
                 message?: string | undefined;
+                animationFileName?: string | undefined;
+                lowerMessage?: string | undefined;
                 type: "showTour";
                 steps: {
                     title: string;
@@ -7570,6 +7656,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             questionId: string;
         } | {
             message?: string | undefined;
+            animationFileName?: string | undefined;
+            lowerMessage?: string | undefined;
             type: "showTour";
             steps: {
                 title: string;
@@ -7604,6 +7692,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 questionId: string;
             } | {
                 message?: string | undefined;
+                animationFileName?: string | undefined;
+                lowerMessage?: string | undefined;
                 type: "showTour";
                 steps: {
                     title: string;
@@ -7635,6 +7725,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 questionId: string;
             } | {
                 message?: string | undefined;
+                animationFileName?: string | undefined;
+                lowerMessage?: string | undefined;
                 type: "showTour";
                 steps: {
                     title: string;
@@ -8213,16 +8305,15 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: Function;
         } | null | undefined;
         parentId?: string | null | undefined;
-        shouldGenerateStrategies?: boolean | undefined;
+        hasDebriefQuestion?: boolean | undefined;
         profileCount?: number | null | undefined;
         isFeatured?: boolean | null | undefined;
         ordinal: number;
         name: string;
-        debriefQuestionPrompt: string;
         synonyms: string[];
         parentIds: string[];
         parentNames: string[];
-    }, "ordinal" | "name" | "debriefQuestionPrompt" | "synonyms" | "parentIds" | "parentNames" | ("path" | "createdAt" | "updatedAt" | "parentId" | "shouldGenerateStrategies" | "profileCount" | "isFeatured")>;
+    }, "ordinal" | "name" | "synonyms" | "parentIds" | "parentNames" | ("path" | "createdAt" | "updatedAt" | "parentId" | "hasDebriefQuestion" | "profileCount" | "isFeatured")>;
     locationFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -8321,7 +8412,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
         } | null | undefined;
         answeredQuestionsCount?: number | undefined;
-        issueDebriefQuestionPrompt?: string | undefined;
         isReadyForTour?: boolean | undefined;
         isOnboardingComplete?: boolean | undefined;
         sendDebriefRemindersAfterMinutes?: number | undefined;
@@ -8354,7 +8444,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         uids: string[];
         issueId: string | null;
         timezone: string;
-    }, "dayReview" | "uids" | "issueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "issueName" | "parentIssueIds" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "answeredQuestionsCount" | "issueDebriefQuestionPrompt" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "longTermMemory" | "region")>;
+    }, "dayReview" | "uids" | "issueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "issueName" | "parentIssueIds" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "answeredQuestionsCount" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "longTermMemory" | "region")>;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;

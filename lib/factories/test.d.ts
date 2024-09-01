@@ -363,7 +363,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
     } | null | undefined;
     answeredQuestionsCount?: number | undefined;
-    issueDebriefQuestionPrompt?: string | undefined;
     isReadyForTour?: boolean | undefined;
     isOnboardingComplete?: boolean | undefined;
     sendDebriefRemindersAfterMinutes?: number | undefined;
@@ -396,7 +395,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     uids: string[];
     issueId: string | null;
     timezone: string;
-}, "dayReview" | "uids" | "issueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "issueName" | "parentIssueIds" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "answeredQuestionsCount" | "issueDebriefQuestionPrompt" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "longTermMemory" | "region")>, folderFactory: import("factory.ts").Factory<{
+}, "dayReview" | "uids" | "issueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "issueName" | "parentIssueIds" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "answeredQuestionsCount" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "longTermMemory" | "region")>, folderFactory: import("factory.ts").Factory<{
     profileId?: string | undefined;
     recommendedForIssueIds?: string[] | undefined;
     recommendedForIssueOrdinals?: {
