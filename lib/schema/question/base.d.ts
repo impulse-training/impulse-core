@@ -1,16 +1,16 @@
 import * as yup from 'yup';
 import { DocumentSnapshotLike } from '../../utils/firestore/DocumentSnapshotLike';
 export declare const QUESTION_CATEGORIES: {
-    readonly impulses: {
-        readonly label: "Impulse moments";
-        readonly order: 0;
-        readonly hint: "Answer these questions when you have an impulse moment.";
-        readonly isVisible: () => boolean;
-    };
     readonly debriefing: {
         readonly label: "Debriefing";
-        readonly order: 1;
+        readonly order: 0;
         readonly hint: "Answer these questions after an impulse moment, when it's time to reflect.";
+        readonly isVisible: () => boolean;
+    };
+    readonly impulses: {
+        readonly label: "Impulse moments";
+        readonly order: 1;
+        readonly hint: "Answer these questions when you have an impulse moment, which is the craving or urge.";
         readonly isVisible: () => boolean;
     };
     readonly afterSuccess: {
@@ -34,7 +34,7 @@ export declare const QUESTION_CATEGORIES: {
 };
 export type QuestionCategory = keyof typeof QUESTION_CATEGORIES;
 export declare function questionBaseSchema<T extends string>(type: T): yup.ObjectSchema<{
-    categories: ("dayReview" | "impulses" | "debriefing" | "afterSuccess" | "afterSetback")[] | undefined;
+    categories: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
     prompt: string;
     type: yup.Defined<T>;
     options: ({

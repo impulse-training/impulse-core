@@ -8,16 +8,16 @@ import { optionalObjectOf } from '../utils/objectOf';
 import { optionalTimestampSchema } from '../utils/timestamp';
 
 export const QUESTION_CATEGORIES = {
-  impulses: {
-    label: 'Impulse moments',
-    order: 0,
-    hint: 'Answer these questions when you have an impulse moment.',
-    isVisible: () => true,
-  },
   debriefing: {
     label: 'Debriefing',
-    order: 1,
+    order: 0,
     hint: "Answer these questions after an impulse moment, when it's time to reflect.",
+    isVisible: () => true,
+  },
+  impulses: {
+    label: 'Impulse moments',
+    order: 1,
+    hint: 'Answer these questions when you have an impulse moment, which is the craving or urge.',
     isVisible: () => true,
   },
   afterSuccess: {

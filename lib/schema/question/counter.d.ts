@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 export declare const counterQuestionSchema: yup.ObjectSchema<{
-    categories: ("dayReview" | "impulses" | "debriefing" | "afterSuccess" | "afterSetback")[] | undefined;
+    categories: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
     prompt: string;
     type: "counter";
     options: ({

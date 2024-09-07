@@ -2270,7 +2270,7 @@ export declare const factories: {
                             profileKey: string;
                             value: {};
                         })[] | undefined;
-                        categories?: ("dayReview" | "impulses" | "debriefing" | "afterSuccess" | "afterSetback")[] | undefined;
+                        categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                         options?: ({
                             label?: string | undefined;
                             setbackThreshold?: number | undefined;
@@ -2387,7 +2387,7 @@ export declare const factories: {
                             profileKey: string;
                             value: {};
                         })[] | undefined;
-                        categories?: ("dayReview" | "impulses" | "debriefing" | "afterSuccess" | "afterSetback")[] | undefined;
+                        categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                         options?: ({
                             label?: string | undefined;
                             setbackThreshold?: number | undefined;
@@ -2504,7 +2504,7 @@ export declare const factories: {
                             profileKey: string;
                             value: {};
                         })[] | undefined;
-                        categories?: ("dayReview" | "impulses" | "debriefing" | "afterSuccess" | "afterSetback")[] | undefined;
+                        categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                         ordinals?: {
                             [x: string]: number;
                         } | null | undefined;
@@ -2623,7 +2623,7 @@ export declare const factories: {
                             profileKey: string;
                             value: {};
                         })[] | undefined;
-                        categories?: ("dayReview" | "impulses" | "debriefing" | "afterSuccess" | "afterSetback")[] | undefined;
+                        categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                         options?: ({
                             label?: string | undefined;
                             setbackThreshold?: number | undefined;
@@ -2742,7 +2742,7 @@ export declare const factories: {
                             profileKey: string;
                             value: {};
                         })[] | undefined;
-                        categories?: ("dayReview" | "impulses" | "debriefing" | "afterSuccess" | "afterSetback")[] | undefined;
+                        categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                         options?: ({
                             label?: string | undefined;
                             setbackThreshold?: number | undefined;
@@ -2860,7 +2860,7 @@ export declare const factories: {
                             profileKey: string;
                             value: {};
                         })[] | undefined;
-                        categories?: ("dayReview" | "impulses" | "debriefing" | "afterSuccess" | "afterSetback")[] | undefined;
+                        categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                         options?: ({
                             label?: string | undefined;
                             setbackThreshold?: number | undefined;
@@ -5636,7 +5636,7 @@ export declare const factories: {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                categories?: ("dayReview" | "impulses" | "debriefing" | "afterSuccess" | "afterSetback")[] | undefined;
+                categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
@@ -5753,7 +5753,7 @@ export declare const factories: {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                categories?: ("dayReview" | "impulses" | "debriefing" | "afterSuccess" | "afterSetback")[] | undefined;
+                categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
@@ -5870,7 +5870,7 @@ export declare const factories: {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                categories?: ("dayReview" | "impulses" | "debriefing" | "afterSuccess" | "afterSetback")[] | undefined;
+                categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -5989,7 +5989,7 @@ export declare const factories: {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                categories?: ("dayReview" | "impulses" | "debriefing" | "afterSuccess" | "afterSetback")[] | undefined;
+                categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
@@ -6108,7 +6108,7 @@ export declare const factories: {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                categories?: ("dayReview" | "impulses" | "debriefing" | "afterSuccess" | "afterSetback")[] | undefined;
+                categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
@@ -6226,7 +6226,7 @@ export declare const factories: {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
-                categories?: ("dayReview" | "impulses" | "debriefing" | "afterSuccess" | "afterSetback")[] | undefined;
+                categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
@@ -7437,7 +7437,7 @@ export declare const factories: {
             profileKey: string;
             value: {};
         })[] | undefined;
-        categories?: ("dayReview" | "impulses" | "debriefing" | "afterSuccess" | "afterSetback")[] | undefined;
+        categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
         options?: ({
             label?: string | undefined;
             setbackThreshold?: number | undefined;
@@ -7556,7 +7556,7 @@ export declare const factories: {
             profileKey: string;
             value: {};
         })[] | undefined;
-        categories?: ("dayReview" | "impulses" | "debriefing" | "afterSuccess" | "afterSetback")[] | undefined;
+        categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
         options?: ({
             label?: string | undefined;
             setbackThreshold?: number | undefined;
@@ -7674,7 +7674,7 @@ export declare const factories: {
             profileKey: string;
             value: {};
         })[] | undefined;
-        categories?: ("dayReview" | "impulses" | "debriefing" | "afterSuccess" | "afterSetback")[] | undefined;
+        categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
         ordinals?: {
             [x: string]: number;
         } | null | undefined;

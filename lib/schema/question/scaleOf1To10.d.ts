@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 export declare const scaleOf1To10QuestionSchema: yup.ObjectSchema<{
-    categories: ("dayReview" | "impulses" | "debriefing" | "afterSuccess" | "afterSetback")[] | undefined;
+    categories: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
     prompt: string;
     type: "scaleOf1To10";
     options: ({

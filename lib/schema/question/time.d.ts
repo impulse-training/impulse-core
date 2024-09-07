@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 export declare const timeQuestionSchema: yup.ObjectSchema<{
-    categories: ("dayReview" | "impulses" | "debriefing" | "afterSuccess" | "afterSetback")[] | undefined;
+    categories: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
     prompt: string;
     type: "time";
     options: ({
