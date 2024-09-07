@@ -1530,6 +1530,7 @@ export declare const whatsappThreadSchema: yup.ObjectSchema<{
             }[] | undefined;
             openAiRequestPayload?: string | undefined;
             openAiChoiceResponse?: {} | undefined;
+            issueId?: string | null | undefined;
             issueName?: string | undefined;
             submittedAt?: {
                 isEqual?: any;

@@ -1530,6 +1530,7 @@ export default function threadBase<T extends string>(type: T): yup.ObjectSchema<
             }[] | undefined;
             openAiRequestPayload?: string | undefined;
             openAiChoiceResponse?: {} | undefined;
+            issueId?: string | null | undefined;
             issueName?: string | undefined;
             submittedAt?: {
                 isEqual?: any;

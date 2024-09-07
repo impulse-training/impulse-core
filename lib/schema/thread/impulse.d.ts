@@ -1530,6 +1530,7 @@ export declare const impulseThreadSchema: yup.ObjectSchema<{
             }[] | undefined;
             openAiRequestPayload?: string | undefined;
             openAiChoiceResponse?: {} | undefined;
+            issueId?: string | null | undefined;
             issueName?: string | undefined;
             submittedAt?: {
                 isEqual?: any;

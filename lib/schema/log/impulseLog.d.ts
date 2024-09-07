@@ -300,6 +300,7 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
             toDate: Function;
         };
     }[] | undefined;
+    issueId: string | null | undefined;
     issueName: string | undefined;
     submittedAt: {
         isEqual?: any;
@@ -332,6 +333,7 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
     isGptSender: undefined;
     senderProfileId: undefined;
     views: "";
+    issueId: undefined;
     issueName: undefined;
     submittedAt: undefined;
     parentIssueIds: "";
