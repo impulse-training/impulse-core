@@ -12,6 +12,13 @@ type Message = OpenAI.Chat.Completions.ChatCompletionMessageParam;
 // half-hearted, and added complexity without much benefit. We should revisit this.
 export function logGptPayload(log: LogValue): Message[] | null {
   switch (log.type) {
+    case 'impulse':
+      return [
+        {
+          role: 'user',
+          content: `I'm facing an ${log.issueName} impulse right now (craving or urge)`,
+        },
+      ];
     case 'message':
       return [
         {
