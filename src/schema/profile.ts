@@ -20,6 +20,7 @@ export const profileSchema = yup.object({
   notificationPreferences: optionalObjectOf(
     yup.array().of(notificationOptionSchema)
   ),
+  questionOfTheDayIndex: yup.number(),
   answeredQuestionsCount: yup.number().optional(),
   // roadmap: documentReferenceSchema,
   dayReview: yup

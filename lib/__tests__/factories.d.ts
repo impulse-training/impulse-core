@@ -2272,7 +2272,7 @@ export declare const factories: {
                             value: {};
                         })[] | undefined;
                         isPublic?: boolean | undefined;
-                        categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
+                        categories?: ("dayReview" | "questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                         options?: ({
                             label?: string | undefined;
                             setbackThreshold?: number | undefined;
@@ -2390,7 +2390,7 @@ export declare const factories: {
                             value: {};
                         })[] | undefined;
                         isPublic?: boolean | undefined;
-                        categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
+                        categories?: ("dayReview" | "questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                         options?: ({
                             label?: string | undefined;
                             setbackThreshold?: number | undefined;
@@ -2508,7 +2508,7 @@ export declare const factories: {
                             value: {};
                         })[] | undefined;
                         isPublic?: boolean | undefined;
-                        categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
+                        categories?: ("dayReview" | "questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                         ordinals?: {
                             [x: string]: number;
                         } | null | undefined;
@@ -2628,7 +2628,7 @@ export declare const factories: {
                             value: {};
                         })[] | undefined;
                         isPublic?: boolean | undefined;
-                        categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
+                        categories?: ("dayReview" | "questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                         options?: ({
                             label?: string | undefined;
                             setbackThreshold?: number | undefined;
@@ -2748,7 +2748,7 @@ export declare const factories: {
                             value: {};
                         })[] | undefined;
                         isPublic?: boolean | undefined;
-                        categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
+                        categories?: ("dayReview" | "questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                         options?: ({
                             label?: string | undefined;
                             setbackThreshold?: number | undefined;
@@ -2867,7 +2867,7 @@ export declare const factories: {
                             value: {};
                         })[] | undefined;
                         isPublic?: boolean | undefined;
-                        categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
+                        categories?: ("dayReview" | "questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                         options?: ({
                             label?: string | undefined;
                             setbackThreshold?: number | undefined;
@@ -5645,7 +5645,7 @@ export declare const factories: {
                     value: {};
                 })[] | undefined;
                 isPublic?: boolean | undefined;
-                categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
+                categories?: ("dayReview" | "questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
@@ -5763,7 +5763,7 @@ export declare const factories: {
                     value: {};
                 })[] | undefined;
                 isPublic?: boolean | undefined;
-                categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
+                categories?: ("dayReview" | "questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
@@ -5881,7 +5881,7 @@ export declare const factories: {
                     value: {};
                 })[] | undefined;
                 isPublic?: boolean | undefined;
-                categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
+                categories?: ("dayReview" | "questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -6001,7 +6001,7 @@ export declare const factories: {
                     value: {};
                 })[] | undefined;
                 isPublic?: boolean | undefined;
-                categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
+                categories?: ("dayReview" | "questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
@@ -6121,7 +6121,7 @@ export declare const factories: {
                     value: {};
                 })[] | undefined;
                 isPublic?: boolean | undefined;
-                categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
+                categories?: ("dayReview" | "questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
@@ -6240,7 +6240,7 @@ export declare const factories: {
                     value: {};
                 })[] | undefined;
                 isPublic?: boolean | undefined;
-                categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
+                categories?: ("dayReview" | "questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     label?: string | undefined;
                     setbackThreshold?: number | undefined;
@@ -7452,7 +7452,7 @@ export declare const factories: {
             value: {};
         })[] | undefined;
         isPublic?: boolean | undefined;
-        categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
+        categories?: ("dayReview" | "questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
         options?: ({
             label?: string | undefined;
             setbackThreshold?: number | undefined;
@@ -7572,7 +7572,7 @@ export declare const factories: {
             value: {};
         })[] | undefined;
         isPublic?: boolean | undefined;
-        categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
+        categories?: ("dayReview" | "questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
         options?: ({
             label?: string | undefined;
             setbackThreshold?: number | undefined;
@@ -7691,7 +7691,7 @@ export declare const factories: {
             value: {};
         })[] | undefined;
         isPublic?: boolean | undefined;
-        categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
+        categories?: ("dayReview" | "questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
         ordinals?: {
             [x: string]: number;
         } | null | undefined;
@@ -8427,6 +8427,7 @@ export declare const factories: {
         notificationPreferences?: {
             [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
         } | null | undefined;
+        questionOfTheDayIndex?: number | undefined;
         answeredQuestionsCount?: number | undefined;
         isReadyForTour?: boolean | undefined;
         isOnboardingComplete?: boolean | undefined;
@@ -8460,7 +8461,7 @@ export declare const factories: {
         issueId: string | null;
         uids: string[];
         timezone: string;
-    }, "dayReview" | "issueId" | "uids" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "issueName" | "parentIssueIds" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "answeredQuestionsCount" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "longTermMemory" | "region")>;
+    }, "dayReview" | "issueId" | "uids" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "issueName" | "parentIssueIds" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayIndex" | "answeredQuestionsCount" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "longTermMemory" | "region")>;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;

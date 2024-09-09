@@ -53,6 +53,7 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     notificationPreferences?: {
         [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
     } | null | undefined;
+    questionOfTheDayIndex?: number | undefined;
     answeredQuestionsCount?: number | undefined;
     isReadyForTour?: boolean | undefined;
     isOnboardingComplete?: boolean | undefined;
@@ -86,4 +87,4 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     issueId: string | null;
     uids: string[];
     timezone: string;
-}, "dayReview" | "issueId" | "uids" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "issueName" | "parentIssueIds" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "answeredQuestionsCount" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "longTermMemory" | "region")>;
+}, "dayReview" | "issueId" | "uids" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "issueName" | "parentIssueIds" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayIndex" | "answeredQuestionsCount" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "longTermMemory" | "region")>;

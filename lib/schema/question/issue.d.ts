@@ -1,7 +1,7 @@
 import * as yup from 'yup';
 export declare const issueQuestionSchema: yup.ObjectSchema<{
     isPublic: boolean | undefined;
-    categories: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
+    categories: ("dayReview" | "questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
     prompt: string;
     type: "issue";
     options: ({

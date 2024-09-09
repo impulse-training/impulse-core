@@ -1,6 +1,12 @@
 import * as yup from 'yup';
 import { DocumentSnapshotLike } from '../../utils/firestore/DocumentSnapshotLike';
 export declare const QUESTION_CATEGORIES: {
+    readonly questionOfTheDay: {
+        readonly label: "Question of the day";
+        readonly order: -1;
+        readonly hint: "Answer these questions at a scheduled time of day";
+        readonly isVisible: () => boolean;
+    };
     readonly debriefing: {
         readonly label: "Debriefing";
         readonly order: 0;
@@ -17,13 +23,13 @@ export declare const QUESTION_CATEGORIES: {
         readonly label: "After a success";
         readonly order: 2;
         readonly hint: "Ask questions after an impulse moment when you achieve your goal.";
-        readonly isVisible: (questions: DocumentSnapshotLike<any>) => boolean;
+        readonly isVisible: (questions: DocumentSnapshotLike<any>[]) => boolean;
     };
     readonly afterSetback: {
         readonly label: "After a setback";
         readonly order: 3;
         readonly hint: "Ask questions after an impulse moment when you don't achieve your goal.";
-        readonly isVisible: (questions: DocumentSnapshotLike<any>) => boolean;
+        readonly isVisible: (questions: DocumentSnapshotLike<any>[]) => boolean;
     };
     readonly dayReview: {
         readonly label: "Daily review";
@@ -35,7 +41,7 @@ export declare const QUESTION_CATEGORIES: {
 export type QuestionCategory = keyof typeof QUESTION_CATEGORIES;
 export declare function questionBaseSchema<T extends string>(type: T): yup.ObjectSchema<{
     isPublic: boolean | undefined;
-    categories: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
+    categories: ("dayReview" | "questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
     prompt: string;
     type: yup.Defined<T>;
     options: ({

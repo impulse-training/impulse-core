@@ -8,6 +8,12 @@ import { optionalObjectOf } from '../utils/objectOf';
 import { optionalTimestampSchema } from '../utils/timestamp';
 
 export const QUESTION_CATEGORIES = {
+  questionOfTheDay: {
+    label: 'Question of the day',
+    order: -1,
+    hint: 'Answer these questions at a scheduled time of day',
+    isVisible: () => false,
+  },
   debriefing: {
     label: 'Debriefing',
     order: 0,
@@ -24,15 +30,21 @@ export const QUESTION_CATEGORIES = {
     label: 'After a success',
     order: 2,
     hint: 'Ask questions after an impulse moment when you achieve your goal.',
-    isVisible: (questions: DocumentSnapshotLike<any>) =>
-      some(questions, question => question.setbackThreshold !== undefined),
+    isVisible: (questions: DocumentSnapshotLike<any>[]) =>
+      some(
+        questions,
+        question => question.data().setbackThreshold !== undefined
+      ),
   },
   afterSetback: {
     label: 'After a setback',
     order: 3,
     hint: "Ask questions after an impulse moment when you don't achieve your goal.",
-    isVisible: (questions: DocumentSnapshotLike<any>) =>
-      some(questions, question => question.setbackThreshold !== undefined),
+    isVisible: (questions: DocumentSnapshotLike<any>[]) =>
+      some(
+        questions,
+        question => question.data().setbackThreshold !== undefined
+      ),
   },
   dayReview: {
     label: 'Daily review',

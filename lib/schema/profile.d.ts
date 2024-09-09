@@ -48,6 +48,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     notificationPreferences: {
         [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
     } | null | undefined;
+    questionOfTheDayIndex: number | undefined;
     answeredQuestionsCount: number | undefined;
     dayReview: "morning" | "evening" | null;
     issueId: string | null;
@@ -97,6 +98,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     currentAppState: undefined;
     expoPushToken: undefined;
     notificationPreferences: undefined;
+    questionOfTheDayIndex: undefined;
     answeredQuestionsCount: undefined;
     dayReview: undefined;
     issueId: undefined;
