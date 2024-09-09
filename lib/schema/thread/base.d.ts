@@ -2230,6 +2230,7 @@ export default function threadBase<T extends string>(type: T): yup.ObjectSchema<
                         profileKey: string;
                         value: {};
                     })[] | undefined;
+                    isPublic?: boolean | undefined;
                     categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                     options?: ({
                         label?: string | undefined;
@@ -2347,6 +2348,7 @@ export default function threadBase<T extends string>(type: T): yup.ObjectSchema<
                         profileKey: string;
                         value: {};
                     })[] | undefined;
+                    isPublic?: boolean | undefined;
                     categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                     options?: ({
                         label?: string | undefined;
@@ -2464,6 +2466,7 @@ export default function threadBase<T extends string>(type: T): yup.ObjectSchema<
                         profileKey: string;
                         value: {};
                     })[] | undefined;
+                    isPublic?: boolean | undefined;
                     categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                     ordinals?: {
                         [x: string]: number;
@@ -2583,6 +2586,7 @@ export default function threadBase<T extends string>(type: T): yup.ObjectSchema<
                         profileKey: string;
                         value: {};
                     })[] | undefined;
+                    isPublic?: boolean | undefined;
                     categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                     options?: ({
                         label?: string | undefined;
@@ -2702,6 +2706,7 @@ export default function threadBase<T extends string>(type: T): yup.ObjectSchema<
                         profileKey: string;
                         value: {};
                     })[] | undefined;
+                    isPublic?: boolean | undefined;
                     categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                     options?: ({
                         label?: string | undefined;
@@ -2820,6 +2825,7 @@ export default function threadBase<T extends string>(type: T): yup.ObjectSchema<
                         profileKey: string;
                         value: {};
                     })[] | undefined;
+                    isPublic?: boolean | undefined;
                     categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                     options?: ({
                         label?: string | undefined;

@@ -2273,6 +2273,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                             profileKey: string;
                             value: {};
                         })[] | undefined;
+                        isPublic?: boolean | undefined;
                         categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                         options?: ({
                             label?: string | undefined;
@@ -2390,6 +2391,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                             profileKey: string;
                             value: {};
                         })[] | undefined;
+                        isPublic?: boolean | undefined;
                         categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                         options?: ({
                             label?: string | undefined;
@@ -2507,6 +2509,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                             profileKey: string;
                             value: {};
                         })[] | undefined;
+                        isPublic?: boolean | undefined;
                         categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                         ordinals?: {
                             [x: string]: number;
@@ -2626,6 +2629,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                             profileKey: string;
                             value: {};
                         })[] | undefined;
+                        isPublic?: boolean | undefined;
                         categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                         options?: ({
                             label?: string | undefined;
@@ -2745,6 +2749,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                             profileKey: string;
                             value: {};
                         })[] | undefined;
+                        isPublic?: boolean | undefined;
                         categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                         options?: ({
                             label?: string | undefined;
@@ -2863,6 +2868,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                             profileKey: string;
                             value: {};
                         })[] | undefined;
+                        isPublic?: boolean | undefined;
                         categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                         options?: ({
                             label?: string | undefined;

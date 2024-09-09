@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 export declare const issueQuestionSchema: yup.ObjectSchema<{
+    isPublic: boolean | undefined;
     categories: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
     prompt: string;
     type: "issue";
@@ -117,6 +118,7 @@ export declare const issueQuestionSchema: yup.ObjectSchema<{
         toDate: Function;
     } | null | undefined;
 }, yup.AnyObject, {
+    isPublic: undefined;
     categories: "";
     prompt: undefined;
     type: undefined;

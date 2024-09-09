@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 export declare const timeQuestionSchema: yup.ObjectSchema<{
+    isPublic: boolean | undefined;
     categories: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
     prompt: string;
     type: "time";
@@ -118,6 +119,7 @@ export declare const timeQuestionSchema: yup.ObjectSchema<{
     } | null | undefined;
     setbackThreshold: number | undefined;
 }, yup.AnyObject, {
+    isPublic: undefined;
     categories: "";
     prompt: undefined;
     type: undefined;

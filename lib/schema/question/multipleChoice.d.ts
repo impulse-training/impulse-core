@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 export declare const multipleChoiceQuestionSchema: yup.ObjectSchema<{
+    isPublic: boolean | undefined;
     categories: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
     prompt: string;
     type: "multipleChoice";
@@ -118,6 +119,7 @@ export declare const multipleChoiceQuestionSchema: yup.ObjectSchema<{
     } | null | undefined;
     canAddNewOptions: NonNullable<boolean | undefined>;
 }, yup.AnyObject, {
+    isPublic: undefined;
     categories: "";
     prompt: undefined;
     type: undefined;

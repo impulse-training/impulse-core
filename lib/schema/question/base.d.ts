@@ -34,6 +34,7 @@ export declare const QUESTION_CATEGORIES: {
 };
 export type QuestionCategory = keyof typeof QUESTION_CATEGORIES;
 export declare function questionBaseSchema<T extends string>(type: T): yup.ObjectSchema<{
+    isPublic: boolean | undefined;
     categories: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
     prompt: string;
     type: yup.Defined<T>;
@@ -151,6 +152,7 @@ export declare function questionBaseSchema<T extends string>(type: T): yup.Objec
         toDate: Function;
     } | null | undefined;
 }, yup.AnyObject, {
+    isPublic: undefined;
     categories: "";
     prompt: undefined;
     type: undefined;

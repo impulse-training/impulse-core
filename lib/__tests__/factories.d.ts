@@ -2271,6 +2271,7 @@ export declare const factories: {
                             profileKey: string;
                             value: {};
                         })[] | undefined;
+                        isPublic?: boolean | undefined;
                         categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                         options?: ({
                             label?: string | undefined;
@@ -2388,6 +2389,7 @@ export declare const factories: {
                             profileKey: string;
                             value: {};
                         })[] | undefined;
+                        isPublic?: boolean | undefined;
                         categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                         options?: ({
                             label?: string | undefined;
@@ -2505,6 +2507,7 @@ export declare const factories: {
                             profileKey: string;
                             value: {};
                         })[] | undefined;
+                        isPublic?: boolean | undefined;
                         categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                         ordinals?: {
                             [x: string]: number;
@@ -2624,6 +2627,7 @@ export declare const factories: {
                             profileKey: string;
                             value: {};
                         })[] | undefined;
+                        isPublic?: boolean | undefined;
                         categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                         options?: ({
                             label?: string | undefined;
@@ -2743,6 +2747,7 @@ export declare const factories: {
                             profileKey: string;
                             value: {};
                         })[] | undefined;
+                        isPublic?: boolean | undefined;
                         categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                         options?: ({
                             label?: string | undefined;
@@ -2861,6 +2866,7 @@ export declare const factories: {
                             profileKey: string;
                             value: {};
                         })[] | undefined;
+                        isPublic?: boolean | undefined;
                         categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                         options?: ({
                             label?: string | undefined;
@@ -5638,6 +5644,7 @@ export declare const factories: {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
+                isPublic?: boolean | undefined;
                 categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     label?: string | undefined;
@@ -5755,6 +5762,7 @@ export declare const factories: {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
+                isPublic?: boolean | undefined;
                 categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     label?: string | undefined;
@@ -5872,6 +5880,7 @@ export declare const factories: {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
+                isPublic?: boolean | undefined;
                 categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                 ordinals?: {
                     [x: string]: number;
@@ -5991,6 +6000,7 @@ export declare const factories: {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
+                isPublic?: boolean | undefined;
                 categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     label?: string | undefined;
@@ -6110,6 +6120,7 @@ export declare const factories: {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
+                isPublic?: boolean | undefined;
                 categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     label?: string | undefined;
@@ -6228,6 +6239,7 @@ export declare const factories: {
                     profileKey: string;
                     value: {};
                 })[] | undefined;
+                isPublic?: boolean | undefined;
                 categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
                 options?: ({
                     label?: string | undefined;
@@ -7439,6 +7451,7 @@ export declare const factories: {
             profileKey: string;
             value: {};
         })[] | undefined;
+        isPublic?: boolean | undefined;
         categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
         options?: ({
             label?: string | undefined;
@@ -7513,7 +7526,7 @@ export declare const factories: {
         writeAnswerToProfileMemoryKey?: string | undefined;
         prompt: string;
         type: "text";
-    }, "prompt" | "type" | ("recommendedForIssueIds" | "createdAt" | "updatedAt" | "followUps" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+    }, "prompt" | "type" | ("recommendedForIssueIds" | "createdAt" | "updatedAt" | "followUps" | "isPublic" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     timeQuestionFactory: import("factory.ts").Factory<{
         recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
@@ -7558,6 +7571,7 @@ export declare const factories: {
             profileKey: string;
             value: {};
         })[] | undefined;
+        isPublic?: boolean | undefined;
         categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
         options?: ({
             label?: string | undefined;
@@ -7632,7 +7646,7 @@ export declare const factories: {
         writeAnswerToProfileMemoryKey?: string | undefined;
         prompt: string;
         type: "time";
-    }, "prompt" | "type" | ("recommendedForIssueIds" | "createdAt" | "updatedAt" | "setbackThreshold" | "followUps" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+    }, "prompt" | "type" | ("recommendedForIssueIds" | "createdAt" | "updatedAt" | "setbackThreshold" | "followUps" | "isPublic" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     multipleChoiceQuestionFactory: import("factory.ts").Factory<{
         recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
@@ -7676,6 +7690,7 @@ export declare const factories: {
             profileKey: string;
             value: {};
         })[] | undefined;
+        isPublic?: boolean | undefined;
         categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
         ordinals?: {
             [x: string]: number;
@@ -7751,7 +7766,7 @@ export declare const factories: {
             text: string;
         })[];
         canAddNewOptions: NonNullable<boolean | undefined>;
-    }, "prompt" | "type" | "options" | "canAddNewOptions" | ("recommendedForIssueIds" | "createdAt" | "updatedAt" | "followUps" | "categories" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+    }, "prompt" | "type" | "options" | "canAddNewOptions" | ("recommendedForIssueIds" | "createdAt" | "updatedAt" | "followUps" | "isPublic" | "categories" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     applicationFactory: import("factory.ts").Factory<import("..").ApplicationValue, keyof import("..").ApplicationValue>;
     dayFactory: import("factory.ts").Factory<import("..").DayValue, "date" | "issueName" | "questionsById" | "logsById" | "threadsById">;
     folderFactory: import("factory.ts").Factory<{

@@ -52,6 +52,7 @@ const questionCategorySchema = yup
 
 export function questionBaseSchema<T extends string>(type: T) {
   return yup.object({
+    isPublic: yup.boolean(),
     categories: yup.array().of(questionCategorySchema.defined()),
     prompt: yup.string().required(),
     type: yup.mixed<T>().oneOf([type]).defined(),

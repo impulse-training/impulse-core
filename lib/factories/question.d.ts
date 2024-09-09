@@ -44,6 +44,7 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
             profileKey: string;
             value: {};
         })[] | undefined;
+        isPublic?: boolean | undefined;
         categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
         options?: ({
             label?: string | undefined;
@@ -118,7 +119,7 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
         writeAnswerToProfileMemoryKey?: string | undefined;
         prompt: string;
         type: "text";
-    }, "prompt" | "type" | ("recommendedForIssueIds" | "createdAt" | "updatedAt" | "followUps" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+    }, "prompt" | "type" | ("recommendedForIssueIds" | "createdAt" | "updatedAt" | "followUps" | "isPublic" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     timeQuestionFactory: Factory.Sync.Factory<{
         recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
@@ -163,6 +164,7 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
             profileKey: string;
             value: {};
         })[] | undefined;
+        isPublic?: boolean | undefined;
         categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
         options?: ({
             label?: string | undefined;
@@ -237,7 +239,7 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
         writeAnswerToProfileMemoryKey?: string | undefined;
         prompt: string;
         type: "time";
-    }, "prompt" | "type" | ("recommendedForIssueIds" | "createdAt" | "updatedAt" | "setbackThreshold" | "followUps" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+    }, "prompt" | "type" | ("recommendedForIssueIds" | "createdAt" | "updatedAt" | "setbackThreshold" | "followUps" | "isPublic" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     multipleChoiceQuestionFactory: Factory.Sync.Factory<{
         recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
@@ -281,6 +283,7 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
             profileKey: string;
             value: {};
         })[] | undefined;
+        isPublic?: boolean | undefined;
         categories?: ("dayReview" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
         ordinals?: {
             [x: string]: number;
@@ -356,5 +359,5 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
             text: string;
         })[];
         canAddNewOptions: NonNullable<boolean | undefined>;
-    }, "prompt" | "type" | "options" | "canAddNewOptions" | ("recommendedForIssueIds" | "createdAt" | "updatedAt" | "followUps" | "categories" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+    }, "prompt" | "type" | "options" | "canAddNewOptions" | ("recommendedForIssueIds" | "createdAt" | "updatedAt" | "followUps" | "isPublic" | "categories" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
 };
