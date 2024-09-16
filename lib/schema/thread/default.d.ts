@@ -2188,6 +2188,7 @@ export declare const defaultThreadSchema: yup.ObjectSchema<{
             questionsById: {
                 [x: string]: {
                     recommendedForIssueIds?: string[] | undefined;
+                    ordinal?: number | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -2307,6 +2308,7 @@ export declare const defaultThreadSchema: yup.ObjectSchema<{
                     type: "counter";
                 } | {
                     recommendedForIssueIds?: string[] | undefined;
+                    ordinal?: number | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -2425,6 +2427,7 @@ export declare const defaultThreadSchema: yup.ObjectSchema<{
                     type: "issue";
                 } | {
                     recommendedForIssueIds?: string[] | undefined;
+                    ordinal?: number | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -2544,6 +2547,7 @@ export declare const defaultThreadSchema: yup.ObjectSchema<{
                     canAddNewOptions: NonNullable<boolean | undefined>;
                 } | {
                     recommendedForIssueIds?: string[] | undefined;
+                    ordinal?: number | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -2665,6 +2669,7 @@ export declare const defaultThreadSchema: yup.ObjectSchema<{
                     type: "scaleOf1To10";
                 } | {
                     recommendedForIssueIds?: string[] | undefined;
+                    ordinal?: number | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -2783,6 +2788,7 @@ export declare const defaultThreadSchema: yup.ObjectSchema<{
                     type: "text";
                 } | {
                     recommendedForIssueIds?: string[] | undefined;
+                    ordinal?: number | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;

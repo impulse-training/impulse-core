@@ -69,6 +69,7 @@ export function questionBaseSchema<T extends string>(type: T) {
     prompt: yup.string().required(),
     type: yup.mixed<T>().oneOf([type]).defined(),
     options: yup.array().of(optionSchema),
+    ordinal: yup.number(),
     ordinals: optionalObjectOf(yup.number().required()),
     templateFor: yup
       .mixed<'onboarding' | 'afterSuccess' | 'afterSetback'>()

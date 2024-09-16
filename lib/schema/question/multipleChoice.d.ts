@@ -70,6 +70,7 @@ export declare const multipleChoiceQuestionSchema: yup.ObjectSchema<{
         type: "string";
         text: string;
     })[];
+    ordinal: number | undefined;
     ordinals: {
         [x: string]: number;
     } | null | undefined;
@@ -124,6 +125,7 @@ export declare const multipleChoiceQuestionSchema: yup.ObjectSchema<{
     prompt: undefined;
     type: undefined;
     options: "";
+    ordinal: undefined;
     ordinals: undefined;
     templateFor: undefined;
     writeAnswerToProfileMemoryKey: undefined;

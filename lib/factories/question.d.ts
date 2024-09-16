@@ -3,6 +3,7 @@ import { TimestampLike } from '../utils/firestore/TimestampLike';
 export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLike) => {
     textQuestionFactory: Factory.Sync.Factory<{
         recommendedForIssueIds?: string[] | undefined;
+        ordinal?: number | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -119,9 +120,10 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
         writeAnswerToProfileMemoryKey?: string | undefined;
         prompt: string;
         type: "text";
-    }, "prompt" | "type" | ("recommendedForIssueIds" | "createdAt" | "updatedAt" | "followUps" | "isPublic" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+    }, "prompt" | "type" | ("recommendedForIssueIds" | "ordinal" | "createdAt" | "updatedAt" | "followUps" | "isPublic" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     timeQuestionFactory: Factory.Sync.Factory<{
         recommendedForIssueIds?: string[] | undefined;
+        ordinal?: number | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -239,9 +241,10 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
         writeAnswerToProfileMemoryKey?: string | undefined;
         prompt: string;
         type: "time";
-    }, "prompt" | "type" | ("recommendedForIssueIds" | "createdAt" | "updatedAt" | "setbackThreshold" | "followUps" | "isPublic" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+    }, "prompt" | "type" | ("recommendedForIssueIds" | "ordinal" | "createdAt" | "updatedAt" | "setbackThreshold" | "followUps" | "isPublic" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     multipleChoiceQuestionFactory: Factory.Sync.Factory<{
         recommendedForIssueIds?: string[] | undefined;
+        ordinal?: number | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -359,5 +362,5 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
             text: string;
         })[];
         canAddNewOptions: NonNullable<boolean | undefined>;
-    }, "prompt" | "type" | "options" | "canAddNewOptions" | ("recommendedForIssueIds" | "createdAt" | "updatedAt" | "followUps" | "isPublic" | "categories" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+    }, "prompt" | "type" | "options" | "canAddNewOptions" | ("recommendedForIssueIds" | "ordinal" | "createdAt" | "updatedAt" | "followUps" | "isPublic" | "categories" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
 };

@@ -70,6 +70,7 @@ export declare const scaleOf1To10QuestionSchema: yup.ObjectSchema<{
         type: "string";
         text: string;
     })[] | undefined;
+    ordinal: number | undefined;
     ordinals: {
         [x: string]: number;
     } | null | undefined;
@@ -126,6 +127,7 @@ export declare const scaleOf1To10QuestionSchema: yup.ObjectSchema<{
     prompt: undefined;
     type: undefined;
     options: "";
+    ordinal: undefined;
     ordinals: undefined;
     templateFor: undefined;
     writeAnswerToProfileMemoryKey: undefined;

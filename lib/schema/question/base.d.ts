@@ -110,6 +110,7 @@ export declare function questionBaseSchema<T extends string>(type: T): yup.Objec
         type: "string";
         text: string;
     })[] | undefined;
+    ordinal: number | undefined;
     ordinals: {
         [x: string]: number;
     } | null | undefined;
@@ -163,6 +164,7 @@ export declare function questionBaseSchema<T extends string>(type: T): yup.Objec
     prompt: undefined;
     type: undefined;
     options: "";
+    ordinal: undefined;
     ordinals: undefined;
     templateFor: undefined;
     writeAnswerToProfileMemoryKey: undefined;

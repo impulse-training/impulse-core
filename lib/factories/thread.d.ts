@@ -2231,6 +2231,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                 questionsById: {
                     [x: string]: {
                         recommendedForIssueIds?: string[] | undefined;
+                        ordinal?: number | undefined;
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
@@ -2350,6 +2351,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                         type: "counter";
                     } | {
                         recommendedForIssueIds?: string[] | undefined;
+                        ordinal?: number | undefined;
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
@@ -2468,6 +2470,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                         type: "issue";
                     } | {
                         recommendedForIssueIds?: string[] | undefined;
+                        ordinal?: number | undefined;
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
@@ -2587,6 +2590,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                         canAddNewOptions: NonNullable<boolean | undefined>;
                     } | {
                         recommendedForIssueIds?: string[] | undefined;
+                        ordinal?: number | undefined;
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
@@ -2708,6 +2712,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                         type: "scaleOf1To10";
                     } | {
                         recommendedForIssueIds?: string[] | undefined;
+                        ordinal?: number | undefined;
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
@@ -2826,6 +2831,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                         type: "text";
                     } | {
                         recommendedForIssueIds?: string[] | undefined;
+                        ordinal?: number | undefined;
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
