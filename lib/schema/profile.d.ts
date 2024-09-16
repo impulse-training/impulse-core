@@ -51,7 +51,10 @@ export declare const profileSchema: yup.ObjectSchema<{
     questionOfTheDayAnsweredQuestions: {
         [x: string]: boolean | undefined;
     } | null | undefined;
-    dayReview: "morning" | "evening" | null;
+    dayReviewTime: {
+        hour: number;
+        minute: number;
+    } | null;
     issueId: string | null;
     issueName: string | undefined;
     isReadyForTour: boolean | undefined;
@@ -100,7 +103,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     expoPushToken: undefined;
     notificationPreferences: undefined;
     questionOfTheDayAnsweredQuestions: undefined;
-    dayReview: undefined;
+    dayReviewTime: null;
     issueId: undefined;
     issueName: undefined;
     isReadyForTour: undefined;

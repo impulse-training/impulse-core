@@ -20,7 +20,7 @@ export declare const makeTimeRoutineFactory: (TimestampKlass: typeof TimestampLi
     profileId: string;
     type: "time";
     name: string;
-    weekdays: number[];
     hour: number;
     minute: number;
-}, "profileId" | "type" | "name" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;
+    weekdays: number[];
+}, "profileId" | "type" | "name" | "hour" | "minute" | "weekdays" | ("createdAt" | "updatedAt")>;

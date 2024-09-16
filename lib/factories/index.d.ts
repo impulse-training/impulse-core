@@ -8474,11 +8474,14 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             };
         } | null | undefined;
         region?: string | null | undefined;
-        dayReview: "morning" | "evening" | null;
         issueId: string | null;
         uids: string[];
+        dayReviewTime: {
+            hour: number;
+            minute: number;
+        } | null;
         timezone: string;
-    }, "dayReview" | "issueId" | "uids" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "issueName" | "parentIssueIds" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "longTermMemory" | "region")>;
+    }, "issueId" | "uids" | "dayReviewTime" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "issueName" | "parentIssueIds" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "longTermMemory" | "region")>;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -8499,10 +8502,10 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         profileId: string;
         type: "time";
         name: string;
-        weekdays: number[];
         hour: number;
         minute: number;
-    }, "profileId" | "type" | "name" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;
+        weekdays: number[];
+    }, "profileId" | "type" | "name" | "hour" | "minute" | "weekdays" | ("createdAt" | "updatedAt")>;
     tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "ordinal" | "prompt" | "description" | "type" | "createdAt" | "updatedAt" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "setbackThreshold" | "likesCount" | "timerSeconds" | "isSuggested">;
     roadmapFactory: import("factory.ts").Factory<{
         recommendedForIssueIds?: string[] | undefined;

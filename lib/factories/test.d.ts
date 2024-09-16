@@ -394,11 +394,14 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         };
     } | null | undefined;
     region?: string | null | undefined;
-    dayReview: "morning" | "evening" | null;
     issueId: string | null;
     uids: string[];
+    dayReviewTime: {
+        hour: number;
+        minute: number;
+    } | null;
     timezone: string;
-}, "dayReview" | "issueId" | "uids" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "issueName" | "parentIssueIds" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "longTermMemory" | "region")>, folderFactory: import("factory.ts").Factory<{
+}, "issueId" | "uids" | "dayReviewTime" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "issueName" | "parentIssueIds" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "longTermMemory" | "region")>, folderFactory: import("factory.ts").Factory<{
     profileId?: string | undefined;
     recommendedForIssueIds?: string[] | undefined;
     recommendedForIssueOrdinals?: {

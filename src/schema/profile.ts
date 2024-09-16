@@ -21,11 +21,13 @@ export const profileSchema = yup.object({
     yup.array().of(notificationOptionSchema)
   ),
   questionOfTheDayAnsweredQuestions: optionalObjectOf(yup.boolean()),
-  dayReview: yup
-    .mixed<'morning' | 'evening'>()
-    .oneOf(['morning', 'evening'])
+  dayReviewTime: yup
+    .object({
+      hour: yup.number().required(),
+      minute: yup.number().required(),
+    })
     .nullable()
-    .defined(),
+    .default(null),
   issueId: yup.string().required().nullable(),
   issueName: yup.string(),
   isReadyForTour: yup.boolean(),
