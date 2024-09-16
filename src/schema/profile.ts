@@ -20,26 +20,12 @@ export const profileSchema = yup.object({
   notificationPreferences: optionalObjectOf(
     yup.array().of(notificationOptionSchema)
   ),
-  questionOfTheDayIndex: yup.number(),
-  answeredQuestionsCount: yup.number().optional(),
-  // roadmap: documentReferenceSchema,
+  questionOfTheDayAnsweredQuestions: optionalObjectOf(yup.boolean()),
   dayReview: yup
     .mixed<'morning' | 'evening'>()
     .oneOf(['morning', 'evening'])
     .nullable()
     .defined(),
-  // dailyDebriefHour: yup
-  //   .object({
-  //     hour: yup.number().required(),
-  //     minute: yup.number().required(),
-  //   })
-  //   .optional()
-  //   .default(undefined),
-
-  // Can impulse add and remove and change questions and strategies?
-  // impulseCanManageQuestions: yup.boolean(),
-  // impulseCanManageGameplan: yup.boolean(),
-
   issueId: yup.string().required().nullable(),
   issueName: yup.string(),
   isReadyForTour: yup.boolean(),
