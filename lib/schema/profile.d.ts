@@ -44,6 +44,8 @@ export declare const profileSchema: yup.ObjectSchema<{
     activeImpulseDoc: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
     activeThreadDoc: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
     currentAppState: AppStateStatus | undefined;
+    addToSupportGroup: boolean | undefined;
+    emojiID: string[] | undefined;
     expoPushToken: string | undefined;
     notificationPreferences: {
         [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
@@ -100,6 +102,8 @@ export declare const profileSchema: yup.ObjectSchema<{
     activeImpulseDoc: undefined;
     activeThreadDoc: undefined;
     currentAppState: undefined;
+    addToSupportGroup: undefined;
+    emojiID: "";
     expoPushToken: undefined;
     notificationPreferences: undefined;
     questionOfTheDayAnsweredQuestions: undefined;

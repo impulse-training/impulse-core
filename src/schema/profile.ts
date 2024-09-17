@@ -16,6 +16,8 @@ export const profileSchema = yup.object({
   activeImpulseDoc: documentReferenceSchema,
   activeThreadDoc: documentReferenceSchema,
   currentAppState: yup.mixed<AppStateStatus>().optional(), // Define validation for AppStateStatus if needed
+  addToSupportGroup: yup.boolean(),
+  emojiID: yup.array().of(yup.string().required()),
   expoPushToken: yup.string().optional(),
   notificationPreferences: optionalObjectOf(
     yup.array().of(notificationOptionSchema)
