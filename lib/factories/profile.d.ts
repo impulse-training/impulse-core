@@ -66,25 +66,6 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
     impulseContext?: string | null | undefined;
-    longTermMemory?: {
-        [x: string]: {
-            label?: string | undefined;
-            setbackThreshold?: number | undefined;
-            color?: string | undefined;
-            idValue?: string | undefined;
-            numericValue?: number | undefined;
-            setAt: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            };
-            stringValue: string;
-            unit: string;
-        };
-    } | null | undefined;
     region?: string | null | undefined;
     issueId: string | null;
     uids: string[];
@@ -93,4 +74,4 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
         minute: number;
     } | null;
     timezone: string;
-}, "issueId" | "uids" | "dayReviewTime" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "issueName" | "parentIssueIds" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "addToSupportGroup" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "longTermMemory" | "region")>;
+}, "issueId" | "uids" | "dayReviewTime" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "issueName" | "parentIssueIds" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "addToSupportGroup" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "region")>;

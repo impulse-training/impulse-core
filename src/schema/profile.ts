@@ -1,6 +1,5 @@
 import { AppStateStatus } from 'react-native';
 import * as yup from 'yup';
-import { questionDataSchema } from './log';
 import { notificationOptionSchema } from './notification';
 import { optionalStringArray, requiredStringArray } from './utils/array';
 import { documentReferenceSchema } from './utils/firestore';
@@ -40,8 +39,6 @@ export const profileSchema = yup.object({
   gameplanStrategies: yup.array().of(documentReferenceSchema.required()),
   androidPermissions: optionalObjectOf(yup.boolean().required()),
   impulseContext: yup.string().nullable(),
-  // This is a record of question data, that may be accessed by the LLM
-  longTermMemory: optionalObjectOf(questionDataSchema),
   region: yup.string().nullable().optional(),
   timezone: yup.string().required(),
   scheduledNotificationIds: optionalStringArray,

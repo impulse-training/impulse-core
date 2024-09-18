@@ -376,25 +376,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
     impulseContext?: string | null | undefined;
-    longTermMemory?: {
-        [x: string]: {
-            label?: string | undefined;
-            setbackThreshold?: number | undefined;
-            color?: string | undefined;
-            idValue?: string | undefined;
-            numericValue?: number | undefined;
-            setAt: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            };
-            stringValue: string;
-            unit: string;
-        };
-    } | null | undefined;
     region?: string | null | undefined;
     issueId: string | null;
     uids: string[];
@@ -403,7 +384,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         minute: number;
     } | null;
     timezone: string;
-}, "issueId" | "uids" | "dayReviewTime" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "issueName" | "parentIssueIds" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "addToSupportGroup" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "longTermMemory" | "region")>, folderFactory: import("factory.ts").Factory<{
+}, "issueId" | "uids" | "dayReviewTime" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "issueName" | "parentIssueIds" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "addToSupportGroup" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "region")>, folderFactory: import("factory.ts").Factory<{
     profileId?: string | undefined;
     recommendedForIssueIds?: string[] | undefined;
     recommendedForIssueOrdinals?: {
