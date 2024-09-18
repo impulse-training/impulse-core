@@ -975,17 +975,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     questionId: string;
                 } | {
                     message?: string | undefined;
-                    animationFileName?: string | undefined;
-                    lowerMessage?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        title: string;
-                        message: string;
-                        elementRefName: string;
-                        confirmButtonLabel: string;
-                    }[];
-                } | {
-                    message?: string | undefined;
                     type: "writeAnswerToProfile";
                     profileKey: string;
                 } | {
@@ -1003,17 +992,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         message?: string | undefined;
                         type: "askAnotherQuestion";
                         questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        animationFileName?: string | undefined;
-                        lowerMessage?: string | undefined;
-                        type: "showTour";
-                        steps: {
-                            title: string;
-                            message: string;
-                            elementRefName: string;
-                            confirmButtonLabel: string;
-                        }[];
                     } | {
                         message?: string | undefined;
                         type: "writeAnswerToProfile";
@@ -1036,17 +1014,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         message?: string | undefined;
                         type: "askAnotherQuestion";
                         questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        animationFileName?: string | undefined;
-                        lowerMessage?: string | undefined;
-                        type: "showTour";
-                        steps: {
-                            title: string;
-                            message: string;
-                            elementRefName: string;
-                            confirmButtonLabel: string;
-                        }[];
                     } | {
                         message?: string | undefined;
                         type: "writeAnswerToProfile";
@@ -1094,17 +1061,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     questionId: string;
                 } | {
                     message?: string | undefined;
-                    animationFileName?: string | undefined;
-                    lowerMessage?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        title: string;
-                        message: string;
-                        elementRefName: string;
-                        confirmButtonLabel: string;
-                    }[];
-                } | {
-                    message?: string | undefined;
                     type: "writeAnswerToProfile";
                     profileKey: string;
                 } | {
@@ -1122,17 +1078,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         message?: string | undefined;
                         type: "askAnotherQuestion";
                         questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        animationFileName?: string | undefined;
-                        lowerMessage?: string | undefined;
-                        type: "showTour";
-                        steps: {
-                            title: string;
-                            message: string;
-                            elementRefName: string;
-                            confirmButtonLabel: string;
-                        }[];
                     } | {
                         message?: string | undefined;
                         type: "writeAnswerToProfile";
@@ -1155,17 +1100,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         message?: string | undefined;
                         type: "askAnotherQuestion";
                         questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        animationFileName?: string | undefined;
-                        lowerMessage?: string | undefined;
-                        type: "showTour";
-                        steps: {
-                            title: string;
-                            message: string;
-                            elementRefName: string;
-                            confirmButtonLabel: string;
-                        }[];
                     } | {
                         message?: string | undefined;
                         type: "writeAnswerToProfile";
@@ -1213,17 +1147,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     questionId: string;
                 } | {
                     message?: string | undefined;
-                    animationFileName?: string | undefined;
-                    lowerMessage?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        title: string;
-                        message: string;
-                        elementRefName: string;
-                        confirmButtonLabel: string;
-                    }[];
-                } | {
-                    message?: string | undefined;
                     type: "writeAnswerToProfile";
                     profileKey: string;
                 } | {
@@ -1250,17 +1173,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         questionId: string;
                     } | {
                         message?: string | undefined;
-                        animationFileName?: string | undefined;
-                        lowerMessage?: string | undefined;
-                        type: "showTour";
-                        steps: {
-                            title: string;
-                            message: string;
-                            elementRefName: string;
-                            confirmButtonLabel: string;
-                        }[];
-                    } | {
-                        message?: string | undefined;
                         type: "writeAnswerToProfile";
                         profileKey: string;
                     } | {
@@ -1281,17 +1193,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         message?: string | undefined;
                         type: "askAnotherQuestion";
                         questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        animationFileName?: string | undefined;
-                        lowerMessage?: string | undefined;
-                        type: "showTour";
-                        steps: {
-                            title: string;
-                            message: string;
-                            elementRefName: string;
-                            confirmButtonLabel: string;
-                        }[];
                     } | {
                         message?: string | undefined;
                         type: "writeAnswerToProfile";
@@ -1334,17 +1235,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     questionId: string;
                 } | {
                     message?: string | undefined;
-                    animationFileName?: string | undefined;
-                    lowerMessage?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        title: string;
-                        message: string;
-                        elementRefName: string;
-                        confirmButtonLabel: string;
-                    }[];
-                } | {
-                    message?: string | undefined;
                     type: "writeAnswerToProfile";
                     profileKey: string;
                 } | {
@@ -1362,17 +1252,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         message?: string | undefined;
                         type: "askAnotherQuestion";
                         questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        animationFileName?: string | undefined;
-                        lowerMessage?: string | undefined;
-                        type: "showTour";
-                        steps: {
-                            title: string;
-                            message: string;
-                            elementRefName: string;
-                            confirmButtonLabel: string;
-                        }[];
                     } | {
                         message?: string | undefined;
                         type: "writeAnswerToProfile";
@@ -1395,17 +1274,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         message?: string | undefined;
                         type: "askAnotherQuestion";
                         questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        animationFileName?: string | undefined;
-                        lowerMessage?: string | undefined;
-                        type: "showTour";
-                        steps: {
-                            title: string;
-                            message: string;
-                            elementRefName: string;
-                            confirmButtonLabel: string;
-                        }[];
                     } | {
                         message?: string | undefined;
                         type: "writeAnswerToProfile";
@@ -1455,17 +1323,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     questionId: string;
                 } | {
                     message?: string | undefined;
-                    animationFileName?: string | undefined;
-                    lowerMessage?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        title: string;
-                        message: string;
-                        elementRefName: string;
-                        confirmButtonLabel: string;
-                    }[];
-                } | {
-                    message?: string | undefined;
                     type: "writeAnswerToProfile";
                     profileKey: string;
                 } | {
@@ -1483,17 +1340,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         message?: string | undefined;
                         type: "askAnotherQuestion";
                         questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        animationFileName?: string | undefined;
-                        lowerMessage?: string | undefined;
-                        type: "showTour";
-                        steps: {
-                            title: string;
-                            message: string;
-                            elementRefName: string;
-                            confirmButtonLabel: string;
-                        }[];
                     } | {
                         message?: string | undefined;
                         type: "writeAnswerToProfile";
@@ -1516,17 +1362,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         message?: string | undefined;
                         type: "askAnotherQuestion";
                         questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        animationFileName?: string | undefined;
-                        lowerMessage?: string | undefined;
-                        type: "showTour";
-                        steps: {
-                            title: string;
-                            message: string;
-                            elementRefName: string;
-                            confirmButtonLabel: string;
-                        }[];
                     } | {
                         message?: string | undefined;
                         type: "writeAnswerToProfile";
@@ -1575,17 +1410,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     questionId: string;
                 } | {
                     message?: string | undefined;
-                    animationFileName?: string | undefined;
-                    lowerMessage?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        title: string;
-                        message: string;
-                        elementRefName: string;
-                        confirmButtonLabel: string;
-                    }[];
-                } | {
-                    message?: string | undefined;
                     type: "writeAnswerToProfile";
                     profileKey: string;
                 } | {
@@ -1603,17 +1427,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         message?: string | undefined;
                         type: "askAnotherQuestion";
                         questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        animationFileName?: string | undefined;
-                        lowerMessage?: string | undefined;
-                        type: "showTour";
-                        steps: {
-                            title: string;
-                            message: string;
-                            elementRefName: string;
-                            confirmButtonLabel: string;
-                        }[];
                     } | {
                         message?: string | undefined;
                         type: "writeAnswerToProfile";
@@ -1636,17 +1449,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         message?: string | undefined;
                         type: "askAnotherQuestion";
                         questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        animationFileName?: string | undefined;
-                        lowerMessage?: string | undefined;
-                        type: "showTour";
-                        steps: {
-                            title: string;
-                            message: string;
-                            elementRefName: string;
-                            confirmButtonLabel: string;
-                        }[];
                     } | {
                         message?: string | undefined;
                         type: "writeAnswerToProfile";

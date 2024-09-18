@@ -53,17 +53,6 @@ export declare function questionBaseSchema<T extends string>(type: T): yup.Objec
             questionId: string;
         } | {
             message?: string | undefined;
-            animationFileName?: string | undefined;
-            lowerMessage?: string | undefined;
-            type: "showTour";
-            steps: {
-                title: string;
-                message: string;
-                elementRefName: string;
-                confirmButtonLabel: string;
-            }[];
-        } | {
-            message?: string | undefined;
             type: "writeAnswerToProfile";
             profileKey: string;
         } | {
@@ -84,17 +73,6 @@ export declare function questionBaseSchema<T extends string>(type: T): yup.Objec
             message?: string | undefined;
             type: "askAnotherQuestion";
             questionId: string;
-        } | {
-            message?: string | undefined;
-            animationFileName?: string | undefined;
-            lowerMessage?: string | undefined;
-            type: "showTour";
-            steps: {
-                title: string;
-                message: string;
-                elementRefName: string;
-                confirmButtonLabel: string;
-            }[];
         } | {
             message?: string | undefined;
             type: "writeAnswerToProfile";
@@ -121,17 +99,6 @@ export declare function questionBaseSchema<T extends string>(type: T): yup.Objec
         message?: string | undefined;
         type: "askAnotherQuestion";
         questionId: string;
-    } | {
-        message?: string | undefined;
-        animationFileName?: string | undefined;
-        lowerMessage?: string | undefined;
-        type: "showTour";
-        steps: {
-            title: string;
-            message: string;
-            elementRefName: string;
-            confirmButtonLabel: string;
-        }[];
     } | {
         message?: string | undefined;
         type: "writeAnswerToProfile";

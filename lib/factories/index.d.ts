@@ -2254,17 +2254,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                             questionId: string;
                         } | {
                             message?: string | undefined;
-                            animationFileName?: string | undefined;
-                            lowerMessage?: string | undefined;
-                            type: "showTour";
-                            steps: {
-                                title: string;
-                                message: string;
-                                elementRefName: string;
-                                confirmButtonLabel: string;
-                            }[];
-                        } | {
-                            message?: string | undefined;
                             type: "writeAnswerToProfile";
                             profileKey: string;
                         } | {
@@ -2282,17 +2271,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                 message?: string | undefined;
                                 type: "askAnotherQuestion";
                                 questionId: string;
-                            } | {
-                                message?: string | undefined;
-                                animationFileName?: string | undefined;
-                                lowerMessage?: string | undefined;
-                                type: "showTour";
-                                steps: {
-                                    title: string;
-                                    message: string;
-                                    elementRefName: string;
-                                    confirmButtonLabel: string;
-                                }[];
                             } | {
                                 message?: string | undefined;
                                 type: "writeAnswerToProfile";
@@ -2315,17 +2293,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                 message?: string | undefined;
                                 type: "askAnotherQuestion";
                                 questionId: string;
-                            } | {
-                                message?: string | undefined;
-                                animationFileName?: string | undefined;
-                                lowerMessage?: string | undefined;
-                                type: "showTour";
-                                steps: {
-                                    title: string;
-                                    message: string;
-                                    elementRefName: string;
-                                    confirmButtonLabel: string;
-                                }[];
                             } | {
                                 message?: string | undefined;
                                 type: "writeAnswerToProfile";
@@ -2373,17 +2340,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                             questionId: string;
                         } | {
                             message?: string | undefined;
-                            animationFileName?: string | undefined;
-                            lowerMessage?: string | undefined;
-                            type: "showTour";
-                            steps: {
-                                title: string;
-                                message: string;
-                                elementRefName: string;
-                                confirmButtonLabel: string;
-                            }[];
-                        } | {
-                            message?: string | undefined;
                             type: "writeAnswerToProfile";
                             profileKey: string;
                         } | {
@@ -2401,17 +2357,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                 message?: string | undefined;
                                 type: "askAnotherQuestion";
                                 questionId: string;
-                            } | {
-                                message?: string | undefined;
-                                animationFileName?: string | undefined;
-                                lowerMessage?: string | undefined;
-                                type: "showTour";
-                                steps: {
-                                    title: string;
-                                    message: string;
-                                    elementRefName: string;
-                                    confirmButtonLabel: string;
-                                }[];
                             } | {
                                 message?: string | undefined;
                                 type: "writeAnswerToProfile";
@@ -2434,17 +2379,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                 message?: string | undefined;
                                 type: "askAnotherQuestion";
                                 questionId: string;
-                            } | {
-                                message?: string | undefined;
-                                animationFileName?: string | undefined;
-                                lowerMessage?: string | undefined;
-                                type: "showTour";
-                                steps: {
-                                    title: string;
-                                    message: string;
-                                    elementRefName: string;
-                                    confirmButtonLabel: string;
-                                }[];
                             } | {
                                 message?: string | undefined;
                                 type: "writeAnswerToProfile";
@@ -2492,17 +2426,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                             questionId: string;
                         } | {
                             message?: string | undefined;
-                            animationFileName?: string | undefined;
-                            lowerMessage?: string | undefined;
-                            type: "showTour";
-                            steps: {
-                                title: string;
-                                message: string;
-                                elementRefName: string;
-                                confirmButtonLabel: string;
-                            }[];
-                        } | {
-                            message?: string | undefined;
                             type: "writeAnswerToProfile";
                             profileKey: string;
                         } | {
@@ -2529,17 +2452,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                 questionId: string;
                             } | {
                                 message?: string | undefined;
-                                animationFileName?: string | undefined;
-                                lowerMessage?: string | undefined;
-                                type: "showTour";
-                                steps: {
-                                    title: string;
-                                    message: string;
-                                    elementRefName: string;
-                                    confirmButtonLabel: string;
-                                }[];
-                            } | {
-                                message?: string | undefined;
                                 type: "writeAnswerToProfile";
                                 profileKey: string;
                             } | {
@@ -2560,17 +2472,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                 message?: string | undefined;
                                 type: "askAnotherQuestion";
                                 questionId: string;
-                            } | {
-                                message?: string | undefined;
-                                animationFileName?: string | undefined;
-                                lowerMessage?: string | undefined;
-                                type: "showTour";
-                                steps: {
-                                    title: string;
-                                    message: string;
-                                    elementRefName: string;
-                                    confirmButtonLabel: string;
-                                }[];
                             } | {
                                 message?: string | undefined;
                                 type: "writeAnswerToProfile";
@@ -2613,17 +2514,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                             questionId: string;
                         } | {
                             message?: string | undefined;
-                            animationFileName?: string | undefined;
-                            lowerMessage?: string | undefined;
-                            type: "showTour";
-                            steps: {
-                                title: string;
-                                message: string;
-                                elementRefName: string;
-                                confirmButtonLabel: string;
-                            }[];
-                        } | {
-                            message?: string | undefined;
                             type: "writeAnswerToProfile";
                             profileKey: string;
                         } | {
@@ -2641,17 +2531,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                 message?: string | undefined;
                                 type: "askAnotherQuestion";
                                 questionId: string;
-                            } | {
-                                message?: string | undefined;
-                                animationFileName?: string | undefined;
-                                lowerMessage?: string | undefined;
-                                type: "showTour";
-                                steps: {
-                                    title: string;
-                                    message: string;
-                                    elementRefName: string;
-                                    confirmButtonLabel: string;
-                                }[];
                             } | {
                                 message?: string | undefined;
                                 type: "writeAnswerToProfile";
@@ -2674,17 +2553,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                 message?: string | undefined;
                                 type: "askAnotherQuestion";
                                 questionId: string;
-                            } | {
-                                message?: string | undefined;
-                                animationFileName?: string | undefined;
-                                lowerMessage?: string | undefined;
-                                type: "showTour";
-                                steps: {
-                                    title: string;
-                                    message: string;
-                                    elementRefName: string;
-                                    confirmButtonLabel: string;
-                                }[];
                             } | {
                                 message?: string | undefined;
                                 type: "writeAnswerToProfile";
@@ -2734,17 +2602,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                             questionId: string;
                         } | {
                             message?: string | undefined;
-                            animationFileName?: string | undefined;
-                            lowerMessage?: string | undefined;
-                            type: "showTour";
-                            steps: {
-                                title: string;
-                                message: string;
-                                elementRefName: string;
-                                confirmButtonLabel: string;
-                            }[];
-                        } | {
-                            message?: string | undefined;
                             type: "writeAnswerToProfile";
                             profileKey: string;
                         } | {
@@ -2762,17 +2619,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                 message?: string | undefined;
                                 type: "askAnotherQuestion";
                                 questionId: string;
-                            } | {
-                                message?: string | undefined;
-                                animationFileName?: string | undefined;
-                                lowerMessage?: string | undefined;
-                                type: "showTour";
-                                steps: {
-                                    title: string;
-                                    message: string;
-                                    elementRefName: string;
-                                    confirmButtonLabel: string;
-                                }[];
                             } | {
                                 message?: string | undefined;
                                 type: "writeAnswerToProfile";
@@ -2795,17 +2641,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                 message?: string | undefined;
                                 type: "askAnotherQuestion";
                                 questionId: string;
-                            } | {
-                                message?: string | undefined;
-                                animationFileName?: string | undefined;
-                                lowerMessage?: string | undefined;
-                                type: "showTour";
-                                steps: {
-                                    title: string;
-                                    message: string;
-                                    elementRefName: string;
-                                    confirmButtonLabel: string;
-                                }[];
                             } | {
                                 message?: string | undefined;
                                 type: "writeAnswerToProfile";
@@ -2854,17 +2689,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                             questionId: string;
                         } | {
                             message?: string | undefined;
-                            animationFileName?: string | undefined;
-                            lowerMessage?: string | undefined;
-                            type: "showTour";
-                            steps: {
-                                title: string;
-                                message: string;
-                                elementRefName: string;
-                                confirmButtonLabel: string;
-                            }[];
-                        } | {
-                            message?: string | undefined;
                             type: "writeAnswerToProfile";
                             profileKey: string;
                         } | {
@@ -2882,17 +2706,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                 message?: string | undefined;
                                 type: "askAnotherQuestion";
                                 questionId: string;
-                            } | {
-                                message?: string | undefined;
-                                animationFileName?: string | undefined;
-                                lowerMessage?: string | undefined;
-                                type: "showTour";
-                                steps: {
-                                    title: string;
-                                    message: string;
-                                    elementRefName: string;
-                                    confirmButtonLabel: string;
-                                }[];
                             } | {
                                 message?: string | undefined;
                                 type: "writeAnswerToProfile";
@@ -2915,17 +2728,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                                 message?: string | undefined;
                                 type: "askAnotherQuestion";
                                 questionId: string;
-                            } | {
-                                message?: string | undefined;
-                                animationFileName?: string | undefined;
-                                lowerMessage?: string | undefined;
-                                type: "showTour";
-                                steps: {
-                                    title: string;
-                                    message: string;
-                                    elementRefName: string;
-                                    confirmButtonLabel: string;
-                                }[];
                             } | {
                                 message?: string | undefined;
                                 type: "writeAnswerToProfile";
@@ -3241,7 +3043,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 openAiRequestPayload?: string | undefined;
                 openAiChoiceResponse?: {} | undefined;
                 animationFileName?: string | undefined;
-                lowerMessage?: string | undefined;
                 profileId: string;
                 type: "showTour";
                 steps: {
@@ -5633,17 +5434,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     questionId: string;
                 } | {
                     message?: string | undefined;
-                    animationFileName?: string | undefined;
-                    lowerMessage?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        title: string;
-                        message: string;
-                        elementRefName: string;
-                        confirmButtonLabel: string;
-                    }[];
-                } | {
-                    message?: string | undefined;
                     type: "writeAnswerToProfile";
                     profileKey: string;
                 } | {
@@ -5661,17 +5451,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         message?: string | undefined;
                         type: "askAnotherQuestion";
                         questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        animationFileName?: string | undefined;
-                        lowerMessage?: string | undefined;
-                        type: "showTour";
-                        steps: {
-                            title: string;
-                            message: string;
-                            elementRefName: string;
-                            confirmButtonLabel: string;
-                        }[];
                     } | {
                         message?: string | undefined;
                         type: "writeAnswerToProfile";
@@ -5694,17 +5473,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         message?: string | undefined;
                         type: "askAnotherQuestion";
                         questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        animationFileName?: string | undefined;
-                        lowerMessage?: string | undefined;
-                        type: "showTour";
-                        steps: {
-                            title: string;
-                            message: string;
-                            elementRefName: string;
-                            confirmButtonLabel: string;
-                        }[];
                     } | {
                         message?: string | undefined;
                         type: "writeAnswerToProfile";
@@ -5752,17 +5520,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     questionId: string;
                 } | {
                     message?: string | undefined;
-                    animationFileName?: string | undefined;
-                    lowerMessage?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        title: string;
-                        message: string;
-                        elementRefName: string;
-                        confirmButtonLabel: string;
-                    }[];
-                } | {
-                    message?: string | undefined;
                     type: "writeAnswerToProfile";
                     profileKey: string;
                 } | {
@@ -5780,17 +5537,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         message?: string | undefined;
                         type: "askAnotherQuestion";
                         questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        animationFileName?: string | undefined;
-                        lowerMessage?: string | undefined;
-                        type: "showTour";
-                        steps: {
-                            title: string;
-                            message: string;
-                            elementRefName: string;
-                            confirmButtonLabel: string;
-                        }[];
                     } | {
                         message?: string | undefined;
                         type: "writeAnswerToProfile";
@@ -5813,17 +5559,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         message?: string | undefined;
                         type: "askAnotherQuestion";
                         questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        animationFileName?: string | undefined;
-                        lowerMessage?: string | undefined;
-                        type: "showTour";
-                        steps: {
-                            title: string;
-                            message: string;
-                            elementRefName: string;
-                            confirmButtonLabel: string;
-                        }[];
                     } | {
                         message?: string | undefined;
                         type: "writeAnswerToProfile";
@@ -5871,17 +5606,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     questionId: string;
                 } | {
                     message?: string | undefined;
-                    animationFileName?: string | undefined;
-                    lowerMessage?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        title: string;
-                        message: string;
-                        elementRefName: string;
-                        confirmButtonLabel: string;
-                    }[];
-                } | {
-                    message?: string | undefined;
                     type: "writeAnswerToProfile";
                     profileKey: string;
                 } | {
@@ -5908,17 +5632,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         questionId: string;
                     } | {
                         message?: string | undefined;
-                        animationFileName?: string | undefined;
-                        lowerMessage?: string | undefined;
-                        type: "showTour";
-                        steps: {
-                            title: string;
-                            message: string;
-                            elementRefName: string;
-                            confirmButtonLabel: string;
-                        }[];
-                    } | {
-                        message?: string | undefined;
                         type: "writeAnswerToProfile";
                         profileKey: string;
                     } | {
@@ -5939,17 +5652,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         message?: string | undefined;
                         type: "askAnotherQuestion";
                         questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        animationFileName?: string | undefined;
-                        lowerMessage?: string | undefined;
-                        type: "showTour";
-                        steps: {
-                            title: string;
-                            message: string;
-                            elementRefName: string;
-                            confirmButtonLabel: string;
-                        }[];
                     } | {
                         message?: string | undefined;
                         type: "writeAnswerToProfile";
@@ -5992,17 +5694,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     questionId: string;
                 } | {
                     message?: string | undefined;
-                    animationFileName?: string | undefined;
-                    lowerMessage?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        title: string;
-                        message: string;
-                        elementRefName: string;
-                        confirmButtonLabel: string;
-                    }[];
-                } | {
-                    message?: string | undefined;
                     type: "writeAnswerToProfile";
                     profileKey: string;
                 } | {
@@ -6020,17 +5711,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         message?: string | undefined;
                         type: "askAnotherQuestion";
                         questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        animationFileName?: string | undefined;
-                        lowerMessage?: string | undefined;
-                        type: "showTour";
-                        steps: {
-                            title: string;
-                            message: string;
-                            elementRefName: string;
-                            confirmButtonLabel: string;
-                        }[];
                     } | {
                         message?: string | undefined;
                         type: "writeAnswerToProfile";
@@ -6053,17 +5733,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         message?: string | undefined;
                         type: "askAnotherQuestion";
                         questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        animationFileName?: string | undefined;
-                        lowerMessage?: string | undefined;
-                        type: "showTour";
-                        steps: {
-                            title: string;
-                            message: string;
-                            elementRefName: string;
-                            confirmButtonLabel: string;
-                        }[];
                     } | {
                         message?: string | undefined;
                         type: "writeAnswerToProfile";
@@ -6113,17 +5782,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     questionId: string;
                 } | {
                     message?: string | undefined;
-                    animationFileName?: string | undefined;
-                    lowerMessage?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        title: string;
-                        message: string;
-                        elementRefName: string;
-                        confirmButtonLabel: string;
-                    }[];
-                } | {
-                    message?: string | undefined;
                     type: "writeAnswerToProfile";
                     profileKey: string;
                 } | {
@@ -6141,17 +5799,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         message?: string | undefined;
                         type: "askAnotherQuestion";
                         questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        animationFileName?: string | undefined;
-                        lowerMessage?: string | undefined;
-                        type: "showTour";
-                        steps: {
-                            title: string;
-                            message: string;
-                            elementRefName: string;
-                            confirmButtonLabel: string;
-                        }[];
                     } | {
                         message?: string | undefined;
                         type: "writeAnswerToProfile";
@@ -6174,17 +5821,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         message?: string | undefined;
                         type: "askAnotherQuestion";
                         questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        animationFileName?: string | undefined;
-                        lowerMessage?: string | undefined;
-                        type: "showTour";
-                        steps: {
-                            title: string;
-                            message: string;
-                            elementRefName: string;
-                            confirmButtonLabel: string;
-                        }[];
                     } | {
                         message?: string | undefined;
                         type: "writeAnswerToProfile";
@@ -6233,17 +5869,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     questionId: string;
                 } | {
                     message?: string | undefined;
-                    animationFileName?: string | undefined;
-                    lowerMessage?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        title: string;
-                        message: string;
-                        elementRefName: string;
-                        confirmButtonLabel: string;
-                    }[];
-                } | {
-                    message?: string | undefined;
                     type: "writeAnswerToProfile";
                     profileKey: string;
                 } | {
@@ -6261,17 +5886,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         message?: string | undefined;
                         type: "askAnotherQuestion";
                         questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        animationFileName?: string | undefined;
-                        lowerMessage?: string | undefined;
-                        type: "showTour";
-                        steps: {
-                            title: string;
-                            message: string;
-                            elementRefName: string;
-                            confirmButtonLabel: string;
-                        }[];
                     } | {
                         message?: string | undefined;
                         type: "writeAnswerToProfile";
@@ -6294,17 +5908,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         message?: string | undefined;
                         type: "askAnotherQuestion";
                         questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        animationFileName?: string | undefined;
-                        lowerMessage?: string | undefined;
-                        type: "showTour";
-                        steps: {
-                            title: string;
-                            message: string;
-                            elementRefName: string;
-                            confirmButtonLabel: string;
-                        }[];
                     } | {
                         message?: string | undefined;
                         type: "writeAnswerToProfile";
@@ -7446,17 +7049,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             questionId: string;
         } | {
             message?: string | undefined;
-            animationFileName?: string | undefined;
-            lowerMessage?: string | undefined;
-            type: "showTour";
-            steps: {
-                title: string;
-                message: string;
-                elementRefName: string;
-                confirmButtonLabel: string;
-            }[];
-        } | {
-            message?: string | undefined;
             type: "writeAnswerToProfile";
             profileKey: string;
         } | {
@@ -7474,17 +7066,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 message?: string | undefined;
                 type: "askAnotherQuestion";
                 questionId: string;
-            } | {
-                message?: string | undefined;
-                animationFileName?: string | undefined;
-                lowerMessage?: string | undefined;
-                type: "showTour";
-                steps: {
-                    title: string;
-                    message: string;
-                    elementRefName: string;
-                    confirmButtonLabel: string;
-                }[];
             } | {
                 message?: string | undefined;
                 type: "writeAnswerToProfile";
@@ -7507,17 +7088,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 message?: string | undefined;
                 type: "askAnotherQuestion";
                 questionId: string;
-            } | {
-                message?: string | undefined;
-                animationFileName?: string | undefined;
-                lowerMessage?: string | undefined;
-                type: "showTour";
-                steps: {
-                    title: string;
-                    message: string;
-                    elementRefName: string;
-                    confirmButtonLabel: string;
-                }[];
             } | {
                 message?: string | undefined;
                 type: "writeAnswerToProfile";
@@ -7567,17 +7137,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             questionId: string;
         } | {
             message?: string | undefined;
-            animationFileName?: string | undefined;
-            lowerMessage?: string | undefined;
-            type: "showTour";
-            steps: {
-                title: string;
-                message: string;
-                elementRefName: string;
-                confirmButtonLabel: string;
-            }[];
-        } | {
-            message?: string | undefined;
             type: "writeAnswerToProfile";
             profileKey: string;
         } | {
@@ -7595,17 +7154,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 message?: string | undefined;
                 type: "askAnotherQuestion";
                 questionId: string;
-            } | {
-                message?: string | undefined;
-                animationFileName?: string | undefined;
-                lowerMessage?: string | undefined;
-                type: "showTour";
-                steps: {
-                    title: string;
-                    message: string;
-                    elementRefName: string;
-                    confirmButtonLabel: string;
-                }[];
             } | {
                 message?: string | undefined;
                 type: "writeAnswerToProfile";
@@ -7628,17 +7176,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 message?: string | undefined;
                 type: "askAnotherQuestion";
                 questionId: string;
-            } | {
-                message?: string | undefined;
-                animationFileName?: string | undefined;
-                lowerMessage?: string | undefined;
-                type: "showTour";
-                steps: {
-                    title: string;
-                    message: string;
-                    elementRefName: string;
-                    confirmButtonLabel: string;
-                }[];
             } | {
                 message?: string | undefined;
                 type: "writeAnswerToProfile";
@@ -7687,17 +7224,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             questionId: string;
         } | {
             message?: string | undefined;
-            animationFileName?: string | undefined;
-            lowerMessage?: string | undefined;
-            type: "showTour";
-            steps: {
-                title: string;
-                message: string;
-                elementRefName: string;
-                confirmButtonLabel: string;
-            }[];
-        } | {
-            message?: string | undefined;
             type: "writeAnswerToProfile";
             profileKey: string;
         } | {
@@ -7724,17 +7250,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 questionId: string;
             } | {
                 message?: string | undefined;
-                animationFileName?: string | undefined;
-                lowerMessage?: string | undefined;
-                type: "showTour";
-                steps: {
-                    title: string;
-                    message: string;
-                    elementRefName: string;
-                    confirmButtonLabel: string;
-                }[];
-            } | {
-                message?: string | undefined;
                 type: "writeAnswerToProfile";
                 profileKey: string;
             } | {
@@ -7755,17 +7270,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 message?: string | undefined;
                 type: "askAnotherQuestion";
                 questionId: string;
-            } | {
-                message?: string | undefined;
-                animationFileName?: string | undefined;
-                lowerMessage?: string | undefined;
-                type: "showTour";
-                steps: {
-                    title: string;
-                    message: string;
-                    elementRefName: string;
-                    confirmButtonLabel: string;
-                }[];
             } | {
                 message?: string | undefined;
                 type: "writeAnswerToProfile";

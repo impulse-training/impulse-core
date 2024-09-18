@@ -1,4 +1,15 @@
 import * as yup from 'yup';
+export declare const tourStepSchema: yup.ObjectSchema<{
+    elementRefName: string;
+    title: string;
+    message: string;
+    confirmButtonLabel: string;
+}, yup.AnyObject, {
+    elementRefName: undefined;
+    title: undefined;
+    message: undefined;
+    confirmButtonLabel: "Ok";
+}, "">;
 export declare const showTourLogSchema: yup.ObjectSchema<{
     openAiRequestPayload: string | undefined;
     openAiChoiceResponse: {} | undefined;
@@ -307,7 +318,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         confirmButtonLabel: string;
     }[];
     animationFileName: string | undefined;
-    lowerMessage: string | undefined;
 }, yup.AnyObject, {
     openAiRequestPayload: undefined;
     openAiChoiceResponse: undefined;
@@ -332,6 +342,5 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
     views: "";
     steps: "";
     animationFileName: undefined;
-    lowerMessage: undefined;
 }, "">;
 export type ShowTourLogValue = yup.InferType<typeof showTourLogSchema>;

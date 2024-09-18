@@ -7,17 +7,6 @@ export declare function optionValueBaseSchema<K extends string>(type: K): yup.Ob
         questionId: string;
     } | {
         message?: string | undefined;
-        animationFileName?: string | undefined;
-        lowerMessage?: string | undefined;
-        type: "showTour";
-        steps: {
-            title: string;
-            message: string;
-            elementRefName: string;
-            confirmButtonLabel: string;
-        }[];
-    } | {
-        message?: string | undefined;
         type: "writeAnswerToProfile";
         profileKey: string;
     } | {

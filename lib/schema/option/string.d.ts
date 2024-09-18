@@ -8,17 +8,6 @@ export declare const stringOptionSchema: yup.ObjectSchema<{
         questionId: string;
     } | {
         message?: string | undefined;
-        animationFileName?: string | undefined;
-        lowerMessage?: string | undefined;
-        type: "showTour";
-        steps: {
-            title: string;
-            message: string;
-            elementRefName: string;
-            confirmButtonLabel: string;
-        }[];
-    } | {
-        message?: string | undefined;
         type: "writeAnswerToProfile";
         profileKey: string;
     } | {

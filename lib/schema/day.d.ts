@@ -2204,17 +2204,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         questionId: string;
                     } | {
                         message?: string | undefined;
-                        animationFileName?: string | undefined;
-                        lowerMessage?: string | undefined;
-                        type: "showTour";
-                        steps: {
-                            title: string;
-                            message: string;
-                            elementRefName: string;
-                            confirmButtonLabel: string;
-                        }[];
-                    } | {
-                        message?: string | undefined;
                         type: "writeAnswerToProfile";
                         profileKey: string;
                     } | {
@@ -2232,17 +2221,6 @@ export declare const daySchema: yup.ObjectSchema<{
                             message?: string | undefined;
                             type: "askAnotherQuestion";
                             questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            animationFileName?: string | undefined;
-                            lowerMessage?: string | undefined;
-                            type: "showTour";
-                            steps: {
-                                title: string;
-                                message: string;
-                                elementRefName: string;
-                                confirmButtonLabel: string;
-                            }[];
                         } | {
                             message?: string | undefined;
                             type: "writeAnswerToProfile";
@@ -2265,17 +2243,6 @@ export declare const daySchema: yup.ObjectSchema<{
                             message?: string | undefined;
                             type: "askAnotherQuestion";
                             questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            animationFileName?: string | undefined;
-                            lowerMessage?: string | undefined;
-                            type: "showTour";
-                            steps: {
-                                title: string;
-                                message: string;
-                                elementRefName: string;
-                                confirmButtonLabel: string;
-                            }[];
                         } | {
                             message?: string | undefined;
                             type: "writeAnswerToProfile";
@@ -2323,17 +2290,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         questionId: string;
                     } | {
                         message?: string | undefined;
-                        animationFileName?: string | undefined;
-                        lowerMessage?: string | undefined;
-                        type: "showTour";
-                        steps: {
-                            title: string;
-                            message: string;
-                            elementRefName: string;
-                            confirmButtonLabel: string;
-                        }[];
-                    } | {
-                        message?: string | undefined;
                         type: "writeAnswerToProfile";
                         profileKey: string;
                     } | {
@@ -2351,17 +2307,6 @@ export declare const daySchema: yup.ObjectSchema<{
                             message?: string | undefined;
                             type: "askAnotherQuestion";
                             questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            animationFileName?: string | undefined;
-                            lowerMessage?: string | undefined;
-                            type: "showTour";
-                            steps: {
-                                title: string;
-                                message: string;
-                                elementRefName: string;
-                                confirmButtonLabel: string;
-                            }[];
                         } | {
                             message?: string | undefined;
                             type: "writeAnswerToProfile";
@@ -2384,17 +2329,6 @@ export declare const daySchema: yup.ObjectSchema<{
                             message?: string | undefined;
                             type: "askAnotherQuestion";
                             questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            animationFileName?: string | undefined;
-                            lowerMessage?: string | undefined;
-                            type: "showTour";
-                            steps: {
-                                title: string;
-                                message: string;
-                                elementRefName: string;
-                                confirmButtonLabel: string;
-                            }[];
                         } | {
                             message?: string | undefined;
                             type: "writeAnswerToProfile";
@@ -2442,17 +2376,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         questionId: string;
                     } | {
                         message?: string | undefined;
-                        animationFileName?: string | undefined;
-                        lowerMessage?: string | undefined;
-                        type: "showTour";
-                        steps: {
-                            title: string;
-                            message: string;
-                            elementRefName: string;
-                            confirmButtonLabel: string;
-                        }[];
-                    } | {
-                        message?: string | undefined;
                         type: "writeAnswerToProfile";
                         profileKey: string;
                     } | {
@@ -2479,17 +2402,6 @@ export declare const daySchema: yup.ObjectSchema<{
                             questionId: string;
                         } | {
                             message?: string | undefined;
-                            animationFileName?: string | undefined;
-                            lowerMessage?: string | undefined;
-                            type: "showTour";
-                            steps: {
-                                title: string;
-                                message: string;
-                                elementRefName: string;
-                                confirmButtonLabel: string;
-                            }[];
-                        } | {
-                            message?: string | undefined;
                             type: "writeAnswerToProfile";
                             profileKey: string;
                         } | {
@@ -2510,17 +2422,6 @@ export declare const daySchema: yup.ObjectSchema<{
                             message?: string | undefined;
                             type: "askAnotherQuestion";
                             questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            animationFileName?: string | undefined;
-                            lowerMessage?: string | undefined;
-                            type: "showTour";
-                            steps: {
-                                title: string;
-                                message: string;
-                                elementRefName: string;
-                                confirmButtonLabel: string;
-                            }[];
                         } | {
                             message?: string | undefined;
                             type: "writeAnswerToProfile";
@@ -2563,17 +2464,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         questionId: string;
                     } | {
                         message?: string | undefined;
-                        animationFileName?: string | undefined;
-                        lowerMessage?: string | undefined;
-                        type: "showTour";
-                        steps: {
-                            title: string;
-                            message: string;
-                            elementRefName: string;
-                            confirmButtonLabel: string;
-                        }[];
-                    } | {
-                        message?: string | undefined;
                         type: "writeAnswerToProfile";
                         profileKey: string;
                     } | {
@@ -2591,17 +2481,6 @@ export declare const daySchema: yup.ObjectSchema<{
                             message?: string | undefined;
                             type: "askAnotherQuestion";
                             questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            animationFileName?: string | undefined;
-                            lowerMessage?: string | undefined;
-                            type: "showTour";
-                            steps: {
-                                title: string;
-                                message: string;
-                                elementRefName: string;
-                                confirmButtonLabel: string;
-                            }[];
                         } | {
                             message?: string | undefined;
                             type: "writeAnswerToProfile";
@@ -2624,17 +2503,6 @@ export declare const daySchema: yup.ObjectSchema<{
                             message?: string | undefined;
                             type: "askAnotherQuestion";
                             questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            animationFileName?: string | undefined;
-                            lowerMessage?: string | undefined;
-                            type: "showTour";
-                            steps: {
-                                title: string;
-                                message: string;
-                                elementRefName: string;
-                                confirmButtonLabel: string;
-                            }[];
                         } | {
                             message?: string | undefined;
                             type: "writeAnswerToProfile";
@@ -2684,17 +2552,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         questionId: string;
                     } | {
                         message?: string | undefined;
-                        animationFileName?: string | undefined;
-                        lowerMessage?: string | undefined;
-                        type: "showTour";
-                        steps: {
-                            title: string;
-                            message: string;
-                            elementRefName: string;
-                            confirmButtonLabel: string;
-                        }[];
-                    } | {
-                        message?: string | undefined;
                         type: "writeAnswerToProfile";
                         profileKey: string;
                     } | {
@@ -2712,17 +2569,6 @@ export declare const daySchema: yup.ObjectSchema<{
                             message?: string | undefined;
                             type: "askAnotherQuestion";
                             questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            animationFileName?: string | undefined;
-                            lowerMessage?: string | undefined;
-                            type: "showTour";
-                            steps: {
-                                title: string;
-                                message: string;
-                                elementRefName: string;
-                                confirmButtonLabel: string;
-                            }[];
                         } | {
                             message?: string | undefined;
                             type: "writeAnswerToProfile";
@@ -2745,17 +2591,6 @@ export declare const daySchema: yup.ObjectSchema<{
                             message?: string | undefined;
                             type: "askAnotherQuestion";
                             questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            animationFileName?: string | undefined;
-                            lowerMessage?: string | undefined;
-                            type: "showTour";
-                            steps: {
-                                title: string;
-                                message: string;
-                                elementRefName: string;
-                                confirmButtonLabel: string;
-                            }[];
                         } | {
                             message?: string | undefined;
                             type: "writeAnswerToProfile";
@@ -2804,17 +2639,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         questionId: string;
                     } | {
                         message?: string | undefined;
-                        animationFileName?: string | undefined;
-                        lowerMessage?: string | undefined;
-                        type: "showTour";
-                        steps: {
-                            title: string;
-                            message: string;
-                            elementRefName: string;
-                            confirmButtonLabel: string;
-                        }[];
-                    } | {
-                        message?: string | undefined;
                         type: "writeAnswerToProfile";
                         profileKey: string;
                     } | {
@@ -2832,17 +2656,6 @@ export declare const daySchema: yup.ObjectSchema<{
                             message?: string | undefined;
                             type: "askAnotherQuestion";
                             questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            animationFileName?: string | undefined;
-                            lowerMessage?: string | undefined;
-                            type: "showTour";
-                            steps: {
-                                title: string;
-                                message: string;
-                                elementRefName: string;
-                                confirmButtonLabel: string;
-                            }[];
                         } | {
                             message?: string | undefined;
                             type: "writeAnswerToProfile";
@@ -2865,17 +2678,6 @@ export declare const daySchema: yup.ObjectSchema<{
                             message?: string | undefined;
                             type: "askAnotherQuestion";
                             questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            animationFileName?: string | undefined;
-                            lowerMessage?: string | undefined;
-                            type: "showTour";
-                            steps: {
-                                title: string;
-                                message: string;
-                                elementRefName: string;
-                                confirmButtonLabel: string;
-                            }[];
                         } | {
                             message?: string | undefined;
                             type: "writeAnswerToProfile";
@@ -3191,7 +2993,6 @@ export declare const daySchema: yup.ObjectSchema<{
             openAiRequestPayload?: string | undefined;
             openAiChoiceResponse?: {} | undefined;
             animationFileName?: string | undefined;
-            lowerMessage?: string | undefined;
             profileId: string;
             type: "showTour";
             steps: {
@@ -4638,17 +4439,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 questionId: string;
             } | {
                 message?: string | undefined;
-                animationFileName?: string | undefined;
-                lowerMessage?: string | undefined;
-                type: "showTour";
-                steps: {
-                    title: string;
-                    message: string;
-                    elementRefName: string;
-                    confirmButtonLabel: string;
-                }[];
-            } | {
-                message?: string | undefined;
                 type: "writeAnswerToProfile";
                 profileKey: string;
             } | {
@@ -4666,17 +4456,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     message?: string | undefined;
                     type: "askAnotherQuestion";
                     questionId: string;
-                } | {
-                    message?: string | undefined;
-                    animationFileName?: string | undefined;
-                    lowerMessage?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        title: string;
-                        message: string;
-                        elementRefName: string;
-                        confirmButtonLabel: string;
-                    }[];
                 } | {
                     message?: string | undefined;
                     type: "writeAnswerToProfile";
@@ -4699,17 +4478,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     message?: string | undefined;
                     type: "askAnotherQuestion";
                     questionId: string;
-                } | {
-                    message?: string | undefined;
-                    animationFileName?: string | undefined;
-                    lowerMessage?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        title: string;
-                        message: string;
-                        elementRefName: string;
-                        confirmButtonLabel: string;
-                    }[];
                 } | {
                     message?: string | undefined;
                     type: "writeAnswerToProfile";
@@ -4757,17 +4525,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 questionId: string;
             } | {
                 message?: string | undefined;
-                animationFileName?: string | undefined;
-                lowerMessage?: string | undefined;
-                type: "showTour";
-                steps: {
-                    title: string;
-                    message: string;
-                    elementRefName: string;
-                    confirmButtonLabel: string;
-                }[];
-            } | {
-                message?: string | undefined;
                 type: "writeAnswerToProfile";
                 profileKey: string;
             } | {
@@ -4785,17 +4542,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     message?: string | undefined;
                     type: "askAnotherQuestion";
                     questionId: string;
-                } | {
-                    message?: string | undefined;
-                    animationFileName?: string | undefined;
-                    lowerMessage?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        title: string;
-                        message: string;
-                        elementRefName: string;
-                        confirmButtonLabel: string;
-                    }[];
                 } | {
                     message?: string | undefined;
                     type: "writeAnswerToProfile";
@@ -4818,17 +4564,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     message?: string | undefined;
                     type: "askAnotherQuestion";
                     questionId: string;
-                } | {
-                    message?: string | undefined;
-                    animationFileName?: string | undefined;
-                    lowerMessage?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        title: string;
-                        message: string;
-                        elementRefName: string;
-                        confirmButtonLabel: string;
-                    }[];
                 } | {
                     message?: string | undefined;
                     type: "writeAnswerToProfile";
@@ -4876,17 +4611,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 questionId: string;
             } | {
                 message?: string | undefined;
-                animationFileName?: string | undefined;
-                lowerMessage?: string | undefined;
-                type: "showTour";
-                steps: {
-                    title: string;
-                    message: string;
-                    elementRefName: string;
-                    confirmButtonLabel: string;
-                }[];
-            } | {
-                message?: string | undefined;
                 type: "writeAnswerToProfile";
                 profileKey: string;
             } | {
@@ -4913,17 +4637,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     questionId: string;
                 } | {
                     message?: string | undefined;
-                    animationFileName?: string | undefined;
-                    lowerMessage?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        title: string;
-                        message: string;
-                        elementRefName: string;
-                        confirmButtonLabel: string;
-                    }[];
-                } | {
-                    message?: string | undefined;
                     type: "writeAnswerToProfile";
                     profileKey: string;
                 } | {
@@ -4944,17 +4657,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     message?: string | undefined;
                     type: "askAnotherQuestion";
                     questionId: string;
-                } | {
-                    message?: string | undefined;
-                    animationFileName?: string | undefined;
-                    lowerMessage?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        title: string;
-                        message: string;
-                        elementRefName: string;
-                        confirmButtonLabel: string;
-                    }[];
                 } | {
                     message?: string | undefined;
                     type: "writeAnswerToProfile";
@@ -4997,17 +4699,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 questionId: string;
             } | {
                 message?: string | undefined;
-                animationFileName?: string | undefined;
-                lowerMessage?: string | undefined;
-                type: "showTour";
-                steps: {
-                    title: string;
-                    message: string;
-                    elementRefName: string;
-                    confirmButtonLabel: string;
-                }[];
-            } | {
-                message?: string | undefined;
                 type: "writeAnswerToProfile";
                 profileKey: string;
             } | {
@@ -5025,17 +4716,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     message?: string | undefined;
                     type: "askAnotherQuestion";
                     questionId: string;
-                } | {
-                    message?: string | undefined;
-                    animationFileName?: string | undefined;
-                    lowerMessage?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        title: string;
-                        message: string;
-                        elementRefName: string;
-                        confirmButtonLabel: string;
-                    }[];
                 } | {
                     message?: string | undefined;
                     type: "writeAnswerToProfile";
@@ -5058,17 +4738,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     message?: string | undefined;
                     type: "askAnotherQuestion";
                     questionId: string;
-                } | {
-                    message?: string | undefined;
-                    animationFileName?: string | undefined;
-                    lowerMessage?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        title: string;
-                        message: string;
-                        elementRefName: string;
-                        confirmButtonLabel: string;
-                    }[];
                 } | {
                     message?: string | undefined;
                     type: "writeAnswerToProfile";
@@ -5118,17 +4787,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 questionId: string;
             } | {
                 message?: string | undefined;
-                animationFileName?: string | undefined;
-                lowerMessage?: string | undefined;
-                type: "showTour";
-                steps: {
-                    title: string;
-                    message: string;
-                    elementRefName: string;
-                    confirmButtonLabel: string;
-                }[];
-            } | {
-                message?: string | undefined;
                 type: "writeAnswerToProfile";
                 profileKey: string;
             } | {
@@ -5146,17 +4804,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     message?: string | undefined;
                     type: "askAnotherQuestion";
                     questionId: string;
-                } | {
-                    message?: string | undefined;
-                    animationFileName?: string | undefined;
-                    lowerMessage?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        title: string;
-                        message: string;
-                        elementRefName: string;
-                        confirmButtonLabel: string;
-                    }[];
                 } | {
                     message?: string | undefined;
                     type: "writeAnswerToProfile";
@@ -5179,17 +4826,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     message?: string | undefined;
                     type: "askAnotherQuestion";
                     questionId: string;
-                } | {
-                    message?: string | undefined;
-                    animationFileName?: string | undefined;
-                    lowerMessage?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        title: string;
-                        message: string;
-                        elementRefName: string;
-                        confirmButtonLabel: string;
-                    }[];
                 } | {
                     message?: string | undefined;
                     type: "writeAnswerToProfile";
@@ -5238,17 +4874,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 questionId: string;
             } | {
                 message?: string | undefined;
-                animationFileName?: string | undefined;
-                lowerMessage?: string | undefined;
-                type: "showTour";
-                steps: {
-                    title: string;
-                    message: string;
-                    elementRefName: string;
-                    confirmButtonLabel: string;
-                }[];
-            } | {
-                message?: string | undefined;
                 type: "writeAnswerToProfile";
                 profileKey: string;
             } | {
@@ -5266,17 +4891,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     message?: string | undefined;
                     type: "askAnotherQuestion";
                     questionId: string;
-                } | {
-                    message?: string | undefined;
-                    animationFileName?: string | undefined;
-                    lowerMessage?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        title: string;
-                        message: string;
-                        elementRefName: string;
-                        confirmButtonLabel: string;
-                    }[];
                 } | {
                     message?: string | undefined;
                     type: "writeAnswerToProfile";
@@ -5299,17 +4913,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     message?: string | undefined;
                     type: "askAnotherQuestion";
                     questionId: string;
-                } | {
-                    message?: string | undefined;
-                    animationFileName?: string | undefined;
-                    lowerMessage?: string | undefined;
-                    type: "showTour";
-                    steps: {
-                        title: string;
-                        message: string;
-                        elementRefName: string;
-                        confirmButtonLabel: string;
-                    }[];
                 } | {
                     message?: string | undefined;
                     type: "writeAnswerToProfile";

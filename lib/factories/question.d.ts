@@ -26,17 +26,6 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
             questionId: string;
         } | {
             message?: string | undefined;
-            animationFileName?: string | undefined;
-            lowerMessage?: string | undefined;
-            type: "showTour";
-            steps: {
-                title: string;
-                message: string;
-                elementRefName: string;
-                confirmButtonLabel: string;
-            }[];
-        } | {
-            message?: string | undefined;
             type: "writeAnswerToProfile";
             profileKey: string;
         } | {
@@ -54,17 +43,6 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
                 message?: string | undefined;
                 type: "askAnotherQuestion";
                 questionId: string;
-            } | {
-                message?: string | undefined;
-                animationFileName?: string | undefined;
-                lowerMessage?: string | undefined;
-                type: "showTour";
-                steps: {
-                    title: string;
-                    message: string;
-                    elementRefName: string;
-                    confirmButtonLabel: string;
-                }[];
             } | {
                 message?: string | undefined;
                 type: "writeAnswerToProfile";
@@ -87,17 +65,6 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
                 message?: string | undefined;
                 type: "askAnotherQuestion";
                 questionId: string;
-            } | {
-                message?: string | undefined;
-                animationFileName?: string | undefined;
-                lowerMessage?: string | undefined;
-                type: "showTour";
-                steps: {
-                    title: string;
-                    message: string;
-                    elementRefName: string;
-                    confirmButtonLabel: string;
-                }[];
             } | {
                 message?: string | undefined;
                 type: "writeAnswerToProfile";
@@ -147,17 +114,6 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
             questionId: string;
         } | {
             message?: string | undefined;
-            animationFileName?: string | undefined;
-            lowerMessage?: string | undefined;
-            type: "showTour";
-            steps: {
-                title: string;
-                message: string;
-                elementRefName: string;
-                confirmButtonLabel: string;
-            }[];
-        } | {
-            message?: string | undefined;
             type: "writeAnswerToProfile";
             profileKey: string;
         } | {
@@ -175,17 +131,6 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
                 message?: string | undefined;
                 type: "askAnotherQuestion";
                 questionId: string;
-            } | {
-                message?: string | undefined;
-                animationFileName?: string | undefined;
-                lowerMessage?: string | undefined;
-                type: "showTour";
-                steps: {
-                    title: string;
-                    message: string;
-                    elementRefName: string;
-                    confirmButtonLabel: string;
-                }[];
             } | {
                 message?: string | undefined;
                 type: "writeAnswerToProfile";
@@ -208,17 +153,6 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
                 message?: string | undefined;
                 type: "askAnotherQuestion";
                 questionId: string;
-            } | {
-                message?: string | undefined;
-                animationFileName?: string | undefined;
-                lowerMessage?: string | undefined;
-                type: "showTour";
-                steps: {
-                    title: string;
-                    message: string;
-                    elementRefName: string;
-                    confirmButtonLabel: string;
-                }[];
             } | {
                 message?: string | undefined;
                 type: "writeAnswerToProfile";
@@ -267,17 +201,6 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
             questionId: string;
         } | {
             message?: string | undefined;
-            animationFileName?: string | undefined;
-            lowerMessage?: string | undefined;
-            type: "showTour";
-            steps: {
-                title: string;
-                message: string;
-                elementRefName: string;
-                confirmButtonLabel: string;
-            }[];
-        } | {
-            message?: string | undefined;
             type: "writeAnswerToProfile";
             profileKey: string;
         } | {
@@ -304,17 +227,6 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
                 questionId: string;
             } | {
                 message?: string | undefined;
-                animationFileName?: string | undefined;
-                lowerMessage?: string | undefined;
-                type: "showTour";
-                steps: {
-                    title: string;
-                    message: string;
-                    elementRefName: string;
-                    confirmButtonLabel: string;
-                }[];
-            } | {
-                message?: string | undefined;
                 type: "writeAnswerToProfile";
                 profileKey: string;
             } | {
@@ -335,17 +247,6 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
                 message?: string | undefined;
                 type: "askAnotherQuestion";
                 questionId: string;
-            } | {
-                message?: string | undefined;
-                animationFileName?: string | undefined;
-                lowerMessage?: string | undefined;
-                type: "showTour";
-                steps: {
-                    title: string;
-                    message: string;
-                    elementRefName: string;
-                    confirmButtonLabel: string;
-                }[];
             } | {
                 message?: string | undefined;
                 type: "writeAnswerToProfile";
