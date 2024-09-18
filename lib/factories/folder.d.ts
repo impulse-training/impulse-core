@@ -186,6 +186,44 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             isSuggested?: boolean | undefined;
             ordinal: number;
             prompt: string;
+            type: "notifySupportGroup";
+        } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            description?: string | null | undefined;
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            pastTenseTitle?: string | undefined;
+            debriefAfterMinutes?: number | null | undefined;
+            image?: {
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            likesCount?: number | null | undefined;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
+            isSuggested?: boolean | undefined;
+            ordinal: number;
+            prompt: string;
             type: "steps";
             steps: number;
         } | {
@@ -401,6 +439,44 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         prompt: string;
         type: "notifyASupportPerson";
         contactIds: string[];
+    } | {
+        profileId?: string | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        description?: string | null | undefined;
+        createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        pastTenseTitle?: string | undefined;
+        debriefAfterMinutes?: number | null | undefined;
+        image?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | null | undefined;
+        backgroundColor?: string | undefined;
+        setbackThreshold?: number | null | undefined;
+        likesCount?: number | null | undefined;
+        timerSeconds?: import("yup").Maybe<number | undefined>;
+        isSuggested?: boolean | undefined;
+        ordinal: number;
+        prompt: string;
+        type: "notifySupportGroup";
     } | {
         profileId?: string | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
