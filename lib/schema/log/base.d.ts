@@ -232,7 +232,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         ordinal: number;
         prompt: string;
         type: "steps";
-        steps: number;
+        targetSteps: number;
     } | {
         profileId?: string | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
@@ -318,6 +318,9 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
             duration: number;
         };
     }) | yup.Maybe<{} | undefined>;
+    tacticData: {
+        [x: string]: {} | undefined;
+    } | null | undefined;
     isGptSender: boolean | undefined;
     senderProfileId: string | null | undefined;
     views: {
@@ -357,6 +360,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
     dateString: undefined;
     tacticId: undefined;
     tactic: undefined;
+    tacticData: undefined;
     isGptSender: undefined;
     senderProfileId: undefined;
     views: "";

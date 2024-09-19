@@ -282,7 +282,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                     ordinal: number;
                     prompt: string;
                     type: "steps";
-                    steps: number;
+                    targetSteps: number;
                 } | {
                     profileId?: string | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
@@ -368,6 +368,9 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                         duration: number;
                     };
                 }) | import("yup").Maybe<{} | undefined>;
+                tacticData?: {
+                    [x: string]: {} | undefined;
+                } | null | undefined;
                 isGptSender?: boolean | undefined;
                 senderProfileId?: string | null | undefined;
                 views?: {
@@ -622,7 +625,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                     ordinal: number;
                     prompt: string;
                     type: "steps";
-                    steps: number;
+                    targetSteps: number;
                 } | {
                     profileId?: string | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
@@ -708,6 +711,9 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                         duration: number;
                     };
                 }) | import("yup").Maybe<{} | undefined>;
+                tacticData?: {
+                    [x: string]: {} | undefined;
+                } | null | undefined;
                 isGptSender?: boolean | undefined;
                 senderProfileId?: string | null | undefined;
                 views?: {
@@ -962,7 +968,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                     ordinal: number;
                     prompt: string;
                     type: "steps";
-                    steps: number;
+                    targetSteps: number;
                 } | {
                     profileId?: string | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
@@ -1048,6 +1054,9 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                         duration: number;
                     };
                 }) | import("yup").Maybe<{} | undefined>;
+                tacticData?: {
+                    [x: string]: {} | undefined;
+                } | null | undefined;
                 isGptSender?: boolean | undefined;
                 senderProfileId?: string | null | undefined;
                 views?: {
@@ -1307,7 +1316,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                     ordinal: number;
                     prompt: string;
                     type: "steps";
-                    steps: number;
+                    targetSteps: number;
                 } | {
                     profileId?: string | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
@@ -1393,6 +1402,9 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                         duration: number;
                     };
                 }) | import("yup").Maybe<{} | undefined>;
+                tacticData?: {
+                    [x: string]: {} | undefined;
+                } | null | undefined;
                 isGptSender?: boolean | undefined;
                 senderProfileId?: string | null | undefined;
                 views?: {
@@ -1655,7 +1667,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                     ordinal: number;
                     prompt: string;
                     type: "steps";
-                    steps: number;
+                    targetSteps: number;
                 } | {
                     profileId?: string | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
@@ -1741,6 +1753,9 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                         duration: number;
                     };
                 }) | import("yup").Maybe<{} | undefined>;
+                tacticData?: {
+                    [x: string]: {} | undefined;
+                } | null | undefined;
                 isGptSender?: boolean | undefined;
                 senderProfileId?: string | null | undefined;
                 views?: {
@@ -2004,7 +2019,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                     ordinal: number;
                     prompt: string;
                     type: "steps";
-                    steps: number;
+                    targetSteps: number;
                 } | {
                     profileId?: string | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
@@ -2090,6 +2105,9 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                         duration: number;
                     };
                 }) | import("yup").Maybe<{} | undefined>;
+                tacticData?: {
+                    [x: string]: {} | undefined;
+                } | null | undefined;
                 isGptSender?: boolean | undefined;
                 senderProfileId?: string | null | undefined;
                 views?: {
@@ -2344,7 +2362,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                     ordinal: number;
                     prompt: string;
                     type: "steps";
-                    steps: number;
+                    targetSteps: number;
                 } | {
                     profileId?: string | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
@@ -2430,6 +2448,9 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                         duration: number;
                     };
                 }) | import("yup").Maybe<{} | undefined>;
+                tacticData?: {
+                    [x: string]: {} | undefined;
+                } | null | undefined;
                 isGptSender?: boolean | undefined;
                 senderProfileId?: string | null | undefined;
                 views?: {
@@ -3239,7 +3260,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                     ordinal: number;
                     prompt: string;
                     type: "steps";
-                    steps: number;
+                    targetSteps: number;
                 } | {
                     profileId?: string | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
@@ -3325,6 +3346,9 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                         duration: number;
                     };
                 }) | import("yup").Maybe<{} | undefined>;
+                tacticData?: {
+                    [x: string]: {} | undefined;
+                } | null | undefined;
                 isGptSender?: boolean | undefined;
                 senderProfileId?: string | null | undefined;
                 views?: {
@@ -3586,7 +3610,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                     ordinal: number;
                     prompt: string;
                     type: "steps";
-                    steps: number;
+                    targetSteps: number;
                 } | {
                     profileId?: string | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
@@ -3672,6 +3696,9 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                         duration: number;
                     };
                 }) | import("yup").Maybe<{} | undefined>;
+                tacticData?: {
+                    [x: string]: {} | undefined;
+                } | null | undefined;
                 isGptSender?: boolean | undefined;
                 senderProfileId?: string | null | undefined;
                 views?: {
@@ -3910,7 +3937,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                         ordinal: number;
                         prompt: string;
                         type: "steps";
-                        steps: number;
+                        targetSteps: number;
                     } | {
                         profileId?: string | null | undefined;
                         recommendedForIssueIds?: string[] | undefined;
@@ -4220,7 +4247,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                                 ordinal: number;
                                 prompt: string;
                                 type: "steps";
-                                steps: number;
+                                targetSteps: number;
                             } | {
                                 profileId?: string | null | undefined;
                                 recommendedForIssueIds?: string[] | undefined;
@@ -4510,7 +4537,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                             ordinal: number;
                             prompt: string;
                             type: "steps";
-                            steps: number;
+                            targetSteps: number;
                         } | {
                             profileId?: string | null | undefined;
                             recommendedForIssueIds?: string[] | undefined;
@@ -4827,7 +4854,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                     ordinal: number;
                     prompt: string;
                     type: "steps";
-                    steps: number;
+                    targetSteps: number;
                 } | {
                     profileId?: string | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
@@ -4913,6 +4940,9 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                         duration: number;
                     };
                 }) | import("yup").Maybe<{} | undefined>;
+                tacticData?: {
+                    [x: string]: {} | undefined;
+                } | null | undefined;
                 isGptSender?: boolean | undefined;
                 senderProfileId?: string | null | undefined;
                 views?: {

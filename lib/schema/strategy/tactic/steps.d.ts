@@ -37,7 +37,7 @@ export declare const stepsTacticSchema: yup.ObjectSchema<{
     likesCount: number | null | undefined;
     timerSeconds: yup.Maybe<number | undefined>;
     isSuggested: boolean | undefined;
-    steps: number;
+    targetSteps: number;
 }, yup.AnyObject, {
     profileId: undefined;
     recommendedForIssueIds: "";
@@ -60,6 +60,6 @@ export declare const stepsTacticSchema: yup.ObjectSchema<{
     likesCount: undefined;
     timerSeconds: undefined;
     isSuggested: undefined;
-    steps: undefined;
+    targetSteps: undefined;
 }, "">;
 export type StepsTacticValue = yup.InferType<typeof stepsTacticSchema>;

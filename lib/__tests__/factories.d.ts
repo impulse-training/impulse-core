@@ -280,7 +280,7 @@ export declare const factories: {
                     ordinal: number;
                     prompt: string;
                     type: "steps";
-                    steps: number;
+                    targetSteps: number;
                 } | {
                     profileId?: string | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
@@ -366,6 +366,9 @@ export declare const factories: {
                         duration: number;
                     };
                 }) | import("yup").Maybe<{} | undefined>;
+                tacticData?: {
+                    [x: string]: {} | undefined;
+                } | null | undefined;
                 isGptSender?: boolean | undefined;
                 senderProfileId?: string | null | undefined;
                 views?: {
@@ -620,7 +623,7 @@ export declare const factories: {
                     ordinal: number;
                     prompt: string;
                     type: "steps";
-                    steps: number;
+                    targetSteps: number;
                 } | {
                     profileId?: string | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
@@ -706,6 +709,9 @@ export declare const factories: {
                         duration: number;
                     };
                 }) | import("yup").Maybe<{} | undefined>;
+                tacticData?: {
+                    [x: string]: {} | undefined;
+                } | null | undefined;
                 isGptSender?: boolean | undefined;
                 senderProfileId?: string | null | undefined;
                 views?: {
@@ -960,7 +966,7 @@ export declare const factories: {
                     ordinal: number;
                     prompt: string;
                     type: "steps";
-                    steps: number;
+                    targetSteps: number;
                 } | {
                     profileId?: string | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
@@ -1046,6 +1052,9 @@ export declare const factories: {
                         duration: number;
                     };
                 }) | import("yup").Maybe<{} | undefined>;
+                tacticData?: {
+                    [x: string]: {} | undefined;
+                } | null | undefined;
                 isGptSender?: boolean | undefined;
                 senderProfileId?: string | null | undefined;
                 views?: {
@@ -1305,7 +1314,7 @@ export declare const factories: {
                     ordinal: number;
                     prompt: string;
                     type: "steps";
-                    steps: number;
+                    targetSteps: number;
                 } | {
                     profileId?: string | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
@@ -1391,6 +1400,9 @@ export declare const factories: {
                         duration: number;
                     };
                 }) | import("yup").Maybe<{} | undefined>;
+                tacticData?: {
+                    [x: string]: {} | undefined;
+                } | null | undefined;
                 isGptSender?: boolean | undefined;
                 senderProfileId?: string | null | undefined;
                 views?: {
@@ -1653,7 +1665,7 @@ export declare const factories: {
                     ordinal: number;
                     prompt: string;
                     type: "steps";
-                    steps: number;
+                    targetSteps: number;
                 } | {
                     profileId?: string | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
@@ -1739,6 +1751,9 @@ export declare const factories: {
                         duration: number;
                     };
                 }) | import("yup").Maybe<{} | undefined>;
+                tacticData?: {
+                    [x: string]: {} | undefined;
+                } | null | undefined;
                 isGptSender?: boolean | undefined;
                 senderProfileId?: string | null | undefined;
                 views?: {
@@ -2002,7 +2017,7 @@ export declare const factories: {
                     ordinal: number;
                     prompt: string;
                     type: "steps";
-                    steps: number;
+                    targetSteps: number;
                 } | {
                     profileId?: string | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
@@ -2088,6 +2103,9 @@ export declare const factories: {
                         duration: number;
                     };
                 }) | import("yup").Maybe<{} | undefined>;
+                tacticData?: {
+                    [x: string]: {} | undefined;
+                } | null | undefined;
                 isGptSender?: boolean | undefined;
                 senderProfileId?: string | null | undefined;
                 views?: {
@@ -2342,7 +2360,7 @@ export declare const factories: {
                     ordinal: number;
                     prompt: string;
                     type: "steps";
-                    steps: number;
+                    targetSteps: number;
                 } | {
                     profileId?: string | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
@@ -2428,6 +2446,9 @@ export declare const factories: {
                         duration: number;
                     };
                 }) | import("yup").Maybe<{} | undefined>;
+                tacticData?: {
+                    [x: string]: {} | undefined;
+                } | null | undefined;
                 isGptSender?: boolean | undefined;
                 senderProfileId?: string | null | undefined;
                 views?: {
@@ -3237,7 +3258,7 @@ export declare const factories: {
                     ordinal: number;
                     prompt: string;
                     type: "steps";
-                    steps: number;
+                    targetSteps: number;
                 } | {
                     profileId?: string | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
@@ -3323,6 +3344,9 @@ export declare const factories: {
                         duration: number;
                     };
                 }) | import("yup").Maybe<{} | undefined>;
+                tacticData?: {
+                    [x: string]: {} | undefined;
+                } | null | undefined;
                 isGptSender?: boolean | undefined;
                 senderProfileId?: string | null | undefined;
                 views?: {
@@ -3584,7 +3608,7 @@ export declare const factories: {
                     ordinal: number;
                     prompt: string;
                     type: "steps";
-                    steps: number;
+                    targetSteps: number;
                 } | {
                     profileId?: string | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
@@ -3670,6 +3694,9 @@ export declare const factories: {
                         duration: number;
                     };
                 }) | import("yup").Maybe<{} | undefined>;
+                tacticData?: {
+                    [x: string]: {} | undefined;
+                } | null | undefined;
                 isGptSender?: boolean | undefined;
                 senderProfileId?: string | null | undefined;
                 views?: {
@@ -3908,7 +3935,7 @@ export declare const factories: {
                         ordinal: number;
                         prompt: string;
                         type: "steps";
-                        steps: number;
+                        targetSteps: number;
                     } | {
                         profileId?: string | null | undefined;
                         recommendedForIssueIds?: string[] | undefined;
@@ -4218,7 +4245,7 @@ export declare const factories: {
                                 ordinal: number;
                                 prompt: string;
                                 type: "steps";
-                                steps: number;
+                                targetSteps: number;
                             } | {
                                 profileId?: string | null | undefined;
                                 recommendedForIssueIds?: string[] | undefined;
@@ -4508,7 +4535,7 @@ export declare const factories: {
                             ordinal: number;
                             prompt: string;
                             type: "steps";
-                            steps: number;
+                            targetSteps: number;
                         } | {
                             profileId?: string | null | undefined;
                             recommendedForIssueIds?: string[] | undefined;
@@ -4825,7 +4852,7 @@ export declare const factories: {
                     ordinal: number;
                     prompt: string;
                     type: "steps";
-                    steps: number;
+                    targetSteps: number;
                 } | {
                     profileId?: string | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
@@ -4911,6 +4938,9 @@ export declare const factories: {
                         duration: number;
                     };
                 }) | import("yup").Maybe<{} | undefined>;
+                tacticData?: {
+                    [x: string]: {} | undefined;
+                } | null | undefined;
                 isGptSender?: boolean | undefined;
                 senderProfileId?: string | null | undefined;
                 views?: {
@@ -5173,7 +5203,7 @@ export declare const factories: {
             ordinal: number;
             prompt: string;
             type: "steps";
-            steps: number;
+            targetSteps: number;
         } | {
             profileId?: string | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
@@ -5259,6 +5289,9 @@ export declare const factories: {
                 duration: number;
             };
         }) | import("yup").Maybe<{} | undefined>;
+        tacticData?: {
+            [x: string]: {} | undefined;
+        } | null | undefined;
         isGptSender?: boolean | undefined;
         senderProfileId?: string | null | undefined;
         views?: {
@@ -5303,7 +5336,7 @@ export declare const factories: {
         };
         dateString: string;
         parentIssueIds: string[];
-    }, "profileId" | "type" | "date" | "dateString" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "tactic" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueId" | "issueName" | "submittedAt")>;
+    }, "profileId" | "type" | "date" | "dateString" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueId" | "issueName" | "submittedAt")>;
     messageLogFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -5523,7 +5556,7 @@ export declare const factories: {
             ordinal: number;
             prompt: string;
             type: "steps";
-            steps: number;
+            targetSteps: number;
         } | {
             profileId?: string | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
@@ -5609,6 +5642,9 @@ export declare const factories: {
                 duration: number;
             };
         }) | import("yup").Maybe<{} | undefined>;
+        tacticData?: {
+            [x: string]: {} | undefined;
+        } | null | undefined;
         isGptSender?: boolean | undefined;
         senderProfileId?: string | null | undefined;
         views?: {
@@ -5643,7 +5679,7 @@ export declare const factories: {
         };
         text: string;
         dateString: string;
-    }, "profileId" | "type" | "date" | "text" | "dateString" | ("createdAt" | "updatedAt" | "tacticId" | "tactic" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse")>;
+    }, "profileId" | "type" | "date" | "text" | "dateString" | ("createdAt" | "updatedAt" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse")>;
     questionsLogFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -5864,7 +5900,7 @@ export declare const factories: {
             ordinal: number;
             prompt: string;
             type: "steps";
-            steps: number;
+            targetSteps: number;
         } | {
             profileId?: string | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
@@ -5950,6 +5986,9 @@ export declare const factories: {
                 duration: number;
             };
         }) | import("yup").Maybe<{} | undefined>;
+        tacticData?: {
+            [x: string]: {} | undefined;
+        } | null | undefined;
         isGptSender?: boolean | undefined;
         senderProfileId?: string | null | undefined;
         views?: {
@@ -6539,7 +6578,7 @@ export declare const factories: {
                 type: "time";
             };
         };
-    }, "profileId" | "type" | "date" | "dateString" | "questionsById" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "tactic" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "submittedAt" | "questionData" | "trackingQuestionIds" | "debriefingQuestionIds" | "isDebrief" | "followedUpQuestionIds")>;
+    }, "profileId" | "type" | "date" | "dateString" | "questionsById" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "submittedAt" | "questionData" | "trackingQuestionIds" | "debriefingQuestionIds" | "isDebrief" | "followedUpQuestionIds")>;
     strategiesLogFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -6761,7 +6800,7 @@ export declare const factories: {
             ordinal: number;
             prompt: string;
             type: "steps";
-            steps: number;
+            targetSteps: number;
         } | {
             profileId?: string | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
@@ -6847,6 +6886,9 @@ export declare const factories: {
                 duration: number;
             };
         }) | import("yup").Maybe<{} | undefined>;
+        tacticData?: {
+            [x: string]: {} | undefined;
+        } | null | undefined;
         isGptSender?: boolean | undefined;
         senderProfileId?: string | null | undefined;
         views?: {
@@ -7085,7 +7127,7 @@ export declare const factories: {
                 ordinal: number;
                 prompt: string;
                 type: "steps";
-                steps: number;
+                targetSteps: number;
             } | {
                 profileId?: string | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
@@ -7395,7 +7437,7 @@ export declare const factories: {
                         ordinal: number;
                         prompt: string;
                         type: "steps";
-                        steps: number;
+                        targetSteps: number;
                     } | {
                         profileId?: string | null | undefined;
                         recommendedForIssueIds?: string[] | undefined;
@@ -7685,7 +7727,7 @@ export declare const factories: {
                     ordinal: number;
                     prompt: string;
                     type: "steps";
-                    steps: number;
+                    targetSteps: number;
                 } | {
                     profileId?: string | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
@@ -7782,7 +7824,7 @@ export declare const factories: {
         };
         completedTacticIds: string[];
         followedUpTacticIds: string[];
-    }, "profileId" | "type" | "date" | "dateString" | "strategiesById" | "completedTacticIds" | "followedUpTacticIds" | ("createdAt" | "updatedAt" | "title" | "text" | "tacticId" | "tactic" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "sourceSuggestion" | "isAddToGameplanMode" | "suggestedStrategyDocPaths")>;
+    }, "profileId" | "type" | "date" | "dateString" | "strategiesById" | "completedTacticIds" | "followedUpTacticIds" | ("createdAt" | "updatedAt" | "title" | "text" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "sourceSuggestion" | "isAddToGameplanMode" | "suggestedStrategyDocPaths")>;
     textQuestionFactory: import("factory.ts").Factory<{
         recommendedForIssueIds?: string[] | undefined;
         ordinal?: number | undefined;
@@ -8273,7 +8315,7 @@ export declare const factories: {
                 ordinal: number;
                 prompt: string;
                 type: "steps";
-                steps: number;
+                targetSteps: number;
             } | {
                 profileId?: string | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
@@ -8563,7 +8605,7 @@ export declare const factories: {
             ordinal: number;
             prompt: string;
             type: "steps";
-            steps: number;
+            targetSteps: number;
         } | {
             profileId?: string | null | undefined;
             recommendedForIssueIds?: string[] | undefined;

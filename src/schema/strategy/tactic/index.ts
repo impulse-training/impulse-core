@@ -12,7 +12,7 @@ import {
   NotifySupportGroupTacticValue,
   notifySupportGroupTacticSchema,
 } from './notifySupportGroup';
-import { StepsTacticValue } from './steps';
+import { StepsTacticValue, stepsTacticSchema } from './steps';
 import { TaskTacticValue, taskTacticSchema } from './task';
 import { VideoTacticValue, videoTacticSchema } from './video';
 
@@ -49,7 +49,7 @@ export const tacticSchemas: Record<
   notifySupportGroup: notifySupportGroupTacticSchema,
   task: taskTacticSchema,
   video: videoTacticSchema,
-  // steps: stepsTacticSchema,
+  steps: stepsTacticSchema,
   // emotions: emotionsTacticSchema,
   // 'day-review': dayReviewTacticSchema,
   // 'urge-surfing': urgeSurfingTacticSchema,

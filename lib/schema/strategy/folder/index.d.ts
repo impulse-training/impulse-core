@@ -232,7 +232,7 @@ export declare const folderSchema: yup.ObjectSchema<{
             ordinal: number;
             prompt: string;
             type: "steps";
-            steps: number;
+            targetSteps: number;
         } | {
             profileId?: string | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
@@ -520,7 +520,7 @@ export declare const folderSchema: yup.ObjectSchema<{
         ordinal: number;
         prompt: string;
         type: "steps";
-        steps: number;
+        targetSteps: number;
     } | {
         profileId?: string | null | undefined;
         recommendedForIssueIds?: string[] | undefined;

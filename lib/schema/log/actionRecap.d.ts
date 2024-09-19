@@ -232,7 +232,7 @@ export declare const actionRecapLogSchema: yup.ObjectSchema<{
         ordinal: number;
         prompt: string;
         type: "steps";
-        steps: number;
+        targetSteps: number;
     } | {
         profileId?: string | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
@@ -318,6 +318,9 @@ export declare const actionRecapLogSchema: yup.ObjectSchema<{
             duration: number;
         };
     }) | yup.Maybe<{} | undefined>;
+    tacticData: {
+        [x: string]: {} | undefined;
+    } | null | undefined;
     isGptSender: boolean | undefined;
     senderProfileId: string | null | undefined;
     views: {
@@ -358,6 +361,7 @@ export declare const actionRecapLogSchema: yup.ObjectSchema<{
     dateString: undefined;
     tacticId: undefined;
     tactic: undefined;
+    tacticData: undefined;
     isGptSender: undefined;
     senderProfileId: undefined;
     views: "";

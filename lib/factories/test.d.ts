@@ -218,7 +218,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         ordinal: number;
         prompt: string;
         type: "steps";
-        steps: number;
+        targetSteps: number;
     } | {
         profileId?: string | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
@@ -304,6 +304,9 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             duration: number;
         };
     }) | import("yup").Maybe<{} | undefined>;
+    tacticData?: {
+        [x: string]: {} | undefined;
+    } | null | undefined;
     isGptSender?: boolean | undefined;
     senderProfileId?: string | null | undefined;
     views?: {
@@ -348,7 +351,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     };
     dateString: string;
     parentIssueIds: string[];
-}, "profileId" | "type" | "date" | "dateString" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "tactic" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueId" | "issueName" | "submittedAt")>, profileFactory: import("factory.ts").Factory<{
+}, "profileId" | "type" | "date" | "dateString" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueId" | "issueName" | "submittedAt")>, profileFactory: import("factory.ts").Factory<{
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -647,7 +650,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             ordinal: number;
             prompt: string;
             type: "steps";
-            steps: number;
+            targetSteps: number;
         } | {
             profileId?: string | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
@@ -937,7 +940,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         ordinal: number;
         prompt: string;
         type: "steps";
-        steps: number;
+        targetSteps: number;
     } | {
         profileId?: string | null | undefined;
         recommendedForIssueIds?: string[] | undefined;

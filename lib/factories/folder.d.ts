@@ -225,7 +225,7 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             ordinal: number;
             prompt: string;
             type: "steps";
-            steps: number;
+            targetSteps: number;
         } | {
             profileId?: string | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
@@ -515,7 +515,7 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
         ordinal: number;
         prompt: string;
         type: "steps";
-        steps: number;
+        targetSteps: number;
     } | {
         profileId?: string | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
