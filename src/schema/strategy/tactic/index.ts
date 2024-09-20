@@ -15,6 +15,7 @@ import {
 import { StepsTacticValue, stepsTacticSchema } from './steps';
 import { TaskTacticValue, taskTacticSchema } from './task';
 import { VideoTacticValue, videoTacticSchema } from './video';
+import { ZaraTacticValue, zaraTacticSchema } from './zara';
 
 export * from './audio';
 export * from './breathingExercise';
@@ -24,6 +25,7 @@ export * from './steps';
 export * from './task';
 export * from './utils';
 export * from './video';
+export * from './zara';
 
 export type TacticValue =
   | AudioTacticValue
@@ -32,7 +34,8 @@ export type TacticValue =
   | StepsTacticValue
   | TaskTacticValue
   | VideoTacticValue
-  | NotifySupportGroupTacticValue;
+  | NotifySupportGroupTacticValue
+  | ZaraTacticValue;
 // | UrgeSurfingTacticValue
 // | EmotionsTacticValue
 // | DayReviewTacticValue
@@ -50,6 +53,7 @@ export const tacticSchemas: Record<
   task: taskTacticSchema,
   video: videoTacticSchema,
   steps: stepsTacticSchema,
+  zara: zaraTacticSchema,
   // emotions: emotionsTacticSchema,
   // 'day-review': dayReviewTacticSchema,
   // 'urge-surfing': urgeSurfingTacticSchema,

@@ -310,6 +310,44 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
                 thumbnailUrl: string;
                 duration: number;
             };
+        } | {
+            profileId?: string | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            description?: string | null | undefined;
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            pastTenseTitle?: string | undefined;
+            debriefAfterMinutes?: number | null | undefined;
+            image?: {
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            likesCount?: number | null | undefined;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
+            isSuggested?: boolean | undefined;
+            ordinal: number;
+            prompt: string;
+            type: "zara";
         };
     } | null | undefined;
     slug?: string | undefined;
@@ -600,6 +638,44 @@ export declare const makeFolderFactory: (TimestampKlass: typeof TimestampLike) =
             thumbnailUrl: string;
             duration: number;
         };
+    } | {
+        profileId?: string | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        description?: string | null | undefined;
+        createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        pastTenseTitle?: string | undefined;
+        debriefAfterMinutes?: number | null | undefined;
+        image?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | null | undefined;
+        backgroundColor?: string | undefined;
+        setbackThreshold?: number | null | undefined;
+        likesCount?: number | null | undefined;
+        timerSeconds?: import("yup").Maybe<number | undefined>;
+        isSuggested?: boolean | undefined;
+        ordinal: number;
+        prompt: string;
+        type: "zara";
     })[] | undefined;
     nextTacticId?: string | undefined;
     ordinal: number;
