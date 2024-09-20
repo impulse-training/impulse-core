@@ -19,6 +19,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             toDate: Function;
         } | null | undefined;
         text?: string | undefined;
+        profileEmojiIDString?: string | undefined;
         tacticId?: string | null | undefined;
         tactic?: ({
             profileId?: string | null | undefined;
@@ -392,7 +393,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
         };
         dateString: string;
         parentIssueIds: string[];
-    }, "profileId" | "type" | "date" | "dateString" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueId" | "issueName" | "submittedAt")>;
+    }, "profileId" | "type" | "date" | "dateString" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueId" | "issueName" | "submittedAt")>;
     messageLogFactory: Factory.Sync.Factory<{
         createdAt?: {
             isEqual?: any;
@@ -410,6 +411,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        profileEmojiIDString?: string | undefined;
         tacticId?: string | null | undefined;
         tactic?: ({
             profileId?: string | null | undefined;
@@ -773,7 +775,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
         };
         text: string;
         dateString: string;
-    }, "profileId" | "type" | "date" | "text" | "dateString" | ("createdAt" | "updatedAt" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse")>;
+    }, "profileId" | "type" | "date" | "text" | "dateString" | ("createdAt" | "updatedAt" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse")>;
     questionsLogFactory: Factory.Sync.Factory<{
         createdAt?: {
             isEqual?: any;
@@ -792,6 +794,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             toDate: Function;
         } | null | undefined;
         text?: string | undefined;
+        profileEmojiIDString?: string | undefined;
         tacticId?: string | null | undefined;
         tactic?: ({
             profileId?: string | null | undefined;
@@ -1710,7 +1713,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 type: "time";
             };
         };
-    }, "profileId" | "type" | "date" | "dateString" | "questionsById" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "submittedAt" | "questionData" | "trackingQuestionIds" | "debriefingQuestionIds" | "isDebrief" | "followedUpQuestionIds")>;
+    }, "profileId" | "type" | "date" | "dateString" | "questionsById" | ("createdAt" | "updatedAt" | "text" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "submittedAt" | "questionData" | "trackingQuestionIds" | "debriefingQuestionIds" | "isDebrief" | "followedUpQuestionIds")>;
     strategiesLogFactory: Factory.Sync.Factory<{
         createdAt?: {
             isEqual?: any;
@@ -1730,6 +1733,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
         } | null | undefined;
         title?: string | undefined;
         text?: string | undefined;
+        profileEmojiIDString?: string | undefined;
         tacticId?: string | null | undefined;
         tactic?: ({
             profileId?: string | null | undefined;
@@ -3108,5 +3112,5 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
         };
         completedTacticIds: string[];
         followedUpTacticIds: string[];
-    }, "profileId" | "type" | "date" | "dateString" | "strategiesById" | "completedTacticIds" | "followedUpTacticIds" | ("createdAt" | "updatedAt" | "title" | "text" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "sourceSuggestion" | "isAddToGameplanMode" | "suggestedStrategyDocPaths")>;
+    }, "profileId" | "type" | "date" | "dateString" | "strategiesById" | "completedTacticIds" | "followedUpTacticIds" | ("createdAt" | "updatedAt" | "title" | "text" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "sourceSuggestion" | "isAddToGameplanMode" | "suggestedStrategyDocPaths")>;
 };

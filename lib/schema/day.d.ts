@@ -29,6 +29,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             text?: string | undefined;
+            profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
                 profileId?: string | null | undefined;
@@ -410,6 +411,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             text?: string | undefined;
+            profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
                 profileId?: string | null | undefined;
@@ -791,6 +793,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             text?: string | undefined;
+            profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
                 profileId?: string | null | undefined;
@@ -1177,6 +1180,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             text?: string | undefined;
+            profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
                 profileId?: string | null | undefined;
@@ -1566,6 +1570,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             text?: string | undefined;
+            profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
                 profileId?: string | null | undefined;
@@ -1956,6 +1961,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
                 profileId?: string | null | undefined;
@@ -2337,6 +2343,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             text?: string | undefined;
+            profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
                 profileId?: string | null | undefined;
@@ -3273,6 +3280,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             text?: string | undefined;
+            profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
                 profileId?: string | null | undefined;
@@ -3661,6 +3669,7 @@ export declare const daySchema: yup.ObjectSchema<{
             } | null | undefined;
             title?: string | undefined;
             text?: string | undefined;
+            profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
                 profileId?: string | null | undefined;
@@ -5057,6 +5066,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             text?: string | undefined;
+            profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
                 profileId?: string | null | undefined;

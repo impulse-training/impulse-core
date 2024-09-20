@@ -80,6 +80,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                     toDate: Function;
                 } | null | undefined;
                 text?: string | undefined;
+                profileEmojiIDString?: string | undefined;
                 tacticId?: string | null | undefined;
                 tactic?: ({
                     profileId?: string | null | undefined;
@@ -461,6 +462,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                     toDate: Function;
                 } | null | undefined;
                 text?: string | undefined;
+                profileEmojiIDString?: string | undefined;
                 tacticId?: string | null | undefined;
                 tactic?: ({
                     profileId?: string | null | undefined;
@@ -842,6 +844,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                     toDate: Function;
                 } | null | undefined;
                 text?: string | undefined;
+                profileEmojiIDString?: string | undefined;
                 tacticId?: string | null | undefined;
                 tactic?: ({
                     profileId?: string | null | undefined;
@@ -1228,6 +1231,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                     toDate: Function;
                 } | null | undefined;
                 text?: string | undefined;
+                profileEmojiIDString?: string | undefined;
                 tacticId?: string | null | undefined;
                 tactic?: ({
                     profileId?: string | null | undefined;
@@ -1617,6 +1621,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                     toDate: Function;
                 } | null | undefined;
                 text?: string | undefined;
+                profileEmojiIDString?: string | undefined;
                 tacticId?: string | null | undefined;
                 tactic?: ({
                     profileId?: string | null | undefined;
@@ -2007,6 +2012,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileEmojiIDString?: string | undefined;
                 tacticId?: string | null | undefined;
                 tactic?: ({
                     profileId?: string | null | undefined;
@@ -2388,6 +2394,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                     toDate: Function;
                 } | null | undefined;
                 text?: string | undefined;
+                profileEmojiIDString?: string | undefined;
                 tacticId?: string | null | undefined;
                 tactic?: ({
                     profileId?: string | null | undefined;
@@ -3324,6 +3331,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                     toDate: Function;
                 } | null | undefined;
                 text?: string | undefined;
+                profileEmojiIDString?: string | undefined;
                 tacticId?: string | null | undefined;
                 tactic?: ({
                     profileId?: string | null | undefined;
@@ -3712,6 +3720,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                 } | null | undefined;
                 title?: string | undefined;
                 text?: string | undefined;
+                profileEmojiIDString?: string | undefined;
                 tacticId?: string | null | undefined;
                 tactic?: ({
                     profileId?: string | null | undefined;
@@ -5108,6 +5117,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                     toDate: Function;
                 } | null | undefined;
                 text?: string | undefined;
+                profileEmojiIDString?: string | undefined;
                 tacticId?: string | null | undefined;
                 tactic?: ({
                     profileId?: string | null | undefined;

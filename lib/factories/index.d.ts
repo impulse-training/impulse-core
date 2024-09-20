@@ -79,6 +79,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     toDate: Function;
                 } | null | undefined;
                 text?: string | undefined;
+                profileEmojiIDString?: string | undefined;
                 tacticId?: string | null | undefined;
                 tactic?: ({
                     profileId?: string | null | undefined;
@@ -460,6 +461,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     toDate: Function;
                 } | null | undefined;
                 text?: string | undefined;
+                profileEmojiIDString?: string | undefined;
                 tacticId?: string | null | undefined;
                 tactic?: ({
                     profileId?: string | null | undefined;
@@ -841,6 +843,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     toDate: Function;
                 } | null | undefined;
                 text?: string | undefined;
+                profileEmojiIDString?: string | undefined;
                 tacticId?: string | null | undefined;
                 tactic?: ({
                     profileId?: string | null | undefined;
@@ -1227,6 +1230,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     toDate: Function;
                 } | null | undefined;
                 text?: string | undefined;
+                profileEmojiIDString?: string | undefined;
                 tacticId?: string | null | undefined;
                 tactic?: ({
                     profileId?: string | null | undefined;
@@ -1616,6 +1620,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     toDate: Function;
                 } | null | undefined;
                 text?: string | undefined;
+                profileEmojiIDString?: string | undefined;
                 tacticId?: string | null | undefined;
                 tactic?: ({
                     profileId?: string | null | undefined;
@@ -2006,6 +2011,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileEmojiIDString?: string | undefined;
                 tacticId?: string | null | undefined;
                 tactic?: ({
                     profileId?: string | null | undefined;
@@ -2387,6 +2393,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     toDate: Function;
                 } | null | undefined;
                 text?: string | undefined;
+                profileEmojiIDString?: string | undefined;
                 tacticId?: string | null | undefined;
                 tactic?: ({
                     profileId?: string | null | undefined;
@@ -3323,6 +3330,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     toDate: Function;
                 } | null | undefined;
                 text?: string | undefined;
+                profileEmojiIDString?: string | undefined;
                 tacticId?: string | null | undefined;
                 tactic?: ({
                     profileId?: string | null | undefined;
@@ -3711,6 +3719,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 } | null | undefined;
                 title?: string | undefined;
                 text?: string | undefined;
+                profileEmojiIDString?: string | undefined;
                 tacticId?: string | null | undefined;
                 tactic?: ({
                     profileId?: string | null | undefined;
@@ -5107,6 +5116,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     toDate: Function;
                 } | null | undefined;
                 text?: string | undefined;
+                profileEmojiIDString?: string | undefined;
                 tacticId?: string | null | undefined;
                 tactic?: ({
                     profileId?: string | null | undefined;
@@ -5496,6 +5506,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: Function;
         } | null | undefined;
         text?: string | undefined;
+        profileEmojiIDString?: string | undefined;
         tacticId?: string | null | undefined;
         tactic?: ({
             profileId?: string | null | undefined;
@@ -5869,7 +5880,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         };
         dateString: string;
         parentIssueIds: string[];
-    }, "profileId" | "type" | "date" | "dateString" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueId" | "issueName" | "submittedAt")>;
+    }, "profileId" | "type" | "date" | "dateString" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueId" | "issueName" | "submittedAt")>;
     messageLogFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -5887,6 +5898,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        profileEmojiIDString?: string | undefined;
         tacticId?: string | null | undefined;
         tactic?: ({
             profileId?: string | null | undefined;
@@ -6250,7 +6262,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         };
         text: string;
         dateString: string;
-    }, "profileId" | "type" | "date" | "text" | "dateString" | ("createdAt" | "updatedAt" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse")>;
+    }, "profileId" | "type" | "date" | "text" | "dateString" | ("createdAt" | "updatedAt" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse")>;
     questionsLogFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -6269,6 +6281,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: Function;
         } | null | undefined;
         text?: string | undefined;
+        profileEmojiIDString?: string | undefined;
         tacticId?: string | null | undefined;
         tactic?: ({
             profileId?: string | null | undefined;
@@ -7187,7 +7200,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 type: "time";
             };
         };
-    }, "profileId" | "type" | "date" | "dateString" | "questionsById" | ("createdAt" | "updatedAt" | "text" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "submittedAt" | "questionData" | "trackingQuestionIds" | "debriefingQuestionIds" | "isDebrief" | "followedUpQuestionIds")>;
+    }, "profileId" | "type" | "date" | "dateString" | "questionsById" | ("createdAt" | "updatedAt" | "text" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "submittedAt" | "questionData" | "trackingQuestionIds" | "debriefingQuestionIds" | "isDebrief" | "followedUpQuestionIds")>;
     strategiesLogFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -7207,6 +7220,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         } | null | undefined;
         title?: string | undefined;
         text?: string | undefined;
+        profileEmojiIDString?: string | undefined;
         tacticId?: string | null | undefined;
         tactic?: ({
             profileId?: string | null | undefined;
@@ -8585,7 +8599,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         };
         completedTacticIds: string[];
         followedUpTacticIds: string[];
-    }, "profileId" | "type" | "date" | "dateString" | "strategiesById" | "completedTacticIds" | "followedUpTacticIds" | ("createdAt" | "updatedAt" | "title" | "text" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "sourceSuggestion" | "isAddToGameplanMode" | "suggestedStrategyDocPaths")>;
+    }, "profileId" | "type" | "date" | "dateString" | "strategiesById" | "completedTacticIds" | "followedUpTacticIds" | ("createdAt" | "updatedAt" | "title" | "text" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "sourceSuggestion" | "isAddToGameplanMode" | "suggestedStrategyDocPaths")>;
     textQuestionFactory: import("factory.ts").Factory<{
         recommendedForIssueIds?: string[] | undefined;
         ordinal?: number | undefined;

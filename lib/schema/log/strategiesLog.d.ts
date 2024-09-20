@@ -30,6 +30,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
         toDate: Function;
     };
     dateString: string;
+    profileEmojiIDString: string | undefined;
     tacticId: string | null | undefined;
     tactic: ({
         profileId?: string | null | undefined;
@@ -1413,6 +1414,7 @@ export declare const strategiesLogSchema: yup.ObjectSchema<{
         toDate: undefined;
     };
     dateString: undefined;
+    profileEmojiIDString: undefined;
     tacticId: undefined;
     tactic: undefined;
     tacticData: undefined;
