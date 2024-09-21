@@ -47,21 +47,21 @@ export function logGptPayload(log: LogValue): Message[] | null {
           ];
         })
       );
-    case 'strategies':
-      const suggestedStrategies = map(
-        log.strategiesById,
+    case 'tactics':
+      const suggestedTactics = map(
+        log.tacticsById,
         strategy => strategy.prompt
       ).join(SEPARATOR);
       const assistantMessage: Message = {
         role: 'assistant',
-        content: `SUGGESTED ACTIONS: ${suggestedStrategies}`,
+        content: `SUGGESTED ACTIONS: ${suggestedTactics}`,
       };
       const userMessage: Message | null = log.completedTacticIds?.length
         ? {
             role: 'user',
             content: `I'VE COMPLETED: ${map(
               log.completedTacticIds,
-              id => log.strategiesById[id].prompt
+              id => log.tacticsById[id].prompt
             ).join(SEPARATOR)}`,
           }
         : null;

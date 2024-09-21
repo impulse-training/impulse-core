@@ -7,7 +7,7 @@ import { ImpulseLogValue, impulseLogSchema } from './impulseLog';
 import { MessageLogValue, messageLogSchema } from './messageLog';
 import { QuestionsLogValue, questionsLogSchema } from './questionsLog';
 import { ShowTourLogValue, showTourLogSchema } from './showTourLog';
-import { StrategiesLogValue, strategiesLogSchema } from './strategiesLog';
+import { TacticsLogValue, tacticsLogSchema } from './tacticsLog';
 import {
   WhatsappMessageLogValue,
   whatsappMessageLogSchema,
@@ -21,7 +21,7 @@ export * from './impulseLog';
 export * from './messageLog';
 export * from './questionsLog';
 export * from './showTourLog';
-export * from './strategiesLog';
+export * from './tacticsLog';
 export * from './whatsappMessageLog';
 
 export * from './utils/guards';
@@ -35,7 +35,7 @@ export const logSchemas: Record<
   impulse: impulseLogSchema,
   message: messageLogSchema,
   question: questionsLogSchema,
-  strategies: strategiesLogSchema,
+  tactics: tacticsLogSchema,
   actionRecap: actionRecapLogSchema,
   showTour: showTourLogSchema,
   dayReview: dayReviewLogSchema,
@@ -69,7 +69,7 @@ export type LogValue =
   | MessageLogValue
   | QuestionsLogValue
   | ActionRecapLogValue
-  | StrategiesLogValue
+  | TacticsLogValue
   | ShowTourLogValue
   | DayReviewLogValue
   | WhatsappMessageLogValue;

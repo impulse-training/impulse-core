@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-import { tacticSchema } from '../strategy';
+import { tacticSchema } from '../tactic';
 import { optionalObjectOf } from '../utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from '../utils/timestamp';
 import { gptResponseMixin } from './utils/gpt';

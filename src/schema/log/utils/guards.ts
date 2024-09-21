@@ -3,7 +3,7 @@ import {
   LogValue,
   MessageLogValue,
   QuestionsLogValue,
-  StrategiesLogValue,
+  TacticsLogValue,
 } from '..';
 
 export function logIsQuestionsLog(log: LogValue): log is QuestionsLogValue {
@@ -18,6 +18,6 @@ export function logIsMessageLog(log: LogValue): log is MessageLogValue {
   return log.type === 'message';
 }
 
-export function logIsTacticLog(log: LogValue): log is StrategiesLogValue {
-  return log.type === 'questions';
+export function logIsTacticLog(log: LogValue): log is TacticsLogValue {
+  return log.type === 'tactics';
 }

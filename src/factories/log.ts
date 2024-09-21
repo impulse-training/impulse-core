@@ -3,7 +3,7 @@ import {
   ImpulseLogValue,
   MessageLogValue,
   QuestionsLogValue,
-  StrategiesLogValue,
+  TacticsLogValue,
 } from '../schema/log';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 
@@ -39,16 +39,16 @@ export const makeLogFactories = (TimestampKlass: typeof TimestampLike) => ({
     dateString: '2024-01-01',
     questionsById: {},
   }),
-  strategiesLogFactory: Factory.makeFactory<StrategiesLogValue>({
+  tacticsLogFactory: Factory.makeFactory<TacticsLogValue>({
     profileId: '1',
     senderProfileId: Factory.each(i => i.toString()),
     title: 'Suggestions',
-    type: 'strategies',
+    type: 'tactics',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
     date: TimestampKlass.now(),
     dateString: '2024-01-01',
-    strategiesById: {},
+    tacticsById: {},
     suggestedStrategyDocPaths: [],
     completedTacticIds: [],
     followedUpTacticIds: [],

@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 import { routineSchema } from '.';
-import { WithTacticsById } from '../strategy/tactic';
+import { WithTacticsById } from '../tactic';
 import { optionalTimestampSchema } from '../utils/timestamp';
 
 export function routineBaseSchema<K extends string>(type: K) {

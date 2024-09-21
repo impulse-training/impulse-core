@@ -57,6 +57,7 @@ export declare const profileSchema: yup.ObjectSchema<{
         hour: number;
         minute: number;
     } | null;
+    issues: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
     issueId: string | null;
     issueName: string | undefined;
     isReadyForTour: boolean | undefined;
@@ -89,6 +90,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     notificationPreferences: undefined;
     questionOfTheDayAnsweredQuestions: undefined;
     dayReviewTime: null;
+    issues: "";
     issueId: undefined;
     issueName: undefined;
     isReadyForTour: undefined;

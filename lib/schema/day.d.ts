@@ -32,13 +32,6 @@ export declare const daySchema: yup.ObjectSchema<{
             profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                prompt?: string | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -55,6 +48,13 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                prompt?: string | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -76,12 +76,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     uri?: yup.Maybe<string | undefined>;
                 };
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -98,6 +92,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -118,12 +118,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 holdFor: number;
                 outFor: number;
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -140,6 +134,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -157,12 +157,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 type: "notifyASupportPerson";
                 contactIds: string[];
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -179,6 +173,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -195,12 +195,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 prompt: string;
                 type: "notifySupportGroup";
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -217,6 +211,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -234,12 +234,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 type: "steps";
                 targetSteps: number;
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -256,6 +250,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -272,12 +272,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 prompt: string;
                 type: "task";
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -294,6 +288,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -318,12 +318,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     duration: number;
                 };
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -340,6 +334,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -414,13 +414,6 @@ export declare const daySchema: yup.ObjectSchema<{
             profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                prompt?: string | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -437,6 +430,13 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                prompt?: string | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -458,12 +458,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     uri?: yup.Maybe<string | undefined>;
                 };
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -480,6 +474,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -500,12 +500,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 holdFor: number;
                 outFor: number;
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -522,6 +516,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -539,12 +539,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 type: "notifyASupportPerson";
                 contactIds: string[];
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -561,6 +555,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -577,12 +577,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 prompt: string;
                 type: "notifySupportGroup";
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -599,6 +593,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -616,12 +616,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 type: "steps";
                 targetSteps: number;
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -638,6 +632,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -654,12 +654,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 prompt: string;
                 type: "task";
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -676,6 +670,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -700,12 +700,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     duration: number;
                 };
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -722,6 +716,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -796,13 +796,6 @@ export declare const daySchema: yup.ObjectSchema<{
             profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                prompt?: string | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -819,6 +812,13 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                prompt?: string | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -840,12 +840,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     uri?: yup.Maybe<string | undefined>;
                 };
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -862,6 +856,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -882,12 +882,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 holdFor: number;
                 outFor: number;
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -904,6 +898,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -921,12 +921,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 type: "notifyASupportPerson";
                 contactIds: string[];
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -943,6 +937,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -959,12 +959,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 prompt: string;
                 type: "notifySupportGroup";
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -981,6 +975,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -998,12 +998,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 type: "steps";
                 targetSteps: number;
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1020,6 +1014,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -1036,12 +1036,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 prompt: string;
                 type: "task";
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1058,6 +1052,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -1082,12 +1082,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     duration: number;
                 };
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1104,6 +1098,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -1183,13 +1183,6 @@ export declare const daySchema: yup.ObjectSchema<{
             profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                prompt?: string | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1206,6 +1199,13 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                prompt?: string | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -1227,12 +1227,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     uri?: yup.Maybe<string | undefined>;
                 };
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1249,6 +1243,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -1269,12 +1269,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 holdFor: number;
                 outFor: number;
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1291,6 +1285,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -1308,12 +1308,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 type: "notifyASupportPerson";
                 contactIds: string[];
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1330,6 +1324,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -1346,12 +1346,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 prompt: string;
                 type: "notifySupportGroup";
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1368,6 +1362,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -1385,12 +1385,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 type: "steps";
                 targetSteps: number;
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1407,6 +1401,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -1423,12 +1423,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 prompt: string;
                 type: "task";
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1445,6 +1439,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -1469,12 +1469,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     duration: number;
                 };
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1491,6 +1485,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -1573,13 +1573,6 @@ export declare const daySchema: yup.ObjectSchema<{
             profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                prompt?: string | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1596,6 +1589,13 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                prompt?: string | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -1617,12 +1617,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     uri?: yup.Maybe<string | undefined>;
                 };
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1639,6 +1633,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -1659,12 +1659,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 holdFor: number;
                 outFor: number;
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1681,6 +1675,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -1698,12 +1698,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 type: "notifyASupportPerson";
                 contactIds: string[];
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1720,6 +1714,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -1736,12 +1736,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 prompt: string;
                 type: "notifySupportGroup";
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1758,6 +1752,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -1775,12 +1775,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 type: "steps";
                 targetSteps: number;
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1797,6 +1791,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -1813,12 +1813,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 prompt: string;
                 type: "task";
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1835,6 +1829,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -1859,12 +1859,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     duration: number;
                 };
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1881,6 +1875,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -1964,13 +1964,6 @@ export declare const daySchema: yup.ObjectSchema<{
             profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                prompt?: string | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1987,6 +1980,13 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                prompt?: string | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -2008,12 +2008,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     uri?: yup.Maybe<string | undefined>;
                 };
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2030,6 +2024,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -2050,12 +2050,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 holdFor: number;
                 outFor: number;
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2072,6 +2066,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -2089,12 +2089,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 type: "notifyASupportPerson";
                 contactIds: string[];
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2111,6 +2105,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -2127,12 +2127,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 prompt: string;
                 type: "notifySupportGroup";
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2149,6 +2143,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -2166,12 +2166,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 type: "steps";
                 targetSteps: number;
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2188,6 +2182,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -2204,12 +2204,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 prompt: string;
                 type: "task";
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2226,6 +2220,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -2250,12 +2250,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     duration: number;
                 };
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2272,6 +2266,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -2346,13 +2346,6 @@ export declare const daySchema: yup.ObjectSchema<{
             profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                prompt?: string | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2369,6 +2362,13 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                prompt?: string | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -2390,12 +2390,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     uri?: yup.Maybe<string | undefined>;
                 };
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2412,6 +2406,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -2432,12 +2432,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 holdFor: number;
                 outFor: number;
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2454,6 +2448,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -2471,12 +2471,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 type: "notifyASupportPerson";
                 contactIds: string[];
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2493,6 +2487,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -2509,12 +2509,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 prompt: string;
                 type: "notifySupportGroup";
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2531,6 +2525,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -2548,12 +2548,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 type: "steps";
                 targetSteps: number;
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2570,6 +2564,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -2586,12 +2586,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 prompt: string;
                 type: "task";
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2608,6 +2602,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -2632,12 +2632,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     duration: number;
                 };
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2654,6 +2648,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -2739,8 +2739,6 @@ export declare const daySchema: yup.ObjectSchema<{
             dateString: string;
             questionsById: {
                 [x: string]: {
-                    recommendedForIssueIds?: string[] | undefined;
-                    ordinal?: number | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -2757,6 +2755,8 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    ordinal?: number | undefined;
                     setbackThreshold?: number | undefined;
                     followUps?: ({
                         message?: string | undefined;
@@ -2826,8 +2826,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     prompt: string;
                     type: "counter";
                 } | {
-                    recommendedForIssueIds?: string[] | undefined;
-                    ordinal?: number | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -2844,6 +2842,8 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    ordinal?: number | undefined;
                     followUps?: ({
                         message?: string | undefined;
                         type: "askAnotherQuestion";
@@ -2912,8 +2912,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     prompt: string;
                     type: "issue";
                 } | {
-                    recommendedForIssueIds?: string[] | undefined;
-                    ordinal?: number | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -2930,6 +2928,8 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    ordinal?: number | undefined;
                     followUps?: ({
                         message?: string | undefined;
                         type: "askAnotherQuestion";
@@ -2999,8 +2999,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     })[];
                     canAddNewOptions: NonNullable<boolean | undefined>;
                 } | {
-                    recommendedForIssueIds?: string[] | undefined;
-                    ordinal?: number | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -3017,6 +3015,8 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    ordinal?: number | undefined;
                     setbackThreshold?: number | undefined;
                     followUps?: ({
                         message?: string | undefined;
@@ -3088,8 +3088,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     prompt: string;
                     type: "scaleOf1To10";
                 } | {
-                    recommendedForIssueIds?: string[] | undefined;
-                    ordinal?: number | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -3106,6 +3104,8 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    ordinal?: number | undefined;
                     followUps?: ({
                         message?: string | undefined;
                         type: "askAnotherQuestion";
@@ -3174,8 +3174,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     prompt: string;
                     type: "text";
                 } | {
-                    recommendedForIssueIds?: string[] | undefined;
-                    ordinal?: number | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -3192,6 +3190,8 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    ordinal?: number | undefined;
                     setbackThreshold?: number | undefined;
                     followUps?: ({
                         message?: string | undefined;
@@ -3283,13 +3283,6 @@ export declare const daySchema: yup.ObjectSchema<{
             profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                prompt?: string | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3306,6 +3299,13 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                prompt?: string | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -3327,12 +3327,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     uri?: yup.Maybe<string | undefined>;
                 };
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3349,6 +3343,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -3369,12 +3369,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 holdFor: number;
                 outFor: number;
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3391,6 +3385,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -3408,12 +3408,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 type: "notifyASupportPerson";
                 contactIds: string[];
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3430,6 +3424,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -3446,12 +3446,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 prompt: string;
                 type: "notifySupportGroup";
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3468,6 +3462,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -3485,12 +3485,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 type: "steps";
                 targetSteps: number;
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3507,6 +3501,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -3523,12 +3523,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 prompt: string;
                 type: "task";
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3545,6 +3539,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -3569,12 +3569,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     duration: number;
                 };
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3591,6 +3585,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -3672,13 +3672,6 @@ export declare const daySchema: yup.ObjectSchema<{
             profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                prompt?: string | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3695,6 +3688,13 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                prompt?: string | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -3716,12 +3716,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     uri?: yup.Maybe<string | undefined>;
                 };
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3738,6 +3732,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -3758,12 +3758,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 holdFor: number;
                 outFor: number;
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3780,6 +3774,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -3797,12 +3797,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 type: "notifyASupportPerson";
                 contactIds: string[];
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3819,6 +3813,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -3835,12 +3835,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 prompt: string;
                 type: "notifySupportGroup";
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3857,6 +3851,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -3874,12 +3874,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 type: "steps";
                 targetSteps: number;
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3896,6 +3890,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -3912,12 +3912,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 prompt: string;
                 type: "task";
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3934,6 +3928,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -3958,12 +3958,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     duration: number;
                 };
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3980,6 +3974,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -4025,25 +4025,9 @@ export declare const daySchema: yup.ObjectSchema<{
             isAddToGameplanMode?: boolean | undefined;
             suggestedStrategyDocPaths?: string[] | undefined;
             profileId: string;
-            type: "strategies";
-            date: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            };
-            dateString: string;
-            strategiesById: {
+            type: "tactics";
+            tacticsById: {
                 [x: string]: {
-                    profileId?: string | null | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    prompt?: string | undefined;
-                    description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -4060,6 +4044,13 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    profileId?: string | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    prompt?: string | undefined;
+                    description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
@@ -4081,12 +4072,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         uri?: yup.Maybe<string | undefined>;
                     };
                 } | {
-                    profileId?: string | null | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -4103,6 +4088,12 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    profileId?: string | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
@@ -4123,12 +4114,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     holdFor: number;
                     outFor: number;
                 } | {
-                    profileId?: string | null | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -4145,6 +4130,12 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    profileId?: string | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
@@ -4162,12 +4153,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     type: "notifyASupportPerson";
                     contactIds: string[];
                 } | {
-                    profileId?: string | null | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -4184,6 +4169,12 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    profileId?: string | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
@@ -4200,12 +4191,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     prompt: string;
                     type: "notifySupportGroup";
                 } | {
-                    profileId?: string | null | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -4222,6 +4207,12 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    profileId?: string | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
@@ -4239,12 +4230,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     type: "steps";
                     targetSteps: number;
                 } | {
-                    profileId?: string | null | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -4261,6 +4246,12 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    profileId?: string | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
@@ -4277,12 +4268,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     prompt: string;
                     type: "task";
                 } | {
-                    profileId?: string | null | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -4299,6 +4284,12 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    profileId?: string | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
@@ -4323,12 +4314,6 @@ export declare const daySchema: yup.ObjectSchema<{
                         duration: number;
                     };
                 } | {
-                    profileId?: string | null | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    description?: string | null | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -4345,6 +4330,12 @@ export declare const daySchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    profileId?: string | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
                     image?: {
@@ -4360,692 +4351,17 @@ export declare const daySchema: yup.ObjectSchema<{
                     ordinal: number;
                     prompt: string;
                     type: "zara";
-                } | {
-                    profileId?: string | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    description?: string | null | undefined;
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    tacticsById?: {
-                        [x: string]: {
-                            profileId?: string | null | undefined;
-                            recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
-                            prompt?: string | undefined;
-                            description?: string | null | undefined;
-                            createdAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                toJSON?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                toJSON?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            pastTenseTitle?: string | undefined;
-                            debriefAfterMinutes?: number | null | undefined;
-                            image?: {
-                                localFilePath?: yup.Maybe<string | undefined>;
-                                storagePath?: yup.Maybe<string | undefined>;
-                                uri?: yup.Maybe<string | undefined>;
-                            } | null | undefined;
-                            backgroundColor?: string | undefined;
-                            setbackThreshold?: number | null | undefined;
-                            likesCount?: number | null | undefined;
-                            timerSeconds?: yup.Maybe<number | undefined>;
-                            isSuggested?: boolean | undefined;
-                            waveForm?: string | null | undefined;
-                            ordinal: number;
-                            type: "audio";
-                            recording: {
-                                localFilePath?: yup.Maybe<string | undefined>;
-                                storagePath?: yup.Maybe<string | undefined>;
-                                uri?: yup.Maybe<string | undefined>;
-                            };
-                        } | {
-                            profileId?: string | null | undefined;
-                            recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
-                            description?: string | null | undefined;
-                            createdAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                toJSON?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                toJSON?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            pastTenseTitle?: string | undefined;
-                            debriefAfterMinutes?: number | null | undefined;
-                            image?: {
-                                localFilePath?: yup.Maybe<string | undefined>;
-                                storagePath?: yup.Maybe<string | undefined>;
-                                uri?: yup.Maybe<string | undefined>;
-                            } | null | undefined;
-                            backgroundColor?: string | undefined;
-                            setbackThreshold?: number | null | undefined;
-                            likesCount?: number | null | undefined;
-                            timerSeconds?: yup.Maybe<number | undefined>;
-                            isSuggested?: boolean | undefined;
-                            repeat?: yup.Maybe<number | undefined>;
-                            ordinal: number;
-                            prompt: string;
-                            type: "breathingExercise";
-                            inFor: number;
-                            holdFor: number;
-                            outFor: number;
-                        } | {
-                            profileId?: string | null | undefined;
-                            recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
-                            description?: string | null | undefined;
-                            createdAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                toJSON?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                toJSON?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            pastTenseTitle?: string | undefined;
-                            debriefAfterMinutes?: number | null | undefined;
-                            image?: {
-                                localFilePath?: yup.Maybe<string | undefined>;
-                                storagePath?: yup.Maybe<string | undefined>;
-                                uri?: yup.Maybe<string | undefined>;
-                            } | null | undefined;
-                            backgroundColor?: string | undefined;
-                            setbackThreshold?: number | null | undefined;
-                            likesCount?: number | null | undefined;
-                            timerSeconds?: yup.Maybe<number | undefined>;
-                            isSuggested?: boolean | undefined;
-                            ordinal: number;
-                            prompt: string;
-                            type: "notifyASupportPerson";
-                            contactIds: string[];
-                        } | {
-                            profileId?: string | null | undefined;
-                            recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
-                            description?: string | null | undefined;
-                            createdAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                toJSON?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                toJSON?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            pastTenseTitle?: string | undefined;
-                            debriefAfterMinutes?: number | null | undefined;
-                            image?: {
-                                localFilePath?: yup.Maybe<string | undefined>;
-                                storagePath?: yup.Maybe<string | undefined>;
-                                uri?: yup.Maybe<string | undefined>;
-                            } | null | undefined;
-                            backgroundColor?: string | undefined;
-                            setbackThreshold?: number | null | undefined;
-                            likesCount?: number | null | undefined;
-                            timerSeconds?: yup.Maybe<number | undefined>;
-                            isSuggested?: boolean | undefined;
-                            ordinal: number;
-                            prompt: string;
-                            type: "notifySupportGroup";
-                        } | {
-                            profileId?: string | null | undefined;
-                            recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
-                            description?: string | null | undefined;
-                            createdAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                toJSON?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                toJSON?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            pastTenseTitle?: string | undefined;
-                            debriefAfterMinutes?: number | null | undefined;
-                            image?: {
-                                localFilePath?: yup.Maybe<string | undefined>;
-                                storagePath?: yup.Maybe<string | undefined>;
-                                uri?: yup.Maybe<string | undefined>;
-                            } | null | undefined;
-                            backgroundColor?: string | undefined;
-                            setbackThreshold?: number | null | undefined;
-                            likesCount?: number | null | undefined;
-                            timerSeconds?: yup.Maybe<number | undefined>;
-                            isSuggested?: boolean | undefined;
-                            ordinal: number;
-                            prompt: string;
-                            type: "steps";
-                            targetSteps: number;
-                        } | {
-                            profileId?: string | null | undefined;
-                            recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
-                            description?: string | null | undefined;
-                            createdAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                toJSON?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                toJSON?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            pastTenseTitle?: string | undefined;
-                            debriefAfterMinutes?: number | null | undefined;
-                            image?: {
-                                localFilePath?: yup.Maybe<string | undefined>;
-                                storagePath?: yup.Maybe<string | undefined>;
-                                uri?: yup.Maybe<string | undefined>;
-                            } | null | undefined;
-                            backgroundColor?: string | undefined;
-                            setbackThreshold?: number | null | undefined;
-                            likesCount?: number | null | undefined;
-                            timerSeconds?: yup.Maybe<number | undefined>;
-                            isSuggested?: boolean | undefined;
-                            ordinal: number;
-                            prompt: string;
-                            type: "task";
-                        } | {
-                            profileId?: string | null | undefined;
-                            recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
-                            description?: string | null | undefined;
-                            createdAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                toJSON?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                toJSON?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            pastTenseTitle?: string | undefined;
-                            debriefAfterMinutes?: number | null | undefined;
-                            image?: {
-                                localFilePath?: yup.Maybe<string | undefined>;
-                                storagePath?: yup.Maybe<string | undefined>;
-                                uri?: yup.Maybe<string | undefined>;
-                            } | null | undefined;
-                            backgroundColor?: string | undefined;
-                            setbackThreshold?: number | null | undefined;
-                            likesCount?: number | null | undefined;
-                            timerSeconds?: yup.Maybe<number | undefined>;
-                            isSuggested?: boolean | undefined;
-                            ordinal: number;
-                            prompt: string;
-                            type: "video";
-                            video: {
-                                storagePath?: string | null | undefined;
-                                url?: string | null | undefined;
-                                description: string;
-                                title: string;
-                                thumbnailUrl: string;
-                                duration: number;
-                            };
-                        } | {
-                            profileId?: string | null | undefined;
-                            recommendedForIssueIds?: string[] | undefined;
-                            recommendedForIssueOrdinals?: {
-                                [x: string]: number;
-                            } | null | undefined;
-                            description?: string | null | undefined;
-                            createdAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                toJSON?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            updatedAt?: {
-                                isEqual?: any;
-                                toMillis?: any;
-                                toJSON?: any;
-                                seconds: number;
-                                nanoseconds: number;
-                                toDate: Function;
-                            } | null | undefined;
-                            pastTenseTitle?: string | undefined;
-                            debriefAfterMinutes?: number | null | undefined;
-                            image?: {
-                                localFilePath?: yup.Maybe<string | undefined>;
-                                storagePath?: yup.Maybe<string | undefined>;
-                                uri?: yup.Maybe<string | undefined>;
-                            } | null | undefined;
-                            backgroundColor?: string | undefined;
-                            setbackThreshold?: number | null | undefined;
-                            likesCount?: number | null | undefined;
-                            timerSeconds?: yup.Maybe<number | undefined>;
-                            isSuggested?: boolean | undefined;
-                            ordinal: number;
-                            prompt: string;
-                            type: "zara";
-                        };
-                    } | null | undefined;
-                    slug?: string | undefined;
-                    creatorProfileId?: string | undefined;
-                    next3Tactics?: ({
-                        profileId?: string | null | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
-                        recommendedForIssueOrdinals?: {
-                            [x: string]: number;
-                        } | null | undefined;
-                        prompt?: string | undefined;
-                        description?: string | null | undefined;
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        pastTenseTitle?: string | undefined;
-                        debriefAfterMinutes?: number | null | undefined;
-                        image?: {
-                            localFilePath?: yup.Maybe<string | undefined>;
-                            storagePath?: yup.Maybe<string | undefined>;
-                            uri?: yup.Maybe<string | undefined>;
-                        } | null | undefined;
-                        backgroundColor?: string | undefined;
-                        setbackThreshold?: number | null | undefined;
-                        likesCount?: number | null | undefined;
-                        timerSeconds?: yup.Maybe<number | undefined>;
-                        isSuggested?: boolean | undefined;
-                        waveForm?: string | null | undefined;
-                        ordinal: number;
-                        type: "audio";
-                        recording: {
-                            localFilePath?: yup.Maybe<string | undefined>;
-                            storagePath?: yup.Maybe<string | undefined>;
-                            uri?: yup.Maybe<string | undefined>;
-                        };
-                    } | {
-                        profileId?: string | null | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
-                        recommendedForIssueOrdinals?: {
-                            [x: string]: number;
-                        } | null | undefined;
-                        description?: string | null | undefined;
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        pastTenseTitle?: string | undefined;
-                        debriefAfterMinutes?: number | null | undefined;
-                        image?: {
-                            localFilePath?: yup.Maybe<string | undefined>;
-                            storagePath?: yup.Maybe<string | undefined>;
-                            uri?: yup.Maybe<string | undefined>;
-                        } | null | undefined;
-                        backgroundColor?: string | undefined;
-                        setbackThreshold?: number | null | undefined;
-                        likesCount?: number | null | undefined;
-                        timerSeconds?: yup.Maybe<number | undefined>;
-                        isSuggested?: boolean | undefined;
-                        repeat?: yup.Maybe<number | undefined>;
-                        ordinal: number;
-                        prompt: string;
-                        type: "breathingExercise";
-                        inFor: number;
-                        holdFor: number;
-                        outFor: number;
-                    } | {
-                        profileId?: string | null | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
-                        recommendedForIssueOrdinals?: {
-                            [x: string]: number;
-                        } | null | undefined;
-                        description?: string | null | undefined;
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        pastTenseTitle?: string | undefined;
-                        debriefAfterMinutes?: number | null | undefined;
-                        image?: {
-                            localFilePath?: yup.Maybe<string | undefined>;
-                            storagePath?: yup.Maybe<string | undefined>;
-                            uri?: yup.Maybe<string | undefined>;
-                        } | null | undefined;
-                        backgroundColor?: string | undefined;
-                        setbackThreshold?: number | null | undefined;
-                        likesCount?: number | null | undefined;
-                        timerSeconds?: yup.Maybe<number | undefined>;
-                        isSuggested?: boolean | undefined;
-                        ordinal: number;
-                        prompt: string;
-                        type: "notifyASupportPerson";
-                        contactIds: string[];
-                    } | {
-                        profileId?: string | null | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
-                        recommendedForIssueOrdinals?: {
-                            [x: string]: number;
-                        } | null | undefined;
-                        description?: string | null | undefined;
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        pastTenseTitle?: string | undefined;
-                        debriefAfterMinutes?: number | null | undefined;
-                        image?: {
-                            localFilePath?: yup.Maybe<string | undefined>;
-                            storagePath?: yup.Maybe<string | undefined>;
-                            uri?: yup.Maybe<string | undefined>;
-                        } | null | undefined;
-                        backgroundColor?: string | undefined;
-                        setbackThreshold?: number | null | undefined;
-                        likesCount?: number | null | undefined;
-                        timerSeconds?: yup.Maybe<number | undefined>;
-                        isSuggested?: boolean | undefined;
-                        ordinal: number;
-                        prompt: string;
-                        type: "notifySupportGroup";
-                    } | {
-                        profileId?: string | null | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
-                        recommendedForIssueOrdinals?: {
-                            [x: string]: number;
-                        } | null | undefined;
-                        description?: string | null | undefined;
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        pastTenseTitle?: string | undefined;
-                        debriefAfterMinutes?: number | null | undefined;
-                        image?: {
-                            localFilePath?: yup.Maybe<string | undefined>;
-                            storagePath?: yup.Maybe<string | undefined>;
-                            uri?: yup.Maybe<string | undefined>;
-                        } | null | undefined;
-                        backgroundColor?: string | undefined;
-                        setbackThreshold?: number | null | undefined;
-                        likesCount?: number | null | undefined;
-                        timerSeconds?: yup.Maybe<number | undefined>;
-                        isSuggested?: boolean | undefined;
-                        ordinal: number;
-                        prompt: string;
-                        type: "steps";
-                        targetSteps: number;
-                    } | {
-                        profileId?: string | null | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
-                        recommendedForIssueOrdinals?: {
-                            [x: string]: number;
-                        } | null | undefined;
-                        description?: string | null | undefined;
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        pastTenseTitle?: string | undefined;
-                        debriefAfterMinutes?: number | null | undefined;
-                        image?: {
-                            localFilePath?: yup.Maybe<string | undefined>;
-                            storagePath?: yup.Maybe<string | undefined>;
-                            uri?: yup.Maybe<string | undefined>;
-                        } | null | undefined;
-                        backgroundColor?: string | undefined;
-                        setbackThreshold?: number | null | undefined;
-                        likesCount?: number | null | undefined;
-                        timerSeconds?: yup.Maybe<number | undefined>;
-                        isSuggested?: boolean | undefined;
-                        ordinal: number;
-                        prompt: string;
-                        type: "task";
-                    } | {
-                        profileId?: string | null | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
-                        recommendedForIssueOrdinals?: {
-                            [x: string]: number;
-                        } | null | undefined;
-                        description?: string | null | undefined;
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        pastTenseTitle?: string | undefined;
-                        debriefAfterMinutes?: number | null | undefined;
-                        image?: {
-                            localFilePath?: yup.Maybe<string | undefined>;
-                            storagePath?: yup.Maybe<string | undefined>;
-                            uri?: yup.Maybe<string | undefined>;
-                        } | null | undefined;
-                        backgroundColor?: string | undefined;
-                        setbackThreshold?: number | null | undefined;
-                        likesCount?: number | null | undefined;
-                        timerSeconds?: yup.Maybe<number | undefined>;
-                        isSuggested?: boolean | undefined;
-                        ordinal: number;
-                        prompt: string;
-                        type: "video";
-                        video: {
-                            storagePath?: string | null | undefined;
-                            url?: string | null | undefined;
-                            description: string;
-                            title: string;
-                            thumbnailUrl: string;
-                            duration: number;
-                        };
-                    } | {
-                        profileId?: string | null | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
-                        recommendedForIssueOrdinals?: {
-                            [x: string]: number;
-                        } | null | undefined;
-                        description?: string | null | undefined;
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        pastTenseTitle?: string | undefined;
-                        debriefAfterMinutes?: number | null | undefined;
-                        image?: {
-                            localFilePath?: yup.Maybe<string | undefined>;
-                            storagePath?: yup.Maybe<string | undefined>;
-                            uri?: yup.Maybe<string | undefined>;
-                        } | null | undefined;
-                        backgroundColor?: string | undefined;
-                        setbackThreshold?: number | null | undefined;
-                        likesCount?: number | null | undefined;
-                        timerSeconds?: yup.Maybe<number | undefined>;
-                        isSuggested?: boolean | undefined;
-                        ordinal: number;
-                        prompt: string;
-                        type: "zara";
-                    })[] | undefined;
-                    nextTacticId?: string | undefined;
-                    ordinal: number;
-                    prompt: string;
-                    type: "folder";
-                    isShared: NonNullable<boolean | undefined>;
-                    invitationCode: string;
-                    invitationUrl: string;
                 };
             };
+            date: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            };
+            dateString: string;
             completedTacticIds: string[];
             followedUpTacticIds: string[];
         } | {
@@ -5069,13 +4385,6 @@ export declare const daySchema: yup.ObjectSchema<{
             profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                prompt?: string | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -5092,6 +4401,13 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                prompt?: string | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -5113,12 +4429,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     uri?: yup.Maybe<string | undefined>;
                 };
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -5135,6 +4445,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -5155,12 +4471,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 holdFor: number;
                 outFor: number;
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -5177,6 +4487,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -5194,12 +4510,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 type: "notifyASupportPerson";
                 contactIds: string[];
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -5216,6 +4526,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -5232,12 +4548,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 prompt: string;
                 type: "notifySupportGroup";
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -5254,6 +4564,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -5271,12 +4587,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 type: "steps";
                 targetSteps: number;
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -5293,6 +4603,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -5309,12 +4625,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 prompt: string;
                 type: "task";
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -5331,6 +4641,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -5355,12 +4671,6 @@ export declare const daySchema: yup.ObjectSchema<{
                     duration: number;
                 };
             } | {
-                profileId?: string | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -5377,6 +4687,12 @@ export declare const daySchema: yup.ObjectSchema<{
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
@@ -5442,8 +4758,6 @@ export declare const daySchema: yup.ObjectSchema<{
     };
     questionsById: {
         [x: string]: {
-            recommendedForIssueIds?: string[] | undefined;
-            ordinal?: number | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -5460,6 +4774,8 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            ordinal?: number | undefined;
             setbackThreshold?: number | undefined;
             followUps?: ({
                 message?: string | undefined;
@@ -5529,8 +4845,6 @@ export declare const daySchema: yup.ObjectSchema<{
             prompt: string;
             type: "counter";
         } | {
-            recommendedForIssueIds?: string[] | undefined;
-            ordinal?: number | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -5547,6 +4861,8 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            ordinal?: number | undefined;
             followUps?: ({
                 message?: string | undefined;
                 type: "askAnotherQuestion";
@@ -5615,8 +4931,6 @@ export declare const daySchema: yup.ObjectSchema<{
             prompt: string;
             type: "issue";
         } | {
-            recommendedForIssueIds?: string[] | undefined;
-            ordinal?: number | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -5633,6 +4947,8 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            ordinal?: number | undefined;
             followUps?: ({
                 message?: string | undefined;
                 type: "askAnotherQuestion";
@@ -5702,8 +5018,6 @@ export declare const daySchema: yup.ObjectSchema<{
             })[];
             canAddNewOptions: NonNullable<boolean | undefined>;
         } | {
-            recommendedForIssueIds?: string[] | undefined;
-            ordinal?: number | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -5720,6 +5034,8 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            ordinal?: number | undefined;
             setbackThreshold?: number | undefined;
             followUps?: ({
                 message?: string | undefined;
@@ -5791,8 +5107,6 @@ export declare const daySchema: yup.ObjectSchema<{
             prompt: string;
             type: "scaleOf1To10";
         } | {
-            recommendedForIssueIds?: string[] | undefined;
-            ordinal?: number | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -5809,6 +5123,8 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            ordinal?: number | undefined;
             followUps?: ({
                 message?: string | undefined;
                 type: "askAnotherQuestion";
@@ -5877,8 +5193,6 @@ export declare const daySchema: yup.ObjectSchema<{
             prompt: string;
             type: "text";
         } | {
-            recommendedForIssueIds?: string[] | undefined;
-            ordinal?: number | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -5895,6 +5209,8 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            ordinal?: number | undefined;
             setbackThreshold?: number | undefined;
             followUps?: ({
                 message?: string | undefined;

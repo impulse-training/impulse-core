@@ -2,7 +2,6 @@ import { TimestampLike } from '../utils/firestore/TimestampLike';
 import { makeApplicationFactory } from './application';
 import { makeDayFactory } from './day';
 import { makeDaysSummaryFactory } from './daysSummary';
-import { makeFolderFactory } from './folder';
 import { makeIssueFactory } from './issue';
 import { makeLocationFactory } from './location';
 import { makeLogFactories } from './log';
@@ -21,7 +20,6 @@ export function makeFactories(TimestampKlass: typeof TimestampLike) {
   return {
     applicationFactory: makeApplicationFactory(TimestampKlass),
     dayFactory: makeDayFactory(TimestampKlass),
-    folderFactory: makeFolderFactory(TimestampKlass),
     issueFactory: makeIssueFactory(TimestampKlass),
     locationFactory: makeLocationFactory(TimestampKlass),
     daysSummaryFactory: makeDaysSummaryFactory(TimestampKlass),

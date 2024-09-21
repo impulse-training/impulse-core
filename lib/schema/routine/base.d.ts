@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 import { routineSchema } from '.';
-import { WithTacticsById } from '../strategy/tactic';
+import { WithTacticsById } from '../tactic';
 export declare function routineBaseSchema<K extends string>(type: K): yup.ObjectSchema<{
     type: yup.Defined<K>;
     profileId: string;

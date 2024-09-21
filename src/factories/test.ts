@@ -6,6 +6,5 @@ export const {
   applicationFactory,
   impulseLogFactory,
   profileFactory,
-  folderFactory,
   tacticFactory,
 } = makeFactories(TimestampLike);

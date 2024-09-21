@@ -44,13 +44,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
     profileEmojiIDString: string | undefined;
     tacticId: string | null | undefined;
     tactic: ({
-        profileId?: string | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
-        prompt?: string | undefined;
-        description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -67,6 +60,13 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        profileId?: string | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        prompt?: string | undefined;
+        description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
@@ -88,12 +88,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             uri?: yup.Maybe<string | undefined>;
         };
     } | {
-        profileId?: string | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
-        description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -110,6 +104,12 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        profileId?: string | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
@@ -130,12 +130,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         holdFor: number;
         outFor: number;
     } | {
-        profileId?: string | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
-        description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -152,6 +146,12 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        profileId?: string | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
@@ -169,12 +169,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         type: "notifyASupportPerson";
         contactIds: string[];
     } | {
-        profileId?: string | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
-        description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -191,6 +185,12 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        profileId?: string | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
@@ -207,12 +207,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         prompt: string;
         type: "notifySupportGroup";
     } | {
-        profileId?: string | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
-        description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -229,6 +223,12 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        profileId?: string | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
@@ -246,12 +246,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         type: "steps";
         targetSteps: number;
     } | {
-        profileId?: string | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
-        description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -268,6 +262,12 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        profileId?: string | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
@@ -284,12 +284,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         prompt: string;
         type: "task";
     } | {
-        profileId?: string | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
-        description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -306,6 +300,12 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        profileId?: string | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {
@@ -330,12 +330,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             duration: number;
         };
     } | {
-        profileId?: string | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
-        description?: string | null | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -352,6 +346,12 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        profileId?: string | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        recommendedForIssueOrdinals?: {
+            [x: string]: number;
+        } | null | undefined;
+        description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
         image?: {

@@ -2,7 +2,7 @@ import { logGptPayload } from '..';
 import { makeFactories } from '../../../factories';
 import { TimestampLike } from '../../firestore/TimestampLike';
 
-const { messageLogFactory, questionsLogFactory, strategiesLogFactory } =
+const { messageLogFactory, questionsLogFactory, tacticsLogFactory } =
   makeFactories(TimestampLike);
 
 describe(logGptPayload, () => {
@@ -79,10 +79,10 @@ describe(logGptPayload, () => {
     });
   });
 
-  describe('for a strategies log', () => {
+  describe('for a tactics log', () => {
     it('returns the correct payload', () => {
-      const log = strategiesLogFactory.build({
-        strategiesById: {
+      const log = tacticsLogFactory.build({
+        tacticsById: {
           tactic1: {
             prompt: 'Go for a walk',
           },

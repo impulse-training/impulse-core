@@ -2,8 +2,6 @@ import * as Factory from 'factory.ts';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLike) => {
     textQuestionFactory: Factory.Sync.Factory<{
-        recommendedForIssueIds?: string[] | undefined;
-        ordinal?: number | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -20,6 +18,8 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        ordinal?: number | undefined;
         followUps?: ({
             message?: string | undefined;
             type: "askAnotherQuestion";
@@ -87,10 +87,8 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
         writeAnswerToProfileMemoryKey?: string | undefined;
         prompt: string;
         type: "text";
-    }, "prompt" | "type" | ("recommendedForIssueIds" | "ordinal" | "createdAt" | "updatedAt" | "followUps" | "isPublic" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+    }, "prompt" | "type" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "ordinal" | "followUps" | "isPublic" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     timeQuestionFactory: Factory.Sync.Factory<{
-        recommendedForIssueIds?: string[] | undefined;
-        ordinal?: number | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -107,6 +105,8 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        ordinal?: number | undefined;
         setbackThreshold?: number | undefined;
         followUps?: ({
             message?: string | undefined;
@@ -175,10 +175,8 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
         writeAnswerToProfileMemoryKey?: string | undefined;
         prompt: string;
         type: "time";
-    }, "prompt" | "type" | ("recommendedForIssueIds" | "ordinal" | "createdAt" | "updatedAt" | "setbackThreshold" | "followUps" | "isPublic" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+    }, "prompt" | "type" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "ordinal" | "setbackThreshold" | "followUps" | "isPublic" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     multipleChoiceQuestionFactory: Factory.Sync.Factory<{
-        recommendedForIssueIds?: string[] | undefined;
-        ordinal?: number | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -195,6 +193,8 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        ordinal?: number | undefined;
         followUps?: ({
             message?: string | undefined;
             type: "askAnotherQuestion";
@@ -263,5 +263,5 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
             text: string;
         })[];
         canAddNewOptions: NonNullable<boolean | undefined>;
-    }, "prompt" | "type" | "options" | "canAddNewOptions" | ("recommendedForIssueIds" | "ordinal" | "createdAt" | "updatedAt" | "followUps" | "isPublic" | "categories" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+    }, "prompt" | "type" | "options" | "canAddNewOptions" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "ordinal" | "followUps" | "isPublic" | "categories" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
 };
