@@ -385,7 +385,7 @@ export declare const whatsappMessageLogSchema: yup.ObjectSchema<{
         storagePath?: yup.Maybe<string | undefined>;
         uri?: yup.Maybe<string | undefined>;
     }[] | undefined>;
-    strategyPath: string;
+    supportGroupDoc: import("../utils/firestore").DocumentReferenceLike<unknown>;
 }, yup.AnyObject, {
     openAiRequestPayload: undefined;
     openAiChoiceResponse: undefined;
@@ -411,6 +411,6 @@ export declare const whatsappMessageLogSchema: yup.ObjectSchema<{
     senderProfileId: undefined;
     views: "";
     files: "";
-    strategyPath: undefined;
+    supportGroupDoc: undefined;
 }, "">;
 export type WhatsappMessageLogValue = yup.InferType<typeof whatsappMessageLogSchema>;

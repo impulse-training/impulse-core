@@ -44,7 +44,7 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        whatsappFolderDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+        whatsappSupportGroupDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         firstLogId?: string | undefined;
         isProcessing?: boolean | undefined;
         gptSystemMessage?: string | undefined;
@@ -4800,10 +4800,10 @@ export declare const factories: {
                     toDate: Function;
                 };
                 dateString: string;
-                strategyPath: string;
+                supportGroupDoc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             };
         };
-    }, "profileId" | "type" | "date" | "dateString" | "isVisible" | "logsById" | ("createdAt" | "updatedAt" | "title" | "profileEmojiIDString" | "tacticsWithCommentsIds" | "sharedWithFolderIds" | "debriefedAt" | "debriefAfter" | "debriefReminderSentAt" | "whatsappFolderDoc" | "firstLogId" | "isProcessing" | "gptSystemMessage")>;
+    }, "profileId" | "type" | "date" | "dateString" | "isVisible" | "logsById" | ("createdAt" | "updatedAt" | "title" | "profileEmojiIDString" | "tacticsWithCommentsIds" | "sharedWithFolderIds" | "debriefedAt" | "debriefAfter" | "debriefReminderSentAt" | "whatsappSupportGroupDoc" | "firstLogId" | "isProcessing" | "gptSystemMessage")>;
     impulseLogFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -7589,7 +7589,7 @@ export declare const factories: {
         } | null | undefined;
         setbackThreshold?: number | undefined;
         parentIssueIds?: string[] | undefined;
-        whatsappFolderDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+        whatsappSupportGroupDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         lastActiveAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -7645,7 +7645,7 @@ export declare const factories: {
         } | null;
         signUpIssueId: string | null;
         timezone: string;
-    }, "uids" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIssueIds" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "addToSupportGroup" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "issues" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "region")>;
+    }, "uids" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIssueIds" | "whatsappSupportGroupDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "addToSupportGroup" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "issues" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "region")>;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;

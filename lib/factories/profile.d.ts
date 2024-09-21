@@ -19,7 +19,7 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     } | null | undefined;
     setbackThreshold?: number | undefined;
     parentIssueIds?: string[] | undefined;
-    whatsappFolderDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+    whatsappSupportGroupDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
     lastActiveAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -75,4 +75,4 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     } | null;
     signUpIssueId: string | null;
     timezone: string;
-}, "uids" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIssueIds" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "addToSupportGroup" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "issues" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "region")>;
+}, "uids" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIssueIds" | "whatsappSupportGroupDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "addToSupportGroup" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "issues" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "region")>;

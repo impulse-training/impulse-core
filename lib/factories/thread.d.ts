@@ -46,7 +46,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        whatsappFolderDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+        whatsappSupportGroupDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         firstLogId?: string | undefined;
         isProcessing?: boolean | undefined;
         gptSystemMessage?: string | undefined;
@@ -4802,8 +4802,8 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                     toDate: Function;
                 };
                 dateString: string;
-                strategyPath: string;
+                supportGroupDoc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             };
         };
-    }, "profileId" | "type" | "date" | "dateString" | "isVisible" | "logsById" | ("createdAt" | "updatedAt" | "title" | "profileEmojiIDString" | "tacticsWithCommentsIds" | "sharedWithFolderIds" | "debriefedAt" | "debriefAfter" | "debriefReminderSentAt" | "whatsappFolderDoc" | "firstLogId" | "isProcessing" | "gptSystemMessage")>;
+    }, "profileId" | "type" | "date" | "dateString" | "isVisible" | "logsById" | ("createdAt" | "updatedAt" | "title" | "profileEmojiIDString" | "tacticsWithCommentsIds" | "sharedWithFolderIds" | "debriefedAt" | "debriefAfter" | "debriefReminderSentAt" | "whatsappSupportGroupDoc" | "firstLogId" | "isProcessing" | "gptSystemMessage")>;
 };

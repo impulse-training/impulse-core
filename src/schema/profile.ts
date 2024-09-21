@@ -43,7 +43,7 @@ export const profileSchema = yup.object({
   region: yup.string().nullable().optional(),
   timezone: yup.string().required(),
   scheduledNotificationIds: optionalStringArray,
-  whatsappFolderDoc: documentReferenceSchema,
+  whatsappSupportGroupDoc: documentReferenceSchema,
   uids: requiredStringArray,
 });
 

@@ -73,7 +73,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     region: string | null | undefined;
     timezone: string;
     scheduledNotificationIds: string[] | undefined;
-    whatsappFolderDoc: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
+    whatsappSupportGroupDoc: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
     uids: string[];
 }, yup.AnyObject, {
     createdAt: undefined;
@@ -104,7 +104,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     region: undefined;
     timezone: undefined;
     scheduledNotificationIds: "";
-    whatsappFolderDoc: undefined;
+    whatsappSupportGroupDoc: undefined;
     uids: "";
 }, "">;
 export type ProfileValue = yup.InferType<typeof profileSchema>;

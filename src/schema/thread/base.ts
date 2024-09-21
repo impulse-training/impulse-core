@@ -28,6 +28,6 @@ export default function threadBase<T extends string>(type: T) {
 
     // We're introducing a "whatsapp thread", which is
     // Optionally, whatsapp threads can be pointed at a folder, and can write tactics into that folder
-    whatsappFolderDoc: documentReferenceSchema,
+    whatsappSupportGroupDoc: documentReferenceSchema,
   });
 }

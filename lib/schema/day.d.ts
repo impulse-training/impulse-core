@@ -4750,7 +4750,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             };
             dateString: string;
-            strategyPath: string;
+            supportGroupDoc: import("./utils/firestore").DocumentReferenceLike<unknown>;
         };
     };
     threadsById: {

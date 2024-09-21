@@ -1,5 +1,22 @@
 import * as yup from 'yup';
 export declare const supportGroupSchema: yup.ObjectSchema<{
+    createdAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    updatedAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    name: string;
     invitationCode: string;
     invitationUrl: string;
     tacticsById: {
@@ -656,6 +673,9 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
     })[] | undefined;
     nextTacticId: string | undefined;
 }, yup.AnyObject, {
+    createdAt: undefined;
+    updatedAt: undefined;
+    name: undefined;
     invitationCode: undefined;
     invitationUrl: undefined;
     tacticsById: undefined;
