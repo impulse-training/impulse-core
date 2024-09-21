@@ -19,6 +19,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
             toDate: Function;
         } | null | undefined;
         title?: string | undefined;
+        profileEmojiIDString?: string | undefined;
         tacticsWithCommentsIds?: string[] | undefined;
         sharedWithFolderIds?: string[] | undefined;
         debriefedAt?: {
@@ -5488,5 +5489,5 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                 strategyPath: string;
             };
         };
-    }, "profileId" | "type" | "date" | "dateString" | "isVisible" | "logsById" | ("createdAt" | "updatedAt" | "title" | "tacticsWithCommentsIds" | "sharedWithFolderIds" | "debriefedAt" | "debriefAfter" | "debriefReminderSentAt" | "whatsappFolderDoc" | "firstLogId" | "isProcessing" | "gptSystemMessage")>;
+    }, "profileId" | "type" | "date" | "dateString" | "isVisible" | "logsById" | ("createdAt" | "updatedAt" | "title" | "profileEmojiIDString" | "tacticsWithCommentsIds" | "sharedWithFolderIds" | "debriefedAt" | "debriefAfter" | "debriefReminderSentAt" | "whatsappFolderDoc" | "firstLogId" | "isProcessing" | "gptSystemMessage")>;
 };

@@ -5461,6 +5461,7 @@ export declare const whatsappThreadSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    profileEmojiIDString: string | undefined;
     debriefedAt: {
         isEqual?: any;
         toMillis?: any;
@@ -5509,6 +5510,7 @@ export declare const whatsappThreadSchema: yup.ObjectSchema<{
     logsById: undefined;
     createdAt: undefined;
     updatedAt: undefined;
+    profileEmojiIDString: undefined;
     debriefedAt: undefined;
     debriefAfter: undefined;
     debriefReminderSentAt: undefined;

@@ -21,7 +21,7 @@ export default function threadBase<T extends string>(type: T) {
     logsById: objectOf(logSchema),
     createdAt: optionalTimestampSchema,
     updatedAt: optionalTimestampSchema,
-
+    profileEmojiIDString: yup.string(),
     debriefedAt: optionalTimestampSchema,
     debriefAfter: optionalTimestampSchema,
     debriefReminderSentAt: optionalTimestampSchema,
