@@ -18,7 +18,6 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
         toDate: Function;
     } | null | undefined;
     setbackThreshold?: number | undefined;
-    issueName?: string | undefined;
     parentIssueIds?: string[] | undefined;
     whatsappFolderDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
     lastActiveAt?: {
@@ -59,6 +58,7 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
         [x: string]: boolean | undefined;
     } | null | undefined;
     issues?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
+    signUpIssueName?: string | null | undefined;
     isReadyForTour?: boolean | undefined;
     isOnboardingComplete?: boolean | undefined;
     sendDebriefRemindersAfterMinutes?: number | undefined;
@@ -68,11 +68,11 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     } | null | undefined;
     impulseContext?: string | null | undefined;
     region?: string | null | undefined;
-    issueId: string | null;
     uids: string[];
     dayReviewTime: {
         hour: number;
         minute: number;
     } | null;
+    signUpIssueId: string | null;
     timezone: string;
-}, "issueId" | "uids" | "dayReviewTime" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "issueName" | "parentIssueIds" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "addToSupportGroup" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "issues" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "region")>;
+}, "uids" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIssueIds" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "addToSupportGroup" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "issues" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "region")>;

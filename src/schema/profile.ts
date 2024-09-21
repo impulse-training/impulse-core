@@ -30,12 +30,8 @@ export const profileSchema = yup.object({
     .nullable()
     .default(null),
   issues: yup.array().of(documentReferenceSchema.required()),
-
-  // Deprecated
-  issueId: yup.string().required().nullable(),
-  issueName: yup.string(),
-  // -----------------------------------------------------------------------------------------------
-
+  signUpIssueId: yup.string().required().nullable(),
+  signUpIssueName: yup.string().nullable(),
   isReadyForTour: yup.boolean(),
   isOnboardingComplete: yup.boolean(),
   parentIssueIds: optionalStringArray,

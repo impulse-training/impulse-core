@@ -58,8 +58,8 @@ export declare const profileSchema: yup.ObjectSchema<{
         minute: number;
     } | null;
     issues: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
-    issueId: string | null;
-    issueName: string | undefined;
+    signUpIssueId: string | null;
+    signUpIssueName: string | null | undefined;
     isReadyForTour: boolean | undefined;
     isOnboardingComplete: boolean | undefined;
     parentIssueIds: string[] | undefined;
@@ -91,8 +91,8 @@ export declare const profileSchema: yup.ObjectSchema<{
     questionOfTheDayAnsweredQuestions: undefined;
     dayReviewTime: null;
     issues: "";
-    issueId: undefined;
-    issueName: undefined;
+    signUpIssueId: undefined;
+    signUpIssueName: undefined;
     isReadyForTour: undefined;
     isOnboardingComplete: undefined;
     parentIssueIds: "";
