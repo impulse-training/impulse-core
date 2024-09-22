@@ -7520,11 +7520,12 @@ export declare const factories: {
         supportGroupId?: string | undefined;
         profileCount?: number | null | undefined;
         isFeatured?: boolean | null | undefined;
+        gameplanTactics?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
         name: string;
         synonyms: string[];
         parentIds: string[];
         parentNames: string[];
-    }, "name" | "synonyms" | "parentIds" | "parentNames" | ("path" | "createdAt" | "updatedAt" | "parentId" | "hasDebriefQuestion" | "supportGroupId" | "profileCount" | "isFeatured")>;
+    }, "name" | "synonyms" | "parentIds" | "parentNames" | ("path" | "createdAt" | "updatedAt" | "parentId" | "hasDebriefQuestion" | "supportGroupId" | "profileCount" | "isFeatured" | "gameplanTactics")>;
     locationFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
