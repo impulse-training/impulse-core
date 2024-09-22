@@ -9,7 +9,6 @@ export const issueSchema = yup.object().shape({
   parentId: yup.string().nullable(),
   name: yup.string().required(),
   hasDebriefQuestion: yup.boolean(),
-  supportGroupId: yup.string(),
   synonyms: yup
     .array()
     .of(yup.string().required())
@@ -24,6 +23,7 @@ export const issueSchema = yup.object().shape({
   isFeatured: yup.boolean().nullable(),
   // For profile issues, we store references to the tactics that are the user's "gameplan" for the
   // issue
+  supportGroups: yup.array().of(documentReferenceSchema.required()),
   gameplanTactics: yup.array().of(documentReferenceSchema.required()),
 });
 export type IssueValue = yup.InferType<typeof issueSchema>;
