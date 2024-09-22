@@ -1951,7 +1951,7 @@ export default function threadBase<T extends string>(type: T): yup.ObjectSchema<
                 toDate: Function;
             };
             dateString: string;
-            parentIssueIds: string[];
+            parentIds: string[];
         } | {
             createdAt?: {
                 isEqual?: any;

@@ -6,8 +6,9 @@ import { optionalTimestampSchema } from './utils/timestamp';
 export const issueSchema = yup.object().shape({
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
-  parentId: yup.string().nullable(),
   name: yup.string().required(),
+  parentId: yup.string().nullable(),
+  parentName: yup.string().nullable(),
   hasDebriefQuestion: yup.boolean(),
   synonyms: yup.array().of(yup.string().required()),
   path: yup.string().nullable(),

@@ -16,8 +16,9 @@ export declare const issueSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    parentId: string | null | undefined;
     name: string;
+    parentId: string | null | undefined;
+    parentName: string | null | undefined;
     hasDebriefQuestion: boolean | undefined;
     synonyms: string[] | undefined;
     path: string | null | undefined;
@@ -30,8 +31,9 @@ export declare const issueSchema: yup.ObjectSchema<{
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
-    parentId: undefined;
     name: undefined;
+    parentId: undefined;
+    parentName: undefined;
     hasDebriefQuestion: undefined;
     synonyms: "";
     path: undefined;

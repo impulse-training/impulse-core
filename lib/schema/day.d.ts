@@ -1943,7 +1943,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             };
             dateString: string;
-            parentIssueIds: string[];
+            parentIds: string[];
         } | {
             createdAt?: {
                 isEqual?: any;

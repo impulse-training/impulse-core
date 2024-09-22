@@ -392,8 +392,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             toDate: Function;
         };
         dateString: string;
-        parentIssueIds: string[];
-    }, "profileId" | "type" | "date" | "dateString" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueId" | "issueName" | "submittedAt")>;
+        parentIds: string[];
+    }, "profileId" | "type" | "date" | "dateString" | "parentIds" | ("createdAt" | "updatedAt" | "text" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueId" | "issueName" | "submittedAt")>;
     messageLogFactory: Factory.Sync.Factory<{
         createdAt?: {
             isEqual?: any;

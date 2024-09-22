@@ -1951,7 +1951,7 @@ export declare const dayReviewThreadSchema: yup.ObjectSchema<{
                 toDate: Function;
             };
             dateString: string;
-            parentIssueIds: string[];
+            parentIds: string[];
         } | {
             createdAt?: {
                 isEqual?: any;

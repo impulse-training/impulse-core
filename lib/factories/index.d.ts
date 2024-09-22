@@ -1994,7 +1994,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     toDate: Function;
                 };
                 dateString: string;
-                parentIssueIds: string[];
+                parentIds: string[];
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -5196,8 +5196,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: Function;
         };
         dateString: string;
-        parentIssueIds: string[];
-    }, "profileId" | "type" | "date" | "dateString" | "parentIssueIds" | ("createdAt" | "updatedAt" | "text" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueId" | "issueName" | "submittedAt")>;
+        parentIds: string[];
+    }, "profileId" | "type" | "date" | "dateString" | "parentIds" | ("createdAt" | "updatedAt" | "text" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueId" | "issueName" | "submittedAt")>;
     messageLogFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -7516,17 +7516,18 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        parentIds?: string[] | undefined;
         parentId?: string | null | undefined;
+        parentName?: string | null | undefined;
         hasDebriefQuestion?: boolean | undefined;
         synonyms?: string[] | undefined;
-        parentIds?: string[] | undefined;
         parentNames?: string[] | undefined;
         profileCount?: number | null | undefined;
         isFeatured?: boolean | null | undefined;
         supportGroups?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
         gameplanTactics?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
         name: string;
-    }, "name" | ("path" | "createdAt" | "updatedAt" | "parentId" | "hasDebriefQuestion" | "synonyms" | "parentIds" | "parentNames" | "profileCount" | "isFeatured" | "supportGroups" | "gameplanTactics")>;
+    }, "name" | ("path" | "createdAt" | "updatedAt" | "parentIds" | "parentId" | "parentName" | "hasDebriefQuestion" | "synonyms" | "parentNames" | "profileCount" | "isFeatured" | "supportGroups" | "gameplanTactics")>;
     locationFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -7589,7 +7590,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: Function;
         } | null | undefined;
         setbackThreshold?: number | undefined;
-        parentIssueIds?: string[] | undefined;
+        parentIds?: string[] | undefined;
         whatsappSupportGroupDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         lastActiveAt?: {
             isEqual?: any;
@@ -7646,7 +7647,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         } | null;
         signUpIssueId: string | null;
         timezone: string;
-    }, "uids" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIssueIds" | "whatsappSupportGroupDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "addToSupportGroup" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "issues" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "region")>;
+    }, "uids" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIds" | "whatsappSupportGroupDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "addToSupportGroup" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "issues" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "region")>;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;

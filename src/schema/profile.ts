@@ -34,7 +34,7 @@ export const profileSchema = yup.object({
   signUpIssueName: yup.string().nullable(),
   isReadyForTour: yup.boolean(),
   isOnboardingComplete: yup.boolean(),
-  parentIssueIds: optionalStringArray,
+  parentIds: optionalStringArray,
   setbackThreshold: yup.number(),
   sendDebriefRemindersAfterMinutes: yup.number(),
   gameplanStrategies: yup.array().of(documentReferenceSchema.required()),

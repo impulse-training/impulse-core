@@ -390,7 +390,7 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    parentIssueIds: string[];
+    parentIds: string[];
 }, yup.AnyObject, {
     openAiRequestPayload: undefined;
     openAiChoiceResponse: undefined;
@@ -418,6 +418,6 @@ export declare const impulseLogSchema: yup.ObjectSchema<{
     issueId: undefined;
     issueName: undefined;
     submittedAt: undefined;
-    parentIssueIds: "";
+    parentIds: "";
 }, "">;
 export type ImpulseLogValue = yup.InferType<typeof impulseLogSchema>;

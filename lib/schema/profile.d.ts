@@ -62,7 +62,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     signUpIssueName: string | null | undefined;
     isReadyForTour: boolean | undefined;
     isOnboardingComplete: boolean | undefined;
-    parentIssueIds: string[] | undefined;
+    parentIds: string[] | undefined;
     setbackThreshold: number | undefined;
     sendDebriefRemindersAfterMinutes: number | undefined;
     gameplanStrategies: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
@@ -95,7 +95,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     signUpIssueName: undefined;
     isReadyForTour: undefined;
     isOnboardingComplete: undefined;
-    parentIssueIds: "";
+    parentIds: "";
     setbackThreshold: undefined;
     sendDebriefRemindersAfterMinutes: undefined;
     gameplanStrategies: "";

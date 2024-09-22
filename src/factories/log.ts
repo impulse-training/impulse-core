@@ -17,7 +17,7 @@ export const makeLogFactories = (TimestampKlass: typeof TimestampLike) => ({
     date: TimestampKlass.now(),
     dateString: '2024-01-01',
     issueName: 'YouTube',
-    parentIssueIds: [],
+    parentIds: [],
   }),
   messageLogFactory: Factory.makeFactory<MessageLogValue>({
     profileId: '1',

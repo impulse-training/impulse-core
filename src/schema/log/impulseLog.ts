@@ -7,7 +7,7 @@ export const impulseLogSchema = logBaseSchema('impulse').shape({
   issueId: yup.string().nullable(),
   issueName: yup.string(),
   submittedAt: optionalTimestampSchema,
-  parentIssueIds: requiredStringArray,
+  parentIds: requiredStringArray,
 });
 
 export type ImpulseLogValue = yup.InferType<typeof impulseLogSchema>;

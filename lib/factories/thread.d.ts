@@ -1995,7 +1995,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                     toDate: Function;
                 };
                 dateString: string;
-                parentIssueIds: string[];
+                parentIds: string[];
             } | {
                 createdAt?: {
                     isEqual?: any;
