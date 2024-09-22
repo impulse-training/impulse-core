@@ -19,10 +19,10 @@ export declare const issueSchema: yup.ObjectSchema<{
     parentId: string | null | undefined;
     name: string;
     hasDebriefQuestion: boolean | undefined;
-    synonyms: string[];
+    synonyms: string[] | undefined;
     path: string | null | undefined;
-    parentIds: string[];
-    parentNames: string[];
+    parentIds: string[] | undefined;
+    parentNames: string[] | undefined;
     profileCount: number | null | undefined;
     isFeatured: boolean | null | undefined;
     supportGroups: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;

@@ -20,12 +20,12 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
     } | null | undefined;
     parentId?: string | null | undefined;
     hasDebriefQuestion?: boolean | undefined;
+    synonyms?: string[] | undefined;
+    parentIds?: string[] | undefined;
+    parentNames?: string[] | undefined;
     profileCount?: number | null | undefined;
     isFeatured?: boolean | null | undefined;
     supportGroups?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
     gameplanTactics?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
     name: string;
-    synonyms: string[];
-    parentIds: string[];
-    parentNames: string[];
-}, "name" | "synonyms" | "parentIds" | "parentNames" | ("path" | "createdAt" | "updatedAt" | "parentId" | "hasDebriefQuestion" | "profileCount" | "isFeatured" | "supportGroups" | "gameplanTactics")>;
+}, "name" | ("path" | "createdAt" | "updatedAt" | "parentId" | "hasDebriefQuestion" | "synonyms" | "parentIds" | "parentNames" | "profileCount" | "isFeatured" | "supportGroups" | "gameplanTactics")>;

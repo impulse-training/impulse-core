@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-import { requiredStringArray } from './utils/array';
+import { optionalStringArray } from './utils/array';
 import { documentReferenceSchema } from './utils/firestore';
 import { optionalTimestampSchema } from './utils/timestamp';
 
@@ -9,16 +9,10 @@ export const issueSchema = yup.object().shape({
   parentId: yup.string().nullable(),
   name: yup.string().required(),
   hasDebriefQuestion: yup.boolean(),
-  synonyms: yup
-    .array()
-    .of(yup.string().required())
-    .required()
-    .test('includes-name', 'Synonyms must include name', function (synonyms) {
-      return synonyms.includes(this.parent.name);
-    }),
+  synonyms: yup.array().of(yup.string().required()),
   path: yup.string().nullable(),
-  parentIds: requiredStringArray,
-  parentNames: requiredStringArray,
+  parentIds: optionalStringArray,
+  parentNames: optionalStringArray,
   profileCount: yup.number().nullable(),
   isFeatured: yup.boolean().nullable(),
   // For profile issues, we store references to the tactics that are the user's "gameplan" for the
