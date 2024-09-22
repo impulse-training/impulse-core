@@ -14,7 +14,7 @@ export const tacticsLogSchema = logBaseSchema('tactics').shape({
   // This flag can be set to true when the user is browsing and adding tactics
   isAddToGameplanMode: yup.boolean(),
 
-  suggestedStrategyDocPaths: optionalStringArray,
+  suggestedTacticDocPaths: optionalStringArray,
   tacticsById: objectOf(tacticSchema),
   // These are the tactics that the user has completed
   completedTacticIds: requiredStringArray,

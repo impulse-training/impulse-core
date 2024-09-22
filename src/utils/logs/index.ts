@@ -50,7 +50,7 @@ export function logGptPayload(log: LogValue): Message[] | null {
     case 'tactics':
       const suggestedTactics = map(
         log.tacticsById,
-        strategy => strategy.prompt
+        tactic => tactic.prompt
       ).join(SEPARATOR);
       const assistantMessage: Message = {
         role: 'assistant',

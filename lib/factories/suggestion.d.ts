@@ -18,7 +18,7 @@ export declare const makeSuggestionFactory: (TimestampKlass: typeof TimestampLik
         toDate: Function;
     } | null | undefined;
     stages?: number[] | undefined;
-    strategyDocs?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
+    tacticDocs?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
     title: string;
     gptContext: string;
-}, "title" | "gptContext" | ("createdAt" | "updatedAt" | "stages" | "strategyDocs")>;
+}, "title" | "gptContext" | ("createdAt" | "updatedAt" | "stages" | "tacticDocs")>;

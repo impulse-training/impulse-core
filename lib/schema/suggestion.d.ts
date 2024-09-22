@@ -18,14 +18,14 @@ export declare const suggestionSchema: yup.ObjectSchema<{
     } | null | undefined;
     title: string;
     gptContext: string;
-    strategyDocs: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
+    tacticDocs: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
     stages: number[] | undefined;
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
     title: undefined;
     gptContext: undefined;
-    strategyDocs: "";
+    tacticDocs: "";
     stages: "";
 }, "">;
 export type SuggestionValue = yup.InferType<typeof suggestionSchema>;

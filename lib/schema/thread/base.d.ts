@@ -4031,7 +4031,7 @@ export default function threadBase<T extends string>(type: T): yup.ObjectSchema<
             openAiChoiceResponse?: {} | undefined;
             sourceSuggestion?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
             isAddToGameplanMode?: boolean | undefined;
-            suggestedStrategyDocPaths?: string[] | undefined;
+            suggestedTacticDocPaths?: string[] | undefined;
             profileId: string;
             type: "tactics";
             tacticsById: {

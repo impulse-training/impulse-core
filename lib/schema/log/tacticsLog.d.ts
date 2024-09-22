@@ -383,7 +383,7 @@ export declare const tacticsLogSchema: yup.ObjectSchema<{
     title: string | undefined;
     sourceSuggestion: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
     isAddToGameplanMode: boolean | undefined;
-    suggestedStrategyDocPaths: string[] | undefined;
+    suggestedTacticDocPaths: string[] | undefined;
     tacticsById: {
         [x: string]: {
             createdAt?: {
@@ -740,7 +740,7 @@ export declare const tacticsLogSchema: yup.ObjectSchema<{
     title: undefined;
     sourceSuggestion: undefined;
     isAddToGameplanMode: undefined;
-    suggestedStrategyDocPaths: "";
+    suggestedTacticDocPaths: "";
     tacticsById: undefined;
     completedTacticIds: "";
     followedUpTacticIds: "";

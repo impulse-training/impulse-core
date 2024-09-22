@@ -18,7 +18,6 @@ export declare const issueSchema: yup.ObjectSchema<{
     } | null | undefined;
     parentId: string | null | undefined;
     name: string;
-    ordinal: number;
     hasDebriefQuestion: boolean | undefined;
     supportGroupId: string | undefined;
     synonyms: string[];
@@ -32,7 +31,6 @@ export declare const issueSchema: yup.ObjectSchema<{
     updatedAt: undefined;
     parentId: undefined;
     name: undefined;
-    ordinal: undefined;
     hasDebriefQuestion: undefined;
     supportGroupId: undefined;
     synonyms: "";

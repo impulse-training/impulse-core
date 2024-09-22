@@ -7,7 +7,7 @@ export const suggestionSchema = yup.object({
   updatedAt: optionalTimestampSchema,
   title: yup.string().required(),
   gptContext: yup.string().required(),
-  strategyDocs: yup.array().of(documentReferenceSchema.required()),
+  tacticDocs: yup.array().of(documentReferenceSchema.required()),
   // This is a bit of a placeholder
   stages: yup.array().of(yup.number().required()),
 });

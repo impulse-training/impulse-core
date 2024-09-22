@@ -4075,7 +4075,7 @@ export declare const makeThreadFactories: (TimestampKlass: typeof TimestampLike)
                 openAiChoiceResponse?: {} | undefined;
                 sourceSuggestion?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 isAddToGameplanMode?: boolean | undefined;
-                suggestedStrategyDocPaths?: string[] | undefined;
+                suggestedTacticDocPaths?: string[] | undefined;
                 profileId: string;
                 type: "tactics";
                 tacticsById: {

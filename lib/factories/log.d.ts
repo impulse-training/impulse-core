@@ -2087,7 +2087,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
         openAiChoiceResponse?: {} | undefined;
         sourceSuggestion?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         isAddToGameplanMode?: boolean | undefined;
-        suggestedStrategyDocPaths?: string[] | undefined;
+        suggestedTacticDocPaths?: string[] | undefined;
         profileId: string;
         type: "tactics";
         tacticsById: {
@@ -2428,5 +2428,5 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
         dateString: string;
         completedTacticIds: string[];
         followedUpTacticIds: string[];
-    }, "profileId" | "type" | "tacticsById" | "date" | "dateString" | "completedTacticIds" | "followedUpTacticIds" | ("createdAt" | "updatedAt" | "title" | "text" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "sourceSuggestion" | "isAddToGameplanMode" | "suggestedStrategyDocPaths")>;
+    }, "profileId" | "type" | "tacticsById" | "date" | "dateString" | "completedTacticIds" | "followedUpTacticIds" | ("createdAt" | "updatedAt" | "title" | "text" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "sourceSuggestion" | "isAddToGameplanMode" | "suggestedTacticDocPaths")>;
 };
