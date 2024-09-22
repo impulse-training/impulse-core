@@ -4803,7 +4803,7 @@ export declare const whatsappThreadSchema: yup.ObjectSchema<{
         toDate: Function;
     } | null | undefined;
     whatsappSupportGroupDoc: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
-    folderDoc: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
+    supportGroupDoc: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
 }, yup.AnyObject, {
     type: undefined;
     dateString: undefined;
@@ -4831,6 +4831,6 @@ export declare const whatsappThreadSchema: yup.ObjectSchema<{
     debriefAfter: undefined;
     debriefReminderSentAt: undefined;
     whatsappSupportGroupDoc: undefined;
-    folderDoc: undefined;
+    supportGroupDoc: undefined;
 }, "">;
 export type WhatsappThreadValue = yup.InferType<typeof whatsappThreadSchema>;

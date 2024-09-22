@@ -3,6 +3,6 @@ import { documentReferenceSchema } from '../utils/firestore';
 import threadBase from './base';
 
 export const whatsappThreadSchema = threadBase('whatsapp').shape({
-  folderDoc: documentReferenceSchema,
+  supportGroupDoc: documentReferenceSchema,
 });
 export type WhatsappThreadValue = yup.InferType<typeof whatsappThreadSchema>;

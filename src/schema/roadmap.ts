@@ -4,7 +4,7 @@ import { optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema } from './utils/timestamp';
 
 // A roadmap is a long-term tactic for a user to achieve their behavior change goals. We may end
-// up renaming it to "tactic", but a tactic currently means a "tactic or a folder of tactics".
+// up renaming it to "tactic", but a tactic currently means a "tactic or a supportGroup of tactics".
 //
 // A roadmap consists of stages, with "graduation criteria". When a user passes the graduation
 // criteria for a stage, they move on to the next stage. The graduation criteria currently only
