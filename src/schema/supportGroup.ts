@@ -7,6 +7,7 @@ export const supportGroupSchema = yup.object({
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
   name: yup.string().required(),
+  description: yup.string(),
   invitationCode: yup.string().required(),
   invitationUrl: yup.string().url().required(),
   tacticsById: optionalObjectOf(tacticSchema),

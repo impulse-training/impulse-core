@@ -17,6 +17,7 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
         toDate: Function;
     } | null | undefined;
     name: string;
+    description: string | undefined;
     invitationCode: string;
     invitationUrl: string;
     tacticsById: {
@@ -676,6 +677,7 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
     createdAt: undefined;
     updatedAt: undefined;
     name: undefined;
+    description: undefined;
     invitationCode: undefined;
     invitationUrl: undefined;
     tacticsById: undefined;
