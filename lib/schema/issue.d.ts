@@ -20,13 +20,13 @@ export declare const issueSchema: yup.ObjectSchema<{
     parentId: string | null | undefined;
     parentName: string | null | undefined;
     hasDebriefQuestion: boolean | undefined;
+    ordinal: number | undefined;
     synonyms: string[] | undefined;
     path: string | null | undefined;
     parentIds: string[] | undefined;
     parentNames: string[] | undefined;
     profileCount: number | null | undefined;
     isFeatured: boolean | null | undefined;
-    supportGroups: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
     gameplanTactics: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
 }, yup.AnyObject, {
     createdAt: undefined;
@@ -35,13 +35,13 @@ export declare const issueSchema: yup.ObjectSchema<{
     parentId: undefined;
     parentName: undefined;
     hasDebriefQuestion: undefined;
+    ordinal: undefined;
     synonyms: "";
     path: undefined;
     parentIds: "";
     parentNames: "";
     profileCount: undefined;
     isFeatured: undefined;
-    supportGroups: "";
     gameplanTactics: "";
 }, "">;
 export type IssueValue = yup.InferType<typeof issueSchema>;

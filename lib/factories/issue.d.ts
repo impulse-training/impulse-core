@@ -18,6 +18,7 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    ordinal?: number | undefined;
     parentIds?: string[] | undefined;
     parentId?: string | null | undefined;
     parentName?: string | null | undefined;
@@ -26,7 +27,6 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
     parentNames?: string[] | undefined;
     profileCount?: number | null | undefined;
     isFeatured?: boolean | null | undefined;
-    supportGroups?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
     gameplanTactics?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
     name: string;
-}, "name" | ("path" | "createdAt" | "updatedAt" | "parentIds" | "parentId" | "parentName" | "hasDebriefQuestion" | "synonyms" | "parentNames" | "profileCount" | "isFeatured" | "supportGroups" | "gameplanTactics")>;
+}, "name" | ("path" | "createdAt" | "updatedAt" | "ordinal" | "parentIds" | "parentId" | "parentName" | "hasDebriefQuestion" | "synonyms" | "parentNames" | "profileCount" | "isFeatured" | "gameplanTactics")>;
