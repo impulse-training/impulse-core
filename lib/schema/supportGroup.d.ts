@@ -20,6 +20,7 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
     description: string | undefined;
     invitationCode: string;
     invitationUrl: string;
+    profileIssues: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
     tacticsById: {
         [x: string]: {
             createdAt?: {
@@ -680,6 +681,7 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
     description: undefined;
     invitationCode: undefined;
     invitationUrl: undefined;
+    profileIssues: "";
     tacticsById: undefined;
     next3Tactics: "";
     nextTacticId: undefined;
