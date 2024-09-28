@@ -7524,9 +7524,10 @@ export declare const factories: {
         parentNames?: string[] | undefined;
         profileCount?: number | null | undefined;
         isFeatured?: boolean | null | undefined;
+        recommendedSupportGroups?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
         gameplanTactics?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
         name: string;
-    }, "name" | ("path" | "createdAt" | "updatedAt" | "ordinal" | "parentIds" | "parentId" | "parentName" | "hasDebriefQuestion" | "synonyms" | "parentNames" | "profileCount" | "isFeatured" | "gameplanTactics")>;
+    }, "name" | ("path" | "createdAt" | "updatedAt" | "ordinal" | "parentIds" | "parentId" | "parentName" | "hasDebriefQuestion" | "synonyms" | "parentNames" | "profileCount" | "isFeatured" | "recommendedSupportGroups" | "gameplanTactics")>;
     locationFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -7656,6 +7657,7 @@ export declare const factories: {
                 parentNames?: string[] | undefined;
                 profileCount?: number | null | undefined;
                 isFeatured?: boolean | null | undefined;
+                recommendedSupportGroups?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
                 gameplanTactics?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
                 name: string;
             };

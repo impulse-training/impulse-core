@@ -85,6 +85,7 @@ export declare const profileSchema: yup.ObjectSchema<{
             parentNames?: string[] | undefined;
             profileCount?: number | null | undefined;
             isFeatured?: boolean | null | undefined;
+            recommendedSupportGroups?: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
             gameplanTactics?: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
             name: string;
         };

@@ -27,6 +27,7 @@ export declare const issueSchema: yup.ObjectSchema<{
     parentNames: string[] | undefined;
     profileCount: number | null | undefined;
     isFeatured: boolean | null | undefined;
+    recommendedSupportGroups: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
     gameplanTactics: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
 }, yup.AnyObject, {
     createdAt: undefined;
@@ -42,6 +43,7 @@ export declare const issueSchema: yup.ObjectSchema<{
     parentNames: "";
     profileCount: undefined;
     isFeatured: undefined;
+    recommendedSupportGroups: "";
     gameplanTactics: "";
 }, "">;
 export type IssueValue = yup.InferType<typeof issueSchema>;
