@@ -9,6 +9,7 @@ export const supportGroupSchema = yup.object({
   updatedAt: optionalTimestampSchema,
   name: yup.string().required(),
   description: yup.string(),
+  profileId: yup.string(),
   invitationCode: yup.string().required(),
   invitationUrl: yup.string().url().required(),
   profileIssues: yup.array().of(documentReferenceSchema.required()),
