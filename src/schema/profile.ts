@@ -1,5 +1,6 @@
 import { AppStateStatus } from 'react-native';
 import * as yup from 'yup';
+import { issueSchema } from './issue';
 import { notificationOptionSchema } from './notification';
 import { optionalStringArray, requiredStringArray } from './utils/array';
 import { documentReferenceSchema } from './utils/firestore';
@@ -29,7 +30,7 @@ export const profileSchema = yup.object({
     })
     .nullable()
     .default(null),
-  issues: yup.array().of(documentReferenceSchema.required()),
+  issuesById: optionalObjectOf(issueSchema),
   signUpIssueId: yup.string().required().nullable(),
   signUpIssueName: yup.string().nullable(),
   isReadyForTour: yup.boolean(),

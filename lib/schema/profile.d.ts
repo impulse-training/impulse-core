@@ -57,7 +57,38 @@ export declare const profileSchema: yup.ObjectSchema<{
         hour: number;
         minute: number;
     } | null;
-    issues: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
+    issuesById: {
+        [x: string]: {
+            path?: string | null | undefined;
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            ordinal?: number | undefined;
+            parentIds?: string[] | undefined;
+            parentId?: string | null | undefined;
+            parentName?: string | null | undefined;
+            hasDebriefQuestion?: boolean | undefined;
+            synonyms?: string[] | undefined;
+            parentNames?: string[] | undefined;
+            profileCount?: number | null | undefined;
+            isFeatured?: boolean | null | undefined;
+            gameplanTactics?: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
+            name: string;
+        };
+    } | null | undefined;
     signUpIssueId: string | null;
     signUpIssueName: string | null | undefined;
     isReadyForTour: boolean | undefined;
@@ -90,7 +121,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     notificationPreferences: undefined;
     questionOfTheDayAnsweredQuestions: undefined;
     dayReviewTime: null;
-    issues: "";
+    issuesById: undefined;
     signUpIssueId: undefined;
     signUpIssueName: undefined;
     isReadyForTour: undefined;

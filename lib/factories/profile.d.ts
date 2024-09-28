@@ -57,7 +57,38 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     questionOfTheDayAnsweredQuestions?: {
         [x: string]: boolean | undefined;
     } | null | undefined;
-    issues?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
+    issuesById?: {
+        [x: string]: {
+            path?: string | null | undefined;
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            ordinal?: number | undefined;
+            parentIds?: string[] | undefined;
+            parentId?: string | null | undefined;
+            parentName?: string | null | undefined;
+            hasDebriefQuestion?: boolean | undefined;
+            synonyms?: string[] | undefined;
+            parentNames?: string[] | undefined;
+            profileCount?: number | null | undefined;
+            isFeatured?: boolean | null | undefined;
+            gameplanTactics?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
+            name: string;
+        };
+    } | null | undefined;
     signUpIssueName?: string | null | undefined;
     isReadyForTour?: boolean | undefined;
     isOnboardingComplete?: boolean | undefined;
@@ -75,4 +106,4 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     } | null;
     signUpIssueId: string | null;
     timezone: string;
-}, "uids" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIds" | "whatsappSupportGroupDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "addToSupportGroup" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "issues" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "region")>;
+}, "uids" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIds" | "whatsappSupportGroupDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "addToSupportGroup" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "issuesById" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "region")>;
