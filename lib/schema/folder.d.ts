@@ -20,6 +20,7 @@ export declare const folderSchema: yup.ObjectSchema<{
     description: string | undefined;
     profileId: string | undefined;
     isShared: NonNullable<boolean | undefined>;
+    tacticCount: number | undefined;
     invitationCode: string;
     invitationUrl: string;
     profileIssues: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
@@ -685,6 +686,7 @@ export declare const folderSchema: yup.ObjectSchema<{
     description: undefined;
     profileId: undefined;
     isShared: undefined;
+    tacticCount: undefined;
     invitationCode: undefined;
     invitationUrl: undefined;
     profileIssues: "";

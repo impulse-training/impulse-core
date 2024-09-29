@@ -11,6 +11,7 @@ export const folderSchema = yup.object({
   description: yup.string(),
   profileId: yup.string(),
   isShared: yup.boolean().required(),
+  tacticCount: yup.number(),
   invitationCode: yup.string().required(),
   invitationUrl: yup.string().url().required(),
   profileIssues: yup.array().of(documentReferenceSchema.required()),
