@@ -28,6 +28,9 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
     profileCount?: number | null | undefined;
     isFeatured?: boolean | null | undefined;
     recommendedSupportGroups?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
+    supportGroupOrdinals?: {
+        [x: string]: number;
+    } | null | undefined;
     gameplanTactics?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
     name: string;
-}, "name" | ("path" | "createdAt" | "updatedAt" | "ordinal" | "parentIds" | "parentId" | "parentName" | "hasDebriefQuestion" | "synonyms" | "parentNames" | "profileCount" | "isFeatured" | "recommendedSupportGroups" | "gameplanTactics")>;
+}, "name" | ("path" | "createdAt" | "updatedAt" | "ordinal" | "parentIds" | "parentId" | "parentName" | "hasDebriefQuestion" | "synonyms" | "parentNames" | "profileCount" | "isFeatured" | "recommendedSupportGroups" | "supportGroupOrdinals" | "gameplanTactics")>;

@@ -28,6 +28,9 @@ export declare const issueSchema: yup.ObjectSchema<{
     profileCount: number | null | undefined;
     isFeatured: boolean | null | undefined;
     recommendedSupportGroups: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
+    supportGroupOrdinals: {
+        [x: string]: number;
+    } | null | undefined;
     gameplanTactics: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
 }, yup.AnyObject, {
     createdAt: undefined;
@@ -44,6 +47,7 @@ export declare const issueSchema: yup.ObjectSchema<{
     profileCount: undefined;
     isFeatured: undefined;
     recommendedSupportGroups: "";
+    supportGroupOrdinals: undefined;
     gameplanTactics: "";
 }, "">;
 export type IssueValue = yup.InferType<typeof issueSchema>;
