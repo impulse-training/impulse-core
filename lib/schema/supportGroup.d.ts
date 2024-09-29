@@ -19,6 +19,7 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
     name: string;
     description: string | undefined;
     profileId: string | undefined;
+    isShared: NonNullable<boolean | undefined>;
     invitationCode: string;
     invitationUrl: string;
     profileIssues: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
@@ -681,6 +682,7 @@ export declare const supportGroupSchema: yup.ObjectSchema<{
     name: undefined;
     description: undefined;
     profileId: undefined;
+    isShared: undefined;
     invitationCode: undefined;
     invitationUrl: undefined;
     profileIssues: "";

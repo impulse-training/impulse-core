@@ -10,6 +10,7 @@ export const supportGroupSchema = yup.object({
   name: yup.string().required(),
   description: yup.string(),
   profileId: yup.string(),
+  isShared: yup.boolean().required(),
   invitationCode: yup.string().required(),
   invitationUrl: yup.string().url().required(),
   profileIssues: yup.array().of(documentReferenceSchema.required()),
