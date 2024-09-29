@@ -180,44 +180,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         isSuggested?: boolean | undefined;
         ordinal: number;
         prompt: string;
-        type: "notifySupportGroup";
-    } | {
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            toJSON?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            toJSON?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        profileId?: string | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
-        description?: string | null | undefined;
-        pastTenseTitle?: string | undefined;
-        debriefAfterMinutes?: number | null | undefined;
-        image?: {
-            localFilePath?: import("yup").Maybe<string | undefined>;
-            storagePath?: import("yup").Maybe<string | undefined>;
-            uri?: import("yup").Maybe<string | undefined>;
-        } | null | undefined;
-        backgroundColor?: string | undefined;
-        setbackThreshold?: number | null | undefined;
-        likesCount?: number | null | undefined;
-        timerSeconds?: import("yup").Maybe<number | undefined>;
-        isSuggested?: boolean | undefined;
-        ordinal: number;
-        prompt: string;
         type: "steps";
         targetSteps: number;
     } | {
@@ -409,7 +371,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     } | null | undefined;
     setbackThreshold?: number | undefined;
     parentIds?: string[] | undefined;
-    whatsappSupportGroupDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+    whatsappFolderDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
     lastActiveAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -438,7 +400,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     activeThreadDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
     scheduledNotificationIds?: string[] | undefined;
     currentAppState?: import("react-native/types").AppStateStatus | undefined;
-    addToSupportGroup?: boolean | undefined;
+    addToFolder?: boolean | undefined;
     emojiID?: string[] | undefined;
     expoPushToken?: string | undefined;
     notificationPreferences?: {
@@ -475,8 +437,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             parentNames?: string[] | undefined;
             profileCount?: number | null | undefined;
             isFeatured?: boolean | null | undefined;
-            recommendedSupportGroups?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
-            supportGroupOrdinals?: {
+            recommendedFolders?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
+            folderOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
             gameplanTactics?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
@@ -500,4 +462,4 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     } | null;
     signUpIssueId: string | null;
     timezone: string;
-}, "uids" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIds" | "whatsappSupportGroupDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "addToSupportGroup" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "issuesById" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "region")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "ordinal" | "prompt" | "description" | "type" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "setbackThreshold" | "likesCount" | "timerSeconds" | "isSuggested">;
+}, "uids" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIds" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "addToFolder" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "issuesById" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "region")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "ordinal" | "prompt" | "description" | "type" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "setbackThreshold" | "likesCount" | "timerSeconds" | "isSuggested">;

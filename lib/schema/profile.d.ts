@@ -44,7 +44,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     activeImpulseDoc: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
     activeThreadDoc: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
     currentAppState: AppStateStatus | undefined;
-    addToSupportGroup: boolean | undefined;
+    addToFolder: boolean | undefined;
     emojiID: string[] | undefined;
     expoPushToken: string | undefined;
     notificationPreferences: {
@@ -85,8 +85,8 @@ export declare const profileSchema: yup.ObjectSchema<{
             parentNames?: string[] | undefined;
             profileCount?: number | null | undefined;
             isFeatured?: boolean | null | undefined;
-            recommendedSupportGroups?: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
-            supportGroupOrdinals?: {
+            recommendedFolders?: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
+            folderOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
             gameplanTactics?: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
@@ -108,7 +108,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     region: string | null | undefined;
     timezone: string;
     scheduledNotificationIds: string[] | undefined;
-    whatsappSupportGroupDoc: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
+    whatsappFolderDoc: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
     uids: string[];
 }, yup.AnyObject, {
     createdAt: undefined;
@@ -119,7 +119,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     activeImpulseDoc: undefined;
     activeThreadDoc: undefined;
     currentAppState: undefined;
-    addToSupportGroup: undefined;
+    addToFolder: undefined;
     emojiID: "";
     expoPushToken: undefined;
     notificationPreferences: undefined;
@@ -139,7 +139,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     region: undefined;
     timezone: undefined;
     scheduledNotificationIds: "";
-    whatsappSupportGroupDoc: undefined;
+    whatsappFolderDoc: undefined;
     uids: "";
 }, "">;
 export type ProfileValue = yup.InferType<typeof profileSchema>;

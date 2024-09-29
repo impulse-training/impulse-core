@@ -5,7 +5,7 @@ import { logBaseSchema } from './base';
 
 export const whatsappMessageLogSchema = logBaseSchema('whatsappMessage').shape({
   files: yup.array().of(fileSchema).notRequired(),
-  supportGroupDoc: documentReferenceSchema.required(),
+  folderDoc: documentReferenceSchema.required(),
 });
 
 export type WhatsappMessageLogValue = yup.InferType<

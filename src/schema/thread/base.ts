@@ -27,7 +27,7 @@ export default function threadBase<T extends string>(type: T) {
     debriefReminderSentAt: optionalTimestampSchema,
 
     // We're introducing a "whatsapp thread", which is
-    // Optionally, whatsapp threads can be pointed at a supportGroup, and can write tactics into that supportGroup
-    whatsappSupportGroupDoc: documentReferenceSchema,
+    // Optionally, whatsapp threads can be pointed at a folder, and can write tactics into that folder
+    whatsappFolderDoc: documentReferenceSchema,
   });
 }

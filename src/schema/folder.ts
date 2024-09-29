@@ -4,7 +4,7 @@ import { documentReferenceSchema } from './utils/firestore';
 import { optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema } from './utils/timestamp';
 
-export const supportGroupSchema = yup.object({
+export const folderSchema = yup.object({
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
   name: yup.string().required(),
@@ -19,4 +19,4 @@ export const supportGroupSchema = yup.object({
   nextTacticId: yup.string(),
 });
 
-export type SupportGroupValue = yup.InferType<typeof supportGroupSchema>;
+export type FolderValue = yup.InferType<typeof folderSchema>;

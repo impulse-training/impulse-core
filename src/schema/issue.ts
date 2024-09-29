@@ -20,12 +20,12 @@ export const issueSchema = yup.object().shape({
   isFeatured: yup.boolean().nullable(),
 
   // For top-level issues, we store references to recommended support groups
-  recommendedSupportGroups: yup.array().of(documentReferenceSchema.required()),
+  recommendedFolders: yup.array().of(documentReferenceSchema.required()),
   // For profile issues, we store references to the tactics that are the user's "gameplan" for the
   // issue
 
   // For profile issues, we store a map of ordinals
-  supportGroupOrdinals: optionalObjectOf(yup.number().required()),
+  folderOrdinals: optionalObjectOf(yup.number().required()),
 
   gameplanTactics: yup.array().of(documentReferenceSchema.required()),
 });

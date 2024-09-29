@@ -8,10 +8,6 @@ import {
   NotifyASupportPersonTacticValue,
   notifyASupportPersonTacticSchema,
 } from './notifyASupportPerson';
-import {
-  NotifySupportGroupTacticValue,
-  notifySupportGroupTacticSchema,
-} from './notifySupportGroup';
 import { StepsTacticValue, stepsTacticSchema } from './steps';
 import { TaskTacticValue, taskTacticSchema } from './task';
 import { VideoTacticValue, videoTacticSchema } from './video';
@@ -20,7 +16,6 @@ import { ZaraTacticValue, zaraTacticSchema } from './zara';
 export * from './audio';
 export * from './breathingExercise';
 export * from './notifyASupportPerson';
-export * from './notifySupportGroup';
 export * from './steps';
 export * from './task';
 export * from './utils';
@@ -34,7 +29,6 @@ export type TacticValue =
   | StepsTacticValue
   | TaskTacticValue
   | VideoTacticValue
-  | NotifySupportGroupTacticValue
   | ZaraTacticValue;
 // | UrgeSurfingTacticValue
 // | EmotionsTacticValue
@@ -49,7 +43,6 @@ export const tacticSchemas: Record<
   audio: audioTacticSchema,
   breathingExercise: breathingExerciseTacticSchema,
   notifyASupportPerson: notifyASupportPersonTacticSchema,
-  notifySupportGroup: notifySupportGroupTacticSchema,
   task: taskTacticSchema,
   video: videoTacticSchema,
   steps: stepsTacticSchema,

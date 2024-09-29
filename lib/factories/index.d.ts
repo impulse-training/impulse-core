@@ -45,7 +45,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        whatsappSupportGroupDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+        whatsappFolderDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         firstLogId?: string | undefined;
         isProcessing?: boolean | undefined;
         gptSystemMessage?: string | undefined;
@@ -207,44 +207,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     prompt: string;
                     type: "notifyASupportPerson";
                     contactIds: string[];
-                } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    profileId?: string | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
-                    image?: {
-                        localFilePath?: import("yup").Maybe<string | undefined>;
-                        storagePath?: import("yup").Maybe<string | undefined>;
-                        uri?: import("yup").Maybe<string | undefined>;
-                    } | null | undefined;
-                    backgroundColor?: string | undefined;
-                    setbackThreshold?: number | null | undefined;
-                    likesCount?: number | null | undefined;
-                    timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
-                    ordinal: number;
-                    prompt: string;
-                    type: "notifySupportGroup";
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -626,44 +588,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     isSuggested?: boolean | undefined;
                     ordinal: number;
                     prompt: string;
-                    type: "notifySupportGroup";
-                } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    profileId?: string | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
-                    image?: {
-                        localFilePath?: import("yup").Maybe<string | undefined>;
-                        storagePath?: import("yup").Maybe<string | undefined>;
-                        uri?: import("yup").Maybe<string | undefined>;
-                    } | null | undefined;
-                    backgroundColor?: string | undefined;
-                    setbackThreshold?: number | null | undefined;
-                    likesCount?: number | null | undefined;
-                    timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
-                    ordinal: number;
-                    prompt: string;
                     type: "steps";
                     targetSteps: number;
                 } | {
@@ -971,44 +895,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     prompt: string;
                     type: "notifyASupportPerson";
                     contactIds: string[];
-                } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    profileId?: string | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
-                    image?: {
-                        localFilePath?: import("yup").Maybe<string | undefined>;
-                        storagePath?: import("yup").Maybe<string | undefined>;
-                        uri?: import("yup").Maybe<string | undefined>;
-                    } | null | undefined;
-                    backgroundColor?: string | undefined;
-                    setbackThreshold?: number | null | undefined;
-                    likesCount?: number | null | undefined;
-                    timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
-                    ordinal: number;
-                    prompt: string;
-                    type: "notifySupportGroup";
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -1395,44 +1281,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     isSuggested?: boolean | undefined;
                     ordinal: number;
                     prompt: string;
-                    type: "notifySupportGroup";
-                } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    profileId?: string | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
-                    image?: {
-                        localFilePath?: import("yup").Maybe<string | undefined>;
-                        storagePath?: import("yup").Maybe<string | undefined>;
-                        uri?: import("yup").Maybe<string | undefined>;
-                    } | null | undefined;
-                    backgroundColor?: string | undefined;
-                    setbackThreshold?: number | null | undefined;
-                    likesCount?: number | null | undefined;
-                    timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
-                    ordinal: number;
-                    prompt: string;
                     type: "steps";
                     targetSteps: number;
                 } | {
@@ -1748,44 +1596,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     prompt: string;
                     type: "notifyASupportPerson";
                     contactIds: string[];
-                } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    profileId?: string | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
-                    image?: {
-                        localFilePath?: import("yup").Maybe<string | undefined>;
-                        storagePath?: import("yup").Maybe<string | undefined>;
-                        uri?: import("yup").Maybe<string | undefined>;
-                    } | null | undefined;
-                    backgroundColor?: string | undefined;
-                    setbackThreshold?: number | null | undefined;
-                    likesCount?: number | null | undefined;
-                    timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
-                    ordinal: number;
-                    prompt: string;
-                    type: "notifySupportGroup";
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -2176,44 +1986,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     isSuggested?: boolean | undefined;
                     ordinal: number;
                     prompt: string;
-                    type: "notifySupportGroup";
-                } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    profileId?: string | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
-                    image?: {
-                        localFilePath?: import("yup").Maybe<string | undefined>;
-                        storagePath?: import("yup").Maybe<string | undefined>;
-                        uri?: import("yup").Maybe<string | undefined>;
-                    } | null | undefined;
-                    backgroundColor?: string | undefined;
-                    setbackThreshold?: number | null | undefined;
-                    likesCount?: number | null | undefined;
-                    timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
-                    ordinal: number;
-                    prompt: string;
                     type: "steps";
                     targetSteps: number;
                 } | {
@@ -2521,44 +2293,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     prompt: string;
                     type: "notifyASupportPerson";
                     contactIds: string[];
-                } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    profileId?: string | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
-                    image?: {
-                        localFilePath?: import("yup").Maybe<string | undefined>;
-                        storagePath?: import("yup").Maybe<string | undefined>;
-                        uri?: import("yup").Maybe<string | undefined>;
-                    } | null | undefined;
-                    backgroundColor?: string | undefined;
-                    setbackThreshold?: number | null | undefined;
-                    likesCount?: number | null | undefined;
-                    timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
-                    ordinal: number;
-                    prompt: string;
-                    type: "notifySupportGroup";
                 } | {
                     createdAt?: {
                         isEqual?: any;
@@ -3495,44 +3229,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     isSuggested?: boolean | undefined;
                     ordinal: number;
                     prompt: string;
-                    type: "notifySupportGroup";
-                } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    profileId?: string | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
-                    image?: {
-                        localFilePath?: import("yup").Maybe<string | undefined>;
-                        storagePath?: import("yup").Maybe<string | undefined>;
-                        uri?: import("yup").Maybe<string | undefined>;
-                    } | null | undefined;
-                    backgroundColor?: string | undefined;
-                    setbackThreshold?: number | null | undefined;
-                    likesCount?: number | null | undefined;
-                    timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
-                    ordinal: number;
-                    prompt: string;
                     type: "steps";
                     targetSteps: number;
                 } | {
@@ -3884,44 +3580,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     isSuggested?: boolean | undefined;
                     ordinal: number;
                     prompt: string;
-                    type: "notifySupportGroup";
-                } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    profileId?: string | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
-                    image?: {
-                        localFilePath?: import("yup").Maybe<string | undefined>;
-                        storagePath?: import("yup").Maybe<string | undefined>;
-                        uri?: import("yup").Maybe<string | undefined>;
-                    } | null | undefined;
-                    backgroundColor?: string | undefined;
-                    setbackThreshold?: number | null | undefined;
-                    likesCount?: number | null | undefined;
-                    timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
-                    ordinal: number;
-                    prompt: string;
                     type: "steps";
                     targetSteps: number;
                 } | {
@@ -4203,44 +3861,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                         prompt: string;
                         type: "notifyASupportPerson";
                         contactIds: string[];
-                    } | {
-                        createdAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        updatedAt?: {
-                            isEqual?: any;
-                            toMillis?: any;
-                            toJSON?: any;
-                            seconds: number;
-                            nanoseconds: number;
-                            toDate: Function;
-                        } | null | undefined;
-                        profileId?: string | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
-                        recommendedForIssueOrdinals?: {
-                            [x: string]: number;
-                        } | null | undefined;
-                        description?: string | null | undefined;
-                        pastTenseTitle?: string | undefined;
-                        debriefAfterMinutes?: number | null | undefined;
-                        image?: {
-                            localFilePath?: import("yup").Maybe<string | undefined>;
-                            storagePath?: import("yup").Maybe<string | undefined>;
-                            uri?: import("yup").Maybe<string | undefined>;
-                        } | null | undefined;
-                        backgroundColor?: string | undefined;
-                        setbackThreshold?: number | null | undefined;
-                        likesCount?: number | null | undefined;
-                        timerSeconds?: import("yup").Maybe<number | undefined>;
-                        isSuggested?: boolean | undefined;
-                        ordinal: number;
-                        prompt: string;
-                        type: "notifySupportGroup";
                     } | {
                         createdAt?: {
                             isEqual?: any;
@@ -4597,44 +4217,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     isSuggested?: boolean | undefined;
                     ordinal: number;
                     prompt: string;
-                    type: "notifySupportGroup";
-                } | {
-                    createdAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    updatedAt?: {
-                        isEqual?: any;
-                        toMillis?: any;
-                        toJSON?: any;
-                        seconds: number;
-                        nanoseconds: number;
-                        toDate: Function;
-                    } | null | undefined;
-                    profileId?: string | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
-                    recommendedForIssueOrdinals?: {
-                        [x: string]: number;
-                    } | null | undefined;
-                    description?: string | null | undefined;
-                    pastTenseTitle?: string | undefined;
-                    debriefAfterMinutes?: number | null | undefined;
-                    image?: {
-                        localFilePath?: import("yup").Maybe<string | undefined>;
-                        storagePath?: import("yup").Maybe<string | undefined>;
-                        uri?: import("yup").Maybe<string | undefined>;
-                    } | null | undefined;
-                    backgroundColor?: string | undefined;
-                    setbackThreshold?: number | null | undefined;
-                    likesCount?: number | null | undefined;
-                    timerSeconds?: import("yup").Maybe<number | undefined>;
-                    isSuggested?: boolean | undefined;
-                    ordinal: number;
-                    prompt: string;
                     type: "steps";
                     targetSteps: number;
                 } | {
@@ -4801,10 +4383,10 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     toDate: Function;
                 };
                 dateString: string;
-                supportGroupDoc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
+                folderDoc: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             };
         };
-    }, "profileId" | "type" | "date" | "dateString" | "isVisible" | "logsById" | ("createdAt" | "updatedAt" | "title" | "profileEmojiIDString" | "tacticsWithCommentsIds" | "sharedWithFolderIds" | "debriefedAt" | "debriefAfter" | "debriefReminderSentAt" | "whatsappSupportGroupDoc" | "firstLogId" | "isProcessing" | "gptSystemMessage")>;
+    }, "profileId" | "type" | "date" | "dateString" | "isVisible" | "logsById" | ("createdAt" | "updatedAt" | "title" | "profileEmojiIDString" | "tacticsWithCommentsIds" | "sharedWithFolderIds" | "debriefedAt" | "debriefAfter" | "debriefReminderSentAt" | "whatsappFolderDoc" | "firstLogId" | "isProcessing" | "gptSystemMessage")>;
     impulseLogFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -4950,44 +4532,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             prompt: string;
             type: "notifyASupportPerson";
             contactIds: string[];
-        } | {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | undefined;
-            recommendedForIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            description?: string | null | undefined;
-            pastTenseTitle?: string | undefined;
-            debriefAfterMinutes?: number | null | undefined;
-            image?: {
-                localFilePath?: import("yup").Maybe<string | undefined>;
-                storagePath?: import("yup").Maybe<string | undefined>;
-                uri?: import("yup").Maybe<string | undefined>;
-            } | null | undefined;
-            backgroundColor?: string | undefined;
-            setbackThreshold?: number | null | undefined;
-            likesCount?: number | null | undefined;
-            timerSeconds?: import("yup").Maybe<number | undefined>;
-            isSuggested?: boolean | undefined;
-            ordinal: number;
-            prompt: string;
-            type: "notifySupportGroup";
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -5379,44 +4923,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             isSuggested?: boolean | undefined;
             ordinal: number;
             prompt: string;
-            type: "notifySupportGroup";
-        } | {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | undefined;
-            recommendedForIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            description?: string | null | undefined;
-            pastTenseTitle?: string | undefined;
-            debriefAfterMinutes?: number | null | undefined;
-            image?: {
-                localFilePath?: import("yup").Maybe<string | undefined>;
-                storagePath?: import("yup").Maybe<string | undefined>;
-                uri?: import("yup").Maybe<string | undefined>;
-            } | null | undefined;
-            backgroundColor?: string | undefined;
-            setbackThreshold?: number | null | undefined;
-            likesCount?: number | null | undefined;
-            timerSeconds?: import("yup").Maybe<number | undefined>;
-            isSuggested?: boolean | undefined;
-            ordinal: number;
-            prompt: string;
             type: "steps";
             targetSteps: number;
         } | {
@@ -5725,44 +5231,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             prompt: string;
             type: "notifyASupportPerson";
             contactIds: string[];
-        } | {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | undefined;
-            recommendedForIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            description?: string | null | undefined;
-            pastTenseTitle?: string | undefined;
-            debriefAfterMinutes?: number | null | undefined;
-            image?: {
-                localFilePath?: import("yup").Maybe<string | undefined>;
-                storagePath?: import("yup").Maybe<string | undefined>;
-                uri?: import("yup").Maybe<string | undefined>;
-            } | null | undefined;
-            backgroundColor?: string | undefined;
-            setbackThreshold?: number | null | undefined;
-            likesCount?: number | null | undefined;
-            timerSeconds?: import("yup").Maybe<number | undefined>;
-            isSuggested?: boolean | undefined;
-            ordinal: number;
-            prompt: string;
-            type: "notifySupportGroup";
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -6701,44 +6169,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             isSuggested?: boolean | undefined;
             ordinal: number;
             prompt: string;
-            type: "notifySupportGroup";
-        } | {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | undefined;
-            recommendedForIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            description?: string | null | undefined;
-            pastTenseTitle?: string | undefined;
-            debriefAfterMinutes?: number | null | undefined;
-            image?: {
-                localFilePath?: import("yup").Maybe<string | undefined>;
-                storagePath?: import("yup").Maybe<string | undefined>;
-                uri?: import("yup").Maybe<string | undefined>;
-            } | null | undefined;
-            backgroundColor?: string | undefined;
-            setbackThreshold?: number | null | undefined;
-            likesCount?: number | null | undefined;
-            timerSeconds?: import("yup").Maybe<number | undefined>;
-            isSuggested?: boolean | undefined;
-            ordinal: number;
-            prompt: string;
             type: "steps";
             targetSteps: number;
         } | {
@@ -7020,44 +6450,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 prompt: string;
                 type: "notifyASupportPerson";
                 contactIds: string[];
-            } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                profileId?: string | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
-                image?: {
-                    localFilePath?: import("yup").Maybe<string | undefined>;
-                    storagePath?: import("yup").Maybe<string | undefined>;
-                    uri?: import("yup").Maybe<string | undefined>;
-                } | null | undefined;
-                backgroundColor?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                likesCount?: number | null | undefined;
-                timerSeconds?: import("yup").Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
-                ordinal: number;
-                prompt: string;
-                type: "notifySupportGroup";
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -7525,13 +6917,13 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         parentNames?: string[] | undefined;
         profileCount?: number | null | undefined;
         isFeatured?: boolean | null | undefined;
-        recommendedSupportGroups?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
-        supportGroupOrdinals?: {
+        recommendedFolders?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
+        folderOrdinals?: {
             [x: string]: number;
         } | null | undefined;
         gameplanTactics?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
         name: string;
-    }, "name" | ("path" | "createdAt" | "updatedAt" | "ordinal" | "parentIds" | "parentId" | "parentName" | "hasDebriefQuestion" | "synonyms" | "parentNames" | "profileCount" | "isFeatured" | "recommendedSupportGroups" | "supportGroupOrdinals" | "gameplanTactics")>;
+    }, "name" | ("path" | "createdAt" | "updatedAt" | "ordinal" | "parentIds" | "parentId" | "parentName" | "hasDebriefQuestion" | "synonyms" | "parentNames" | "profileCount" | "isFeatured" | "recommendedFolders" | "folderOrdinals" | "gameplanTactics")>;
     locationFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -7595,7 +6987,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         } | null | undefined;
         setbackThreshold?: number | undefined;
         parentIds?: string[] | undefined;
-        whatsappSupportGroupDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+        whatsappFolderDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         lastActiveAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -7624,7 +7016,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         activeThreadDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         scheduledNotificationIds?: string[] | undefined;
         currentAppState?: import("react-native/types").AppStateStatus | undefined;
-        addToSupportGroup?: boolean | undefined;
+        addToFolder?: boolean | undefined;
         emojiID?: string[] | undefined;
         expoPushToken?: string | undefined;
         notificationPreferences?: {
@@ -7661,8 +7053,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 parentNames?: string[] | undefined;
                 profileCount?: number | null | undefined;
                 isFeatured?: boolean | null | undefined;
-                recommendedSupportGroups?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
-                supportGroupOrdinals?: {
+                recommendedFolders?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
+                folderOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
                 gameplanTactics?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
@@ -7686,7 +7078,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         } | null;
         signUpIssueId: string | null;
         timezone: string;
-    }, "uids" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIds" | "whatsappSupportGroupDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "addToSupportGroup" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "issuesById" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "region")>;
+    }, "uids" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIds" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "addToFolder" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "issuesById" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "region")>;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
