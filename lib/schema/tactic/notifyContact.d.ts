@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-export declare const notifyASupportPersonTacticSchema: yup.ObjectSchema<{
+export declare const notifyAContactSchema: yup.ObjectSchema<{
     profileId: string | undefined;
     recommendedForIssueIds: string[] | undefined;
     recommendedForIssueOrdinals: {
@@ -62,4 +62,4 @@ export declare const notifyASupportPersonTacticSchema: yup.ObjectSchema<{
     isSuggested: undefined;
     contactIds: "";
 }, "">;
-export type NotifyASupportPersonTacticValue = yup.InferType<typeof notifyASupportPersonTacticSchema>;
+export type NotifyAContactValue = yup.InferType<typeof notifyAContactSchema>;
