@@ -110,6 +110,14 @@ export declare const profileSchema: yup.ObjectSchema<{
     scheduledNotificationIds: string[] | undefined;
     whatsappFolderDoc: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
     uids: string[];
+    onboardedWithZaraAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
@@ -141,5 +149,6 @@ export declare const profileSchema: yup.ObjectSchema<{
     scheduledNotificationIds: "";
     whatsappFolderDoc: undefined;
     uids: "";
+    onboardedWithZaraAt: undefined;
 }, "">;
 export type ProfileValue = yup.InferType<typeof profileSchema>;

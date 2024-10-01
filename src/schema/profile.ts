@@ -46,6 +46,7 @@ export const profileSchema = yup.object({
   scheduledNotificationIds: optionalStringArray,
   whatsappFolderDoc: documentReferenceSchema,
   uids: requiredStringArray,
+  onboardedWithZaraAt: optionalTimestampSchema,
 });
 
 export type ProfileValue = yup.InferType<typeof profileSchema>;
