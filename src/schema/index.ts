@@ -23,7 +23,6 @@ export * from './suggestion';
 export * from './supportGroup';
 export * from './tactic';
 export * from './tacticImpression';
-export * from './thread';
 
 // Utils
 export * from './utils/file';

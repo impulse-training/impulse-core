@@ -22,6 +22,5 @@ export * from './suggestion';
 export * from './supportGroup';
 export * from './tactic';
 export * from './tacticImpression';
-export * from './thread';
 export * from './utils/file';
 export * from './utils/time';

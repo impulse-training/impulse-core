@@ -19,7 +19,6 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     } | null | undefined;
     setbackThreshold?: number | undefined;
     parentIds?: string[] | undefined;
-    whatsappFolderDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
     lastActiveAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -47,6 +46,7 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     activeImpulseDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
     activeThreadDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
     scheduledNotificationIds?: string[] | undefined;
+    whatsappFolderDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
     currentAppState?: import("react-native/types").AppStateStatus | undefined;
     addToFolder?: boolean | undefined;
     emojiID?: string[] | undefined;
@@ -110,4 +110,4 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     } | null;
     signUpIssueId: string | null;
     timezone: string;
-}, "uids" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIds" | "whatsappFolderDoc" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "currentAppState" | "addToFolder" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "issuesById" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "region")>;
+}, "uids" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "whatsappFolderDoc" | "currentAppState" | "addToFolder" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "issuesById" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "region")>;

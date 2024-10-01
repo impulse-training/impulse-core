@@ -4764,9 +4764,6 @@ export declare const daySchema: yup.ObjectSchema<{
             folderDoc: import("./utils/firestore").DocumentReferenceLike<unknown>;
         };
     };
-    threadsById: {
-        [x: string]: import("./thread").ThreadValue;
-    };
     questionsById: {
         [x: string]: {
             createdAt?: {
@@ -5303,7 +5300,6 @@ export declare const daySchema: yup.ObjectSchema<{
     };
     issueName: undefined;
     logsById: undefined;
-    threadsById: undefined;
     questionsById: undefined;
 }, "">;
 export type DayValue = Omit<yup.InferType<typeof daySchema>, 'logsById'> & {

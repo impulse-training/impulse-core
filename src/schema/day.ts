@@ -1,7 +1,6 @@
 import * as yup from 'yup';
 import { LogValue, logSchema } from './log';
 import { questionSchema } from './question';
-import { threadSchema } from './thread';
 import { objectOf } from './utils/objectOf';
 import { timestampSchema } from './utils/timestamp';
 
@@ -10,7 +9,6 @@ export const daySchema = yup.object({
   date: timestampSchema,
   issueName: yup.string().required(),
   logsById: objectOf(logSchema),
-  threadsById: objectOf(threadSchema),
   questionsById: objectOf(questionSchema),
 });
 

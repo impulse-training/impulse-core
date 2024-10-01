@@ -11,7 +11,6 @@ import {
   roadmapSchema,
   suggestionSchema,
   tacticSchema,
-  threadSchema,
   timeRoutineSchema,
 } from '../../schema';
 import { questionSchema } from '../../schema/question';
@@ -67,7 +66,6 @@ const schemaMap: Record<keyof typeof factories, null | Schema | Lazy<unknown>> =
     profileFactory: profileSchema,
     issueFactory: issueSchema,
     suggestionFactory: suggestionSchema,
-    dayReviewThreadFactory: threadSchema,
     roadmapFactory: roadmapSchema,
     tacticFactory: tacticSchema,
     timeQuestionFactory: questionSchema,
