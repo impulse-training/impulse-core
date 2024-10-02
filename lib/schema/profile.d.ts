@@ -50,6 +50,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     notificationPreferences: {
         [x: string]: NonNullable<"push" | "email" | undefined>[] | undefined;
     } | null | undefined;
+    blandPathwayId: string | undefined;
     questionOfTheDayAnsweredQuestions: {
         [x: string]: boolean | undefined;
     } | null | undefined;
@@ -132,6 +133,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     emojiID: "";
     expoPushToken: undefined;
     notificationPreferences: undefined;
+    blandPathwayId: undefined;
     questionOfTheDayAnsweredQuestions: undefined;
     verificationCode: undefined;
     dayReviewTime: null;

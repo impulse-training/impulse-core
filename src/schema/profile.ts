@@ -22,6 +22,7 @@ export const profileSchema = yup.object({
   notificationPreferences: optionalObjectOf(
     yup.array().of(notificationOptionSchema)
   ),
+  blandPathwayId: yup.string(),
   questionOfTheDayAnsweredQuestions: optionalObjectOf(yup.boolean()),
   verificationCode: yup.string().required(),
   dayReviewTime: yup
