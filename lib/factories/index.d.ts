@@ -2888,13 +2888,14 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         impulseContext?: string | null | undefined;
         region?: string | null | undefined;
         uids: string[];
+        verificationCode: string;
         dayReviewTime: {
             hour: number;
             minute: number;
         } | null;
         signUpIssueId: string | null;
         timezone: string;
-    }, "uids" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "whatsappFolderDoc" | "onboardedWithZaraAt" | "currentAppState" | "addToFolder" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "issuesById" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "region")>;
+    }, "uids" | "verificationCode" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "whatsappFolderDoc" | "onboardedWithZaraAt" | "currentAppState" | "addToFolder" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "issuesById" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "region")>;
     timeRoutineFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;

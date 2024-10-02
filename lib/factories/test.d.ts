@@ -503,10 +503,11 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     impulseContext?: string | null | undefined;
     region?: string | null | undefined;
     uids: string[];
+    verificationCode: string;
     dayReviewTime: {
         hour: number;
         minute: number;
     } | null;
     signUpIssueId: string | null;
     timezone: string;
-}, "uids" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "whatsappFolderDoc" | "onboardedWithZaraAt" | "currentAppState" | "addToFolder" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "issuesById" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "region")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "ordinal" | "prompt" | "description" | "type" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "setbackThreshold" | "likesCount" | "timerSeconds" | "isSuggested">;
+}, "uids" | "verificationCode" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIds" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "whatsappFolderDoc" | "onboardedWithZaraAt" | "currentAppState" | "addToFolder" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "issuesById" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "region")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "ordinal" | "prompt" | "description" | "type" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "setbackThreshold" | "likesCount" | "timerSeconds" | "isSuggested">;

@@ -23,6 +23,7 @@ export const profileSchema = yup.object({
     yup.array().of(notificationOptionSchema)
   ),
   questionOfTheDayAnsweredQuestions: optionalObjectOf(yup.boolean()),
+  verificationCode: yup.string().required(),
   dayReviewTime: yup
     .object({
       hour: yup.number().required(),

@@ -53,6 +53,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     questionOfTheDayAnsweredQuestions: {
         [x: string]: boolean | undefined;
     } | null | undefined;
+    verificationCode: string;
     dayReviewTime: {
         hour: number;
         minute: number;
@@ -132,6 +133,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     expoPushToken: undefined;
     notificationPreferences: undefined;
     questionOfTheDayAnsweredQuestions: undefined;
+    verificationCode: undefined;
     dayReviewTime: null;
     issuesById: undefined;
     signUpIssueId: undefined;
