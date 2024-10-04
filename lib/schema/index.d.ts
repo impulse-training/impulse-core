@@ -4,6 +4,7 @@ export * from './contact';
 export * from './day';
 export * from './daysSummary';
 export * from './folder';
+export * from './gameplan';
 export * from './invitation';
 export * from './issue';
 export * from './location';
