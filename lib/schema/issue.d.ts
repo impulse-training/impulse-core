@@ -27,6 +27,7 @@ export declare const issueSchema: yup.ObjectSchema<{
     parentNames: string[] | undefined;
     profileCount: number | null | undefined;
     isFeatured: boolean | null | undefined;
+    blandContext: string | undefined;
     recommendedFolders: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
     folderOrdinals: {
         [x: string]: number;
@@ -46,6 +47,7 @@ export declare const issueSchema: yup.ObjectSchema<{
     parentNames: "";
     profileCount: undefined;
     isFeatured: undefined;
+    blandContext: undefined;
     recommendedFolders: "";
     folderOrdinals: undefined;
     gameplanTactics: "";

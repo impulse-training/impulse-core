@@ -2725,13 +2725,14 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         parentNames?: string[] | undefined;
         profileCount?: number | null | undefined;
         isFeatured?: boolean | null | undefined;
+        blandContext?: string | undefined;
         recommendedFolders?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
         folderOrdinals?: {
             [x: string]: number;
         } | null | undefined;
         gameplanTactics?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
         name: string;
-    }, "name" | ("path" | "createdAt" | "updatedAt" | "ordinal" | "parentIds" | "parentId" | "parentName" | "hasDebriefQuestion" | "synonyms" | "parentNames" | "profileCount" | "isFeatured" | "recommendedFolders" | "folderOrdinals" | "gameplanTactics")>;
+    }, "name" | ("path" | "createdAt" | "updatedAt" | "ordinal" | "parentIds" | "parentId" | "parentName" | "hasDebriefQuestion" | "synonyms" | "parentNames" | "profileCount" | "isFeatured" | "blandContext" | "recommendedFolders" | "folderOrdinals" | "gameplanTactics")>;
     locationFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -2824,6 +2825,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 parentNames?: string[] | undefined;
                 profileCount?: number | null | undefined;
                 isFeatured?: boolean | null | undefined;
+                blandContext?: string | undefined;
                 recommendedFolders?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
                 folderOrdinals?: {
                     [x: string]: number;

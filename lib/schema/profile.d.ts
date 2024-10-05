@@ -87,6 +87,7 @@ export declare const profileSchema: yup.ObjectSchema<{
             parentNames?: string[] | undefined;
             profileCount?: number | null | undefined;
             isFeatured?: boolean | null | undefined;
+            blandContext?: string | undefined;
             recommendedFolders?: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
             folderOrdinals?: {
                 [x: string]: number;

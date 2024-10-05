@@ -439,6 +439,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             parentNames?: string[] | undefined;
             profileCount?: number | null | undefined;
             isFeatured?: boolean | null | undefined;
+            blandContext?: string | undefined;
             recommendedFolders?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
             folderOrdinals?: {
                 [x: string]: number;

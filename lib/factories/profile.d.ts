@@ -48,6 +48,7 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
             parentNames?: string[] | undefined;
             profileCount?: number | null | undefined;
             isFeatured?: boolean | null | undefined;
+            blandContext?: string | undefined;
             recommendedFolders?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
             folderOrdinals?: {
                 [x: string]: number;

@@ -19,6 +19,8 @@ export const issueSchema = yup.object().shape({
   profileCount: yup.number().nullable(),
   isFeatured: yup.boolean().nullable(),
 
+  blandContext: yup.string(),
+
   // For top-level issues, we store references to recommended support groups
   recommendedFolders: yup.array().of(documentReferenceSchema.required()),
   // For profile issues, we store references to the tactics that are the user's "gameplan" for the
