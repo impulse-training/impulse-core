@@ -16,6 +16,10 @@ export declare const gameplanSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    blandPathwayData: {
+        nodes?: {}[] | undefined;
+        edges?: {}[] | undefined;
+    };
     blandPathwayId: string | undefined;
     issuesById: {
         [x: string]: {
@@ -766,6 +770,10 @@ export declare const gameplanSchema: yup.ObjectSchema<{
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
+    blandPathwayData: {
+        nodes: "";
+        edges: "";
+    };
     blandPathwayId: undefined;
     issuesById: undefined;
     profileStrategiesById: undefined;

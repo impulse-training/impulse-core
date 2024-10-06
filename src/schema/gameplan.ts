@@ -9,6 +9,11 @@ import { optionalTimestampSchema } from './utils/timestamp';
 export const gameplanSchema = yup.object().shape({
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
+  // For now, we don't type this object more specifically
+  blandPathwayData: yup.object({
+    nodes: yup.array().of(yup.object().required()),
+    edges: yup.array().of(yup.object().required()),
+  }),
   blandPathwayId: yup.string(),
   issuesById: optionalObjectOf(issueSchema),
   profileStrategiesById: optionalObjectOf(profileStrategySchema),
