@@ -1,6 +1,27 @@
-import * as yup from 'yup';
-export declare const profileStrategySchema: yup.ObjectSchema<{
-    strategyDoc: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
+import * as Factory from 'factory.ts';
+import { TimestampLike } from '../utils/firestore/TimestampLike';
+export declare const makeProfileStrategyFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
+    createdAt?: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    updatedAt?: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    ordinal?: number | undefined;
+    strategyDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+    ordinalsForIssues?: {
+        [x: string]: number;
+    } | null | undefined;
     strategy: {
         createdAt?: {
             isEqual?: any;
@@ -48,22 +69,22 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
+                    localFilePath?: import("yup").Maybe<string | undefined>;
+                    storagePath?: import("yup").Maybe<string | undefined>;
+                    uri?: import("yup").Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 likesCount?: number | null | undefined;
-                timerSeconds?: yup.Maybe<number | undefined>;
+                timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 waveForm?: string | null | undefined;
                 ordinal: number;
                 type: "audio";
                 recording: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
+                    localFilePath?: import("yup").Maybe<string | undefined>;
+                    storagePath?: import("yup").Maybe<string | undefined>;
+                    uri?: import("yup").Maybe<string | undefined>;
                 };
             } | {
                 createdAt?: {
@@ -91,16 +112,16 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
+                    localFilePath?: import("yup").Maybe<string | undefined>;
+                    storagePath?: import("yup").Maybe<string | undefined>;
+                    uri?: import("yup").Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 likesCount?: number | null | undefined;
-                timerSeconds?: yup.Maybe<number | undefined>;
+                timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                repeat?: yup.Maybe<number | undefined>;
+                repeat?: import("yup").Maybe<number | undefined>;
                 ordinal: number;
                 prompt: string;
                 type: "breathingExercise";
@@ -133,14 +154,14 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
+                    localFilePath?: import("yup").Maybe<string | undefined>;
+                    storagePath?: import("yup").Maybe<string | undefined>;
+                    uri?: import("yup").Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 likesCount?: number | null | undefined;
-                timerSeconds?: yup.Maybe<number | undefined>;
+                timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 ordinal: number;
                 prompt: string;
@@ -172,19 +193,19 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
+                    localFilePath?: import("yup").Maybe<string | undefined>;
+                    storagePath?: import("yup").Maybe<string | undefined>;
+                    uri?: import("yup").Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 likesCount?: number | null | undefined;
-                timerSeconds?: yup.Maybe<number | undefined>;
+                timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 ordinal: number;
                 prompt: string;
                 type: "notifySupportGroup";
-                supportGroup: import("./utils/firestore").DocumentReferenceLike<unknown>;
+                supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -211,14 +232,14 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
+                    localFilePath?: import("yup").Maybe<string | undefined>;
+                    storagePath?: import("yup").Maybe<string | undefined>;
+                    uri?: import("yup").Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 likesCount?: number | null | undefined;
-                timerSeconds?: yup.Maybe<number | undefined>;
+                timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 ordinal: number;
                 prompt: string;
@@ -250,14 +271,14 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
+                    localFilePath?: import("yup").Maybe<string | undefined>;
+                    storagePath?: import("yup").Maybe<string | undefined>;
+                    uri?: import("yup").Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 likesCount?: number | null | undefined;
-                timerSeconds?: yup.Maybe<number | undefined>;
+                timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 ordinal: number;
                 prompt: string;
@@ -288,14 +309,14 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
+                    localFilePath?: import("yup").Maybe<string | undefined>;
+                    storagePath?: import("yup").Maybe<string | undefined>;
+                    uri?: import("yup").Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 likesCount?: number | null | undefined;
-                timerSeconds?: yup.Maybe<number | undefined>;
+                timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 ordinal: number;
                 prompt: string;
@@ -334,14 +355,14 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
+                    localFilePath?: import("yup").Maybe<string | undefined>;
+                    storagePath?: import("yup").Maybe<string | undefined>;
+                    uri?: import("yup").Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 likesCount?: number | null | undefined;
-                timerSeconds?: yup.Maybe<number | undefined>;
+                timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 ordinal: number;
                 prompt: string;
@@ -350,7 +371,7 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
         } | null | undefined;
         templateForIssueIds?: string[] | undefined;
         tacticCount?: number | undefined;
-        profileIssues?: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
+        profileIssues?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
         next3Tactics?: ({
             createdAt?: {
                 isEqual?: any;
@@ -378,22 +399,22 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
             setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
             waveForm?: string | null | undefined;
             ordinal: number;
             type: "audio";
             recording: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
             };
         } | {
             createdAt?: {
@@ -421,16 +442,16 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
             setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            repeat?: yup.Maybe<number | undefined>;
+            repeat?: import("yup").Maybe<number | undefined>;
             ordinal: number;
             prompt: string;
             type: "breathingExercise";
@@ -463,14 +484,14 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
             setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
             ordinal: number;
             prompt: string;
@@ -502,19 +523,19 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
             setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
             ordinal: number;
             prompt: string;
             type: "notifySupportGroup";
-            supportGroup: import("./utils/firestore").DocumentReferenceLike<unknown>;
+            supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -541,14 +562,14 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
             setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
             ordinal: number;
             prompt: string;
@@ -580,14 +601,14 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
             setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
             ordinal: number;
             prompt: string;
@@ -618,14 +639,14 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
             setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
             ordinal: number;
             prompt: string;
@@ -664,14 +685,14 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
             image?: {
-                localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
             setbackThreshold?: number | null | undefined;
             likesCount?: number | null | undefined;
-            timerSeconds?: yup.Maybe<number | undefined>;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
             ordinal: number;
             prompt: string;
@@ -683,47 +704,4 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
         invitationCode: string;
         invitationUrl: string;
     };
-    ordinalsForIssues: {
-        [x: string]: number;
-    } | null | undefined;
-    ordinal: number | undefined;
-    createdAt: {
-        isEqual?: any;
-        toMillis?: any;
-        toJSON?: any;
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    } | null | undefined;
-    updatedAt: {
-        isEqual?: any;
-        toMillis?: any;
-        toJSON?: any;
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    } | null | undefined;
-}, yup.AnyObject, {
-    strategyDoc: undefined;
-    strategy: {
-        createdAt: undefined;
-        updatedAt: undefined;
-        name: undefined;
-        description: undefined;
-        profileId: undefined;
-        isShared: undefined;
-        tacticCount: undefined;
-        invitationCode: undefined;
-        invitationUrl: undefined;
-        profileIssues: "";
-        templateForIssueIds: "";
-        tacticsById: undefined;
-        next3Tactics: "";
-        nextTacticId: undefined;
-    };
-    ordinalsForIssues: undefined;
-    ordinal: undefined;
-    createdAt: undefined;
-    updatedAt: undefined;
-}, "">;
-export type ProfileStrategyValue = yup.InferType<typeof profileStrategySchema>;
+}, "strategy" | ("createdAt" | "updatedAt" | "ordinal" | "strategyDoc" | "ordinalsForIssues")>;

@@ -56,6 +56,22 @@ export declare const gameplanSchema: yup.ObjectSchema<{
     } | null | undefined;
     profileStrategiesById: {
         [x: string]: {
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
             ordinal?: number | undefined;
             strategyDoc?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
             ordinalsForIssues?: {
