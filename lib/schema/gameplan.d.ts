@@ -46,8 +46,8 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             profileCount?: number | null | undefined;
             isFeatured?: boolean | null | undefined;
             blandContext?: string | undefined;
-            recommendedFolders?: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
-            folderOrdinals?: {
+            recommendedStrategies?: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
+            strategyOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
             gameplanTactics?: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;

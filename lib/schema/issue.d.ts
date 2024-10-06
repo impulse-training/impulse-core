@@ -28,8 +28,8 @@ export declare const issueSchema: yup.ObjectSchema<{
     profileCount: number | null | undefined;
     isFeatured: boolean | null | undefined;
     blandContext: string | undefined;
-    recommendedFolders: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
-    folderOrdinals: {
+    recommendedStrategies: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
+    strategyOrdinals: {
         [x: string]: number;
     } | null | undefined;
     gameplanTactics: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
@@ -48,8 +48,8 @@ export declare const issueSchema: yup.ObjectSchema<{
     profileCount: undefined;
     isFeatured: undefined;
     blandContext: undefined;
-    recommendedFolders: "";
-    folderOrdinals: undefined;
+    recommendedStrategies: "";
+    strategyOrdinals: undefined;
     gameplanTactics: "";
 }, "">;
 export type IssueValue = yup.InferType<typeof issueSchema>;

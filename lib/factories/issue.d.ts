@@ -28,10 +28,10 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
     profileCount?: number | null | undefined;
     isFeatured?: boolean | null | undefined;
     blandContext?: string | undefined;
-    recommendedFolders?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
-    folderOrdinals?: {
+    recommendedStrategies?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
+    strategyOrdinals?: {
         [x: string]: number;
     } | null | undefined;
     gameplanTactics?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
     name: string;
-}, "name" | ("path" | "createdAt" | "updatedAt" | "ordinal" | "parentIds" | "parentId" | "parentName" | "hasDebriefQuestion" | "synonyms" | "parentNames" | "profileCount" | "isFeatured" | "blandContext" | "recommendedFolders" | "folderOrdinals" | "gameplanTactics")>;
+}, "name" | ("path" | "createdAt" | "updatedAt" | "ordinal" | "parentIds" | "parentId" | "parentName" | "hasDebriefQuestion" | "synonyms" | "parentNames" | "profileCount" | "isFeatured" | "blandContext" | "recommendedStrategies" | "strategyOrdinals" | "gameplanTactics")>;

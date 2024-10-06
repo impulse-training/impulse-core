@@ -4761,7 +4761,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             };
             dateString: string;
-            folderDoc: import("./utils/firestore").DocumentReferenceLike<unknown>;
+            strategyDoc: import("./utils/firestore").DocumentReferenceLike<unknown>;
         };
     };
     questionsById: {

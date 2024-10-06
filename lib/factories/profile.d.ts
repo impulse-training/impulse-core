@@ -49,8 +49,8 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
             profileCount?: number | null | undefined;
             isFeatured?: boolean | null | undefined;
             blandContext?: string | undefined;
-            recommendedFolders?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
-            folderOrdinals?: {
+            recommendedStrategies?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
+            strategyOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
             gameplanTactics?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
@@ -84,7 +84,7 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     activeImpulseDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
     activeThreadDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
     scheduledNotificationIds?: string[] | undefined;
-    whatsappFolderDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+    whatsappStrategyDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
     onboardedWithZaraAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -94,7 +94,7 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
         toDate: Function;
     } | null | undefined;
     currentAppState?: import("react-native/types").AppStateStatus | undefined;
-    addToFolder?: boolean | undefined;
+    addToStrategy?: boolean | undefined;
     emojiID?: string[] | undefined;
     expoPushToken?: string | undefined;
     notificationPreferences?: {
@@ -121,4 +121,4 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     } | null;
     signUpIssueId: string | null;
     timezone: string;
-}, "uids" | "verificationCode" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIds" | "blandPathwayId" | "issuesById" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "whatsappFolderDoc" | "onboardedWithZaraAt" | "currentAppState" | "addToFolder" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "region")>;
+}, "uids" | "verificationCode" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIds" | "blandPathwayId" | "issuesById" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "addToStrategy" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "region")>;

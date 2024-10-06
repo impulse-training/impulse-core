@@ -16,7 +16,7 @@ export const profileSchema = yup.object({
   activeImpulseDoc: documentReferenceSchema,
   activeThreadDoc: documentReferenceSchema,
   currentAppState: yup.mixed<AppStateStatus>().optional(), // Define validation for AppStateStatus if needed
-  addToFolder: yup.boolean(),
+  addToStrategy: yup.boolean(),
   emojiID: yup.array().of(yup.string().required()),
   expoPushToken: yup.string().optional(),
   notificationPreferences: optionalObjectOf(
@@ -46,7 +46,7 @@ export const profileSchema = yup.object({
   region: yup.string().nullable().optional(),
   timezone: yup.string().required(),
   scheduledNotificationIds: optionalStringArray,
-  whatsappFolderDoc: documentReferenceSchema,
+  whatsappStrategyDoc: documentReferenceSchema,
   uids: requiredStringArray,
   onboardedWithZaraAt: optionalTimestampSchema,
 });

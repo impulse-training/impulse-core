@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-export declare const folderSchema: yup.ObjectSchema<{
+export declare const strategySchema: yup.ObjectSchema<{
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -694,4 +694,4 @@ export declare const folderSchema: yup.ObjectSchema<{
     next3Tactics: "";
     nextTacticId: undefined;
 }, "">;
-export type FolderValue = yup.InferType<typeof folderSchema>;
+export type StrategyValue = yup.InferType<typeof strategySchema>;

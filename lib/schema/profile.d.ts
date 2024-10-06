@@ -44,7 +44,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     activeImpulseDoc: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
     activeThreadDoc: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
     currentAppState: AppStateStatus | undefined;
-    addToFolder: boolean | undefined;
+    addToStrategy: boolean | undefined;
     emojiID: string[] | undefined;
     expoPushToken: string | undefined;
     notificationPreferences: {
@@ -88,8 +88,8 @@ export declare const profileSchema: yup.ObjectSchema<{
             profileCount?: number | null | undefined;
             isFeatured?: boolean | null | undefined;
             blandContext?: string | undefined;
-            recommendedFolders?: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
-            folderOrdinals?: {
+            recommendedStrategies?: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
+            strategyOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
             gameplanTactics?: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
@@ -111,7 +111,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     region: string | null | undefined;
     timezone: string;
     scheduledNotificationIds: string[] | undefined;
-    whatsappFolderDoc: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
+    whatsappStrategyDoc: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
     uids: string[];
     onboardedWithZaraAt: {
         isEqual?: any;
@@ -130,7 +130,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     activeImpulseDoc: undefined;
     activeThreadDoc: undefined;
     currentAppState: undefined;
-    addToFolder: undefined;
+    addToStrategy: undefined;
     emojiID: "";
     expoPushToken: undefined;
     notificationPreferences: undefined;
@@ -152,7 +152,7 @@ export declare const profileSchema: yup.ObjectSchema<{
     region: undefined;
     timezone: undefined;
     scheduledNotificationIds: "";
-    whatsappFolderDoc: undefined;
+    whatsappStrategyDoc: undefined;
     uids: "";
     onboardedWithZaraAt: undefined;
 }, "">;

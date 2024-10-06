@@ -17,5 +17,5 @@ export interface ApplicationValue {
     zipCode?: string;
     country?: string;
     shippingLabelUrl?: string;
-    folderId?: string;
+    strategyId?: string;
 }
