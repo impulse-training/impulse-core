@@ -9,6 +9,7 @@ import { makeProfileFactory } from './profile';
 import { makeQuestionFactories } from './question';
 import { makeRoadmapFactory } from './roadmap';
 import { makeTimeRoutineFactory } from './routine';
+import { makeStrategyFactory } from './strategy';
 import { makeSuggestionFactory } from './suggestion';
 import { makeTacticFactory } from './tactic';
 
@@ -27,6 +28,7 @@ export function makeFactories(TimestampKlass: typeof TimestampLike) {
     tacticFactory: makeTacticFactory(TimestampKlass),
     roadmapFactory: makeRoadmapFactory(TimestampKlass),
     suggestionFactory: makeSuggestionFactory(TimestampKlass),
+    strategyFactory: makeStrategyFactory(TimestampKlass),
     ...makeQuestionFactories(TimestampKlass),
     ...makeLogFactories(TimestampKlass),
   };
