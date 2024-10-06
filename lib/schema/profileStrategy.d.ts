@@ -348,6 +348,7 @@ export declare const profileStrategy: yup.ObjectSchema<{
                 type: "zara";
             };
         } | null | undefined;
+        templateForIssueIds?: string[] | undefined;
         tacticCount?: number | undefined;
         profileIssues?: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
         next3Tactics?: ({
@@ -682,7 +683,10 @@ export declare const profileStrategy: yup.ObjectSchema<{
         invitationCode: string;
         invitationUrl: string;
     };
-    ordinal: number;
+    ordinalsForIssues: {
+        [x: string]: number;
+    } | null | undefined;
+    ordinal: number | undefined;
 }, yup.AnyObject, {
     strategyDoc: undefined;
     strategy: {
@@ -696,10 +700,12 @@ export declare const profileStrategy: yup.ObjectSchema<{
         invitationCode: undefined;
         invitationUrl: undefined;
         profileIssues: "";
+        templateForIssueIds: "";
         tacticsById: undefined;
         next3Tactics: "";
         nextTacticId: undefined;
     };
+    ordinalsForIssues: undefined;
     ordinal: undefined;
 }, "">;
-export type ProfileStrategyType = yup.InferType<typeof profileStrategy>;
+export type ProfileStrategyValue = yup.InferType<typeof profileStrategy>;

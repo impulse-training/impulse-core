@@ -24,6 +24,7 @@ export declare const strategySchema: yup.ObjectSchema<{
     invitationCode: string;
     invitationUrl: string;
     profileIssues: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
+    templateForIssueIds: string[] | undefined;
     tacticsById: {
         [x: string]: {
             createdAt?: {
@@ -690,6 +691,7 @@ export declare const strategySchema: yup.ObjectSchema<{
     invitationCode: undefined;
     invitationUrl: undefined;
     profileIssues: "";
+    templateForIssueIds: "";
     tacticsById: undefined;
     next3Tactics: "";
     nextTacticId: undefined;
