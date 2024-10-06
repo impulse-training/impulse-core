@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 import { issueSchema } from './issue';
+import { profileStrategySchema } from './profileStrategy';
 import { optionalObjectOf } from './utils/objectOf';
 import { optionalTimestampSchema } from './utils/timestamp';
 
@@ -10,8 +11,7 @@ export const gameplanSchema = yup.object().shape({
   updatedAt: optionalTimestampSchema,
   blandPathwayId: yup.string(),
   issuesById: optionalObjectOf(issueSchema),
-
-  // strategiesById: optionalObjectOf(strategySchema),
+  profileStrategiesById: optionalObjectOf(profileStrategySchema),
 });
 
 export type GameplanValue = yup.InferType<typeof gameplanSchema>;

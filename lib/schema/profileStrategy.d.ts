@@ -1,5 +1,5 @@
 import * as yup from 'yup';
-export declare const profileStrategy: yup.ObjectSchema<{
+export declare const profileStrategySchema: yup.ObjectSchema<{
     strategyDoc: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
     strategy: {
         createdAt?: {
@@ -708,4 +708,4 @@ export declare const profileStrategy: yup.ObjectSchema<{
     ordinalsForIssues: undefined;
     ordinal: undefined;
 }, "">;
-export type ProfileStrategyValue = yup.InferType<typeof profileStrategy>;
+export type ProfileStrategyValue = yup.InferType<typeof profileStrategySchema>;
