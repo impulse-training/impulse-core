@@ -3677,9 +3677,11 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         } | null | undefined;
         ordinal?: number | undefined;
         strategyDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+        forIssueIds?: string[] | undefined;
         ordinalsForIssues?: {
             [x: string]: number;
         } | null | undefined;
+        forAllIssues?: boolean | undefined;
         strategy: {
             createdAt?: {
                 isEqual?: any;
@@ -4362,5 +4364,5 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             invitationCode: string;
             invitationUrl: string;
         };
-    }, "strategy" | ("createdAt" | "updatedAt" | "ordinal" | "strategyDoc" | "ordinalsForIssues")>;
+    }, "strategy" | ("createdAt" | "updatedAt" | "ordinal" | "strategyDoc" | "forIssueIds" | "ordinalsForIssues" | "forAllIssues")>;
 };

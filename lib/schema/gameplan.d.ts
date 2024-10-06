@@ -74,9 +74,11 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             } | null | undefined;
             ordinal?: number | undefined;
             strategyDoc?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
+            forIssueIds?: string[] | undefined;
             ordinalsForIssues?: {
                 [x: string]: number;
             } | null | undefined;
+            forAllIssues?: boolean | undefined;
             strategy: {
                 createdAt?: {
                     isEqual?: any;

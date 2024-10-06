@@ -687,6 +687,8 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
         [x: string]: number;
     } | null | undefined;
     ordinal: number | undefined;
+    forAllIssues: boolean | undefined;
+    forIssueIds: string[] | undefined;
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -723,6 +725,8 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
     };
     ordinalsForIssues: undefined;
     ordinal: undefined;
+    forAllIssues: undefined;
+    forIssueIds: "";
     createdAt: undefined;
     updatedAt: undefined;
 }, "">;
