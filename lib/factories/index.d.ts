@@ -2916,13 +2916,12 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId: string;
         type: "time";
         name: string;
         weekdays: number[];
         hour: number;
         minute: number;
-    }, "profileId" | "type" | "name" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;
+    }, "type" | "name" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;
     tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "ordinal" | "prompt" | "description" | "type" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "setbackThreshold" | "likesCount" | "timerSeconds" | "isSuggested">;
     roadmapFactory: import("factory.ts").Factory<{
         createdAt?: {
@@ -3699,7 +3698,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId: string;
             type: "time";
             name: string;
             weekdays: number[];
@@ -3722,7 +3720,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId: string;
             type: "location";
             name: string;
             locationId: string;

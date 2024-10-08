@@ -1,7 +1,6 @@
 import * as yup from 'yup';
 export declare const locationReminderSchema: yup.ObjectSchema<{
     type: "location";
-    profileId: string;
     name: string;
     createdAt: {
         isEqual?: any;
@@ -23,7 +22,6 @@ export declare const locationReminderSchema: yup.ObjectSchema<{
     mode: NonNullable<"enter" | "exit" | undefined>;
 }, yup.AnyObject, {
     type: undefined;
-    profileId: undefined;
     name: undefined;
     createdAt: undefined;
     updatedAt: undefined;

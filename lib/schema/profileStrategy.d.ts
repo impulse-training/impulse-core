@@ -722,7 +722,6 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId: string;
         type: "time";
         name: string;
         weekdays: number[];
@@ -745,7 +744,6 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId: string;
         type: "location";
         name: string;
         locationId: string;

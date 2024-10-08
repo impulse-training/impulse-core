@@ -5,7 +5,6 @@ import { TimestampLike } from '../utils';
 export const makeTimeReminderFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<TimeReminderValue>({
     name: 'Cigarettes',
-    profileId: 'abc123',
     type: 'time',
     hour: 9,
     minute: 0,

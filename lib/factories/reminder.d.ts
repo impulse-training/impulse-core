@@ -17,10 +17,9 @@ export declare const makeTimeReminderFactory: (TimestampKlass: typeof TimestampL
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    profileId: string;
     type: "time";
     name: string;
     weekdays: number[];
     hour: number;
     minute: number;
-}, "profileId" | "type" | "name" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;
+}, "type" | "name" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;

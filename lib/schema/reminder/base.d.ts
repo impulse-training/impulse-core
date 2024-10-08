@@ -3,7 +3,6 @@ import { reminderSchema } from '.';
 import { WithTacticsById } from '../tactic';
 export declare function reminderBaseSchema<K extends string>(type: K): yup.ObjectSchema<{
     type: yup.Defined<K>;
-    profileId: string;
     name: string;
     createdAt: {
         isEqual?: any;
@@ -23,7 +22,6 @@ export declare function reminderBaseSchema<K extends string>(type: K): yup.Objec
     } | null | undefined;
 }, yup.AnyObject, {
     type: undefined;
-    profileId: undefined;
     name: undefined;
     createdAt: undefined;
     updatedAt: undefined;

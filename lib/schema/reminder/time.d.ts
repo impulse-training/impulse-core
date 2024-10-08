@@ -1,7 +1,6 @@
 import * as yup from 'yup';
 export declare const timeReminderSchema: yup.ObjectSchema<{
     type: "time";
-    profileId: string;
     name: string;
     createdAt: {
         isEqual?: any;
@@ -24,7 +23,6 @@ export declare const timeReminderSchema: yup.ObjectSchema<{
     minute: number;
 }, yup.AnyObject, {
     type: undefined;
-    profileId: undefined;
     name: undefined;
     createdAt: undefined;
     updatedAt: undefined;
