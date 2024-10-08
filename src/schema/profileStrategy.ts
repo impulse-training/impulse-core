@@ -11,6 +11,7 @@ export const profileStrategySchema = yup.object({
   strategy: strategySchema.required(),
   ordinalsForIssues: optionalObjectOf(yup.number().required()),
   ordinal: yup.number(),
+  sortBy: yup.mixed<'random' | 'newest'>().required(),
   forAllIssues: yup.boolean(),
   forIssueIds: optionalStringArray,
   createdAt: optionalTimestampSchema,

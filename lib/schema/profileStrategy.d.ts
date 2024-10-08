@@ -687,6 +687,7 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
         [x: string]: number;
     } | null | undefined;
     ordinal: number | undefined;
+    sortBy: NonNullable<"random" | "newest" | undefined>;
     forAllIssues: boolean | undefined;
     forIssueIds: string[] | undefined;
     createdAt: {
@@ -769,6 +770,7 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
     };
     ordinalsForIssues: undefined;
     ordinal: undefined;
+    sortBy: undefined;
     forAllIssues: undefined;
     forIssueIds: "";
     createdAt: undefined;

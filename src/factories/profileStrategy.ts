@@ -9,6 +9,7 @@ export const makeProfileStrategyFactory = (
   Factory.makeFactory<ProfileStrategyValue>({
     strategy: makeStrategyFactory(TimestampKlass).build(),
     strategyDoc: undefined as any,
+    sortBy: 'random',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
   });

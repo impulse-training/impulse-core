@@ -809,6 +809,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                 invitationCode: string;
                 invitationUrl: string;
             };
+            sortBy: NonNullable<"random" | "newest" | undefined>;
         };
     } | null | undefined;
 }, yup.AnyObject, {

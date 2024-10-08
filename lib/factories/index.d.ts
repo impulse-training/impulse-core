@@ -4407,5 +4407,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             invitationCode: string;
             invitationUrl: string;
         };
-    }, "strategy" | ("createdAt" | "updatedAt" | "ordinal" | "strategyDoc" | "forIssueIds" | "ordinalsForIssues" | "forAllIssues" | "reminders")>;
+        sortBy: NonNullable<"random" | "newest" | undefined>;
+    }, "strategy" | "sortBy" | ("createdAt" | "updatedAt" | "ordinal" | "strategyDoc" | "forIssueIds" | "ordinalsForIssues" | "forAllIssues" | "reminders")>;
 };
