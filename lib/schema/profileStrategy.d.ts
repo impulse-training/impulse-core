@@ -705,6 +705,52 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    reminders: ({
+        createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        profileId: string;
+        type: "time";
+        name: string;
+        weekdays: number[];
+        hour: number;
+        minute: number;
+    } | {
+        createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        profileId: string;
+        type: "location";
+        name: string;
+        locationId: string;
+        mode: NonNullable<"enter" | "exit" | undefined>;
+    })[] | undefined;
 }, yup.AnyObject, {
     strategyDoc: undefined;
     strategy: {
@@ -729,5 +775,6 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
     forIssueIds: "";
     createdAt: undefined;
     updatedAt: undefined;
+    reminders: "";
 }, "">;
 export type ProfileStrategyValue = yup.InferType<typeof profileStrategySchema>;

@@ -8,8 +8,8 @@ import { makeLogFactories } from './log';
 import { makeProfileFactory } from './profile';
 import { makeProfileStrategyFactory } from './profileStrategy';
 import { makeQuestionFactories } from './question';
+import { makeTimeReminderFactory } from './reminder';
 import { makeRoadmapFactory } from './roadmap';
-import { makeTimeRoutineFactory } from './routine';
 import { makeStrategyFactory } from './strategy';
 import { makeSuggestionFactory } from './suggestion';
 import { makeTacticFactory } from './tactic';
@@ -25,7 +25,7 @@ export function makeFactories(TimestampKlass: typeof TimestampLike) {
     locationFactory: makeLocationFactory(TimestampKlass),
     daysSummaryFactory: makeDaysSummaryFactory(TimestampKlass),
     profileFactory: makeProfileFactory(TimestampKlass),
-    timeRoutineFactory: makeTimeRoutineFactory(TimestampKlass),
+    timeReminderFactory: makeTimeReminderFactory(TimestampKlass),
     tacticFactory: makeTacticFactory(TimestampKlass),
     roadmapFactory: makeRoadmapFactory(TimestampKlass),
     suggestionFactory: makeSuggestionFactory(TimestampKlass),

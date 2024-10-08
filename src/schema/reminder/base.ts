@@ -1,9 +1,9 @@
 import * as yup from 'yup';
-import { routineSchema } from '.';
+import { reminderSchema } from '.';
 import { WithTacticsById } from '../tactic';
 import { optionalTimestampSchema } from '../utils/timestamp';
 
-export function routineBaseSchema<K extends string>(type: K) {
+export function reminderBaseSchema<K extends string>(type: K) {
   return yup.object({
     type: yup.mixed<K>().oneOf([type]).defined(),
     profileId: yup.string().required(),
@@ -13,4 +13,6 @@ export function routineBaseSchema<K extends string>(type: K) {
   });
 }
 
-export type RoutineValue = WithTacticsById<yup.InferType<typeof routineSchema>>;
+export type ReminderValue = WithTacticsById<
+  yup.InferType<typeof reminderSchema>
+>;

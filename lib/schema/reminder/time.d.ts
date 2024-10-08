@@ -1,6 +1,6 @@
 import * as yup from 'yup';
-export declare const locationRoutineSchema: yup.ObjectSchema<{
-    type: "location";
+export declare const timeReminderSchema: yup.ObjectSchema<{
+    type: "time";
     profileId: string;
     name: string;
     createdAt: {
@@ -19,15 +19,17 @@ export declare const locationRoutineSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    locationId: string;
-    mode: NonNullable<"enter" | "exit" | undefined>;
+    weekdays: number[];
+    hour: number;
+    minute: number;
 }, yup.AnyObject, {
     type: undefined;
     profileId: undefined;
     name: undefined;
     createdAt: undefined;
     updatedAt: undefined;
-    locationId: undefined;
-    mode: undefined;
+    weekdays: "";
+    hour: undefined;
+    minute: undefined;
 }, "">;
-export type LocationRoutineValue = yup.InferType<typeof locationRoutineSchema>;
+export type TimeReminderValue = yup.InferType<typeof timeReminderSchema>;

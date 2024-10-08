@@ -13,7 +13,7 @@ import {
   strategySchema,
   suggestionSchema,
   tacticSchema,
-  timeRoutineSchema,
+  timeReminderSchema,
 } from '../../schema';
 import { questionSchema } from '../../schema/question';
 import { TimestampLike } from '../../utils/firestore/TimestampLike';
@@ -75,5 +75,5 @@ const schemaMap: Record<keyof typeof factories, null | Schema | Lazy<unknown>> =
     timeQuestionFactory: questionSchema,
     textQuestionFactory: questionSchema,
     multipleChoiceQuestionFactory: questionSchema,
-    timeRoutineFactory: timeRoutineSchema,
+    timeReminderFactory: timeReminderSchema,
   };

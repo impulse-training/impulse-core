@@ -1,6 +1,6 @@
 import * as Factory from 'factory.ts';
 import { TimestampLike } from '../utils';
-export declare const makeTimeRoutineFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
+export declare const makeTimeReminderFactory: (TimestampKlass: typeof TimestampLike) => Factory.Sync.Factory<{
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -20,7 +20,7 @@ export declare const makeTimeRoutineFactory: (TimestampKlass: typeof TimestampLi
     profileId: string;
     type: "time";
     name: string;
+    weekdays: number[];
     hour: number;
     minute: number;
-    weekdays: number[];
-}, "profileId" | "type" | "name" | "hour" | "minute" | "weekdays" | ("createdAt" | "updatedAt")>;
+}, "profileId" | "type" | "name" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;

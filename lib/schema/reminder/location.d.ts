@@ -1,8 +1,6 @@
 import * as yup from 'yup';
-import { routineSchema } from '.';
-import { WithTacticsById } from '../tactic';
-export declare function routineBaseSchema<K extends string>(type: K): yup.ObjectSchema<{
-    type: yup.Defined<K>;
+export declare const locationReminderSchema: yup.ObjectSchema<{
+    type: "location";
     profileId: string;
     name: string;
     createdAt: {
@@ -21,11 +19,15 @@ export declare function routineBaseSchema<K extends string>(type: K): yup.Object
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    locationId: string;
+    mode: NonNullable<"enter" | "exit" | undefined>;
 }, yup.AnyObject, {
     type: undefined;
     profileId: undefined;
     name: undefined;
     createdAt: undefined;
     updatedAt: undefined;
+    locationId: undefined;
+    mode: undefined;
 }, "">;
-export type RoutineValue = WithTacticsById<yup.InferType<typeof routineSchema>>;
+export type LocationReminderValue = yup.InferType<typeof locationReminderSchema>;

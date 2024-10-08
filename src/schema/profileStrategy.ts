@@ -1,4 +1,5 @@
 import * as yup from 'yup';
+import { reminderSchema } from './reminder';
 import { strategySchema } from './strategy';
 import { optionalStringArray } from './utils/array';
 import { documentReferenceSchema } from './utils/firestore';
@@ -14,5 +15,6 @@ export const profileStrategySchema = yup.object({
   forIssueIds: optionalStringArray,
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
+  reminders: yup.array().of(reminderSchema),
 });
 export type ProfileStrategyValue = yup.InferType<typeof profileStrategySchema>;

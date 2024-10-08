@@ -24,6 +24,52 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
         [x: string]: number;
     } | null | undefined;
     forAllIssues?: boolean | undefined;
+    reminders?: ({
+        createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        profileId: string;
+        type: "time";
+        name: string;
+        weekdays: number[];
+        hour: number;
+        minute: number;
+    } | {
+        createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        profileId: string;
+        type: "location";
+        name: string;
+        locationId: string;
+        mode: NonNullable<"enter" | "exit" | undefined>;
+    })[] | undefined;
     strategy: {
         createdAt?: {
             isEqual?: any;
@@ -706,4 +752,4 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
         invitationCode: string;
         invitationUrl: string;
     };
-}, "strategy" | ("createdAt" | "updatedAt" | "ordinal" | "strategyDoc" | "forIssueIds" | "ordinalsForIssues" | "forAllIssues")>;
+}, "strategy" | ("createdAt" | "updatedAt" | "ordinal" | "strategyDoc" | "forIssueIds" | "ordinalsForIssues" | "forAllIssues" | "reminders")>;

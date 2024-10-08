@@ -1,10 +1,10 @@
 import md5 from 'crypto-js/md5';
 import { format } from 'date-fns';
 
-export function routineLogId(routineId: string, date: Date) {
+export function reminderLogId(reminderId: string, date: Date) {
   return md5(
     JSON.stringify({
-      routineId,
+      reminderId,
       date: format(date, 'yyyy-MM-dd'),
     })
   ).toString();

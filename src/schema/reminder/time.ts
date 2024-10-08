@@ -1,6 +1,6 @@
 import * as yup from 'yup';
-import { routineBaseSchema } from './base';
-export const timeRoutineSchema = routineBaseSchema('time').shape({
+import { reminderBaseSchema } from './base';
+export const timeReminderSchema = reminderBaseSchema('time').shape({
   weekdays: yup
     .array()
     .of(
@@ -17,4 +17,4 @@ export const timeRoutineSchema = routineBaseSchema('time').shape({
   minute: yup.number().required(),
 });
 
-export type TimeRoutineValue = yup.InferType<typeof timeRoutineSchema>;
+export type TimeReminderValue = yup.InferType<typeof timeReminderSchema>;

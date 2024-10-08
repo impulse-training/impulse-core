@@ -2899,7 +2899,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         signUpIssueId: string | null;
         timezone: string;
     }, "uids" | "verificationCode" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIds" | "blandPathwayId" | "issuesById" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "addToStrategy" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "region")>;
-    timeRoutineFactory: import("factory.ts").Factory<{
+    timeReminderFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -2919,10 +2919,10 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         profileId: string;
         type: "time";
         name: string;
+        weekdays: number[];
         hour: number;
         minute: number;
-        weekdays: number[];
-    }, "profileId" | "type" | "name" | "hour" | "minute" | "weekdays" | ("createdAt" | "updatedAt")>;
+    }, "profileId" | "type" | "name" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;
     tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "ordinal" | "prompt" | "description" | "type" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "setbackThreshold" | "likesCount" | "timerSeconds" | "isSuggested">;
     roadmapFactory: import("factory.ts").Factory<{
         createdAt?: {
@@ -3682,6 +3682,52 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             [x: string]: number;
         } | null | undefined;
         forAllIssues?: boolean | undefined;
+        reminders?: ({
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId: string;
+            type: "time";
+            name: string;
+            weekdays: number[];
+            hour: number;
+            minute: number;
+        } | {
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            profileId: string;
+            type: "location";
+            name: string;
+            locationId: string;
+            mode: NonNullable<"enter" | "exit" | undefined>;
+        })[] | undefined;
         strategy: {
             createdAt?: {
                 isEqual?: any;
@@ -4364,5 +4410,5 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             invitationCode: string;
             invitationUrl: string;
         };
-    }, "strategy" | ("createdAt" | "updatedAt" | "ordinal" | "strategyDoc" | "forIssueIds" | "ordinalsForIssues" | "forAllIssues")>;
+    }, "strategy" | ("createdAt" | "updatedAt" | "ordinal" | "strategyDoc" | "forIssueIds" | "ordinalsForIssues" | "forAllIssues" | "reminders")>;
 };

@@ -1,9 +1,9 @@
 import * as Factory from 'factory.ts';
-import { TimeRoutineValue } from '../schema';
+import { TimeReminderValue } from '../schema';
 import { TimestampLike } from '../utils';
 
-export const makeTimeRoutineFactory = (TimestampKlass: typeof TimestampLike) =>
-  Factory.makeFactory<TimeRoutineValue>({
+export const makeTimeReminderFactory = (TimestampKlass: typeof TimestampLike) =>
+  Factory.makeFactory<TimeReminderValue>({
     name: 'Cigarettes',
     profileId: 'abc123',
     type: 'time',
