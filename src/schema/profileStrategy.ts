@@ -8,7 +8,7 @@ import { optionalTimestampSchema } from './utils/timestamp';
 
 export const profileStrategySchema = yup.object({
   strategyDoc: documentReferenceSchema,
-  strategy: strategySchema,
+  strategy: strategySchema.required(),
   ordinalsForIssues: optionalObjectOf(yup.number().required()),
   ordinal: yup.number(),
   forAllIssues: yup.boolean(),
