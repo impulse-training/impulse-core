@@ -17,6 +17,13 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        audioFile?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | undefined;
+        audioDurationSeconds?: number | undefined;
+        audioWaveform?: string | undefined;
         text?: string | undefined;
         profileEmojiIDString?: string | undefined;
         tacticId?: string | null | undefined;
@@ -393,7 +400,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         };
         dateString: string;
         parentIds: string[];
-    }, "profileId" | "type" | "date" | "dateString" | "parentIds" | ("createdAt" | "updatedAt" | "text" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueId" | "issueName" | "submittedAt")>;
+    }, "profileId" | "type" | "date" | "dateString" | "parentIds" | ("createdAt" | "updatedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "text" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueId" | "issueName" | "submittedAt")>;
     messageLogFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -411,6 +418,13 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        audioFile?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | undefined;
+        audioDurationSeconds?: number | undefined;
+        audioWaveform?: string | undefined;
         profileEmojiIDString?: string | undefined;
         tacticId?: string | null | undefined;
         tactic?: ({
@@ -776,7 +790,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         };
         text: string;
         dateString: string;
-    }, "profileId" | "type" | "date" | "text" | "dateString" | ("createdAt" | "updatedAt" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse")>;
+    }, "profileId" | "type" | "date" | "text" | "dateString" | ("createdAt" | "updatedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse")>;
     questionsLogFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -794,6 +808,13 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        audioFile?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | undefined;
+        audioDurationSeconds?: number | undefined;
+        audioWaveform?: string | undefined;
         text?: string | undefined;
         profileEmojiIDString?: string | undefined;
         tacticId?: string | null | undefined;
@@ -1715,7 +1736,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 type: "time";
             };
         };
-    }, "profileId" | "type" | "date" | "dateString" | "questionsById" | ("createdAt" | "updatedAt" | "text" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "submittedAt" | "questionData" | "trackingQuestionIds" | "debriefingQuestionIds" | "isDebrief" | "followedUpQuestionIds")>;
+    }, "profileId" | "type" | "date" | "dateString" | "questionsById" | ("createdAt" | "updatedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "text" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "submittedAt" | "questionData" | "trackingQuestionIds" | "debriefingQuestionIds" | "isDebrief" | "followedUpQuestionIds")>;
     tacticsLogFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -1734,6 +1755,13 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: Function;
         } | null | undefined;
         title?: string | undefined;
+        audioFile?: {
+            localFilePath?: import("yup").Maybe<string | undefined>;
+            storagePath?: import("yup").Maybe<string | undefined>;
+            uri?: import("yup").Maybe<string | undefined>;
+        } | undefined;
+        audioDurationSeconds?: number | undefined;
+        audioWaveform?: string | undefined;
         text?: string | undefined;
         profileEmojiIDString?: string | undefined;
         tacticId?: string | null | undefined;
@@ -2432,7 +2460,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         dateString: string;
         completedTacticIds: string[];
         followedUpTacticIds: string[];
-    }, "profileId" | "type" | "tacticsById" | "date" | "dateString" | "completedTacticIds" | "followedUpTacticIds" | ("createdAt" | "updatedAt" | "title" | "text" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "sourceSuggestion" | "isAddToGameplanMode" | "suggestedTacticDocPaths")>;
+    }, "profileId" | "type" | "tacticsById" | "date" | "dateString" | "completedTacticIds" | "followedUpTacticIds" | ("createdAt" | "updatedAt" | "title" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "text" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "sourceSuggestion" | "isAddToGameplanMode" | "suggestedTacticDocPaths")>;
     textQuestionFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;

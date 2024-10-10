@@ -30,6 +30,13 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         toDate: Function;
     } | null | undefined;
     profileId: string;
+    audioFile: {
+        localFilePath?: yup.Maybe<string | undefined>;
+        storagePath?: yup.Maybe<string | undefined>;
+        uri?: yup.Maybe<string | undefined>;
+    } | undefined;
+    audioDurationSeconds: number | undefined;
+    audioWaveform: string | undefined;
     text: string | undefined;
     type: "showTour";
     date: {
@@ -405,6 +412,13 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
     createdAt: undefined;
     updatedAt: undefined;
     profileId: undefined;
+    audioFile: {
+        localFilePath: undefined;
+        storagePath: undefined;
+        uri: undefined;
+    };
+    audioDurationSeconds: undefined;
+    audioWaveform: undefined;
     text: undefined;
     type: undefined;
     date: {

@@ -1,5 +1,6 @@
 import * as yup from 'yup';
 import { tacticSchema } from '../tactic';
+import { fileSchema } from '../utils/file';
 import { optionalObjectOf } from '../utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from '../utils/timestamp';
 import { gptResponseMixin } from './utils/gpt';
@@ -14,6 +15,11 @@ export function logBaseSchema<K extends string>(type: K) {
     createdAt: optionalTimestampSchema,
     updatedAt: optionalTimestampSchema,
     profileId: yup.string().required(),
+
+    audioFile: fileSchema.optional(),
+    audioDurationSeconds: yup.number(),
+    audioWaveform: yup.string(),
+
     text: yup.string(),
     type: yup.mixed<K>().oneOf([type]).defined(),
     date: timestampSchema,

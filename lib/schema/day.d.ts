@@ -28,6 +28,13 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            audioFile?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | undefined;
+            audioDurationSeconds?: number | undefined;
+            audioWaveform?: string | undefined;
             text?: string | undefined;
             profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
@@ -411,6 +418,13 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            audioFile?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | undefined;
+            audioDurationSeconds?: number | undefined;
+            audioWaveform?: string | undefined;
             text?: string | undefined;
             profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
@@ -794,394 +808,13 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            text?: string | undefined;
-            profileEmojiIDString?: string | undefined;
-            tacticId?: string | null | undefined;
-            tactic?: ({
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                profileId?: string | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                prompt?: string | undefined;
-                description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
-                image?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
-                } | null | undefined;
-                backgroundColor?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                likesCount?: number | null | undefined;
-                timerSeconds?: yup.Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
-                waveForm?: string | null | undefined;
-                ordinal: number;
-                type: "audio";
-                recording: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
-                };
-            } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                profileId?: string | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
-                image?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
-                } | null | undefined;
-                backgroundColor?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                likesCount?: number | null | undefined;
-                timerSeconds?: yup.Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
-                repeat?: yup.Maybe<number | undefined>;
-                ordinal: number;
-                prompt: string;
-                type: "breathingExercise";
-                inFor: number;
-                holdFor: number;
-                outFor: number;
-            } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                profileId?: string | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
-                image?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
-                } | null | undefined;
-                backgroundColor?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                likesCount?: number | null | undefined;
-                timerSeconds?: yup.Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
-                ordinal: number;
-                prompt: string;
-                type: "notifyASupportPerson";
-                contactIds: string[];
-            } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                profileId?: string | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
-                image?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
-                } | null | undefined;
-                backgroundColor?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                likesCount?: number | null | undefined;
-                timerSeconds?: yup.Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
-                ordinal: number;
-                prompt: string;
-                type: "notifySupportGroup";
-                supportGroup: import("./utils/firestore").DocumentReferenceLike<unknown>;
-            } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                profileId?: string | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
-                image?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
-                } | null | undefined;
-                backgroundColor?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                likesCount?: number | null | undefined;
-                timerSeconds?: yup.Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
-                ordinal: number;
-                prompt: string;
-                type: "steps";
-                targetSteps: number;
-            } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                profileId?: string | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
-                image?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
-                } | null | undefined;
-                backgroundColor?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                likesCount?: number | null | undefined;
-                timerSeconds?: yup.Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
-                ordinal: number;
-                prompt: string;
-                type: "task";
-            } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                profileId?: string | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
-                image?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
-                } | null | undefined;
-                backgroundColor?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                likesCount?: number | null | undefined;
-                timerSeconds?: yup.Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
-                ordinal: number;
-                prompt: string;
-                type: "video";
-                video: {
-                    storagePath?: string | null | undefined;
-                    url?: string | null | undefined;
-                    description: string;
-                    title: string;
-                    thumbnailUrl: string;
-                    duration: number;
-                };
-            } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                profileId?: string | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
-                image?: {
-                    localFilePath?: yup.Maybe<string | undefined>;
-                    storagePath?: yup.Maybe<string | undefined>;
-                    uri?: yup.Maybe<string | undefined>;
-                } | null | undefined;
-                backgroundColor?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                likesCount?: number | null | undefined;
-                timerSeconds?: yup.Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
-                ordinal: number;
-                prompt: string;
-                type: "zara";
-            }) | yup.Maybe<{} | undefined>;
-            tacticData?: {
-                [x: string]: {} | undefined;
-            } | null | undefined;
-            isGptSender?: boolean | undefined;
-            senderProfileId?: string | null | undefined;
-            views?: {
-                openTime: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                };
-                closeTime: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                };
-            }[] | undefined;
-            openAiRequestPayload?: string | undefined;
-            openAiChoiceResponse?: {} | undefined;
-            profileId: string;
-            type: "audio";
-            date: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            };
-            dateString: string;
-            file: {
+            audioFile?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 storagePath?: yup.Maybe<string | undefined>;
                 uri?: yup.Maybe<string | undefined>;
-            };
-            durationSeconds: number;
-        } | {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
+            } | undefined;
+            audioDurationSeconds?: number | undefined;
+            audioWaveform?: string | undefined;
             text?: string | undefined;
             profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
@@ -1573,6 +1206,13 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            audioFile?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | undefined;
+            audioDurationSeconds?: number | undefined;
+            audioWaveform?: string | undefined;
             text?: string | undefined;
             profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
@@ -1966,6 +1606,13 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            audioFile?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | undefined;
+            audioDurationSeconds?: number | undefined;
+            audioWaveform?: string | undefined;
             profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
@@ -2348,6 +1995,13 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            audioFile?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | undefined;
+            audioDurationSeconds?: number | undefined;
+            audioWaveform?: string | undefined;
             text?: string | undefined;
             profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
@@ -3286,6 +2940,13 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            audioFile?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | undefined;
+            audioDurationSeconds?: number | undefined;
+            audioWaveform?: string | undefined;
             text?: string | undefined;
             profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
@@ -3676,6 +3337,13 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             } | null | undefined;
             title?: string | undefined;
+            audioFile?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | undefined;
+            audioDurationSeconds?: number | undefined;
+            audioWaveform?: string | undefined;
             text?: string | undefined;
             profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
@@ -4391,6 +4059,13 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            audioFile?: {
+                localFilePath?: yup.Maybe<string | undefined>;
+                storagePath?: yup.Maybe<string | undefined>;
+                uri?: yup.Maybe<string | undefined>;
+            } | undefined;
+            audioDurationSeconds?: number | undefined;
+            audioWaveform?: string | undefined;
             text?: string | undefined;
             profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;

@@ -15,6 +15,13 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    audioFile?: {
+        localFilePath?: import("yup").Maybe<string | undefined>;
+        storagePath?: import("yup").Maybe<string | undefined>;
+        uri?: import("yup").Maybe<string | undefined>;
+    } | undefined;
+    audioDurationSeconds?: number | undefined;
+    audioWaveform?: string | undefined;
     text?: string | undefined;
     profileEmojiIDString?: string | undefined;
     tacticId?: string | null | undefined;
@@ -391,7 +398,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     };
     dateString: string;
     parentIds: string[];
-}, "profileId" | "type" | "date" | "dateString" | "parentIds" | ("createdAt" | "updatedAt" | "text" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueId" | "issueName" | "submittedAt")>, profileFactory: import("factory.ts").Factory<{
+}, "profileId" | "type" | "date" | "dateString" | "parentIds" | ("createdAt" | "updatedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "text" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "views" | "openAiRequestPayload" | "openAiChoiceResponse" | "issueId" | "issueName" | "submittedAt")>, profileFactory: import("factory.ts").Factory<{
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
