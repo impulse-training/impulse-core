@@ -2,6 +2,21 @@ import * as Factory from 'factory.ts';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLike) => {
     textQuestionFactory: Factory.Sync.Factory<{
+        followUps?: ({
+            message?: string | undefined;
+            type: "askAnotherQuestion";
+            questionId: string;
+        } | {
+            message?: string | undefined;
+            type: "writeAnswerToProfile";
+            profileKey: string;
+        } | {
+            message?: string | undefined;
+            type: "writeValueToProfile";
+            profileKey: string;
+            value: {};
+        })[] | undefined;
+        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -18,27 +33,10 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        ordinal?: number | undefined;
-        followUps?: ({
-            message?: string | undefined;
-            type: "askAnotherQuestion";
-            questionId: string;
-        } | {
-            message?: string | undefined;
-            type: "writeAnswerToProfile";
-            profileKey: string;
-        } | {
-            message?: string | undefined;
-            type: "writeValueToProfile";
-            profileKey: string;
-            value: {};
-        })[] | undefined;
         isPublic?: boolean | undefined;
-        categories?: ("dayReview" | "questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
+        categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
         options?: ({
             label?: string | undefined;
-            setbackThreshold?: number | undefined;
             followUps?: ({
                 message?: string | undefined;
                 type: "askAnotherQuestion";
@@ -55,6 +53,7 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
             })[] | undefined;
             color?: string | undefined;
             textColor?: string | undefined;
+            setbackThreshold?: number | undefined;
             greaterThan?: number | undefined;
             lessThanOrEqualTo?: number | undefined;
             type: "numeric";
@@ -80,15 +79,32 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
             type: "string";
             text: string;
         })[] | undefined;
+        ordinal?: number | undefined;
         ordinals?: {
             [x: string]: number;
         } | null | undefined;
         templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
         writeAnswerToProfileMemoryKey?: string | undefined;
-        prompt: string;
         type: "text";
-    }, "prompt" | "type" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "ordinal" | "followUps" | "isPublic" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+        prompt: string;
+    }, "type" | "prompt" | ("followUps" | "recommendedForIssueIds" | "createdAt" | "updatedAt" | "isPublic" | "categories" | "options" | "ordinal" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     timeQuestionFactory: Factory.Sync.Factory<{
+        followUps?: ({
+            message?: string | undefined;
+            type: "askAnotherQuestion";
+            questionId: string;
+        } | {
+            message?: string | undefined;
+            type: "writeAnswerToProfile";
+            profileKey: string;
+        } | {
+            message?: string | undefined;
+            type: "writeValueToProfile";
+            profileKey: string;
+            value: {};
+        })[] | undefined;
+        setbackThreshold?: number | undefined;
+        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -105,28 +121,10 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        ordinal?: number | undefined;
-        setbackThreshold?: number | undefined;
-        followUps?: ({
-            message?: string | undefined;
-            type: "askAnotherQuestion";
-            questionId: string;
-        } | {
-            message?: string | undefined;
-            type: "writeAnswerToProfile";
-            profileKey: string;
-        } | {
-            message?: string | undefined;
-            type: "writeValueToProfile";
-            profileKey: string;
-            value: {};
-        })[] | undefined;
         isPublic?: boolean | undefined;
-        categories?: ("dayReview" | "questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
+        categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
         options?: ({
             label?: string | undefined;
-            setbackThreshold?: number | undefined;
             followUps?: ({
                 message?: string | undefined;
                 type: "askAnotherQuestion";
@@ -143,6 +141,7 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
             })[] | undefined;
             color?: string | undefined;
             textColor?: string | undefined;
+            setbackThreshold?: number | undefined;
             greaterThan?: number | undefined;
             lessThanOrEqualTo?: number | undefined;
             type: "numeric";
@@ -168,15 +167,31 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
             type: "string";
             text: string;
         })[] | undefined;
+        ordinal?: number | undefined;
         ordinals?: {
             [x: string]: number;
         } | null | undefined;
         templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
         writeAnswerToProfileMemoryKey?: string | undefined;
-        prompt: string;
         type: "time";
-    }, "prompt" | "type" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "ordinal" | "setbackThreshold" | "followUps" | "isPublic" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+        prompt: string;
+    }, "type" | "prompt" | ("followUps" | "setbackThreshold" | "recommendedForIssueIds" | "createdAt" | "updatedAt" | "isPublic" | "categories" | "options" | "ordinal" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     multipleChoiceQuestionFactory: Factory.Sync.Factory<{
+        followUps?: ({
+            message?: string | undefined;
+            type: "askAnotherQuestion";
+            questionId: string;
+        } | {
+            message?: string | undefined;
+            type: "writeAnswerToProfile";
+            profileKey: string;
+        } | {
+            message?: string | undefined;
+            type: "writeValueToProfile";
+            profileKey: string;
+            value: {};
+        })[] | undefined;
+        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -193,34 +208,18 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        ordinal?: number | undefined;
-        followUps?: ({
-            message?: string | undefined;
-            type: "askAnotherQuestion";
-            questionId: string;
-        } | {
-            message?: string | undefined;
-            type: "writeAnswerToProfile";
-            profileKey: string;
-        } | {
-            message?: string | undefined;
-            type: "writeValueToProfile";
-            profileKey: string;
-            value: {};
-        })[] | undefined;
         isPublic?: boolean | undefined;
-        categories?: ("dayReview" | "questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
+        categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
+        ordinal?: number | undefined;
         ordinals?: {
             [x: string]: number;
         } | null | undefined;
         templateFor?: "afterSuccess" | "afterSetback" | "onboarding" | undefined;
         writeAnswerToProfileMemoryKey?: string | undefined;
-        prompt: string;
         type: "multipleChoice";
+        prompt: string;
         options: ({
             label?: string | undefined;
-            setbackThreshold?: number | undefined;
             followUps?: ({
                 message?: string | undefined;
                 type: "askAnotherQuestion";
@@ -237,6 +236,7 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
             })[] | undefined;
             color?: string | undefined;
             textColor?: string | undefined;
+            setbackThreshold?: number | undefined;
             greaterThan?: number | undefined;
             lessThanOrEqualTo?: number | undefined;
             type: "numeric";
@@ -263,5 +263,5 @@ export declare const makeQuestionFactories: (TimestampKlass: typeof TimestampLik
             text: string;
         })[];
         canAddNewOptions: NonNullable<boolean | undefined>;
-    }, "prompt" | "type" | "options" | "canAddNewOptions" | ("createdAt" | "updatedAt" | "recommendedForIssueIds" | "ordinal" | "followUps" | "isPublic" | "categories" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+    }, "type" | "prompt" | "options" | "canAddNewOptions" | ("followUps" | "recommendedForIssueIds" | "createdAt" | "updatedAt" | "isPublic" | "categories" | "ordinal" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
 };

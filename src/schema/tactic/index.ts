@@ -1,4 +1,5 @@
 import * as yup from 'yup';
+import { questionSchema } from '../question';
 import { AudioTacticValue, audioTacticSchema } from './audio';
 import {
   BreatheTacticValue,
@@ -9,6 +10,7 @@ import {
   NotifySupportGroupValue,
   notifySupportGroupSchema,
 } from './notifySupportGroup';
+import { QuestionTacticValue } from './question';
 import { StepsTacticValue, stepsTacticSchema } from './steps';
 import { TaskTacticValue, taskTacticSchema } from './task';
 import { VideoTacticValue, videoTacticSchema } from './video';
@@ -29,7 +31,8 @@ export type TacticValue =
   | StepsTacticValue
   | TaskTacticValue
   | VideoTacticValue
-  | NotifySupportGroupValue;
+  | NotifySupportGroupValue
+  | QuestionTacticValue;
 // | UrgeSurfingTacticValue
 // | EmotionsTacticValue
 // | DayReviewTacticValue
@@ -46,6 +49,7 @@ export const tacticSchemas: Record<
   notifySupportGroup: notifySupportGroupSchema,
   task: taskTacticSchema,
   video: videoTacticSchema,
+  question: questionSchema,
   steps: stepsTacticSchema,
   // emotions: emotionsTacticSchema,
   // 'day-review': dayReviewTacticSchema,

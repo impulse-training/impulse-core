@@ -41,12 +41,11 @@ export declare const QUESTION_CATEGORIES: {
 export type QuestionCategory = keyof typeof QUESTION_CATEGORIES;
 export declare function questionBaseSchema<T extends string>(type: T): yup.ObjectSchema<{
     isPublic: boolean | undefined;
-    categories: ("dayReview" | "questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
+    categories: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
     prompt: string;
     type: yup.Defined<T>;
     options: ({
         label?: string | undefined;
-        setbackThreshold?: number | undefined;
         followUps?: ({
             message?: string | undefined;
             type: "askAnotherQuestion";
@@ -63,6 +62,7 @@ export declare function questionBaseSchema<T extends string>(type: T): yup.Objec
         })[] | undefined;
         color?: string | undefined;
         textColor?: string | undefined;
+        setbackThreshold?: number | undefined;
         greaterThan?: number | undefined;
         lessThanOrEqualTo?: number | undefined;
         type: "numeric";

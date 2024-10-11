@@ -1,12 +1,11 @@
 import * as yup from 'yup';
 export declare const multipleChoiceQuestionSchema: yup.ObjectSchema<{
     isPublic: boolean | undefined;
-    categories: ("dayReview" | "questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback")[] | undefined;
+    categories: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
     prompt: string;
     type: "multipleChoice";
     options: ({
         label?: string | undefined;
-        setbackThreshold?: number | undefined;
         followUps?: ({
             message?: string | undefined;
             type: "askAnotherQuestion";
@@ -23,6 +22,7 @@ export declare const multipleChoiceQuestionSchema: yup.ObjectSchema<{
         })[] | undefined;
         color?: string | undefined;
         textColor?: string | undefined;
+        setbackThreshold?: number | undefined;
         greaterThan?: number | undefined;
         lessThanOrEqualTo?: number | undefined;
         type: "numeric";
