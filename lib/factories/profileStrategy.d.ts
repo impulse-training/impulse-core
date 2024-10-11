@@ -375,44 +375,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     thumbnailUrl: string;
                     duration: number;
                 };
-            } | {
-                createdAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                updatedAt?: {
-                    isEqual?: any;
-                    toMillis?: any;
-                    toJSON?: any;
-                    seconds: number;
-                    nanoseconds: number;
-                    toDate: Function;
-                } | null | undefined;
-                profileId?: string | undefined;
-                recommendedForIssueIds?: string[] | undefined;
-                recommendedForIssueOrdinals?: {
-                    [x: string]: number;
-                } | null | undefined;
-                description?: string | null | undefined;
-                pastTenseTitle?: string | undefined;
-                debriefAfterMinutes?: number | null | undefined;
-                image?: {
-                    localFilePath?: import("yup").Maybe<string | undefined>;
-                    storagePath?: import("yup").Maybe<string | undefined>;
-                    uri?: import("yup").Maybe<string | undefined>;
-                } | null | undefined;
-                backgroundColor?: string | undefined;
-                setbackThreshold?: number | null | undefined;
-                likesCount?: number | null | undefined;
-                timerSeconds?: import("yup").Maybe<number | undefined>;
-                isSuggested?: boolean | undefined;
-                ordinal: number;
-                prompt: string;
-                type: "zara";
             };
         } | null | undefined;
         templateForIssueIds?: string[] | undefined;
@@ -705,44 +667,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 thumbnailUrl: string;
                 duration: number;
             };
-        } | {
-            createdAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            updatedAt?: {
-                isEqual?: any;
-                toMillis?: any;
-                toJSON?: any;
-                seconds: number;
-                nanoseconds: number;
-                toDate: Function;
-            } | null | undefined;
-            profileId?: string | undefined;
-            recommendedForIssueIds?: string[] | undefined;
-            recommendedForIssueOrdinals?: {
-                [x: string]: number;
-            } | null | undefined;
-            description?: string | null | undefined;
-            pastTenseTitle?: string | undefined;
-            debriefAfterMinutes?: number | null | undefined;
-            image?: {
-                localFilePath?: import("yup").Maybe<string | undefined>;
-                storagePath?: import("yup").Maybe<string | undefined>;
-                uri?: import("yup").Maybe<string | undefined>;
-            } | null | undefined;
-            backgroundColor?: string | undefined;
-            setbackThreshold?: number | null | undefined;
-            likesCount?: number | null | undefined;
-            timerSeconds?: import("yup").Maybe<number | undefined>;
-            isSuggested?: boolean | undefined;
-            ordinal: number;
-            prompt: string;
-            type: "zara";
         })[] | undefined;
         nextTacticId?: string | undefined;
         name: string;

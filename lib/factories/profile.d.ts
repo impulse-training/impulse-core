@@ -113,6 +113,7 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     } | null | undefined;
     impulseContext?: string | null | undefined;
     region?: string | null | undefined;
+    enableZara?: boolean | undefined;
     uids: string[];
     verificationCode: string;
     dayReviewTime: {
@@ -121,4 +122,4 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
     } | null;
     signUpIssueId: string | null;
     timezone: string;
-}, "uids" | "verificationCode" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIds" | "blandPathwayId" | "issuesById" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "addToStrategy" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "region")>;
+}, "uids" | "verificationCode" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIds" | "blandPathwayId" | "issuesById" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "addToStrategy" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "region" | "enableZara")>;

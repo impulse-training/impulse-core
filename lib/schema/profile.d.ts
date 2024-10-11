@@ -121,6 +121,7 @@ export declare const profileSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    enableZara: boolean | undefined;
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
@@ -155,5 +156,6 @@ export declare const profileSchema: yup.ObjectSchema<{
     whatsappStrategyDoc: undefined;
     uids: "";
     onboardedWithZaraAt: undefined;
+    enableZara: undefined;
 }, "">;
 export type ProfileValue = yup.InferType<typeof profileSchema>;

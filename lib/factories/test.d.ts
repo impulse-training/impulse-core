@@ -312,44 +312,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             thumbnailUrl: string;
             duration: number;
         };
-    } | {
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            toJSON?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            toJSON?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        profileId?: string | undefined;
-        recommendedForIssueIds?: string[] | undefined;
-        recommendedForIssueOrdinals?: {
-            [x: string]: number;
-        } | null | undefined;
-        description?: string | null | undefined;
-        pastTenseTitle?: string | undefined;
-        debriefAfterMinutes?: number | null | undefined;
-        image?: {
-            localFilePath?: import("yup").Maybe<string | undefined>;
-            storagePath?: import("yup").Maybe<string | undefined>;
-            uri?: import("yup").Maybe<string | undefined>;
-        } | null | undefined;
-        backgroundColor?: string | undefined;
-        setbackThreshold?: number | null | undefined;
-        likesCount?: number | null | undefined;
-        timerSeconds?: import("yup").Maybe<number | undefined>;
-        isSuggested?: boolean | undefined;
-        ordinal: number;
-        prompt: string;
-        type: "zara";
     }) | import("yup").Maybe<{} | undefined>;
     tacticData?: {
         [x: string]: {} | undefined;
@@ -511,6 +473,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     } | null | undefined;
     impulseContext?: string | null | undefined;
     region?: string | null | undefined;
+    enableZara?: boolean | undefined;
     uids: string[];
     verificationCode: string;
     dayReviewTime: {
@@ -519,4 +482,4 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     } | null;
     signUpIssueId: string | null;
     timezone: string;
-}, "uids" | "verificationCode" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIds" | "blandPathwayId" | "issuesById" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "addToStrategy" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "region")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "ordinal" | "prompt" | "description" | "type" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "setbackThreshold" | "likesCount" | "timerSeconds" | "isSuggested">;
+}, "uids" | "verificationCode" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIds" | "blandPathwayId" | "issuesById" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "addToStrategy" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "region" | "enableZara")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "profileId" | "recommendedForIssueIds" | "recommendedForIssueOrdinals" | "ordinal" | "prompt" | "description" | "type" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "setbackThreshold" | "likesCount" | "timerSeconds" | "isSuggested">;

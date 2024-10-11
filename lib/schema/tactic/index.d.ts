@@ -6,7 +6,6 @@ import { NotifySupportGroupValue } from './notifySupportGroup';
 import { StepsTacticValue } from './steps';
 import { TaskTacticValue } from './task';
 import { VideoTacticValue } from './video';
-import { ZaraTacticValue } from './zara';
 export * from './audio';
 export * from './breathingExercise';
 export * from './notifyContact';
@@ -15,8 +14,7 @@ export * from './steps';
 export * from './task';
 export * from './utils';
 export * from './video';
-export * from './zara';
-export type TacticValue = AudioTacticValue | BreatheTacticValue | NotifyAContactValue | StepsTacticValue | TaskTacticValue | VideoTacticValue | ZaraTacticValue | NotifySupportGroupValue;
+export type TacticValue = AudioTacticValue | BreatheTacticValue | NotifyAContactValue | StepsTacticValue | TaskTacticValue | VideoTacticValue | NotifySupportGroupValue;
 export declare const tacticSchemas: Record<TacticValue['type'], yup.ObjectSchema<TacticValue>>;
 export declare const tacticSchema: yup.Lazy<ValidatedTactic, yup.AnyObject, any>;
 type ValidatedTactic = {

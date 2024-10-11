@@ -49,6 +49,7 @@ export const profileSchema = yup.object({
   whatsappStrategyDoc: documentReferenceSchema,
   uids: requiredStringArray,
   onboardedWithZaraAt: optionalTimestampSchema,
+  enableZara: yup.boolean(),
 });
 
 export type ProfileValue = yup.InferType<typeof profileSchema>;
