@@ -5,7 +5,6 @@ export * from './docsById';
 export * from './errors';
 export * from './firestore/TimestampLike';
 export * from './formatValue';
-export * from './logs';
 export * from './questions';
 export * from './reminders';
 export * from './strategies';

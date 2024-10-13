@@ -1,14 +1,10 @@
 import * as yup from 'yup';
+import { questionSchema } from '../question';
 import { tacticSchema } from '../tactic';
 import { fileSchema } from '../utils/file';
 import { optionalObjectOf } from '../utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from '../utils/timestamp';
-import { gptResponseMixin } from './utils/gpt';
-
-const logViewSchema = yup.object({
-  openTime: timestampSchema,
-  closeTime: timestampSchema,
-});
+import { questionDataSchema } from './utils/questionData';
 
 export function logBaseSchema<K extends string>(type: K) {
   return yup.object({
@@ -19,6 +15,10 @@ export function logBaseSchema<K extends string>(type: K) {
     audioFile: fileSchema.optional(),
     audioDurationSeconds: yup.number(),
     audioWaveform: yup.string(),
+
+    questionsById: optionalObjectOf(questionSchema),
+    questionData: optionalObjectOf(questionDataSchema),
+    submittedAt: optionalTimestampSchema,
 
     text: yup.string(),
     type: yup.mixed<K>().oneOf([type]).defined(),
@@ -40,7 +40,6 @@ export function logBaseSchema<K extends string>(type: K) {
     // For now, put this boolean flag here to indicate if the sender is GPT
     isGptSender: yup.boolean(),
     senderProfileId: yup.string().nullable(),
-    views: yup.array().of(logViewSchema),
-    ...gptResponseMixin,
+    // views: yup.array().of(logViewSchema),
   });
 }

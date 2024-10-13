@@ -4,7 +4,6 @@ import { AnimationLogValue, animationLogSchema } from './animationLog';
 import { DayReviewLogValue, dayReviewLogSchema } from './dayReview';
 import { ImpulseLogValue, impulseLogSchema } from './impulseLog';
 import { MessageLogValue, messageLogSchema } from './messageLog';
-import { QuestionsLogValue, questionsLogSchema } from './questionsLog';
 import { ShowTourLogValue, showTourLogSchema } from './showTourLog';
 import { TacticsLogValue, tacticsLogSchema } from './tacticsLog';
 import {
@@ -17,12 +16,12 @@ export * from './animationLog';
 export * from './dayReview';
 export * from './impulseLog';
 export * from './messageLog';
-export * from './questionsLog';
 export * from './showTourLog';
 export * from './tacticsLog';
 export * from './whatsappMessageLog';
 
 export * from './utils/guards';
+export * from './utils/questionData';
 
 export const logSchemas: Record<
   LogValue['type'],
@@ -31,7 +30,6 @@ export const logSchemas: Record<
   animation: animationLogSchema,
   impulse: impulseLogSchema,
   message: messageLogSchema,
-  question: questionsLogSchema,
   tactics: tacticsLogSchema,
   actionRecap: actionRecapLogSchema,
   showTour: showTourLogSchema,
@@ -63,7 +61,6 @@ export type LogValue =
   | AnimationLogValue
   | ImpulseLogValue
   | MessageLogValue
-  | QuestionsLogValue
   | ActionRecapLogValue
   | TacticsLogValue
   | ShowTourLogValue

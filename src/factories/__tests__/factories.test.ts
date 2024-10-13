@@ -64,7 +64,6 @@ const schemaMap: Record<keyof typeof factories, null | Schema | Lazy<unknown>> =
     impulseLogFactory: logSchema,
     messageLogFactory: logSchema,
     tacticsLogFactory: logSchema,
-    questionsLogFactory: logSchema,
     profileFactory: profileSchema,
     issueFactory: issueSchema,
     suggestionFactory: suggestionSchema,
