@@ -10,12 +10,14 @@ export const makeQuestionFactories = (
   TimestampKlass: typeof TimestampLike
 ) => ({
   textQuestionFactory: Factory.makeFactory<TextQuestionValue>({
+    ordinal: 0,
     type: 'text',
     prompt: 'What did you do?',
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),
   }),
   timeQuestionFactory: Factory.makeFactory<TimeQuestionValue>({
+    ordinal: 0,
     categories: ['impulses'],
     prompt: 'How long did you spend watching youtube?',
     type: 'time',
@@ -24,6 +26,7 @@ export const makeQuestionFactories = (
   }),
   multipleChoiceQuestionFactory:
     Factory.makeFactory<MultipleChoiceQuestionValue>({
+      ordinal: 0,
       categories: ['debriefing'],
       prompt: 'How are you feeling?',
       type: 'multipleChoice',

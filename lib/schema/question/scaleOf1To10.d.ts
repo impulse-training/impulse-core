@@ -48,7 +48,7 @@ export declare const scaleOf1To10QuestionSchema: yup.ObjectSchema<{
         type: "string";
         text: string;
     })[] | undefined;
-    ordinal: number | undefined;
+    ordinal: number;
     ordinals: {
         [x: string]: number;
     } | null | undefined;

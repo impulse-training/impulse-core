@@ -112,7 +112,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -120,6 +119,7 @@ export declare const factories: {
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "counter";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -198,7 +198,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -206,6 +205,7 @@ export declare const factories: {
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "issue";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -240,7 +240,6 @@ export declare const factories: {
                 } | null | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -292,6 +291,7 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[];
+                ordinal: number;
                 canAddNewOptions: NonNullable<boolean | undefined>;
             } | {
                 followUps?: ({
@@ -372,7 +372,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -382,6 +381,7 @@ export declare const factories: {
                 highEmoji?: import("yup").Maybe<string | undefined>;
                 type: "scaleOf1To10";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -460,7 +460,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -468,6 +467,7 @@ export declare const factories: {
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "text";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -547,7 +547,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -555,6 +554,7 @@ export declare const factories: {
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "time";
                 prompt: string;
+                ordinal: number;
             };
         } | null | undefined;
         questionData?: {
@@ -859,7 +859,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -867,6 +866,7 @@ export declare const factories: {
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "counter";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -945,7 +945,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -953,6 +952,7 @@ export declare const factories: {
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "issue";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -987,7 +987,6 @@ export declare const factories: {
                 } | null | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1039,6 +1038,7 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[];
+                ordinal: number;
                 canAddNewOptions: NonNullable<boolean | undefined>;
             } | {
                 followUps?: ({
@@ -1119,7 +1119,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1129,6 +1128,7 @@ export declare const factories: {
                 highEmoji?: import("yup").Maybe<string | undefined>;
                 type: "scaleOf1To10";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -1207,7 +1207,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1215,6 +1214,7 @@ export declare const factories: {
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "text";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -1294,7 +1294,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1302,6 +1301,7 @@ export declare const factories: {
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "time";
                 prompt: string;
+                ordinal: number;
             };
         } | {
             setbackThreshold?: number | null | undefined;
@@ -1559,7 +1559,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1567,6 +1566,7 @@ export declare const factories: {
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "counter";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -1645,7 +1645,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1653,6 +1652,7 @@ export declare const factories: {
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "issue";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -1687,7 +1687,6 @@ export declare const factories: {
                 } | null | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1739,6 +1738,7 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[];
+                ordinal: number;
                 canAddNewOptions: NonNullable<boolean | undefined>;
             } | {
                 followUps?: ({
@@ -1819,7 +1819,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1829,6 +1828,7 @@ export declare const factories: {
                 highEmoji?: import("yup").Maybe<string | undefined>;
                 type: "scaleOf1To10";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -1907,7 +1907,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1915,6 +1914,7 @@ export declare const factories: {
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "text";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -1994,7 +1994,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -2002,6 +2001,7 @@ export declare const factories: {
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "time";
                 prompt: string;
+                ordinal: number;
             };
         } | null | undefined;
         questionData?: {
@@ -2306,7 +2306,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -2314,6 +2313,7 @@ export declare const factories: {
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "counter";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -2392,7 +2392,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -2400,6 +2399,7 @@ export declare const factories: {
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "issue";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -2434,7 +2434,6 @@ export declare const factories: {
                 } | null | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -2486,6 +2485,7 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[];
+                ordinal: number;
                 canAddNewOptions: NonNullable<boolean | undefined>;
             } | {
                 followUps?: ({
@@ -2566,7 +2566,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -2576,6 +2575,7 @@ export declare const factories: {
                 highEmoji?: import("yup").Maybe<string | undefined>;
                 type: "scaleOf1To10";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -2654,7 +2654,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -2662,6 +2661,7 @@ export declare const factories: {
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "text";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -2741,7 +2741,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -2749,6 +2748,7 @@ export declare const factories: {
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "time";
                 prompt: string;
+                ordinal: number;
             };
         } | {
             setbackThreshold?: number | null | undefined;
@@ -3006,7 +3006,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -3014,6 +3013,7 @@ export declare const factories: {
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "counter";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -3092,7 +3092,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -3100,6 +3099,7 @@ export declare const factories: {
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "issue";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -3134,7 +3134,6 @@ export declare const factories: {
                 } | null | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -3186,6 +3185,7 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[];
+                ordinal: number;
                 canAddNewOptions: NonNullable<boolean | undefined>;
             } | {
                 followUps?: ({
@@ -3266,7 +3266,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -3276,6 +3275,7 @@ export declare const factories: {
                 highEmoji?: import("yup").Maybe<string | undefined>;
                 type: "scaleOf1To10";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -3354,7 +3354,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -3362,6 +3361,7 @@ export declare const factories: {
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "text";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -3441,7 +3441,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -3449,6 +3448,7 @@ export declare const factories: {
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "time";
                 prompt: string;
+                ordinal: number;
             };
         } | null | undefined;
         questionData?: {
@@ -3753,7 +3753,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -3761,6 +3760,7 @@ export declare const factories: {
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "counter";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -3839,7 +3839,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -3847,6 +3846,7 @@ export declare const factories: {
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "issue";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -3881,7 +3881,6 @@ export declare const factories: {
                 } | null | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -3933,6 +3932,7 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[];
+                ordinal: number;
                 canAddNewOptions: NonNullable<boolean | undefined>;
             } | {
                 followUps?: ({
@@ -4013,7 +4013,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -4023,6 +4022,7 @@ export declare const factories: {
                 highEmoji?: import("yup").Maybe<string | undefined>;
                 type: "scaleOf1To10";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -4101,7 +4101,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -4109,6 +4108,7 @@ export declare const factories: {
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "text";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -4188,7 +4188,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -4196,6 +4195,7 @@ export declare const factories: {
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "time";
                 prompt: string;
+                ordinal: number;
             };
         } | {
             setbackThreshold?: number | null | undefined;
@@ -4613,7 +4613,6 @@ export declare const factories: {
                         type: "string";
                         text: string;
                     })[] | undefined;
-                    ordinal?: number | undefined;
                     ordinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -4621,6 +4620,7 @@ export declare const factories: {
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     type: "counter";
                     prompt: string;
+                    ordinal: number;
                 } | {
                     followUps?: ({
                         message?: string | undefined;
@@ -4699,7 +4699,6 @@ export declare const factories: {
                         type: "string";
                         text: string;
                     })[] | undefined;
-                    ordinal?: number | undefined;
                     ordinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -4707,6 +4706,7 @@ export declare const factories: {
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     type: "issue";
                     prompt: string;
+                    ordinal: number;
                 } | {
                     followUps?: ({
                         message?: string | undefined;
@@ -4741,7 +4741,6 @@ export declare const factories: {
                     } | null | undefined;
                     isPublic?: boolean | undefined;
                     categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                    ordinal?: number | undefined;
                     ordinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -4793,6 +4792,7 @@ export declare const factories: {
                         type: "string";
                         text: string;
                     })[];
+                    ordinal: number;
                     canAddNewOptions: NonNullable<boolean | undefined>;
                 } | {
                     followUps?: ({
@@ -4873,7 +4873,6 @@ export declare const factories: {
                         type: "string";
                         text: string;
                     })[] | undefined;
-                    ordinal?: number | undefined;
                     ordinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -4883,6 +4882,7 @@ export declare const factories: {
                     highEmoji?: import("yup").Maybe<string | undefined>;
                     type: "scaleOf1To10";
                     prompt: string;
+                    ordinal: number;
                 } | {
                     followUps?: ({
                         message?: string | undefined;
@@ -4961,7 +4961,6 @@ export declare const factories: {
                         type: "string";
                         text: string;
                     })[] | undefined;
-                    ordinal?: number | undefined;
                     ordinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -4969,6 +4968,7 @@ export declare const factories: {
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     type: "text";
                     prompt: string;
+                    ordinal: number;
                 } | {
                     followUps?: ({
                         message?: string | undefined;
@@ -5048,7 +5048,6 @@ export declare const factories: {
                         type: "string";
                         text: string;
                     })[] | undefined;
-                    ordinal?: number | undefined;
                     ordinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -5056,6 +5055,7 @@ export declare const factories: {
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     type: "time";
                     prompt: string;
+                    ordinal: number;
                 };
             } | {
                 setbackThreshold?: number | null | undefined;
@@ -5271,7 +5271,6 @@ export declare const factories: {
             type: "string";
             text: string;
         })[] | undefined;
-        ordinal?: number | undefined;
         ordinals?: {
             [x: string]: number;
         } | null | undefined;
@@ -5279,7 +5278,8 @@ export declare const factories: {
         writeAnswerToProfileMemoryKey?: string | undefined;
         type: "text";
         prompt: string;
-    }, "type" | "prompt" | ("followUps" | "recommendedForIssueIds" | "createdAt" | "updatedAt" | "isPublic" | "categories" | "options" | "ordinal" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+        ordinal: number;
+    }, "type" | "prompt" | "ordinal" | ("followUps" | "recommendedForIssueIds" | "createdAt" | "updatedAt" | "isPublic" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     timeQuestionFactory: import("factory.ts").Factory<{
         followUps?: ({
             message?: string | undefined;
@@ -5359,7 +5359,6 @@ export declare const factories: {
             type: "string";
             text: string;
         })[] | undefined;
-        ordinal?: number | undefined;
         ordinals?: {
             [x: string]: number;
         } | null | undefined;
@@ -5367,7 +5366,8 @@ export declare const factories: {
         writeAnswerToProfileMemoryKey?: string | undefined;
         type: "time";
         prompt: string;
-    }, "type" | "prompt" | ("followUps" | "setbackThreshold" | "recommendedForIssueIds" | "createdAt" | "updatedAt" | "isPublic" | "categories" | "options" | "ordinal" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+        ordinal: number;
+    }, "type" | "prompt" | "ordinal" | ("followUps" | "setbackThreshold" | "recommendedForIssueIds" | "createdAt" | "updatedAt" | "isPublic" | "categories" | "options" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     multipleChoiceQuestionFactory: import("factory.ts").Factory<{
         followUps?: ({
             message?: string | undefined;
@@ -5402,7 +5402,6 @@ export declare const factories: {
         } | null | undefined;
         isPublic?: boolean | undefined;
         categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-        ordinal?: number | undefined;
         ordinals?: {
             [x: string]: number;
         } | null | undefined;
@@ -5454,8 +5453,9 @@ export declare const factories: {
             type: "string";
             text: string;
         })[];
+        ordinal: number;
         canAddNewOptions: NonNullable<boolean | undefined>;
-    }, "type" | "prompt" | "options" | "canAddNewOptions" | ("followUps" | "recommendedForIssueIds" | "createdAt" | "updatedAt" | "isPublic" | "categories" | "ordinal" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
+    }, "type" | "prompt" | "options" | "ordinal" | "canAddNewOptions" | ("followUps" | "recommendedForIssueIds" | "createdAt" | "updatedAt" | "isPublic" | "categories" | "ordinals" | "templateFor" | "writeAnswerToProfileMemoryKey")>;
     applicationFactory: import("factory.ts").Factory<import("..").ApplicationValue, keyof import("..").ApplicationValue>;
     dayFactory: import("factory.ts").Factory<import("..").DayValue, "date" | "questionsById" | "issueName" | "logsById">;
     issueFactory: import("factory.ts").Factory<{
@@ -6037,7 +6037,6 @@ export declare const factories: {
                         type: "string";
                         text: string;
                     })[] | undefined;
-                    ordinal?: number | undefined;
                     ordinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -6045,6 +6044,7 @@ export declare const factories: {
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     type: "counter";
                     prompt: string;
+                    ordinal: number;
                 } | {
                     followUps?: ({
                         message?: string | undefined;
@@ -6123,7 +6123,6 @@ export declare const factories: {
                         type: "string";
                         text: string;
                     })[] | undefined;
-                    ordinal?: number | undefined;
                     ordinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -6131,6 +6130,7 @@ export declare const factories: {
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     type: "issue";
                     prompt: string;
+                    ordinal: number;
                 } | {
                     followUps?: ({
                         message?: string | undefined;
@@ -6165,7 +6165,6 @@ export declare const factories: {
                     } | null | undefined;
                     isPublic?: boolean | undefined;
                     categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                    ordinal?: number | undefined;
                     ordinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -6217,6 +6216,7 @@ export declare const factories: {
                         type: "string";
                         text: string;
                     })[];
+                    ordinal: number;
                     canAddNewOptions: NonNullable<boolean | undefined>;
                 } | {
                     followUps?: ({
@@ -6297,7 +6297,6 @@ export declare const factories: {
                         type: "string";
                         text: string;
                     })[] | undefined;
-                    ordinal?: number | undefined;
                     ordinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -6307,6 +6306,7 @@ export declare const factories: {
                     highEmoji?: import("yup").Maybe<string | undefined>;
                     type: "scaleOf1To10";
                     prompt: string;
+                    ordinal: number;
                 } | {
                     followUps?: ({
                         message?: string | undefined;
@@ -6385,7 +6385,6 @@ export declare const factories: {
                         type: "string";
                         text: string;
                     })[] | undefined;
-                    ordinal?: number | undefined;
                     ordinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -6393,6 +6392,7 @@ export declare const factories: {
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     type: "text";
                     prompt: string;
+                    ordinal: number;
                 } | {
                     followUps?: ({
                         message?: string | undefined;
@@ -6472,7 +6472,6 @@ export declare const factories: {
                         type: "string";
                         text: string;
                     })[] | undefined;
-                    ordinal?: number | undefined;
                     ordinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -6480,6 +6479,7 @@ export declare const factories: {
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     type: "time";
                     prompt: string;
+                    ordinal: number;
                 };
             } | {
                 setbackThreshold?: number | null | undefined;
@@ -6890,7 +6890,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -6898,6 +6897,7 @@ export declare const factories: {
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "counter";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -6976,7 +6976,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -6984,6 +6983,7 @@ export declare const factories: {
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "issue";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -7018,7 +7018,6 @@ export declare const factories: {
                 } | null | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -7070,6 +7069,7 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[];
+                ordinal: number;
                 canAddNewOptions: NonNullable<boolean | undefined>;
             } | {
                 followUps?: ({
@@ -7150,7 +7150,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -7160,6 +7159,7 @@ export declare const factories: {
                 highEmoji?: import("yup").Maybe<string | undefined>;
                 type: "scaleOf1To10";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -7238,7 +7238,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -7246,6 +7245,7 @@ export declare const factories: {
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "text";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -7325,7 +7325,6 @@ export declare const factories: {
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -7333,6 +7332,7 @@ export declare const factories: {
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "time";
                 prompt: string;
+                ordinal: number;
             };
         } | {
             setbackThreshold?: number | null | undefined;
@@ -7833,7 +7833,6 @@ export declare const factories: {
                             type: "string";
                             text: string;
                         })[] | undefined;
-                        ordinal?: number | undefined;
                         ordinals?: {
                             [x: string]: number;
                         } | null | undefined;
@@ -7841,6 +7840,7 @@ export declare const factories: {
                         writeAnswerToProfileMemoryKey?: string | undefined;
                         type: "counter";
                         prompt: string;
+                        ordinal: number;
                     } | {
                         followUps?: ({
                             message?: string | undefined;
@@ -7919,7 +7919,6 @@ export declare const factories: {
                             type: "string";
                             text: string;
                         })[] | undefined;
-                        ordinal?: number | undefined;
                         ordinals?: {
                             [x: string]: number;
                         } | null | undefined;
@@ -7927,6 +7926,7 @@ export declare const factories: {
                         writeAnswerToProfileMemoryKey?: string | undefined;
                         type: "issue";
                         prompt: string;
+                        ordinal: number;
                     } | {
                         followUps?: ({
                             message?: string | undefined;
@@ -7961,7 +7961,6 @@ export declare const factories: {
                         } | null | undefined;
                         isPublic?: boolean | undefined;
                         categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                        ordinal?: number | undefined;
                         ordinals?: {
                             [x: string]: number;
                         } | null | undefined;
@@ -8013,6 +8012,7 @@ export declare const factories: {
                             type: "string";
                             text: string;
                         })[];
+                        ordinal: number;
                         canAddNewOptions: NonNullable<boolean | undefined>;
                     } | {
                         followUps?: ({
@@ -8093,7 +8093,6 @@ export declare const factories: {
                             type: "string";
                             text: string;
                         })[] | undefined;
-                        ordinal?: number | undefined;
                         ordinals?: {
                             [x: string]: number;
                         } | null | undefined;
@@ -8103,6 +8102,7 @@ export declare const factories: {
                         highEmoji?: import("yup").Maybe<string | undefined>;
                         type: "scaleOf1To10";
                         prompt: string;
+                        ordinal: number;
                     } | {
                         followUps?: ({
                             message?: string | undefined;
@@ -8181,7 +8181,6 @@ export declare const factories: {
                             type: "string";
                             text: string;
                         })[] | undefined;
-                        ordinal?: number | undefined;
                         ordinals?: {
                             [x: string]: number;
                         } | null | undefined;
@@ -8189,6 +8188,7 @@ export declare const factories: {
                         writeAnswerToProfileMemoryKey?: string | undefined;
                         type: "text";
                         prompt: string;
+                        ordinal: number;
                     } | {
                         followUps?: ({
                             message?: string | undefined;
@@ -8268,7 +8268,6 @@ export declare const factories: {
                             type: "string";
                             text: string;
                         })[] | undefined;
-                        ordinal?: number | undefined;
                         ordinals?: {
                             [x: string]: number;
                         } | null | undefined;
@@ -8276,6 +8275,7 @@ export declare const factories: {
                         writeAnswerToProfileMemoryKey?: string | undefined;
                         type: "time";
                         prompt: string;
+                        ordinal: number;
                     };
                 } | {
                     setbackThreshold?: number | null | undefined;
@@ -8686,7 +8686,6 @@ export declare const factories: {
                         type: "string";
                         text: string;
                     })[] | undefined;
-                    ordinal?: number | undefined;
                     ordinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -8694,6 +8693,7 @@ export declare const factories: {
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     type: "counter";
                     prompt: string;
+                    ordinal: number;
                 } | {
                     followUps?: ({
                         message?: string | undefined;
@@ -8772,7 +8772,6 @@ export declare const factories: {
                         type: "string";
                         text: string;
                     })[] | undefined;
-                    ordinal?: number | undefined;
                     ordinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -8780,6 +8779,7 @@ export declare const factories: {
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     type: "issue";
                     prompt: string;
+                    ordinal: number;
                 } | {
                     followUps?: ({
                         message?: string | undefined;
@@ -8814,7 +8814,6 @@ export declare const factories: {
                     } | null | undefined;
                     isPublic?: boolean | undefined;
                     categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                    ordinal?: number | undefined;
                     ordinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -8866,6 +8865,7 @@ export declare const factories: {
                         type: "string";
                         text: string;
                     })[];
+                    ordinal: number;
                     canAddNewOptions: NonNullable<boolean | undefined>;
                 } | {
                     followUps?: ({
@@ -8946,7 +8946,6 @@ export declare const factories: {
                         type: "string";
                         text: string;
                     })[] | undefined;
-                    ordinal?: number | undefined;
                     ordinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -8956,6 +8955,7 @@ export declare const factories: {
                     highEmoji?: import("yup").Maybe<string | undefined>;
                     type: "scaleOf1To10";
                     prompt: string;
+                    ordinal: number;
                 } | {
                     followUps?: ({
                         message?: string | undefined;
@@ -9034,7 +9034,6 @@ export declare const factories: {
                         type: "string";
                         text: string;
                     })[] | undefined;
-                    ordinal?: number | undefined;
                     ordinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -9042,6 +9041,7 @@ export declare const factories: {
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     type: "text";
                     prompt: string;
+                    ordinal: number;
                 } | {
                     followUps?: ({
                         message?: string | undefined;
@@ -9121,7 +9121,6 @@ export declare const factories: {
                         type: "string";
                         text: string;
                     })[] | undefined;
-                    ordinal?: number | undefined;
                     ordinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -9129,6 +9128,7 @@ export declare const factories: {
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     type: "time";
                     prompt: string;
+                    ordinal: number;
                 };
             } | {
                 setbackThreshold?: number | null | undefined;

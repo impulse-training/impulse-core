@@ -48,7 +48,7 @@ export declare const multipleChoiceQuestionSchema: yup.ObjectSchema<{
         type: "string";
         text: string;
     })[];
-    ordinal: number | undefined;
+    ordinal: number;
     ordinals: {
         [x: string]: number;
     } | null | undefined;

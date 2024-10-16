@@ -114,7 +114,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -122,6 +121,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "counter";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -200,7 +200,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -208,6 +207,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "issue";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -242,7 +242,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 } | null | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -294,6 +293,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[];
+                ordinal: number;
                 canAddNewOptions: NonNullable<boolean | undefined>;
             } | {
                 followUps?: ({
@@ -374,7 +374,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -384,6 +383,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 highEmoji?: import("yup").Maybe<string | undefined>;
                 type: "scaleOf1To10";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -462,7 +462,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -470,6 +469,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "text";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -549,7 +549,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -557,6 +556,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "time";
                 prompt: string;
+                ordinal: number;
             };
         } | null | undefined;
         questionData?: {
@@ -861,7 +861,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -869,6 +868,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "counter";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -947,7 +947,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -955,6 +954,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "issue";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -989,7 +989,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 } | null | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1041,6 +1040,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[];
+                ordinal: number;
                 canAddNewOptions: NonNullable<boolean | undefined>;
             } | {
                 followUps?: ({
@@ -1121,7 +1121,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1131,6 +1130,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 highEmoji?: import("yup").Maybe<string | undefined>;
                 type: "scaleOf1To10";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -1209,7 +1209,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1217,6 +1216,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "text";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -1296,7 +1296,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1304,6 +1303,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "time";
                 prompt: string;
+                ordinal: number;
             };
         } | {
             setbackThreshold?: number | null | undefined;
@@ -1561,7 +1561,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1569,6 +1568,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "counter";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -1647,7 +1647,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1655,6 +1654,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "issue";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -1689,7 +1689,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 } | null | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1741,6 +1740,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[];
+                ordinal: number;
                 canAddNewOptions: NonNullable<boolean | undefined>;
             } | {
                 followUps?: ({
@@ -1821,7 +1821,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1831,6 +1830,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 highEmoji?: import("yup").Maybe<string | undefined>;
                 type: "scaleOf1To10";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -1909,7 +1909,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1917,6 +1916,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "text";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -1996,7 +1996,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -2004,6 +2003,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "time";
                 prompt: string;
+                ordinal: number;
             };
         } | null | undefined;
         questionData?: {
@@ -2308,7 +2308,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -2316,6 +2315,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "counter";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -2394,7 +2394,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -2402,6 +2401,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "issue";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -2436,7 +2436,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 } | null | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -2488,6 +2487,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[];
+                ordinal: number;
                 canAddNewOptions: NonNullable<boolean | undefined>;
             } | {
                 followUps?: ({
@@ -2568,7 +2568,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -2578,6 +2577,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 highEmoji?: import("yup").Maybe<string | undefined>;
                 type: "scaleOf1To10";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -2656,7 +2656,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -2664,6 +2663,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "text";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -2743,7 +2743,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -2751,6 +2750,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "time";
                 prompt: string;
+                ordinal: number;
             };
         } | {
             setbackThreshold?: number | null | undefined;
@@ -3008,7 +3008,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -3016,6 +3015,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "counter";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -3094,7 +3094,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -3102,6 +3101,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "issue";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -3136,7 +3136,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 } | null | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -3188,6 +3187,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[];
+                ordinal: number;
                 canAddNewOptions: NonNullable<boolean | undefined>;
             } | {
                 followUps?: ({
@@ -3268,7 +3268,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -3278,6 +3277,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 highEmoji?: import("yup").Maybe<string | undefined>;
                 type: "scaleOf1To10";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -3356,7 +3356,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -3364,6 +3363,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "text";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -3443,7 +3443,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -3451,6 +3450,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "time";
                 prompt: string;
+                ordinal: number;
             };
         } | null | undefined;
         questionData?: {
@@ -3755,7 +3755,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -3763,6 +3762,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "counter";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -3841,7 +3841,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -3849,6 +3848,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "issue";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -3883,7 +3883,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 } | null | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -3935,6 +3934,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[];
+                ordinal: number;
                 canAddNewOptions: NonNullable<boolean | undefined>;
             } | {
                 followUps?: ({
@@ -4015,7 +4015,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -4025,6 +4024,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 highEmoji?: import("yup").Maybe<string | undefined>;
                 type: "scaleOf1To10";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -4103,7 +4103,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -4111,6 +4110,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "text";
                 prompt: string;
+                ordinal: number;
             } | {
                 followUps?: ({
                     message?: string | undefined;
@@ -4190,7 +4190,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     type: "string";
                     text: string;
                 })[] | undefined;
-                ordinal?: number | undefined;
                 ordinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -4198,6 +4197,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 writeAnswerToProfileMemoryKey?: string | undefined;
                 type: "time";
                 prompt: string;
+                ordinal: number;
             };
         } | {
             setbackThreshold?: number | null | undefined;
@@ -4615,7 +4615,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         type: "string";
                         text: string;
                     })[] | undefined;
-                    ordinal?: number | undefined;
                     ordinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -4623,6 +4622,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     type: "counter";
                     prompt: string;
+                    ordinal: number;
                 } | {
                     followUps?: ({
                         message?: string | undefined;
@@ -4701,7 +4701,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         type: "string";
                         text: string;
                     })[] | undefined;
-                    ordinal?: number | undefined;
                     ordinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -4709,6 +4708,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     type: "issue";
                     prompt: string;
+                    ordinal: number;
                 } | {
                     followUps?: ({
                         message?: string | undefined;
@@ -4743,7 +4743,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     } | null | undefined;
                     isPublic?: boolean | undefined;
                     categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
-                    ordinal?: number | undefined;
                     ordinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -4795,6 +4794,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         type: "string";
                         text: string;
                     })[];
+                    ordinal: number;
                     canAddNewOptions: NonNullable<boolean | undefined>;
                 } | {
                     followUps?: ({
@@ -4875,7 +4875,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         type: "string";
                         text: string;
                     })[] | undefined;
-                    ordinal?: number | undefined;
                     ordinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -4885,6 +4884,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     highEmoji?: import("yup").Maybe<string | undefined>;
                     type: "scaleOf1To10";
                     prompt: string;
+                    ordinal: number;
                 } | {
                     followUps?: ({
                         message?: string | undefined;
@@ -4963,7 +4963,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         type: "string";
                         text: string;
                     })[] | undefined;
-                    ordinal?: number | undefined;
                     ordinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -4971,6 +4970,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     type: "text";
                     prompt: string;
+                    ordinal: number;
                 } | {
                     followUps?: ({
                         message?: string | undefined;
@@ -5050,7 +5050,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         type: "string";
                         text: string;
                     })[] | undefined;
-                    ordinal?: number | undefined;
                     ordinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -5058,6 +5057,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     writeAnswerToProfileMemoryKey?: string | undefined;
                     type: "time";
                     prompt: string;
+                    ordinal: number;
                 };
             } | {
                 setbackThreshold?: number | null | undefined;

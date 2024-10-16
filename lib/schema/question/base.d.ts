@@ -88,7 +88,7 @@ export declare function questionBaseSchema<T extends string>(type: T): yup.Objec
         type: "string";
         text: string;
     })[] | undefined;
-    ordinal: number | undefined;
+    ordinal: number;
     ordinals: {
         [x: string]: number;
     } | null | undefined;
