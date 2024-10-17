@@ -588,6 +588,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     unit: string;
                 };
             } | null | undefined;
+            blandPathwayChatId?: string | undefined;
             profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
@@ -2033,6 +2034,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     unit: string;
                 };
             } | null | undefined;
+            blandPathwayChatId?: string | undefined;
             profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
@@ -3478,6 +3480,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     unit: string;
                 };
             } | null | undefined;
+            blandPathwayChatId?: string | undefined;
             profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
@@ -4931,6 +4934,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     unit: string;
                 };
             } | null | undefined;
+            blandPathwayChatId?: string | undefined;
             profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
@@ -6377,6 +6381,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     unit: string;
                 };
             } | null | undefined;
+            blandPathwayChatId?: string | undefined;
             profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
@@ -7822,6 +7827,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     unit: string;
                 };
             } | null | undefined;
+            blandPathwayChatId?: string | undefined;
             profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
@@ -9274,6 +9280,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     unit: string;
                 };
             } | null | undefined;
+            blandPathwayChatId?: string | undefined;
             profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
@@ -11573,6 +11580,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     unit: string;
                 };
             } | null | undefined;
+            blandPathwayChatId?: string | undefined;
             profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({

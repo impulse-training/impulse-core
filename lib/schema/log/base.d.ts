@@ -576,6 +576,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    blandPathwayChatId: string | undefined;
     text: string | undefined;
     type: yup.Defined<K>;
     date: {
@@ -1457,6 +1458,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
     questionsById: undefined;
     questionData: undefined;
     submittedAt: undefined;
+    blandPathwayChatId: undefined;
     text: undefined;
     type: undefined;
     date: {

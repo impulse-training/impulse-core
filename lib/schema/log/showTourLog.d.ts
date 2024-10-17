@@ -587,6 +587,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    blandPathwayChatId: string | undefined;
     text: string | undefined;
     type: "showTour";
     date: {
@@ -1475,6 +1476,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
     questionsById: undefined;
     questionData: undefined;
     submittedAt: undefined;
+    blandPathwayChatId: undefined;
     text: undefined;
     type: undefined;
     date: {

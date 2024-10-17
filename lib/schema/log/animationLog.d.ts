@@ -576,6 +576,7 @@ export declare const animationLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    blandPathwayChatId: string | undefined;
     text: string | undefined;
     type: "animation";
     date: {
@@ -1458,6 +1459,7 @@ export declare const animationLogSchema: yup.ObjectSchema<{
     questionsById: undefined;
     questionData: undefined;
     submittedAt: undefined;
+    blandPathwayChatId: undefined;
     text: undefined;
     type: undefined;
     date: {

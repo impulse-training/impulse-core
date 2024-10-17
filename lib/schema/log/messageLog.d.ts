@@ -576,6 +576,7 @@ export declare const messageLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    blandPathwayChatId: string | undefined;
     text: string;
     type: "message";
     date: {
@@ -1457,6 +1458,7 @@ export declare const messageLogSchema: yup.ObjectSchema<{
     questionsById: undefined;
     questionData: undefined;
     submittedAt: undefined;
+    blandPathwayChatId: undefined;
     text: undefined;
     type: undefined;
     date: {

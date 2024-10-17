@@ -575,6 +575,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             unit: string;
         };
     } | null | undefined;
+    blandPathwayChatId?: string | undefined;
     profileEmojiIDString?: string | undefined;
     tacticId?: string | null | undefined;
     tactic?: ({
@@ -1445,7 +1446,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     };
     dateString: string;
     parentIds: string[];
-}, "type" | "profileId" | "date" | "dateString" | "parentIds" | ("text" | "createdAt" | "updatedAt" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "questionsById" | "questionData" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "issueId" | "issueName")>, profileFactory: import("factory.ts").Factory<{
+}, "type" | "profileId" | "date" | "dateString" | "parentIds" | ("text" | "createdAt" | "updatedAt" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "questionsById" | "questionData" | "blandPathwayChatId" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "issueId" | "issueName")>, profileFactory: import("factory.ts").Factory<{
     setbackThreshold?: number | undefined;
     createdAt?: {
         isEqual?: any;

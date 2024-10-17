@@ -576,6 +576,7 @@ export declare const tacticsLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    blandPathwayChatId: string | undefined;
     text: string | undefined;
     type: "tactics";
     date: {
@@ -2313,6 +2314,7 @@ export declare const tacticsLogSchema: yup.ObjectSchema<{
     questionsById: undefined;
     questionData: undefined;
     submittedAt: undefined;
+    blandPathwayChatId: undefined;
     text: undefined;
     type: undefined;
     date: {

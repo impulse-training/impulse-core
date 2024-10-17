@@ -577,6 +577,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 unit: string;
             };
         } | null | undefined;
+        blandPathwayChatId?: string | undefined;
         profileEmojiIDString?: string | undefined;
         tacticId?: string | null | undefined;
         tactic?: ({
@@ -1447,7 +1448,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         };
         dateString: string;
         parentIds: string[];
-    }, "type" | "profileId" | "date" | "dateString" | "parentIds" | ("text" | "createdAt" | "updatedAt" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "questionsById" | "questionData" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "issueId" | "issueName")>;
+    }, "type" | "profileId" | "date" | "dateString" | "parentIds" | ("text" | "createdAt" | "updatedAt" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "questionsById" | "questionData" | "blandPathwayChatId" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "issueId" | "issueName")>;
     messageLogFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -2024,6 +2025,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 unit: string;
             };
         } | null | undefined;
+        blandPathwayChatId?: string | undefined;
         profileEmojiIDString?: string | undefined;
         tacticId?: string | null | undefined;
         tactic?: ({
@@ -2892,7 +2894,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: Function;
         };
         dateString: string;
-    }, "type" | "text" | "profileId" | "date" | "dateString" | ("createdAt" | "updatedAt" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "questionsById" | "questionData" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId")>;
+    }, "type" | "text" | "profileId" | "date" | "dateString" | ("createdAt" | "updatedAt" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "questionsById" | "questionData" | "blandPathwayChatId" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId")>;
     tacticsLogFactory: import("factory.ts").Factory<{
         text?: string | undefined;
         createdAt?: {
@@ -3471,6 +3473,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 unit: string;
             };
         } | null | undefined;
+        blandPathwayChatId?: string | undefined;
         profileEmojiIDString?: string | undefined;
         tacticId?: string | null | undefined;
         tactic?: ({
@@ -5193,7 +5196,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         };
         dateString: string;
         completedTacticIds: string[];
-    }, "type" | "profileId" | "tacticsById" | "date" | "dateString" | "completedTacticIds" | ("text" | "createdAt" | "updatedAt" | "title" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "questionsById" | "questionData" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "sourceSuggestion" | "isAddToGameplanMode" | "suggestedTacticDocPaths")>;
+    }, "type" | "profileId" | "tacticsById" | "date" | "dateString" | "completedTacticIds" | ("text" | "createdAt" | "updatedAt" | "title" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "questionsById" | "questionData" | "blandPathwayChatId" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "sourceSuggestion" | "isAddToGameplanMode" | "suggestedTacticDocPaths")>;
     textQuestionFactory: import("factory.ts").Factory<{
         followUps?: ({
             message?: string | undefined;

@@ -20,6 +20,8 @@ export function logBaseSchema<K extends string>(type: K) {
     questionData: optionalObjectOf(questionDataSchema),
     submittedAt: optionalTimestampSchema,
 
+    blandPathwayChatId: yup.string(),
+
     text: yup.string(),
     type: yup.mixed<K>().oneOf([type]).defined(),
     date: timestampSchema,
