@@ -2,6 +2,7 @@ import * as yup from 'yup';
 
 export const messageSchema = yup.object({
   content: yup.string().required(),
+  senderProfileId: yup.string(),
   role: yup
     .mixed<'user' | 'assistant'>()
     .oneOf(['assistant', 'user'])
