@@ -4,7 +4,7 @@ import { TimestampLike } from '../utils/firestore/TimestampLike';
 
 export const {
   applicationFactory,
-  impulseLogFactory,
+  regularLogFactory,
   profileFactory,
   tacticFactory,
 } = makeFactories(TimestampLike);

@@ -19,11 +19,11 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
         toDate: Function;
     } | null | undefined;
     ordinal?: number | undefined;
-    parentIds?: string[] | undefined;
     parentId?: string | null | undefined;
     parentName?: string | null | undefined;
     hasDebriefQuestion?: boolean | undefined;
     synonyms?: string[] | undefined;
+    parentIds?: string[] | undefined;
     parentNames?: string[] | undefined;
     profileCount?: number | null | undefined;
     isFeatured?: boolean | null | undefined;
@@ -34,4 +34,4 @@ export declare const makeIssueFactory: (TimestampKlass: typeof TimestampLike) =>
     } | null | undefined;
     gameplanTactics?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
     name: string;
-}, "name" | ("path" | "createdAt" | "updatedAt" | "ordinal" | "parentIds" | "parentId" | "parentName" | "hasDebriefQuestion" | "synonyms" | "parentNames" | "profileCount" | "isFeatured" | "blandContext" | "recommendedStrategies" | "strategyOrdinals" | "gameplanTactics")>;
+}, "name" | ("path" | "createdAt" | "updatedAt" | "ordinal" | "parentId" | "parentName" | "hasDebriefQuestion" | "synonyms" | "parentIds" | "parentNames" | "profileCount" | "isFeatured" | "blandContext" | "recommendedStrategies" | "strategyOrdinals" | "gameplanTactics")>;

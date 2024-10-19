@@ -1,8 +1,9 @@
 import * as yup from 'yup';
 import { questionSchema } from '../question';
 import { tacticSchema } from '../tactic';
+import { requiredStringArray } from '../utils/array';
 import { fileSchema } from '../utils/file';
-import { optionalObjectOf } from '../utils/objectOf';
+import { objectOf, optionalObjectOf } from '../utils/objectOf';
 import { optionalTimestampSchema, timestampSchema } from '../utils/timestamp';
 import { questionDataSchema } from './utils/questionData';
 
@@ -15,6 +16,14 @@ export function logBaseSchema<K extends string>(type: K) {
     audioFile: fileSchema.optional(),
     audioDurationSeconds: yup.number(),
     audioWaveform: yup.string(),
+
+    // From old impulse log schema
+    issueId: yup.string().nullable(),
+    issueName: yup.string(),
+    completedTacticIds: requiredStringArray,
+
+    // From old tactics log schema
+    tacticsById: objectOf(tacticSchema),
 
     questionsById: optionalObjectOf(questionSchema),
     questionData: optionalObjectOf(questionDataSchema),

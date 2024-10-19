@@ -40,11 +40,11 @@ export declare const makeProfileFactory: (TimestampKlass: typeof TimestampLike) 
                 toDate: Function;
             } | null | undefined;
             ordinal?: number | undefined;
-            parentIds?: string[] | undefined;
             parentId?: string | null | undefined;
             parentName?: string | null | undefined;
             hasDebriefQuestion?: boolean | undefined;
             synonyms?: string[] | undefined;
+            parentIds?: string[] | undefined;
             parentNames?: string[] | undefined;
             profileCount?: number | null | undefined;
             isFeatured?: boolean | null | undefined;

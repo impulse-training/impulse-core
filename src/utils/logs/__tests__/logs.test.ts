@@ -2,12 +2,12 @@ import { logTextForGpt } from '..';
 import { makeFactories } from '../../../factories';
 import { TimestampLike } from '../../firestore/TimestampLike';
 
-const { messageLogFactory } = makeFactories(TimestampLike);
+const { regularLogFactory } = makeFactories(TimestampLike);
 
 describe(logTextForGpt, () => {
   describe('for a log that has answers to questions', () => {
     it('returns the correct payload', () => {
-      const log = messageLogFactory.build({
+      const log = regularLogFactory.build({
         text: 'I messed up!',
         questionsById: {
           question1: {

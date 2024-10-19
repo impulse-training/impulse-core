@@ -1,25 +1,20 @@
 import * as yup from 'yup';
-import { ActionRecapLogValue, actionRecapLogSchema } from './actionRecap';
-import { AnimationLogValue, animationLogSchema } from './animationLog';
 import { DayReviewLogValue, dayReviewLogSchema } from './dayReview';
-import { ImpulseLogValue, impulseLogSchema } from './impulseLog';
-import { MessageLogValue, messageLogSchema } from './messageLog';
+import { RegularLogValue, regularLogSchema } from './regular';
 import { ShowTourLogValue, showTourLogSchema } from './showTourLog';
-import { TacticsLogValue, tacticsLogSchema } from './tacticsLog';
+import { TacticsLogValue } from './tacticsLog';
 import {
   WhatsappMessageLogValue,
   whatsappMessageLogSchema,
 } from './whatsappMessageLog';
 
-export * from './actionRecap';
-export * from './animationLog';
 export * from './dayReview';
-export * from './impulseLog';
-export * from './messageLog';
+export * from './regular';
 export * from './showTourLog';
 export * from './tacticsLog';
 export * from './whatsappMessageLog';
 
+// Utils
 export * from './utils/guards';
 export * from './utils/questionData';
 
@@ -27,11 +22,7 @@ export const logSchemas: Record<
   LogValue['type'],
   yup.ObjectSchema<LogValue>
 > = {
-  animation: animationLogSchema,
-  impulse: impulseLogSchema,
-  message: messageLogSchema,
-  tactics: tacticsLogSchema,
-  actionRecap: actionRecapLogSchema,
+  regular: regularLogSchema,
   showTour: showTourLogSchema,
   dayReview: dayReviewLogSchema,
   whatsappMessage: whatsappMessageLogSchema,
@@ -58,10 +49,7 @@ type ValidatedLog = {
 }[LogValue['type']];
 
 export type LogValue =
-  | AnimationLogValue
-  | ImpulseLogValue
-  | MessageLogValue
-  | ActionRecapLogValue
+  | RegularLogValue
   | TacticsLogValue
   | ShowTourLogValue
   | DayReviewLogValue
