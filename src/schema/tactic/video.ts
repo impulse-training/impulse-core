@@ -6,10 +6,10 @@ export const videoTacticSchema = tacticValueBaseSchema('video').shape({
     .object({
       url: yup.string().url().nullable(),
       storagePath: yup.string().nullable(),
-      title: yup.string().required(),
-      description: yup.string().required(),
-      thumbnailUrl: yup.string().url().required(),
-      duration: yup.number().required(),
+      // title: yup.string(),
+      // description: yup.string(),
+      // thumbnailUrl: yup.string().url(),
+      // duration: yup.number(),
     })
     .required(),
 });

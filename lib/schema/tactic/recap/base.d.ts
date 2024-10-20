@@ -6,7 +6,7 @@ export declare function recapTacticValueBaseSchema(type: RecapKeyType): import("
         [x: string]: number;
     } | null | undefined;
     ordinal: number;
-    prompt: string;
+    prompt: string | undefined;
     description: string | null | undefined;
     type: RecapKeyType;
     createdAt: {

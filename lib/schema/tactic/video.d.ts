@@ -6,7 +6,7 @@ export declare const videoTacticSchema: yup.ObjectSchema<{
         [x: string]: number;
     } | null | undefined;
     ordinal: number;
-    prompt: string;
+    prompt: string | undefined;
     description: string | null | undefined;
     type: "video";
     createdAt: {
@@ -40,10 +40,6 @@ export declare const videoTacticSchema: yup.ObjectSchema<{
     video: {
         storagePath?: string | null | undefined;
         url?: string | null | undefined;
-        description: string;
-        title: string;
-        thumbnailUrl: string;
-        duration: number;
     };
 }, yup.AnyObject, {
     profileId: undefined;
@@ -70,10 +66,6 @@ export declare const videoTacticSchema: yup.ObjectSchema<{
     video: {
         url: undefined;
         storagePath: undefined;
-        title: undefined;
-        description: undefined;
-        thumbnailUrl: undefined;
-        duration: undefined;
     };
 }, "">;
 export type VideoTacticValue = yup.InferType<typeof videoTacticSchema>;

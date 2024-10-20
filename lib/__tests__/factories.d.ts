@@ -645,6 +645,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            prompt?: string | undefined;
             profileId?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -662,7 +663,6 @@ export declare const factories: {
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
             type: "breathingExercise";
-            prompt: string;
             ordinal: number;
             inFor: number;
             holdFor: number;
@@ -686,6 +686,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            prompt?: string | undefined;
             profileId?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -703,7 +704,6 @@ export declare const factories: {
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
             type: "notifyASupportPerson";
-            prompt: string;
             ordinal: number;
             contactIds: string[];
         } | {
@@ -725,6 +725,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            prompt?: string | undefined;
             profileId?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -742,7 +743,6 @@ export declare const factories: {
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
             type: "notifySupportGroup";
-            prompt: string;
             ordinal: number;
             supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
         } | {
@@ -764,6 +764,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            prompt?: string | undefined;
             profileId?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -781,7 +782,6 @@ export declare const factories: {
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
             type: "question";
-            prompt: string;
             ordinal: number;
             question: {
                 followUps?: ({
@@ -1325,6 +1325,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            prompt?: string | undefined;
             profileId?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -1342,7 +1343,6 @@ export declare const factories: {
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
             type: "steps";
-            prompt: string;
             ordinal: number;
             targetSteps: number;
         } | {
@@ -1402,6 +1402,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            prompt?: string | undefined;
             profileId?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -1419,15 +1420,10 @@ export declare const factories: {
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
             type: "video";
-            prompt: string;
             ordinal: number;
             video: {
                 storagePath?: string | null | undefined;
                 url?: string | null | undefined;
-                description: string;
-                title: string;
-                thumbnailUrl: string;
-                duration: number;
             };
         }) | import("yup").Maybe<{} | undefined>;
         tacticData?: {
@@ -1503,6 +1499,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                prompt?: string | undefined;
                 profileId?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -1520,7 +1517,6 @@ export declare const factories: {
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 type: "breathingExercise";
-                prompt: string;
                 ordinal: number;
                 inFor: number;
                 holdFor: number;
@@ -1544,6 +1540,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                prompt?: string | undefined;
                 profileId?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -1561,7 +1558,6 @@ export declare const factories: {
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 type: "notifyASupportPerson";
-                prompt: string;
                 ordinal: number;
                 contactIds: string[];
             } | {
@@ -1583,6 +1579,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                prompt?: string | undefined;
                 profileId?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -1600,7 +1597,6 @@ export declare const factories: {
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 type: "notifySupportGroup";
-                prompt: string;
                 ordinal: number;
                 supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             } | {
@@ -1622,6 +1618,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                prompt?: string | undefined;
                 profileId?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -1639,7 +1636,6 @@ export declare const factories: {
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 type: "question";
-                prompt: string;
                 ordinal: number;
                 question: {
                     followUps?: ({
@@ -2183,6 +2179,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                prompt?: string | undefined;
                 profileId?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -2200,7 +2197,6 @@ export declare const factories: {
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 type: "steps";
-                prompt: string;
                 ordinal: number;
                 targetSteps: number;
             } | {
@@ -2260,6 +2256,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                prompt?: string | undefined;
                 profileId?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -2277,15 +2274,10 @@ export declare const factories: {
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 type: "video";
-                prompt: string;
                 ordinal: number;
                 video: {
                     storagePath?: string | null | undefined;
                     url?: string | null | undefined;
-                    description: string;
-                    title: string;
-                    thumbnailUrl: string;
-                    duration: number;
                 };
             };
         };
@@ -2946,6 +2938,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            prompt?: string | undefined;
             profileId?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -2963,7 +2956,6 @@ export declare const factories: {
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
             type: "breathingExercise";
-            prompt: string;
             ordinal: number;
             inFor: number;
             holdFor: number;
@@ -2987,6 +2979,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            prompt?: string | undefined;
             profileId?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -3004,7 +2997,6 @@ export declare const factories: {
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
             type: "notifyASupportPerson";
-            prompt: string;
             ordinal: number;
             contactIds: string[];
         } | {
@@ -3026,6 +3018,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            prompt?: string | undefined;
             profileId?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -3043,7 +3036,6 @@ export declare const factories: {
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
             type: "notifySupportGroup";
-            prompt: string;
             ordinal: number;
             supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
         } | {
@@ -3065,6 +3057,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            prompt?: string | undefined;
             profileId?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -3082,7 +3075,6 @@ export declare const factories: {
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
             type: "question";
-            prompt: string;
             ordinal: number;
             question: {
                 followUps?: ({
@@ -3626,6 +3618,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            prompt?: string | undefined;
             profileId?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -3643,7 +3636,6 @@ export declare const factories: {
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
             type: "steps";
-            prompt: string;
             ordinal: number;
             targetSteps: number;
         } | {
@@ -3703,6 +3695,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            prompt?: string | undefined;
             profileId?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -3720,15 +3713,10 @@ export declare const factories: {
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
             type: "video";
-            prompt: string;
             ordinal: number;
             video: {
                 storagePath?: string | null | undefined;
                 url?: string | null | undefined;
-                description: string;
-                title: string;
-                thumbnailUrl: string;
-                duration: number;
             };
         }) | import("yup").Maybe<{} | undefined>;
         tacticData?: {
@@ -3805,6 +3793,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                prompt?: string | undefined;
                 profileId?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -3822,7 +3811,6 @@ export declare const factories: {
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 type: "breathingExercise";
-                prompt: string;
                 ordinal: number;
                 inFor: number;
                 holdFor: number;
@@ -3846,6 +3834,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                prompt?: string | undefined;
                 profileId?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -3863,7 +3852,6 @@ export declare const factories: {
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 type: "notifyASupportPerson";
-                prompt: string;
                 ordinal: number;
                 contactIds: string[];
             } | {
@@ -3885,6 +3873,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                prompt?: string | undefined;
                 profileId?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -3902,7 +3891,6 @@ export declare const factories: {
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 type: "notifySupportGroup";
-                prompt: string;
                 ordinal: number;
                 supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             } | {
@@ -3924,6 +3912,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                prompt?: string | undefined;
                 profileId?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -3941,7 +3930,6 @@ export declare const factories: {
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 type: "question";
-                prompt: string;
                 ordinal: number;
                 question: {
                     followUps?: ({
@@ -4485,6 +4473,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                prompt?: string | undefined;
                 profileId?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -4502,7 +4491,6 @@ export declare const factories: {
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 type: "steps";
-                prompt: string;
                 ordinal: number;
                 targetSteps: number;
             } | {
@@ -4562,6 +4550,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                prompt?: string | undefined;
                 profileId?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -4579,15 +4568,10 @@ export declare const factories: {
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 type: "video";
-                prompt: string;
                 ordinal: number;
                 video: {
                     storagePath?: string | null | undefined;
                     url?: string | null | undefined;
-                    description: string;
-                    title: string;
-                    thumbnailUrl: string;
-                    duration: number;
                 };
             };
         };
@@ -5229,6 +5213,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                prompt?: string | undefined;
                 profileId?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -5246,7 +5231,6 @@ export declare const factories: {
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 type: "breathingExercise";
-                prompt: string;
                 ordinal: number;
                 inFor: number;
                 holdFor: number;
@@ -5270,6 +5254,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                prompt?: string | undefined;
                 profileId?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -5287,7 +5272,6 @@ export declare const factories: {
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 type: "notifyASupportPerson";
-                prompt: string;
                 ordinal: number;
                 contactIds: string[];
             } | {
@@ -5309,6 +5293,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                prompt?: string | undefined;
                 profileId?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -5326,7 +5311,6 @@ export declare const factories: {
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 type: "notifySupportGroup";
-                prompt: string;
                 ordinal: number;
                 supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             } | {
@@ -5348,6 +5332,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                prompt?: string | undefined;
                 profileId?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -5365,7 +5350,6 @@ export declare const factories: {
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 type: "question";
-                prompt: string;
                 ordinal: number;
                 question: {
                     followUps?: ({
@@ -5909,6 +5893,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                prompt?: string | undefined;
                 profileId?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -5926,7 +5911,6 @@ export declare const factories: {
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 type: "steps";
-                prompt: string;
                 ordinal: number;
                 targetSteps: number;
             } | {
@@ -5986,6 +5970,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                prompt?: string | undefined;
                 profileId?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -6003,15 +5988,10 @@ export declare const factories: {
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 type: "video";
-                prompt: string;
                 ordinal: number;
                 video: {
                     storagePath?: string | null | undefined;
                     url?: string | null | undefined;
-                    description: string;
-                    title: string;
-                    thumbnailUrl: string;
-                    duration: number;
                 };
             };
         } | null | undefined;
@@ -6082,6 +6062,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            prompt?: string | undefined;
             profileId?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -6099,7 +6080,6 @@ export declare const factories: {
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
             type: "breathingExercise";
-            prompt: string;
             ordinal: number;
             inFor: number;
             holdFor: number;
@@ -6123,6 +6103,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            prompt?: string | undefined;
             profileId?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -6140,7 +6121,6 @@ export declare const factories: {
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
             type: "notifyASupportPerson";
-            prompt: string;
             ordinal: number;
             contactIds: string[];
         } | {
@@ -6162,6 +6142,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            prompt?: string | undefined;
             profileId?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -6179,7 +6160,6 @@ export declare const factories: {
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
             type: "notifySupportGroup";
-            prompt: string;
             ordinal: number;
             supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
         } | {
@@ -6201,6 +6181,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            prompt?: string | undefined;
             profileId?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -6218,7 +6199,6 @@ export declare const factories: {
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
             type: "question";
-            prompt: string;
             ordinal: number;
             question: {
                 followUps?: ({
@@ -6762,6 +6742,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            prompt?: string | undefined;
             profileId?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -6779,7 +6760,6 @@ export declare const factories: {
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
             type: "steps";
-            prompt: string;
             ordinal: number;
             targetSteps: number;
         } | {
@@ -6839,6 +6819,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            prompt?: string | undefined;
             profileId?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -6856,15 +6837,10 @@ export declare const factories: {
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
             type: "video";
-            prompt: string;
             ordinal: number;
             video: {
                 storagePath?: string | null | undefined;
                 url?: string | null | undefined;
-                description: string;
-                title: string;
-                thumbnailUrl: string;
-                duration: number;
             };
         })[] | undefined;
         nextTacticId?: string | undefined;
@@ -7025,6 +7001,7 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    prompt?: string | undefined;
                     profileId?: string | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -7042,7 +7019,6 @@ export declare const factories: {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
                     type: "breathingExercise";
-                    prompt: string;
                     ordinal: number;
                     inFor: number;
                     holdFor: number;
@@ -7066,6 +7042,7 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    prompt?: string | undefined;
                     profileId?: string | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -7083,7 +7060,6 @@ export declare const factories: {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
                     type: "notifyASupportPerson";
-                    prompt: string;
                     ordinal: number;
                     contactIds: string[];
                 } | {
@@ -7105,6 +7081,7 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    prompt?: string | undefined;
                     profileId?: string | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -7122,7 +7099,6 @@ export declare const factories: {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
                     type: "notifySupportGroup";
-                    prompt: string;
                     ordinal: number;
                     supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
                 } | {
@@ -7144,6 +7120,7 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    prompt?: string | undefined;
                     profileId?: string | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -7161,7 +7138,6 @@ export declare const factories: {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
                     type: "question";
-                    prompt: string;
                     ordinal: number;
                     question: {
                         followUps?: ({
@@ -7705,6 +7681,7 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    prompt?: string | undefined;
                     profileId?: string | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -7722,7 +7699,6 @@ export declare const factories: {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
                     type: "steps";
-                    prompt: string;
                     ordinal: number;
                     targetSteps: number;
                 } | {
@@ -7782,6 +7758,7 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    prompt?: string | undefined;
                     profileId?: string | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -7799,15 +7776,10 @@ export declare const factories: {
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
                     type: "video";
-                    prompt: string;
                     ordinal: number;
                     video: {
                         storagePath?: string | null | undefined;
                         url?: string | null | undefined;
-                        description: string;
-                        title: string;
-                        thumbnailUrl: string;
-                        duration: number;
                     };
                 };
             } | null | undefined;
@@ -7878,6 +7850,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                prompt?: string | undefined;
                 profileId?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -7895,7 +7868,6 @@ export declare const factories: {
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 type: "breathingExercise";
-                prompt: string;
                 ordinal: number;
                 inFor: number;
                 holdFor: number;
@@ -7919,6 +7891,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                prompt?: string | undefined;
                 profileId?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -7936,7 +7909,6 @@ export declare const factories: {
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 type: "notifyASupportPerson";
-                prompt: string;
                 ordinal: number;
                 contactIds: string[];
             } | {
@@ -7958,6 +7930,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                prompt?: string | undefined;
                 profileId?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -7975,7 +7948,6 @@ export declare const factories: {
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 type: "notifySupportGroup";
-                prompt: string;
                 ordinal: number;
                 supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             } | {
@@ -7997,6 +7969,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                prompt?: string | undefined;
                 profileId?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -8014,7 +7987,6 @@ export declare const factories: {
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 type: "question";
-                prompt: string;
                 ordinal: number;
                 question: {
                     followUps?: ({
@@ -8558,6 +8530,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                prompt?: string | undefined;
                 profileId?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -8575,7 +8548,6 @@ export declare const factories: {
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 type: "steps";
-                prompt: string;
                 ordinal: number;
                 targetSteps: number;
             } | {
@@ -8635,6 +8607,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                prompt?: string | undefined;
                 profileId?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -8652,15 +8625,10 @@ export declare const factories: {
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
                 type: "video";
-                prompt: string;
                 ordinal: number;
                 video: {
                     storagePath?: string | null | undefined;
                     url?: string | null | undefined;
-                    description: string;
-                    title: string;
-                    thumbnailUrl: string;
-                    duration: number;
                 };
             })[] | undefined;
             nextTacticId?: string | undefined;

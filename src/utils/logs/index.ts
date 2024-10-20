@@ -10,6 +10,8 @@ const SEPARATOR = ',';
 export function logTextForGpt(log: LogValue): string {
   let text = log.text! + ' ';
 
+  // Handle tactics that have been completed
+
   if (log.questionData) {
     const questionsDescription = compact(
       flatMap(log.questionsById, (question, questionId) => {

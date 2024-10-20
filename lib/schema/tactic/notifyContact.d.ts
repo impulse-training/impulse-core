@@ -6,7 +6,7 @@ export declare const notifyAContactSchema: yup.ObjectSchema<{
         [x: string]: number;
     } | null | undefined;
     ordinal: number;
-    prompt: string;
+    prompt: string | undefined;
     description: string | null | undefined;
     type: "notifyASupportPerson";
     createdAt: {

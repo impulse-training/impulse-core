@@ -23,6 +23,7 @@ export declare const recapTacticSchema: yup.Lazy<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    prompt?: string | undefined;
     profileId?: string | undefined;
     recommendedForIssueOrdinals?: {
         [x: string]: number;
@@ -40,7 +41,6 @@ export declare const recapTacticSchema: yup.Lazy<{
     timerSeconds?: yup.Maybe<number | undefined>;
     isSuggested?: boolean | undefined;
     type: import("./recapKeyType").RecapKeyType;
-    prompt: string;
     ordinal: number;
 }, yup.AnyObject, any>;
 export type RecapTacticValue = RecapActionTacticValue | RecapTrackingTacticValue;

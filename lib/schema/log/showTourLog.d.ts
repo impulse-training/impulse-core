@@ -103,6 +103,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            prompt?: string | undefined;
             profileId?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -120,7 +121,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
             type: "breathingExercise";
-            prompt: string;
             ordinal: number;
             inFor: number;
             holdFor: number;
@@ -144,6 +144,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            prompt?: string | undefined;
             profileId?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -161,7 +162,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
             type: "notifyASupportPerson";
-            prompt: string;
             ordinal: number;
             contactIds: string[];
         } | {
@@ -183,6 +183,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            prompt?: string | undefined;
             profileId?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -200,7 +201,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
             type: "notifySupportGroup";
-            prompt: string;
             ordinal: number;
             supportGroup: import("../utils/firestore").DocumentReferenceLike<unknown>;
         } | {
@@ -222,6 +222,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            prompt?: string | undefined;
             profileId?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -239,7 +240,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
             type: "question";
-            prompt: string;
             ordinal: number;
             question: {
                 followUps?: ({
@@ -783,6 +783,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            prompt?: string | undefined;
             profileId?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -800,7 +801,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
             type: "steps";
-            prompt: string;
             ordinal: number;
             targetSteps: number;
         } | {
@@ -860,6 +860,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            prompt?: string | undefined;
             profileId?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -877,15 +878,10 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             timerSeconds?: yup.Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
             type: "video";
-            prompt: string;
             ordinal: number;
             video: {
                 storagePath?: string | null | undefined;
                 url?: string | null | undefined;
-                description: string;
-                title: string;
-                thumbnailUrl: string;
-                duration: number;
             };
         };
     };
@@ -1519,6 +1515,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        prompt?: string | undefined;
         profileId?: string | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -1536,7 +1533,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
         type: "breathingExercise";
-        prompt: string;
         ordinal: number;
         inFor: number;
         holdFor: number;
@@ -1560,6 +1556,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        prompt?: string | undefined;
         profileId?: string | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -1577,7 +1574,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
         type: "notifyASupportPerson";
-        prompt: string;
         ordinal: number;
         contactIds: string[];
     } | {
@@ -1599,6 +1595,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        prompt?: string | undefined;
         profileId?: string | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -1616,7 +1613,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
         type: "notifySupportGroup";
-        prompt: string;
         ordinal: number;
         supportGroup: import("../utils/firestore").DocumentReferenceLike<unknown>;
     } | {
@@ -1638,6 +1634,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        prompt?: string | undefined;
         profileId?: string | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -1655,7 +1652,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
         type: "question";
-        prompt: string;
         ordinal: number;
         question: {
             followUps?: ({
@@ -2199,6 +2195,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        prompt?: string | undefined;
         profileId?: string | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -2216,7 +2213,6 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
         type: "steps";
-        prompt: string;
         ordinal: number;
         targetSteps: number;
     } | {
@@ -2276,6 +2272,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        prompt?: string | undefined;
         profileId?: string | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -2293,15 +2290,10 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         timerSeconds?: yup.Maybe<number | undefined>;
         isSuggested?: boolean | undefined;
         type: "video";
-        prompt: string;
         ordinal: number;
         video: {
             storagePath?: string | null | undefined;
             url?: string | null | undefined;
-            description: string;
-            title: string;
-            thumbnailUrl: string;
-            duration: number;
         };
     }) | yup.Maybe<{} | undefined>;
     tacticData: {
@@ -2311,8 +2303,8 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
     senderProfileId: string | null | undefined;
     steps: {
         message: string;
-        title: string;
         elementRefName: string;
+        title: string;
         confirmButtonLabel: string;
     }[];
     animationFileName: string | undefined;

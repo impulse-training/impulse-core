@@ -6,7 +6,7 @@ export declare const stepsTacticSchema: yup.ObjectSchema<{
         [x: string]: number;
     } | null | undefined;
     ordinal: number;
-    prompt: string;
+    prompt: string | undefined;
     description: string | null | undefined;
     type: "steps";
     createdAt: {

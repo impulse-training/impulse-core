@@ -6,7 +6,7 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
         [x: string]: number;
     } | null | undefined;
     ordinal: number;
-    prompt: string;
+    prompt: string | undefined;
     description: string | null | undefined;
     type: yup.Defined<K>;
     createdAt: {
