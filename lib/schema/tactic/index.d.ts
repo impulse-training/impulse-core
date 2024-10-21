@@ -11,6 +11,7 @@ export * from './audio';
 export * from './breathingExercise';
 export * from './notifyContact';
 export * from './notifySupportGroup';
+export * from './question';
 export * from './steps';
 export * from './task';
 export * from './utils';
