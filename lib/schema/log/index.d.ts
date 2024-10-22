@@ -1,4 +1,5 @@
 import * as yup from 'yup';
+import { CallLogValue } from './call';
 import { DayReviewLogValue } from './dayReview';
 import { RegularLogValue } from './regular';
 import { ShowTourLogValue } from './showTourLog';
@@ -16,4 +17,4 @@ export declare const logSchema: yup.Lazy<ValidatedLog, yup.AnyObject, any>;
 type ValidatedLog = {
     [K in LogValue['type']]: yup.InferType<(typeof logSchemas)[K]>;
 }[LogValue['type']];
-export type LogValue = RegularLogValue | TacticsLogValue | ShowTourLogValue | DayReviewLogValue | WhatsappMessageLogValue;
+export type LogValue = RegularLogValue | CallLogValue | TacticsLogValue | ShowTourLogValue | DayReviewLogValue | WhatsappMessageLogValue;

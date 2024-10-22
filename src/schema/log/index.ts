@@ -1,4 +1,5 @@
 import * as yup from 'yup';
+import { CallLogValue, callLogSchema } from './call';
 import { DayReviewLogValue, dayReviewLogSchema } from './dayReview';
 import { RegularLogValue, regularLogSchema } from './regular';
 import { ShowTourLogValue, showTourLogSchema } from './showTourLog';
@@ -22,6 +23,7 @@ export const logSchemas: Record<
   LogValue['type'],
   yup.ObjectSchema<LogValue>
 > = {
+  call: callLogSchema,
   regular: regularLogSchema,
   showTour: showTourLogSchema,
   dayReview: dayReviewLogSchema,
@@ -50,6 +52,7 @@ type ValidatedLog = {
 
 export type LogValue =
   | RegularLogValue
+  | CallLogValue
   | TacticsLogValue
   | ShowTourLogValue
   | DayReviewLogValue
