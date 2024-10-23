@@ -704,6 +704,45 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            type: "link";
+            ordinal: number;
+            url: string;
+        } | {
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            prompt?: string | undefined;
+            profileId?: string | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            description?: string | null | undefined;
+            pastTenseTitle?: string | undefined;
+            debriefAfterMinutes?: number | null | undefined;
+            image?: {
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | undefined;
+            likesCount?: number | null | undefined;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
+            isSuggested?: boolean | undefined;
             type: "notifyASupportPerson";
             ordinal: number;
             contactIds: string[];
@@ -1522,6 +1561,45 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 inFor: number;
                 holdFor: number;
                 outFor: number;
+            } | {
+                setbackThreshold?: number | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                prompt?: string | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
+                pastTenseTitle?: string | undefined;
+                debriefAfterMinutes?: number | null | undefined;
+                image?: {
+                    localFilePath?: import("yup").Maybe<string | undefined>;
+                    storagePath?: import("yup").Maybe<string | undefined>;
+                    uri?: import("yup").Maybe<string | undefined>;
+                } | null | undefined;
+                backgroundColor?: string | undefined;
+                likesCount?: number | null | undefined;
+                timerSeconds?: import("yup").Maybe<number | undefined>;
+                isSuggested?: boolean | undefined;
+                type: "link";
+                ordinal: number;
+                url: string;
             } | {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
@@ -2997,6 +3075,45 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
+            type: "link";
+            ordinal: number;
+            url: string;
+        } | {
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            prompt?: string | undefined;
+            profileId?: string | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            description?: string | null | undefined;
+            pastTenseTitle?: string | undefined;
+            debriefAfterMinutes?: number | null | undefined;
+            image?: {
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | undefined;
+            likesCount?: number | null | undefined;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
+            isSuggested?: boolean | undefined;
             type: "notifyASupportPerson";
             ordinal: number;
             contactIds: string[];
@@ -3816,6 +3933,45 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 inFor: number;
                 holdFor: number;
                 outFor: number;
+            } | {
+                setbackThreshold?: number | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                prompt?: string | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
+                pastTenseTitle?: string | undefined;
+                debriefAfterMinutes?: number | null | undefined;
+                image?: {
+                    localFilePath?: import("yup").Maybe<string | undefined>;
+                    storagePath?: import("yup").Maybe<string | undefined>;
+                    uri?: import("yup").Maybe<string | undefined>;
+                } | null | undefined;
+                backgroundColor?: string | undefined;
+                likesCount?: number | null | undefined;
+                timerSeconds?: import("yup").Maybe<number | undefined>;
+                isSuggested?: boolean | undefined;
+                type: "link";
+                ordinal: number;
+                url: string;
             } | {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
@@ -5281,6 +5437,45 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
+                type: "link";
+                ordinal: number;
+                url: string;
+            } | {
+                setbackThreshold?: number | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                prompt?: string | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
+                pastTenseTitle?: string | undefined;
+                debriefAfterMinutes?: number | null | undefined;
+                image?: {
+                    localFilePath?: import("yup").Maybe<string | undefined>;
+                    storagePath?: import("yup").Maybe<string | undefined>;
+                    uri?: import("yup").Maybe<string | undefined>;
+                } | null | undefined;
+                backgroundColor?: string | undefined;
+                likesCount?: number | null | undefined;
+                timerSeconds?: import("yup").Maybe<number | undefined>;
+                isSuggested?: boolean | undefined;
                 type: "notifyASupportPerson";
                 ordinal: number;
                 contactIds: string[];
@@ -6097,6 +6292,45 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             inFor: number;
             holdFor: number;
             outFor: number;
+        } | {
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            prompt?: string | undefined;
+            profileId?: string | undefined;
+            recommendedForIssueOrdinals?: {
+                [x: string]: number;
+            } | null | undefined;
+            description?: string | null | undefined;
+            pastTenseTitle?: string | undefined;
+            debriefAfterMinutes?: number | null | undefined;
+            image?: {
+                localFilePath?: import("yup").Maybe<string | undefined>;
+                storagePath?: import("yup").Maybe<string | undefined>;
+                uri?: import("yup").Maybe<string | undefined>;
+            } | null | undefined;
+            backgroundColor?: string | undefined;
+            likesCount?: number | null | undefined;
+            timerSeconds?: import("yup").Maybe<number | undefined>;
+            isSuggested?: boolean | undefined;
+            type: "link";
+            ordinal: number;
+            url: string;
         } | {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
@@ -7073,6 +7307,45 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     likesCount?: number | null | undefined;
                     timerSeconds?: import("yup").Maybe<number | undefined>;
                     isSuggested?: boolean | undefined;
+                    type: "link";
+                    ordinal: number;
+                    url: string;
+                } | {
+                    setbackThreshold?: number | null | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    createdAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    updatedAt?: {
+                        isEqual?: any;
+                        toMillis?: any;
+                        toJSON?: any;
+                        seconds: number;
+                        nanoseconds: number;
+                        toDate: Function;
+                    } | null | undefined;
+                    prompt?: string | undefined;
+                    profileId?: string | undefined;
+                    recommendedForIssueOrdinals?: {
+                        [x: string]: number;
+                    } | null | undefined;
+                    description?: string | null | undefined;
+                    pastTenseTitle?: string | undefined;
+                    debriefAfterMinutes?: number | null | undefined;
+                    image?: {
+                        localFilePath?: import("yup").Maybe<string | undefined>;
+                        storagePath?: import("yup").Maybe<string | undefined>;
+                        uri?: import("yup").Maybe<string | undefined>;
+                    } | null | undefined;
+                    backgroundColor?: string | undefined;
+                    likesCount?: number | null | undefined;
+                    timerSeconds?: import("yup").Maybe<number | undefined>;
+                    isSuggested?: boolean | undefined;
                     type: "notifyASupportPerson";
                     ordinal: number;
                     contactIds: string[];
@@ -7889,6 +8162,45 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 inFor: number;
                 holdFor: number;
                 outFor: number;
+            } | {
+                setbackThreshold?: number | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                prompt?: string | undefined;
+                profileId?: string | undefined;
+                recommendedForIssueOrdinals?: {
+                    [x: string]: number;
+                } | null | undefined;
+                description?: string | null | undefined;
+                pastTenseTitle?: string | undefined;
+                debriefAfterMinutes?: number | null | undefined;
+                image?: {
+                    localFilePath?: import("yup").Maybe<string | undefined>;
+                    storagePath?: import("yup").Maybe<string | undefined>;
+                    uri?: import("yup").Maybe<string | undefined>;
+                } | null | undefined;
+                backgroundColor?: string | undefined;
+                likesCount?: number | null | undefined;
+                timerSeconds?: import("yup").Maybe<number | undefined>;
+                isSuggested?: boolean | undefined;
+                type: "link";
+                ordinal: number;
+                url: string;
             } | {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
