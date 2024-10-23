@@ -43,6 +43,8 @@ export const profileSchema = yup.object({
   gameplanStrategies: yup.array().of(documentReferenceSchema.required()),
   androidPermissions: optionalObjectOf(yup.boolean().required()),
   impulseContext: yup.string().nullable(),
+  isTourDismissed: yup.boolean(),
+  tourCompletedAt: optionalTimestampSchema,
   region: yup.string().nullable().optional(),
   timezone: yup.string().required(),
   scheduledNotificationIds: optionalStringArray,

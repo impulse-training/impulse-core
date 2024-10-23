@@ -108,6 +108,15 @@ export declare const profileSchema: yup.ObjectSchema<{
         [x: string]: NonNullable<boolean | undefined>;
     } | null | undefined;
     impulseContext: string | null | undefined;
+    isTourDismissed: boolean | undefined;
+    tourCompletedAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
     region: string | null | undefined;
     timezone: string;
     scheduledNotificationIds: string[] | undefined;
@@ -150,6 +159,8 @@ export declare const profileSchema: yup.ObjectSchema<{
     gameplanStrategies: "";
     androidPermissions: undefined;
     impulseContext: undefined;
+    isTourDismissed: undefined;
+    tourCompletedAt: undefined;
     region: undefined;
     timezone: undefined;
     scheduledNotificationIds: "";
