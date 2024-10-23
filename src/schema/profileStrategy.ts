@@ -14,6 +14,7 @@ export const profileStrategySchema = yup.object({
   sortBy: yup.mixed<'random' | 'newest'>().required(),
   forAllIssues: yup.boolean(),
   forIssueIds: optionalStringArray,
+  tourDismissed: yup.boolean(),
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
   reminders: yup.array().of(reminderSchema),

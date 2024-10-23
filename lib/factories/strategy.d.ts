@@ -869,6 +869,9 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
     templateForIssueIds?: string[] | undefined;
     tacticCount?: number | undefined;
     profileIssues?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
+    tourTitle?: string | undefined;
+    tourDescription?: string | undefined;
+    tourConfirmButtonText?: string | undefined;
     next3Tactics?: ({
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
@@ -1719,4 +1722,4 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
     isShared: NonNullable<boolean | undefined>;
     invitationCode: string;
     invitationUrl: string;
-}, "name" | "isShared" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "profileId" | "description" | "tacticsById" | "templateForIssueIds" | "tacticCount" | "profileIssues" | "next3Tactics" | "nextTacticId")>;
+}, "name" | "isShared" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "profileId" | "description" | "tacticsById" | "templateForIssueIds" | "tacticCount" | "profileIssues" | "tourTitle" | "tourDescription" | "tourConfirmButtonText" | "next3Tactics" | "nextTacticId")>;

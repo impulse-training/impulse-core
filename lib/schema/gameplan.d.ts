@@ -83,6 +83,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                 [x: string]: number;
             } | null | undefined;
             forAllIssues?: boolean | undefined;
+            tourDismissed?: boolean | undefined;
             reminders?: ({
                 createdAt?: {
                     isEqual?: any;
@@ -996,6 +997,9 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                 templateForIssueIds?: string[] | undefined;
                 tacticCount?: number | undefined;
                 profileIssues?: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
+                tourTitle?: string | undefined;
+                tourDescription?: string | undefined;
+                tourConfirmButtonText?: string | undefined;
                 next3Tactics?: ({
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;

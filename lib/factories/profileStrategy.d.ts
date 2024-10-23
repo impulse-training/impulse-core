@@ -24,6 +24,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
         [x: string]: number;
     } | null | undefined;
     forAllIssues?: boolean | undefined;
+    tourDismissed?: boolean | undefined;
     reminders?: ({
         createdAt?: {
             isEqual?: any;
@@ -937,6 +938,9 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
         templateForIssueIds?: string[] | undefined;
         tacticCount?: number | undefined;
         profileIssues?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
+        tourTitle?: string | undefined;
+        tourDescription?: string | undefined;
+        tourConfirmButtonText?: string | undefined;
         next3Tactics?: ({
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
@@ -1789,4 +1793,4 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
         invitationUrl: string;
     };
     sortBy: NonNullable<"random" | "newest" | undefined>;
-}, "strategy" | "sortBy" | ("createdAt" | "updatedAt" | "ordinal" | "strategyDoc" | "forIssueIds" | "ordinalsForIssues" | "forAllIssues" | "reminders")>;
+}, "strategy" | "sortBy" | ("createdAt" | "updatedAt" | "ordinal" | "strategyDoc" | "forIssueIds" | "ordinalsForIssues" | "forAllIssues" | "tourDismissed" | "reminders")>;

@@ -25,6 +25,9 @@ export declare const strategySchema: yup.ObjectSchema<{
     invitationUrl: string;
     profileIssues: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
     templateForIssueIds: string[] | undefined;
+    tourTitle: string | undefined;
+    tourDescription: string | undefined;
+    tourConfirmButtonText: string | undefined;
     tacticsById: {
         [x: string]: {
             setbackThreshold?: number | null | undefined;
@@ -1730,6 +1733,9 @@ export declare const strategySchema: yup.ObjectSchema<{
     invitationUrl: undefined;
     profileIssues: "";
     templateForIssueIds: "";
+    tourTitle: undefined;
+    tourDescription: undefined;
+    tourConfirmButtonText: undefined;
     tacticsById: undefined;
     next3Tactics: "";
     nextTacticId: undefined;

@@ -870,6 +870,9 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
         templateForIssueIds?: string[] | undefined;
         tacticCount?: number | undefined;
         profileIssues?: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
+        tourTitle?: string | undefined;
+        tourDescription?: string | undefined;
+        tourConfirmButtonText?: string | undefined;
         next3Tactics?: ({
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
@@ -1728,6 +1731,7 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
     sortBy: NonNullable<"random" | "newest" | undefined>;
     forAllIssues: boolean | undefined;
     forIssueIds: string[] | undefined;
+    tourDismissed: boolean | undefined;
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -1802,6 +1806,9 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
         invitationUrl: undefined;
         profileIssues: "";
         templateForIssueIds: "";
+        tourTitle: undefined;
+        tourDescription: undefined;
+        tourConfirmButtonText: undefined;
         tacticsById: undefined;
         next3Tactics: "";
         nextTacticId: undefined;
@@ -1811,6 +1818,7 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
     sortBy: undefined;
     forAllIssues: undefined;
     forIssueIds: "";
+    tourDismissed: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     reminders: "";
