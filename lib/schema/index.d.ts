@@ -1,5 +1,6 @@
 export declare const DATE_FORMAT = "yyyy-MM-dd";
 export * from './application';
+export * from './callStatus';
 export * from './contact';
 export * from './day';
 export * from './daysSummary';
