@@ -28,6 +28,7 @@ export declare const whatsappChatSchema: yup.ObjectSchema<{
     };
     blandPathwayChatId: string;
     phoneNumber: string;
+    systemMessage: string;
 }, yup.AnyObject, {
     type: undefined;
     profileId: undefined;
@@ -43,5 +44,6 @@ export declare const whatsappChatSchema: yup.ObjectSchema<{
     };
     blandPathwayChatId: undefined;
     phoneNumber: undefined;
+    systemMessage: undefined;
 }, "">;
 export type WhatsappChatValue = yup.InferType<typeof whatsappChatSchema>;

@@ -6,6 +6,7 @@ export const whatsappChatSchema = chatBaseSchema('whatsapp').shape({
   sessionExpiresAt: timestampSchema,
   blandPathwayChatId: yup.string().required(),
   phoneNumber: yup.string().required(),
+  systemMessage: yup.string().required(),
 });
 
 export type WhatsappChatValue = yup.InferType<typeof whatsappChatSchema>;

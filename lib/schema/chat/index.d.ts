@@ -31,5 +31,6 @@ export declare const chatSchema: yup.Lazy<{
     };
     blandPathwayChatId: string;
     phoneNumber: string;
+    systemMessage: string;
 }, yup.AnyObject, any>;
 export type ChatValue = WhatsappChatValue;
