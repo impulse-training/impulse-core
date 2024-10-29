@@ -149,8 +149,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                 description?: string | undefined;
                 tacticsById?: {
                     [x: string]: {
-                        setbackThreshold?: number | null | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
@@ -167,8 +165,10 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        prompt?: string | undefined;
                         profileId?: string | undefined;
+                        setbackThreshold?: number | null | undefined;
+                        recommendedForIssueIds?: string[] | undefined;
+                        prompt?: string | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
@@ -193,9 +193,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             uri?: yup.Maybe<string | undefined>;
                         };
                     } | {
-                        repeat?: yup.Maybe<number | undefined>;
-                        setbackThreshold?: number | null | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
@@ -212,8 +209,11 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        prompt?: string | undefined;
                         profileId?: string | undefined;
+                        repeat?: yup.Maybe<number | undefined>;
+                        setbackThreshold?: number | null | undefined;
+                        recommendedForIssueIds?: string[] | undefined;
+                        prompt?: string | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
@@ -235,8 +235,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         holdFor: number;
                         outFor: number;
                     } | {
-                        setbackThreshold?: number | null | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
@@ -253,8 +251,10 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        prompt?: string | undefined;
                         profileId?: string | undefined;
+                        setbackThreshold?: number | null | undefined;
+                        recommendedForIssueIds?: string[] | undefined;
+                        prompt?: string | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
@@ -274,8 +274,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         ordinal: number;
                         url: string;
                     } | {
-                        setbackThreshold?: number | null | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
@@ -292,8 +290,10 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        prompt?: string | undefined;
                         profileId?: string | undefined;
+                        setbackThreshold?: number | null | undefined;
+                        recommendedForIssueIds?: string[] | undefined;
+                        prompt?: string | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
@@ -313,8 +313,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         ordinal: number;
                         contactIds: string[];
                     } | {
-                        setbackThreshold?: number | null | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
@@ -331,8 +329,10 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        prompt?: string | undefined;
                         profileId?: string | undefined;
+                        setbackThreshold?: number | null | undefined;
+                        recommendedForIssueIds?: string[] | undefined;
+                        prompt?: string | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
@@ -352,8 +352,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         ordinal: number;
                         supportGroup: import("./utils/firestore").DocumentReferenceLike<unknown>;
                     } | {
-                        setbackThreshold?: number | null | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
@@ -370,8 +368,10 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        prompt?: string | undefined;
                         profileId?: string | undefined;
+                        setbackThreshold?: number | null | undefined;
+                        recommendedForIssueIds?: string[] | undefined;
+                        prompt?: string | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
@@ -390,22 +390,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         type: "question";
                         ordinal: number;
                         question: {
-                            followUps?: ({
-                                message?: string | undefined;
-                                type: "askAnotherQuestion";
-                                questionId: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeAnswerToProfile";
-                                profileKey: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeValueToProfile";
-                                profileKey: string;
-                                value: {};
-                            })[] | undefined;
-                            setbackThreshold?: number | undefined;
-                            recommendedForIssueIds?: string[] | undefined;
                             createdAt?: {
                                 isEqual?: any;
                                 toMillis?: any;
@@ -422,6 +406,22 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
+                            followUps?: ({
+                                message?: string | undefined;
+                                type: "askAnotherQuestion";
+                                questionId: string;
+                            } | {
+                                message?: string | undefined;
+                                type: "writeAnswerToProfile";
+                                profileKey: string;
+                            } | {
+                                message?: string | undefined;
+                                type: "writeValueToProfile";
+                                profileKey: string;
+                                value: {};
+                            })[] | undefined;
+                            setbackThreshold?: number | undefined;
+                            recommendedForIssueIds?: string[] | undefined;
                             isPublic?: boolean | undefined;
                             categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                             options?: ({
@@ -477,21 +477,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             prompt: string;
                             ordinal: number;
                         } | {
-                            followUps?: ({
-                                message?: string | undefined;
-                                type: "askAnotherQuestion";
-                                questionId: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeAnswerToProfile";
-                                profileKey: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeValueToProfile";
-                                profileKey: string;
-                                value: {};
-                            })[] | undefined;
-                            recommendedForIssueIds?: string[] | undefined;
                             createdAt?: {
                                 isEqual?: any;
                                 toMillis?: any;
@@ -508,6 +493,21 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
+                            followUps?: ({
+                                message?: string | undefined;
+                                type: "askAnotherQuestion";
+                                questionId: string;
+                            } | {
+                                message?: string | undefined;
+                                type: "writeAnswerToProfile";
+                                profileKey: string;
+                            } | {
+                                message?: string | undefined;
+                                type: "writeValueToProfile";
+                                profileKey: string;
+                                value: {};
+                            })[] | undefined;
+                            recommendedForIssueIds?: string[] | undefined;
                             isPublic?: boolean | undefined;
                             categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                             options?: ({
@@ -563,21 +563,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             prompt: string;
                             ordinal: number;
                         } | {
-                            followUps?: ({
-                                message?: string | undefined;
-                                type: "askAnotherQuestion";
-                                questionId: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeAnswerToProfile";
-                                profileKey: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeValueToProfile";
-                                profileKey: string;
-                                value: {};
-                            })[] | undefined;
-                            recommendedForIssueIds?: string[] | undefined;
                             createdAt?: {
                                 isEqual?: any;
                                 toMillis?: any;
@@ -594,6 +579,21 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
+                            followUps?: ({
+                                message?: string | undefined;
+                                type: "askAnotherQuestion";
+                                questionId: string;
+                            } | {
+                                message?: string | undefined;
+                                type: "writeAnswerToProfile";
+                                profileKey: string;
+                            } | {
+                                message?: string | undefined;
+                                type: "writeValueToProfile";
+                                profileKey: string;
+                                value: {};
+                            })[] | undefined;
+                            recommendedForIssueIds?: string[] | undefined;
                             isPublic?: boolean | undefined;
                             categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                             ordinals?: {
@@ -650,22 +650,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             ordinal: number;
                             canAddNewOptions: NonNullable<boolean | undefined>;
                         } | {
-                            followUps?: ({
-                                message?: string | undefined;
-                                type: "askAnotherQuestion";
-                                questionId: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeAnswerToProfile";
-                                profileKey: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeValueToProfile";
-                                profileKey: string;
-                                value: {};
-                            })[] | undefined;
-                            setbackThreshold?: number | undefined;
-                            recommendedForIssueIds?: string[] | undefined;
                             createdAt?: {
                                 isEqual?: any;
                                 toMillis?: any;
@@ -682,6 +666,22 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
+                            followUps?: ({
+                                message?: string | undefined;
+                                type: "askAnotherQuestion";
+                                questionId: string;
+                            } | {
+                                message?: string | undefined;
+                                type: "writeAnswerToProfile";
+                                profileKey: string;
+                            } | {
+                                message?: string | undefined;
+                                type: "writeValueToProfile";
+                                profileKey: string;
+                                value: {};
+                            })[] | undefined;
+                            setbackThreshold?: number | undefined;
+                            recommendedForIssueIds?: string[] | undefined;
                             isPublic?: boolean | undefined;
                             categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                             options?: ({
@@ -739,21 +739,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             prompt: string;
                             ordinal: number;
                         } | {
-                            followUps?: ({
-                                message?: string | undefined;
-                                type: "askAnotherQuestion";
-                                questionId: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeAnswerToProfile";
-                                profileKey: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeValueToProfile";
-                                profileKey: string;
-                                value: {};
-                            })[] | undefined;
-                            recommendedForIssueIds?: string[] | undefined;
                             createdAt?: {
                                 isEqual?: any;
                                 toMillis?: any;
@@ -770,6 +755,21 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
+                            followUps?: ({
+                                message?: string | undefined;
+                                type: "askAnotherQuestion";
+                                questionId: string;
+                            } | {
+                                message?: string | undefined;
+                                type: "writeAnswerToProfile";
+                                profileKey: string;
+                            } | {
+                                message?: string | undefined;
+                                type: "writeValueToProfile";
+                                profileKey: string;
+                                value: {};
+                            })[] | undefined;
+                            recommendedForIssueIds?: string[] | undefined;
                             isPublic?: boolean | undefined;
                             categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                             options?: ({
@@ -825,22 +825,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             prompt: string;
                             ordinal: number;
                         } | {
-                            followUps?: ({
-                                message?: string | undefined;
-                                type: "askAnotherQuestion";
-                                questionId: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeAnswerToProfile";
-                                profileKey: string;
-                            } | {
-                                message?: string | undefined;
-                                type: "writeValueToProfile";
-                                profileKey: string;
-                                value: {};
-                            })[] | undefined;
-                            setbackThreshold?: number | undefined;
-                            recommendedForIssueIds?: string[] | undefined;
                             createdAt?: {
                                 isEqual?: any;
                                 toMillis?: any;
@@ -857,6 +841,22 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                                 nanoseconds: number;
                                 toDate: Function;
                             } | null | undefined;
+                            followUps?: ({
+                                message?: string | undefined;
+                                type: "askAnotherQuestion";
+                                questionId: string;
+                            } | {
+                                message?: string | undefined;
+                                type: "writeAnswerToProfile";
+                                profileKey: string;
+                            } | {
+                                message?: string | undefined;
+                                type: "writeValueToProfile";
+                                profileKey: string;
+                                value: {};
+                            })[] | undefined;
+                            setbackThreshold?: number | undefined;
+                            recommendedForIssueIds?: string[] | undefined;
                             isPublic?: boolean | undefined;
                             categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                             options?: ({
@@ -913,8 +913,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             ordinal: number;
                         };
                     } | {
-                        setbackThreshold?: number | null | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
@@ -931,8 +929,10 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        prompt?: string | undefined;
                         profileId?: string | undefined;
+                        setbackThreshold?: number | null | undefined;
+                        recommendedForIssueIds?: string[] | undefined;
+                        prompt?: string | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
@@ -952,8 +952,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         ordinal: number;
                         targetSteps: number;
                     } | {
-                        setbackThreshold?: number | null | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
@@ -971,6 +969,8 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             toDate: Function;
                         } | null | undefined;
                         profileId?: string | undefined;
+                        setbackThreshold?: number | null | undefined;
+                        recommendedForIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
@@ -990,8 +990,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         prompt: string;
                         ordinal: number;
                     } | {
-                        setbackThreshold?: number | null | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
@@ -1008,8 +1006,10 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
-                        prompt?: string | undefined;
                         profileId?: string | undefined;
+                        setbackThreshold?: number | null | undefined;
+                        recommendedForIssueIds?: string[] | undefined;
+                        prompt?: string | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
@@ -1040,8 +1040,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                 tourDescription?: string | undefined;
                 tourConfirmButtonText?: string | undefined;
                 next3Tactics?: ({
-                    setbackThreshold?: number | null | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -1058,8 +1056,10 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    prompt?: string | undefined;
                     profileId?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    prompt?: string | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -1084,9 +1084,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         uri?: yup.Maybe<string | undefined>;
                     };
                 } | {
-                    repeat?: yup.Maybe<number | undefined>;
-                    setbackThreshold?: number | null | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -1103,8 +1100,11 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    prompt?: string | undefined;
                     profileId?: string | undefined;
+                    repeat?: yup.Maybe<number | undefined>;
+                    setbackThreshold?: number | null | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    prompt?: string | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -1126,8 +1126,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     holdFor: number;
                     outFor: number;
                 } | {
-                    setbackThreshold?: number | null | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -1144,8 +1142,10 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    prompt?: string | undefined;
                     profileId?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    prompt?: string | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -1165,8 +1165,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     ordinal: number;
                     url: string;
                 } | {
-                    setbackThreshold?: number | null | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -1183,8 +1181,10 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    prompt?: string | undefined;
                     profileId?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    prompt?: string | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -1204,8 +1204,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     ordinal: number;
                     contactIds: string[];
                 } | {
-                    setbackThreshold?: number | null | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -1222,8 +1220,10 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    prompt?: string | undefined;
                     profileId?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    prompt?: string | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -1243,8 +1243,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     ordinal: number;
                     supportGroup: import("./utils/firestore").DocumentReferenceLike<unknown>;
                 } | {
-                    setbackThreshold?: number | null | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -1261,8 +1259,10 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    prompt?: string | undefined;
                     profileId?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    prompt?: string | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -1281,22 +1281,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     type: "question";
                     ordinal: number;
                     question: {
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        setbackThreshold?: number | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
@@ -1313,6 +1297,22 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        followUps?: ({
+                            message?: string | undefined;
+                            type: "askAnotherQuestion";
+                            questionId: string;
+                        } | {
+                            message?: string | undefined;
+                            type: "writeAnswerToProfile";
+                            profileKey: string;
+                        } | {
+                            message?: string | undefined;
+                            type: "writeValueToProfile";
+                            profileKey: string;
+                            value: {};
+                        })[] | undefined;
+                        setbackThreshold?: number | undefined;
+                        recommendedForIssueIds?: string[] | undefined;
                         isPublic?: boolean | undefined;
                         categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                         options?: ({
@@ -1368,21 +1368,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         prompt: string;
                         ordinal: number;
                     } | {
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
@@ -1399,6 +1384,21 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        followUps?: ({
+                            message?: string | undefined;
+                            type: "askAnotherQuestion";
+                            questionId: string;
+                        } | {
+                            message?: string | undefined;
+                            type: "writeAnswerToProfile";
+                            profileKey: string;
+                        } | {
+                            message?: string | undefined;
+                            type: "writeValueToProfile";
+                            profileKey: string;
+                            value: {};
+                        })[] | undefined;
+                        recommendedForIssueIds?: string[] | undefined;
                         isPublic?: boolean | undefined;
                         categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                         options?: ({
@@ -1454,21 +1454,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         prompt: string;
                         ordinal: number;
                     } | {
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
@@ -1485,6 +1470,21 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        followUps?: ({
+                            message?: string | undefined;
+                            type: "askAnotherQuestion";
+                            questionId: string;
+                        } | {
+                            message?: string | undefined;
+                            type: "writeAnswerToProfile";
+                            profileKey: string;
+                        } | {
+                            message?: string | undefined;
+                            type: "writeValueToProfile";
+                            profileKey: string;
+                            value: {};
+                        })[] | undefined;
+                        recommendedForIssueIds?: string[] | undefined;
                         isPublic?: boolean | undefined;
                         categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                         ordinals?: {
@@ -1541,22 +1541,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         ordinal: number;
                         canAddNewOptions: NonNullable<boolean | undefined>;
                     } | {
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        setbackThreshold?: number | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
@@ -1573,6 +1557,22 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        followUps?: ({
+                            message?: string | undefined;
+                            type: "askAnotherQuestion";
+                            questionId: string;
+                        } | {
+                            message?: string | undefined;
+                            type: "writeAnswerToProfile";
+                            profileKey: string;
+                        } | {
+                            message?: string | undefined;
+                            type: "writeValueToProfile";
+                            profileKey: string;
+                            value: {};
+                        })[] | undefined;
+                        setbackThreshold?: number | undefined;
+                        recommendedForIssueIds?: string[] | undefined;
                         isPublic?: boolean | undefined;
                         categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                         options?: ({
@@ -1630,21 +1630,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         prompt: string;
                         ordinal: number;
                     } | {
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
@@ -1661,6 +1646,21 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        followUps?: ({
+                            message?: string | undefined;
+                            type: "askAnotherQuestion";
+                            questionId: string;
+                        } | {
+                            message?: string | undefined;
+                            type: "writeAnswerToProfile";
+                            profileKey: string;
+                        } | {
+                            message?: string | undefined;
+                            type: "writeValueToProfile";
+                            profileKey: string;
+                            value: {};
+                        })[] | undefined;
+                        recommendedForIssueIds?: string[] | undefined;
                         isPublic?: boolean | undefined;
                         categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                         options?: ({
@@ -1716,22 +1716,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         prompt: string;
                         ordinal: number;
                     } | {
-                        followUps?: ({
-                            message?: string | undefined;
-                            type: "askAnotherQuestion";
-                            questionId: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeAnswerToProfile";
-                            profileKey: string;
-                        } | {
-                            message?: string | undefined;
-                            type: "writeValueToProfile";
-                            profileKey: string;
-                            value: {};
-                        })[] | undefined;
-                        setbackThreshold?: number | undefined;
-                        recommendedForIssueIds?: string[] | undefined;
                         createdAt?: {
                             isEqual?: any;
                             toMillis?: any;
@@ -1748,6 +1732,22 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                             nanoseconds: number;
                             toDate: Function;
                         } | null | undefined;
+                        followUps?: ({
+                            message?: string | undefined;
+                            type: "askAnotherQuestion";
+                            questionId: string;
+                        } | {
+                            message?: string | undefined;
+                            type: "writeAnswerToProfile";
+                            profileKey: string;
+                        } | {
+                            message?: string | undefined;
+                            type: "writeValueToProfile";
+                            profileKey: string;
+                            value: {};
+                        })[] | undefined;
+                        setbackThreshold?: number | undefined;
+                        recommendedForIssueIds?: string[] | undefined;
                         isPublic?: boolean | undefined;
                         categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                         options?: ({
@@ -1804,8 +1804,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         ordinal: number;
                     };
                 } | {
-                    setbackThreshold?: number | null | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -1822,8 +1820,10 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    prompt?: string | undefined;
                     profileId?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    prompt?: string | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -1843,8 +1843,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     ordinal: number;
                     targetSteps: number;
                 } | {
-                    setbackThreshold?: number | null | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -1862,6 +1860,8 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         toDate: Function;
                     } | null | undefined;
                     profileId?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -1881,8 +1881,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     prompt: string;
                     ordinal: number;
                 } | {
-                    setbackThreshold?: number | null | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -1899,8 +1897,10 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    prompt?: string | undefined;
                     profileId?: string | undefined;
+                    setbackThreshold?: number | null | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
+                    prompt?: string | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;

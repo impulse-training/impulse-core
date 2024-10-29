@@ -9,6 +9,7 @@ import { questionDataSchema } from './utils/questionData';
 
 export function logBaseSchema<K extends string>(type: K) {
   return yup.object({
+    type: yup.mixed<K>().oneOf([type]).defined(),
     createdAt: optionalTimestampSchema,
     updatedAt: optionalTimestampSchema,
     profileId: yup.string().required(),
@@ -32,7 +33,6 @@ export function logBaseSchema<K extends string>(type: K) {
     blandPathwayChatId: yup.string(),
 
     text: yup.string(),
-    type: yup.mixed<K>().oneOf([type]).defined(),
     date: timestampSchema,
     dateString: yup.string().required(),
     profileEmojiIDString: yup.string(),

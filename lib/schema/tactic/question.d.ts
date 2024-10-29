@@ -38,22 +38,6 @@ export declare const questionTacticSchema: yup.ObjectSchema<{
     timerSeconds: yup.Maybe<number | undefined>;
     isSuggested: boolean | undefined;
     question: {
-        followUps?: ({
-            message?: string | undefined;
-            type: "askAnotherQuestion";
-            questionId: string;
-        } | {
-            message?: string | undefined;
-            type: "writeAnswerToProfile";
-            profileKey: string;
-        } | {
-            message?: string | undefined;
-            type: "writeValueToProfile";
-            profileKey: string;
-            value: {};
-        })[] | undefined;
-        setbackThreshold?: number | undefined;
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -70,6 +54,22 @@ export declare const questionTacticSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        followUps?: ({
+            message?: string | undefined;
+            type: "askAnotherQuestion";
+            questionId: string;
+        } | {
+            message?: string | undefined;
+            type: "writeAnswerToProfile";
+            profileKey: string;
+        } | {
+            message?: string | undefined;
+            type: "writeValueToProfile";
+            profileKey: string;
+            value: {};
+        })[] | undefined;
+        setbackThreshold?: number | undefined;
+        recommendedForIssueIds?: string[] | undefined;
         isPublic?: boolean | undefined;
         categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
         options?: ({
@@ -125,21 +125,6 @@ export declare const questionTacticSchema: yup.ObjectSchema<{
         prompt: string;
         ordinal: number;
     } | {
-        followUps?: ({
-            message?: string | undefined;
-            type: "askAnotherQuestion";
-            questionId: string;
-        } | {
-            message?: string | undefined;
-            type: "writeAnswerToProfile";
-            profileKey: string;
-        } | {
-            message?: string | undefined;
-            type: "writeValueToProfile";
-            profileKey: string;
-            value: {};
-        })[] | undefined;
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -156,6 +141,21 @@ export declare const questionTacticSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        followUps?: ({
+            message?: string | undefined;
+            type: "askAnotherQuestion";
+            questionId: string;
+        } | {
+            message?: string | undefined;
+            type: "writeAnswerToProfile";
+            profileKey: string;
+        } | {
+            message?: string | undefined;
+            type: "writeValueToProfile";
+            profileKey: string;
+            value: {};
+        })[] | undefined;
+        recommendedForIssueIds?: string[] | undefined;
         isPublic?: boolean | undefined;
         categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
         options?: ({
@@ -211,21 +211,6 @@ export declare const questionTacticSchema: yup.ObjectSchema<{
         prompt: string;
         ordinal: number;
     } | {
-        followUps?: ({
-            message?: string | undefined;
-            type: "askAnotherQuestion";
-            questionId: string;
-        } | {
-            message?: string | undefined;
-            type: "writeAnswerToProfile";
-            profileKey: string;
-        } | {
-            message?: string | undefined;
-            type: "writeValueToProfile";
-            profileKey: string;
-            value: {};
-        })[] | undefined;
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -242,6 +227,21 @@ export declare const questionTacticSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        followUps?: ({
+            message?: string | undefined;
+            type: "askAnotherQuestion";
+            questionId: string;
+        } | {
+            message?: string | undefined;
+            type: "writeAnswerToProfile";
+            profileKey: string;
+        } | {
+            message?: string | undefined;
+            type: "writeValueToProfile";
+            profileKey: string;
+            value: {};
+        })[] | undefined;
+        recommendedForIssueIds?: string[] | undefined;
         isPublic?: boolean | undefined;
         categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
         ordinals?: {
@@ -298,22 +298,6 @@ export declare const questionTacticSchema: yup.ObjectSchema<{
         ordinal: number;
         canAddNewOptions: NonNullable<boolean | undefined>;
     } | {
-        followUps?: ({
-            message?: string | undefined;
-            type: "askAnotherQuestion";
-            questionId: string;
-        } | {
-            message?: string | undefined;
-            type: "writeAnswerToProfile";
-            profileKey: string;
-        } | {
-            message?: string | undefined;
-            type: "writeValueToProfile";
-            profileKey: string;
-            value: {};
-        })[] | undefined;
-        setbackThreshold?: number | undefined;
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -330,6 +314,22 @@ export declare const questionTacticSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        followUps?: ({
+            message?: string | undefined;
+            type: "askAnotherQuestion";
+            questionId: string;
+        } | {
+            message?: string | undefined;
+            type: "writeAnswerToProfile";
+            profileKey: string;
+        } | {
+            message?: string | undefined;
+            type: "writeValueToProfile";
+            profileKey: string;
+            value: {};
+        })[] | undefined;
+        setbackThreshold?: number | undefined;
+        recommendedForIssueIds?: string[] | undefined;
         isPublic?: boolean | undefined;
         categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
         options?: ({
@@ -387,21 +387,6 @@ export declare const questionTacticSchema: yup.ObjectSchema<{
         prompt: string;
         ordinal: number;
     } | {
-        followUps?: ({
-            message?: string | undefined;
-            type: "askAnotherQuestion";
-            questionId: string;
-        } | {
-            message?: string | undefined;
-            type: "writeAnswerToProfile";
-            profileKey: string;
-        } | {
-            message?: string | undefined;
-            type: "writeValueToProfile";
-            profileKey: string;
-            value: {};
-        })[] | undefined;
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -418,6 +403,21 @@ export declare const questionTacticSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        followUps?: ({
+            message?: string | undefined;
+            type: "askAnotherQuestion";
+            questionId: string;
+        } | {
+            message?: string | undefined;
+            type: "writeAnswerToProfile";
+            profileKey: string;
+        } | {
+            message?: string | undefined;
+            type: "writeValueToProfile";
+            profileKey: string;
+            value: {};
+        })[] | undefined;
+        recommendedForIssueIds?: string[] | undefined;
         isPublic?: boolean | undefined;
         categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
         options?: ({
@@ -473,22 +473,6 @@ export declare const questionTacticSchema: yup.ObjectSchema<{
         prompt: string;
         ordinal: number;
     } | {
-        followUps?: ({
-            message?: string | undefined;
-            type: "askAnotherQuestion";
-            questionId: string;
-        } | {
-            message?: string | undefined;
-            type: "writeAnswerToProfile";
-            profileKey: string;
-        } | {
-            message?: string | undefined;
-            type: "writeValueToProfile";
-            profileKey: string;
-            value: {};
-        })[] | undefined;
-        setbackThreshold?: number | undefined;
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -505,6 +489,22 @@ export declare const questionTacticSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        followUps?: ({
+            message?: string | undefined;
+            type: "askAnotherQuestion";
+            questionId: string;
+        } | {
+            message?: string | undefined;
+            type: "writeAnswerToProfile";
+            profileKey: string;
+        } | {
+            message?: string | undefined;
+            type: "writeValueToProfile";
+            profileKey: string;
+            value: {};
+        })[] | undefined;
+        setbackThreshold?: number | undefined;
+        recommendedForIssueIds?: string[] | undefined;
         isPublic?: boolean | undefined;
         categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
         options?: ({

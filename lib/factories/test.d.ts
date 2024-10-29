@@ -1,5 +1,4 @@
 export declare const applicationFactory: import("factory.ts").Factory<import("..").ApplicationValue, keyof import("..").ApplicationValue>, regularLogFactory: import("factory.ts").Factory<{
-    text?: string | undefined;
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -16,6 +15,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    blandPathwayChatId?: string | undefined;
+    text?: string | undefined;
     submittedAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -35,22 +36,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     issueName?: string | undefined;
     questionsById?: {
         [x: string]: {
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            })[] | undefined;
-            setbackThreshold?: number | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -67,6 +52,22 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
+            setbackThreshold?: number | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             isPublic?: boolean | undefined;
             categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
             options?: ({
@@ -122,21 +123,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             prompt: string;
             ordinal: number;
         } | {
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            })[] | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -153,6 +139,21 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             isPublic?: boolean | undefined;
             categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
             options?: ({
@@ -208,21 +209,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             prompt: string;
             ordinal: number;
         } | {
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            })[] | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -239,6 +225,21 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             isPublic?: boolean | undefined;
             categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
             ordinals?: {
@@ -295,22 +296,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             ordinal: number;
             canAddNewOptions: NonNullable<boolean | undefined>;
         } | {
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            })[] | undefined;
-            setbackThreshold?: number | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -327,6 +312,22 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
+            setbackThreshold?: number | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             isPublic?: boolean | undefined;
             categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
             options?: ({
@@ -384,21 +385,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             prompt: string;
             ordinal: number;
         } | {
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            })[] | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -415,6 +401,21 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             isPublic?: boolean | undefined;
             categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
             options?: ({
@@ -470,22 +471,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             prompt: string;
             ordinal: number;
         } | {
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            })[] | undefined;
-            setbackThreshold?: number | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -502,6 +487,22 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
+            setbackThreshold?: number | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             isPublic?: boolean | undefined;
             categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
             options?: ({
@@ -577,12 +578,9 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             unit: string;
         };
     } | null | undefined;
-    blandPathwayChatId?: string | undefined;
     profileEmojiIDString?: string | undefined;
     tacticId?: string | null | undefined;
     tactic?: ({
-        setbackThreshold?: number | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -599,8 +597,10 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        prompt?: string | undefined;
         profileId?: string | undefined;
+        setbackThreshold?: number | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        prompt?: string | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
@@ -625,9 +625,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             uri?: import("yup").Maybe<string | undefined>;
         };
     } | {
-        repeat?: import("yup").Maybe<number | undefined>;
-        setbackThreshold?: number | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -644,8 +641,11 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        prompt?: string | undefined;
         profileId?: string | undefined;
+        repeat?: import("yup").Maybe<number | undefined>;
+        setbackThreshold?: number | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        prompt?: string | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
@@ -667,8 +667,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         holdFor: number;
         outFor: number;
     } | {
-        setbackThreshold?: number | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -685,8 +683,10 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        prompt?: string | undefined;
         profileId?: string | undefined;
+        setbackThreshold?: number | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        prompt?: string | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
@@ -706,8 +706,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         ordinal: number;
         url: string;
     } | {
-        setbackThreshold?: number | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -724,8 +722,10 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        prompt?: string | undefined;
         profileId?: string | undefined;
+        setbackThreshold?: number | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        prompt?: string | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
@@ -745,8 +745,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         ordinal: number;
         contactIds: string[];
     } | {
-        setbackThreshold?: number | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -763,8 +761,10 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        prompt?: string | undefined;
         profileId?: string | undefined;
+        setbackThreshold?: number | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        prompt?: string | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
@@ -784,8 +784,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         ordinal: number;
         supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
     } | {
-        setbackThreshold?: number | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -802,8 +800,10 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        prompt?: string | undefined;
         profileId?: string | undefined;
+        setbackThreshold?: number | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        prompt?: string | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
@@ -822,22 +822,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         type: "question";
         ordinal: number;
         question: {
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            })[] | undefined;
-            setbackThreshold?: number | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -854,6 +838,22 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
+            setbackThreshold?: number | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             isPublic?: boolean | undefined;
             categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
             options?: ({
@@ -909,21 +909,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             prompt: string;
             ordinal: number;
         } | {
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            })[] | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -940,6 +925,21 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             isPublic?: boolean | undefined;
             categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
             options?: ({
@@ -995,21 +995,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             prompt: string;
             ordinal: number;
         } | {
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            })[] | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1026,6 +1011,21 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             isPublic?: boolean | undefined;
             categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
             ordinals?: {
@@ -1082,22 +1082,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             ordinal: number;
             canAddNewOptions: NonNullable<boolean | undefined>;
         } | {
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            })[] | undefined;
-            setbackThreshold?: number | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1114,6 +1098,22 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
+            setbackThreshold?: number | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             isPublic?: boolean | undefined;
             categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
             options?: ({
@@ -1171,21 +1171,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             prompt: string;
             ordinal: number;
         } | {
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            })[] | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1202,6 +1187,21 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             isPublic?: boolean | undefined;
             categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
             options?: ({
@@ -1257,22 +1257,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             prompt: string;
             ordinal: number;
         } | {
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            })[] | undefined;
-            setbackThreshold?: number | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1289,6 +1273,22 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
+            setbackThreshold?: number | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             isPublic?: boolean | undefined;
             categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
             options?: ({
@@ -1345,8 +1345,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             ordinal: number;
         };
     } | {
-        setbackThreshold?: number | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -1363,8 +1361,10 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        prompt?: string | undefined;
         profileId?: string | undefined;
+        setbackThreshold?: number | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        prompt?: string | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
@@ -1384,8 +1384,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         ordinal: number;
         targetSteps: number;
     } | {
-        setbackThreshold?: number | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -1403,6 +1401,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             toDate: Function;
         } | null | undefined;
         profileId?: string | undefined;
+        setbackThreshold?: number | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
@@ -1422,8 +1422,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         prompt: string;
         ordinal: number;
     } | {
-        setbackThreshold?: number | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -1440,8 +1438,10 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        prompt?: string | undefined;
         profileId?: string | undefined;
+        setbackThreshold?: number | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        prompt?: string | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
@@ -1474,8 +1474,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     profileId: string;
     tacticsById: {
         [x: string]: {
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1492,8 +1490,10 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             profileId?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            prompt?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -1518,9 +1518,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 uri?: import("yup").Maybe<string | undefined>;
             };
         } | {
-            repeat?: import("yup").Maybe<number | undefined>;
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1537,8 +1534,11 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             profileId?: string | undefined;
+            repeat?: import("yup").Maybe<number | undefined>;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            prompt?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -1560,8 +1560,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             holdFor: number;
             outFor: number;
         } | {
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1578,8 +1576,10 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             profileId?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            prompt?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -1599,8 +1599,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             ordinal: number;
             url: string;
         } | {
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1617,8 +1615,10 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             profileId?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            prompt?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -1638,8 +1638,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             ordinal: number;
             contactIds: string[];
         } | {
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1656,8 +1654,10 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             profileId?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            prompt?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -1677,8 +1677,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             ordinal: number;
             supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
         } | {
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1695,8 +1693,10 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             profileId?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            prompt?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -1715,22 +1715,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             type: "question";
             ordinal: number;
             question: {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                setbackThreshold?: number | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1747,6 +1731,22 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                setbackThreshold?: number | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 options?: ({
@@ -1802,21 +1802,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 prompt: string;
                 ordinal: number;
             } | {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1833,6 +1818,21 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 options?: ({
@@ -1888,21 +1888,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 prompt: string;
                 ordinal: number;
             } | {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1919,6 +1904,21 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 ordinals?: {
@@ -1975,22 +1975,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 ordinal: number;
                 canAddNewOptions: NonNullable<boolean | undefined>;
             } | {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                setbackThreshold?: number | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2007,6 +1991,22 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                setbackThreshold?: number | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 options?: ({
@@ -2064,21 +2064,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 prompt: string;
                 ordinal: number;
             } | {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2095,6 +2080,21 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 options?: ({
@@ -2150,22 +2150,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 prompt: string;
                 ordinal: number;
             } | {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                setbackThreshold?: number | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2182,6 +2166,22 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                setbackThreshold?: number | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 options?: ({
@@ -2238,8 +2238,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 ordinal: number;
             };
         } | {
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -2256,8 +2254,10 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             profileId?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            prompt?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -2277,8 +2277,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             ordinal: number;
             targetSteps: number;
         } | {
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -2296,6 +2294,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 toDate: Function;
             } | null | undefined;
             profileId?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -2315,8 +2315,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             prompt: string;
             ordinal: number;
         } | {
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -2333,8 +2331,10 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             profileId?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            prompt?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -2368,8 +2368,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         toDate: Function;
     };
     dateString: string;
-}, "type" | "profileId" | "tacticsById" | "completedTacticIds" | "date" | "dateString" | ("text" | "createdAt" | "updatedAt" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "issueId" | "issueName" | "questionsById" | "questionData" | "blandPathwayChatId" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "pressedImpulseButton")>, profileFactory: import("factory.ts").Factory<{
-    setbackThreshold?: number | undefined;
+}, "type" | "profileId" | "tacticsById" | "completedTacticIds" | "date" | "dateString" | ("createdAt" | "updatedAt" | "blandPathwayChatId" | "text" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "issueId" | "issueName" | "questionsById" | "questionData" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "pressedImpulseButton")>, profileFactory: import("factory.ts").Factory<{
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -2386,6 +2385,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    setbackThreshold?: number | undefined;
     parentIds?: string[] | undefined;
     blandPathwayId?: string | undefined;
     issuesById?: {
@@ -2499,4 +2499,4 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     } | null;
     signUpIssueId: string | null;
     timezone: string;
-}, "uids" | "verificationCode" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("setbackThreshold" | "createdAt" | "updatedAt" | "parentIds" | "blandPathwayId" | "issuesById" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "addToStrategy" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "isTourDismissed" | "region" | "enableZara")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "type" | "setbackThreshold" | "recommendedForIssueIds" | "createdAt" | "updatedAt" | "prompt" | "ordinal" | "profileId" | "recommendedForIssueOrdinals" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+}, "uids" | "verificationCode" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIds" | "blandPathwayId" | "issuesById" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "addToStrategy" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "isTourDismissed" | "region" | "enableZara")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "type" | "profileId" | "setbackThreshold" | "recommendedForIssueIds" | "prompt" | "ordinal" | "recommendedForIssueOrdinals" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;

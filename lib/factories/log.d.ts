@@ -2,7 +2,6 @@ import * as Factory from 'factory.ts';
 import { TimestampLike } from '../utils/firestore/TimestampLike';
 export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) => {
     regularLogFactory: Factory.Sync.Factory<{
-        text?: string | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -19,6 +18,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        blandPathwayChatId?: string | undefined;
+        text?: string | undefined;
         submittedAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -38,22 +39,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
         issueName?: string | undefined;
         questionsById?: {
             [x: string]: {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                setbackThreshold?: number | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -70,6 +55,22 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                setbackThreshold?: number | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 options?: ({
@@ -125,21 +126,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 prompt: string;
                 ordinal: number;
             } | {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -156,6 +142,21 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 options?: ({
@@ -211,21 +212,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 prompt: string;
                 ordinal: number;
             } | {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -242,6 +228,21 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 ordinals?: {
@@ -298,22 +299,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 ordinal: number;
                 canAddNewOptions: NonNullable<boolean | undefined>;
             } | {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                setbackThreshold?: number | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -330,6 +315,22 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                setbackThreshold?: number | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 options?: ({
@@ -387,21 +388,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 prompt: string;
                 ordinal: number;
             } | {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -418,6 +404,21 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 options?: ({
@@ -473,22 +474,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 prompt: string;
                 ordinal: number;
             } | {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                setbackThreshold?: number | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -505,6 +490,22 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                setbackThreshold?: number | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 options?: ({
@@ -580,12 +581,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 unit: string;
             };
         } | null | undefined;
-        blandPathwayChatId?: string | undefined;
         profileEmojiIDString?: string | undefined;
         tacticId?: string | null | undefined;
         tactic?: ({
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -602,8 +600,10 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             profileId?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            prompt?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -628,9 +628,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 uri?: import("yup").Maybe<string | undefined>;
             };
         } | {
-            repeat?: import("yup").Maybe<number | undefined>;
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -647,8 +644,11 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             profileId?: string | undefined;
+            repeat?: import("yup").Maybe<number | undefined>;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            prompt?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -670,8 +670,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             holdFor: number;
             outFor: number;
         } | {
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -688,8 +686,10 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             profileId?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            prompt?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -709,8 +709,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             ordinal: number;
             url: string;
         } | {
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -727,8 +725,10 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             profileId?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            prompt?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -748,8 +748,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             ordinal: number;
             contactIds: string[];
         } | {
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -766,8 +764,10 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             profileId?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            prompt?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -787,8 +787,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             ordinal: number;
             supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
         } | {
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -805,8 +803,10 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             profileId?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            prompt?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -825,22 +825,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             type: "question";
             ordinal: number;
             question: {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                setbackThreshold?: number | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -857,6 +841,22 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                setbackThreshold?: number | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 options?: ({
@@ -912,21 +912,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 prompt: string;
                 ordinal: number;
             } | {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -943,6 +928,21 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 options?: ({
@@ -998,21 +998,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 prompt: string;
                 ordinal: number;
             } | {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1029,6 +1014,21 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 ordinals?: {
@@ -1085,22 +1085,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 ordinal: number;
                 canAddNewOptions: NonNullable<boolean | undefined>;
             } | {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                setbackThreshold?: number | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1117,6 +1101,22 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                setbackThreshold?: number | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 options?: ({
@@ -1174,21 +1174,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 prompt: string;
                 ordinal: number;
             } | {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1205,6 +1190,21 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 options?: ({
@@ -1260,22 +1260,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 prompt: string;
                 ordinal: number;
             } | {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                setbackThreshold?: number | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1292,6 +1276,22 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                setbackThreshold?: number | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 options?: ({
@@ -1348,8 +1348,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 ordinal: number;
             };
         } | {
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1366,8 +1364,10 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             profileId?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            prompt?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -1387,8 +1387,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             ordinal: number;
             targetSteps: number;
         } | {
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1406,6 +1404,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 toDate: Function;
             } | null | undefined;
             profileId?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -1425,8 +1425,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             prompt: string;
             ordinal: number;
         } | {
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1443,8 +1441,10 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             profileId?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            prompt?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -1477,8 +1477,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
         profileId: string;
         tacticsById: {
             [x: string]: {
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1495,8 +1493,10 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                prompt?: string | undefined;
                 profileId?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1521,9 +1521,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     uri?: import("yup").Maybe<string | undefined>;
                 };
             } | {
-                repeat?: import("yup").Maybe<number | undefined>;
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1540,8 +1537,11 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                prompt?: string | undefined;
                 profileId?: string | undefined;
+                repeat?: import("yup").Maybe<number | undefined>;
+                setbackThreshold?: number | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1563,8 +1563,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 holdFor: number;
                 outFor: number;
             } | {
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1581,8 +1579,10 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                prompt?: string | undefined;
                 profileId?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1602,8 +1602,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 ordinal: number;
                 url: string;
             } | {
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1620,8 +1618,10 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                prompt?: string | undefined;
                 profileId?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1641,8 +1641,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 ordinal: number;
                 contactIds: string[];
             } | {
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1659,8 +1657,10 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                prompt?: string | undefined;
                 profileId?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1680,8 +1680,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 ordinal: number;
                 supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             } | {
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -1698,8 +1696,10 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                prompt?: string | undefined;
                 profileId?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1718,22 +1718,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 type: "question";
                 ordinal: number;
                 question: {
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    setbackThreshold?: number | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -1750,6 +1734,22 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    followUps?: ({
+                        message?: string | undefined;
+                        type: "askAnotherQuestion";
+                        questionId: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
+                    setbackThreshold?: number | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
                     isPublic?: boolean | undefined;
                     categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                     options?: ({
@@ -1805,21 +1805,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     prompt: string;
                     ordinal: number;
                 } | {
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -1836,6 +1821,21 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    followUps?: ({
+                        message?: string | undefined;
+                        type: "askAnotherQuestion";
+                        questionId: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
                     isPublic?: boolean | undefined;
                     categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                     options?: ({
@@ -1891,21 +1891,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     prompt: string;
                     ordinal: number;
                 } | {
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -1922,6 +1907,21 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    followUps?: ({
+                        message?: string | undefined;
+                        type: "askAnotherQuestion";
+                        questionId: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
                     isPublic?: boolean | undefined;
                     categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                     ordinals?: {
@@ -1978,22 +1978,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     ordinal: number;
                     canAddNewOptions: NonNullable<boolean | undefined>;
                 } | {
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    setbackThreshold?: number | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -2010,6 +1994,22 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    followUps?: ({
+                        message?: string | undefined;
+                        type: "askAnotherQuestion";
+                        questionId: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
+                    setbackThreshold?: number | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
                     isPublic?: boolean | undefined;
                     categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                     options?: ({
@@ -2067,21 +2067,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     prompt: string;
                     ordinal: number;
                 } | {
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -2098,6 +2083,21 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    followUps?: ({
+                        message?: string | undefined;
+                        type: "askAnotherQuestion";
+                        questionId: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
                     isPublic?: boolean | undefined;
                     categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                     options?: ({
@@ -2153,22 +2153,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     prompt: string;
                     ordinal: number;
                 } | {
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    setbackThreshold?: number | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -2185,6 +2169,22 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    followUps?: ({
+                        message?: string | undefined;
+                        type: "askAnotherQuestion";
+                        questionId: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
+                    setbackThreshold?: number | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
                     isPublic?: boolean | undefined;
                     categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                     options?: ({
@@ -2241,8 +2241,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     ordinal: number;
                 };
             } | {
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2259,8 +2257,10 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                prompt?: string | undefined;
                 profileId?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -2280,8 +2280,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 ordinal: number;
                 targetSteps: number;
             } | {
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2299,6 +2297,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     toDate: Function;
                 } | null | undefined;
                 profileId?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -2318,8 +2318,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 prompt: string;
                 ordinal: number;
             } | {
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2336,8 +2334,10 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                prompt?: string | undefined;
                 profileId?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -2371,9 +2371,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             toDate: Function;
         };
         dateString: string;
-    }, "type" | "profileId" | "tacticsById" | "completedTacticIds" | "date" | "dateString" | ("text" | "createdAt" | "updatedAt" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "issueId" | "issueName" | "questionsById" | "questionData" | "blandPathwayChatId" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "pressedImpulseButton")>;
+    }, "type" | "profileId" | "tacticsById" | "completedTacticIds" | "date" | "dateString" | ("createdAt" | "updatedAt" | "blandPathwayChatId" | "text" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "issueId" | "issueName" | "questionsById" | "questionData" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "pressedImpulseButton")>;
     tacticsLogFactory: Factory.Sync.Factory<{
-        text?: string | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -2390,6 +2389,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
+        blandPathwayChatId?: string | undefined;
+        text?: string | undefined;
         submittedAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -2409,22 +2410,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
         issueName?: string | undefined;
         questionsById?: {
             [x: string]: {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                setbackThreshold?: number | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2441,6 +2426,22 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                setbackThreshold?: number | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 options?: ({
@@ -2496,21 +2497,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 prompt: string;
                 ordinal: number;
             } | {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2527,6 +2513,21 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 options?: ({
@@ -2582,21 +2583,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 prompt: string;
                 ordinal: number;
             } | {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2613,6 +2599,21 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 ordinals?: {
@@ -2669,22 +2670,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 ordinal: number;
                 canAddNewOptions: NonNullable<boolean | undefined>;
             } | {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                setbackThreshold?: number | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2701,6 +2686,22 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                setbackThreshold?: number | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 options?: ({
@@ -2758,21 +2759,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 prompt: string;
                 ordinal: number;
             } | {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2789,6 +2775,21 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 options?: ({
@@ -2844,22 +2845,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 prompt: string;
                 ordinal: number;
             } | {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                setbackThreshold?: number | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -2876,6 +2861,22 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                setbackThreshold?: number | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 options?: ({
@@ -2951,12 +2952,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 unit: string;
             };
         } | null | undefined;
-        blandPathwayChatId?: string | undefined;
         profileEmojiIDString?: string | undefined;
         tacticId?: string | null | undefined;
         tactic?: ({
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -2973,8 +2971,10 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             profileId?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            prompt?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -2999,9 +2999,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 uri?: import("yup").Maybe<string | undefined>;
             };
         } | {
-            repeat?: import("yup").Maybe<number | undefined>;
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -3018,8 +3015,11 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             profileId?: string | undefined;
+            repeat?: import("yup").Maybe<number | undefined>;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            prompt?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -3041,8 +3041,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             holdFor: number;
             outFor: number;
         } | {
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -3059,8 +3057,10 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             profileId?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            prompt?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -3080,8 +3080,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             ordinal: number;
             url: string;
         } | {
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -3098,8 +3096,10 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             profileId?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            prompt?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -3119,8 +3119,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             ordinal: number;
             contactIds: string[];
         } | {
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -3137,8 +3135,10 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             profileId?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            prompt?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -3158,8 +3158,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             ordinal: number;
             supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
         } | {
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -3176,8 +3174,10 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             profileId?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            prompt?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -3196,22 +3196,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             type: "question";
             ordinal: number;
             question: {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                setbackThreshold?: number | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3228,6 +3212,22 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                setbackThreshold?: number | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 options?: ({
@@ -3283,21 +3283,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 prompt: string;
                 ordinal: number;
             } | {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3314,6 +3299,21 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 options?: ({
@@ -3369,21 +3369,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 prompt: string;
                 ordinal: number;
             } | {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3400,6 +3385,21 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 ordinals?: {
@@ -3456,22 +3456,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 ordinal: number;
                 canAddNewOptions: NonNullable<boolean | undefined>;
             } | {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                setbackThreshold?: number | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3488,6 +3472,22 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                setbackThreshold?: number | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 options?: ({
@@ -3545,21 +3545,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 prompt: string;
                 ordinal: number;
             } | {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3576,6 +3561,21 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 options?: ({
@@ -3631,22 +3631,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 prompt: string;
                 ordinal: number;
             } | {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                setbackThreshold?: number | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3663,6 +3647,22 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                setbackThreshold?: number | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 options?: ({
@@ -3719,8 +3719,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 ordinal: number;
             };
         } | {
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -3737,8 +3735,10 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             profileId?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            prompt?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -3758,8 +3758,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             ordinal: number;
             targetSteps: number;
         } | {
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -3777,6 +3775,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 toDate: Function;
             } | null | undefined;
             profileId?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -3796,8 +3796,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             prompt: string;
             ordinal: number;
         } | {
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -3814,8 +3812,10 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             profileId?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            prompt?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -3849,8 +3849,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
         profileId: string;
         tacticsById: {
             [x: string]: {
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3867,8 +3865,10 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                prompt?: string | undefined;
                 profileId?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -3893,9 +3893,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     uri?: import("yup").Maybe<string | undefined>;
                 };
             } | {
-                repeat?: import("yup").Maybe<number | undefined>;
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3912,8 +3909,11 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                prompt?: string | undefined;
                 profileId?: string | undefined;
+                repeat?: import("yup").Maybe<number | undefined>;
+                setbackThreshold?: number | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -3935,8 +3935,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 holdFor: number;
                 outFor: number;
             } | {
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3953,8 +3951,10 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                prompt?: string | undefined;
                 profileId?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -3974,8 +3974,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 ordinal: number;
                 url: string;
             } | {
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -3992,8 +3990,10 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                prompt?: string | undefined;
                 profileId?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -4013,8 +4013,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 ordinal: number;
                 contactIds: string[];
             } | {
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -4031,8 +4029,10 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                prompt?: string | undefined;
                 profileId?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -4052,8 +4052,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 ordinal: number;
                 supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
             } | {
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -4070,8 +4068,10 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                prompt?: string | undefined;
                 profileId?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -4090,22 +4090,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 type: "question";
                 ordinal: number;
                 question: {
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    setbackThreshold?: number | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -4122,6 +4106,22 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    followUps?: ({
+                        message?: string | undefined;
+                        type: "askAnotherQuestion";
+                        questionId: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
+                    setbackThreshold?: number | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
                     isPublic?: boolean | undefined;
                     categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                     options?: ({
@@ -4177,21 +4177,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     prompt: string;
                     ordinal: number;
                 } | {
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -4208,6 +4193,21 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    followUps?: ({
+                        message?: string | undefined;
+                        type: "askAnotherQuestion";
+                        questionId: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
                     isPublic?: boolean | undefined;
                     categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                     options?: ({
@@ -4263,21 +4263,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     prompt: string;
                     ordinal: number;
                 } | {
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -4294,6 +4279,21 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    followUps?: ({
+                        message?: string | undefined;
+                        type: "askAnotherQuestion";
+                        questionId: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
                     isPublic?: boolean | undefined;
                     categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                     ordinals?: {
@@ -4350,22 +4350,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     ordinal: number;
                     canAddNewOptions: NonNullable<boolean | undefined>;
                 } | {
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    setbackThreshold?: number | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -4382,6 +4366,22 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    followUps?: ({
+                        message?: string | undefined;
+                        type: "askAnotherQuestion";
+                        questionId: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
+                    setbackThreshold?: number | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
                     isPublic?: boolean | undefined;
                     categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                     options?: ({
@@ -4439,21 +4439,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     prompt: string;
                     ordinal: number;
                 } | {
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -4470,6 +4455,21 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    followUps?: ({
+                        message?: string | undefined;
+                        type: "askAnotherQuestion";
+                        questionId: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
                     isPublic?: boolean | undefined;
                     categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                     options?: ({
@@ -4525,22 +4525,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     prompt: string;
                     ordinal: number;
                 } | {
-                    followUps?: ({
-                        message?: string | undefined;
-                        type: "askAnotherQuestion";
-                        questionId: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeAnswerToProfile";
-                        profileKey: string;
-                    } | {
-                        message?: string | undefined;
-                        type: "writeValueToProfile";
-                        profileKey: string;
-                        value: {};
-                    })[] | undefined;
-                    setbackThreshold?: number | undefined;
-                    recommendedForIssueIds?: string[] | undefined;
                     createdAt?: {
                         isEqual?: any;
                         toMillis?: any;
@@ -4557,6 +4541,22 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
+                    followUps?: ({
+                        message?: string | undefined;
+                        type: "askAnotherQuestion";
+                        questionId: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeAnswerToProfile";
+                        profileKey: string;
+                    } | {
+                        message?: string | undefined;
+                        type: "writeValueToProfile";
+                        profileKey: string;
+                        value: {};
+                    })[] | undefined;
+                    setbackThreshold?: number | undefined;
+                    recommendedForIssueIds?: string[] | undefined;
                     isPublic?: boolean | undefined;
                     categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                     options?: ({
@@ -4613,8 +4613,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     ordinal: number;
                 };
             } | {
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -4631,8 +4629,10 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                prompt?: string | undefined;
                 profileId?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -4652,8 +4652,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 ordinal: number;
                 targetSteps: number;
             } | {
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -4671,6 +4669,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     toDate: Function;
                 } | null | undefined;
                 profileId?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -4690,8 +4690,6 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 prompt: string;
                 ordinal: number;
             } | {
-                setbackThreshold?: number | null | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -4708,8 +4706,10 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                prompt?: string | undefined;
                 profileId?: string | undefined;
+                setbackThreshold?: number | null | undefined;
+                recommendedForIssueIds?: string[] | undefined;
+                prompt?: string | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -4743,5 +4743,5 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             toDate: Function;
         };
         dateString: string;
-    }, "type" | "profileId" | "tacticsById" | "completedTacticIds" | "date" | "dateString" | ("text" | "createdAt" | "updatedAt" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "issueId" | "issueName" | "questionsById" | "questionData" | "blandPathwayChatId" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "isAddToGameplanMode" | "suggestedTacticDocPaths")>;
+    }, "type" | "profileId" | "tacticsById" | "completedTacticIds" | "date" | "dateString" | ("createdAt" | "updatedAt" | "blandPathwayChatId" | "text" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "issueId" | "issueName" | "questionsById" | "questionData" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "isAddToGameplanMode" | "suggestedTacticDocPaths")>;
 };

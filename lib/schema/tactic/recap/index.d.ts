@@ -5,8 +5,6 @@ export * from './recapAction';
 export * from './recapTracking';
 export declare const recapTacticSchemas: Record<RecapTacticValue['type'], yup.ObjectSchema<RecapTacticValue>>;
 export declare const recapTacticSchema: yup.Lazy<{
-    setbackThreshold?: number | null | undefined;
-    recommendedForIssueIds?: string[] | undefined;
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -23,8 +21,10 @@ export declare const recapTacticSchema: yup.Lazy<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    prompt?: string | undefined;
     profileId?: string | undefined;
+    setbackThreshold?: number | null | undefined;
+    recommendedForIssueIds?: string[] | undefined;
+    prompt?: string | undefined;
     recommendedForIssueOrdinals?: {
         [x: string]: number;
     } | null | undefined;

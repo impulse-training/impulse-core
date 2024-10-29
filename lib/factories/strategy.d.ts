@@ -21,8 +21,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
     description?: string | undefined;
     tacticsById?: {
         [x: string]: {
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -39,8 +37,10 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             profileId?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            prompt?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -65,9 +65,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 uri?: import("yup").Maybe<string | undefined>;
             };
         } | {
-            repeat?: import("yup").Maybe<number | undefined>;
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -84,8 +81,11 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             profileId?: string | undefined;
+            repeat?: import("yup").Maybe<number | undefined>;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            prompt?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -107,8 +107,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             holdFor: number;
             outFor: number;
         } | {
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -125,8 +123,10 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             profileId?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            prompt?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -146,8 +146,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             ordinal: number;
             url: string;
         } | {
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -164,8 +162,10 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             profileId?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            prompt?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -185,8 +185,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             ordinal: number;
             contactIds: string[];
         } | {
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -203,8 +201,10 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             profileId?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            prompt?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -224,8 +224,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             ordinal: number;
             supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
         } | {
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -242,8 +240,10 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             profileId?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            prompt?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -262,22 +262,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             type: "question";
             ordinal: number;
             question: {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                setbackThreshold?: number | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -294,6 +278,22 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                setbackThreshold?: number | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 options?: ({
@@ -349,21 +349,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 prompt: string;
                 ordinal: number;
             } | {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -380,6 +365,21 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 options?: ({
@@ -435,21 +435,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 prompt: string;
                 ordinal: number;
             } | {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -466,6 +451,21 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 ordinals?: {
@@ -522,22 +522,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 ordinal: number;
                 canAddNewOptions: NonNullable<boolean | undefined>;
             } | {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                setbackThreshold?: number | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -554,6 +538,22 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                setbackThreshold?: number | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 options?: ({
@@ -611,21 +611,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 prompt: string;
                 ordinal: number;
             } | {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -642,6 +627,21 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 options?: ({
@@ -697,22 +697,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 prompt: string;
                 ordinal: number;
             } | {
-                followUps?: ({
-                    message?: string | undefined;
-                    type: "askAnotherQuestion";
-                    questionId: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeAnswerToProfile";
-                    profileKey: string;
-                } | {
-                    message?: string | undefined;
-                    type: "writeValueToProfile";
-                    profileKey: string;
-                    value: {};
-                })[] | undefined;
-                setbackThreshold?: number | undefined;
-                recommendedForIssueIds?: string[] | undefined;
                 createdAt?: {
                     isEqual?: any;
                     toMillis?: any;
@@ -729,6 +713,22 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
+                followUps?: ({
+                    message?: string | undefined;
+                    type: "askAnotherQuestion";
+                    questionId: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeAnswerToProfile";
+                    profileKey: string;
+                } | {
+                    message?: string | undefined;
+                    type: "writeValueToProfile";
+                    profileKey: string;
+                    value: {};
+                })[] | undefined;
+                setbackThreshold?: number | undefined;
+                recommendedForIssueIds?: string[] | undefined;
                 isPublic?: boolean | undefined;
                 categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
                 options?: ({
@@ -785,8 +785,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 ordinal: number;
             };
         } | {
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -803,8 +801,10 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             profileId?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            prompt?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -824,8 +824,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             ordinal: number;
             targetSteps: number;
         } | {
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -843,6 +841,8 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 toDate: Function;
             } | null | undefined;
             profileId?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -862,8 +862,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             prompt: string;
             ordinal: number;
         } | {
-            setbackThreshold?: number | null | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -880,8 +878,10 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            prompt?: string | undefined;
             profileId?: string | undefined;
+            setbackThreshold?: number | null | undefined;
+            recommendedForIssueIds?: string[] | undefined;
+            prompt?: string | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -912,8 +912,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
     tourDescription?: string | undefined;
     tourConfirmButtonText?: string | undefined;
     next3Tactics?: ({
-        setbackThreshold?: number | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -930,8 +928,10 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        prompt?: string | undefined;
         profileId?: string | undefined;
+        setbackThreshold?: number | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        prompt?: string | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
@@ -956,9 +956,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             uri?: import("yup").Maybe<string | undefined>;
         };
     } | {
-        repeat?: import("yup").Maybe<number | undefined>;
-        setbackThreshold?: number | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -975,8 +972,11 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        prompt?: string | undefined;
         profileId?: string | undefined;
+        repeat?: import("yup").Maybe<number | undefined>;
+        setbackThreshold?: number | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        prompt?: string | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
@@ -998,8 +998,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         holdFor: number;
         outFor: number;
     } | {
-        setbackThreshold?: number | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -1016,8 +1014,10 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        prompt?: string | undefined;
         profileId?: string | undefined;
+        setbackThreshold?: number | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        prompt?: string | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
@@ -1037,8 +1037,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         ordinal: number;
         url: string;
     } | {
-        setbackThreshold?: number | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -1055,8 +1053,10 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        prompt?: string | undefined;
         profileId?: string | undefined;
+        setbackThreshold?: number | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        prompt?: string | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
@@ -1076,8 +1076,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         ordinal: number;
         contactIds: string[];
     } | {
-        setbackThreshold?: number | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -1094,8 +1092,10 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        prompt?: string | undefined;
         profileId?: string | undefined;
+        setbackThreshold?: number | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        prompt?: string | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
@@ -1115,8 +1115,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         ordinal: number;
         supportGroup: import("../schema/utils/firestore").DocumentReferenceLike<unknown>;
     } | {
-        setbackThreshold?: number | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -1133,8 +1131,10 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        prompt?: string | undefined;
         profileId?: string | undefined;
+        setbackThreshold?: number | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        prompt?: string | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
@@ -1153,22 +1153,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         type: "question";
         ordinal: number;
         question: {
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            })[] | undefined;
-            setbackThreshold?: number | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1185,6 +1169,22 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
+            setbackThreshold?: number | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             isPublic?: boolean | undefined;
             categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
             options?: ({
@@ -1240,21 +1240,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             prompt: string;
             ordinal: number;
         } | {
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            })[] | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1271,6 +1256,21 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             isPublic?: boolean | undefined;
             categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
             options?: ({
@@ -1326,21 +1326,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             prompt: string;
             ordinal: number;
         } | {
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            })[] | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1357,6 +1342,21 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             isPublic?: boolean | undefined;
             categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
             ordinals?: {
@@ -1413,22 +1413,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             ordinal: number;
             canAddNewOptions: NonNullable<boolean | undefined>;
         } | {
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            })[] | undefined;
-            setbackThreshold?: number | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1445,6 +1429,22 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
+            setbackThreshold?: number | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             isPublic?: boolean | undefined;
             categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
             options?: ({
@@ -1502,21 +1502,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             prompt: string;
             ordinal: number;
         } | {
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            })[] | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1533,6 +1518,21 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             isPublic?: boolean | undefined;
             categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
             options?: ({
@@ -1588,22 +1588,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             prompt: string;
             ordinal: number;
         } | {
-            followUps?: ({
-                message?: string | undefined;
-                type: "askAnotherQuestion";
-                questionId: string;
-            } | {
-                message?: string | undefined;
-                type: "writeAnswerToProfile";
-                profileKey: string;
-            } | {
-                message?: string | undefined;
-                type: "writeValueToProfile";
-                profileKey: string;
-                value: {};
-            })[] | undefined;
-            setbackThreshold?: number | undefined;
-            recommendedForIssueIds?: string[] | undefined;
             createdAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -1620,6 +1604,22 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            followUps?: ({
+                message?: string | undefined;
+                type: "askAnotherQuestion";
+                questionId: string;
+            } | {
+                message?: string | undefined;
+                type: "writeAnswerToProfile";
+                profileKey: string;
+            } | {
+                message?: string | undefined;
+                type: "writeValueToProfile";
+                profileKey: string;
+                value: {};
+            })[] | undefined;
+            setbackThreshold?: number | undefined;
+            recommendedForIssueIds?: string[] | undefined;
             isPublic?: boolean | undefined;
             categories?: ("questionOfTheDay" | "debriefing" | "impulses" | "afterSuccess" | "afterSetback" | "dayReview")[] | undefined;
             options?: ({
@@ -1676,8 +1676,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             ordinal: number;
         };
     } | {
-        setbackThreshold?: number | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -1694,8 +1692,10 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        prompt?: string | undefined;
         profileId?: string | undefined;
+        setbackThreshold?: number | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        prompt?: string | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
@@ -1715,8 +1715,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         ordinal: number;
         targetSteps: number;
     } | {
-        setbackThreshold?: number | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -1734,6 +1732,8 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             toDate: Function;
         } | null | undefined;
         profileId?: string | undefined;
+        setbackThreshold?: number | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
@@ -1753,8 +1753,6 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         prompt: string;
         ordinal: number;
     } | {
-        setbackThreshold?: number | null | undefined;
-        recommendedForIssueIds?: string[] | undefined;
         createdAt?: {
             isEqual?: any;
             toMillis?: any;
@@ -1771,8 +1769,10 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        prompt?: string | undefined;
         profileId?: string | undefined;
+        setbackThreshold?: number | null | undefined;
+        recommendedForIssueIds?: string[] | undefined;
+        prompt?: string | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
