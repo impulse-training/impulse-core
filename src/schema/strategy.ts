@@ -11,7 +11,7 @@ export const strategySchema = yup.object({
   name: yup.string().required(),
   description: yup.string(),
   profileId: yup.string(),
-  isShared: yup.boolean().required(),
+  isCollaborative: yup.boolean().required(),
   tacticCount: yup.number(),
   invitationCode: yup.string().required(),
   invitationUrl: yup.string().url().required(),

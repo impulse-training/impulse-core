@@ -1926,7 +1926,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                 })[] | undefined;
                 nextTacticId?: string | undefined;
                 name: string;
-                isShared: NonNullable<boolean | undefined>;
+                isCollaborative: NonNullable<boolean | undefined>;
                 invitationCode: string;
                 invitationUrl: string;
             };

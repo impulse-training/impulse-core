@@ -7092,10 +7092,10 @@ export declare const factories: {
         })[] | undefined;
         nextTacticId?: string | undefined;
         name: string;
-        isShared: NonNullable<boolean | undefined>;
+        isCollaborative: NonNullable<boolean | undefined>;
         invitationCode: string;
         invitationUrl: string;
-    }, "name" | "isShared" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "profileId" | "description" | "tacticsById" | "templateForIssueIds" | "sharedWithIssueIds" | "tacticCount" | "profileIssues" | "tourTitle" | "tourDescription" | "tourConfirmButtonText" | "next3Tactics" | "nextTacticId")>;
+    }, "name" | "isCollaborative" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "profileId" | "description" | "tacticsById" | "templateForIssueIds" | "sharedWithIssueIds" | "tacticCount" | "profileIssues" | "tourTitle" | "tourDescription" | "tourConfirmButtonText" | "next3Tactics" | "nextTacticId")>;
     profileStrategyFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -8963,7 +8963,7 @@ export declare const factories: {
             })[] | undefined;
             nextTacticId?: string | undefined;
             name: string;
-            isShared: NonNullable<boolean | undefined>;
+            isCollaborative: NonNullable<boolean | undefined>;
             invitationCode: string;
             invitationUrl: string;
         };

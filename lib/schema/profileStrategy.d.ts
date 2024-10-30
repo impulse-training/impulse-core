@@ -1799,7 +1799,7 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
         })[] | undefined;
         nextTacticId?: string | undefined;
         name: string;
-        isShared: NonNullable<boolean | undefined>;
+        isCollaborative: NonNullable<boolean | undefined>;
         invitationCode: string;
         invitationUrl: string;
     };
@@ -1879,7 +1879,7 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
         name: undefined;
         description: undefined;
         profileId: undefined;
-        isShared: undefined;
+        isCollaborative: undefined;
         tacticCount: undefined;
         invitationCode: undefined;
         invitationUrl: undefined;

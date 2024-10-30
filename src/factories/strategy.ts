@@ -6,7 +6,7 @@ export const makeStrategyFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<StrategyValue>({
     tacticsById: {},
     name: 'Distractions',
-    isShared: false,
+    isCollaborative: false,
     invitationCode: 'abc123',
     invitationUrl: 'https://google.com',
     createdAt: TimestampKlass.now(),
