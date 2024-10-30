@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 export declare const messageSchema: yup.ObjectSchema<{
-    content: string;
+    content: string | null;
     senderProfileId: string | undefined;
     files: (import("./utils/firestore").DocumentReferenceLike<unknown> | undefined)[] | undefined;
     role: NonNullable<"user" | "assistant" | undefined>;
