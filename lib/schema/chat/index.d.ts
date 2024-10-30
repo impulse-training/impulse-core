@@ -29,7 +29,6 @@ export declare const chatSchema: yup.Lazy<{
         nanoseconds: number;
         toDate: Function;
     };
-    blandPathwayChatId: string;
     phoneNumber: string;
     systemMessage: string;
 }, yup.AnyObject, any>;

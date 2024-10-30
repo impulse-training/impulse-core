@@ -28,7 +28,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            blandPathwayChatId?: string | undefined;
             text?: string | undefined;
             submittedAt?: {
                 isEqual?: any;
@@ -591,6 +590,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     unit: string;
                 };
             } | null | undefined;
+            blandPathwayChatId?: string | undefined;
             profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
@@ -2397,7 +2397,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            blandPathwayChatId?: string | undefined;
             text?: string | undefined;
             submittedAt?: {
                 isEqual?: any;
@@ -2960,6 +2959,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     unit: string;
                 };
             } | null | undefined;
+            blandPathwayChatId?: string | undefined;
             profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
@@ -4775,7 +4775,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            blandPathwayChatId?: string | undefined;
             text?: string | undefined;
             submittedAt?: {
                 isEqual?: any;
@@ -5338,6 +5337,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     unit: string;
                 };
             } | null | undefined;
+            blandPathwayChatId?: string | undefined;
             profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
@@ -7145,7 +7145,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            blandPathwayChatId?: string | undefined;
             text?: string | undefined;
             submittedAt?: {
                 isEqual?: any;
@@ -7708,6 +7707,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     unit: string;
                 };
             } | null | undefined;
+            blandPathwayChatId?: string | undefined;
             profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
@@ -9521,7 +9521,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            blandPathwayChatId?: string | undefined;
             text?: string | undefined;
             submittedAt?: {
                 isEqual?: any;
@@ -10084,6 +10083,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     unit: string;
                 };
             } | null | undefined;
+            blandPathwayChatId?: string | undefined;
             profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({
@@ -11892,7 +11892,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            blandPathwayChatId?: string | undefined;
             text?: string | undefined;
             submittedAt?: {
                 isEqual?: any;
@@ -12455,6 +12454,7 @@ export declare const daySchema: yup.ObjectSchema<{
                     unit: string;
                 };
             } | null | undefined;
+            blandPathwayChatId?: string | undefined;
             profileEmojiIDString?: string | undefined;
             tacticId?: string | null | undefined;
             tactic?: ({

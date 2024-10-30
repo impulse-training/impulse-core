@@ -17,7 +17,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        blandPathwayChatId?: string | undefined;
         text?: string | undefined;
         submittedAt?: {
             isEqual?: any;
@@ -580,6 +579,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 unit: string;
             };
         } | null | undefined;
+        blandPathwayChatId?: string | undefined;
         profileEmojiIDString?: string | undefined;
         tacticId?: string | null | undefined;
         tactic?: ({
@@ -2370,7 +2370,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: Function;
         };
         dateString: string;
-    }, "type" | "profileId" | "tacticsById" | "completedTacticIds" | "date" | "dateString" | ("createdAt" | "updatedAt" | "blandPathwayChatId" | "text" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "issueId" | "issueName" | "questionsById" | "questionData" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "pressedImpulseButton")>;
+    }, "type" | "profileId" | "tacticsById" | "completedTacticIds" | "date" | "dateString" | ("createdAt" | "updatedAt" | "text" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "issueId" | "issueName" | "questionsById" | "questionData" | "blandPathwayChatId" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "pressedImpulseButton")>;
     tacticsLogFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -2388,7 +2388,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        blandPathwayChatId?: string | undefined;
         text?: string | undefined;
         submittedAt?: {
             isEqual?: any;
@@ -2951,6 +2950,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 unit: string;
             };
         } | null | undefined;
+        blandPathwayChatId?: string | undefined;
         profileEmojiIDString?: string | undefined;
         tacticId?: string | null | undefined;
         tactic?: ({
@@ -4742,7 +4742,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: Function;
         };
         dateString: string;
-    }, "type" | "profileId" | "tacticsById" | "completedTacticIds" | "date" | "dateString" | ("createdAt" | "updatedAt" | "blandPathwayChatId" | "text" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "issueId" | "issueName" | "questionsById" | "questionData" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "isAddToGameplanMode" | "suggestedTacticDocPaths")>;
+    }, "type" | "profileId" | "tacticsById" | "completedTacticIds" | "date" | "dateString" | ("createdAt" | "updatedAt" | "text" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "issueId" | "issueName" | "questionsById" | "questionData" | "blandPathwayChatId" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "isAddToGameplanMode" | "suggestedTacticDocPaths")>;
     textQuestionFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;

@@ -26,7 +26,6 @@ export declare const whatsappChatSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     };
-    blandPathwayChatId: string;
     phoneNumber: string;
     systemMessage: string;
 }, yup.AnyObject, {
@@ -42,7 +41,6 @@ export declare const whatsappChatSchema: yup.ObjectSchema<{
         toJSON: undefined;
         toDate: undefined;
     };
-    blandPathwayChatId: undefined;
     phoneNumber: undefined;
     systemMessage: undefined;
 }, "">;

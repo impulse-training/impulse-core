@@ -6,8 +6,8 @@ export const messageSchema = yup.object({
   senderProfileId: yup.string(),
   files: yup.array().of(documentReferenceSchema),
   role: yup
-    .mixed<'user' | 'assistant'>()
-    .oneOf(['assistant', 'user'])
+    .mixed<'user' | 'assistant' | 'system' | 'tool'>()
+    .oneOf(['assistant', 'user', 'system', 'tool'])
     .required(),
 });
 export type MessageValue = yup.InferType<typeof messageSchema>;

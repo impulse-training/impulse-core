@@ -15,7 +15,6 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    blandPathwayChatId?: string | undefined;
     text?: string | undefined;
     submittedAt?: {
         isEqual?: any;
@@ -578,6 +577,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             unit: string;
         };
     } | null | undefined;
+    blandPathwayChatId?: string | undefined;
     profileEmojiIDString?: string | undefined;
     tacticId?: string | null | undefined;
     tactic?: ({
@@ -2368,7 +2368,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         toDate: Function;
     };
     dateString: string;
-}, "type" | "profileId" | "tacticsById" | "completedTacticIds" | "date" | "dateString" | ("createdAt" | "updatedAt" | "blandPathwayChatId" | "text" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "issueId" | "issueName" | "questionsById" | "questionData" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "pressedImpulseButton")>, profileFactory: import("factory.ts").Factory<{
+}, "type" | "profileId" | "tacticsById" | "completedTacticIds" | "date" | "dateString" | ("createdAt" | "updatedAt" | "text" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "issueId" | "issueName" | "questionsById" | "questionData" | "blandPathwayChatId" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "pressedImpulseButton")>, profileFactory: import("factory.ts").Factory<{
     createdAt?: {
         isEqual?: any;
         toMillis?: any;

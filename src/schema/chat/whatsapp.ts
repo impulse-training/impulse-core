@@ -4,7 +4,7 @@ import { chatBaseSchema } from './base';
 
 export const whatsappChatSchema = chatBaseSchema('whatsapp').shape({
   sessionExpiresAt: timestampSchema,
-  blandPathwayChatId: yup.string().required(),
+  // blandPathwayChatId: yup.string().required(),
   phoneNumber: yup.string().required(),
   systemMessage: yup.string().required(),
 });
