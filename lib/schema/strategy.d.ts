@@ -25,6 +25,7 @@ export declare const strategySchema: yup.ObjectSchema<{
     invitationUrl: string;
     profileIssues: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
     templateForIssueIds: string[] | undefined;
+    sharedWithIssueIds: string[] | undefined;
     tourTitle: string | undefined;
     tourDescription: string | undefined;
     tourConfirmButtonText: string | undefined;
@@ -1811,6 +1812,7 @@ export declare const strategySchema: yup.ObjectSchema<{
     invitationUrl: undefined;
     profileIssues: "";
     templateForIssueIds: "";
+    sharedWithIssueIds: "";
     tourTitle: undefined;
     tourDescription: undefined;
     tourConfirmButtonText: undefined;

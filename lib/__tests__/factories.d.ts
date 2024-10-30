@@ -6200,6 +6200,7 @@ export declare const factories: {
             };
         } | null | undefined;
         templateForIssueIds?: string[] | undefined;
+        sharedWithIssueIds?: string[] | undefined;
         tacticCount?: number | undefined;
         profileIssues?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
         tourTitle?: string | undefined;
@@ -7094,7 +7095,7 @@ export declare const factories: {
         isShared: NonNullable<boolean | undefined>;
         invitationCode: string;
         invitationUrl: string;
-    }, "name" | "isShared" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "profileId" | "description" | "tacticsById" | "templateForIssueIds" | "tacticCount" | "profileIssues" | "tourTitle" | "tourDescription" | "tourConfirmButtonText" | "next3Tactics" | "nextTacticId")>;
+    }, "name" | "isShared" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "profileId" | "description" | "tacticsById" | "templateForIssueIds" | "sharedWithIssueIds" | "tacticCount" | "profileIssues" | "tourTitle" | "tourDescription" | "tourConfirmButtonText" | "next3Tactics" | "nextTacticId")>;
     profileStrategyFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -8070,6 +8071,7 @@ export declare const factories: {
                 };
             } | null | undefined;
             templateForIssueIds?: string[] | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             tacticCount?: number | undefined;
             profileIssues?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
             tourTitle?: string | undefined;

@@ -907,6 +907,7 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
             };
         } | null | undefined;
         templateForIssueIds?: string[] | undefined;
+        sharedWithIssueIds?: string[] | undefined;
         tacticCount?: number | undefined;
         profileIssues?: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
         tourTitle?: string | undefined;
@@ -1884,6 +1885,7 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
         invitationUrl: undefined;
         profileIssues: "";
         templateForIssueIds: "";
+        sharedWithIssueIds: "";
         tourTitle: undefined;
         tourDescription: undefined;
         tourConfirmButtonText: undefined;

@@ -1034,6 +1034,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     };
                 } | null | undefined;
                 templateForIssueIds?: string[] | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 tacticCount?: number | undefined;
                 profileIssues?: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
                 tourTitle?: string | undefined;

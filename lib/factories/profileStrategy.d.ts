@@ -975,6 +975,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             };
         } | null | undefined;
         templateForIssueIds?: string[] | undefined;
+        sharedWithIssueIds?: string[] | undefined;
         tacticCount?: number | undefined;
         profileIssues?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
         tourTitle?: string | undefined;

@@ -17,6 +17,7 @@ export const strategySchema = yup.object({
   invitationUrl: yup.string().url().required(),
   profileIssues: yup.array().of(documentReferenceSchema.required()),
   templateForIssueIds: optionalStringArray,
+  sharedWithIssueIds: optionalStringArray,
   tourTitle: yup.string(),
   tourDescription: yup.string(),
   tourConfirmButtonText: yup.string(),
