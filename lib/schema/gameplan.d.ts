@@ -76,8 +76,8 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            ordinal?: number | undefined;
             strategyDoc?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
+            ordinal?: number | undefined;
             forIssueIds?: string[] | undefined;
             ordinalsForIssues?: {
                 [x: string]: number;

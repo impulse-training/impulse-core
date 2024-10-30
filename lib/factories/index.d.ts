@@ -7113,8 +7113,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        ordinal?: number | undefined;
         strategyDoc?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
+        ordinal?: number | undefined;
         forIssueIds?: string[] | undefined;
         ordinalsForIssues?: {
             [x: string]: number;
@@ -8967,5 +8967,5 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             invitationUrl: string;
         };
         sortBy: NonNullable<"random" | "newest" | undefined>;
-    }, "strategy" | "sortBy" | ("createdAt" | "updatedAt" | "ordinal" | "strategyDoc" | "forIssueIds" | "ordinalsForIssues" | "forAllIssues" | "tourDismissed" | "reminders")>;
+    }, "strategy" | "sortBy" | ("createdAt" | "updatedAt" | "strategyDoc" | "ordinal" | "forIssueIds" | "ordinalsForIssues" | "forAllIssues" | "tourDismissed" | "reminders")>;
 };

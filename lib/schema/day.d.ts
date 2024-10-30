@@ -13353,6 +13353,7 @@ export declare const daySchema: yup.ObjectSchema<{
             }[] | undefined>;
             type: "whatsappMessage";
             profileId: string;
+            strategyDoc: import("./utils/firestore").DocumentReferenceLike<unknown>;
             tacticsById: {
                 [x: string]: {
                     createdAt?: {
@@ -14249,7 +14250,6 @@ export declare const daySchema: yup.ObjectSchema<{
                 toDate: Function;
             };
             dateString: string;
-            strategyDoc: import("./utils/firestore").DocumentReferenceLike<unknown>;
         };
     };
     questionsById: {
