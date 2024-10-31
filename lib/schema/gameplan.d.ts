@@ -76,6 +76,76 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
+            ordinal?: number | undefined;
+            forIssueIds?: string[] | undefined;
+            ordinalsForIssues?: {
+                [x: string]: number;
+            } | null | undefined;
+            forAllIssues?: boolean | undefined;
+            tourDismissed?: boolean | undefined;
+            reminders?: ({
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                type: "time";
+                name: string;
+                weekdays: number[];
+                hour: number;
+                minute: number;
+            } | {
+                createdAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                updatedAt?: {
+                    isEqual?: any;
+                    toMillis?: any;
+                    toJSON?: any;
+                    seconds: number;
+                    nanoseconds: number;
+                    toDate: Function;
+                } | null | undefined;
+                type: "location";
+                name: string;
+                locationId: string;
+                mode: NonNullable<"enter" | "exit" | undefined>;
+            })[] | undefined;
+            type: "derived";
+            sortBy: NonNullable<"random" | "newest" | undefined>;
+        } | {
+            createdAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
+            updatedAt?: {
+                isEqual?: any;
+                toMillis?: any;
+                toJSON?: any;
+                seconds: number;
+                nanoseconds: number;
+                toDate: Function;
+            } | null | undefined;
             strategyDoc?: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
             ordinal?: number | undefined;
             forIssueIds?: string[] | undefined;
@@ -128,6 +198,8 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                 locationId: string;
                 mode: NonNullable<"enter" | "exit" | undefined>;
             })[] | undefined;
+            type: "original";
+            sortBy: NonNullable<"random" | "newest" | undefined>;
             strategy: {
                 createdAt?: {
                     isEqual?: any;
@@ -1930,7 +2002,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                 invitationCode: string;
                 invitationUrl: string;
             };
-            sortBy: NonNullable<"random" | "newest" | undefined>;
         };
     } | null | undefined;
 }, yup.AnyObject, {

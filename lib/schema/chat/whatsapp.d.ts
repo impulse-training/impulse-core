@@ -35,6 +35,7 @@ export declare const whatsappChatSchema: yup.ObjectSchema<{
         toDate: Function;
     };
     strategyDoc: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
+    issueIds: string[] | undefined;
     phoneNumber: string;
     systemMessage: string;
 }, yup.AnyObject, {
@@ -52,6 +53,7 @@ export declare const whatsappChatSchema: yup.ObjectSchema<{
         toDate: undefined;
     };
     strategyDoc: undefined;
+    issueIds: "";
     phoneNumber: undefined;
     systemMessage: undefined;
 }, "">;

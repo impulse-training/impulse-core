@@ -1,6 +1,75 @@
 import * as yup from 'yup';
-export declare const profileStrategySchema: yup.ObjectSchema<{
-    strategyDoc: import("./utils/firestore").DocumentReferenceLike<unknown> | undefined;
+export declare const originalProfileStrategySchema: yup.ObjectSchema<{
+    type: "original";
+    ordinalsForIssues: {
+        [x: string]: number;
+    } | null | undefined;
+    ordinal: number | undefined;
+    sortBy: NonNullable<"random" | "newest" | undefined>;
+    forAllIssues: boolean | undefined;
+    forIssueIds: string[] | undefined;
+    tourDismissed: boolean | undefined;
+    createdAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    updatedAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
+    reminders: ({
+        createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        type: "time";
+        name: string;
+        weekdays: number[];
+        hour: number;
+        minute: number;
+    } | {
+        createdAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        updatedAt?: {
+            isEqual?: any;
+            toMillis?: any;
+            toJSON?: any;
+            seconds: number;
+            nanoseconds: number;
+            toDate: Function;
+        } | null | undefined;
+        type: "location";
+        name: string;
+        locationId: string;
+        mode: NonNullable<"enter" | "exit" | undefined>;
+    })[] | undefined;
+    strategyDoc: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
     strategy: {
         createdAt?: {
             isEqual?: any;
@@ -223,7 +292,7 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
                 isSuggested?: boolean | undefined;
                 type: "notifySupportGroup";
                 ordinal: number;
-                supportGroup: import("./utils/firestore").DocumentReferenceLike<unknown>;
+                supportGroup: import("../utils/firestore").DocumentReferenceLike<unknown>;
             } | {
                 createdAt?: {
                     isEqual?: any;
@@ -909,7 +978,7 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
         templateForIssueIds?: string[] | undefined;
         sharedWithIssueIds?: string[] | undefined;
         tacticCount?: number | undefined;
-        profileIssues?: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
+        profileIssues?: import("../utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
         tourTitle?: string | undefined;
         tourDescription?: string | undefined;
         tourConfirmButtonText?: string | undefined;
@@ -1115,7 +1184,7 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
             isSuggested?: boolean | undefined;
             type: "notifySupportGroup";
             ordinal: number;
-            supportGroup: import("./utils/firestore").DocumentReferenceLike<unknown>;
+            supportGroup: import("../utils/firestore").DocumentReferenceLike<unknown>;
         } | {
             createdAt?: {
                 isEqual?: any;
@@ -1803,75 +1872,17 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
         invitationCode: string;
         invitationUrl: string;
     };
-    ordinalsForIssues: {
-        [x: string]: number;
-    } | null | undefined;
-    ordinal: number | undefined;
-    sortBy: NonNullable<"random" | "newest" | undefined>;
-    forAllIssues: boolean | undefined;
-    forIssueIds: string[] | undefined;
-    tourDismissed: boolean | undefined;
-    createdAt: {
-        isEqual?: any;
-        toMillis?: any;
-        toJSON?: any;
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    } | null | undefined;
-    updatedAt: {
-        isEqual?: any;
-        toMillis?: any;
-        toJSON?: any;
-        seconds: number;
-        nanoseconds: number;
-        toDate: Function;
-    } | null | undefined;
-    reminders: ({
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            toJSON?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            toJSON?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        type: "time";
-        name: string;
-        weekdays: number[];
-        hour: number;
-        minute: number;
-    } | {
-        createdAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            toJSON?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        updatedAt?: {
-            isEqual?: any;
-            toMillis?: any;
-            toJSON?: any;
-            seconds: number;
-            nanoseconds: number;
-            toDate: Function;
-        } | null | undefined;
-        type: "location";
-        name: string;
-        locationId: string;
-        mode: NonNullable<"enter" | "exit" | undefined>;
-    })[] | undefined;
 }, yup.AnyObject, {
+    type: undefined;
+    ordinalsForIssues: undefined;
+    ordinal: undefined;
+    sortBy: undefined;
+    forAllIssues: undefined;
+    forIssueIds: "";
+    tourDismissed: undefined;
+    createdAt: undefined;
+    updatedAt: undefined;
+    reminders: "";
     strategyDoc: undefined;
     strategy: {
         createdAt: undefined;
@@ -1893,14 +1904,5 @@ export declare const profileStrategySchema: yup.ObjectSchema<{
         next3Tactics: "";
         nextTacticId: undefined;
     };
-    ordinalsForIssues: undefined;
-    ordinal: undefined;
-    sortBy: undefined;
-    forAllIssues: undefined;
-    forIssueIds: "";
-    tourDismissed: undefined;
-    createdAt: undefined;
-    updatedAt: undefined;
-    reminders: "";
 }, "">;
-export type ProfileStrategyValue = yup.InferType<typeof profileStrategySchema>;
+export type OriginalProfileStrategyValue = yup.InferType<typeof originalProfileStrategySchema>;

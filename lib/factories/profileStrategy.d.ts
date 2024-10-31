@@ -69,6 +69,8 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
         locationId: string;
         mode: NonNullable<"enter" | "exit" | undefined>;
     })[] | undefined;
+    type: "original";
+    sortBy: NonNullable<"random" | "newest" | undefined>;
     strategy: {
         createdAt?: {
             isEqual?: any;
@@ -1871,5 +1873,4 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
         invitationCode: string;
         invitationUrl: string;
     };
-    sortBy: NonNullable<"random" | "newest" | undefined>;
-}, "strategy" | "sortBy" | ("createdAt" | "updatedAt" | "strategyDoc" | "ordinal" | "forIssueIds" | "ordinalsForIssues" | "forAllIssues" | "tourDismissed" | "reminders")>;
+}, "type" | "sortBy" | "strategy" | ("createdAt" | "updatedAt" | "strategyDoc" | "ordinal" | "forIssueIds" | "ordinalsForIssues" | "forAllIssues" | "tourDismissed" | "reminders")>;

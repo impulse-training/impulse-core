@@ -28,6 +28,7 @@ export declare const chatSchema: yup.Lazy<{
         toDate: Function;
     } | null | undefined;
     strategyDoc?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
+    issueIds?: string[] | undefined;
     type: "whatsapp";
     profileId: string;
     sessionExpiresAt: {
