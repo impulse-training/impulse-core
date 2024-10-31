@@ -7,5 +7,6 @@ export function chatBaseSchema<K extends string>(type: K) {
     profileId: yup.string().required(),
     createdAt: optionalTimestampSchema,
     updatedAt: optionalTimestampSchema,
+    filesUpdatedAt: optionalTimestampSchema,
   });
 }

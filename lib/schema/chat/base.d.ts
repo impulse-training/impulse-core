@@ -18,9 +18,18 @@ export declare function chatBaseSchema<K extends string>(type: K): yup.ObjectSch
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    filesUpdatedAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
 }, yup.AnyObject, {
     type: undefined;
     profileId: undefined;
     createdAt: undefined;
     updatedAt: undefined;
+    filesUpdatedAt: undefined;
 }, "">;

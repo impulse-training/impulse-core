@@ -19,6 +19,14 @@ export declare const chatSchema: yup.Lazy<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    filesUpdatedAt?: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
     strategyDoc?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
     type: "whatsapp";
     profileId: string;

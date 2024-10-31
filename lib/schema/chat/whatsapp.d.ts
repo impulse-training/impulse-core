@@ -18,6 +18,14 @@ export declare const whatsappChatSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
+    filesUpdatedAt: {
+        isEqual?: any;
+        toMillis?: any;
+        toJSON?: any;
+        seconds: number;
+        nanoseconds: number;
+        toDate: Function;
+    } | null | undefined;
     sessionExpiresAt: {
         isEqual?: any;
         toMillis?: any;
@@ -34,6 +42,7 @@ export declare const whatsappChatSchema: yup.ObjectSchema<{
     profileId: undefined;
     createdAt: undefined;
     updatedAt: undefined;
+    filesUpdatedAt: undefined;
     sessionExpiresAt: {
         seconds: undefined;
         nanoseconds: undefined;
