@@ -8,6 +8,7 @@ export declare const recapTrackingTacticSchema: yup.ObjectSchema<{
     } | null | undefined;
     ordinal: number;
     prompt: string | undefined;
+    isShared: boolean | undefined;
     description: string | null | undefined;
     type: import("./recapKeyType").RecapKeyType;
     createdAt: {
@@ -45,6 +46,7 @@ export declare const recapTrackingTacticSchema: yup.ObjectSchema<{
     recommendedForIssueOrdinals: undefined;
     ordinal: undefined;
     prompt: undefined;
+    isShared: undefined;
     description: undefined;
     type: undefined;
     createdAt: undefined;

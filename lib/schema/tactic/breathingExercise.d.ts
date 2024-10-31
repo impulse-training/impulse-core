@@ -8,6 +8,7 @@ export declare const breathingExerciseTacticSchema: yup.ObjectSchema<{
     } | null | undefined;
     ordinal: number;
     prompt: string | undefined;
+    isShared: boolean | undefined;
     description: string | null | undefined;
     type: "breathingExercise";
     createdAt: {
@@ -49,6 +50,7 @@ export declare const breathingExerciseTacticSchema: yup.ObjectSchema<{
     recommendedForIssueOrdinals: undefined;
     ordinal: undefined;
     prompt: undefined;
+    isShared: undefined;
     description: undefined;
     type: undefined;
     createdAt: undefined;

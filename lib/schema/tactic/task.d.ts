@@ -8,6 +8,7 @@ export declare const taskTacticSchema: yup.ObjectSchema<{
     } | null | undefined;
     ordinal: number;
     prompt: string;
+    isShared: boolean | undefined;
     description: string | null | undefined;
     type: "task";
     createdAt: {
@@ -45,6 +46,7 @@ export declare const taskTacticSchema: yup.ObjectSchema<{
     recommendedForIssueOrdinals: undefined;
     ordinal: undefined;
     prompt: undefined;
+    isShared: undefined;
     description: undefined;
     type: undefined;
     createdAt: undefined;

@@ -605,6 +605,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
+        isShared?: boolean | undefined;
         description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
@@ -651,6 +652,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
+        isShared?: boolean | undefined;
         description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
@@ -693,6 +695,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
+        isShared?: boolean | undefined;
         description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
@@ -733,6 +736,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
+        isShared?: boolean | undefined;
         description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
@@ -773,6 +777,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
+        isShared?: boolean | undefined;
         description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
@@ -813,6 +818,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
+        isShared?: boolean | undefined;
         description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
@@ -1375,6 +1381,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
+        isShared?: boolean | undefined;
         description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
@@ -1414,6 +1421,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
+        isShared?: boolean | undefined;
         description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
@@ -1454,6 +1462,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
+        isShared?: boolean | undefined;
         description?: string | null | undefined;
         pastTenseTitle?: string | undefined;
         debriefAfterMinutes?: number | null | undefined;
@@ -1507,6 +1516,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -1553,6 +1563,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -1595,6 +1606,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -1635,6 +1647,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -1675,6 +1688,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -1715,6 +1729,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -2277,6 +2292,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -2316,6 +2332,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -2356,6 +2373,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -2517,4 +2535,4 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     } | null;
     signUpIssueId: string | null;
     timezone: string;
-}, "uids" | "verificationCode" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIds" | "blandPathwayId" | "issuesById" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "addToStrategy" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "isTourDismissed" | "region" | "enableZara")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "type" | "profileId" | "setbackThreshold" | "recommendedForIssueIds" | "prompt" | "ordinal" | "sharedWithIssueIds" | "recommendedForIssueOrdinals" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+}, "uids" | "verificationCode" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIds" | "blandPathwayId" | "issuesById" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "addToStrategy" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "isTourDismissed" | "region" | "enableZara")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "type" | "profileId" | "setbackThreshold" | "recommendedForIssueIds" | "prompt" | "ordinal" | "sharedWithIssueIds" | "recommendedForIssueOrdinals" | "isShared" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;

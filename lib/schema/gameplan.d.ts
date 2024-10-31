@@ -247,6 +247,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
+                        isShared?: boolean | undefined;
                         description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
                         debriefAfterMinutes?: number | null | undefined;
@@ -293,6 +294,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
+                        isShared?: boolean | undefined;
                         description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
                         debriefAfterMinutes?: number | null | undefined;
@@ -335,6 +337,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
+                        isShared?: boolean | undefined;
                         description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
                         debriefAfterMinutes?: number | null | undefined;
@@ -375,6 +378,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
+                        isShared?: boolean | undefined;
                         description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
                         debriefAfterMinutes?: number | null | undefined;
@@ -415,6 +419,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
+                        isShared?: boolean | undefined;
                         description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
                         debriefAfterMinutes?: number | null | undefined;
@@ -455,6 +460,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
+                        isShared?: boolean | undefined;
                         description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
                         debriefAfterMinutes?: number | null | undefined;
@@ -1017,6 +1023,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
+                        isShared?: boolean | undefined;
                         description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
                         debriefAfterMinutes?: number | null | undefined;
@@ -1056,6 +1063,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
+                        isShared?: boolean | undefined;
                         description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
                         debriefAfterMinutes?: number | null | undefined;
@@ -1096,6 +1104,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
+                        isShared?: boolean | undefined;
                         description?: string | null | undefined;
                         pastTenseTitle?: string | undefined;
                         debriefAfterMinutes?: number | null | undefined;
@@ -1147,6 +1156,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
@@ -1193,6 +1203,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
@@ -1235,6 +1246,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
@@ -1275,6 +1287,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
@@ -1315,6 +1328,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
@@ -1355,6 +1369,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
@@ -1917,6 +1932,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
@@ -1956,6 +1972,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
@@ -1996,6 +2013,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;

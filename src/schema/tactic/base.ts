@@ -16,6 +16,7 @@ export function tacticValueBaseSchema<K extends string>(type: K) {
     recommendedForIssueOrdinals: optionalObjectOf(yup.number().required()),
     ordinal: yup.number().required(),
     prompt: yup.string(),
+    isShared: yup.boolean(),
     description: yup.string().nullable(),
     type: yup.mixed<K>().oneOf([type]).defined(),
     createdAt: optionalTimestampSchema,

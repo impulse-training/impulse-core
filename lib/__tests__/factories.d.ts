@@ -606,6 +606,7 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -652,6 +653,7 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -694,6 +696,7 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -734,6 +737,7 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -774,6 +778,7 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -814,6 +819,7 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -1376,6 +1382,7 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -1415,6 +1422,7 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -1455,6 +1463,7 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -1508,6 +1517,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -1554,6 +1564,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -1596,6 +1607,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -1636,6 +1648,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -1676,6 +1689,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -1716,6 +1730,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -2278,6 +2293,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -2317,6 +2333,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -2357,6 +2374,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -2995,6 +3013,7 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -3041,6 +3060,7 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -3083,6 +3103,7 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -3123,6 +3144,7 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -3163,6 +3185,7 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -3203,6 +3226,7 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -3765,6 +3789,7 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -3804,6 +3829,7 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -3844,6 +3870,7 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -3898,6 +3925,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -3944,6 +3972,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -3986,6 +4015,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -4026,6 +4056,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -4066,6 +4097,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -4106,6 +4138,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -4668,6 +4701,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -4707,6 +4741,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -4747,6 +4782,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -5277,7 +5313,7 @@ export declare const factories: {
         hour: number;
         minute: number;
     }, "type" | "name" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "type" | "profileId" | "setbackThreshold" | "recommendedForIssueIds" | "prompt" | "ordinal" | "sharedWithIssueIds" | "recommendedForIssueOrdinals" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "type" | "profileId" | "setbackThreshold" | "recommendedForIssueIds" | "prompt" | "ordinal" | "sharedWithIssueIds" | "recommendedForIssueOrdinals" | "isShared" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
     roadmapFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -5376,6 +5412,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -5422,6 +5459,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -5464,6 +5502,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -5504,6 +5543,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -5544,6 +5584,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -5584,6 +5625,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -6146,6 +6188,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -6185,6 +6228,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -6225,6 +6269,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -6276,6 +6321,7 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -6322,6 +6368,7 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -6364,6 +6411,7 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -6404,6 +6452,7 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -6444,6 +6493,7 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -6484,6 +6534,7 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -7046,6 +7097,7 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -7085,6 +7137,7 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -7125,6 +7178,7 @@ export declare const factories: {
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
+            isShared?: boolean | undefined;
             description?: string | null | undefined;
             pastTenseTitle?: string | undefined;
             debriefAfterMinutes?: number | null | undefined;
@@ -7267,6 +7321,7 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
@@ -7313,6 +7368,7 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
@@ -7355,6 +7411,7 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
@@ -7395,6 +7452,7 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
@@ -7435,6 +7493,7 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
@@ -7475,6 +7534,7 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
@@ -8037,6 +8097,7 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
@@ -8076,6 +8137,7 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
@@ -8116,6 +8178,7 @@ export declare const factories: {
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
+                    isShared?: boolean | undefined;
                     description?: string | null | undefined;
                     pastTenseTitle?: string | undefined;
                     debriefAfterMinutes?: number | null | undefined;
@@ -8167,6 +8230,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -8213,6 +8277,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -8255,6 +8320,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -8295,6 +8361,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -8335,6 +8402,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -8375,6 +8443,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -8937,6 +9006,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -8976,6 +9046,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;
@@ -9016,6 +9087,7 @@ export declare const factories: {
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
+                isShared?: boolean | undefined;
                 description?: string | null | undefined;
                 pastTenseTitle?: string | undefined;
                 debriefAfterMinutes?: number | null | undefined;

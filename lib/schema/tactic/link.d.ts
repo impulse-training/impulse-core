@@ -8,6 +8,7 @@ export declare const linkTacticSchema: yup.ObjectSchema<{
     } | null | undefined;
     ordinal: number;
     prompt: string | undefined;
+    isShared: boolean | undefined;
     description: string | null | undefined;
     type: "link";
     createdAt: {
@@ -46,6 +47,7 @@ export declare const linkTacticSchema: yup.ObjectSchema<{
     recommendedForIssueOrdinals: undefined;
     ordinal: undefined;
     prompt: undefined;
+    isShared: undefined;
     description: undefined;
     type: undefined;
     createdAt: undefined;

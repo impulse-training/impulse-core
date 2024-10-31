@@ -8,6 +8,7 @@ export declare function recapTacticValueBaseSchema(type: RecapKeyType): import("
     } | null | undefined;
     ordinal: number;
     prompt: string | undefined;
+    isShared: boolean | undefined;
     description: string | null | undefined;
     type: RecapKeyType;
     createdAt: {
@@ -45,6 +46,7 @@ export declare function recapTacticValueBaseSchema(type: RecapKeyType): import("
     recommendedForIssueOrdinals: undefined;
     ordinal: undefined;
     prompt: undefined;
+    isShared: undefined;
     description: undefined;
     type: undefined;
     createdAt: undefined;

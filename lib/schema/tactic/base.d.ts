@@ -8,6 +8,7 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
     } | null | undefined;
     ordinal: number;
     prompt: string | undefined;
+    isShared: boolean | undefined;
     description: string | null | undefined;
     type: yup.Defined<K>;
     createdAt: {
@@ -45,6 +46,7 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
     recommendedForIssueOrdinals: undefined;
     ordinal: undefined;
     prompt: undefined;
+    isShared: undefined;
     description: undefined;
     type: undefined;
     createdAt: undefined;
