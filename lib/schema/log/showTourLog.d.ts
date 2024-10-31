@@ -61,6 +61,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -106,6 +107,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -147,6 +149,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -186,6 +189,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -225,6 +229,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -264,6 +269,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -825,6 +831,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -863,6 +870,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             profileId?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -902,6 +910,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -1511,6 +1520,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
+        sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
@@ -1556,6 +1566,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
+        sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
@@ -1597,6 +1608,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
+        sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
@@ -1636,6 +1648,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
+        sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
@@ -1675,6 +1688,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
+        sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
@@ -1714,6 +1728,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
+        sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
@@ -2275,6 +2290,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
+        sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
@@ -2313,6 +2329,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         profileId?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
+        sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;
@@ -2352,6 +2369,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
+        sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
         } | null | undefined;

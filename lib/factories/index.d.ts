@@ -603,6 +603,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -648,6 +649,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -689,6 +691,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -728,6 +731,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -767,6 +771,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -806,6 +811,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -1367,6 +1373,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -1405,6 +1412,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             profileId?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -1444,6 +1452,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -1496,6 +1505,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1541,6 +1551,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1582,6 +1593,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1621,6 +1633,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1660,6 +1673,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -1699,6 +1713,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -2260,6 +2275,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -2298,6 +2314,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 profileId?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -2337,6 +2354,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -2974,6 +2992,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -3019,6 +3038,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -3060,6 +3080,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -3099,6 +3120,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -3138,6 +3160,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -3177,6 +3200,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -3738,6 +3762,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -3776,6 +3801,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             profileId?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -3815,6 +3841,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -3868,6 +3895,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -3913,6 +3941,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -3954,6 +3983,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -3993,6 +4023,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -4032,6 +4063,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -4071,6 +4103,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -4632,6 +4665,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -4670,6 +4704,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 profileId?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -4709,6 +4744,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -5242,7 +5278,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         hour: number;
         minute: number;
     }, "type" | "name" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "type" | "profileId" | "setbackThreshold" | "recommendedForIssueIds" | "prompt" | "ordinal" | "recommendedForIssueOrdinals" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "type" | "profileId" | "setbackThreshold" | "recommendedForIssueIds" | "prompt" | "ordinal" | "sharedWithIssueIds" | "recommendedForIssueOrdinals" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
     roadmapFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -5313,6 +5349,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             toDate: Function;
         } | null | undefined;
         profileId?: string | undefined;
+        sharedWithIssueIds?: string[] | undefined;
         description?: string | undefined;
         tacticsById?: {
             [x: string]: {
@@ -5336,6 +5373,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -5381,6 +5419,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -5422,6 +5461,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -5461,6 +5501,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -5500,6 +5541,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -5539,6 +5581,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -6100,6 +6143,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -6138,6 +6182,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 profileId?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -6177,6 +6222,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -6201,7 +6247,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             };
         } | null | undefined;
         templateForIssueIds?: string[] | undefined;
-        sharedWithIssueIds?: string[] | undefined;
         tacticCount?: number | undefined;
         profileIssues?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
         tourTitle?: string | undefined;
@@ -6228,6 +6273,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -6273,6 +6319,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -6314,6 +6361,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -6353,6 +6401,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -6392,6 +6441,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -6431,6 +6481,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -6992,6 +7043,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -7030,6 +7082,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             profileId?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -7069,6 +7122,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -7096,7 +7150,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         isCollaborative: NonNullable<boolean | undefined>;
         invitationCode: string;
         invitationUrl: string;
-    }, "name" | "isCollaborative" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "profileId" | "description" | "tacticsById" | "templateForIssueIds" | "sharedWithIssueIds" | "tacticCount" | "profileIssues" | "tourTitle" | "tourDescription" | "tourConfirmButtonText" | "next3Tactics" | "nextTacticId")>;
+    }, "name" | "isCollaborative" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "profileId" | "sharedWithIssueIds" | "description" | "tacticsById" | "templateForIssueIds" | "tacticCount" | "profileIssues" | "tourTitle" | "tourDescription" | "tourConfirmButtonText" | "next3Tactics" | "nextTacticId")>;
     profileStrategyFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -7186,6 +7240,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 toDate: Function;
             } | null | undefined;
             profileId?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             description?: string | undefined;
             tacticsById?: {
                 [x: string]: {
@@ -7209,6 +7264,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -7254,6 +7310,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -7295,6 +7352,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -7334,6 +7392,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -7373,6 +7432,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -7412,6 +7472,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -7973,6 +8034,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -8011,6 +8073,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     profileId?: string | undefined;
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -8050,6 +8113,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -8074,7 +8138,6 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 };
             } | null | undefined;
             templateForIssueIds?: string[] | undefined;
-            sharedWithIssueIds?: string[] | undefined;
             tacticCount?: number | undefined;
             profileIssues?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
             tourTitle?: string | undefined;
@@ -8101,6 +8164,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -8146,6 +8210,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -8187,6 +8252,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -8226,6 +8292,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -8265,6 +8332,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -8304,6 +8372,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -8865,6 +8934,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -8903,6 +8973,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 profileId?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -8942,6 +9013,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;

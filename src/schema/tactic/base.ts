@@ -12,6 +12,7 @@ export function tacticValueBaseSchema<K extends string>(type: K) {
       10,
       "can't be more than 10"
     ),
+    sharedWithIssueIds: optionalStringArray,
     recommendedForIssueOrdinals: optionalObjectOf(yup.number().required()),
     ordinal: yup.number().required(),
     prompt: yup.string(),

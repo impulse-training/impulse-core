@@ -2,6 +2,7 @@ import * as yup from 'yup';
 export declare const audioTacticSchema: yup.ObjectSchema<{
     profileId: string | undefined;
     recommendedForIssueIds: string[] | undefined;
+    sharedWithIssueIds: string[] | undefined;
     recommendedForIssueOrdinals: {
         [x: string]: number;
     } | null | undefined;
@@ -46,6 +47,7 @@ export declare const audioTacticSchema: yup.ObjectSchema<{
 }, yup.AnyObject, {
     profileId: undefined;
     recommendedForIssueIds: "";
+    sharedWithIssueIds: "";
     recommendedForIssueOrdinals: undefined;
     ordinal: undefined;
     prompt: undefined;

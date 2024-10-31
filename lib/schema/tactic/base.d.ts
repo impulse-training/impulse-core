@@ -2,6 +2,7 @@ import * as yup from 'yup';
 export declare function tacticValueBaseSchema<K extends string>(type: K): yup.ObjectSchema<{
     profileId: string | undefined;
     recommendedForIssueIds: string[] | undefined;
+    sharedWithIssueIds: string[] | undefined;
     recommendedForIssueOrdinals: {
         [x: string]: number;
     } | null | undefined;
@@ -40,6 +41,7 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
 }, yup.AnyObject, {
     profileId: undefined;
     recommendedForIssueIds: "";
+    sharedWithIssueIds: "";
     recommendedForIssueOrdinals: undefined;
     ordinal: undefined;
     prompt: undefined;

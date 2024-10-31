@@ -89,6 +89,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             toDate: Function;
         } | null | undefined;
         profileId?: string | undefined;
+        sharedWithIssueIds?: string[] | undefined;
         description?: string | undefined;
         tacticsById?: {
             [x: string]: {
@@ -112,6 +113,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -157,6 +159,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -198,6 +201,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -237,6 +241,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -276,6 +281,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -315,6 +321,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -876,6 +883,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -914,6 +922,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 profileId?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -953,6 +962,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
                 } | null | undefined;
@@ -977,7 +987,6 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             };
         } | null | undefined;
         templateForIssueIds?: string[] | undefined;
-        sharedWithIssueIds?: string[] | undefined;
         tacticCount?: number | undefined;
         profileIssues?: import("../schema/utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
         tourTitle?: string | undefined;
@@ -1004,6 +1013,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -1049,6 +1059,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -1090,6 +1101,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -1129,6 +1141,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -1168,6 +1181,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -1207,6 +1221,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -1768,6 +1783,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -1806,6 +1822,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             profileId?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;
@@ -1845,6 +1862,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
             } | null | undefined;

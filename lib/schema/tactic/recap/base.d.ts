@@ -2,6 +2,7 @@ import { RecapKeyType } from './recapKeyType';
 export declare function recapTacticValueBaseSchema(type: RecapKeyType): import("yup").ObjectSchema<{
     profileId: string | undefined;
     recommendedForIssueIds: string[] | undefined;
+    sharedWithIssueIds: string[] | undefined;
     recommendedForIssueOrdinals: {
         [x: string]: number;
     } | null | undefined;
@@ -40,6 +41,7 @@ export declare function recapTacticValueBaseSchema(type: RecapKeyType): import("
 }, import("yup").AnyObject, {
     profileId: undefined;
     recommendedForIssueIds: "";
+    sharedWithIssueIds: "";
     recommendedForIssueOrdinals: undefined;
     ordinal: undefined;
     prompt: undefined;

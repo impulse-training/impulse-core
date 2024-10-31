@@ -218,6 +218,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     toDate: Function;
                 } | null | undefined;
                 profileId?: string | undefined;
+                sharedWithIssueIds?: string[] | undefined;
                 description?: string | undefined;
                 tacticsById?: {
                     [x: string]: {
@@ -241,6 +242,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         setbackThreshold?: number | null | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         prompt?: string | undefined;
+                        sharedWithIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
@@ -286,6 +288,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         setbackThreshold?: number | null | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         prompt?: string | undefined;
+                        sharedWithIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
@@ -327,6 +330,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         setbackThreshold?: number | null | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         prompt?: string | undefined;
+                        sharedWithIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
@@ -366,6 +370,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         setbackThreshold?: number | null | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         prompt?: string | undefined;
+                        sharedWithIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
@@ -405,6 +410,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         setbackThreshold?: number | null | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         prompt?: string | undefined;
+                        sharedWithIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
@@ -444,6 +450,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         setbackThreshold?: number | null | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         prompt?: string | undefined;
+                        sharedWithIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
@@ -1005,6 +1012,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         setbackThreshold?: number | null | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         prompt?: string | undefined;
+                        sharedWithIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
@@ -1043,6 +1051,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         profileId?: string | undefined;
                         setbackThreshold?: number | null | undefined;
                         recommendedForIssueIds?: string[] | undefined;
+                        sharedWithIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
@@ -1082,6 +1091,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                         setbackThreshold?: number | null | undefined;
                         recommendedForIssueIds?: string[] | undefined;
                         prompt?: string | undefined;
+                        sharedWithIssueIds?: string[] | undefined;
                         recommendedForIssueOrdinals?: {
                             [x: string]: number;
                         } | null | undefined;
@@ -1106,7 +1116,6 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     };
                 } | null | undefined;
                 templateForIssueIds?: string[] | undefined;
-                sharedWithIssueIds?: string[] | undefined;
                 tacticCount?: number | undefined;
                 profileIssues?: import("./utils/firestore").DocumentReferenceLike<unknown>[] | undefined;
                 tourTitle?: string | undefined;
@@ -1133,6 +1142,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -1178,6 +1188,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -1219,6 +1230,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -1258,6 +1270,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -1297,6 +1310,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -1336,6 +1350,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -1897,6 +1912,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -1935,6 +1951,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     profileId?: string | undefined;
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
@@ -1974,6 +1991,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
+                    sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
                     } | null | undefined;
