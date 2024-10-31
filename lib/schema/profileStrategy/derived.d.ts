@@ -69,6 +69,7 @@ export declare const derivedProfileStrategySchema: yup.ObjectSchema<{
         locationId: string;
         mode: NonNullable<"enter" | "exit" | undefined>;
     })[] | undefined;
+    parentIssueIds: (string | undefined)[];
 }, yup.AnyObject, {
     type: undefined;
     ordinalsForIssues: undefined;
@@ -80,5 +81,6 @@ export declare const derivedProfileStrategySchema: yup.ObjectSchema<{
     createdAt: undefined;
     updatedAt: undefined;
     reminders: "";
+    parentIssueIds: "";
 }, "">;
 export type DerivedProfileStrategyValue = yup.InferType<typeof derivedProfileStrategySchema>;

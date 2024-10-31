@@ -129,6 +129,7 @@ export declare const gameplanSchema: yup.ObjectSchema<{
             })[] | undefined;
             type: "derived";
             sortBy: NonNullable<"random" | "newest" | undefined>;
+            parentIssueIds: (string | undefined)[];
         } | {
             createdAt?: {
                 isEqual?: any;

@@ -5,6 +5,7 @@ import { profileStrategyBaseSchema } from './base';
 export const derivedProfileStrategySchema = profileStrategyBaseSchema(
   'derived'
 ).shape({
+  parentIssueIds: yup.array().of(yup.string()).required().max(10),
   // Keywords or other metadata to filter results
 });
 
