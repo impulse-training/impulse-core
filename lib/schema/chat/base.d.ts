@@ -1,7 +1,7 @@
 import * as yup from 'yup';
 export declare function chatBaseSchema<K extends string>(type: K): yup.ObjectSchema<{
     type: K & {};
-    profileId: string;
+    uid: string;
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -28,7 +28,7 @@ export declare function chatBaseSchema<K extends string>(type: K): yup.ObjectSch
     } | null | undefined;
 }, yup.AnyObject, {
     type: undefined;
-    profileId: undefined;
+    uid: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     filesUpdatedAt: undefined;

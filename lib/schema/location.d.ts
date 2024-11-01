@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 export declare const locationSchema: yup.ObjectSchema<{
-    profileId: string;
+    uid: string;
     createdAt: {
         isEqual?: any;
         toMillis?: any;
@@ -22,7 +22,7 @@ export declare const locationSchema: yup.ObjectSchema<{
     longitude: number | undefined;
     address: string;
 }, yup.AnyObject, {
-    profileId: undefined;
+    uid: undefined;
     createdAt: undefined;
     updatedAt: undefined;
     name: undefined;

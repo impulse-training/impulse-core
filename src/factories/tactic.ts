@@ -5,7 +5,7 @@ import { TimestampLike } from '../utils/firestore/TimestampLike';
 export const makeTacticFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<TacticValue>({
     ordinal: 0,
-    profileId: Factory.each(i => i.toString()),
+    uid: Factory.each(i => i.toString()),
     type: 'task',
     prompt: 'Go outside',
     description:

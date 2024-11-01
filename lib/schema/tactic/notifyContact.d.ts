@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 export declare const notifyAContactSchema: yup.ObjectSchema<{
-    profileId: string | undefined;
+    uid: string | undefined;
     recommendedForIssueIds: string[] | undefined;
     sharedWithIssueIds: string[] | undefined;
     recommendedForIssueOrdinals: {
@@ -41,7 +41,7 @@ export declare const notifyAContactSchema: yup.ObjectSchema<{
     isSuggested: boolean | undefined;
     contactIds: string[];
 }, yup.AnyObject, {
-    profileId: undefined;
+    uid: undefined;
     recommendedForIssueIds: "";
     sharedWithIssueIds: "";
     recommendedForIssueOrdinals: undefined;

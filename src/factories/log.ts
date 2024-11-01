@@ -5,7 +5,7 @@ import { TimestampLike } from '../utils/firestore/TimestampLike';
 
 export const makeLogFactories = (TimestampKlass: typeof TimestampLike) => ({
   regularLogFactory: Factory.makeFactory<RegularLogValue>({
-    profileId: '1',
+    uid: '1',
     senderProfileId: Factory.each(i => i.toString()),
     type: 'regular',
     createdAt: TimestampKlass.now(),
@@ -17,7 +17,7 @@ export const makeLogFactories = (TimestampKlass: typeof TimestampLike) => ({
     tacticsById: {},
   }),
   tacticsLogFactory: Factory.makeFactory<TacticsLogValue>({
-    profileId: '1',
+    uid: '1',
     senderProfileId: Factory.each(i => i.toString()),
     type: 'tactics',
     createdAt: TimestampKlass.now(),

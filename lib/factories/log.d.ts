@@ -600,7 +600,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -646,7 +646,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             repeat?: import("yup").Maybe<number | undefined>;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
@@ -690,7 +690,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -731,7 +731,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -772,7 +772,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -813,7 +813,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -1376,7 +1376,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -1417,7 +1417,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             sharedWithIssueIds?: string[] | undefined;
@@ -1457,7 +1457,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -1492,7 +1492,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
         senderProfileId?: string | null | undefined;
         pressedImpulseButton?: boolean | undefined;
         type: "regular";
-        profileId: string;
+        uid: string;
         tacticsById: {
             [x: string]: {
                 createdAt?: {
@@ -1511,7 +1511,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -1557,7 +1557,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 repeat?: import("yup").Maybe<number | undefined>;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
@@ -1601,7 +1601,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -1642,7 +1642,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -1683,7 +1683,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -1724,7 +1724,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -2287,7 +2287,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -2328,7 +2328,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 sharedWithIssueIds?: string[] | undefined;
@@ -2368,7 +2368,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -2407,7 +2407,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             toDate: Function;
         };
         dateString: string;
-    }, "type" | "profileId" | "tacticsById" | "completedTacticIds" | "date" | "dateString" | ("createdAt" | "updatedAt" | "text" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "issueId" | "issueName" | "questionsById" | "questionData" | "blandPathwayChatId" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "pressedImpulseButton")>;
+    }, "type" | "uid" | "tacticsById" | "completedTacticIds" | "date" | "dateString" | ("createdAt" | "updatedAt" | "text" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "issueId" | "issueName" | "questionsById" | "questionData" | "blandPathwayChatId" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "pressedImpulseButton")>;
     tacticsLogFactory: Factory.Sync.Factory<{
         createdAt?: {
             isEqual?: any;
@@ -3007,7 +3007,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -3053,7 +3053,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             repeat?: import("yup").Maybe<number | undefined>;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
@@ -3097,7 +3097,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -3138,7 +3138,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -3179,7 +3179,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -3220,7 +3220,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -3783,7 +3783,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -3824,7 +3824,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             sharedWithIssueIds?: string[] | undefined;
@@ -3864,7 +3864,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -3900,7 +3900,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
         isAddToGameplanMode?: boolean | undefined;
         suggestedTacticDocPaths?: string[] | undefined;
         type: "tactics";
-        profileId: string;
+        uid: string;
         tacticsById: {
             [x: string]: {
                 createdAt?: {
@@ -3919,7 +3919,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -3965,7 +3965,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 repeat?: import("yup").Maybe<number | undefined>;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
@@ -4009,7 +4009,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -4050,7 +4050,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -4091,7 +4091,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -4132,7 +4132,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -4695,7 +4695,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -4736,7 +4736,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 sharedWithIssueIds?: string[] | undefined;
@@ -4776,7 +4776,7 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -4815,5 +4815,5 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             toDate: Function;
         };
         dateString: string;
-    }, "type" | "profileId" | "tacticsById" | "completedTacticIds" | "date" | "dateString" | ("createdAt" | "updatedAt" | "text" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "issueId" | "issueName" | "questionsById" | "questionData" | "blandPathwayChatId" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "isAddToGameplanMode" | "suggestedTacticDocPaths")>;
+    }, "type" | "uid" | "tacticsById" | "completedTacticIds" | "date" | "dateString" | ("createdAt" | "updatedAt" | "text" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "issueId" | "issueName" | "questionsById" | "questionData" | "blandPathwayChatId" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "isAddToGameplanMode" | "suggestedTacticDocPaths")>;
 };

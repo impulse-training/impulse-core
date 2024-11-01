@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 export declare const tacticImpressionSchema: yup.ObjectSchema<{
-    profileId: string;
+    uid: string;
     isLiked: NonNullable<boolean | undefined>;
     createdAt: {
         isEqual?: any;
@@ -19,7 +19,7 @@ export declare const tacticImpressionSchema: yup.ObjectSchema<{
         toDate: Function;
     } | null | undefined;
 }, yup.AnyObject, {
-    profileId: undefined;
+    uid: undefined;
     isLiked: undefined;
     createdAt: undefined;
     updatedAt: undefined;

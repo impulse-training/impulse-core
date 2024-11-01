@@ -28,7 +28,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    profileId: string;
+    uid: string;
     audioFile: {
         localFilePath?: yup.Maybe<string | undefined>;
         storagePath?: yup.Maybe<string | undefined>;
@@ -57,7 +57,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -103,7 +103,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             repeat?: yup.Maybe<number | undefined>;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
@@ -147,7 +147,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -188,7 +188,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -229,7 +229,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -270,7 +270,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -833,7 +833,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -874,7 +874,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             sharedWithIssueIds?: string[] | undefined;
@@ -914,7 +914,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -1525,7 +1525,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
@@ -1571,7 +1571,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         repeat?: yup.Maybe<number | undefined>;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
@@ -1615,7 +1615,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
@@ -1656,7 +1656,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
@@ -1697,7 +1697,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
@@ -1738,7 +1738,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
@@ -2301,7 +2301,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
@@ -2342,7 +2342,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         sharedWithIssueIds?: string[] | undefined;
@@ -2382,7 +2382,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
@@ -2426,7 +2426,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
     type: undefined;
     createdAt: undefined;
     updatedAt: undefined;
-    profileId: undefined;
+    uid: undefined;
     audioFile: {
         localFilePath: undefined;
         storagePath: undefined;

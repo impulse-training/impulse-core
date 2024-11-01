@@ -5,7 +5,7 @@ export const recoveryCode = yup.object().shape({
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
   usedAt: optionalTimestampSchema,
-  profileId: yup.string().required(),
+  uid: yup.string().required(),
   hashedCode: yup.string().required(),
   last4: yup.string().required(),
 });

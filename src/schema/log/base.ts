@@ -12,7 +12,7 @@ export function logBaseSchema<K extends string>(type: K) {
     type: yup.mixed<K>().oneOf([type]).defined(),
     createdAt: optionalTimestampSchema,
     updatedAt: optionalTimestampSchema,
-    profileId: yup.string().required(),
+    uid: yup.string().required(),
 
     audioFile: fileSchema.optional(),
     audioDurationSeconds: yup.number(),

@@ -598,7 +598,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -644,7 +644,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             repeat?: import("yup").Maybe<number | undefined>;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
@@ -688,7 +688,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -729,7 +729,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -770,7 +770,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -811,7 +811,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -1374,7 +1374,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -1415,7 +1415,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             sharedWithIssueIds?: string[] | undefined;
@@ -1455,7 +1455,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -1490,7 +1490,7 @@ export declare const factories: {
         senderProfileId?: string | null | undefined;
         pressedImpulseButton?: boolean | undefined;
         type: "regular";
-        profileId: string;
+        uid: string;
         tacticsById: {
             [x: string]: {
                 createdAt?: {
@@ -1509,7 +1509,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -1555,7 +1555,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 repeat?: import("yup").Maybe<number | undefined>;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
@@ -1599,7 +1599,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -1640,7 +1640,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -1681,7 +1681,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -1722,7 +1722,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -2285,7 +2285,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -2326,7 +2326,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 sharedWithIssueIds?: string[] | undefined;
@@ -2366,7 +2366,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -2405,7 +2405,7 @@ export declare const factories: {
             toDate: Function;
         };
         dateString: string;
-    }, "type" | "profileId" | "tacticsById" | "completedTacticIds" | "date" | "dateString" | ("createdAt" | "updatedAt" | "text" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "issueId" | "issueName" | "questionsById" | "questionData" | "blandPathwayChatId" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "pressedImpulseButton")>;
+    }, "type" | "uid" | "tacticsById" | "completedTacticIds" | "date" | "dateString" | ("createdAt" | "updatedAt" | "text" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "issueId" | "issueName" | "questionsById" | "questionData" | "blandPathwayChatId" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "pressedImpulseButton")>;
     tacticsLogFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -3005,7 +3005,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -3051,7 +3051,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             repeat?: import("yup").Maybe<number | undefined>;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
@@ -3095,7 +3095,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -3136,7 +3136,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -3177,7 +3177,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -3218,7 +3218,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -3781,7 +3781,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -3822,7 +3822,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             sharedWithIssueIds?: string[] | undefined;
@@ -3862,7 +3862,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -3898,7 +3898,7 @@ export declare const factories: {
         isAddToGameplanMode?: boolean | undefined;
         suggestedTacticDocPaths?: string[] | undefined;
         type: "tactics";
-        profileId: string;
+        uid: string;
         tacticsById: {
             [x: string]: {
                 createdAt?: {
@@ -3917,7 +3917,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -3963,7 +3963,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 repeat?: import("yup").Maybe<number | undefined>;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
@@ -4007,7 +4007,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -4048,7 +4048,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -4089,7 +4089,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -4130,7 +4130,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -4693,7 +4693,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -4734,7 +4734,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 sharedWithIssueIds?: string[] | undefined;
@@ -4774,7 +4774,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -4813,7 +4813,7 @@ export declare const factories: {
             toDate: Function;
         };
         dateString: string;
-    }, "type" | "profileId" | "tacticsById" | "completedTacticIds" | "date" | "dateString" | ("createdAt" | "updatedAt" | "text" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "issueId" | "issueName" | "questionsById" | "questionData" | "blandPathwayChatId" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "isAddToGameplanMode" | "suggestedTacticDocPaths")>;
+    }, "type" | "uid" | "tacticsById" | "completedTacticIds" | "date" | "dateString" | ("createdAt" | "updatedAt" | "text" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "issueId" | "issueName" | "questionsById" | "questionData" | "blandPathwayChatId" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "isAddToGameplanMode" | "suggestedTacticDocPaths")>;
     textQuestionFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -5133,10 +5133,10 @@ export declare const factories: {
         } | null | undefined;
         latitude?: number | undefined;
         longitude?: number | undefined;
-        profileId: string;
+        uid: string;
         name: string;
         address: string;
-    }, "profileId" | "name" | "address" | ("createdAt" | "updatedAt" | "latitude" | "longitude")>;
+    }, "uid" | "name" | "address" | ("createdAt" | "updatedAt" | "latitude" | "longitude")>;
     daysSummaryFactory: import("factory.ts").Factory<{
         [x: string]: {
             [x: string]: {
@@ -5313,7 +5313,7 @@ export declare const factories: {
         hour: number;
         minute: number;
     }, "type" | "name" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "type" | "profileId" | "setbackThreshold" | "recommendedForIssueIds" | "prompt" | "ordinal" | "sharedWithIssueIds" | "recommendedForIssueOrdinals" | "isShared" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "type" | "uid" | "setbackThreshold" | "recommendedForIssueIds" | "prompt" | "ordinal" | "sharedWithIssueIds" | "recommendedForIssueOrdinals" | "isShared" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
     roadmapFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -5383,7 +5383,7 @@ export declare const factories: {
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         sharedWithIssueIds?: string[] | undefined;
         description?: string | undefined;
         tacticsById?: {
@@ -5404,7 +5404,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -5450,7 +5450,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 repeat?: import("yup").Maybe<number | undefined>;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
@@ -5494,7 +5494,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -5535,7 +5535,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -5576,7 +5576,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -5617,7 +5617,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -6180,7 +6180,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -6221,7 +6221,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 sharedWithIssueIds?: string[] | undefined;
@@ -6261,7 +6261,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -6313,7 +6313,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -6359,7 +6359,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             repeat?: import("yup").Maybe<number | undefined>;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
@@ -6403,7 +6403,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -6444,7 +6444,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -6485,7 +6485,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -6526,7 +6526,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -7089,7 +7089,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -7130,7 +7130,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             sharedWithIssueIds?: string[] | undefined;
@@ -7170,7 +7170,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -7203,7 +7203,7 @@ export declare const factories: {
         isCollaborative: NonNullable<boolean | undefined>;
         invitationCode: string;
         invitationUrl: string;
-    }, "name" | "isCollaborative" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "profileId" | "sharedWithIssueIds" | "description" | "tacticsById" | "templateForIssueIds" | "tacticCount" | "profileIssues" | "tourTitle" | "tourDescription" | "tourConfirmButtonText" | "next3Tactics" | "nextTacticId")>;
+    }, "name" | "isCollaborative" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "uid" | "sharedWithIssueIds" | "description" | "tacticsById" | "templateForIssueIds" | "tacticCount" | "profileIssues" | "tourTitle" | "tourDescription" | "tourConfirmButtonText" | "next3Tactics" | "nextTacticId")>;
     profileStrategyFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -7292,7 +7292,7 @@ export declare const factories: {
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             sharedWithIssueIds?: string[] | undefined;
             description?: string | undefined;
             tacticsById?: {
@@ -7313,7 +7313,7 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    profileId?: string | undefined;
+                    uid?: string | undefined;
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
@@ -7359,7 +7359,7 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    profileId?: string | undefined;
+                    uid?: string | undefined;
                     repeat?: import("yup").Maybe<number | undefined>;
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
@@ -7403,7 +7403,7 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    profileId?: string | undefined;
+                    uid?: string | undefined;
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
@@ -7444,7 +7444,7 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    profileId?: string | undefined;
+                    uid?: string | undefined;
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
@@ -7485,7 +7485,7 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    profileId?: string | undefined;
+                    uid?: string | undefined;
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
@@ -7526,7 +7526,7 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    profileId?: string | undefined;
+                    uid?: string | undefined;
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
@@ -8089,7 +8089,7 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    profileId?: string | undefined;
+                    uid?: string | undefined;
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
@@ -8130,7 +8130,7 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    profileId?: string | undefined;
+                    uid?: string | undefined;
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     sharedWithIssueIds?: string[] | undefined;
@@ -8170,7 +8170,7 @@ export declare const factories: {
                         nanoseconds: number;
                         toDate: Function;
                     } | null | undefined;
-                    profileId?: string | undefined;
+                    uid?: string | undefined;
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
@@ -8222,7 +8222,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -8268,7 +8268,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 repeat?: import("yup").Maybe<number | undefined>;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
@@ -8312,7 +8312,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -8353,7 +8353,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -8394,7 +8394,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -8435,7 +8435,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -8998,7 +8998,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
@@ -9039,7 +9039,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 sharedWithIssueIds?: string[] | undefined;
@@ -9079,7 +9079,7 @@ export declare const factories: {
                     nanoseconds: number;
                     toDate: Function;
                 } | null | undefined;
-                profileId?: string | undefined;
+                uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;

@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 export declare const questionTacticSchema: yup.ObjectSchema<{
-    profileId: string | undefined;
+    uid: string | undefined;
     recommendedForIssueIds: string[] | undefined;
     sharedWithIssueIds: string[] | undefined;
     recommendedForIssueOrdinals: {
@@ -563,7 +563,7 @@ export declare const questionTacticSchema: yup.ObjectSchema<{
         ordinal: number;
     };
 }, yup.AnyObject, {
-    profileId: undefined;
+    uid: undefined;
     recommendedForIssueIds: "";
     sharedWithIssueIds: "";
     recommendedForIssueOrdinals: undefined;

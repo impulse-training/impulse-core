@@ -17,7 +17,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    profileId?: string | undefined;
+    uid?: string | undefined;
     sharedWithIssueIds?: string[] | undefined;
     description?: string | undefined;
     tacticsById?: {
@@ -38,7 +38,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -84,7 +84,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             repeat?: import("yup").Maybe<number | undefined>;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
@@ -128,7 +128,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -169,7 +169,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -210,7 +210,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -251,7 +251,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -814,7 +814,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -855,7 +855,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             sharedWithIssueIds?: string[] | undefined;
@@ -895,7 +895,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -947,7 +947,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
@@ -993,7 +993,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         repeat?: import("yup").Maybe<number | undefined>;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
@@ -1037,7 +1037,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
@@ -1078,7 +1078,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
@@ -1119,7 +1119,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
@@ -1160,7 +1160,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
@@ -1723,7 +1723,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
@@ -1764,7 +1764,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         sharedWithIssueIds?: string[] | undefined;
@@ -1804,7 +1804,7 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
@@ -1837,4 +1837,4 @@ export declare const makeStrategyFactory: (TimestampKlass: typeof TimestampLike)
     isCollaborative: NonNullable<boolean | undefined>;
     invitationCode: string;
     invitationUrl: string;
-}, "name" | "isCollaborative" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "profileId" | "sharedWithIssueIds" | "description" | "tacticsById" | "templateForIssueIds" | "tacticCount" | "profileIssues" | "tourTitle" | "tourDescription" | "tourConfirmButtonText" | "next3Tactics" | "nextTacticId")>;
+}, "name" | "isCollaborative" | "invitationCode" | "invitationUrl" | ("createdAt" | "updatedAt" | "uid" | "sharedWithIssueIds" | "description" | "tacticsById" | "templateForIssueIds" | "tacticCount" | "profileIssues" | "tourTitle" | "tourDescription" | "tourConfirmButtonText" | "next3Tactics" | "nextTacticId")>;

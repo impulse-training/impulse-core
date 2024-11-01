@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 export declare const taskTacticSchema: yup.ObjectSchema<{
-    profileId: string | undefined;
+    uid: string | undefined;
     recommendedForIssueIds: string[] | undefined;
     sharedWithIssueIds: string[] | undefined;
     recommendedForIssueOrdinals: {
@@ -40,7 +40,7 @@ export declare const taskTacticSchema: yup.ObjectSchema<{
     timerSeconds: yup.Maybe<number | undefined>;
     isSuggested: boolean | undefined;
 }, yup.AnyObject, {
-    profileId: undefined;
+    uid: undefined;
     recommendedForIssueIds: "";
     sharedWithIssueIds: "";
     recommendedForIssueOrdinals: undefined;

@@ -5,7 +5,7 @@ import { TimestampLike } from '../utils/firestore/TimestampLike';
 
 export const makeLocationFactory = (TimestampKlass: typeof TimestampLike) =>
   Factory.makeFactory<LocationValue>({
-    profileId: Factory.each(i => i.toString()),
+    uid: Factory.each(i => i.toString()),
 
     createdAt: TimestampKlass.now(),
     updatedAt: TimestampKlass.now(),

@@ -597,7 +597,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
@@ -643,7 +643,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         repeat?: import("yup").Maybe<number | undefined>;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
@@ -687,7 +687,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
@@ -728,7 +728,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
@@ -769,7 +769,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
@@ -810,7 +810,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
@@ -1373,7 +1373,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
@@ -1414,7 +1414,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         sharedWithIssueIds?: string[] | undefined;
@@ -1454,7 +1454,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
@@ -1489,7 +1489,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     senderProfileId?: string | null | undefined;
     pressedImpulseButton?: boolean | undefined;
     type: "regular";
-    profileId: string;
+    uid: string;
     tacticsById: {
         [x: string]: {
             createdAt?: {
@@ -1508,7 +1508,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -1554,7 +1554,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             repeat?: import("yup").Maybe<number | undefined>;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
@@ -1598,7 +1598,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -1639,7 +1639,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -1680,7 +1680,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -1721,7 +1721,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -2284,7 +2284,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -2325,7 +2325,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             sharedWithIssueIds?: string[] | undefined;
@@ -2365,7 +2365,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -2404,7 +2404,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         toDate: Function;
     };
     dateString: string;
-}, "type" | "profileId" | "tacticsById" | "completedTacticIds" | "date" | "dateString" | ("createdAt" | "updatedAt" | "text" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "issueId" | "issueName" | "questionsById" | "questionData" | "blandPathwayChatId" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "pressedImpulseButton")>, profileFactory: import("factory.ts").Factory<{
+}, "type" | "uid" | "tacticsById" | "completedTacticIds" | "date" | "dateString" | ("createdAt" | "updatedAt" | "text" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "issueId" | "issueName" | "questionsById" | "questionData" | "blandPathwayChatId" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "pressedImpulseButton")>, profileFactory: import("factory.ts").Factory<{
     createdAt?: {
         isEqual?: any;
         toMillis?: any;
@@ -2535,4 +2535,4 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     } | null;
     signUpIssueId: string | null;
     timezone: string;
-}, "uids" | "verificationCode" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIds" | "blandPathwayId" | "issuesById" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "addToStrategy" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "isTourDismissed" | "region" | "enableZara")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "type" | "profileId" | "setbackThreshold" | "recommendedForIssueIds" | "prompt" | "ordinal" | "sharedWithIssueIds" | "recommendedForIssueOrdinals" | "isShared" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+}, "uids" | "verificationCode" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIds" | "blandPathwayId" | "issuesById" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "addToStrategy" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "isTourDismissed" | "region" | "enableZara")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "type" | "uid" | "setbackThreshold" | "recommendedForIssueIds" | "prompt" | "ordinal" | "sharedWithIssueIds" | "recommendedForIssueOrdinals" | "isShared" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;

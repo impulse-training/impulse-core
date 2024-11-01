@@ -24,14 +24,14 @@ export declare const recoveryCode: yup.ObjectSchema<{
         nanoseconds: number;
         toDate: Function;
     } | null | undefined;
-    profileId: string;
+    uid: string;
     hashedCode: string;
     last4: string;
 }, yup.AnyObject, {
     createdAt: undefined;
     updatedAt: undefined;
     usedAt: undefined;
-    profileId: undefined;
+    uid: undefined;
     hashedCode: undefined;
     last4: undefined;
 }, "">;

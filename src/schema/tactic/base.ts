@@ -7,7 +7,7 @@ import { optionalTimestampSchema } from '../utils/timestamp';
 // Define a base schema for TacticValueBase with generic type K to accommodate the type field.
 export function tacticValueBaseSchema<K extends string>(type: K) {
   return yup.object({
-    profileId: yup.string(),
+    uid: yup.string(),
     recommendedForIssueIds: optionalStringArray.max(
       10,
       "can't be more than 10"

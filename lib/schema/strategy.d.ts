@@ -18,7 +18,7 @@ export declare const strategySchema: yup.ObjectSchema<{
     } | null | undefined;
     name: string;
     description: string | undefined;
-    profileId: string | undefined;
+    uid: string | undefined;
     isCollaborative: NonNullable<boolean | undefined>;
     tacticCount: number | undefined;
     invitationCode: string;
@@ -47,7 +47,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -93,7 +93,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             repeat?: yup.Maybe<number | undefined>;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
@@ -137,7 +137,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -178,7 +178,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -219,7 +219,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -260,7 +260,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -823,7 +823,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -864,7 +864,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             sharedWithIssueIds?: string[] | undefined;
@@ -904,7 +904,7 @@ export declare const strategySchema: yup.ObjectSchema<{
                 nanoseconds: number;
                 toDate: Function;
             } | null | undefined;
-            profileId?: string | undefined;
+            uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
@@ -950,7 +950,7 @@ export declare const strategySchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
@@ -996,7 +996,7 @@ export declare const strategySchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         repeat?: yup.Maybe<number | undefined>;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
@@ -1040,7 +1040,7 @@ export declare const strategySchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
@@ -1081,7 +1081,7 @@ export declare const strategySchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
@@ -1122,7 +1122,7 @@ export declare const strategySchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
@@ -1163,7 +1163,7 @@ export declare const strategySchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
@@ -1726,7 +1726,7 @@ export declare const strategySchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
@@ -1767,7 +1767,7 @@ export declare const strategySchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         sharedWithIssueIds?: string[] | undefined;
@@ -1807,7 +1807,7 @@ export declare const strategySchema: yup.ObjectSchema<{
             nanoseconds: number;
             toDate: Function;
         } | null | undefined;
-        profileId?: string | undefined;
+        uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
@@ -1841,7 +1841,7 @@ export declare const strategySchema: yup.ObjectSchema<{
     updatedAt: undefined;
     name: undefined;
     description: undefined;
-    profileId: undefined;
+    uid: undefined;
     isCollaborative: undefined;
     tacticCount: undefined;
     invitationCode: undefined;

@@ -10,7 +10,7 @@ export const strategySchema = yup.object({
   updatedAt: optionalTimestampSchema,
   name: yup.string().required(),
   description: yup.string(),
-  profileId: yup.string(),
+  uid: yup.string(),
   isCollaborative: yup.boolean().required(),
   tacticCount: yup.number(),
   invitationCode: yup.string().required(),

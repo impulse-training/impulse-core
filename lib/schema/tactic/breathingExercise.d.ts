@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 export declare const breathingExerciseTacticSchema: yup.ObjectSchema<{
-    profileId: string | undefined;
+    uid: string | undefined;
     recommendedForIssueIds: string[] | undefined;
     sharedWithIssueIds: string[] | undefined;
     recommendedForIssueOrdinals: {
@@ -44,7 +44,7 @@ export declare const breathingExerciseTacticSchema: yup.ObjectSchema<{
     outFor: number;
     repeat: yup.Maybe<number | undefined>;
 }, yup.AnyObject, {
-    profileId: undefined;
+    uid: undefined;
     recommendedForIssueIds: "";
     sharedWithIssueIds: "";
     recommendedForIssueOrdinals: undefined;
