@@ -33,6 +33,7 @@ export declare const breathingExerciseTacticSchema: yup.ObjectSchema<{
         localFilePath?: yup.Maybe<string | undefined>;
         storagePath?: yup.Maybe<string | undefined>;
         uri?: yup.Maybe<string | undefined>;
+        waveForm?: yup.Maybe<string | undefined>;
     } | null | undefined;
     backgroundColor: string | undefined;
     setbackThreshold: number | null | undefined;
@@ -61,6 +62,7 @@ export declare const breathingExerciseTacticSchema: yup.ObjectSchema<{
         localFilePath: undefined;
         storagePath: undefined;
         uri: undefined;
+        waveForm: undefined;
     };
     backgroundColor: undefined;
     setbackThreshold: undefined;

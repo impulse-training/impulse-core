@@ -125,18 +125,19 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     storagePath?: import("yup").Maybe<string | undefined>;
                     uri?: import("yup").Maybe<string | undefined>;
+                    waveForm?: import("yup").Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
                 timerSeconds?: import("yup").Maybe<number | undefined>;
                 isSuggested?: boolean | undefined;
-                waveForm?: string | null | undefined;
                 type: "audio";
                 ordinal: number;
                 recording: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     storagePath?: import("yup").Maybe<string | undefined>;
                     uri?: import("yup").Maybe<string | undefined>;
+                    waveForm?: import("yup").Maybe<string | undefined>;
                 };
             } | {
                 createdAt?: {
@@ -172,6 +173,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     storagePath?: import("yup").Maybe<string | undefined>;
                     uri?: import("yup").Maybe<string | undefined>;
+                    waveForm?: import("yup").Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -215,6 +217,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     storagePath?: import("yup").Maybe<string | undefined>;
                     uri?: import("yup").Maybe<string | undefined>;
+                    waveForm?: import("yup").Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -256,6 +259,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     storagePath?: import("yup").Maybe<string | undefined>;
                     uri?: import("yup").Maybe<string | undefined>;
+                    waveForm?: import("yup").Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -297,6 +301,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     storagePath?: import("yup").Maybe<string | undefined>;
                     uri?: import("yup").Maybe<string | undefined>;
+                    waveForm?: import("yup").Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -338,6 +343,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     storagePath?: import("yup").Maybe<string | undefined>;
                     uri?: import("yup").Maybe<string | undefined>;
+                    waveForm?: import("yup").Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -901,6 +907,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     storagePath?: import("yup").Maybe<string | undefined>;
                     uri?: import("yup").Maybe<string | undefined>;
+                    waveForm?: import("yup").Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -941,6 +948,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     storagePath?: import("yup").Maybe<string | undefined>;
                     uri?: import("yup").Maybe<string | undefined>;
+                    waveForm?: import("yup").Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -982,6 +990,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     storagePath?: import("yup").Maybe<string | undefined>;
                     uri?: import("yup").Maybe<string | undefined>;
+                    waveForm?: import("yup").Maybe<string | undefined>;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -1034,18 +1043,19 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 storagePath?: import("yup").Maybe<string | undefined>;
                 uri?: import("yup").Maybe<string | undefined>;
+                waveForm?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
             timerSeconds?: import("yup").Maybe<number | undefined>;
             isSuggested?: boolean | undefined;
-            waveForm?: string | null | undefined;
             type: "audio";
             ordinal: number;
             recording: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 storagePath?: import("yup").Maybe<string | undefined>;
                 uri?: import("yup").Maybe<string | undefined>;
+                waveForm?: import("yup").Maybe<string | undefined>;
             };
         } | {
             createdAt?: {
@@ -1081,6 +1091,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 storagePath?: import("yup").Maybe<string | undefined>;
                 uri?: import("yup").Maybe<string | undefined>;
+                waveForm?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -1124,6 +1135,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 storagePath?: import("yup").Maybe<string | undefined>;
                 uri?: import("yup").Maybe<string | undefined>;
+                waveForm?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -1165,6 +1177,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 storagePath?: import("yup").Maybe<string | undefined>;
                 uri?: import("yup").Maybe<string | undefined>;
+                waveForm?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -1206,6 +1219,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 storagePath?: import("yup").Maybe<string | undefined>;
                 uri?: import("yup").Maybe<string | undefined>;
+                waveForm?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -1247,6 +1261,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 storagePath?: import("yup").Maybe<string | undefined>;
                 uri?: import("yup").Maybe<string | undefined>;
+                waveForm?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -1810,6 +1825,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 storagePath?: import("yup").Maybe<string | undefined>;
                 uri?: import("yup").Maybe<string | undefined>;
+                waveForm?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -1850,6 +1866,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 storagePath?: import("yup").Maybe<string | undefined>;
                 uri?: import("yup").Maybe<string | undefined>;
+                waveForm?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -1891,6 +1908,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 storagePath?: import("yup").Maybe<string | undefined>;
                 uri?: import("yup").Maybe<string | undefined>;
+                waveForm?: import("yup").Maybe<string | undefined>;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
