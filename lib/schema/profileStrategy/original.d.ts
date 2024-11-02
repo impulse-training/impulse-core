@@ -123,6 +123,8 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 image?: {
                     localFilePath?: yup.Maybe<string | undefined>;
                     waveForm?: yup.Maybe<string | undefined>;
+                    thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                    thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -135,6 +137,8 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 recording: {
                     localFilePath?: yup.Maybe<string | undefined>;
                     waveForm?: yup.Maybe<string | undefined>;
+                    thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                    thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 };
@@ -171,6 +175,8 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 image?: {
                     localFilePath?: yup.Maybe<string | undefined>;
                     waveForm?: yup.Maybe<string | undefined>;
+                    thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                    thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -215,6 +221,8 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 image?: {
                     localFilePath?: yup.Maybe<string | undefined>;
                     waveForm?: yup.Maybe<string | undefined>;
+                    thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                    thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -257,6 +265,8 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 image?: {
                     localFilePath?: yup.Maybe<string | undefined>;
                     waveForm?: yup.Maybe<string | undefined>;
+                    thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                    thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -299,6 +309,8 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 image?: {
                     localFilePath?: yup.Maybe<string | undefined>;
                     waveForm?: yup.Maybe<string | undefined>;
+                    thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                    thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -341,6 +353,8 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 image?: {
                     localFilePath?: yup.Maybe<string | undefined>;
                     waveForm?: yup.Maybe<string | undefined>;
+                    thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                    thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -905,6 +919,8 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 image?: {
                     localFilePath?: yup.Maybe<string | undefined>;
                     waveForm?: yup.Maybe<string | undefined>;
+                    thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                    thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -946,6 +962,8 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 image?: {
                     localFilePath?: yup.Maybe<string | undefined>;
                     waveForm?: yup.Maybe<string | undefined>;
+                    thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                    thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -988,6 +1006,8 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
                 image?: {
                     localFilePath?: yup.Maybe<string | undefined>;
                     waveForm?: yup.Maybe<string | undefined>;
+                    thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                    thumbnailUri?: yup.Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -1041,6 +1061,8 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 waveForm?: yup.Maybe<string | undefined>;
+                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -1053,6 +1075,8 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
             recording: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 waveForm?: yup.Maybe<string | undefined>;
+                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             };
@@ -1089,6 +1113,8 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 waveForm?: yup.Maybe<string | undefined>;
+                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -1133,6 +1159,8 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 waveForm?: yup.Maybe<string | undefined>;
+                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -1175,6 +1203,8 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 waveForm?: yup.Maybe<string | undefined>;
+                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -1217,6 +1247,8 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 waveForm?: yup.Maybe<string | undefined>;
+                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -1259,6 +1291,8 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 waveForm?: yup.Maybe<string | undefined>;
+                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -1823,6 +1857,8 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 waveForm?: yup.Maybe<string | undefined>;
+                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -1864,6 +1900,8 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 waveForm?: yup.Maybe<string | undefined>;
+                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -1906,6 +1944,8 @@ export declare const originalProfileStrategySchema: yup.ObjectSchema<{
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
                 waveForm?: yup.Maybe<string | undefined>;
+                thumbnailStoragePath?: yup.Maybe<string | undefined>;
+                thumbnailUri?: yup.Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;

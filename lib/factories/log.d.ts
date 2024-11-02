@@ -30,6 +30,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
         audioFile?: {
             localFilePath?: import("yup").Maybe<string | undefined>;
             waveForm?: import("yup").Maybe<string | undefined>;
+            thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+            thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
         } | undefined;
@@ -616,6 +618,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -628,6 +632,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             recording: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             };
@@ -664,6 +670,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -708,6 +716,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -750,6 +760,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -792,6 +804,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -834,6 +848,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -1398,6 +1414,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -1439,6 +1457,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -1481,6 +1501,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -1536,6 +1558,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -1548,6 +1572,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 recording: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 };
@@ -1584,6 +1610,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -1628,6 +1656,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -1670,6 +1700,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -1712,6 +1744,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -1754,6 +1788,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -2318,6 +2354,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -2359,6 +2397,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -2401,6 +2441,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -2456,6 +2498,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
         audioFile?: {
             localFilePath?: import("yup").Maybe<string | undefined>;
             waveForm?: import("yup").Maybe<string | undefined>;
+            thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+            thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
         } | undefined;
@@ -3042,6 +3086,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -3054,6 +3100,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             recording: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             };
@@ -3090,6 +3138,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -3134,6 +3184,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -3176,6 +3228,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -3218,6 +3272,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -3260,6 +3316,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -3824,6 +3882,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -3865,6 +3925,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -3907,6 +3969,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -3963,6 +4027,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -3975,6 +4041,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 recording: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 };
@@ -4011,6 +4079,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -4055,6 +4125,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -4097,6 +4169,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -4139,6 +4213,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -4181,6 +4257,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -4745,6 +4823,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -4786,6 +4866,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -4828,6 +4910,8 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;

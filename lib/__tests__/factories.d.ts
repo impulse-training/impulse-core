@@ -28,6 +28,8 @@ export declare const factories: {
         audioFile?: {
             localFilePath?: import("yup").Maybe<string | undefined>;
             waveForm?: import("yup").Maybe<string | undefined>;
+            thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+            thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
         } | undefined;
@@ -614,6 +616,8 @@ export declare const factories: {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -626,6 +630,8 @@ export declare const factories: {
             recording: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             };
@@ -662,6 +668,8 @@ export declare const factories: {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -706,6 +714,8 @@ export declare const factories: {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -748,6 +758,8 @@ export declare const factories: {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -790,6 +802,8 @@ export declare const factories: {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -832,6 +846,8 @@ export declare const factories: {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -1396,6 +1412,8 @@ export declare const factories: {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -1437,6 +1455,8 @@ export declare const factories: {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -1479,6 +1499,8 @@ export declare const factories: {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -1534,6 +1556,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -1546,6 +1570,8 @@ export declare const factories: {
                 recording: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 };
@@ -1582,6 +1608,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -1626,6 +1654,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -1668,6 +1698,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -1710,6 +1742,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -1752,6 +1786,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -2316,6 +2352,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -2357,6 +2395,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -2399,6 +2439,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -2454,6 +2496,8 @@ export declare const factories: {
         audioFile?: {
             localFilePath?: import("yup").Maybe<string | undefined>;
             waveForm?: import("yup").Maybe<string | undefined>;
+            thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+            thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
         } | undefined;
@@ -3040,6 +3084,8 @@ export declare const factories: {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -3052,6 +3098,8 @@ export declare const factories: {
             recording: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             };
@@ -3088,6 +3136,8 @@ export declare const factories: {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -3132,6 +3182,8 @@ export declare const factories: {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -3174,6 +3226,8 @@ export declare const factories: {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -3216,6 +3270,8 @@ export declare const factories: {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -3258,6 +3314,8 @@ export declare const factories: {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -3822,6 +3880,8 @@ export declare const factories: {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -3863,6 +3923,8 @@ export declare const factories: {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -3905,6 +3967,8 @@ export declare const factories: {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -3961,6 +4025,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -3973,6 +4039,8 @@ export declare const factories: {
                 recording: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 };
@@ -4009,6 +4077,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -4053,6 +4123,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -4095,6 +4167,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -4137,6 +4211,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -4179,6 +4255,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -4743,6 +4821,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -4784,6 +4864,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -4826,6 +4908,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -5457,6 +5541,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -5469,6 +5555,8 @@ export declare const factories: {
                 recording: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 };
@@ -5505,6 +5593,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -5549,6 +5639,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -5591,6 +5683,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -5633,6 +5727,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -5675,6 +5771,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -6239,6 +6337,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -6280,6 +6380,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -6322,6 +6424,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -6375,6 +6479,8 @@ export declare const factories: {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -6387,6 +6493,8 @@ export declare const factories: {
             recording: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             };
@@ -6423,6 +6531,8 @@ export declare const factories: {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -6467,6 +6577,8 @@ export declare const factories: {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -6509,6 +6621,8 @@ export declare const factories: {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -6551,6 +6665,8 @@ export declare const factories: {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -6593,6 +6709,8 @@ export declare const factories: {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -7157,6 +7275,8 @@ export declare const factories: {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -7198,6 +7318,8 @@ export declare const factories: {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -7240,6 +7362,8 @@ export declare const factories: {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -7384,6 +7508,8 @@ export declare const factories: {
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         waveForm?: import("yup").Maybe<string | undefined>;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
                     } | null | undefined;
@@ -7396,6 +7522,8 @@ export declare const factories: {
                     recording: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         waveForm?: import("yup").Maybe<string | undefined>;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
                     };
@@ -7432,6 +7560,8 @@ export declare const factories: {
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         waveForm?: import("yup").Maybe<string | undefined>;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
                     } | null | undefined;
@@ -7476,6 +7606,8 @@ export declare const factories: {
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         waveForm?: import("yup").Maybe<string | undefined>;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
                     } | null | undefined;
@@ -7518,6 +7650,8 @@ export declare const factories: {
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         waveForm?: import("yup").Maybe<string | undefined>;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
                     } | null | undefined;
@@ -7560,6 +7694,8 @@ export declare const factories: {
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         waveForm?: import("yup").Maybe<string | undefined>;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
                     } | null | undefined;
@@ -7602,6 +7738,8 @@ export declare const factories: {
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         waveForm?: import("yup").Maybe<string | undefined>;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
                     } | null | undefined;
@@ -8166,6 +8304,8 @@ export declare const factories: {
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         waveForm?: import("yup").Maybe<string | undefined>;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
                     } | null | undefined;
@@ -8207,6 +8347,8 @@ export declare const factories: {
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         waveForm?: import("yup").Maybe<string | undefined>;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
                     } | null | undefined;
@@ -8249,6 +8391,8 @@ export declare const factories: {
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         waveForm?: import("yup").Maybe<string | undefined>;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
                     } | null | undefined;
@@ -8302,6 +8446,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -8314,6 +8460,8 @@ export declare const factories: {
                 recording: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 };
@@ -8350,6 +8498,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -8394,6 +8544,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -8436,6 +8588,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -8478,6 +8632,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -8520,6 +8676,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -9084,6 +9242,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -9125,6 +9285,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -9167,6 +9329,8 @@ export declare const factories: {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;

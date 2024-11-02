@@ -32,6 +32,8 @@ export declare function recapTacticValueBaseSchema(type: RecapKeyType): import("
     image: {
         localFilePath?: import("yup").Maybe<string | undefined>;
         waveForm?: import("yup").Maybe<string | undefined>;
+        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+        thumbnailUri?: import("yup").Maybe<string | undefined>;
         storagePath: string;
         uri: string;
     } | null | undefined;
@@ -59,6 +61,8 @@ export declare function recapTacticValueBaseSchema(type: RecapKeyType): import("
         uri: undefined;
         localFilePath: undefined;
         waveForm: undefined;
+        thumbnailStoragePath: undefined;
+        thumbnailUri: undefined;
     };
     backgroundColor: undefined;
     setbackThreshold: undefined;

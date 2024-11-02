@@ -27,6 +27,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     audioFile?: {
         localFilePath?: import("yup").Maybe<string | undefined>;
         waveForm?: import("yup").Maybe<string | undefined>;
+        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+        thumbnailUri?: import("yup").Maybe<string | undefined>;
         storagePath: string;
         uri: string;
     } | undefined;
@@ -613,6 +615,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         image?: {
             localFilePath?: import("yup").Maybe<string | undefined>;
             waveForm?: import("yup").Maybe<string | undefined>;
+            thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+            thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
         } | null | undefined;
@@ -625,6 +629,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         recording: {
             localFilePath?: import("yup").Maybe<string | undefined>;
             waveForm?: import("yup").Maybe<string | undefined>;
+            thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+            thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
         };
@@ -661,6 +667,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         image?: {
             localFilePath?: import("yup").Maybe<string | undefined>;
             waveForm?: import("yup").Maybe<string | undefined>;
+            thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+            thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
         } | null | undefined;
@@ -705,6 +713,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         image?: {
             localFilePath?: import("yup").Maybe<string | undefined>;
             waveForm?: import("yup").Maybe<string | undefined>;
+            thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+            thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
         } | null | undefined;
@@ -747,6 +757,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         image?: {
             localFilePath?: import("yup").Maybe<string | undefined>;
             waveForm?: import("yup").Maybe<string | undefined>;
+            thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+            thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
         } | null | undefined;
@@ -789,6 +801,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         image?: {
             localFilePath?: import("yup").Maybe<string | undefined>;
             waveForm?: import("yup").Maybe<string | undefined>;
+            thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+            thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
         } | null | undefined;
@@ -831,6 +845,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         image?: {
             localFilePath?: import("yup").Maybe<string | undefined>;
             waveForm?: import("yup").Maybe<string | undefined>;
+            thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+            thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
         } | null | undefined;
@@ -1395,6 +1411,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         image?: {
             localFilePath?: import("yup").Maybe<string | undefined>;
             waveForm?: import("yup").Maybe<string | undefined>;
+            thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+            thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
         } | null | undefined;
@@ -1436,6 +1454,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         image?: {
             localFilePath?: import("yup").Maybe<string | undefined>;
             waveForm?: import("yup").Maybe<string | undefined>;
+            thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+            thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
         } | null | undefined;
@@ -1478,6 +1498,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         image?: {
             localFilePath?: import("yup").Maybe<string | undefined>;
             waveForm?: import("yup").Maybe<string | undefined>;
+            thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+            thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
         } | null | undefined;
@@ -1533,6 +1555,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -1545,6 +1569,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             recording: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             };
@@ -1581,6 +1607,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -1625,6 +1653,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -1667,6 +1697,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -1709,6 +1741,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -1751,6 +1785,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -2315,6 +2351,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -2356,6 +2394,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -2398,6 +2438,8 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;

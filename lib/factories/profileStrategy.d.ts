@@ -124,6 +124,8 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -136,6 +138,8 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 recording: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 };
@@ -172,6 +176,8 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -216,6 +222,8 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -258,6 +266,8 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -300,6 +310,8 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -342,6 +354,8 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -906,6 +920,8 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -947,6 +963,8 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -989,6 +1007,8 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -1042,6 +1062,8 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -1054,6 +1076,8 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             recording: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             };
@@ -1090,6 +1114,8 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -1134,6 +1160,8 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -1176,6 +1204,8 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -1218,6 +1248,8 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -1260,6 +1292,8 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -1824,6 +1858,8 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -1865,6 +1901,8 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -1907,6 +1945,8 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;

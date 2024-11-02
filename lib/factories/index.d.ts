@@ -29,6 +29,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         audioFile?: {
             localFilePath?: import("yup").Maybe<string | undefined>;
             waveForm?: import("yup").Maybe<string | undefined>;
+            thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+            thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
         } | undefined;
@@ -615,6 +617,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -627,6 +631,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             recording: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             };
@@ -663,6 +669,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -707,6 +715,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -749,6 +759,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -791,6 +803,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -833,6 +847,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -1397,6 +1413,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -1438,6 +1456,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -1480,6 +1500,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -1535,6 +1557,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -1547,6 +1571,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 recording: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 };
@@ -1583,6 +1609,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -1627,6 +1655,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -1669,6 +1699,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -1711,6 +1743,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -1753,6 +1787,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -2317,6 +2353,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -2358,6 +2396,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -2400,6 +2440,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -2455,6 +2497,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         audioFile?: {
             localFilePath?: import("yup").Maybe<string | undefined>;
             waveForm?: import("yup").Maybe<string | undefined>;
+            thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+            thumbnailUri?: import("yup").Maybe<string | undefined>;
             storagePath: string;
             uri: string;
         } | undefined;
@@ -3041,6 +3085,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -3053,6 +3099,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             recording: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             };
@@ -3089,6 +3137,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -3133,6 +3183,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -3175,6 +3227,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -3217,6 +3271,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -3259,6 +3315,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -3823,6 +3881,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -3864,6 +3924,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -3906,6 +3968,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -3962,6 +4026,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -3974,6 +4040,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 recording: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 };
@@ -4010,6 +4078,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -4054,6 +4124,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -4096,6 +4168,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -4138,6 +4212,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -4180,6 +4256,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -4744,6 +4822,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -4785,6 +4865,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -4827,6 +4909,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -5458,6 +5542,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -5470,6 +5556,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 recording: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 };
@@ -5506,6 +5594,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -5550,6 +5640,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -5592,6 +5684,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -5634,6 +5728,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -5676,6 +5772,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -6240,6 +6338,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -6281,6 +6381,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -6323,6 +6425,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -6376,6 +6480,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -6388,6 +6494,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             recording: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             };
@@ -6424,6 +6532,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -6468,6 +6578,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -6510,6 +6622,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -6552,6 +6666,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -6594,6 +6710,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -7158,6 +7276,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -7199,6 +7319,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -7241,6 +7363,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                thumbnailUri?: import("yup").Maybe<string | undefined>;
                 storagePath: string;
                 uri: string;
             } | null | undefined;
@@ -7385,6 +7509,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         waveForm?: import("yup").Maybe<string | undefined>;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
                     } | null | undefined;
@@ -7397,6 +7523,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     recording: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         waveForm?: import("yup").Maybe<string | undefined>;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
                     };
@@ -7433,6 +7561,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         waveForm?: import("yup").Maybe<string | undefined>;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
                     } | null | undefined;
@@ -7477,6 +7607,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         waveForm?: import("yup").Maybe<string | undefined>;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
                     } | null | undefined;
@@ -7519,6 +7651,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         waveForm?: import("yup").Maybe<string | undefined>;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
                     } | null | undefined;
@@ -7561,6 +7695,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         waveForm?: import("yup").Maybe<string | undefined>;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
                     } | null | undefined;
@@ -7603,6 +7739,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         waveForm?: import("yup").Maybe<string | undefined>;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
                     } | null | undefined;
@@ -8167,6 +8305,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         waveForm?: import("yup").Maybe<string | undefined>;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
                     } | null | undefined;
@@ -8208,6 +8348,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         waveForm?: import("yup").Maybe<string | undefined>;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
                     } | null | undefined;
@@ -8250,6 +8392,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     image?: {
                         localFilePath?: import("yup").Maybe<string | undefined>;
                         waveForm?: import("yup").Maybe<string | undefined>;
+                        thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                        thumbnailUri?: import("yup").Maybe<string | undefined>;
                         storagePath: string;
                         uri: string;
                     } | null | undefined;
@@ -8303,6 +8447,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -8315,6 +8461,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 recording: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 };
@@ -8351,6 +8499,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -8395,6 +8545,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -8437,6 +8589,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -8479,6 +8633,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -8521,6 +8677,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -9085,6 +9243,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -9126,6 +9286,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;
@@ -9168,6 +9330,8 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    thumbnailStoragePath?: import("yup").Maybe<string | undefined>;
+                    thumbnailUri?: import("yup").Maybe<string | undefined>;
                     storagePath: string;
                     uri: string;
                 } | null | undefined;

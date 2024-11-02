@@ -36,6 +36,8 @@ export declare const recapTacticSchema: yup.Lazy<{
     image?: {
         localFilePath?: yup.Maybe<string | undefined>;
         waveForm?: yup.Maybe<string | undefined>;
+        thumbnailStoragePath?: yup.Maybe<string | undefined>;
+        thumbnailUri?: yup.Maybe<string | undefined>;
         storagePath: string;
         uri: string;
     } | null | undefined;
