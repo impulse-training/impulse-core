@@ -31,9 +31,9 @@ export declare function recapTacticValueBaseSchema(type: RecapKeyType): import("
     debriefAfterMinutes: number | null | undefined;
     image: {
         localFilePath?: import("yup").Maybe<string | undefined>;
-        storagePath?: import("yup").Maybe<string | undefined>;
-        uri?: import("yup").Maybe<string | undefined>;
         waveForm?: import("yup").Maybe<string | undefined>;
+        storagePath: string;
+        uri: string;
     } | null | undefined;
     backgroundColor: string | undefined;
     setbackThreshold: number | null | undefined;
@@ -55,9 +55,9 @@ export declare function recapTacticValueBaseSchema(type: RecapKeyType): import("
     pastTenseTitle: undefined;
     debriefAfterMinutes: undefined;
     image: {
-        localFilePath: undefined;
         storagePath: undefined;
         uri: undefined;
+        localFilePath: undefined;
         waveForm: undefined;
     };
     backgroundColor: undefined;

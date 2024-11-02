@@ -29,9 +29,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
         } | null | undefined;
         audioFile?: {
             localFilePath?: import("yup").Maybe<string | undefined>;
-            storagePath?: import("yup").Maybe<string | undefined>;
-            uri?: import("yup").Maybe<string | undefined>;
             waveForm?: import("yup").Maybe<string | undefined>;
+            storagePath: string;
+            uri: string;
         } | undefined;
         audioDurationSeconds?: number | undefined;
         audioWaveform?: string | undefined;
@@ -615,9 +615,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
-                storagePath?: import("yup").Maybe<string | undefined>;
-                uri?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -627,9 +627,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             ordinal: number;
             recording: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
-                storagePath?: import("yup").Maybe<string | undefined>;
-                uri?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             };
         } | {
             createdAt?: {
@@ -663,9 +663,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
-                storagePath?: import("yup").Maybe<string | undefined>;
-                uri?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -707,9 +707,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
-                storagePath?: import("yup").Maybe<string | undefined>;
-                uri?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -749,9 +749,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
-                storagePath?: import("yup").Maybe<string | undefined>;
-                uri?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -791,9 +791,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
-                storagePath?: import("yup").Maybe<string | undefined>;
-                uri?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -833,9 +833,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
-                storagePath?: import("yup").Maybe<string | undefined>;
-                uri?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -1397,9 +1397,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
-                storagePath?: import("yup").Maybe<string | undefined>;
-                uri?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -1438,9 +1438,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
-                storagePath?: import("yup").Maybe<string | undefined>;
-                uri?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -1480,9 +1480,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
-                storagePath?: import("yup").Maybe<string | undefined>;
-                uri?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -1535,9 +1535,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
-                    storagePath?: import("yup").Maybe<string | undefined>;
-                    uri?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    storagePath: string;
+                    uri: string;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -1547,9 +1547,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 ordinal: number;
                 recording: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
-                    storagePath?: import("yup").Maybe<string | undefined>;
-                    uri?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    storagePath: string;
+                    uri: string;
                 };
             } | {
                 createdAt?: {
@@ -1583,9 +1583,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
-                    storagePath?: import("yup").Maybe<string | undefined>;
-                    uri?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    storagePath: string;
+                    uri: string;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -1627,9 +1627,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
-                    storagePath?: import("yup").Maybe<string | undefined>;
-                    uri?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    storagePath: string;
+                    uri: string;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -1669,9 +1669,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
-                    storagePath?: import("yup").Maybe<string | undefined>;
-                    uri?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    storagePath: string;
+                    uri: string;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -1711,9 +1711,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
-                    storagePath?: import("yup").Maybe<string | undefined>;
-                    uri?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    storagePath: string;
+                    uri: string;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -1753,9 +1753,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
-                    storagePath?: import("yup").Maybe<string | undefined>;
-                    uri?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    storagePath: string;
+                    uri: string;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -2317,9 +2317,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
-                    storagePath?: import("yup").Maybe<string | undefined>;
-                    uri?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    storagePath: string;
+                    uri: string;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -2358,9 +2358,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
-                    storagePath?: import("yup").Maybe<string | undefined>;
-                    uri?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    storagePath: string;
+                    uri: string;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -2400,9 +2400,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
-                    storagePath?: import("yup").Maybe<string | undefined>;
-                    uri?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    storagePath: string;
+                    uri: string;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -2455,9 +2455,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
         } | null | undefined;
         audioFile?: {
             localFilePath?: import("yup").Maybe<string | undefined>;
-            storagePath?: import("yup").Maybe<string | undefined>;
-            uri?: import("yup").Maybe<string | undefined>;
             waveForm?: import("yup").Maybe<string | undefined>;
+            storagePath: string;
+            uri: string;
         } | undefined;
         audioDurationSeconds?: number | undefined;
         audioWaveform?: string | undefined;
@@ -3041,9 +3041,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
-                storagePath?: import("yup").Maybe<string | undefined>;
-                uri?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -3053,9 +3053,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             ordinal: number;
             recording: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
-                storagePath?: import("yup").Maybe<string | undefined>;
-                uri?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             };
         } | {
             createdAt?: {
@@ -3089,9 +3089,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
-                storagePath?: import("yup").Maybe<string | undefined>;
-                uri?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -3133,9 +3133,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
-                storagePath?: import("yup").Maybe<string | undefined>;
-                uri?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -3175,9 +3175,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
-                storagePath?: import("yup").Maybe<string | undefined>;
-                uri?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -3217,9 +3217,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
-                storagePath?: import("yup").Maybe<string | undefined>;
-                uri?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -3259,9 +3259,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
-                storagePath?: import("yup").Maybe<string | undefined>;
-                uri?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -3823,9 +3823,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
-                storagePath?: import("yup").Maybe<string | undefined>;
-                uri?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -3864,9 +3864,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
-                storagePath?: import("yup").Maybe<string | undefined>;
-                uri?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -3906,9 +3906,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: import("yup").Maybe<string | undefined>;
-                storagePath?: import("yup").Maybe<string | undefined>;
-                uri?: import("yup").Maybe<string | undefined>;
                 waveForm?: import("yup").Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -3962,9 +3962,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
-                    storagePath?: import("yup").Maybe<string | undefined>;
-                    uri?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    storagePath: string;
+                    uri: string;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -3974,9 +3974,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 ordinal: number;
                 recording: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
-                    storagePath?: import("yup").Maybe<string | undefined>;
-                    uri?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    storagePath: string;
+                    uri: string;
                 };
             } | {
                 createdAt?: {
@@ -4010,9 +4010,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
-                    storagePath?: import("yup").Maybe<string | undefined>;
-                    uri?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    storagePath: string;
+                    uri: string;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -4054,9 +4054,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
-                    storagePath?: import("yup").Maybe<string | undefined>;
-                    uri?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    storagePath: string;
+                    uri: string;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -4096,9 +4096,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
-                    storagePath?: import("yup").Maybe<string | undefined>;
-                    uri?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    storagePath: string;
+                    uri: string;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -4138,9 +4138,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
-                    storagePath?: import("yup").Maybe<string | undefined>;
-                    uri?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    storagePath: string;
+                    uri: string;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -4180,9 +4180,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
-                    storagePath?: import("yup").Maybe<string | undefined>;
-                    uri?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    storagePath: string;
+                    uri: string;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -4744,9 +4744,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
-                    storagePath?: import("yup").Maybe<string | undefined>;
-                    uri?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    storagePath: string;
+                    uri: string;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -4785,9 +4785,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
-                    storagePath?: import("yup").Maybe<string | undefined>;
-                    uri?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    storagePath: string;
+                    uri: string;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;
@@ -4827,9 +4827,9 @@ export declare const makeLogFactories: (TimestampKlass: typeof TimestampLike) =>
                 debriefAfterMinutes?: number | null | undefined;
                 image?: {
                     localFilePath?: import("yup").Maybe<string | undefined>;
-                    storagePath?: import("yup").Maybe<string | undefined>;
-                    uri?: import("yup").Maybe<string | undefined>;
                     waveForm?: import("yup").Maybe<string | undefined>;
+                    storagePath: string;
+                    uri: string;
                 } | null | undefined;
                 backgroundColor?: string | undefined;
                 likesCount?: number | null | undefined;

@@ -35,9 +35,9 @@ export declare const recapTacticSchema: yup.Lazy<{
     debriefAfterMinutes?: number | null | undefined;
     image?: {
         localFilePath?: yup.Maybe<string | undefined>;
-        storagePath?: yup.Maybe<string | undefined>;
-        uri?: yup.Maybe<string | undefined>;
         waveForm?: yup.Maybe<string | undefined>;
+        storagePath: string;
+        uri: string;
     } | null | undefined;
     backgroundColor?: string | undefined;
     likesCount?: number | null | undefined;

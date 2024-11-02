@@ -31,9 +31,9 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
     debriefAfterMinutes: number | null | undefined;
     image: {
         localFilePath?: yup.Maybe<string | undefined>;
-        storagePath?: yup.Maybe<string | undefined>;
-        uri?: yup.Maybe<string | undefined>;
         waveForm?: yup.Maybe<string | undefined>;
+        storagePath: string;
+        uri: string;
     } | null | undefined;
     backgroundColor: string | undefined;
     setbackThreshold: number | null | undefined;
@@ -55,9 +55,9 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
     pastTenseTitle: undefined;
     debriefAfterMinutes: undefined;
     image: {
-        localFilePath: undefined;
         storagePath: undefined;
         uri: undefined;
+        localFilePath: undefined;
         waveForm: undefined;
     };
     backgroundColor: undefined;

@@ -61,9 +61,9 @@ export declare const strategySchema: yup.ObjectSchema<{
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
                 waveForm?: yup.Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -73,9 +73,9 @@ export declare const strategySchema: yup.ObjectSchema<{
             ordinal: number;
             recording: {
                 localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
                 waveForm?: yup.Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             };
         } | {
             createdAt?: {
@@ -109,9 +109,9 @@ export declare const strategySchema: yup.ObjectSchema<{
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
                 waveForm?: yup.Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -153,9 +153,9 @@ export declare const strategySchema: yup.ObjectSchema<{
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
                 waveForm?: yup.Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -195,9 +195,9 @@ export declare const strategySchema: yup.ObjectSchema<{
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
                 waveForm?: yup.Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -237,9 +237,9 @@ export declare const strategySchema: yup.ObjectSchema<{
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
                 waveForm?: yup.Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -279,9 +279,9 @@ export declare const strategySchema: yup.ObjectSchema<{
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
                 waveForm?: yup.Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -843,9 +843,9 @@ export declare const strategySchema: yup.ObjectSchema<{
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
                 waveForm?: yup.Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -884,9 +884,9 @@ export declare const strategySchema: yup.ObjectSchema<{
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
                 waveForm?: yup.Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -926,9 +926,9 @@ export declare const strategySchema: yup.ObjectSchema<{
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
                 waveForm?: yup.Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -973,9 +973,9 @@ export declare const strategySchema: yup.ObjectSchema<{
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
-            storagePath?: yup.Maybe<string | undefined>;
-            uri?: yup.Maybe<string | undefined>;
             waveForm?: yup.Maybe<string | undefined>;
+            storagePath: string;
+            uri: string;
         } | null | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
@@ -985,9 +985,9 @@ export declare const strategySchema: yup.ObjectSchema<{
         ordinal: number;
         recording: {
             localFilePath?: yup.Maybe<string | undefined>;
-            storagePath?: yup.Maybe<string | undefined>;
-            uri?: yup.Maybe<string | undefined>;
             waveForm?: yup.Maybe<string | undefined>;
+            storagePath: string;
+            uri: string;
         };
     } | {
         createdAt?: {
@@ -1021,9 +1021,9 @@ export declare const strategySchema: yup.ObjectSchema<{
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
-            storagePath?: yup.Maybe<string | undefined>;
-            uri?: yup.Maybe<string | undefined>;
             waveForm?: yup.Maybe<string | undefined>;
+            storagePath: string;
+            uri: string;
         } | null | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
@@ -1065,9 +1065,9 @@ export declare const strategySchema: yup.ObjectSchema<{
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
-            storagePath?: yup.Maybe<string | undefined>;
-            uri?: yup.Maybe<string | undefined>;
             waveForm?: yup.Maybe<string | undefined>;
+            storagePath: string;
+            uri: string;
         } | null | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
@@ -1107,9 +1107,9 @@ export declare const strategySchema: yup.ObjectSchema<{
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
-            storagePath?: yup.Maybe<string | undefined>;
-            uri?: yup.Maybe<string | undefined>;
             waveForm?: yup.Maybe<string | undefined>;
+            storagePath: string;
+            uri: string;
         } | null | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
@@ -1149,9 +1149,9 @@ export declare const strategySchema: yup.ObjectSchema<{
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
-            storagePath?: yup.Maybe<string | undefined>;
-            uri?: yup.Maybe<string | undefined>;
             waveForm?: yup.Maybe<string | undefined>;
+            storagePath: string;
+            uri: string;
         } | null | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
@@ -1191,9 +1191,9 @@ export declare const strategySchema: yup.ObjectSchema<{
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
-            storagePath?: yup.Maybe<string | undefined>;
-            uri?: yup.Maybe<string | undefined>;
             waveForm?: yup.Maybe<string | undefined>;
+            storagePath: string;
+            uri: string;
         } | null | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
@@ -1755,9 +1755,9 @@ export declare const strategySchema: yup.ObjectSchema<{
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
-            storagePath?: yup.Maybe<string | undefined>;
-            uri?: yup.Maybe<string | undefined>;
             waveForm?: yup.Maybe<string | undefined>;
+            storagePath: string;
+            uri: string;
         } | null | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
@@ -1796,9 +1796,9 @@ export declare const strategySchema: yup.ObjectSchema<{
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
-            storagePath?: yup.Maybe<string | undefined>;
-            uri?: yup.Maybe<string | undefined>;
             waveForm?: yup.Maybe<string | undefined>;
+            storagePath: string;
+            uri: string;
         } | null | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
@@ -1838,9 +1838,9 @@ export declare const strategySchema: yup.ObjectSchema<{
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
-            storagePath?: yup.Maybe<string | undefined>;
-            uri?: yup.Maybe<string | undefined>;
             waveForm?: yup.Maybe<string | undefined>;
+            storagePath: string;
+            uri: string;
         } | null | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;

@@ -20,9 +20,9 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
     uid: string;
     audioFile: {
         localFilePath?: yup.Maybe<string | undefined>;
-        storagePath?: yup.Maybe<string | undefined>;
-        uri?: yup.Maybe<string | undefined>;
         waveForm?: yup.Maybe<string | undefined>;
+        storagePath: string;
+        uri: string;
     } | undefined;
     audioDurationSeconds: number | undefined;
     audioWaveform: string | undefined;
@@ -61,9 +61,9 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
                 waveForm?: yup.Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -73,9 +73,9 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
             ordinal: number;
             recording: {
                 localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
                 waveForm?: yup.Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             };
         } | {
             createdAt?: {
@@ -109,9 +109,9 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
                 waveForm?: yup.Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -153,9 +153,9 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
                 waveForm?: yup.Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -195,9 +195,9 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
                 waveForm?: yup.Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -237,9 +237,9 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
                 waveForm?: yup.Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -279,9 +279,9 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
                 waveForm?: yup.Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -843,9 +843,9 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
                 waveForm?: yup.Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -884,9 +884,9 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
                 waveForm?: yup.Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -926,9 +926,9 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
             debriefAfterMinutes?: number | null | undefined;
             image?: {
                 localFilePath?: yup.Maybe<string | undefined>;
-                storagePath?: yup.Maybe<string | undefined>;
-                uri?: yup.Maybe<string | undefined>;
                 waveForm?: yup.Maybe<string | undefined>;
+                storagePath: string;
+                uri: string;
             } | null | undefined;
             backgroundColor?: string | undefined;
             likesCount?: number | null | undefined;
@@ -1538,9 +1538,9 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
-            storagePath?: yup.Maybe<string | undefined>;
-            uri?: yup.Maybe<string | undefined>;
             waveForm?: yup.Maybe<string | undefined>;
+            storagePath: string;
+            uri: string;
         } | null | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
@@ -1550,9 +1550,9 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         ordinal: number;
         recording: {
             localFilePath?: yup.Maybe<string | undefined>;
-            storagePath?: yup.Maybe<string | undefined>;
-            uri?: yup.Maybe<string | undefined>;
             waveForm?: yup.Maybe<string | undefined>;
+            storagePath: string;
+            uri: string;
         };
     } | {
         createdAt?: {
@@ -1586,9 +1586,9 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
-            storagePath?: yup.Maybe<string | undefined>;
-            uri?: yup.Maybe<string | undefined>;
             waveForm?: yup.Maybe<string | undefined>;
+            storagePath: string;
+            uri: string;
         } | null | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
@@ -1630,9 +1630,9 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
-            storagePath?: yup.Maybe<string | undefined>;
-            uri?: yup.Maybe<string | undefined>;
             waveForm?: yup.Maybe<string | undefined>;
+            storagePath: string;
+            uri: string;
         } | null | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
@@ -1672,9 +1672,9 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
-            storagePath?: yup.Maybe<string | undefined>;
-            uri?: yup.Maybe<string | undefined>;
             waveForm?: yup.Maybe<string | undefined>;
+            storagePath: string;
+            uri: string;
         } | null | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
@@ -1714,9 +1714,9 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
-            storagePath?: yup.Maybe<string | undefined>;
-            uri?: yup.Maybe<string | undefined>;
             waveForm?: yup.Maybe<string | undefined>;
+            storagePath: string;
+            uri: string;
         } | null | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
@@ -1756,9 +1756,9 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
-            storagePath?: yup.Maybe<string | undefined>;
-            uri?: yup.Maybe<string | undefined>;
             waveForm?: yup.Maybe<string | undefined>;
+            storagePath: string;
+            uri: string;
         } | null | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
@@ -2320,9 +2320,9 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
-            storagePath?: yup.Maybe<string | undefined>;
-            uri?: yup.Maybe<string | undefined>;
             waveForm?: yup.Maybe<string | undefined>;
+            storagePath: string;
+            uri: string;
         } | null | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
@@ -2361,9 +2361,9 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
-            storagePath?: yup.Maybe<string | undefined>;
-            uri?: yup.Maybe<string | undefined>;
             waveForm?: yup.Maybe<string | undefined>;
+            storagePath: string;
+            uri: string;
         } | null | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
@@ -2403,9 +2403,9 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         debriefAfterMinutes?: number | null | undefined;
         image?: {
             localFilePath?: yup.Maybe<string | undefined>;
-            storagePath?: yup.Maybe<string | undefined>;
-            uri?: yup.Maybe<string | undefined>;
             waveForm?: yup.Maybe<string | undefined>;
+            storagePath: string;
+            uri: string;
         } | null | undefined;
         backgroundColor?: string | undefined;
         likesCount?: number | null | undefined;
@@ -2429,9 +2429,9 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
     updatedAt: undefined;
     uid: undefined;
     audioFile: {
-        localFilePath: undefined;
         storagePath: undefined;
         uri: undefined;
+        localFilePath: undefined;
         waveForm: undefined;
     };
     audioDurationSeconds: undefined;
