@@ -1504,7 +1504,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 [x: string]: {} | undefined;
             } | null | undefined;
             isGptSender?: boolean | undefined;
-            senderProfileId?: string | null | undefined;
+            senderUid?: string | null | undefined;
             type: "call";
             uid: string;
             tacticsById: {
@@ -3932,7 +3932,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 [x: string]: {} | undefined;
             } | null | undefined;
             isGptSender?: boolean | undefined;
-            senderProfileId?: string | null | undefined;
+            senderUid?: string | null | undefined;
             confirmedAt?: {
                 isEqual?: any;
                 toMillis?: any;
@@ -6368,7 +6368,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 [x: string]: {} | undefined;
             } | null | undefined;
             isGptSender?: boolean | undefined;
-            senderProfileId?: string | null | undefined;
+            senderUid?: string | null | undefined;
             pressedImpulseButton?: boolean | undefined;
             type: "regular";
             uid: string;
@@ -8797,7 +8797,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 [x: string]: {} | undefined;
             } | null | undefined;
             isGptSender?: boolean | undefined;
-            senderProfileId?: string | null | undefined;
+            senderUid?: string | null | undefined;
             animationFileName?: string | undefined;
             type: "showTour";
             uid: string;
@@ -11232,7 +11232,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 [x: string]: {} | undefined;
             } | null | undefined;
             isGptSender?: boolean | undefined;
-            senderProfileId?: string | null | undefined;
+            senderUid?: string | null | undefined;
             isAddToGameplanMode?: boolean | undefined;
             suggestedTacticDocPaths?: string[] | undefined;
             type: "tactics";
@@ -13662,7 +13662,7 @@ export declare const daySchema: yup.ObjectSchema<{
                 [x: string]: {} | undefined;
             } | null | undefined;
             isGptSender?: boolean | undefined;
-            senderProfileId?: string | null | undefined;
+            senderUid?: string | null | undefined;
             files?: yup.Maybe<{
                 localFilePath?: yup.Maybe<string | undefined>;
                 isDeleted?: boolean | undefined;

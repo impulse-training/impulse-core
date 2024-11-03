@@ -50,7 +50,7 @@ export function logBaseSchema<K extends string>(type: K) {
     tacticData: optionalObjectOf(yup.mixed()),
     // For now, put this boolean flag here to indicate if the sender is GPT
     isGptSender: yup.boolean(),
-    senderProfileId: yup.string().nullable(),
+    senderUid: yup.string().nullable(),
     // views: yup.array().of(logViewSchema),
   });
 }

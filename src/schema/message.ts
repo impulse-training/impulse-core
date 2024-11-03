@@ -6,7 +6,7 @@ export const messageSchema = yup.object({
   createdAt: optionalTimestampSchema,
   updatedAt: optionalTimestampSchema,
   content: yup.string().nullable().defined(),
-  senderProfileId: yup.string(),
+  senderUid: yup.string(),
   files: yup.array().of(documentReferenceSchema),
   filesDeleted: yup.boolean(),
   externalId: yup.string(),

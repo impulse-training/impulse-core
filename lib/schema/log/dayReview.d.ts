@@ -2426,7 +2426,7 @@ export declare const dayReviewLogSchema: yup.ObjectSchema<{
         [x: string]: {} | undefined;
     } | null | undefined;
     isGptSender: boolean | undefined;
-    senderProfileId: string | null | undefined;
+    senderUid: string | null | undefined;
     dayDoc: import("../utils/firestore").DocumentReferenceLike<unknown>;
     confirmedAt: {
         isEqual?: any;
@@ -2465,7 +2465,7 @@ export declare const dayReviewLogSchema: yup.ObjectSchema<{
     tactic: undefined;
     tacticData: undefined;
     isGptSender: undefined;
-    senderProfileId: undefined;
+    senderUid: undefined;
     dayDoc: undefined;
     confirmedAt: undefined;
 }, "">;

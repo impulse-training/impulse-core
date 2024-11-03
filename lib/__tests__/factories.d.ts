@@ -1493,7 +1493,7 @@ export declare const factories: {
             [x: string]: {} | undefined;
         } | null | undefined;
         isGptSender?: boolean | undefined;
-        senderProfileId?: string | null | undefined;
+        senderUid?: string | null | undefined;
         pressedImpulseButton?: boolean | undefined;
         type: "regular";
         uid: string;
@@ -2428,7 +2428,7 @@ export declare const factories: {
             toDate: Function;
         };
         dateString: string;
-    }, "type" | "uid" | "tacticsById" | "completedTacticIds" | "date" | "dateString" | ("createdAt" | "updatedAt" | "text" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "issueId" | "issueName" | "questionsById" | "questionData" | "blandPathwayChatId" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderProfileId" | "pressedImpulseButton")>;
+    }, "type" | "uid" | "tacticsById" | "completedTacticIds" | "date" | "dateString" | ("createdAt" | "updatedAt" | "text" | "submittedAt" | "audioFile" | "audioDurationSeconds" | "audioWaveform" | "issueId" | "issueName" | "questionsById" | "questionData" | "blandPathwayChatId" | "profileEmojiIDString" | "tacticId" | "tactic" | "tacticData" | "isGptSender" | "senderUid" | "pressedImpulseButton")>;
     textQuestionFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;

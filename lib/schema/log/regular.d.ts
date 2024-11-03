@@ -2426,7 +2426,7 @@ export declare const regularLogSchema: yup.ObjectSchema<{
         [x: string]: {} | undefined;
     } | null | undefined;
     isGptSender: boolean | undefined;
-    senderProfileId: string | null | undefined;
+    senderUid: string | null | undefined;
     pressedImpulseButton: boolean | undefined;
 }, yup.AnyObject, {
     type: undefined;
@@ -2458,7 +2458,7 @@ export declare const regularLogSchema: yup.ObjectSchema<{
     tactic: undefined;
     tacticData: undefined;
     isGptSender: undefined;
-    senderProfileId: undefined;
+    senderUid: undefined;
     pressedImpulseButton: undefined;
 }, "">;
 export type RegularLogValue = yup.InferType<typeof regularLogSchema>;

@@ -2426,7 +2426,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         [x: string]: {} | undefined;
     } | null | undefined;
     isGptSender: boolean | undefined;
-    senderProfileId: string | null | undefined;
+    senderUid: string | null | undefined;
 }, yup.AnyObject, {
     type: undefined;
     createdAt: undefined;
@@ -2457,5 +2457,5 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
     tactic: undefined;
     tacticData: undefined;
     isGptSender: undefined;
-    senderProfileId: undefined;
+    senderUid: undefined;
 }, "">;

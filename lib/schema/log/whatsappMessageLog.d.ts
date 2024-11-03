@@ -2426,7 +2426,7 @@ export declare const whatsappMessageLogSchema: yup.ObjectSchema<{
         [x: string]: {} | undefined;
     } | null | undefined;
     isGptSender: boolean | undefined;
-    senderProfileId: string | null | undefined;
+    senderUid: string | null | undefined;
     files: yup.Maybe<{
         localFilePath?: yup.Maybe<string | undefined>;
         isDeleted?: boolean | undefined;
@@ -2467,7 +2467,7 @@ export declare const whatsappMessageLogSchema: yup.ObjectSchema<{
     tactic: undefined;
     tacticData: undefined;
     isGptSender: undefined;
-    senderProfileId: undefined;
+    senderUid: undefined;
     files: "";
     strategyDoc: undefined;
 }, "">;

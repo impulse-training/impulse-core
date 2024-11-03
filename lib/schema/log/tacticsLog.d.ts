@@ -2426,7 +2426,7 @@ export declare const tacticsLogSchema: yup.ObjectSchema<{
         [x: string]: {} | undefined;
     } | null | undefined;
     isGptSender: boolean | undefined;
-    senderProfileId: string | null | undefined;
+    senderUid: string | null | undefined;
     isAddToGameplanMode: boolean | undefined;
     suggestedTacticDocPaths: string[] | undefined;
 }, yup.AnyObject, {
@@ -2459,7 +2459,7 @@ export declare const tacticsLogSchema: yup.ObjectSchema<{
     tactic: undefined;
     tacticData: undefined;
     isGptSender: undefined;
-    senderProfileId: undefined;
+    senderUid: undefined;
     isAddToGameplanMode: undefined;
     suggestedTacticDocPaths: "";
 }, "">;
