@@ -5,6 +5,7 @@ export const messageSchema = yup.object({
   content: yup.string().nullable().defined(),
   senderProfileId: yup.string(),
   files: yup.array().of(documentReferenceSchema),
+  externalId: yup.string(),
   role: yup
     .mixed<'user' | 'assistant' | 'system' | 'tool'>()
     .oneOf(['assistant', 'user', 'system', 'tool'])

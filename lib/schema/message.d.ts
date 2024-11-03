@@ -3,11 +3,13 @@ export declare const messageSchema: yup.ObjectSchema<{
     content: string | null;
     senderProfileId: string | undefined;
     files: (import("./utils/firestore").DocumentReferenceLike<unknown> | undefined)[] | undefined;
+    externalId: string | undefined;
     role: NonNullable<"user" | "assistant" | "system" | "tool" | undefined>;
 }, yup.AnyObject, {
     content: undefined;
     senderProfileId: undefined;
     files: "";
+    externalId: undefined;
     role: undefined;
 }, "">;
 export type MessageValue = yup.InferType<typeof messageSchema>;
