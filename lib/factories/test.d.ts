@@ -604,6 +604,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
+        sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -656,6 +657,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
+        sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -702,6 +704,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
+        sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -746,6 +749,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
+        sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -790,6 +794,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
+        sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -834,6 +839,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
+        sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -1400,6 +1406,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
+        sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -1443,6 +1450,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
+        sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -1487,6 +1495,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
+        sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -1544,6 +1553,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -1596,6 +1606,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -1642,6 +1653,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -1686,6 +1698,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -1730,6 +1743,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -1774,6 +1788,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -2340,6 +2355,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -2383,6 +2399,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -2427,6 +2444,7 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -2596,4 +2614,4 @@ export declare const applicationFactory: import("factory.ts").Factory<import("..
     } | null;
     signUpIssueId: string | null;
     timezone: string;
-}, "uids" | "verificationCode" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIds" | "blandPathwayId" | "issuesById" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "addToStrategy" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "isTourDismissed" | "region" | "enableZara")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "type" | "uid" | "setbackThreshold" | "recommendedForIssueIds" | "prompt" | "ordinal" | "sharedWithIssueIds" | "recommendedForIssueOrdinals" | "isShared" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+}, "uids" | "verificationCode" | "dayReviewTime" | "signUpIssueId" | "timezone" | ("createdAt" | "updatedAt" | "setbackThreshold" | "parentIds" | "blandPathwayId" | "issuesById" | "lastActiveAt" | "widgetInstalledAt" | "widgetLastPressedAt" | "activeImpulseDoc" | "activeThreadDoc" | "tourCompletedAt" | "scheduledNotificationIds" | "whatsappStrategyDoc" | "onboardedWithZaraAt" | "currentAppState" | "addToStrategy" | "emojiID" | "expoPushToken" | "notificationPreferences" | "questionOfTheDayAnsweredQuestions" | "signUpIssueName" | "isReadyForTour" | "isOnboardingComplete" | "sendDebriefRemindersAfterMinutes" | "gameplanStrategies" | "androidPermissions" | "impulseContext" | "isTourDismissed" | "region" | "enableZara")>, tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "type" | "uid" | "setbackThreshold" | "recommendedForIssueIds" | "prompt" | "ordinal" | "sourceFile" | "sharedWithIssueIds" | "recommendedForIssueOrdinals" | "isShared" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;

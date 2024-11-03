@@ -113,6 +113,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -165,6 +166,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -211,6 +213,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -255,6 +258,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -299,6 +303,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -343,6 +348,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -909,6 +915,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -952,6 +959,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -996,6 +1004,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -1051,6 +1060,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -1103,6 +1113,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -1149,6 +1160,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -1193,6 +1205,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -1237,6 +1250,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -1281,6 +1295,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -1847,6 +1862,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -1890,6 +1906,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -1934,6 +1951,7 @@ export declare const makeProfileStrategyFactory: (TimestampKlass: typeof Timesta
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;

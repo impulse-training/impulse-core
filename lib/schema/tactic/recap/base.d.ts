@@ -2,6 +2,7 @@ import { RecapKeyType } from './recapKeyType';
 export declare function recapTacticValueBaseSchema(type: RecapKeyType): import("yup").ObjectSchema<{
     uid: string | undefined;
     recommendedForIssueIds: string[] | undefined;
+    sourceFile: import("../../utils/firestore").DocumentReferenceLike<unknown> | undefined;
     sharedWithIssueIds: string[] | undefined;
     recommendedForIssueOrdinals: {
         [x: string]: number;
@@ -45,6 +46,7 @@ export declare function recapTacticValueBaseSchema(type: RecapKeyType): import("
 }, import("yup").AnyObject, {
     uid: undefined;
     recommendedForIssueIds: "";
+    sourceFile: undefined;
     sharedWithIssueIds: "";
     recommendedForIssueOrdinals: undefined;
     ordinal: undefined;

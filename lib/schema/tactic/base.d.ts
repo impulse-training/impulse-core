@@ -2,6 +2,7 @@ import * as yup from 'yup';
 export declare function tacticValueBaseSchema<K extends string>(type: K): yup.ObjectSchema<{
     uid: string | undefined;
     recommendedForIssueIds: string[] | undefined;
+    sourceFile: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
     sharedWithIssueIds: string[] | undefined;
     recommendedForIssueOrdinals: {
         [x: string]: number;
@@ -45,6 +46,7 @@ export declare function tacticValueBaseSchema<K extends string>(type: K): yup.Ob
 }, yup.AnyObject, {
     uid: undefined;
     recommendedForIssueIds: "";
+    sourceFile: undefined;
     sharedWithIssueIds: "";
     recommendedForIssueOrdinals: undefined;
     ordinal: undefined;

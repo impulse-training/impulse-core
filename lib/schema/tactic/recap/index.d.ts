@@ -25,6 +25,7 @@ export declare const recapTacticSchema: yup.Lazy<{
     setbackThreshold?: number | null | undefined;
     recommendedForIssueIds?: string[] | undefined;
     prompt?: string | undefined;
+    sourceFile?: import("../../utils/firestore").DocumentReferenceLike<unknown> | undefined;
     sharedWithIssueIds?: string[] | undefined;
     recommendedForIssueOrdinals?: {
         [x: string]: number;

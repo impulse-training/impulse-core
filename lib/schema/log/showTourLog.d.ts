@@ -64,6 +64,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -116,6 +117,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -162,6 +164,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -206,6 +209,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -250,6 +254,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -294,6 +299,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -860,6 +866,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -903,6 +910,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
+            sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -947,6 +955,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -1561,6 +1570,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
+        sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -1613,6 +1623,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
+        sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -1659,6 +1670,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
+        sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -1703,6 +1715,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
+        sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -1747,6 +1760,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
+        sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -1791,6 +1805,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
+        sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -2357,6 +2372,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
+        sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -2400,6 +2416,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
+        sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -2444,6 +2461,7 @@ export declare const showTourLogSchema: yup.ObjectSchema<{
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
+        sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;

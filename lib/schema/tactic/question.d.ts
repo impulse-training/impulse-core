@@ -2,6 +2,7 @@ import * as yup from 'yup';
 export declare const questionTacticSchema: yup.ObjectSchema<{
     uid: string | undefined;
     recommendedForIssueIds: string[] | undefined;
+    sourceFile: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
     sharedWithIssueIds: string[] | undefined;
     recommendedForIssueOrdinals: {
         [x: string]: number;
@@ -568,6 +569,7 @@ export declare const questionTacticSchema: yup.ObjectSchema<{
 }, yup.AnyObject, {
     uid: undefined;
     recommendedForIssueIds: "";
+    sourceFile: undefined;
     sharedWithIssueIds: "";
     recommendedForIssueOrdinals: undefined;
     ordinal: undefined;

@@ -1,6 +1,7 @@
 import * as yup from 'yup';
 import { optionalStringArray } from '../utils/array';
 import { fileSchema } from '../utils/file';
+import { documentReferenceSchema } from '../utils/firestore';
 import { optionalObjectOf } from '../utils/objectOf';
 import { optionalTimestampSchema } from '../utils/timestamp';
 
@@ -12,6 +13,7 @@ export function tacticValueBaseSchema<K extends string>(type: K) {
       10,
       "can't be more than 10"
     ),
+    sourceFile: documentReferenceSchema,
     sharedWithIssueIds: optionalStringArray,
     recommendedForIssueOrdinals: optionalObjectOf(yup.number().required()),
     ordinal: yup.number().required(),

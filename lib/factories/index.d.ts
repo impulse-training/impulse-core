@@ -606,6 +606,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -658,6 +659,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -704,6 +706,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -748,6 +751,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -792,6 +796,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -836,6 +841,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -1402,6 +1408,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -1445,6 +1452,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -1489,6 +1497,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -1546,6 +1555,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -1598,6 +1608,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -1644,6 +1655,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -1688,6 +1700,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -1732,6 +1745,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -1776,6 +1790,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -2342,6 +2357,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -2385,6 +2401,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -2429,6 +2446,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -3074,6 +3092,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -3126,6 +3145,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -3172,6 +3192,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -3216,6 +3237,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -3260,6 +3282,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -3304,6 +3327,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -3870,6 +3894,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -3913,6 +3938,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -3957,6 +3983,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -4015,6 +4042,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -4067,6 +4095,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -4113,6 +4142,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -4157,6 +4187,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -4201,6 +4232,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -4245,6 +4277,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -4811,6 +4844,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -4854,6 +4888,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -4898,6 +4933,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -5436,7 +5472,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
         hour: number;
         minute: number;
     }, "type" | "name" | "weekdays" | "hour" | "minute" | ("createdAt" | "updatedAt")>;
-    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "type" | "uid" | "setbackThreshold" | "recommendedForIssueIds" | "prompt" | "ordinal" | "sharedWithIssueIds" | "recommendedForIssueOrdinals" | "isShared" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
+    tacticFactory: import("factory.ts").Factory<import("..").TacticValue, "createdAt" | "updatedAt" | "type" | "uid" | "setbackThreshold" | "recommendedForIssueIds" | "prompt" | "ordinal" | "sourceFile" | "sharedWithIssueIds" | "recommendedForIssueOrdinals" | "isShared" | "description" | "pastTenseTitle" | "debriefAfterMinutes" | "image" | "backgroundColor" | "likesCount" | "timerSeconds" | "isSuggested">;
     roadmapFactory: import("factory.ts").Factory<{
         createdAt?: {
             isEqual?: any;
@@ -5531,6 +5567,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -5583,6 +5620,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -5629,6 +5667,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -5673,6 +5712,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -5717,6 +5757,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -5761,6 +5802,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -6327,6 +6369,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -6370,6 +6413,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -6414,6 +6458,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -6469,6 +6514,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -6521,6 +6567,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -6567,6 +6614,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -6611,6 +6659,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -6655,6 +6704,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -6699,6 +6749,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -7265,6 +7316,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -7308,6 +7360,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -7352,6 +7405,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -7498,6 +7552,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
+                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -7550,6 +7605,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
+                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -7596,6 +7652,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
+                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -7640,6 +7697,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
+                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -7684,6 +7742,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
+                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -7728,6 +7787,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
+                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -8294,6 +8354,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
+                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -8337,6 +8398,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     uid?: string | undefined;
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
+                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -8381,6 +8443,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                     setbackThreshold?: number | null | undefined;
                     recommendedForIssueIds?: string[] | undefined;
                     prompt?: string | undefined;
+                    sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                     sharedWithIssueIds?: string[] | undefined;
                     recommendedForIssueOrdinals?: {
                         [x: string]: number;
@@ -8436,6 +8499,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -8488,6 +8552,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -8534,6 +8599,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -8578,6 +8644,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -8622,6 +8689,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -8666,6 +8734,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -9232,6 +9301,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -9275,6 +9345,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 uid?: string | undefined;
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;
@@ -9319,6 +9390,7 @@ export declare function makeFactories(TimestampKlass: typeof TimestampLike): {
                 setbackThreshold?: number | null | undefined;
                 recommendedForIssueIds?: string[] | undefined;
                 prompt?: string | undefined;
+                sourceFile?: import("../schema/utils/firestore").DocumentReferenceLike<unknown> | undefined;
                 sharedWithIssueIds?: string[] | undefined;
                 recommendedForIssueOrdinals?: {
                     [x: string]: number;

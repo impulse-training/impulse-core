@@ -53,6 +53,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -105,6 +106,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -151,6 +153,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -195,6 +198,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -239,6 +243,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -283,6 +288,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -849,6 +855,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -892,6 +899,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
             uid?: string | undefined;
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
+            sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -936,6 +944,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
             setbackThreshold?: number | null | undefined;
             recommendedForIssueIds?: string[] | undefined;
             prompt?: string | undefined;
+            sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
             sharedWithIssueIds?: string[] | undefined;
             recommendedForIssueOrdinals?: {
                 [x: string]: number;
@@ -1550,6 +1559,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
+        sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -1602,6 +1612,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
+        sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -1648,6 +1659,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
+        sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -1692,6 +1704,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
+        sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -1736,6 +1749,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
+        sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -1780,6 +1794,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
+        sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -2346,6 +2361,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
+        sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -2389,6 +2405,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         uid?: string | undefined;
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
+        sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
@@ -2433,6 +2450,7 @@ export declare function logBaseSchema<K extends string>(type: K): yup.ObjectSche
         setbackThreshold?: number | null | undefined;
         recommendedForIssueIds?: string[] | undefined;
         prompt?: string | undefined;
+        sourceFile?: import("../utils/firestore").DocumentReferenceLike<unknown> | undefined;
         sharedWithIssueIds?: string[] | undefined;
         recommendedForIssueOrdinals?: {
             [x: string]: number;
